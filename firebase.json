@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "redirects": [
+      {
+        "source": "/airnode/latest/",
+        "destination": "/reference/airnode/latest/",
+        "type": 301
+      },
+      {
+        "source": "/ois/latest/",
+        "destination": "/reference/ois/v1.2/",
+        "type": 301
+      },
+      {
+        "source": "/latest/",
+        "destination": "/reference/airnode/latest/",
+        "type": 301
+      }
+    ],
+    "public": "docs/.vitepress/dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

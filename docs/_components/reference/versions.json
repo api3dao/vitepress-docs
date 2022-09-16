@@ -1,0 +1,17 @@
+{
+  "airnode": [
+    { "label": "v0.7 (latest)", "path": "/reference/airnode/latest/" },
+    { "label": "v0.6", "path": "/reference/airnode/v0.6/" },
+    { "label": "v0.5", "path": "/reference/airnode/v0.5/" },
+    { "label": "v0.4", "path": "/reference/airnode/v0.4/" },
+    { "label": "v0.3", "path": "/reference/airnode/v0.3/" },
+    { "label": "v0.2", "path": "/reference/airnode/v0.2/" },
+    { "label": "pre-alpha", "path": "/reference/airnode/pre-alpha/" }
+  ],
+  "ois": [
+    { "label": "v1.1 (latest)", "path": "/reference/ois/v1.1/" },
+    { "label": "v1.0", "path": "/reference/ois/v1.0/" }
+  ],
+  "airnodeLatest": "v0.7",
+  "oisLatest": "v1.1"
+}

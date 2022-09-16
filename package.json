@@ -1,0 +1,28 @@
+{
+  "name": "vitepress-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sync:VPFlyout": "cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue",
+    "sync:VPNavBarTitle": "cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue",
+    "sync:VPNavBar": "cp docs/_components/vitepress/VPNavBar.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBar.vue",
+    "sync:VPSidebar": "cp docs/_components/vitepress/VPSidebar.vue  node_modules/vitepress/dist/client/theme-default/components/VPSidebar.vue",
+    "sync:sidebarHeader": "cp docs/_components/vitepress/SidebarHeader.vue  node_modules/vitepress/dist/client/theme-default/components/SidebarHeader.vue",
+    "docs:dev": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress dev docs",
+    "docs:build": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 8082",
+    "format": "prettier --write \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
+    "format:check": "prettier --check \"./**/*.{js,vue,md,json,yaml}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "gray-matter": "^4.0.3",
+    "husky": "^8.0.1",
+    "markdown-it": "^13.0.1",
+    "prettier": "^2.7.1",
+    "vitepress": "^1.0.0-alpha.13",
+    "vue": "^3.2.38"
+  }
+}

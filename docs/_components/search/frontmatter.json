@@ -1,0 +1,207 @@
+[
+  {
+    "title": "about the journey",
+    "sidebarHeader": "explore",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/explore/index.md"
+  },
+  {
+    "title": "jobs",
+    "sidebarHeader": "explore",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/explore/jobs.md"
+  },
+  {
+    "title": "what are dapis?",
+    "sidebarHeader": "explore",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/explore/what-are-dapis.md"
+  },
+  {
+    "title": "airnode config.json",
+    "sidebarHeader": "explore",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/explore/what-is-airnode.md"
+  },
+  {
+    "title": "calling a dapi",
+    "sidebarHeader": "guides",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/guides/developers/index.md"
+  },
+  {
+    "title": "deploy airnode to aws",
+    "sidebarHeader": "guides",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/guides/providers/deploy-aws.md"
+  },
+  {
+    "title": "deploy airnode to gcp",
+    "sidebarHeader": "guides",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/guides/providers/deploy-gcp.md"
+  },
+  {
+    "title": "chainapi quick start",
+    "sidebarHeader": "guides",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/guides/providers/index.md"
+  },
+  {
+    "title": "build an airnode with chainapi",
+    "sidebarHeader": "guides",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/guides/providers/x_create-config.md"
+  },
+  {
+    "title": "request-response protocol",
+    "sidebarHeader": "airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/concepts/README.md"
+  },
+  {
+    "title": "aws.env",
+    "sidebarHeader": "reference → airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/deployment-files/aws-env.md"
+  },
+  {
+    "title": "config.json",
+    "sidebarHeader": "reference → airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/deployment-files/config-json.md"
+  },
+  {
+    "title": "config.json",
+    "sidebarHeader": "reference → airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/deployment-files/config.md"
+  },
+  {
+    "title": "overview",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/deployment-files/index.md"
+  },
+  {
+    "title": "receipt.json",
+    "sidebarHeader": "reference → airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/deployment-files/receipt-json.md"
+  },
+  {
+    "title": "secrets.env",
+    "sidebarHeader": "reference → airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/deployment-files/secrets-env.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/index.md"
+  },
+  {
+    "title": "chain idiosyncrasies",
+    "sidebarHeader": "airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/intro/chain-idiosyncrasies.md"
+  },
+  {
+    "title": "cloud resources",
+    "sidebarHeader": "airnode v0.7",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/latest/intro/cloud-resources.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/pre-alpha/index.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/v0.2/index.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/v0.3/index.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/v0.4/index.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/v0.5/index.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/v0.6/index.md"
+  },
+  {
+    "title": "changelog",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/airnode/v0.8/index.md"
+  },
+  {
+    "title": "what are dapis?",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/dapis/index.md"
+  },
+  {
+    "title": "api3 market",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/dapis/introduction/api3-market.md"
+  },
+  {
+    "title": "developers—why use dapis?",
+    "sidebarHeader": "dapis",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/dapis/introduction/why-use-dapis.md"
+  },
+  {
+    "title": "example ois object",
+    "sidebarHeader": "reference → ois v1.0",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.0/example.md"
+  },
+  {
+    "title": "understanding ois",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.0/index.md"
+  },
+  {
+    "title": "ois template",
+    "sidebarHeader": "reference → ois v1.0",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.0/ois-template.md"
+  },
+  {
+    "title": "specification",
+    "sidebarHeader": "reference → ois v1.0",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.0/ois.md"
+  },
+  {
+    "title": "pre/post processing",
+    "sidebarHeader": "reference → ois v1.0",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.0/processing.md"
+  },
+  {
+    "title": "reserved parameters",
+    "sidebarHeader": "reference → ois v1.0",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.0/reserved-parameters.md"
+  },
+  {
+    "title": "example ois object",
+    "sidebarHeader": "reference → ois v1.1",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.1/example.md"
+  },
+  {
+    "title": "understanding ois",
+    "sidebarHeader": "reference",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.1/index.md"
+  },
+  {
+    "title": "ois template",
+    "sidebarHeader": "reference → ois v1.1",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.1/ois-template.md"
+  },
+  {
+    "title": "specification",
+    "sidebarHeader": "reference → ois v1.1",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.1/ois.md"
+  },
+  {
+    "title": "pre/post processing",
+    "sidebarHeader": "reference → ois v1.1",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.1/processing.md"
+  },
+  {
+    "title": "reserved parameters",
+    "sidebarHeader": "reference → ois v1.1",
+    "path": "/Users/warren/DEV/vitepress-docs/docs/reference/ois/v1.1/reserved-parameters.md"
+  }
+]
