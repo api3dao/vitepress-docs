@@ -1,0 +1,528 @@
+{
+  "medium": [
+    {
+      "tag": "About our journey: Getting APIs on the Blockchain",
+      "posts": [
+        {
+          "date": "Oct 4, 2020",
+          "dt": "2020-10-04",
+          "title": "APIs: The Digital Glue",
+          "url": "https://medium.com/api3/apis-the-digital-glue-7ac87566e773"
+        },
+        {
+          "date": "Oct 11, 2020",
+          "dt": "2020-10-11",
+          "title": "The API Connectivity Problem",
+          "url": "https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636"
+        },
+        {
+          "date": "Oct 26, 2020",
+          "dt": "2020-10-26",
+          "title": "Where are the first-party oracles?",
+          "url": "https://medium.com/api3/where-are-the-first-party-oracles-5078cebaf17"
+        },
+        {
+          "date": "Nov 4, 2020",
+          "dt": "2020-11-04",
+          "title": "Staking & oracles",
+          "url": "https://medium.com/api3/staking-oracles-c91f2f5bcf6d"
+        },
+        {
+          "date": "Nov 15, 2020",
+          "dt": "2020-11-15",
+          "title": "Why security must be quantified",
+          "url": "https://medium.com/api3/why-security-must-be-quantified-3d2dd06c4909"
+        },
+        {
+          "date": "Nov 24, 2020",
+          "dt": "2020-11-24",
+          "title": "On DAOs: Decentralized Autonomous Organizations",
+          "url": "https://medium.com/api3/on-daos-decentralized-autonomous-organizations-84c00abb89bc"
+        },
+        {
+          "date": "Jan 5, 2021",
+          "dt": "2021-01-05",
+          "title": "Hello ChainAPI!",
+          "url": "https://medium.com/api3/hello-chainapi-e1b386a74f1d"
+        },
+        {
+          "date": "Jan 5, 2021",
+          "dt": "2021-01-05",
+          "title": "Sunsetting Honeycomb, and a Retrospective",
+          "url": "https://medium.com/clc-group/sunsetting-honeycomb-and-a-retrospective-ba3f58268024"
+        },
+        {
+          "date": "Jun 30, 2021",
+          "dt": "2021-06-30",
+          "title": "Story of the Authoritative DAO",
+          "url": "https://bbenligiray.medium.com/story-of-the-authoritative-dao-1153990a3eff"
+        },
+        {
+          "date": "Jul 16, 2021",
+          "dt": "2021-07-16",
+          "title": "What is API3?",
+          "url": "https://bbenligiray.medium.com/what-is-api3-d97fdfe94e19"
+        },
+        {
+          "date": "Dec 17, 2021",
+          "dt": "2021-12-17",
+          "title": "Beacons: Building blocks for Web3 data connectivity",
+          "url": "https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763"
+        },
+        {
+          "date": "Mar 3, 2022",
+          "dt": "2022-03-03",
+          "title": "What are Beacons? Why does Web3 care?",
+          "url": "https://medium.com/api3/what-are-beacons-why-does-web3-care-67f4b0ec0c7"
+        },
+        {
+          "date": "Mar 30, 2022",
+          "dt": "2022-03-30",
+          "title": "Announcing the ETHDenver 2022 API3 Bounty Winners",
+          "url": "https://medium.com/api3/announcing-the-ethdenver-2022-api3-bounty-winners-56ee12420bf6"
+        },
+        {
+          "date": "Mar 31, 2022",
+          "dt": "2022-03-31",
+          "title": "dAPIs: APIs for dApps",
+          "url": "https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493"
+        },
+        {
+          "date": "Apr 17, 2022",
+          "dt": "2022-04-017",
+          "title": "Commercial building blocks",
+          "url": "https://bbenligiray.medium.com/business-building-blocks-24143433672f"
+        },
+        {
+          "date": "Jun 11, 2022",
+          "dt": "2022-06-11",
+          "title": "API monetization on Web3",
+          "url": "https://medium.com/api3/api-monetization-on-web3-7d5fe855a8e3"
+        },
+        {
+          "date": "Aug 5, 2022",
+          "dt": "2022-08-05",
+          "title": "Connecting the Blockchain to the Digital World",
+          "url": "https://medium.com/api3/api3-connecting-the-blockchain-to-the-digital-world-c0aa0c658d85"
+        },
+        {
+          "date": "Aug 9, 2022",
+          "dt": "2022-08-09",
+          "title": "Why API3 DAO, not API3 CORP?",
+          "url": "https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1"
+        },
+        {
+          "date": "Aug 14, 2022",
+          "dt": "2022-08-14",
+          "title": "An unplanned donation to API3",
+          "url": "https://bbenligiray.medium.com/an-unplanned-donation-to-api3-28c76af885ec"
+        }
+      ]
+    },
+
+    {
+      "tag": "About Airnode: The first-party oracle node",
+      "posts": [
+        {
+          "date": "Nov 6, 2020",
+          "dt": "2020-11-06",
+          "title": "Airnode: The API gateway for blockchains",
+          "url": "https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840"
+        },
+        {
+          "date": "Dec 8, 2020",
+          "dt": "2020-12-08",
+          "title": "Getting to know Airnode",
+          "url": "https://medium.com/api3/getting-to-know-airnode-162e50ea243e"
+        },
+        {
+          "date": "Mar 13, 2021",
+          "dt": "2021-03-13",
+          "title": "Setting Oracle Integration Standards",
+          "url": "https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e"
+        }
+      ]
+    },
+
+    {
+      "tag": "About the Governance",
+      "posts": [
+        {
+          "date": "Nov 9,2020",
+          "dt": "2020-11-09",
+          "title": "API3 Builder Terminology",
+          "url": "https://medium.com/api3/api3-builder-terminology-dd398fe447c3"
+        },
+        {
+          "date": "Nov 11, 2020",
+          "dt": "2020-11-11",
+          "title": "API3 Tokenomics Update",
+          "url": "https://medium.com/api3/api3-tokenomics-update-f032d6e49b30"
+        },
+        {
+          "date": "Nov 16, 2020",
+          "dt": "2020-11-16",
+          "title": "Announcing Monolith #1: Authoritative API3 DAO",
+          "url": "https://medium.com/api3/announcing-monolith-1-authoritative-api3-dao-ec9ca6d044f8"
+        }
+      ]
+    },
+
+    {
+      "tag": "The DAO & Staking",
+      "posts": [
+        {
+          "date": "Apr 17, 2021",
+          "dt": "2021-04-17",
+          "title": "Significance of the DAO and staking, Part I",
+          "url": "https://medium.com/api3/significance-of-the-dao-and-staking-b8feeaf93804"
+        },
+        {
+          "date": "Apr 22, 2021",
+          "dt": "2021-04-22",
+          "title": "Lessons from DAOv1, Part II",
+          "url": "https://medium.com/api3/lessons-from-daov1-da106f2f1fd9"
+        },
+        {
+          "date": "Apr 28, 2021",
+          "dt": "2021-04-28",
+          "title": "Fractal scaling of API3,Part III",
+          "url": "https://medium.com/api3/fractal-scaling-of-api3-b3ba78c9dcb7"
+        },
+        {
+          "date": "Jul 04, 2021",
+          "dt": "2021-07-04",
+          "title": "Staking reward mechanics, Part IV",
+          "url": "https://medium.com/api3/staking-reward-mechanics-a3b46b3a3120"
+        },
+        {
+          "date": "Jul 08, 2021",
+          "dt": "2021-07-08",
+          "title": "API3 Authoritative DAO & Staking Live on Mainnet",
+          "url": "https://medium.com/api3/api3-authoritative-dao-staking-live-on-mainnet-4732d1e538cb"
+        }
+      ]
+    },
+
+    {
+      "tag": "Redefining Trust",
+      "posts": [
+        {
+          "date": "Apr 13, 2021",
+          "dt": "2021-04-13",
+          "title": "Aviation Finance",
+          "url": "https://medium.com/api3/broken-processes-how-to-fix-them-aviation-finance-3ceed6a2089f"
+        },
+        {
+          "date": "Nov 05, 2021",
+          "dt": "2021-11-05",
+          "title": "Weaknesses in Modern Voting Systems",
+          "url": "https://medium.com/api3/weaknesses-in-modern-voting-systems-b680d25aaafb"
+        },
+        {
+          "date": "Jul 1, 2022",
+          "dt": "2022-07-01",
+          "title": "Redefining Trust: Truly Random Gaming",
+          "url": "https://medium.com/api3/redefining-trust-truly-random-gaming-8da641ec66eb"
+        }
+      ]
+    },
+
+    {
+      "tag": "Core Technical Team",
+      "posts": [
+        {
+          "date": "Jan 31, 2021",
+          "dt": "2021-01-31",
+          "title": "API3 DAO Development Update, Operations Cycle #1",
+          "url": "https://medium.com/api3/api3dao-development-update-operations-cycle-1-ee26231ba4f"
+        },
+        {
+          "date": "Feb 28, 2021",
+          "dt": "2021-02-28",
+          "title": "API3 DAO Development Update, February 2021",
+          "url": "https://medium.com/api3/api3-dao-development-update-february-2021-8e3d6e673130"
+        },
+        {
+          "date": "Mar 31, 2021",
+          "dt": "2021-03-31",
+          "title": "API3 DAO Development Report, March 2021",
+          "url": "https://medium.com/api3/api3dao-development-update-march-2021-7cae9265fdd3"
+        },
+        {
+          "date": "Apr 30, 2021",
+          "dt": "2021-04-30",
+          "title": "API3 DAO Development Report, April 2021",
+          "url": "https://medium.com/api3/api3dao-development-report-april-2021-f921b7f35a35"
+        },
+        {
+          "date": "May 31, 2021",
+          "dt": "2021-05-31",
+          "title": "API3 DAO Core Technical Team Development Report, May 2021",
+          "url": "https://medium.com/api3/api3dao-core-technical-team-development-report-may-2021-e0ad5f8d22b8"
+        },
+        {
+          "date": "Jun 30, 2021",
+          "dt": "2021-06-30",
+          "title": "API3 DAO Core Technical Team Development Report, June 2021",
+          "url": "https://medium.com/api3/api3-dao-core-technical-team-development-report-june-2021-91b06f263b40"
+        },
+        {
+          "date": "Jul 22, 2021",
+          "dt": "2021-07-22",
+          "title": "Decentrally-governed projects can’t be roadmapped",
+          "url": "https://bbenligiray.medium.com/decentrally-governed-projects-cant-be-roadmapped-9400d56d969f"
+        },
+        {
+          "date": "Jul 31, 2021",
+          "dt": "2021-07-31",
+          "title": "API3 Core Technical Team Report, July 2021",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-july-2021-eb57ea30852e"
+        },
+        {
+          "date": "Aug 31, 2021",
+          "dt": "2021-08-31",
+          "title": "API3 Core Technical Team Report, August 2021",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-august-2021-b4124b9dc6e0"
+        },
+        {
+          "date": "Sep 30, 2021",
+          "dt": "2021-09-30",
+          "title": "API3 Core Technical Team Report, September 2021",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-september-2021-8f04e96b8db"
+        },
+        {
+          "date": "Oct 12, 2021",
+          "dt": "2021-10-12",
+          "title": "Beyond pre-alpha RRP",
+          "url": "https://medium.com/api3/beyond-pre-alpha-rrp-88717e9ed22d"
+        },
+        {
+          "date": "Oct 31, 2021",
+          "dt": "2021-10-31",
+          "title": "API3 Core Technical Team Report, October 2021",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-october-2021-d6377a4c5150"
+        },
+        {
+          "date": "Nov 30, 2021",
+          "dt": "2021-11-30",
+          "title": "API3 Core Technical Team Report, November 2021",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-november-2021-97c3b97ab85e"
+        },
+        {
+          "date": "Dec 31, 2021",
+          "dt": "2021-12-31",
+          "title": "API3 Core Technical Team Report, December 2021",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-december-2021-a5571304ae31"
+        },
+        {
+          "date": "Jan 31, 2022",
+          "dt": "2022-01-31",
+          "title": "API3 Core Technical Team Report, January 2022",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-january-2022-85e55e1aa4af"
+        },
+        {
+          "date": "Feb 28, 2022",
+          "dt": "2022-02-28",
+          "title": "API3 Core Technical Team Report, February 2022",
+          "url": "https://medium.com/api3/api3-core-technical-team-report-february-2022-a24de05a532e"
+        },
+        {
+          "date": "Mar 31, 2022",
+          "dt": "2022-03-31",
+          "title": "API3 Core Technical Team Report, March 2022",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-march-2022-951fb63e6338"
+        },
+        {
+          "date": "Apr 30, 2022",
+          "dt": "2022-04-30",
+          "title": "API3 Core Technical Team Report, April 2022",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-april-2022-24173b2f9978"
+        },
+        {
+          "date": "May 31, 2022",
+          "dt": "2022-05-31",
+          "title": "API3 Core Technical Team Report, May 2022",
+          "url": "https://medium.com/@bbenligiray/api3-core-technical-team-report-may-2022-7f9e6d7960a4"
+        },
+        {
+          "date": "Jun 29, 2022",
+          "dt": "2022-06-29",
+          "title": "API3 Core Technical Team Report, June 2022",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-june-2022-b736359e1a4f"
+        },
+        {
+          "date": "Jul 31, 2022",
+          "dt": "2022-07-31",
+          "title": "API3 Core Technical Team Report, July 2022",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-july-2022-4b04630704d9"
+        },
+        {
+          "date": "Aug 31, 2022",
+          "dt": "2022-08-31",
+          "title": "API3 Core Technical Team Report, August 2022",
+          "url": "https://bbenligiray.medium.com/api3-core-technical-team-report-august-2022-d6124d8b05fe"
+        }
+      ]
+    },
+
+    {
+      "tag": "Integration Team",
+      "posts": [
+        {
+          "date": "Aug 31, 2021",
+          "dt": "2021-08-31",
+          "title": "API3 API Integrations Report, August 2021",
+          "url": "https://camron-h.medium.com/api3-api-integrations-report-august-2021-8f43a56c4a1"
+        }
+      ]
+    },
+
+    {
+      "tag": "Marketing Team",
+      "posts": [
+        {
+          "date": "Dec 22, 2021",
+          "dt": "2021-12-22",
+          "title": "API3 Marketing, Nov-Dec 2021",
+          "url": "https://medium.com/api3/api3-marketing-nov-dec-2021-1bf386f99dd3"
+        }
+      ]
+    },
+    {
+      "tag": "Operations Team",
+      "posts": [
+        {
+          "date": "Dec 10, 2020",
+          "dt": "2020-12-10",
+          "title": "API3 Operations",
+          "url": "https://medium.com/api3/api3-operations-a35c93a3a9d"
+        },
+        {
+          "date": "Jan 11, 2022",
+          "dt": "2022-01-11",
+          "title": "API3 Operations Update: 2021 End",
+          "url": "https://medium.com/api3/operations-updates-c1bb7f2a0748"
+        },
+        {
+          "date": "Feb 03, 2022",
+          "dt": "2022-02-03",
+          "title": "API3 Operations Update: January 2022",
+          "url": "https://medium.com/api3/api3-operations-update-january-2022-bf20c44e3036"
+        },
+        {
+          "date": "Mar 02, 2022",
+          "dt": "2022-03-02",
+          "title": "API3 Operations Update: February 2022",
+          "url": "https://medium.com/api3/api3-operations-update-february-2022-7326377d422e"
+        },
+        {
+          "date": "Apr 04, 2022",
+          "dt": "2022-04-04",
+          "title": "API3 Operations Update: March 2022",
+          "url": "https://medium.com/api3/api3-operations-update-march-2022-9dd631d00e29"
+        },
+        {
+          "date": "May 03, 2022",
+          "dt": "2022-05-03",
+          "title": "API3 Operations Update: April 2022",
+          "url": "https://medium.com/api3/api3-operations-update-april-2022-a79f74f6ec8e"
+        }
+      ]
+    },
+    {
+      "tag": "Enterprise Development Team",
+      "posts": [
+        {
+          "date": "Sep 16, 2021",
+          "dt": "2021-09-16",
+          "title": "API3 Enterprise Development Report, August/September 2021",
+          "url": "https://medium.com/@gio_lesna/api3-enterprise-development-report-september-2021-da09e065121"
+        },
+        {
+          "date": "Oct 26, 2021",
+          "dt": "2021-10-26",
+          "title": "API3 Enterprise Development Report, September/October 2021",
+          "url": "https://medium.com/@gio_lesna/api3-enterprise-development-report-september-october-2021-5de302a859b9"
+        },
+        {
+          "date": "Jan 27, 2022",
+          "dt": "2022-01-27",
+          "title": "API3 Enterprise Development Report, November-December 2021, January 2022",
+          "url": "https://medium.com/api3/api3-enterprise-development-report-november-december-2021-january-2022-7e100b52f5d8"
+        },
+        {
+          "date": "Apr 20, 2022",
+          "dt": "2022-04-20",
+          "title": "API3 Enterprise Development Report, February, March, April 2022",
+          "url": "https://medium.com/api3/api3-enterprise-development-report-february-march-april-2022-3cb811562abe"
+        }
+      ]
+    },
+    {
+      "tag": "Standalone Posts",
+      "posts": [
+        {
+          "date": "Sep 16, 2020",
+          "dt": "2020-09-16",
+          "title": "API3 — Decentralized APIs for the Decentralized Web",
+          "url": "https://medium.com/api3/api3-decentralized-apis-for-the-decentralized-web-d711f47190ac"
+        },
+        {
+          "date": "Oct 8, 2020",
+          "dt": "2020-10-08",
+          "title": "The Gordian Knot called “The Oracle Problem”",
+          "url": "https://medium.com/api3/the-gordian-knot-called-the-oracle-problem-e9731c55da13"
+        },
+        {
+          "date": "Oct 15, 2020",
+          "dt": "2020-10-15",
+          "title": "AI Winter, Oracle Frost",
+          "url": "https://medium.com/api3/ai-winter-oracle-frost-4fffe9bfdb95"
+        },
+        {
+          "date": "Oct 22, 2020",
+          "dt": "2020-10-22",
+          "title": "The Race to First-Party Oracles",
+          "url": "https://medium.com/api3/the-race-to-first-party-oracles-87fab596e906"
+        },
+        {
+          "date": "Nov 14, 2020",
+          "dt": "2020-11-14",
+          "title": "Is API3 the ‘Chainlink Killer’?",
+          "url": "https://medium.com/api3/is-api3-the-chainlink-killer-3bd59f93c895"
+        },
+        {
+          "date": "Dec 30, 2020",
+          "dt": "2020-12-30",
+          "title": "On exclusivity deals and their implications for Ethereum",
+          "url": "https://medium.com/api3/on-exclusivity-deals-and-their-implications-for-ethereum-9354a9ff7929"
+        },
+        {
+          "date": "Aug 10, 2021",
+          "dt": "2021-08-10",
+          "title": "The API3 Alliance: 125+ API Providers on Web3 via Airnode",
+          "url": "https://medium.com/api3/the-api3-alliance-125-api-providers-on-web3-via-airnode-37073df9825d"
+        },
+        {
+          "date": "Dec 19, 2021",
+          "dt": "2021-12-19",
+          "title": "Reference-based storage of NFTs",
+          "url": "https://bbenligiray.medium.com/reference-based-storage-of-nfts-270cbd882ac1"
+        },
+        {
+          "date": "May 03, 2022",
+          "dt": "2022-05-03",
+          "title": "API3 QRNG — Web3 Quantum Random Numbers",
+          "url": "https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc"
+        },
+        {
+          "date": "Jun 01, 2022",
+          "dt": "2022-06-01",
+          "title": "AccuWeather Launches First-Party Airnode",
+          "url": "https://medium.com/api3/accuweather-launches-first-party-airnode-d3b2e9eee9a5"
+        }
+      ]
+    }
+  ]
+}

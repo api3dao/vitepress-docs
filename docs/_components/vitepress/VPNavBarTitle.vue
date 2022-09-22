@@ -61,8 +61,8 @@ const { hasSidebar } = useSidebar();
 :deep(.logo) {
   margin-right: 8px;
   /* wkande: Sept 2022: Changed the height, was 24px  */
-  height: 40px;
+  height: 35px;
   /* wkande: Sept 2022: Added margin-left */
-  margin-left: -7px;
+  margin-left: -22px;
 }
 </style>
