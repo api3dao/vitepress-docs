@@ -1,96 +1,127 @@
 ---
+title: About our Journey!
 lang: en-US
-title: About the Journey
+folder: Explore
+basePath: /explore
 sidebarHeader: Explore
-home: false
 tags:
-  - help
-  - dude
-head:
-  - - meta
-    - name: foo
-      content: bar
-  - - link
-    - rel: canonical
-      href: foobar
-  - - script
-    - {}
-    - console.log('About the Journey > $fronmatter > script');
+  - api3
+  - whitepaper
+  - decentralized
+  - autonomous
+  - dao
 ---
 
 # {{$frontmatter.title}}
 
-Moving from VuePress `v1` to VitePress `v1`.
+**API3** ([https://api3.org](https://api3.org)) is a collaborative project to
+deliver traditional API services to smart contract platforms in a decentralized
+and trust-minimized way. It is governed by a _decentralized autonomous
+organization_ (DAO), namely the **API3 DAO**. Therefore, its code is open source
+and its operations are transparent.
 
-```js
-let i = 0;
-console.log('HELLO WORLD'); // Long code comment to detect scroll.
-```
+::: warning API3 Whitepaper (pdf)
 
-This is a deployment from the firebase-push script
+For a detailed discussion of the API3 project, read the
+<a href="/api3-whitepaper-v1.0.3.pdf" target="_api3-whitepaper">API3
+Whitepaper</a>.
 
-## Custom Tabs (Vue 3x) Component
+:::
 
-<Tabs>
+## Thesis Statement
 
-@tab:Mac OS
+The vast majority of the external integrations that decentralized applications
+need are to commercial Web APIs that traditional businesses have built to
+monetize their data and services. Therefore, what is widely known as _the oracle
+problem_ is in practice _an API connectivity problem_.
 
-Below is the code you can copy. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua.
+Existing oracle solutions fall short because they fail to make this distinction,
+resulting in inferior solutions that depend on third-party oracles and
+ecosystems that exclude _API providers_. By refining the definition of the
+problem, **API3** aims to provide a much more optimal solution.
 
-```js
-let i = 0;
-console.log('HELLO WORLD'); // Long code comment to detect scroll.
-```
+## Airnode
 
-@tab:Windows
+At its core, **API3** brings the ability for API providers to easily run their
+own _oracle nodes_. This allows them to provide their data on-chain, without an
+intermediary, to any _decentralized app_ \(dApp\) interested in their services.
 
-![img](/API3-Active.png)
+At the heart of this mechanism sits **Airnode**, an open-source oracle node.
+It's designed to be easily deployed by any API provider with almost no
+maintenance. Because of Airnode, dApp developers can write _smart contracts_ to
+interact with the on-chain data of API providers.
 
-@tab:Linux
+Airnode is designed with mechanisms to remove the on-chain or off-chain concerns
+of API providers. The set-and-forget framework of Airnode is all about ease of
+implementation.
 
-Go to [Airnode](/reference/airnode/latest/)!
+::: warning Airnode in the Whitepaper
 
-</Tabs>
+Learn more about Airnode Read Section 4 of the
+<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">API3
+Whitepaper</a> _Airnode: A Node Designed for First-Party Oracles_
 
-## Fancy Btn using a slot
+:::
 
-Nothing fancy about it. <FancyButton >Click me</FancyButton>
+## Oracles
 
-## Component with internal markdown-it complier
+**Abstract from the
+<a href="/api3-whitepaper-v1.0.3.pdf" target="_api3-whitepaper">API3
+Whitepaper</a>**
 
-## <UiMarkdown markdown="
+With decentralized applications beginning to provide meaningful services in
+areas such as decentralized finance, there is an increasing need for these
+applications to receive data or trigger events using traditional Web APIs.
 
-[link here](/) <br/>
+However, the generic oracle solutions fail to appropriately address the API
+connectivity problem due to an over-generalized and misguided approach. To
+remedy this issue, API3 will drive a collaborative effort to create a new
+generation of blockchain-native, decentralized APIs, or dAPIs for short.
 
-```js
-let s = 2;
-```
+dAPIs are composed of first-party oracles operated by API providers, and thus
+are more secure and cost-efficient than alternative solutions that employ
+middlemen. At the core of the governance, security, and value capture mechanics
+of this initiative will be the API3 token. Staking the token will grant its
+holders full governing rights over the API3 DAO along with all the associated
+rewards.
 
-"/>
+Staked API3 tokens will be used as collateral for the on-chain coverage service
+that will provide quantifiable and trustless security guarantees to dAPI users.
+These mechanics will remove the need for a central authority at the ecosystem
+level. As a result, the API3 Project will allow smart contract platforms to
+leverage APIs for the building of meaningful applications in a truly
+decentralized and trust-minimized way.
 
-## CodeBlock component by VitePress
+## Communities
 
-<p>
-  <a href="/guides/providers/#advanced-manual-creation">Link</a> Talk about the API3 project.
+Join the API3 community on the following services.
 
-  <pre><code>
-  let j = 'abc';
-  l = undefined;
-  </code></pre>
-</p>
+- [API3 Forum](https://forum.api3.org/)
+- Community Chat on [Telegram](https://t.me/API3DAO)
+- Developer Chat on [Discord](https://discord.gg/qnRrcfnm5W)
+- [YouTube Channel](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
 
-Talk about the API3 project. Lorem ipsum dolor sit amet, consectetur adipiscing
-elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## GitHub
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Visit the [API3 GitHub](https://github.com/api3dao) page and find everything
+about.. everything. Explore the many repositories to gain in-depth knowledge
+about API3.
+
+- the whitepaper
+- source code
+- documentation
+- usage examples
+
+Please feel free to contribute to any API3 GitHub repositories.
+
+## Contributing
+
+At **API3** is open to any proposals and improvements. Please feel free to
+contribute.
+
+- opening issues
+- making pull requests
+- proposing features
+
+Read more about contributing in the
+[Contributing](./introduction/contributing.md) section.

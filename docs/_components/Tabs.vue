@@ -1,3 +1,5 @@
+<!-- https://github.com/Jacobs63/vue3-tabs-component -->
+
 <template>
   <div>
     <!-- Tabs -->
@@ -39,16 +41,17 @@ export default {
   mounted() {
     let tabChanged = false;
     this.$slots.default().forEach((element) => {
+      //console.log(element);
       if (element.el.innerText.indexOf('@tab:') > -1) {
         this.tabs.push(element.el.innerText.split(':')[1]);
         tabChanged = true;
       } else if (tabChanged === true) {
         this.content.push(element.el.outerHTML);
         tabChanged = false;
-        //console.log(element.el.outerHTML)
+        //console.log(element.el.outerHTML);
       } else {
         this.content[this.content.length - 1] += element.el.outerHTML;
-        //console.log(element.el.outerHTML)
+        //console.log(element.el.outerHTML);
       }
     });
     this.$nextTick(() => {

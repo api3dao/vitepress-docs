@@ -45,7 +45,10 @@
     "tokenomics",
     "collateralized",
     "Sokol",
-    "Moonbase"
+    "Moonbase",
+    "tabcontent",
+    "tablinks",
+    "vitepress"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true
