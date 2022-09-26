@@ -22,7 +22,7 @@
     "husky": "^8.0.1",
     "markdown-it": "^13.0.1",
     "prettier": "^2.7.1",
-    "vitepress": "^1.0.0-alpha.15",
+    "vitepress": "^1.0.0-alpha.16",
     "vue": "^3.2.38"
   }
 }
