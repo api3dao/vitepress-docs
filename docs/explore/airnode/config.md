@@ -14,13 +14,13 @@ on-chain requester. It is defined by a file named
 [config.json](../reference/airnode/deployment-files/config-json.md/).
 
 The diagrams below illustrate the required components to successfully deploy an
-Airnode to AWS, GCP or a Docker Container.
+Airnode to AWS, GCP, or a Docker Container.
 
-<tabs>
+<Tabs>
 
 @tab:AWS
 
-<img src="/api-provider-overview-aws.png" style="width:450px;">
+<img src="/api-provider-overview-aws.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. The OIS object is
    important as it maps an API to Airnode endpoints.
@@ -30,7 +30,7 @@ Airnode to AWS, GCP or a Docker Container.
 
 @tab:GCP
 
-<img src="/api-provider-overview-gcp.png" style="width:450px;">
+<img src="/api-provider-overview-gcp.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. The OIS object is
    important as it maps an API to Airnode endpoints.
@@ -39,7 +39,7 @@ Airnode to AWS, GCP or a Docker Container.
 
 @tab:Container
 
-<img src="/api-provider-overview-container.png" style="width:450px;">
+<img src="/api-provider-overview-container.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. The OIS object is
    important as it maps an API to Airnode endpoints.

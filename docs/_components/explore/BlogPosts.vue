@@ -2,23 +2,24 @@
   This component displays Medium blog posts.
   It loads the titles from blog-posts.json which 
   must be updated on a regular basis.
+
+  @params
+    show: byCategories or byDates
 -->
 
 <template>
   <div>
-    <PillButtons :pillLabels="pillLabels" :callback="setListDisplayed" />
-
     <div
       style="
-        border-left: solid lightgrey 1px;
         border-color: lightgrey;
         padding: 11px 7px 5px 15px;
         margin-top: -16px;
       "
     >
+      <br />
       <!-- By Group -->
       <div
-        v-show="showGroup === 0"
+        v-show="show === 'byCategories'"
         v-for="(item, index) in medium"
         :key="index"
       >
@@ -36,7 +37,7 @@
       <!-- By Date -->
       <div>
         <div
-          v-show="showGroup === 1"
+          v-show="show === 'byDates'"
           class="medium-link"
           v-for="(post, i) in mediumByDate"
           :key="'A' + i"
@@ -54,11 +55,10 @@ import { medium } from './blog-posts.json';
 
 export default {
   name: 'BlogPosts',
+  props: ['show'], // byCategories or byDates
   data: () => ({
     medium: medium,
     mediumByDate: [],
-    pillLabels: ['By category', 'By date'],
-    showGroup: 0,
   }),
   mounted() {
     this.arr = medium;
@@ -70,9 +70,6 @@ export default {
     this.mediumByDate.sort(this.sortByDate);
   },
   methods: {
-    setListDisplayed(position) {
-      this.showGroup = position;
-    },
     sortByDate(a, b) {
       if (a.dt > b.dt) {
         return -1;
