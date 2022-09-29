@@ -3,6 +3,7 @@ export default {
   description: 'Just playing around.',
   markdown: {
     lineNumbers: true,
+    toc: ['h2', 'h3', 'h4', 'h5'],
   },
   appearance: true,
   ignoreDeadLinks: true,
@@ -66,8 +67,9 @@ export default {
     },
     sidebar: {
       '/explore/': require('../explore/sidebar.js'),
-      '/guides/developers/': require('../guides/developers/sidebar.js'),
-      '/guides/providers/': require('../guides/providers/sidebar.js'),
+      '/guides/': require('../guides/sidebar.js'),
+      //'/guides/developers/': require('../guides/developers/sidebar.js'),
+      //'/guides/providers/': require('../guides/providers/sidebar.js'),
       '/reference/airnode/v0.8/': require('../reference/airnode/v0.8/sidebar.js'),
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/airnode/v0.6/': require('../reference/airnode/v0.6/sidebar.js'),
@@ -93,13 +95,14 @@ function nav() {
   return [
     { text: 'Home', link: '/' },
     { text: 'Explore', link: '/explore/', activeMatch: '/explore/.*' },
-    {
+    { text: 'Guides', link: '/guides/', activeMatch: '/guides/.*' },
+    /*{
       text: 'Guides',
       items: [
         { text: 'dAPP Developers', link: '/guides/developers/' },
         { text: 'API Providers', link: '/guides/providers/' },
       ],
-    },
+    },*/
     {
       text: 'Reference',
       items: [
