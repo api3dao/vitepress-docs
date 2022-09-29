@@ -1,21 +1,21 @@
 ---
 lang: en-US
-title: Deploy Airnode to AWS
-description:
+title: Deploy an API Integration
+folder: Explore
+basePath: /guides/providers
+description: Description of this page
 sidebarHeader: Guides
-sidebarSubHeader: → API Providers
+sidebarSection: ChainAPI
 home: false
-head:
-  - - meta
-    - name: foo
-      content: bar
-  - - link
-    - rel: canonical
-      href: foobar
-  - - script
-    - {}
-    - console.log('hello from frontmatter');
+tags:
+  - chainapi
+  - integrate
+  - deploy
+  - config.json
+  - config
 ---
+
+→ {{$frontmatter.sidebarSection}}
 
 # {{$frontmatter.title}}
 
@@ -25,10 +25,3 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
-
-## Getting started
-
-There are two methods used to create the configuration file for an Airnode.
-
-- ChainAPI
-- Manually

@@ -39,6 +39,7 @@ const { hasSidebar } = useSidebar();
 
       <div class="content">
         <slot name="nav-bar-content-before" />
+        <!-- wkande Sep, 2022 comment out default search -->
         <!--VPNavBarSearch class="search" /-->
         <VPNavBarMenu class="menu" />
         <!-- wkande Sep, 2022 added custom search -->

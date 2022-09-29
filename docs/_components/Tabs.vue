@@ -46,7 +46,7 @@ Example:
 
 <script>
 export default {
-  name: 'Test',
+  name: 'Tabs',
   data: () => ({
     tabs: [],
     knownElements: ['div', 'p', 'img', 'ol', 'ul'],
@@ -54,14 +54,14 @@ export default {
 
   mounted() {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
-    console.log('+++++++ BEGIN LOOP +++++++');
-    console.log(this.knownElements);
+    //console.log('+++++++ BEGIN LOOP +++++++');
+    //console.log(this.knownElements);
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      console.log(i, element);
+      //console.log(i, element);
       // tabs
       if (element.children && element.children.indexOf('@tab:') === 0) {
-        console.log('Is a tab');
+        //console.log('Is a tab');
         const arr = element.el.innerText.split(':'); // tabId @tab:<label>
         const random = Math.random().toString(36).slice(2, 9);
         const tab = { id: random, label: arr[1], elements: [] };
@@ -72,7 +72,7 @@ export default {
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
-        console.log('Is a known element:', element.type);
+        //console.log('Is a known element:', element.type);
         const type = element.type;
         const random = Math.random().toString(36).slice(2, 9);
         element.el.outerHTML = element.el.outerHTML.replace(
@@ -83,10 +83,10 @@ export default {
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
-        console.log('is Vue component');
+        //console.log('is Vue component');
         this.tabs[currentTabIndex].elements.push(element.props.id);
       }
-      console.log('-------------------');
+      // console.log('-------------------');
     }
     this.$nextTick(() => {
       this.openTab(this.tabs[0]);
@@ -94,17 +94,17 @@ export default {
   },
   methods: {
     openTab(tab) {
-      console.log('openTab', tab);
-      console.log(this.tabs);
+      //console.log('openTab', tab);
+      //console.log(this.tabs);
       // Hide all elements
       for (let i = 0; i < this.tabs.length; i++) {
         const elements = this.tabs[i].elements;
-        console.log(22, elements);
+        //console.log(22, elements);
         for (let x = 0; x < elements.length; x++) {
-          console.log(22.1, elements[x]);
-          console.log(22.2, document.getElementById(elements[x]));
+          //console.log(22.1, elements[x]);
+          //console.log(22.2, document.getElementById(elements[x]));
           document.getElementById(elements[x]).style.display = 'none';
-          console.log(22.2, 'end');
+          //console.log(22.2, 'end');
         }
       }
       // Show elements of tab passed

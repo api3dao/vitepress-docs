@@ -2,19 +2,17 @@
 lang: en-US
 title: Calling a dAPI
 sidebarHeader: Guides
-sidebarSubHeader: → dAPP Developers
+sidebarSection: dAPIs
 description:
 folder: Guides
-head:
-  - - meta
-    - name: foo
-      content: bar
-  - - link
-    - rel: canonical
-      href: foobar
+tags:
+  - dapi
+  - dpais
+  - datafeed
+  - data feed
 ---
 
-<!--TitleSpan>{{$frontmatter.sidebarHeader}}</TitleSpan-->
+→ {{$frontmatter.sidebarSection}}
 
 # {{$frontmatter.title}}
 
