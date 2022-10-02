@@ -33,18 +33,18 @@
 
 <script>
 export default {
-  name: 'Tabs',
+  name: 'TabsOld',
   data: () => ({
     tabs: [],
     content: [],
   }),
   mounted() {
     let tabChanged = false;
-    console.log('this.$slots', this.$slots);
+    //console.log('this.$slots', this.$slots);
     this.$slots.default().forEach((element) => {
-      console.log('>', element);
+      //console.log('>', element);
       if (!element.el) {
-        console.log(' A sub component here');
+        //console.log(' A sub component here');
         this.content.push(element);
       } else if (element.el.innerText.indexOf('@tab:') > -1) {
         this.tabs.push(element.el.innerText.split(':')[1]);
@@ -52,10 +52,10 @@ export default {
       } else if (tabChanged === true) {
         this.content.push(element.el.outerHTML);
         tabChanged = false;
-        console.log(1, element.el);
+        //console.log(1, element.el);
       } else {
         this.content[this.content.length - 1] += element.el.outerHTML;
-        console.log(2, element.el.innerText);
+        //console.log(2, element.el.innerText);
       }
     });
     this.$nextTick(() => {

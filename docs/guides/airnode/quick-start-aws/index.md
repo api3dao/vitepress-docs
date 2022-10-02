@@ -14,8 +14,8 @@ outline: deep
 # {{$frontmatter.title}}
 
 This demo is a simple Airnode deployment, using a hands-on approach, to better
-understand the overall deployment process of the Airnode
-[deployer image](../../../grp-providers/docker/deployer-image.md) which deploys
+understand the overall deployment process of the Airnode -[deployer
+image]-<!--(../../../grp-providers/docker/deployer-image.md)--> which deploys
 the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an API
 endpoint (`GET /simple/price`) from
 [CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
@@ -24,8 +24,8 @@ an Airnode, it is just a quick start.
 
 ## Deployment Files
 
-An Airnode cloud provider deployment uses a Docker image (called
-[deployer image](../../../grp-providers/docker/deployer-image.md)) which in turn
+An Airnode cloud provider deployment uses a Docker image (called -[deployer
+image]-<!--(../../../grp-providers/docker/deployer-image.md)-->) which in turn
 requires three files as input.
 
 - [config.json](#config-json)
@@ -167,7 +167,7 @@ href="https://en.wikipedia.org/wiki/Group_identifier" target="\_blank"> GID
 environment variables USER_ID and GROUP_ID, otherwise omit the line containing
 the variables.
 
-<Tabs>
+<!--Tabs>
 
 @tab:Linux/Mac/WSL2
 
@@ -188,7 +188,7 @@ docker run -it --rm ^
   api3/airnode-deployer:0.10.0 deploy
 ```
 
-</Tabs>
+</Tabs-->
 
 ## Test the Airnode
 
@@ -268,7 +268,7 @@ URL:
 
 #### Request
 
-<Tabs>
+<!--Tabs>
 
 @tab:Linux/Mac/WSL2
 
@@ -290,7 +290,7 @@ curl -v ^
 "<httpGatewayUrl>/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6"
 ```
 
-</Tabs>
+</Tabs-->
 
 <br/>
 
@@ -316,7 +316,7 @@ When you are done with this demo you can remove the deployed Airnode. The
 following command uses the `receipt.json` file that was created when the Airnode
 was deployed.
 
-<Tabs>
+<!--Tabs>
 
 @tab:Linux/Mac/WSL2
 
@@ -336,7 +336,7 @@ docker run -it --rm ^
   api3/airnode-deployer:0.10.0 remove-with-receipt
 ```
 
-</Tabs>
+</Tabs-->
 
 ## Summary
 

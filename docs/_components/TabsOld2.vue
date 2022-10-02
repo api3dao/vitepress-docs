@@ -21,16 +21,9 @@ Example:
 -->
 
 <template>
-  <table style="display: none">
-    <tr>
-      <td>
-        <slot></slot>
-      </td>
-    </tr>
-  </table>
-
   <!-- Tabs -->
   <div class="tab">
+    <div v-html="test" />
     <button
       :id="tab.id"
       v-for="(tab, index) in tabs"
@@ -40,7 +33,6 @@ Example:
       {{ tab.label }}
     </button>
   </div>
-
   <div
     style="
       padding: 7px;
@@ -49,19 +41,15 @@ Example:
       border-radius: 7px;
     "
   >
-    <div :id="tab.paneId" v-for="(tab, index) in tabs" :key="index">
-      <div
-        v-for="(element, index) in tab.elements"
-        :key="index"
-        v-html="element"
-      ></div>
-    </div>
+    <slot></slot>
   </div>
 </template>
 
 <script>
+import BlogPosts from './explore/BlogPosts.vue';
+
 export default {
-  name: 'Tabs',
+  name: 'TabsOld2',
   data: () => ({
     tabs: [],
     knownElements: ['div', 'p', 'img', 'ol', 'ul'],
@@ -69,60 +57,77 @@ export default {
   }),
 
   mounted() {
+    //console.log('----- SLOTs -----');
+    //console.log(BlogPosts.outerHTML);
+    //console.log(this.$slots);
     let currentTabIndex; // local only, to track the index of the tab to add its elements
+    //console.log('+++++++ BEGIN LOOP +++++++');
+    //console.log(this.knownElements);
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      //console.log('\n-------------------------------------------', i, element);
+      //console.log(1, i, element);
       // tabs
       if (element.children && element.children.indexOf('@tab:') === 0) {
-        //console.log('NEW TAB');
+        //console.log(2, 'Is a tab');
         const arr = element.children.split(':'); // tabId @tab:<label>
-        const tabId = Math.random().toString(36).slice(2, 9);
-        const paneId = Math.random().toString(36).slice(2, 9);
-        const tab = {
-          id: tabId,
-          label: arr[1],
-          elements: [],
-          paneId: paneId,
-        };
+        const random = Math.random().toString(36).slice(2, 9);
+        const tab = { id: random, label: arr[1], elements: [] };
         this.tabs.push(tab);
         currentTabIndex = this.tabs.length - 1;
-        //console.log(tab);
-        //element.el.outerHTML = '';
-        //element.el.innerText = '';
+        element.el.outerHTML = '';
+        element.el.innerText = '';
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
         //console.log(3, 'Is a known element:', element.type);
-        //console.log('>>>', element.el.outerHTML);
+        const type = element.type;
         const random = Math.random().toString(36).slice(2, 9);
-        this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
-        //console.log('>>>', this.tabs[currentTabIndex]);
+        //console.log(3.1, element.el.outerHTML);
+        this.test += element.el.outerHTML;
+        element.el.outerHTML = element.el.outerHTML.replace(
+          '<' + type,
+          '<' + type + ' style="display:none;" id="' + random + '" '
+        );
+        //console.log(3.2);
+        this.tabs[currentTabIndex].elements.push(random);
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
-        //console.log(4, 'is Vue component', element.$el);
+        console.log(4, 'is Vue component', element.$el);
         this.tabs[currentTabIndex].elements.push(element.props.id);
       }
+      //console.log('-------------------');
     }
-    //console.log('ALL TABS >', this.tabs);
-    //console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END TAB LOOP');
+    //console.log('>>> END TAB LOOP');
     this.$nextTick(() => {
       this.openTab(this.tabs[0]);
     });
   },
   methods: {
     openTab(tab) {
-      // Hide all paneIds
+      console.log('openTab', tab);
+      console.log(this.tabs);
+      //console.log(this.tabs);
+      // Hide all elements
       for (let i = 0; i < this.tabs.length; i++) {
-        document.getElementById(this.tabs[i].paneId).style.display = 'none';
+        const elements = this.tabs[i].elements;
+        //console.log(22, elements);
+        for (let x = 0; x < elements.length; x++) {
+          //console.log(22.1, elements[x]);
+          //console.log(22.2, document.getElementById(elements[x]));
+          document.getElementById(elements[x]).style.display = 'none';
+          //console.log(22.2, 'end');
+        }
       }
-      // Show the tab's pane
-      document.getElementById(tab.paneId).style.display = 'block';
+      // Show elements of tab passed
+      for (let i = 0; i < tab.elements.length; i++) {
+        document.getElementById(tab.elements[i]).style.display = 'block';
+      }
       // Clear check mark from tabs
       for (let i = 0; i < this.tabs.length; i++) {
         document.getElementById(this.tabs[i].id).innerText = this.tabs[i].label;
       }
+
       // Set check mark to active tab
       document.getElementById(tab.id).innerText = '✔︎ ' + tab.label;
     },
