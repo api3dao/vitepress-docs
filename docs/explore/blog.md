@@ -19,14 +19,14 @@ moves forward. You can find all our blog posts on
 [API3 Medium](https://medium.com/api3) or on
 [Benligiray Medium](https://bbenligiray.medium.com).
 
-<TabsOld2>
+<Tabs>
 
 @tab:By Category
 
-<BlogPosts show="byCategories" id="tab2-blog-post-1"/>
+<BlogPosts show="byCategories"/>
 
 @tab:By Date
 
-<BlogPosts show="byDates" id="tab2-blog-post-2"/>
+<BlogPosts show="byDates"/>
 
-</TabsOld2>
+</Tabs>
