@@ -7,7 +7,7 @@ feel free to contribute or make suggestions.
 
 Firebase is used to host the technical documentation.
 
-- production: https://vitepress-docs--stage-n82mb5tu.web.app
+- production: https://vitepress-docs.web.app
 - staging: https://vitepress-docs--stage-n82mb5tu.web.app
 
 ## VitePress
