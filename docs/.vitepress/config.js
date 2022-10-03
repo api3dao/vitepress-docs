@@ -81,6 +81,7 @@ export default {
       '/reference/ois/v1.1/': require('../reference/ois/v1.1/sidebar.js'),
       '/reference/ois/v1.0/': require('../reference/ois/v1.0/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
+      '/dev/': require('../dev/sidebar.js'),
     },
     nav: nav(),
     algolia: {

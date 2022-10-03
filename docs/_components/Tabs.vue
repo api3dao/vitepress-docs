@@ -1,23 +1,12 @@
 <!--
 Tab set for all pages. Uses the default slot. Any child 
-Vue Components in hte slot must contain their own ID unique 
-to the page it is on.
+Vue Components in the slot must be added to the template 
+below.
 
-@params: none
 
-Example:
-
-    <Tabs>
-
-    @tab:By Category
-
-    <BlogPosts show="byCategories" id="tab2-blog-post-1"/>
-
-    @tab:By Date
-
-    <BlogPosts show="byDates" id="tab2-blog-post-2"/>
-
-    </Tabs>
+knownElements: ['div', 'p', 'img', 'ol', 'ul', 'table']
+All HTML elements that are used need to be added to knownElements.
+Otherwise they are ignored.
 -->
 
 <template>
@@ -50,11 +39,18 @@ Example:
     "
   >
     <div :id="tab.paneId" v-for="(tab, index) in tabs" :key="index">
-      <div
-        v-for="(element, index) in tab.elements"
-        :key="index"
-        v-html="element"
-      ></div>
+      <div v-for="(element, index) in tab.elements" :key="index">
+        <div v-if="element.toString().startsWith('<')" v-html="element"></div>
+
+        <!-- Start components listing here -->
+        <!-- BlogPosts has 1 prop: show-->
+        <BlogPosts
+          v-else-if="element.name === 'BlogPosts'"
+          :show="element.propsObj['show']"
+        >
+        </BlogPosts>
+        <!-- End of components listing -->
+      </div>
     </div>
   </div>
 </template>
@@ -64,18 +60,15 @@ export default {
   name: 'Tabs',
   data: () => ({
     tabs: [],
-    knownElements: ['div', 'p', 'img', 'ol', 'ul'],
-    test: 'Blog: ',
+    knownElements: ['div', 'p', 'img', 'ol', 'ul', 'table'],
   }),
 
   mounted() {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      //console.log('\n-------------------------------------------', i, element);
-      // tabs
+      //console.log(1, element);
       if (element.children && element.children.indexOf('@tab:') === 0) {
-        //console.log('NEW TAB');
         const arr = element.children.split(':'); // tabId @tab:<label>
         const tabId = Math.random().toString(36).slice(2, 9);
         const paneId = Math.random().toString(36).slice(2, 9);
@@ -87,26 +80,21 @@ export default {
         };
         this.tabs.push(tab);
         currentTabIndex = this.tabs.length - 1;
-        //console.log(tab);
-        //element.el.outerHTML = '';
-        //element.el.innerText = '';
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
         //console.log(3, 'Is a known element:', element.type);
-        //console.log('>>>', element.el.outerHTML);
         const random = Math.random().toString(36).slice(2, 9);
         this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
-        //console.log('>>>', this.tabs[currentTabIndex]);
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
-        //console.log(4, 'is Vue component', element.$el);
-        this.tabs[currentTabIndex].elements.push(element.props.id);
+        //console.log(4, 'is Vue component', element);
+        element.type.propsObj = element.props;
+        this.tabs[currentTabIndex].elements.push(element.type);
       }
     }
     //console.log('ALL TABS >', this.tabs);
-    //console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END TAB LOOP');
     this.$nextTick(() => {
       this.openTab(this.tabs[0]);
     });
