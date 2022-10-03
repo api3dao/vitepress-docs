@@ -19,7 +19,7 @@ moves forward. You can find all our blog posts on
 [API3 Medium](https://medium.com/api3) or on
 [Benligiray Medium](https://bbenligiray.medium.com).
 
-<Tabs>
+<TabsOld2>
 
 @tab:By Category
 
@@ -29,4 +29,4 @@ moves forward. You can find all our blog posts on
 
 <BlogPosts show="byDates" id="tab2-blog-post-2"/>
 
-</Tabs>
+</TabsOld2>

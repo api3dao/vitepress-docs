@@ -14,8 +14,8 @@ outline: deep
 # {{$frontmatter.title}}
 
 This demo is a simple Airnode deployment, using a hands-on approach, to better
-understand the overall deployment process of the Airnode
-[deployer image](../../../grp-providers/docker/deployer-image.md) which deploys
+understand the overall deployment process of the Airnode -[deployer
+image]-<!--(../../../grp-providers/docker/deployer-image.md)--> which deploys
 the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an API
 endpoint (`GET /simple/price`) from
 [CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
@@ -24,8 +24,8 @@ an Airnode, it is just a quick start.
 
 ## Deployment Files
 
-An Airnode cloud provider deployment uses a Docker image (called
-[deployer image](../../../grp-providers/docker/deployer-image.md)) which in turn
+An Airnode cloud provider deployment uses a Docker image (called -[deployer
+image]-<!--(../../../grp-providers/docker/deployer-image.md)-->) which in turn
 requires three files as input.
 
 - [config.json](#config-json)
