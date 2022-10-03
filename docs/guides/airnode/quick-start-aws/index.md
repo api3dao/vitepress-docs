@@ -50,7 +50,7 @@ a zip file ready to go.
 
 @tab:Download
 
-Download the <a href="./src/quick-start-aws-v0.10.zip" download>
+Download the <a href="/zip-files/quick-start-aws-v0.10.zip" download>
 quick-start-aws</a> project folder.
 
 @tab:Create Manually
