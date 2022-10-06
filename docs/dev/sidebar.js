@@ -2,6 +2,11 @@ module.exports = [
   {
     text: '',
     collapsible: false,
-    items: [{ text: 'Branch - live-site ', link: '/dev/live-site' }],
+    items: [
+      { text: 'Overview', link: '/dev/' },
+      { text: 'DocSets', link: '/dev/docsets' },
+      { text: 'Firebase', link: '/dev/firebase' },
+      { text: 'Frontmatter', link: '/dev/frontmatter' },
+    ],
   },
 ];

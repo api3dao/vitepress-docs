@@ -199,10 +199,7 @@ export default {
   },
 
   mounted() {
-    console.log('========== MOUNTED SEARCH +++++++++++++');
-    console.log(this.basePaths);
     //this.setPath();
-
     // Is the path in basePaths? The user "discovered" a hidden path.
     // Only valid for the life of the SPA. Each time the user types into
     // The browser URL bar the SPA reloads and this goes away.

@@ -2,7 +2,7 @@
 lang: en-US
 title: Deploy an API Integration
 folder: Explore
-basePath: /guides/providers
+basePath: /guides/chainapi/
 description: Description of this page
 sidebarHeader: Guides
 sidebarSection: ChainAPI

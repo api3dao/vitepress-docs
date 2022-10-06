@@ -68,27 +68,18 @@ export default {
     sidebar: {
       '/explore/': require('../explore/sidebar.js'),
       '/guides/': require('../guides/sidebar.js'),
-      //'/guides/developers/': require('../guides/developers/sidebar.js'),
-      //'/guides/providers/': require('../guides/providers/sidebar.js'),
-      '/reference/airnode/v0.8/': require('../reference/airnode/v0.8/sidebar.js'),
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
-      '/reference/airnode/v0.6/': require('../reference/airnode/v0.6/sidebar.js'),
-      '/reference/airnode/v0.5/': require('../reference/airnode/v0.5/sidebar.js'),
-      '/reference/airnode/v0.4/': require('../reference/airnode/v0.4/sidebar.js'),
-      '/reference/airnode/v0.3/': require('../reference/airnode/v0.3/sidebar.js'),
-      '/reference/airnode/v0.2/': require('../reference/airnode/v0.2/sidebar.js'),
-      '/reference/airnode/pre-alpha/': require('../reference/airnode/pre-alpha/sidebar.js'),
-      '/reference/ois/v1.1/': require('../reference/ois/v1.1/sidebar.js'),
+      '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
       '/reference/ois/v1.0/': require('../reference/ois/v1.0/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
     },
     nav: nav(),
-    algolia: {
+    /*algolia: {
       appId: 'x',
       apiKey: 'x',
       indexName: 'me',
-    },
+    },*/
   },
 };
 
@@ -97,19 +88,12 @@ function nav() {
     { text: 'Home', link: '/' },
     { text: 'Explore', link: '/explore/', activeMatch: '/explore/.*' },
     { text: 'Guides', link: '/guides/', activeMatch: '/guides/.*' },
-    /*{
-      text: 'Guides',
-      items: [
-        { text: 'dAPP Developers', link: '/guides/developers/' },
-        { text: 'API Providers', link: '/guides/providers/' },
-      ],
-    },*/
     {
       text: 'Reference',
       items: [
         { text: 'dAPIs', link: '/reference/dapis/introduction/api3-market.md' },
         { text: 'Airnode', link: '/reference/airnode/latest/' },
-        { text: 'OIS', link: '/reference/ois/v1.1/' },
+        { text: 'OIS', link: '/reference/ois/latest/' },
       ],
     },
   ];

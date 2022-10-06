@@ -9,6 +9,8 @@ import JobsEmailAddress from '../../_components/explore/JobsEmailAddress.vue';
 import TutorialResponse from '../../_components/guides/TutorialResponse.vue';
 import WarningSimultaneousDeployments from '../../_components/guides/WarningSimultaneousDeployments.vue';
 import DeployerPermissionsWarning from '../../_components/guides/DeployerPermissionsWarning.vue';
+import VersionWarning from '../../_components/VersionWarning.vue';
+import PageHeader from '../../_components/PageHeader.vue';
 
 export default {
   ...DefaultTheme,
@@ -26,6 +28,8 @@ export default {
       WarningSimultaneousDeployments
     );
     app.component('DeployerPermissionsWarning', DeployerPermissionsWarning);
+    app.component('VersionWarning', VersionWarning);
+    app.component('PageHeader', PageHeader);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

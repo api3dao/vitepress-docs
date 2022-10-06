@@ -11,23 +11,26 @@ module.exports = [
     ],
   },
   {
-    text: 'AIRNODE EXPLAINED',
+    text: 'Understanding Airnode',
+    collapsable: false,
+    items: [
+      {
+        text: 'Overview',
+        link: '/reference/airnode/latest/understand/',
+      },
+      {
+        text: 'API Integration',
+        link: '/reference/airnode/latest/understand/api-integration',
+      },
+    ],
+  },
+  {
+    text: 'Deployment Files',
     collapsable: false,
     items: [],
   },
   {
-    text: 'DEPLOYMENT FILES',
-    collapsable: false,
-    items: [
-      //{'text': 'ssd', 'link':'/reference/airnode/latest/deployment-files/'},
-      /*'/reference/airnode/latest/deployment-files/config-json.md', 
-        '/reference/airnode/latest/deployment-files/secrets-env.md', 
-        '/reference/airnode/latest/deployment-files/aws-env.md', 
-        '/reference/airnode/latest/deployment-files/receipt-json.md', */
-    ],
-  },
-  {
-    text: 'CLOUD PROVIDERS',
+    text: 'Cloud Providers',
     collapsable: false,
     items: [
       //{'text': 'ssd', 'link':'/reference/airnode/latest/deployment-files/'},

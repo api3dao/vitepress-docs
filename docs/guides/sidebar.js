@@ -5,7 +5,7 @@ module.exports = [
     items: [{ text: 'About the Guides', link: '/guides/' }],
   },
   {
-    text: 'CHAINAPI',
+    text: 'ChainAPI',
     collapsable: false,
     items: [
       {
@@ -19,7 +19,7 @@ module.exports = [
     ],
   },
   {
-    text: 'AIRNODE',
+    text: 'Airnode',
     collapsable: false,
     items: [
       {
@@ -52,7 +52,7 @@ module.exports = [
     items: [],
   },
   {
-    text: 'DAO MEMBERS',
+    text: 'DAO Members',
     collapsable: false,
     items: [],
   },

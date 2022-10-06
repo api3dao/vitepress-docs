@@ -1,7 +1,7 @@
 ---
 title: API3 Market
 sidebarHeader: Reference
-sidebarSubHeader: → dAPIs
+sidebarSubHeader: dAPIs
 ---
 
 # {{$frontmatter.title}}

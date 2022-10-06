@@ -2,12 +2,16 @@
 lang: en-US
 title: ChangeLog
 sidebarHeader: Reference
-sidebarSubHeader: → Airnode
+sidebarSubHeader: Airnode
 ---
+
+<VersionWarning/>
+
+<PageHeader>v1.0</PageHeader>
 
 # {{$frontmatter.title}}
 
 Top level README file for all Airnode versions might be the ChangeLog. The
 README file is always the top page in the sidebar.
 
-## v0.7 (latest)
+## v1.0

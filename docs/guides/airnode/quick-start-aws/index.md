@@ -5,7 +5,7 @@ sidebarHeader: Guides
 sidebarSection: Airnode
 description:
 folder: Guides
-basePath: /guides
+basePath: /guides/airnode/
 outline: deep
 ---
 

@@ -32,18 +32,20 @@ async function getAllFiles(dirPath, arrayOfFiles) {
 async function getFrontmatter(dirPath) {
   for (i = 0; i < mdFiles.length; i++) {
     const file = mdFiles[i];
-    //console.log(111, file);
+    console.log('>', file);
     try {
       let f = await fsp.readFile(file, 'utf8');
       let frontmatter = {};
-      frontmatter.title = matter(f).data.title.toLowerCase();
-      frontmatter.sidebarHeader = matter(f).data.sidebarHeader.toLowerCase();
+      if (matter(f).data.title.toLowerCase())
+        frontmatter.title = matter(f).data.title;
+      if (matter(f).data.sidebarHeader)
+        frontmatter.sidebarHeader = matter(f).data.sidebarHeader.toLowerCase();
 
       frontmatter.path = file;
       frontmatterArray.push(frontmatter);
       await validate(frontmatter);
     } catch (err) {
-      console.log(err);
+      console.log('>>>', err);
     }
   }
 }

@@ -2,7 +2,7 @@
 lang: en-US
 title: Quick Start Docker Container
 folder: Explore
-basePath: /guides/providers
+basePath: /guides/airnode/
 description:
 sidebarHeader: Guides
 sidebarSection: Airnode

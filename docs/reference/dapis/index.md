@@ -1,7 +1,7 @@
 ---
 title: What are dAPIs?
 sidebarHeader: Reference
-sidebarSubHeader: → dAPIs
+sidebarSubHeader: dAPIs
 ---
 
 # {{$frontmatter.title}}
