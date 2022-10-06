@@ -1,7 +1,7 @@
 ---
 title: Reserved Parameters
 sidebarHeader: Reference → OIS v1.1
-basePath: /reference/ois/v1.1
+basePath: /reference/ois/latest/
 tags:
 ---
 

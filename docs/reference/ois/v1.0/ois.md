@@ -1,8 +1,9 @@
 ---
 title: Specification
 docSetName: OIS v1.0
-sidebarHeader: Reference → OIS v1.0
-basePath: /ois/v1.0
+sidebarHeader: Reference\
+sidebarSubHeader:
+basePath: /ois/v1.0/
 tags:
 rightAnchor:
   showDepth: 1
@@ -12,13 +13,11 @@ rightAnchor:
   disableGlobalUI: false
 ---
 
+<VersionWarning/>
+
+<PageHeader>v1.0</PageHeader>
+
 # {{$frontmatter.title}}
-
-<!--TocHeader /-->
-
-<!--Toc/-->
-
-<!--TOC class="table-of-contents" :include-level="[2,5]" /-->
 
 The Oracle Integration Specification (OIS) is based on
 [Open API specification (OAS)](https://swagger.io/specification/), but there are

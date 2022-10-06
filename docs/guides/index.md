@@ -1,10 +1,15 @@
 ---
-lang: en-US
 title: About the Guides
 sidebarHeader: Guides
-description:
-folder: Guides
+sidebarSubHeader:
+basePath: /guides/
+outline: deep
+tags:
+  - chainapi
+  - airnode
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

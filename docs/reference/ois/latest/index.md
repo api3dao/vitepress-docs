@@ -1,10 +1,14 @@
 ---
 title: Understanding OIS
 sidebarHeader: Reference
-sidebarSubHeader: → OIS
-basePath: /reference/ois/v1.1
+sidebarSubHeader: OIS
+basePath: /reference/ois/latest/
 tags:
 ---
+
+<VersionWarning/>
+
+<PageHeader>v1.2</PageHeader>
 
 # {{$frontmatter.title}}
 

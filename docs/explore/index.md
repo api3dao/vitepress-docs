@@ -2,7 +2,7 @@
 title: About our Journey!
 lang: en-US
 folder: Explore
-basePath: /explore
+basePath: /explore/
 sidebarHeader: Explore
 tags:
   - api3
@@ -11,6 +11,8 @@ tags:
   - autonomous
   - dao
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
