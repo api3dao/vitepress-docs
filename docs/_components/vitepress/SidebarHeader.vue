@@ -1,9 +1,10 @@
 <template>
   <div style="font-weight: 400; font-size: large">
     <span style="font-size: small">📂</span> {{ text }}
-    <div style="margin-left: 9px; font-size: small" v-show="subText">
+    <div style="font-size: small; margin-left: 25px" v-show="subText">
       {{ subText }} <VersionPicklist v-show="show" />
     </div>
+    <div style="margin-top: 5px; border-bottom: solid 1px gray" />
   </div>
 </template>
 
@@ -17,11 +18,9 @@ export default {
     text: undefined,
     subText: undefined,
     show: undefined,
-    //api3_navbarGuidesBtn: undefined,
     api3_navbarReferenceBtn: undefined,
   }),
   mounted() {
-    console.log('===== SidebarHeader MOUNTED =====');
     const { page } = useData();
     const { path } = useRoute();
     this.showVersions(path);
@@ -43,20 +42,16 @@ export default {
        * api3_navbarReferenceBtn might have been returned to null so thus the first check below.
        */
       if (!this.api3_navbarReferenceBtn) {
-        //this.api3_navbarGuidesBtn = document.getElementById('api3_Guides_Menu');
         this.api3_navbarReferenceBtn = document.getElementById(
           'api3_Reference_Menu'
         );
       }
 
-      //this.api3_navbarGuidesBtn.style.color = '';
       this.api3_navbarReferenceBtn.style.color = '';
 
       if (relativePath.indexOf('reference/') === 0) {
         this.api3_navbarReferenceBtn.style.color = '#42b883';
-      } /*else if (relativePath.indexOf('guides/') === 0) {
-        this.api3_navbarGuidesBtn.style.color = '#42b883';
-      }*/
+      }
     },
     showVersions(path) {
       if (
@@ -64,7 +59,9 @@ export default {
         path.indexOf('reference/ois/') > -1
       ) {
         this.show = true;
-      } else this.show = undefined;
+      } else {
+        this.show = undefined;
+      }
     },
     setHeader(frontmatter) {
       this.text = frontmatter.sidebarHeader;

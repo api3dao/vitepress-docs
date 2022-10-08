@@ -3,8 +3,7 @@ lang: en-US
 title: Calling a dAPI
 sidebarHeader: Guides
 sidebarSection: dAPIs
-description:
-folder: Guides
+basePath: /guides/dapis/
 tags:
   - dapi
   - dpais
