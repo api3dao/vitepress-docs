@@ -10,7 +10,7 @@ Otherwise they are ignored.
 -->
 
 <template>
-  <table style="display: none">
+  <table v-if="1 == 2" style="display: none">
     <tr>
       <td>
         <slot></slot>
@@ -40,16 +40,25 @@ Otherwise they are ignored.
   >
     <div :id="tab.paneId" v-for="(tab, index) in tabs" :key="index">
       <div v-for="(element, index) in tab.elements" :key="index">
+        ---{{ element.propsObj }} - {{ index }}---
         <div v-if="element.toString().startsWith('<')" v-html="element"></div>
 
         <!-- Start components listing here -->
-        <!-- BlogPosts has 1 prop: show-->
+        <!-- BlogPosts has 1 prop: show -->
         <BlogPosts
           v-else-if="element.name === 'BlogPosts'"
           :show="element.propsObj['show']"
         >
         </BlogPosts>
+        <!-- ContractAddresses has 2 props: type and contractName -->
+        <ContractAddresses
+          v-else-if="element.name === 'ContractAddresses'"
+          :type="element.propsObj['type']"
+          :contractName="element.propsObj['contractName']"
+        >
+        </ContractAddresses>
         <!-- End of components listing -->
+        ---{{ element.type }} - {{ index }}---
       </div>
     </div>
   </div>
@@ -89,11 +98,17 @@ export default {
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
-        //console.log(4, 'is Vue component', element);
         element.type.propsObj = element.props;
         this.tabs[currentTabIndex].elements.push(element.type);
+        // Mark the component for removal from the slot.
+        //element['api3-remove'] = true;
+        //this.$slots.default().splice(i, 1);
+        console.log(4, 'is Vue component', i, element);
       }
     }
+    console.log('--- END ---');
+    console.log(this.tabs);
+    //console.log(filtered);
     //console.log('ALL TABS >', this.tabs);
     this.$nextTick(() => {
       this.openTab(this.tabs[0]);

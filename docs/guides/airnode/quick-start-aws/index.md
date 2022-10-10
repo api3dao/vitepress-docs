@@ -94,9 +94,9 @@ Note that `nodeSetting.disableConcurrencyReservations` has been set to `true`.
 This is a precaution for new AWS accounts that have yet to address concurrency
 management. For production deployments, `disableConcurrencyReservations` should
 be set to `false`. See
-[disableConcurrencyReservations](../../guides/build-an-airnode/configuring-airnode.md#cloudprovider)
+[disableConcurrencyReservations](../../../reference/airnode/latest/understand/configuring-airnode.md#cloudprovider)
 under the `cloudProvider` key and
-[maxConcurrency](../../guides/build-an-airnode/configuring-airnode.md#maxconcurrency)
+[maxConcurrency](../../../reference/airnode/latest/understand/configuring-airnode.md#maxconcurrency)
 for more information.
 
 ### secrets.env
@@ -193,9 +193,9 @@ docker run -it --rm ^
 ## Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using the
-[HTTP Gateways](../../guides/build-an-airnode/http-gateways.md) without
-accessing the blockchain. You provide endpoint parameters to get a response from
-an integrated API.
+[HTTP Gateways](../../../reference/airnode/latest/understand/http-gateways.md)
+without accessing the blockchain. You provide endpoint parameters to get a
+response from an integrated API.
 
 ### HTTP Gateway
 
