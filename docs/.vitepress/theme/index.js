@@ -11,6 +11,11 @@ import WarningSimultaneousDeployments from '../../_components/guides/WarningSimu
 import DeployerPermissionsWarning from '../../_components/guides/DeployerPermissionsWarning.vue';
 import VersionWarning from '../../_components/VersionWarning.vue';
 import PageHeader from '../../_components/PageHeader.vue';
+import OisAirnodeVersions from '../../_components/reference/ois/OisAirnodeVersions.vue';
+import InfoBtnBlue from '../../_components/InfoBtnBlue.vue';
+import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
+import CopyIcon from '../../_components/CopyIcon.vue';
+import ContractAddresses from '../../_components/reference/airnode/ContractAddresses.vue';
 
 export default {
   ...DefaultTheme,
@@ -30,6 +35,11 @@ export default {
     app.component('DeployerPermissionsWarning', DeployerPermissionsWarning);
     app.component('VersionWarning', VersionWarning);
     app.component('PageHeader', PageHeader);
+    app.component('OisAirnodeVersions', OisAirnodeVersions);
+    app.component('InfoBtnBlue', InfoBtnBlue);
+    app.component('ExternalLinkImage', ExternalLinkImage);
+    app.component('CopyIcon', CopyIcon);
+    app.component('ContractAddresses', ContractAddresses);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

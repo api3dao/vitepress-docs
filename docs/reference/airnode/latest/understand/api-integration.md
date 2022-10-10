@@ -2,14 +2,14 @@
 title: API Integration
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/
+basePath: /airnode/latest/understand/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader/>
+<PageHeader>v1.0 → Understanding Airnode </PageHeader>
 
 # {{$frontmatter.title}}
 
@@ -26,7 +26,7 @@ the config.json file, that is designed to follow three basic steps.
 ><img src="../assets/images/api-integration-ois.png" width="600px">
 > <br/><br/>
 >
-> <p class="diagram-line">The OIS object in config.json contains mapping information of API operations to Airnode endpoint definitions.</p>
+> <p>The OIS object in config.json contains mapping information of API operations to Airnode endpoint definitions.</p>
 
 OIS is a mapping of API operations, such as `GET /coins/{id}`, to Airnode
 endpoints. When a requester contract calls a AirnodeRrpV0.sol contract request
@@ -427,4 +427,4 @@ directly, and let the requester provide all API operation parameters through the
 Airnode endpoint parameters.
 
 Now that you have an OIS object, the next step is
-[API Security](api-security.md).
+[API Security](./api-security.md).

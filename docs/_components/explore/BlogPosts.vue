@@ -61,6 +61,7 @@ export default {
     mediumByDate: [],
   }),
   mounted() {
+    console.log('---------' + this.show + '----------');
     this.arr = medium;
     this.arr.forEach((group) => {
       group.posts.forEach((post) => {
