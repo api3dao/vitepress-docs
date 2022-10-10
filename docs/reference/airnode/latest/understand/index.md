@@ -1,15 +1,15 @@
 ---
 title: Overview
 sidebarHeader: Reference
-sidebarSubHeader: Airnode v1.0
-basePath: /airnode/latest/
+sidebarSubHeader: Airnode
+basePath: /airnode/latest/understand/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader/>
+<PageHeader>v1.0 → Understanding Airnode </PageHeader>
 
 # {{$frontmatter.title}}
 
@@ -71,9 +71,9 @@ deployment.
 
 Read the following sections for additional in-depth understanding of Airnode.
 
-- [API Integration](api-integration.md)
-- [API Security](api-security.md)
-- [Configuring Airnode](configuring-airnode.md)
+- [API Integration](./api-integration.md)
+- [API Security](./api-security.md)
+- [Configuring Airnode](./configuring-airnode.md)
 - [Using Authorizers](./apply-auth.md) optional
 - [Heartbeat](./heartbeat.md) optional
 - [HTTP Gateways](./http-gateways.md) optional

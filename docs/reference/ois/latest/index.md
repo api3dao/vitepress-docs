@@ -47,7 +47,7 @@ endpoint that maps to the same API operation.
 ## Releases
 
 <br/>
-<!--ois-OisAirnodeVersions/-->
+<!--OisAirnodeVersions/-->
 
 ## API Mapping Examples
 
