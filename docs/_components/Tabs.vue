@@ -10,9 +10,11 @@ Otherwise they are ignored.
 -->
 
 <template>
-  <!-- Never show the slot, it is needed to force the component
-       to load the this.$slots array. -->
-  <slot v-if="1 == 2"></slot>
+  <!-- Never show the slot, it is needed to force components 
+       to load the this.$slots array. MUST: use v-show. -->
+  <div v-show="show" style="display: none">
+    <slot></slot>
+  </div>
 
   <!-- Tabs -->
   <div class="tab">
@@ -63,15 +65,20 @@ Otherwise they are ignored.
 export default {
   name: 'Tabs',
   data: () => ({
+    show: false,
     tabs: [],
     knownElements: ['div', 'p', 'img', 'ol', 'ul', 'table'],
   }),
 
   mounted() {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
+    console.log('----- MOUNTED Tabs -----');
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
+      console.log(element);
       if (element.children && element.children.indexOf('@tab:') === 0) {
+        //console.log('> tab');
+        //console.log(element);
         const arr = element.children.split(':'); // tabId @tab:<label>
         const tabId = Math.random().toString(36).slice(2, 9);
         const paneId = Math.random().toString(36).slice(2, 9);
@@ -86,11 +93,15 @@ export default {
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
+        //console.log('> known element');
+        //console.log(element);
         const random = Math.random().toString(36).slice(2, 9);
         this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
+        //console.log('> component');
+        //console.log(element);
         this.tabs[currentTabIndex].elements.push(element);
       }
     }

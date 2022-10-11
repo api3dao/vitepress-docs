@@ -72,6 +72,7 @@ export default {
     items: [],
   }),
   mounted() {
+    console.log('----- MOUNTED Contract Addresses -----');
     this.$nextTick(async function () {
       try {
         const response = await axios.get(
