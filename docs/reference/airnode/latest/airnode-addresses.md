@@ -1,6 +1,6 @@
 ---
 title: Airnode Contract Addresses
-sidebarHeader: Airnode
+sidebarHeader: Reference
 sidebarSubHeader: Airnode
 basePath: /airnode/latest/
 outline: deep
@@ -9,7 +9,7 @@ tags:
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Understanding Airnode </PageHeader>
+<PageHeader>v1.0</PageHeader>
 
 # {{$frontmatter.title}}
 
@@ -35,7 +35,7 @@ new deployment.
 
 ## RequesterAuthorizerWithAirnode
 
-<!--Tabs>
+<Tabs>
 
 @tab:mainnets
 
@@ -59,4 +59,4 @@ new deployment.
 
 <ContractAddresses type="testnet" contractName="AccessControlRegistry"/>
 
-</Tabs-->
+</Tabs>
