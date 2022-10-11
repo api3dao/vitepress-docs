@@ -10,13 +10,9 @@ Otherwise they are ignored.
 -->
 
 <template>
-  <table v-if="1 == 2" style="display: none">
-    <tr>
-      <td>
-        <slot></slot>
-      </td>
-    </tr>
-  </table>
+  <!-- Never show the slot, it is needed to force the component
+       to load the this.$slots array. -->
+  <slot v-if="1 == 2"></slot>
 
   <!-- Tabs -->
   <div class="tab">
@@ -40,25 +36,24 @@ Otherwise they are ignored.
   >
     <div :id="tab.paneId" v-for="(tab, index) in tabs" :key="index">
       <div v-for="(element, index) in tab.elements" :key="index">
-        ---{{ element.propsObj }} - {{ index }}---
         <div v-if="element.toString().startsWith('<')" v-html="element"></div>
 
         <!-- Start components listing here -->
         <!-- BlogPosts has 1 prop: show -->
         <BlogPosts
-          v-else-if="element.name === 'BlogPosts'"
-          :show="element.propsObj['show']"
+          v-else-if="element.type.name === 'BlogPosts'"
+          :show="element.props['show']"
         >
         </BlogPosts>
         <!-- ContractAddresses has 2 props: type and contractName -->
         <ContractAddresses
-          v-else-if="element.name === 'ContractAddresses'"
-          :type="element.propsObj['type']"
-          :contractName="element.propsObj['contractName']"
+          v-else-if="element.type.name === 'ContractAddresses'"
+          :type="element.props['type']"
+          :contractName="element.props['contractName']"
         >
         </ContractAddresses>
         <!-- End of components listing -->
-        ---{{ element.type }} - {{ index }}---
+        <!--pre><code>{{ element }}</code></pre-->
       </div>
     </div>
   </div>
@@ -76,7 +71,6 @@ export default {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      //console.log(1, element);
       if (element.children && element.children.indexOf('@tab:') === 0) {
         const arr = element.children.split(':'); // tabId @tab:<label>
         const tabId = Math.random().toString(36).slice(2, 9);
@@ -92,24 +86,14 @@ export default {
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
-        //console.log(3, 'Is a known element:', element.type);
         const random = Math.random().toString(36).slice(2, 9);
         this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
-        element.type.propsObj = element.props;
-        this.tabs[currentTabIndex].elements.push(element.type);
-        // Mark the component for removal from the slot.
-        //element['api3-remove'] = true;
-        //this.$slots.default().splice(i, 1);
-        console.log(4, 'is Vue component', i, element);
+        this.tabs[currentTabIndex].elements.push(element);
       }
     }
-    console.log('--- END ---');
-    console.log(this.tabs);
-    //console.log(filtered);
-    //console.log('ALL TABS >', this.tabs);
     this.$nextTick(() => {
       this.openTab(this.tabs[0]);
     });

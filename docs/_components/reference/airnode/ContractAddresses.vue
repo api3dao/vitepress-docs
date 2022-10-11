@@ -17,13 +17,11 @@
       The Contract list failed to load: ({{ error }})
     </p>
 
-    {{ items }}
-
     <!-- CONTRACT LIST -->
     <div v-show="error == null">
       <table>
         <th class="contract-addresses-heading">Chain</th>
-        <th class="contract-addresses-heading">Chain ID</th>
+        <th class="contract-addresses-heading">ID</th>
         <th class="contract-addresses-heading">Contract Address</th>
         <tr
           v-for="(item, index) in items"
@@ -85,9 +83,6 @@ export default {
         const important = [1, 3, 4, 5, 42, 11155111];
         let importantArr = [];
         let notImportantArr = [];
-        console.log(
-          '> ' + this.type + '------' + this.contractName + '-----------'
-        );
         //console.log(response.data);
         for (const key in response.data[this.contractName]) {
           // Here the network is not in chainsRef list
@@ -124,7 +119,6 @@ export default {
           }
         }
         this.items = importantArr.concat(notImportantArr);
-        console.log(this.contractName, this.items);
       } catch (err) {
         this.error = err.toString();
         console.error('error:', this.error);
@@ -159,6 +153,7 @@ export default {
 }
 .contract_tr_highlight td {
   background-color: #e5ecf9;
+  color: black;
   /*-webkit-transition: all 1s linear;*/
 }
 </style>
