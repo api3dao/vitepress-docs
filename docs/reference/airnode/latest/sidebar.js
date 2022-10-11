@@ -8,10 +8,14 @@ module.exports = [
         text: 'Airnode Contract Addresses',
         link: '/reference/airnode/latest/airnode-addresses',
       },
-      /*'/reference/airnode/latest/deployment-files/config-json.md', 
-      '/reference/airnode/latest/deployment-files/secrets-env.md', 
-      '/reference/airnode/latest/deployment-files/aws-env.md', 
-      '/reference/airnode/latest/deployment-files/receipt-json.md', */
+      {
+        text: 'Cloud Resources',
+        link: '/reference/airnode/latest/cloud-resources',
+      },
+      {
+        text: 'Chain Idiosyncrasies',
+        link: '/reference/airnode/latest/chain-idiosyncrasies',
+      },
     ],
   },
   {

@@ -1,23 +1,26 @@
 ---
 title: Cloud Resources
-docSetName: Airnode v0.10
-folder: Reference
-basePath: /airnode/v0.10
+sidebarHeader: Reference
+sidebarSubHeader: Airnode
+basePath: /airnode/latest/
+outline: deep
 tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader>v1.0</PageHeader>
 
 # {{$frontmatter.title}}
-
-<VersionWarning/>
 
 When deployed to a cloud provider, such as AWS or GCP, Airnode uses certain
 resources to fully operate.
 
-:::: tabs
+<Tabs>
 
-::: tab AWS
+@tab:AWS
+
+Hello World
 
 | Resource    | Description                                                                   |
 | :---------- | :---------------------------------------------------------------------------- |
@@ -28,9 +31,7 @@ resources to fully operate.
 | API Gateway | Endpoints for the HTTP Gateway and HTTP Signed Data Gateway.                  |
 | S3          | File describing the state of the deployed infrastructure.                     |
 
-:::
-
-::: tab GCP
+@tab:GCP
 
 | Resource        | Description                                                                                 |
 | :-------------- | :------------------------------------------------------------------------------------------ |
@@ -40,6 +41,4 @@ resources to fully operate.
 | Cloud Storage   | File describing the state of the deployed infrastructure & source code for cloud functions. |
 | IAM             | Service accounts & roles to allow communication among other resources.                      |
 
-:::
-
-::::
+</Tabs>
