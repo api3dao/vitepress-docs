@@ -12,7 +12,7 @@ Otherwise they are ignored.
 <template>
   <!-- Never show the slot, it is needed to force components 
        to load the this.$slots array. MUST: use v-show. -->
-  <div v-show="show" style="display: none">
+  <div v-show="show">
     <slot></slot>
   </div>
 
@@ -55,7 +55,6 @@ Otherwise they are ignored.
         >
         </ContractAddresses>
         <!-- End of components listing -->
-        <!--pre><code>{{ element }}</code></pre-->
       </div>
     </div>
   </div>
@@ -72,10 +71,10 @@ export default {
 
   mounted() {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
-    console.log('----- MOUNTED Tabs -----');
+    console.log('----- MOUNTED ----- Tabs -----');
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      console.log(element);
+      //console.log(element);
       if (element.children && element.children.indexOf('@tab:') === 0) {
         //console.log('> tab');
         //console.log(element);

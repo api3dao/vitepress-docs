@@ -23,10 +23,10 @@ moves forward. You can find all our blog posts on
 
 @tab:By Category
 
-<BlogPosts show="byCategories"/>
+<BlogPosts show="byCategories" ignoreTabsSlot="true"/>
 
 @tab:By Date
 
-<BlogPosts show="byDates"/>
+<BlogPosts show="byDates" ignoreTabsSlot="true"/>
 
 </Tabs>

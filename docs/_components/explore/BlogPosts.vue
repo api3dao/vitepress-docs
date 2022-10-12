@@ -55,13 +55,14 @@ import { medium } from './blog-posts.json';
 
 export default {
   name: 'BlogPosts',
-  props: ['show'], // byCategories or byDates
+  props: ['show', 'ignoreTabsSlot'], // byCategories or byDates
   data: () => ({
     medium: medium,
     mediumByDate: [],
   }),
   mounted() {
-    console.log('---- MOUNTED BlogPosts -----' + this.show + '----------');
+    if (this.ignoreTabsSlot) return;
+    console.log('----- MOUNTED ----- BlogPosts -----');
     this.arr = medium;
     this.arr.forEach((group) => {
       group.posts.forEach((post) => {

@@ -15,9 +15,9 @@ tags:
 
 - Variable names cannot contain dashes (-) or start with a number.
 
-:::: tabs
+<Tabs>
 
-::: tab Cloud Chain
+@tab:Cloud Chain
 
 ```sh
 AIRNODE_WALLET_MNEMONIC=""
@@ -31,9 +31,7 @@ HEARTBEAT_URL=""
 GCP_PROJECT_ID=""
 ```
 
-:::
-
-::: tab Local Chain
+@tab:Local Chain
 
 ```sh
 AIRNODE_WALLET_MNEMONIC=""
@@ -41,6 +39,4 @@ LOCAL_PROVIDER_URL=""
 SS_CURRENCY_CONVERTER_API_KEY=""
 ```
 
-:::
-
-::::
+</Tabs>

@@ -16,6 +16,7 @@ import InfoBtnBlue from '../../_components/InfoBtnBlue.vue';
 import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
 import ContractAddresses from '../../_components/reference/airnode/ContractAddresses.vue';
+import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
 
 export default {
   ...DefaultTheme,
@@ -40,6 +41,7 @@ export default {
     app.component('ExternalLinkImage', ExternalLinkImage);
     app.component('CopyIcon', CopyIcon);
     app.component('ContractAddresses', ContractAddresses);
+    app.component('SponsorWalletWarning', SponsorWalletWarning);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

@@ -9,7 +9,7 @@ tags:
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Example Files </PageHeader>
+<PageHeader>v1.0 → Example Files</PageHeader>
 
 # {{$frontmatter.title}}
 

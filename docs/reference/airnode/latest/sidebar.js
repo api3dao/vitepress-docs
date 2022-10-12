@@ -3,7 +3,7 @@ module.exports = [
     text: '',
     collapsable: false,
     items: [
-      { text: 'ChangeLog', link: '/reference/airnode/latest/' },
+      { text: 'Versions', link: '/reference/airnode/latest/' },
       {
         text: 'Airnode Contract Addresses',
         link: '/reference/airnode/latest/airnode-addresses',
@@ -62,6 +62,100 @@ module.exports = [
     ],
   },
   {
+    text: 'Concepts and Definitions',
+    collapsable: false,
+    items: [
+      {
+        text: 'Request-Response Protocol',
+        link: '/reference/airnode/latest/concepts/',
+      },
+      {
+        text: 'Airnode',
+        link: '/reference/airnode/latest/concepts/airnode',
+      },
+      {
+        text: 'Endpoint',
+        link: '/reference/airnode/latest/concepts/endpoint',
+      },
+      {
+        text: 'Authorizers',
+        link: '/reference/airnode/latest/concepts/authorizers',
+      },
+      {
+        text: 'Authorizations',
+        link: '/reference/airnode/latest/concepts/authorizations',
+      },
+      {
+        text: 'Airnode Authentication',
+        link: '/reference/airnode/latest/concepts/airnode-auth',
+      },
+      {
+        text: 'Relayed Meta Data Authentication',
+        link: '/reference/airnode/latest/concepts/relay-meta-auth',
+      },
+      {
+        text: 'Requester',
+        link: '/reference/airnode/latest/concepts/requester',
+      },
+      {
+        text: 'Sponsor',
+        link: '/reference/airnode/latest/concepts/sponsor',
+      },
+      {
+        text: 'Template',
+        link: '/reference/airnode/latest/concepts/template',
+      },
+      {
+        text: 'Request',
+        link: '/reference/airnode/latest/concepts/request',
+      },
+      {
+        text: 'Chain Providers',
+        link: '/reference/airnode/latest/concepts/chain-providers',
+      },
+      {
+        text: 'Gas Price Strategies',
+        link: '/reference/airnode/latest/concepts/gas-prices',
+      },
+    ],
+  },
+  {
+    text: 'Specifications',
+    collapsable: false,
+    items: [
+      {
+        text: 'Oracle Integration (OIS)',
+        link: '/reference/airnode/latest/specifications/ois',
+      },
+      {
+        text: 'Airnode ABI',
+        link: '/reference/airnode/latest/specifications/airnode-abi',
+      },
+      {
+        text: 'Reserved Parameters',
+        link: '/reference/airnode/latest/specifications/reserved-parameters',
+      },
+    ],
+  },
+  {
+    text: 'Packages',
+    collapsable: false,
+    items: [
+      { text: 'Overview', link: '/reference/airnode/latest/packages/' },
+      { text: 'Adapter', link: '/reference/airnode/latest/packages/adapter' },
+      { text: 'ABI', link: '/reference/airnode/latest/packages/abi' },
+      {
+        text: 'Admin CLI',
+        link: '/reference/airnode/latest/packages/admin-cli',
+      },
+      { text: 'Deployer', link: '/reference/airnode/latest/packages/deployer' },
+      {
+        text: 'Validator',
+        link: '/reference/airnode/latest/packages/validator',
+      },
+    ],
+  },
+  {
     text: 'Deployment Files',
     collapsable: false,
     items: [
@@ -99,6 +193,28 @@ module.exports = [
       {
         text: 'aws.env',
         link: '/reference/airnode/latest/example-files/aws-env',
+      },
+    ],
+  },
+  {
+    text: 'Template Files',
+    collapsable: false,
+    items: [
+      {
+        text: 'OIS Object',
+        link: '/reference/airnode/latest/templates/ois-json',
+      },
+      {
+        text: 'config.json',
+        link: '/reference/airnode/latest/templates/config-json',
+      },
+      {
+        text: 'secrets.env',
+        link: '/reference/airnode/latest/templates/secrets-env',
+      },
+      {
+        text: 'gcp.json',
+        link: '/reference/airnode/latest/templates/gcp-json',
       },
     ],
   },

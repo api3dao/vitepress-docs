@@ -175,9 +175,9 @@ terminal at the end of an Airnode deployment using a
 
 ### Request
 
-:::: tabs
+<Tabs>
 
-::: tab HTTP Gateway
+@tab:HTTP Gateway
 
 ```sh
 curl \
@@ -187,9 +187,7 @@ curl \
 '<gatewayUrl>/0x6db9e3e3d0...c7025f5c27af6'
 ```
 
-:::
-
-::: tab HTTP Signed Data Gateway
+@tab:HTTP Signed Data Gateway
 
 ```sh
 curl \
@@ -199,15 +197,13 @@ curl \
 '<gatewayUrl>/0x6db9e3e3d0...c7025f5c27af6'
 ```
 
-:::
-
-::::
+</Tabs>
 
 ### Response
 
-:::: tabs
+<Tabs>
 
-::: tab HTTP Gateway
+@tab:HTTP Gateway
 
 ```json
 {
@@ -226,9 +222,7 @@ The response format is a simple JSON object with the following fields:
 - `encodedValue` - the encoded bytes value that is sent as payload in the
   response transaction on chain
 
-:::
-
-::: tab HTTP Signed Data Gateway
+@tab:HTTP Signed Data Gateway
 
 ```json
 {
@@ -245,9 +239,7 @@ The response format is a simple JSON object with the following fields:
   response. Suitable for use on-chain.
 - `signature` - The response has been signed by Airnode.
 
-:::
-
-::::
+</Tabs>
 
 ## Tutorials
 
