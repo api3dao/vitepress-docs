@@ -25,11 +25,11 @@ new deployment.
 
 @tab:mainnets
 
-<ContractAddresses type="mainnet" contractName="AirnodeRrpV0"/>
+<ContractAddresses type="mainnet" contractName="AirnodeRrpV0" ignoreTabsSlot="true"/>
 
 @tab:testnets
 
-<ContractAddresses type="testnet" contractName="AirnodeRrpV0"/>
+<ContractAddresses type="testnet" contractName="AirnodeRrpV0"  ignoreTabsSlot="true"/>
 
 </Tabs>
 
@@ -39,11 +39,11 @@ new deployment.
 
 @tab:mainnets
 
-<ContractAddresses type="mainnet" contractName="RequesterAuthorizerWithAirnode"/>
+<ContractAddresses type="mainnet" contractName="RequesterAuthorizerWithAirnode"  ignoreTabsSlot="true"/>
 
 @tab:testnets
 
-<ContractAddresses type="testnet" contractName="RequesterAuthorizerWithAirnode"/>
+<ContractAddresses type="testnet" contractName="RequesterAuthorizerWithAirnode"  ignoreTabsSlot="true"/>
 
 </Tabs>
 
@@ -53,10 +53,10 @@ new deployment.
 
 @tab:mainnets
 
-<ContractAddresses type="mainnet" contractName="AccessControlRegistry"/>
+<ContractAddresses type="mainnet" contractName="AccessControlRegistry"  ignoreTabsSlot="true"/>
 
 @tab:testnets
 
-<ContractAddresses type="testnet" contractName="AccessControlRegistry"/>
+<ContractAddresses type="testnet" contractName="AccessControlRegistry"  ignoreTabsSlot="true"/>
 
 </Tabs>
