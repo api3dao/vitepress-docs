@@ -10,8 +10,6 @@
 
 <template>
   <div v-if="loaded === true">
-    <!-- LOADING IMAGE -->
-
     <!-- ERROR -->
     <p v-show="error !== null" class="contract-addresses-error">
       The Contract list failed to load: ({{ error }})
@@ -49,11 +47,12 @@
       </table>
     </div>
   </div>
-  <div v-else>
+  <!-- LOADING IMAGE -->
+  <!--div v-else>
     <div style="padding-left: 55px">
       <img src="/img/spinner.gif" v-show="showSpinner" />
     </div>
-  </div>
+  </div-->
 </template>
 
 <script>
@@ -61,10 +60,10 @@ import axios from 'axios';
 import chainsRef from '../../../.vitepress/chains.json';
 export default {
   name: 'ContractAddresses',
-  props: ['type', 'contractName'],
+  props: ['type', 'contractName', 'ignoreTabsSlot'],
   data: () => ({
     loaded: false,
-    showSpinner: true,
+    //showSpinner: true,
     error: null,
     contracts: [],
     chains: {},
@@ -72,8 +71,9 @@ export default {
     items: [],
   }),
   mounted() {
-    console.log('----- MOUNTED Contract Addresses -----');
+    if (this.ignoreTabsSlot) return;
     this.$nextTick(async function () {
+      console.log('----- MOUNTED ----- ContractAddresses -----');
       try {
         const response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/airnode/master/packages/airnode-protocol/deployments/references.json'
@@ -126,7 +126,7 @@ export default {
       }
 
       // Page state
-      this.showSpinner = false;
+      //this.showSpinner = false;
       this.loaded = true;
     });
   },

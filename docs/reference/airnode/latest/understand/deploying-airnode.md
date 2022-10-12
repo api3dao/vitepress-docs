@@ -58,9 +58,9 @@ At this point your project should resemble the following. The `config.json`,
 GCP) files should be ready to go. Other files you may have added are expected
 but not used by the deployer image.
 
-:::: tabs
+<tabs>
 
-::: tab AWS
+@tab:AWS
 
 ```
 my-airnode
@@ -69,9 +69,7 @@ my-airnode
 └── secrets.env
 ```
 
-:::
-
-::: tab GCP
+@tab:GCP
 
 ```
 my-airnode
@@ -80,9 +78,7 @@ my-airnode
 └── secrets.env
 ```
 
-:::
-
-::::
+</Tabs>
 
 <!-- Use of .html below is intended. -->
 <WarningSimultaneousDeployments removeLink="../../docker/deployer-image.html#manual-removal"/>
@@ -97,9 +93,9 @@ need arise.
 
 <p><DeployerPermissionsWarning/></p>
 
-:::: tabs
+<Tabs>
 
-::: tab Linux/Mac/WSL2
+@tab:Linux/Mac/WSL2
 
 ```sh
 docker run -it --rm \
@@ -108,9 +104,7 @@ docker run -it --rm \
   api3/airnode-deployer:0.10.0 deploy
 ```
 
-:::
-
-::: tab Windows
+@tab:Windows
 
 ```batch
 # For Windows, use CMD (not PowerShell).
@@ -119,9 +113,7 @@ docker run -it --rm ^
   api3/airnode-deployer:0.10.0 deploy
 ```
 
-:::
-
-::::
+</Tabs>
 
 ### receipt.json
 
