@@ -2,14 +2,15 @@
 title: gcp.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Deployment Files → Templates
 version: v1.0
-basePath: /airnode/latest/templates/
+basePath: /airnode/latest/deployment-files/templates/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Templates </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}

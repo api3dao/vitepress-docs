@@ -2,6 +2,7 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Deployment Files
 basePath: /airnode/latest/deployment-files/
 outline: deep
 tags:
@@ -9,7 +10,7 @@ tags:
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Deployment Files </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
