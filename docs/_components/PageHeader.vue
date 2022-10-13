@@ -1,19 +1,11 @@
 <!--
-Provide a sidebar path as an indicator to the page'<style scoped>
-location in the sidebar.
-</style>
+Writes out hte $frontmatter.pageHeader about the $frontmatter.title
 -->
 
 <template>
   <div id="api3-sidebar-path">
-    <span style="font-size: small">📂&nbsp;</span
-    >{{ frontmatter.sidebarHeader }}
-    <span v-if="frontmatter.sidebarSubHeader">
-      →
-      {{ frontmatter.sidebarSubHeader }}
-    </span>
-    <span v-if="$slots.default"> → </span>
-    <slot></slot>
+    <span style="font-size: small">📂&nbsp;</span>
+    <span>{{ frontmatter.pageHeader }}</span>
   </div>
 </template>
 
@@ -31,6 +23,6 @@ export default {
 #api3-sidebar-path {
   opacity: 0.5;
   margin-bottom: 0px;
-  font-weight: 900;
+  font-weight: 500;
 }
 </style>
