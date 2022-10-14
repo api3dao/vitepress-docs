@@ -1,15 +1,16 @@
 ---
 title: What are dAPIs?
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore → dAPIs
+path: /explore/dapis/what-are-dapis.html
+outline: deep
 tags:
 ---
 
-# {{$frontmatter.title}}
+<PageHeader/>
 
-branch 11 third commit
+# {{$frontmatter.title}}
 
 _See the article,
 [dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)

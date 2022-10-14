@@ -2,6 +2,7 @@
 title: Firebase
 sidebarHeader: Docs Development
 sidebarSubHeader:
+pageHeader: Docs Development
 basePath: /dev
 ---
 

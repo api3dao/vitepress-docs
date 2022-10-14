@@ -2,14 +2,16 @@
 title: receipt.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/deployment-files/
+pageHeader: Reference → Airnode → v1.0 → Deployment Files
+path: /reference/airnode/latest/deployment-files/receipt-json.html
+version: v1.0
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Deployment Files </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
@@ -30,9 +32,9 @@ fulfill each request made by the requester contracts.
 A `receipt.json` file is created for both a AWS or GCP deployment. A receipt is
 not generated for client deployments (deploying to a Docker container).
 
-:::: tabs
+<Tabs>
 
-::: tab AWS
+@tab:AWS
 
 ```json
 {
@@ -56,9 +58,7 @@ not generated for client deployments (deploying to a Docker container).
 }
 ```
 
-:::
-
-::: tab GCP
+@tab:GCP
 
 ```json
 {
@@ -83,6 +83,4 @@ not generated for client deployments (deploying to a Docker container).
 }
 ```
 
-:::
-
-::::
+</Tabs>

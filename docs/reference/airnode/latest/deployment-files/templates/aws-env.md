@@ -2,15 +2,16 @@
 title: aws.env
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Deployment Files → Templates
+path: /reference/airnode/latest/deployment-files/templates/aws-env.html
 version: v1.0
-basePath: /airnode/latest/templates/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Templates </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

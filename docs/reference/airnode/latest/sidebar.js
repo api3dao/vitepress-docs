@@ -19,8 +19,9 @@ module.exports = [
     ],
   },
   {
-    text: 'Understanding Airnode',
-    collapsable: false,
+    text: 'UNDERSTANDING AIRNODE',
+    collapsible: true,
+    collapsed: false,
     items: [
       {
         text: 'Overview',
@@ -36,7 +37,7 @@ module.exports = [
       },
       {
         text: 'Configuring Airnode',
-        link: '/reference/airnode/latest/understand/configuring-airnode',
+        link: '/reference/airnode/latest/understand/configuring',
       },
 
       {
@@ -57,13 +58,14 @@ module.exports = [
       },
       {
         text: 'Deploying Airnode',
-        link: '/reference/airnode/latest/understand/deploying-airnode',
+        link: '/reference/airnode/latest/understand/deploying',
       },
     ],
   },
   {
-    text: 'Concepts and Definitions',
-    collapsable: false,
+    text: 'CONCEPTS AND DEFINITIONS',
+    collapsible: true,
+    collapsed: true,
     items: [
       {
         text: 'Request-Response Protocol',
@@ -120,8 +122,9 @@ module.exports = [
     ],
   },
   {
-    text: 'Specifications',
-    collapsable: false,
+    text: 'SPECIFICATIONS',
+    collapsible: true,
+    collapsed: true,
     items: [
       {
         text: 'Oracle Integration (OIS)',
@@ -138,8 +141,9 @@ module.exports = [
     ],
   },
   {
-    text: 'Packages',
-    collapsable: false,
+    text: 'PACKAGES',
+    collapsible: true,
+    collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/packages/' },
       { text: 'Adapter', link: '/reference/airnode/latest/packages/adapter' },
@@ -156,10 +160,12 @@ module.exports = [
     ],
   },
   {
-    text: 'Deployment Files',
-    collapsable: false,
+    text: 'DEPLOYMENT FILES',
+    collapsible: true,
+    collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/deployment-files/' },
+
       {
         text: 'config.json',
         link: '/reference/airnode/latest/deployment-files/config-json',
@@ -176,45 +182,47 @@ module.exports = [
         text: 'receipt.json',
         link: '/reference/airnode/latest/deployment-files/receipt-json',
       },
-    ],
-  },
-  {
-    text: 'Example Files',
-    collapsable: false,
-    items: [
       {
-        text: 'config.json',
-        link: '/reference/airnode/latest/example-files/config-json',
+        text: 'EXAMPLES',
+        items: [
+          {
+            text: 'config.json',
+            link: '/reference/airnode/latest/deployment-files/examples/config-json',
+          },
+          {
+            text: 'secrets.env',
+            link: '/reference/airnode/latest/deployment-files/examples/secrets-env',
+          },
+          {
+            text: 'aws.env',
+            link: '/reference/airnode/latest/deployment-files/examples/aws-env',
+          },
+        ],
       },
       {
-        text: 'secrets.env',
-        link: '/reference/airnode/latest/example-files/secrets-env',
-      },
-      {
-        text: 'aws.env',
-        link: '/reference/airnode/latest/example-files/aws-env',
-      },
-    ],
-  },
-  {
-    text: 'Template Files',
-    collapsable: false,
-    items: [
-      {
-        text: 'OIS Object',
-        link: '/reference/airnode/latest/templates/ois-json',
-      },
-      {
-        text: 'config.json',
-        link: '/reference/airnode/latest/templates/config-json',
-      },
-      {
-        text: 'secrets.env',
-        link: '/reference/airnode/latest/templates/secrets-env',
-      },
-      {
-        text: 'gcp.json',
-        link: '/reference/airnode/latest/templates/gcp-json',
+        text: 'TEMPLATES',
+        items: [
+          {
+            text: 'OIS Object',
+            link: '/reference/airnode/latest/deployment-files/templates/ois-json',
+          },
+          {
+            text: 'config.json',
+            link: '/reference/airnode/latest/deployment-files/templates/config-json',
+          },
+          {
+            text: 'secrets.env',
+            link: '/reference/airnode/latest/deployment-files/templates/secrets-env',
+          },
+          {
+            text: 'aws.env',
+            link: '/reference/airnode/latest/deployment-files/templates/aws-env',
+          },
+          {
+            text: 'gcp.json',
+            link: '/reference/airnode/latest/deployment-files/templates/gcp-json',
+          },
+        ],
       },
     ],
   },

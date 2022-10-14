@@ -1,14 +1,17 @@
 ---
 title: Jobs
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore
+path: /explore/jobs.html
+outline: deep
 tags:
   - api3
   - job
   - jobs
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

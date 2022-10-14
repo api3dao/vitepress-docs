@@ -1,17 +1,17 @@
 ---
-lang: en-US
 title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode→ v1.0
+path: /reference/airnode/latest/index.html
 version: v1.0
-basePath: /airnode/latest/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>{{$frontmatter.version}}</PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

@@ -2,7 +2,16 @@
 title: What are dAPIs?
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs
+path: /reference/dapis/index.html
+version:
+outline: deep
+tags:
 ---
+
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

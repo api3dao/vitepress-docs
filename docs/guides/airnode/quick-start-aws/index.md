@@ -1,17 +1,14 @@
 ---
-lang: en-US
 title: Quick Start AWS
 sidebarHeader: Guides
-sidebarSection: Airnode
-description:
-folder: Guides
-basePath: /guides/airnode/
+sidebarSubHeader:
+pageHeader: Guides → Airnode
+path: /guides/airnode/deploy-aws.html
 outline: deep
+tags:
 ---
 
-→ {{$frontmatter.sidebarSection}}
-
-# {{$frontmatter.title}}
+<PageHeader/>
 
 This demo is a simple Airnode deployment, using a hands-on approach, to better
 understand the overall deployment process of the Airnode -[deployer

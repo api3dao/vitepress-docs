@@ -2,13 +2,16 @@
 title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-basePath: /reference/ois/latest/
+pageHeader: Reference → OIS → v1.2
+path: /reference/ois/latest/index.html
+version:
+outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.2</PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
@@ -40,9 +43,9 @@ endpoint that maps to the same API operation.
 
 > <img src="./assets/images/ois-overview-extended.png" style="width:650px"/>
 >
-> - <p class="diagram-line">A) <b>ois.apiSpecifications.paths</b>:  Describes API operations.</p>
-> - <p class="diagram-line" style="margin-top:10px;">B)<b> ois.endpoints:  </b>Defines Airnode endpoints.</p>
->   <p class="diagram-line" style="margin-top:10px;">Relationships exist between an Airnode endpoint and an API operation.</p>
+> - <p>A) <b>ois.apiSpecifications.paths</b>:  Describes API operations.</p>
+> - <p>B)<b> ois.endpoints:  </b>Defines Airnode endpoints.</p>
+>   <p>Relationships exist between an Airnode endpoint and an API operation.</p>
 
 ## Releases
 

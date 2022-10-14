@@ -2,14 +2,16 @@
 title: secrets.env
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/example-files/
+pageHeader: Reference → Airnode → v1.0 → Deployment Files → Examples
+path: /reference/airnode/latest/deployment-files/examples/secrets-env.html
+version: v1.0
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Example Files </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

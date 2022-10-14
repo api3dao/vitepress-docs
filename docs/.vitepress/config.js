@@ -31,23 +31,6 @@ export default {
       },
     ],
   ],
-  basePaths: {
-    '/': 'All Documentation',
-    '/airnode/v0.7': 'Airnode v0.7',
-    '/airnode/v0.6': 'Airnode v0.6',
-    '/airnode/v0.5': 'Airnode v0.5',
-    '/airnode/v0.4': 'Airnode v0.4',
-    '/airnode/v0.3': 'Airnode v0.3',
-    '/airnode/v0.2': 'Airnode v0.2',
-    '/airnode/pre-alpha': 'Airnode pre-alpha',
-    '/api3': 'API3',
-    '/chainapi': 'ChainAPI',
-    '/dapis': 'dAPIs',
-    '/dao-members': 'DAO Members',
-    '/ois/v1.1': 'OIS v1.1',
-    '/ois/v1.0': 'OIS v1.0',
-    '/qrng': 'QRNG',
-  },
   themeConfig: {
     logo: {
       light: './API3-Active.png',
@@ -70,16 +53,10 @@ export default {
       '/guides/': require('../guides/sidebar.js'),
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
-      '/reference/ois/v1.0/': require('../reference/ois/v1.0/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
     },
     nav: nav(),
-    /*algolia: {
-      appId: 'x',
-      apiKey: 'x',
-      indexName: 'me',
-    },*/
   },
 };
 
@@ -91,7 +68,7 @@ function nav() {
     {
       text: 'Reference',
       items: [
-        { text: 'dAPIs', link: '/reference/dapis/introduction/api3-market.md' },
+        { text: 'dAPIs', link: '/reference/dapis/api3-market.md' },
         { text: 'Airnode', link: '/reference/airnode/latest/' },
         { text: 'OIS', link: '/reference/ois/latest/' },
       ],

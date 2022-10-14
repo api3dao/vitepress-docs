@@ -1,11 +1,14 @@
 ---
 title: What is Airnode?
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore → Airnode
+path: /explore/what-is-airnode.html
+outline: deep
 tags:
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

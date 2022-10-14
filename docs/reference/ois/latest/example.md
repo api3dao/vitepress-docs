@@ -1,12 +1,18 @@
 ---
 title: Example OIS Object
-sidebarHeader: Reference → OIS v1.1
-basePath: /reference/ois/latest/
+sidebarHeader: Reference
+sidebarSubHeader: OIS
+pageHeader: Reference → OIS → v1.2
+path: /reference/ois/latest/example.html
+version:
+outline: deep
 tags:
 ---
 
-<reference-VersionPicklist/>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
-@[code json](./example.json)
+<<< @/reference/ois/latest/example.json

@@ -2,14 +2,16 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/deployment-files/
+pageHeader: Reference → Airnode → v1.0 → Deployment Files
+path: /reference/airnode/latest/deployment-files/index.html
+version: v1.0
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Deployment Files </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
