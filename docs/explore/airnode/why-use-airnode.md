@@ -1,11 +1,14 @@
 ---
 title: Why use Airnode?
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore → Airnode
+path: /explore/why-use-airnode.html
+outline: deep
 tags:
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

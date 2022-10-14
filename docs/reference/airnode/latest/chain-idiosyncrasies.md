@@ -2,14 +2,16 @@
 title: Chain Idiosyncrasies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/
+pageHeader: Reference → Airnode→ v1.0
+path: /reference/airnode/latest/chain-idiosyncrasies.html
+version: v1.0
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0</PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

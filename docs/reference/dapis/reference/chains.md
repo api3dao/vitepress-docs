@@ -1,9 +1,17 @@
 ---
 title: Chains and Contracts
-folder: Reference
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs → v1.0
+path: /dapis/index.html
+version:
+outline: deep
+tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

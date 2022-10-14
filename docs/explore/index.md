@@ -1,9 +1,10 @@
 ---
 title: About our Journey!
-lang: en-US
-folder: Explore
-basePath: /explore/
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore
+path: /explore/index.html
+outline: deep
 tags:
   - api3
   - whitepaper

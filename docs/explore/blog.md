@@ -1,15 +1,18 @@
 ---
 title: Blog Posts on Medium
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore
+path: /explore/blog.html
+outline: deep
 tags:
   - blog
   - posts
   - articles
   - academic
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

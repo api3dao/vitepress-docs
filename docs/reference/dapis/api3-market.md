@@ -2,7 +2,16 @@
 title: API3 Market
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs
+path: /reference/dapis/api3-market.html
+version:
+outline: deep
+tags:
 ---
+
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
@@ -14,4 +23,4 @@ free trial period. Visit the
 [Request Data](https://forms.monday.com/forms/embed/f44d0ed9dfd0154885f48fdb3b87a489?r=use1)
 form to get access.
 
-[![API3 Market](../assets/images/market-website.png)](https://market.api3.org)
+[![API3 Market](./assets/images/market-website.png)](https://market.api3.org)

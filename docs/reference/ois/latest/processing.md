@@ -1,11 +1,17 @@
 ---
 title: Pre/Post Processing
-sidebarHeader: Reference → OIS v1.1
-basePath: /reference/ois/latest/
+sidebarHeader: Reference
+sidebarSubHeader: OIS
+pageHeader: Reference → OIS → v1.2
+path: /reference/ois/latest/processing.html
+version:
+outline: deep
 tags:
 ---
 
-<reference-VersionPicklist/>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

@@ -3,8 +3,8 @@ title: OIS Object
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0 → Deployment Files → Templates
+path: /reference/airnode/latest/deployment-files/templates/ois-json.html
 version: v1.0
-basePath: /airnode/latest/deployment-files/templates/
 outline: deep
 tags:
 ---

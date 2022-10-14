@@ -1,12 +1,10 @@
 ---
-lang: en-US
 title: Deploy an API Integration
-folder: Explore
-basePath: /guides/chainapi/
-description: Description of this page
 sidebarHeader: Guides
-sidebarSection: ChainAPI
-home: false
+sidebarSubHeader:
+pageHeader: Guides → ChainAPI
+path: /guides/chainapi/deploy.html
+outline: deep
 tags:
   - chainapi
   - integrate
@@ -15,7 +13,7 @@ tags:
   - config
 ---
 
-→ {{$frontmatter.sidebarSection}}
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

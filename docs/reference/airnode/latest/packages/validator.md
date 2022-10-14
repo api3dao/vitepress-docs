@@ -2,15 +2,16 @@
 title: Validator
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Packages
+path: /reference/airnode/latest/packages/validator.html
 version: v1.0
-basePath: /airnode/latest/packages/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Packages </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
