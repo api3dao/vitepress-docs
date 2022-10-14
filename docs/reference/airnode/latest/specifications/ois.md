@@ -2,15 +2,16 @@
 title: Oracle Integration Specifications (OIS)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Specifications
+path: /reference/airnode/latest/specifications/ois.html
 version: v1.0
-basePath: /airnode/latest/concepts/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Specifications </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

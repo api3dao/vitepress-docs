@@ -1,17 +1,16 @@
 ---
-lang: en-US
 title: Quick Start GCP
-folder: Explore
-basePath: /guides/airnode/
-description:
 sidebarHeader: Guides
-sidebarSection: Airnode
+sidebarSubHeader:
+pageHeader: Guides → Airnode
+path: /guides/airnode/deploy-gcp.html
+outline: deep
 tags:
   - airnode
   - gcp
 ---
 
-→ {{$frontmatter.sidebarSection}}
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

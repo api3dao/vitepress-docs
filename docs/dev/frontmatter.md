@@ -2,7 +2,9 @@
 title: Frontmatter
 sidebarHeader: Docs Development
 sidebarSubHeader:
-basePath: /dev/
+pageHeader: Docs Development
+path: /dev/frontmatter.html
+version:
 outline: deep
 tags:
   - frontmatter
@@ -23,17 +25,23 @@ of valid YAML set between triple-dashed lines. Each page must contain
 $frontmatter which is used to provide navigation, navigation labels, and search
 criteria.
 
-```
+```yaml
 ---
 title: Frontmatter
 sidebarHeader: Docs Development
 sidebarSubHeader:
-basePath: /dev/
+pageHeader: Docs Development
+path: /dev/frontmatter.html
+version:
 outline: deep
 tags:
-    - cookie
-    - cake
-    - ...
+  - frontmatter
+  - title
+  - sidebarHeader
+  - sidebarSubHeader
+  - basePath
+  - outline
+  - tags
 ---
 ```
 
@@ -58,11 +66,20 @@ sections such as /dev or /operations.
 (required for Airnode and OIS) In the case of the navbar selection
 **Reference**, there are sub-selections such as Airnode, OIS, dAPIs, etc.
 
-### `basePath`
+### `pageHeader`
 
-(required) The root for a group of pages known as a doc set. The root contains
-the `sidebar.js` file. The base path is used by the search engine to logically
-group search results for display to the reader.
+(required) Supplies the text used on each page above the `$frontmatter.title`.
+This is a breadCrumb trail without the links.
+
+### `path`
+
+(required) The path to the page. The path is used by the search engine as a
+target URL and to logically group search results for display to the reader.
+
+### `version`
+
+(required) The version number of doc sets such as Airnode and OIS. Leave empty
+for all other doc sets.
 
 ### `outline`
 

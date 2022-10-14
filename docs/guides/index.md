@@ -2,11 +2,16 @@
 title: About the Guides
 sidebarHeader: Guides
 sidebarSubHeader:
-basePath: /guides/
+pageHeader: Guides
+path: /guides/index.html
 outline: deep
 tags:
   - chainapi
   - airnode
+  - dapis
+  - qrng
+  - dao
+  - members
 ---
 
 <PageHeader/>

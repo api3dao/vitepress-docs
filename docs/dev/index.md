@@ -2,6 +2,7 @@
 title: Overview
 sidebarHeader: Docs Development
 sidebarSubHeader:
+pageHeader: Docs Development
 basePath: /dev
 ---
 

@@ -2,14 +2,16 @@
 title: API Security
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/understand/
+pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+path: /reference/airnode/latest/understand/api-security.html
+version: v1.0
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Understanding Airnode </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

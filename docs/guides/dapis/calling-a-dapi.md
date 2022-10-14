@@ -1,31 +1,35 @@
 ---
-lang: en-US
 title: Calling a dAPI
 sidebarHeader: Guides
-sidebarSection: dAPIs
-basePath: /guides/dapis/
+sidebarSubHeader:
+pageHeader: Guides → dAPIs
+path: /guides/dapis/calling-a-dapi.html
+outline: deep
 tags:
   - dapi
-  - dpais
+  - dapis
   - datafeed
-  - data feed
+  - datafeeds
+  - data
+  - feed
+  - feeds
 ---
 
-→ {{$frontmatter.sidebarSection}}
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
-It had to be easy and it is.
+Calling a dAPI is a simple one line call.
 
 ```solidity
 import "@api3/airnode-protocol-v1/contracts/dapis/interfaces/IDapiServer.sol";
 ...
-// Calling the ETH/USD dAPI using the DapiServer contract
+// Calling the ETH/USD dAPI with the DapiServer contract address.
 (value, timestamp) =
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
 ```
 
-## Next
+## DapiServer
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

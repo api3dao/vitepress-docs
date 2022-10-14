@@ -1,11 +1,14 @@
 ---
 title: config.json
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore → Airnode
+path: /explore/config.html
+outline: deep
 tags:
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

@@ -2,15 +2,16 @@
 title: Template
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Concepts and Definitions
+path: /reference/airnode/latest/concepts/template.html
 version: v1.0
-basePath: /airnode/latest/concepts/
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0 → Concepts and Definitions </PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

@@ -1,11 +1,10 @@
 ---
-lang: en-US
 title: Quick Start Docker Container
-folder: Explore
-basePath: /guides/airnode/
-description:
 sidebarHeader: Guides
-sidebarSection: Airnode
+sidebarSubHeader:
+pageHeader: Guides → Airnode
+path: /guides/airnode/deploy-container.html
+outline: deep
 tags:
   - airnode
   - gcp
@@ -13,7 +12,7 @@ tags:
   - container
 ---
 
-→ {{$frontmatter.sidebarSection}}
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

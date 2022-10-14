@@ -1,11 +1,14 @@
 ---
 title: API Providers—Why power dAPIs?
-lang: en-US
-folder: Explore
-basePath: /explore
 sidebarHeader: Explore
+sidebarSubHeader:
+pageHeader: Explore → dAPIs
+path: /explore/dapis/why-power.html
+outline: deep
 tags:
 ---
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

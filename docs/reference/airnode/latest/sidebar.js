@@ -37,7 +37,7 @@ module.exports = [
       },
       {
         text: 'Configuring Airnode',
-        link: '/reference/airnode/latest/understand/configuring-airnode',
+        link: '/reference/airnode/latest/understand/configuring',
       },
 
       {
@@ -58,7 +58,7 @@ module.exports = [
       },
       {
         text: 'Deploying Airnode',
-        link: '/reference/airnode/latest/understand/deploying-airnode',
+        link: '/reference/airnode/latest/understand/deploying',
       },
     ],
   },

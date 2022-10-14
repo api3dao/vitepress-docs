@@ -2,14 +2,16 @@
 title: Cloud Resources
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-basePath: /airnode/latest/
+pageHeader: Reference → Airnode→ v1.0
+path: /reference/airnode/latest/cloud-resources.html
+version: v1.0
 outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.0</PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

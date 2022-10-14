@@ -2,13 +2,16 @@
 title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-basePath: /reference/ois/latest/
+pageHeader: Reference → OIS → v1.2
+path: /reference/ois/latest/index.html
+version:
+outline: deep
 tags:
 ---
 
 <VersionWarning/>
 
-<PageHeader>v1.2</PageHeader>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 

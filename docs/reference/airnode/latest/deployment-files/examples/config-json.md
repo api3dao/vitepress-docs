@@ -3,7 +3,8 @@ title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0 → Deployment Files → Examples
-basePath: /airnode/latest/deployment-files/examples/
+path: /reference/airnode/latest/deployment-files/examples/config-json.html
+version: v1.0
 outline: deep
 tags:
 ---
