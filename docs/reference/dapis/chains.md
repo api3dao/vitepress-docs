@@ -2,8 +2,8 @@
 title: Chains and Contracts
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
-pageHeader: Reference → dAPIs → v1.0
-path: /dapis/index.html
+pageHeader: Reference → dAPIs
+path: /dapis/chains.html
 version:
 outline: deep
 tags:
@@ -20,4 +20,4 @@ dAPIs can be read on the following chains using the
 [dAPI Browser](./dapi-browser.md) to find the desired dAPI names and the
 networks they are available on.
 
-<dapis-chains-ChainsList/>
+<ChainsList/>

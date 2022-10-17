@@ -1,13 +1,19 @@
 ---
 title: readerCanReadDataFeed()
-folder: dApp Developers
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs → DapiServer Functions
+path: /reference/dapis/reader-can-read-datafeed.html
+version:
+outline: deep
+tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
-
-<Toc/>
 
 For on-chain smart contracts, the function
 [readerCanReadDataFeed()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L771-L781)
