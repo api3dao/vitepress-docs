@@ -46,12 +46,12 @@ contract to access dAPIs. `DapiServer.sol` reads directly from its data store of
 Beacons, which are powered by API provider-owned and operated
 [Airnodes](/reference/airnode/latest/).
 
-> <img src="./assets/images/dapp-beacon.png" width="550px"/>
+> <img src="../assets/images/dapp-beacon.png" width="550px"/>
 
 A dAPI can be configured to read an individual Beacon or an aggregation of
 multiple Beacons.
 
-> <img src="./assets/images/dapi-beacons.png" width="550px"/>
+> <img src="../assets/images/dapi-beacons.png" width="550px"/>
 
 Each dAPI has a human-readable name (e.g., `ETH/USD`) that makes them easily
 accessible using `DapiServer.sol`.
