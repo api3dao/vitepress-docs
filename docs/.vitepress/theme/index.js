@@ -17,6 +17,11 @@ import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
 import ContractAddresses from '../../_components/reference/airnode/ContractAddresses.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
+import ChainsList from '../../_components/reference/dapis/chains/ChainsList.vue';
+import ChainsItem from '../../_components/reference/dapis/chains/ChainsItem.vue';
+import DapiList from '../../_components/reference/dapis/browser/DapiList.vue';
+import DapiDetails from '../../_components/reference/dapis/browser/DapiDetails.vue';
+import DapiValue from '../../_components/reference/dapis/browser/DapiValue.vue';
 
 export default {
   ...DefaultTheme,
@@ -42,6 +47,11 @@ export default {
     app.component('CopyIcon', CopyIcon);
     app.component('ContractAddresses', ContractAddresses);
     app.component('SponsorWalletWarning', SponsorWalletWarning);
+    app.component('ChainsList', ChainsList);
+    app.component('ChainsItem', ChainsItem);
+    app.component('DapiList', DapiList);
+    app.component('DapiDetails', DapiDetails);
+    app.component('DapiValue', DapiValue);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

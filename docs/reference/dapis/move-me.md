@@ -1,9 +1,17 @@
 ---
-title: Getting Started
-folder: dApp Developers
+title: dAPIs
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs
+path: /dapis/index.html
+version:
+outline: deep
+tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
@@ -14,7 +22,9 @@ contracts can be imported from the
 [@api3/airnode-protocol-v1](https://www.npmjs.com/package/@api3/airnode-protocol-v1)
 npm package.
 
-## Starter Project
+## Learn to use dAPIs
+
+### Starter Project
 
 The
 [data-feed-reader-example](https://github.com/api3dao/data-feed-reader-example)

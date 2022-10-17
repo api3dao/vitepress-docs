@@ -2,7 +2,7 @@
 -->
 
 <template>
-  <div style="display: inline-block; width: 38px">
+  <div style="display: inline-block; max-width: 58px">
     <a
       :id="iconId"
       href="#"
@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .contract-addresses-copy-icon {
-  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 9px;
   font-size: large;
 }
