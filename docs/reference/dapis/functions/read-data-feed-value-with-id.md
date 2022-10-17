@@ -1,18 +1,31 @@
 ---
-title: readDataFeedValueWithDapiName()
-folder: dApp Developers
+title: readDataFeedValueWithId()
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs → DapiServer Functions
+path: /reference/dapis/read-data-feed-value-with-id.html
+version:
+outline: deep
+tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
-<Toc/>
+::: warning This function uses IDs.
 
-This function reads a value from a dAPI using its name. In the code example
-below, `\_dapiName`is a dAPI name. For on-chain smart contracts the `msg.sender`
-argument received by the function
-[readDataFeedValueWithDapiName()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L749-L765)
+Be sure to understand the difference between using a name or ID. See
+[dAPI Names](./#dapi-names).
+
+:::
+
+This function reads a value directly from a Beacon or Beacon set using its ID.
+In the code example below, `_datafeedId` is a Beacon or Beacon set ID. For
+on-chain smart contracts the `msg.sender` argument received by the function
+[readDataFeedValueWithId()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L708-L721)
 must have [read access](./#coverage-policies) for the dAPI requested.
 
 Calling from off-chain code (_using a library such as `ether.js`_) is not
@@ -29,29 +42,30 @@ contract mySmartContract {
 
     function myGetDataFeedValue(
         address _dapiServerContractAddress,
-        bytes32 _dapiName
+        bytes32 _datafeedId
     ) external {
         int224 private value;
 
         // Calling the DapiServer for a data feed value.
         value =
-            IDapiServer(_dapiServerContractAddress).readDataFeedValueWithDapiName(_dapiName);
+            IDapiServer(_dapiServerContractAddress).readDataFeedValueWithId(_datafeedId);
     }
 }
 ```
 
-See another code example of `readDataFeedValueWithDapiName()` in the
-[data-feed-reader-example repo](https://github.com/api3dao/data-feed-reader-example/blob/main/contracts/DataFeedReaderExample.sol#L37).
+See another code example of `readDataFeedValueWithId()` in the
+[data-feed-reader-example repo](https://github.com/api3dao/data-feed-reader-example/blob/main/contracts/DataFeedReaderExample.sol#L19).
 
 ## Parameters
 
-`readDataFeedValueWithDapiName(bytes32 _dapiName)`
+`readDataFeedValueWithId(bytes32 _datafeedId)`
 
-- `bytes32 dapiName` - The name of the dAPI to retrieve a value for.
+- `bytes32 datafeedId` - The ID of a Beacon or Beacon set to retrieve a value
+  for.
 
 ## Returns
 
-- `int224 value` - The value of the dAPI.
+- `int224 value` - The value of the Beacon or Beacon set.
 
 ::: tip Please note:
 

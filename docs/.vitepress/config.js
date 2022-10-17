@@ -68,7 +68,7 @@ function nav() {
     {
       text: 'Reference',
       items: [
-        { text: 'dAPIs', link: '/reference/dapis/api3-market.md' },
+        { text: 'dAPIs', link: '/reference/dapis/' },
         { text: 'Airnode', link: '/reference/airnode/latest/' },
         { text: 'OIS', link: '/reference/ois/latest/' },
       ],

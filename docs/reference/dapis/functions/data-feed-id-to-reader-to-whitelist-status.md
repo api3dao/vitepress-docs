@@ -1,13 +1,19 @@
 ---
 title: dataFeedIdToReaderToWhitelistStatus()
-folder: dApp Developers
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs → DapiServer Functions
+path: /reference/dapis/data-feed-id-to-reader-to-whitelist-status.html
+version:
+outline: deep
+tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
-
-<Toc/>
 
 For on-chain smart contracts, the function
 [dataFeedIdToReaderToWhitelistStatus()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L791-L806)
@@ -48,12 +54,17 @@ contract mySmartContract {
 
 ::: tip dAPI name
 
-If you want to check the status for a dAPI `name`, you first need to calculate
-the hash off-chain of `name` as shown below. Then pass the value of
-`dapiNameHash` as `_datafeedId` in the example above.
+If you want to check the status for a dAPI `name`, you first need to encode the
+dAPI `name` to bytes32 then calculate the hash off-chain of the encoded `name`
+as shown below. Afterwards, pass the value of `dapiNameHash` as `_datafeedId` in
+the example above.
 
 ```solidity
-dapiNameHash = ethers.utils.solidityKeccak256(['string'], [dapiName]);
+encodedDapiName = ethers.utils.formatBytes32String(dapiName);
+```
+
+```solidity
+dapiNameHash = ethers.utils.solidityKeccak256(['bytes32'], [encodedDapiName]);
 ```
 
 :::
