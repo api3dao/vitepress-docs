@@ -25,6 +25,10 @@ module.exports = [
         text: 'Coverage Policies',
         link: '/explore/dapis/coverage-policies',
       },
+      {
+        text: 'API3 Market',
+        link: '/explore/dapis/market',
+      },
     ],
   },
   {
