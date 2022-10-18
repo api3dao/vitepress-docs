@@ -18,6 +18,18 @@ tags:
 
 # {{$frontmatter.title}}
 
+::: danger TODO: Dashboard ?
+
+Should this page become a Dashboard graphical representation of the guides by
+product. It would have to be more HTML then markdown. This would make it higher
+maintenance.
+
+If not then each "**★ Getting Started**" page cold have it own mini Dashboard
+graphic. Much easier to maintain and the space would not be overwhelming as an
+overall dashboard.
+
+:::
+
 The **API Providers Guides** section hosts tutorials, how to, and videos focused
 on deploying Airnode. Guides are divided into two roles, consumers of off-chain
 data ([dAPP Developers](../developers/)) and providers of off-chain data (API

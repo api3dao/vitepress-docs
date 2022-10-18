@@ -1,7 +1,7 @@
 ---
 title: API3 Market
-sidebarHeader: Reference
-sidebarSubHeader: dAPIs
+sidebarHeader: Explore
+sidebarSubHeader:
 pageHeader: Explore → dAPIs
 path: /explore/dapis/api3-market.html
 version:

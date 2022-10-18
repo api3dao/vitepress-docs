@@ -1,5 +1,5 @@
 ---
-title: Name and ID Schemes
+title: ID and Name Schemes
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs

@@ -2,7 +2,7 @@
 title: Cloud Resources
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode→ v1.0
+pageHeader: Reference → Airnode → v1.0
 path: /reference/airnode/latest/cloud-resources.html
 version: v1.0
 outline: deep

@@ -2,7 +2,7 @@
 title: Chain Idiosyncrasies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode→ v1.0
+pageHeader: Reference → Airnode → v1.0
 path: /reference/airnode/latest/chain-idiosyncrasies.html
 version: v1.0
 outline: deep

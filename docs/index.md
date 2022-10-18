@@ -15,15 +15,9 @@ hero:
     alt: API3
   actions:
     - theme: brand
-      text: Call a dAPI
-      link: /guides/developers/
-    - theme: brand
-      text: Airnode Reference
-      link: /reference/airnode/latest/
-    - theme: brand
-      text: Meet the Team
-      link: /team.md
-    - theme: brand
+      text: Explore
+      link: /explore/
+    - theme: alt
       text: Jobs
       link: /explore/jobs.md
     - theme: alt
@@ -33,14 +27,18 @@ hero:
       text: Documentation Contributions
       link: https://github.com/api3dao/api3-docs
 features:
-  - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
-  - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
+  - icon: ⚙️
+    title: Airnode - Decentralized APIs for Web 3.0
+    details:
+      Airnode is a fully-serverless oracle node that is designed specifically
+      for API providers to operate their own oracles. It addresses many of the
+      issues API providers face in relation to oracle nodes.
   - icon: 🛠️
-    title: Simple and minimal, always
+    title: dAPIs - Simple and Minimal, always
+    details:
+      (value, timestamp) =
+      IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
+  - icon: 🪙
+    title: Title
     details: Lorem ipsum...
-    link: /reference/airnode/latest/
 ---

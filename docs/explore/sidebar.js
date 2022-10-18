@@ -47,4 +47,37 @@ module.exports = [
       { text: 'config.json', link: '/explore/airnode/config.html' },
     ],
   },
+  {
+    text: 'ChainAPI',
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {
+        text: 'What is ChainAPI?',
+        link: '/explore/chainapi/',
+      },
+    ],
+  },
+  {
+    text: 'QRNG',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        text: 'What is QRNG?',
+        link: '/explore/qrng/',
+      },
+    ],
+  },
+  {
+    text: 'DAO Members',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        text: 'What are DAO Members?',
+        link: '/explore/dao-members/',
+      },
+    ],
+  },
 ];

@@ -47,7 +47,7 @@ contract mySmartContract {
 ```
 
 See another code example of `readDataFeedValueWithDapiName()` in the
-[data-feed-reader-example repo](https://github.com/api3dao/data-feed-reader-example/blob/main/contracts/DataFeedReaderExample.sol#L37).
+[data-feed-reader-example repo](https://github.com/api3dao/data-feed-reader-example/blob/main/contracts/DataFeedReaderExample.sol#L37)<ExternalLinkImage/>.
 
 ## Parameters
 

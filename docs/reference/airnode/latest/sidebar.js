@@ -63,6 +63,29 @@ module.exports = [
     ],
   },
   {
+    text: 'Docker Images',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        text: 'Overview',
+        link: '/reference/airnode/latest/docker/',
+      },
+      {
+        text: 'AWS/GCP Deployer Image',
+        link: '/reference/airnode/latest/docker/deployer-image',
+      },
+      {
+        text: 'Client Image',
+        link: '/reference/airnode/latest/docker/client-image',
+      },
+      {
+        text: 'Admin CLI Image',
+        link: '/reference/airnode/latest/docker/admin-cli-image',
+      },
+    ],
+  },
+  {
     text: 'Concepts and Definitions',
     collapsible: true,
     collapsed: true,

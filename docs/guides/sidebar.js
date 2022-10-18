@@ -6,17 +6,21 @@ module.exports = [
     items: [{ text: 'About the Guides', link: '/guides/' }],
   },
   {
-    text: 'ChainAPI',
+    text: 'dAPIS',
     collapsible: true,
     collapsed: false,
     items: [
       {
-        text: 'Integrate your API',
-        link: '/guides/chainapi/integrate',
+        text: '★ Getting Started',
+        link: '/guides/dapis/',
       },
       {
-        text: 'Deploy an API Integration',
-        link: '/guides/chainapi/deploy',
+        text: 'Calling a dAPI',
+        link: '/guides/dapis/calling-a-dapi',
+      },
+      {
+        text: 'Starter Project',
+        link: '/guides/dapis/starter-project',
       },
     ],
   },
@@ -24,6 +28,10 @@ module.exports = [
     text: 'Airnode',
     collapsable: false,
     items: [
+      {
+        text: '★ Getting Started',
+        link: '/guides/airnode/',
+      },
       {
         text: 'Quick Start AWS',
         link: '/guides/airnode/quick-start-aws/',
@@ -39,30 +47,44 @@ module.exports = [
     ],
   },
   {
-    text: 'dAPIS',
+    text: 'ChainAPI',
     collapsible: true,
     collapsed: false,
     items: [
       {
-        text: 'Calling a dAPI',
-        link: '/guides/dapis/calling-a-dapi',
+        text: '★ Getting Started',
+        link: '/guides/chainapi/',
       },
       {
-        text: 'Starter Project',
-        link: '/guides/dapis/starter-project',
+        text: 'Integrate your API',
+        link: '/guides/chainapi/integrate',
+      },
+      {
+        text: 'Deploy an API Integration',
+        link: '/guides/chainapi/deploy',
       },
     ],
   },
   {
     text: 'QRNG',
     collapsible: true,
-    collapsed: false,
-    items: [],
+    collapsed: true,
+    items: [
+      {
+        text: '★ Getting Started',
+        link: '/guides/qrng/',
+      },
+    ],
   },
   {
     text: 'DAO Members',
     collapsible: true,
-    collapsed: false,
-    items: [],
+    collapsed: true,
+    items: [
+      {
+        text: '★ Getting Started',
+        link: '/guides/dao-members/',
+      },
+    ],
   },
 ];
