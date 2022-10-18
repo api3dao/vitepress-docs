@@ -59,5 +59,7 @@ Join the growing number of API providers working with API3 to provide
 first-party oracle services. Airnode is designed specifically for API providers
 to operate, and API3 will always be here to help.
 
+- [What is Airnode?](../airnode/what-is-airnode.md)
+- [Why use Airnode?](../airnode/why-use-airnode.md)
 - See the [Airnode](../../reference/airnode/latest/) technical reference
   documentation.
