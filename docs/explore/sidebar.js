@@ -9,7 +9,8 @@ module.exports = [
   },
   {
     text: 'dAPIs',
-    collapsable: false,
+    collapsible: true,
+    collapsed: false,
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
       {
@@ -27,8 +28,9 @@ module.exports = [
     ],
   },
   {
-    text: 'AIRNODE',
-    collapsable: false,
+    text: 'Airnode',
+    collapsible: true,
+    collapsed: false,
     items: [
       {
         text: 'What is Airnode?',

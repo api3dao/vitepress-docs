@@ -1,12 +1,14 @@
 module.exports = [
   {
     text: '',
-    collapsible: false,
+    collapsible: true,
+    collapsed: false,
     items: [{ text: 'About the Guides', link: '/guides/' }],
   },
   {
     text: 'ChainAPI',
-    collapsable: false,
+    collapsible: true,
+    collapsed: false,
     items: [
       {
         text: 'Integrate your API',
@@ -38,7 +40,8 @@ module.exports = [
   },
   {
     text: 'dAPIS',
-    collapsable: false,
+    collapsible: true,
+    collapsed: false,
     items: [
       {
         text: 'Calling a dAPI',
@@ -52,12 +55,14 @@ module.exports = [
   },
   {
     text: 'QRNG',
-    collapsable: false,
+    collapsible: true,
+    collapsed: false,
     items: [],
   },
   {
     text: 'DAO Members',
-    collapsable: false,
+    collapsible: true,
+    collapsed: false,
     items: [],
   },
 ];
