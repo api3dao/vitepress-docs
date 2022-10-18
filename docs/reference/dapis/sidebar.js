@@ -8,12 +8,20 @@ module.exports = [
         link: '/reference/dapis/',
       },
       {
-        text: 'Chains and Contracts',
-        link: '/reference/dapis/chains',
+        text: 'dAPI Names',
+        link: '/reference/dapis/dapi-names',
       },
       {
-        text: 'Name and ID Schemes',
+        text: 'ID and Name Schemes',
         link: '/reference/dapis/schemes',
+      },
+      {
+        text: 'DapiServer.sol',
+        link: '/reference/dapis/dapi-server-sol',
+      },
+      {
+        text: 'Chains and Contracts',
+        link: '/reference/dapis/chains',
       },
     ],
   },

@@ -19,7 +19,7 @@ module.exports = [
     ],
   },
   {
-    text: 'UNDERSTANDING AIRNODE',
+    text: 'Understanding Airnode',
     collapsible: true,
     collapsed: false,
     items: [
@@ -63,7 +63,30 @@ module.exports = [
     ],
   },
   {
-    text: 'CONCEPTS AND DEFINITIONS',
+    text: 'Docker Images',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        text: 'Overview',
+        link: '/reference/airnode/latest/docker/',
+      },
+      {
+        text: 'AWS/GCP Deployer Image',
+        link: '/reference/airnode/latest/docker/deployer-image',
+      },
+      {
+        text: 'Client Image',
+        link: '/reference/airnode/latest/docker/client-image',
+      },
+      {
+        text: 'Admin CLI Image',
+        link: '/reference/airnode/latest/docker/admin-cli-image',
+      },
+    ],
+  },
+  {
+    text: 'Concepts and Definitions',
     collapsible: true,
     collapsed: true,
     items: [
@@ -122,7 +145,7 @@ module.exports = [
     ],
   },
   {
-    text: 'SPECIFICATIONS',
+    text: 'Specifications',
     collapsible: true,
     collapsed: true,
     items: [
@@ -141,7 +164,7 @@ module.exports = [
     ],
   },
   {
-    text: 'PACKAGES',
+    text: 'Packages',
     collapsible: true,
     collapsed: true,
     items: [
@@ -160,7 +183,7 @@ module.exports = [
     ],
   },
   {
-    text: 'DEPLOYMENT FILES',
+    text: 'Deployment Files',
     collapsible: true,
     collapsed: true,
     items: [
@@ -183,7 +206,7 @@ module.exports = [
         link: '/reference/airnode/latest/deployment-files/receipt-json',
       },
       {
-        text: 'EXAMPLES',
+        text: 'Examples',
         items: [
           {
             text: 'config.json',
@@ -200,7 +223,7 @@ module.exports = [
         ],
       },
       {
-        text: 'TEMPLATES',
+        text: 'Templates',
         items: [
           {
             text: 'OIS Object',

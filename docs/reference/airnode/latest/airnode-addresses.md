@@ -2,7 +2,7 @@
 title: Airnode Contract Addresses
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode→ v1.0
+pageHeader: Reference → Airnode → v1.0
 path: /reference/airnode/latest/airnode-addresses.html
 version: v1.0
 outline: deep

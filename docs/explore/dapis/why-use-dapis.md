@@ -13,7 +13,7 @@ tags:
 # {{$frontmatter.title}}
 
 Due to being composed out of first-party data feeds, dAPIs offer security,
-transparency, cost-efficiency and scalability in a turn-key package.
+transparency, cost-efficiency, and scalability in a turn-key package.
 
 ## Security
 
