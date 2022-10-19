@@ -18,7 +18,7 @@ tags:
 ::: warning This function uses IDs.
 
 Be sure to understand the difference between using a name or ID. See
-[dAPI Names](./#dapi-names).
+[dAPI Names](../index.md).
 
 :::
 
