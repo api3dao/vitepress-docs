@@ -3,7 +3,7 @@ title: DapiServer.sol
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /dapis/dapi-server-sol.html
+path: /reference/dapis/dapi-server-sol.html
 version:
 outline: deep
 tags:
