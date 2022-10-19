@@ -19,9 +19,6 @@ import ContractAddresses from '../../_components/reference/airnode/ContractAddre
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
 import ChainsList from '../../_components/reference/dapis/chains/ChainsList.vue';
 import ChainsItem from '../../_components/reference/dapis/chains/ChainsItem.vue';
-import DapiList from '../../_components/reference/dapis/browser/DapiList.vue';
-import DapiDetails from '../../_components/reference/dapis/browser/DapiDetails.vue';
-import DapiValue from '../../_components/reference/dapis/browser/DapiValue.vue';
 import DockerHubImages from '../../_components/reference/airnode/DockerHubImages.vue';
 import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeAws.vue';
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
@@ -52,9 +49,6 @@ export default {
     app.component('SponsorWalletWarning', SponsorWalletWarning);
     app.component('ChainsList', ChainsList);
     app.component('ChainsItem', ChainsItem);
-    app.component('DapiList', DapiList);
-    app.component('DapiDetails', DapiDetails);
-    app.component('DapiValue', DapiValue);
     app.component('DockerHubImages', DockerHubImages);
     app.component('DeleteAirnodeAws', DeleteAirnodeAws);
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);

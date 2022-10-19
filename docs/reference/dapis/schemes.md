@@ -3,7 +3,7 @@ title: ID and Name Schemes
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /dapis/index.html
+path: /reference/dapis/index.html
 version:
 outline: deep
 tags:
@@ -35,10 +35,10 @@ are fixed.
 
 A dAPI's name is identical across all chains. When accessing a dAPI value with a
 function such as
-[readDataFeedWithName()](../developers/read-data-feed-with-dapi-name.md), only
-the dAPI `name` is needed.
+[readDataFeedWithName()](./functions/read-data-feed-with-dapi-name.md), only the
+dAPI `name` is needed.
 
 A Beacon's ID and its template are identical across chains. When accessing a
 Beacon's value with a function such as
-[readDataFeedWithId()](../developers/read-data-feed-with-id.md), the `beaconId`
-is needed.
+[readDataFeedWithId()](./functions/read-data-feed-with-id.md), the `beaconId` is
+needed.

@@ -1,13 +1,19 @@
 ---
 title: Best Practices
-folder: Introduction
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs
+path: /reference/dapis/best-practices.html
+version:
+outline: deep
+tags:
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<VersionWarning/>
+
+<PageHeader/>
 
 # {{$frontmatter.title}}
-
-<Toc/>
 
 dAPIs are aggregated from multiple beacons using a decentralized pool of
 independent Airnodes. All Airnodes are API provider owned and operated. API

@@ -4,12 +4,8 @@ module.exports = [
     collapsable: false,
     items: [
       {
-        text: 'dAPI Browser',
-        link: '/reference/dapis/',
-      },
-      {
         text: 'dAPI Names',
-        link: '/reference/dapis/dapi-names',
+        link: '/reference/dapis/',
       },
       {
         text: 'ID and Name Schemes',
