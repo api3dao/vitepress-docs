@@ -3,7 +3,7 @@ title: Chains and Contracts
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /dapis/chains.html
+path: /reference/dapis/chains.html
 version:
 outline: deep
 tags:
@@ -17,7 +17,7 @@ tags:
 
 dAPIs can be read on the following chains using the
 [DapiServer](../#dapiserver-sol) contract addresses listed below. Use the
-[dAPI Browser](./dapi-browser.md) to find the desired dAPI names and the
-networks they are available on.
+[API3 Market](https://market.api3.org/)<ExternalLinkImage/> website to find the
+desired dAPI names and the networks they are available on.
 
 <ChainsList/>
