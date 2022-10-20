@@ -26,7 +26,8 @@ module.exports = [
   },
   {
     text: 'Airnode',
-    collapsable: false,
+    collapsible: true,
+    collapsed: false,
     items: [
       {
         text: '★ Getting Started',
