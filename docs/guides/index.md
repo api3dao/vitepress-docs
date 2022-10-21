@@ -18,24 +18,22 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: danger TODO: Dashboard ?
+<Tabs>
 
-Should this page become a Dashboard graphical representation of the guides by
-product. It would have to be more HTML then markdown. This would make it higher
-maintenance.
+@tab: All
 
-If not then each "**★ Getting Started**" page cold have it own mini Dashboard
-graphic. Much easier to maintain and the space would not be overwhelming as an
-overall dashboard.
+Need a Vue component here that has a prop to filter based on the reader's role.
 
-:::
+@tab: For Developers
+
+@tab: API Providers
 
 The **API Providers Guides** section hosts tutorials, how to, and videos focused
 on deploying Airnode. Guides are divided into two roles, consumers of off-chain
 data ([dAPP Developers](../developers/)) and providers of off-chain data (API
 Providers).
 
-## ChainAPI
+**ChainAPI**
 
 Airnode requires a `config.json` file to define its structure and operational
 functionality. While it s possible to build a `config.json` file manually,
@@ -48,7 +46,7 @@ ChainAPI is the best way to setup Airnode's configuration.
   updated) Airnode `config.json` file to deploy Airnode to AWS, GCP, or a Docker
   container.
 
-## Airnode
+**Airnode**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -56,3 +54,5 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
+
+</Tabs>

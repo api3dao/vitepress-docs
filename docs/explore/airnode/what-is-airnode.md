@@ -3,7 +3,7 @@ title: What is Airnode?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/what-is-airnode.html
+path: /explore/airnode/what-is-airnode.html
 outline: deep
 tags:
 ---

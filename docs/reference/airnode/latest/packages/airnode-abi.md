@@ -1,5 +1,5 @@
 ---
-title: ABI
+title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0 → Packages

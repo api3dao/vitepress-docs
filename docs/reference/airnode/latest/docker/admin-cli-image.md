@@ -1,5 +1,5 @@
 ---
-title: Airnode Admin CLI Image
+title: Admin CLI Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0 → Docker Images

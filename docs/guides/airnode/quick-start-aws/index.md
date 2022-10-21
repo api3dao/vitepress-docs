@@ -3,40 +3,45 @@ title: Quick Start AWS
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/deploy-aws.html
+path: /guides/airnode/quick-start-aws/deploy-aws.html
 outline: deep
 tags:
 ---
 
 <PageHeader/>
 
-This demo is a simple Airnode deployment, using a hands-on approach, to better
-understand the overall deployment process of the Airnode -[deployer
-image]-<!--(../../../grp-providers/docker/deployer-image.md)--> which deploys
-the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an API
-endpoint (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
-current value of a coin. This demo does not detail the overall configuration of
-an Airnode, it is just a quick start.
+The **"Quick"** series of guides are simple introductions demonstrating the
+deployment of an Airnode. Configuration files are provided with only minor
+changes to be made.
+
+This guide uses the Airnode
+[deployer image](/reference/airnode/latest/docker/deployer-image.md) which
+deploys the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an
+API endpoint (`GET /simple/price`) from
+[CoinGecko](https://www.coingecko.com/en/api/documentation)<ExternalLinkImage/>
+which returns the current value of a coin. This demo does not detail the overall
+configuration of an Airnode, it is just a quick start guide.
 
 ## Deployment Files
 
-An Airnode cloud provider deployment uses a Docker image (called -[deployer
-image]-<!--(../../../grp-providers/docker/deployer-image.md)-->) which in turn
+An Airnode cloud provider deployment uses the Docker image
+[deployer image](/reference/airnode/latest/docker/deployer-image.md) which
 requires three files as input.
 
 - [config.json](#config-json)
 - [secrets.env](#secrets-env)
 - [aws.env](#aws-env)
 
-For the purpose of this demo these files have been created and only require a
-few minor changes on your part to make the deployment of the demo Airnode
-successful. These changes are needed to supply AWS credentials, a chain provider
-url, and a mnemonic.
+For the purpose of this guide, these files have been created and only require a
+few minor changes to make the deployment of the Airnode successful. These
+changes are needed to supply AWS credentials, a chain provider url, and a
+mnemonic.
 
 ## Install Prerequisites
 
-Install the [Docker Desktop](https://docs.docker.com/get-docker/) and launch it.
+Install the
+[Docker Desktop](https://docs.docker.com/get-docker/)<ExternalLinkImage/> and
+launch it.
 
 ## Project Folder
 

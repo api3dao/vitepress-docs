@@ -48,7 +48,8 @@
     "Moonbase",
     "tabcontent",
     "tablinks",
-    "vitepress"
+    "vitepress",
+    "Transformative"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true
