@@ -1,5 +1,5 @@
 ---
-title: Airnode Client Image
+title: Client Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0 → Docker Images

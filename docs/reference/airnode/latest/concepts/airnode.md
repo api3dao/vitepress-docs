@@ -15,20 +15,77 @@ tags:
 
 # {{$frontmatter.title}}
 
+::: danger WARNING
+
+This doc has been altered for `v1.0`. Do not overwrite when converting the
+latest `v0.x` relase to the new docs.
+
+:::
+
 Airnode is a serverless oracle node implemented with a _"set and forget"_
 [philosophy](../grp-providers/airnode/design-philosophy.md).
 
+::: danger TODO:
+
+Add the new component that speaks to Airnode as a data source for both RRP and
+dAPIs.
+
+:::
+
 <!-- TODO: Link why should you use Airnode -->
+
+## Airnode processes RRP requests
 
 An Airnode is capable of serving one or more APIs to
 [requesters](./requester.md) (which are on-chain smart contracts) that request
-data served by a particular Airnode. Each and every Airnode has a
-[unique mnemonic](../grp-providers/guides/build-an-airnode/configuring-airnode.md#airnodewalletmnemonic)
-identifying its wallet. This mnemonic is kept secret and Airnode is publicly
-identified using the default [address](airnode.md#airnodeaddress) derived from
-the mnemonic.
+data served by a particular Airnode. The AirnodeRrpV0 protocol is designed to be
+flexible and is meant to serve a variety of use cases. See the Airnode
+[requester examples](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)<ExternalLinkImage/>
+for potential design patterns.
 
-## `airnodeAddress`
+Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")
+deployed as self hosted or cloud provider functions, e.g., AWS) and the on-chain
+**protocol contract** AirnodeRrpV0.sol. A requester calls the protocol contract,
+which emits a blockchain event with the request parameters. Airnode listens to
+the events emitted by the AirnodeRrpV0 contract. During the next run cycle,
+Airnode gets the request parameters from the emitted event. The diagram below
+illustrates the mechanics of the entire process.
+
+Ignoring the mechanics of the overall process, the requester calling an Airnode
+primarily focuses on two tasks, indicated by points A & B in the diagram below.
+
+- <span style="color:green;font-weight:bold;">1</span>: Make the request
+- <span style="color:blue;font-weight:bold;">2</span>: Accept and decode the
+  response
+
+> <img src="../assets/images/call-an-airnode.png"/>
+>
+> 1.  <p>A requester makes a request to the AirnodeRrpV0 contract which adds the <code>requestId</code> to storage, emits the request to the event logs and returns the <code>requestId</code> to the requester. The request is retrieved by the Airnode during its next run cycle. It then verifies the requester is authorized by checking authorizer contracts assigned to the Airnode.</p>
+> 2.  <p>If the request is authorized, Airnode proceeds to respond. It first gathers the requested data from the API and calls the <code>fulfill()</code> function in AirnodeRrpV0, which removes the pending <code>requestId</code> from storage and makes a callback to <code>myFulfill()</code>. The gas costs associated 
+>     with the response are covered by the sponsor of the requester.</p>
+
+## Airnode sources data for dAPIs
+
+An Airnode also supplies the data, as datafeeds, to Beacons which are the
+underlying data source for dAPIs.
+
+::: danger TODO:
+
+More content needed here. Something that starts like this:
+
+Airnode has an attached mechanism the looks for a deviation it the value of its
+endpoints which point to an API provider's API operations. This mechanism
+updates beacons that are the source of data for all dAPIs.
+
+:::
+
+## mnemonic
+
+Each and every Airnode has a unique mnemonic identifying its wallet. This
+mnemonic is kept secret and Airnode is publicly identified using the default
+[address](airnode.md#airnodeaddress) derived from the mnemonic.
+
+## airnodeAddress
 
 An Airnode is identified by the default address of a BIP 44 wallet (with the
 path `m/44'/60'/0'/0/0`) which is referred to as the `airnodeAddress`. This
@@ -48,7 +105,7 @@ npx @api3/airnode-admin derive-airnode-address \
 Airnode address: 0xaBd9...
 ```
 
-## `xpub`
+## xpub
 
 The Airnode owner announces the _extended public key_ (`xpub` of the hardened
 derivation path `m/44'/60'/0'`) off-chain. Then a sponsor derives a
