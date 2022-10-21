@@ -127,6 +127,10 @@ module.exports = [
         link: '/reference/airnode/latest/concepts/sponsor',
       },
       {
+        text: 'Requests and Sponsors',
+        link: '/reference/airnode/latest/concepts/requesters-sponsors',
+      },
+      {
         text: 'Template',
         link: '/reference/airnode/latest/concepts/template',
       },
@@ -141,6 +145,10 @@ module.exports = [
       {
         text: 'Gas Price Strategies',
         link: '/reference/airnode/latest/concepts/gas-prices',
+      },
+      {
+        text: 'Fees',
+        link: '/reference/airnode/latest/concepts/fees',
       },
     ],
   },
@@ -170,7 +178,10 @@ module.exports = [
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/packages/' },
       { text: 'Adapter', link: '/reference/airnode/latest/packages/adapter' },
-      { text: 'ABI', link: '/reference/airnode/latest/packages/abi' },
+      {
+        text: 'Airnode ABI',
+        link: '/reference/airnode/latest/packages/airnode-abi',
+      },
       {
         text: 'Admin CLI',
         link: '/reference/airnode/latest/packages/admin-cli',

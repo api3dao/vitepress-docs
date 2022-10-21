@@ -45,6 +45,18 @@ module.exports = [
         text: 'Quick Start Docker Container',
         link: '/guides/airnode/deploy-container',
       },
+      {
+        text: 'Making an RRP Request',
+        link: '/guides/airnode/rrp-request',
+      },
+      {
+        text: 'Using RRP Templates',
+        link: '/guides/airnode/using-rrp-templates',
+      },
+      {
+        text: 'Monorepo Examples',
+        link: '/guides/airnode/monorepo-examples',
+      },
     ],
   },
   {

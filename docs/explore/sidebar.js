@@ -41,10 +41,25 @@ module.exports = [
         link: '/explore/airnode/what-is-airnode.html',
       },
       {
+        text: 'Design Philosophy',
+        link: '/explore/airnode/design-philosophy.html',
+      },
+      {
+        text: 'Implementation',
+        link: '/explore/airnode/implementation.html',
+      },
+      {
+        text: 'Ethereum Providers',
+        link: '/explore/airnode/ethereum-providers.html',
+      },
+      {
+        text: 'Configuration Files',
+        link: '/explore/airnode/config-files.html',
+      },
+      {
         text: 'Why use Airnode?',
         link: '/explore/airnode/why-use-airnode.html',
       },
-      { text: 'config.json', link: '/explore/airnode/config.html' },
     ],
   },
   {

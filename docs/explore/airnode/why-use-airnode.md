@@ -3,7 +3,7 @@ title: Why use Airnode?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/why-use-airnode.html
+path: /explore/airnode/why-use-airnode.html
 outline: deep
 tags:
 ---
@@ -14,7 +14,7 @@ tags:
 
 API3 embraces the ideology of a decentralized web and the power of open source.
 Furthermore it believes that the
-[oracle problem is ill-posed](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)
+[oracle problem is ill-posed](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)<ExternalLinkImage/>
 and instead, the problem to be solved is how to connect APIs to the blockchain.
 Airnode is a first-party oracle solution that addresses this problem. Like all
 design decisions, however, the advantages presented below have tradeoffs that
@@ -38,11 +38,11 @@ should be understood.
   making the requests) specify a sponsor (account that sponsors the transaction)
   to pay for the response transaction.
 - Open source - Airnode and other API3 projects are developed on
-  [github](https://github.com/api3dao).
+  [GitHub](https://github.com/api3dao)<ExternalLinkImage/>.
 - Secure - Airnode is inherently more secure than other solutions due to its
   stateless nature. Nonetheless, API3 remains highly focused on security and has
   a track record of favorable
-  [external security audits](https://github.com/api3dao/api3-dao/tree/main/reports).
+  [external security audits](https://github.com/api3dao/api3-dao/tree/main/reports)<ExternalLinkImage/>.
 - Free - API3 does not charge for deploying and using Airnode. Under the AWS
   lambda free tier, operating an Airnode can even be free.
 
@@ -50,23 +50,25 @@ should be understood.
 
 - Requires knowledge - Some knowledge about how Airnode works is inherently
   necessary. The API provider needs to understand how to
-  [configure the Airnode](../grp-providers/guides/build-an-airnode/#configuration)
-  for successful deployment, while [requesters](../concepts/requester.md) need
-  to understand how to make the requests. API3 aims to make this as convenient
-  as possible for both parties.
+  [configure an Airnode](/reference/airnode/latest/understand/configuring.md)
+  for successful deployment, while
+  [requesters](/reference/airnode/latest/concepts/requester.md) need to
+  understand how to make the requests. API3 aims to make this as convenient as
+  possible for both parties.
 - Airnode becomes a vendor - When an API provider begins using Airnode, they
   become a "vendor" and therefore forfeit some control over technical aspects of
   API delivery.
 - Higher response time for requests - Airnode is designed to periodically wake
-up, check for any new requests, and process them. This means that there is a
-window in which Airnode "sleeps". This is generally not problematic since the
-specific time a response transaction is recorded on-chain is never guaranteed
-and this "sleep time" is configurable.
+  up, check for any new requests, and process them. This means that there is a
+  window in which Airnode "sleeps". This is generally not problematic since the
+  specific time a response transaction is recorded on-chain is never guaranteed
+  and this "sleep time" is configurable.
+
+The advantages that Airnode provides will greatly outweigh the tradeoffs for the
+large majority of use cases.
+
 <!-- TODO: provide benchmarks -->
 
 ## More...
-
-The advantages that Airnode provides should greatly outweigh the tradeoffs for
-the large majority of use cases.
 
 - TODO: (Add important) links

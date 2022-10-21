@@ -1,9 +1,9 @@
 ---
-title: config.json
+title: Configuration Files
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/config.html
+path: /explore/airnode/config.html
 outline: deep
 tags:
 ---
@@ -26,7 +26,9 @@ deploy an Airnode to AWS, GCP, or a Docker Container.
 
 @tab:AWS
 
-<img src="/api-provider-overview-aws.png" width="450">
+<img style="margin-top:15px;display: block;
+  margin-left: auto;
+  margin-right: auto;" src="../assets/images/api-provider-overview-aws.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. The OIS object is
    important as it maps an API to Airnode endpoints.
@@ -36,7 +38,9 @@ deploy an Airnode to AWS, GCP, or a Docker Container.
 
 @tab:GCP
 
-<img src="/api-provider-overview-gcp.png" width="450">
+<img style="margin-top:15px;display: block;
+  margin-left: auto;
+  margin-right: auto;" src="../assets/images/api-provider-overview-gcp.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. The OIS object is
    important as it maps an API to Airnode endpoints.
@@ -45,7 +49,9 @@ deploy an Airnode to AWS, GCP, or a Docker Container.
 
 @tab:Container
 
-<img src="/api-provider-overview-container.png" width="450">
+<img style="margin-top:15px;display: block;
+  margin-left: auto;
+  margin-right: auto;" src="../assets/images/api-provider-overview-container.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. The OIS object is
    important as it maps an API to Airnode endpoints.
