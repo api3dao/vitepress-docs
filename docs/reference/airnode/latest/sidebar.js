@@ -16,6 +16,10 @@ module.exports = [
         text: 'Chain Idiosyncrasies',
         link: '/reference/airnode/latest/chain-idiosyncrasies',
       },
+      {
+        text: 'Migration Guide',
+        link: '/reference/airnode/latest/migration',
+      },
     ],
   },
   {
