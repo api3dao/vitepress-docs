@@ -1,17 +1,20 @@
 ---
 title: RemixQrngExample.sol
-docSetName: QRNG
-folder: Reference
-basePath: /qrng
+sidebarHeader: QRNG
+sidebarSubHeader:
+pageHeader: Reference → QRNG
+path: /reference/qrng/remix-example.html
+outline: deep
 tags:
+  - qrng
+  - solidity
+  - example
+  - remix
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<PageHeader/>
 
 # {{$frontmatter.title}}
-
-<!--TocHeader />
-<TOC class="table-of-contents" :include-level="[2,3]" /-->
 
 This contract is the one included in the
 [Remix Example Project](../guides/remix-example.md) guide. Its only capability
@@ -20,4 +23,4 @@ array of random numbers, see the
 [QRNG Example Project](../guides/qrng-example.md).
 
 <!-- prettier-ignore -->
-<<< @/docs/qrng/reference/RemixQrngExample.sol
+<<< @/reference/qrng/RemixQrngExample.txt

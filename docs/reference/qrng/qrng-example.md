@@ -1,12 +1,17 @@
 ---
 title: QrngExample.sol
-docSetName: QRNG
-folder: Reference
-basePath: /qrng
+sidebarHeader: QRNG
+sidebarSubHeader:
+pageHeader: Reference → QRNG
+path: /reference/qrng/qrng-example.html
+outline: deep
 tags:
+  - qrng
+  - solidity
+  - example
 ---
 
-<TitleSpan>{{$frontmatter.folder}}</TitleSpan>
+<PageHeader/>
 
 # {{$frontmatter.title}}
 
@@ -18,4 +23,4 @@ This contract is the one included in the
 to run visit and run the project.
 
 <!-- prettier-ignore -->
-<<< @/docs/qrng/reference/QrngExample.sol
+<<< @/reference/qrng/QrngExample.txt
