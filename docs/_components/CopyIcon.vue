@@ -2,7 +2,7 @@
 -->
 
 <template>
-  <div style="display: inline-block; max-width: 58px">
+  <span style="display: inline-block; max-width: 58px">
     <a
       :id="iconId"
       href="#"
@@ -11,7 +11,7 @@
     >
       ❏
     </a>
-  </div>
+  </span>
 </template>
 
 <script>
