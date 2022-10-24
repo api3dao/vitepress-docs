@@ -22,8 +22,6 @@ resources to fully operate.
 
 @tab:AWS
 
-Hello World
-
 | Resource    | Description                                                                   |
 | :---------- | :---------------------------------------------------------------------------- |
 | EventBridge | Timer starting the Airnode service.                                           |

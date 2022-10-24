@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: API3
-  text: dAPI datafeeds powered by Airnode.
+  text: dAPI data feeds powered by Airnode.
   tagline:
     dAPIs are continuously updated streams of off-chain data, such as the latest
     cryptocurrency, stock and commodity prices. They can power various
@@ -27,18 +27,19 @@ hero:
       text: Documentation Contributions
       link: https://github.com/api3dao/api3-docs
 features:
-  - icon: ⚙️
-    title: Airnode - Decentralized APIs for Web 3.0
+  - title: Airnode
     details:
-      Airnode is a fully-serverless oracle node that is designed specifically
-      for API providers to operate their own oracles. It addresses many of the
-      issues API providers face in relation to oracle nodes.
-  - icon: 🛠️
-    title: dAPIs - Simple and Minimal, always
+      A fully-serverless oracle node that is designed specifically for API
+      providers to operate their own oracles. It addresses many of the issues
+      API providers face in relation to oracle nodes.
+  - title: dAPIs
     details:
-      (value, timestamp) =
-      IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
-  - icon: 🪙
-    title: Title
-    details: Lorem ipsum...
+      Power your dAPP with quantifiably secure data feeds from curated sources.
+      Simple and Minimal, always...
+  - title: ChainAPI
+    details:
+      Easily deploy an Airnode allowing your API to be called by smart contracts
+      and applications running on the decentralized web.
+  - title: QRNG
+    details: Quantum random number generation provided as an oracle service.
 ---
