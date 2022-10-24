@@ -4,9 +4,11 @@ module.exports = [
     collapsable: false,
     items: [
       { text: 'Understanding QRNG', link: '/reference/qrng/' },
-      { text: 'Chains', link: '/reference/qrng/chains' },
+      {
+        text: 'Chains',
+        link: '/reference/qrng/chains',
+      },
       { text: 'API Providers', link: '/reference/qrng/providers' },
-      { text: 'Realted Airnode Function', link: '/reference/qrng/providers' },
       { text: 'QrngExample.sol', link: '/reference/qrng/qrng-example' },
       { text: 'RemixExample.sol', link: '/reference/qrng/remix-example' },
       { text: '★ Other Related Reading', link: '/reference/qrng/more' },
@@ -14,9 +16,18 @@ module.exports = [
   },
 
   {
-    text: 'Related Airnode Functions',
+    text: 'Contracts and Functions',
     collapsible: true,
     collapsed: false,
-    items: [],
+    items: [
+      {
+        text: 'AirnodeRrpV0.sol',
+        link: '/reference/qrng/functions/airnode-rrp-v0',
+      },
+      {
+        text: 'makeFullRequest()',
+        link: '/reference/qrng/functions/make-full-request',
+      },
+    ],
   },
 ];

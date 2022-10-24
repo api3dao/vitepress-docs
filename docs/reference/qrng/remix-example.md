@@ -23,4 +23,4 @@ array of random numbers, see the
 [QRNG Example Project](../guides/qrng-example.md).
 
 <!-- prettier-ignore -->
-<<< @/reference/qrng/RemixQrngExample.txt
+<<< @/reference/qrng/RemixQrngExample.txt{solidity}
