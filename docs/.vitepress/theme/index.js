@@ -23,6 +23,7 @@ import DockerHubImages from '../../_components/reference/airnode/DockerHubImages
 import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeAws.vue';
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
 import ChainName from '../../_components/ChainName.vue';
+import ElementSelect from '../../_components/ElementSelect.vue';
 
 export default {
   ...DefaultTheme,
@@ -54,6 +55,7 @@ export default {
     app.component('DeleteAirnodeAws', DeleteAirnodeAws);
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);
     app.component('ChainName', ChainName);
+    app.component('ElementSelect', ElementSelect);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };
