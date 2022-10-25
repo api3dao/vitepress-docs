@@ -13,7 +13,7 @@ tags:
 # {{$frontmatter.title}}
 
 An Airnode is a first-party oracle that will push off-chain API data to any
-on-chain requester. It is defined by a file named
+on-chain requester. The Airnode is defined by a file named
 [config.json](/reference/airnode/latest/deployment-files/config-json.md).
 
 Airnode is also the backbone that feeds data to beacons. Beacons are the behind

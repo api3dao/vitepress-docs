@@ -81,7 +81,7 @@ module.exports = [
   {
     text: 'QRNG',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: '★ Getting Started',
@@ -104,7 +104,7 @@ module.exports = [
   {
     text: 'DAO Members',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: '★ Getting Started',
