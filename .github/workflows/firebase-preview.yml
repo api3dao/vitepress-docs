@@ -1,6 +1,8 @@
 name: Deploy Preview to Firebase Hosting
 on:
   pull_request:
+    branches-ignore:
+      - live-site
 
 jobs:
   build_and_preview:
