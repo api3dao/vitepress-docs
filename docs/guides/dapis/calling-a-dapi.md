@@ -26,10 +26,6 @@ use a human readable name.
 - `readDataFeedWithDapiName(\_dapiName)` - returns a value and timestamp
 - `readDataFeedValueWithDapiName(\_dapiName)` - returns only the value
 
-Watch this short video to gain an understanding on how a dAPI is called.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/edI2upnMsA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ::: danger Follow-up tips
 
 Starting here add information and highlight content from the video so the reader
