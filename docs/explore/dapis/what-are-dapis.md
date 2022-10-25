@@ -53,8 +53,8 @@ accessible using `DapiServer.sol`.
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
 ```
 
-See the [dApp Developers](/) (FIX LINK) section to learn more about accessing
-dAPIs.
+See the guide [Calling a dAPI](/guides/dapis/calling-a-dapi.md) to learn more
+about accessing dAPIs.
 
 ## dAPI Composition
 

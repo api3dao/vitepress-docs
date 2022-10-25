@@ -3,8 +3,17 @@ module.exports = [
     text: '',
     items: [
       { text: 'About our Journey!', link: '/explore/' },
-      { text: 'Blog Posts on Medium', link: '/explore/blog' },
-      { text: 'Jobs', link: '/explore/jobs' },
+      {
+        text: 'The API Connectivity Problem',
+        link: '/explore/introduction/connectivity-problem',
+      },
+      {
+        text: 'Decentralization',
+        link: '/explore/introduction/decentralization',
+      },
+      { text: 'Blog Posts on Medium', link: '/explore/introduction/blog' },
+      { text: 'Jobs', link: '/explore/introduction/jobs' },
+      { text: 'Contributing', link: '/explore/introduction/contributing' },
     ],
   },
   {
@@ -76,7 +85,7 @@ module.exports = [
   {
     text: 'QRNG',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: 'What is QRNG?',
@@ -87,11 +96,15 @@ module.exports = [
   {
     text: 'DAO Members',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
-        text: 'What are DAO Members?',
+        text: 'API3 DAO',
         link: '/explore/dao-members/',
+      },
+      {
+        text: 'The DAP Pool',
+        link: '/explore/dao-members/dao-pool',
       },
     ],
   },
