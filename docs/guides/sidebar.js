@@ -87,6 +87,18 @@ module.exports = [
         text: '★ Getting Started',
         link: '/guides/qrng/',
       },
+      {
+        text: 'QRNG Example',
+        link: '/guides/qrng/qrng-example',
+      },
+      {
+        text: 'Remix Example',
+        link: '/guides/qrng/remix-example',
+      },
+      {
+        text: 'Youtube QRNG-NFT Example',
+        link: '/guides/qrng/youtube-nft-example',
+      },
     ],
   },
   {
