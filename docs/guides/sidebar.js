@@ -110,6 +110,14 @@ module.exports = [
         text: '★ Getting Started',
         link: '/guides/dao-members/',
       },
+      {
+        text: 'Staking Tokens',
+        link: '/guides/dao-members/staking',
+      },
+      {
+        text: 'Videos',
+        link: '/guides/dao-members/videos',
+      },
     ],
   },
 ];

@@ -24,6 +24,7 @@ import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeA
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
 import ChainName from '../../_components/ChainName.vue';
 import ElementSelect from '../../_components/ElementSelect.vue';
+import Video from '../../_components/Video.vue';
 
 export default {
   ...DefaultTheme,
@@ -56,6 +57,7 @@ export default {
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);
     app.component('ChainName', ChainName);
     app.component('ElementSelect', ElementSelect);
+    app.component('Video', Video);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

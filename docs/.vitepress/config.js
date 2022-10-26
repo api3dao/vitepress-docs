@@ -56,6 +56,7 @@ export default {
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
       '/reference/chainapi/': require('../reference/chainapi/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
+      '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
     },
     nav: nav(),
@@ -75,6 +76,7 @@ function nav() {
         { text: 'ChainAPI', link: '/reference/chainapi/' },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },
+        { text: 'DAO Members', link: '/reference/dao-members/' },
       ],
     },
   ];

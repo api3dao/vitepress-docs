@@ -106,6 +106,10 @@ module.exports = [
         text: 'The DAP Pool',
         link: '/explore/dao-members/dao-pool',
       },
+      {
+        text: 'DAO Tracker',
+        link: '/explore/dao-members/dao-tracker',
+      },
     ],
   },
 ];
