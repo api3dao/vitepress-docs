@@ -24,7 +24,7 @@ through responsible governance.
 
 API3 is the native token of the API3 project. The API3 ecosystem is a single
 token environment. Check out the Medium post
-[API3 Tokenomics Update](https://medium.com/api3/api3-tokenomics-update-f032d6e49b30)
+[API3 Tokenomics Update](https://medium.com/api3/api3-tokenomics-update-f032d6e49b30)<ExternalLinkImage/>
 for an in-depth overview on API3 tokenomics.
 
 ### Unstaked Tokens
@@ -43,11 +43,11 @@ tokens to the DAO pool you gain access to weekly staking rewards but also share
 in the risk of service coverage. You are also granted voting rights on active
 DAO proposals and inflationary rewards.
 
-To stake your tokens see [Staking Tokens](../dashboard/staking.md). You can
-stake as many times as you’d like. Your percentage of all the tokens in the DAO
-pool are directly related to your percentage of the rewards and the risks. If
-you stake 10% of the pool you earn 10% of rewards and will pay 10% of service
-coverage claims.
+To stake your tokens see [Staking Tokens](/reference/dao-members/staking.md).
+You can stake as many times as you’d like. Your percentage of all the tokens in
+the DAO pool are directly related to your percentage of the rewards and the
+risks. If you stake 10% of the pool you earn 10% of rewards and will pay 10% of
+service coverage claims.
 
 ## Token Utilities
 
@@ -75,7 +75,7 @@ them to govern in a way that minimizes **_security_** risks. "_Security_" refers
 to a "guarantee or reliability of dAPI service"
 
 Reference <a href="/api3-whitepaper-v1.0.3.pdf#page=25" target="_blank">section
-5.4 _"API3 Tokenomics"_</a> of the API3 whitepaper.
+5.4 _"API3 Tokenomics"_</a><ExternalLinkImage/> of the API3 whitepaper.
 
 ### Staking
 
@@ -103,11 +103,11 @@ inflationary rewards and exposes you to the risk of service coverage claims.
 - Staked tokens in the DAO pool are used to cover potential financial losses
   from dAPI malfunctions that the dAPI consumer might incur.
 
-To stake your tokens use the [Dashboard](../dashboard/staking.md). You can stake
-as many times as you’d like. Your percentage of all the tokens in the DAO pool
-are directly related to your percentage of the rewards and the risks. If you
-stake 10% of the pool you earn 10% of rewards and will pay 10% of service
-coverage claims.
+To stake your tokens, see the guide
+[Staking Tokens](/guides/dap-members/staking.md). You can stake as many times as
+you’d like. Your percentage of all the tokens in the DAO pool are directly
+related to your percentage of the rewards and the risks. If you stake 10% of the
+pool you earn 10% of rewards and will pay 10% of service coverage claims.
 
 ### Collateral
 
@@ -131,7 +131,7 @@ through the dispute resolution protocol, user damages will be covered from the
 pool's staked tokens.
 
 Reference <a href="/api3-whitepaper-v1.0.3.pdf#page=27" target="_blank">section
-5.4.2 _"Collateral"_</a> of the API3 whitepaper.
+5.4.2 _"Collateral"_</a><ExternalLinkImage/> of the API3 whitepaper.
 
 ### Governance
 
@@ -238,23 +238,25 @@ schedule.
 
 Reward amount is represented as APR (annual percentage rate). You can derive APY
 (annual percentage yield) using an
-[online calculator](https://www.aprtoapy.com/). There is a governable "APR
-update step", which is the step size each week the APR will be updated with.
-Also there are governable minimum and maximum APR values, but these (especially
-maximum APR) are there as safety measures and should not affect rewards in
-day-to-day operation. In general, governing the stake target will be the primary
-tool for regulating rewards.
+[online calculator](https://www.aprtoapy.com/)<ExternalLinkImage/>. There is a
+governable "APR update step", which is the step size each week the APR will be
+updated with. Also there are governable minimum and maximum APR values, but
+these (especially maximum APR) are there as safety measures and should not
+affect rewards in day-to-day operation. In general, governing the stake target
+will be the primary tool for regulating rewards.
 
 Rewards are added as staked API3 tokens into the DAO pool each time the
 `mintReward` function is called. `mintReward` is callable by anyone, once per
 "epoch" (and single epoch length is 1 week). When it is called, an amount of
 API3 tokens is minted and added to the DAO pool:
 
-> `rewardAmount = totalStakedTokens * APR * epochLengthInSeconds / yearInSeconds / 100`
+> ```
+> rewardAmount = totalStakedTokens * APR * epochLengthInSeconds / yearInSeconds / 100
+> ```
 >
 > (see the
 > [smart contract source](https://github.com/api3dao/api3-dao/blob/main/packages/pool/contracts/RewardUtils.sol#L24)
-> for more information).
+> for more information)<ExternalLinkImage/>.
 
 In addition, each time `mintReward` is called, the annual percentage (the reward
 rate) is updated up or down by the APR update step size (1%), according to
@@ -354,4 +356,4 @@ To insure against potential system failures, the DAO pool can empower special
 transfers tokens from the DAO pool to the recipient. When this occurs, the total
 number of staked tokens goes down, and pool share value goes down in turn.
 Reference <a href="/api3-whitepaper-v1.0.3.pdf#page=31" target="_blank">section
-6.3 _"Service coverage process"_</a> of the API3 whitepaper.
+6.3 _"Service coverage process"_</a><ExternalLinkImage/> of the API3 whitepaper.

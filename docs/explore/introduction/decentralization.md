@@ -51,9 +51,9 @@ decentralization and trustlessness qualities that using an oracle network
 provides. Therefore, it is not adequate to use an oracle network for
 decentralization, this oracle network must be governed decentrally as well.
 
-_See the medium article,
-[Why API3 DAO, not API3 CORP?](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
-on DAOs and decentralized governance._
+See the medium article,
+[Why API3 DAO, not API3 CORP?](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)<externalLinkImage/>
+on DAOs and decentralized governance.
 
 ## dAPI (Decentralized API)
 
@@ -73,7 +73,7 @@ Decentralized applications cannot access Web APIs, and oracle solutions aim to
 build decentralized interfaces to facilitate this. However, this approach
 results in an inferior solution and ecosystem (see the
 <a href="/api3-whitepaper-v1.0.3.pdf" target="_api3-whitepaper">API3
-Whitepaper</a> for a detailed explanation).
+Whitepaper</a><externalLinkImage/> for a detailed explanation).
 
 > <img src="../assets/images/dapi.png" width="350"/>
 

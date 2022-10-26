@@ -40,7 +40,8 @@ its ease of implementation.
 
 If you want to learn more about the Airnode experience, read Section 4 of the
 <a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">API3
-Whitepaper</a>, _Airnode: A Node Designed for First-Party Oracles_.
+Whitepaper</a><ExternalLinkImage/>, _Airnode: A Node Designed for First-Party
+Oracles_.
 
 :::
 
@@ -282,7 +283,7 @@ party oracles, so that it can easily set up new dAPIs or recompose existing
 ones. This can only be achieved if APIs can be integrated to Airnode in an even
 more scalable way. To this end, an improved version of the proprietary
 integration tools will be open sourced for Airnode. Borrowing from the
-[OpenAPI Specification format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md),
+[OpenAPI Specification format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md)<ExternalLinkImage/>,
 Oracle Integration Specifications (OIS) define the operations of an API, the
 endpoints of an oracle, and a way of mapping them to each other. Airnode users
 will be able to serve an API over their oracle simply by providing its OIS to
@@ -303,5 +304,5 @@ capacity.
 
 ## More...
 
-- See [Understanding Airnode](/) (FIX LINK) to learn how Airnode is defined by
-  `config.json`.
+- See [Understanding Airnode](/reference/airnode/latest/understand/) to learn
+  how Airnode is defined by `config.json`.

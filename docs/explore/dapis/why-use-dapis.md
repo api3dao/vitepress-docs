@@ -33,10 +33,11 @@ which parameters. This provides complete transparency to the dApp developer,
 which is a big step from depending on a pseudonymous selection of third parties
 that intentionally obscure their data sources.
 
-::: tip dAPI Browser
+::: tip API3 Market
 
 dAPIs source data from Beacons, whose parameters you can examine in detail. See
-the [dAPI Browser](../reference/dapi-browser.md).
+the [API3 Market](https://market.api3.org/)<externalLinkImage/> for lists of
+dAPIs.
 
 :::
 
