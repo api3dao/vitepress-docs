@@ -52,8 +52,8 @@ sure to ask any questions you have on
   issues, PRs, etc.
 
 This guide will be updated as more materials are produced. Please feel free to
-create [issues](https://github.com/api3dao/api3-docs/issues) to make
-suggestions.
+create [issues](https://github.com/api3dao/api3-docs/issues)<externalLinkImage/>
+to make suggestions.
 
 ## Contributing to the Technical Documentation
 

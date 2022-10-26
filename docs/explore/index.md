@@ -17,12 +17,12 @@ tags:
 
 # {{$frontmatter.title}}
 
-**API3** ([https://api3.org](https://api3.org)) is a collaborative project to
-deliver traditional API services to smart contract platforms in a decentralized
-and trust-minimized way. It is governed by a _decentralized autonomous
-organization_ (DAO), namely the **API3 DAO**. Therefore, its code is open source
-and its operations are transparent. Learn more about API3
-([https://api3.org/](https://api3.org/))<externalLinkImage/> on its website.
+**API3** ([https://api3.org](https://api3.org)<externalLinkImage/>) is a
+collaborative project to deliver traditional API services to smart contract
+platforms in a decentralized and trust-minimized way. It is governed by a
+_decentralized autonomous organization_ (DAO), namely the **API3 DAO**.
+Therefore, its code is open source and its operations are transparent. Learn
+more about API3 on its website.
 
 ::: tip API3 Whitepaper (pdf)
 
@@ -100,16 +100,16 @@ decentralized and trust-minimized way.
 
 Join the API3 community on the following services.
 
-- [API3 Forum](https://forum.api3.org/)
-- Community Chat on [Telegram](https://t.me/API3DAO)
-- Developer Chat on [Discord](https://discord.gg/qnRrcfnm5W)
-- [YouTube Channel](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
+- [API3 Forum](https://forum.api3.org/)<externalLinkImage/>
+- Community Chat on [Telegram](https://t.me/API3DAO)<externalLinkImage/>
+- Developer Chat on [Discord](https://discord.gg/qnRrcfnm5W)<externalLinkImage/>
+- [YouTube Channel](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)<externalLinkImage/>
 
 ## GitHub
 
-Visit the [API3 GitHub](https://github.com/api3dao) page and find everything
-about.. everything. Explore the many repositories to gain in-depth knowledge
-about API3.
+Visit the [API3 GitHub](https://github.com/api3dao)<externalLinkImage/> page and
+find everything about.. everything. Explore the many repositories to gain
+in-depth knowledge about API3.
 
 - the whitepaper
 - source code
@@ -127,4 +127,5 @@ contribute.
 - making pull requests
 - proposing features
 
-Read more about contributing in the [Contributing](./contributing.md) section.
+Read more about contributing in the
+[Contributing](./contributing.md)<externalLinkImage/> section.
