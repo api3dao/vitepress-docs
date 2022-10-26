@@ -95,6 +95,7 @@ for a comparison of the two types of oracles._ -->
 
 Third party oracles are both insecure and expensive (see the
 <a href="/api3-whitepaper-v1.0.3.pdf#page=10" target="_blank">API3
-Whitepaper</a> _Issues with Third-Party Oracles as Middlemen_ for a detailed
-explanation). In contrast, first-party oracles are both secure and
-cost-efficient due to not having a middleman on the interface path.
+Whitepaper</a><externalLinkImage/> _Issues with Third-Party Oracles as
+Middlemen_ for a detailed explanation). In contrast, first-party oracles are
+both secure and cost-efficient due to not having a middleman on the interface
+path.

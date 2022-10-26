@@ -12,10 +12,10 @@ tags:
 
 # {{$frontmatter.title}}
 
-_See the article,
-[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)
+See the article,
+[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)<externalLinkImage/>
 for an overview of dAPIs, and how they relate to
-[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)._
+[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)<externalLinkImage/>.
 
 **dAPIs** are continuously updated streams of off-chain data, such as the latest
 cryptocurrency, stock and commodity prices. They can power various decentralized
@@ -32,7 +32,7 @@ chains.
 ## `DapiServer.sol`
 
 Developers use the
-[DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)
+[DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)<externalLinkImage/>
 contract to access dAPIs. `DapiServer.sol` reads directly from its data store of
 Beacons, which are powered by API provider-owned and operated
 [Airnodes](/reference/airnode/latest/).

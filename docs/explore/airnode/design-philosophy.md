@@ -12,9 +12,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-_See the article,
+See the article,
 [Airnode: The API gateway for blockchains](https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840)<ExternalLinkImage/>
-for a high level overview of Airnode._
+for a high level overview of Airnode.
 
 The API3 solution to the API connectivity problem requires an ecosystem of a
 large number of first-party oracles. Airnode's role in this is to make
@@ -37,9 +37,9 @@ support all API schemes that there are demand for.
 
 ## Requirements
 
-_See our article,
+See the article,
 [Where are the first-party oracles?](https://medium.com/api3/where-are-the-first-party-oracles-5078cebaf17)<ExternalLinkImage/>
-that lists the obstacles in the way of first-party oracles._
+that lists the obstacles in the way of first-party oracles.
 
 Airnode is designed to be operated as a first-party oracle, i.e., by the API
 provider themselves. This results in very restrictive requirements:

@@ -12,6 +12,14 @@ tags:
 
 # {{$frontmatter.title}}
 
+::: danger TODO:
+
+This page needs a complete re-write. It should speak to subscriptions or
+coverage policies or whtever they are called by hte time the API3 Market is
+ready.
+
+:::
+
 `DapiServer.sol` will check that the requester has a coverage policy for each
 dAPI it may attempt to read. See available dAPIs on the
 [API3 Market](https://market.api3.org)<ExternalLinkImage/>. During the _preview

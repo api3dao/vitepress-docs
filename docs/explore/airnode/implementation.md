@@ -12,9 +12,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-_See the article,
+See the article,
 [Getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>
-for a technical overview of the software._
+for a technical overview of the software.
 
 ## Statelessness
 
