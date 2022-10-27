@@ -8,6 +8,9 @@ outline: deep
 tags:
   - dao
   - staking
+  - deposit
+  - withdraw
+  - unstake
   - guides
 ---
 
@@ -15,8 +18,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-Staking API3 tokens in the [DAO pool](../introduction/dao-pool.md) makes you
-eligible for rewards and governance rights.
+Staking API3 tokens in the [DAO pool](/explore/dao-members/dao-pool.md) makes
+you eligible for rewards and governance rights.
 
 <!----- Deposit and Withdraw ----->
 
@@ -46,8 +49,8 @@ Be sure your wallet is connected to your browser using mainnet, see
 
 ### Withdraw
 
-You can only withdraw unstaked tokens. The max amount that can be withdrawn is
-displayed as WITHDRAWABLE.
+You can only withdraw tokens that are not staked as shown in the **Balance**
+box. The max amount that can be withdrawn is displayed as WITHDRAWABLE.
 
 1. Click the **_Withdraw_** link.
 2. Enter the number of tokens to withdraw (or select the **Max** link) and click
@@ -73,7 +76,7 @@ DAO pool (as a percentage of the DAO pool). Watch the
 The DAO uses an adaptive reward system to incentivize staking. Rewards are
 updated every seven days and are proportional to the amount of tokens that you
 have staked. Rewards will increase to incentivize staking when the pool runs low
-and decrease to reduce omissions when the pool is well funded. To see the
+and decrease to reduce token emissions when the pool is well funded. To see the
 current funding status, you can see the percentage of target met which is
 calculated by the total amount staked divided by the staking target.
 
@@ -94,23 +97,21 @@ subject to a seven day waiting period. Watch the
    popup.
 
 After confirming the transaction, the interface will display the pending unstake
-and a count down timer. Durng this time the **Unstake** button will be disabled.
+and a count down timer in the **Pending** box. During this time the **Unstake &
+Withdraw** link and the **Unstake** button will be disabled.
 
-When the seven day waiting period is over, you are ready to unstake.
+When the seven day waiting period is over, you are ready to complete the unstake
+process.
 
-1. If you want to unstake and withdraw your tokens in a single transaction,
-   click the **Unstake & Withdraw** link. This option will immediately unstake
-   your tokens and deposit them in your total balance.
+- **Unstake & Withdraw** link: This option will immediately unstake your tokens
+  and deposit them into your digital wallet.
 
-::: danger TODO:
+OR
 
-I think the Unstake and Withdraw btn moves the tokens directly to the user's
-digital wallet thus bypassing the Balance or Deposited box amount on hte
-dashboard.
-
-The unstake moves the tokens to the Balance or Deposited box on the dashboard.
-
-:::
+- **Unstake** button: This option will unstake the tokens and place them into
+  the **Balance** box (as deposited tokens) on the dashboard. From here you can
+  use the **Withdraw** link to move the tokens to your digital wallet at any
+  time or stake them again.
 
 ::: warning Seven day wait period
 
