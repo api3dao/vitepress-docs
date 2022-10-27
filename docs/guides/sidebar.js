@@ -115,6 +115,14 @@ module.exports = [
         link: '/guides/dao-members/staking',
       },
       {
+        text: 'Working with Proposals',
+        link: '/guides/dao-members/proposals',
+      },
+      {
+        text: 'How to Vote',
+        link: '/guides/dao-members/voting',
+      },
+      {
         text: 'Videos',
         link: '/guides/dao-members/videos',
       },

@@ -10,24 +10,14 @@
 
 # airnode
 /docs/reference/airnode/latest/assets
-/docs/reference/airnode/v0.10/assets
-/docs/reference/airnode/v0.9/assets
-/docs/reference/airnode/v0.8/assets
-/docs/reference/airnode/v0.7/assets
-/docs/reference/airnode/v0.6/assets
-/docs/reference/airnode/v0.5/assets
-/docs/reference/airnode/v0.4/assets
-/docs/reference/airnode/v0.3/assets
-/docs/reference/airnode/v0.2/assets
-/docs/reference/airnode/pre-alpha/assets
 
 #ois
-/docs/reference/ois/v1.1/assets
-/docs/reference/ois/v1.0/assets
+/docs/reference/ois/latest/assets
 
-# otehrs
-/docs/reference/api3/assets
+# other
 /docs/reference/dao-members/assets
 /docs/reference/dapis/assets
 /docs/reference/chainapi/assets
 /docs/reference/qrng/assets
+/docs/guides/assets
+/docs/explore/assets
