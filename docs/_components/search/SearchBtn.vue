@@ -29,8 +29,12 @@
 </template>
 
 <script>
-//import SearchBox2 from './SearchBox2';
+import readFile from 'fs';
+import Document from 'flexsearch';
+import fs from 'fs';
+import chainsRef from '../../.vitepress/chains.json';
 
+// https://stackoverflow.com/questions/69760524/flexsearch-export-and-import-document-index-issue/69853828#69853828
 export default {
   name: 'SearchBtn',
   components: {
@@ -56,6 +60,7 @@ export default {
   },
   mounted() {
     this.$nextTick(function () {
+      console.log('Search btn mounted');
       // If not the landing page show the search icon.
       //if (this.$route.path !== '/') this.showSearchIcon = true;
     });
