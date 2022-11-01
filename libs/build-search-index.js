@@ -1,4 +1,10 @@
 const { Index, Document } = require('flexsearch');
+const { readFileSync } = require('fs');
+var file = require('file');
+var colors = require('colors');
+const { parse } = require('node-html-parser');
+
+let arr = [];
 
 /*const options = {
   charset: 'latin',
@@ -80,7 +86,8 @@ const recipes = [
   {
     id: 7,
     path: '7.md',
-    title: 'Camarão na Moranga (Brazilian Shrimp Stuffed Pumpkin)',
+    title:
+      'Camarão na Moranga (Brazilian Shrimp Stuffed Pumpkin)<body><H1>World</H1><p>Hello</p><H1>Dude</H1>',
   },
   { id: 8, path: '8.md', title: 'Parmesan Cheese grits Muffins' },
   { id: 9, path: '9.md', title: 'cookie and cream Dough Stuffed Oreos' },
@@ -112,7 +119,80 @@ result.forEach((element) => {
 //console.debug(result);
 console.log('\n\n');
 
-/*console.log(index.search('bread', { limit: 20 }));
-index.searchAsync('bread', function (result) {
-  console.log('Results: ', result);
-});*/
+loadHtmlFiles();
+
+/************************** */
+/************************** */
+/************************** */
+/**
+ * Callback for file.walkSync, add each
+ * @param {*} dirPath
+ * @param {*} dirs
+ * @param {*} files
+ */
+function tempCB(dirPath, dirs, files) {
+  arr.push({ dir: dirPath, files: files });
+}
+function loadHtmlFiles() {
+  file.walkSync('./docs/.vitepress/dist', tempCB);
+  console.log('----- END WALK SYNC -----');
+  for (let i = 0; i < arr.length; i++) {
+    extractContent(arr[i]);
+  }
+}
+
+function extractContent(dir) {
+  const arrFiles = dir.files;
+  const skipFiles = [
+    './docs/.vitepress/dist/index.html',
+    './docs/.vitepress/dist/team.html',
+    './docs/.vitepress/dist/404.html',
+  ];
+  for (let x = 0; x < arrFiles.length; x++) {
+    const file = arrFiles[x];
+
+    const path = dir.dir + '/' + file;
+
+    if (file.includes('.html') && skipFiles.indexOf(path) === -1) {
+      const htmlString = readFileSync(path, 'utf8');
+
+      ////// NODE PARSER////////
+      const root = parse(htmlString);
+
+      root.querySelectorAll('body').forEach((element) => {
+        let text = element.structuredText.replace(/(\r\n|\n|\r)/gm, ' ');
+
+        const txt = text.split('__VP_HASH_MAP__ =')[0];
+        const txt2 = txt.split('Table of Contents for current page  📂')[1];
+        let txt3 = txt2.split(
+          'Released under the MIT License. Copyright © 2019-present API3'
+        )[0];
+        if (path.indexOf('quick-start-aws') > -1) {
+          console.log('\n***********************************\n' + path);
+          console.log(element.structuredText);
+          //console.log(txt3);
+          console.log('----- STRUCTURED HTML -----');
+          console.log(element.querySelectorAll('code').length);
+          element.querySelectorAll('code').forEach((el) => {
+            console.log('>>>', el.innerHTML);
+          });
+        }
+      });
+    }
+  }
+}
+
+console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
+let v = `<code><span class="line"><span style="color:#A6ACCD;">AIRNODE_WALLET_MNEMONIC=</span><span style="color:#89DDFF;">""</span></span>
+<span class="line"><span style="color:#A6ACCD;">SEPOLIA_PROVIDER_URL=</span><span style="color:#89DDFF;">""</span></span>
+<span class="line"><span style="color:#A6ACCD;">SS_COINGECKO_REQUESTS_API_KEY=</span><span style="color:#89DDFF;">""</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">HEARTBEAT_API_KEY=</span><span style="color:#89DDFF;">""</span></span>
+<span class="line"><span style="color:#A6ACCD;">HEARTBEAT_URL=</span><span style="color:#89DDFF;">""</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;"># Used for GCP only</span></span>
+<span class="line"><span style="color:#A6ACCD;">GCP_PROJECT_ID=</span><span style="color:#89DDFF;">""</span></span>
+<span class="line"></span></code>
+`;
+const root = parse(v);
+//console.log(root.structuredText);
