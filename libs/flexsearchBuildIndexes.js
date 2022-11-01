@@ -24,33 +24,8 @@ function walkCB(dirPath, dirs, files) {
 }
 
 /*
-  Load all HTML files from /dist dir
+  Build the content json files used to create FlexSearch indexes
 */
-function loadHtmlFiles() {
-  file.walkSync('./docs/.vitepress/dist', walkCB);
-  console.log('----- END WALK SYNC -----');
-  const skip = [
-    './docs/.vitepress/dist/index.html',
-    './docs/.vitepress/dist/team.html',
-    './docs/.vitepress/dist/404.html',
-  ];
-  for (let i = 0; i < filesArr.length; i++) {
-    const dir = filesArr[i].dir;
-    const files = filesArr[i].files;
-    // Each file in the dir json object
-    for (let x = 0; x < files.length; x++) {
-      if (
-        files[x].indexOf('.html') > -1 &&
-        !skip.includes(dir + '/' + files[x]) &&
-        dir.indexOf('/dist/dev') === -1
-      ) {
-        console.log(dir + '/' + files[x]);
-        buildFileJson(dir + '/' + files[x]);
-      }
-    }
-  }
-}
-
 function buildFileJson(path) {
   const arr = path.split('/');
 
@@ -121,4 +96,32 @@ function buildFileJson(path) {
   );
 }
 
-loadHtmlFiles();
+/*
+  Load all HTML files from /docs/.vitepress/dist dir
+*/
+function start() {
+  file.walkSync('./docs/.vitepress/dist', walkCB);
+  console.log('----- END WALK SYNC -----');
+  const skip = [
+    './docs/.vitepress/dist/index.html',
+    './docs/.vitepress/dist/team.html',
+    './docs/.vitepress/dist/404.html',
+  ];
+  for (let i = 0; i < filesArr.length; i++) {
+    const dir = filesArr[i].dir;
+    const files = filesArr[i].files;
+    // Each file in the dir json object
+    for (let x = 0; x < files.length; x++) {
+      if (
+        files[x].indexOf('.html') > -1 &&
+        !skip.includes(dir + '/' + files[x]) &&
+        dir.indexOf('/dist/dev') === -1
+      ) {
+        console.log(dir + '/' + files[x]);
+        buildFileJson(dir + '/' + files[x]);
+      }
+    }
+  }
+}
+
+start();

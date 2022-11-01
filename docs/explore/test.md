@@ -17,7 +17,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-This is a test.
+This is a test. Add come content to see what flexsearch files update.
 
 ```js
 let me = 'The man';
