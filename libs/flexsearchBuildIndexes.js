@@ -1,4 +1,5 @@
 var textVersion = require('textversionjs');
+const yaml = require('js-yaml');
 const fs = require('fs');
 var file = require('file');
 const fse = require('fs-extra');
@@ -9,7 +10,7 @@ let cnt = 1; // Used for the index id
 let index = new Document({
   document: {
     id: 'id',
-    index: ['content', 'docSet', 'indexPath', 'url'],
+    index: ['distPath', 'contentPath', 'frontmatter', 'url', 'content'],
   },
 });
 
@@ -29,20 +30,17 @@ function walkCB(dirPath, dirs, files) {
 function buildFileJson(path) {
   const arr = path.split('/');
 
-  // indexPath
-  let indexPath = path.split('/.vitepress/dist')[1];
-  indexPath =
-    'docs/.vitepress/search-files' + indexPath.replace('.html', '.json');
+  // contentPath: the file with  extracted HTML text
+  let contentPath = path.split('/.vitepress/dist')[1];
+  contentPath = 'libs/search-files' + contentPath.replace('.html', '.json');
 
-  // docSet
-  let docSet;
-  if (path.indexOf('/dist/reference') != -1) {
-    docSet = '/' + arr[3] + '/' + arr[4] + '/' + arr[5] + '/';
-  }
-  // Will then be guiders or explore
-  else {
-    docSet = '/' + arr[3] + '/';
-  }
+  // frontmatter and url: /explore
+  console.log('\n> path:', path);
+  const pathMarkdown =
+    'docs/' + path.split('docs/.vitepress/dist/')[1].replace('.html', '.md');
+  let frontmatter = yaml.load(
+    fs.readFileSync(pathMarkdown, 'utf8').split('---')[1]
+  );
   let url = path.split('docs/.vitepress/dist')[1];
 
   // Get the html files and extract the text from the html
@@ -66,26 +64,30 @@ function buildFileJson(path) {
   // console.log('\n>>>');
   // console.log(plainText);
 
+  // Updates the lookup file so search can find the page by its ID
+  searchLookupPages(cnt, frontmatter);
+
   // Create the json object and write file to search-files dir
   let json = {
     id: cnt,
     distPath: path,
-    indexPath: indexPath,
-    docSet: docSet,
+    contentPath: contentPath,
+    frontmatter: frontmatter,
     url: url,
     content: plainText,
   };
-  fse.outputFileSync(indexPath, JSON.stringify(json));
+  fse.outputFileSync(contentPath, JSON.stringify(json));
 
   // Update the in memory flexSearch index
   index.add({
     id: cnt,
-    indexPath: json.indexPath,
-    docSet: json.docSet,
+    distPath: json.distPath,
+    contentPath: json.contentPath,
+    frontmatter: json.frontmatter,
     url: json.url,
     content: json.content,
   });
-  cnt++;
+  index: ['distPath', 'contentPath', 'frontmatter', 'url', 'content'], cnt++;
 
   // Export flexSearch index to disk
   index.export((key, data) =>
@@ -123,5 +125,16 @@ function start() {
   }
 }
 
+let frontmatterObj = {};
+function searchLookupPages(id, frontmatter) {
+  console.log(frontmatter);
+  frontmatterObj[id] = frontmatter;
+}
+
 console.log('Building FlexSearch Indexes');
 start();
+console.log(frontmatterObj);
+fs.writeFileSync(
+  'docs/.vitepress/searchFrontmatterIds.json',
+  JSON.stringify(frontmatterObj)
+);

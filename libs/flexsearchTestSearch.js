@@ -4,7 +4,7 @@ const { Document } = require('flexsearch');
 const index = new Document({
   document: {
     id: 'id',
-    index: ['content', 'docSet', 'indexPath', 'url'],
+    index: ['content', 'docSet', 'contentPath', 'url'],
   },
 });
 

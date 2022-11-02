@@ -5,6 +5,8 @@ node_modules/
 docs/.vitepress/dist/
 .firebase/
 
+libs/search-files/
+
 
 package-lock.json
 libs/myGitHubToken.json
