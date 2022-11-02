@@ -15,7 +15,7 @@
     "format": "prettier --write \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
     "format:check": "prettier --check \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky install",
-    "build:flexsearch": "node libs/textversion.js; yarn run format;"
+    "build:flexsearch": "node libs/flexsearchBuildIndexes.js; yarn run format;"
   },
   "devDependencies": {
     "axios": "^0.27.2",

@@ -1,1 +1,8 @@
-{"id":72,"distPath":"docs/.vitepress/dist/reference/airnode/latest/deployment-files/examples/aws-env.html","indexPath":"docs/.vitepress/search-files/reference/airnode/latest/deployment-files/examples/aws-env.json","docSet":"/reference/airnode/latest/","url":"/reference/airnode/latest/deployment-files/examples/aws-env.html","content":"  📂 Reference → Airnode → v1.0 → Deployment Files → Examples  aws.env [#] (#frontmatter-title)  ===  ---Variable names cannot contain dashes (-) or start with a number. shAWS_ACCESS_KEY_ID=AKIA...GYZWRAHOH AWS_SECRET_ACCESS_KEY=B87...UD/LEl6Z/ZCMXO9  1 2 [Previous pagesecrets.env] (/reference/airnode/latest/deployment-files/examples/secrets-env.html)  [Next pageOIS Object] (/reference/airnode/latest/deployment-files/templates/ois-json.html)  "}
+{
+  "id": 72,
+  "distPath": "docs/.vitepress/dist/reference/airnode/latest/deployment-files/examples/aws-env.html",
+  "indexPath": "docs/.vitepress/search-files/reference/airnode/latest/deployment-files/examples/aws-env.json",
+  "docSet": "/reference/airnode/latest/",
+  "url": "/reference/airnode/latest/deployment-files/examples/aws-env.html",
+  "content": "  📂 Reference → Airnode → v1.0 → Deployment Files → Examples  aws.env [#] (#frontmatter-title)  ===  ---Variable names cannot contain dashes (-) or start with a number. shAWS_ACCESS_KEY_ID=AKIA...GYZWRAHOH AWS_SECRET_ACCESS_KEY=B87...UD/LEl6Z/ZCMXO9  1 2 [Previous pagesecrets.env] (/reference/airnode/latest/deployment-files/examples/secrets-env.html)  [Next pageOIS Object] (/reference/airnode/latest/deployment-files/templates/ois-json.html)  "
+}
