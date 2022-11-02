@@ -101,7 +101,6 @@ function buildFileJson(path) {
 */
 function start() {
   file.walkSync('./docs/.vitepress/dist', walkCB);
-  console.log('----- END WALK SYNC -----');
   const skip = [
     './docs/.vitepress/dist/index.html',
     './docs/.vitepress/dist/team.html',
@@ -117,11 +116,12 @@ function start() {
         !skip.includes(dir + '/' + files[x]) &&
         dir.indexOf('/dist/dev') === -1
       ) {
-        console.log(dir + '/' + files[x]);
+        //console.log(dir + '/' + files[x]);
         buildFileJson(dir + '/' + files[x]);
       }
     }
   }
 }
 
+console.log('Building FlexSearch Indexes');
 start();
