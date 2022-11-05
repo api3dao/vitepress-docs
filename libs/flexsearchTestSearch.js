@@ -1,11 +1,8 @@
 const fs = require('fs');
-const { Document } = require('flexsearch');
+const { Document, Index } = require('flexsearch');
 
-const index = new Document({
-  document: {
-    id: 'id',
-    index: ['content', 'docSet', 'indexPath', 'url'],
-  },
+let index = new Index({
+  tokenize: 'full',
 });
 
 /*
@@ -28,6 +25,7 @@ const retrieveIndex = () => {
     );
     index.import(key, data ?? null);
   }
+  console.log(index);
 };
 
 /*
@@ -36,13 +34,21 @@ const retrieveIndex = () => {
 function search() {
   retrieveIndex();
   let ids = index.search({
-    query: 'http signed data gateway',
+    query: 'gate',
     index: ['content'],
     limit: 100,
-    //suggest: true,
+    suggest: true,
     //bool: 'or',
   });
   console.log('ids', ids);
+  //console.log('ids', ids[0].result);
+  ids.forEach((id) => {
+    console.log(id, frontmatterIds[id].title);
+  });
 }
 
+console.log(__dirname);
+const frontmatterIds = JSON.parse(
+  fs.readFileSync('docs/.vitepress/searchFrontmatterIds.json')
+);
 search();

@@ -1,1 +1,8 @@
-{"id":67,"distPath":"docs/.vitepress/dist/reference/airnode/latest/deployment-files/aws-env.html","indexPath":"docs/.vitepress/search-files/reference/airnode/latest/deployment-files/aws-env.json","docSet":"/reference/airnode/latest/","url":"/reference/airnode/latest/deployment-files/aws-env.html","content":"  📂 Reference → Airnode → v1.0 → Deployment Files  aws.env [#] (#frontmatter-title)  ===  When it is time to deploy the Airnode to AWS, the Docker [deployer image] (./../../grp-providers/docker/deployer-image.html) will need the AWS credentials to build the node. ---Variable names cannot contain dashes (-) or start with a number. bashAWS_ACCESS_KEY_ID=XYZ...123 AWS_SECRET_ACCESS_KEY=ABC7...89  1 2 [Previous pagesecrets.env] (/reference/airnode/latest/deployment-files/secrets-env.html)  [Next pagereceipt.json] (/reference/airnode/latest/deployment-files/receipt-json.html)  "}
+{
+  "id": 67,
+  "distPath": "docs/.vitepress/dist/reference/airnode/latest/deployment-files/aws-env.html",
+  "indexPath": "docs/.vitepress/search-files/reference/airnode/latest/deployment-files/aws-env.json",
+  "docSet": "/reference/airnode/latest/",
+  "url": "/reference/airnode/latest/deployment-files/aws-env.html",
+  "content": "  📂 Reference → Airnode → v1.0 → Deployment Files  aws.env [#] (#frontmatter-title)  ===  When it is time to deploy the Airnode to AWS, the Docker [deployer image] (./../../grp-providers/docker/deployer-image.html) will need the AWS credentials to build the node. ---Variable names cannot contain dashes (-) or start with a number. bashAWS_ACCESS_KEY_ID=XYZ...123 AWS_SECRET_ACCESS_KEY=ABC7...89  1 2 [Previous pagesecrets.env] (/reference/airnode/latest/deployment-files/secrets-env.html)  [Next pagereceipt.json] (/reference/airnode/latest/deployment-files/receipt-json.html)  "
+}

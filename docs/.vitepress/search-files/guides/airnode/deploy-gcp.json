@@ -1,1 +1,8 @@
-{"id":26,"distPath":"docs/.vitepress/dist/guides/airnode/deploy-gcp.html","indexPath":"docs/.vitepress/search-files/guides/airnode/deploy-gcp.json","docSet":"/guides/","url":"/guides/airnode/deploy-gcp.html","content":"  📂 Guides → Airnode  Quick Start GCP [#] (#frontmatter-title)  =  The &quot;Quick&quot; series of guides are simple introductions demonstrating the deployment of an Airnode. Configuration files are provided with only minor changes to be made. [Previous pageQuick Start AWS] (/guides/airnode/quick-start-aws/)  [Next pageQuick Start Docker Container] (/guides/airnode/deploy-container.html)  "}
+{
+  "id": 26,
+  "distPath": "docs/.vitepress/dist/guides/airnode/deploy-gcp.html",
+  "indexPath": "docs/.vitepress/search-files/guides/airnode/deploy-gcp.json",
+  "docSet": "/guides/",
+  "url": "/guides/airnode/deploy-gcp.html",
+  "content": "  📂 Guides → Airnode  Quick Start GCP [#] (#frontmatter-title)  =  The &quot;Quick&quot; series of guides are simple introductions demonstrating the deployment of an Airnode. Configuration files are provided with only minor changes to be made. [Previous pageQuick Start AWS] (/guides/airnode/quick-start-aws/)  [Next pageQuick Start Docker Container] (/guides/airnode/deploy-container.html)  "
+}

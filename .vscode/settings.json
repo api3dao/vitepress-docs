@@ -49,7 +49,8 @@
     "tabcontent",
     "tablinks",
     "vitepress",
-    "Transformative"
+    "Transformative",
+    "flexsearch",
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true
