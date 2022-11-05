@@ -1,8 +1,0 @@
-{
-  "id": 92,
-  "distPath": "docs/.vitepress/dist/reference/airnode/latest/specifications/reserved-parameters.html",
-  "indexPath": "docs/.vitepress/search-files/reference/airnode/latest/specifications/reserved-parameters.json",
-  "docSet": "/reference/airnode/latest/",
-  "url": "/reference/airnode/latest/specifications/reserved-parameters.html",
-  "content": "  📂 Reference → Airnode → v1.0 → Specifications  Reserved Parameters [#] (#frontmatter-title)    Reserved parameters are part of an Airnode&#39;s defined endpoints in an [Oracle Integration Specifications (OIS)] (/ois/v1.2/) object. They do not map to operation parameters and are used by Airnode for special purposes. See the [Reserved Parameters] (/ois/v1.2/reserved-parameters.html) doc in the OIS document set for an in-depth explanation. [Previous pageAirnode ABI] (/reference/airnode/latest/specifications/airnode-abi.html)  [Next pageOverview] (/reference/airnode/latest/packages/)  "
-}

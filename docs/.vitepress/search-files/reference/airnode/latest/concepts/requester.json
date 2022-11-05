@@ -1,8 +1,0 @@
-{
-  "id": 63,
-  "distPath": "docs/.vitepress/dist/reference/airnode/latest/concepts/requester.html",
-  "indexPath": "docs/.vitepress/search-files/reference/airnode/latest/concepts/requester.json",
-  "docSet": "/reference/airnode/latest/",
-  "url": "/reference/airnode/latest/concepts/requester.html",
-  "content": "  📂 Reference → Airnode → v1.0 → Concepts and Definitions  Requester [#] (#frontmatter-title)    A requester is a contract that makes Airnode requests. While making a request, the requester refers to a [sponsor] (./sponsor.html) by its [sponsorAddress] (./sponsor.html#sponsoraddress) , which means &quot;fulfill my request with the [sponsor wallet] (./sponsor.html#sponsorwallet) of the sponsor identified by sponsorAddress. Doing so requires the requester to be [sponsored] (./sponsor.html) by the said sponsor. Note that the requester is the contract that makes the request. The requester may specify the request such that the request is fulfilled by the Airnode calling back another contract. See the [Airnode requester examples] (https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts) . [Previous pageRelayed Meta Data Authentication] (/reference/airnode/latest/concepts/relay-meta-auth.html)  [Next pageSponsor] (/reference/airnode/latest/concepts/sponsor.html)  "
-}

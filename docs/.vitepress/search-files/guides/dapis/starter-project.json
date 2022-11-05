@@ -1,8 +1,0 @@
-{
-  "id": 42,
-  "distPath": "docs/.vitepress/dist/guides/dapis/starter-project.html",
-  "indexPath": "docs/.vitepress/search-files/guides/dapis/starter-project.json",
-  "docSet": "/guides/",
-  "url": "/guides/dapis/starter-project.html",
-  "content": "  📂 Guides → dAPIs  Starter Project [#] (#frontmatter-title)  =  The starter project [data-feed-reader-example] (https://github.com/api3dao/data-feed-reader-example) ➚ is an example GitHub project that reads from a dAPI on the Polygon Mumbai testnet. Be sure to read through the [README.md] (https://github.com/api3dao/data-feed-reader-example/blob/main/README.md) ➚ and some of the example code such as the [DataFeedReaderExample.sol] (https://github.com/api3dao/data-feed-reader-example/blob/main/contracts/DataFeedReaderExample.sol) ➚ contract. Read through this entire page before running the starter project to better understand some of the terms and concepts mentioned. Finally follow the instruction in the README to get acquainted with reading data feeds. [Previous pageCalling a dAPI] (/guides/dapis/calling-a-dapi.html)  [Next page★ Getting Started] (/guides/airnode/)  "
-}
