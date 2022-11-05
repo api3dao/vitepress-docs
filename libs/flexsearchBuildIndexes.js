@@ -3,15 +3,12 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 var file = require('file');
 const fse = require('fs-extra');
-const { Document } = require('flexsearch');
+const { Document, Index } = require('flexsearch');
 
 let filesArr = [];
 let cnt = 1; // Used for the index id
-let index = new Document({
-  document: {
-    id: 'id',
-    index: ['distPath', 'contentPath', 'frontmatter', 'url', 'content'],
-  },
+let index = new Index({
+  tokenize: 'full',
 });
 
 /**
@@ -30,18 +27,18 @@ function walkCB(dirPath, dirs, files) {
 function buildFileJson(path) {
   const arr = path.split('/');
 
-  // contentPath: the file with  extracted HTML text
+  // contentPath: the file with extracted HTML text
   let contentPath = path.split('/.vitepress/dist')[1];
   contentPath = 'libs/search-files' + contentPath.replace('.html', '.json');
 
   // frontmatter and url: /explore
-  console.log('\n> path:', path);
+  //console.log('\n> path:', path);
   const pathMarkdown =
     'docs/' + path.split('docs/.vitepress/dist/')[1].replace('.html', '.md');
   let frontmatter = yaml.load(
     fs.readFileSync(pathMarkdown, 'utf8').split('---')[1]
   );
-  let url = path.split('docs/.vitepress/dist')[1];
+  //let url = path.split('docs/.vitepress/dist')[1];
 
   // Get the html files and extract the text from the html
   const htmlString = fs.readFileSync(path, 'utf8');
@@ -60,42 +57,24 @@ function buildFileJson(path) {
   // Remove line feeds
   plainText = plainText.replace(/\n/g, ' ');
 
-  // Output plainText for verification
-  // console.log('\n>>>');
-  // console.log(plainText);
-
   // Updates the lookup file so search can find the page by its ID
   searchLookupPages(cnt, frontmatter);
 
   // Create the json object and write file to search-files dir
   let json = {
     id: cnt,
-    distPath: path,
-    contentPath: contentPath,
-    frontmatter: frontmatter,
-    url: url,
     content: plainText,
   };
   fse.outputFileSync(contentPath, JSON.stringify(json));
 
   // Update the in memory flexSearch index
-  index.add({
+  index.add(cnt, json.content);
+  /*index.add({
     id: cnt,
-    distPath: json.distPath,
-    contentPath: json.contentPath,
-    frontmatter: json.frontmatter,
-    url: json.url,
     content: json.content,
-  });
-  index: ['distPath', 'contentPath', 'frontmatter', 'url', 'content'], cnt++;
-
-  // Export flexSearch index to disk
-  index.export((key, data) =>
-    fs.writeFileSync(
-      `docs/.vitepress/search-latest-index/${key}.json`,
-      data !== undefined ? data : ''
-    )
-  );
+  });*/
+  //index: ['content'],
+  cnt++;
 }
 
 /*
@@ -123,17 +102,26 @@ function start() {
       }
     }
   }
+  console.log(index);
+
+  // Export flexSearch index to disk
+  index.export((key, data) =>
+    fs.writeFileSync(
+      `docs/.vitepress/search-latest-index/${key}.json`,
+      data !== undefined ? data : ''
+    )
+  );
 }
 
 let frontmatterObj = {};
 function searchLookupPages(id, frontmatter) {
-  console.log(frontmatter);
+  //console.log(frontmatter);
   frontmatterObj[id] = frontmatter;
 }
 
 console.log('Building FlexSearch Indexes');
 start();
-console.log(frontmatterObj);
+//console.log(frontmatterObj);
 fs.writeFileSync(
   'docs/.vitepress/searchFrontmatterIds.json',
   JSON.stringify(frontmatterObj)
