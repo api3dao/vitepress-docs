@@ -8,20 +8,41 @@
       style="user-select: none"
       v-show="isModalActive"
     >
-      <button @click="isModalActive = !isModalActive" style="float: right">
-        <div style="font-size: 28pt; font-weight: 600; transform: scaleY(0.7)">
-          X
-        </div>
+      <button @click="isModalActive = false" style="float: right">
+        <div style="font-size: 24pt; transform: scaleY(0.7)">X</div>
       </button>
+      <form action="">
+        <input
+          placeholder="minimum 3 characters"
+          autocomplete="off"
+          spellcheck="false"
+          v-on:keyup="search($event)"
+          style="
+            border: 1px solid gray;
+            border-radius: 0.3em;
+            width: 225px;
+            font-size: medium;
+            padding-left: 5px;
+            padding-right: 5px;
+          "
+          type="text"
+          id="search-value"
+        /><br />
+      </form>
+      <SearchResults v-show="results" :results="results" />
+
+      <!--div style="font-size: small" v-for="(item, key) in results" :key="key">
+        {{ item.frontmatter.title }}<br />
+        {{ item.frontmatter.pageHeader }}
+      </div-->
       <br />
-      <SearchBox />
     </div>
   </teleport>
   <span>
     <button
       class="api3-search-btn"
       style="user-select: none"
-      @click="isModalActive = !isModalActive"
+      @click="openModal()"
     >
       🔍
     </button>
@@ -29,10 +50,9 @@
 </template>
 
 <script>
-import readFile from 'fs';
-import Document from 'flexsearch';
-import fs from 'fs';
-import chainsRef from '../../.vitepress/chains.json';
+import Index from 'flexsearch';
+import { cfg, ctx, map, reg } from './index-imports.js';
+import frontmatter from '../../.vitepress/searchFrontmatterIds.json';
 
 // https://stackoverflow.com/questions/69760524/flexsearch-export-and-import-document-index-issue/69853828#69853828
 export default {
@@ -43,16 +63,38 @@ export default {
   data: () => ({
     showModal: false,
     isModalActive: false,
-    //showSearchIcon: false,
+    index: undefined,
+    results: [],
   }),
   methods: {
-    openModal() {
-      this.showModal = !this.showModal;
+    search(el) {
+      //console.log('>', el.target.value);
+      this.results = [];
+      let ids = this.index.search({
+        query: el.target.value,
+        index: ['content'],
+        limit: 100,
+        suggest: true,
+        bool: 'and',
+      });
+      //console.log('ids', ids.length);
+      ids.forEach((id) => {
+        this.results.push({ id: id, frontmatter: frontmatter[id] });
+        //console.log(id, frontmatter[id].title);
+      });
     },
-    onChildClick() {
-      // The modal will send a msg to close when user clicks outside the modal
-      console.log('Closing the search dialog');
-      this.showModal = false;
+    openModal() {
+      this.isModalActive = true;
+      if (this.index) return;
+      // Declare the index
+      this.index = new Index({
+        tokenize: 'full',
+      });
+      // Load the indexed files
+      this.index.import('cfg', cfg);
+      this.index.import('ctx', ctx);
+      this.index.import('map', map);
+      this.index.import('reg', reg);
     },
   },
   watch: {
@@ -61,8 +103,6 @@ export default {
   mounted() {
     this.$nextTick(function () {
       console.log('Search btn mounted');
-      // If not the landing page show the search icon.
-      //if (this.$route.path !== '/') this.showSearchIcon = true;
     });
   },
 };
