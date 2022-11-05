@@ -1,8 +1,0 @@
-{
-  "id": 38,
-  "distPath": "docs/.vitepress/dist/guides/dao-members/videos.html",
-  "indexPath": "docs/.vitepress/search-files/guides/dao-members/videos.json",
-  "docSet": "/guides/",
-  "url": "/guides/dao-members/videos.html",
-  "content": "  📂 Guides → DAO Members  Videos [#] (#frontmatter-title)  ==  The DAO dashboard videos have been incorporated the [Staking Tokens] (./staking.html) , [Working with Proposals] (./proposals.html) and [How to Vote] (./voting.html) pages. This page allows quick access to all available dashboard videos.  Staking Page Overview [#] (#staking-page-overview)  -   Deposit and Withdraw [#] (#deposit-and-withdraw)  ----   Stake and Earn [#] (#stake-and-earn)  --   Unstake and Claim [#] (#unstake-and-claim)  ---   Proposals and History [#] (#proposals-and-history)  -   Create a Proposal [#] (#create-a-proposal)  ---   Vote and Delegate [#] (#vote-and-delegate)  ---  [Previous pageHow to Vote] (/guides/dao-members/voting.html)  "
-}
