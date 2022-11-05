@@ -1,8 +1,0 @@
-{
-  "id": 25,
-  "distPath": "docs/.vitepress/dist/guides/airnode/deploy-container.html",
-  "indexPath": "docs/.vitepress/search-files/guides/airnode/deploy-container.json",
-  "docSet": "/guides/",
-  "url": "/guides/airnode/deploy-container.html",
-  "content": "  📂 Guides → Airnode  Quick Start Docker Container [#] (#frontmatter-title)  ====  The &quot;Quick&quot; series of guides are simple introductions demonstrating the deployment of an Airnode. Configuration files are provided with only minor changes to be made. [Previous pageQuick Start GCP] (/guides/airnode/deploy-gcp.html)  [Next pageMaking an RRP Request] (/guides/airnode/rrp-request.html)  "
-}

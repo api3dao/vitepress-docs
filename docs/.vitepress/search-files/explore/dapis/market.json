@@ -1,8 +1,0 @@
-{
-  "id": 14,
-  "distPath": "docs/.vitepress/dist/explore/dapis/market.html",
-  "indexPath": "docs/.vitepress/search-files/explore/dapis/market.json",
-  "docSet": "/explore/",
-  "url": "/explore/dapis/market.html",
-  "content": "  📂 Explore → dAPIs  API3 Market [#] (#frontmatter-title)  ==  Smart contract developers now have access to dAPIs through the new [API3 Market] (https://market.api3.org) ➚ , where data feeds are easily searched, monitored, and consumed. For a limited time, dAPIs are free to use. Projects can integrate now to maximize their access to high quality price data during this free trial period. Visit the [Request Data] (https://forms.monday.com/forms/embed/f44d0ed9dfd0154885f48fdb3b87a489?r=use1) ➚ form to get access. [![API3 Market] (/assets/market-website.c3d8a816.png)] (https://market.api3.org)  [Previous pageCoverage Policies] (/explore/dapis/coverage-policies.html)  [Next pageWhat is Airnode?] (/explore/airnode/what-is-airnode.html)  "
-}
