@@ -10,6 +10,8 @@ tags:
 
 <PageHeader/>
 
+# {{$frontmatter.title}}
+
 The **"Quick"** series of guides are simple introductions demonstrating the
 deployment of an Airnode. Configuration files are provided with only minor
 changes to be made.
@@ -96,9 +98,9 @@ Note that `nodeSetting.disableConcurrencyReservations` has been set to `true`.
 This is a precaution for new AWS accounts that have yet to address concurrency
 management. For production deployments, `disableConcurrencyReservations` should
 be set to `false`. See
-[disableConcurrencyReservations](../../../reference/airnode/latest/understand/configuring-airnode.md#cloudprovider)
+[disableConcurrencyReservations](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
 under the `cloudProvider` key and
-[maxConcurrency](../../../reference/airnode/latest/understand/configuring-airnode.md#maxconcurrency)
+[maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
 for more information.
 
 ### secrets.env
@@ -125,7 +127,7 @@ Add values for each of the these fields.
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a digital
   wallet. For the purpose of this demo it does not need eth in it for the
   Rinkeby test network. If you don't have one use the Admin CLI command
-  [generate-airnode-mnemonic](../../../reference/packages/admin-cli.md#generate-airnode-mnemonic)
+  [generate-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-mnemonic)
   to create one or another method you prefer.
 
 ### aws.env
@@ -141,8 +143,9 @@ Add values for each of the these fields.
 Add the access credentials to your AWS account. The deployer image will use them
 to install the Airnode functions to Lambda under your account's control. If you
 do not have an account watch this
-[video](https://www.youtube.com/watch?v=KngM5bfpttA) to create one. Unlike
-`secrets.env`, you cannot surround values with double quotes (").
+[video](https://www.youtube.com/watch?v=KngM5bfpttA)<ExternalLinkImage/> to
+create one. Unlike `secrets.env`, you cannot surround values with double quotes
+(").
 
 - `AWS_ACCESS_KEY_ID`: Is ACCESS_KEY_ID in IAM.
 - `AWS_SECRET_ACCESS_KEY`: Is SECRET_ACCESS_KEY in IAM.
@@ -155,7 +158,7 @@ completion. It contains some deployment information and is used to remove the
 Airnode.
 
 <!-- Use of .html below is intended. -->
-<WarningSimultaneousDeployments removeLink="../../docker/deployer-image.html#manual-removal"/>
+<WarningSimultaneousDeployments removeLink="/reference/airnode/latest/docker/deployer-image.html#manual-removal"/>
 
 Run the following command to deploy the demo Airnode. Note that the version of
 `api3/airnode-deployer` matches the `nodeVersion` in the config.json file.
@@ -163,11 +166,11 @@ Normally (for Linux/Mac/WSL2) the deployer image `deploy` command is run by the
 user root. This may cause permission issues when the `receipt.json` file is
 generated. Optionally you can specify the
 <a href="https://en.wikipedia.org/wiki/User_identifier" target="_blank">UID
-(user identifier)</a> and <a
+(user identifier)</a><externalLinkImage/> and <a
 href="https://en.wikipedia.org/wiki/Group_identifier" target="\_blank"> GID
-(group identifier)</a> that the deployer image should use. Do so by setting the
-environment variables USER_ID and GROUP_ID, otherwise omit the line containing
-the variables.
+(group identifier)</a><externalLinkImage/> that the deployer image should use.
+Do so by setting the environment variables USER_ID and GROUP_ID, otherwise omit
+the line containing the variables.
 
 <Tabs>
 
@@ -195,17 +198,18 @@ docker run -it --rm ^
 ## Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using the
-[HTTP Gateways](../../../reference/airnode/latest/understand/http-gateways.md)
-without accessing the blockchain. You provide endpoint parameters to get a
-response from an integrated API.
+[HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md) without
+accessing the blockchain. You provide endpoint parameters to get a response from
+an integrated API.
 
 ### HTTP Gateway
 
-Looking at the [config.json](./config-json.md) code snippet below shows the HTTP
-gateway was activated for the Airnode. Furthermore the endpoint for
-`/simple/price` (with an `endpointId` of `0x6...af6`) has been added to
-`triggers.http[n]`. Only those endpoints added to the `http` array can be
-tested.
+Looking at the
+[config.json](/reference/airnode/latest/deployment-files/config-json.md) code
+snippet below shows the HTTP gateway was activated for the Airnode. Furthermore
+the endpoint for `/simple/price` (with an `endpointId` of `0x6...af6`) has been
+added to `triggers.http[n]`. Only those endpoints added to the `http` array can
+be tested.
 
 ```json
 "nodeSettings": {
@@ -242,10 +246,10 @@ tested.
 Use CURL to execute the Airnode and get the results from the CoinGecko endpoint
 `/simple/price` bypassing the Rinkeby test network that Airnode was deployed
 for. As an alternative to CURL try an app such as
-[Insomnia](https://insomnia.rest/) or
-[Postman](https://www.postman.com/product/rest-client/). Windows users can also
-use
-[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
+[Insomnia](https://insomnia.rest/)<externalLinkImage/> or
+[Postman](https://www.postman.com/product/rest-client/)<externalLinkImage/>.
+Windows users can also use
+[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)<externalLinkImage/>
 (WSL2) to run CURL for Linux.
 
 In order to test an endpoint make a HTTP POST request with the `endpointId` as a
@@ -350,4 +354,4 @@ making a request as its purpose was simply to quickly deploy a functional
 Airnode.
 
 Learn more about AWS resources that Airnode uses in the
-[Cloud Resources](../../../reference/cloud-resources.md) doc.
+[Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.

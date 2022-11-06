@@ -128,4 +128,4 @@ contribute.
 - proposing features
 
 Read more about contributing in the
-[Contributing](./contributing.md)<externalLinkImage/> section.
+[Contributing](./introduction/contributing.md) section.
