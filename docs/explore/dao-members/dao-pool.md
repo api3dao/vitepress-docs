@@ -43,11 +43,11 @@ tokens to the DAO pool you gain access to weekly staking rewards but also share
 in the risk of service coverage. You are also granted voting rights on active
 DAO proposals and inflationary rewards.
 
-To stake your tokens see [Staking Tokens](/reference/dao-members/staking.md).
-You can stake as many times as you’d like. Your percentage of all the tokens in
-the DAO pool are directly related to your percentage of the rewards and the
-risks. If you stake 10% of the pool you earn 10% of rewards and will pay 10% of
-service coverage claims.
+To stake your tokens see [Staking Tokens](/guides/dao-members/staking.md). You
+can stake as many times as you’d like. Your percentage of all the tokens in the
+DAO pool are directly related to your percentage of the rewards and the risks.
+If you stake 10% of the pool you earn 10% of rewards and will pay 10% of service
+coverage claims.
 
 ## Token Utilities
 
@@ -104,7 +104,7 @@ inflationary rewards and exposes you to the risk of service coverage claims.
   from dAPI malfunctions that the dAPI consumer might incur.
 
 To stake your tokens, see the guide
-[Staking Tokens](/guides/dap-members/staking.md). You can stake as many times as
+[Staking Tokens](/guides/dao-members/staking.md). You can stake as many times as
 you’d like. Your percentage of all the tokens in the DAO pool are directly
 related to your percentage of the rewards and the risks. If you stake 10% of the
 pool you earn 10% of rewards and will pay 10% of service coverage claims.
@@ -167,9 +167,9 @@ clients. API3 follows the same scheme for dAPIs.
 To gain access to a dAPI, a dApp will pay a recurring subscription fee, which
 may be fixed or customized for the dApp based on a specific use case. These
 prices will be determined by the respective team, and will include a premium if
-the dApp wants to receive [Service Coverage](dao-pool.md#service-coverage). The
-payment can be made in any cryptocurrency, which will be received by the DAO in
-API3 tokens through a liquidity pool-based decentralized exchange.
+the dApp wants to receive [Service Coverage](./dao-pool.md#service-coverage).
+The payment can be made in any cryptocurrency, which will be received by the DAO
+in API3 tokens through a liquidity pool-based decentralized exchange.
 
 ### API provider compensation
 
@@ -181,8 +181,8 @@ return of the proof that the API provider is compensated in fiat by the grantee.
 
 ## Rewards
 
-API3 aims to set up, maintain, and [monetize](dao-pool.md#monetization) dAPIs at
-scale. Its success in doing so can be estimated by its total revenue, as this
+API3 aims to set up, maintain, and [monetize](./dao-pool.md#monetization) dAPIs
+at scale. Its success in doing so can be estimated by its total revenue, as this
 will increase with the number of dAPIs and the amount of funds secured by them.
 API3 generates revenue through subscription fees and service coverage fees. The
 fees can be made in any cryptocurrency, which will be received by the DAO in
@@ -212,9 +212,9 @@ share will not always be one token.
 
 In essence, inflationary rewards force token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as
-collateral for [Service Coverage](dao-pool.md#service-coverage), and forces the
-staker to participate in governance to ensure that the risk is minimized. As a
-combination of the two, an inflationary governance token used as collateral
+collateral for [Service Coverage](./dao-pool.md#service-coverage), and forces
+the staker to participate in governance to ensure that the risk is minimized. As
+a combination of the two, an inflationary governance token used as collateral
 forces all token holders to participate in governance, which is ideal because it
 maximizes the decentralization of governance. Inflationary rewards are paid
 weekly by an implicit and automatic process through an on-chain contract.
