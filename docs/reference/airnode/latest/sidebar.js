@@ -270,10 +270,7 @@ module.exports = [
     collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/developers/' },
-      {
-        text: 'Requesters and Sponsors',
-        link: '/reference/airnode/latest/developers/requesters-sponsors',
-      },
+
       {
         text: 'Calling Airnode (RRP)',
         link: '/reference/airnode/latest/developers/call-an-airnode',
