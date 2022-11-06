@@ -48,3 +48,28 @@ Airnode responds to a request. An alternate method is to use the
 the [Remix Example](./remix-example.md) guide.
 
 <SponsorWalletWarning/>
+
+## Withdrawals
+
+In hte QRNG example project, the requester contract was written with the scope
+of demonstrating on-chain requests for random numbers.
+
+::: warning
+
+For brevity, the requester contract does not contain withdrawal or other
+additional functionality.
+
+:::
+
+For those inclined, withdrawal functionality can be added to the requester
+contract. First, funds must be transferred from `sponsorWallet` to `sponsor`.
+Since the requester contract is
+[set as the sponsor](https://github.com/api3dao/qrng-example/blob/46c93797902f25a46b73e40f8fa52c745b64ebb2/contracts/QrngExample.sol#L66),
+the requester contract needs to make the withdrawal request by calling
+`requestWithdrawal` from the
+[WithdrawalUtilsV0](https://github.com/api3dao/airnode/blob/4f3454cf40e1b0a1373e954df96ac22e1ce2e43f/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol#L27)
+contract. The `AirnodeRrpV0` contract inherits this contract and therefore the
+[published addresses](../../airnode/v0.7/reference/airnode-addresses.md) can be
+used. Second, a withdrawal function must be added to the requester contract such
+that the owner of the requester contract can transfer the requester contract
+balance to their address.
