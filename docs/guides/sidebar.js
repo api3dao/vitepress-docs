@@ -34,6 +34,10 @@ module.exports = [
         link: '/guides/airnode/',
       },
       {
+        text: '★ Calling an Airnode',
+        link: '/guides/airnode/calling-an-airnode/',
+      },
+      {
         text: 'Quick Start AWS',
         link: '/guides/airnode/quick-start-aws/',
       },
