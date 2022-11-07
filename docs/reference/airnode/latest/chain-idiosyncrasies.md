@@ -21,9 +21,8 @@ be comprehensive and we are interested in hearing if you encounter others.
 
 The idiosyncrasies below relate to the `chains` field of `config.json`. For the
 corresponding Airnode configuration guide section
-[see here](../grp-providers/guides/build-an-airnode/configuring-airnode.md#chains)
-and for the corresponding reference section
-[see here](../reference/deployment-files/config-json.md#chains).
+[see here](./understand/configuring.md#chains) and for the corresponding
+reference section [see here](./deployment-files/config-json.md#chains).
 
 ## Avalanche
 
@@ -55,7 +54,7 @@ As a L2 scaling solution, Optimism has an L1 data fee and an L2 execution fee,
 which are
 [accounted for separately](https://community.optimism.io/docs/developers/build/transaction-fees/#displaying-fees-to-users).
 To cover the L1 data fee when a sponsor requests a
-[withdrawal](../concepts/sponsor.md#withdrawals), an amount has to be subtracted
+[withdrawal](./concepts/sponsor.md#withdrawals), an amount has to be subtracted
 from the funds returned to the sponsor. The `withdrawalRemainder` parameter has
 been introduced specifically for this reason, though the value required will
 differ between Optimism mainnet and testnet due to differences in L1 gas fees.

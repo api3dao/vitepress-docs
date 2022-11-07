@@ -30,7 +30,7 @@
     "oust": "^2.0.0",
     "prettier": "^2.7.1",
     "textversionjs": "^1.1.3",
-    "vitepress": "^1.0.0-alpha.26",
+    "vitepress": "^1.0.0-alpha.27",
     "vue": "^3.2.38"
   }
 }

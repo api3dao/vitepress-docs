@@ -16,15 +16,15 @@ tags:
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
-endpoints using [Authorizers](../../../concepts/authorizers.md). This method is
+endpoints using [Authorizers](../concepts/authorizers.md). This method is
 on-chain and requires some blockchain knowledge by an API provider.
 
-An [Authorizer](../../../concepts/authorizers.md) is a contract which typically
-checks for a single condition ("has the requester made their monthly payment",
-"is this `requesterAddress` whitelisted", etc.). Authorizers can be combined to
-enforce more complex policies. If any of the authorizers in the list gives
-access, the request will considered to be authorized. From a logical standpoint,
-the authorization outcomes get *OR*ed.
+An [Authorizer](../concepts/authorizers.md) is a contract which typically checks
+for a single condition ("has the requester made their monthly payment", "is this
+`requesterAddress` whitelisted", etc.). Authorizers can be combined to enforce
+more complex policies. If any of the authorizers in the list gives access, the
+request will considered to be authorized. From a logical standpoint, the
+authorization outcomes get *OR*ed.
 
 ::: tip Alternative: Relayed Meta Data
 
@@ -41,8 +41,7 @@ Airnode's `airnodeAddress`. Sponsors (via their sponsored requesters) use
 `airnodeAddress` and an `endpointId` to make requests to your Airnode's
 endpoints. However, you probably do not want to serve them publicly.
 
-- Only serve your own
-  [requester contracts](../../../grp-developers/requesters-sponsors.md).
+- Only serve your own [requester contracts](../concepts/requesters-sponsors.md).
 - Only serve sponsors who have made a subscription payment.
 - Only serve sponsors who have gone through KYC.
 
@@ -92,21 +91,21 @@ method of authorization,
 ## RequesterAuthorizerWithAirnode
 
 A common use case for an authorizer is the
-[RequesterAuthorizerWithAirnode](../../../concepts/authorizers.md#requesterauthorizerwithairnode)
+[RequesterAuthorizerWithAirnode](../concepts/authorizers.md#requesterauthorizerwithairnode)
 authorizer contract developed for Airnode operators to use right out-of-the-box.
 It allows the whitelisting of requester contracts (with or without expiration
 timestamps) on a per endpoint basis. Endpoints are declared in the
 `ois.endpoints` field of the `config.json` file. This is the most common use
 case and may in fact satisfy the needs of many Airnodes. You can find the
 contract address of this authorizer in the
-[Airnode Contract Addresses](../../../reference/airnode-addresses.md) doc.
+[Airnode Contract Addresses](../airnode-addresses.md) doc.
 
 To use the RequesterAuthorizerWithAirnode authorizer contract:
 
 1. Add an authorizer contract address to the array for
    `chains[n].authorizers.{<authorizerContractAddress>}`.
 2. After your Airnode is deployed, call the Admin CLI command
-   [set-whitelist-expiration](../../../reference/packages/admin-cli.md#set-whitelist-expiration)
+   [set-whitelist-expiration](../packages/admin-cli.md#set-whitelist-expiration)
    to add the desired requester contract addresses to the whitelist maintained
    by RequesterAuthorizerWithAirnode.
 

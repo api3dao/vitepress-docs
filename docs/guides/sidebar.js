@@ -39,11 +39,11 @@ module.exports = [
       },
       {
         text: 'Quick Start GCP',
-        link: '/guides/airnode/deploy-gcp',
+        link: '/guides/airnode/quick-start-gcp/',
       },
       {
         text: 'Quick Start Docker Container',
-        link: '/guides/airnode/deploy-container',
+        link: '/guides/airnode/quick-start-container/',
       },
       {
         text: 'Making an RRP Request',

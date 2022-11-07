@@ -266,8 +266,8 @@ URL:
 
 - `<httpGatewayUrl>`: The base URL to the gateway including the secret `UUID`
   path parameter, displayed in the terminal at the end of an Airnode deployment
-  using a [Docker image](../../docker/). Update the placeholder in the CURL
-  example below with its value.
+  using a [Docker image](/reference/airnode/latest/docker/). Update the
+  placeholder in the CURL example below with its value.
 - <code style="overflow-wrap:break-word;">0xf466b8feec41e9e50815e0c9dca4db1ff959637e564bb13fefa99e9f9f90453c</code>:
   Passed as a path parameter, the endpointId to call, see
   `triggers.rrp[0].endpointId` in the `config.json` file.

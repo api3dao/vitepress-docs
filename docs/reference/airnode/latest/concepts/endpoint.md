@@ -16,14 +16,14 @@ tags:
 # {{$frontmatter.title}}
 
 Airnode serves an API to a blockchain according to
-[Oracle Integration Specifications (OIS)](/ois/v1.2/). An API is composed of
-[operations](/ois/v1.2/ois.md#_5-2-operation), which represent individual
-functionalities that an API offers. OIS maps each API operation to an
-[endpoint](/ois/v1.2/ois.md#_5-endpoints), which can be thought of as an Airnode
-operation. The endpoints that an Airnode will serve over the request–response
-protocol are listed under
-[triggers](../reference/deployment-files/config-json.md#triggers) of
-[config.json](../reference/deployment-files/config-json.md).
+[Oracle Integration Specifications (OIS)](/reference/ois/latest/). An API is
+composed of [operations](/reference/ois/latest/ois.md#_5-2-operation), which
+represent individual functionalities that an API offers. OIS maps each API
+operation to an [endpoint](/reference/ois/latest/ois.md#_5-endpoints), which can
+be thought of as an Airnode operation. The endpoints that an Airnode will serve
+over the request–response protocol are listed under
+[triggers](../deployment-files/config-json.md#triggers) of
+[config.json](../deployment-files/config-json.md).
 
 ## `endpointId`
 
@@ -40,7 +40,7 @@ ethers.utils.keccak256(
 ```
 
 An alternative method to create an `endpointId` is to use the
-[Admin CLI](../reference/packages/admin-cli.md) to derive the endpoint ID.
+[Admin CLI](../packages/admin-cli.md) to derive the endpoint ID.
 
 Note that this means that an `endpointId` is not unique, and two Airnodes can
 serve equivalent endpoints using the same ID (in fact, this is the desired

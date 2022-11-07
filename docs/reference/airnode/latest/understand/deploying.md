@@ -16,14 +16,14 @@ tags:
 # {{$frontmatter.title}}
 
 After integrating your API ([API Integration](api-integration.md)) and creating
-the configuration files ([Configuring Airnode](configuring-airnode.md)), the
-next step is to deploy the Airnode.
+the configuration files ([Configuring Airnode](configuring.md)), the next step
+is to deploy the Airnode.
 
 ::: tip Complete the following before deploying your Airnode.
 
 - [API Integration](api-integration.md)
 - [API Security](api-security.md)
-- [Configuring Airnode](configuring-airnode.md)
+- [Configuring Airnode](configuring.md)
 - [Using Authorizers](./apply-auth.md) optional
 - [Heartbeat](./heartbeat.md) optional
 - [HTTP Gateways](./http-gateways.md) optional
@@ -33,24 +33,24 @@ next step is to deploy the Airnode.
 ## Deploy with Docker
 
 The recommended way to deploy Airnode is by using the Docker
-[deployer image](../../docker/deployer-image.md). This image is simply a wrapper
+[deployer image](../docker/deployer-image.md). This image is simply a wrapper
 around the
 [deployer CLI](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer).
-Try out the [Quick Deploy](../../tutorial/) tutorial if you wish to become
+Try out the [Quick Start](/guides/airnode/) guides if you wish to become
 familiar with the deployer image first.
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,
 without requiring you to click through a lot of ever-changing graphical
 interfaces. For it to do so, a cloud project setup and credentials are required
 and was discussed in
-[Configuring an Airnode](./configuring-airnode.md#aws-setup-aws-deployment-only).
+[Configuring an Airnode](./configuring.md#aws-setup-aws-deployment-only).
 
 ## Install Docker
 
-The [deployer image](../../docker/deployer-image.md) is containerized as a
-Docker image. This will deploy the Airnode to the cloud provider without the
-worry of installing dependencies and is the recommended way to do a deployment.
-If you do not already have docker installed go to the
+The [deployer image](../docker/deployer-image.md) is containerized as a Docker
+image. This will deploy the Airnode to the cloud provider without the worry of
+installing dependencies and is the recommended way to do a deployment. If you do
+not already have docker installed go to the
 [Docker website](https://docs.docker.com/get-docker/) and install it.
 
 ## Deployment
@@ -83,10 +83,10 @@ my-airnode
 </Tabs>
 
 <!-- Use of .html below is intended. -->
-<WarningSimultaneousDeployments removeLink="../../docker/deployer-image.html#manual-removal"/>
+<WarningSimultaneousDeployments removeLink="../docker/deployer-image.html#manual-removal"/>
 
 From the root of the project directory run the Docker image command
-[deploy](../../docker/deployer-image.md#deploy) as shown below to deploy the
+[deploy](../docker/deployer-image.md#deploy) as shown below to deploy the
 Airnode. When the deployment has completed a `receipt.json` file will be written
 to your current working directory, which is mounted to the `/app/config`
 directory within the container. This file contains important configuration
@@ -152,19 +152,19 @@ bypassing the chain it was deployed to. There are three examples in other docs
 that detail how to do this.
 
 - [HTTP Gateways](./http-gateways.md#using-curl)
-- [Quick Deploy AWS](../../tutorial/quick-deploy-aws/#test-the-airnode)
-- [Quick Deploy GCP](../../tutorial/quick-deploy-gcp/#test-the-airnode)
-- [Quick Deploy Container](../../tutorial/quick-deploy-container/#test-the-airnode)
+- [Quick Deploy AWS](/guides/airnode/quick-start-aws/index.md#test-the-airnode)
+- [Quick Deploy GCP](/guides/airnode/quick-start-gcp/index.md#test-the-airnode)
+- [Quick Deploy Container](/guides/airnode/quick-start-container/index.md#test-the-airnode)
 
 ## Calling the Airnode
 
 Once the Airnode is deployed, see
-[Calling an Airnode](../../../grp-developers/call-an-airnode.md) to learn how
-requests are made to it.
+[Calling an Airnode](../developers/call-an-airnode.md) to learn how requests are
+made to it.
 
 ## Removing the Airnode
 
 If you would like to remove a deployed Airnode, see the Docker image commands
-for [remove](../../docker/deployer-image.md#remove) or
-[remove-with-receipt](../../docker/deployer-image.md#remove-with-receipt)
+for [remove](../docker/deployer-image.md#remove) or
+[remove-with-receipt](../docker/deployer-image.md#remove-with-receipt)
 instructions.

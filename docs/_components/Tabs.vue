@@ -54,6 +54,13 @@ Otherwise they are ignored.
           :contractName="element.props['contractName']"
         >
         </ContractAddresses>
+        <DeleteAirnodeGcp
+          v-else-if="element.type.name === 'DeleteAirnodeGcp'"
+        />
+        <DeleteAirnodeAws
+          v-else-if="element.type.name === 'DeleteAirnodeAws'"
+        />
+
         <!-- End of components listing -->
       </div>
     </div>

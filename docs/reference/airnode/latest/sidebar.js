@@ -131,7 +131,7 @@ module.exports = [
         link: '/reference/airnode/latest/concepts/sponsor',
       },
       {
-        text: 'Requests and Sponsors',
+        text: 'Requesters and Sponsors',
         link: '/reference/airnode/latest/concepts/requesters-sponsors',
       },
       {
@@ -149,10 +149,6 @@ module.exports = [
       {
         text: 'Gas Price Strategies',
         link: '/reference/airnode/latest/concepts/gas-prices',
-      },
-      {
-        text: 'Fees',
-        link: '/reference/airnode/latest/concepts/fees',
       },
     ],
   },
@@ -265,7 +261,7 @@ module.exports = [
     ],
   },
   {
-    text: 'dAPP Developers',
+    text: 'dApp Developers',
     collapsible: true,
     collapsed: true,
     items: [

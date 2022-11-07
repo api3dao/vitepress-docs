@@ -23,7 +23,7 @@ latest `v0.x` relase to the new docs.
 :::
 
 Airnode is a serverless oracle node implemented with a _"set and forget"_
-[philosophy](../grp-providers/airnode/design-philosophy.md).
+[philosophy](/explore/airnode/design-philosophy.md).
 
 ::: danger TODO:
 
@@ -90,12 +90,12 @@ mnemonic is kept secret and Airnode is publicly identified using the default
 An Airnode is identified by the default address of a BIP 44 wallet (with the
 path `m/44'/60'/0'/0/0`) which is referred to as the `airnodeAddress`. This
 address is same for all chains on which Airnode operates. The wallet mnemonic is
-specified in the [secrets.env](../reference/deployment-files/secrets-env.md)
-file when deploying the Airnode.
+specified in the [secrets.env](../deployment-files/secrets-env.md) file when
+deploying the Airnode.
 
 Use the admin CLI command
-[derive-airnode-address](../reference/packages/admin-cli.md#derive-airnode-address)
-to derive the `airnodeAddress` from the mnemonic for informational purposes.
+[derive-airnode-address](../packages/admin-cli.md#derive-airnode-address) to
+derive the `airnodeAddress` from the mnemonic for informational purposes.
 
 ```bash
 npx @api3/airnode-admin derive-airnode-address \
@@ -114,8 +114,8 @@ derivation path `m/44'/60'/0'`) off-chain. Then a sponsor derives a
 requests made by the sponsor's contracts.
 
 Use the admin CLI command
-[derive-airnode-xpub](../reference/packages/admin-cli.md#derive-airnode-xpub) to
-get the `xpub` of an Airnode by passing the same mnemonic used to create the
+[derive-airnode-xpub](../packages/admin-cli.md#derive-airnode-xpub) to get the
+`xpub` of an Airnode by passing the same mnemonic used to create the
 `airnodeAddress`.
 
 ```bash
@@ -129,7 +129,7 @@ Airnode xpub: xpub6CUGRUo...
 ## Admin CLI: `generate-airnode-mnemonic`
 
 The
-[generate-airnode-mnemonic](../reference/packages/admin-cli.md#generate-airnode-mnemonic)
+[generate-airnode-mnemonic](../packages/admin-cli.md#generate-airnode-mnemonic)
 command is useful because it will generate a mnemonic as well as return the
 `airnodeAddress` and `xpub`.
 
@@ -154,8 +154,8 @@ The Airnode xpub for this mnemonic is: xpub6CUGRUo...
 
 The `xpub` that the Airnode owner has announced is not verified on-chain. A
 sponsor can verify the `xpub` off-chain. Use the admin CLI command
-[verify-xpub](../reference/packages/admin-cli.md#verify-airnode-xpub) command
-from the admin CLI.
+[verify-xpub](../packages/admin-cli.md#verify-airnode-xpub) command from the
+admin CLI.
 
 ```bash
 npx @api3/airnode-admin verify-airnode-xpub \
