@@ -167,10 +167,10 @@ reduce unnecessary gas costs caused by microtransactions.
 
 If the sponsor decides not to use a particular `sponsorWallet` going forward,
 they can make a request to withdraw funds from it, see the
-[request-withdrawal](../reference/packages/admin-cli.md#request-withdrawal)
-command. The Airnode listens for withdrawal requests and fulfills them
-automatically. Therefore, the sponsor should be able to receive their funds from
-their `sponsorWallet` in a few minutes notice. The `sponsorWallet` does not get
+[request-withdrawal](../packages/admin-cli.md#request-withdrawal) command. The
+Airnode listens for withdrawal requests and fulfills them automatically.
+Therefore, the sponsor should be able to receive their funds from their
+`sponsorWallet` in a few minutes notice. The `sponsorWallet` does not get
 deleted, and can be used in the future simply by funding it again.
 
 ::: warning Withdrawal Priority
@@ -190,11 +190,11 @@ a requester". This sponsorship is know to have, and be defined by, a
 This sponsorship allows the requester to use the sponsor's `sponsorWallet` for a
 particular Airnode to cover gas costs incurred by the Airnode in response to a
 request. Learn more about
-[sponsorships](../grp-developers/requesters-sponsors.md).
+[sponsorships](/reference/airnode/latest/concepts/requesters-sponsors.md).
 
-Use the [Admin CLI tool](../reference/packages/admin-cli.md#sponsor-requester)
-to sponsor a requester. An example can be seem in the
-[Requesters and Sponsors](../grp-developers/requesters-sponsors.md#how-to-sponsor-a-requester)
+Use the [Admin CLI tool](../packages/admin-cli.md#sponsor-requester) to sponsor
+a requester. An example can be seem in the
+[Requesters and Sponsors](./requesters-sponsors.md#how-to-sponsor-a-requester)
 doc.
 
 ## Derive a Sponsor Wallet
@@ -209,8 +209,7 @@ The sponsor must also provide the [airnodeAddress](airnode.md#airnodeaddress)
 because it will be used to verify that the provided `xpub` belongs to the
 Airnode wallet before deriving a child sponsor wallet address.
 
-Use the
-[Admin CLI tool](../reference/packages/admin-cli.md#derive-sponsor-wallet-address)
+Use the [Admin CLI tool](../packages/admin-cli.md#derive-sponsor-wallet-address)
 to derive a `sponsorWallet`. An example can be seem in the
-[Requesters and Sponsors](../grp-developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+[Requesters and Sponsors](./requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
 doc.

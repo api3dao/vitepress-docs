@@ -94,8 +94,8 @@ requester addresses that can access them.
 Other docs related to authorizations and relayed meta data:
 
 - Reference ➙ Deployment Files ➙
-  [config.json](../reference/deployment-files/config-json.md)
+  [config.json](../deployment-files/config-json.md)
 - API Providers ➙ Build an Airnode ➙
-  [Using Authorizations](../grp-providers/guides/build-an-airnode/using-authorizations.md)
+  [Using Authorizations](../understand/using-authorizations.md)
 - API Providers ➙ Build an Airnode ➙ API Security ➙
-  [Relayed Meta Data Security Schemes](../grp-providers/guides/build-an-airnode/api-security.md#relayed-meta-data-security-schemes)
+  [Relayed Meta Data Security Schemes](../understand/api-security.md#relayed-meta-data-security-schemes)

@@ -29,7 +29,7 @@ have added Metamask support to. Not all browsers support
 
 Add a new file called `RemixQrngExample.sol` to a Remix workspace. You can use
 an existing workspace or create a new one. Copy and paste the code from the
-[RemixQrngExample.sol](../reference/remix-example.md) contract into the file.
+[RemixQrngExample.sol](/reference/qrng/remix-example.md) contract into the file.
 
 ![Add Contract](../assets/images/qrng-add-contract.png)
 
@@ -63,7 +63,7 @@ Be sure `RemixQrngExample - contracts/RemixQrngExample.sol` is selected in the
 <ElementSelect text="CONTRACT"/> pick list. Add the Airnode `_airnodeRrp`
 address parameter value for the constructor into the field next to the
 <ElementSelect text="Deploy"/> button. See the
-[list of addresses](../reference/chains.md) for the testnet you are using.
+[list of addresses](/reference/qrng/chains.md) for the testnet you are using.
 Select the <ElementSelect text="Deploy"/> button and approve the transaction
 with MetaMask.
 
@@ -84,17 +84,17 @@ function. Add the following to the corresponding fields for the function.
 - `_airnode`: The airnode address (copy it here
   →<CopyIcon text="0x9d3C147cA16DB954873A498e0af5852AB39139f2"/>) for the
   desired QRNG service provider. See its value from the
-  [ANU Airnode](../reference/providers.md#airnode).
+  [ANU Airnode](/reference/qrng/providers.md#airnode).
 
 - `_endpointIdUint256`: The Airnode endpoint ID (copy it here
   →<CopyIcon text="0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78"/>)
   that will return a single random number. See its value from the
-  [ANU Airnode](../reference/providers.md#endpointiduint256).
+  [ANU Airnode](/reference/qrng/providers.md#endpointiduint256).
 
 - `_sponsorWallet`: A wallet derived from the requester's contract address, the
   Airnode address, and the Airnode xpub. The wallet is used to pay gas costs to
   acquire a random number. A sponsor wallet must be derived using the command
-  [derive-sponsor-wallet-address](/airnode/v0.7/reference/packages/admin-cli.html#derive-sponsor-wallet-address)
+  [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address)
   from the Admin CLI. Use the value of the _sponsor wallet address_ that the
   command outputs.
 

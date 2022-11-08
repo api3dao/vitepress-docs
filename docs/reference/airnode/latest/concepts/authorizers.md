@@ -64,7 +64,7 @@ abstract contract which also extends the `Whitelist` contract. This means that
 both authorizer contracts will need to whitelist requester contracts prior to
 make them available to an Airnode. For `RequesterAuthorizerWithAirnode` this can
 be done using the
-[admin-cli](../reference/packages/admin-cli.md#requesterauthorizerwithairnode).
+[admin-cli](../packages/admin-cli.md#requesterauthorizerwithairnode).
 
 The main difference between them is that `RequesterAuthorizerWithAirnode` allows
 the Airnode address to grant whitelisting roles for that specific Airnode. On
@@ -89,10 +89,10 @@ effectively implementing an on-chain call quota.
 ### Authorizer List
 
 Airnode authorizers are listed in the config.json file at
-[chains[n].authorizers](../grp-providers/guides/build-an-airnode/configuring-airnode.md#chains).
-An authorizer typically checks for a single condition (has the requester made
-their monthly payment, is the `requester` whitelisted, etc.). Authorizers can be
-combined to enforce more complex policies. If any of the authorizers in
+[chains[n].authorizers](../understand/configuring.md#chains). An authorizer
+typically checks for a single condition (has the requester made their monthly
+payment, is the `requester` whitelisted, etc.). Authorizers can be combined to
+enforce more complex policies. If any of the authorizers in
 `chains[n].authorizers` gives access, the request will considered to be
 authorized. From a logical standpoint, the authorization outcomes get *OR*ed.
 

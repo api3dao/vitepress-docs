@@ -19,9 +19,9 @@ Using the relayed meta data security schemes does not require
 blockchain-specific knowledge or blockchain interaction by an API provider and
 there are no blockchain transaction (gas) fees. Just apply the desired security
 scheme fields in the Airnode `config.json` file during deployment of an Airnode,
-see [Building an Airnode](../grp-providers/guides/build-an-airnode/). Then have
-your API operations check for any security scheme values you configured
-(typically the `sponsorAddress`) against your customer database.
+see [Building an Airnode](../understand/). Then have your API operations check
+for any security scheme values you configured (typically the `sponsorAddress`)
+against your customer database.
 
 ## Simple Example
 
@@ -65,17 +65,17 @@ Including the `sponsorAddress` used in the
 [Simple Example](./relay-meta-auth.md#simple-example) above, there are five
 _relayed meta data security schemes_ that can be incorporated into any Airnode.
 
-- [relayChainId](../grp-providers/guides/build-an-airnode/api-security.md#relaychainid) -
-  The chain ID the request came from.
-- [relayChainType](../grp-providers/guides/build-an-airnode/api-security.md#relaychaintype) -
-  The chain type the request came from.
-- [relaySponsorAddress](../grp-providers/guides/build-an-airnode/api-security.md#relaysponsoraddress) -
-  The sponsor's wallet address. The sponsor owns and operates one or more
+- [relayChainId](../understand/api-security.md#relaychainid) - The chain ID the
+  request came from.
+- [relayChainType](../understand/api-security.md#relaychaintype) - The chain
+  type the request came from.
+- [relaySponsorAddress](../understand/api-security.md#relaysponsoraddress) - The
+  sponsor's wallet address. The sponsor owns and operates one or more
   requesters.
-- [relaySponsorWalletAddress](../grp-providers/guides/build-an-airnode/api-security.md#relaysponsorwalletaddress) -
+- [relaySponsorWalletAddress](../understand/api-security.md#relaysponsorwalletaddress) -
   Other wallet addresses associated with each requester. These are owned and
   funded by a sponsor to pay on-chain gas costs.
-- [relayRequesterAddress](../grp-providers/guides/build-an-airnode/api-security.md#relayrequesteraddress) -
+- [relayRequesterAddress](../understand/api-security.md#relayrequesteraddress) -
   The on-chain address of the requester (smart contract).
-- [relayRequestId](../grp-providers/guides/build-an-airnode/api-security.md#relayrequestid) -
-  The id of the request.
+- [relayRequestId](../understand/api-security.md#relayrequestid) - The id of the
+  request.

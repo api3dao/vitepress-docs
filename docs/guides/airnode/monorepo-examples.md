@@ -33,8 +33,7 @@ of the Airnode monorepo:
   for beacon updates.
 - [coingecko-template](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/integrations/coingecko-template)<ExternalLinkImage/> -
   demonstration of
-  [template](/reference/airnoe/latest/grp-developers/using-templates.md)
-  requests.
+  [template](/reference/airnode/latest/developers/using-templates.md) requests.
 - [coingecko-testable](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/integrations/coingecko-testable)<ExternalLinkImage/> -
   demonstration of how to test the endpoint using the
   [HTTP gateway](/reference/airnode/latest/understand/http-gateways.md).

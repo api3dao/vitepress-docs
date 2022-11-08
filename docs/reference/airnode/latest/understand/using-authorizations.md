@@ -16,10 +16,10 @@ tags:
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
-endpoints using [Authorizations](../../../concepts/authorizations.md). This
-method is off-chain and requires no blockchain knowledge by an API provider. It
-is different than [Authorizers](../../../concepts/authorizers.md) which is an
-on-chain auth scheme.
+endpoints using [Authorizations](../concepts/authorizations.md). This method is
+off-chain and requires no blockchain knowledge by an API provider. It is
+different than [Authorizers](../concepts/authorizers.md) which is an on-chain
+auth scheme.
 
 ::: tip Alternative: Relayed Meta Data
 

@@ -25,12 +25,12 @@ transactions.
 Fees are encountered when a sponsor engages in setup activity such as sponsoring
 a requester. These are per call transaction gas costs and are relatively small.
 The funds come from the wallet mnemonic that the sponsor supplies when calling
-certain [admin commands](../reference/packages/admin-cli.md) as shown below.
+certain [admin commands](../packages/admin-cli.md) as shown below.
 
-- [sponsor-requester](../reference/packages/admin-cli.md#sponsor-requester)
-- [unsponsor-requester](../reference/packages/admin-cli.md#unsponsor-requester)
-- [create-template](../reference/packages/admin-cli.md#create-template)
-- [request-withdrawal](../reference/packages/admin-cli.md#request-withdrawal)
+- [sponsor-requester](../packages/admin-cli.md#sponsor-requester)
+- [unsponsor-requester](../packages/admin-cli.md#unsponsor-requester)
+- [create-template](../packages/admin-cli.md#create-template)
+- [request-withdrawal](../packages/admin-cli.md#request-withdrawal)
 
 ## Airnodes
 
@@ -42,9 +42,9 @@ response to a request.
   funded manually by a sponsor using their preferred wallet management tool such
   as MetaMask.
 
-- [Calling](../grp-developers/call-an-airnode.md) an Airnode: Transaction gas
-  fees are withdrawn from the sponsor wallet related to the Airnode being called
-  by a sponsored requester.
+- [Calling](./call-an-airnode.md) an Airnode: Transaction gas fees are withdrawn
+  from the sponsor wallet related to the Airnode being called by a sponsored
+  requester.
 
 <airnode-SponsorWalletWarning/>
 

@@ -23,11 +23,11 @@ Airnode's defined endpoints in an OIS object but do not map to operation
 parameters (API parameters). They are used by Airnode for special purposes.
 
 A requester can pass request parameters either by referencing a
-[template](/airnode/v0.7/concepts/template.md) that contains them, or as an
-argument of the request-making methods of
-[AirnodeRrpV0.sol](/airnode/v0.7/concepts/#airnoderrpv0-sol). In either case,
-these parameters are encoded using the
-[AirnodeRrpV0 ABI](/airnode/v0.7/reference/specifications/airnode-abi-specifications.md).
+[template](/reference/airnode/latest/concepts/template.md) that contains them,
+or as an argument of the request-making methods of
+[AirnodeRrpV0.sol](/reference/airnode/latest/concepts/#airnoderrpv0-sol). In
+either case, these parameters are encoded using the
+[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi.md).
 There are two types of parameters which are part of the OIS object:
 
 1. [Endpoint parameters](./ois.md#_5-5-parameters) - Airnode endpoint parameters
@@ -67,7 +67,7 @@ section below.
 Before the API response value is encoded for on chain use, it is parsed and
 converted. The conversion behaviors for any given type is explained in depth in
 the
-[adapter package docs](/airnode/v0.7/reference/packages/adapter.md#conversion).
+[adapter package docs](/reference/airnode/latest/packages/adapter.md#conversion).
 
 The converted value is then encoded internally by
 [ethers ABI Coder](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
@@ -219,7 +219,7 @@ _times: "100"
 
 the request will be fulfilled with the value `123`. Note that the number gets
 multiplied by `100`, and then gets floored. This is because the result of the
-multiplication is [cast](/airnode/v0.7/reference/packages/adapter.md) to
+multiplication is [cast](/reference/airnode/latest/packages/adapter.md) to
 `int256` afterwards.
 
 Make sure to pass the `_times` parameter as string. Airnode will convert this
@@ -286,5 +286,5 @@ Airnode will extract and convert each of the "split values" separately
 
 All of these values are then together encoded to single bytes value that can be
 sent on chain. You can use
-[testing gateway](/airnode/v0.7/grp-providers/guides/build-an-airnode/deploying-airnode.md#testing-with-http-gateway)
+[testing gateway](/reference/airnode/latest/understand/deploying.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.

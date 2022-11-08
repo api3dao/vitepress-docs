@@ -74,7 +74,7 @@ will need the address of the Airnode and its endpointId to be called. Below are
 links that discuss request parameters if you need help.
 
 - [Reference > Request-Response Protocol > Request](../concepts/request.md)
-- [Calling an Airnode](../grp-developers/call-an-airnode.md#request-parameters)
+- [Calling an Airnode](./call-an-airnode.md#request-parameters)
 
 ```
 {
@@ -141,6 +141,6 @@ their`templateIds`.
 ::: tip Templates Tutorial
 
 The `coingecko-template` monorepo example demonstrates template requests,
-[see here](../grp-providers/tutorial/README.md#monorepo-examples).
+[see here](/guides/airnode/index.md#monorepo-examples).
 
 :::

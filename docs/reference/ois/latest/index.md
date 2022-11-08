@@ -33,7 +33,7 @@ defines an Airnode.
 - apiCredentials
 
 For more information about the config.json file see the
-[Deployment Files](/airnode/v0.7/reference/deployment-files/config-json.md)
+[Deployment Files](/reference/airnode/latest/deployment-files/config-json.md)
 section in the Airnode document set.
 
 In the diagram below, an Airnode exposes its endpoints to the on-chain

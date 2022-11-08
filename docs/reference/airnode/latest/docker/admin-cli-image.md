@@ -19,9 +19,9 @@ tags:
 <!-- TODO: link [Airnode repository](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-admin/docker) once image is published -->
 
 Use the admin CLI image as an alternative method to execute
-[Admin CLI Commands](../../reference/packages/admin-cli.md) using npx. Either
-method will achieve the same results. The image forgoes downloading the admin
-CLI package each time a command is executed using npx.
+[Admin CLI Commands](../packages/admin-cli.md) using npx. Either method will
+achieve the same results. The image forgoes downloading the admin CLI package
+each time a command is executed using npx.
 
 If you want to build the admin CLI image from the source yourself, you can find
 the
@@ -29,8 +29,8 @@ the
 in the Airnode repository.
 
 Additional information about the
-[admin CLI image](../../reference/packages/admin-cli.md#using-docker) is
-available in the admin CLI commands doc.
+[admin CLI image](../packages/admin-cli.md#using-docker) is available in the
+admin CLI commands doc.
 
 ## Usage
 

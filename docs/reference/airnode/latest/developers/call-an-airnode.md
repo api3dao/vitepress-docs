@@ -17,8 +17,8 @@ tags:
 
 A requester is a contract that can trigger an Airnode request. To do so, the
 requester needs to be sponsored and make the request using a matching sponsor
-wallet. See [Requesters and Sponsors](requesters-sponsors.md) on how to sponsor
-a requester and derive the sponsor wallet.
+wallet. See [Requesters and Sponsors](../concepts/requesters-sponsors.md) on how
+to sponsor a requester and derive the sponsor wallet.
 
 Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")
 deployed as self hosted or cloud provider functions, e.g., AWS) and the on-chain
@@ -74,9 +74,8 @@ Note the constructor parameter `airnodeRrpAddress`, which is the public address
 of the AirnodeRrpV0.sol protocol contract on the blockchain you wish to use. It
 is used by RrpRequesterV0.sol to point itself to AirnodeRrpV0.sol.
 
-See the list of all
-[Airnode contract addresses](../reference/airnode-addresses.md) in the reference
-section.
+See the list of all [Airnode contract addresses](../airnode-addresses.md) in the
+reference section.
 
 ## Step #2: Implement the request logic
 
@@ -156,10 +155,11 @@ following parameters to pass on to `airnodeRrp.makeFullRequest`.
 - **airnode** and **endpointId**: As a pair, these uniquely identify the
   endpoint desired at a particular Airnode.
 
-- **sponsor**: The [sponsor](requesters-sponsors.md#what-is-a-sponsor) address.
+- **sponsor**: The
+  [sponsor](../concepts/requesters-sponsors.md#what-is-a-sponsor) address.
 
 - **sponsorWallet**: The
-  [sponsor wallet](requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+  [sponsor wallet](../concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
   address that the sponsor received when deriving the wallet for the Airnode
   being called.
 
@@ -168,16 +168,15 @@ following parameters to pass on to `airnodeRrp.makeFullRequest`.
   request.
 
 - **parameters**: Specify the API parameters and any
-  [reserved parameters](../reference/specifications/reserved-parameters.md),
-  these must be encoded. See
-  [Airnode ABI specifications](../reference/specifications/airnode-abi-specifications.md)
+  [reserved parameters](../specifications/reserved-parameters.md), these must be
+  encoded. See [Airnode ABI specifications](../specifications/airnode-abi.md)
   for how these are encoded.
 
   In most, cases the parameters are encoded off-chain and passed to the
   requester which only forwards them. You can use the
-  [@api3/airnode-abi](../reference/specifications/airnode-abi-specifications.md#api3-airnode-abi)
-  package to perform the encoding and decoding. Take a look at the JavaScript
-  snippet below.
+  [@api3/airnode-abi](../specifications/airnode-abi.md#api3-airnode-abi) package
+  to perform the encoding and decoding. Take a look at the JavaScript snippet
+  below.
 
   ```javascript
   // JavaScript snippet
@@ -262,12 +261,13 @@ The callback to a requester contains two parameters, as shown in the
   reference to identify the request for which the response is intended.
 - **data**: In case of a successful response, this is the requested data which
   has been encoded and contains a
-  [timestamp](/ois/v1.2/reserved-parameters.md#timestamp-encoded-to-uint256-on-chain)
+  [timestamp](/reference/ois/latest/reserved-parameters.md#timestamp-encoded-to-uint256-on-chain)
   in addition to other response data. Decode it using the function `decode()`
   from the `abi` object.
 
 ## Step #4: Deploy and Sponsor the Requester
 
 Deploy the requester to the desired blockchain and then sponsor the requester.
-See [Requesters and Sponsors](requesters-sponsors.md#how-to-sponsor-a-requester)
+See
+[Requesters and Sponsors](../concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
