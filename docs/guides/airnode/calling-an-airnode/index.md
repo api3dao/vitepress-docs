@@ -19,7 +19,6 @@ tags:
 ::: warning TODO
 
 - Review and fix the wording
-- Fix the screenshots
 - Add information about the Coingecko Airnode
 - Review Code Snippets and comments
 - `requestId` bit is unclear. Need to fix that
@@ -186,17 +185,17 @@ wallet needs to be funded.**
 ::: details Coingecko's Airnode Details
 
 ```
-Coingecko's Airnode Address =
-Coingecko's Airnode XPUB =
-Coingecko's Endpoint ID =
+Coingecko's Airnode Address = 0x09c623940ad5729A36d6982E9F8e132214FEaA3d
+Coingecko's Airnode XPUB = xpub6CeoWe3yV6yiewhdpfXDcj4JURNar7yuD95AtS6eba18z6aZaXzKKrVH9bNb8nMDptUA4vcAEr6HoYEMCpNwsGCeVqQhvXsHLJheVF8K6VM
+Coingecko's Endpoint ID (`/simple/price`) = 0x484d51e779e2e2fe0ee39b5fb676f4bddd237dc972d261f3aa4cca69990c0e54
 ```
 
 :::
 
 ```sh
 npx @api3/airnode-admin derive-sponsor-wallet-address \
-  --airnode-xpub xpub6DXSDTZBd4aPVXnv6Q3SmnGUweFv6j24SK77W4qrSFuhGgi666awUiXakjXruUSCDQhhctVG7AQt67gMdaRAsDnDXv23bBRKsMWvRzo6kbf \
-  --airnode-address 0x9d3C147cA16DB954873A498e0af5852AB39139f2 \
+  --airnode-xpub xpub6CeoWe3yV6yiewhdpfXDcj4JURNar7yuD95AtS6eba18z6aZaXzKKrVH9bNb8nMDptUA4vcAEr6HoYEMCpNwsGCeVqQhvXsHLJheVF8K6VM \
+  --airnode-address 0x09c623940ad5729A36d6982E9F8e132214FEaA3d \
   --sponsor-address <Use the address of your Deployed Requester>
 
   Sponsor wallet address: 0x6394...5906757
@@ -229,8 +228,8 @@ const { decode } = require('@api3/airnode-abi');
 
 // Add your parameters here, then copy the encoded data to be used as parameters in the makeRequest function.
 const params = [
-  { type: 'string', name: 'vsCurrency', value: 'usd' },
-  { type: 'string', name: 'coinIds', value: 'bitcoin' },
+  { type: 'string', name: 'vs_currencies', value: 'usd' },
+  { type: 'string', name: 'ids', value: 'bitcoin' },
   { type: 'string', name: '_path', value: 'bitcoin.usd' },
   { type: 'string', name: '_type', value: 'int256' },
 ];
@@ -258,7 +257,7 @@ your `sponsorWallet` for any new transactions.
 
 > ![Making the Request](src/s6.png)
 
-Here, we can see the latest Fulfill transaction.
+Here, we can see the latest `Fulfill` transaction.
 
 ::: tip You might need to wait for a minute or two
 
