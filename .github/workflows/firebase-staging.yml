@@ -18,7 +18,10 @@ jobs:
 
       - run: yarn install
 
-      - run: npm run docs:build
+      - name: Build Docs
+        env:
+          NODE_OPTIONS: "--max_old_space_size=7168"
+        run: npm run docs:build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
