@@ -93,6 +93,7 @@ export default {
         this.index.import('reg', indexesDev.reg);
       } else {
         console.log('Pulling the indexes from remote repo');
+        console.time();
         let response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
         );
@@ -109,6 +110,7 @@ export default {
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/reg.json'
         );
         this.index.import('reg', response.data);
+        console.timeEnd();
       }
     },
   },
