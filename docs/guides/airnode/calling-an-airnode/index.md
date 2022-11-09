@@ -35,9 +35,6 @@ request data from the Airnodes without going through any intermediary.
 This guide shows you how to code. deploy, and run a simple smart contract that
 requests data from an Airnode.
 
-The following code shows a basic Requester contract that can request data from
-any Airnode.
-
 ## Coding the Requester Contract
 
 ::: warning Check your Network!
@@ -232,9 +229,9 @@ const { decode } = require('@api3/airnode-abi');
 
 // Add your parameters here, then copy the encoded data to be used as parameters in the makeRequest function.
 const params = [
-  { type: 'string', name: 'symbol', value: 'TSLA' },
-  { type: 'string', name: 'event', value: 'Trade' },
-  { type: 'string', name: '_path', value: 'Trade.TSLA.price' },
+  { type: 'string', name: 'vsCurrency', value: 'usd' },
+  { type: 'string', name: 'coinIds', value: 'bitcoin' },
+  { type: 'string', name: '_path', value: 'bitcoin.usd' },
   { type: 'string', name: '_type', value: 'int256' },
 ];
 
