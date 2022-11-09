@@ -17,15 +17,14 @@ tags:
 
 The
 [airnode-deployer](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer)
-package is used primarily by the [Docker Images](../../grp-providers/docker/).
-This CLI tool provides the underlying commands used by the Docker images when
-deploying an Airnode.
+package is used primarily by the [Docker Images](../docker/). This CLI tool
+provides the underlying commands used by the Docker images when deploying an
+Airnode.
 
 ::: warning Deploying an Airnode
 
-API providers are strongly encouraged to use the
-[Docker Images](../../grp-providers/docker/) when deploying an Airnode and not
-the deployer CLI commands.
+API providers are strongly encouraged to use the [Docker Images](../docker/)
+when deploying an Airnode and not the deployer CLI commands.
 
 :::
 
@@ -77,7 +76,7 @@ airnode-deployer deploy --config config/config.json --secrets config/secrets.env
   If you need help setting up an AWS IAM user you can follow
   [this video tutorial](https://www.youtube.com/watch?v=bT19B3IBWHE). Note that
   this step is done for you when using the Docker
-  [deployer image](../../grp-providers/docker/deployer-image.md).
+  [deployer image](../docker/deployer-image.md).
 
 ### Setup
 
@@ -124,7 +123,7 @@ templates to get started quickly, but you will need to edit these with your own
 API details and secrets.
 
 <!-- Use of .html below is intended. -->
-<WarningSimultaneousDeployments removeLink="../../grp-providers/docker/deployer-image.html#manual-removal"/>
+<WarningSimultaneousDeployments removeLink="../docker/deployer-image.html#manual-removal"/>
 
 Make sure `config.json` and `secrets.env` are available in the path for the
 `--configuration` argument.
@@ -216,8 +215,8 @@ airnode-deployer info aws2c6ef2b3
 An Airnode can be removed in two different ways:
 
 - **Best:** With `remove`, which uses the deployment ID found either in the
-  [deployment receipt file](../../reference/deployment-files/receipt-json.md) or
-  via the `list` command.
+  [deployment receipt file](../deployment-files/receipt-json.md) or via the
+  `list` command.
 - **Alternate:** With `remove-with-receipt`, which uses the deployment receipt
   created when the Airnode was deployed.
 

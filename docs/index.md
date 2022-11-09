@@ -19,7 +19,7 @@ hero:
       link: /explore/
     - theme: alt
       text: Jobs
-      link: /explore/jobs.md
+      link: /explore/introduction/jobs.md
     - theme: alt
       text: API3 on GitHub
       link: https://github.com/api3dao

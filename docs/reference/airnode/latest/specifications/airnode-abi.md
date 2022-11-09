@@ -70,7 +70,7 @@ notice is that `s` represents `string32`, but this is an artificial type and it
 is not part of
 [solidity types](https://docs.soliditylang.org/en/latest/types.html). This type
 is instead represented on chain as `bytes32`. The reasons for this are explained
-in depth in [string32 details](airnode-abi-specifications.md#string32) section.
+in depth in [string32 details](airnode-abi.md#string32) section.
 
 ## Encoding format
 
@@ -174,8 +174,7 @@ If this hash is encoded as a `string32` type, Airnode will decode it as:
 ```
 
 which is probably not what the user is looking for. For these use cases, the
-user should use the [`bytes32`](airnode-abi-specifications.md#bytes32) type
-instead.
+user should use the [`bytes32`](airnode-abi.md#bytes32) type instead.
 
 ### `bytes32`
 
@@ -196,7 +195,7 @@ When decoded by Airnode, the value would be the hash itself:
 ```
 
 If you want to store 32 byte string values on chain, use the
-[`string32`](airnode-abi-specifications.md#string32) type instead.
+[`string32`](airnode-abi.md#string32) type instead.
 
 ### `bool`
 
@@ -224,10 +223,10 @@ thus is tolerated to avoid a more complex solution.
 is used so that you can decode the values later on. This means that each
 parameter will be padded with zeros to complete them to 32 bytes. Although this
 padding increases gas costs, ABI encoding/decoding functions being cheap
-balances this. Furthermore, the [template](../../concepts/template.md) pattern
-used in the protocols allows for the referencing of these encoded parameters
-without explicitly passing them in requests, making the increased cost induced
-by padding irrelevant in most cases.
+balances this. Furthermore, the [template](../concepts/template.md) pattern used
+in the protocols allows for the referencing of these encoded parameters without
+explicitly passing them in requests, making the increased cost induced by
+padding irrelevant in most cases.
 
 ## `@api3/airnode-abi`
 

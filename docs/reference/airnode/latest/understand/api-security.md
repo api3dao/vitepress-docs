@@ -18,8 +18,8 @@ tags:
 Airnode can pass along security information (schemes) when making calls to API
 operations. There are two groups of security schemes.
 
-- [Airnode Authentication](../../../concepts/airnode-auth.md)
-- [Relayed Meta Data Authentication](../../../concepts/relay-meta-auth.md)
+- [Airnode Authentication](../concepts/airnode-auth.md)
+- [Relayed Meta Data Authentication](../concepts/relay-meta-auth.md)
 
 <!-- prettier-ignore-->
 > <img src="../assets/images/security-schemes.png" width="650px"/>
@@ -122,7 +122,7 @@ the `secrets.emv` file.
 ::: tip Authentication Tutorial
 
 The `authenticated-coinmarketcap` monorepo example demonstrates authentication,
-[see here](../../tutorial/README.md#monorepo-examples).
+[see here](/guides/airnode/monorepo-examples.md).
 
 :::
 
@@ -140,16 +140,16 @@ about a request to an API operation. This is different then
 - [relayRequestId](./api-security.md#relayrequestid)
 
 For relayed meta data security schemes you do not provide any values in
-[apiCredentials](../../../reference/deployment-files/config-json.md#apicredentials)
-as they are extracted from the request by Airnode.
+[apiCredentials](../deployment-files/config-json.md#apicredentials) as they are
+extracted from the request by Airnode.
 
 ::: tip Additional Processing Logic
 
 Note that Airnode is just relaying metadata to your API operations and does not
 perform any additional logic. You must implement any desired logic in your API
 operations. See
-[Relayed Meta Data Authentication](../../../concepts/relay-meta-auth.md) for
-overview of its usage.
+[Relayed Meta Data Authentication](../concepts/relay-meta-auth.md) for overview
+of its usage.
 
 :::
 
@@ -157,14 +157,14 @@ overview of its usage.
 
 The `relay-security-schemes` monorepo example demonstrates how to relay multiple
 request metadata like chain ID and sponsor address to the API endpoint,
-[see here](../../tutorial/README.md#monorepo-examples).
+[see here](/guides/airnode/monorepo-examples.md).
 
 :::
 
 ### relayRequesterAddress
 
 The `relayRequesterAddress` security scheme type instructs Airnode to forward
-the [requester](../../../concepts/requester.md) address.
+the [requester](../concepts/requester.md) address.
 
 ```json
 {
@@ -203,7 +203,7 @@ chain's type.
 ### relaySponsorAddress
 
 The `relaySponsorAddress` security scheme type instructs Airnode to forward the
-[sponsor address](../../../concepts/sponsor.md#sponsoraddress).
+[sponsor address](../concepts/sponsor.md#sponsoraddress).
 
 ```json
 {
@@ -216,8 +216,7 @@ The `relaySponsorAddress` security scheme type instructs Airnode to forward the
 ### relaySponsorWalletAddress
 
 The `relaySponsorWalletAddress` security scheme type instructs Airnode to
-forward the
-[sponsor wallet address](../../../concepts/sponsor.md#sponsorwallet).
+forward the [sponsor wallet address](../concepts/sponsor.md#sponsorwallet).
 
 ```json
 {
@@ -230,7 +229,7 @@ forward the
 ### relayRequestId
 
 The `relayRequestId` security scheme type instructs Airnode to forward the
-[id of the request](../../../concepts/request.md#requestid).
+[id of the request](../concepts/request.md#requestid).
 
 ```json
 {
@@ -330,10 +329,9 @@ in all OIS definitions. Each element of this array contains the following fields
   to interpolate it from `secrets.env`.
 
 If you want to base your API authentication on dynamic data, for example
-[requester](../../../concepts/requester.md) address, you can utilize the relayed
-meta data security schemes
-[described above](./api-security.md#relayrequesteraddress) which can forward
-metadata to all API operations.
+[requester](../concepts/requester.md) address, you can utilize the relayed meta
+data security schemes [described above](./api-security.md#relayrequesteraddress)
+which can forward metadata to all API operations.
 
 ::: tip Relayed meta data security schemes values.
 

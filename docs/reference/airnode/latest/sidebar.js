@@ -1,7 +1,7 @@
 module.exports = [
   {
     text: '',
-    collapsable: false,
+    collapsible: false,
     items: [
       { text: 'Versions', link: '/reference/airnode/latest/' },
       {
@@ -131,7 +131,7 @@ module.exports = [
         link: '/reference/airnode/latest/concepts/sponsor',
       },
       {
-        text: 'Requests and Sponsors',
+        text: 'Requesters and Sponsors',
         link: '/reference/airnode/latest/concepts/requesters-sponsors',
       },
       {
@@ -149,10 +149,6 @@ module.exports = [
       {
         text: 'Gas Price Strategies',
         link: '/reference/airnode/latest/concepts/gas-prices',
-      },
-      {
-        text: 'Fees',
-        link: '/reference/airnode/latest/concepts/fees',
       },
     ],
   },
@@ -262,6 +258,24 @@ module.exports = [
           },
         ],
       },
+    ],
+  },
+  {
+    text: 'dApp Developers',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      { text: 'Overview', link: '/reference/airnode/latest/developers/' },
+
+      {
+        text: 'Calling Airnode (RRP)',
+        link: '/reference/airnode/latest/developers/call-an-airnode',
+      },
+      {
+        text: 'Using Templates',
+        link: '/reference/airnode/latest/developers/using-templates',
+      },
+      { text: 'Fees', link: '/reference/airnode/latest/developers/fees' },
     ],
   },
 ];

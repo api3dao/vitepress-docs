@@ -26,7 +26,7 @@ Airnode is deployed with two files:
 
 - [aws.env](./aws-env.md) is the file that holds credentials if the Airnode is
   deployed to AWS cloud provider. It is required by the Docker
-  [deployer image](../../grp-providers/docker/deployer-image.md).
+  [deployer image](../docker/deployer-image.md).
 
 Airnode deployments utilizes secrets such as security scheme values (i.e., API
 keys) and blockchain provider URLs. While populating `config.json` you can use

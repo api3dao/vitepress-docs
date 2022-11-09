@@ -3,7 +3,7 @@ title: readerCanReadDataFeed()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/reader-can-read-datafeed.html
+path: /reference/dapis/functions/reader-can-read-datafeed.html
 version:
 outline: deep
 tags:
@@ -19,8 +19,8 @@ For on-chain smart contracts, the function
 [readerCanReadDataFeed()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L771-L781)
 returns true if the `reader` parameter can access the `dataFeedId` parameter
 meaning that the reader address has read access. See
-[Coverage Policies](./#coverage-policies) for more information about dAPI read
-access.
+[Coverage Policies](/explore/dapis/coverage-policies.md) for more information
+about dAPI read access.
 
 ## Example Code
 

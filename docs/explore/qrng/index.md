@@ -92,10 +92,10 @@ described below:
 API3 QRNG is a public utility we provide with the courtesy of Australian
 National University (ANU). It is powered by an Airnode hosted by ANU Quantum
 Random Numbers, meaning that it is a first-party service. It is free of charge
-(apart from the gas costs), [easy to use](./guides/qrng-example.md), and will be
-made available on as many [chains](./reference/chains.md) as possible. Please
-consider providing feedback and contributing to the open source components of
-this public utility at the
+(apart from the gas costs), [easy to use](../../guides/qrng/qrng-example.md),
+and will be made available on as many [chains](../../reference/qrng/chains.md)
+as possible. Please consider providing feedback and contributing to the open
+source components of this public utility at the
 [Discord api3-dev channel](https://discord.com/channels/758003776174030948/765618225144266793)<ExternalLinkImage/>.
 
 ## What to expect next?

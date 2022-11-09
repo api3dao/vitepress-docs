@@ -41,10 +41,10 @@ contract sits between a [requester](./requester.md) and the
 [Airnode](./airnode.md). It inherits from four additional contracts as
 illustrated in the diagram above:
 
-- [IAirnodeRrpV0.sol](README.md#iairnoderrp-sol)
-- [AuthorizationUtilsV0.sol](README.md#authorizationutils-sol)
-- [WithdrawalUtilsV0.sol](README.md#withdrawalutils-sol)
-- [TemplateUtilsV0.sol](README.md#templateutilsv0-sol)
+- [IAirnodeRrpV0.sol](./index.md#iairnoderrp-sol)
+- [AuthorizationUtilsV0.sol](./index.md#authorizationutils-sol)
+- [WithdrawalUtilsV0.sol](./index.md#withdrawalutils-sol)
+- [TemplateUtilsV0.sol](./index.md#templateutilsv0-sol)
 
 This contract has two key responsibilities:
 
@@ -55,12 +55,11 @@ However, this contract is shared for all requesters and Airnodes on a particular
 chain. This means that neither Airnode operators nor requesters need to deploy
 this contract themselves. Instead, API3 will deploy this contract once per chain
 and you simply connect your Airnode or requester contract to that deployed
-contract. See the
-[Airnode Contract Addresses](../reference/airnode-addresses.md) for reference.
+contract. See the [Airnode Contract Addresses](../airnode-addresses.md) for
+reference.
 
-The [`@api3/airnode-admin`](../reference/packages/admin-cli.md) package is a CLI
-tool used to interact with `AirnodeRrpV0.sol` and perform administrative
-actions.
+The [`@api3/airnode-admin`](../packages/admin-cli.md) package is a CLI tool used
+to interact with `AirnodeRrpV0.sol` and perform administrative actions.
 
 ### IAirnodeRrpV0.sol
 

@@ -17,8 +17,8 @@ tags:
 
 A successful integration of an API with an Airnode requires the mapping of each
 other's interface. This is accomplished using an OIS
-([Oracle Integration Specifications](/ois/v1.2/ois.md)) json object, found in
-the config.json file, that is designed to follow three basic steps.
+([Oracle Integration Specifications](/reference/ois/latest/ois.md)) json object,
+found in the config.json file, that is designed to follow three basic steps.
 
 - API operations are specified
 - Airnode endpoints are specified
@@ -52,19 +52,19 @@ OIS object is in these docs.
 
 **Tips while using this guide.**
 
-- Open the [OIS template](../../../reference/templates/ois-json.md) in another
+- Open the [OIS template](../deployment-files/templates/ois-json.md) in another
   browser window to follow along.
 - View an example of an
-  [Airnode config.json file](../../../reference/examples/config-json.md) from
+  [Airnode config.json file](../deployment-files/examples/config-json.md) from
   the Airnode Starter tutorial.
 
 ## OIS Template
 
 OIS is a json object that is added to an Airnode's
-[config.json](../../../reference/templates/config-json.md) file as the (`ois`)
+[config.json](../deployment-files/templates/config-json.md) file as the (`ois`)
 _key_, sometimes called a _field_. Try using the
-[OIS template](../../../reference/templates/ois-json.md) to construct an OIS and
-add it to the Airnode's config.json file later.
+[OIS template](../deployment-files/templates/ois-json.md) to construct an OIS
+and add it to the Airnode's config.json file later.
 
 In the OIS template, there are some fields that contain `{FILL_*}`. This means
 that the value added is independent from other fields. On the other hand, if two
@@ -97,9 +97,9 @@ json object.
 
 ### oisFormat
 
-A specific version of the [OIS Specification](/ois/v1.2/ois.md#_1-oisformat) to
-be used. For this guide, which uses Airnode `v0.10.x`, the proper OIS version is
-`1.2.0`.
+A specific version of the
+[OIS Specification](/reference/ois/latest/ois.md#_1-oisformat) to be used. For
+this guide, which uses Airnode `v0.10.x`, the proper OIS version is `1.2.0`.
 
 ### title
 
@@ -210,7 +210,7 @@ also provide a method. If a new path is needed then it must start a new object
 in paths with its own methods. Currently only the GET and POST methods are
 supported by Airnode.
 
-With regards to the [OIS template](../../../reference/templates/ois-json.md),
+With regards to the [OIS template](../deployment-files/templates/ois-json.md),
 the name of the element (denoted as `{FILL_PATH}`) should be replaced with the
 path (e.g., `/data`). Similarly, `{FILL_METHOD}` should be replaced with the
 method of the operation you want to integrate (e.g., `get`). The method must be
@@ -339,9 +339,9 @@ themselves. This results in optimal flexibility, and essentially allows the
 requesters to use the entire API functionality on-chain. Normally, oracle
 integrations strive to hard-code as many API parameters as possible because
 passing these parameters on-chain results in a gas cost overhead. However, the
-Airnode protocol uses [templates](../../../concepts/template.md) (not to be
-confused with the OIS template used for this guide), which allow requesters to
-specify a large number of endpoint parameters at no additional gas cost.
+Airnode protocol uses [templates](../concepts/template.md) (not to be confused
+with the OIS template used for this guide), which allow requesters to specify a
+large number of endpoint parameters at no additional gas cost.
 
 Note that there are some cases where you may not want to map endpoints to API
 operations one-to-one. For example, an API operation can have a `header`
@@ -392,14 +392,14 @@ and `endpoints[n].parameters`.
 The requester can provide some parameters that are not mapped to API operation
 parameters. These parameters are called "reserved parameters", and their names
 start with an underscore. See the
-[related OIS docs](/ois/v1.2/ois.md#_5-4-reservedparameters) for more
-information.
+[related OIS docs](/reference/ois/latest/ois.md#_5-4-reservedparameters) for
+more information.
 
 The current list of reserved parameters are `_type`, `_path` and `_times`. See
-[Reserved Parameters](/ois/v1.2/reserved-parameters.md) in the OIS document set
-to understand what each of these parameters are for. In most cases, all three
-should be defined as reserved parameters with no fixed/default values, as doing
-so provides the requester with the most flexibility.
+[Reserved Parameters](/reference/ois/latest/reserved-parameters.md) in the OIS
+document set to understand what each of these parameters are for. In most cases,
+all three should be defined as reserved parameters with no fixed/default values,
+as doing so provides the requester with the most flexibility.
 
 #### parameters
 

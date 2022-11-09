@@ -3,7 +3,7 @@ title: readDataFeedValueWithId()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/read-data-feed-value-with-id.html
+path: /reference/dapis/functions/read-data-feed-value-with-id.html
 version:
 outline: deep
 tags:
@@ -26,7 +26,8 @@ This function reads a value directly from a Beacon or Beacon set using its ID.
 In the code example below, `_datafeedId` is a Beacon or Beacon set ID. For
 on-chain smart contracts the `msg.sender` argument received by the function
 [readDataFeedValueWithId()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L708-L721)
-must have [read access](./#coverage-policies) for the dAPI requested.
+must have [read access](/explore/dapis/coverage-policies.md) for the dAPI
+requested.
 
 Calling from off-chain code (_using a library such as `ether.js`_) is not
 subject to coverage policies. Off-chain code is beyond the scope of this doc.

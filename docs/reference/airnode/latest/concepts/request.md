@@ -17,7 +17,7 @@ tags:
 
 A request is made, by a [requester](requester.md), to either the
 `makeFullRequest()` or `makeTemplateRequest()` functions of the
-[AirnodeRrpV0.sol](README.md#airnoderrpv0-sol) protocol contract which adds the
+[AirnodeRrpV0.sol](./index.md#airnoderrpv0-sol) protocol contract which adds the
 request to its storage. The targeted off-chain [Airnode](airnode.md) gathers the
 request from AirnodeRrpV0.sol's storage and responds using the `fulFill()`
 function of AirnodeRrpV0.sol.
@@ -30,7 +30,7 @@ function of AirnodeRrpV0.sol.
 > 4.  <p>Airnode gets data from the API and encodes it. The encoded response must have length at most 1024 bytes. (This is negligible in practice, since large responses are costly to store)</p>
 > 5.  <p>Airnode sends the response to fulFill() in AirnodeRrpV0 which in turn removes the pending requestId from storage and forwards the response to myFulFill(). The requestId is included as part of the response.</p>
 
-Learn more on how to [Call an Airnode](../grp-developers/call-an-airnode.md).
+Learn more on how to [Call an Airnode](../developers/call-an-airnode.md).
 
 ## `requestId`
 
@@ -79,9 +79,9 @@ request.
   be called to fulfill the request
 
 - `parameters` specify the API and
-  [reserved](/ois/v1.2/ois.md#_5-4-reservedparameters) parameters (see
-  [Airnode ABI specifications](../reference/specifications/airnode-abi-specifications.md)
-  for how these are encoded)
+  [reserved](/reference/ois/latest/ois.md#_5-4-reservedparameters) parameters
+  (see [Airnode ABI specifications](../specifications/airnode-abi.md) for how
+  these are encoded)
 
 ## Full Request
 

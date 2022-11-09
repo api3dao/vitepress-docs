@@ -42,8 +42,9 @@
 export default {
   name: 'TutorialResponse',
   data: () => ({
-    reservedURL: '../../../reference/specifications/reserved-parameters.html',
-    encodeURL: '../../../reference/packages/adapter.html#conversion',
+    reservedURL:
+      '/reference/airnode/latest/specifications/reserved-parameters.html',
+    encodeURL: '/reference/airnode/latest/packages/adapter.html#conversion',
   }),
 };
 </script>

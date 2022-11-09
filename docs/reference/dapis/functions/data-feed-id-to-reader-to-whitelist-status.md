@@ -3,7 +3,7 @@ title: dataFeedIdToReaderToWhitelistStatus()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/data-feed-id-to-reader-to-whitelist-status.html
+path: /reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status.html
 version:
 outline: deep
 tags:
@@ -17,7 +17,7 @@ tags:
 
 For on-chain smart contracts, the function
 [dataFeedIdToReaderToWhitelistStatus()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L791-L806)
-returns [read access](./#coverage-policies) information with the
+returns [read access](/explore/dapis/coverage-policies.md) information with the
 `expirationTimestamp` and `indefiniteWhitelistCount` of a reader for the
 specified dAPI data feed.
 

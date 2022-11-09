@@ -15,7 +15,8 @@
     "format": "prettier --write \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
     "format:check": "prettier --check \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky install",
-    "build:flexsearch": "node libs/flexsearchBuildIndexes.js; yarn run format;"
+    "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
+    "flex:test": "node libs/flexTestSearch.js;"
   },
   "devDependencies": {
     "axios": "^0.27.2",
@@ -30,7 +31,7 @@
     "oust": "^2.0.0",
     "prettier": "^2.7.1",
     "textversionjs": "^1.1.3",
-    "vitepress": "^1.0.0-alpha.26",
+    "vitepress": "^1.0.0-alpha.27",
     "vue": "^3.2.38"
   }
 }

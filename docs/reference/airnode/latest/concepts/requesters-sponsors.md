@@ -123,21 +123,21 @@ request. Therefore the sponsor pays for the fulfillment of the request.
 Sponsors need to keep their sponsorWallets topped off if they want Airnodes to
 fulfill requests made by their requesters. However this does not cover the cost
 of API data that the Airnode serves, see
-[API Provider Fees](fees.md#api-provider-fees).
+[API Provider Fees](../developers/fees.md#api-provider-fees).
 
 ## Admin CLI Commands
 
 There are several sponsor and requester related commands in the
-[Admin CLI Commands](../reference/packages/admin-cli.md) package. You can also
-see a list of available commands using `npx @api3/airnode-admin --help`.
+[Admin CLI Commands](../packages/admin-cli.md) package. You can also see a list
+of available commands using `npx @api3/airnode-admin --help`.
 
 In the next two sections of this doc you will use two commands from the
 `@api3/airnode-admin` package to _sponsor a requester_ and to _derive a sponsor
 wallet_.
 
-1. [sponsor-requester](../reference/packages/admin-cli.md#sponsor-requester)
-   sponsors a requester.
-2. [derive-sponsor-wallet-address](../reference/packages/admin-cli.md#derive-sponsor-wallet-address)creates
+1. [sponsor-requester](../packages/admin-cli.md#sponsor-requester) sponsors a
+   requester.
+2. [derive-sponsor-wallet-address](../packages/admin-cli.md#derive-sponsor-wallet-address)creates
    a sponsor wallet associated with an Airnode.
 
 ## How to Sponsor a Requester
@@ -156,8 +156,8 @@ on-chain. This command has transaction gas costs.
   alternate account to use from the mnemonic rather than the default account.
 
 Executing the command
-[sponsor-requester](../reference/packages/admin-cli.md#sponsor-requester) will
-sponsor a requester and returns the requesterAddress and sponsorAddress.
+[sponsor-requester](../packages/admin-cli.md#sponsor-requester) will sponsor a
+requester and returns the requesterAddress and sponsorAddress.
 
 <Tabs>
 
@@ -195,7 +195,7 @@ individual sponsorWallets that can access the Airnode. Learn more about a
 [sponsorWallet](../concepts/sponsor.md#sponsorwallet).
 
 To derive a sponsorWallet for an Airnode execute the
-[derive-sponsor-wallet-address](../reference/packages/admin-cli.md#derive-sponsor-wallet-address)
+[derive-sponsor-wallet-address](../packages/admin-cli.md#derive-sponsor-wallet-address)
 command using the parameters detailed in the list below. There are no
 transaction gas costs to do so.
 
@@ -238,7 +238,7 @@ Sponsor wallet address: 0x14D5a34E5a370b9951Fef4f8fbab2b1016D557d9
 Sponsors need to keep their sponsorWallets topped off if they want Airnodes to
 fulfill requests made by their requesters. However this does not cover the cost
 of API data that the Airnode serves, see
-[API Provider Fees](fees.md#api-provider-fees).
+[API Provider Fees](../developers/fees.md#api-provider-fees).
 
 If you forget the public address (`sponsorWalletAddress`) of the sponsorWallet
 simply run `derive-sponsor-wallet-address` again. Since the wallet already

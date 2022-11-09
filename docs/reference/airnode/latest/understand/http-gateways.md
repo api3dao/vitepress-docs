@@ -129,7 +129,7 @@ The gateway URLs are also available as part of the payload sent from Airnode's
 A gateway URL is generated for each gateway (when enabled) when Airnode is
 deployed. You can see the URLs including the secret `UUID` path parameter,
 displayed on your terminal at the end of an Airnode deployment using a
-[Docker image](../../docker/).
+[Docker image](../docker/).
 
 ### When using Airnode client
 
@@ -138,7 +138,7 @@ is a common web server for both gateways, which is exposed on the host machine.
 Doing so will make the gateways API accessible like a regular web server running
 on the machine. Each gateway has a separate endpoint as shown below. Note the
 `PORT` which is exposed as part of the Airnode client container. See the
-[Airnode client usage](../../docker/client-image.md#usage) for more details.
+[Airnode client usage](../docker/client-image.md#usage) for more details.
 
 - `http://localhost:<PORT>/http-data/01234567-abcd-abcd-abcd-012345678abc/<endpointId>` -
   Gateway URL for the HTTP Gateway
@@ -169,11 +169,10 @@ required as part of the CURL call.
 
 \* Parameters for the gateways are named differently. The HTTP signed data
 gateway requires that the `encodedParameters` be encoded using
-[Airnode ABI](../../../reference/specifications/airnode-abi-specifications.md).
+[Airnode ABI](../specifications/airnode-abi.md).
 
 Replace `<gatewayUrl>` in the examples below with the URL displayed in the
-terminal at the end of an Airnode deployment using a
-[Docker image](../../docker/).
+terminal at the end of an Airnode deployment using a [Docker image](../docker/).
 
 ### Request
 
@@ -219,8 +218,8 @@ The response format is a simple JSON object with the following fields:
 
 - `rawValue` - the API response
 - `values` - an array of values after they are
-  [extracted and converted](../../../reference/packages/adapter.md#conversion)
-  to the target type
+  [extracted and converted](../packages/adapter.md#conversion) to the target
+  type
 - `encodedValue` - the encoded bytes value that is sent as payload in the
   response transaction on chain
 
@@ -247,7 +246,9 @@ The response format is a simple JSON object with the following fields:
 
 The `airnode-examples` monorepo hosts examples demonstrating use of the HTTP
 Gateway and HTTP Signed Data Gateway,
-[see here](../../tutorial/README.md#monorepo-examples). Furthermore, there are
+[see here](/guides/airnode/monorepo-examples.html). Furthermore, there are
 additional examples of using CURL to call the HTTP gateway in both the
-[Quick Deploy AWS](../../tutorial/quick-deploy-aws/#execute-endpoint) and
-[Quick Deploy GCP](../../tutorial/quick-deploy-gcp/#execute-endpoint) tutorials.
+[Quick Deploy AWS](/guides/airnode/quick-start-aws/index.md#execute-endpoint)
+and
+[Quick Deploy GCP](/guides/airnode/quick-start-gcp/index.md#execute-endpoint)
+guides.

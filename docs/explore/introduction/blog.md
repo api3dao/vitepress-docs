@@ -3,7 +3,7 @@ title: Blog Posts on Medium
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
-path: /explore/blog.html
+path: /explore/introduction/blog.html
 outline: deep
 tags:
   - blog

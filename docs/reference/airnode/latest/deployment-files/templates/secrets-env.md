@@ -18,7 +18,7 @@ tags:
 The `secrets.env` contains the secrets that the respective Airnode deployments
 will need. All variables defined in a `secrets.env` can be interpolated inside
 `config.json`. For more details, see the full description of the
-[secrets.env](../deployment-files/secrets-env.md) file.
+[secrets.env](../../deployment-files/secrets-env.md) file.
 
 - Variable names cannot contain dashes (-) or start with a number.
 
