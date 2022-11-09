@@ -16,7 +16,7 @@
 
 # The flexsearch files can be huge, skip them. 
 # These are auto genereated anyway.
-/docs/.vitepress/flex-all-indexes
+/docs/indexes
 
 # other
 /docs/reference/dao-members/assets
