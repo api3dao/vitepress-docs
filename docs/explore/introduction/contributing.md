@@ -3,7 +3,7 @@ title: Contributing
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
-path: /explore/contributing.html
+path: /explore/introduction/contributing.html
 outline: deep
 tags:
   - contribute

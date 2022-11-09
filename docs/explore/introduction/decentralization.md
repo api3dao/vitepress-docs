@@ -3,7 +3,7 @@ title: Decentralization
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
-path: /explore/decentralization.html
+path: /explore/introduction/decentralization.html
 outline: deep
 tags:
   - decentralization

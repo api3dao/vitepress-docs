@@ -3,7 +3,7 @@ title: dataFeedIdToReaderToWhitelistStatus()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/data-feed-id-to-reader-to-whitelist-status.html
+path: /reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status.html
 version:
 outline: deep
 tags:
