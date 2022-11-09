@@ -15,7 +15,7 @@
     "format": "prettier --write \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
     "format:check": "prettier --check \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky install",
-    "flex:build": "node libs/flexBuildIndexes.js;",
+    "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
     "flex:test": "node libs/flexTestSearch.js;"
   },
   "devDependencies": {
