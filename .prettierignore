@@ -16,7 +16,7 @@
 
 # The flexsearch files can be huge, skip them. 
 # These are auto genereated anyway.
-/docs/indexes
+/indexes
 
 # other
 /docs/reference/dao-members/assets
