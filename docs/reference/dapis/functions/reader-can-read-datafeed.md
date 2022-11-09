@@ -3,7 +3,7 @@ title: readerCanReadDataFeed()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/reader-can-read-datafeed.html
+path: /reference/dapis/functions/reader-can-read-datafeed.html
 version:
 outline: deep
 tags:

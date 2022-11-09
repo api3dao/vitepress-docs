@@ -3,7 +3,7 @@ title: readDataFeedWithDapiName()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/read-data-feed-with-dapi-name.html
+path: /reference/dapis/functions/read-data-feed-with-dapi-name.html
 version:
 outline: deep
 tags:

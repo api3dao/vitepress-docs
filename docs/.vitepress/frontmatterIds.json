@@ -22,7 +22,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/config.html",
+    "path": "/explore/airnode/config-files.html",
     "outline": "deep",
     "tags": null
   },
@@ -158,7 +158,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore",
-    "path": "/explore/blog.html",
+    "path": "/explore/introduction/blog.html",
     "outline": "deep",
     "tags": ["blog", "posts", "articles", "academic"]
   },
@@ -167,7 +167,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore",
-    "path": "/explore/jobs.html",
+    "path": "/explore/introduction/jobs.html",
     "outline": "deep",
     "tags": ["api", "connectivity", "first-party", "oracle", "oracles"]
   },
@@ -176,7 +176,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore",
-    "path": "/explore/contributing.html",
+    "path": "/explore/introduction/contributing.html",
     "outline": "deep",
     "tags": ["contribute", "docs", "documentation", "github"]
   },
@@ -185,7 +185,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore",
-    "path": "/explore/decentralization.html",
+    "path": "/explore/introduction/decentralization.html",
     "outline": "deep",
     "tags": ["decentralization", "decentralized", "governance"]
   },
@@ -194,7 +194,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore",
-    "path": "/explore/jobs.html",
+    "path": "/explore/introduction/jobs.html",
     "outline": "deep",
     "tags": ["api3", "job", "jobs"]
   },
@@ -1116,7 +1116,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapiServer Functions",
-    "path": "/reference/dapis/data-feed-id-to-reader-to-whitelist-status.html",
+    "path": "/reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1126,7 +1126,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapiServer Functions",
-    "path": "/reference/dapis/read-data-feed-value-with-dapi-name.html",
+    "path": "/reference/dapis/functions/read-data-feed-value-with-dapi-name.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1136,7 +1136,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapiServer Functions",
-    "path": "/reference/dapis/read-data-feed-value-with-id.html",
+    "path": "/reference/dapis/functions/read-data-feed-value-with-id.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1146,7 +1146,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapiServer Functions",
-    "path": "/reference/dapis/read-data-feed-with-dapi-name.html",
+    "path": "/reference/dapis/functions/read-data-feed-with-dapi-name.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1156,7 +1156,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapiServer Functions",
-    "path": "/reference/dapis/read-data-feed-with-id.html",
+    "path": "/reference/dapis/functions/read-data-feed-with-id.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1166,7 +1166,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapiServer Functions",
-    "path": "/reference/dapis/reader-can-read-datafeed.html",
+    "path": "/reference/dapis/functions/reader-can-read-datafeed.html",
     "version": null,
     "outline": "deep",
     "tags": null

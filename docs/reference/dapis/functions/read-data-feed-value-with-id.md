@@ -3,7 +3,7 @@ title: readDataFeedValueWithId()
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapiServer Functions
-path: /reference/dapis/read-data-feed-value-with-id.html
+path: /reference/dapis/functions/read-data-feed-value-with-id.html
 version:
 outline: deep
 tags:

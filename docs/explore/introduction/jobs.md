@@ -3,7 +3,7 @@ title: Jobs
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
-path: /explore/jobs.html
+path: /explore/introduction/jobs.html
 outline: deep
 tags:
   - api3

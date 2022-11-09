@@ -3,7 +3,7 @@ title: Configuration Files
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/config.html
+path: /explore/airnode/config-files.html
 outline: deep
 tags:
 ---
