@@ -51,8 +51,9 @@
 
 <script>
 import Index from 'flexsearch';
-import { cfg, ctx, map, reg } from './index-imports.js';
-import frontmatter from '../../.vitepress/searchFrontmatterIds.json';
+import * as indexes from './index-imports.js';
+import frontmatter from '../../.vitepress/frontmatterIds.json';
+import axios from 'axios';
 
 // https://stackoverflow.com/questions/69760524/flexsearch-export-and-import-document-index-issue/69853828#69853828
 export default {
@@ -65,6 +66,7 @@ export default {
     isModalActive: false,
     index: undefined,
     results: [],
+    map: undefined,
   }),
   methods: {
     search(el) {
@@ -83,26 +85,65 @@ export default {
         //console.log(id, frontmatter[id].title);
       });
     },
-    openModal() {
+    async openModal() {
       this.isModalActive = true;
       if (this.index) return;
       // Declare the index
       this.index = new Index({
         tokenize: 'full',
       });
+      const response = await axios.get(
+        'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/.vitepress/search-latest-index/map.json'
+      );
+      console.log(1, response);
+      this.index.import('cfg', indexes.cfg);
+      this.index.import('ctx', indexes.ctx);
+      this.index.import('map', response.data);
+      this.index.import('reg', indexes.reg);
+
+      /*axios
+        .get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/.vitepress/search-latest-index/map.json'
+        )
+        .then(function (response) {
+          // handle success
+          
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        })
+        .finally(function () {});*/
+
+      // Reassemble the map.json file
+      /*console.log(1, typeof indexes.map1, indexes.map1);
+      this.map = JSON.parse(
+        indexes.map1 +
+          indexes.map2 +
+          indexes.map3 +
+          indexes.map4 +
+          indexes.map5 +
+          indexes.map6 +
+          indexes.map7 +
+          indexes.map8 +
+          indexes.map9
+      );
+      console.log(this.map);*/
       // Load the indexed files
-      this.index.import('cfg', cfg);
-      this.index.import('ctx', ctx);
-      this.index.import('map', map);
-      this.index.import('reg', reg);
     },
   },
   watch: {
     $route($event) {},
   },
-  mounted() {
+  async mounted() {
     this.$nextTick(function () {
       console.log('Search btn mounted');
+
+      /**let one = import('../../.vitepress/frontmatterIds.json');
+      console.log(one);
+      import('../../.vitepress/frontmatterIds.json').then((mod) => {
+        console.log(mod);
+      });*/
     });
   },
 };

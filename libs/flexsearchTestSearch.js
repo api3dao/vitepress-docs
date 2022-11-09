@@ -10,7 +10,7 @@ let index = new Index({
 */
 const retrieveIndex = () => {
   const keys = fs
-    .readdirSync('docs/.vitepress/search-latest-index/', {
+    .readdirSync('docs/.vitepress/flex-indexes/', {
       withFileTypes: true,
     })
     .filter((item) => !item.isDirectory())

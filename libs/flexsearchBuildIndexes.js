@@ -4,6 +4,7 @@ const fs = require('fs');
 var file = require('file');
 const fse = require('fs-extra');
 const { Document, Index } = require('flexsearch');
+const SplitFile = require('split-file');
 
 let filesArr = [];
 let cnt = 1; // Used for the index id
@@ -22,14 +23,21 @@ function walkCB(dirPath, dirs, files) {
 }
 
 /*
-  Build the content json files used to create FlexSearch indexes
+  Build the content json files used to create FlexSearch indexes.
+  Get the innerText from the html and create a 
+  content page for the html page in /libs/flexSearchFiles
 */
-function buildFileJson(path) {
+function buildContentFile(path) {
+  const contentDir = 'libs/flexContentFiles';
+
+  // Make sure the /flexContentFiles dir exists
+  fse.ensureDirSync(contentDir);
+
   const arr = path.split('/');
 
   // contentPath: the file with extracted HTML text
-  let contentPath = path.split('/.vitepress/dist')[1];
-  contentPath = 'libs/search-files' + contentPath.replace('.html', '.json');
+  let parsedPath = path.split('/.vitepress/dist')[1];
+  let contentPath = contentDir + parsedPath.replace('.html', '.json');
 
   // frontmatter and url: /explore
   //console.log('\n> path:', path);
@@ -58,7 +66,7 @@ function buildFileJson(path) {
   plainText = plainText.replace(/\n/g, ' ');
 
   // Updates the lookup file so search can find the page by its ID
-  searchLookupPages(cnt, frontmatter);
+  addToFrontmatter(cnt, frontmatter);
 
   // Create the json object and write file to search-files dir
   let json = {
@@ -67,18 +75,51 @@ function buildFileJson(path) {
   };
   fse.outputFileSync(contentPath, JSON.stringify(json));
 
-  // Update the in memory flexSearch index
+  // Update the in memory flexSearch index to be exported later
   index.add(cnt, json.content);
-  /*index.add({
-    id: cnt,
-    content: json.content,
-  });*/
-  //index: ['content'],
   cnt++;
 }
 
 /*
-  Load all HTML files from /docs/.vitepress/dist dir
+  Updates the frontmatterIds file so search can find the page by its ID
+*/
+let frontmatterObj = {};
+function addToFrontmatter(id, frontmatter) {
+  frontmatterObj[id] = frontmatter;
+}
+
+/*
+  Export all flex indexes to disk /.vitepress/flex-all-indexes
+  Then split the map.json file
+*/
+function exportAllIndexesToFiles() {
+  index.export((key, data) => {
+    let dir = 'docs/.vitepress/flex-all-indexes';
+    if (key === 'map') dir = 'docs/.vitepress/flex-all-indexes/map';
+    //console.log(`${dir}/${key}.json`);
+    fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
+    if (key === 'map') {
+      SplitFile.splitFile('docs/.vitepress/flex-all-indexes/map/map.json', 40)
+        .then((names) => {
+          //console.log(names);
+          console.log(
+            '> * Delete file /.vitepress/flex-all-indexes/map/map.json'
+          );
+          fse.removeSync('docs/.vitepress/flex-all-indexes/map/map.json');
+        })
+        .catch((err) => {
+          console.log('Error: ', err);
+          console.log(
+            '> * Delete file /.vitepress/flex-all-indexes/map/map.json'
+          );
+          fse.removeSync('docs/.vitepress/flex-all-indexes/map/map.json');
+        });
+    }
+  });
+}
+
+/*
+  Load all HTML files from /docs/.vitepress/dist 
 */
 function start() {
   file.walkSync('./docs/.vitepress/dist', walkCB);
@@ -97,32 +138,30 @@ function start() {
         !skip.includes(dir + '/' + files[x]) &&
         dir.indexOf('/dist/dev') === -1
       ) {
-        //console.log(dir + '/' + files[x]);
-        buildFileJson(dir + '/' + files[x]);
+        buildContentFile(dir + '/' + files[x]);
       }
     }
   }
-  console.log(index);
-
-  // Export flexSearch index to disk
-  index.export((key, data) =>
-    fs.writeFileSync(
-      `docs/.vitepress/search-latest-index/${key}.json`,
-      data !== undefined ? data : ''
-    )
-  );
 }
 
-let frontmatterObj = {};
-function searchLookupPages(id, frontmatter) {
-  //console.log(frontmatter);
-  frontmatterObj[id] = frontmatter;
-}
+console.log('\n----- Building FlexSearch Indexes -----');
 
-console.log('Building FlexSearch Indexes');
+console.log(
+  '> Remove all index map.json files in /.vitepress/flex-all-indexes/map/'
+);
+fse.removeSync('docs/.vitepress/flex-all-indexes/map');
+fse.ensureDirSync('docs/.vitepress/flex-all-indexes/map');
+
+console.log('> Creating content pages in /libs/flexContentFiles/');
 start();
-//console.log(frontmatterObj);
+
+console.log(
+  '> Creating index files in /.vitepress/flex-all-indexes/ (async operation *)'
+);
+exportAllIndexesToFiles();
+
+console.log('> Creating frontmatterIds file in /.vitepress/');
 fs.writeFileSync(
-  'docs/.vitepress/searchFrontmatterIds.json',
+  'docs/.vitepress/frontmatterIds.json',
   JSON.stringify(frontmatterObj)
 );

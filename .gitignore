@@ -5,7 +5,7 @@ node_modules/
 docs/.vitepress/dist/
 .firebase/
 
-libs/search-files/
+libs/flexContentFiles/
 
 
 package-lock.json
