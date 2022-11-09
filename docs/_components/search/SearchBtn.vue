@@ -51,15 +51,13 @@
 
 <script>
 import Index from 'flexsearch';
-import { cfg, ctx, map, reg } from './index-imports.js';
-import frontmatter from '../../.vitepress/searchFrontmatterIds.json';
+import * as indexesDev from './indexes-all-dev.js';
+import frontmatter from '../../.vitepress/frontmatterIds.json';
+import axios from 'axios';
 
 // https://stackoverflow.com/questions/69760524/flexsearch-export-and-import-document-index-issue/69853828#69853828
 export default {
   name: 'SearchBtn',
-  components: {
-    //SearchBox2,
-  },
   data: () => ({
     showModal: false,
     isModalActive: false,
@@ -68,7 +66,6 @@ export default {
   }),
   methods: {
     search(el) {
-      //console.log('>', el.target.value);
       this.results = [];
       let ids = this.index.search({
         query: el.target.value,
@@ -77,30 +74,48 @@ export default {
         suggest: true,
         bool: 'and',
       });
-      //console.log('ids', ids.length);
       ids.forEach((id) => {
         this.results.push({ id: id, frontmatter: frontmatter[id] });
-        //console.log(id, frontmatter[id].title);
       });
     },
-    openModal() {
+    async openModal() {
       this.isModalActive = true;
       if (this.index) return;
       // Declare the index
       this.index = new Index({
         tokenize: 'full',
       });
-      // Load the indexed files
-      this.index.import('cfg', cfg);
-      this.index.import('ctx', ctx);
-      this.index.import('map', map);
-      this.index.import('reg', reg);
+      console.log(window.location.href);
+      if (window.location.href.indexOf('5173') > 0) {
+        this.index.import('cfg', indexesDev.cfg);
+        this.index.import('ctx', indexesDev.ctx);
+        this.index.import('map', indexesDev.map);
+        this.index.import('reg', indexesDev.reg);
+      } else {
+        console.log('Pulling the indexes from remote repo');
+        let response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/mcfg.json'
+        );
+        this.index.import('cfg', response.data);
+        response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/ctx.json'
+        );
+        this.index.import('ctx', response.data);
+        response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/map.json'
+        );
+        this.index.import('map', response.data);
+        response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/reg.json'
+        );
+        this.index.import('reg', response.data);
+      }
     },
   },
   watch: {
     $route($event) {},
   },
-  mounted() {
+  async mounted() {
     this.$nextTick(function () {
       console.log('Search btn mounted');
     });

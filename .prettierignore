@@ -14,6 +14,10 @@
 #ois
 /docs/reference/ois/latest/assets
 
+# The flexsearch files can be huge, skip them. 
+# These are auto genereated anyway.
+/indexes
+
 # other
 /docs/reference/dao-members/assets
 /docs/reference/dapis/assets
