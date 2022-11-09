@@ -94,7 +94,7 @@ export default {
       } else {
         console.log('Pulling the indexes from remote repo');
         let response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/mcfg.json'
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
         );
         this.index.import('cfg', response.data);
         response = await axios.get(
