@@ -30,24 +30,12 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
-        link: '/guides/airnode/',
-      },
-      {
-        text: '★ Calling an Airnode',
+        text: 'Calling an Airnode',
         link: '/guides/airnode/calling-an-airnode/',
       },
       {
-        text: 'Quick Start AWS',
-        link: '/guides/airnode/quick-start-aws/',
-      },
-      {
-        text: 'Quick Start GCP',
-        link: '/guides/airnode/deploy-gcp',
-      },
-      {
-        text: 'Quick Start Docker Container',
-        link: '/guides/airnode/deploy-container',
+        text: 'Quick Start Guide',
+        link: '/guides/airnode/quick-start-guide/',
       },
       {
         text: 'Making an RRP Request',
