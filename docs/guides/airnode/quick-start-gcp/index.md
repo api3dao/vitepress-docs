@@ -3,7 +3,7 @@ title: Quick Start GCP
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/deploy-gcp.html
+path: /guides/airnode/quick-start-gcp/index.html
 outline: deep
 tags:
   - airnode

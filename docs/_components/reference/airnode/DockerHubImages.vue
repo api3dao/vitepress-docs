@@ -63,7 +63,6 @@ export default {
   }),
   mounted() {
     this.$nextTick(function () {
-      console.log(1, this.route.split('/'));
       this.path =
         '/' +
         this.route.split('/')[1] +
@@ -72,7 +71,6 @@ export default {
         '/' +
         this.route.split('/')[3] +
         '/deployment-files/config-json.html#nodeversion';
-      console.log(2, this.path);
     });
   },
 };

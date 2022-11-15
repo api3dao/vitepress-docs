@@ -25,6 +25,7 @@ import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeG
 import ChainName from '../../_components/ChainName.vue';
 import ElementSelect from '../../_components/ElementSelect.vue';
 import Video from '../../_components/Video.vue';
+import SearchHighlight from '../../_components/SearchHighlight.vue';
 
 export default {
   ...DefaultTheme,
@@ -58,6 +59,7 @@ export default {
     app.component('ChainName', ChainName);
     app.component('ElementSelect', ElementSelect);
     app.component('Video', Video);
+    app.component('SearchHighlight', SearchHighlight);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

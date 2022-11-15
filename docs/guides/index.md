@@ -16,6 +16,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 <Tabs>
@@ -24,7 +26,7 @@ tags:
 
 The **API Providers Guides** section hosts tutorials, how to, and videos focused
 on deploying Airnode. Guides are divided into product sections. The tabs _for
-Developer_ and _API Providers_ show a list of guides that are relevant to each..
+Developer_ and _API Providers_ show a list of guides that are relevant to each.
 
 **ChainAPI**
 
@@ -48,6 +50,10 @@ culpa qui officia deserunt mollit anim id est laborum.
 
 @tab: For Developers
 
+Developer Guides
+
 @tab: API Providers
+
+API Provider guides
 
 </Tabs>

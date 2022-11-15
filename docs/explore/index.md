@@ -15,14 +15,15 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
-**API3** ([https://api3.org](https://api3.org)<externalLinkImage/>) is a
-collaborative project to deliver traditional API services to smart contract
-platforms in a decentralized and trust-minimized way. It is governed by a
-_decentralized autonomous organization_ (DAO), namely the **API3 DAO**.
-Therefore, its code is open source and its operations are transparent. Learn
-more about API3 on its website.
+API3 ([https://api3.org](https://api3.org) ➚) is a collaborative project to
+deliver traditional API services to smart contract platforms in a decentralized
+and trust-minimized way. It is governed by a _decentralized autonomous
+organization_ (DAO), namely the **API3 DAO**. Therefore, its code is open source
+and its operations are transparent. Learn more about API3 on its website.
 
 ::: tip API3 Whitepaper (pdf)
 

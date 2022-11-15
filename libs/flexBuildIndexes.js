@@ -55,7 +55,7 @@ function buildContentFile(path) {
   plainText = plainText.split('Table of Contents for current page')[1];
 
   // Remove footer below next/previous pages
-  plainText = plainText.split('Released under the MIT License.')[0];
+  plainText = plainText.split('[Previous page')[0];
 
   // Remove excessive ==== and -----
   plainText = plainText.replace(/=====/g, '');
