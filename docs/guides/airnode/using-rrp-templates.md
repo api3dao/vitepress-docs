@@ -1,6 +1,6 @@
 ---
 title: Using RRP Templates
-sidebarHeader: Airnode
+sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
 path: /guides/airnode/using-rrp-templates.html

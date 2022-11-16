@@ -31,7 +31,7 @@ available. Each provider has an Airnode address with an extended public key
 
 - <b>`endpointIdUint256Array`</b>: The Airnode endpoint ID that returns multiple
   random numbers of type `uint256[]`. Takes one parameter named `size` of type
-  `uint256` (maximum value: 1024).
+  `uint256` (maximum value: 512).
 
 ## ANU Quantum Random Numbers
 

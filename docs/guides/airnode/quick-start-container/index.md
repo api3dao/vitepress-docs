@@ -3,7 +3,7 @@ title: Quick Start Docker Container
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/deploy-container.html
+path: /guides/airnode/quick-start-container/index.html
 outline: deep
 tags:
   - airnode

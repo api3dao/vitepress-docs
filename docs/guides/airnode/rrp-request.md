@@ -1,6 +1,6 @@
 ---
 title: Making an RRP Request
-sidebarHeader: Airnode
+sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
 path: /guides/airnode/rrp-request.html

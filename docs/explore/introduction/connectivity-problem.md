@@ -1,9 +1,9 @@
 ---
-title:
+title: The API connectivity problem
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
-path: /explore/introduction/jobs.html
+path: /explore/introduction/connectivity-problem.html
 outline: deep
 tags:
   - api
@@ -22,11 +22,10 @@ with an application programmatically. In the context of decentralized
 applications, this definition is quite useless, and even misguiding. Instead, we
 should see APIs as channels businesses use to monetize their data and services.
 
-Take the [CoinMarketCap API](https://coinmarketcap.com/api/)<ExternalLinkImage/>
-as an example. It allows Web developers to use all the data seen on
-https://coinmarketcap.com/<ExternalLinkImage/> and more in their applications
-programmatically by making API calls. In return, developers pay a
-[subscription fee](https://coinmarketcap.com/api/pricing/)<ExternalLinkImage/>.
+Take the [CoinMarketCap API](https://coinmarketcap.com/api/) ➚ as an example. It
+allows Web developers to use all the data seen on https://coinmarketcap.com/ ➚
+and more in their applications programmatically by making API calls. In return,
+developers pay a [subscription fee](https://coinmarketcap.com/api/pricing/) ➚.
 In practice, any kind of data or service that is worth using is served by a paid
 API.
 

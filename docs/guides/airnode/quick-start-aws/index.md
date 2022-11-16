@@ -3,7 +3,7 @@ title: Quick Start AWS
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/quick-start-aws/deploy-aws.html
+path: /guides/airnode/quick-start-aws/index.html
 outline: deep
 tags:
 ---

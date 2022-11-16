@@ -8,7 +8,7 @@
       style="user-select: none"
       v-show="isModalActive"
     >
-      <button @click="isModalActive = false" style="float: right">
+      <button @click="hideModal()" style="float: right">
         <div style="font-size: 24pt; transform: scaleY(0.7)">X</div>
       </button>
       <form action="">
@@ -30,11 +30,6 @@
         /><br />
       </form>
       <SearchResults v-show="results" :results="results" />
-
-      <!--div style="font-size: small" v-for="(item, key) in results" :key="key">
-        {{ item.frontmatter.title }}<br />
-        {{ item.frontmatter.pageHeader }}
-      </div-->
       <br />
     </div>
   </teleport>
@@ -50,12 +45,24 @@
 </template>
 
 <script>
+/*
+  Runs a search against the FlexSearch index.
+  1. This component is persistent as it overlays the main layout
+  2. The user must type a minimum of 3 characters
+  3. Use event bus to notify SearchHighlight.vue
+  https://dev.to/sanchithasr/how-to-communicate-between-components-in-vue-js-kjc
+
+*/
 import Index from 'flexsearch';
 import * as indexesDev from './indexes-all-dev.js';
 import frontmatter from '../../.vitepress/frontmatterIds.json';
 import axios from 'axios';
 
-// https://stackoverflow.com/questions/69760524/flexsearch-export-and-import-document-index-issue/69853828#69853828
+//import Emitter from 'tiny-emitter';
+//var emitter = new Emitter();
+
+import eventBus from '../../.vitepress/theme/eventBus.ts';
+
 export default {
   name: 'SearchBtn',
   data: () => ({
@@ -64,16 +71,37 @@ export default {
     index: undefined,
     results: [],
   }),
+  setup() {
+    return {
+      sendEvent: () => {
+        console.log('sending event');
+        eventBus().emitter.emit('search-event', { time: new Date() });
+      },
+    };
+  },
   methods: {
     search(el) {
+      console.log('Executing the search function');
+
       this.results = [];
+      if (el.target.value.length < 3) {
+        localStorage.setItem('search-words', '');
+        this.sendEvent();
+        return;
+      }
+      // Store the search words into localStorage
+      localStorage.setItem('search-words', el.target.value);
+      this.sendEvent();
+
+      // Execute search
       let ids = this.index.search({
         query: el.target.value,
         index: ['content'],
         limit: 100,
-        suggest: true,
-        bool: 'and',
+        //suggest: true,
+        //bool: 'or',
       });
+      // Build results set
       ids.forEach((id) => {
         this.results.push({ id: id, frontmatter: frontmatter[id] });
       });
@@ -86,7 +114,7 @@ export default {
         tokenize: 'full',
       });
       console.log(window.location.href);
-      if (window.location.href.indexOf('5173') > 0) {
+      if (window.location.href.indexOf(':5173') > 0) {
         this.index.import('cfg', indexesDev.cfg);
         this.index.import('ctx', indexesDev.ctx);
         this.index.import('map', indexesDev.map);
@@ -113,13 +141,15 @@ export default {
         console.timeEnd();
       }
     },
+    hideModal() {
+      this.isModalActive = false;
+    },
   },
-  watch: {
-    $route($event) {},
-  },
+
   async mounted() {
     this.$nextTick(function () {
       console.log('Search btn mounted');
+      localStorage.removeItem('search-words');
     });
   },
 };

@@ -485,7 +485,7 @@ elements:
 - `name`
 - `default`
 - `description *`
-- `require`
+- `required`
 - `example`
 
 #### 5.5.1. `operationParameter`

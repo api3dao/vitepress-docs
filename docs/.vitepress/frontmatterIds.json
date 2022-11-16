@@ -163,11 +163,11 @@
     "tags": ["blog", "posts", "articles", "academic"]
   },
   "19": {
-    "title": null,
+    "title": "The API connectivity problem",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore",
-    "path": "/explore/introduction/jobs.html",
+    "path": "/explore/introduction/connectivity-problem.html",
     "outline": "deep",
     "tags": ["api", "connectivity", "first-party", "oracle", "oracles"]
   },
@@ -218,7 +218,7 @@
   },
   "25": {
     "title": "★ Getting Started",
-    "sidebarHeader": "Airnode",
+    "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/index.html",
@@ -236,7 +236,7 @@
   },
   "27": {
     "title": "Making an RRP Request",
-    "sidebarHeader": "Airnode",
+    "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/rrp-request.html",
@@ -245,7 +245,7 @@
   },
   "28": {
     "title": "Using RRP Templates",
-    "sidebarHeader": "Airnode",
+    "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/using-rrp-templates.html",
@@ -257,7 +257,7 @@
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
-    "path": "/guides/airnode/quick-start-aws/deploy-aws.html",
+    "path": "/guides/airnode/quick-start-aws/index.html",
     "outline": "deep",
     "tags": null
   },
@@ -266,7 +266,7 @@
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
-    "path": "/guides/airnode/deploy-container.html",
+    "path": "/guides/airnode/quick-start-container/index.html",
     "outline": "deep",
     "tags": ["airnode", "gcp", "docker", "container"]
   },
@@ -275,7 +275,7 @@
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
-    "path": "/guides/airnode/deploy-gcp.html",
+    "path": "/guides/airnode/quick-start-gcp/index.html",
     "outline": "deep",
     "tags": ["airnode", "gcp"]
   },
@@ -778,7 +778,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
     "pageHeader": "Reference → Airnode → v1.0 → Docker Images",
-    "path": "/reference/airnode/latest/docker/index.html",
+    "path": "/reference/airnode/latest/docker/admin-cli-image.html",
     "version": "v1.0",
     "outline": "deep",
     "tags": null
@@ -788,7 +788,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
     "pageHeader": "Reference → Airnode → v1.0 → Docker Images",
-    "path": "/reference/airnode/latest/docker/index.html",
+    "path": "/reference/airnode/latest/docker/client-image.html",
     "version": "v1.0",
     "outline": "deep",
     "tags": null
@@ -798,7 +798,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
     "pageHeader": "Reference → Airnode → v1.0 → Docker Images",
-    "path": "/reference/airnode/latest/docker/index.html",
+    "path": "/reference/airnode/latest/docker/deployer-image.html",
     "version": "v1.0",
     "outline": "deep",
     "tags": null
