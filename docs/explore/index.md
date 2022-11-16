@@ -15,8 +15,6 @@ tags:
 
 <PageHeader/>
 
-<SearchHighlight/>
-
 # {{$frontmatter.title}}
 
 API3 ([https://api3.org](https://api3.org) ➚) is a collaborative project to

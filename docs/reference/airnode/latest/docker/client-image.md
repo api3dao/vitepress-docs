@@ -13,8 +13,6 @@ tags:
 
 <PageHeader/>
 
-<SearchHighlight/>
-
 # {{$frontmatter.title}}
 
 Usually the Airnode is deployed on a serverless platform using the

@@ -15,8 +15,6 @@ tags:
 
 <PageHeader/>
 
-<SearchHighlight/>
-
 # The ~~oracle problem~~ API connectivity problem
 
 An API is a well-defined and documented protocol that one can use to interact

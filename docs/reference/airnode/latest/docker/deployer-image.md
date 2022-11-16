@@ -13,8 +13,6 @@ tags:
 
 <PageHeader/>
 
-<SearchHighlight/>
-
 # {{$frontmatter.title}}
 
 Use the deployer image to deploy or remove an Airnode with a cloud provider such

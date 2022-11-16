@@ -16,8 +16,6 @@ tags:
 
 <PageHeader/>
 
-<SearchHighlight/>
-
 # {{$frontmatter.title}}
 
 <Tabs>
