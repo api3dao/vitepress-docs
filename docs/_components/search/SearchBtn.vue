@@ -107,7 +107,6 @@ export default {
       });
     },
     async openModal() {
-      localStorage.removeItem('search-words');
       this.isModalActive = true;
       if (this.index) return;
       // Declare the index
@@ -146,9 +145,11 @@ export default {
       this.isModalActive = false;
     },
   },
+
   async mounted() {
     this.$nextTick(function () {
       console.log('Search btn mounted');
+      localStorage.removeItem('search-words');
     });
   },
 };
