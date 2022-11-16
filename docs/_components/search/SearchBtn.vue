@@ -58,8 +58,8 @@ import * as indexesDev from './indexes-all-dev.js';
 import frontmatter from '../../.vitepress/frontmatterIds.json';
 import axios from 'axios';
 
-import Emitter from 'tiny-emitter';
-var emitter = new Emitter();
+//import Emitter from 'tiny-emitter';
+//var emitter = new Emitter();
 
 import eventBus from '../../.vitepress/theme/eventBus.ts';
 

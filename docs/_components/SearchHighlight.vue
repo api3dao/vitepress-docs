@@ -1,10 +1,9 @@
 <template></template>
 
 <script>
-import Emitter from 'tiny-emitter';
-var emitter = new Emitter();
-
+import axios from 'axios';
 import eventBus from '../.vitepress/theme/eventBus.ts';
+import parse from 'html-dom-parser';
 
 export default {
   name: 'SearchHighlight',
@@ -24,7 +23,7 @@ export default {
       console.log(2, 'words', words);
 
       if (!words) {
-        console.log('skinny word: return');
+        console.log('There are no words: return');
         return;
       }
 
@@ -47,7 +46,7 @@ export default {
         let children = [];
 
         // Remove and hold the children in an array
-        console.log('-------------------------------\n');
+        //console.log('-------------------------------\n');
         for (let i = node.children.length - 1; i > -1; i--) {
           const orgChildNode = node.children[i];
           if (node) {
@@ -85,6 +84,7 @@ export default {
         }
 
         // Add the children back to the node
+        //console.log('>>> Add childrenNodes back to parent node.');
         try {
           children.forEach((element) => {
             const el = document.getElementById(element.id);
@@ -99,31 +99,57 @@ export default {
       console.log('DONE highlighting ++++++++++++++++++++++++');
     },
   },
+  beforeUnmount() {
+    console.log('beforeUnmount');
+  },
 
+  unmounted() {
+    console.log('unmounted');
+  },
+  /*
+    1. Makes a copy of the DOM (main element) to reset search 
+       highlighting as it changes.
+    2. Sets a event trap for the search-event when
+       the user types into the search input field. 
+  */
   mounted() {
     this.$nextTick(function () {
       console.log('>>> MOUNTED SearchHighlight.vue');
 
-      // Make a copy of main element
-
-      let main = document.getElementsByTagName('main')[0];
+      // Make a copy of main element. It must be cloned to eliminate
+      // its reference to the DOM.
+      const main = document.getElementsByTagName('main')[0];
       const clone = main.cloneNode(true);
-
       this.main = clone;
-      eventBus().emitter.on('search-event', (payload) => {
-        console.log('----- Event on fired in SearchHighlight.vue');
-        let mainParent =
-          document.getElementsByClassName('content-container')[0];
-
-        let mainNode = document.getElementsByClassName('main')[0];
-
-        const clone = this.main.cloneNode(true);
-        mainParent.replaceChild(clone, mainNode);
-
-        this.updateNodes();
-      });
-
       setTimeout(this.updateNodes, 10);
+
+      /*eventBus().emitter.on('search-event', (payload) => {
+        console.log('----- Event on fired in SearchHighlight.vue');
+
+        // This is a parent element to main (div class="content-container").
+        let contentContainerParent =
+          document.getElementsByClassName('content-container')[0];
+        console.log('contentContainerParent', contentContainerParent);
+
+        let vpDoc = document.getElementsByClassName('vp-doc')[0];
+        console.log(vpDoc);
+
+        // Get the current main element in the DOM
+        let mainNode = document.getElementsByClassName('main')[0];
+        //const clone2 = mainNode.cloneNode(true);
+        ///console.log('clone2', clone2);
+
+        // Clone this.main (element) to prevent references back to it
+        // from replaceChild() function.
+        const clone = this.main.cloneNode(true);
+        console.log('clone', clone);
+
+        // Resets the DOM back to its state when the page first loaded.
+        let theNode = contentContainerParent.replaceChild(clone, mainNode);
+        console.log(theNode);
+        console.log('Done with event "on"');
+        this.updateNodes();
+      });*/
     });
   },
 };
