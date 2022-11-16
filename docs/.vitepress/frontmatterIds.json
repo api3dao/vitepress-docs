@@ -218,7 +218,7 @@
   },
   "25": {
     "title": "★ Getting Started",
-    "sidebarHeader": "Airnode",
+    "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/index.html",
@@ -236,7 +236,7 @@
   },
   "27": {
     "title": "Making an RRP Request",
-    "sidebarHeader": "Airnode",
+    "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/rrp-request.html",
@@ -245,7 +245,7 @@
   },
   "28": {
     "title": "Using RRP Templates",
-    "sidebarHeader": "Airnode",
+    "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/using-rrp-templates.html",
