@@ -3,7 +3,6 @@
 <script>
 import axios from 'axios';
 import eventBus from '../.vitepress/theme/eventBus.ts';
-import parse from 'html-dom-parser';
 
 export default {
   name: 'SearchHighlight',
