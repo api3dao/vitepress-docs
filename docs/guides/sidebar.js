@@ -38,6 +38,10 @@ module.exports = [
         link: '/guides/airnode/quick-start-guide/',
       },
       {
+        text: 'Lottery Contract Using QRNG',
+        link: '/guides/airnode/lottery-guide/',
+      },
+      {
         text: 'Making an RRP Request',
         link: '/guides/airnode/rrp-request',
       },
