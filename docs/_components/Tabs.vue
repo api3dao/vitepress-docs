@@ -78,13 +78,9 @@ export default {
 
   mounted() {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
-    console.log('----- MOUNTED ----- Tabs -----');
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      //console.log(element);
       if (element.children && element.children.indexOf('@tab:') === 0) {
-        //console.log('> tab');
-        //console.log(element);
         const arr = element.children.split(':'); // tabId @tab:<label>
         const tabId = Math.random().toString(36).slice(2, 9);
         const paneId = Math.random().toString(36).slice(2, 9);
@@ -99,15 +95,11 @@ export default {
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
-        //console.log('> known element');
-        //console.log(element);
         const random = Math.random().toString(36).slice(2, 9);
         this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
-        //console.log('> component');
-        //console.log(element);
         this.tabs[currentTabIndex].elements.push(element);
       }
     }
@@ -122,6 +114,7 @@ export default {
         document.getElementById(this.tabs[i].paneId).style.display = 'none';
       }
       // Show the tab's pane
+
       document.getElementById(tab.paneId).style.display = 'block';
       // Clear check mark from tabs
       for (let i = 0; i < this.tabs.length; i++) {

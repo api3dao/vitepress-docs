@@ -2,10 +2,16 @@
   "hosting": {
     "redirects": [
       {
+        "source": "/config.json/",
+        "destination": "/reference/airnode/latest/deployment-files/config-json.html",
+        "type": 301
+      },
+      {
         "source": "/airnode/latest/",
         "destination": "/reference/airnode/latest/",
         "type": 301
       },
+
       {
         "source": "/ois/latest/",
         "destination": "/reference/ois/v1.2/",

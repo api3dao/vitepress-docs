@@ -6,7 +6,7 @@ const fse = require('fs-extra');
 const { Index } = require('flexsearch');
 
 let filesArr = [];
-let cnt = 1; // Used for the index id
+let id = 1; // Used as the id for each page added to the index
 let index = new Index({
   tokenize: 'full',
 });
@@ -55,7 +55,7 @@ function buildContentFile(path) {
   plainText = plainText.split('Table of Contents for current page')[1];
 
   // Remove footer below next/previous pages
-  plainText = plainText.split('Released under the MIT License.')[0];
+  plainText = plainText.split('[Previous page')[0];
 
   // Remove excessive ==== and -----
   plainText = plainText.replace(/=====/g, '');
@@ -65,18 +65,18 @@ function buildContentFile(path) {
   plainText = plainText.replace(/\n/g, ' ');
 
   // Updates the lookup file so search can find the page by its ID
-  addToFrontmatter(cnt, frontmatter);
+  addToFrontmatter(id, frontmatter);
 
   // Create the json object and write file to search-files dir
   let json = {
-    id: cnt,
+    id: id,
     content: plainText,
   };
   fse.outputFileSync(contentPath, JSON.stringify(json));
 
   // Update the in memory flexSearch index to be exported later
-  index.add(cnt, json.content);
-  cnt++;
+  index.add(id, json.content);
+  id++;
 }
 
 /*
@@ -105,7 +105,7 @@ function exportAllIndexesToFiles() {
 */
 function start() {
   file.walkSync('./docs/.vitepress/dist', walkCB);
-  const skip = [
+  const skipFiles = [
     './docs/.vitepress/dist/index.html',
     './docs/.vitepress/dist/team.html',
     './docs/.vitepress/dist/404.html',
@@ -117,7 +117,7 @@ function start() {
     for (let x = 0; x < files.length; x++) {
       if (
         files[x].indexOf('.html') > -1 &&
-        !skip.includes(dir + '/' + files[x]) &&
+        !skipFiles.includes(dir + '/' + files[x]) &&
         dir.indexOf('/dist/dev') === -1
       ) {
         buildContentFile(dir + '/' + files[x]);
