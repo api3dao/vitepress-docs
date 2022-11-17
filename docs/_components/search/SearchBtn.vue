@@ -126,6 +126,8 @@ export default {
       });
     },
     async openModal() {
+      document.getElementById('search-value').value = '';
+
       this.isModalActive = true;
       if (!this.indexAll) this.buildIndexAll();
       if (!this.indexLatest) this.buildIndexLatest();
