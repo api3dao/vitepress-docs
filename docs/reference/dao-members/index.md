@@ -10,6 +10,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The core of the DAO is a set of smart contracts based on Aragon's

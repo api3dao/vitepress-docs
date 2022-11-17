@@ -11,6 +11,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 ## More...

@@ -10,6 +10,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 An oracle node requires access to a blockchain (e.g., Ethereum) node to listen

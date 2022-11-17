@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Chain providers provide access to an evm on behalf of an API provider. Your

@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 An Airnode can authorize requester contract access to its underlying API using

@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 QNRG uses the `makeFullRequest()` function in the

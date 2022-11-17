@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 As part of the Airnode deployment you can decide to deploy two different HTTP

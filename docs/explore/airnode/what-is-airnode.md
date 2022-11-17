@@ -10,6 +10,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Airnode is a serverless oracle node implemented with a "set and forget"

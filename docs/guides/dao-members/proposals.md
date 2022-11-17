@@ -16,6 +16,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Staking tokens in the DAO pool gives you governance rights to create and vote on

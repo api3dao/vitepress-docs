@@ -17,6 +17,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 API3's voting app implements a simple quorum-based voting mechanism with:

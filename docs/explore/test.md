@@ -15,6 +15,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 This is a test. Add come content to see what flexsearch files update.

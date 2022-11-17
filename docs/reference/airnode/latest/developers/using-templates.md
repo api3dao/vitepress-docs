@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 <!-- TODO: 2021-11-02 wkande: Should this doc speak to creating a templateId? See the code

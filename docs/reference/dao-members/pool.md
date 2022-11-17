@@ -10,6 +10,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The API3 Pool contract is where API3 token holders can stake their tokens to

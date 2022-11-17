@@ -10,6 +10,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 API3 embraces the ideology of a decentralized web and the power of open source.

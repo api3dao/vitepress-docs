@@ -12,6 +12,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 - Variable names cannot contain dashes (-) or start with a number.

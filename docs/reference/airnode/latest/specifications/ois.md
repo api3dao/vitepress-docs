@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The `ois` JSON object, in the `config.json` file that defines an Airnode, is an

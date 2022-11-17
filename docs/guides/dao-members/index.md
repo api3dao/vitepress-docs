@@ -12,6 +12,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The [DAO Dashboard](https://dao.api3.org) is the portal to participate in the
