@@ -90,12 +90,12 @@ export default {
         return;
       }
       // Store the search words into localStorage
-      localStorage.setItem('search-words', el.target.value);
+      localStorage.setItem('search-words', el.target.value.toLowerCase());
       this.sendEvent();
 
       // Execute search
       let ids = this.index.search({
-        query: el.target.value,
+        query: el.target.value.toLowerCase(),
         index: ['content'],
         limit: 100,
         //suggest: true,

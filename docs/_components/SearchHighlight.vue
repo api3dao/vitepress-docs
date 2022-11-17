@@ -62,11 +62,12 @@ export default {
             if (word.length < 3) return; // must be 3 characters or more
             let start = 0;
             while (start != -1) {
+              //console.log(node.innerHTML.toLowerCase());
               start = node.innerHTML.toLowerCase().indexOf(word, start);
               if (start === -1) break;
 
               const orgWord = node.innerHTML.substr(start, word.length);
-              const insert = `<span style="border:solid 1px red;">${orgWord}</span>`;
+              const insert = `<span class="mklptqbc" style="border: solid 1px red;">${orgWord}</span>`;
               const insertLen = insert.length;
               // update the node
               node.innerHTML =
@@ -83,7 +84,7 @@ export default {
         }
 
         // Add the children back to the node
-        //console.log('>>> Add childrenNodes back to parent node.');
+        // console.log('>>> Add childrenNodes back to parent node.');
         try {
           children.forEach((element) => {
             const el = document.getElementById(element.id);
@@ -99,6 +100,7 @@ export default {
     },
   },
   beforeUnmount() {
+    eventBus().emitter.off('search-event');
     console.log('beforeUnmount');
   },
 
@@ -117,14 +119,47 @@ export default {
 
       // Make a copy of main element. It must be cloned to eliminate
       // its reference to the DOM.
-      const main = document.getElementsByTagName('main')[0];
-      const clone = main.cloneNode(true);
-      this.main = clone;
+      this.main = document.getElementsByTagName('main')[0];
+
+      console.log(
+        'loaded',
+        document.getElementsByClassName('content-container')[0]
+      );
       setTimeout(this.updateNodes, 10);
 
-      /*eventBus().emitter.on('search-event', (payload) => {
+      eventBus().emitter.on('search-event', (payload) => {
         console.log('----- Event on fired in SearchHighlight.vue');
+        // https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement
 
+        let spans = document.getElementsByClassName('mklptqbc');
+        console.log('span', spans);
+
+        for (var i = spans.length; i--; ) {
+          //spans[i].style.color = 'red';
+          console.log('innerText', spans[i].innerText);
+          const textNode = document.createTextNode(spans[i].innerText);
+          spans[i].replaceWith(textNode);
+        }
+        setTimeout(this.updateNodes, 10);
+        if (1 === 1) return;
+        ///
+        ///
+        console.log(this.main);
+        let contentContainerParent =
+          document.getElementsByClassName('content-container')[0];
+        console.log('content-container', contentContainerParent);
+        console.log('this.main', this.main);
+        let mainNode = document.getElementsByClassName('main')[0];
+        //let clone = this.main.cloneNode(true);
+        mainNode.remove();
+        contentContainerParent.insertAdjacentElement('afterbegin', this.main);
+        //contentContainerParent.appendChild(this.main); //(clone);
+
+        //mainNode.replaceWith(clone);
+        //let theNode = contentContainerParent.replaceChild(clone, mainNode);
+        console.log(99, contentContainerParent);
+
+        /*
         // This is a parent element to main (div class="content-container").
         let contentContainerParent =
           document.getElementsByClassName('content-container')[0];
@@ -146,9 +181,9 @@ export default {
         // Resets the DOM back to its state when the page first loaded.
         let theNode = contentContainerParent.replaceChild(clone, mainNode);
         console.log(theNode);
-        console.log('Done with event "on"');
-        this.updateNodes();
-      });*/
+        console.log('Done with event "on"');*/
+        setTimeout(this.updateNodes, 10);
+      });
     });
   },
 };
