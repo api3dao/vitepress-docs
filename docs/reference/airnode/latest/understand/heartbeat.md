@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 At the end of an Airnode's run (every minute), Airnode can make an HTTP POST

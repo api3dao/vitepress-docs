@@ -16,6 +16,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Staking API3 tokens in the [DAO pool](/explore/dao-members/dao-pool.md) makes

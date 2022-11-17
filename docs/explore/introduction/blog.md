@@ -14,6 +14,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Not comfortable with academic-style papers? The following Blog Posts explain the

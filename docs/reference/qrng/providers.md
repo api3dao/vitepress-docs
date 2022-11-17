@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 API3 QRNG is built on [Airnode RRP](/reference/airnode/latest/concepts/), and as

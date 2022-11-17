@@ -12,6 +12,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 A requester (smart contract) uses the function `makeFullRequest()` from the

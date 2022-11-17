@@ -17,6 +17,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Use the `DapiServer` contract to access dAPIs on-chain. There are four functions

@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 <!-- TODO: link [docker hub](https://hub.docker.com/r/api3/airnode-admin) once image is published -->

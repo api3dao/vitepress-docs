@@ -11,6 +11,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 API3 is governed by a Decentralized Autonomous Organization (DAO). The DAO is a

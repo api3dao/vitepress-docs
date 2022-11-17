@@ -11,6 +11,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 This project is a simple and quick introduction to API3's QRNG service. Simply

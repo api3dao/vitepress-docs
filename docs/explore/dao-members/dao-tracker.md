@@ -11,6 +11,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The [DAO Tracker](https://enormous.cloud/dao/api3/tracker/)<ExternalLinkImage/>

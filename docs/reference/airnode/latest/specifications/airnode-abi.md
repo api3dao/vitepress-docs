@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 [Contract application binary interface (ABI)](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html)

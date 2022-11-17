@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 An [OIS (Oracle Integration Specifications)](/reference/ois/latest/) JSON object

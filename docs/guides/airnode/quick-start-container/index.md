@@ -14,6 +14,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The **"Quick"** series of guides are simple introductions demonstrating the

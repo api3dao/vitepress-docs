@@ -15,6 +15,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The DAO dashboard videos have been incorporated the

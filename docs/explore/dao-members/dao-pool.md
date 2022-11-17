@@ -11,6 +11,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The API3 DAO has a single staking pool called the **DAO pool**. Staking API3
