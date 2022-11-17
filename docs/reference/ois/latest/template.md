@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 An OIS (Oracle Integration Specifications) JSON object is part of an Airnode's
