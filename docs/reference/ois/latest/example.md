@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 <<< @/reference/ois/latest/example.json

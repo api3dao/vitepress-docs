@@ -22,10 +22,21 @@ Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
         <hr style="border-top: 1px solid gray; border-bottom: none" />
         <span>
           <span style="float: right; font-size: xx-small">{{ key + 1 }}</span>
-          <div class="api3-search-item" style="color: green; font-size: small">
+          <div
+            v-if="item.frontmatter.title.length < 30"
+            class="api3-search-item"
+            style="color: green; font-size: medium"
+          >
             {{ item.frontmatter.title }}
           </div>
-          <div style="line-height: 1.4; font-size: x-small; margin-top: -5px">
+          <div
+            v-else
+            class="api3-search-item"
+            style="color: green; font-size: medium"
+          >
+            {{ item.frontmatter.title.substring(0, 26) + '...' }}
+          </div>
+          <div style="line-height: 1.4; font-size: x-small; margin-top: -4px">
             {{ item.frontmatter.pageHeader }}
           </div>
         </span>

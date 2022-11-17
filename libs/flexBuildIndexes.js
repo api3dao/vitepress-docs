@@ -7,9 +7,14 @@ const { Index } = require('flexsearch');
 
 let filesArr = [];
 let id = 1; // Used as the id for each page added to the index
-let index = new Index({
+let indexAll = new Index({
   tokenize: 'full',
 });
+let indexLatest = new Index({
+  tokenize: 'full',
+});
+// The latest docsets
+let latestDocsets = ['/dist/explore/', '/dist/guides/'];
 
 /**
  * Callback for file.walkSync, add each
@@ -32,14 +37,14 @@ function buildContentFile(path) {
   // Make sure the /flexContentFiles dir exists
   fse.ensureDirSync(contentDir);
 
-  const arr = path.split('/');
+  //const arr = path.split('/');
 
   // contentPath: the file with extracted HTML text
   let parsedPath = path.split('/.vitepress/dist')[1];
   let contentPath = contentDir + parsedPath.replace('.html', '.json');
 
   // frontmatter and url: /explore
-  //console.log('\n> path:', path);
+  // console.log('\n> path:', path);
   const pathMarkdown =
     'docs/' + path.split('docs/.vitepress/dist/')[1].replace('.html', '.md');
   let frontmatter = yaml.load(
@@ -74,8 +79,17 @@ function buildContentFile(path) {
   };
   fse.outputFileSync(contentPath, JSON.stringify(json));
 
-  // Update the in memory flexSearch index to be exported later
-  index.add(id, json.content);
+  // Update the in memory flexSearch indexes to be exported later
+  // All files (from all docsets) go into indexAll
+  indexAll.add(id, json.content);
+  // Only add path within the latest docsets
+  latestDocsets.forEach((element) => {
+    if (path.indexOf(element) > -1) {
+      console.log(path);
+      indexLatest.add(id, json.content);
+    }
+  });
+
   id++;
 }
 
@@ -91,9 +105,18 @@ function addToFrontmatter(id, frontmatter) {
   Export all flex indexes to disk /.vitepress/flex-all-indexes
   Then split the map.json file
 */
-function exportAllIndexesToFiles() {
-  index.export((key, data) => {
+function exportAllIndexFiles() {
+  indexAll.export((key, data) => {
     let dir = 'indexes/all';
+    // if (key === 'map') dir = 'docs/.vitepress/flex-all-indexes/map';
+    // console.log(`${dir}/${key}.json`);
+    fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
+  });
+}
+
+function exportLatestIndexFiles() {
+  indexLatest.export((key, data) => {
+    let dir = 'indexes/latest';
     // if (key === 'map') dir = 'docs/.vitepress/flex-all-indexes/map';
     // console.log(`${dir}/${key}.json`);
     fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
@@ -132,8 +155,13 @@ fse.ensureDirSync('indexes/all');
 console.log('> Creating content pages in /indexes/content-files/');
 start();
 
-console.log('> Creating index files in /indexes/ (async operation *)');
-exportAllIndexesToFiles();
+console.log('> Creating "all" index files in /indexes/all (async operation *)');
+exportAllIndexFiles();
+
+console.log(
+  '> Creating "latest" index files in /indexes/latest (async operation *)'
+);
+exportLatestIndexFiles();
 
 console.log('> Creating frontmatterIds file in /.vitepress/');
 fs.writeFileSync(

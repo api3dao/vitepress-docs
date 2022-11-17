@@ -1,14 +1,17 @@
 const fs = require('fs');
 const { Index } = require('flexsearch');
 
-let index = new Index({
+let indexAll = new Index({
+  tokenize: 'full',
+});
+let indexLatest = new Index({
   tokenize: 'full',
 });
 
 /*
-  Rebuild the index from index files
+  Rebuild the indexAll from index files
 */
-const retrieveIndex = () => {
+const retrieveIndexAll = () => {
   const keys = fs
     .readdirSync('indexes/all/', {
       withFileTypes: true,
@@ -18,30 +21,67 @@ const retrieveIndex = () => {
 
   for (let i = 0, key; i < keys.length; i += 1) {
     key = keys[i];
-    //console.log(key);
     const data = fs.readFileSync(`indexes/all/${key}.json`, 'utf8');
-    index.import(key, data ?? null);
+    indexAll.import(key, data ?? null);
   }
-  //console.log(index);
 };
 
 /*
-   Execute a search
+  Rebuild the indexLatest from index files
 */
-function search() {
+const retrieveIndexLatest = () => {
+  const keys = fs
+    .readdirSync('indexes/latest/', {
+      withFileTypes: true,
+    })
+    .filter((item) => !item.isDirectory())
+    .map((item) => item.name.slice(0, -5));
+
+  for (let i = 0, key; i < keys.length; i += 1) {
+    key = keys[i];
+    console.log(key);
+    const data = fs.readFileSync(`indexes/latest/${key}.json`, 'utf8');
+    indexLatest.import(key, data ?? null);
+  }
+};
+
+/*
+   Execute a search on indexAll
+*/
+function searchIndexAll() {
   const query = 'gateway';
-  let ids = index.search({
+  let ids = indexAll.search({
     query: query,
     index: ['content'],
     limit: 100,
-    suggest: true,
-    //bool: 'or',
+    suggest: false,
+    bool: 'and',
   });
-  console.log(
-    `----- Found "${query}" in ${ids.length} pages with the following IDs`
-  );
+  console.log('----- indexAll -----');
+  console.log(`Found "${query}" in (${ids.length}) pages.`);
   console.log('ids', ids);
-  console.log(`----- Page titles`);
+  console.log(`Page titles`);
+  ids.forEach((id) => {
+    console.log(id, frontmatterIds[id].title);
+  });
+}
+
+/*
+   Execute a search on indexLatest
+*/
+function searchIndexLatest() {
+  const query = 'gateway';
+  let ids = indexLatest.search({
+    query: query,
+    index: ['content'],
+    limit: 100,
+    suggest: false,
+    bool: 'and',
+  });
+  console.log('----- indexLatest -----');
+  console.log(`Found "${query}" in (${ids.length}) pages.`);
+  console.log('ids', ids);
+  console.log(`Page titles`);
   ids.forEach((id) => {
     console.log(id, frontmatterIds[id].title);
   });
@@ -51,7 +91,10 @@ console.log(__dirname);
 const frontmatterIds = JSON.parse(
   fs.readFileSync('docs/.vitepress/frontmatterIds.json')
 );
-console.log('> Build index');
-retrieveIndex();
-console.log('> Executing search');
-search();
+console.log('> Build indexes');
+retrieveIndexAll();
+retrieveIndexLatest();
+console.log('> Executing searches');
+searchIndexAll();
+searchIndexLatest();
+console.log('----- END -----\n');
