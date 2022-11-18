@@ -12,6 +12,10 @@ module.exports = [
         link: '/reference/dapis/schemes',
       },
       {
+        text: 'Best Practices',
+        link: '/reference/dapis/best-practices',
+      },
+      {
         text: 'DapiServer.sol',
         link: '/reference/dapis/dapi-server-sol',
       },
