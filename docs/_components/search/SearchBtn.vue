@@ -25,7 +25,7 @@
           "
           type="text"
           id="search-value"
-        /><br />
+        /><!--br />
         <input
           type="checkbox"
           id="checkBox"
@@ -34,7 +34,7 @@
         />
         <label for="indexType" style="font-size: small">
           Include older Airnode and OIS versions
-        </label>
+        </label-->
       </form>
       <SearchResults v-show="results" :results="results" />
       <br />
@@ -86,7 +86,7 @@ export default {
   methods: {
     search() {
       let val = document.getElementById('search-value').value;
-      let checkbox = document.getElementById('checkBox');
+      let checkbox = false; //document.getElementById('checkBox');
 
       this.results = [];
       if (val.length < 3) {
