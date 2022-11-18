@@ -88,13 +88,11 @@ export default {
       let val = document.getElementById('search-value').value;
       let checkbox = document.getElementById('checkBox');
 
-      console.log('----- search()', val);
-      console.log('checked', checkbox.checked);
-
       this.results = [];
       if (val.length < 3) {
         localStorage.removeItem('search-words');
-        this.sendEvent();
+        // For now the event (to SearchHighlight.vue) is disabled
+        // this.sendEvent();
         return;
       }
 
@@ -127,6 +125,7 @@ export default {
     },
     async openModal() {
       document.getElementById('search-value').value = '';
+      this.results = [];
 
       this.isModalActive = true;
       if (!this.indexAll) this.buildIndexAll();
@@ -200,7 +199,6 @@ export default {
 
   async mounted() {
     this.$nextTick(function () {
-      console.log('Search btn mounted');
       localStorage.removeItem('search-words');
     });
   },
