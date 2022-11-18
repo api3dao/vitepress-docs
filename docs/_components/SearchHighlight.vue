@@ -1,4 +1,14 @@
-<template></template>
+<!--
+NOTE: Nov 18th, 2022
+  This component is on hold, the mounted() function is commented out.
+
+  Each page has this component at the top of the page ready to use this
+  component in the future.
+-->
+
+<template>
+  <div v-show="1 === 2">SearchHighlight.vue</div>
+</template>
 
 <script>
 import eventBus from '../.vitepress/theme/eventBus.ts';
@@ -97,21 +107,20 @@ export default {
     },
   },
   beforeUnmount() {
-    eventBus().emitter.off('search-event');
+    //eventBus().emitter.off('search-event');
   },
   mounted() {
     this.$nextTick(function () {
-      setTimeout(this.updateNodes, 10);
+      //setTimeout(this.updateNodes, 10);
       // Event fired by SearchBtn.vue
-      eventBus().emitter.on('search-event', (payload) => {
+      /*eventBus().emitter.on('search-event', (payload) => {
         console.log('----- eventBus().emitter.on');
         let spans = document.getElementsByClassName('mklptqbc');
         for (var i = spans.length; i--; ) {
           spans[i].replaceWith(document.createTextNode(spans[i].innerText));
         }
         this.updateNodes(this.cnt++);
-        //setTimeout(this.updateNodes, 1);
-      });
+      });*/
     });
   },
 };
