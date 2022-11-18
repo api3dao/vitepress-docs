@@ -14,6 +14,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Read this page to learn more about contributing as a technical member to the

@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The `config.json` defines a single Airnode deployment. The file contents are a
@@ -47,8 +49,6 @@ database of an Airnode deployment. It contains five fields as show below.
 
 Lists the blockchains the Airnode deployment will serve on and specifies
 respective parameters.
-
-<!--  -->
 
 ```json
 // chains

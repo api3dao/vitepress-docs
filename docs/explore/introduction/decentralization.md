@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 [First-party oracles](./connectivity-problem.md#what-are-first-party-oracles)

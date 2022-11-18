@@ -1,14 +1,22 @@
-<template></template>
+<!--
+NOTE: Nov 18th, 2022
+  This component is on hold, the mounted() function is commented out.
+
+  Each page has this component at the top of the page ready to use this
+  component in the future.
+-->
+
+<template>
+  <div v-show="1 === 2">SearchHighlight.vue</div>
+</template>
 
 <script>
-import axios from 'axios';
 import eventBus from '../.vitepress/theme/eventBus.ts';
 
 export default {
   name: 'SearchHighlight',
-  setup() {},
   data: () => ({
-    main: undefined,
+    cnt: 0, // Used for display purposes in the console
   }),
   methods: {
     getTempNode(id) {
@@ -16,63 +24,63 @@ export default {
       node.setAttribute('id', id);
       return node;
     },
-    updateNodes() {
-      console.log(1, '>>>>> updateNodes() <<<<<');
+    updateNodes(cnt) {
+      console.log(cnt, '>>>>>>>>>>>>>> START');
       let words = localStorage.getItem('search-words') || undefined;
-      console.log(2, 'words', words);
-
       if (!words) {
         console.log('There are no words: return');
         return;
       }
-
+      console.log('----- updateNodes() words >', words);
       words = words.split(' ');
-      console.log(3, words);
+      //console.log(words);
+
       let nodeList = window.document.querySelectorAll('main *');
+      //console.log(nodeList);
 
-      console.log(nodeList);
-
+      /* Outer most loop with 3 sub-loops
+         1) Remove and hold the children in an array
+         2) Highlight the words by updating the node, now less its children
+         3) Add the children back to the node
+      */
       for (let i = 0; i < nodeList.length; i++) {
-        // Skip the first 5 nodes (0-4)
-        if (i < 5) continue;
-        //else if (i === 6) return;
-
+        if (i < 5) continue; // Skip the first 5 nodes (0-4)
         let node = nodeList[i];
-        //console.log('>>> tagName', node.tagName);
 
         // Do not highlight SELECT elements, gives error
         if (node.tagName === 'SELECT') continue;
-        let children = [];
 
-        // Remove and hold the children in an array
-        //console.log('-------------------------------\n');
+        let children = [];
+        // 1) Remove and hold the children in an array
         for (let i = node.children.length - 1; i > -1; i--) {
           const orgChildNode = node.children[i];
           if (node) {
-            const id = (Math.random() + 1).toString(36).substring(7);
+            const id = (Math.random() + 1).toString(36).substring(2);
             const tempNode = this.getTempNode(id);
             node.replaceChild(tempNode, orgChildNode);
             children.push({ id: id, orgNode: orgChildNode });
           }
         }
 
-        // Highlight the words by updating the node, now less its children
+        // 2) Highlight the words by updating the node, now less its children
         try {
           words.forEach((word) => {
             if (word.length < 3) return; // must be 3 characters or more
             let start = 0;
             while (start != -1) {
-              start = node.innerHTML.toLowerCase().indexOf(word, start);
+              start = node.innerText.toLowerCase().indexOf(word, start);
               if (start === -1) break;
 
-              const orgWord = node.innerHTML.substr(start, word.length);
-              const insert = `<span style="border:solid 1px red;">${orgWord}</span>`;
+              const orgWord = node.innerText.substr(start, word.length);
+              const insert = `<span class="mklptqbc" style="border: solid 1px red;">${orgWord}</span>`;
               const insertLen = insert.length;
-              // update the node
+              // Update the node
+              // This is important, note the use of nodeHTML below.
+              // Use innerText to update innerHTML
               node.innerHTML =
-                node.innerHTML.slice(0, start) +
+                node.innerText.slice(0, start) +
                 insert +
-                node.innerHTML.slice(start + word.length);
+                node.innerText.slice(start + word.length);
               start = start + insertLen;
             }
           });
@@ -82,12 +90,12 @@ export default {
           console.error(node);
         }
 
-        // Add the children back to the node
-        //console.log('>>> Add childrenNodes back to parent node.');
+        // 3) Add the children back to the node
+        // The element.id is the tempNode created earlier
         try {
-          children.forEach((element) => {
-            const el = document.getElementById(element.id);
-            node.replaceChild(element.orgNode, el);
+          children.forEach((temp) => {
+            const el = document.getElementById(temp.id);
+            node.replaceChild(temp.orgNode, el);
           });
         } catch (err) {
           console.log('----- ADD back child nodes -----');
@@ -95,59 +103,23 @@ export default {
           console.error(node);
         }
       }
-      console.log('DONE highlighting ++++++++++++++++++++++++');
+      console.log(cnt, '>>>>>>>>>>>>>> END');
     },
   },
   beforeUnmount() {
-    console.log('beforeUnmount');
+    //eventBus().emitter.off('search-event');
   },
-
-  unmounted() {
-    console.log('unmounted');
-  },
-  /*
-    1. Makes a copy of the DOM (main element) to reset search 
-       highlighting as it changes.
-    2. Sets a event trap for the search-event when
-       the user types into the search input field. 
-  */
   mounted() {
     this.$nextTick(function () {
-      console.log('>>> MOUNTED SearchHighlight.vue');
-
-      // Make a copy of main element. It must be cloned to eliminate
-      // its reference to the DOM.
-      const main = document.getElementsByTagName('main')[0];
-      const clone = main.cloneNode(true);
-      this.main = clone;
-      setTimeout(this.updateNodes, 10);
-
+      //setTimeout(this.updateNodes, 10);
+      // Event fired by SearchBtn.vue
       /*eventBus().emitter.on('search-event', (payload) => {
-        console.log('----- Event on fired in SearchHighlight.vue');
-
-        // This is a parent element to main (div class="content-container").
-        let contentContainerParent =
-          document.getElementsByClassName('content-container')[0];
-        console.log('contentContainerParent', contentContainerParent);
-
-        let vpDoc = document.getElementsByClassName('vp-doc')[0];
-        console.log(vpDoc);
-
-        // Get the current main element in the DOM
-        let mainNode = document.getElementsByClassName('main')[0];
-        //const clone2 = mainNode.cloneNode(true);
-        ///console.log('clone2', clone2);
-
-        // Clone this.main (element) to prevent references back to it
-        // from replaceChild() function.
-        const clone = this.main.cloneNode(true);
-        console.log('clone', clone);
-
-        // Resets the DOM back to its state when the page first loaded.
-        let theNode = contentContainerParent.replaceChild(clone, mainNode);
-        console.log(theNode);
-        console.log('Done with event "on"');
-        this.updateNodes();
+        console.log('----- eventBus().emitter.on');
+        let spans = document.getElementsByClassName('mklptqbc');
+        for (var i = spans.length; i--; ) {
+          spans[i].replaceWith(document.createTextNode(spans[i].innerText));
+        }
+        this.updateNodes(this.cnt++);
       });*/
     });
   },

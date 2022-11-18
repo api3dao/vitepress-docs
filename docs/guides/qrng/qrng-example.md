@@ -11,6 +11,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The [qrng-example](https://github.com/api3dao/qrng-example)<ExternalLinkImage/>

@@ -15,6 +15,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The API3 DAO contract is the core DAO contract, and it serves a coordinating and

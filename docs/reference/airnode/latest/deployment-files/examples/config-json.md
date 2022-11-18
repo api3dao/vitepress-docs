@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 <Tabs>
@@ -32,7 +34,5 @@ You can also view this example
 in the Airnode repo.
 
 <<< @/reference/airnode/latest/deployment-files/examples/config-local.json
-
-::::
 
 </Tabs>

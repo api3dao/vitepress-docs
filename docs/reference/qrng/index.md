@@ -12,6 +12,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 The API3 QRNG service is implemented using the Airnode request–response protocol

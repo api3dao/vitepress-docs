@@ -12,6 +12,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 Requests will be responded to after `minConfirmations` blocks (see

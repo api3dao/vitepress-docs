@@ -13,6 +13,8 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
 # {{$frontmatter.title}}
 
 What is the difference between a dAPI name and a Beacon or Beacon set ID? dAPI

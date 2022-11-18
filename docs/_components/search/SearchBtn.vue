@@ -1,6 +1,3 @@
-<!-- Opens a search modal (SearchBox.vue) as its parent. 
--->
-
 <template>
   <teleport to="body">
     <div
@@ -11,12 +8,13 @@
       <button @click="hideModal()" style="float: right">
         <div style="font-size: 24pt; transform: scaleY(0.7)">X</div>
       </button>
+
       <form action="">
         <input
-          placeholder="minimum 3 characters"
+          placeholder="min 3 characters each word"
           autocomplete="off"
           spellcheck="false"
-          v-on:keyup="search($event)"
+          v-on:keyup="search()"
           style="
             border: 1px solid gray;
             border-radius: 0.3em;
@@ -28,6 +26,15 @@
           type="text"
           id="search-value"
         /><br />
+        <input
+          type="checkbox"
+          id="checkBox"
+          @click="search()"
+          class="api3-search-checkbox"
+        />
+        <label for="indexType" style="font-size: small">
+          Include older Airnode and OIS versions
+        </label>
       </form>
       <SearchResults v-show="results" :results="results" />
       <br />
@@ -48,19 +55,15 @@
 /*
   Runs a search against the FlexSearch index.
   1. This component is persistent as it overlays the main layout
-  2. The user must type a minimum of 3 characters
+  2. The user must type a minimum of 3 characters per word
   3. Use event bus to notify SearchHighlight.vue
   https://dev.to/sanchithasr/how-to-communicate-between-components-in-vue-js-kjc
-
 */
 import Index from 'flexsearch';
-import * as indexesDev from './indexes-all-dev.js';
+import * as filesAll from './indexes-all.js';
+import * as filesLatest from './indexes-latest.js';
 import frontmatter from '../../.vitepress/frontmatterIds.json';
 import axios from 'axios';
-
-//import Emitter from 'tiny-emitter';
-//var emitter = new Emitter();
-
 import eventBus from '../../.vitepress/theme/eventBus.ts';
 
 export default {
@@ -68,87 +71,134 @@ export default {
   data: () => ({
     showModal: false,
     isModalActive: false,
-    index: undefined,
+    indexAll: undefined,
+    indexLatest: undefined,
     results: [],
+    useIndexAll: false,
   }),
   setup() {
     return {
       sendEvent: () => {
-        console.log('sending event');
         eventBus().emitter.emit('search-event', { time: new Date() });
       },
     };
   },
   methods: {
-    search(el) {
-      console.log('Executing the search function');
+    search() {
+      let val = document.getElementById('search-value').value;
+      let checkbox = document.getElementById('checkBox');
 
       this.results = [];
-      if (el.target.value.length < 3) {
-        localStorage.setItem('search-words', '');
-        this.sendEvent();
+      if (val.length < 3) {
+        localStorage.removeItem('search-words');
+        // For now the event (to SearchHighlight.vue) is disabled
+        // this.sendEvent();
         return;
       }
+
       // Store the search words into localStorage
-      localStorage.setItem('search-words', el.target.value);
+      localStorage.setItem('search-words', val.toLowerCase());
       this.sendEvent();
 
-      // Execute search
-      let ids = this.index.search({
-        query: el.target.value,
-        index: ['content'],
-        limit: 100,
-        //suggest: true,
-        //bool: 'or',
-      });
+      // indexLatest (default)
+      let ids;
+      if (checkbox.checked === false) {
+        ids = this.indexLatest.search({
+          query: val.toLowerCase(),
+          index: ['content'],
+          limit: 100,
+        });
+      }
+      // indexAll
+      else {
+        ids = this.indexAll.search({
+          query: val.toLowerCase(),
+          index: ['content'],
+          limit: 100,
+        });
+      }
+
       // Build results set
       ids.forEach((id) => {
         this.results.push({ id: id, frontmatter: frontmatter[id] });
       });
     },
     async openModal() {
+      document.getElementById('search-value').value = '';
+      this.results = [];
+
       this.isModalActive = true;
-      if (this.index) return;
-      // Declare the index
-      this.index = new Index({
+      if (!this.indexAll) this.buildIndexAll();
+      if (!this.indexLatest) this.buildIndexLatest();
+    },
+    hideModal() {
+      localStorage.removeItem('search-words');
+      this.isModalActive = false;
+    },
+    async buildIndexAll() {
+      this.indexAll = new Index({
         tokenize: 'full',
       });
-      console.log(window.location.href);
       if (window.location.href.indexOf(':5173') > 0) {
-        this.index.import('cfg', indexesDev.cfg);
-        this.index.import('ctx', indexesDev.ctx);
-        this.index.import('map', indexesDev.map);
-        this.index.import('reg', indexesDev.reg);
+        console.log('Pulling files from local repo');
+        this.indexAll.import('cfg', filesAll.cfg);
+        this.indexAll.import('ctx', filesAll.ctx);
+        this.indexAll.import('map', filesAll.map);
+        this.indexAll.import('reg', filesAll.reg);
       } else {
-        console.log('Pulling the indexes from remote repo');
-        console.time();
+        console.log('Pulling files from remote repo');
         let response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
         );
-        this.index.import('cfg', response.data);
+        this.indexAll.import('cfg', response.data);
         response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/ctx.json'
         );
-        this.index.import('ctx', response.data);
+        this.indexAll.import('ctx', response.data);
         response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/map.json'
         );
-        this.index.import('map', response.data);
+        this.indexAll.import('map', response.data);
         response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/reg.json'
         );
-        this.index.import('reg', response.data);
-        console.timeEnd();
+        this.indexAll.import('reg', response.data);
       }
     },
-    hideModal() {
-      this.isModalActive = false;
+    async buildIndexLatest() {
+      this.indexLatest = new Index({
+        tokenize: 'full',
+      });
+      if (window.location.href.indexOf(':5173') > 0) {
+        console.log('Pulling files from local repo');
+        this.indexLatest.import('cfg', filesLatest.cfg);
+        this.indexLatest.import('ctx', filesLatest.ctx);
+        this.indexLatest.import('map', filesLatest.map);
+        this.indexLatest.import('reg', filesLatest.reg);
+      } else {
+        console.log('Pulling the files from remote repo');
+        let response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
+        );
+        this.indexLatest.import('cfg', response.data);
+        response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/ctx.json'
+        );
+        this.indexLatest.import('ctx', response.data);
+        response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/map.json'
+        );
+        this.indexLatest.import('map', response.data);
+        response = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/reg.json'
+        );
+        this.indexLatest.import('reg', response.data);
+      }
     },
   },
 
   async mounted() {
     this.$nextTick(function () {
-      console.log('Search btn mounted');
       localStorage.removeItem('search-words');
     });
   },
@@ -156,6 +206,11 @@ export default {
 </script>
 
 <style scoped>
+.api3-search-checkbox {
+  transform: scale(1.4);
+  border-color: black;
+  margin-top: 10px;
+}
 .api3-search-modal {
   /*background: #aaaaaa;*/
   /*box-shadow: 2px 2px 10px 1px;*/
