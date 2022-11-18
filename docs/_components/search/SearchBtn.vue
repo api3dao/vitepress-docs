@@ -140,7 +140,6 @@ export default {
       this.indexAll = new Index({
         tokenize: 'full',
       });
-      console.time();
       if (window.location.href.indexOf(':5173') > 0) {
         console.log('Pulling files from local repo');
         this.indexAll.import('cfg', filesAll.cfg);
@@ -166,13 +165,11 @@ export default {
         );
         this.indexAll.import('reg', response.data);
       }
-      console.timeEnd();
     },
     async buildIndexLatest() {
       this.indexLatest = new Index({
         tokenize: 'full',
       });
-      console.time();
       if (window.location.href.indexOf(':5173') > 0) {
         console.log('Pulling files from local repo');
         this.indexLatest.import('cfg', filesLatest.cfg);
@@ -198,7 +195,6 @@ export default {
         );
         this.indexLatest.import('reg', response.data);
       }
-      console.timeEnd();
     },
   },
 
