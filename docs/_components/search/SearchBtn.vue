@@ -88,13 +88,11 @@ export default {
       let val = document.getElementById('search-value').value;
       let checkbox = document.getElementById('checkBox');
 
-      console.log('----- search()', val);
-      console.log('checked', checkbox.checked);
-
       this.results = [];
       if (val.length < 3) {
         localStorage.removeItem('search-words');
-        this.sendEvent();
+        // For now the event (to SearchHighlight.vue) is disabled
+        // this.sendEvent();
         return;
       }
 
@@ -127,6 +125,7 @@ export default {
     },
     async openModal() {
       document.getElementById('search-value').value = '';
+      this.results = [];
 
       this.isModalActive = true;
       if (!this.indexAll) this.buildIndexAll();
@@ -140,7 +139,6 @@ export default {
       this.indexAll = new Index({
         tokenize: 'full',
       });
-      console.time();
       if (window.location.href.indexOf(':5173') > 0) {
         console.log('Pulling files from local repo');
         this.indexAll.import('cfg', filesAll.cfg);
@@ -166,13 +164,11 @@ export default {
         );
         this.indexAll.import('reg', response.data);
       }
-      console.timeEnd();
     },
     async buildIndexLatest() {
       this.indexLatest = new Index({
         tokenize: 'full',
       });
-      console.time();
       if (window.location.href.indexOf(':5173') > 0) {
         console.log('Pulling files from local repo');
         this.indexLatest.import('cfg', filesLatest.cfg);
@@ -198,13 +194,11 @@ export default {
         );
         this.indexLatest.import('reg', response.data);
       }
-      console.timeEnd();
     },
   },
 
   async mounted() {
     this.$nextTick(function () {
-      console.log('Search btn mounted');
       localStorage.removeItem('search-words');
     });
   },
