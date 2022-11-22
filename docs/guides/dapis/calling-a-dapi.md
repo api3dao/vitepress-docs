@@ -53,7 +53,7 @@ import "@api3/airnode-protocol-v1/contracts/dapis/interfaces/IDapiServer.sol";
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
 ```
 
-@tab:Smart Contractr
+@tab:Smart Contract
 
 ```solidity
 import "@api3/airnode-protocol-v1/contracts/dapis/interfaces/IDapiServer.sol";
