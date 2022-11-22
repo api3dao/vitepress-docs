@@ -91,8 +91,7 @@ export default {
       this.results = [];
       if (val.length < 3) {
         localStorage.removeItem('search-words');
-        // For now the event (to SearchHighlight.vue) is disabled
-        // this.sendEvent();
+        this.sendEvent();
         return;
       }
 
@@ -140,13 +139,13 @@ export default {
         tokenize: 'full',
       });
       if (window.location.href.indexOf(':5173') > 0) {
-        console.log('Pulling files from local repo');
+        //console.log('Pulling files from local repo');
         this.indexAll.import('cfg', filesAll.cfg);
         this.indexAll.import('ctx', filesAll.ctx);
         this.indexAll.import('map', filesAll.map);
         this.indexAll.import('reg', filesAll.reg);
       } else {
-        console.log('Pulling files from remote repo');
+        //console.log('Pulling files from remote repo');
         let response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
         );
@@ -170,13 +169,13 @@ export default {
         tokenize: 'full',
       });
       if (window.location.href.indexOf(':5173') > 0) {
-        console.log('Pulling files from local repo');
+        //console.log('Pulling files from local repo');
         this.indexLatest.import('cfg', filesLatest.cfg);
         this.indexLatest.import('ctx', filesLatest.ctx);
         this.indexLatest.import('map', filesLatest.map);
         this.indexLatest.import('reg', filesLatest.reg);
       } else {
-        console.log('Pulling the files from remote repo');
+        //console.log('Pulling the files from remote repo');
         let response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
         );
