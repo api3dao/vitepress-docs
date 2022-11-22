@@ -9,7 +9,7 @@
     "sync:VPNavBar": "cp docs/_components/vitepress/VPNavBar.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBar.vue",
     "sync:VPSidebar": "cp docs/_components/vitepress/VPSidebar.vue  node_modules/vitepress/dist/client/theme-default/components/VPSidebar.vue",
     "sync:sidebarHeader": "cp docs/_components/vitepress/SidebarHeader.vue  node_modules/vitepress/dist/client/theme-default/components/SidebarHeader.vue",
-    "docs:dev": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress dev docs",
+    "docs:dev": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; nodemon --ext md,vue --watch .vitepress --watch . --exec vitepress dev docs",
     "docs:build": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress build docs",
     "docs:serve": "vitepress serve docs --port 8082",
     "format": "prettier --write \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",

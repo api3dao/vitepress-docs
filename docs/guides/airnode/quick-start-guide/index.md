@@ -16,8 +16,8 @@ tags:
 # {{$frontmatter.title}}
 
 The **"Quick"** series of guides are simple introductions demonstrating the
-deployment of an [Airnode](/reference/airnode/latest/concepts/airnode.html). Configuration files are provided with only minor
-changes to be made.
+deployment of an [Airnode](/reference/airnode/latest/concepts/airnode.html).
+Configuration files are provided with only minor changes to be made.
 
 This guide uses the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
@@ -35,12 +35,13 @@ requires three files as input.
 
 - [config.json](#config-json) - The Airnode config file.
 - [secrets.env](#secrets-env) - To store the Airnode Secrets.
-- [aws.env](#aws-env-gcp-json)/[gcp.json](#aws-env-gcp-json) - To store the cloud provider secrets.
+- [aws.env](#aws-env-gcp-json)/[gcp.json](#aws-env-gcp-json) - To store the
+  cloud provider secrets.
 
 For the purpose of this guide, these files have been created and only require a
 few minor changes to make the deployment of the Airnode successful. These
-changes are needed to supply AWS credentials/ GCP project ID, a chain provider url, and a
-mnemonic.
+changes are needed to supply AWS credentials/ GCP project ID, a chain provider
+url, and a mnemonic.
 
 ## Install Prerequisites
 
@@ -84,8 +85,8 @@ quick-start-airnode
 ## Deployment Files Configuration
 
 Prepare the three configuration files. By default, the Airnode deployer image
-looks for `config.json`, `secrets.env`, and `aws.env`/`gcp.json` in the project root
-directory and writes `receipt.json` to the project root directory.
+looks for `config.json`, `secrets.env`, and `aws.env`/`gcp.json` in the project
+root directory and writes `receipt.json` to the project root directory.
 
 ### config.json
 
@@ -106,8 +107,8 @@ directory and writes `receipt.json` to the project root directory.
 </Tabs>
 
 This file requires no changes on your part. It has been created with just one
-API endpoint. It will instruct the Airnode to attach to the Goerli test
-network. There are three variables this file will extract (interpolation) from
+API endpoint. It will instruct the Airnode to attach to the Goerli test network.
+There are three variables this file will extract (interpolation) from
 `secrets.env`.
 
 ::: tip
@@ -153,12 +154,14 @@ Add values for each of the these fields.
   - Copy the URL (https) for Goerli under the Endpoints pick list.
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a digital
-  wallet. For the purpose of this demo it does not need eth in it for the
-  Goerli test network. If you don't have one use the Admin CLI command
+  wallet. For the purpose of this demo it does not need eth in it for the Goerli
+  test network. If you don't have one use the Admin CLI command
   [generate-airnode-mnemonic](../../../reference/packages/admin-cli.md#generate-airnode-mnemonic)
   to create one or another method you prefer.
 
-- `PROJECT_ID`: Project ID of your GCP project. Create a [GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects) under which will the Airnode be deployed and copy the project ID.
+- `PROJECT_ID`: Project ID of your GCP project. Create a
+  [GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+  under which will the Airnode be deployed and copy the project ID.
 
 ### aws.env/gcp.json
 
@@ -191,9 +194,8 @@ do not have an account watch this
 
 ## GCP Project Setup & Credentials
 
-- First create a [GCP project]() where the Airnode will be
-  deployed. Once the project is created, add the project ID to the `secrets.env`
-  file.
+- First create a [GCP project]() where the Airnode will be deployed. Once the
+  project is created, add the project ID to the `secrets.env` file.
 
 - Make sure you have billing enabled for your project. To do so, you will need
   to pair the project with your bank card, although no charges will be incurred
@@ -211,7 +213,6 @@ do not have an account watch this
   management page. Select the KEYS tab and add a new access key of type JSON for
   this account. Download the key file and place in the root of the
   `/quick-deploy-airnode` directory. Rename it `gcp.json`.
-
 
 ## Deploy
 
@@ -408,12 +409,12 @@ docker run -it --rm ^
 
 ## Summary
 
-You have deployed an Airnode on your desired cloud provider and tested it using the HTTP gateway that
-was enabled as part of the Airnode deployment. The Airnode, upon deployment,
-started contacting the AirnodeRrpV0 contract on the Goerli testnet to gather
-any requests made by requesters to this Airnode. This tutorial did not address
-making a request as its purpose was simply to quickly deploy a functional
-Airnode.
+You have deployed an Airnode on your desired cloud provider and tested it using
+the HTTP gateway that was enabled as part of the Airnode deployment. The
+Airnode, upon deployment, started contacting the AirnodeRrpV0 contract on the
+Goerli testnet to gather any requests made by requesters to this Airnode. This
+tutorial did not address making a request as its purpose was simply to quickly
+deploy a functional Airnode.
 
 Learn more about the cloud resources that Airnode uses in the
 [Cloud Resources](../../../reference/cloud-resources.md) doc.

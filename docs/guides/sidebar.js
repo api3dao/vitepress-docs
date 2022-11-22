@@ -38,10 +38,6 @@ module.exports = [
         link: '/guides/airnode/quick-start-guide/',
       },
       {
-        text: 'Lottery Contract Using QRNG',
-        link: '/guides/airnode/lottery-guide/',
-      },
-      {
         text: 'Making an RRP Request',
         link: '/guides/airnode/rrp-request',
       },
@@ -52,25 +48,6 @@ module.exports = [
       {
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
-      },
-    ],
-  },
-  {
-    text: 'ChainAPI',
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: '★ Getting Started',
-        link: '/guides/chainapi/',
-      },
-      {
-        text: 'Integrate your API',
-        link: '/guides/chainapi/integrate',
-      },
-      {
-        text: 'Deploy an API Integration',
-        link: '/guides/chainapi/deploy',
       },
     ],
   },
@@ -92,8 +69,31 @@ module.exports = [
         link: '/guides/qrng/remix-example',
       },
       {
+        text: 'Lottery Contract Using QRNG',
+        link: '/guides/airnode/lottery-guide/',
+      },
+      {
         text: 'Youtube QRNG-NFT Example',
         link: '/guides/qrng/youtube-nft-example',
+      },
+    ],
+  },
+  {
+    text: 'ChainAPI',
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {
+        text: '★ Getting Started',
+        link: '/guides/chainapi/',
+      },
+      {
+        text: 'Integrate your API',
+        link: '/guides/chainapi/integrate',
+      },
+      {
+        text: 'Deploy an API Integration',
+        link: '/guides/chainapi/deploy',
       },
     ],
   },
