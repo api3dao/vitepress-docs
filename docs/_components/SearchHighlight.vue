@@ -1,9 +1,6 @@
 <!--
-NOTE: Nov 18th, 2022
-  This component is on hold, the mounted() function is commented out.
-
-  Each page has this component at the top of the page ready to use this
-  component in the future.
+The component highlights text that is typed into the 
+SearchBtn.vue component. Each page has this component at the top of the page.
 -->
 
 <template>
@@ -16,112 +13,140 @@ import eventBus from '../.vitepress/theme/eventBus.ts';
 export default {
   name: 'SearchHighlight',
   data: () => ({
-    cnt: 0, // Used for display purposes in the console
+    rn: [], // An array of updated nodes
+    words: [], // The search words found in localStorage
   }),
   methods: {
-    getTempNode(id) {
-      const node = document.createElement('xy');
-      node.setAttribute('id', id);
-      return node;
-    },
-    updateNodes(cnt) {
-      console.log(cnt, '>>>>>>>>>>>>>> START');
-      let words = localStorage.getItem('search-words') || undefined;
-      if (!words) {
-        console.log('There are no words: return');
-        return;
-      }
-      console.log('----- updateNodes() words >', words);
-      words = words.split(' ');
-      //console.log(words);
+    updateDOM() {
+      // Are there words?
+      const wordStr = localStorage.getItem('search-words') || undefined;
+      if (wordStr === undefined) return;
+      this.words = wordStr.split(' ');
 
-      let nodeList = window.document.querySelectorAll('main *');
-      //console.log(nodeList);
-
-      /* Outer most loop with 3 sub-loops
-         1) Remove and hold the children in an array
-         2) Highlight the words by updating the node, now less its children
-         3) Add the children back to the node
-      */
+      // First call the function textNodesUnder() to find textNodes
+      let nodeList = document.querySelectorAll('main *');
+      console.log(nodeList);
+      console.log('words', this.words);
+      console.log('-------------------------------------------------');
       for (let i = 0; i < nodeList.length; i++) {
-        if (i < 5) continue; // Skip the first 5 nodes (0-4)
-        let node = nodeList[i];
+        if (i < 6) continue; // Skip the first 7 nodes
+        textNodesUnder(nodeList[i], nodeList[i], this.rn, this.words);
+      }
 
-        // Do not highlight SELECT elements, gives error
-        if (node.tagName === 'SELECT') continue;
+      // Next set highlighted nodes
+      console.log('swap nodes', this.rn);
+      try {
+        this.rn.forEach((row) => {
+          //console.log(row.spanNode);
+          row.parentNode.replaceChild(row.spanNode, row.textNode);
+        });
+      } catch (err) {
+        console.error('set DOM errors');
+        console.error(err);
+      }
 
-        let children = [];
-        // 1) Remove and hold the children in an array
-        for (let i = node.children.length - 1; i > -1; i--) {
-          const orgChildNode = node.children[i];
-          if (node) {
-            const id = (Math.random() + 1).toString(36).substring(2);
-            const tempNode = this.getTempNode(id);
-            node.replaceChild(tempNode, orgChildNode);
-            children.push({ id: id, orgNode: orgChildNode });
+      function getRandomStr() {
+        return (Math.random() + 1).toString(36).substring(7);
+      }
+
+      // https://stackoverflow.com/questions/10730309/find-all-text-nodes-in-html-page
+      function textNodesUnder(node, parentNode, rn, words) {
+        for (node = node.firstChild; node; node = node.nextSibling) {
+          if (node.nodeType == 3) {
+            // textNodes only
+
+            // Create a new parent span element to hold
+            // the textNode.textContent with highlighted words.
+            // Does not mean it is needed unless a word is found,
+            // thus the swapIt variable.
+            const span = document.createElement('span');
+            const id = getRandomStr();
+            span.setAttribute('id', id);
+            let swapArr = []; // objs to swap out for swapStr
+            let swapStr = (' ' + node.textContent).slice(1); // becomes the innerHTML of the above span element
+
+            // Check for each word
+            let swapIt = false;
+            for (let i = 0; i < words.length; i++) {
+              const word = words[i];
+              if (word.length < 3) {
+                console.log('----- +++++ -----');
+                continue;
+              }
+
+              let start = 0;
+              while (start != -1) {
+                start = swapStr.toLowerCase().indexOf(word, start);
+                if (start === -1) {
+                  break;
+                }
+
+                const swapId = getRandomStr();
+
+                // Get the original word
+                const orgWord = swapStr.substr(start, word.length);
+                const insert = `<span class="api3-hight-light">${orgWord}</span>`;
+
+                swapArr.push({ swapId: swapId, obj: insert });
+
+                // Need to add the swapId where the orgWord is
+                swapStr = swapStr.replace(orgWord, swapId);
+
+                // Instructs that the span be added to teh swapArr
+                swapIt = true;
+              }
+            }
+            // Add new span to swapArr
+            if (swapIt) {
+              swapIt = false;
+              swapArr.forEach((child) => {
+                swapStr = swapStr.replace(child.swapId, child.obj);
+              });
+              span.innerHTML = swapStr; //swapStr;
+              rn.push({
+                parentNode: parentNode,
+                textNode: node,
+                spanNode: span,
+              });
+            }
           }
         }
-
-        // 2) Highlight the words by updating the node, now less its children
-        try {
-          words.forEach((word) => {
-            if (word.length < 3) return; // must be 3 characters or more
-            let start = 0;
-            while (start != -1) {
-              start = node.innerText.toLowerCase().indexOf(word, start);
-              if (start === -1) break;
-
-              const orgWord = node.innerText.substr(start, word.length);
-              const insert = `<span class="mklptqbc" style="border: solid 1px red;">${orgWord}</span>`;
-              const insertLen = insert.length;
-              // Update the node
-              // This is important, note the use of nodeHTML below.
-              // Use innerText to update innerHTML
-              node.innerHTML =
-                node.innerText.slice(0, start) +
-                insert +
-                node.innerText.slice(start + word.length);
-              start = start + insertLen;
-            }
-          });
-        } catch (err) {
-          console.log('----- UPDATE node.innerHTML -----');
-          console.error(err);
-          console.error(node);
-        }
-
-        // 3) Add the children back to the node
-        // The element.id is the tempNode created earlier
-        try {
-          children.forEach((temp) => {
-            const el = document.getElementById(temp.id);
-            node.replaceChild(temp.orgNode, el);
-          });
-        } catch (err) {
-          console.log('----- ADD back child nodes -----');
-          console.error(err);
-          console.error(node);
-        }
       }
-      console.log(cnt, '>>>>>>>>>>>>>> END');
+    },
+    revertDOM() {
+      // Revert nodes
+      try {
+        this.rn.forEach((row) => {
+          row.parentNode.replaceChild(row.textNode, row.spanNode);
+        });
+      } catch (err) {
+        console.error('revertDOM() error');
+        console.error(err);
+      } finally {
+        this.rn = [];
+      }
     },
   },
   beforeUnmount() {
-    //eventBus().emitter.off('search-event');
+    eventBus().emitter.off('search-event');
   },
   mounted() {
     this.$nextTick(function () {
-      //setTimeout(this.updateNodes, 10);
+      this.updateDOM();
+
       // Event fired by SearchBtn.vue
-      /*eventBus().emitter.on('search-event', (payload) => {
-        console.log('----- eventBus().emitter.on');
-        let spans = document.getElementsByClassName('mklptqbc');
-        for (var i = spans.length; i--; ) {
-          spans[i].replaceWith(document.createTextNode(spans[i].innerText));
-        }
-        this.updateNodes(this.cnt++);
-      });*/
+      eventBus().emitter.on('search-event', (payload) => {
+        this.revertDOM();
+        this.updateDOM();
+      });
     });
   },
 };
 </script>
+
+<style>
+.api3-hight-light {
+  border: red solid 1px;
+  border-radius: 3px;
+}
+</style>
