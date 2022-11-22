@@ -117,7 +117,8 @@ function. Add the following to the corresponding fields for the function.
   ```
 
   Be sure to fund the public address of the sponsor wallet that the command
-  outputs. The funds are used to pay gas costs for the Airnode's response.
+  outputs with **at least** 0.1 testnet ETH. The funds are used to pay gas costs
+  for the Airnode's response.
 
 Lastly select the <ElementSelect text="Transact"/> button in Remix to send the
 parameters to the contract to be stored. Approve the transaction with MetaMask.
