@@ -7,13 +7,6 @@ path: /dev/frontmatter.html
 version:
 outline: deep
 tags:
-  - frontmatter
-  - title
-  - sidebarHeader
-  - sidebarSubHeader
-  - basePath
-  - outline
-  - tags
 ---
 
 <PageHeader/>
@@ -22,8 +15,8 @@ tags:
 
 The frontmatter must be at the top of the Markdown file, and must take the form
 of valid YAML set between triple-dashed lines. Each page must contain
-$frontmatter which is used to provide navigation, navigation labels, and search
-criteria.
+`$frontmatter` which is used to provide navigation, navigation labels, and
+search criteria. Below is the `$frontmatter` for this page.
 
 ```yaml
 ---
@@ -35,13 +28,6 @@ path: /dev/frontmatter.html
 version:
 outline: deep
 tags:
-  - frontmatter
-  - title
-  - sidebarHeader
-  - sidebarSubHeader
-  - basePath
-  - outline
-  - tags
 ---
 ```
 
@@ -78,8 +64,8 @@ target URL and to logically group search results for display to the reader.
 
 ### `version`
 
-(required) The version number of doc sets such as Airnode and OIS. Leave empty
-for all other doc sets.
+(required for Airnode and OIS) The version number for the Airnode and OIS
+docsets.
 
 ### `outline`
 
@@ -95,4 +81,5 @@ H2-H6.
 
 ### `tags`
 
-(optional) Provides important key search words for the search engine.
+(optional) For future use, provides important key search words for the search
+engine.
