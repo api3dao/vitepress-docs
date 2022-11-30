@@ -9,6 +9,11 @@ module.exports = [
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
       { text: 'yarn docs:build', link: '/dev/yarn-docs-build' },
+      { text: 'Using MetaMask', link: '/dev/using-metamask/' },
+      {
+        text: 'Page Styling',
+        link: '/dev/page-styling',
+      },
     ],
   },
 ];
