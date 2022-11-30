@@ -3,8 +3,7 @@ title: FlexSearch
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-path: /dev/f/exsearch.html
-version:
+path: /dev/flexsearch.html
 outline: deep
 tags:
 ---
