@@ -3,17 +3,7 @@ module.exports = [
     text: '',
     collapsible: true,
     collapsed: false,
-    items: [
-      { text: 'About the Guides', link: '/guides/' },
-      {
-        text: '<span style="text-decoration: line-through;">Ethereum Test Page</span>',
-        link: '/guides/ethereum',
-      },
-      {
-        text: '<span style="text-decoration: line-through;">Page Styling</span>',
-        link: '/guides/styles',
-      },
-    ],
+    items: [{ text: 'About the Guides', link: '/guides/' }],
   },
   {
     text: 'dAPIS',
