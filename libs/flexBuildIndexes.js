@@ -46,20 +46,16 @@ function buildContentFile(path) {
   // Make sure the /flexContentFiles dir exists
   fse.ensureDirSync(contentDir);
 
-  //const arr = path.split('/');
-
   // contentPath: the file with extracted HTML text
   let parsedPath = path.split('/.vitepress/dist')[1];
   let contentPath = contentDir + parsedPath.replace('.html', '.json');
 
   // frontmatter and url: /explore
-  // console.log('\n> path:', path);
   const pathMarkdown =
     'docs/' + path.split('docs/.vitepress/dist/')[1].replace('.html', '.md');
   let frontmatter = yaml.load(
     fs.readFileSync(pathMarkdown, 'utf8').split('---')[1]
   );
-  //let url = path.split('docs/.vitepress/dist')[1];
 
   // Get the html files and extract the text from the html
   const htmlString = fs.readFileSync(path, 'utf8');
@@ -94,7 +90,7 @@ function buildContentFile(path) {
   // Only add path within the latest docsets
   latestDocsets.forEach((element) => {
     if (path.indexOf(element) > -1) {
-      console.log(path);
+      //console.log(path);
       indexLatest.add(id, json.content);
     }
   });
@@ -117,8 +113,6 @@ function addToFrontmatter(id, frontmatter) {
 function exportAllIndexFiles() {
   indexAll.export((key, data) => {
     let dir = 'indexes/all';
-    // if (key === 'map') dir = 'docs/.vitepress/flex-all-indexes/map';
-    // console.log(`${dir}/${key}.json`);
     fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
   });
 }
@@ -126,8 +120,6 @@ function exportAllIndexFiles() {
 function exportLatestIndexFiles() {
   indexLatest.export((key, data) => {
     let dir = 'indexes/latest';
-    // if (key === 'map') dir = 'docs/.vitepress/flex-all-indexes/map';
-    // console.log(`${dir}/${key}.json`);
     fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
   });
 }
