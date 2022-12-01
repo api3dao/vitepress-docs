@@ -1,0 +1,38 @@
+<script type="text/javascript" src="./using-metamask.js"></script>
+<script>
+  import eventBus from /* @vite-ignore */ '../.vitepress/theme/eventBus.ts';
+  import hello from './using-metamask.js';
+
+
+
+  //import {hello} from "./using-metamask.js";
+//hello();
+  /*async function submitLastBlockRequest()
+  {
+    let data = await ethereum.request({
+      method: 'eth_blockNumber',
+    })
+    let el = document.getElementById("api3-lastBlockValue");
+    el.innerText = data;
+    el = document.getElementById("api3-the-time");
+    el.innerText = new Date().toUTCString();
+  }*/
+
+  function callEthereumWallet()
+  {
+    eventBus().emitter.emit('metamask-action-event', { time: new Date() });
+    console.log('Call MetaMask component')
+  }
+
+  function addListeners() {
+    let timer = setTimeout(add, 10);
+    function add() {
+      //const btn = document.getElementById('api3-meta-mask-submit');
+      //btn.addEventListener('click', callEthereumWallet, false);
+      console.log('addListeners')
+    }
+  }
+
+  //hello();
+  addListeners();
+</script>
