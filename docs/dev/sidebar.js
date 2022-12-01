@@ -6,6 +6,7 @@ module.exports = [
       { text: 'Overview', link: '/dev/' },
       { text: 'Localhost', link: '/dev/localhost' },
       { text: 'DocSets', link: '/dev/docsets' },
+      { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
       { text: 'yarn docs:build', link: '/dev/yarn-docs-build' },

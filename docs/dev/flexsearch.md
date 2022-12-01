@@ -17,8 +17,22 @@ searching in the docs.
 
 ## Script flexBuildIndexes.js
 
+Builds the index files.
+
 ```js
+yarn flex:build
+
+// Runs the following from package.json
 "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
 ```
 
 ## Script flexTestSearch.js
+
+Test the index files.
+
+```js
+yarn flex:test
+
+// Runs the following from package.json
+"flex:test": "node libs/flexTestSearch.js;"
+```
