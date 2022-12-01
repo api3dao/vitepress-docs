@@ -1,0 +1,17 @@
+{
+  "deployments": [
+    {
+      "description": "HelloWorld.sol",
+      "path": "../dev/using-metamask/HelloWorld.sol",
+      "output": ["view", "local-storage", "console"]
+    }
+  ],
+  "calls": [
+    {
+      "description": "public string greet",
+      "address": "kdsf9kk9f9jggj",
+      "abi": "asakdksajkajdd",
+      "toBeDetermined": "Not sure what is here yet"
+    }
+  ]
+}

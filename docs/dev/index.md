@@ -4,6 +4,8 @@ sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
 basePath: /dev
+outline: deep
+tags:
 ---
 
 <PageHeader/>

@@ -26,6 +26,8 @@ import ChainName from '../../_components/ChainName.vue';
 import ElementSelect from '../../_components/ElementSelect.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
+import EthTransact from '../../_components/meta-mask/EthTransact.vue';
+import EthTransactExecute from '../../_components/meta-mask/EthTransactExecute.vue';
 
 export default {
   ...DefaultTheme,
@@ -60,6 +62,8 @@ export default {
     app.component('ElementSelect', ElementSelect);
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
+    app.component('EthTransact', EthTransact);
+    app.component('EthTransactExecute', EthTransactExecute);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

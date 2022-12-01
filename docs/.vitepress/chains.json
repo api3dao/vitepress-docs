@@ -6,9 +6,9 @@
   "10": { "fullname": "Optimism", "type": "mainnet" },
   "30": { "fullname": "RSK", "type": "mainnet" },
   "31": { "fullname": "RSK testnet", "type": "testnet" },
-  "42": { "fullname": "Kovan", "type": "testnet" },
+  "42": { "fullname": "Kovan (deprecated)", "type": "testnet" },
   "56": { "fullname": "BNB Chain", "type": "mainnet" },
-  "69": { "fullname": "Optimism testnet", "type": "testnet" },
+  "420": { "fullname": "Optimism testnet", "type": "testnet" },
   "77": { "fullname": "POA Network Sokol testnet", "type": "testnet" },
   "97": { "fullname": "BNB Chain testnet", "type": "testnet" },
   "100": { "fullname": "Gnosis Chain", "type": "mainnet" },
@@ -26,6 +26,6 @@
   "43114": { "fullname": "Avalanche C-Chain", "type": "mainnet" },
   "80001": { "fullname": "Polygon Mumbai testnet", "type": "testnet" },
   "200101": { "fullname": "Milkomeda C1 testnet", "type": "testnet" },
-  "421611": { "fullname": "Arbitrum testnet", "type": "testnet" },
-  "11155111": { "fullname": "Sepolia testnet", "type": "testnet" }
+  "421613": { "fullname": "Arbitrum testnet", "type": "testnet" },
+  "11155111": { "fullname": "Sepolia", "type": "testnet" }
 }

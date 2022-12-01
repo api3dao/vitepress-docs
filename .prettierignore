@@ -14,6 +14,10 @@
 #ois
 /docs/reference/ois/latest/assets
 
+#dev
+/docs/dev/using-metamask/HelloWorld.sol.js
+/docs/dev/using-metamask/HelloWorld.sol
+
 # The flexsearch files can be huge, skip them. 
 # These are auto genereated anyway.
 /indexes
