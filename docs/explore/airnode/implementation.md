@@ -14,57 +14,60 @@ tags:
 
 # {{$frontmatter.title}}
 
-See the article,
-[Getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>
-for a technical overview of the software.
+For a technical overview of the software, see
+[Getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
 
 ## Statelessness
 
-Oracle nodes typically keep persistent track of the blockchain and the state of
-the requests they receive (i.e., at what stage of fulfillment they are at),
-either in-memory or in a database. In systems terminology, they are not
-memoryless. Doing so comes with many disadvantages:
+Typically, oracle nodes persistently track the blockchain and the state of the
+requests they receive (i.e. the present stage of their fulfillment), either in
+memory or in a database. In terms of systems, they are not memoryless. However,
+such approach comes with many disadvantages:
 
-1. The database becomes a single point of failure. Orchestrating redundancy is
-   costly and not trivial.
-2. Any anomaly that happens on the blockchain (block reorgs, ommer blocks, etc.)
-   results in the oracle node state to fall out of sync with the chain, which is
-   not trivial to correct.
-3. A highly stateful application has many edge cases. These are difficult to
-   cover with tests completely and are likely to result in bugs that
-   incapacitate the node.
+1. The database becomes a single point of failure, and redundancy is costly and
+   complicated to orchestrate.
+2. Any on-chain anomalies (block reorganization, ommer blocks etc.) result in
+   the chain's and node's states losing synchronization, which is difficult to
+   fix.
+3. Highly stateful applications have many edge cases that are difficult to
+   completely cover by tests. Therefore, debilitating bugs are bound to slip
+   through.
 
 These disadvantages result in an unstable oracle node, which is the essential
 reason why traditional oracle nodes require _professional node operators_ that
-need to be ready to respond to incidents 24/7. Since this is not a realistic
-requirement for first-party oracles, an oracle node that is designed for
-first-party oracles has to be stateless.
+need to be on call 24/7 in case of incidents. Since this is not a realistic
+requirement for first-party oracles, an oracle node designed for these oracles
+has to be stateless.
 
-Another way to look at keeping oracle node state is this: The blockchain (e.g.,
-Ethereum) node that the oracle node uses already keeps the state on behalf of
-the oracle node. The duplication of this responsibility also duplicates the
-points of failure (where failure in either of them results in total failure).
-Then, the oracle node should depend on the blockchain node to keep its state,
-which requires the protocol to be designed to fit this scheme.
+However, there's another way to approach state keeping for oracle nodes: since
+the node on a given blockchain (such as Ethereum) used by the oracle node
+already keeps the state on its behalf, there is no need for the node itself to
+keep its state. Duplicating the state would create twice as many points of
+failure (and it would be enough for one of them to fail to cause total failure).
+Therefore, the oracle node should depend on the blockchain node to keep its
+state, which should be reflected in the way in which the oracle node's protocol
+is designed
 
 ### Non-idempotent operations
 
 An API operation is idempotent if calling it multiple times has the same effect
-as calling it once. For example, using a GET operation of an exchange API to get
-the ETH/USD price data is typically an idempotent operation. Calling it once or
-more will not make any difference at the API server-side. In contrast, using a
-POST operation of a remittance service provider API to send $100 to another
-party would be a non-idempotent operation. Each call would send an additional
-$100, and thus using the operation multiple times would have a different effect
-than using it once.
+as calling it once. For example, using a GET operation of an exchange's API to
+get the exchange rate between ETH and USD is typically an idempotent operation.
+It will not make any difference at the API server-side if we call it once or
+several times.
 
-The oracle node being stateless means that it would not be able to "remember" if
-it has made an API call associated with a request, and may repeat it under
-certain conditions. This is not an issue at the moment, because presently,
-oracles are only used for idempotent operations. The aim is for Airnode to
-support non-idempotent operations as well. There is research into alternative
-methods to achieve this while protecting the resiliency that statelessness
-provides.
+In contrast, using a POST operation of a remittance service provider API to send
+$100 to another party would be a non-idempotent operation. Each call would send
+an additional $100, which means that using the operation multiple times would
+have a different effect than using it once.
+
+Stateless oracle nodes cannot "remember" if they already made an API call
+associated with a given request, and, under certain conditions, they may repeat
+it. At present, this is not an issue since oracles are only used for performing
+idempotent operations. In the future, however, Airnode intends to support
+non-idempotent operations as well. We are currently researching alternative
+methods of achieving this while protecting the resiliency provided
+bystatelessness.
 
 ## Fully-serverless stack
 
@@ -74,12 +77,11 @@ Airnode uses it for different reasons:
 
 - Serverless functions are stateless. This means that whatever problem occurs in
   an invocation, the next invocation will start with a clean slate. This
-  provides great resiliency against internal (from Airnode itself) or external
-  (from the API, Ethereum node) bugs. In other words, the oracle node _turns
-  itself off and on again_ very frequently, which automatically fixes the
-  majority of the potential problems.
-- Serverless functions are fully managed. They provide the closest experience to
-  _set-and-forget_ possible.
+  provides great resiliency against bugs, be it from Airnode itself from the API
+  or Ethereum node). In other words, the oracle node _turns itself off and on
+  again_ very frequently, which automatically fixes most potential problems.
+- Serverless functions are fully managed. They provide the closest possible
+  experience to the _set-and-forget_ philosophy.
 - Serverless functions are priced on-demand. Especially considering that Airnode
   will not require major concurrent usage, this will result in great
   cost-efficiency (and even let the user stay below free tier
@@ -91,9 +93,9 @@ Airnode uses it for different reasons:
 
 ## Approach to security
 
-For an optimally hands-off user experience, Airnode should utilize fully-managed
+For an optimal, hands-off user experience, Airnode should utilize fully managed
 services whenever possible. To allow this to be done securely, the node is
-designed in a defensive way.
+designed defensively.
 
 There are two external parties that Airnode interacts with:
 
@@ -101,12 +103,12 @@ There are two external parties that Airnode interacts with:
   serving data from third-party APIs as a valid usage scenario. In this case,
   calls made to all APIs are contained in separate serverless function
   invocations so that they cannot induce node-level failure.
-- **Blockchain nodes:** Similarly, using blockchain (e.g., Ethereum) nodes run
-  by third party service providers is considered as a valid usage scenario.
-  Airnode uses all providers simultaneously (i.e., not through a Quorum-based
-  consensus or behind a load balancer) for maximum availability, which is made
-  possible by its unique stateless design. The interactions made with each
-  provider is contained in a separate serverless function invocation so that a
+- **Blockchain nodes:** Similarly, using blockchain nodes that are run by
+  third-party service providers is considered as a valid usage scenario. To
+  ensure maximum availability, Airnode uses all providers simultaneously (and
+  not through a Quorum-based consensus or behind a load balancer), which is
+  possible thanks to its unique stateless design. The interactions with each
+  provider are contained in a separate serverless function invocation so that a
   malicious provider cannot induce node-level failure.
 
 In addition, the protocol is implemented in a way that a blockchain service
