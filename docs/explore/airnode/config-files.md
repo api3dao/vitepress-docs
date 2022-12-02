@@ -14,15 +14,15 @@ tags:
 
 # {{$frontmatter.title}}
 
-An Airnode is a first-party oracle that will push off-chain API data to any
-on-chain requester. The Airnode is defined by a file named
-[config.json](/reference/airnode/latest/deployment-files/config-json.md).
+Airnode is a first-party oracle that pushes off-chain API data to an on-chain
+requester. The Airnode is defined by a file name
+[config.json](/reference/airnode/latest/deployment-files/config-json.md). It is
+the central element feeding data to beacons, the components that supply on-chain
+dAPIs with data behind the scenes.
 
-Airnode is also the backbone that feeds data to beacons. Beacons are the behind
-the scene components that supply on-chain dAPIs with data.
-
-The diagrams below illustrate the required configuration files to successfully
-deploy an Airnode to AWS, GCP, or a Docker Container.
+The diagrams below depict the configuration files needed for a successful
+deployment of an Airnode to AWS or GCP. Alternatively, they are used for running
+it in a Docker Container.
 
 <Tabs>
 
@@ -32,11 +32,12 @@ deploy an Airnode to AWS, GCP, or a Docker Container.
   margin-left: auto;
   margin-right: auto;" src="../assets/images/api-provider-overview-aws.png" width="450">
 
-1. **config.json**: Contains the Airnode's configuration. The OIS object is
-   important as it maps an API to Airnode endpoints.
-2. **secrets.env**: Values that should not be exposed in config.json.
-3. **aws.env**: AWS credentials required by the Docker deployer image.
-4. **deployer image**: Deploys Airnode using its deploy command.
+1. **config.json**: Contains the Airnode's configuration. It contains an
+   important element, called OIS, that maps an API to Airnode endpoints.
+2. **secrets.env**: Contains values that should not be exposed in config.json.
+3. **aws.env**: Contains AWS credentials required by the Docker deployer image.
+4. **deployer image**: A Docker image that deploys the Airnode using its deploy
+   command.
 
 @tab:GCP
 
@@ -44,10 +45,11 @@ deploy an Airnode to AWS, GCP, or a Docker Container.
   margin-left: auto;
   margin-right: auto;" src="../assets/images/api-provider-overview-gcp.png" width="450">
 
-1. **config.json**: Contains the Airnode's configuration. The OIS object is
-   important as it maps an API to Airnode endpoints.
-2. **secrets.env**: Values that should not be exposed in config.json.
-3. **deployer image**: Deploys Airnode using its deploy command.
+1. **config.json**: Contains the Airnode's configuration. It contains an
+   important element, called OIS, that maps an API to Airnode endpoints.
+2. **secrets.env**: Contains values that should not be exposed in config.json.
+3. **deployer image**: A Docker image that deploys the Airnode using its deploy
+   command.
 
 @tab:Container
 
@@ -55,10 +57,11 @@ deploy an Airnode to AWS, GCP, or a Docker Container.
   margin-left: auto;
   margin-right: auto;" src="../assets/images/api-provider-overview-container.png" width="450">
 
-1. **config.json**: Contains the Airnode's configuration. The OIS object is
-   important as it maps an API to Airnode endpoints.
-2. **secrets.env**: Values that should not be exposed in config.json.
-3. **client image**: Deploys Airnode using its deploy command.
+1. **config.json**: Contains the Airnode's configuration. It contains an
+   important element, called OIS, that maps an API to Airnode endpoints.
+2. **secrets.env**: Contains values that should not be exposed in config.json.
+3. **client image**: A Docker image that contains the Airnode that will run with
+   the provided configuration.
 
 </Tabs>
 

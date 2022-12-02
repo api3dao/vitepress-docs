@@ -7,52 +7,57 @@
         style="border-bottom: 2px solid gray"
       />
 
-      <!-- MetaMask not installed -->
-      <div v-if="!browserHasEthereum" style="text-align: center">
+      <!-- No MetaMask installed -->
+      <div v-if="!browserHasEthereum" style="text-align: center; padding: 15px">
         Please
         <a href="https://metamask.io/download/" target="metamask"
           >install MetaMask</a
-        >.
-        <div style="font-size: small">
-          MetaMask compatible browser is required.
-        </div>
+        >
+        with a compatible browser.
       </div>
-      <div v-else>
+
+      <!-- Only ethereum browser now (no Safari) -->
+      <div v-else-if="browserHasEthereum">
         <!-- MetaMask.isLocked -->
-        <div v-if="!isUnlocked" class="api3-unlock-meta-mask">
+        <div v-if="!status.unlocked" class="api3-unlock-meta-mask">
           Please unlock MetaMask.
-          <div class="api3-lock-status-meta-mask" style="margin-top: -67px">
-            Locked
-          </div>
         </div>
 
-        <!-- MetaMask.isUnlocked -->
-        <div v-else>
-          <div class="api3-lock-status-meta-mask" style="margin-top: -32px">
-            Unlocked
-          </div>
+        <!-- MetaMask.isUnLocked -->
+        <div v-else-if="status.unlocked" class="api3-lock-status-meta-mask">
+          Unlocked
+        </div>
 
+        <!-- MetaMask status issues -->
+        <EthTransactStatus
+          v-if="(!status.hasAccount || !status.validChain) && status.unlocked"
+          :status="status"
+          :accounts="accounts"
+          :chain="chain"
+        />
+
+        <!-- unlocked, has an account and chain is Goerli -->
+        <div v-else>
           <!-- Account -->
-          <div v-if="chain" class="api3-account-meta-mask">
-            {{ accounts[0].substr(0, 7) }}...{{ accounts[0].substr(38) }}
+          <div v-if="accounts" class="api3-account-meta-mask">
+            {{ accounts[0].substr(0, 7) }}...<span
+              style="text-decoration: underline"
+              >{{ accounts[0].substr(38) }}</span
+            >
+            <div
+              style="font-size: x-small; font-weight: normal; margin-top: -5px"
+            >
+              Use MetaMask to change the account.
+            </div>
           </div>
 
           <!-- Chain -->
-          <div v-if="chain" class="api3-chain-meta-mask">
+          <div v-if="status.unlocked && chain" class="api3-chain-meta-mask">
             {{ chain.network.fullname }} ({{ chain.id }})
           </div>
 
-          <!-- Goerli warning -->
-          <div
-            v-if="chain && chain.id !== 5"
-            class="api3-goerli-only-meta-mask"
-          >
-            <hr style="margin-top: -1px" />
-            Please use MetaMask and switch to the Goerli network for this guide.
-          </div>
-
           <!-- Transactions -->
-          <div v-if="ethConfig && chain && chain.id === 5">
+          <div v-if="ethConfig">
             <div style="border-top: solid 2px gray" />
             <EthTransactExecute :ethConfig="ethConfig" />
           </div>
@@ -69,75 +74,67 @@ export default {
   name: 'EthTransact',
   props: ['ethConfig'], // Configure file for transactions, undefined if transactions are no needed
   data: () => ({
-    browserHasEthereum: undefined,
-    metaMaskStatus: 1, // 1=locked, 2=unlocked, 3=busy
-    isUnlocked: undefined,
+    browserHasEthereum: false,
+    status: {
+      unlocked: false, // MetaMask is unlocked
+      hasAccount: false, // There is a connected account
+      validChain: false, // The chain must be Goerli
+    },
     accounts: undefined, // The first account from MetaMask in the account array which only ever has one row
     chain: undefined, // { id: <decimal>, network: <object> },
   }),
   methods: {
-    // The main methods to load the status of MetaMask when unlocked
-    // Gets the account and chain
-    async eth_requestAccounts() {
-      try {
-        // Get the accounts array
-        this.accounts = await ethereum.request({
-          method: 'eth_requestAccounts',
-        });
-        // Get the chain
-        let chain = await ethereum.request({
-          method: 'eth_chainId',
-        });
-        const id = parseInt(chain, 16);
-        this.chain = { id: id, network: chainsRef[id] };
-
-        this.metaMaskStatus = 2; // must be at the bottom until data for HTML is populated
-      } catch (err) {
-        console.log('----- Error > eth_requestAccounts -----');
-        this.metaMaskStatus = 3;
-        console.error(err);
+    async getAccounts() {
+      this.status.unlocked = await ethereum._metamask.isUnlocked();
+      const accounts = await ethereum.request({
+        method: 'eth_accounts',
+      });
+      console.log('> getAccounts', accounts);
+      if (accounts.length === 0) {
+        this.status.hasAccount = false;
+        this.accounts = undefined;
+      } else {
+        this.status.hasAccount = true;
+        // Do not call "this.eth_requestAccounts()""
+        this.accounts = accounts; // Set the accounts
+      }
+    },
+    async getChain() {
+      let chain = await ethereum.request({
+        method: 'eth_chainId',
+      });
+      const id = parseInt(chain, 16);
+      this.chain = { id: id, network: chainsRef[id] };
+      console.log('> getChain', this.chain.id);
+      if (this.chain.id === 5) {
+        this.status.validChain = true;
+      } else {
+        this.status.validChain = false;
       }
     },
   },
   async mounted() {
     if (window.ethereum) {
       this.browserHasEthereum = true;
-      console.log('YES: we are using ethereum._metamask.isUnlocked()');
-      this.isUnlocked = await ethereum._metamask.isUnlocked();
-      if (this.isUnlocked === false) {
-        this.metaMaskStatus = 1;
-      } else {
-        this.eth_requestAccounts();
+      console.log('WARNING below is OK: wkande Dec 2nd, 2022');
+      this.status.unlocked = await ethereum._metamask.isUnlocked();
+      if (this.status.unlocked) {
+        this.getAccounts();
+        this.getChain();
       }
     }
-
+    // Setup MetMask events
     if (window.ethereum) {
-      // Setup MetMask events
       ethereum.on('accountsChanged', async (data) => {
-        // The user has locked MetaMask
-        if (data.length === 0) {
-          this.metaMaskStatus = 1;
-          this.isUnlocked = false;
-          this.chain = undefined;
-          this.accounts = undefined;
-        } else {
-          // Do not call "this.eth_requestAccounts()""
-          // Set the accounts
-          this.accounts = data;
-          // Update the chain
-          let chain = await ethereum.request({
-            method: 'eth_chainId',
-          });
-          const id = parseInt(chain, 16);
-          this.chain = { id: id, network: chainsRef[id] };
-          this.metaMaskStatus = 2;
-          this.isUnlocked = true;
-        }
-      });
+        console.log('-----> accountsChanged');
+        //console.log(ethereum.selectedAddress);
 
+        this.getAccounts();
+        this.getChain();
+      });
       ethereum.on('chainChanged', (data) => {
-        const id = parseInt(data, 16);
-        this.chain = { id: id, network: chainsRef[id] };
+        console.log('-----> chainChanged');
+        this.getChain();
       });
     }
   },
@@ -162,23 +159,18 @@ export default {
   margin-left: 21px;
   font-weight: bold;
 }
-.api3-goerli-only-meta-mask {
-  padding: 0px 10px 5px 10px;
-  font-weight: 500;
-  color: red;
-  margin-bottom: 8px;
-}
 .api3-chain-meta-mask {
   float: right;
   font-size: small;
-  margin-top: -25px;
+  margin-top: -43px;
   margin-right: 18px;
   font-weight: bold;
 }
 .api3-lock-status-meta-mask {
+  margin-top: -30px;
   color: white;
   font-size: small;
   position: absolute;
-  margin-left: 260px;
+  margin-left: 248px;
 }
 </style>

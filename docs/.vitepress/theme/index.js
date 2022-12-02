@@ -27,6 +27,7 @@ import ElementSelect from '../../_components/ElementSelect.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
 import EthTransact from '../../_components/meta-mask/EthTransact.vue';
+import EthTransactStatus from '../../_components/meta-mask/EthTransactStatus.vue';
 import EthTransactExecute from '../../_components/meta-mask/EthTransactExecute.vue';
 
 export default {
@@ -63,6 +64,7 @@ export default {
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
     app.component('EthTransact', EthTransact);
+    app.component('EthTransactStatus', EthTransactStatus);
     app.component('EthTransactExecute', EthTransactExecute);
   },
   globalSearch: { index: { tag: 'myTags' } },

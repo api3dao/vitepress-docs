@@ -12,11 +12,11 @@
         Deploy: {{ item.description }}
       </option>
       <option
-        v-for="item in config.calls"
+        v-for="item in config.requests"
         :key="item.description"
         value="item.description"
       >
-        Call: {{ item.description }}
+        Request: {{ item.description }}
       </option>
     </select>
     <div style="margin-top: 20px; margin-bottom: 17px">
@@ -55,8 +55,8 @@ export default {
   },
   async mounted() {
     this.config = config;
-    console.log('MOUNTED EthTransactExecute', this.ethConfig);
-    console.log(JSON.stringify(config, undefined, 4));
+    //console.log('MOUNTED EthTransactExecute', this.ethConfig);
+    //console.log(JSON.stringify(config, undefined, 4));
 
     // https://www.digitalocean.com/community/tutorials/vuejs-file-reader-component
     /*const reader = new FileReader();

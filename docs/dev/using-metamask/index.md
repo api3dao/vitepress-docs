@@ -54,7 +54,7 @@ required.
 ```
 
 Below is an example of a configuration file to activate transactional
-capabilities is in JSON format.
+capabilities in JSON format.
 
 <<< @/dev/using-metamask/ethConfig.json
 
@@ -71,10 +71,10 @@ capabilities is in JSON format.
     - `localStorage`: The contract address is extracted from the results and
       placed into the browser's localStorage.
 
-- `execute`: Execute a function for a specified contract address, usually saved
+- `requests`: Execute a function for a specified contract address, usually saved
   for the guide in `localStorage` after it was deployed.
   - More here when ready
-  -
+  - ...
 
 ## Example Markdown
 
@@ -98,16 +98,16 @@ title: Using MetaMask
 
 ## Try It
 
-Note the status of the MetaMask display below. With MetaMask unlocked, the
-component will display a form allowing the reader to execute transactions
-relative to the guide, if transaction have been activated.
+Note the status of the MetaMask display below. With MetaMask unlocked (using the
+Goerli network), the component will display a form allowing the reader to
+execute transactions relative to a guide.
+
+<EthTransact ethConfig="./ethConfig.json"/>
 
 This mini guide will deploy the `HelloWorld.sol` contract and then access its
 public string `greet`.
 
 <<< @/dev/using-metamask/HelloWorld.sol.js
-
-<EthTransact ethConfig="./ethConfig.json"/>
 
 <!-- styles for this page only -->
 <style>
