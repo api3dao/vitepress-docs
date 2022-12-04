@@ -1,9 +1,9 @@
 <template>
-  <div style="padding: 15px 5px 5px 5px; text-align: center">
-    <select v-if="config" class="api3-metamask-picklist">
-      {{
-        config
-      }}
+  <div v-if="config" style="padding: 15px 5px 5px 5px; text-align: center">
+    <div style="padding: 0px 8px 0px 25px; font-size: small; text-align: left">
+      {{ config.description }}
+    </div>
+    <select class="api3-mm-picklist">
       <option
         v-for="item in config.deployments"
         :key="item.description"
@@ -20,7 +20,7 @@
       </option>
     </select>
     <div style="margin-top: 20px; margin-bottom: 17px">
-      <button class="api3-metamask-submit-button">Submit</button>
+      <button class="api3-mm-submit-button">Submit</button>
     </div>
   </div>
 </template>
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style>
-.api3-metamask-picklist {
+.api3-mm-picklist {
   font-size: medium;
   padding: 5px;
   color: gray;
@@ -84,7 +84,7 @@ export default {
   margin-top: 15px;
   max-width: 300px;
 }
-.api3-metamask-submit-button {
+.api3-mm-submit-button {
   border: steelblue solid 1px;
   border-radius: 0.3em;
   padding: 6px 10px 6px 10px;

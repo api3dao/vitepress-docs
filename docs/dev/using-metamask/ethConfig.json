@@ -1,4 +1,5 @@
 {
+  "description": "Deploy the HelloWorld.sol contract onto the Goerli network. Then get the value of the greet public variable.",
   "deployments": [
     {
       "description": "HelloWorld.sol",
