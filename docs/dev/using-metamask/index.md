@@ -39,7 +39,18 @@ optional `ethConfig` parameter the component only shows the status of MetaMask.
 Open MetaMask to lock, then unlock it. Notice that the component automatically
 updates to reflect the lock status of MetaMask.
 
+<table>
+<th>Uses overlay</th>
+<th>Uses popup</th>
+<tr>
+<td>
 <EthTransact/>
+</td>
+<td>
+<EthTransact2/>
+</td>
+</tr>
+</table>
 
 ## Activate Transactions
 
