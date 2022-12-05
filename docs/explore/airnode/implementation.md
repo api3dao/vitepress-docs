@@ -66,8 +66,8 @@ associated with a given request, and, under certain conditions, they may repeat
 it. At present, this is not an issue since oracles are only used for performing
 idempotent operations. In the future, however, Airnode intends to support
 non-idempotent operations as well. We are currently researching alternative
-methods of achieving this while protecting the resiliency provided
-bystatelessness.
+methods of achieving this while protecting the resiliency provided by
+statelessness.
 
 ## Fully-serverless stack
 
