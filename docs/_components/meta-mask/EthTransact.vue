@@ -96,7 +96,7 @@ export default {
       const accounts = await ethereum.request({
         method: 'eth_accounts',
       });
-      console.log('> getAccounts', accounts);
+      console.log('> (overlay) getAccounts', accounts);
       if (accounts.length === 0) {
         this.status.hasAccount = false;
         this.accounts = undefined;
@@ -112,7 +112,7 @@ export default {
       });
       const id = parseInt(chain, 16);
       this.chain = { id: id, network: chainsRef[id] };
-      console.log('> getChain', this.chain.id);
+      console.log('> (overlay) getChain', this.chain.id);
       if (this.chain.id === 5) {
         this.status.validChain = true;
       } else {
@@ -123,25 +123,32 @@ export default {
   async mounted() {
     if (window.ethereum) {
       this.browserHasEthereum = true;
-      console.log('WARNING below is OK: wkande Dec 2nd, 2022');
+      console.log('(overlay) WARNING below is OK: wkande Dec 2nd, 2022');
       this.status.unlocked = await ethereum._metamask.isUnlocked();
-      if (this.status.unlocked) {
-        this.getAccounts();
-        this.getChain();
-      }
+      //if (this.status.unlocked) {
+
+      //}
+      //setTimeout(setup, 10);
+      //function setup() {
+      this.getAccounts();
+      this.getChain();
+      //}
     }
     // Setup MetMask events
     if (window.ethereum) {
+      console.log('(overlay) Setting up events');
       ethereum.on('accountsChanged', async (data) => {
-        console.log('-----> accountsChanged');
-        //console.log(ethereum.selectedAddress);
-
+        console.log('-----> (overlay) accountsChanged');
         this.getAccounts();
         this.getChain();
       });
       ethereum.on('chainChanged', (data) => {
-        console.log('-----> chainChanged');
+        console.log('-----> (overlay) chainChanged');
         this.getChain();
+      });
+      ethereum.on('message', (data) => {
+        console.log('-----> (overlay) message');
+        console.log(message);
       });
     }
   },

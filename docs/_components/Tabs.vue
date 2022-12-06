@@ -17,7 +17,7 @@ Otherwise they are ignored.
   </div>
 
   <!-- Tabs -->
-  <div class="tab">
+  <div class="api3-tab">
     <button
       :id="tab.id"
       v-for="(tab, index) in tabs"
@@ -28,14 +28,7 @@ Otherwise they are ignored.
     </button>
   </div>
 
-  <div
-    style="
-      padding: 7px;
-      margin-top: -2px;
-      border: solid 1px gray;
-      border-radius: 7px;
-    "
-  >
+  <div class="api3-tab-outer-panes">
     <div :id="tab.paneId" v-for="(tab, index) in tabs" :key="index">
       <div v-for="(element, index) in tab.elements" :key="index">
         <div v-if="element.toString().startsWith('<')" v-html="element"></div>
@@ -65,7 +58,6 @@ Otherwise they are ignored.
           v-else-if="element.type.name === 'ChainName'"
           :chainId="element.props['chainId']"
         />
-
         <!-- End of components listing -->
       </div>
     </div>
@@ -85,7 +77,6 @@ export default {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
-      console.log(i, '>>>>> ', element.type);
       if (element.children && element.children.indexOf('@tab:') === 0) {
         const arr = element.children.split(':'); // tabId @tab:<label>
         const tabId = Math.random().toString(36).slice(2, 9);
@@ -101,25 +92,26 @@ export default {
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
-        console.log('is know element');
-        console.log(element.type, element, element.children);
         const random = Math.random().toString(36).slice(2, 9);
         if (element.el)
           this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
         else {
+          // If the element's el is null and it has children
           element.children.forEach((child) => {
             if (child.type && child.type.name) {
-              console.log('element then is vue component');
+              // vue component, See /dev/tabs.md
               this.tabs[currentTabIndex].elements.push(child);
             } else {
+              // Some other HTML tag
               this.tabs[currentTabIndex].elements.push(child.el.outerHTML);
             }
           });
         }
       }
       // Vue components, hopefully
+      // This will be a component at the root level of th HTML
+      // See /dev/tabs.md
       else if (element.type && element.type.name) {
-        console.log('is vue component');
         this.tabs[currentTabIndex].elements.push(element);
       }
     }
@@ -148,30 +140,40 @@ export default {
 </script>
 
 <style scoped>
+/* Outer pane box */
+.api3-tab-outer-panes {
+  padding: 7px;
+  margin-top: -2px;
+  border: solid 1px gray;
+  border-radius: 0px 4px 4px 0px;
+  margin-left: 1px;
+}
 /* Style the tab */
-.tab {
+.api3-tab {
   overflow: hidden;
   border: none;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-top: 19px; /* space between text above */
 }
 
 /* Style the buttons inside the tab */
-.tab button {
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+.api3-tab button {
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
   border-left: solid 1px gray;
   border-right: solid 1px gray;
   border-top: solid 1px gray;
   outline: none;
   cursor: pointer;
-  padding: 2px 14px;
+  padding: 0px 15px 2px 14px;
   transition: 0.3s;
   font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1px;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.api3-tab button:hover {
   background-color: #f1f1f1;
   color: black;
 }

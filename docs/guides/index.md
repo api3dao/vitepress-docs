@@ -22,11 +22,11 @@ tags:
 
 <Tabs>
 
-@tab: All
+@tab: dAPP Developers
 
-The **API Providers Guides** section hosts tutorials, how to, and videos focused
-on deploying Airnode. Guides are divided into product sections. The tabs _for
-Developer_ and _API Providers_ show a list of guides that are relevant to each.
+Developer Guides
+
+@tab: API Providers
 
 **ChainAPI**
 
@@ -47,13 +47,5 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
-
-@tab: For Developers
-
-Developer Guides
-
-@tab: API Providers
-
-API Provider guides
 
 </Tabs>
