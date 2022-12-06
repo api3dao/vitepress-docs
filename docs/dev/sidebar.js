@@ -9,6 +9,7 @@ module.exports = [
       { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
+      { text: 'Tabs Component', link: '/dev/tabs' },
       { text: 'yarn docs:build', link: '/dev/yarn-docs-build' },
       { text: 'Using MetaMask', link: '/dev/using-metamask/' },
       {
