@@ -31,7 +31,7 @@ have added Metamask support to. Not all browsers support
 
 Add a new file called `RemixQrngExample.sol` to a Remix workspace. You can use
 an existing workspace or create a new one. Copy and paste the code from the
-[RemixQrngExample.sol](../reference/remix-example.md) contract into the file.
+[RemixQrngExample.sol](/reference/qrng/remix-example.md) contract into the file.
 
 ![Add Contract](../assets/images/qrng-add-contract.png)
 
@@ -51,10 +51,11 @@ RemixQrngExample.sol"/> button to compile the `RemixQrngExample.sol` contract.
 Do not deploy the `RemixQrngExample.sol` contract to a production network. It
 lacks adequate security features.
 
-You can use one of [testnets](../reference/chains.md) for deployment to get
-random number from [BYOG RNG API](../reference/providers.md#byog-random-numbers)
-which has same usage with
-[ANU Quantum Random Numbers](../reference/providers.md#anu-quantum-random-numbers).
+You can use one of [testnets](/reference/qrng/chains.md) for deployment to get
+random number from
+[BYOG RNG API](/reference/qrng/providers.md#byog-random-numbers) which has same
+usage with
+[ANU Quantum Random Numbers](/reference/qrng/providers.md#anu-quantum-random-numbers).
 
 :::
 
@@ -70,7 +71,7 @@ Be sure `RemixQrngExample - contracts/RemixQrngExample.sol` is selected in the
 <ElementSelect text="CONTRACT"/> pick list. Add the Airnode `_airnodeRrp`
 address parameter value for the constructor into the field next to the
 <ElementSelect text="Deploy"/> button. See the
-[list of addresses](../reference/chains.md) for the testnet you are using.
+[list of addresses](/reference/qrng/chains.md) for the testnet you are using.
 Select the <ElementSelect text="Deploy"/> button and approve the transaction
 with MetaMask.
 
@@ -92,17 +93,17 @@ corresponding fields for the function.
 - `_airnode`: The airnode address (copy it here →
   <CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/> ) of the desired
   RNG service provider. See its value from the
-  [BYOG Airnode](../reference/providers.md#airnode-2).
+  [BYOG Airnode](/reference/qrng/providers.md#airnode-2).
 
 - `_endpointIdUint256`: The Airnode endpoint ID (copy it here →
   <CopyIcon text="0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78"/>
   ) that will return a single random number. See its value from the
-  [BYOG Airnode](../reference/providers.md#endpointiduint256-2).
+  [BYOG Airnode](/reference/qrng/providers.md#endpointiduint256-2).
 
 - `_sponsorWallet`: A wallet derived from the requester's contract address, the
   Airnode address, and the Airnode xpub. The wallet is used to pay gas costs to
   acquire a random number. A sponsor wallet must be derived using the command
-  [derive-sponsor-wallet-address](/airnode/v0.9/reference/packages/admin-cli.html#derive-sponsor-wallet-address)
+  [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address)
   from the Admin CLI. Use the value of the _sponsor wallet address_ that the
   command outputs.
 
@@ -112,8 +113,8 @@ corresponding fields for the function.
     --airnode-address 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D \
     --sponsor-address <use-the-address-of: RemixQrngExample.sol>
 
-    # --airnode-xpub:    Pre-filled, see https://docs.api3.org/qrng/reference/providers.html.
-    # --airnode-address: Pre-filled, see https://docs.api3.org/qrng/reference/providers.html.
+    # --airnode-xpub:    Pre-filled, see https://docs.api3.org/reference/qrng/providers.html.
+    # --airnode-address: Pre-filled, see https://docs.api3.org/reference/qrng/providers.html.
     # --sponsor-address: Use the requester's contract address for
     #                    RemixQrngExample.sol as displayed in the Remix IDE.
 
