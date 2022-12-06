@@ -60,6 +60,11 @@ Otherwise they are ignored.
         <DeleteAirnodeAws
           v-else-if="element.type.name === 'DeleteAirnodeAws'"
         />
+        <!-- ChainName has 1 prop: chainId -->
+        <ChainName
+          v-else-if="element.type.name === 'ChainName'"
+          :chainId="element.props['chainId']"
+        />
 
         <!-- End of components listing -->
       </div>
@@ -80,6 +85,7 @@ export default {
     let currentTabIndex; // local only, to track the index of the tab to add its elements
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
+      console.log(i, '>>>>> ', element.type);
       if (element.children && element.children.indexOf('@tab:') === 0) {
         const arr = element.children.split(':'); // tabId @tab:<label>
         const tabId = Math.random().toString(36).slice(2, 9);
@@ -95,11 +101,25 @@ export default {
       }
       // knownElements
       else if (element.type && this.knownElements.includes(element.type)) {
+        console.log('is know element');
+        console.log(element.type, element, element.children);
         const random = Math.random().toString(36).slice(2, 9);
-        this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
+        if (element.el)
+          this.tabs[currentTabIndex].elements.push(element.el.outerHTML);
+        else {
+          element.children.forEach((child) => {
+            if (child.type && child.type.name) {
+              console.log('element then is vue component');
+              this.tabs[currentTabIndex].elements.push(child);
+            } else {
+              this.tabs[currentTabIndex].elements.push(child.el.outerHTML);
+            }
+          });
+        }
       }
       // Vue components, hopefully
       else if (element.type && element.type.name) {
+        console.log('is vue component');
         this.tabs[currentTabIndex].elements.push(element);
       }
     }

@@ -18,6 +18,13 @@ The **"Quick"** series of guides are simple introductions demonstrating the
 deployment of an Airnode. Configuration files are provided with only minor
 changes to be made.
 
+::: danger to-be-updated
+
+This page will be updates when Airnode `v1.0` is moved into VitePress from
+VuePress.
+
+:::
+
 This guide uses the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
 deploys the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an
