@@ -48,7 +48,7 @@ response to a request.
   from the sponsor wallet related to the Airnode being called by a sponsored
   requester.
 
-<airnode-SponsorWalletWarning/>
+<SponsorWalletWarning/>
 
 Learn more about [sponsor wallets](../concepts/sponsor.md) in the reference
 section.
