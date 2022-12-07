@@ -1,32 +1,15 @@
 <template>
   <div style="width: 330px">
     <!-- Box-->
-    <div class="api3-metamask-box">
+    <div class="api3-box-mm">
       <img
         src="/img/meta-mask-header2.png"
         style="border-bottom: 2px solid gray"
       />
-      <!-- Connect Wallet -->
-      <div v-if="!status.unlocked" style="text-align: center">
-        <button
-          style="
-            margin-top: 15px;
-            margin-bottom: 20px;
-            color: white;
-            font-size: large;
-            padding: 7px;
-            border-radius: 0.3em;
-            background-color: steelblue;
-            border: 2px solid steelblue;
-          "
-          @click="openMetaMask()"
-        >
-          Connect Wallet
-        </button>
-      </div>
-      <div v-if="status.popupIsOpen" style="text-align: center">
-        MetaMask is already open, look behind your browser window.
-      </div>
+
+      <!-- MetaMask.isUnLocked -->
+      <div if="status.unlocked" class="api3-lock-status-mm">Unlocked</div>
+
       <!-- No MetaMask installed -->
       <div v-if="!browserHasEthereum" style="text-align: center; padding: 15px">
         Please
@@ -39,9 +22,18 @@
       <!-- Only ethereum browser now (no Safari) -->
       <div v-else-if="browserHasEthereum">
         <!-- MetaMask.isLocked -->
-        <!--div v-if="!status.unlocked" class="api3-unlock-meta-mask">
-          Please unlock MetaMask.
-        </div-->
+        <div v-if="!status.unlocked" class="api3-open-mm">
+          Unlock MetaMask
+          <br />
+
+          <div style="font-size: small">
+            Use the MetaMask button in browser toolbar.
+          </div>
+          <img
+            src="/img/meta-mask-ext-btn.png"
+            style="border: 1px solid gray; margin: auto"
+          />
+        </div>
 
         <!-- MetaMask status issues -->
         <EthTransactStatus
@@ -54,7 +46,7 @@
         <!-- unlocked, has an account and chain is Goerli -->
         <div v-else>
           <!-- Account -->
-          <div v-if="accounts" class="api3-account-meta-mask">
+          <div v-if="accounts" class="api3-account-mm">
             {{ accounts[0].substr(0, 7) }}...<span
               style="text-decoration: underline"
               >{{ accounts[0].substr(38) }}</span
@@ -62,19 +54,19 @@
             <div
               style="font-size: x-small; font-weight: normal; margin-top: -5px"
             >
-              Use MetaMask to change the account.
+              Use MetaMask to change the account and / or network.
             </div>
           </div>
 
           <!-- Chain -->
-          <div v-if="status.unlocked && chain" class="api3-chain-meta-mask">
+          <div v-if="status.unlocked && chain" class="api3-chain-mm">
             {{ chain.network.fullname }} ({{ chain.id }})
           </div>
 
           <!-- Transactions -->
-          <div v-if="ethConfig">
+          <div v-if="config && status.unlocked">
             <div style="border-top: solid 2px gray" />
-            <EthTransactExecute :ethConfig="ethConfig" />
+            <EthTransactExecute :config="config" />
           </div>
         </div>
       </div>
@@ -87,46 +79,24 @@ import chainsRef from '../../.vitepress/chains.json';
 
 export default {
   name: 'EthTransact',
-  props: ['ethConfig'], // Configure file for transactions, undefined if transactions are no needed
+  props: ['config'], // Configure file for transactions, undefined if transactions are no needed
   data: () => ({
     browserHasEthereum: false,
     status: {
       unlocked: false, // MetaMask is unlocked
       hasAccount: false, // There is a connected account
       validChain: false, // The chain must be Goerli
-      popupIsOpen: false, // The -32002 error
     },
     accounts: undefined, // The first account from MetaMask in the account array which only ever has one row
     chain: undefined, // { id: <decimal>, network: <object> },
   }),
   methods: {
-    async openMetaMask() {
-      try {
-        // Using wallet_requestPermissions rather than eth_requestAccounts
-        // to bring the popup back after a -32003 error
-        // https://github.com/MetaMask/metamask-extension/issues/10085
-        console.log('+++++++++++++++++++++++++++++++++++');
-        this.status.popupIsOpen = false;
-        const accounts = await ethereum.request({
-          method: 'wallet_requestPermissions',
-          params: [{ eth_accounts: {} }],
-        });
-        this.getAccounts();
-      } catch (err) {
-        if (err.code === -32002) {
-          this.status.popupIsOpen = true;
-          console.log('******** TRUE **********');
-        }
-        console.log(err);
-      }
-    },
     async getAccounts() {
-      this.status.popupIsOpen = false;
       this.status.unlocked = await ethereum._metamask.isUnlocked();
       const accounts = await ethereum.request({
         method: 'eth_accounts',
       });
-      console.log('> getAccounts', accounts);
+      console.log('> (overlay) getAccounts', accounts);
       if (accounts.length === 0) {
         this.status.hasAccount = false;
         this.accounts = undefined;
@@ -142,7 +112,7 @@ export default {
       });
       const id = parseInt(chain, 16);
       this.chain = { id: id, network: chainsRef[id] };
-      console.log('> getChain', this.chain.id);
+      console.log('> (overlay) getChain', this.chain.id);
       if (this.chain.id === 5) {
         this.status.validChain = true;
       } else {
@@ -153,25 +123,32 @@ export default {
   async mounted() {
     if (window.ethereum) {
       this.browserHasEthereum = true;
-      console.log('WARNING below is OK: wkande Dec 2nd, 2022');
+      console.log('(overlay) WARNING below is OK: wkande Dec 2nd, 2022');
       this.status.unlocked = await ethereum._metamask.isUnlocked();
-      if (this.status.unlocked) {
-        this.getAccounts();
-        this.getChain();
-      }
+      //if (this.status.unlocked) {
+
+      //}
+      //setTimeout(setup, 10);
+      //function setup() {
+      this.getAccounts();
+      this.getChain();
+      //}
     }
     // Setup MetMask events
     if (window.ethereum) {
+      console.log('(overlay) Setting up events');
       ethereum.on('accountsChanged', async (data) => {
-        console.log('-----> accountsChanged');
-        //console.log(ethereum.selectedAddress);
-
+        console.log('-----> (overlay) accountsChanged');
         this.getAccounts();
         this.getChain();
       });
       ethereum.on('chainChanged', (data) => {
-        console.log('-----> chainChanged');
+        console.log('-----> (overlay) chainChanged');
         this.getChain();
+      });
+      ethereum.on('message', (data) => {
+        console.log('-----> (overlay) message');
+        console.log(message);
       });
     }
   },
@@ -179,35 +156,35 @@ export default {
 </script>
 
 <style>
-.api3-metamask-box {
+.api3-box-mm {
   border: gray solid 2px;
   padding: 0px;
   border-radius: 0.3em;
 }
-.api3-unlock-meta-mask {
+.api3-open-mm {
   text-align: center;
   font-weight: 500;
   margin-top: 10px;
-  color: red;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
-.api3-account-meta-mask {
+.api3-account-mm {
   font-size: small;
   margin-left: 21px;
   font-weight: bold;
+  margin-top: 10px;
 }
-.api3-chain-meta-mask {
+.api3-chain-mm {
   float: right;
   font-size: small;
   margin-top: -43px;
   margin-right: 18px;
   font-weight: bold;
 }
-.api3-lock-status-meta-mask {
-  margin-top: -30px;
+.api3-lock-status-mm {
+  margin-top: -32px;
   color: white;
   font-size: small;
-  position: absolute;
+  position: relative;
   margin-left: 248px;
 }
 </style>

@@ -1,15 +1,6 @@
 <template>
   <div style="padding: 5px 20px 20px 20px">
-    <div
-      style="
-        font-size: large;
-        text-align: center;
-        border-bottom: solid gray 1px;
-        padding-bottom: 5px;
-      "
-    >
-      Status
-    </div>
+    <div class="api3-mm-status-label">Status</div>
 
     <!--
       status: {
@@ -53,4 +44,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.api3-mm-status-label {
+  font-size: large;
+  text-align: center;
+  border-bottom: solid gray 1px;
+  padding-bottom: 5px;
+}
+</style>

@@ -26,8 +26,8 @@ execute transactions on the Goerli network.
 2. Once unlocked, the status of MetaMask will be display showing the account
    number and chain. The Ethereum provider becomes available as
    `window.ethereum`.
-3. If the user uses MetaMask to switch accounts or networks the component will
-   auto update.
+3. If the reader uses MetaMask to switch accounts or networks, the component
+   will auto update.
 4. The component will only execute transactions on the Goerli network if a
    configuration file is passed to it. Otherwise it acts only as a MetaMask
    status component.
@@ -35,57 +35,71 @@ execute transactions on the Goerli network.
 ## Usage
 
 Simply add the `<EthTransact/>` component to any markdown page. Without the
-optional `ethConfig` parameter the component only shows the status of MetaMask.
+optional `config` parameter the component only shows the status of MetaMask.
 Open MetaMask to lock, then unlock it. Notice that the component automatically
 updates to reflect the lock status of MetaMask.
 
-<table>
-<th>Uses overlay</th>
-<th>Uses popup</th>
-<tr>
-<td>
 <EthTransact/>
-</td>
-<td>
-<EthTransact2/>
-</td>
-</tr>
-</table>
 
 ## Activate Transactions
 
 To activate the transaction capabilities of the component a single parameter is
 required.
 
-- `ethConfig`: (optional) A configuration file that contains instructions on
-  what type of transactions the component should make.
+- `configPath`: (optional) The path to a configuration file that contains
+  instructions on what type of transaction the component should make. Use the
+  full path from the project root.
 
 ```html
-<EthereumWallet ethConfig="./ethConfig.json" />
+<EthTransact config="/dev/using-metamask/src/configDeploy.json" />
 ```
 
-Below is an example of a configuration file to activate transactional
-capabilities in JSON format.
+The configuration file must provide the `action` field to activate transactional
+capabilities. There are two types of actions.
 
-<<< @/dev/using-metamask/ethConfig.json
+- `action:deploy`: Deploys a contract and places its address into
+  `localStorage`.
+- `action:request`: Makes a request of the deployed contract using the contract
+  address from `localStorage`.
 
-- `deployments`: An array of deployments that deploys one or more contracts to
-  Goerli. The resulting contract addresses can be saved to `localStorage`.
+### `action:deploy`
 
-  - `description`: A very short description. It should be unique so the reader
-    can difereentuate between deployments.
-  - `path`: Path to the compiled contract file.
-  - `output`: The result returned from the deployment can be outputted three
-    ways.
-    - `console`: The full results are placed into the browser's console.
-    - `view`: The abridged results are display at the bottom of the component.
-    - `localStorage`: The contract address is extracted from the results and
-      placed into the browser's localStorage.
+Use `action:deploy` to deploy a contract onto the Goerli network. The returned
+address will be added to `localStorage` for use when making requests to it.
 
-- `requests`: Execute a function for a specified contract address, usually saved
-  for the guide in `localStorage` after it was deployed.
-  - More here when ready
-  - ...
+<<< @/dev/using-metamask/src/configDeploy.json
+
+- `header`: Text that is rendered in the header of the component.
+- `description`: A very short description rendered in the body of the component.
+  It should be unique so the readers can understand the purpose of the action.
+- `action`: The directive or purpose of the component. Use `deploy` to deploy a
+  contract.
+- `button`: The text used for the button in the component body.
+- `paths`: TODO: Not sure about this one yet, abi and bytecode maybe
+  - `abi`:
+  - `bytecode`:
+- `localStorageRootKey`: Serves two purposes. Two components should use the same
+  key when they work together. This key is a storage object for their combined
+  output.
+
+### `action:request`
+
+Use `action:request` to makes requests of a previously deployed contract address
+found in `localStorage` using the `localStorageRootKey` of a related component
+that deployed the contract.
+
+<<< @/dev/using-metamask/src/configRequest.json
+
+- `header`: Text that is rendered in the header of the component.
+- `description`: A very short description rendered in the body of the component.
+  It should be unique so the readers can understand the purpose of the action.
+- `action`: The directive or purpose of the component. Use `request` to make a
+  request of a previously deployed contract. The contract address is pulled from
+  `localStorage` using the `localStorageRootKey`;
+- `button`: The text used for the button in the component body.
+- `localStorageRootKey`: Serves two purposes. Two components should use the same
+  key when they work together. This key is a storage object for their combined
+  output.
 
 ## Example Markdown
 
@@ -104,33 +118,32 @@ title: Using MetaMask
 
 # {{$frontmatter.title}}
 
-<EthereumWallet ethConfig="./ethConfig.json"/>
+<EthTransact configPath="/dev/using-metamask/src/configDeploy.json"/>
 ```
 
 ## Try It
 
-Note the status of the MetaMask display below. With MetaMask unlocked (using the
-Goerli network), the component will display a form allowing the reader to
-execute transactions relative to a guide.
-
-<EthTransact ethConfig="./ethConfig.json"/>
+Note the status of the MetaMask display below in each step below. With MetaMask
+unlocked and using the Goerli network, the component will first deploy a
+contract (Step #1) and then get thee value of its `greet` variable (Step #2).
 
 This mini guide will deploy the `HelloWorld.sol` contract and then access its
 public string `greet`.
 
-<<< @/dev/using-metamask/HelloWorld.sol.js
+### Step #1: Deploy Contract
 
-<!-- styles for this page only -->
-<style>
-.app3-button-meta-mask-submit{
-    border:steelblue 1px solid;
-    padding:5px 10px 5px 10px;
-    border-radius:.3em;
-    background-color:steelblue;
-    color:white;
-    font-size:medium;
-}
-.api3-meta-mask-form-box{
-  border:solid gray 1px;padding:15px;width:200px;text-align:center;
-}
-</style>
+This step will deploy the `HelloWorld.sol` contract onto the GOERLI network.
+
+<<< @/dev/using-metamask/src/HelloWorld.sol.js
+
+Using the dialog below, select the Deploy button. The dialog will interact with
+MetaMask to deploy the contract.
+
+<EthTransact configPath="/dev/using-metamask/src/configDeploy.json"/>
+
+### Step #2: Retrieve `greet` variable
+
+This step will get the value of the `greet` variable from the previously
+deployed `HelloWorld.sol` contract.
+
+<EthTransact configPath="/dev/using-metamask/src/configRequest.json"/>
