@@ -2,13 +2,26 @@
   <!-- Box-->
   <div class="api3-mm-box">
     <!-- Banner -->
-    <div v-if="!config" class="api3-mm-banner">MetaMask</div>
-    <div v-else class="api3-mm-banner">
+    <div>
       <img
-        src="/img/metamak-fox-head.webp"
-        style="width: 12%; float: left; margin-top: -11px"
+        src="/img/metamak-fox-head.png"
+        style="width: 12%; float: left; margin-left: 5px; margin-top: -2px"
       />
-      <span style="margin-left: -30px">{{ config.header }}</span>
+      <div v-if="!status.error">
+        <!-- No MetaMask installed -->
+        <!-- prettier-ignore -->
+        <div v-if="!browserHasEthereum" style="text-align: center; padding: 15px">
+          Please <a href="https://metamask.io/download/" target="metamask"> 
+          install MetaMask</a><br/>with a compatible browser.
+        </div>
+        <div v-else-if="!config" class="api3-mm-banner">
+          <span style="margin-left: -39px">MetaMask</span>
+        </div>
+        <div v-else-if="config" class="api3-mm-banner">
+          <span style="margin-left: -30px">{{ config.header }}</span>
+        </div>
+      </div>
+      <div v-else class="api3-mm-error-msg">{{ status.errorMsg }}</div>
     </div>
 
     <!-- Connect Wallet -->
@@ -24,20 +37,13 @@
     <!-- Popup is already open -->
     <div
       v-if="status.popupIsOpen"
-      style="text-align: center; margin-bottom: 10px"
+      style="text-align: center; margin-bottom: 15px"
     >
-      MetaMask is already open, try looking behind your browser window.
+      MetaMask is already open, try<br />looking behind your browser window.
     </div>
 
-    <!-- No MetaMask installed -->
-    <!-- prettier-ignore -->
-    <div v-if="!browserHasEthereum" style="text-align: center; padding: 15px">
-        Please <a href="https://metamask.io/download/" target="metamask"> 
-        install MetaMask</a> with a compatible browser.
-      </div>
-
     <!-- Only ethereum browser now (no Safari) -->
-    <div v-else-if="browserHasEthereum">
+    <div v-else-if="browserHasEthereum && !status.error">
       <!-- MetaMask status sub-header -->
       <EthTransactStatus
         v-if="(!status.hasAccount || !status.validChain) && status.unlocked"
@@ -47,30 +53,27 @@
       />
 
       <!-- unlocked, has an account and chain is Goerli -->
-      <div v-else>
-        <!-- Account -->
-        <div v-if="accounts" class="api3-account-meta-mask">
-          {{ accounts[0].substr(0, 7) }}...<span
-            style="text-decoration: underline"
-            >{{ accounts[0].substr(38) }}</span
-          >
-          <div
-            style="font-size: x-small; font-weight: normal; margin-top: -5px"
-          >
-            Open MetaMask to change the account.
-          </div>
-        </div>
 
-        <!-- Chain -->
-        <div v-if="status.unlocked && chain" class="api3-chain-meta-mask">
-          {{ chain.network.fullname }} ({{ chain.id }})
+      <!-- Account -->
+      <div v-if="accounts" class="api3-account-meta-mask">
+        {{ accounts[0].substr(0, 7) }}...<span
+          style="text-decoration: underline"
+          >{{ accounts[0].substr(38) }}</span
+        >
+        <div style="font-size: x-small; font-weight: normal; margin-top: -5px">
+          Open MetaMask to change the account.
         </div>
+      </div>
 
-        <!-- Transactions -->
-        <div v-if="config && status.unlocked">
-          <div style="border-top: solid 2px gray" />
-          <EthTransactExecute :config="config" />
-        </div>
+      <!-- Chain -->
+      <div v-if="status.unlocked && chain" class="api3-chain-meta-mask">
+        {{ chain.network.fullname }} ({{ chain.id }})
+      </div>
+
+      <!-- Transactions -->
+      <div v-if="config && status.unlocked">
+        <div style="border-top: solid 2px gray" />
+        <EthTransactExecute :config="config" />
       </div>
     </div>
   </div>
@@ -78,6 +81,7 @@
 
 <script>
 import chainsRef from '../../.vitepress/chains.json';
+//import c from '/dev/using-metamask/src/configRequest.json';
 
 export default {
   name: 'EthTransact',
@@ -89,6 +93,8 @@ export default {
       hasAccount: false, // There is a connected account
       validChain: false, // The chain must be Goerli
       popupIsOpen: false, // The -32002 error
+      error: false, // There was an error that cannot be recovered from
+      errorMsg: undefined,
     },
     config: undefined,
     accounts: undefined, // The first account from MetaMask in the account array which only ever has one row
@@ -146,33 +152,40 @@ export default {
   async mounted() {
     // Get the config file if any
     this.$nextTick(async function () {
-      console.log('----- MOUNTED');
-      // Use on the import if needed >     /* @vite-ignore */
-      if (this.configPath) {
-        this.config = await import(this.configPath);
-        console.log('this.config.header >', this.config.header);
-      }
-
-      if (window.ethereum) {
-        this.browserHasEthereum = true;
-        console.log('WARNING below is OK: wkande Dec 2nd, 2022');
-        this.status.unlocked = await ethereum._metamask.isUnlocked();
-        if (this.status.unlocked) {
-          this.getAccounts();
-          this.getChain();
+      console.log('----- MOUNTED', this.configPath);
+      try {
+        if (this.configPath) {
+          // The ignore tells Vite to ignore its warning during builds
+          // for dynamic imports.
+          this.config = await import(/* @vite-ignore */ this.configPath);
+          console.log('this.config.header >', this.config.header);
         }
-      }
-      // Setup MetMask events
-      if (window.ethereum) {
-        ethereum.on('accountsChanged', async (data) => {
-          console.log('-----> (popup) accountsChanged');
-          this.getAccounts();
-          this.getChain();
-        });
-        ethereum.on('chainChanged', (data) => {
-          console.log('-----> (popup) chainChanged');
-          this.getChain();
-        });
+
+        if (window.ethereum) {
+          this.browserHasEthereum = true;
+          console.log('WARNING below is OK: wkande Dec 2nd, 2022');
+          this.status.unlocked = await ethereum._metamask.isUnlocked();
+          if (this.status.unlocked) {
+            this.getAccounts();
+            this.getChain();
+          }
+        }
+        // Setup MetMask events
+        if (window.ethereum) {
+          ethereum.on('accountsChanged', async (data) => {
+            console.log('-----> (popup) accountsChanged');
+            this.getAccounts();
+            this.getChain();
+          });
+          ethereum.on('chainChanged', (data) => {
+            console.log('-----> (popup) chainChanged');
+            this.getChain();
+          });
+        }
+      } catch (err) {
+        console.log(err);
+        this.status.error = true;
+        this.status.errorMsg = err.toString();
       }
     });
   },
@@ -227,5 +240,9 @@ export default {
   font-size: small;
   position: absolute;
   margin-left: 248px;
+}
+.api3-mm-error-msg {
+  color: red;
+  padding-left: 70px;
 }
 </style>
