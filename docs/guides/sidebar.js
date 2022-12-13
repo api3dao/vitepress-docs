@@ -16,7 +16,7 @@ module.exports = [
       },
       {
         text: 'Calling a dAPI',
-        link: '/guides/dapis/calling-a-dapi',
+        link: '/guides/dapis/calling-a-dapi/',
       },
       {
         text: 'Starter Project',
