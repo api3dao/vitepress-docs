@@ -3,7 +3,7 @@ title: Calling a dAPI
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
-path: /guides/dapis/calling-a-dapi.html
+path: /guides/dapis/calling-a-dapi/index.html
 outline: deep
 tags:
   - dapi
