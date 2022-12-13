@@ -3,16 +3,9 @@ title: Calling a dAPI
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
-path: /guides/dapis/calling-a-dapi.html
+path: /guides/dapis/call-dapi-dapiserver/index.html
 outline: deep
 tags:
-  - dapi
-  - dapis
-  - datafeed
-  - datafeeds
-  - data
-  - feed
-  - feeds
 ---
 
 <PageHeader/>
