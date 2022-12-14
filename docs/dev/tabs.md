@@ -18,6 +18,14 @@ the docs. It is designed mostly to display code examples. Basic HTML and text
 can also be added. Nesting other Vue components inside the Tabs component can
 become problematic.
 
+The primary use of the tabs component is to display source code. In fact use of
+the tabs component should be used sparingly. While the search engine can find
+text within a tab pane, the TOC cannot. Never place heading elements (h1-n) in a
+tab pane. In some aspects tabs go against the design nature of markdown which is
+why they are not natively supported by the markdown framework. Try and rely on
+the TOC (by using small sections) to break the page into sections rather than
+use tabs.
+
 Example:
 
 <Tabs>

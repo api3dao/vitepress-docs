@@ -15,6 +15,13 @@ head:
 
 # {{$frontmatter.title}}
 
+::: danger Deprecated
+
+Unless someone wishes to reintroduce this component and maintain it, it will be
+removed from `/_components` late first quarter 2023.
+
+:::
+
 Some of the guides use MetaMask with the Goerli testnet. The
 [EthTransact.vue](https://github.com/api3dao/vitepress-docs/blob/main/docs/_components/EthereumWallet.vue)
 component is used to guide the reader and establish a connection between
