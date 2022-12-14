@@ -15,12 +15,20 @@ module.exports = [
         link: '/guides/dapis/',
       },
       {
-        text: 'Calling a dAPI',
-        link: '/guides/dapis/calling-a-dapi',
+        text: 'Call a dAPI <span style="font-size:x-small;">(proxy)</span>',
+        link: '/guides/dapis/call-dapi-proxy/',
+      },
+      {
+        text: 'Call a dAPI <span style="font-size:x-small;">(DapServer.sol)</span>',
+        link: '/guides/dapis/call-dapi-dapiserver/',
       },
       {
         text: 'Starter Project',
         link: '/guides/dapis/starter-project',
+      },
+      {
+        text: 'Remix Reload Contract',
+        link: '/guides/dapis/remix-reload-contract',
       },
     ],
   },
