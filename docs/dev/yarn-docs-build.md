@@ -19,7 +19,7 @@ FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaS
 ```
 
 This is a know Vite issue, see the
-[GitHub issue ➚](https://github.com/vitejs/vite/issues/2433).
+[GitHub issue➚](https://github.com/vitejs/vite/issues/2433).
 
 Prior to running the `yarn docs:build` command, `NODE_OPTIONS` must be set to
 increase memory. This need to be done both for the Firebase base deployments and
