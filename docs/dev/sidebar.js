@@ -16,6 +16,10 @@ module.exports = [
         text: 'Page Styling',
         link: '/dev/page-styling',
       },
+      {
+        text: 'Formatting Guides',
+        link: '/dev/guides-format',
+      },
     ],
   },
 ];
