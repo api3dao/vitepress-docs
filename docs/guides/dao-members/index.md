@@ -25,13 +25,13 @@ interact with the DAO or modify/reuse any of its infrastructure.
 ## Preparing to use the Dashboard
 
 The guides for DAO Members to use the dashboard require a digital wallet such as
-[Meta Mask](https://metamask.io/download/)<ExternalLinkImage/> to be integrated
+[MetaMask](https://metamask.io/download/)<ExternalLinkImage/> to be integrated
 with your browser.
 
 1. Access the [DAO Dashboard](https://dao.api3.org) on **Mainnet**.
 
 2. Install a digital wallet (such as
-   [Meta Mask](https://metamask.io/download/)<ExternalLinkImage/>) for your
+   [MetaMask](https://metamask.io/download/)<ExternalLinkImage/>) for your
    preferred browser.
 
 3. Connect your wallet by clicking the **Connect Wallet** button in the upper
