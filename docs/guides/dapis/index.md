@@ -13,3 +13,7 @@ tags:
 <SearchHighlight/>
 
 # {{$frontmatter.title}}
+
+<!-- Workflow by Ben on the Market and proxy contracts.
+https://www.figma.com/file/dsK6s1dIcTkZjoXUs4D9iK/Journey-Map?node-id=0%3A1
+-->

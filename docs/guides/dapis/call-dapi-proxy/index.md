@@ -1,5 +1,5 @@
 ---
-title: Call a dAPI (proxy)
+title: Call a dAPI (proxy contract)
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
@@ -14,11 +14,32 @@ tags:
 
 # {{$frontmatter.title}}
 
-This guide will use a simple workspace in the Remix IDE created from a GitHub
-gist. You will deploy a simple smart contract onto the Goerli network that calls
-a dAPI proxy created on the [API3 Market](). This is the preferred method to
-call a dAPI.
+::: tip API3 Market
 
-<!-- Workflow by Ben on the Market and proxy contracts.
-https://www.figma.com/file/dsK6s1dIcTkZjoXUs4D9iK/Journey-Map?node-id=0%3A1
--->
+Using a proxy contract from the [API3 Market](https://market.api3.org) is the
+preferred method to call dAPIs.
+
+:::
+
+This guide will use a simple workspace in the Remix IDE created from a GitHub
+gist. You will deploy a simple smart contract onto the Polygon Mumbai testnet
+that calls a dAPI proxy contract created on the [API3 Market](). This is the
+preferred method to call a dAPI.
+
+With proxy contracts from the API3 Market you can acquire the value of a dAPI
+such as AVAX/USD. Each proxy contract is tied to a single dAPI. This allows
+dAPIs to be used like libraries.
+
+## Load the Remix workspace
+
+## Understanding the smart contract
+
+## Compile the contract
+
+## Sign up to use a proxy
+
+## MetaMask and Mumbai
+
+## Call `mySmartContract` function `getDapi()`
+
+## View timestamp and value

@@ -14,13 +14,25 @@ module.exports = [
         text: '★ Getting Started',
         link: '/guides/dapis/',
       },
+
       {
-        text: 'Call a dAPI <span style="font-size:x-small;">(proxy)</span>',
-        link: '/guides/dapis/call-dapi-proxy/',
-      },
-      {
-        text: 'Call a dAPI <span style="font-size:x-small;">(DapServer.sol)</span>',
-        link: '/guides/dapis/call-dapi-dapiserver/',
+        text: 'Calling a dAPI',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: 'Just the Code',
+            link: '/guides/dapis/just-the-code.md',
+          },
+          {
+            text: 'Using an API3 Market proxy contract and Remix',
+            link: '/guides/dapis/call-dapi-proxy/',
+          },
+          {
+            text: 'Using the DapiServer contract and Remix',
+            link: '/guides/dapis/call-dapi-dapiserver/',
+          },
+        ],
       },
       {
         text: 'Starter Project',
