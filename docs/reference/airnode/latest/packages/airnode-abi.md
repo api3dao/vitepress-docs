@@ -3,7 +3,7 @@ title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0 → Packages
-path: /reference/airnode/latest/packages/abi.html
+path: /reference/airnode/latest/packages/airnode-abi.html
 version: v1.0
 outline: deep
 tags:
