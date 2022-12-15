@@ -92,19 +92,24 @@ through with the MetaMask integration to deploy the smart contract onto Mumbai.
 
 <div class="api3-outer-flex-box">
      <div class="api3-outer-flex-box-cell">Use the Deploy button and deploy the contract onto Polygon Mumbai.
-      <img src="./assets/deploy-run.png" style="border:1px solid gray;">
+      <img src="./assets/deploy-run.png" style="width90%;border:1px solid gray;">
       </div>
      <div class="api3-outer-flex-box-cell">After deployment the contract will appear under      <b>Deployed Contracts</b>.
       <img src="./assets/deploy-run-2.png" style="border:1px solid gray;">
     </div>
 </div>
 
+If you close the Remix IDE or change workspaces, Remix will lose track of any
+deployed contracts. Add the contract's address to the `addresses.txt` file under
+the **FILE EXPLORER**. Under **Deployed Contracts** select the copy icon to the
+right of the contract name. This will be useful to reload the contract should
+the need arise.
+
 ::: warning Remix Reload Contract
 
-If you close the Remix IDE or change workspaces, Remix will lose track of any
-deployed contracts. The [Remix Reload Contract](./../remix-reload-contract.md)
-guide will step you through the process to reload a deployed contract in order
-to interact with it again.
+The [Remix Reload Contract](./../remix-reload-contract.md) guide will step you
+through the process to reload a deployed contract in order to interact with it
+again.
 
 :::
 
