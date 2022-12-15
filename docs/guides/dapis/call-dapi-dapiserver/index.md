@@ -1,5 +1,5 @@
 ---
-title: Call a dAPI (DapServer.sol)
+title: Call a dAPI (DapServer contract)
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
@@ -22,8 +22,8 @@ functions to call a dAPI.
 
 ::: tip
 
-The preferred method of calling a dAPI is to use a proxy acquired from the
-[API3 Market](https://market.api3.org/dapis). Please take a look at the
+The preferred method of calling a dAPI is to use a proxy contract acquired from
+the [API3 Market](https://market.api3.org/dapis). Please take a look at the
 [Call dAPI (proxy)](./../call-dapi-proxy/index.md) guide.
 
 :::
@@ -32,18 +32,18 @@ The preferred method of calling a dAPI is to use a proxy acquired from the
 
 [Click here](https://remix.ethereum.org/#version=soljson-v0.8.9+commit.e5eed63a.js&optimize=false&runs=200&gist=b7ea11d6ec335a5c07b4e53e18f64703)
 to open Remix pre-loaded with a workspace and a single smart contract called
-`mySmartContract.sol` pulled from a gist on GitHub.
+`MyContract.sol` pulled from a gist on GitHub.
 
 Optionally consider renaming the Remix workspace (now called gist-sample) to
-**Call a dAPI (DapiServer)** using the hamburger menu. This will separate this
+"Call a dAPI (DapiServer)" using the hamburger menu. This will separate this
 guide from other guides provided in these docs.
 
 <img src="./assets/workspace-setup.png" style="width:50%;border:1px solid gray;">
 
 ## 2. Understanding the smart contract
 
-In Remix click on the contract named `mySmartContract.sol` to view its source
-code. This smart contract imports `DapiServer.sol` and uses the function
+In Remix click on the contract named `MyContract.sol` to view its source code.
+This smart contract imports `DapiServer.sol` and uses the function
 `readDataFeedWithDapiName(_dapi)` which populates the contract variables `value`
 and `timestamp`. This function is one of
 [four functions](/reference/dapis/functions/read-data-feed-with-dapi-name.html)
@@ -51,8 +51,8 @@ available to call a dAPI.
 
 ## 3. Compile the contract
 
-Select the **SOLIDITY COMPILER** pane and compile `mySmartContract.sol`. Note
-the version of the compiler matches the contract's declaration.
+Select the **SOLIDITY COMPILER** pane and compile `MyContract.sol`. Note the
+version of the compiler matches the contract's declaration.
 
 ::: tip
 
@@ -67,9 +67,9 @@ workspace.
 ## 4. MetaMask and Mumbai
 
 The dAPI used for this guide is **AVAX/USD** on the Polygon Mumbai testnet. You
-will be deploying the smart contract `mySmartContract.sol` onto Mumbai. If you
-do not have Mumbai setup in MetaMask use the MetaMask criteria below to add
-Mumbai to MetaMask.
+will be deploying the smart contract `MyContract.sol` onto Mumbai. If you do not
+have Mumbai setup in MetaMask use the MetaMask criteria below to add Mumbai to
+MetaMask.
 
 ::: details Expand to view: MetaMask criteria for Mumbai.
 
@@ -83,7 +83,7 @@ If you need additional help connecting MetaMask to the Mumbai testnet
 Be sure MetaMask is set to an account you wish to use. Use this
 [faucet](https://faucet.polygon.technology/) to acquire test MATIC for Mumbai.
 
-## 5. Deploy `mySmartContract.sol`
+## 5. Deploy `MyContract.sol`
 
 Select the **DEPLOY & RUN TRANSACTIONS** pane. Set **ENVIRONMENT** to "Injected
 Provider - MetaMask" which should show "Custom (80001) network" below if you
@@ -120,7 +120,7 @@ Because you are calling a dAPI on a testnet, a subscription for the dAPI
 for your smart contract to call the dAPI.
 
 Copy the address of the smart contract. Select copy icon to the right of the
-contract name, `mySmartContract.sol`.
+contract name, `MyContract.sol`.
 
 <img src="./assets/copy-address.png" style="width:50%;border:1px solid gray;">
 
@@ -133,10 +133,10 @@ page.
 
 Select the **Connect Wallet** button to activate MetaMask. Once activated select
 the **Get Access** button to interact with MetaMask and facilitate the
-transaction. Your contract `mySmartContract.sol` now has permission to call the
+transaction. Your contract `MyContract.sol` now has permission to call the
 AVAX/USD dAPI.
 
-## 7. Call `mySmartContract` function `callDapi()`
+## 7. Call `MyContract` function `callDapi()`
 
 Next call the function `callDapi()` on your newly deployed smart contract. It
 will require two parameters.
@@ -155,9 +155,10 @@ will require two parameters.
 
 <img src="./assets/call-function.png" style="width:50%;border:1px solid gray;">
 
-Add the two parameters and select the **transact** button to interact with
-MetaMask and complete the transaction. Once the transaction is completed the
-smart contract's variables `timestamp` and `value` have been populated.
+Add the two parameters (no spaces) and select the **transact** button to
+interact with MetaMask and complete the transaction. Once the transaction is
+completed the smart contract's variables `timestamp` and `value` have been
+populated.
 
 ## 8. View `timestamp` and `value`
 
