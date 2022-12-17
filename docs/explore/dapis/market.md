@@ -4,12 +4,9 @@ sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
 path: /explore/dapis/market.html
-version:
 outline: deep
 tags:
 ---
-
-<VersionWarning/>
 
 <PageHeader/>
 
