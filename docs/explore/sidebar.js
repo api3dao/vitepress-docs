@@ -31,6 +31,10 @@ module.exports = [
         link: '/explore/dapis/why-power',
       },
       {
+        text: 'Subscriptions',
+        link: '/explore/dapis/subscriptions',
+      },
+      {
         text: 'Coverage Policies',
         link: '/explore/dapis/coverage-policies',
       },
