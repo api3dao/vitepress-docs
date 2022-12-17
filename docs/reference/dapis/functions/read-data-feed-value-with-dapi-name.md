@@ -21,13 +21,12 @@ This function reads a value from a dAPI using its name. In the code example
 below, `\_dapiName`is a dAPI name. For on-chain smart contracts the `msg.sender`
 argument received by the function
 [readDataFeedValueWithDapiName()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L749-L765)
-must have [read access](/explore/dapis/coverage-policies.md) for the dAPI
-requested.
+must have [read access](/explore/dapis/subscriptions.md) for the dAPI requested.
 
 Calling from off-chain code (_using a library such as `ether.js`_) is not
 subject to coverage policies. Off-chain code is beyond the scope of this doc.
 
-## Example Code
+## Example Usage
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -56,7 +55,17 @@ See another code example of `readDataFeedValueWithDapiName()` in the
 
 `readDataFeedValueWithDapiName(bytes32 _dapiName)`
 
-- `bytes32 dapiName` - The name of the dAPI to retrieve a value for.
+- `bytes32 dapiName` - The encoded bytes32 value of a dAPI name to retrieve a
+  value for (no timestamp). The example below generates the encoded bytes32
+  value of AVAX/USD. Try it in the
+  [ethers playground](https://playground.ethers.org/).
+
+  ```solidity
+  // Encode the dapiName (such as AVAX/USD) to bytes32
+  ethers.utils.formatBytes32String("AVAX/USD");
+  // 0x415641582f555344000000000000000000000000000000000000000000000000
+  // Pass the above value to readDataFeedWithDapiName()
+  ```
 
 ## Returns
 

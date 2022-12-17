@@ -37,8 +37,12 @@ are fixed.
 
 A dAPI's name is identical across all chains. When accessing a dAPI value with a
 function such as
-[readDataFeedWithName()](./functions/read-data-feed-with-dapi-name.md), only the
-dAPI `name` is needed.
+[readDataFeedWithName()](./functions/read-data-feed-with-dapi-name.md), the
+`dapiName` is passed as an encoded bytes32 value.
+
+```solidity
+ethers.utils.formatBytes32String("AVAX/USD");
+```
 
 A Beacon's ID and its template are identical across chains. When accessing a
 Beacon's value with a function such as
