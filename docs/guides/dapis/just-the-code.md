@@ -59,10 +59,12 @@ the API3 Market. Please take a look at the Call dAPI (proxy) guide.
 
 The `DapiServer.sol` contract is the original method to call a dAPI such as
 AVAX/USD. It use requires your smart contract to import the `IDapiServer` and
-call one of four functions than can read a dAPI. Doing so requires the necessary
+call one its functions than can read a dAPI. Doing so requires the necessary
 parameters that identifies the `DapiServer` contract address and the name of the
-dAPI. This is different from the API3 Market proxy contracts where you only need
-the proxy's contract address.
+dAPI
+[encoded as a bytes32 value](/reference/dapis/functions/read-data-feed-with-dapi-name.md#parameters).
+This is different from the API3 Market proxy contracts where you only need the
+proxy's contract address.
 
 ```solidity
 // SPDX-License-Identifier: MIT

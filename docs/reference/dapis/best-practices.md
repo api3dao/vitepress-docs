@@ -60,7 +60,11 @@ as the best way to access dAPI values as aggregated beacon values.
 
 ## Monitoring
 
+::: danger TODO:
+
 Code sample here written in nodejs.
+
+:::
 
 ::: tip Consideration for "Monitoring"
 

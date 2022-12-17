@@ -17,23 +17,34 @@ tags:
 
 # {{$frontmatter.title}}
 
-A dAPI is a live data point associated with human readable `name`. dAPI
+A dAPI is a live data point associated with human readable `dapiName`. dAPI
 definitions simplify access and can return aggregated Beacon values or a single
 Beacon value. This is suitable where the more recent data point (meaning its set
 of Beacons could change as needed) is always more favorable, e.g., in the
 context of an asset price data feed.
 
-Pass a dAPI `name` to the appropriate `DapiServer.sol` reader function.
+## Example Usage
+
+Pass a `dapiName`, as an encoded bytes32 value, to the desired `DapiServer.sol`
+reader function the uses `dapiName` as its parameter.
 
 - [readDataFeedWithDapiName(\_dapiName)](./functions/read-data-feed-with-dapi-name.md) -
   returns a value and timestamp
 - [readDataFeedValueWithDapiName(\_dapiName)](./functions/read-data-feed-value-with-dapi-name.md) -
   returns a value
 
+The example below generates the encoded bytes32 value of AVAX/USD. Try encoding
+AVAX/USD in the [ethers playground](https://playground.ethers.org/).
+
 ```solidity
-// Calling the ETH/USD dAPI using the DapiServer contract
+// Encode the dapiName (such as AVAX/USD) to bytes32
+ethers.utils.formatBytes32String("AVAX/USD");
+// 0x415641582f555344000000000000000000000000000000000000000000000000
+// Pass the above value to readDataFeedWithDapiName()
+
+// Calling readDataFeedWithDapiName() using the DapiServer contract
 (value, timestamp) =
-  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
+  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415641582f555344000000000000000000000000000000000000000000000000");
 ```
 
 ## Optionally, use Beacon and Beacon set IDs

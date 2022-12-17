@@ -41,27 +41,27 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '→ Read Datafeed With Dapi Name',
+        text: '• Read Datafeed with Dapi<br/><span style="margin-left:11px;">Name</span>',
         link: '/reference/dapis/functions/read-data-feed-with-dapi-name',
       },
       {
-        text: '→ Read Datafeed Value With dAPI Name',
+        text: '• Read Datafeed Value with<br/><span style="margin-left:11px;">dAPI Name</span>',
         link: '/reference/dapis/functions/read-data-feed-value-with-dapi-name',
       },
       {
-        text: '→ Read Datafeed With Id',
+        text: '• Read Datafeed with Id',
         link: '/reference/dapis/functions/read-data-feed-with-id',
       },
       {
-        text: '→ Read Datafeed Value With Id',
+        text: '• Read Datafeed Value with Id',
         link: '/reference/dapis/functions/read-data-feed-value-with-id',
       },
       {
-        text: '→ Reader Can Read Datafeed',
+        text: '• Reader Can Read Datafeed',
         link: '/reference/dapis/functions/reader-can-read-datafeed',
       },
       {
-        text: '→ Datafeed Id To Reader To Whitelist Status',
+        text: '• Datafeed Id to Reader to<br/><span style="margin-left:11px;">Whitelist Status</span>',
         link: '/reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status',
       },
 
