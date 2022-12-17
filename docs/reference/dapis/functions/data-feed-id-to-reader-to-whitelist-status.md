@@ -60,7 +60,7 @@ contract mySmartContract {
 - `address reader` - The address to verify such as the reader's smart contract
   address or another address.
 
-### Using a dapiName for the datafeedId parameter
+### Using a `dapiName` for the `datafeedId` parameter
 
 If you want to check the status using a `dapiName`, first encode the `dapiName`
 to bytes32 and calculate the off-chain hash of the `encodedDapiName` as shown
