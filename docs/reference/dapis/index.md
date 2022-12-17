@@ -41,10 +41,8 @@ AVAX/USD in the [ethers playground](https://playground.ethers.org/).
 ethers.utils.formatBytes32String("AVAX/USD");
 // 0x415641582f555344000000000000000000000000000000000000000000000000
 // Pass the above value to readDataFeedWithDapiName()
-```
 
-```solidity
-// Calling the ETH/USD dAPI using the DapiServer contract
+// Calling readDataFeedWithDapiName() using the DapiServer contract
 (value, timestamp) =
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415641582f555344000000000000000000000000000000000000000000000000");
 ```
