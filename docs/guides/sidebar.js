@@ -21,15 +21,15 @@ module.exports = [
         collapsed: false,
         items: [
           {
-            text: 'Just the Code',
+            text: '• Just the Code',
             link: '/guides/dapis/just-the-code.md',
           },
           {
-            text: 'Using an API3 Market proxy contract and Remix',
+            text: '• Using an API3 Market proxy<br/><span style="margin-left:10px;">contract and Remix</span>',
             link: '/guides/dapis/call-dapi-proxy/',
           },
           {
-            text: 'Using the DapiServer contract and Remix',
+            text: '• Using the DapiServer<br/><span style="margin-left:10px;">contract and Remix</span>',
             link: '/guides/dapis/call-dapi-dapiserver/',
           },
         ],
