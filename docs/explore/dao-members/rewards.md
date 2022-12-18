@@ -42,14 +42,14 @@ share will not always be one token.
 
 In essence, inflationary rewards force token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as
-collateral for [Service Coverage](./dao-pool.md#service-coverage), and forces
-the staker to participate in governance to ensure that the risk is minimized. As
-a combination of the two, an inflationary governance token used as collateral
-forces all token holders to participate in governance, which is ideal because it
-maximizes the decentralization of governance. Inflationary rewards are paid
-weekly by an implicit and automatic process through an on-chain contract.
-Furthermore, inflationary rewards are vested for a year, which results in
-governing parties sharing the project’s long term interests.
+collateral for service [coverage policies](../dapis/coverage-policies), and
+forces the staker to participate in governance to ensure that the risk is
+minimized. As a combination of the two, an inflationary governance token used as
+collateral forces all token holders to participate in governance, which is ideal
+because it maximizes the decentralization of governance. Inflationary rewards
+are paid weekly by an implicit and automatic process through an on-chain
+contract. Furthermore, inflationary rewards are vested for a year, which results
+in governing parties sharing the project’s long term interests.
 
 <!--
 > ![dao-pool-staking-2](../assets/images/token-weekly-emission.png)
