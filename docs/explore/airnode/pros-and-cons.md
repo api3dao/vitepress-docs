@@ -1,9 +1,9 @@
 ---
-title: Why use Airnode?
+title: Pros and cons of using Airnode
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/why-use-airnode.html
+path: /explore/airnode/pros-and-cons.html
 outline: deep
 tags:
 ---
