@@ -46,17 +46,22 @@ multiple Beacons.
 
 > <img src="../assets/images/dapi-beacons.png" width="550px"/>
 
-Each dAPI has a human-readable name (e.g., `ETH/USD`) that makes them easily
-accessible using `DapiServer.sol`.
+Each dAPI has a human-readable name (e.g., `AVAX/USD`) that makes them easily
+accessible using `DapiServer.sol`. Simple pass the encoded bytes32 value of the
+`dapiName` to a reader function.
 
 ```solidity
-// Reading the ETH/USD dAPI using the DapiServer contract
+// Reading the AVAX/USD dAPI using the DapiServer contract
 (value, timestamp) =
-  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
+  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415...0000");
 ```
 
-See the guide [Calling a dAPI](/guides/dapis/call-dapi-dapiserver/) to learn
-more about accessing dAPIs.
+See
+["Using an API3 Market proxy contract and Remix"](/guides/dapis/call-dapi-proxy/)
+and
+["Using the DapiServer contract and Remix"](/guides/dapis/call-dapi-dapiserver/)
+for a step-by-step guides on how to call a dAPI. Also visit the
+[reference section for dAPIs](/reference/dapis/).
 
 ## dAPI Composition
 
