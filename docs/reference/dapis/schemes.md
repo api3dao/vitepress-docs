@@ -9,8 +9,6 @@ outline: deep
 tags:
 ---
 
-<VersionWarning/>
-
 <PageHeader/>
 
 <SearchHighlight/>
@@ -35,10 +33,19 @@ are fixed.
 - Beacon ID: The hash of a Beacon's parameters.
 - Beacon set ID: The hash of the Beacon IDs in the Beacon set.
 
+## dAPI Names
+
 A dAPI's name is identical across all chains. When accessing a dAPI value with a
 function such as
-[readDataFeedWithName()](./functions/read-data-feed-with-dapi-name.md), only the
-dAPI `name` is needed.
+[readDataFeedWithName()](./functions/read-data-feed-with-dapi-name.md), the
+`dapiName` is passed as an encoded bytes32 value. Try it in the
+[ethers playground](https://playground.ethers.org/).
+
+```solidity
+ethers.utils.formatBytes32String("AVAX/USD");
+```
+
+## Beacon IDs
 
 A Beacon's ID and its template are identical across chains. When accessing a
 Beacon's value with a function such as
