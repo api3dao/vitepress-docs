@@ -1,5 +1,5 @@
 ---
-title: Call a dAPI (DapServer contract)
+title: Using the DapiServer contract and Remix
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
