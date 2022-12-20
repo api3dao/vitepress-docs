@@ -6,7 +6,7 @@ module.exports = [
     items: [{ text: 'About the Guides', link: '/guides/' }],
   },
   {
-    text: 'dAPIS',
+    text: 'dAPIs',
     collapsible: true,
     collapsed: false,
     items: [

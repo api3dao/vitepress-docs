@@ -1,5 +1,5 @@
 ---
-title: Call a dAPI (proxy contract)
+title: Using an API3 Market proxy contract and Remix
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
