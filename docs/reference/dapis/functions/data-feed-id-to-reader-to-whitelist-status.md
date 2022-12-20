@@ -9,8 +9,6 @@ outline: deep
 tags:
 ---
 
-<VersionWarning/>
-
 <PageHeader/>
 
 <SearchHighlight/>

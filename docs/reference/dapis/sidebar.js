@@ -4,8 +4,12 @@ module.exports = [
     collapsable: false,
     items: [
       {
-        text: 'dAPI Names',
+        text: 'Overview',
         link: '/reference/dapis/',
+      },
+      {
+        text: 'dAPI Names',
+        link: '/reference/dapis/dapi-names',
       },
       {
         text: 'ID and Name Schemes',
@@ -18,6 +22,10 @@ module.exports = [
       {
         text: 'DapiServer.sol',
         link: '/reference/dapis/dapi-server-sol',
+      },
+      {
+        text: 'Subscriptions',
+        link: '/reference/dapis/subscriptions',
       },
       {
         text: 'Chains and Contracts',
