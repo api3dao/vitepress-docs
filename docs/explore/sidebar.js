@@ -51,27 +51,40 @@ module.exports = [
     items: [
       {
         text: 'What is Airnode?',
-        link: '/explore/airnode/what-is-airnode.html',
+        link: '/explore/airnode/what-is-airnode',
+      },
+      {
+        text: 'Why first-party oracles?',
+        link: '/explore/airnode/why-first-party-oracles',
+      },
+      {
+        text: 'The Airnode Protocol',
+        link: '/explore/airnode/the-airnode-protocol',
+      },
+      {
+        text: 'Pros and Cons',
+        link: '/explore/airnode/pros-and-cons',
       },
       {
         text: 'Design Philosophy',
-        link: '/explore/airnode/design-philosophy.html',
+        link: '/explore/airnode/design-philosophy',
       },
       {
         text: 'Implementation',
-        link: '/explore/airnode/implementation.html',
+        link: '/explore/airnode/implementation',
       },
       {
         text: 'Ethereum Providers',
-        link: '/explore/airnode/ethereum-providers.html',
+        link: '/explore/airnode/ethereum-providers',
       },
+      {
+        text: 'Potential Obstacles',
+        link: '/explore/airnode/potential-obstacles',
+      },
+
       {
         text: 'Configuration Files',
-        link: '/explore/airnode/config-files.html',
-      },
-      {
-        text: 'Why use Airnode?',
-        link: '/explore/airnode/why-use-airnode.html',
+        link: '/explore/airnode/config-files',
       },
     ],
   },
@@ -107,8 +120,12 @@ module.exports = [
         link: '/explore/dao-members/',
       },
       {
-        text: 'The DAP Pool',
+        text: 'The DAO Pool',
         link: '/explore/dao-members/dao-pool',
+      },
+      {
+        text: 'Inflationary Rewards',
+        link: '/explore/dao-members/rewards',
       },
       {
         text: 'DAO Tracker',

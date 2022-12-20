@@ -7,10 +7,7 @@ path: /reference/dapis/dapi-server-sol.html
 version:
 outline: deep
 tags:
-  - dapiserver
 ---
-
-<VersionWarning/>
 
 <PageHeader/>
 
@@ -18,11 +15,25 @@ tags:
 
 # {{$frontmatter.title}}
 
-The
+The primary purpose of
 [DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.1/contracts/dapis/DapiServer.sol)<ExternalLinkImage/>
-contract serves data feeds to contracts with read access. All the related
-contracts can be imported from the
-[@api3/airnode-protocol-v1](https://www.npmjs.com/package/@api3/airnode-protocol-v1)<ExternalLinkImage/>
+is to return dAPI values to requesters (smart contracts) with a subscription to
+a particular dAPI. dAPIs are an abstraction layer over Beacons and Beacon sets.
+A Beacon is a live data feed addressed by an ID, which is derived from an
+Airnode address and a template ID. This is suitable where the more recent data
+point is always more favorable, e.g., in the context of an asset price data
+feed. Beacons can also be seen as one-Airnode data feeds that can be used
+individually or combined to build Beacon sets.
+
+## Implementation
+
+`DapiServer.sol` is a PSP requester contract. Unlike RRP, which is implemented
+as a central contract, PSP implementation is built into the requester for
+optimization.
+
+All the related contracts (including `@api3/airnode-protocol-v1`) can be
+imported from the
+[@api3/airnode-protocol-v1<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol-v1)
 npm package.
 
 ```
@@ -35,18 +46,6 @@ contract mySmartContract {
   ...
 }
 ```
-
-`DapiServer.sol` is a PSP requester contract. Unlike RRP, which is implemented
-as a central contract, PSP implementation is built into the requester for
-optimization.
-
-The primary purpose of `DapiServer.sol` is to return dAPI values to requesters.
-dAPIs are an abstraction layer over Beacons and Beacon sets. A Beacon is a live
-data feed addressed by an ID, which is derived from an Airnode address and a
-template ID. This is suitable where the more recent data point is always more
-favorable, e.g., in the context of an asset price data feed. Beacons can also be
-seen as one-Airnode data feeds that can be used individually or combined to
-build Beacon sets.
 
 Visit the [Guides](/guides/dapis/) section to learn how to use `DapiServer.sol`.
 Also visit the function calls of `DapiServer.sol` shown below.

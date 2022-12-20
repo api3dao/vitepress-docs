@@ -16,14 +16,14 @@ tags:
 
 Airnode is a serverless oracle node implemented with a “set and forget”
 philosophy. It consists of two parts: the off-chain **Airnode** (“the node”)
-that is self-hosted or deployed as cloud provider functions 
-(AWS or GCP) and the on-chain **protocol contract** AirnodeRrpV0.sol.
+that is self-hosted or deployed as cloud provider functions (AWS or GCP) and the
+on-chain **protocol contract** AirnodeRrpV0.sol.
 
 > <img src="../assets/images/summary-airnode-2-parts.png" width="350px">
 >
-> Airnode consists of two parts: the off-chain Airnode (“the node”),
-> usually deployed as a set of cloud provider functions (AWS or GCP), and
-> the on-chain protocol contract AirnodeRrpV0.sol.
+> Airnode consists of two parts: the off-chain Airnode (“the node”), usually
+> deployed as a set of cloud provider functions (AWS or GCP), and the on-chain
+> protocol contract AirnodeRrpV0.sol.
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
 That way, they can provide data to any on-chain _decentralized app_ \(dApp\)
@@ -49,18 +49,18 @@ Oracles_.
 
 ## Designed for first-party oracles
 
-First-party oracles are integral to the API3 solution: each API
-is served by an oracle that is operated by the owner of an API, and not by a
-third party.
+First-party oracles are integral to the API3 solution: each API is served by an
+oracle that is operated by the owner of an API, and not by a third party.
 
 This document discusses the benefits of using first-party oracles, the reasons
-why it is not feasible for API providers to operate their own oracles with currently available
-solutions, and the solution to this problem posed by Airnode.
+why it is not feasible for API providers to operate their own oracles with
+currently available solutions, and the solution to this problem posed by
+Airnode.
 
 ## Off-Chain Data Signing
 
 There is a hybrid solution that still depends on third-party oracles, yet does
-not let them tamper with the data. Here, the API providers sign their data with 
+not let them tamper with the data. Here, the API providers sign their data with
 their private key off-chain and serve it over a regular API endpoint.
 Third-party oracles call this endpoint to get the signed data and post it to the
 chain. The authenticity of the data — i.e. no tampering by third-party oracles —
@@ -153,8 +153,3 @@ including a node dashboard and a marketplace to list their endpoints. As a
 result, API3 will have a wide selection of first-party oracles to compose dAPIs
 from and ecosystem growth will no longer be bottlenecked by integration
 capacity.
-
-## More...
-
-- See [Understanding Airnode](/reference/airnode/latest/understand/) to learn
-  how Airnode is defined by `config.json`.

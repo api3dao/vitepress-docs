@@ -1,5 +1,5 @@
 ---
-title: Pros and cons of using Airnode
+title: Pros and Cons (of using Airnode)
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
@@ -70,7 +70,3 @@ The advantages that Airnode provides will greatly outweigh the tradeoffs for the
 large majority of use cases.
 
 <!-- TODO: provide benchmarks -->
-
-## More...
-
-- TODO: (Add important) links
