@@ -25,16 +25,12 @@ export default {
 
       // First call the function textNodesUnder() to find textNodes
       let nodeList = document.querySelectorAll('main *');
-      console.log(nodeList);
-      console.log('words', this.words);
-      console.log('-------------------------------------------------');
       for (let i = 0; i < nodeList.length; i++) {
         if (i < 6) continue; // Skip the first 7 nodes
         textNodesUnder(nodeList[i], nodeList[i], this.rn, this.words);
       }
 
       // Next set highlighted nodes
-      console.log('swap nodes', this.rn);
       try {
         this.rn.forEach((row) => {
           //console.log(row.spanNode);
@@ -116,6 +112,7 @@ export default {
     revertDOM() {
       // Revert nodes
       try {
+        console.log('search > revertDOM()');
         this.rn.forEach((row) => {
           row.parentNode.replaceChild(row.textNode, row.spanNode);
         });
@@ -132,6 +129,8 @@ export default {
   },
   mounted() {
     this.$nextTick(function () {
+      console.log('search highlighted rows', this.rn.length);
+      this.revertDOM();
       this.updateDOM();
 
       // Event fired by SearchBtn.vue

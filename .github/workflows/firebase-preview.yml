@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Docs
         env:
-          NODE_OPTIONS: "--max_old_space_size=8192"
+          NODE_OPTIONS: "--max_old_space_size=7168"
         run: npm run docs:build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0

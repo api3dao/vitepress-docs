@@ -32,6 +32,13 @@ data such as asset prices. One use for dAPIs is to retrieve the latest pricing
 data of an asset in a single call and use that data either on-chain in a smart
 contract or off-chain in another application of choosing.
 
+::: danger TODO:
+
+The heading2 here might be better as **Use API3 Market proxy contracts**. Change
+this to use Market proxy contracts first then DapiServer.sol (if at all).
+
+:::
+
 If you already have a project started and would like to integrate dAPIs, add the
 `DapiServer` contract to your existing smart contract. It is straight forward to
 call a dAPI using the `DapiServer` contract.
@@ -79,12 +86,8 @@ by an API provider. Each API provider has deployed their Airnode using a
 under the complete autonomy of the API provider who's signed data is used to
 update
 [DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)
-contract. API3 cannot alter values from API providers.
+contract. API3 cannot alter values from API providers.s
 
-::: tip Consideration for "Security"
-
-All [API3 source code](https://github.com/orgs/api3dao/repositories?type=all) is
-open sourced and can be verified by anyone. Consider reading through API3 source
-code to verify claims of security.
-
-:::
+All [API3 sources code](https://github.com/orgs/api3dao/repositories?type=all)
+is open sourced and can be verified by anyone. Consider reading through API3
+source code to verify claims of security. s
