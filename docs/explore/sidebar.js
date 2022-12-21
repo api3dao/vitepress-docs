@@ -31,12 +31,12 @@ module.exports = [
         link: '/explore/dapis/why-power',
       },
       {
-        text: 'Subscriptions',
-        link: '/explore/dapis/subscriptions',
+        text: 'Sponsoring a dAPI',
+        link: '/explore/dapis/sponsor-dapis',
       },
       {
-        text: 'Coverage Policies',
-        link: '/explore/dapis/coverage-policies',
+        text: 'Service Coverage',
+        link: '/explore/dapis/service-coverage',
       },
       {
         text: 'API3 Market',
