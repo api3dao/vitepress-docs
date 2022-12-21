@@ -21,7 +21,8 @@ the central element feeding data to beacons, the components that supply on-chain
 dAPIs with data behind the scenes.
 
 The diagrams below depict the configuration files needed for a successful
-deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
+deployment of an Airnode to AWS or GCP. Alternatively, they are used for running
+it in a Docker Container.
 
 <Tabs>
 

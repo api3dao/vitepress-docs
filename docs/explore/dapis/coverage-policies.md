@@ -16,8 +16,8 @@ tags:
 # {{$frontmatter.title}}
 
 ::: warning Please note the coverage policies are not fully implemented yet.
-They will be implemented when a proposal with a quorum requirement of 50% has
-been passed.
+Before that, a proposal with a quorum requirement of 50% has to be passed for
+them to go active.
 
 :::
 
@@ -31,8 +31,6 @@ Thanks to that, two things become possible:
 - The coverage holds the governing parties responsible for dAPI malfunctions,
   thus incentivizing them to govern towards more secure dAPIs.
 
-## Quantifiable and trustless security
-
 API3 co-developed on-chain service coverage with Kleros that provides
 quantifiable and trustless _security_ to dAPI users. This service coverage will
 protect the dAPI user against damages caused by certain dAPI malfunctions up to
@@ -42,13 +40,13 @@ Such a solution would tend toward charging very high service coverage premiums
 as they would not have access to the information and expertise to accurately
 assess dAPI risks.
 
-What the proposed service coverage is special because it is collateralized by
+What the proposed service coverage is special in is that it is collateralized by
 the funds staked by the governing parties of the API3 DAO into the DAO pool.
 Therefore, it not only provides _security_ to the dAPI user, but also creates a
 very strong incentive for dAPIs to be governed in a way that maximizes dAPI
 _security_, which will further decrease service coverage costs.
 
-## Claim Risks
+### Claim Risks
 
 The staked tokens in the pool are used as collateral for service coverage
 claims. Any payout results in the reduction of the total token count in the
@@ -64,7 +62,7 @@ ownership.
 
 :::
 
-## ClaimsManager
+### ClaimsManager
 
 To insure against potential system failures, the DAO pool can empower special
 `ClaimsManager` contracts to withdraw staked tokens directly. The approved

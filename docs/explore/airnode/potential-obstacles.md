@@ -1,9 +1,9 @@
 ---
-title: Potential Obstacles (of operating oracle nodes)
+title: Potential obstacles of operating oracle nodes
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/potential-obstacles.html
+path: /explore/airnode/potential-obstacles-of-operating-nodes.html
 outline: deep
 tags:
 ---
@@ -23,9 +23,9 @@ below.
 
 Traditional API providers are typically not more familiar with blockchain
 technologies than the general public. This applies even for the ones that curate
-cryptocurrency market data as their main operation is collecting data from
-exchange APIs, processing them, and serving the result through their own APIs
-which does not require any blockchain-specific know-how. Therefore, they
+cryptocurrency market data—as their main operation is collecting data from
+exchange APIs, processing them, and serving the result through their own
+APIs—which does not require any blockchain-specific know-how. Therefore, they
 typically cannot readily operate an oracle node with in-house resources.
 
 ## The problem of node operators

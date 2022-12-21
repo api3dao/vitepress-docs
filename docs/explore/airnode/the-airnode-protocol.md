@@ -1,9 +1,9 @@
 ---
-title: The Airnode Protocol
+title: The Airnode protocol
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/the-airnode-protocol.html
+path: /explore/airnode/what-is-airnode.html
 outline: deep
 tags:
 ---

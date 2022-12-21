@@ -1,18 +1,15 @@
 ---
-title: Inflationary Rewards
+title: Rewards
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → DAO Members
 path: /explore/dao-members/rewards.html
 outline: deep
 tags:
+  - dao
 ---
 
-<PageHeader/>
-
-<SearchHighlight/>
-
-# {{$frontmatter.title}}
+## Rewards
 
 API3 aims to set up, maintain, and [monetize](./dao-pool.md#monetization) dAPIs
 at scale. Its success in doing so can be estimated by its total revenue, as this
@@ -29,28 +26,28 @@ claim risks rather than revenue sharing.
 >
 > <p>Fees from revenue are burned. Inflationary rewards are distributed by the DAO. Service coverage claims are paid to dAPI covered entities from the pool of staked tokens.</p>
 
-## Earning Rewards
+### Earning Rewards
 
-Earning inflationary rewards is simple: everyone who owns shares of the DAO pool
-(everyone who has staked API3 tokens into the DAO pool contract) will earn
-rewards as they are added to the DAO pool. When you schedule tokens to be
-unstaked, you stop earning rewards for those tokens.
+Earning rewards is simple: everyone who owns shares of the DAO pool (everyone
+who has staked API3 tokens into the DAO pool contract) will earn rewards as they
+are added to the DAO pool. When you schedule tokens to be unstaked, you stop
+earning rewards for those tokens.
 
 Remember that when you stake, you receive non-transferable pool shares equal to
 the current total number of issued shares divided by the total number of tokens
 staked. Since the reward adds additional tokens to the pool, the "price" for one
 share will not always be one token.
 
-## Financial attraction of rewards
+### Inflationary Rewards
 
-In essence, inflationary rewards entice token holders to stake and preserve the
+In essence, inflationary rewards force token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as
 collateral for service [coverage policies](../dapis/coverage-policies), and
-encourages the staker to participate in governance to ensure that the risk is
+forces the staker to participate in governance to ensure that the risk is
 minimized. As a combination of the two, an inflationary governance token used as
-collateral attracts all token holders to participate in governance, which is
-ideal because it maximizes the decentralization of governance. Inflationary
-rewards are paid weekly by an implicit and automatic process through an on-chain
+collateral forces all token holders to participate in governance, which is ideal
+because it maximizes the decentralization of governance. Inflationary rewards
+are paid weekly by an implicit and automatic process through an on-chain
 contract. Furthermore, inflationary rewards are vested for a year, which results
 in governing parties sharing the project’s long term interests.
 
@@ -62,7 +59,7 @@ As a result the change in the total supply of API3 tokens is illustrated below.
 > ![dao-pool-staking-2](../assets/images/token-total-supply.png)
 > -->
 
-## Reward Calculation And Distribution
+### Reward Calculation And Distribution
 
 The staking reward will float to have the total staked amount reach equilibrium
 at the target. In other words, the staking reward will increase while the staked
@@ -88,8 +85,8 @@ API3 tokens is minted and added to the DAO pool:
 > ```
 >
 > (see the
-> [smart contract source<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/blob/main/packages/pool/contracts/RewardUtils.sol#L24)
-> for more information).
+> [smart contract source](https://github.com/api3dao/api3-dao/blob/main/packages/pool/contracts/RewardUtils.sol#L24)
+> for more information)<ExternalLinkImage/>.
 
 In addition, each time `mintReward` is called, the annual percentage (the reward
 rate) is updated up or down by the APR update step size (1%), according to
@@ -109,7 +106,7 @@ will not vest for a period of one year.
 
 :::
 
-## Reward Withdrawal
+### Reward Withdrawal
 
 Rewards withdrawals are baked into default withdrawals, except that rewards are
 locked for 1 year after minting. As a staker, your pool shares will always

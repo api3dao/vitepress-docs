@@ -3,10 +3,13 @@ title: API3 Market
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/market.html
+path: /explore/dapis/api3-market.html
+version:
 outline: deep
 tags:
 ---
+
+<VersionWarning/>
 
 <PageHeader/>
 

@@ -153,3 +153,8 @@ including a node dashboard and a marketplace to list their endpoints. As a
 result, API3 will have a wide selection of first-party oracles to compose dAPIs
 from and ecosystem growth will no longer be bottlenecked by integration
 capacity.
+
+## More...
+
+- See [Understanding Airnode](/reference/airnode/latest/understand/) to learn
+  how Airnode is defined by `config.json`.

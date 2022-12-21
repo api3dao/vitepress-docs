@@ -55,8 +55,8 @@ accessible using `DapiServer.sol`.
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
 ```
 
-See the guide [Calling a dAPI](/guides/dapis/call-dapi-dapiserver/) to learn
-more about accessing dAPIs.
+See the guide [Calling a dAPI](/guides/dapis/calling-a-dapi.md) to learn more
+about accessing dAPIs.
 
 ## dAPI Composition
 
@@ -67,3 +67,7 @@ managed by the API3 core technical team multisigs deployed on the chains that
 dAPIs are provided on. API3 also provides access to individual Beacons or Beacon
 sets for the users that require full control over the curation of the data feeds
 they use.
+
+## More...
+
+- TODO: (Add important) links
