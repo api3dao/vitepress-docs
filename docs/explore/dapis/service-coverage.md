@@ -1,9 +1,9 @@
 ---
-title: Coverage Policies
+title: Service Coverage
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/coverage-policies.html
+path: /explore/dapis/service-coverage.html
 outline: deep
 tags:
   - dao
@@ -15,9 +15,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: warning Please note the coverage policies are not fully implemented yet.
-They will be implemented when a proposal with a quorum requirement of 50% has
-been passed.
+::: warning Please note the service coverage is yet to be implemented. These
+will be implemented when a proposal with a quorum requirement of 50% has been
+passed.
 
 :::
 
@@ -42,8 +42,8 @@ Such a solution would tend toward charging very high service coverage premiums
 as they would not have access to the information and expertise to accurately
 assess dAPI risks.
 
-What the proposed service coverage is special because it is collateralized by
-the funds staked by the governing parties of the API3 DAO into the DAO pool.
+The proposed service coverage is special because it is collateralized by the
+funds staked by the governing parties of the API3 DAO into the DAO pool.
 Therefore, it not only provides _security_ to the dAPI user, but also creates a
 very strong incentive for dAPIs to be governed in a way that maximizes dAPI
 _security_, which will further decrease service coverage costs.

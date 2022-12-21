@@ -19,7 +19,7 @@ tokens in the pool will grant representation and
 [inflationary rewards](./rewards.md). Staked tokens will be used as collateral
 to pay out service coverage claims as needed. To do this, the pool focuses on
 three token utilities and implements
-[service coverage](/explore/dapis/coverage-policies.md) which, by design,
+[service coverage](/explore/dapis/service-coverage.md) which, by design,
 balances rewards and risks through responsible governance.
 
 ## Tokens
@@ -169,9 +169,9 @@ clients. API3 follows the same scheme for dAPIs.
 To gain access to a dAPI, a dApp will pay a recurring subscription fee, which
 may be fixed or customized for the dApp based on a specific use case. These
 prices will be determined by the respective team, and will include a premium if
-the dApp wants to receive [Service Coverage](../dapis/coverage-policies). The
-payment can be made in any cryptocurrency, which will be received by the DAO in
-API3 tokens through a liquidity pool-based decentralized exchange.
+the dApp wants to receive [Service Coverage](/explore/dapis/service-coverage).
+The payment can be made in any cryptocurrency, which will be received by the DAO
+in API3 tokens through a liquidity pool-based decentralized exchange.
 
 ### API provider compensation
 

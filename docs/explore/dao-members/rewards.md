@@ -45,7 +45,7 @@ share will not always be one token.
 
 In essence, inflationary rewards entice token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as
-collateral for service [coverage policies](../dapis/coverage-policies), and
+collateral for service [coverage policies](/explore/dapis/service-coverage), and
 encourages the staker to participate in governance to ensure that the risk is
 minimized. As a combination of the two, an inflationary governance token used as
 collateral attracts all token holders to participate in governance, which is
