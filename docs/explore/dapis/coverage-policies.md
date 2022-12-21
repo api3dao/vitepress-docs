@@ -2,8 +2,8 @@
 title: Coverage Policies
 sidebarHeader: Explore
 sidebarSubHeader:
-pageHeader: Explore → DAO Members
-path: /explore/dao-members/coverage-policies.html
+pageHeader: Explore → dAPIs
+path: /explore/dapis/coverage-policies.html
 outline: deep
 tags:
   - dao

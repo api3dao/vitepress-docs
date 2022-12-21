@@ -147,8 +147,8 @@
     "title": "Coverage Policies",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
-    "pageHeader": "Explore → DAO Members",
-    "path": "/explore/dao-members/coverage-policies.html",
+    "pageHeader": "Explore → dAPIs",
+    "path": "/explore/dapis/coverage-policies.html",
     "outline": "deep",
     "tags": ["dao"]
   },
@@ -432,7 +432,7 @@
     "tags": ["dapi", "dapis", "datafeed", "datafeeds", "data", "feed", "feeds"]
   },
   "49": {
-    "title": "Call a dAPI (DapServer contract)",
+    "title": "Using the DapiServer contract and Remix",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → dAPIs",
@@ -441,7 +441,7 @@
     "tags": null
   },
   "50": {
-    "title": "Call a dAPI (proxy contract)",
+    "title": "Using an API3 Market proxy contract and Remix",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
     "pageHeader": "Guides → dAPIs",
