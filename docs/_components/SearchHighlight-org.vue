@@ -20,12 +20,7 @@ export default {
     updateDOM() {
       // Are there words?
       const wordStr = localStorage.getItem('search-words') || undefined;
-
-      // Check localStorage for search words
-      if (wordStr === undefined) {
-        return;
-      }
-
+      if (wordStr === undefined) return;
       this.words = wordStr.split(' ');
 
       // First call the function textNodesUnder() to find textNodes
@@ -86,7 +81,7 @@ export default {
 
                 // Get the original word
                 const orgWord = swapStr.substr(start, word.length);
-                const insert = `<span class="api3-high-light">${orgWord}</span>`;
+                const insert = `<span class="api3-hight-light">${orgWord}</span>`;
 
                 swapArr.push({ swapId: swapId, obj: insert });
 
@@ -117,6 +112,7 @@ export default {
     revertDOM() {
       // Revert nodes
       try {
+        console.log('search > revertDOM()');
         this.rn.forEach((row) => {
           row.parentNode.replaceChild(row.textNode, row.spanNode);
         });
@@ -133,17 +129,8 @@ export default {
   },
   mounted() {
     this.$nextTick(function () {
-      // This will clear the the class api3-high-light
-      // In dev this is not needed, on production it is
-      // Suspect that the page is cache with the class
-      // api3-high-light still in the DOM
-      const boxes = Array.from(
-        document.getElementsByClassName('api3-high-light')
-      );
-      boxes.forEach((box) => {
-        box.classList.remove('api3-high-light');
-      });
-
+      console.log('search highlighted rows', this.rn.length);
+      this.revertDOM();
       this.updateDOM();
 
       // Event fired by SearchBtn.vue
@@ -157,7 +144,7 @@ export default {
 </script>
 
 <style>
-.api3-high-light {
+.api3-hight-light {
   border: red solid 1px;
   border-radius: 3px;
 }
