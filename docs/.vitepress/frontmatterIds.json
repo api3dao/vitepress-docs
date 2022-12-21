@@ -144,15 +144,6 @@
     "tags": null
   },
   "17": {
-    "title": "Coverage Policies",
-    "sidebarHeader": "Explore",
-    "sidebarSubHeader": null,
-    "pageHeader": "Explore → dAPIs",
-    "path": "/explore/dapis/coverage-policies.html",
-    "outline": "deep",
-    "tags": ["dao"]
-  },
-  "18": {
     "title": "API3 Market",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -161,12 +152,21 @@
     "outline": "deep",
     "tags": null
   },
+  "18": {
+    "title": "Service Coverage",
+    "sidebarHeader": "Explore",
+    "sidebarSubHeader": null,
+    "pageHeader": "Explore → dAPIs",
+    "path": "/explore/dapis/service-coverage.html",
+    "outline": "deep",
+    "tags": ["dao"]
+  },
   "19": {
     "title": "Subscriptions",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → dAPIs",
-    "path": "/explore/dapis/subscriptions.html",
+    "path": "/explore/dapis/sponsor-dapis.html",
     "outline": "deep",
     "tags": null
   },
@@ -1163,17 +1163,7 @@
     "tags": null
   },
   "122": {
-    "title": "DapiServer.sol",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/dapi-server-sol.html",
-    "version": null,
-    "outline": "deep",
-    "tags": null
-  },
-  "123": {
-    "title": "Overview",
+    "title": "Understanding dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
@@ -1182,7 +1172,7 @@
     "outline": "deep",
     "tags": null
   },
-  "124": {
+  "123": {
     "title": "ID and Name Schemes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1192,77 +1182,77 @@
     "outline": "deep",
     "tags": null
   },
-  "125": {
-    "title": "Subscriptions",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/subscriptions.html",
-    "version": null,
-    "outline": "deep",
-    "tags": null
-  },
-  "126": {
+  "124": {
     "title": "dataFeedIdToReaderToWhitelistStatus()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → DapiServer Functions",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
     "path": "/reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "127": {
+  "125": {
+    "title": "Overview",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
+    "path": "/reference/dapis/functions/dapi-server-sol.html",
+    "version": null,
+    "outline": "deep",
+    "tags": null
+  },
+  "126": {
     "title": "readDataFeedValueWithDapiName()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → DapiServer Functions",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
     "path": "/reference/dapis/functions/read-data-feed-value-with-dapi-name.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "128": {
+  "127": {
     "title": "readDataFeedValueWithId()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → DapiServer Functions",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
     "path": "/reference/dapis/functions/read-data-feed-value-with-id.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "129": {
+  "128": {
     "title": "readDataFeedWithDapiName()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → DapiServer Functions",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
     "path": "/reference/dapis/functions/read-data-feed-with-dapi-name.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "130": {
+  "129": {
     "title": "readDataFeedWithId()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → DapiServer Functions",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
     "path": "/reference/dapis/functions/read-data-feed-with-id.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "131": {
+  "130": {
     "title": "readerCanReadDataFeed()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → DapiServer Functions",
+    "pageHeader": "Reference → dAPIs → DapServer Contract",
     "path": "/reference/dapis/functions/reader-can-read-datafeed.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "132": {
+  "131": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1272,7 +1262,7 @@
     "outline": "deep",
     "tags": null
   },
-  "133": {
+  "132": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1282,7 +1272,7 @@
     "outline": "deep",
     "tags": null
   },
-  "134": {
+  "133": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1292,7 +1282,7 @@
     "outline": "deep",
     "tags": null
   },
-  "135": {
+  "134": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1302,7 +1292,7 @@
     "outline": "deep",
     "tags": null
   },
-  "136": {
+  "135": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1312,13 +1302,22 @@
     "outline": "deep",
     "tags": null
   },
-  "137": {
+  "136": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v1.2",
     "path": "/reference/ois/latest/template.html",
     "version": null,
+    "outline": "deep",
+    "tags": null
+  },
+  "137": {
+    "title": "Chains",
+    "sidebarHeader": "QRNG",
+    "sidebarSubHeader": null,
+    "pageHeader": "Reference → QRNG",
+    "path": "/reference/qrng/index.html",
     "outline": "deep",
     "tags": null
   },
@@ -1329,18 +1328,9 @@
     "pageHeader": "Reference → QRNG",
     "path": "/reference/qrng/index.html",
     "outline": "deep",
-    "tags": null
-  },
-  "139": {
-    "title": "Chains",
-    "sidebarHeader": "QRNG",
-    "sidebarSubHeader": null,
-    "pageHeader": "Reference → QRNG",
-    "path": "/reference/qrng/index.html",
-    "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "140": {
+  "139": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1349,7 +1339,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "141": {
+  "140": {
     "title": "Other Related Reading",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1358,7 +1348,7 @@
     "outline": "deep",
     "tags": ["more", "reading", "qrng"]
   },
-  "142": {
+  "141": {
     "title": "API Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1367,7 +1357,7 @@
     "outline": "deep",
     "tags": ["api", "providers", "anu"]
   },
-  "143": {
+  "142": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1376,7 +1366,7 @@
     "outline": "deep",
     "tags": ["qrng", "solidity", "example"]
   },
-  "144": {
+  "143": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1385,7 +1375,7 @@
     "outline": "deep",
     "tags": ["qrng", "solidity", "example", "remix"]
   },
-  "145": {
+  "144": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1394,7 +1384,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "146": {
+  "145": {
     "title": "makeFullRequest()",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
