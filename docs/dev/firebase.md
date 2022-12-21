@@ -19,9 +19,10 @@ stored in the `vitepress-docs` repo.
 
 ## Repo Branches
 
-The branch `live-site` is used to generate the production web site for the docs.
-The default branch remains as `main` and it is used to generate the staging web
-site on Firebase.
+The branch `live-site` is used to generate the production web site for the docs,
+whereas the default branch remains as `main`. Commits to `main`, for example
+after a merging a PR, trigger a Firebase staging deployment to the following
+URL: https://vitepress-docs--stage-n82mb5tu.web.app/.
 
 ## PRs on `live-site`
 
