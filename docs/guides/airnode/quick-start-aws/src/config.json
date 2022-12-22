@@ -8,7 +8,7 @@
         "requesterEndpointAuthorizations": {}
       },
       "contracts": {
-        "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+        "AirnodeRrp": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"
       },
       "id": "4",
       "providers": {
@@ -63,6 +63,7 @@
     },
     "httpGateway": {
       "enabled": true,
+      "apiKey": "${HTTP_GATEWAY_API_KEY}",
       "maxConcurrency": 20,
       "corsOrigins": []
     },
@@ -71,7 +72,7 @@
     },
     "logFormat": "plain",
     "logLevel": "INFO",
-    "nodeVersion": "0.10.0",
+    "nodeVersion": "0.9.2",
     "stage": "tutorial-aws"
   },
   "triggers": {
@@ -95,9 +96,9 @@
   "templates": [],
   "ois": [
     {
-      "oisFormat": "1.1.2",
+      "oisFormat": "1.2.0",
       "title": "CoinGecko Basic Request",
-      "version": "1.0.0",
+      "version": "0.9.2",
       "apiSpecifications": {
         "servers": [
           {
