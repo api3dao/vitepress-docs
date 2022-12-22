@@ -1005,5 +1005,6 @@ npx @api3/airnode-admin is-requester-whitelisted ^
 
 ## More Examples
 
-You can find more examples in the _@api3-dao/airnode/package/admin_
-[test files](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-admin/test).
+You can find more examples in the @api3-dao/airnode/package/admin
+[test files](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-admin/test)
+directory.

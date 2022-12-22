@@ -303,7 +303,8 @@
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/quick-start-aws/index.html",
     "outline": "deep",
-    "tags": null
+    "tags": null,
+    "deployerVersion": "0.9.2"
   },
   "35": {
     "title": "Quick Start Docker Container",
