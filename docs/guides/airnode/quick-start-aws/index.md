@@ -15,6 +15,11 @@ deployerVersion: 0.9.2
 
 # {{$frontmatter.title}}
 
+<!-- Dec 23rd, 2022: wkande
+GET READY FOR Airnode v0.10+
+The apiKey for the HTTP gateway will be removed.
+-->
+
 The **Airnode Quick Start** guides are simple introductions that demonstrate the
 deployment of an Airnode. Configuration files are provided with only minor
 changes to be made.
@@ -188,12 +193,6 @@ docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:latest deploy
-
-## Output
-✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-aws to aws us-east-1
-ℹ Outputted config/receipt.json
-  This file does not contain any sensitive information.
-ℹ HTTP gateway URL: https://vfnss24505.execute-api.us-east-1.amazonaws.com/v1
 ```
 
 ```batch [Windows]
@@ -202,18 +201,19 @@ docker run -it --rm \
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:latest deploy
+```
 
-:: Output
+:::
+
+Note the HTTP gateway URL in the output shown below. You will need it to test
+the Airnode in the next section.
+
+```sh [output]
 ✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-aws to aws us-east-1
 ℹ Outputted config/receipt.json
   This file does not contain any sensitive information.
 ℹ HTTP gateway URL: https://vfnss24505.execute-api.us-east-1.amazonaws.com/v1
 ```
-
-:::
-
-Note the HTTP gateway URL in the output. You will need it to test the Airnode in
-the next section.
 
 ## 6. Test the Airnode
 
@@ -266,13 +266,13 @@ endpoints added to the `http` array can be tested.
 
 ### Execute Endpoint
 
-Use CURL to execute the Airnode and get the results from the CoinGecko endpoint
-`/simple/price` bypassing the Sepolia test network that Airnode was deployed
-for. As an alternative to CURL try an app such as
-[Insomnia](https://insomnia.rest/)<externalLinkImage/> or
-[Postman](https://www.postman.com/product/rest-client/)<externalLinkImage/>.
+Use CURL to execute the HTTP gateway configured for the Airnode and get the
+results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
+network that Airnode was deployed for. As an alternative to CURL try an app such
+as [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
+[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/).
 Windows users can also use
-[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)<externalLinkImage/>
+[Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
 (WSL2) to run CURL for Linux.
 
 In order to test an endpoint make a HTTP POST request with the `endpointId` as a
@@ -283,20 +283,16 @@ parameter in the request body as a key/value pair.
 - `-X`: POST
 - `-H`: The `Content-Type` using the value of `application/json`.
 - `-H`: The `x-api-key` using the value of the `HTTP_GATEWAY_API_KEY` from
-  `secrets.env`.
+  `secrets.env`. Update the placeholder in the CURL example below with its
+  value.
 - `-d`: Use request body data to pass the endpoint parameter key/value pair.
-
-URL:
-
-<code style="overflow-wrap:break-word;">&#60;httpGatewayUrl>/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6</code>
-
-- `<httpGatewayUrl>`: The base URL to the gateway including the secret `UUID`
-  path parameter, displayed in the terminal at the end of an Airnode deployment
-  using a [Docker image](/reference/airnode/latest/docker/). Update the
-  placeholder in the CURL example below with its value.
-- <code style="overflow-wrap:break-word;">0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6</code>:
-  Passed as a path parameter, the endpointId to call, see
-  `triggers.rrp[0].endpointId` in the `config.json` file.
+- `url`:
+  - `<httpGatewayUrl>`: The base URL to the gateway including the secret `UUID`
+    path parameter, displayed in the terminal at the end of an Airnode
+    deployment. Update the placeholder in the CURL example below with its value.
+  - <code style="overflow-wrap:break-word;">0x6db9...c27af6</code>: Passed as a
+    path parameter, the endpointId to call, see `triggers.rrp[0].endpointId` in
+    the `config.json` file.
 
 #### Request
 
