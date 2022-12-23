@@ -322,7 +322,8 @@
     "pageHeader": "Guides → Airnode",
     "path": "/guides/airnode/quick-start-gcp/index.html",
     "outline": "deep",
-    "tags": ["airnode", "gcp"]
+    "tags": null,
+    "deployerVersion": "0.9.2"
   },
   "37": {
     "title": "Deploy an API Integration",
