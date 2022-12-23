@@ -31,9 +31,9 @@ of the Airnode
 deploys the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an
 API endpoint (`GET /simple/price`) from
 [CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
-which returns the current value of a coin. This demo does not detail the overall
-configuration of an Airnode, it is just a quick start guide then lends itself to
-understanding an Airnode deployment.
+which returns the current value of a coin. This guide does not detail the
+overall configuration of an Airnode, it is just a quick start guide then lends
+itself to understanding an Airnode deployment.
 
 ## 1. Configuration Files
 
@@ -55,22 +55,8 @@ launch it.
 
 ## 3. Project Folder
 
-A project folder is needed for this demo. You can create it manually or download
-a zip file ready to go.
-
-<Tabs>
-
-@tab:Download
-
 Download the <a href="/zip-files/quick-start-aws.zip" download>
-quick-start-aws.zip</a> project folder.
-
-@tab:Create Manually
-
-Create a folder called `/quick-start-aws`. Place the contents of the files
-provided above
-([Deployment Files Configuration](#deployment-files-configuration)) into the
-files shown below.
+quick-start-aws.zip</a> project folder. Extract it into any location.
 
 ```
 quick-start-aws
@@ -79,13 +65,11 @@ quick-start-aws
 └── secrets.env
 ```
 
-</Tabs>
-
 ## 4. Prepare Configuration Files
 
-Prepare the three configuration files. By default, the Airnode deployer image
-looks for `config.json`, `secrets.env`, and `aws.env` in the project root
-directory and writes `receipt.json` to the project root directory.
+Prepare the three configuration files. The Airnode deployer image looks for
+`config.json`, `secrets.env`, and `aws.env` in the project root directory and
+writes `receipt.json` to the project root directory.
 
 ### config.json
 
@@ -101,7 +85,7 @@ This file requires no changes on your part. It has been created with just one
 API endpoint. It will instruct the Airnode to attach to the Sepolia test network
 and contains parameters to setup the off-chain Airnode.
 
-Note that `nodeSetting.disableConcurrencyReservations` has been set to `true`.
+Note that `nodeSetting...disableConcurrencyReservations` has been set to `true`.
 This is a precaution for new AWS accounts that have yet to address concurrency
 management. For production deployments, `disableConcurrencyReservations` should
 be set to `false`. See
@@ -133,7 +117,7 @@ Add values for each.
   - Copy the URL for Sepolia in the Ethereum box.
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
-  wallet. For the purpose of this demo it does not need any ETH in it. Use the
+  wallet. For the purpose of this guide it does not need any ETH in it. Use the
   Admin CLI command
   [generate-airnode-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-airnode-mnemonic)
   to create one.
@@ -334,7 +318,7 @@ curl -v ^
 
 ## 7. Remove the Airnode
 
-When you are done with this demo you can remove the deployed Airnode. The
+When you are done with this guide you can remove the deployed Airnode. The
 following command uses the `receipt.json` file that was created when the Airnode
 was deployed.
 
@@ -361,7 +345,7 @@ docker run -it --rm ^
 You have deployed an Airnode on AWS and tested it using the HTTP gateway that
 was enabled as part of the Airnode deployment. The Airnode, upon deployment,
 started contacting the AirnodeRrpV0 contract on the Sepolia test network to
-gather any requests made by requesters to this Airnode. This tutorial did not
+gather any requests made by requesters to this Airnode. This guide did not
 address making a request on-chain as its purpose was simply to quickly deploy a
 functional Airnode.
 
