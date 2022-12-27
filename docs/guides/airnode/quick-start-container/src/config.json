@@ -1,0 +1,170 @@
+{
+  "chains": [
+    {
+      "authorizers": {
+        "requesterEndpointAuthorizers": []
+      },
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "contracts": {
+        "AirnodeRrp": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"
+      },
+      "id": "11155111",
+      "providers": {
+        "myChainProvider": {
+          "url": "${CHAIN_PROVIDER_URL}"
+        }
+      },
+      "type": "evm",
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "latestBlockPercentileGasPrice",
+            "percentile": 60,
+            "minTransactionCount": 20,
+            "pastToCompareInBlocks": 20,
+            "maxDeviationMultiplier": 2
+          },
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPriceStrategy": "providerRecommendedEip1559GasPrice",
+            "baseFeeMultiplier": 2,
+            "priorityFee": {
+              "value": 3.12,
+              "unit": "gwei"
+            }
+          },
+          {
+            "gasPriceStrategy": "constantGasPrice",
+            "gasPrice": {
+              "value": 10,
+              "unit": "gwei"
+            }
+          }
+        ]
+      },
+      "maxConcurrency": 100
+    }
+  ],
+  "nodeSettings": {
+    "cloudProvider": {
+      "type": "local"
+    },
+    "airnodeWalletMnemonic": "${AIRNODE_WALLET_MNEMONIC}",
+    "heartbeat": {
+      "enabled": false
+    },
+    "httpGateway": {
+      "enabled": true,
+      "apiKey": "${HTTP_GATEWAY_API_KEY}",
+      "maxConcurrency": 20,
+      "corsOrigins": []
+    },
+    "httpSignedDataGateway": {
+      "enabled": false
+    },
+    "logFormat": "plain",
+    "logLevel": "INFO",
+    "nodeVersion": "0.9.2",
+    "stage": "quick-container"
+  },
+  "triggers": {
+    "rrp": [
+      {
+        "endpointId": "0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6",
+        "oisTitle": "CoinGecko Basic Request",
+        "endpointName": "coinMarketData",
+        "cacheResponses": false
+      }
+    ],
+    "http": [
+      {
+        "endpointId": "0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6",
+        "oisTitle": "CoinGecko Basic Request",
+        "endpointName": "coinMarketData"
+      }
+    ],
+    "httpSignedData": []
+  },
+  "templates": [],
+  "ois": [
+    {
+      "oisFormat": "1.2.0",
+      "title": "CoinGecko Basic Request",
+      "version": "1.0.0",
+      "apiSpecifications": {
+        "servers": [
+          {
+            "url": "https://api.coingecko.com/api/v3"
+          }
+        ],
+        "paths": {
+          "/simple/price": {
+            "get": {
+              "parameters": [
+                {
+                  "in": "query",
+                  "name": "ids"
+                },
+                {
+                  "in": "query",
+                  "name": "vs_currencies"
+                }
+              ]
+            }
+          }
+        },
+        "components": {
+          "securitySchemes": {}
+        },
+        "security": {}
+      },
+      "endpoints": [
+        {
+          "name": "coinMarketData",
+          "operation": {
+            "method": "get",
+            "path": "/simple/price"
+          },
+          "fixedOperationParameters": [],
+          "reservedParameters": [
+            {
+              "name": "_type",
+              "fixed": "int256"
+            },
+            {
+              "name": "_path",
+              "fixed": "api3.usd"
+            },
+            {
+              "name": "_times",
+              "fixed": "1000000"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "coinIds",
+              "operationParameter": {
+                "in": "query",
+                "name": "ids"
+              }
+            },
+            {
+              "name": "coinVs_currencies",
+              "operationParameter": {
+                "in": "query",
+                "name": "vs_currencies"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "apiCredentials": []
+}
