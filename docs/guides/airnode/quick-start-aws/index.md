@@ -42,10 +42,9 @@ An Airnode deployment on AWS uses the Docker
 requires three files as input: [config.json](#config-json),
 [secrets.env](#secrets-env), and [aws.env](#aws-env).
 
-For the purpose of this guide, these files have been created and only require a
-few minor changes to make the deployment of the Airnode successful. These
-changes are needed to supply AWS credentials, a chain provider url, a gateway
-key, and a mnemonic.
+These files have been created and only require a few minor changes to make the
+deployment of the Airnode successful. These changes are needed to supply AWS
+credentials, a chain provider url, a gateway key, and a mnemonic.
 
 ## 2. Install Prerequisites
 
@@ -117,8 +116,7 @@ Add values for each.
   - Copy the URL for Sepolia in the Ethereum box.
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
-  wallet. For the purpose of this guide it does not need any ETH in it. Use the
-  Admin CLI command
+  wallet. The wallet does not need to be funded. Use the Admin CLI command
   [generate-airnode-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-airnode-mnemonic)
   to create one.
 
@@ -152,7 +150,7 @@ create one. Unlike `secrets.env`, you cannot surround values with double quotes
 ## 5. Deploy
 
 Make sure Docker is running and then execute the deployer image from the root of
-the `quick-deploy-aws` folder. A `receipt.json` file will be created upon
+the `quick-start-aws` folder. A `receipt.json` file will be created upon
 completion. It contains some deployment information and is used to remove the
 Airnode.
 
@@ -176,7 +174,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:latest deploy
+  api3/airnode-deployer:0.9.2 deploy
 ```
 
 ```batch [Windows]
@@ -184,7 +182,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:latest deploy
+  api3/airnode-deployer:0.9.2 deploy
 ```
 
 :::
@@ -327,7 +325,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:latest remove-with-receipt
+  api3/airnode-deployer:0.9.2 remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -335,7 +333,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:latest remove-with-receipt
+  api3/airnode-deployer:0.9.2 remove-with-receipt
 ```
 
 :::
@@ -344,10 +342,16 @@ docker run -it --rm ^
 
 You have deployed an Airnode on AWS and tested it using the HTTP gateway that
 was enabled as part of the Airnode deployment. The Airnode, upon deployment,
-started contacting the AirnodeRrpV0 contract on the Sepolia test network to
+started contacting the `AirnodeRrpV0` contract on the Sepolia test network to
 gather any requests made by requesters to this Airnode. This guide did not
 address making a request on-chain as its purpose was simply to quickly deploy a
 functional Airnode.
+
+Finally the API integration was tested using the
+[HTTP gateway](/reference/airnode/latest/understand/http-gateways.md#http-gateway).
+You made a CURL request (using HTTP) to the HTTP gateway. Airnode queried the
+API provider and sent back a response. All of this was performed without
+accessing the blockchain.
 
 Learn more about AWS resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
