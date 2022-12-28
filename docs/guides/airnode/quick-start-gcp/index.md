@@ -42,10 +42,9 @@ An Airnode deployment on GCP uses the Docker
 requires three files as input: [config.json](#config-json),
 [secrets.env](#secrets-env), and gcp.json.
 
-For the purpose of this guide, these files have been created and only require a
-few minor changes to make the deployment of the Airnode successful. These
-changes are needed to supply a GCP project ID, a chain provider url, a gateway
-key, and a mnemonic.
+These files have been created and only require a few minor changes to make the
+deployment of the Airnode successful. These changes are needed to supply a GCP
+project ID, a chain provider url, a gateway key, and a mnemonic.
 
 ## 2. Install Prerequisites
 
@@ -66,30 +65,30 @@ quick-start-gcp
 
 ## 4. GCP Project Setup & Credentials
 
-1. First
-   [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
-   (or use an existing GCP project) where the Airnode will be deployed. Once the
-   project is created, add the project ID to the [secrets.env](./#secrets-env)
-   file.
+- First
+  [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+  (or use an existing GCP project) where the Airnode will be deployed. Once the
+  project is created, add the project ID to the [secrets.env](./#secrets-env)
+  file.
 
-2. Make sure you have billing enabled for your project. To do so, you will need
-   to pair the project with your bank card, although no charges will be incurred
-   since the resource usage fits well within the free tier limit.
+- Make sure you have billing enabled for your project. To do so, you will need
+  to pair the project with your bank card, although no charges will be incurred
+  since the resource usage fits well within the free tier limit.
 
-3. In order for Airnode to deploy successfully, you need to enable the
-   [App Engine Admin API<ExternalLinkImage/>](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
-   specifically for the project. After enabling it, wait a few minutes before
-   deploying the Airnode for this change to take effect.
+- In order for Airnode to deploy successfully, you need to enable the
+  [App Engine Admin API<ExternalLinkImage/>](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
+  specifically for the project. After enabling it, wait a few minutes before
+  deploying the Airnode for this change to take effect.
 
-4. Create a new service account from the
-   [IAM and admin > Service accounts<ExternalLinkImage/>](https://console.cloud.google.com/iam-admin/serviceaccounts)
-   menu. Grant this account access to the project by adding the role `Owner`
-   during creation.
+- Create a new service account from the
+  [IAM and admin > Service accounts<ExternalLinkImage/>](https://console.cloud.google.com/iam-admin/serviceaccounts)
+  menu. Grant this account access to the project by adding the role `Owner`
+  during creation.
 
-5. Once the new service account is created, click on it to bring up its
-   management page. Select the KEYS tab and add a new access key of type JSON
-   for this account. Download the key file and place in the root of the
-   `/quick-deploy-gcp` project directory. Rename it `gcp.json`.
+- Once the new service account is created, click on it to bring up its
+  management page. Select the KEYS tab and add a new access key of type JSON for
+  this account. Download the key file and place in the root of the
+  `/quick-start-gcp` project directory. Rename it `gcp.json`.
 
 ## 5. Prepare Configuration Files
 
@@ -124,43 +123,40 @@ and contains parameters to setup the off-chain Airnode.
 There are four values `config.json` extracts from `secrets.env` as shown below.
 Add values for each.
 
-1. `CHAIN_PROVIDER_URL`: A chain provider url from a provider such as
-   [Infura](https://infura.io/). Use a provider url for the Seploia test
-   network.
+- `CHAIN_PROVIDER_URL`: A chain provider url from a provider such as
+  [Infura](https://infura.io/). Use a provider url for the Seploia test network.
 
-   - Sign-up or login to Infura.
+  - Sign-up or login to Infura.
+  - Use an existing project, or create a new project using the Web3 API network
+    (click the CREATE NEW KEY button), then select the **Endpoints** tab in the
+    project.
+  - Copy the URL for Sepolia in the Ethereum box.
 
-   - Use an existing project, or create a new project using the Web3 API network
-     (click the CREATE NEW KEY button), then select the **Endpoints** tab in the
-     project.
+- `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
+  wallet. The wallet does not need to be funded. Use the Admin CLI command
+  [generate-airnode-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-airnode-mnemonic)
+  to create one.
 
-   - Copy the URL for Sepolia in the Ethereum box.
+  ```sh [generate-airnode-mnemonic]
+  npx @api3/airnode-admin generate-airnode-mnemonic
+  ```
 
-2. `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new
-   digital wallet. For the purpose of this guide it does not need any ETH in it.
-   Use the Admin CLI command
-   [generate-airnode-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-airnode-mnemonic)
-   to create one.
+- `PROJECT_ID`: Project ID of your GCP project. During
+  [step #4](./#_4-gcp-project-setup-credentials) above you should have added the
+  project ID to the `secrets.env` file.
 
-   ```sh [generate-airnode-mnemonic]
-   npx @api3/airnode-admin generate-airnode-mnemonic
-   ```
-
-3. `PROJECT_ID`: Project ID of your GCP project. During step #4 above you should
-   have added the project ID to the `secrets.env` file.
-
-4. `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
-   Gateway. The expected length is 30 - 128 characters.
+- `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
+  Gateway. The expected length is 30 - 128 characters.
 
 ### gcp.json
 
 During [step #4](./#_4-gcp-project-setup-credentials) above, the `gcp.json` file
-should be present in the `/quick-start-gcp` project folder.
+should have been placed into the `/quick-start-gcp` project folder.
 
 ## 6. Deploy
 
 Make sure Docker is running and then execute the deployer image from the root of
-the `quick-deploy-gcp` folder. A `receipt.json` file will be created upon
+the `quick-start-gcp` folder. A `receipt.json` file will be created upon
 completion. It contains some deployment information and is used to remove the
 Airnode.
 
@@ -184,7 +180,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:latest deploy
+  api3/airnode-deployer:0.9.2 deploy
 ```
 
 ```batch [Windows]
@@ -192,7 +188,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:latest deploy
+  api3/airnode-deployer:0.9.2 deploy
 ```
 
 :::
@@ -201,10 +197,10 @@ Note the HTTP gateway URL in the output shown below. You will need it to test
 the Airnode in the next section.
 
 ```sh [output]
-✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-aws to aws us-east-1
+✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-gcp to gcp us-east1
 ℹ Outputted config/receipt.json
   This file does not contain any sensitive information.
-ℹ HTTP gateway URL: https://vfnss24505.execute-api.us-east-1.amazonaws.com/v1
+ℹ HTTP gateway URL: https://airnode-6a6cf2d-tutorial-gcp-httpgw-4fhnl4fi.ue.gateway.dev
 ```
 
 ## 7. Test the Airnode
@@ -335,7 +331,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:latest remove-with-receipt
+  api3/airnode-deployer:0.9.2 remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -343,7 +339,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:latest remove-with-receipt
+  api3/airnode-deployer:0.9.2 remove-with-receipt
 ```
 
 :::
@@ -361,10 +357,16 @@ resources.
 
 You have deployed an Airnode on GCP and tested it using the HTTP gateway that
 was enabled as part of the Airnode deployment. The Airnode, upon deployment,
-started contacting the AirnodeRrpV0 contract on the Sepolia test network to
+started contacting the `AirnodeRrpV0` contract on the Sepolia test network to
 gather any requests made by requesters to this Airnode. This guide did not
 address making a request on-chain as its purpose was simply to quickly deploy a
 functional Airnode.
+
+Finally the API integration was tested using the
+[HTTP gateway](/reference/airnode/latest/understand/http-gateways.md#http-gateway).
+You made a CURL request (using HTTP) to the HTTP gateway. Airnode queried the
+API provider and sent back a response. All of this was performed without
+accessing the blockchain.
 
 Learn more about GCP resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
