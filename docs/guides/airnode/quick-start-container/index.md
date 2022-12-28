@@ -112,7 +112,7 @@ each of the there fields.
 - `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
   Gateway. The expected length is 30 - 128 characters.
 
-## Deploy
+## 5. Deploy
 
 Make sure Docker is running and then run the Airnode client container from the
 root of the `quick-start-container` folder.
@@ -155,7 +155,7 @@ docker run --detach ^
 
 :::
 
-## Test the Airnode
+## 6. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) without
@@ -251,7 +251,7 @@ curl -X POST \
 
 <TutorialResponse/>
 
-## Start and Stop
+## 7. Start and Stop
 
 You can start and stop the Airnode with the Docker desktop application or via
 terminal commands.
@@ -262,7 +262,7 @@ docker stop quick-start-container-airnode
 docker start quick-start-container-airnode
 ```
 
-## Logs
+## 8. Logs
 
 You can view the Airnode's logs with the Docker desktop application or via
 terminal commands.
@@ -273,7 +273,7 @@ docker logs quick-start-container-airnode
 docker logs --follow quick-start-container-airnode
 ```
 
-## Remove the Airnode
+## 9. Remove the Airnode
 
 When you are done with the demo Airnode you can remove it. Do so using the
 Docker desktop application or by using the following terminal command. When
