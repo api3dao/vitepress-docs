@@ -38,8 +38,8 @@ The recommended way to deploy Airnode is by using the Docker
 [deployer image](../docker/deployer-image.md). This image is simply a wrapper
 around the
 [deployer CLI](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer).
-Try out the [Quick Start](/guides/airnode/) guides if you wish to become
-familiar with the deployer image first.
+Try out the [Quick Start](/guides/airnode/quick-start-aws/) guides if you wish
+to become familiar with the deployer image first.
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,
 without requiring you to click through a lot of ever-changing graphical

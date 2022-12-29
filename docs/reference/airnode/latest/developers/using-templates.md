@@ -142,7 +142,8 @@ their`templateIds`.
 
 ::: tip Templates Tutorial
 
-The `coingecko-template` monorepo example demonstrates template requests,
-[see here](/guides/airnode/index.md#monorepo-examples).
+The
+[coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
+monorepo example demonstrates template requests.
 
 :::

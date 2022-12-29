@@ -25,8 +25,8 @@ in the deployer package.
 
 ::: tip Quick Deploy Demos
 
-See the [Quick Start](/guides/airnode/) tutorials to quickly deploy and remove a
-preconfigured Airnode using the deployer image.
+See the [Quick Start](/guides/airnode/quick-start-aws/) guides to quickly deploy
+and remove a preconfigured Airnode using the deployer image.
 
 :::
 
