@@ -37,7 +37,7 @@ medium post.
 ::: tip Learn more about QRNG
 
 - Read [Understanding QRNG](/reference/qrng/) in the reference section.
-- Visit [Guides for QRNG](/guides/qrng/) in the guides section.
+- Visit [Guides for QRNG](/guides/qrng/qrng-example.md) in the guides section.
 
 :::
 

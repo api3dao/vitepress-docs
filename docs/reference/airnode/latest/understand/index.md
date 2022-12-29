@@ -17,9 +17,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-Learn how an Airnode is constructed. But first, see the
-[Quick Start](/guides/airnode/) demos to get a simple understanding of an
-Airnode deployment. The demos
+Learn how an Airnode is constructed. But first, see the quick start guides to
+get a simple understanding of an Airnode deployment. The demos
 [Quick Deploy AWS](/guides/airnode/quick-start-aws/) and
 [Quick Deploy GCP](/guides/airnode/quick-start-gcp/) each have preconfigured
 downloadable project folders with files for a typical deployment. This guide
@@ -44,8 +43,8 @@ This guide will explain the content of the configuration files and run the
 deployment within this project folder. Use the files in the
 [Templates](../deployment-files/templates/config-json.md) section of the docs to
 get a jump start if you are new to Airnode. Also consider the
-[Quick Deploy Demos](/guides/airnode/) if you are new to Airnode before using
-this guide.
+[Quick Start](/guides/airnode/quick-start-aws/) guides if you are new to Airnode
+before using this guide.
 
 ## Configuration
 
