@@ -43,3 +43,7 @@ features:
   - title: QRNG
     details: Quantum random number generation provided as an oracle service.
 ---
+
+<div style="padding:60px;">
+Add HTML here as needed. It is possible to import other markdown files here (with HTML) but dev server preview mode will not redraw. The server would need to be manually restarted. One can preview changes in VS code in real time.
+</div>
