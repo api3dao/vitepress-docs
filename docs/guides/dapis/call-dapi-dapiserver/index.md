@@ -15,7 +15,7 @@ tags:
 # {{$frontmatter.title}}
 
 This guide will create a simple smart contract in the Remix IDE derived from a
-[GitHub gist](https://gist.github.com/wkande/b7ea11d6ec335a5c07b4e53e18f64703).
+[GitHub gist<ExternalLinkImage/>](https://gist.github.com/wkande/b7ea11d6ec335a5c07b4e53e18f64703).
 You will deploy this contract onto the Polygon Mumbai testnet.  
 The contract will import the `DapServer.sol` contract and use one of its
 functions to call a dAPI.
@@ -78,10 +78,11 @@ MetaMask.
 :::
 
 If you need additional help connecting MetaMask to the Mumbai testnet
-[check this guide](https://medium.com/stakingbits/how-to-connect-polygon-mumbai-testnet-to-metamask-fc3487a3871f).
+[check this guide<ExternalLinkImage/>](https://medium.com/stakingbits/how-to-connect-polygon-mumbai-testnet-to-metamask-fc3487a3871f).
 
 Be sure MetaMask is set to an account you wish to use. Use this
-[faucet](https://faucet.polygon.technology/) to acquire test MATIC for Mumbai.
+[faucet<ExternalLinkImage/>](https://faucet.polygon.technology/) to acquire test
+MATIC for Mumbai.
 
 ## 5. Deploy `MyContract.sol`
 
@@ -125,7 +126,7 @@ contract name, `MyContract.sol`.
 <img src="./assets/copy-address.png" style="width:50%;border:1px solid gray;">
 
 Go to the API3 Market page for
-[AVAX/USD on Mumbai](https://market.api3.org/dapis/polygon-testnet/AVAX-USD).
+[AVAX/USD on Mumbai<ExternalLinkImage/>](https://market.api3.org/dapis/polygon-testnet/AVAX-USD).
 Enter the contract address into the permissions widget to the right side of the
 page.
 
@@ -151,7 +152,7 @@ will require two parameters.
   `0x415641582f555344000000000000000000000000000000000000000000000000`**<CopyIcon text="0x415641582f555344000000000000000000000000000000000000000000000000"/>
   <br/>A bytes32 representation of AVAX/USD. Use
   `utils.formatBytes32String("AVAX/USD");` to get this encoded value. Try it in
-  the [ethers playground](https://playground.ethers.org/).
+  the [ethers playground<ExternalLinkImage/>](https://playground.ethers.org/).
 
 <img src="./assets/call-function.png" style="width:50%;border:1px solid gray;">
 
@@ -172,7 +173,7 @@ state.
   <img src="./assets/values.png" style="width:50%;border:1px solid gray;">
 
 Compare the `value` with the value displayed on the
-[API3 Market for AVAX/USD](https://market.api3.org/dapis/polygon-testnet/AVAX-USD)
+[API3 Market for AVAX/USD<ExternalLinkImage/>](https://market.api3.org/dapis/polygon-testnet/AVAX-USD)
 on Mumbai.
 
 <style>
