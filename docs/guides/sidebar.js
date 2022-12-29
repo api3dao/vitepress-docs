@@ -11,11 +11,6 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
-        link: '/guides/dapis/',
-      },
-
-      {
         text: 'Calling a dAPI',
         collapsible: true,
         collapsed: false,
@@ -50,10 +45,6 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
-        link: '/guides/airnode/',
-      },
-      {
         text: 'Quick Start AWS',
         link: '/guides/airnode/quick-start-aws/',
       },
@@ -85,10 +76,6 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
-        link: '/guides/chainapi/',
-      },
-      {
         text: 'Integrate your API',
         link: '/guides/chainapi/integrate',
       },
@@ -103,10 +90,6 @@ module.exports = [
     collapsible: true,
     collapsed: false,
     items: [
-      {
-        text: '★ Getting Started',
-        link: '/guides/qrng/',
-      },
       {
         text: 'QRNG Example',
         link: '/guides/qrng/qrng-example',
