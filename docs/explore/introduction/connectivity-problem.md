@@ -1,40 +1,36 @@
 ---
-title: The API connectivity problem
+title: Solving the API connectivity problem
 sidebarHeader: Explore
 sidebarSubHeader:
-pageHeader: Explore
+pageHeader: Explore → About our journey!
 path: /explore/introduction/connectivity-problem.html
 outline: deep
 tags:
-  - api
-  - connectivity
-  - first-party
-  - oracle
-  - oracles
 ---
 
 <PageHeader/>
 
 <SearchHighlight/>
 
-# The ~~oracle problem~~ API connectivity problem
+# Solving the ~~oracle problem~~ API connectivity problem
 
 An API is a well-defined and documented protocol that one can use to interact
 with an application programmatically. In the context of decentralized
 applications, this definition is quite useless, and even misguiding. Instead, we
 should see APIs as channels businesses use to monetize their data and services.
 
-Take the [CoinMarketCap API](https://coinmarketcap.com/api/) ➚ as an example. It
-allows Web developers to use all the data seen on https://coinmarketcap.com/ ➚
-and more in their applications programmatically by making API calls. In return,
-developers pay a [subscription fee](https://coinmarketcap.com/api/pricing/) ➚.
+Take the [CoinMarketCap API<ExternalLinkImage/>](https://coinmarketcap.com/api/)
+as an example. It allows Web developers to use all the data seen on
+https://coinmarketcap.com/<ExternalLinkImage/> and more in their applications
+programmatically by making API calls. In return, developers pay a
+[subscription fee<ExternalLinkImage/>](https://coinmarketcap.com/api/pricing/).
 In practice, any kind of data or service that is worth using is served by a paid
 API.
 
 > <img src="../assets/images/coinmarketcap.png" width="500" style="border:solid gray 1px;">
 
 See the article,
-[APIs: The Digital Glue](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)<ExternalLinkImage/>
+[APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
 for a more complete background on APIs.
 
 ## Oracles

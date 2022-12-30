@@ -20,11 +20,11 @@ module.exports = [
             link: '/guides/dapis/just-the-code.md',
           },
           {
-            text: '• Using an API3 Market proxy<br/><span style="margin-left:10px;">contract and Remix</span>',
+            text: '• Using an API3 Market proxy<div style="margin-left:11px;">contract and Remix</div>',
             link: '/guides/dapis/call-dapi-proxy/',
           },
           {
-            text: '• Using the DapiServer<br/><span style="margin-left:10px;">contract and Remix</span>',
+            text: '• Using the DapiServer<div style="margin-left:11px;">contract and Remix</div>',
             link: '/guides/dapis/call-dapi-dapiserver/',
           },
         ],

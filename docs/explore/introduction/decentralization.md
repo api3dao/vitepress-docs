@@ -1,5 +1,5 @@
 ---
-title: Decentralization
+title: Decentralized APIs
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
@@ -39,7 +39,7 @@ process, which provides a degree of decentralization and trustlessness.
 ::: danger TODO
 
 The diagram above and below do not illustrate the governance issue well. They
-need to be blended into one.
+need to be blended into one. Or maybe they go away.
 
 :::
 
@@ -54,7 +54,7 @@ provides. Therefore, it is not adequate to use an oracle network for
 decentralization, this oracle network must be governed decentrally as well.
 
 See the medium article,
-[Why API3 DAO, not API3 CORP?](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)<externalLinkImage/>
+[Why API3 DAO, not API3 CORP?<externalLinkImage/>](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
 on DAOs and decentralized governance.
 
 ## dAPI (Decentralized API)

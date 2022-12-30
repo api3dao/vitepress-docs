@@ -2,17 +2,29 @@ module.exports = [
   {
     text: '',
     items: [
-      { text: 'About our Journey!', link: '/explore/' },
       {
-        text: 'The API Connectivity Problem',
-        link: '/explore/introduction/connectivity-problem',
+        text: 'About our Journey!',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: '• An intro to API3', link: '/explore/introduction/' },
+          {
+            text: '• Solving the API <div style="margin-left:11px;">Connectivity Problem</div>',
+            link: '/explore/introduction/connectivity-problem',
+          },
+          {
+            text: '• What are first-party oracles?',
+            link: '/explore/introduction/first-party',
+          },
+          {
+            text: '• Decentralized APIs',
+            link: '/explore/introduction/decentralization',
+          },
+        ],
       },
-      {
-        text: 'Decentralization',
-        link: '/explore/introduction/decentralization',
-      },
-      { text: 'Blog Posts on Medium', link: '/explore/introduction/blog' },
-      { text: 'Jobs', link: '/explore/introduction/jobs' },
+
+      //{ text: 'Blog Posts on Medium', link: '/explore/introduction/blog' },
+      //{ text: 'Jobs', link: '/explore/introduction/jobs' },
       { text: 'Contributing', link: '/explore/introduction/contributing' },
     ],
   },

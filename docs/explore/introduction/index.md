@@ -1,16 +1,11 @@
 ---
-title: About our Journey!
+title: An intro to API3
 sidebarHeader: Explore
 sidebarSubHeader:
-pageHeader: Explore
-path: /explore/index.html
+pageHeader: Explore → About our journey!
+path: /explore/introduction/index.html
 outline: deep
 tags:
-  - api3
-  - whitepaper
-  - decentralized
-  - autonomous
-  - dao
 ---
 
 <PageHeader/>
@@ -19,11 +14,12 @@ tags:
 
 # {{$frontmatter.title}}
 
-API3 ([https://api3.org](https://api3.org) ➚) is a collaborative project to
-deliver traditional API services to smart contract platforms in a decentralized
-and trust-minimized way. It is governed by a _decentralized autonomous
-organization_ (DAO), namely the **API3 DAO**. Therefore, its code is open source
-and its operations are transparent. Learn more about API3 on its website.
+API3 ([https://api3.org<ExternalLinkImage/>](https://api3.org)) is a
+collaborative project to deliver traditional API services to smart contract
+platforms in a decentralized and trust-minimized way. It is governed by a
+_decentralized autonomous organization_ (DAO), namely the **API3 DAO**.
+Therefore, its code is open source and its operations are transparent. Learn
+more about API3 on its website.
 
 ::: tip API3 Whitepaper (pdf)
 
@@ -101,14 +97,14 @@ decentralized and trust-minimized way.
 
 Join the API3 community on the following services.
 
-- [API3 Forum](https://forum.api3.org/)<externalLinkImage/>
-- Community Chat on [Telegram](https://t.me/API3DAO)<externalLinkImage/>
-- Developer Chat on [Discord](https://discord.gg/qnRrcfnm5W)<externalLinkImage/>
-- [YouTube Channel](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)<externalLinkImage/>
+- [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
+- Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
+- Developer Chat on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
+- [YouTube Channel<ExternalLinkImage/>](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
 
 ## GitHub
 
-Visit the [API3 GitHub](https://github.com/api3dao)<externalLinkImage/> page and
+Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page and
 find everything about.. everything. Explore the many repositories to gain
 in-depth knowledge about API3.
 
@@ -128,5 +124,4 @@ contribute.
 - making pull requests
 - proposing features
 
-Read more about contributing in the
-[Contributing](./introduction/contributing.md) section.
+Read more about contributing in the [Contributing](./contributing.md) page.
