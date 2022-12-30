@@ -183,16 +183,15 @@ npx @api3/airnode-admin get-template \
 }
 ```
 
-## More on Templates
+## More...
 
-You can create as many templates as needed. Call the `getTemplates`command in
-the @api3/airnode-admin package to get a list of the templates by
-their`templateIds`.
+::: danger Move to NavBox component
 
-::: tip Additional template guide
-
-The
-[coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)<ExternalLinkImage/>
-monorepo example demonstrates template requests.
+The link below can go inside teh new NavBox (aside) component. Remove the
+More... heading at that time.
 
 :::
+
+The
+[coingecko-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
+monorepo example demonstrates template requests.

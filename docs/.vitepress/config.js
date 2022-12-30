@@ -8,6 +8,7 @@ export default {
   appearance: true,
   ignoreDeadLinks: true,
   head: [
+    ['link', { rel: 'stylesheet', href: '/public/api3.css' }],
     [
       'link',
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/small-logo.png' },
@@ -66,7 +67,11 @@ export default {
 function nav() {
   return [
     { text: 'Home', link: '/' },
-    { text: 'Explore', link: '/explore/', activeMatch: '/explore/.*' },
+    {
+      text: 'Explore',
+      link: '/explore/introduction/',
+      activeMatch: '/explore/.*',
+    },
     { text: 'Guides', link: '/guides/', activeMatch: '/guides/.*' },
     {
       text: 'Reference',

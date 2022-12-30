@@ -6,10 +6,6 @@ pageHeader: Explore
 path: /explore/introduction/contributing.html
 outline: deep
 tags:
-  - contribute
-  - docs
-  - documentation
-  - github
 ---
 
 <PageHeader/>
