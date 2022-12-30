@@ -25,6 +25,7 @@ import ChainName from '../../_components/ChainName.vue';
 import ElementSelect from '../../_components/ElementSelect.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
+import NavBox from '../../_components/NavBox.vue';
 import EthTransact from '../../_components/meta-mask/EthTransact.vue';
 import EthTransactStatus from '../../_components/meta-mask/EthTransactStatus.vue';
 import EthTransactExecute from '../../_components/meta-mask/EthTransactExecute.vue';
@@ -61,6 +62,7 @@ export default {
     app.component('ElementSelect', ElementSelect);
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
+    app.component('NavBox', NavBox);
     app.component('EthTransact', EthTransact);
     app.component('EthTransactStatus', EthTransactStatus);
     app.component('EthTransactExecute', EthTransactExecute);

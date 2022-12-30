@@ -1,0 +1,6 @@
+/** Used for the NavBox component */
+.api3-css-nav-box-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
