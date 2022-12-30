@@ -68,10 +68,11 @@ own first-party _oracle nodes_. This allows them to provide their data on-chain,
 without an intermediary, to any _decentralized app_ \(dApp\) interested in their
 services.
 
-At the heart of this mechanism sits [Airnode](./airnode/what-is-airnode.md), an
-open-source first-party oracle node. It's designed to be easily deployed by any
-API provider with almost no maintenance. Because of Airnode, dApp developers can
-write _smart contracts_ to interact with the on-chain data of API providers.
+At the heart of this mechanism sits
+[Airnode](/explore/airnode/what-is-airnode.md), an open-source first-party
+oracle node. It's designed to be easily deployed by any API provider with almost
+no maintenance. Because of Airnode, dApp developers can write _smart contracts_
+to interact with the on-chain data of API providers.
 
 Airnode is designed with mechanisms to remove the on-chain or off-chain concerns
 of API providers. The set-and-forget framework of Airnode is all about ease of
@@ -79,12 +80,12 @@ implementation.
 
 ## dAPIs
 
-[dAPIs](./dapis/what-are-dapis.md) are composed of first-party oracles operated
-by API providers, and thus are more secure and cost-efficient than alternative
-solutions that employ middlemen. At the core of the governance, security, and
-value capture mechanics of this initiative will be the API3 token. Staking the
-token will grant its holders full governing rights over the API3 DAO along with
-all the associated rewards.
+[dAPIs](/explore/dapis/what-are-dapis.md) are composed of first-party oracles
+operated by API providers, and thus are more secure and cost-efficient than
+alternative solutions that employ middlemen. At the core of the governance,
+security, and value capture mechanics of this initiative will be the API3 token.
+Staking the token will grant its holders full governing rights over the API3 DAO
+along with all the associated rewards.
 
 Staked API3 tokens will be used as collateral for the on-chain coverage service
 that will provide quantifiable and trustless security guarantees to dAPI users.
