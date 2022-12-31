@@ -25,11 +25,13 @@ hero:
       link: https://github.com/api3dao/api3-docs
 ---
 
-<div style="margin: 0px 65px 0px 65px">
-<div style="font-size:xx-large;text-align:center;font-weight:500;margin-bottom:15px;">Getting Started</div>
-<hr style="margin-bottom:22px;"/>
+<!-- OUTER BOX for Getting Started -->
+<div style="padding:0px 50px 00px 50px;max-width:1260px;margin:auto;">
 
-<!-- dAPIs -->
+  <div style="font-size:xx-large;text-align:center;font-weight:500;margin-bottom:15px;">Getting Started</div>
+  <hr style="margin-bottom:22px;border-bottom:solid 1px gray;"/>
+
+  <!-- dAPIs -->
   <div class="api3-land-title">dAPIs</div>
   <div class="api3-land-title-desc">Continuously updated streams of off-chain data, such as the latest cryptocurrency, stock and commodity prices.
   </div>
@@ -41,10 +43,9 @@ hero:
     
   </div>
 
- <!-- BYOG -->
- <div class="api3-land-title">BYOG</div>
-  <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.
-  </div>
+  <!-- BYOG -->
+  <div class="api3-land-title">BYOG</div>
+  <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.</div>
 
   <div class="api3-css-nav-box-flex-row">
     <NavBox type="EXPLORE" btnURL="/" title="What is BYOG?" content="Single sourced dAPIs used for development that are shared by the community."/>
