@@ -53,7 +53,11 @@ export default {
   }),
   methods: {
     navigate() {
-      this.router.go(this.box.btnURL);
+      if (this.box.btn === 'REPO') {
+        location.href = this.box.btnURL;
+      } else {
+        this.router.go(this.box.btnURL);
+      }
     },
   },
   mounted() {
@@ -74,6 +78,12 @@ export default {
     else if (this.box.btn === 'REFERENCE')
       this.btnStyles = {
         backgroundColor: '#C1E1C1',
+        color: 'black',
+        border: 'solid 0px black',
+      };
+    else if (this.box.btn === 'REPO')
+      this.btnStyles = {
+        backgroundColor: 'pink',
         color: 'black',
         border: 'solid 0px black',
       };

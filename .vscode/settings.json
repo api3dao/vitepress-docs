@@ -52,7 +52,8 @@
     "Transformative",
     "flexsearch",
     "docset",
-    "docsets"
+    "docsets",
+    "Sepolia",
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

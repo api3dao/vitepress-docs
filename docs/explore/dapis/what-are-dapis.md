@@ -79,5 +79,4 @@ they use.
   <NavBox id="_dapi-just-the-code"/>
   <NavBox id="_call-dapi-proxy"/>
   <NavBox id="_call-dapi-server"/>
-
 </div>

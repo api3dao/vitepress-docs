@@ -123,14 +123,9 @@ and contains parameters to setup the off-chain Airnode.
 There are four values `config.json` extracts from `secrets.env` as shown below.
 Add values for each.
 
-- `CHAIN_PROVIDER_URL`: A chain provider url from a provider such as
-  [Infura](https://infura.io/). Use a provider url for the Seploia test network.
-
-  - Sign-up or login to Infura.
-  - Use an existing project, or create a new project using the Web3 API network
-    (click the CREATE NEW KEY button), then select the **Endpoints** tab in the
-    project.
-  - Copy the URL for Sepolia in the Ethereum box.
+- `CHAIN_PROVIDER_URL`: A blockchain provider url from a provider such as
+  [Infura](https://infura.io/). Use a url for the Sepolia test network. If you
+  need one see the page [Create an Infura key](/guides/infura-key.md).
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
   wallet. The wallet does not need to be funded. Use the Admin CLI command

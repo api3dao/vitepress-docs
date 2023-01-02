@@ -1,5 +1,5 @@
 ---
-title: ★ Getting Started
+title: DAO Dashboard
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → DAO Members

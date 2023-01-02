@@ -108,9 +108,9 @@ the need arise.
 
 ::: warning Remix Reload Contract
 
-The [Remix Reload Contract](./../remix-reload-contract.md) guide will step you
-through the process to reload a deployed contract in order to interact with it
-again.
+The [Remix Reload Contract](/guides/remix-reload-contract.md) guide will step
+you through the process to reload a deployed contract in order to interact with
+it again.
 
 :::
 
@@ -137,7 +137,7 @@ the **Get Access** button to interact with MetaMask and facilitate the
 transaction. Your contract `MyContract.sol` now has permission to call the
 AVAX/USD dAPI.
 
-## 7. Call `MyContract` function `callDapi()`
+## 7. Call `MyContract.callDapi()`
 
 Next call the function `callDapi()` on your newly deployed smart contract. It
 will require two parameters.

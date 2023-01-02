@@ -3,7 +3,15 @@ module.exports = [
     text: '',
     collapsible: true,
     collapsed: false,
-    items: [{ text: 'About the Guides', link: '/guides/' }],
+    items: [
+      { text: 'About the Guides', link: '/guides/' },
+
+      { text: 'Create an Infura key', link: '/guides/infura-key' },
+      {
+        text: 'Remix Reload Contract',
+        link: '/guides/remix-reload-contract',
+      },
+    ],
   },
   {
     text: 'dAPIs',
@@ -29,13 +37,10 @@ module.exports = [
           },
         ],
       },
+
       {
         text: 'Starter Project',
         link: '/guides/dapis/starter-project',
-      },
-      {
-        text: 'Remix Reload Contract',
-        link: '/guides/dapis/remix-reload-contract',
       },
     ],
   },
@@ -110,7 +115,7 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
+        text: 'DAO Dashboard',
         link: '/guides/dao-members/',
       },
       {
