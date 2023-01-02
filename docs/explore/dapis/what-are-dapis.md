@@ -76,8 +76,8 @@ they use.
 ## More related material...
 
 <div class="api3-css-nav-box-flex-row">
-  <NavBox type="GUIDE" btnURL="/guides/dapis/just-the-code.html" title="Calling a dAPI - just the code" content="Basic guide that calls a dAPI using a Market proxy contract or the DapiServer contract."/>
-  <NavBox type="GUIDE" btnURL="/guides/dapis/just-the-code.html" title="Calling a dAPI - just the code" content="Basic guide that calls a dAPI using a Market proxy contract or the DapiServer contract."/>
-  <NavBox type="GUIDE" btnURL="/guides/dapis/just-the-code.html" title="Calling a dAPI - just the code" content="Basic guide that calls a dAPI using a Market proxy contract or the DapiServer contract."/>
+  <NavBox id="_dapi-just-the-code"/>
+  <NavBox id="_call-dapi-proxy"/>
+  <NavBox id="_call-dapi-server"/>
 
 </div>

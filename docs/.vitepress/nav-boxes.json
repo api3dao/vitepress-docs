@@ -1,0 +1,38 @@
+{
+  "_what-are-dapis": {
+    "btn": "EXPLORE",
+    "btnURL": "/explore/dapis/what-are-dapis.html",
+    "title": "What are dAPIs?",
+    "content": "The most secure data feeds on the market."
+  },
+  "_dapi-just-the-code": {
+    "btn": "GUIDE",
+    "btnURL": "/guides/dapis/just-the-code.html",
+    "title": "Calling a dAPI - just the code",
+    "content": "Code examples of a simple call to dAPIs."
+  },
+  "_call-dapi-proxy": {
+    "btn": "GUIDE",
+    "btnURL": "/guides/dapis/call-dapi-proxy/",
+    "title": "Calling a dAPI - API3 Market",
+    "content": "Using an API3 Market proxy contract: Remix IDE."
+  },
+  "_call-dapi-server": {
+    "btn": "GUIDE",
+    "btnURL": "/guides/dapis/call-dapi-server/",
+    "title": "Calling a dAPI - DapiServer.sol",
+    "content": "Using the on-chain DapiServer.sol contract: Remix IDE."
+  },
+  "_what-is-byog": {
+    "btn": "GUIDE",
+    "btnURL": "/",
+    "title": "What is BYOG?",
+    "content": "Single sourced dAPIs used for development that are shared by the community."
+  },
+  "_airnode-configure-json": {
+    "btn": "REFERENCE",
+    "btnURL": "/",
+    "title": "Airnode's config.json",
+    "content": "Lists all the fields in Airnode's JSON configuration file."
+  }
+}
