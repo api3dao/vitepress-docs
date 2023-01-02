@@ -18,6 +18,11 @@ Guides for the API3 ecosystem have been grouped together for easy access and to
 present a full and comprehensive list. Guides for the most part are specific to
 either a dAPP developer or an API provider.
 
+Some of the guides use the Remix IDE. When you close the Remix IDE or change
+workspaces, Remix will lose track of any deployed contracts. This guide will
+step you through the process to reload a deployed contract in order to interact
+with it again.
+
 ## dAPP Developers
 
 ::: danger
@@ -28,11 +33,10 @@ List API provider specific guide here
 
 ## API Providers
 
-::: danger
-
-List API provider specific guide here
-
-:::
+Some of the guides use the Remix IDE. When you close the Remix IDE or change
+workspaces, Remix will lose track of any deployed contracts. This guide will
+step you through the process to reload a deployed contract in order to interact
+with it again.
 
 **ChainAPI**
 
