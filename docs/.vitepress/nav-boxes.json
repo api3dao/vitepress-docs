@@ -19,7 +19,7 @@
   },
   "_call-dapi-server": {
     "btn": "GUIDE",
-    "btnURL": "/guides/dapis/call-dapi-server/",
+    "btnURL": "/guides/dapis/call-dapi-dapiserver/",
     "title": "Calling a dAPI - DapiServer.sol",
     "content": "Using the on-chain DapiServer.sol contract: Remix IDE."
   },
@@ -31,7 +31,7 @@
   },
   "_airnode-configure-json": {
     "btn": "REFERENCE",
-    "btnURL": "/",
+    "btnURL": "/reference/airnode/latest/deployment-files/config-json.html",
     "title": "Airnode's config.json",
     "content": "Lists all the fields in Airnode's JSON configuration file."
   }

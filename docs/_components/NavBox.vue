@@ -53,8 +53,7 @@ export default {
   }),
   methods: {
     navigate() {
-      console.log('navigate');
-      this.router.go(this.btnURL);
+      this.router.go(this.box.btnURL);
     },
   },
   mounted() {
