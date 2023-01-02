@@ -183,15 +183,8 @@ npx @api3/airnode-admin get-template \
 }
 ```
 
-## More...
+## More related material...
 
-::: danger Move to NavBox component
-
-The link below can go inside teh new NavBox (aside) component. Remove the
-More... heading at that time.
-
-:::
-
-The
-[coingecko-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
-monorepo example demonstrates template requests.
+<div class="api3-css-nav-box-flex-row">
+    <NavBox id="_airnode-coingecko-template"/>
+</div>
