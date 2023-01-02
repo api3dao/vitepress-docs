@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="box"
     :class="[{ api3_nav_box_border: theme.isDark }]"
     class="api3-nav-box"
     v-on:click="navigate()"
@@ -18,16 +19,16 @@
       <div
         style="margin-top: -3px; font-weight: 700; font-family: Comic Sans MS"
       >
-        {{ type }}
+        {{ box.btn }}
       </div>
     </button>
 
     <!-- CONTENT -->
     <div style="margin-top: 10px; font-size: medium; font-weight: 600">
-      {{ title }}
+      {{ box.title }}
     </div>
     <div style="font-size: small; padding-left: 10px">
-      {{ content }}
+      {{ box.content }}
     </div>
   </div>
 </template>
@@ -35,10 +36,11 @@
 <script>
 import { useRouter } from 'vitepress';
 import { useData } from 'vitepress';
+import boxes from '../.vitepress/nav-boxes.json';
 
 export default {
   name: 'NavBox',
-  props: ['type', 'btnURL', 'title', 'content'],
+  props: ['id', 'btn', 'btnURL', 'title', 'content'],
   data: () => ({
     router: useRouter(),
     theme: useData(),
@@ -47,6 +49,7 @@ export default {
       color: undefined,
       border: undefined,
     },
+    box: undefined,
   }),
   methods: {
     navigate() {
@@ -56,19 +59,20 @@ export default {
   },
   mounted() {
     this.$nextTick(async function () {});
-    if (this.type === 'EXPLORE')
+    this.box = boxes[this.id];
+    if (this.box.btn === 'EXPLORE')
       this.btnStyles = {
         backgroundColor: 'lightgrey',
         color: 'black',
         border: 'solid 0px lightgrey',
       };
-    else if (this.type === 'GUIDE')
+    else if (this.box.btn === 'GUIDE')
       this.btnStyles = {
         backgroundColor: 'lightblue',
         color: 'black',
         border: 'solid 0px black',
       };
-    else if (this.type === 'REFERENCE')
+    else if (this.box.btn === 'REFERENCE')
       this.btnStyles = {
         backgroundColor: '#C1E1C1',
         color: 'black',
@@ -80,7 +84,7 @@ export default {
 
 <style scoped>
 .api3-nav-box {
-  width: 200px;
+  width: 240px;
   min-height: 115px;
   border: lightgrey solid 2px;
   border-radius: 0.3em;

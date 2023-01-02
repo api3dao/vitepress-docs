@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: API3
-  text: dAPI data feeds powered by Airnode.
+  text: dAPI data feeds powered by Airnode
   tagline:
     dAPIs are continuously updated streams of off-chain data, such as the latest
     cryptocurrency, stock and commodity prices. They can power various
@@ -37,10 +37,10 @@ hero:
   </div>
 
   <div class="api3-css-nav-box-flex-row">
-    <NavBox type="EXPLORE" btnURL="/explore/dapis/what-are-dapis.html" title="What are dAPIs?" content="The most secure data feeds on the market."/>
-    <NavBox type="GUIDE" btnURL="/guides/dapis/just-the-code.html" title="Calling a dAPI - the basics" content="Code examples of a simple call to dAPIs."/>
-    <NavBox type="GUIDE" btnURL="/guides/dapis/call-dapi-proxy/" title="Calling a dAPI - API3 Market" content="Using an API3 Market proxy contract and Remix."/>
-    
+    <NavBox id="_what-are-dapis"/>
+    <NavBox id="_dapi-just-the-code"/>
+    <NavBox id="_call-dapi-proxy"/>
+    <NavBox id="_call-dapi-server"/>
   </div>
 
   <!-- BYOG -->
@@ -48,8 +48,8 @@ hero:
   <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.</div>
 
   <div class="api3-css-nav-box-flex-row">
-    <NavBox type="EXPLORE" btnURL="/" title="What is BYOG?" content="Single sourced dAPIs used for development that are shared by the community."/>
-    <NavBox type="REFERENCE" btnURL="/" title="See config.json" content="Airnode configuration"/>
+    <NavBox id="_what-is-byog"/>
+    <NavBox id="_airnode-configure-json"/>
 
   </div>
 
