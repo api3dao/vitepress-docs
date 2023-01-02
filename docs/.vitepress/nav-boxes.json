@@ -29,6 +29,18 @@
     "title": "What is BYOG?",
     "content": "Single sourced dAPIs used for development that are shared by the community."
   },
+  "_airnode-quick-start-aws": {
+    "btn": "GUIDE",
+    "btnURL": "/guides/airnode/quick-start-aws/",
+    "title": "Quick Start AWS",
+    "content": "Deploy the off-chain component of Airnode to AWS."
+  },
+  "_airnode-quick-start-gcp": {
+    "btn": "GUIDE",
+    "btnURL": "/guides/airnode/quick-start-gcp/",
+    "title": "Quick Start GCP",
+    "content": "Deploy the off-chain component of Airnode to GCP."
+  },
   "_airnode-configure-json": {
     "btn": "REFERENCE",
     "btnURL": "/reference/airnode/latest/deployment-files/config-json.html",
