@@ -34,13 +34,6 @@ generation. Read more about QRNG and randomness in the
 [Web3 Quantum Random Numbers](https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc)<ExternalLinkImage/>
 medium post.
 
-::: tip Learn more about QRNG
-
-- Read [Understanding QRNG](/reference/qrng/) in the reference section.
-- Visit [Guides for QRNG](/guides/qrng/qrng-example.md) in the guides section.
-
-:::
-
 ## QRNG as an oracle service
 
 Decentralized PRNG (e.g., RANDAO, VRF) has been the popular way of building RNG
@@ -109,4 +102,9 @@ fulfillments. In addition, integrations to more chains and QRNG providers will
 be made available over time, and higher-level QRNG services will be built
 leveraging these.
 
-## More...
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='GUIDE' id='_qrng-remix-example'/>
+  <NavBox type='REPO' id='_qrng-starter-project'/>
+</div>

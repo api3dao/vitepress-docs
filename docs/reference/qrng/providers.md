@@ -1,5 +1,5 @@
 ---
-title: API Providers
+title: Providers
 sidebarHeader: QRNG
 sidebarSubHeader:
 pageHeader: Reference → QRNG
@@ -38,15 +38,10 @@ Australian National University is one of the leading research universities in
 Australia. Visit their website at
 [https://quantumnumbers.anu.edu.au<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/).
 
-<!-- Need css for mobile -->
-
-::: warning Supported chains
-
 ANU Quantum Random Numbers are only available on [mainnets](./chains.md#anu).
-Refer to [byog Random Numbers](./providers.md#byog-random-numbers) below for
-testnet service.
-
-:::
+For testnets use [byog](#byog-pseudorandom-random-numbers).
+[Quintessence](#quintessence-quantum-random-numbers) is available on mainnets
+and a few testnets.
 
 ### `airnode`
 
@@ -80,20 +75,13 @@ testnet service.
     <CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>
 </div>
 
-## byog Random Numbers
+## byog Pseudorandom Numbers
 
-[**byog\*\***<ExternalLinkImage/>](https://byog.io/) is an independent group
-within the API3 ecosystem that builds high-impact oracle services.
-
-::: warning Supported chains
-
-**byog** Random Numbers emulates the QRNG service on
-[testnets](./chains.md#byog) using
-[pseudorandom number generation](/explore/qrng/).
-
-:::
-
-<!-- Need css for mobile -->
+[**byog**<ExternalLinkImage/>](https://byog.io/) is an independent group within
+the API3 ecosystem that builds high-impact oracle services. **byog** imitates
+QRNG using
+[pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
+on [testnets](./chains.md#byog).
 
 ### `airnode`
 
@@ -127,12 +115,14 @@ within the API3 ecosystem that builds high-impact oracle services.
     <CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>
 </div>
 
-## Quintessence Random Numbers
+## Quintessence Quantum Random Numbers
 
 Australian-based
 [Quintessence Labs<ExternalLinkImage/>](https://www.quintessencelabs.com/) is a
 global leader in quantum cybersecurity, recognized for its advanced
-quantum-resilient data protection capabilities.
+quantum-resilient data protection capabilities. Its trademarked
+[qStream](https://www.quintessencelabs.com/products#qrng) generator creates
+perfectly unpredictable true random numbers.
 
 <!-- Need css for mobile -->
 

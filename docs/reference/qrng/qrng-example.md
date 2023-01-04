@@ -21,8 +21,14 @@ tags:
 <TOC class="table-of-contents" :include-level="[2,3]" /-->
 
 This contract is the one included in the
-[QRNG Example Project](https://github.com/api3dao/qrng-example) guide. Be sure
-to visit and run the project.
+[QRNG Example](/guides/qrng/qrng-example.md) guide. Be sure to visit and run the
+project.
 
 <!-- prettier-ignore -->
 <<< @/reference/qrng/QrngExample.txt{solidity}
+
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='REPO' id='_qrng-starter-project'/>
+</div>
