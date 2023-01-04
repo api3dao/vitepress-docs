@@ -183,5 +183,5 @@ value of <ElementSelect text="waitingFulfillment"/> will be _false_.
 ## More related material...
 
 <div class="api3-css-nav-box-flex-row">
-  <NavBox id="_reference-qrng-providers"/>
+  <NavBox  type='REFERENCE' id="_reference-qrng-providers"/>
 </div>
