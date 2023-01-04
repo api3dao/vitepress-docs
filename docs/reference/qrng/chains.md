@@ -98,7 +98,7 @@ ANU is only available on mainnets.
 
 <div class="testnets">
 
-<div style="position:absolute;right:0px;margin-top:-30px;">BYOG</div>
+<div style="position:absolute;right:0px;margin-top:-30px;">byog</div>
 
 | Network                         | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | ------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |

@@ -36,24 +36,24 @@ hero:
   <div class="api3-land-title-desc">Continuously updated streams of off-chain data, such as the latest cryptocurrency, stock and commodity prices.
   </div>
   <div class="api3-css-nav-box-flex-row">
-    <NavBox id="_what-are-dapis"/>
-    <NavBox id="_dapi-just-the-code"/>
-    <NavBox id="_call-dapi-proxy"/>
-    <NavBox id="_call-dapi-server"/>
+    <NavBox type='EXPLORE' id="_what-are-dapis"/>
+    <NavBox type='GUIDE' id="_dapi-just-the-code"/>
+    <NavBox type='GUIDE' id="_call-dapi-proxy"/>
+    <NavBox type='GUIDE' id="_call-dapi-server"/>
   </div>
 
-  <!-- BYOG -->
-  <div class="api3-land-title">BYOG</div>
+  <!-- byog -->
+  <div class="api3-land-title">byog</div>
   <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.</div>
   <div class="api3-css-nav-box-flex-row">
-    <NavBox id="_what-is-byog"/>
+    <NavBox type='EXPLORE' id="_what-is-byog"/>
   </div>
 
   <!-- AIRNODE -->
   <div class="api3-land-title">Airnode</div>
-  <div class="api3-land-title-desc">Airnode is a  serverless first-party oracle node implemented with a "set and forget" philosophy</div>
+  <div class="api3-land-title-desc">Airnode is a  serverless first-party oracle node implemented with a "set and forget" philosophy.</div>
   <div class="api3-css-nav-box-flex-row">
-    <NavBox id="_airnode-configure-json"/>
+    <NavBox type='REFERENCE' id="_airnode-configure-json"/>
   </div>
 
 </div>

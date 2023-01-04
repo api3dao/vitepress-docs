@@ -1,0 +1,12 @@
+{
+  "_airnode-configure-json": {
+    "btnURL": "/reference/airnode/latest/deployment-files/config-json.html",
+    "title": "Airnode's config.json",
+    "content": "Lists all the fields in Airnode's JSON configuration file."
+  },
+  "_reference-qrng-providers": {
+    "btnURL": "/reference/qrng/providers.html",
+    "title": "List of available QRNG providers",
+    "content": "The list of providers contains both quantum and pseudorandom number generators."
+  }
+}

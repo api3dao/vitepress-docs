@@ -186,5 +186,5 @@ npx @api3/airnode-admin get-template \
 ## More related material...
 
 <div class="api3-css-nav-box-flex-row">
-    <NavBox id="_airnode-coingecko-template"/>
+    <NavBox  type='REPO' id="_airnode-coingecko-template"/>
 </div>
