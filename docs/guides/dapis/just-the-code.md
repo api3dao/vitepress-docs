@@ -27,7 +27,7 @@ of a dAPI such as AVAX/USD. Each proxy contract is tied to a single dAPI.
 This practice allows dAPIs to be used like libraries. This can also reduce
 deployment costs because your smart contract doesn’t need to include all the
 code itself, rather it just needs to use a different dAPI name when calling the
-`read()` function on hte proxy contract.
+`read()` function on the proxy contract.
 
 ```solidity
 // SPDX-License-Identifier: MIT

@@ -1,6 +1,9 @@
 <template>
+  <div v-if="error" class="api3-nav-box" style="color: red">
+    Did not find the nav box: <code>{{ id }}</code>
+  </div>
   <div
-    v-if="box"
+    v-else-if="box"
     :class="[{ api3_nav_box_border: theme.isDark }]"
     class="api3-nav-box"
     v-on:click="navigate()"
@@ -44,6 +47,7 @@ export default {
   data: () => ({
     router: useRouter(),
     theme: useData(),
+    error: undefined,
     btnStyles: {
       backgroundColor: undefined,
       color: undefined,
@@ -63,6 +67,10 @@ export default {
   mounted() {
     this.$nextTick(async function () {});
     this.box = boxes[this.id];
+    if (!this.box) {
+      this.error = true;
+      return;
+    }
     if (this.box.btn === 'EXPLORE')
       this.btnStyles = {
         backgroundColor: 'lightgrey',

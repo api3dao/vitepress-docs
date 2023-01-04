@@ -42,8 +42,8 @@ hero:
     <NavBox id="_call-dapi-server"/>
   </div>
 
-  <!-- BYOG -->
-  <div class="api3-land-title">BYOG</div>
+  <!-- byog -->
+  <div class="api3-land-title">byog</div>
   <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.</div>
   <div class="api3-css-nav-box-flex-row">
     <NavBox id="_what-is-byog"/>

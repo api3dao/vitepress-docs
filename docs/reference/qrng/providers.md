@@ -6,9 +6,6 @@ pageHeader: Reference → QRNG
 path: /reference/qrng/providers.html
 outline: deep
 tags:
-  - api
-  - providers
-  - anu
 ---
 
 <PageHeader/>
@@ -85,8 +82,8 @@ testnet service.
 
 ## byog Random Numbers
 
-[byog<ExternalLinkIamge/>](https://byog.io/) is an independent group within the
-API3 ecosystem that builds high-impact oracle services.
+[**byog\*\***<ExternalLinkImage/>](https://byog.io/) is an independent group
+within the API3 ecosystem that builds high-impact oracle services.
 
 ::: warning Supported chains
 

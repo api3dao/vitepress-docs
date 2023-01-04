@@ -6,7 +6,6 @@ pageHeader: Guides → QRNG
 path: /guides/qrng/remix-example.html
 outline: deep
 tags:
-  - qrng
 ---
 
 <PageHeader/>
@@ -15,15 +14,16 @@ tags:
 
 # {{$frontmatter.title}}
 
-This project is a simple and quick introduction to API3's QRNG service. Simply
-follow the steps to see how a smart contract (known as a requester) can access
-an on-chain quantum random number. You will use the browser based Remix IDE and
-MetaMask. Some basic knowledge of these two tools is assumed.
+This project is a simple introduction to API3's QRNG service. Follow along to
+see how a requester (smart contract) can access an on-chain quantum random
+number. You will use the browser based Remix IDE and MetaMask. Some basic
+knowledge of these two tools is assumed.
 
-<!-- prettier-ignore -->
-Remix UI components to interact with are shown as: <ElementSelect text="UI name"/> (brown) highlighted text.
+Currently QRNG has three [providers](/reference/qrng/providers.md), two of which
+provide quantum random numbers. This guide will be using the
+[ANU](/reference/qrng/providers.md#anu-quantum-random-numbers) provider.
 
-## Step 1: Add the Sample Contract
+## 1. Add the Sample Contract
 
 Open the [Remix online IDE](https://remix.ethereum.org) using a browser that you
 have added Metamask support to. Not all browsers support
@@ -35,16 +35,15 @@ an existing workspace or create a new one. Copy and paste the code from the
 
 ![Add Contract](../assets/images/qrng-add-contract.png)
 
-## Step 2: Compile the Contract
+## 2. Compile the Contract
 
-Switch to the <ElementSelect text="SOLIDITY COMPILER"/> tab. Select the `0.8.9`
-version of Solidity from the <ElementSelect text="COMPILER"/> pick list. Select
-the <ElementSelect text="Compile
-RemixQrngExample.sol"/> button to compile the `RemixQrngExample.sol` contract.
+Switch to the <b>SOLIDITY COMPILER</b> tab. Select the `0.8.9` version of
+Solidity from the <b>COMPILER</b> pick list. Select the <b>Compile
+RemixQrngExample.sol</b> button to compile the `RemixQrngExample.sol` contract.
 
   <img src="../assets/images/qrng-compile.png"  style="width:50%"/>
 
-## Step 3: Deploy the Contract
+## 3. Deploy the Contract
 
 ::: danger Deploy to a testnet only.
 
@@ -53,52 +52,49 @@ lacks adequate security features.
 
 You can use one of [testnets](/reference/qrng/chains.md) for deployment to get
 random number from
-[BYOG RNG API](/reference/qrng/providers.md#byog-random-numbers) which has same
+[byog RNG API](/reference/qrng/providers.md#byog-random-numbers) which has same
 usage with
 [ANU Quantum Random Numbers](/reference/qrng/providers.md#anu-quantum-random-numbers).
 
 :::
 
-Switch to the <ElementSelect text="DEPLOY & RUN TRANSACTIONS"/> tab. Use
-MetaMask and switch to the desired account and testnet for your deployment.
-Select the <ElementSelect text="ENVIRONMENT"/> pick list and switch to _Injected
-Provider - Metamask_. Check that the testnet and account you selected in
-MetaMask are displayed in Remix as shown below.
+Switch to the <b>DEPLOY & RUN TRANSACTIONS</b> tab. Use MetaMask and switch to
+the desired account and testnet for your deployment. Select the
+<b>ENVIRONMENT</b> pick list and switch to _Injected Provider - Metamask_. Check
+that the testnet and account you selected in MetaMask are displayed in Remix as
+shown below.
 
 <img src="../assets/images/qrng-deploy-net-account.png"  style="width:50%"/>
 
 Be sure `RemixQrngExample - contracts/RemixQrngExample.sol` is selected in the
-<ElementSelect text="CONTRACT"/> pick list. Add the Airnode `_airnodeRrp`
-address parameter value for the constructor into the field next to the
-<ElementSelect text="Deploy"/> button. See the
+<b>CONTRACT</b> pick list. Add the Airnode `_airnodeRrp` address parameter value
+for the constructor into the field next to the <b>Deploy</b> button. See the
 [list of addresses](/reference/qrng/chains.md) for the testnet you are using.
-Select the <ElementSelect text="Deploy"/> button and approve the transaction
-with MetaMask.
+Select the <b>Deploy</b> button and approve the transaction with MetaMask.
 
 <img src="../assets/images/qrng-deploy-contract-airnode-address.png"  style="width:50%"/>
 
-## Step 4: Setting the Parameters
+## 4. Setting the Parameters
 
 Before making a request, parameters must be set. They determine which Airnode
 endpoint will be called and define the wallet used to pay the gas costs for the
 response.
 
-Under <ElementSelect text="Deployed
-Contracts"/> expand and expose the functions and variables of the contract. Note
-the address of the contract that is displayed with its name. This is the
-requester's contract address which will be needed later. Next expand the
-<ElementSelect text="setRequestParameters"/> function. Add the following to the
+Under <b>Deployed Contracts</b> expand and expose the functions and variables of
+the contract. Note the address of the contract that is displayed with its name.
+This is the requester's contract address which will be needed later. Next expand
+the <b>setRequestParameters()</b> function. Add the following to the
 corresponding fields for the function.
 
-- `_airnode`: The airnode address (copy it here →
-  <CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/> ) of the desired
-  RNG service provider. See its value from the
-  [BYOG Airnode](/reference/qrng/providers.md#airnode-2).
+- `_airnode`: The airnode address of the desired RNG service provider. If you
+  wish to use BYOB, get its value from the
+  [byog Airnode](/reference/qrng/providers.md#airnode-1) or copy it here →
+  <CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/>.
 
 - `_endpointIdUint256`: The Airnode endpoint ID (copy it here →
   <CopyIcon text="0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78"/>
   ) that will return a single random number. See its value from the
-  [BYOG Airnode](/reference/qrng/providers.md#endpointiduint256-2).
+  [byog Airnode](/reference/qrng/providers.md#endpointiduint256-1).
 
 - `_sponsorWallet`: A wallet derived from the requester's contract address, the
   Airnode address, and the Airnode xpub. The wallet is used to pay gas costs to
@@ -143,12 +139,12 @@ corresponding fields for the function.
   | Milkomeda C1 testnet      | 0.5    | mTAda | 200101   |
   | Arbitrum testnet          | 0.01   | AGOR  | 421613   |
 
-Lastly select the <ElementSelect text="Transact"/> button in Remix to send the
-parameters to the contract to be stored. Approve the transaction with MetaMask.
+Lastly select the <b>Transact</b> button in Remix to send the parameters to the
+contract to be stored. Approve the transaction with MetaMask.
 
 <SponsorWalletWarning/>
 
-## Step 5: Make a Request
+## 5. Make a Request
 
 Be sure you have funded the sponsor wallet created in step #4. Its funds will be
 used to pay gas costs when Airnode returns a random number to the callback
@@ -160,8 +156,9 @@ parameters at any time and subsequent requests will use the newer parameter set.
 To make a request select the <ElementSelect text="MakeRequest"/> button in
 Remix. Approve the transaction with MetaMask.
 
-As soon as the transaction completes in MetaMask, select the
-<ElementSelect text="lastRequest"/> button in Remix. You will see the
+<!-- prettier-ignore -->
+As soon as the transaction completes in MetaMask, select the <ElementSelect text="lastRequest"/> 
+button in Remix. You will see the
 `requestId` and a `randomNumber` which equals _0_. This is because the random
 number has yet to be returned to the callback function. Copy and paste the
 `requestId` into the field for <ElementSelect text="waitingFulfillment"/> and
@@ -170,7 +167,7 @@ not been made.
 
 <img src="../assets/images/qrng-response-wait.png" style="width:50%"/>
 
-## Step 6: View the Response
+## 6. View the Response
 
 The request is gathered by the off-chain Airnode which in turn calls the API
 provider. Once the API provider returns data, Airnode will callback to the
@@ -182,3 +179,9 @@ callback has been successfully completed the randomNumber will be present. The
 value of <ElementSelect text="waitingFulfillment"/> will be _false_.
 
 <img src="../assets/images/qrng-response-complete.png" style="width:50%"/>
+
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox id="_reference-qrng-providers"/>
+</div>
