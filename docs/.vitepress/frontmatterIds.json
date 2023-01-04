@@ -458,7 +458,7 @@
     "pageHeader": "Guides → QRNG",
     "path": "/guides/qrng/remix-example.html",
     "outline": "deep",
-    "tags": ["qrng"]
+    "tags": null
   },
   "52": {
     "title": "Youtube QRNG-NFT Example",
@@ -1339,7 +1339,7 @@
     "pageHeader": "Reference → QRNG",
     "path": "/reference/qrng/providers.html",
     "outline": "deep",
-    "tags": ["api", "providers", "anu"]
+    "tags": null
   },
   "140": {
     "title": "QrngExample.sol",

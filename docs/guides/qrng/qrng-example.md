@@ -15,7 +15,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-The [qrng-example](https://github.com/api3dao/qrng-example)<ExternalLinkImage/>
+The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
 project (GitHub repo) demonstrates how to build a smart contract (known as a
 requester) using the Airnode request–response protocol to receive QRNG services.
 It is recommended to run the example project to learn how it uses the QRNG
@@ -23,9 +23,9 @@ service on a testnet, and read the associated README file. It also contains
 example code that will be useful when creating a requester (smart contract) that
 requests a quantum random number.
 
-- [qrng-example/contracts/](https://github.com/api3dao/qrng-example/tree/main/contracts)<ExternalLinkImage/>
+- [qrng-example/contracts/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/contracts)
   - `QrngExamples.sol`: A sample requester used to call the QRNG service.
-- [qrng-example/deploy/](https://github.com/api3dao/qrng-example/tree/main/deploy)<ExternalLinkImage/>
+- [qrng-example/deploy/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/deploy)
   - `deploy.js`: Script that deploys a requester to a chain.
   - `setup.js`: Script that sets the parameters on the requester contract. These
     parameters are used when calling the QRNG service.
@@ -43,7 +43,7 @@ on-chain in response to a request, which the requester needs to pay for.
 ## Sponsor Wallet
 
 The QRNG example project
-[sets the sponsor wallet](https://github.com/api3dao/qrng-example/blob/main/deploy/2_setup.js#L11-L28)<ExternalLinkImage/>
+[sets the sponsor wallet<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/deploy/2_setup.js#L11-L28)
 using the requester address. The wallet is then used to pay gas costs when the
 Airnode responds to a request. An alternate method is to use the
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) as is the case with
@@ -53,7 +53,7 @@ the [Remix Example](./remix-example.md) guide.
 
 ## Withdrawals
 
-In hte QRNG example project, the requester contract was written with the scope
+In the QRNG example project, the requester contract was written with the scope
 of demonstrating on-chain requests for random numbers.
 
 ::: warning

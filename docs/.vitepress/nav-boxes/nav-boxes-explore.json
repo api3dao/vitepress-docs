@@ -1,0 +1,12 @@
+{
+  "_what-are-dapis": {
+    "btnURL": "/explore/dapis/what-are-dapis.html",
+    "title": "What are dAPIs?",
+    "content": "The most secure data feeds on the market."
+  },
+  "_what-is-byog": {
+    "btnURL": "/",
+    "title": "What is byog?",
+    "content": "TODO: this box need a URL. Single sourced dAPIs used for development that are shared by the community."
+  }
+}

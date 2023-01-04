@@ -76,7 +76,7 @@ they use.
 ## More related material...
 
 <div class="api3-css-nav-box-flex-row">
-  <NavBox id="_dapi-just-the-code"/>
-  <NavBox id="_call-dapi-proxy"/>
-  <NavBox id="_call-dapi-server"/>
+  <NavBox type='GUIDE' id="_dapi-just-the-code"/>
+  <NavBox type='GUIDE' id="_call-dapi-proxy"/>
+  <NavBox type='GUIDE' id="_call-dapi-server"/>
 </div>

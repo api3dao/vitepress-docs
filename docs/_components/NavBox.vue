@@ -1,6 +1,9 @@
 <template>
+  <div v-if="error" class="api3-nav-box" style="color: red">
+    Did not find the nav box: <code>{{ type }} - {{ id }}</code>
+  </div>
   <div
-    v-if="box"
+    v-else-if="box"
     :class="[{ api3_nav_box_border: theme.isDark }]"
     class="api3-nav-box"
     v-on:click="navigate()"
@@ -19,7 +22,7 @@
       <div
         style="margin-top: -3px; font-weight: 700; font-family: Comic Sans MS"
       >
-        {{ box.btn }}
+        {{ type }}
       </div>
     </button>
 
@@ -36,14 +39,18 @@
 <script>
 import { useRouter } from 'vitepress';
 import { useData } from 'vitepress';
-import boxes from '../.vitepress/nav-boxes.json';
+import explore from '../.vitepress/nav-boxes/nav-boxes-explore.json';
+import guide from '../.vitepress/nav-boxes/nav-boxes-guides.json';
+import reference from '../.vitepress/nav-boxes/nav-boxes-reference.json';
+import repo from '../.vitepress/nav-boxes/nav-boxes-repos.json';
 
 export default {
   name: 'NavBox',
-  props: ['id', 'btn', 'btnURL', 'title', 'content'],
+  props: ['type', 'id'],
   data: () => ({
     router: useRouter(),
     theme: useData(),
+    error: undefined,
     btnStyles: {
       backgroundColor: undefined,
       color: undefined,
@@ -62,31 +69,38 @@ export default {
   },
   mounted() {
     this.$nextTick(async function () {});
-    this.box = boxes[this.id];
-    if (this.box.btn === 'EXPLORE')
+    if (this.type === 'EXPLORE') {
+      this.box = explore[this.id];
       this.btnStyles = {
         backgroundColor: 'lightgrey',
         color: 'black',
         border: 'solid 0px lightgrey',
       };
-    else if (this.box.btn === 'GUIDE')
+    } else if (this.type === 'GUIDE') {
+      this.box = guide[this.id];
       this.btnStyles = {
         backgroundColor: 'lightblue',
         color: 'black',
         border: 'solid 0px black',
       };
-    else if (this.box.btn === 'REFERENCE')
+    } else if (this.type === 'REFERENCE') {
+      this.box = reference[this.id];
       this.btnStyles = {
         backgroundColor: '#C1E1C1',
         color: 'black',
         border: 'solid 0px black',
       };
-    else if (this.box.btn === 'REPO')
+    } else if (this.type === 'REPO') {
+      this.box = repo[this.id];
       this.btnStyles = {
         backgroundColor: 'pink',
         color: 'black',
         border: 'solid 0px black',
       };
+    }
+    if (!this.box) {
+      this.error = true;
+    }
   },
 };
 </script>

@@ -58,6 +58,6 @@ https://sepolia.infura.io/v3/ec3dda...b3618a2
 ## More related material...
 
 <div class="api3-css-nav-box-flex-row">
-    <NavBox id="_airnode-quick-start-aws"/>
-    <NavBox id="_airnode-quick-start-gcp"/>
+    <NavBox type='REFERENCE' id="_airnode-quick-start-aws"/>
+    <NavBox type='REFERENCE' id="_airnode-quick-start-gcp"/>
 </div>
