@@ -60,7 +60,7 @@ export default {
   }),
   methods: {
     navigate() {
-      if (this.box.btn === 'REPO') {
+      if (this.type === 'REPO') {
         location.href = this.box.btnURL;
       } else {
         this.router.go(this.box.btnURL);

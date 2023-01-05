@@ -23,5 +23,10 @@
     "btnURL": "/guides/airnode/quick-start-gcp/",
     "title": "Quick Start GCP",
     "content": "Deploy the off-chain component of Airnode to GCP."
+  },
+  "_qrng-remix-example": {
+    "btnURL": "/guides/qrng/remix-example.html",
+    "title": "QRNG Remix Example",
+    "content": "Follow along to see how a requester (smart contract) can access an on-chain quantum random number."
   }
 }

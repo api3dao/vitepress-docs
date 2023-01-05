@@ -18,15 +18,16 @@ tags:
 
 The API3 QRNG service is implemented using the Airnode request–response protocol
 contract
-[AirnodeRrpV0](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)<ExternalLinkImage/>
+[AirnodeRrpV0<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 (by way of
-[RrpRequesterV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol)<ExternalLinkImage/>)
+[RrpRequesterV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol))
 to acquire a random number.
 
 ::: tip QRNG example project
 
-After reading this page, visit and run the QRNG example project in the
-[qrng-example repo](https://github.com/api3dao/qrng-example/blob/main/README.md)<ExternalLinkImage/>.
+After reading this page, visit and run the
+[QRNG Example](https://github.com/api3dao/qrng-example/blob/main/README.md)
+project in the `qrng-example` repo.
 
 :::
 
@@ -49,16 +50,16 @@ data from API operations.
 A requester (smart contract) calls the QRNG service using the _request–response
 protocol (RRP)_ implemented by the on-chain `AirnodeRrpV0` contract. The
 contract
-[RrpRequesterV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol)<ExternalLinkImage/>
+[RrpRequesterV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol)
 is meant to be inherited by any requester that will be making requests to
 AirnodeRrpV0. It is part of the NPM
-[@api3/airnode-protocol](https://www.npmjs.com/package/@api3/airnode-protocol)<ExternalLinkImage/>
+[@api3/airnode-protocol<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol)
 package.
 
 In practice, the requester implements two functions that are specific to
 _requesting_ and _receiving_ a random number from the QRNG service. Consider the
 following flow (extracted from the
-[QRNG example contract](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol)<ExternalLinkImage/>)
+[QRNG example contract<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol))
 to understand how to call for a random number.
 
 1. The function `makeRequestUint256()` calls `airnodeRrp.makeFullRequest()` to
@@ -108,9 +109,9 @@ function fulfillUint256(bytes32 requestId, bytes calldata data)
 See [QrngExample.sol](./qrng-example.md) for a complete example.
 
 An additional pair of functions
-([makeRequestUint256Array()](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol#L98-L113)<ExternalLinkImage/>
+([makeRequestUint256Array()<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol#L98-L113)
 and
-[fulfillUint256Array()](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol#L115-L131)<ExternalLinkImage/>)
+[fulfillUint256Array()<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol#L115-L131))
 can be used to acquire an array of random numbers.
 
 ## Gas Costs
@@ -118,3 +119,10 @@ can be used to acquire an array of random numbers.
 Using the QRNG service is free, meaning there is no subscription fee to pay.
 There is a gas cost incurred on-chain when Airnode places the random number
 on-chain in response to a request, which the requester needs to pay for.
+
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='GUIDE' id='_qrng-remix-example'/>
+  <NavBox type='REPO' id='_qrng-starter-project'/>
+</div>

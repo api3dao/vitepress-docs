@@ -33,6 +33,3 @@ protocol contract to get a quantum random number.
 ```
 
 - `airnode`: The address of the Airnode.
-
-See the [QrngExample.sol](../qrng-example.md) contract as an example on how to
-populate the parameters using its `setRequestParameters()` function.
