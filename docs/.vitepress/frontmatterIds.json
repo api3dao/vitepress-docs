@@ -1297,11 +1297,11 @@
     "tags": null
   },
   "135": {
-    "title": "Chains",
+    "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
-    "path": "/reference/qrng/index.html",
+    "path": "/reference/qrng/airnode-rrp-v0.html",
     "outline": "deep",
     "tags": null
   },
@@ -1312,10 +1312,10 @@
     "pageHeader": "Reference → QRNG",
     "path": "/reference/qrng/index.html",
     "outline": "deep",
-    "tags": ["qrng", "anu"]
+    "tags": null
   },
   "137": {
-    "title": "Understanding QRNG",
+    "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
@@ -1324,16 +1324,16 @@
     "tags": ["qrng", "anu"]
   },
   "138": {
-    "title": "Other Related Reading",
+    "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
-    "path": "/reference/qrng/more.html",
+    "path": "/reference/qrng/index.html",
     "outline": "deep",
-    "tags": ["more", "reading", "qrng"]
+    "tags": ["qrng", "anu"]
   },
   "139": {
-    "title": "API Providers",
+    "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
@@ -1360,15 +1360,6 @@
     "tags": ["qrng", "solidity", "example", "remix"]
   },
   "142": {
-    "title": "AirnodeRrpV0.sol",
-    "sidebarHeader": "QRNG",
-    "sidebarSubHeader": null,
-    "pageHeader": "Reference → QRNG → Contracts and Functions",
-    "path": "/reference/qrng/functions/airnode-rrp-v0.html",
-    "outline": "deep",
-    "tags": ["qrng", "anu"]
-  },
-  "143": {
     "title": "makeFullRequest()",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
