@@ -25,13 +25,19 @@ with it again.
 
 ## dAPP Developers
 
-::: danger
+::: danger TODO
 
-List API provider specific guide here
+List developer guides
 
 :::
 
 ## API Providers
+
+::: danger TODO
+
+List provider guides
+
+:::
 
 Some of the guides use the Remix IDE. When you close the Remix IDE or change
 workspaces, Remix will lose track of any deployed contracts. This guide will
