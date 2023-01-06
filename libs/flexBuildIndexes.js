@@ -1,3 +1,7 @@
+/**
+ * See /dev/flexsearch.md
+ */
+
 var textVersion = require('textversionjs');
 const yaml = require('js-yaml');
 const fs = require('fs');
