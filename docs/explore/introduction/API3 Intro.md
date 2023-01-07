@@ -16,29 +16,28 @@ tags:
 
 ## The API3 DAO
 
-[API3 <ExternalLinkImage/>](https://api3.org) is a collaborative project to deliver traditional API services to smart contract platforms in a decentralized and trust-minimized way. It is governed by a decentralized autonomous organization (DAO), namely the API3 DAO. The goal of API3 is to provide developers with an easy way to access off-chain resources from within their smart contracts, without having to worry about the security and trust implications of doing so.
+[API3 <ExternalLinkImage/>](https://api3.org) is a collaborative project to deliver traditional API services to smart contract platforms in a decentralized and trust-minimized way. It is governed by a decentralized autonomous organization (DAO), namely the API3 DAO. 
+
+The goal of API3 is to provide developers with an easy way to access off-chain resources from within their smart contracts, without having to worry about the security and trust implications of doing so.
 
 
-## Introduction 
+# Introduction 
 
-API3 believes DeFi can change the financial landscape with the right infrastructure and access to meaningful real world data. We aim to facilitate the true impact of DeFi by making a wide range of useful data easily accessible and scalable within smart contract functions. 
+API3 believes DeFi & Web3 can change the financial landscape with the right infrastructure and access to meaningful real world data. We aim to facilitate the true impact of smart contract applications by making a wide range of useful data easily accessible and scalable within smart contract functions. 
 
 Within this intro we will explore;
 - APIs within the blockchain 
-- First-party oracles and API3’s Airnode
-- API3 data feeds: Decentralized APIs (dAPIs)
-- Developer tooling such as the API3 Market
+- Airnode & First-party oracles
+- Data feeds: Decentralized APIs (dAPIs)
+- Oracle tooling
 
 If you wish to view a detailed discussion of the API3 project, read the [API3 Whitepaper<ExternaLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf).
 
-# Solving the API Connectivity Problem
 
 ## APIs in Web3
 
 An API is used to communicate with a specific application to receive services or data from it. It is often a well-defined and documented protocol one can use to interact
 with an application programmatically. This has led to Web2 developers integrating APIs to build increasingly complex and capable applications. 
-
-> <img src="../assets/images/OracleMap.png" width="450"/>
 
  In the context of decentralized applications, this definition is quite useless, and even misguiding. Instead, we should see APIs as channels businesses use to monetize their data and services.
 
@@ -48,8 +47,7 @@ See the article, [APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com
 
 ## The API Connectivity Problem 
 
-The fact that a smart contract cannot access API data not presently on the blockchain is commonly known as _the oracle problem_. This is only worth
-consideration because it includes not being able to call the paid
+<!--The fact that a smart contract cannot access API data not presently on the blockchain is commonly known as _the oracle problem_.--> Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid
 APIs described above. 
 
 All the game theoretic and cryptographic methods proposed
@@ -74,9 +72,9 @@ for a more relative information.
 
 API3’s Airnode has been designed so API providers can easily run their own oracle nodes. It is an open source tool that allows them to provide their data on-chain, without an intermediary, to any decentralized app (dApp) interested in their services. 
 
-Through simplfying how an API provider can monetize their data within Web3, hundreds of Airnodes have been deployed. Once an API has had Airnode deployed, commonly used protocols to serve this data on-chain include the Request-Response or Publish-Subscribe protocols. These protocols are selected depending on the data type being served on-chain and the decentralized applications use case. 
+Through simplfying how an API provider can monetize their data within Web3, hundreds of Airnodes have been deployed. Once an API has had Airnode deployed protocols serve this data on-chain. These include the Request-Response or Publish-Subscribe protocols and depend on the data type and the decentralized applications (dApp) use case. 
 
-To ensure API3 provided developers with an easy way to access off-chain resources from within their smart contract, Airnode also has range of advanced features built into it. These include functions such as pre & post processing or autentication, to name a few. 
+To ensure API3 provided developers with an easy way to access off-chain resources from within their smart contract, Airnode also has range of common features built into it. These include functions such as pre & post processing or autentication, to name a few. 
 
 ::: Learn
 Learn more about how Airnode works, [https://vitepress-docs.web.app/explore/airnode/what-is-airnode.html]
