@@ -37,9 +37,8 @@ sure to change the correlating interpolation value in `config.json`.
 | GCP_PROJECT_ID            | `nodeSettings.cloudProvider.projectId` | (GCP only) The GCP                                    |
 | project ID for deployment |
 
-Below is an example of `secrets.env`.
-
-- Variable names cannot contain dashes (-) or start with a number.
+Below is an example of `secrets.env`. Variable names cannot contain dashes (-)
+or start with a number.
 
 <!-- TODO: Reference a file from Airnode examples instead -->
 

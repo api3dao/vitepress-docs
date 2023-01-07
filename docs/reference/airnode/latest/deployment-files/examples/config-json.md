@@ -17,22 +17,22 @@ tags:
 
 # {{$frontmatter.title}}
 
-<Tabs>
+An Airnode's `config.json` file defines it behavior. Airnode can be deployed to
+a cloud provider such as ASW or GCP or in a local Docker container.
 
-@tab:Cloud Chain
+- Repo example for cloud providers AWS or GCP:
+  [config.json](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-deployer/config/config.example.json)
+- Repo example for a Docker container:
+  [config.json](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-node/config/config.example.json)
 
-You can also view this example
-[config.json](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-deployer/config/config.example.json)
-in the Airnode repo.
+::: code-group
 
-<<< @/reference/airnode/latest/deployment-files/examples/config-cloud.json
+```json [Cloud Providers]
+<!--@include: config-cloud.json-->
+```
 
-@tab:Local Chain
+```json [Docker Container]
+<!--@include: config-local.json-->
+```
 
-You can also view this example
-[config.json](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-node/config/config.example.json)
-in the Airnode repo.
-
-<<< @/reference/airnode/latest/deployment-files/examples/config-local.json
-
-</Tabs>
+:::

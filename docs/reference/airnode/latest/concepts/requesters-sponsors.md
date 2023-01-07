@@ -161,31 +161,27 @@ Executing the command
 [sponsor-requester](../packages/admin-cli.md#sponsor-requester) will sponsor a
 requester and returns the requesterAddress and sponsorAddress.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac
-
-```bash
+```bash [Linux/Mac]
 npx @api3/airnode-admin sponsor-requester \
   --providerUrl https://sepolia.infura.io/v3/<KEY> \
   --sponsor-mnemonic "cricket...oppose" \
   --requester-address 0x2c...gDER7
 
-Requester 0x2c...gDER7 sponsored using sponsorAddress 0xF4...dDyu9
+# Requester 0x2c...gDER7 sponsored using sponsorAddress 0xF4...dDyu9
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin sponsor-requester ^
   --providerUrl https://sepolia.infura.io/v3/<KEY> ^
   --sponsor-mnemonic "cricket...oppose" ^
   --requester-address 0x2c...gDER7
 
-Requester 0x2c...gDER7 sponsored using sponsorAddress 0xF4...dDyu9
+:: Requester 0x2c...gDER7 sponsored using sponsorAddress 0xF4...dDyu9
 ```
 
-</Tabs>
+:::
 
 ## How to Derive a Sponsor Wallet
 
@@ -211,31 +207,27 @@ transaction gas costs to do so.
 The command `derive-sponsor-wallet-address` will return the public address
 (`sponsorWalletAddress`) of the sponsorWallet to be funded by the sponsor.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac
-
-```bash
+```bash [Linux/Mac]
 npx @api3/airnode-admin derive-sponsor-wallet-address \
   --airnode-xpub xpub6CUGRUo... \
   --airnode-address 0xe1...dF05s \
   --sponsor-address 0xF4...dDyu9
 
-Sponsor wallet address: 0x14D5a34E5a370b9951Fef4f8fbab2b1016D557d9
+# Sponsor wallet address: 0x14D5a34E5a370b9951Fef4f8fbab2b1016D557d9
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin derive-sponsor-wallet-address ^
   --airnode-xpub xpub6CUGRUo... ^
   --airnode-address 0xe1...dF05s ^
   --sponsor-address 0xF4...dDyu9
 
-Sponsor wallet address: 0x14D5a34E5a370b9951Fef4f8fbab2b1016D557d9
+:: Sponsor wallet address: 0x14D5a34E5a370b9951Fef4f8fbab2b1016D557d9
 ```
 
-</Tabs>
+:::
 
 Sponsors need to keep their sponsorWallets topped off if they want Airnodes to
 fulfill requests made by their requesters. However this does not cover the cost

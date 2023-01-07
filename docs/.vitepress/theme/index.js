@@ -1,6 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
 import VersionPicklist from '../../_components/reference/VersionPicklist.vue';
-import Tabs from '../../_components/Tabs.vue';
 import SearchBtn from '../../_components/search/SearchBtn.vue';
 import SearchResults from '../../_components/search/SearchResults.vue';
 import BlogPosts from '../../_components/explore/BlogPosts.vue';
@@ -26,15 +25,11 @@ import ElementSelect from '../../_components/ElementSelect.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
 import NavBox from '../../_components/NavBox.vue';
-import EthTransact from '../../_components/meta-mask/EthTransact.vue';
-import EthTransactStatus from '../../_components/meta-mask/EthTransactStatus.vue';
-import EthTransactExecute from '../../_components/meta-mask/EthTransactExecute.vue';
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.component('VersionPicklist', VersionPicklist);
-    app.component('Tabs', Tabs);
     app.component('SearchBtn', SearchBtn);
     app.component('SearchResults', SearchResults);
     app.component('BlogPosts', BlogPosts);
@@ -63,9 +58,6 @@ export default {
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
     app.component('NavBox', NavBox);
-    app.component('EthTransact', EthTransact);
-    app.component('EthTransactStatus', EthTransactStatus);
-    app.component('EthTransactExecute', EthTransactExecute);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

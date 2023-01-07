@@ -41,11 +41,9 @@ Your current working directory should contain the configuration files above and
 you bind it to the `/app/config` directory for the docker using the `--volume`
 parameter.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 $ tree
 .
 ├── config.json
@@ -53,9 +51,7 @@ $ tree
 $ docker run --volume $(pwd):/app/config ...
 ```
 
-@tab:Windows PowerShell
-
-```powershell
+```powershell [Windows PowerShell]
 $ tree
 .
 ├── config.json
@@ -63,9 +59,7 @@ $ tree
 $ docker run --volume $(pwd):/app/config ...
 ```
 
-@tab:Windows CMD
-
-```batch
+```batch [Windows CMD]
 $ tree
 .
 ├── config.json
@@ -73,7 +67,7 @@ $ tree
 $ docker run --volume %cd%:/config:/app/config ...
 ```
 
-</Tabs>
+:::
 
 ## Usage
 
@@ -85,36 +79,30 @@ container. The below commands are run from the depicted directory.
 It is recommended to run the Airnode in a detached mode using the `--detach`
 parameter, but you may run the it without it as well.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run --detach \
   --volume $(pwd):/app/config \
   --name airnode \
   api3/airnode-client:0.10.0
 ```
 
-@tab:Windows PowerShell
-
-```powershell
+```powershell [Windows PowerShell]
 docker run --detach \
   --volume $(pwd):/app/config \
   --name airnode \
   api3/airnode-client:0.10.0
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 docker run --detach ^
   --volume %cd%:/app/config ^
   --name airnode ^
   api3/airnode-client:0.10.0
 ```
 
-</Tabs>
+:::
 
 > If you want to connect Airnode to a blockchain running on localhost, you need
 > to make the blockchain accessible from within the docker itself. If you use
