@@ -87,27 +87,23 @@ some deployment information and is used to remove the Airnode.
 
 <p><DeployerPermissionsWarning/></p>
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:0.10.0 deploy
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 deploy
 ```
 
-</Tabs>
+:::
 
 :::tip Re-deployments
 
@@ -148,51 +144,43 @@ Once one or more Airnodes were deployed using the
 deployed Airnodes. Files for cloud provider authentication are needed for the
 command to run correctly: `aws.env` (for AWS) and/or `gcp.json` (for GCP).
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:0.10.0 list
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 list
 ```
 
-</Tabs>
+:::
 
 By default, the deployer will attempt to list Airnode instances from all the
 supported cloud providers. You can use the `--cloud-providers` option to select
 just the cloud providers you want the deployer to list from.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:0.10.0 list --cloud-providers aws
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 list --cloud-providers aws
 ```
 
-</Tabs>
+:::
 
 ### `info`
 
@@ -204,26 +192,22 @@ address, stage, Airnode version and the update history. Files for cloud provider
 authentication are needed for the command to run correctly: `aws.env` (for AWS)
 and/or `gcp.json` (for GCP).
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:0.10.0 info aws2c6ef2b3
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 info aws2c6ef2b3
 ```
 
-</Tabs>
+:::
 
 ### `remove`
 
@@ -236,26 +220,22 @@ needed for the command to run correctly: `aws.env` (for AWS) and/or `gcp.json`
 (for GCP). This is the recommended way to remove a deployment, but there are
 alternatives as described below.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:0.10.0 remove aws2c6ef2b3
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 remove aws2c6ef2b3
 ```
 
-</Tabs>
+:::
 
 ### `remove-with-receipt`
 
@@ -266,26 +246,22 @@ identical for AWS and GCP. Files for cloud provider authentication are needed
 for the command to run correctly: `aws.env` (for AWS) and/or `gcp.json` (for
 GCP).
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
   api3/airnode-deployer:0.10.0 remove-with-receipt
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 remove-with-receipt
 ```
 
-</Tabs>
+:::
 
 ## Manual Removal
 
@@ -306,17 +282,13 @@ airnodeShortAddress and `production` is the stage name.
 
 :::
 
-<Tabs>
-
-@tab:AWS
+### AWS
 
 <DeleteAirnodeAws />
 
-@tab:GCP
+### GCP
 
 <DeleteAirnodeGcp />
-
-</Tabs>
 
 Learn more about AWS or GCP resources that Airnode uses in the
 [Cloud Resources](../cloud-resources.md) doc.

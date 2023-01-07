@@ -252,10 +252,6 @@ module.exports = [
             text: 'aws.env',
             link: '/reference/airnode/latest/deployment-files/templates/aws-env',
           },
-          {
-            text: 'gcp.json',
-            link: '/reference/airnode/latest/deployment-files/templates/gcp-json',
-          },
         ],
       },
     ],

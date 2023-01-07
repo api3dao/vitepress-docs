@@ -178,11 +178,9 @@ terminal at the end of an Airnode deployment using a [Docker image](../docker/).
 
 ### Request
 
-<Tabs>
+::: code-group
 
-@tab:HTTP Gateway
-
-```sh
+```sh [HTTP Gateway]
 curl \
 -X POST \
 -H 'Content-Type: application/json' \
@@ -190,9 +188,7 @@ curl \
 '<gatewayUrl>/0x6db9e3e3d0...c7025f5c27af6'
 ```
 
-@tab:HTTP Signed Data Gateway
-
-```sh
+```sh [HTTP Signed Data Gateway]
 curl \
 -X POST \
 -H 'Content-Type: application/json' \
@@ -200,49 +196,38 @@ curl \
 '<gatewayUrl>/0x6db9e3e3d0...c7025f5c27af6'
 ```
 
-</Tabs>
+:::
 
 ### Response
 
-<Tabs>
+::: code-group
 
-@tab:HTTP Gateway
-
-```json
+```json [HTTP Gateway]
 {
   "rawValue": { "usd": "6421.4" },
   "encodedValue": "0x0000000000000000000000000000000000000000000000000000000ef373e180",
   "values": ["64214000000"]
 }
+
+rawValue: the API response
+encodedValue: the encoded bytes value that is sent as payload in the response transaction on chain
+values: an array of values after they are [extracted and converted](../packages/adapter.md#conversion) to the target type
+
 ```
 
-The response format is a simple JSON object with the following fields:
-
-- `rawValue` - the API response
-- `values` - an array of values after they are
-  [extracted and converted](../packages/adapter.md#conversion) to the target
-  type
-- `encodedValue` - the encoded bytes value that is sent as payload in the
-  response transaction on chain
-
-@tab:HTTP Signed Data Gateway
-
-```json
+```json [HTTP Signed Data Gateway]
 {
   "timestamp": "1648226003",
   "encodedValue": "0x0000000000000000000000000000000000000000000000000000000a571a14c0",
   "signature": "0xa74e4312e2e6fa2de2997ef43e417e3b82d0019ac2a84012300f706f8b213e0d6e1ae9301052ec25b71addae1b1bceb4617779abfc6acd5a951e20a0aaabe6f61b"
 }
+
+timestamp: The UNIX timestamp applied to the response.
+encodedValue: The encoded bytes value that is sent as payload in the response. Suitable for use on-chain.
+signature: The response has been signed by Airnode.
 ```
 
-The response format is a simple JSON object with the following fields:
-
-- `timestamp` - The UNIX timestamp applied to the response.
-- `encodedValue` - The encoded bytes value that is sent as payload in the
-  response. Suitable for use on-chain.
-- `signature` - The response has been signed by Airnode.
-
-</Tabs>
+:::
 
 ## Tutorials
 

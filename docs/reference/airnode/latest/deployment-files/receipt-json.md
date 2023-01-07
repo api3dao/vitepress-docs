@@ -34,11 +34,9 @@ fulfill each request made by the requester contracts.
 A `receipt.json` file is created for both a AWS or GCP deployment. A receipt is
 not generated for client deployments (deploying to a Docker container).
 
-<Tabs>
+::: code-group
 
-@tab:AWS
-
-```json
+```json [AWS]
 {
   "airnodeWallet": {
     "airnodeAddress": "0xA30CA71Ba54E83127214D3271aEA8F5D6bD4Dace",
@@ -60,9 +58,7 @@ not generated for client deployments (deploying to a Docker container).
 }
 ```
 
-@tab:GCP
-
-```json
+```json [GCP]
 {
   "airnodeWallet": {
     "airnodeAddress": "0xAcCc602FA6d1dD57cE11559Fe0c07895396a7359",
@@ -85,4 +81,4 @@ not generated for client deployments (deploying to a Docker container).
 }
 ```
 
-</Tabs>
+:::

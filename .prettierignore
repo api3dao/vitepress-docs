@@ -2,6 +2,7 @@
 /.github
 /.vscode
 /node_modules
+/archives
 
 # .vitepress
 /docs/.vitepress/dist

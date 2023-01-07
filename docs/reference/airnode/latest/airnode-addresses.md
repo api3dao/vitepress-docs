@@ -25,42 +25,30 @@ new deployment.
 
 ## AirnodeRrpV0
 
-<Tabs>
-
-@tab:mainnets
+### • mainnets
 
 <ContractAddresses type="mainnet" contractName="AirnodeRrpV0" ignoreTabsSlot="true"/>
 
-@tab:testnets
+### • testnets
 
 <ContractAddresses type="testnet" contractName="AirnodeRrpV0"  ignoreTabsSlot="true"/>
 
-</Tabs>
-
 ## RequesterAuthorizerWithAirnode
 
-<Tabs>
-
-@tab:mainnets
+### • mainnets
 
 <ContractAddresses type="mainnet" contractName="RequesterAuthorizerWithAirnode"  ignoreTabsSlot="true"/>
 
-@tab:testnets
+### • testnets
 
 <ContractAddresses type="testnet" contractName="RequesterAuthorizerWithAirnode"  ignoreTabsSlot="true"/>
 
-</Tabs>
-
 ## AccessControlRegistry
 
-<Tabs>
-
-@tab:mainnets
+### • mainnets
 
 <ContractAddresses type="mainnet" contractName="AccessControlRegistry"  ignoreTabsSlot="true"/>
 
-@tab:testnets
+### • testnets
 
 <ContractAddresses type="testnet" contractName="AccessControlRegistry"  ignoreTabsSlot="true"/>
-
-</Tabs>

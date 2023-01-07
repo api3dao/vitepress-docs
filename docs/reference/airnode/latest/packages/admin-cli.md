@@ -236,27 +236,23 @@ command.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin sponsor-requester \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --sponsor-mnemonic "nature about salad..." \
   --requester-address 0x2c2e12...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin sponsor-requester ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --sponsor-mnemonic "nature about salad..." ^
   --requester-address 0x2c2e12...
 ```
 
-</Tabs>
+:::
 
 ### `unsponsor-requester`
 
@@ -283,27 +279,23 @@ the `mnemonic` you provide here has to belong to the sponsor.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```bash
+```bash [Linux/Mac/WSL2]
 npx @api3/airnode-admin unsponsor-requester \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --sponsor-mnemonic "nature about salad..." \
   --requester-address 0x2c2e12...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin unsponsor-requester ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --sponsor-mnemonic "nature about salad..." ^
   --requester-address 0x2c2e12...
 ```
 
-</Tabs>
+:::
 
 ### `get-sponsor-status`
 
@@ -317,27 +309,23 @@ Returns the sponsor status for a given [sponsor](../concepts/sponsor.md) and
 - `airnode-rrp-address (optional)`: The public address of the AirnodeRrpV0.sol
   protocol contract.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin get-sponsor-status \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --sponsor-address 0x9Ec6C4... \
   --requester-address 0x2c2e12...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin get-sponsor-status ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --sponsor-address 0x9Ec6C4... ^
   --requester-address 0x2c2e12...
 ```
 
-</Tabs>
+:::
 
 ### `derive-sponsor-wallet-address`
 
@@ -353,27 +341,23 @@ the Airnode wallet. See the
 - `airnode-address`: The public address of the Airnode.
 - `sponsor-address`: The address of the sponsor account.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin derive-sponsor-wallet-address \
   --airnode-xpub xpub6CUGRUo... \
   --airnode-address 0xe1e0dd... \
   --sponsor-address 0x9Ec6C4...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin derive-sponsor-wallet-address ^
   --airnode-xpub xpub6CUGRUo... ^
   --airnode-address 0xe1e0dd... ^
   --sponsor-address 0x9Ec6C4...
 ```
 
-</Tabs>
+:::
 
 ### `create-template`
 
@@ -399,27 +383,23 @@ file.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin create-template \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --mnemonic "nature about salad..." \
   --template-file-path ./template.json
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin create-template ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --mnemonic "nature about salad..." ^
   --template-file-path ./template.json
 ```
 
-</Tabs>
+:::
 
 ### `create-inline-template`
 
@@ -439,23 +419,19 @@ template requests.
 
 - `template-file-path`: Path to the template file to create on-chain.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin create-inline-template \
   --template-file-path ./template.json
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin create-inline-template ^
   --template-file-path ./template.json
 ```
 
-</Tabs>
+:::
 
 ### `get-template`
 
@@ -466,25 +442,21 @@ Returns the [template](../concepts/template.md) for the given `template-id`.
 - `airnode-rrp-address (optional)`: The public address of the AirnodeRrpV0.sol
   protocol contract.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin get-template \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --template-id 0x8d3b9...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin get-template ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --template-id 0x8d3b9...
 ```
 
-</Tabs>
+:::
 
 ### `request-withdrawal`
 
@@ -530,11 +502,9 @@ withdrawal is requested.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin request-withdrawal \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --sponsor-mnemonic "nature about salad..." \
@@ -542,9 +512,7 @@ npx @api3/airnode-admin request-withdrawal \
   --sponsor-wallet-address 0x9Ec6C4...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin request-withdrawal ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --sponsor-mnemonic "nature about salad..." ^
@@ -552,7 +520,7 @@ npx @api3/airnode-admin request-withdrawal ^
   --sponsor-wallet-address 0x9Ec6C4...
 ```
 
-</Tabs>
+:::
 
 ### `check-withdrawal-request`
 
@@ -566,25 +534,21 @@ request with the given `withdrawal-request-id` from the
 - `airnode-rrp-address (optional)`: The public address of the AirnodeRrpV0.sol
   protocol contract.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin check-withdrawal-request \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --withdrawal-request-id 0x011d1b...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin check-withdrawal-request ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --withdrawal-request-id 0x011d1b...
 ```
 
-</Tabs>
+:::
 
 ### `verify-airnode-xpub`
 
@@ -598,25 +562,21 @@ before calling the
 [derive-sponsor-wallet-address](admin-cli.md#derive-sponsor-wallet-address)
 command.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin verify-airnode-xpub \
   --airnode-xpub xpub6CUGRUo... \
   --airnode-address 0xe1e0dd...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin verify-airnode-xpub ^
   --airnode-xpub xpub6CUGRUo... ^
   --airnode-address 0xe1e0dd...
 ```
 
-</Tabs>
+:::
 
 ## Airnodes
 
@@ -639,21 +599,17 @@ command.
 
 - `airnode-mnemonic`: The Airnode mnemonic for which the xpub is to be derived.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin derive-airnode-xpub --airnode-mnemonic "nature about salad..."
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin derive-airnode-xpub --airnode-mnemonic "nature about salad..."
 ```
 
-</Tabs>
+:::
 
 ### `derive-endpoint-id`
 
@@ -667,25 +623,21 @@ airnode documentation. Add the `endpointId` to the config.json file
 - `endpoint-name`: The name of the endpoint from config.json
   (`triggers.rrp[n].endpointName`).
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin derive-endpoint-id \
   --ois-title "My OIS title..." \
   --endpoint-name "My endpoint name..."
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin derive-endpoint-id ^
   --ois-title "My OIS title..." ^
   --endpoint-name "My endpoint name..."
 ```
 
-</Tabs>
+:::
 
 ### `generate-airnode-mnemonic`
 
@@ -719,23 +671,19 @@ for many other admin CLI commands, such as
 
 - `airnode-mnemonic`: A mnemonic used to generate the airnode address.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin derive-airnode-address \
 --airnode-mnemonic "cricket among ..."
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin derive-airnode-address ^
 --airnode-mnemonic "cricket among ..."
 ```
 
-</Tabs>
+:::
 
 ## RequesterAuthorizerWithAirnode
 
@@ -786,11 +734,9 @@ previously set timestamp.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin set-whitelist-expiration \
   --mnemonic "nature about salad..." \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
@@ -800,9 +746,7 @@ npx @api3/airnode-admin set-whitelist-expiration \
   --airnode-address 0xe1e0dd...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin set-whitelist-expiration ^
   --mnemonic "nature about salad..." ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
@@ -812,7 +756,7 @@ npx @api3/airnode-admin set-whitelist-expiration ^
   --airnode-address 0xe1e0dd...
 ```
 
-</Tabs>
+:::
 
 ### `extend-whitelist-expiration`
 
@@ -842,11 +786,9 @@ timestamp.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin extend-whitelist-expiration \
   --mnemonic "nature about salad..." \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
@@ -856,9 +798,7 @@ npx @api3/airnode-admin extend-whitelist-expiration \
   --airnode-address 0xe1e0dd...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin extend-whitelist-expiration ^
   --mnemonic "nature about salad..." ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
@@ -868,7 +808,7 @@ npx @api3/airnode-admin extend-whitelist-expiration ^
   --airnode-address 0xe1e0dd...
 ```
 
-</Tabs>
+:::
 
 ### `set-indefinite-whitelist-status`
 
@@ -901,11 +841,9 @@ even beyond the expiration period.
   use for the transaction (only for EIP-1559 transactions).
 - `nonce` (optional): The nonce to use for the transaction.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin set-indefinite-whitelist-status \
   --mnemonic "nature about salad..." \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
@@ -915,9 +853,7 @@ npx @api3/airnode-admin set-indefinite-whitelist-status \
   --airnode-address 0xe1e0dd...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin set-indefinite-whitelist-status ^
   --mnemonic "nature about salad..." ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
@@ -927,7 +863,7 @@ npx @api3/airnode-admin set-indefinite-whitelist-status ^
   --airnode-address 0xe1e0dd...
 ```
 
-</Tabs>
+:::
 
 ### `get-whitelist-status`
 
@@ -942,11 +878,9 @@ Airnode–endpoint pair.
 - `requester-authorizer-with-airnode (optional)`: The authorizer contract
   address.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin get-whitelist-status \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --endpoint-id 0xda088e2d94... \
@@ -954,9 +888,7 @@ npx @api3/airnode-admin get-whitelist-status \
   --airnode-address 0xe1e0dd...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin get-whitelist-status ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --endpoint-id 0xda088e2d94... ^
@@ -964,7 +896,7 @@ npx @api3/airnode-admin get-whitelist-status ^
   --airnode-address 0xe1e0dd...
 ```
 
-</Tabs>
+:::
 
 ### `is-requester-whitelisted`
 
@@ -977,11 +909,9 @@ Called to check if a requester is whitelisted to use the Airnode–endpoint pair
 - `requester-address`: The public address of the requester contract.
 - `airnode-address`: The public address of the Airnode.
 
-<Tabs>
+::: code-group
 
-@tab:Linux/Mac/WSL2
-
-```sh
+```sh [Linux/Mac/WSL2]
 npx @api3/airnode-admin is-requester-whitelisted \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --requester-authorizer-with-airnode 0xDc64a1... \
@@ -990,9 +920,7 @@ npx @api3/airnode-admin is-requester-whitelisted \
   --airnode-address 0xe1e0dd...
 ```
 
-@tab:Windows
-
-```batch
+```batch [Windows]
 npx @api3/airnode-admin is-requester-whitelisted ^
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> ^
   --requester-authorizer-with-airnode 0xDc64a1... ^
@@ -1001,7 +929,7 @@ npx @api3/airnode-admin is-requester-whitelisted ^
   --airnode-address 0xe1e0dd...
 ```
 
-</Tabs>
+:::
 
 ## More Examples
 

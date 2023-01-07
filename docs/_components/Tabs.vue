@@ -1,66 +1,9 @@
-<!--
-Tab set for all pages. Uses the default slot. Any child 
-Vue Components in the slot must be added to the template 
-below.
-
-
-knownElements: ['div', 'p', 'img', 'ol', 'ul', 'table']
-All HTML elements that are used need to be added to knownElements.
-Otherwise they are ignored.
--->
-
 <template>
-  <!-- Never show the slot, it is needed to force components 
-       to load the this.$slots array. MUST: use v-show. -->
-  <div v-show="show">
-    <slot></slot>
-  </div>
-
-  <!-- Tabs -->
-  <div class="api3-tab">
-    <button
-      :id="tab.id"
-      v-for="(tab, index) in tabs"
-      v-bind:key="index"
-      @click="openTab(tab)"
-    >
-      {{ tab.label }}
-    </button>
-  </div>
-
-  <div class="api3-tab-outer-panes">
-    <div :id="tab.paneId" v-for="(tab, index) in tabs" :key="index">
-      <div v-for="(element, index) in tab.elements" :key="index">
-        <div v-if="element.toString().startsWith('<')" v-html="element"></div>
-
-        <!-- Start components listing here -->
-        <!-- BlogPosts has 1 prop: show -->
-        <BlogPosts
-          v-else-if="element.type.name === 'BlogPosts'"
-          :show="element.props['show']"
-        >
-        </BlogPosts>
-        <!-- ContractAddresses has 2 props: type and contractName -->
-        <ContractAddresses
-          v-else-if="element.type.name === 'ContractAddresses'"
-          :type="element.props['type']"
-          :contractName="element.props['contractName']"
-        >
-        </ContractAddresses>
-        <DeleteAirnodeGcp
-          v-else-if="element.type.name === 'DeleteAirnodeGcp'"
-        />
-        <DeleteAirnodeAws
-          v-else-if="element.type.name === 'DeleteAirnodeAws'"
-        />
-        <!-- ChainName has 1 prop: chainId -->
-        <ChainName
-          v-else-if="element.type.name === 'ChainName'"
-          :chainId="element.props['chainId']"
-        />
-        <!-- End of components listing -->
-      </div>
-    </div>
+  <div style="border: red 1px solid; color: red">
+    Tabs are no longer used.<br />
+    1. Use codeGroups for code sippets.<br />
+    2. For none code content use heading sections, these will show up in the
+    TOC.
   </div>
 </template>
 
@@ -74,6 +17,7 @@ export default {
   }),
 
   mounted() {
+    if (1 == 1) return;
     let currentTabIndex; // local only, to track the index of the tab to add its elements
     for (let i = 0; i < this.$slots.default().length; i++) {
       let element = this.$slots.default()[i];
