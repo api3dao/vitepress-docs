@@ -12,11 +12,18 @@ tags:
 
 # {{$frontmatter.title}}
 
-Until a third party can make a better tab Vue component for VitePress the
-`<Tabs/>` component, which is home grown, is used in the VitePress release of
-the docs. It is designed mostly to display code examples. Basic HTML and text
-can also be added. Nesting other Vue components inside the Tabs component can
-become problematic.
+::: danger Deprecated
+
+The Tabs component has been deprecated in favor of the native `code-group`
+markdown component and the proper implementation of the TOC.
+
+:::
+
+Until a third party can make a better tab Vue component for VitePress the Tabs
+component, which is home grown, is used in the VitePress release of the docs. It
+is designed mostly to display code examples. Basic HTML and text can also be
+added. Nesting other Vue components inside the Tabs component can become
+problematic.
 
 The primary use of the tabs component is to display source code. In fact use of
 the tabs component should be used sparingly. While the search engine can find
@@ -28,28 +35,10 @@ use tabs.
 
 Example:
 
-<Tabs>
-
-@tab:Tab 1
-
-Number one tab
-
-Below is the ChainName component which shows the chain name as Ethereum.
-
-<div>
-    <ChainName chainId="1" />
-</div>
-
-@tab:Tab 2
-
-Number two tab
-
-</Tabs>
-
 ## Useful Vue Components
 
-Each component that `<Tabs>` can display must be added manually to the template
-of the component. See the component in the `vitepress-docs` repo
+Each component that Tabs can display must be added manually to the template of
+the component. See the component in the `vitepress-docs` repo
 [here](https://github.com/api3dao/vitepress-docs/blob/main/docs/_components/Tabs.vue).
 
 ```html

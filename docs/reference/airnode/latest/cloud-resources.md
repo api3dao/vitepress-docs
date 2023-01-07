@@ -20,9 +20,7 @@ tags:
 When deployed to a cloud provider, such as AWS or GCP, Airnode uses certain
 resources to fully operate.
 
-<Tabs>
-
-@tab:AWS
+## AWS
 
 | Resource    | Description                                                                   |
 | :---------- | :---------------------------------------------------------------------------- |
@@ -33,7 +31,7 @@ resources to fully operate.
 | API Gateway | Endpoints for the HTTP Gateway and HTTP Signed Data Gateway.                  |
 | S3          | File describing the state of the deployed infrastructure.                     |
 
-@tab:GCP
+## GCP
 
 | Resource        | Description                                                                                 |
 | :-------------- | :------------------------------------------------------------------------------------------ |
@@ -42,5 +40,3 @@ resources to fully operate.
 | API Gateway     | Endpoints for the HTTP Gateway and HTTP Signed Data Gateway.                                |
 | Cloud Storage   | File describing the state of the deployed infrastructure & source code for cloud functions. |
 | IAM             | Service accounts & roles to allow communication among other resources.                      |
-
-</Tabs>

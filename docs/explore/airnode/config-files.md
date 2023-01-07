@@ -23,13 +23,9 @@ dAPIs with data behind the scenes.
 The diagrams below depict the configuration files needed for a successful
 deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
 
-<Tabs>
+## AWS
 
-@tab:AWS
-
-<img style="margin-top:15px;display: block;
-  margin-left: auto;
-  margin-right: auto;" src="../assets/images/api-provider-overview-aws.png" width="450">
+<img style="margin-top:15px;display: block;" src="../assets/images/api-provider-overview-aws.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. It contains an
    important element, called OIS, that maps an API to Airnode endpoints.
@@ -38,11 +34,9 @@ deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
 4. **deployer image**: A Docker image that deploys the Airnode using its deploy
    command.
 
-@tab:GCP
+## GCP
 
-<img style="margin-top:15px;display: block;
-  margin-left: auto;
-  margin-right: auto;" src="../assets/images/api-provider-overview-gcp.png" width="450">
+<img style="margin-top:15px;display: block;" src="../assets/images/api-provider-overview-gcp.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. It contains an
    important element, called OIS, that maps an API to Airnode endpoints.
@@ -50,11 +44,9 @@ deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
 3. **deployer image**: A Docker image that deploys the Airnode using its deploy
    command.
 
-@tab:Container
+## Container
 
-<img style="margin-top:15px;display: block;
-  margin-left: auto;
-  margin-right: auto;" src="../assets/images/api-provider-overview-container.png" width="450">
+<img style="margin-top:15px;display: block;" src="../assets/images/api-provider-overview-container.png" width="450">
 
 1. **config.json**: Contains the Airnode's configuration. It contains an
    important element, called OIS, that maps an API to Airnode endpoints.
@@ -62,9 +54,7 @@ deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
 3. **client image**: A Docker image that contains the Airnode that will run with
    the provided configuration.
 
-</Tabs>
-
-## More...
+## More related material...
 
 - See [Understanding Airnode](/reference/airnode/latest/understand/) to learn
   how Airnode is defined by `config.json`.

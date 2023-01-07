@@ -17,13 +17,11 @@ tags:
 
 # {{$frontmatter.title}}
 
-- Variable names cannot contain dashes (-) or start with a number.
+Variable names cannot contain dashes (-) or start with a number.
 
-<Tabs>
+::: code-group
 
-@tab:Cloud Chain
-
-```sh
+```sh [Cloud Providers]
 AIRNODE_WALLET_MNEMONIC=""
 SEPOLIA_PROVIDER_URL=""
 SS_COINGECKO_REQUESTS_API_KEY=""
@@ -35,12 +33,10 @@ HEARTBEAT_URL=""
 GCP_PROJECT_ID=""
 ```
 
-@tab:Local Chain
-
-```sh
+```sh [Docker Container]
 AIRNODE_WALLET_MNEMONIC=""
 LOCAL_PROVIDER_URL=""
 SS_CURRENCY_CONVERTER_API_KEY=""
 ```
 
-</Tabs>
+:::

@@ -8,7 +8,8 @@ export default {
   appearance: true,
   ignoreDeadLinks: true,
   head: [
-    ['link', { rel: 'stylesheet', href: '/api3.css' }],
+    ['link', { rel: 'stylesheet', href: '/api3.css' }, ,],
+
     [
       'link',
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/small-logo.png' },

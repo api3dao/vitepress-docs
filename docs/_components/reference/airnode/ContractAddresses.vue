@@ -47,12 +47,6 @@
       </table>
     </div>
   </div>
-  <!-- LOADING IMAGE -->
-  <!--div v-else>
-    <div style="padding-left: 55px">
-      <img src="/img/spinner.gif" v-show="showSpinner" />
-    </div>
-  </div-->
 </template>
 
 <script>
@@ -71,7 +65,8 @@ export default {
     items: [],
   }),
   mounted() {
-    if (this.ignoreTabsSlot) return;
+    console.log('this.ignoreTabsSlot', this.ignoreTabsSlot);
+    //if (this.ignoreTabsSlot) return;
     this.$nextTick(async function () {
       console.log('----- MOUNTED ----- ContractAddresses -----');
       try {

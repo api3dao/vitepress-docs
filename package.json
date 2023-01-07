@@ -10,7 +10,7 @@
     "sync:VPSidebar": "cp docs/_components/vitepress/VPSidebar.vue  node_modules/vitepress/dist/client/theme-default/components/VPSidebar.vue",
     "sync:sidebarHeader": "cp docs/_components/vitepress/SidebarHeader.vue  node_modules/vitepress/dist/client/theme-default/components/SidebarHeader.vue",
     "docs:dev": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress dev docs",
-    "docs:build": "export NODE_OPTIONS=--max_old_space_size=10240; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress build docs;",
+    "docs:build": "export NODE_OPTIONS=--max_old_space_size=16384; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress build docs;",
     "docs:serve": "vitepress serve docs --port 8082",
     "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
