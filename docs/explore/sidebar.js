@@ -3,22 +3,29 @@ module.exports = [
     text: '',
     items: [
       {
-        text: 'About our Journey!',
+        text: 'About our journey!',
         collapsible: true,
         collapsed: false,
         items: [
-          { text: '• An intro to API3', link: '/explore/introduction/' },
           {
+            text: '• Getting started with API3',
+            link: '/explore/introduction/',
+          },
+          /*{
             text: '• Solving the API <div style="margin-left:11px;">Connectivity Problem</div>',
             link: '/explore/introduction/connectivity-problem',
-          },
+          },*/
           {
             text: '• What are first-party oracles?',
             link: '/explore/introduction/first-party',
           },
           {
-            text: '• Decentralized APIs',
-            link: '/explore/introduction/decentralization',
+            text: '• Decentralized APIs (dAPIs)',
+            link: '/explore/introduction/decentralized-apis',
+          },
+          {
+            text: '• API3 Market',
+            link: '/explore/introduction/market',
           },
         ],
       },
@@ -49,10 +56,6 @@ module.exports = [
       {
         text: 'Service Coverage',
         link: '/explore/dapis/service-coverage',
-      },
-      {
-        text: 'API3 Market',
-        link: '/explore/dapis/market',
       },
     ],
   },
