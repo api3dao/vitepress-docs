@@ -2,7 +2,7 @@
   "1": { "fullname": "Ethereum", "type": "mainnet" },
   "3": { "fullname": "Ropsten (deprecated)", "type": "testnet" },
   "4": { "fullname": "Rinkeby (deprecated)", "type": "testnet" },
-  "5": { "fullname": "Goerli", "type": "testnet" },
+  "5": { "fullname": "Ethereum-Goerli", "type": "testnet" },
   "10": { "fullname": "Optimism", "type": "mainnet" },
   "30": { "fullname": "RSK", "type": "mainnet" },
   "31": { "fullname": "RSK testnet", "type": "testnet" },
@@ -33,6 +33,6 @@
   "80001": { "fullname": "Polygon Mumbai testnet", "type": "testnet" },
   "200101": { "fullname": "Milkomeda C1 testnet", "type": "testnet" },
   "421613": { "fullname": "Arbitrum testnet", "type": "testnet" },
-  "11155111": { "fullname": "Sepolia", "type": "testnet" },
+  "11155111": { "fullname": "Ethereum-Sepolia", "type": "testnet" },
   "1313161554": { "fullname": "Aurora", "type": "mainnet" }
 }
