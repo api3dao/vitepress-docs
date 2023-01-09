@@ -14,6 +14,12 @@ tags:
 
 # {{$frontmatter.title}}
 
+API3 is open to any proposals and improvements. Please feel free to contribute.
+
+- opening issues
+- making pull requests
+- proposing features
+
 Individuals with a technical background can contribute to the project (through
 development, integrations, writing documentation, etc.). The general point is
 that one needs to be able to use a solution proficiently before being able to
@@ -52,6 +58,28 @@ This page will be updated as more materials are produced. Please feel free to
 create
 [GitHub issues<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/issues)
 to make suggestions.
+
+## GitHub
+
+Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page and
+find everything about.. everything. Explore the many repositories to gain
+in-depth knowledge about API3.
+
+- the whitepaper
+- source code
+- documentation
+- usage examples
+
+Please feel free to contribute to any API3 GitHub repositories.
+
+## Communities
+
+Join the API3 community on the following services.
+
+- [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
+- Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
+- Developer Chat on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
+- [YouTube Channel<ExternalLinkImage/>](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
 
 ## Contributing to the Technical Documentation
 

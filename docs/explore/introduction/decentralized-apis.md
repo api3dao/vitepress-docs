@@ -3,7 +3,7 @@ title: Decentralized APIs (dAPIs)
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
-path: /explore/introduction/decentralization.html
+path: /explore/introduction/decentralized-apis.html
 outline: deep
 tags:
   - decentralization
@@ -17,50 +17,69 @@ tags:
 
 # {{$frontmatter.title}}
 
-A dApp is an application that is implemented as a smart contract that runs on a decentralized blockchain. By the same token, a dAPI is an API-like service that is delivered to smart contracts. In simpler terms, just as applications use APIs, dApps will use dAPIs.
+A dApp is an application that is implemented as a smart contract that runs on a
+decentralized blockchain. By the same token, a dAPI is an API-like service that
+is delivered to smart contracts. In simpler terms, just as applications use
+APIs, dApps will use dAPIs.
 
 ## dAPI Overview
 
-dAPIs are managed API services designed to resemble Web APIs from the perspective of a smart contract. 
+dAPIs are managed API services designed to resemble Web APIs from the
+perspective of a smart contract.
 
-Through a dAPI dApps access continuously updated streams of off-chain price reference data served via first-party oracles. They provide a secure way for dApps such as DeFi lending, synthetic assets, stable coins, derivatives and more to function. 
- 
-The dAPI system is composed of a variety of Airnode protocols. These typically encompass Request-response Protocol (RRP), Publish-subscribe Protocol (PSP), relayed RRP, relayed PSP and API-signed data. 
+Through a dAPI dApps access continuously updated streams of off-chain price
+reference data served via first-party oracles. They provide a secure way for
+dApps such as DeFi lending, synthetic assets, stable coins, derivatives and more
+to function.
 
-dAPIs are then delivered to builders from a variety of oracle services price reference data for the latest cryptocurrency, stock and commodity prices. 
+The dAPI system is composed of a variety of Airnode protocols. These typically
+encompass Request-response Protocol (RRP), Publish-subscribe Protocol (PSP),
+relayed RRP, relayed PSP and API-signed data.
 
-## dAPI services 
+dAPIs are then delivered to builders from a variety of oracle services price
+reference data for the latest cryptocurrency, stock and commodity prices.
 
-dAPIs have been designed to serve builders with data feeds that are appropiate across the full application development cycle. As such, dAPIs are accessed in a range of oracle services depending on product stage and use case. These consist of:
+## dAPI services
+
+dAPIs have been designed to serve builders with data feeds that are appropiate
+across the full application development cycle. As such, dAPIs are accessed in a
+range of oracle services depending on product stage and use case. These consist
+of:
 
 1. Self-funded data feeds
 2. Agreegated data feeds
 3. Service covered data feeds
 
-### 1. Self-funded data feeds 
+### 1. Self-funded data feeds
 
-Self-funded data feeds are permissionless price reference dAPIs where collateral for an oracle update transaction is provided by the user. Self-funded dAPIs are activated by funding a gas wallet using the API3 Market.
+Self-funded data feeds are permissionless price reference dAPIs where collateral
+for an oracle update transaction is provided by the user. Self-funded dAPIs are
+activated by funding a gas wallet using the API3 Market.
 
-These data feeds are provided by a single API provider. As such these dAPIs are appropiate for early-stage of dApp development. 
+These data feeds are provided by a single API provider. As such these dAPIs are
+appropiate for early-stage of dApp development.
 
-In cases where a single source is deemed insufficient or the overhead of keeping a wallet topped up for oracle services is undesirable, API3 recommended to upgrade to a service covered dAPI service. 
+In cases where a single source is deemed insufficient or the overhead of keeping
+a wallet topped up for oracle services is undesirable, API3 recommended to
+upgrade to a service covered dAPI service.
 
-::: Tip
-Get started with self-funded dAPIs provided by byog.io
-:::
+::: Tip Get started with self-funded dAPIs provided by byog.io :::
 
-### 2. Agreegated data feeds
+### 2. Aggregated data feeds
 
-In the live data feed use-case, a dAPI is a set of first-party oracles that is agreegated and wrapped by a higher-level interface. A user that is whitelisted can read the respective dAPI, without needing to specify what Beacon should be used under the hood. 
+In the live data feed use-case, a dAPI is a set of first-party oracles that is
+aggregated and wrapped by a higher-level interface. A user that is whitelisted
+can read the respective dAPI, without needing to specify what Beacon should be
+used under the hood.
 
-API3 will spin up the desired data feed and point the dAPI mapping towards it. Compared to single sourced (BYOG) dAPIs, API3 and the underlying API providers will also take over the gas management overhead from this point onward until the time that the service expires. 
+API3 will spin up the desired data feed and point the dAPI mapping towards it.
+Compared to single sourced (byog) dAPIs, API3 and the underlying API providers
+will also take over the gas management overhead from this point onward until the
+time that the service expires.
 
+dAPIs will aggregate high-quality data sources
 
-dAPIs will agreegate high-quality data sources 
-
-### 3. Service covered data feeds 
-
-
+### 3. Service covered data feeds
 
 ## Accessing dAPIs
 
@@ -72,11 +91,10 @@ The API3 Market is the primary tool to;
 - Request new dAPIs
 - Sponsor existing dAPIs
 
-Additionally, for self-funded dAPIs the API3 Market will providing tooling to fund a sponsor wallet and activate the feed. 
-
+Additionally, for self-funded dAPIs the API3 Market will providing tooling to
+fund a sponsor wallet and activate the feed.
 
 --END--
-
 
 ## Decentralized Governance
 
