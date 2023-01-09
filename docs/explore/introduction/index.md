@@ -1,5 +1,5 @@
 ---
-title: An intro to API3
+title: Getting started with API3
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → About our journey!
@@ -14,115 +14,105 @@ tags:
 
 # {{$frontmatter.title}}
 
-API3 ([https://api3.org<ExternalLinkImage/>](https://api3.org)) is a
-collaborative project to deliver traditional API services to smart contract
-platforms in a decentralized and trust-minimized way. It is governed by a
-_decentralized autonomous organization_ (DAO), namely the **API3 DAO**.
-Therefore, its code is open source and its operations are transparent. Learn
-more about API3 on its website.
+## The API3 DAO
 
-::: tip API3 Whitepaper (pdf)
+[API3<ExternalLinkImage/>](https://api3.org) is a collaborative project to
+deliver traditional API services to smart contract platforms in a decentralized
+and trust-minimized way. It is governed by a decentralized autonomous
+organization (DAO), namely the API3 DAO.
 
-For a detailed discussion of the API3 project, read the
-<a href="/api3-whitepaper-v1.0.3.pdf" target="_api3-whitepaper">API3
-Whitepaper</a>.
+The goal of API3 is to provide developers with an easy way to access off-chain
+resources from within their smart contracts, without having to worry about the
+security and trust implications of doing so.
+
+# Introduction
+
+API3 believes DeFi & Web3 can change the financial landscape with the right
+infrastructure and access to meaningful real world data. We aim to facilitate
+the true impact of smart contract applications by making a wide range of useful
+data easily accessible and scalable within smart contract functions.
+
+Within this intro we will explore;
+
+- APIs within the blockchain
+- Airnode & First-party oracles
+- Data feeds: Decentralized APIs (dAPIs)
+- Oracle tooling
+
+If you wish to view a detailed discussion of the API3 project, read the
+[API3 Whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf).
+
+## APIs in Web3
+
+An API is used to communicate with a specific application to receive services or
+data from it. It is often a well-defined and documented protocol one can use to
+interact with an application programmatically. This has led to Web2 developers
+integrating APIs to build increasingly complex and capable applications.
+
+In the context of decentralized applications, this definition is quite useless,
+and even misguiding. Instead, we should see APIs as channels businesses use to
+monetize their data and services.
+
+::: tip See the article
+
+[APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
+for a more complete background on APIs.
 
 :::
 
-## Thesis Statement
+## The API Connectivity Problem
 
-The vast majority of the external integrations that decentralized applications
-need are to commercial Web APIs that traditional businesses have built to
-monetize their data and services. Therefore, what is widely known as _the oracle
-problem_ is in practice _an API connectivity problem_.
+<!--The fact that a smart contract cannot access API data not presently on the blockchain is commonly known as _the oracle problem_.--> Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid
 
-Existing oracle solutions fall short because they fail to make this distinction,
-resulting in inferior solutions that depend on third-party oracles and
-ecosystems that exclude _API providers_. By refining the definition of the
-problem, **API3** aims to provide a much more optimal solution and introduces
-Airnode, a first-party oracle.
+APIs described above.
 
-::: tip
+All the game theoretic and cryptographic methods proposed for various oracle
+solutions essentially aim to provide smart contracts access to these paid APIs.
+Therefore, it would be more accurate to define the problem at hand as _the API
+connectivity problem_.
 
-Learn more about first-party oracles Read section 4 of the
-<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">API3
-Whitepaper</a> _Airnode: A Node Designed for First-Party Oracles_
+As you read about API3 offerings, you will discover that this redefinition will
+have ripple effects across the entire solution, from how the ecosystem is built
+to the lowest levels of the protocol.
+
+Additionally, as existing oracle solutions fall short because they fail to make
+this distinction, resulting in inferior solutions that depend on third-party
+oracles and ecosystems that exclude API providers. As such, API3 belives the
+oracle problem is ill-posed, instead we are faced with an API Connectivity
+Problem.
+
+::: tip See the article
+
+[The API Connectivity Problem](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)<ExternalLinkImage/>
+for a more relative information.
 
 :::
-
-## dAPPs
-
-With decentralized applications beginning to provide meaningful services in
-areas such as decentralized finance, there is an increasing need for these
-applications to receive data or trigger events using traditional Web APIs.
-
-Generic oracle solutions fail to appropriately address the API connectivity
-problem due to an over-generalized and misguided approach. To remedy this issue,
-API3 will drive a collaborative effort to create first-party oracles and a new
-generation of blockchain-native, decentralized APIs, or dAPIs for short.
 
 ## Airnode
 
-At its core, **API3** brings the ability for API providers to easily run their
-own first-party _oracle nodes_. This allows them to provide their data on-chain,
-without an intermediary, to any _decentralized app_ \(dApp\) interested in their
-services.
+API3’s Airnode has been designed so API providers can easily run their own
+oracle nodes. It is an open source tool that allows them to provide their data
+on-chain, without an intermediary, to any decentralized app (dApp) interested in
+their services.
 
-At the heart of this mechanism sits
-[Airnode](/explore/airnode/what-is-airnode.md), an open-source first-party
-oracle node. It's designed to be easily deployed by any API provider with almost
-no maintenance. Because of Airnode, dApp developers can write _smart contracts_
-to interact with the on-chain data of API providers.
+Through simplifying how an API provider can monetize their data within Web3,
+hundreds of Airnodes have been deployed. Once an API has had Airnode deployed
+protocols serve this data on-chain. These include the Request-Response or
+Publish-Subscribe protocols and depend on the data type and the decentralized
+applications (dApp) use case.
 
-Airnode is designed with mechanisms to remove the on-chain or off-chain concerns
-of API providers. The set-and-forget framework of Airnode is all about ease of
-implementation.
+To ensure API3 provided developers with an easy way to access off-chain
+resources from within their smart contract, Airnode also has range of common
+features built into it. These include functions such as pre & post processing or
+authentication, to name a few.
 
-## dAPIs
+::: tip
 
-[dAPIs](/explore/dapis/what-are-dapis.md) are composed of first-party oracles
-operated by API providers, and thus are more secure and cost-efficient than
-alternative solutions that employ middlemen. At the core of the governance,
-security, and value capture mechanics of this initiative will be the API3 token.
-Staking the token will grant its holders full governing rights over the API3 DAO
-along with all the associated rewards.
+[Learn](/explore/airnode/what-is-airnode.md) more about how Airnode works.
 
-Staked API3 tokens will be used as collateral for the on-chain coverage service
-that will provide quantifiable and trustless security guarantees to dAPI users.
-These mechanics will remove the need for a central authority at the ecosystem
-level. As a result, the API3 Project will allow smart contract platforms to
-leverage APIs for the building of meaningful applications in a truly
-decentralized and trust-minimized way.
+:::
 
-## Communities
-
-Join the API3 community on the following services.
-
-- [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
-- Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
-- Developer Chat on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
-- [YouTube Channel<ExternalLinkImage/>](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
-
-## GitHub
-
-Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page and
-find everything about.. everything. Explore the many repositories to gain
-in-depth knowledge about API3.
-
-- the whitepaper
-- source code
-- documentation
-- usage examples
-
-Please feel free to contribute to any API3 GitHub repositories.
-
-## Contributing
-
-**API3** is open to any proposals and improvements. Please feel free to
-contribute.
-
-- opening issues
-- making pull requests
-- proposing features
-
-Read more about contributing in the [Contributing](./contributing.md) page.
+Enabling the oracle to be operated by the API Provider data itself means
+requested data is served on-chain directly from the source. Thus at its core,
+Airnode brings the ability for API providers to easily run their own first-party
+oracle nodes.
