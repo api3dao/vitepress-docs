@@ -60,8 +60,14 @@
   https://dev.to/sanchithasr/how-to-communicate-between-components-in-vue-js-kjc
 */
 import Index from 'flexsearch';
-import * as filesAll from './indexes-all.js';
-import * as filesLatest from './indexes-latest.js';
+/**
+ * Directly importing the local files for the indexes will beak the VitePress build.
+ * It seems that it has issue importing large files like map.json.
+ * Keep this note and the comments import lines below for future
+ * reference while this is explored with the VitePress team.
+ * Use axios to get the indexes, thus VitePress (via Vite) will not try and load them.
+ */
+
 import frontmatter from '../../.vitepress/frontmatterIds.json';
 import axios from 'axios';
 import eventBus from '../../.vitepress/theme/eventBus.ts';
@@ -101,7 +107,7 @@ export default {
 
       // indexLatest (default)
       let ids;
-      if (checkbox.checked === false) {
+      if (checkbox === false) {
         ids = this.indexLatest.search({
           query: val.toLowerCase(),
           index: ['content'],
@@ -127,8 +133,8 @@ export default {
       this.results = [];
 
       this.isModalActive = true;
-      if (!this.indexAll) this.buildIndexAll();
       if (!this.indexLatest) this.buildIndexLatest();
+      if (!this.indexAll) this.buildIndexAll();
     },
     hideModal() {
       localStorage.removeItem('search-words');
@@ -138,61 +144,32 @@ export default {
       this.indexAll = new Index({
         tokenize: 'full',
       });
-      if (window.location.href.indexOf(':5173') > 0) {
-        //console.log('Pulling files from local repo');
-        this.indexAll.import('cfg', filesAll.cfg);
-        this.indexAll.import('ctx', filesAll.ctx);
-        this.indexAll.import('map', filesAll.map);
-        this.indexAll.import('reg', filesAll.reg);
-      } else {
-        //console.log('Pulling files from remote repo');
-        let response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
-        );
-        this.indexAll.import('cfg', response.data);
-        response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/ctx.json'
-        );
-        this.indexAll.import('ctx', response.data);
-        response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/map.json'
-        );
-        this.indexAll.import('map', response.data);
-        response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/reg.json'
-        );
-        this.indexAll.import('reg', response.data);
-      }
+      console.log('buildIndexAll() MODE', import.meta.env.MODE);
+
+      let cfg = await axios.get('/indexes/all/cfg.json');
+      let ctx = await axios.get('/indexes/all/ctx.json');
+      let map = await axios.get('/indexes/all/map.json');
+      let reg = await axios.get('/indexes/all/reg.json');
+
+      this.indexAll.import('cfg', cfg.data);
+      this.indexAll.import('ctx', ctx.data);
+      this.indexAll.import('map', map.data);
+      this.indexAll.import('reg', reg.data);
     },
     async buildIndexLatest() {
       this.indexLatest = new Index({
         tokenize: 'full',
       });
-      if (window.location.href.indexOf(':5173') > 0) {
-        //console.log('Pulling files from local repo');
-        this.indexLatest.import('cfg', filesLatest.cfg);
-        this.indexLatest.import('ctx', filesLatest.ctx);
-        this.indexLatest.import('map', filesLatest.map);
-        this.indexLatest.import('reg', filesLatest.reg);
-      } else {
-        //console.log('Pulling the files from remote repo');
-        let response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/cfg.json'
-        );
-        this.indexLatest.import('cfg', response.data);
-        response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/ctx.json'
-        );
-        this.indexLatest.import('ctx', response.data);
-        response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/map.json'
-        );
-        this.indexLatest.import('map', response.data);
-        response = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/indexes/all/reg.json'
-        );
-        this.indexLatest.import('reg', response.data);
-      }
+      console.log('buildIndexLatest() MODE', import.meta.env.MODE);
+      let cfg = await axios.get('/indexes/latest/cfg.json');
+      let ctx = await axios.get('/indexes/latest/ctx.json');
+      let map = await axios.get('/indexes/latest/map.json');
+      let reg = await axios.get('/indexes/latest/reg.json');
+
+      this.indexLatest.import('cfg', cfg.data);
+      this.indexLatest.import('ctx', ctx.data);
+      this.indexLatest.import('map', map.data);
+      this.indexLatest.import('reg', reg.data);
     },
   },
 
@@ -211,15 +188,12 @@ export default {
   margin-top: 10px;
 }
 .api3-search-modal {
-  /*background: #aaaaaa;*/
-  /*box-shadow: 2px 2px 10px 1px;*/
   overflow-y: auto;
   width: 300px !important;
   height: 700px;
   padding: 10px;
   border: solid 1px gray;
   border-radius: 7px;
-  /*background-color: lightgrey;*/
   background-color: inherit;
   position: fixed;
   top: 10px;
