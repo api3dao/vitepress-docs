@@ -71,7 +71,6 @@ export default {
             for (let i = 0; i < words.length; i++) {
               const word = words[i];
               if (word.length < 3) {
-                console.log('----- +++++ -----');
                 continue;
               }
 

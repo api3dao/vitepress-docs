@@ -7,7 +7,7 @@ docs/.vitepress/dist/
 docs/.vitepress/.temp
 .firebase/
 
-indexes/content-files/
+/indexes/content-files/
 
 
 package-lock.json
