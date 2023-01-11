@@ -153,15 +153,15 @@ function `fulfillUint256()`.
 Each request made will use the parameters set in step 4. You can change the
 parameters at any time and subsequent requests will use the newer parameter set.
 
-To make a request select the <ElementSelect text="MakeRequest"/> button in
-Remix. Approve the transaction with MetaMask.
+To make a request select the **MakeRequest** button in Remix. Approve the
+transaction with MetaMask.
 
 <!-- prettier-ignore -->
-As soon as the transaction completes in MetaMask, select the <ElementSelect text="lastRequest"/> 
+As soon as the transaction completes in MetaMask, select the **lastRequest** 
 button in Remix. You will see the
 `requestId` and a `randomNumber` which equals _0_. This is because the random
 number has yet to be returned to the callback function. Copy and paste the
-`requestId` into the field for <ElementSelect text="waitingFulfillment"/> and
+`requestId` into the field for **waitingFulfillment** and
 select the button. You will see the value is _true_, meaning the callback has
 not been made.
 
@@ -174,9 +174,9 @@ provider. Once the API provider returns data, Airnode will callback to the
 `RemixQrngExample.sol` contract function
 `fulfillUint256(bytes32 requestId, bytes calldata data)`.
 
-Select the the <ElementSelect text="lastRequest"/> button in Remix again. If the
-callback has been successfully completed the randomNumber will be present. The
-value of <ElementSelect text="waitingFulfillment"/> will be _false_.
+Select the the **lastRequest** button in Remix again. If the callback has been
+successfully completed the randomNumber will be present. The value of
+waitingFulfillment\*\* will be _false_.
 
 <img src="../assets/images/qrng-response-complete.png" style="width:50%"/>
 

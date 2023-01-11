@@ -111,19 +111,18 @@ function addToFrontmatter(id, frontmatter) {
 }
 
 /*
-  Export all flex indexes to disk /.vitepress/flex-all-indexes
-  Then split the map.json file
+  Export all flex indexes to disk /public/indexes/all
 */
 function exportAllIndexFiles() {
   indexAll.export((key, data) => {
-    let dir = 'indexes/all';
+    let dir = 'docs/public/indexes/all';
     fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
   });
 }
 
 function exportLatestIndexFiles() {
   indexLatest.export((key, data) => {
-    let dir = 'indexes/latest';
+    let dir = 'docs/public/indexes/latest';
     fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
   });
 }
@@ -155,16 +154,19 @@ function start() {
 }
 
 console.log('\n----- Building FlexSearch Indexes -----');
-fse.ensureDirSync('indexes/all');
+fse.ensureDirSync('docs/public/indexes/all');
+fse.ensureDirSync('docs/public/indexes/latest');
 
 console.log('> Creating content pages in /indexes/content-files/');
 start();
 
-console.log('> Creating "all" index files in /indexes/all (async operation *)');
+console.log(
+  '> Creating "all" files in /public/indexes/all (async operation *)'
+);
 exportAllIndexFiles();
 
 console.log(
-  '> Creating "latest" index files in /indexes/latest (async operation *)'
+  '> Creating "latest" files in  /public/indexes/latest (async operation *)'
 );
 exportLatestIndexFiles();
 

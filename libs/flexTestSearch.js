@@ -13,7 +13,7 @@ let indexLatest = new Index({
 */
 const retrieveIndexAll = () => {
   const keys = fs
-    .readdirSync('indexes/all/', {
+    .readdirSync('docs/public/indexes/all/', {
       withFileTypes: true,
     })
     .filter((item) => !item.isDirectory())
@@ -21,7 +21,7 @@ const retrieveIndexAll = () => {
 
   for (let i = 0, key; i < keys.length; i += 1) {
     key = keys[i];
-    const data = fs.readFileSync(`indexes/all/${key}.json`, 'utf8');
+    const data = fs.readFileSync(`docs/public/indexes/all/${key}.json`, 'utf8');
     indexAll.import(key, data ?? null);
   }
 };
@@ -31,7 +31,7 @@ const retrieveIndexAll = () => {
 */
 const retrieveIndexLatest = () => {
   const keys = fs
-    .readdirSync('indexes/latest/', {
+    .readdirSync('docs/public/indexes/latest/', {
       withFileTypes: true,
     })
     .filter((item) => !item.isDirectory())
@@ -40,7 +40,10 @@ const retrieveIndexLatest = () => {
   for (let i = 0, key; i < keys.length; i += 1) {
     key = keys[i];
     console.log(key);
-    const data = fs.readFileSync(`indexes/latest/${key}.json`, 'utf8');
+    const data = fs.readFileSync(
+      `docs/public/indexes/latest/${key}.json`,
+      'utf8'
+    );
     indexLatest.import(key, data ?? null);
   }
 };

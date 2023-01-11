@@ -21,7 +21,6 @@ import DockerHubImages from '../../_components/reference/airnode/DockerHubImages
 import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeAws.vue';
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
 import ChainName from '../../_components/ChainName.vue';
-import ElementSelect from '../../_components/ElementSelect.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
 import NavBox from '../../_components/NavBox.vue';
@@ -54,7 +53,6 @@ export default {
     app.component('DeleteAirnodeAws', DeleteAirnodeAws);
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);
     app.component('ChainName', ChainName);
-    app.component('ElementSelect', ElementSelect);
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
     app.component('NavBox', NavBox);
