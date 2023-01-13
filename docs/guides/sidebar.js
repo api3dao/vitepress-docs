@@ -9,7 +9,7 @@ module.exports = [
     text: 'API3 Market',
     collapsible: true,
     collapsed: false,
-    items: [{ text: 'Subscribe to a dAPI', link: '/guides/market/' }],
+    items: [{ text: 'Subscribing to dAPIs ', link: '/guides/market/' }],
   },
   {
     text: 'dAPIs',
