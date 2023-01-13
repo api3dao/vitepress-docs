@@ -6,6 +6,12 @@ module.exports = [
     items: [{ text: 'Getting Started', link: '/guides/' }],
   },
   {
+    text: 'API3 Market',
+    collapsible: true,
+    collapsed: false,
+    items: [{ text: 'Subscribe to a dAPI', link: '/guides/market/' }],
+  },
+  {
     text: 'dAPIs',
     collapsible: true,
     collapsed: false,
