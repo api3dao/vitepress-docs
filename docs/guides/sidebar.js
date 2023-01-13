@@ -3,15 +3,7 @@ module.exports = [
     text: '',
     collapsible: true,
     collapsed: false,
-    items: [
-      { text: 'About the Guides', link: '/guides/' },
-
-      { text: 'Create an Infura key', link: '/guides/infura-key' },
-      {
-        text: 'Remix Reload Contract',
-        link: '/guides/remix-reload-contract',
-      },
-    ],
+    items: [{ text: 'Getting Started', link: '/guides/' }],
   },
   {
     text: 'dAPIs',
@@ -75,7 +67,7 @@ module.exports = [
       },
     ],
   },
-  {
+  /*{
     text: 'ChainAPI',
     collapsible: true,
     collapsed: false,
@@ -89,7 +81,7 @@ module.exports = [
         link: '/guides/chainapi/deploy',
       },
     ],
-  },
+  },*/
   {
     text: 'QRNG',
     collapsible: true,
@@ -133,6 +125,18 @@ module.exports = [
       {
         text: 'Videos',
         link: '/guides/dao-members/videos',
+      },
+    ],
+  },
+  {
+    text: 'Miscellaneous',
+    collapsible: true,
+    collapsed: false,
+    items: [
+      { text: 'Create an Infura key', link: '/guides/infura-key' },
+      {
+        text: 'Remix Reload Contract',
+        link: '/guides/remix-reload-contract',
       },
     ],
   },

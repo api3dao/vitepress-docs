@@ -103,7 +103,7 @@ module.exports = [
       },
     ],
   },
-  {
+  /*{
     text: 'ChainAPI',
     collapsible: true,
     collapsed: false,
@@ -113,7 +113,7 @@ module.exports = [
         link: '/explore/chainapi/',
       },
     ],
-  },
+  },*/
   {
     text: 'QRNG',
     collapsible: true,

@@ -1,5 +1,5 @@
 ---
-title: About the Guides
+title: Getting Started
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides
@@ -14,45 +14,13 @@ tags:
 
 # {{$frontmatter.title}}
 
-Guides for the API3 ecosystem have been grouped together for easy access and to
-present a full and comprehensive list. Guides for the most part are specific to
-either a dAPP developer or an API provider.
+Guides for the API3 ecosystem have been placed here to help eliminate the hunt
+for help. Please go through those that peak your interest while using Web3
+oracles and data feeds. Most guides are focused on dAPP developers (dAPI
+consumers) or API providers (Airnode owners).
 
-Some of the guides use the Remix IDE. When you close the Remix IDE or change
-workspaces, Remix will lose track of any deployed contracts. This guide will
-step you through the process to reload a deployed contract in order to interact
-with it again.
-
-## dAPP Developers
-
-::: danger TODO
-
-List developer guides
-
-:::
-
-## API Providers
-
-::: danger TODO
-
-List provider guides
-
-:::
-
-Some of the guides use the Remix IDE. When you close the Remix IDE or change
-workspaces, Remix will lose track of any deployed contracts. This guide will
-step you through the process to reload a deployed contract in order to interact
-with it again.
-
-**ChainAPI**
-
-Airnode requires a `config.json` file to define its structure and operational
-functionality. While it s possible to build a `config.json` file manually,
-ChainAPI is the best way to setup Airnode's configuration.
-
-- Integrate your API <br/>Create the `config.json` file that defines an Airnode
-  by mapping your API endpoints to Airnode endpoints.
-- Deploy an API Integration <br/>Use the newly (or updated) Airnode
-  `config.json` file to deploy Airnode to AWS, GCP, or a Docker container.
-
-**Airnode**
+Each guide is a complete standalone step-by-step introduction to key services
+and concepts at API3. If you have an idea for a guide that you wish was here,
+please create a
+[GitHub issue<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs).
+This will help us create a full and comprehensive list.
