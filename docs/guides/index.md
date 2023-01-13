@@ -15,8 +15,8 @@ tags:
 # {{$frontmatter.title}}
 
 Guides for the API3 ecosystem have been placed here to help eliminate the hunt
-for help. Please go through those that peak your interest while using Web3
-oracles and data feeds. Most guides are focused on dAPP developers (dAPI
+for help. Please go through those that peak your interest with regards to API3
+products and services. Most guides are focused on dApp developers (dAPI
 consumers) or API providers (Airnode owners).
 
 Each guide is a complete standalone step-by-step introduction to key services
