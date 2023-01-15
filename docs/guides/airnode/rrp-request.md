@@ -17,7 +17,7 @@ tags:
 This guide steps through the process of making a direct request of an Airnode
 using RRP (request-response protocol) to get data from an API provider. Another
 example of a guide that explains how to use the RRP is the
-[QRNG > Remix Example](/guides/qrng/remix-example.md).
+[QRNG > Remix Example](/guides/qrng/remix-example/index.md).
 
 ::: warning Consider dAPIs
 

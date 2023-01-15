@@ -56,7 +56,7 @@ export default {
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
-      '/reference/chainapi/': require('../reference/chainapi/sidebar.js'),
+      '/reference/chainapi/': require('../../archives/reference/chainapi/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
       '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
@@ -79,7 +79,7 @@ function nav() {
       items: [
         { text: 'dAPIs', link: '/reference/dapis/' },
         { text: 'Airnode', link: '/reference/airnode/latest/' },
-        { text: 'ChainAPI', link: '/reference/chainapi/' },
+        //{ text: 'ChainAPI', link: '/reference/chainapi/' },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },
         { text: 'DAO Members', link: '/reference/dao-members/' },
