@@ -14,7 +14,7 @@ module.exports = [
       },
       { text: 'Providers', link: '/reference/qrng/providers' },
       { text: 'QrngExample.sol', link: '/reference/qrng/qrng-example' },
-      { text: 'RemixExample.sol', link: '/reference/qrng/remix-example' },
+      { text: 'RemixQrngExample.sol', link: '/reference/qrng/remix-example' },
     ],
   },
 ];

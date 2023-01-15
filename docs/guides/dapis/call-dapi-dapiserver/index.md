@@ -42,25 +42,20 @@ guide from other guides provided in these docs.
 
 ## 2. Understanding the smart contract
 
-In Remix click on the contract named `MyContract.sol` to view its source code.
-This smart contract imports `DapiServer.sol` and uses the function
-`readDataFeedWithDapiName(_dapi)` which populates the contract variables `value`
-and `timestamp`. This function is one of
+In the **FILE EXPLORER** tab click on the contract named `MyContract.sol` to
+view its source code. This smart contract imports `DapiServer.sol` and uses the
+function `readDataFeedWithDapiName(_dapi)` which populates the contract
+variables `value` and `timestamp`. This function is one of
 [four functions](/reference/dapis/functions/read-data-feed-with-dapi-name.html)
 available to call a dAPI.
 
 ## 3. Compile the contract
 
-Select the **SOLIDITY COMPILER** pane and compile `MyContract.sol`. Note the
-version of the compiler matches the contract's declaration.
-
-::: tip
-
-If the compile button refuses to show the contract name, switch to another
-workspace and back again. Remix sometimes has an issue after renaming a
-workspace.
-
-:::
+Be sure the `MyContract.sol` contract is selected in the **FILE EXPLORER** tab.
+Select the **SOLIDITY COMPILER** pane and compile `MyContract.sol`. Select the
+`0.8.9` version of Solidity from the <b>COMPILER +</b> pick list. Select the
+<b>Compile RemixQrngExample.sol</b> button to compile the `MyContract.sol`
+contract.
 
 <img src="./assets/compile.png" style="width:50%;border:1px solid gray;">
 
@@ -101,10 +96,10 @@ through with the MetaMask integration to deploy the smart contract onto Mumbai.
 </div>
 
 If you close the Remix IDE or change workspaces, Remix will lose track of any
-deployed contracts. Add the contract's address to the `addresses.txt` file under
-the **FILE EXPLORER**. Under **Deployed Contracts** select the copy icon to the
-right of the contract name. This will be useful to reload the contract should
-the need arise.
+deployed contracts. Under **Deployed Contracts** select the copy icon to the
+right of the contract name. Add the contract's address to the `addresses.txt`
+file under the **FILE EXPLORER**. This will be useful to reload the contract
+should the need arise.
 
 ::: warning Remix Reload Contract
 
