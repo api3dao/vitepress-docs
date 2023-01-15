@@ -99,7 +99,7 @@ module.exports = [
       },
       {
         text: 'Remix Example',
-        link: '/guides/qrng/remix-example',
+        link: '/guides/qrng/remix-example/',
       },
       {
         text: 'Youtube QRNG-NFT Example',
