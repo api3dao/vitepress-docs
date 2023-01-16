@@ -18,6 +18,7 @@ module.exports = [
         link: '/dev/guides-format',
       },
       { text: 'Rosetta, Nodejs, esbuild', link: '/dev/rosetta' },
+      { text: 'Google Analytics 4', link: '/dev/ga4' },
     ],
   },
 ];

@@ -8,8 +8,19 @@ export default {
   appearance: true,
   ignoreDeadLinks: true,
   head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-M4X5P6JYNM',
+      },
+    ],
+    [
+      'script',
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-M4X5P6JYNM');",
+    ],
     ['link', { rel: 'stylesheet', href: '/api3.css' }, ,],
-
     [
       'link',
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/small-logo.png' },
