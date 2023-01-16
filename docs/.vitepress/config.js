@@ -10,17 +10,14 @@ export default {
   head: [
     [
       'script',
-      {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-M4X5P6JYNM',
-      },
-    ],
-    [
-      'script',
       {},
-      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-M4X5P6JYNM');",
+      `(function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ffavtmn9fn");`,
     ],
-    ['link', { rel: 'stylesheet', href: '/api3.css' }, ,],
+    ['link', { rel: 'stylesheet', href: '/api3.css' }],
     [
       'link',
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/small-logo.png' },
