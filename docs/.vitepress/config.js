@@ -8,15 +8,6 @@ export default {
   appearance: true,
   ignoreDeadLinks: true,
   head: [
-    [
-      'script',
-      {},
-      `(function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ffavtmn9fn");`,
-    ],
     ['link', { rel: 'stylesheet', href: '/api3.css' }],
     [
       'link',
@@ -43,8 +34,8 @@ export default {
   ],
   themeConfig: {
     logo: {
-      light: './API3-Active.png',
-      dark: './api3-inactive.png',
+      light: '/API3-Active.png',
+      dark: '/api3-inactive.png',
     },
     siteTitle: 'Documentation',
     socialLinks: [
@@ -87,7 +78,6 @@ function nav() {
       items: [
         { text: 'dAPIs', link: '/reference/dapis/' },
         { text: 'Airnode', link: '/reference/airnode/latest/' },
-        //{ text: 'ChainAPI', link: '/reference/chainapi/' },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },
         { text: 'DAO Members', link: '/reference/dao-members/' },
