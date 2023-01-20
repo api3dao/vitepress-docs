@@ -25,19 +25,19 @@ The goal of API3 is to provide developers with an easy way to access off-chain
 resources from within their smart contracts, without having to worry about the
 security and trust implications of doing so.
 
-# Introduction
+## Introduction
 
 API3 believes DeFi & Web3 can change the financial landscape with the right
 infrastructure and access to meaningful real world data. We aim to facilitate
 the true impact of smart contract applications by making a wide range of useful
 data easily accessible and scalable within smart contract functions.
 
-Within this intro we will explore;
+Within this introduction of API3 we will explore;
 
 - APIs within the blockchain
 - Airnode & First-party oracles
 - Data feeds: Decentralized APIs (dAPIs)
-- Oracle tooling
+- API3 Market: Oracle tooling
 
 If you wish to view a detailed discussion of the API3 project, read the
 [API3 Whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf).
@@ -62,9 +62,7 @@ for a more complete background on APIs.
 
 ## The API Connectivity Problem
 
-<!--The fact that a smart contract cannot access API data not presently on the blockchain is commonly known as _the oracle problem_.--> Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid
-
-APIs described above.
+<!--The fact that a smart contract cannot access API data not presently on the blockchain is commonly known as _the oracle problem_.--> Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid APIs described above.
 
 All the game theoretic and cryptographic methods proposed for various oracle
 solutions essentially aim to provide smart contracts access to these paid APIs.
@@ -75,7 +73,7 @@ As you read about API3 offerings, you will discover that this redefinition will
 have ripple effects across the entire solution, from how the ecosystem is built
 to the lowest levels of the protocol.
 
-Additionally, as existing oracle solutions fall short because they fail to make
+Additionally, existing oracle solutions fall short because they fail to make
 this distinction, resulting in inferior solutions that depend on third-party
 oracles and ecosystems that exclude API providers. As such, API3 belives the
 oracle problem is ill-posed, instead we are faced with an API Connectivity
@@ -97,22 +95,28 @@ their services.
 
 Through simplifying how an API provider can monetize their data within Web3,
 hundreds of Airnodes have been deployed. Once an API has had Airnode deployed
-protocols serve this data on-chain. These include the Request-Response or
+protocols serve this data on-chain.
+
+<!--These include the Request-Response or
 Publish-Subscribe protocols and depend on the data type and the decentralized
-applications (dApp) use case.
+applications (dApp) use case.-->
+
+> <img src="../assets/images/oracle-map.png" width="450"/>
 
 To ensure API3 provided developers with an easy way to access off-chain
 resources from within their smart contract, Airnode also has range of common
 features built into it. These include functions such as pre & post processing or
 authentication, to name a few.
 
-::: tip
+::: tip Learn
 
-[Learn](/explore/airnode/what-is-airnode.md) more about how Airnode works.
+Read more on how [Airnode works](/explore/airnode/what-is-airnode.md).
 
 :::
 
+### Summary
+
 Enabling the oracle to be operated by the API Provider data itself means
 requested data is served on-chain directly from the source. Thus at its core,
-Airnode brings the ability for API providers to easily run their own first-party
-oracle nodes.
+Airnode brings the ability for API providers to easily run their own
+[first-party oracle](/explore/introduction/first-party.md) nodes.
