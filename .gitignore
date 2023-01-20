@@ -9,10 +9,9 @@ docs/.vitepress/.temp
 
 /indexes/content-files/
 
-
+yarn-error.log
 package-lock.json
 libs/myGitHubToken.json
-
 
 
 # Ignoring a Previously Committed Files #

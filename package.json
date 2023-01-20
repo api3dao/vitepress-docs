@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "sync:VPFlyout": "cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue",
     "sync:VPNavBarTitle": "cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue",
@@ -21,7 +24,6 @@
   "devDependencies": {
     "axios": "^1.2.1",
     "colors": "^1.4.0",
-    "ethers": "^5.7.2",
     "file": "^0.2.2",
     "flexsearch": "^0.7.31",
     "fs-extra": "^10.1.0",

@@ -23,11 +23,16 @@ function onBlur() {
 </script>
 
 <template>
+  <!-- wkande: Jan 2023: VitPress version alpha-40 broke the 
+margin on top of drop down menus. Add a style to adjust for it.
+style="margin-top: 20px"
+-->
   <div
     class="VPFlyout"
     ref="el"
     @mouseenter="open = true"
     @mouseleave="open = false"
+    style="margin-top: 20px"
   >
     <button
       type="button"
