@@ -62,7 +62,7 @@ npx @api3/airnode-validator --config "valid-config.json" --secrets "valid-secret
 
 yields:
 
-```text
+```sh
 ✔ The configuration is valid
 ```
 
@@ -75,7 +75,7 @@ npx @api3/airnode-validator --config "valid-config.json" --secrets "non-existent
 
 yields:
 
-```text
+```sh
 ✖ Unable to read secrets file at "non-existent-secrets.env". Reason: Error: ENOENT: no such file or directory, open (...omitted for brevity)
 ```
 
