@@ -16,6 +16,15 @@ Use newer versions of Nodejs. Currently the builds on GitHub are using `v18`.
 Apple M1 users see the page [Rosetta, Nodejs, esbuild](./rosetta.md) if you get
 an error.
 
+::: tip Nodejs `v18`
+
+It is best to use nodejs `v18` which gives the best performance and is the
+engine described in the
+[package.json<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+file.
+
+:::
+
 ## Clone the remote repo
 
 Clone the remote repo and install it packages.
