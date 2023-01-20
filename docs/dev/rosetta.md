@@ -18,8 +18,17 @@ results in longer builds and other processes. Other issues can arise such as the
 Rosetta platform error. This usually happens when Nodejs and NPM are installed
 using CLI running with Rosetta on, and NPM will install the wrong
 [esbuild](https://esbuild.github.io/getting-started/) package. It is best to use
-a version of Nodejs and NPM installed with it installer or using your CLI with
-Rosetta deactivated.
+a version of Nodejs and NPM installed with its installer or install it using
+your CLI with Rosetta deactivated.
+
+::: tip Nodejs `v18`
+
+It is best to use nodejs `v18` which gives the best performance and is the
+engine described in the
+[package.json<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+file.
+
+:::
 
 ```js
 failed to load config from /Users/warren/DEV/vitepress-docs/docs/.vitepress/config.js

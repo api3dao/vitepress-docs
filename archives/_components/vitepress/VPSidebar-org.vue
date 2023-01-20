@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import { ref, watchPostEffect } from 'vue';
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { ref, watchPostEffect, nextTick } from 'vue';
 import { useSidebar } from '../composables/sidebar.js';
 import VPSidebarGroup from './VPSidebarGroup.vue';
 // wkande: Aug 2022: added import, next line
@@ -13,22 +12,12 @@ const props = defineProps<{
 }>();
 
 // a11y: focus Nav element when menu has opened
-let navEl = ref<HTMLElement | null>(null);
-
-function lockBodyScroll() {
-  disableBodyScroll(navEl.value!, { reserveScrollBarGap: true });
-}
-
-function unlockBodyScroll() {
-  clearAllBodyScrollLocks();
-}
+let navEl = ref<(Element & { focus(): void }) | null>(null);
 
 watchPostEffect(async () => {
   if (props.open) {
-    lockBodyScroll();
+    await nextTick();
     navEl.value?.focus();
-  } else {
-    unlockBodyScroll();
   }
 });
 </script>
@@ -42,10 +31,7 @@ watchPostEffect(async () => {
     @click.stop
   >
     <!-- wkande: Aug 2022: added SidebarHeader, next line -->
-
-    <div class="curtain" />
     <SidebarHeader style="margin-top: 5px" />
-
     <nav
       class="nav"
       id="VPSidebarNav"
@@ -56,8 +42,6 @@ watchPostEffect(async () => {
         Sidebar Navigation
       </span>
 
-      <slot name="sidebar-nav-before" />
-
       <div v-for="group in sidebar" :key="group.text" class="group">
         <VPSidebarGroup
           :text="group.text"
@@ -66,8 +50,6 @@ watchPostEffect(async () => {
           :collapsed="group.collapsed"
         />
       </div>
-
-      <slot name="sidebar-nav-after" />
     </nav>
   </aside>
 </template>
@@ -75,14 +57,14 @@ watchPostEffect(async () => {
 <style scoped>
 .VPSidebar {
   position: fixed;
-  top: var(--vp-layout-top-height, 0px);
+  top: 0;
   bottom: 0;
   left: 0;
   z-index: var(--vp-z-index-sidebar);
   padding: 32px 32px 96px;
-  width: calc(100vw - 64px);
-  max-width: 320px;
-  background-color: var(--vp-sidebar-bg-color);
+  /*width: calc(100vw - 64px);*/
+  /*max-width: 320px;*/
+  background-color: var(--vp-c-bg);
   opacity: 0;
   box-shadow: var(--vp-c-shadow-3);
   overflow-x: hidden;
@@ -105,11 +87,11 @@ watchPostEffect(async () => {
 @media (min-width: 960px) {
   .VPSidebar {
     z-index: 1;
-    padding-top: var(--vp-nav-height);
+    padding-top: var(--vp-nav-height-desktop);
     padding-bottom: 128px;
     width: var(--vp-sidebar-width);
     max-width: 100%;
-    background-color: var(--vp-sidebar-bg-color);
+    background-color: var(--vp-c-bg-alt);
     opacity: 1;
     visibility: visible;
     box-shadow: none;
@@ -130,27 +112,13 @@ watchPostEffect(async () => {
   }
 }
 
-@media (min-width: 960px) {
-  .curtain {
-    position: sticky;
-    top: -64px;
-    left: 0;
-    z-index: 1;
-    margin-top: calc(var(--vp-nav-height) * -1);
-    margin-right: -32px;
-    margin-left: -32px;
-    height: var(--vp-nav-height);
-    background-color: var(--vp-sidebar-bg-color);
-  }
-}
-
 .nav {
   outline: 0;
 }
 
 .group + .group {
   margin-top: 32px;
-  border-top: 1px solid var(--vp-c-divider);
+  border-top: 1px solid var(--vp-c-divider-light);
   padding-top: 10px;
 }
 

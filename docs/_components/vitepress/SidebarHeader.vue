@@ -4,7 +4,9 @@
     <div style="font-size: small; margin-left: 25px" v-show="subText">
       {{ subText }} <VersionPicklist v-show="show" />
     </div>
-    <div style="margin-top: 5px; border-bottom: solid 1px gray" />
+    <div
+      style="width: 207px; margin-top: 5px; border-bottom: solid 1px lightgrey"
+    />
   </div>
 </template>
 
