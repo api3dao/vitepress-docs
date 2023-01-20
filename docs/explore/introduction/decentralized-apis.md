@@ -36,7 +36,7 @@ can be composed of a variety of Airnode protocols. <!-- is this correct?-->
 
 ::: info Learn more
 
-Read more about the [oracle protocols](explore/dapis/what-are-dapis.md) dAPIs
+Read more about the [oracle protocols](/explore/dapis/what-are-dapis.md) dAPIs
 utilize.
 
 :::
