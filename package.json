@@ -1,5 +1,5 @@
 {
-  "name": "vitepress-starter",
+  "name": "vitepress-docs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -34,7 +34,7 @@
     "prettier": "^2.8.1",
     "textversionjs": "^1.1.3",
     "tiny-emitter": "^2.1.0",
-    "vitepress": "^1.0.0-alpha.36",
+    "vitepress": "^1.0.0-alpha.40",
     "vue": "^3.2.45"
   }
 }
