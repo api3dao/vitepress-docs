@@ -175,10 +175,9 @@ respective parameters.
 
 (required) - An object containing `authorizers` scheme types that contain
 authorizer contract addresses specifying the auth patterns that the
-[AirnodeRrpV0](../concepts/#airnoderrpv0-sol) contract should use on-chain. An
-empty `<authorizerSchemeType>` array would allow-all. Learn more about
-authorizers in [Concepts](../concepts/authorizers.md) and
-[Build an Airnode](../understand/apply-auth.md).
+[AirnodeRrpV0](../concepts/#airnoderrpv0-sol) contract should use on-chain.
+Learn more about authorizers in [Authorizers](../concepts/authorizers.md) and
+[Using Authorizers](../understand/apply-auth.md).
 
 ### `authorizations`
 
@@ -187,8 +186,8 @@ authorized endpointId/address pairs where the address is that of a requester.
 Airnode uses these pairs to determine access to its endpoints during its run
 cycle off-chain. Nothing in `authorizers` can supersede permissions granted by
 `authorizations` as they take precedence. Learn more about authorizations in
-[Concepts](../concepts/authorizations.md) and
-[Build an Airnode](../understand/using-authorizations.md).
+[Authorizations](../concepts/authorizations.md) and
+[Using Authorizations](../understand/using-authorizations.md).
 
 ### `contracts`
 
