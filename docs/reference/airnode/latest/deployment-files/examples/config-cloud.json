@@ -12,8 +12,8 @@
       },
       "id": "11155111",
       "providers": {
-        "sepolia": {
-          "url": "${SEPOLIA_PROVIDER_URL}"
+        "infuraSepolia": {
+          "url": "${CLOUD_PROVIDER_URL}"
         }
       },
       "type": "evm",

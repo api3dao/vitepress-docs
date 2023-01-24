@@ -67,29 +67,6 @@ module.exports = [
     ],
   },
   {
-    text: 'Docker Images',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      {
-        text: 'Overview',
-        link: '/reference/airnode/latest/docker/',
-      },
-      {
-        text: 'AWS/GCP Deployer Image',
-        link: '/reference/airnode/latest/docker/deployer-image',
-      },
-      {
-        text: 'Client Image',
-        link: '/reference/airnode/latest/docker/client-image',
-      },
-      {
-        text: 'Admin CLI Image',
-        link: '/reference/airnode/latest/docker/admin-cli-image',
-      },
-    ],
-  },
-  {
     text: 'Concepts and Definitions',
     collapsible: true,
     collapsed: true,
@@ -153,43 +130,25 @@ module.exports = [
     ],
   },
   {
-    text: 'Specifications',
+    text: 'Docker Images',
     collapsible: true,
     collapsed: true,
     items: [
       {
-        text: 'Oracle Integration (OIS)',
-        link: '/reference/airnode/latest/specifications/ois',
+        text: 'Overview',
+        link: '/reference/airnode/latest/docker/',
       },
       {
-        text: 'Airnode ABI',
-        link: '/reference/airnode/latest/specifications/airnode-abi',
+        text: 'AWS/GCP Deployer Image',
+        link: '/reference/airnode/latest/docker/deployer-image',
       },
       {
-        text: 'Reserved Parameters',
-        link: '/reference/airnode/latest/specifications/reserved-parameters',
-      },
-    ],
-  },
-  {
-    text: 'Packages',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      { text: 'Overview', link: '/reference/airnode/latest/packages/' },
-      { text: 'Adapter', link: '/reference/airnode/latest/packages/adapter' },
-      {
-        text: 'Airnode ABI',
-        link: '/reference/airnode/latest/packages/airnode-abi',
+        text: 'Client Image',
+        link: '/reference/airnode/latest/docker/client-image',
       },
       {
-        text: 'Admin CLI',
-        link: '/reference/airnode/latest/packages/admin-cli',
-      },
-      { text: 'Deployer', link: '/reference/airnode/latest/packages/deployer' },
-      {
-        text: 'Validator',
-        link: '/reference/airnode/latest/packages/validator',
+        text: 'Admin CLI Image',
+        link: '/reference/airnode/latest/docker/admin-cli-image',
       },
     ],
   },
@@ -256,6 +215,48 @@ module.exports = [
       },
     ],
   },
+  {
+    text: 'Specifications',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      {
+        text: 'Oracle Integration (OIS)',
+        link: '/reference/airnode/latest/specifications/ois',
+      },
+      {
+        text: 'Airnode ABI',
+        link: '/reference/airnode/latest/specifications/airnode-abi',
+      },
+      {
+        text: 'Reserved Parameters',
+        link: '/reference/airnode/latest/specifications/reserved-parameters',
+      },
+    ],
+  },
+  {
+    text: 'Packages',
+    collapsible: true,
+    collapsed: true,
+    items: [
+      { text: 'Overview', link: '/reference/airnode/latest/packages/' },
+      { text: 'Adapter', link: '/reference/airnode/latest/packages/adapter' },
+      {
+        text: 'Airnode ABI',
+        link: '/reference/airnode/latest/packages/airnode-abi',
+      },
+      {
+        text: 'Admin CLI',
+        link: '/reference/airnode/latest/packages/admin-cli',
+      },
+      { text: 'Deployer', link: '/reference/airnode/latest/packages/deployer' },
+      {
+        text: 'Validator',
+        link: '/reference/airnode/latest/packages/validator',
+      },
+    ],
+  },
+
   {
     text: 'dApp Developers',
     collapsible: true,

@@ -2,7 +2,7 @@
 title: Calling an Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → dAPP Developers
+pageHeader: Reference → Airnode → v1.0 → dApp Developers
 path: /reference/airnode/latest/developers/call-an-airnode.html
 version: v1.0
 outline: deep
