@@ -55,14 +55,14 @@ GCP deployment, see the
 
 ## Deployer Image Commands
 
-All three commands are similar for AWS and GCP, with differences noted where
-they exist.
+All five commands are similar for AWS and GCP. Any differences between AWS and
+GCP are noted where they exist.
 
-- [deploy](./deployer-image.md#deploy)
-- [list](./deployer-image.md#list)
-- [info](./deployer-image.md#info)
-- [remove](./deployer-image.md#remove)
-- [remove-with-receipt](./deployer-image.md#remove-with-receipt)
+- `deploy`
+- `list`
+- `info`
+- `remove`
+- `remove-with-receipt`
 
 ### `deploy`
 
@@ -105,7 +105,7 @@ docker run -it --rm ^
 
 :::
 
-:::tip Re-deployments
+#### Re-deployments
 
 A unique deployment is defined by the value of
 [nodeSetting.stage](..//deployment-files/config-json.md#stage). If you deploy
@@ -133,8 +133,6 @@ docker run -it --rm \
 -v "$(pwd):/app/config" \
 api3/airnode-deployer:0.10.0 deploy --auto-remove false
 ```
-
-:::
 
 ### `list`
 
@@ -209,6 +207,41 @@ docker run -it --rm ^
 
 :::
 
+### `fetch-files`
+
+During the Airnode deployment, your `config.json` and `secrets.env` are uploaded
+to the cloud provider of your choosing. You can use the
+[fetch-files](../../reference/packages/deployer.md#fetch-files) command to
+retrieve them. You need to provide the deployment ID from the
+[list](./deployer-image.md#list) command above to specify the desired
+deployment. By default, the files from the latest version of this deployment are
+fetched. Alternatively, you can additionally provide a deployment version ID
+from the [info](./deployer-image.md#info) command above to specify the desired
+deployment version. By default, the archive with the files is stored in the
+`config` directory **within the Docker container** that is, in the example
+below, mapped to your current working directory. You can change the output
+directory by providing an `--output-dir` option specifying a different directory
+instead. Don't forget to add a mapping for the new output directory so you'll be
+able to access the files. Files for cloud provider authentication are needed for
+the command to run correctly: `aws.env` (for AWS) or `gcp.json` (for GCP).
+
+::: code-group
+
+```sh [Linux/Mac/WSL2]
+docker run -it --rm \
+  -v "$(pwd):/app/config" \
+  api3/airnode-deployer:0.10.0 fetch-files aws2c6ef2b3
+```
+
+```batch [Windows]
+# For Windows, use CMD (not PowerShell).
+docker run -it --rm ^
+  -v "%cd%:/app/config" ^
+  api3/airnode-deployer:0.10.0 fetch-files aws2c6ef2b3
+```
+
+:::
+
 ### `remove`
 
 A deployed Airnode can be removed via the
@@ -217,8 +250,8 @@ deployment ID from the [list](./deployer-image.md#list) command above. Airnode's
 update history, that can be seen by the [info](./deployer-image.md#info)
 command, will be removed as well. Files for cloud provider authentication are
 needed for the command to run correctly: `aws.env` (for AWS) and/or `gcp.json`
-(for GCP). This is the recommended way to remove a deployment, but there are
-alternatives as described below.
+(for GCP). This is the recommended way to remove a deployment, but an
+alternative is the `remove-with-receipt` command.
 
 ::: code-group
 
