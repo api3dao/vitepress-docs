@@ -26,16 +26,14 @@ There are few pieces of data that are **highly recommend** to be provided via
 variables. The variable names shown can be adjusted to anything desired. Just be
 sure to change the correlating interpolation value in `config.json`.
 
-| Variable name             | `config.json` field name               | Description                                           |
-| ------------------------- | -------------------------------------- | ----------------------------------------------------- |
-| AIRNODE_WALLET_MNEMONIC   | `nodeSettings.airnodeWalletMnemonic`   | The wallet mnemonic that will be used by the Airnode  |
-| CHAIN_PROVIDER_URL        | `chains[].providers.<name>.url`        | The blockchain provider url                           |
-| SS_MY_API_KEY             | `apiCredentials[].securitySchemeValue` | A security scheme value                               |
-| HEARTBEAT_URL             | `nodeSettings.heartbeat.url`           | The URL to make the heartbeat request to              |
-| HEARTBEAT_API_KEY         | `nodeSettings.heartbeat.apiKey`        | The API key to authenticate against the heartbeat URL |
-| HEARTBEAT_ID              | `nodeSettings.heartbeat.id`            | The Airnode heartbeat ID for accounting purposes      |
-| GCP_PROJECT_ID            | `nodeSettings.cloudProvider.projectId` | (GCP only) The GCP                                    |
-| project ID for deployment |
+| Variable name           | `config.json` field name               | Description                                           |
+| ----------------------- | -------------------------------------- | ----------------------------------------------------- |
+| AIRNODE_WALLET_MNEMONIC | `nodeSettings.airnodeWalletMnemonic`   | The wallet mnemonic that will be used by the Airnode  |
+| CHAIN_PROVIDER_URL      | `chains[].providers.<name>.url`        | The blockchain provider url                           |
+| SS_MY_API_KEY           | `apiCredentials[].securitySchemeValue` | A security scheme value                               |
+| HEARTBEAT_URL           | `nodeSettings.heartbeat.url`           | The URL to make the heartbeat request to              |
+| HEARTBEAT_API_KEY       | `nodeSettings.heartbeat.apiKey`        | The API key to authenticate against the heartbeat URL |
+| GCP_PROJECT_ID          | `nodeSettings.cloudProvider.projectId` | (GCP only) The GCP project ID for deployment          |
 
 Below is an example of `secrets.env`. Variable names cannot contain dashes (-)
 or start with a number.

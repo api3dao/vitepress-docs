@@ -46,7 +46,7 @@ export default {
     async loadChainsFromRepo() {
       try {
         const response = await axios.get(
-          'https://operations-development.s3.amazonaws.com/latest/chains.json '
+          'https://db-api-prod.api3.org/api/docs-chains-reference'
         );
         this.chains = this.sortByName(response.data);
 
@@ -103,8 +103,7 @@ export default {
   padding-bottom: 10px;
   border: solid lightgrey 1px;
   border-radius: 0.5em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   max-width: 620px;
-  box-shadow: 2px 2px 4px lightgrey;
 }
 </style>
