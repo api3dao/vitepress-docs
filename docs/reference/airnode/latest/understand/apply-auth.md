@@ -47,7 +47,7 @@ endpoints. However, you probably do not want to serve them publicly.
 - Only serve sponsors who have made a subscription payment.
 - Only serve sponsors who have gone through KYC.
 
-You can use different authorizer contracts for your Airnode deployment per chain
+You can use different authorizer contracts for an Airnode deployment per chain
 by declaring them in the `config.json` file under `chains[n].authorizers`. Add
 one or more authorizer contract addresses to the
 `chains[n].authorizers.{<authorizerSchemeType>}` array as shown below (e.g.

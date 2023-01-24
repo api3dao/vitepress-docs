@@ -56,5 +56,5 @@ be an issue.
 
 ## Authorizers
 
-Airnodes can assign a list of authorizers to their endpoints. See the section
-[Authorizer](authorizers.md) for more information.
+Airnodes can assign a list of authorizers for each chain it responds to. See
+[Authorizers](authorizers.md) for more information.
