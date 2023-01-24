@@ -191,7 +191,7 @@ airnode-deployer list --cloud-providers gcp
 
 ### Fetching deployment information
 
-You can use the `info` command to retrieve information about one of your
+You can use the `info` command to retrieve information about existing
 deployments. The retrieved information include deployment's Airnode address,
 stage, Airnode version and the update history.
 

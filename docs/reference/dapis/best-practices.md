@@ -19,7 +19,7 @@ dAPIs are aggregated from multiple beacons using a decentralized pool of
 independent Airnodes. All Airnodes are API provider owned and operated. API
 providers supply data to the `DAPIServer` contract which lives on many chains.
 
-dAPP developers should consider a few important aspects of dAPIs in general.
+dApp developers should consider a few important aspects of dAPIs in general.
 
 - Ease of Use
 - Monitoring
@@ -80,7 +80,7 @@ important to you.
 
 ## Security
 
-dAPP developers do not need to trust API3 as all Airnodes are owned and operated
+dApp developers do not need to trust API3 as all Airnodes are owned and operated
 by an API provider. Each API provider has deployed their Airnode using a
 `secrets.env` file that API3 does not possess. Therefore the Airnode operates
 under the complete autonomy of the API provider who's signed data is used to

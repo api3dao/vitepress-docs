@@ -41,10 +41,10 @@ or start with a number.
 <!-- TODO: Reference a file from Airnode examples instead -->
 
 ```
-AIRNODE_WALLET_MNEMONIC="achieve climb couple wait accident symbol spy blouse reduce foil echo label"
-CHAIN_PROVIDER_URL="https://mainnet.infura.io/v3/5122f3ff104f30f21412aa38fd143d53"
+AIRNODE_WALLET_MNEMONIC="achieve...blouse echo label"
+CHAIN_PROVIDER_URL="https://sepolia.infura.io/v3/b1955...eb84f"
 
-SS_MY_API_KEY="FRACZKMH4F32BZ8X5uTd"
+SS_MY_API_KEY="FRAC...X5uTd"
 
 HEARTBEAT_API_KEY="d714a900-3b9e-4e4d-8eae-756ef06a8836"
 HEARTBEAT_URL="https://your.heartbeat.service.io/airnode"
