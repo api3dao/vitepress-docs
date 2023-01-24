@@ -182,7 +182,7 @@ docker run -it --rm ^
 
 ### `info`
 
-You can retrieve more information about the deployment with the
+Retrieve more information about a deployment with the
 [info](../packages/deployer.md#info) command. Use the deployment ID from the
 [list](./deployer-image.md#list) command above to request information about a
 specific deployment. The retrieved information include deployment's Airnode
@@ -211,19 +211,19 @@ docker run -it --rm ^
 
 During the Airnode deployment, your `config.json` and `secrets.env` are uploaded
 to the cloud provider of your choosing. You can use the
-[fetch-files](../../reference/packages/deployer.md#fetch-files) command to
-retrieve them. You need to provide the deployment ID from the
-[list](./deployer-image.md#list) command above to specify the desired
-deployment. By default, the files from the latest version of this deployment are
-fetched. Alternatively, you can additionally provide a deployment version ID
-from the [info](./deployer-image.md#info) command above to specify the desired
-deployment version. By default, the archive with the files is stored in the
-`config` directory **within the Docker container** that is, in the example
-below, mapped to your current working directory. You can change the output
-directory by providing an `--output-dir` option specifying a different directory
-instead. Don't forget to add a mapping for the new output directory so you'll be
-able to access the files. Files for cloud provider authentication are needed for
-the command to run correctly: `aws.env` (for AWS) or `gcp.json` (for GCP).
+[fetch-files](../packages/deployer.md#fetch-files) command to retrieve them. You
+need to provide the deployment ID from the [list](./deployer-image.md#list)
+command above to specify the desired deployment. By default, the files from the
+latest version of this deployment are fetched. Alternatively, you can
+additionally provide a deployment version ID from the
+[info](./deployer-image.md#info) command above to specify the desired deployment
+version. By default, the archive with the files is stored in the `config`
+directory **within the Docker container** that is, in the example below, mapped
+to your current working directory. You can change the output directory by
+providing an `--output-dir` option specifying a different directory instead.
+Don't forget to add a mapping for the new output directory so you'll be able to
+access the files. Files for cloud provider authentication are needed for the
+command to run correctly: `aws.env` (for AWS) or `gcp.json` (for GCP).
 
 ::: code-group
 

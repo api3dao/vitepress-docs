@@ -22,6 +22,8 @@ tags:
 This documented needs to be split out by requesters and sponsors and merged into
 the `requester.md` or `sponsor.md` files in Concepts and Definitions.
 
+OR merge the separate docs to this one.
+
 :::
 
 As a developer it helps to understand what a **requester** is and what a

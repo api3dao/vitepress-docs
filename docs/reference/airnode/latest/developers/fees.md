@@ -2,7 +2,7 @@
 title: Fees
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → dAPP Developers
+pageHeader: Reference → Airnode → v1.0 →dApp Developers
 path: /reference/airnode/latest/developers/fees.html
 version: v1.0
 outline: deep

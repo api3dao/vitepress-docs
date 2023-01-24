@@ -66,13 +66,10 @@ respective parameters.
     "contracts": {
       "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
     },
-    "id": "1",
+    "id": "11155111",
     "providers": {
-      "selfHostedMainnet": {
-        "url": "${CP_SELF_HOSTED_MAINNET_URL}"
-      },
-      "infuraMainnet": {
-        "url": "${CP_INFURA_MAINNET_URL}"
+      "infuraSepolia": {
+        "url": "${CHAIN_PROVIDER_URL}"
       }
     },
     "type": "evm",

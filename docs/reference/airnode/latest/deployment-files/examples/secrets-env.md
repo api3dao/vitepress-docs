@@ -23,7 +23,7 @@ Variable names cannot contain dashes (-) or start with a number.
 
 ```sh [Cloud Providers]
 AIRNODE_WALLET_MNEMONIC=""
-SEPOLIA_PROVIDER_URL=""
+CLOUD_PROVIDER_URL=""
 SS_COINGECKO_REQUESTS_API_KEY=""
 
 HEARTBEAT_API_KEY=""
