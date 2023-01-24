@@ -182,7 +182,7 @@ docker run -it --rm ^
 
 ### `info`
 
-You can retrieve more information about the deployment with the
+Retrieve more information about a deployment with the
 [info](../packages/deployer.md#info) command. Use the deployment ID from the
 [list](./deployer-image.md#list) command above to request information about a
 specific deployment. The retrieved information include deployment's Airnode
