@@ -21,7 +21,7 @@ After integrating your API ([API Integration](api-integration.md)) and creating
 the configuration files ([Configuring Airnode](configuring.md)), the next step
 is to deploy the Airnode.
 
-::: tip Complete the following before deploying your Airnode.
+Complete the following before deploying your Airnode.
 
 - [API Integration](api-integration.md)
 - [API Security](api-security.md)
@@ -29,8 +29,6 @@ is to deploy the Airnode.
 - [Using Authorizers](./apply-auth.md) optional
 - [Heartbeat](./heartbeat.md) optional
 - [HTTP Gateways](./http-gateways.md) optional
-
-:::
 
 ## Deploy with Docker
 
