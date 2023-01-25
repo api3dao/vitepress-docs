@@ -359,7 +359,7 @@
     "pageHeader": "Guides → dAPIs",
     "path": "/guides/dapis/starter-project.html",
     "outline": "deep",
-    "tags": ["dapi", "dapis", "datafeed", "datafeeds", "data", "feed", "feeds"]
+    "tags": null
   },
   "41": {
     "title": "Using the DapiServer contract and Remix",
@@ -395,7 +395,7 @@
     "pageHeader": "Guides → QRNG",
     "path": "/guides/qrng/qrng-example.html",
     "outline": "deep",
-    "tags": ["qrng"]
+    "tags": null
   },
   "45": {
     "title": "Youtube QRNG-NFT Example",
@@ -975,6 +975,16 @@
     "tags": null
   },
   "103": {
+    "title": "Monitor Airnode",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v1.0 → Understanding Airnode",
+    "path": "/reference/airnode/latest/understand/monitor.html",
+    "version": "v1.0",
+    "outline": "deep",
+    "tags": null
+  },
+  "104": {
     "title": "Using Authorizations (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -984,7 +994,7 @@
     "outline": "deep",
     "tags": null
   },
-  "104": {
+  "105": {
     "title": "DAO (Api3Template.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -999,7 +1009,7 @@
       "BaseTemplate"
     ]
   },
-  "105": {
+  "106": {
     "title": "Dashboard Attributes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1008,7 +1018,7 @@
     "outline": "deep",
     "tags": null
   },
-  "106": {
+  "107": {
     "title": "Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1017,7 +1027,7 @@
     "outline": "deep",
     "tags": null
   },
-  "107": {
+  "108": {
     "title": "Pool (Api3Pool.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1026,7 +1036,7 @@
     "outline": "deep",
     "tags": null
   },
-  "108": {
+  "109": {
     "title": "Voting (Api3Voting.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1043,7 +1053,7 @@
       "BaseTemplate"
     ]
   },
-  "109": {
+  "110": {
     "title": "Best Practices",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1053,7 +1063,7 @@
     "outline": "deep",
     "tags": null
   },
-  "110": {
+  "111": {
     "title": "Chains and Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1063,7 +1073,7 @@
     "outline": "deep",
     "tags": null
   },
-  "111": {
+  "112": {
     "title": "Using dAPI Names",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1073,7 +1083,7 @@
     "outline": "deep",
     "tags": null
   },
-  "112": {
+  "113": {
     "title": "Understanding dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1083,7 +1093,7 @@
     "outline": "deep",
     "tags": null
   },
-  "113": {
+  "114": {
     "title": "ID and Name Schemes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1093,7 +1103,7 @@
     "outline": "deep",
     "tags": null
   },
-  "114": {
+  "115": {
     "title": "dataFeedIdToReaderToWhitelistStatus()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1103,7 +1113,7 @@
     "outline": "deep",
     "tags": null
   },
-  "115": {
+  "116": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1113,7 +1123,7 @@
     "outline": "deep",
     "tags": null
   },
-  "116": {
+  "117": {
     "title": "readDataFeedValueWithDapiName()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1123,7 +1133,7 @@
     "outline": "deep",
     "tags": null
   },
-  "117": {
+  "118": {
     "title": "readDataFeedValueWithId()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1133,7 +1143,7 @@
     "outline": "deep",
     "tags": null
   },
-  "118": {
+  "119": {
     "title": "readDataFeedWithDapiName()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1143,7 +1153,7 @@
     "outline": "deep",
     "tags": null
   },
-  "119": {
+  "120": {
     "title": "readDataFeedWithId()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1153,7 +1163,7 @@
     "outline": "deep",
     "tags": null
   },
-  "120": {
+  "121": {
     "title": "readerCanReadDataFeed()",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1163,81 +1173,72 @@
     "outline": "deep",
     "tags": null
   },
-  "121": {
+  "122": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
-    "pageHeader": "Reference → OIS → v1.2",
+    "pageHeader": "Reference → OIS → v1.4",
     "path": "/reference/ois/latest/example.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "122": {
+  "123": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
-    "pageHeader": "Reference → OIS → v1.2",
+    "pageHeader": "Reference → OIS → v1.4",
     "path": "/reference/ois/latest/index.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "123": {
+  "124": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
-    "pageHeader": "Reference → OIS → v1.2",
+    "pageHeader": "Reference → OIS → v1.4",
     "path": "/reference/ois/latest/ois.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "124": {
+  "125": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
-    "pageHeader": "Reference → OIS → v1.2",
+    "pageHeader": "Reference → OIS → 1.4",
     "path": "/reference/ois/latest/processing.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "125": {
+  "126": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
-    "pageHeader": "Reference → OIS → v1.2",
+    "pageHeader": "Reference → OIS → v1.4",
     "path": "/reference/ois/latest/reserved-parameters.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "126": {
+  "127": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
-    "pageHeader": "Reference → OIS → v1.2",
+    "pageHeader": "Reference → OIS → v1.4",
     "path": "/reference/ois/latest/template.html",
     "version": null,
     "outline": "deep",
     "tags": null
   },
-  "127": {
+  "128": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
     "path": "/reference/qrng/airnode-rrp-v0.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "128": {
-    "title": "Chains",
-    "sidebarHeader": "QRNG",
-    "sidebarSubHeader": null,
-    "pageHeader": "Reference → QRNG",
-    "path": "/reference/qrng/index.html",
     "outline": "deep",
     "tags": null
   },
@@ -1248,10 +1249,10 @@
     "pageHeader": "Reference → QRNG",
     "path": "/reference/qrng/index.html",
     "outline": "deep",
-    "tags": ["qrng", "anu"]
+    "tags": null
   },
   "130": {
-    "title": "Understanding QRNG",
+    "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
@@ -1260,6 +1261,15 @@
     "tags": ["qrng", "anu"]
   },
   "131": {
+    "title": "Understanding QRNG",
+    "sidebarHeader": "QRNG",
+    "sidebarSubHeader": null,
+    "pageHeader": "Reference → QRNG",
+    "path": "/reference/qrng/index.html",
+    "outline": "deep",
+    "tags": ["qrng", "anu"]
+  },
+  "132": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1268,16 +1278,16 @@
     "outline": "deep",
     "tags": null
   },
-  "132": {
+  "133": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
     "path": "/reference/qrng/qrng-example.html",
     "outline": "deep",
-    "tags": ["qrng", "solidity", "example"]
+    "tags": null
   },
-  "133": {
+  "134": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1286,7 +1296,7 @@
     "outline": "deep",
     "tags": ["qrng", "solidity", "example", "remix"]
   },
-  "134": {
+  "135": {
     "title": "makeFullRequest()",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
