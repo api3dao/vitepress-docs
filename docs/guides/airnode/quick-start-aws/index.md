@@ -84,11 +84,11 @@ This file requires no changes on your part. It has been created with just one
 API endpoint. It will instruct the Airnode to attach to the Sepolia test network
 and contains parameters to setup the off-chain Airnode.
 
-Note that `nodeSetting...disableConcurrencyReservations` has been set to `true`.
-This is a precaution for new AWS accounts that have yet to address concurrency
-management. For production deployments, `disableConcurrencyReservations` should
-be set to `false`. See
-[disableConcurrencyReservations](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
+Note that `nodeSetting.cloudProvider.disableConcurrencyReservations` has been
+set to `true`. This is a precaution for new AWS accounts that have yet to
+address concurrency management. For production deployments,
+`disableConcurrencyReservations` should be set to `false`. See
+[disableConcurrencyReservations](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-disableconcurrencyreservations)
 under the `cloudProvider` key and
 [maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
 for more information.

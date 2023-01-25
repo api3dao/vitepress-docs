@@ -37,6 +37,14 @@
           /></a>
         </td>
       </tr>
+      <tr>
+        <td>0.10.x</td>
+        <td>
+          <a href="https://github.com/api3dao/ois/tree/v1.4.0" target="_blank"
+            >1.4.0 <ExternalLinkImage
+          /></a>
+        </td>
+      </tr>
     </table>
   </div>
 </template>

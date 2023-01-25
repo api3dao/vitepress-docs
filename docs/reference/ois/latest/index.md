@@ -2,7 +2,7 @@
 title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v1.2
+pageHeader: Reference → OIS → v1.4
 path: /reference/ois/latest/index.html
 version:
 outline: deep
@@ -46,7 +46,7 @@ endpoint that maps to the same API operation.
 ## Releases
 
 <br/>
-<!--OisAirnodeVersions/-->
+<OisAirnodeVersions/>
 
 ## API Mapping Examples
 

@@ -18,9 +18,13 @@ tags:
 # {{$frontmatter.title}}
 
 When deployed to a cloud provider, such as AWS or GCP, Airnode uses certain
-resources to fully operate.
+resources to fully operate and supports most regions.
 
-## AWS
+## Resources
+
+Airnode uses the following AWS or GCP resources.
+
+### AWS
 
 | Resource    | Description                                                                   |
 | :---------- | :---------------------------------------------------------------------------- |
@@ -31,7 +35,7 @@ resources to fully operate.
 | API Gateway | Endpoints for the HTTP Gateway and HTTP Signed Data Gateway.                  |
 | S3          | File describing the state of the deployed infrastructure.                     |
 
-## GCP
+### GCP
 
 | Resource        | Description                                                                                 |
 | :-------------- | :------------------------------------------------------------------------------------------ |
@@ -40,3 +44,26 @@ resources to fully operate.
 | API Gateway     | Endpoints for the HTTP Gateway and HTTP Signed Data Gateway.                                |
 | Cloud Storage   | File describing the state of the deployed infrastructure & source code for cloud functions. |
 | IAM             | Service accounts & roles to allow communication among other resources.                      |
+
+## Supported Regions
+
+The following regions are supported.
+
+| GCP                  | AWS            |
+| -------------------- | -------------- |
+| asia-northeast1      | ap-northeast-1 |
+| australia-southeast1 | ap-northeast-2 |
+| europe-west1         | ap-south-1     |
+| europe-west2         | ap-southeast-1 |
+| us-central1          | ap-southeast-2 |
+| us-east1             | ca-central-1   |
+| us-east4             | eu-central-1   |
+| us-west2             | eu-north-1     |
+| us-west4             | eu-west-1      |
+|                      | eu-west-2      |
+|                      | eu-west-3      |
+|                      | sa-east-1      |
+|                      | us-east-1      |
+|                      | us-east-2      |
+|                      | us-west-1      |
+|                      | us-west-2      |

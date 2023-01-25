@@ -6,7 +6,6 @@ pageHeader: Guides → QRNG
 path: /guides/qrng/qrng-example.html
 outline: deep
 tags:
-  - qrng
 ---
 
 <PageHeader/>

@@ -90,7 +90,7 @@ json object.
 
 ```json
 {
-  "oisFormat": "1.2.0",
+  "oisFormat": "1.4.0",
   "title": "myOisTitle",
   "version": "0.1.0",
   ...

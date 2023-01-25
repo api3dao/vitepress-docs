@@ -6,9 +6,6 @@ pageHeader: Reference → QRNG
 path: /reference/qrng/qrng-example.html
 outline: deep
 tags:
-  - qrng
-  - solidity
-  - example
 ---
 
 <PageHeader/>
