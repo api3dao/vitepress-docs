@@ -325,7 +325,7 @@ An object containing general deployment parameters of an Airnode.
 ```json
 // nodeSettings
 {
-  "nodeVersion": "0.10.0",
+  "nodeVersion": "0.11.0",
   "cloudProvider": {
     "type": "gcp",
     "region": "us-east1",
