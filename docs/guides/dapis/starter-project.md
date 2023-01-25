@@ -6,13 +6,6 @@ pageHeader: Guides → dAPIs
 path: /guides/dapis/starter-project.html
 outline: deep
 tags:
-  - dapi
-  - dapis
-  - datafeed
-  - datafeeds
-  - data
-  - feed
-  - feeds
 ---
 
 <PageHeader/>

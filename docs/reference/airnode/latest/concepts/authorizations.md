@@ -61,7 +61,7 @@ The authorizations scheme type is set in
 `chains[n].authorizations.{<authorizationsSchemeType>}` of `config.json`.
 
 ```json
-chains[n].authorizations:{requesterEndpointAuthorizers:{}},
+chains[n].authorizations:{requesterEndpointAuthorizations:{}},
 ```
 
 ## requesterEndpointAuthorizations

@@ -64,6 +64,10 @@ module.exports = [
         text: 'Deploying Airnode',
         link: '/reference/airnode/latest/understand/deploying',
       },
+      {
+        text: 'Monitoring Airnode',
+        link: '/reference/airnode/latest/understand/monitor',
+      },
     ],
   },
   {
