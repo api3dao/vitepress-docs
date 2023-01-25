@@ -21,6 +21,8 @@ An Airnode can authorize smart contracts (know as requesters) access to its
 endpoints using [Authorizers](../concepts/authorizers.md). This method is
 on-chain and requires some blockchain knowledge by an API provider.
 
+## What is an authorizer?
+
 An [Authorizer](../concepts/authorizers.md) is a contract which typically checks
 for a single condition ("has the requester made their monthly payment", "is this
 `requesterAddress` whitelisted", etc.). Authorizers can be combined to enforce
@@ -37,6 +39,8 @@ knowledge by the API provider. Note that it is possible to use authorizers,
 authorizations, and relayed meta data together.
 
 :::
+
+## How to implement authorizers.
 
 When you deploy your Airnode a receipt file is generated which contains the
 Airnode's `airnodeAddress`. Sponsors (via their sponsored requesters) use
@@ -90,7 +94,7 @@ method of authorization,
 }
 ```
 
-## RequesterAuthorizerWithAirnode
+## Using `RequesterAuthorizerWithAirnode`
 
 A common use case for an authorizer is the
 [RequesterAuthorizerWithAirnode](../concepts/authorizers.md#requesterauthorizerwithairnode)
@@ -98,14 +102,11 @@ authorizer contract developed for Airnode operators to use right out-of-the-box.
 It allows the whitelisting of requester contracts (with or without expiration
 timestamps) on a per endpoint basis. Endpoints are declared in the
 `ois.endpoints` field of the `config.json` file. This is the most common use
-case and may in fact satisfy the needs of many Airnodes. You can find the
-contract address of this authorizer in the
-[Airnode Contract Addresses](../airnode-addresses.md) doc.
+case and can be implemented with the following steps:
 
-To use the RequesterAuthorizerWithAirnode authorizer contract:
-
-1. Add an authorizer contract address to the array for
-   `chains[n].authorizers.{<authorizerContractAddress>}`.
+1. Add the RequesterAuthorizerWithAirnode
+   [authorizer contract address](../airnode-addresses.md#requesterauthorizerwithairnode)
+   to the array `chains[n].authorizers.requesterEndpointAuthorizers`.
 2. After your Airnode is deployed, call the Admin CLI command
    [set-whitelist-expiration](../packages/admin-cli.md#set-whitelist-expiration)
    to add the desired requester contract addresses to the whitelist maintained
