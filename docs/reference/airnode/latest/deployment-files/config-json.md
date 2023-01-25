@@ -373,25 +373,13 @@ docker container locally ([client-image](../docker/client-image.md)).
 Airnode will be deployed to. An example AWS value would be `us-east-1` and an
 example GCP value would be `us-east1`. See the cloud provider's documentation
 for possible values, though not all regions can be deployed to. For GCP, make
-sure to choose a **region** and not a zone, and see the list below for regions
-that have been confirmed to work. For AWS, some regions are disabled by default
-and you must
+sure to choose a **region** and not a zone. See the
+[list of regions](../cloud-resources.md#supported-regions) that have been
+confirmed to work. For AWS, some regions are disabled by default and you must
 [enable them](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html)
 before you can create and manage resources. Note that transferring a deployment
 from one region to the other is not trivial (i.e., it does not take one command
 like deployment, but rather three) and is not advised.
-
-Supported GCP regions:
-
-- asia-northeast1
-- australia-southeast1
-- europe-west1
-- europe-west2
-- us-central1
-- us-east1
-- us-east4
-- us-west2
-- us-west4
 
 #### `cloudProvider.disableConcurrencyReservations`
 
