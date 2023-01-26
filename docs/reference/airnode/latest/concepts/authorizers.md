@@ -164,15 +164,6 @@ A protocol that does not have the `authorizers` scheme or equivalent
 functionality cannot be considered as permissionless, and will not be able to
 achieve wide-spread adoption.
 
-Currently there is only one `authorizers` scheme type, see
-[requesterEndpointAuthorizers](https://github.com/api3dao/airnode/blob/master/packages/airnode-validator/src/config/config.ts#L160-L163).
-The `authorizers` scheme type is set in
-`chains[n].authorizers.{<authorizerSchemeType>}` of `config.json`.
-
-```json
-chains[n].authorizers:{requesterEndpointAuthorizers:[]},
-```
-
 ### Are authorizers required?
 
 Authorizers are not required. An Airnode operator could use
@@ -201,16 +192,25 @@ making a static call to check if they are authorized. This scheme both allows
 the Airnode to set transparent and flexible policies, and this to be done with
 no gas overhead.
 
-### Access (allow, filter)
+Currently there are two `authorizers` scheme types,
+`requesterEndpointAuthorizers` and `crossChainRequesterAuthorizers`. These are
+set in `chains[n].authorizers` of `config.json` as described below.
 
-How authorizer contracts impact access is based on the `chains` field of
-`config.json` for a given Airnode.
+### Same-chain: requesterEndpointAuthorizers
+
+The `requesterEndpointAuthorizers` authorizer scheme type specifies an array of
+on-chain contract addresses to query when attempting to authorize a request. In
+contrast to the other authorizer scheme type, `crossChainRequesterAuthorizers`,
+the contract addresses are expected to reside on the chain specified by the `id`
+field of the parent `chains` object i.e. the authorizer contract addresses are
+on the same chain. There are two configurations possible for
+`requesterEndpointAuthorizers`: "allow all" and "filter all".
 
 #### Allow All
 
-When `chains[n].authorizers.{<authorizerSchemeType>}` (such as the
-`requesterEndpointAuthorizers` type) is an empty array, this means "let everyone
-through". In the example below, all chain _2_ requests are authorized.
+When `chains[n].authorizers.requesterEndpointAuthorizers` is an empty array, all
+requests are authorized. In the example below, all chain _2_ requests are
+authorized.
 
 ```json
 "chains": [
@@ -225,7 +225,7 @@ through". In the example below, all chain _2_ requests are authorized.
 
 #### Filter All
 
-If the Airnode wants to give access selectively, it should use one or more
+If the Airnode wants to authorize selectively, it should use one or more
 authorizer contracts that implement filtering logic. In the example below, a
 request would be authorized on chain _2_ if _either_ of the two
 `requesterEndpointAuthorizers` contracts authorize the request.
@@ -235,6 +235,54 @@ request would be authorized on chain _2_ if _either_ of the two
   {
     "id": "2",
     "authorizers": { "requesterEndpointAuthorizers": ["0xcd...cd8d", "0xff...d19c"] }
+    ...
+  }
+]
+```
+
+### Cross-chain: crossChainRequesterAuthorizers
+
+The `crossChainRequesterAuthorizers` authorizer scheme type specifies an array
+of objects that allow for cross-chain request authorization. The key-value pairs
+of each object resemble other `config.json` objects:
+`requesterEndpointAuthorizers` specifies an array of contract address that
+authorize requests and both `chainType` and `contracts` are configured
+equivalently to their like named parent `chains[n]` objects described in the
+[config.json reference](../reference/deployment-files/config-json.md#chains).
+Lastly, `chainId` specifies the cross-chain (network) id and `chainProvider` is
+an object containing the chain provider url for the _chain specified by
+`chainId`_.
+
+Note that `crossChainRequesterAuthorizers` is an array that can contain multiple
+cross-chain authorizer objects, which allows for authorizers across multiple
+chains and/or redundancy in providers for each chain.
+
+The below example combines both `requesterEndpointAuthorizers` and
+`crossChainRequesterAuthorizers` authorizer scheme types. Requests will be
+authorized if the same-chain (`"id": "2"`) `requesterEndpointAuthorizers`
+contract `0xcd...cd8d` authorizes the request or if the cross-chain
+(`"chainId": "1"`) authorizer contract `0xCE5e...1abc` authorizes the request.
+
+```json
+"chains": [
+  {
+    "id": "2",
+    "authorizers": {
+      "requesterEndpointAuthorizers": ["0xcd...cd8d"],
+      "crossChainRequesterAuthorizers": [
+        {
+          "requesterEndpointAuthorizers": ["0xCE5e...1abc"],
+          "chainType": "evm",
+          "chainId": "1",
+          "contracts": {
+            "AirnodeRrp": "0xa0AD...a1Bd"
+          },
+          "chainProvider": {
+            "url": "https://mainnet.infura.io/..."
+          }
+        }
+      ]
+    }
     ...
   }
 ]

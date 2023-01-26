@@ -2,7 +2,8 @@
   "chains": [
     {
       "authorizers": {
-        "requesterEndpointAuthorizers": []
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": []
       },
       "authorizations": {
         "requesterEndpointAuthorizations": {}
