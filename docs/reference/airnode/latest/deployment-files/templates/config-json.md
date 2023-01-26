@@ -49,7 +49,8 @@ file.
   "chains": [
     {
       "authorizers": {
-        "requesterEndpointAuthorizers": ["<FILL_*>"]
+        "requesterEndpointAuthorizers": ["<FILL_*>"],
+        "crossChainRequesterAuthorizers": ["<FILL_*>"]
       },
       "authorizations": {
         "requesterEndpointAuthorizations": {

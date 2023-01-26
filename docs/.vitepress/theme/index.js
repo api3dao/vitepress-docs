@@ -2,8 +2,6 @@ import DefaultTheme from 'vitepress/theme';
 import VersionPicklist from '../../_components/reference/VersionPicklist.vue';
 import SearchBtn from '../../_components/search/SearchBtn.vue';
 import SearchResults from '../../_components/search/SearchResults.vue';
-//import BlogPosts from '../../_components/explore/BlogPosts.vue';
-//import JobsEmailAddress from '../../_components/explore/JobsEmailAddress.vue';
 import TutorialResponse from '../../_components/guides/TutorialResponse.vue';
 import WarningSimultaneousDeployments from '../../_components/guides/WarningSimultaneousDeployments.vue';
 import DeployerPermissionsWarning from '../../_components/guides/DeployerPermissionsWarning.vue';
@@ -31,8 +29,6 @@ export default {
     app.component('VersionPicklist', VersionPicklist);
     app.component('SearchBtn', SearchBtn);
     app.component('SearchResults', SearchResults);
-    //app.component('BlogPosts', BlogPosts);
-    //app.component('JobsEmailAddress', JobsEmailAddress);
     app.component('TutorialResponse', TutorialResponse);
     app.component(
       'WarningSimultaneousDeployments',
