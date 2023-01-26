@@ -248,10 +248,9 @@ of each object resemble other `config.json` objects:
 `requesterEndpointAuthorizers` specifies an array of contract address that
 authorize requests and both `chainType` and `contracts` are configured
 equivalently to their like named parent `chains[n]` objects described in the
-[config.json reference](../reference/deployment-files/config-json.md#chains).
-Lastly, `chainId` specifies the cross-chain (network) id and `chainProvider` is
-an object containing the chain provider url for the _chain specified by
-`chainId`_.
+[config.json reference](../deployment-files/config-json.md#chains). Lastly,
+`chainId` specifies the cross-chain (network) id and `chainProvider` is an
+object containing the chain provider url for the _chain specified by `chainId`_.
 
 Note that `crossChainRequesterAuthorizers` is an array that can contain multiple
 cross-chain authorizer objects, which allows for authorizers across multiple
