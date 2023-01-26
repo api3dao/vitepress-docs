@@ -17,7 +17,7 @@ tags:
 
 dAPIs can be read on the following chains using the
 [DapiServer.sol](./functions/) contract addresses listed below. Use the
-[API3 Market](https://market.api3.org/)<ExternalLinkImage/> website to find the
+[API3 Market<ExternalLinkImage/>](https://market.api3.org/) website to find the
 desired dAPI names and the networks they are available on.
 
 <ChainsList/>

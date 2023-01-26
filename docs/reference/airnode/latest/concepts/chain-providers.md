@@ -40,7 +40,8 @@ provider "infuraSepolia" in the `providers` array.
     "authorizers": {
       "requesterEndpointAuthorizers": [
         "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-      ]
+      ],
+      "crossChainRequesterAuthorizers": []
     },
     "authorizations": {
         "requesterEndpointAuthorizations": {}
@@ -103,7 +104,8 @@ Multiple providers can be used per chain. Simply add another object to
     "authorizers": {
       "requesterEndpointAuthorizers": [
         "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-      ]
+      ],
+      "crossChainRequesterAuthorizers": []
     },
     "authorizations": {
         "requesterEndpointAuthorizations": {}
@@ -168,7 +170,8 @@ each has a unique `id` and `type` and a list of `providers` for each.
     "authorizers": {
       "requesterEndpointAuthorizers": [
         "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-      ]
+      ],
+      "crossChainRequesterAuthorizers": []
     },
     "authorizations": {
         "requesterEndpointAuthorizations": {}
@@ -223,7 +226,8 @@ each has a unique `id` and `type` and a list of `providers` for each.
     "authorizers": {
       "requesterEndpointAuthorizers": [
         "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-      ]
+      ],
+      "crossChainRequesterAuthorizers": []
     },
     "authorizations": {
         "requesterEndpointAuthorizations": {}

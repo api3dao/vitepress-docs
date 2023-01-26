@@ -26,7 +26,6 @@
 
 <script>
 import axios from 'axios';
-import chainsRef from '../../../../.vitepress/chains.json';
 
 export default {
   name: 'ChainsList',
@@ -48,44 +47,14 @@ export default {
         const response = await axios.get(
           'https://db-api-prod.api3.org/api/docs-chains-reference'
         );
-        this.chains = this.sortByName(response.data);
-
-        // Add local chains reference data
-        for (const chain in this.chains) {
-          const id = this.chains[chain].id;
-          this.chains[chain].type = chainsRef[id].type;
-          this.chains[chain].name = chain;
-          if (chainsRef[id].fullname) {
-            this.chains[chain].fullname = chainsRef[id].fullname;
-          } else {
-            this.chains[chain].fullname = chain + '*';
-          }
-          delete this.chains[chain].fullName; // Replaced by fullname
-        }
-
-        // Sort by fullname
-        this.chains = this.sortByName(this.chains);
-
-        // Hardcode contract for polygon-testnet
-        this.chains['polygon-testnet'].contracts[
-          'SelfServeDapiServerWhitelister'
-        ] = '0x78D95f27B068F36Bd4c3f29e424D7072D149DDF3';
-
-        var keys = [];
-        for (var k in this.chains) keys.push(k);
-        this.chainsCnt = keys.length;
+        this.chains = response.data;
+        this.chainsCnt = Object.keys(this.chains).length; //keys.length;
       } catch (err) {
         console.error(err.toString());
         this.error = err.toString();
       }
       this.showSpinner = false;
       this.loaded = true;
-    },
-    /// Sorts the chains json object by its root keys which is the chain names.
-    sortByName(o) {
-      return Object.keys(o)
-        .sort()
-        .reduce((r, k) => ((r[k] = o[k]), r), {});
     },
   },
 };
@@ -103,7 +72,7 @@ export default {
   padding-bottom: 10px;
   border: solid lightgrey 1px;
   border-radius: 0.5em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   max-width: 620px;
 }
 </style>

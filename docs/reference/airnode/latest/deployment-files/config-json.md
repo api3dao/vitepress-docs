@@ -58,7 +58,8 @@ respective parameters.
       "requesterEndpointAuthorizers": [
         "0xf18c105D0375E80980e4EED829a4A68A539E6178",
         "0xCE5e...1abc"
-      ]
+      ],
+      "crossChainRequesterAuthorizers": []
     },
     "authorizations": {
       "requesterEndpointAuthorizations": {}
@@ -66,10 +67,10 @@ respective parameters.
     "contracts": {
       "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
     },
-    "id": "11155111",
+    "id": "1",
     "providers": {
-      "infuraSepolia": {
-        "url": "${CHAIN_PROVIDER_URL}"
+      "infuraMainnet": {
+        "url": "${CHAIN_PROVIDER_URL_INFURA_MAINNET}"
       }
     },
     "type": "evm",
@@ -111,7 +112,8 @@ respective parameters.
   },
   {
     "authorizers": {
-      "requesterEndpointAuthorizers": []
+      "requesterEndpointAuthorizers": [],
+      "crossChainRequesterAuthorizers": []
     },
     "authorizations": {
       "requesterEndpointAuthorizations": {}
@@ -122,7 +124,7 @@ respective parameters.
     "id": "11155111",
     "providers": {
       "infuraSepolia": {
-        "url": "${CP_INFURA_SEPOLIA_URL}"
+        "url": "${CHAIN_PROVIDER_URL_INFURA_SEPOLIA}"
       }
     },
     "type": "evm",

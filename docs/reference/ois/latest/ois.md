@@ -478,7 +478,7 @@ override the default value.
 
 ### 5.5. `parameters`
 
-[<InfoBtnBlue/>](../../airnode/latest/understand/api-integration.md#parameters)
+[<InfoBtnBlue/>](/reference/airnode/latest/understand/api-integration.md#parameters)
 (Optional) A list of objects that specify Airnode endpoint parameters that map
 to an particular API operation's parameters. Each object has the following
 elements:
@@ -488,7 +488,7 @@ elements:
 - `default`
 - `description *`
 - `required`
-- `example`
+- `example *`
 
 #### 5.5.1. `operationParameter`
 
