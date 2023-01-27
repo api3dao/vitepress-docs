@@ -78,7 +78,7 @@ and a few testnets.
 ## byog Pseudorandom Numbers
 
 [**byog**<ExternalLinkImage/>](https://byog.io/) is an independent group within
-the API3 ecosystem that builds high-impact oracle services. **byog** imitates
+the API3 ecosystem that builds high-impact oracle services. **byog** emulates
 QRNG using
 [pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
 on [testnets](./chains.md#byog).
