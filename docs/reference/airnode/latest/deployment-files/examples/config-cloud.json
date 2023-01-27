@@ -22,23 +22,8 @@
         "fulfillmentGasLimit": 500000,
         "gasPriceOracle": [
           {
-            "gasPriceStrategy": "latestBlockPercentileGasPrice",
-            "percentile": 60,
-            "minTransactionCount": 20,
-            "pastToCompareInBlocks": 20,
-            "maxDeviationMultiplier": 2
-          },
-          {
             "gasPriceStrategy": "providerRecommendedGasPrice",
             "recommendedGasPriceMultiplier": 1.2
-          },
-          {
-            "gasPriceStrategy": "providerRecommendedEip1559GasPrice",
-            "baseFeeMultiplier": 2,
-            "priorityFee": {
-              "value": 3.12,
-              "unit": "gwei"
-            }
           },
           {
             "gasPriceStrategy": "constantGasPrice",
