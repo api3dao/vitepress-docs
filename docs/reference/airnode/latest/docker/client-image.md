@@ -106,8 +106,9 @@ docker run --detach ^
 
 > If you want to connect Airnode to a blockchain running on localhost, you need
 > to make the blockchain accessible from within the docker itself. If you use
-> docker for linux you can use `--network="host"` parameter. For windows, wsl or
-> mac connect to `host.docker.internal` instead of `127.0.0.1`. See
+> docker for linux you can use `--network="host"` parameter. If you are using
+> Docker Desktop (on any platform), connect to
+> `http://host.docker.internal:8545` instead of `http://127.0.0.1:8545`. See
 > [https://stackoverflow.com/a/24326540](https://stackoverflow.com/a/24326540).
 
 ### Checking Airnode logs
