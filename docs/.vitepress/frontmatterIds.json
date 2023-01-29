@@ -1078,7 +1078,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/index.html",
+    "path": "/reference/dapis/dapi-name.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1088,7 +1088,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/overview.html",
+    "path": "/reference/dapis/",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1098,7 +1098,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/index.html",
+    "path": "/reference/dapis/schemas.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1118,7 +1118,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → DapServer Contract",
-    "path": "/reference/dapis/functions/dapi-server-sol.html",
+    "path": "/reference/dapis/functions/",
     "version": null,
     "outline": "deep",
     "tags": null
