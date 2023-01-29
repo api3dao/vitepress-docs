@@ -102,29 +102,48 @@ Below is an example of what is included in the request body to `heartbeat.url`.
 }
 ```
 
+The method by which the heartbeat payload is generated is as follows:
+
+- An object is marshalled to JSON - this object contains a timestamp, gateway
+  URLs, the cloud provider and cloud region.
+- The Airnode's mnemonic (using the default EVM derivation path to derive a key)
+  is used to sign the payload.
+- The payload and signature are included in a new object and marshalled to JSON.
+
+The reason this nested JSON approach has been used is to prevent subtle
+inconsistencies between JSON marshallers in different languages causing the
+signature to not match the payload.
+
+The airnode's public key can be recovered from this signature and be used,
+generally, to verify the authenticity of the payload.
+
+The overall content to the heartbeat URL is as follows:
+
 <table>
   <tr>
     <td>airnode-heartbeat-api-key:</td><td>API key for heartbeat calls configured in nodeSettings.heartbeat.apiKey. Used for authentication against the heartbeat service running on URL from nodeSettings.heartbeat.url.</td>
+    <td>header</td>
   </tr>
   <tr>
     <td>http_gateway_url:</td><td>If HTTP gateway is enabled this is the URL of the gateway you can make test HTTP calls against.</td>
+    <td>body</td>
   </tr>
   <tr>
-    <td>http_signed_data_gateway_url:</td><td>If HTTP signed data gateway is enabled this is the URL of the gateway you can make HTTP calls against.</td>
+    <td>http_signed_data_gateway_url:</td><td>If HTTP signed data gateway is enabled this is the URL of the gateway you can make HTTP calls against.</td><td>body</td>
   </tr>
   <tr>
-    <td>cloud_provider:</td><td>This is the deployment cloud provider.</td>
+    <td>cloud_provider:</td><td>This is the deployment cloud provider.</td><td>body</td>
   </tr>
   <tr>
-    <td>region:</td><td>This is the deployment region.</td>
+    <td>region:</td><td>This is the deployment region.</td><td>body</td>
   </tr>
   <tr>
-    <td>stage:</td><td>This is the deployment stage.</td>
+    <td>stage:</td><td>This is the deployment stage.</td><td>body</td>
   </tr>
   <tr>
-    <td>signature:</td><td>This is the signature of the heartbeat payload signed with the Airnode wallet.</td>
+    <td>signature:</td><td>This is the signature of the heartbeat payload signed with the Airnode wallet.</td><td>body</td>
   </tr>
   <tr>
-    <td>timestamp:</td><td>This is the heartbeat timestamp.</td>
+    <td>timestamp:</td><td>This is the heartbeat timestamp.</td><td>body</td>
   </tr>
 </table>

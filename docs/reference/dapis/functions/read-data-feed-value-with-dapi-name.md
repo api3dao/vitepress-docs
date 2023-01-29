@@ -54,22 +54,13 @@ See another code example of `readDataFeedValueWithDapiName()` in the
 `readDataFeedValueWithDapiName(bytes32 _dapiName)`
 
 - `bytes32 dapiName` - The encoded bytes32 value of a dAPI name to retrieve a
-  value for (no timestamp). The example below generates the encoded bytes32
-  value of AVAX/USD. Try it in the
-  [ethers playground](https://playground.ethers.org/).
-
-  ```solidity
-  // Encode the dapiName (such as AVAX/USD) to bytes32
-  ethers.utils.formatBytes32String("AVAX/USD");
-  // 0x415641582f555344000000000000000000000000000000000000000000000000
-  // Pass the above value to readDataFeedWithDapiName()
-  ```
+  value for (no timestamp). See
+  [Encode the dapiName](../dapi-names.md#encode-the-dapiname) to learn how to
+  encode the value of a `dapiName`.
 
 ## Returns
 
 - `int224 value` - The value of the dAPI.
-
-::: tip Please note:
 
 The `DapiServer.sol` contract casts the reported data point to `int224`. If this
 is a problem (because the reported data may not fit into 224 bits or it is of a
@@ -77,8 +68,3 @@ completely different type such as `bytes32`), do not use this contract and
 implement a customized version instead. The contract casts the timestamps to
 `uint32`, which means it will not work work past-2106 in the current form. If
 this is an issue, consider casting the timestamps to a larger type.
-
-:::
-
-If the timestamp is `0` then the function will revert with "_Data feed does not
-exist_".
