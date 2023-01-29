@@ -3,7 +3,7 @@ title: ID and Name Schemes
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/schemas.html
+path: /reference/dapis/schemes.html
 version:
 outline: deep
 tags:

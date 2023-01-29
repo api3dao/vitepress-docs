@@ -174,10 +174,10 @@
     "title": "Decentralized APIs (dAPIs)",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
-    "pageHeader": "Explore",
+    "pageHeader": "Explore → About our journey!",
     "path": "/explore/introduction/decentralized-apis.html",
     "outline": "deep",
-    "tags": ["decentralization", "decentralized", "governance"]
+    "tags": null
   },
   "21": {
     "title": "What are first-party oracles?",
@@ -201,8 +201,8 @@
     "title": "API3 Market",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
-    "pageHeader": "Explore → dAPIs",
-    "path": "/explore/dapis/market.html",
+    "pageHeader": "Explore → About our journey!",
+    "path": "/explore/introduction/market.html",
     "outline": "deep",
     "tags": null
   },
@@ -1074,11 +1074,11 @@
     "tags": null
   },
   "112": {
-    "title": "Using dAPI Names",
+    "title": "dAPI Names",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/dapi-name.html",
+    "path": "/reference/dapis/dapi-names.html",
     "version": null,
     "outline": "deep",
     "tags": null
@@ -1098,7 +1098,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/schemas.html",
+    "path": "/reference/dapis/schemes.html",
     "version": null,
     "outline": "deep",
     "tags": null

@@ -1,9 +1,9 @@
 ---
-title: Using dAPI Names
+title: dAPI Names
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/dapi-name.html
+path: /reference/dapis/dapi-names.html
 version:
 outline: deep
 tags:
