@@ -1,9 +1,9 @@
 ---
-title: Using dAPI Names
+title: dAPI Names
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/index.html
+path: /reference/dapis/dapi-names.html
 version:
 outline: deep
 tags:
@@ -36,11 +36,12 @@ Need an image here of the proxy contract flow to `read()`,
 
 :::
 
-## For `DapiServer.sol` encode the `dapiName`
+## Encode the `dapiName`
 
-Pass a `dapiName`, as an encoded bytes32 value, to the desired `DapiServer.sol`
-reader function that uses `dapiName` as its parameter. This is done to save gas
-when your smart contract calls a "readByName" function on `DapiServer.sol`.
+To use functions on the `DapiServer.sol` contract that accept the `_dapiName`
+parameter, pass the `_dapiName` as an encoded bytes32 value. This is done to
+save gas when a smart contract calls a "readByName" function on
+`DapiServer.sol`.
 
 - [readDataFeedWithDapiName(\_dapiName)](./functions/read-data-feed-with-dapi-name.md) -
   returns a value and timestamp
@@ -56,7 +57,8 @@ ethers.utils.formatBytes32String("AVAX/USD");
 // Yields: 0x415641582f555344000000000000000000000000000000000000000000000000
 ```
 
-Then pass the encoded value to the functions mentioned above.
+Then pass the encoded value to either `readDataFeedWithDapiName()` or
+`readDataFeedValueWithDapiName()`.
 
 ```solidity
 // Calling readDataFeedWithDapiName() using the DapiServer contract

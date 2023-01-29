@@ -3,7 +3,7 @@ title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapServer Contract
-path: /reference/dapis/functions/dapi-server-sol.html
+path: /reference/dapis/functions/
 version:
 outline: deep
 tags:

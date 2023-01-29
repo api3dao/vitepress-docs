@@ -3,7 +3,7 @@ title: Understanding dAPIs
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/overview.html
+path: /reference/dapis/
 version:
 outline: deep
 tags:

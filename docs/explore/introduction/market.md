@@ -2,8 +2,8 @@
 title: API3 Market
 sidebarHeader: Explore
 sidebarSubHeader:
-pageHeader: Explore → dAPIs
-path: /explore/dapis/market.html
+pageHeader: Explore → About our journey!
+path: /explore/introduction/market.html
 outline: deep
 tags:
 ---

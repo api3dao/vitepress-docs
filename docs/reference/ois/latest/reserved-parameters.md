@@ -279,11 +279,11 @@ For example, let's say the API response looks like this
 
 Airnode will extract and convert each of the "split values" separately
 
-1. Combination of `_type="string"`, `_path="pathToString"` and `__times=""`
+1. Combination of `_type="string"`, `_path="pathToString"` and `_times=""`
    results in `"some string"`
-2. Combination of `_type="uint256"`, `_path="pathToFloat"` and `__times="10000"`
+2. Combination of `_type="uint256"`, `_path="pathToFloat"` and `_times="10000"`
    results in `12345670`
-3. Combination of `_type="address"`, `_path="pathToAddress"` and `__times=""`
+3. Combination of `_type="address"`, `_path="pathToAddress"` and `_times=""`
    results in `"0xe021...8a74"`
 
 All of these values are then together encoded to single bytes value that can be

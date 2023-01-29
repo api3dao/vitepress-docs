@@ -18,7 +18,7 @@ tags:
 ::: warning This function uses IDs.
 
 Be sure to understand the difference between using a name or ID. See
-[dAPI Names](../index.md).
+[dAPI Names](../dapi-names.md).
 
 :::
 
@@ -70,16 +70,12 @@ See another code example of `readDataFeedWithId()` in the
 - `int224 value` - The value of the Beacon or Beacon set.
 - `uint32 timestamp` - The timestamp associated with the value.
 
-::: tip Please note:
-
 The `DapiServer.sol` contract casts the reported data point to `int224`. If this
 is a problem (because the reported data may not fit into 224 bits or it is of a
 completely different type such as `bytes32`), do not use this contract and
 implement a customized version instead. The contract casts the timestamps to
 `uint32`, which means it will not work work past-2106 in the current form. If
 this is an issue, consider casting the timestamps to a larger type.
-
-:::
 
 If the `timestamp` of a data feed is zero, this means that it was never written
 to. This may be the case for new data feeds. Therefore a zero value in the
