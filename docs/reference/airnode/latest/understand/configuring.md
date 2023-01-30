@@ -29,10 +29,10 @@ Note that this guide is complementary to, and not a replacement of, the
 
 An Airnode is deployed or redeployed using configuration values from its
 `config.json` and `secrets.env` files. The `config.json` specifies the
-[Oracle Integration Specifications OIS](/reference/ois/latest/ois.md) and other
-specific configuration details. The `secrets.env` file holds secrets, such as
-API keys and chain provider URLs, which are referenced within the config.json
-file using interpolation.
+[Oracle Integration Specifications OIS](/reference/ois/latest/specification.md)
+and other specific configuration details. The `secrets.env` file holds secrets,
+such as API keys and chain provider URLs, which are referenced within the
+config.json file using interpolation.
 
 > <img src="../assets/images/config-json.png" width="650px">
 >

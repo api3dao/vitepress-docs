@@ -27,12 +27,12 @@ A requester can pass request parameters either by referencing a
 or as an argument of the request-making methods of
 [AirnodeRrpV0.sol](/reference/airnode/latest/concepts/#airnoderrpv0-sol). In
 either case, these parameters are encoded using the
-[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi-specifications.md).
+[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi.md).
 There are two types of parameters which are part of the OIS object:
 
-1. [Endpoint parameters](./specifications.md#_5-5-parameters) - Airnode endpoint
+1. [Endpoint parameters](./specification.md#_5-5-parameters) - Airnode endpoint
    parameters are mapped to API operation parameters.
-2. [Reserved parameters](./specifications.md#_5-4-reservedparameters) - Reserved
+2. [Reserved parameters](./specification.md#_5-4-reservedparameters) - Reserved
    parameters perform a specific operation related to the request or on the
    response before fulfilling the request. Reserved parameter names start with
    `_`. Depending on the configuration, they may be overridden by a parameter
@@ -255,7 +255,7 @@ without a `default` or `fixed` value as shown in the abbreviated snippet below:
 
 This allows requesters to specify the gas price via a parameter in their
 request. The value, in `wei`, should be
-[encoded](/reference/latest/airnode/packages/airnode-abi.md#encode) as a
+[encoded](/reference/airnode/latest/packages/airnode-abi.md#encode) as a
 `string32` type by the requester, for example:
 
 ```ts
@@ -368,7 +368,7 @@ Airnode will extract and convert each of the "split values" separately
 
 All of these values are then together encoded to single bytes value that can be
 sent on chain. You can use
-[testing gateway](/reference/airnode/latest/guides/understanding/deploying-airnode.md#testing-with-http-gateway)
+[testing gateway](/reference/airnode/latest/understand/deploying.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.
 
 ::: tip Multiple Reserved Parameters Tutorial

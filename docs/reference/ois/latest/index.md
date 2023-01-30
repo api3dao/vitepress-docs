@@ -51,7 +51,8 @@ endpoint that maps to the same API operation.
 ## API Mapping Examples
 
 The following are three possible Airnode to API operation mapping examples.
-Mapping details are better documented in the next doc [Specification](./ois.md).
+Mapping details are better documented in the next doc
+[Specification](./specification.md).
 
 ### Simple Airnode Endpoint
 

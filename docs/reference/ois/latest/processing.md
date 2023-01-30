@@ -20,8 +20,8 @@ tags:
 <!--TocHeader /> <TOC class="table-of-contents" :include-level="[2,5]" /-->
 
 The processing schema is the same for both
-[pre-processing](./ois.md#_5-9-preprocessingspecifications) and
-[post-processing](./ois.md#_5-10-postprocessingspecifications).
+[pre-processing](./specification.md#_5-9-preprocessingspecifications) and
+[post-processing](./specification.md#_5-10-postprocessingspecifications).
 
 The processing schema accepts an array of processing snippets which are chained.
 The first snippet receives parameters submitted as part of a template or
