@@ -41,7 +41,7 @@ database of an Airnode deployment. It contains five fields as show below.
   ID.
 - [templates](./config-json.md#templates):
 - [ois](./config-json.md#ois): API specifications and the corresponding on-chain
-  endpoints, kept as [OIS](/reference/ois/latest/ois.md) objects.
+  endpoints, kept as [OIS](/reference/ois/latest/specification.md) objects.
 - [apiCredentials](./config-json.md#apicredentials): Which API credentials will
   be usable by which OIS and security scheme.
 

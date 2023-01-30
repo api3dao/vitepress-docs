@@ -3,7 +3,7 @@ title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v1.4
-path: /reference/ois/latest/ois.html
+path: /reference/ois/latest/specification.html
 version:
 outline: deep
 tags:
@@ -47,11 +47,11 @@ for an overview of OIS.
 
 An OIS has five root fields (keys).
 
-1. [oisFormat](ois.md#_1-oisformat)
-1. [title](ois.md#_2-title)
-1. [version](ois.md#_3-version)
-1. [apiSpecifications](ois.md#_4-apispecifications)
-1. [endpoints](ois.md#_5-endpoints)
+1. [oisFormat](specification.md#_1-oisformat)
+1. [title](specification.md#_2-title)
+1. [version](specification.md#_3-version)
+1. [apiSpecifications](specification.md#_4-apispecifications)
+1. [endpoints](specification.md#_5-endpoints)
 
 `apiSpecifications` describe the API's operations which are mapped to the
 `endpoints` that Airnode exposes on-chain.
@@ -92,10 +92,10 @@ the `oisFormat` version which defines an OIS formatting version.
 
 (Required) An object specifying the API with the following root level fields:
 
-- 4.1. [servers](ois.md#_4-1-servers)
-- 4.2. [paths](ois.md#_4-2-paths)
-- 4.3. [components](ois.md#_4-3-components)
-- 4.4. [security](ois.md#_4-4-security)
+- 4.1. [servers](specification.md#_4-1-servers)
+- 4.2. [paths](specification.md#_4-2-paths)
+- 4.3. [components](specification.md#_4-3-components)
+- 4.4. [security](specification.md#_4-4-security)
 
 ```json
 // apiSpecifications
@@ -308,17 +308,19 @@ node.
 
 :::
 
-- 5.1. [name](ois.md#_5-1-name)
-- 5.2. [operation](ois.md#_5-2-operation)
-- 5.3. [fixedOperationParameters](ois.md#_5-3-fixedoperationparameters)
-- 5.4. [reservedParameters](ois.md#_5-4-reservedparameters)
-- 5.5. [parameters](ois.md#_5-5-parameters)
-- 5.6. [summary \*](ois.md#_5-6-summary)
-- 5.7. [description \*](ois.md#_5-7-description)
-- 5.8. [externalDocs \*](ois.md#_5-8-externaldocs)
-- 5.9. [preProcessingSpecifications](ois.md#_5-9-preprocessingspecifications)
+- 5.1. [name](specification.md#_5-1-name)
+- 5.2. [operation](specification.md#_5-2-operation)
+- 5.3.
+  [fixedOperationParameters](specification.md#_5-3-fixedoperationparameters)
+- 5.4. [reservedParameters](specification.md#_5-4-reservedparameters)
+- 5.5. [parameters](specification.md#_5-5-parameters)
+- 5.6. [summary \*](specification.md#_5-6-summary)
+- 5.7. [description \*](specification.md#_5-7-description)
+- 5.8. [externalDocs \*](specification.md#_5-8-externaldocs)
+- 5.9.
+  [preProcessingSpecifications](specification.md#_5-9-preprocessingspecifications)
 - 5.10.
-  [postProcessingSpecifications](ois.md#_5-10-postprocessingspecifications)
+  [postProcessingSpecifications](specification.md#_5-10-postprocessingspecifications)
 
 ```json
 // endpoints
@@ -349,6 +351,12 @@ node.
       },
       {
         "name": "_times"
+      },
+      {
+        "name": "_gasPrice"
+      },
+      {
+        "name": "_minConfirmations"
       }
     ],
     "parameters": [
@@ -463,7 +471,8 @@ in-depth explanation. Each object has the following elements:
 
 (Required) The name of the reserved parameter. Always starts with `_`.
 
-Allowed values: `_type`, `_path` or `_times`
+Allowed values: `_type`, `_path`, `_times`, `_gasPrice`, and
+`_minConfirmations`.
 
 #### 5.4.2. `fixed`
 
