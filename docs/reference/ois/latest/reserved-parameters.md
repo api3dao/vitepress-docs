@@ -186,8 +186,8 @@ The `_path` defined as `"strange.key"` will not work. As workaround you can
 In rare cases, when the `_path` to the API response would contain `,` or `.`
 (comma or a dot) things get a bit complicated. Those symbols have a very
 specific meaning when parsing the reserved parameters and they need to be
-escaped if they are to be considered as literals. For example, if the API
-provider response looks like the following:
+escaped if they are to be considered as literals. If the API provider response
+looks like the following:
 
 ```
 {
@@ -195,8 +195,7 @@ provider response looks like the following:
 }
 ```
 
-Then escape the symbols `,` and `.`, in this case
-`_path="very\\,strange\\.key"`.
+Then escape the symbols, in this case `_path="very\\,strange\\.key"`.
 
 ## `_times`
 
