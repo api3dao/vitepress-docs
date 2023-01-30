@@ -3,7 +3,7 @@ title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v1.4
-path: /reference/ois/latest/ois.html
+path: /reference/ois/latest/specification.html
 version:
 outline: deep
 tags:
@@ -349,6 +349,12 @@ node.
       },
       {
         "name": "_times"
+      },
+      {
+        "name": "_gasPrice"
+      },
+      {
+        "name": "_minConfirmations"
       }
     ],
     "parameters": [
@@ -463,7 +469,8 @@ in-depth explanation. Each object has the following elements:
 
 (Required) The name of the reserved parameter. Always starts with `_`.
 
-Allowed values: `_type`, `_path` or `_times`
+Allowed values: `_type`, `_path`, `_times`, `_gasPrice`, and
+`_minConfirmations`.
 
 #### 5.4.2. `fixed`
 

@@ -17,8 +17,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-<!--TocHeader /> <TOC class="table-of-contents" :include-level="[2,4]" /-->
-
 Reserved parameters are part of an OIS object as part of the `endpoints` field
 (Airnode endpoints) and warrant a more in-depth explanation. They are part of an
 Airnode's defined endpoints in an OIS object but do not map to operation
@@ -29,14 +27,16 @@ A requester can pass request parameters either by referencing a
 or as an argument of the request-making methods of
 [AirnodeRrpV0.sol](/reference/airnode/latest/concepts/#airnoderrpv0-sol). In
 either case, these parameters are encoded using the
-[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi.md).
+[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi-specifications.md).
 There are two types of parameters which are part of the OIS object:
 
-1. [Endpoint parameters](./ois.md#_5-5-parameters) - Airnode endpoint parameters
-   are mapped to API operation parameters.
-2. [Reserved parameters](./ois.md#_5-4-reservedparameters) - Reserved parameters
-   perform a specific operation on the response before fulfilling the request.
-   Reserved parameter names start with `_`.
+1. [Endpoint parameters](./specifications.md#_5-5-parameters) - Airnode endpoint
+   parameters are mapped to API operation parameters.
+2. [Reserved parameters](./specifications.md#_5-4-reservedparameters) - Reserved
+   parameters perform a specific operation related to the request or on the
+   response before fulfilling the request. Reserved parameter names start with
+   `_`. Depending on the configuration, they may be overridden by a parameter
+   supplied by a requester.
 
 ## `_type`
 
@@ -44,7 +44,7 @@ Signifies what Solidity type the API response will be encoded to before
 fulfillment.
 
 Support is provided for most common
-[solidity types](https://docs.soliditylang.org/en/latest/abi-spec.html#types),
+[solidity types<ExternalLinkImage/>](https://docs.soliditylang.org/en/latest/abi-spec.html#types),
 but the following are not supported.
 
 - Custom bits integer types - e.g. `uint32` or `uint8`
@@ -72,7 +72,7 @@ the
 [adapter package docs](/reference/airnode/latest/packages/adapter.md#conversion).
 
 The converted value is then encoded internally by
-[ethers ABI Coder](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
+[ethers ABI Coder<ExternalLinkImage/>](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
 using the following
 
 ```js
@@ -135,7 +135,7 @@ For example
 - `string[2][][3]` - 3 dimensional string array, where first dimension contains
   3 elements, second unboundedly many and last dimension only 2. Notice, that
   this
-  [definition is read backwards](https://ethereum.stackexchange.com/questions/64331/why-is-multidimensional-array-declaration-order-reversed)
+  [definition is read backwards<ExternalLinkImage/>](https://ethereum.stackexchange.com/questions/64331/why-is-multidimensional-array-declaration-order-reversed)
   compared to C-style languages
 
 ## `_path`
@@ -187,7 +187,7 @@ In rare cases, when the `_path` to the API response would contain `,` or `.`
 (comma or a dot) things get a bit complicated. Those symbols have a very
 specific meaning when parsing the reserved parameters and they need to be
 escaped if they are to be considered as literals. For example, if the API
-provider response looks like the following
+provider response looks like the following:
 
 ```
 {
@@ -195,8 +195,8 @@ provider response looks like the following
 }
 ```
 
-Then you need to escape those symbols, in this case
-`_path="very//,strange\\.key"`.
+Then escape the symbols `,` and `.`, in this case
+`_path="very\\,strange\\.key"`.
 
 ## `_times`
 
@@ -234,6 +234,85 @@ The `_times` parameter also works in conjunction with arrays and
 multidimensional arrays. All elements of the API response array will be
 multiplied before they are encoded.
 
+## `_gasPrice`
+
+The `_gasPrice` reserved parameter enables a requester to override
+[Airnode gas price strategies](/reference/airnode/latest/concepts/gas-prices.md)
+with a specified gas price when Airnode
+[fulfills](/reference/airnode/latest/concepts/request.md#fulfill) the request.
+The recommended implementation is to have the `_gasPrice` reserved parameter
+without a `default` or `fixed` value as shown in the abbreviated snippet below:
+
+```json
+{
+  "reservedParameters": [
+    {
+      "name": "_gasPrice"
+    }
+  ]
+}
+```
+
+This allows requesters to specify the gas price via a parameter in their
+request. The value, in `wei`, should be
+[encoded](/reference/latest/airnode/packages/airnode-abi.md#encode) as a
+`string32` type by the requester, for example:
+
+```ts
+import { encode } from '@api3/airnode-abi';
+encode([
+  {
+    name: '_gasPrice',
+    type: 'string32',
+    // 10 gwei in wei
+    value: '1000000000000000000',
+  },
+]);
+```
+
+Note that if a requester specifies a `_gasPrice` as a parameter in a request but
+the Airnode's configuration does not include the `_gasPrice` reserved parameter,
+the requester's gas price will be ignored.
+
+## `_minConfirmations`
+
+The `_minConfirmations` reserved parameter enables a requester to override the
+default minimum number of block confirmations set by the Airnode for that chain
+in
+[config.json](/reference/airnode/latest/deployment-files/config-json.md#minconfirmations).
+The recommended implementation is to have the `_minConfirmations` reserved
+parameter without a `default` or `fixed` value as shown in the abbreviated
+snippet below:
+
+```json
+{
+  "reservedParameters": [
+    {
+      "name": "_minConfirmations"
+    }
+  ]
+}
+```
+
+This allows requesters to specify the minimum number of block confirmations via
+a parameter in their request. The value should be
+[encoded](/reference/airnode/latest/packages/airnode-abi.md#encode) as a
+`string32` type by the requester, for example:
+
+```ts
+import { encode } from '@api3/airnode-abi';
+encode([{ name: '_minConfirmations', type: 'string32', value: '1' }]);
+```
+
+Requests are independently filtered based on the number of block confirmations
+since the request. For example, if a requester submits request A with a
+`_minConfirmations` value of 5, then 1 block later, submits request B with a
+`_minConfirmations` value of 2, request B will be fulfilled before request A.
+
+Note that if a requester specifies a `_minConfirmations` as a parameter in a
+request but the Airnode's configuration does not include the `_minConfirmations`
+reserved parameter, the requester's minimum confirmations value will be ignored.
+
 ## Encoding Multiple Values
 
 Solidity has support for decoding and "destructuring" multiple values. For
@@ -251,8 +330,9 @@ function decodeMultipleParameters(bytes calldata data)
 
 The example above demonstrates the decoding on chain of three values of types
 `string`, `uint256` and `address` respectively. You can instruct Airnode to
-encode these values using the reserved parameters by separating the values using
-`,` (comma). For example using the following combination of reserved parameters
+encode these values using the `_type`, `_path`, and `_times` reserved parameters
+by separating the values using `,` (comma). For example using the following
+combination of reserved parameters
 
 ```js
 {
@@ -288,5 +368,12 @@ Airnode will extract and convert each of the "split values" separately
 
 All of these values are then together encoded to single bytes value that can be
 sent on chain. You can use
-[testing gateway](/reference/airnode/latest/understand/deploying.md#testing-with-http-gateway)
+[testing gateway](/reference/airnode/latest/guides/understanding/deploying-airnode.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.
+
+::: tip Multiple Reserved Parameters Tutorial
+
+The [weather-multi-value](/guides/airnode/monorepo-examples.md) monorepo example
+demonstrates encoding of multiple values of different types.
+
+:::
