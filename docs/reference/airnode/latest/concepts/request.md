@@ -81,9 +81,9 @@ request.
   be called to fulfill the request
 
 - `parameters` specify the API and
-  [reserved](/reference/ois/latest/ois.md#_5-4-reservedparameters) parameters
-  (see [Airnode ABI specifications](../specifications/airnode-abi.md) for how
-  these are encoded)
+  [reserved](/reference/ois/latest/specification.md#_5-4-reservedparameters)
+  parameters (see [Airnode ABI specifications](../specifications/airnode-abi.md)
+  for how these are encoded)
 
 ## Full Request
 
