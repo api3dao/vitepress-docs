@@ -134,16 +134,8 @@ npx @api3/airnode-admin create-template \
 
 <divider/>
 
-## More on Templates
-
-You can create as many templates as needed. Call the `getTemplates`command in
-the @api3/airnode-admin package to get a list of the templates by
-their`templateIds`.
-
-::: tip Templates Tutorial
+## More related material...
 
 The
 [coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
 monorepo example demonstrates template requests.
-
-:::
