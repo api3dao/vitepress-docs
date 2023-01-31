@@ -25,13 +25,14 @@ true random numbers. Instead, pseudorandom number generation (PRNG) methods are
 used to generate _adequately random-looking_ numbers. Unless stated otherwise,
 RNG oracle services should be expected to be PRNG-based.
 
-QRNG is a method of random number generation based on quantum phenomena. There
-are different methods of implementing QRNG with varying levels of practicality,
-yet the common point is that the resulting numbers will be truly random because
-the outcome of a quantum event is theoretically uncertain with well-defined
-characteristics. Therefore, QRNG is the gold standard for random number
-generation. Read more about QRNG and randomness in the
-[Web3 Quantum Random Numbers](https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc)<ExternalLinkImage/>
+Quantum random number generation (QRNG) is a method of random number generation
+based on quantum phenomena. There are different methods of implementing QRNG
+with varying levels of practicality, yet the common point is that the resulting
+numbers will be truly random because the outcome of a quantum event is
+theoretically uncertain with well-defined characteristics. Therefore, QRNG is
+the gold standard for random number generation. Read more about QRNG and
+randomness in the
+[Web3 Quantum Random Numbers<ExternalLinkImage/>](https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc)
 medium post.
 
 ## QRNG as an oracle service
