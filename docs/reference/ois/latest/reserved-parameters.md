@@ -303,10 +303,10 @@ import { encode } from '@api3/airnode-abi';
 encode([{ name: '_minConfirmations', type: 'string32', value: '1' }]);
 ```
 
-Requests are independently filtered based on the number of block confirmations
-since the request. For example, if a requester submits request A with a
-`_minConfirmations` value of 5, then 1 block later, submits request B with a
-`_minConfirmations` value of 2, request B will be fulfilled before request A.
+In order to respond to requests in the same nonce order as they are received
+when requests specify different `_minConfirmations` values, the maximum
+`_minConfirmations` value of all requests in the queue for a given sponsor is
+applied to all requests.
 
 Note that if a requester specifies a `_minConfirmations` as a parameter in a
 request but the Airnode's configuration does not include the `_minConfirmations`
