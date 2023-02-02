@@ -17,28 +17,27 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Calling a dAPI',
+        text: 'Self-Funded dAPIs',
         collapsible: true,
         collapsed: false,
         items: [
           {
-            text: '• Just the Code',
-            link: '/guides/dapis/just-the-code.md',
+            text: '• Funding a self-funded dAPI',
+            link: '/guides/dapis/funding-self-funded-dapi/',
           },
           {
-            text: '• Using an API3 Market proxy<div style="margin-left:11px;">contract and Remix</div>',
-            link: '/guides/dapis/call-dapi-proxy/',
+            text: '• Deploying a proxy for self-funded dAPIs',
+            link: '/guides/dapis/deploying-proxy-self-funded-dapi/',
           },
           {
-            text: '• Using the DapiServer<div style="margin-left:11px;">contract and Remix</div>',
-            link: '/guides/dapis/call-dapi-dapiserver/',
+            text: '• Reading a self-funded dAPI proxy',
+            link: '/guides/dapis/read-self-funded-dapi/',
+          },
+          {
+            text: '• Funding multiple self-funded dAPIs via Gelato',
+            link: '/guides/dapis/funding-multiple-self-funded-dapis/',
           },
         ],
-      },
-
-      {
-        text: 'Starter Project',
-        link: '/guides/dapis/starter-project',
       },
     ],
   },
