@@ -1,9 +1,9 @@
 ---
 title: Configuration Files
 sidebarHeader: Explore
-sidebarSubHeader:
-pageHeader: Explore → Airnode
-path: /explore/airnode/config-files.html
+sidebarSubHeader: Airnode
+pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+path: /explore/reference/airnode/latest/understand/config-files.html
 outline: deep
 tags:
 ---
@@ -14,11 +14,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-Airnode is a first-party oracle that pushes off-chain API data to an on-chain
-requester. The Airnode is defined by a file name
+An Airnode is defined by a file name
 [config.json](/reference/airnode/latest/deployment-files/config-json.md). It is
-the central element feeding data to beacons, the components that supply on-chain
-dAPIs with data behind the scenes.
+the central element that supplies on-chain dAPIs with data behind the scenes.
 
 The diagrams below depict the configuration files needed for a successful
 deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
@@ -56,8 +54,6 @@ deployment of an Airnode to AWS, GCP, or for running in a Docker Container.
 
 ## More related material...
 
-- See [Understanding Airnode](/reference/airnode/latest/understand/) to learn
-  how Airnode is defined by `config.json`.
 - See
   [Deployment Files](/reference/airnode/latest/deployment-files/config-json.md)
   to view the available configurations fields for `config.json`.
