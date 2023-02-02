@@ -15,7 +15,31 @@ module.exports = [
     text: 'dAPIs',
     collapsible: true,
     collapsed: false,
-    items: [],
+    items: [
+      {
+        text: 'Self-Funded dAPIs',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: '• Funding a self-funded dAPI',
+            link: '/guides/dapis/funding-self-funded-dapi/',
+          },
+          {
+            text: '• Deploying a proxy for self-funded dAPIs',
+            link: '/guides/dapis/deploying-proxy-self-funded-dapi/',
+          },
+          {
+            text: '• Reading a self-funded dAPI proxy',
+            link: '/guides/dapis/read-self-funded-dapi/',
+          },
+          {
+            text: '• Funding multiple self-funded dAPIs via Gelato',
+            link: '/guides/dapis/funding-multiple-self-funded-dapis/',
+          },
+        ],
+      },
+    ],
   },
   {
     text: 'Airnode',
@@ -23,28 +47,8 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Deploying an Airnode',
-        link: '/guides/airnode/deploy-airnode/',
-        collapsible: true,
-        collapsed: false,
-        items: [
-          {
-            text: 'Generating Airnode Config using ChainAPI',
-            link: '/guides/airnode/deploy-airnode/',
-          },
-          {
-            text: 'Deploying Airnode via AWS',
-            link: '/guides/airnode/quick-start-aws/',
-          },
-          {
-            text: 'Deploying Airnode via GCP',
-            link: '/guides/airnode/quick-start-gcp/',
-          },
-          {
-            text: 'Deploying Airnode locally using Docker',
-            link: '/guides/airnode/quick-start-container/',
-          },
-        ],
+        text: 'Quick Start AWS',
+        link: '/guides/airnode/quick-start-aws/',
       },
       {
         text: 'Calling an Airnode',
