@@ -14,10 +14,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-A high-level overview of Airnode can be found in
-[a dedicated Medium article](https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840)<ExternalLinkImage/>
-published by API3.
-
 The API3 solution to the API connectivity problem requires an expansive
 ecosystem of first-party oracles. Airnode aims to make first-party oracles a
 reality.
