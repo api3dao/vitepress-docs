@@ -17,13 +17,18 @@ tags:
 
 # {{$frontmatter.title}}
 
-Learn how an Airnode is constructed. But first, see the quick start guides to
-get a simple understanding of an Airnode deployment. The demos
+Airnode is a first-party oracle that pushes off-chain API data to an on-chain
+requester. Airnode is the background component that supplies on-chain dAPIs with
+data. Learn more about what an Airnode is in the
+[Explore](/explore/airnode/what-is-airnode.md) section.
+
+It may be helpful to view or run the Airnode quick start guides to get a simple
+understanding of an Airnode deployment. The demos
 [Quick Deploy AWS](/guides/airnode/quick-start-aws/) and
 [Quick Deploy GCP](/guides/airnode/quick-start-gcp/) each have preconfigured
-downloadable project folders with files for a typical deployment. This guide
-primarily focuses on a deployment to AWS but describes changes that are needed
-for GCP deployments when encountered.
+downloadable project folders with files for a typical deployment. The
+**Understanding Airnode** section primarily focuses on a deployment to AWS but
+describes changes that are needed for GCP deployments when encountered.
 
 ## Project Folder
 

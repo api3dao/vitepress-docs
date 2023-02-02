@@ -66,8 +66,8 @@ OIS object is in these docs.
 OIS is a json object that is added to an Airnode's
 [config.json](../deployment-files/templates/config-json.md) file as the (`ois`)
 _key_, sometimes called a _field_. Try using the
-[OIS template](../deployment-files/templates/ois-json.md) to construct an OIS
-and add it to the Airnode's config.json file later.
+[OIS template](/reference/ois/latest/template.md) to construct an OIS and add it
+to the Airnode's config.json file later.
 
 In the OIS template, there are some fields that contain `{FILL_*}`. This means
 that the value added is independent from other fields. On the other hand, if two
