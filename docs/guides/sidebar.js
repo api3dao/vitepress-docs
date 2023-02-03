@@ -11,16 +11,28 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
-        link: '/guides/dapis/',
+        text: 'Using a dAPI',
+        link: '/guides/dapis/use-a-dapi/',
       },
       {
-        text: 'Calling a dAPI',
+        text: 'Get a dAPI name & sponsor wallet address',
         link: '/guides/dapis/calling-a-dapi',
       },
       {
-        text: 'Starter Project',
+        text: 'Fund a self-funded dAPI',
         link: '/guides/dapis/starter-project',
+      },
+      {
+        text: 'Deploy a dAPI proxy contract',
+        link: '/guides/dapis/starter-project',
+      },
+      {
+        text: 'Monitor and top-up sponwor wallets using Gelato',
+        link: '/guides/dapis/starter-project',
+      },
+      {
+        text: 'Building a staking Dapp using dAPIs',
+        link: '/guides/dapis/staking-guide/',
       },
     ],
   },
@@ -30,7 +42,7 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Calling an Airnode',
+        text: '• Calling an Airnode - Remix Guide',
         link: '/guides/airnode/calling-an-airnode/',
       },
       {
@@ -57,24 +69,24 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: '★ Getting Started',
+        text: '• Getting Started with QNRG',
         link: '/guides/qrng/',
       },
       {
-        text: 'QRNG Example',
+        text: '• QRNG Example Project',
         link: '/guides/qrng/qrng-example',
       },
       {
-        text: 'Remix Example',
-        link: '/guides/qrng/remix-example',
+        text: '• Using QRNG - Remix Example',
+        link: '/guides/qrng/qrng-remix/',
       },
       {
-        text: 'Lottery Contract Using QRNG',
-        link: '/guides/airnode/lottery-guide/',
+        text: '• Make a Lottery Contract using QRNG',
+        link: '/guides/qrng/lottery-guide/',
       },
       {
-        text: 'Youtube QRNG-NFT Example',
-        link: '/guides/qrng/youtube-nft-example',
+        text: '• QRNG YouTube Demos',
+        link: '/guides/qrng/youtube-demos/',
       },
     ],
   },

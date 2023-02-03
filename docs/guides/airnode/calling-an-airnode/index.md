@@ -31,7 +31,7 @@ oracles that are directly operated by the API Providers that provide data to any
 on-chain dApp. The Smart Contracts can request data from the Airnodes without
 going through any intermediary.
 
-This guide shows you how to code. deploy, and run a simple smart contract that
+This guide shows you how to code, deploy, and run a simple smart contract that
 requests data from an Airnode.
 
 ## Coding the Requester Contract
