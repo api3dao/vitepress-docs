@@ -1,6 +1,6 @@
 export default {
   title: 'Documentation',
-  description: 'Just playing around.',
+  description: 'API3 technical documentation',
   markdown: {
     lineNumbers: true,
     toc: ['h2', 'h3', 'h4', 'h5'],
@@ -55,7 +55,6 @@ export default {
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
-      '/reference/chainapi/': require('../../archives/reference/chainapi/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
       '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),

@@ -41,7 +41,7 @@ database of an Airnode deployment. It contains five fields as show below.
   ID.
 - [templates](./config-json.md#templates):
 - [ois](./config-json.md#ois): API specifications and the corresponding on-chain
-  endpoints, kept as [OIS](/reference/ois/latest/ois.md) objects.
+  endpoints, kept as [OIS](/reference/ois/latest/specification.md) objects.
 - [apiCredentials](./config-json.md#apicredentials): Which API credentials will
   be usable by which OIS and security scheme.
 
@@ -69,8 +69,11 @@ respective parameters.
     },
     "id": "1",
     "providers": {
+      "selfHostedMainnet": {
+        "url": "${CP_SELF_HOSTED_MAINNET_URL}"
+      },
       "infuraMainnet": {
-        "url": "${CHAIN_PROVIDER_URL_INFURA_MAINNET}"
+        "url": "${CP_INFURA_MAINNET_URL}"
       }
     },
     "type": "evm",
@@ -78,23 +81,8 @@ respective parameters.
       "fulfillmentGasLimit": 500000,
       "gasPriceOracle": [
         {
-          "gasPriceStrategy": "latestBlockPercentileGasPrice",
-          "percentile": 60,
-          "minTransactionCount": 20,
-          "pastToCompareInBlocks": 20,
-          "maxDeviationMultiplier": 2
-        },
-        {
           "gasPriceStrategy": "providerRecommendedGasPrice",
           "recommendedGasPriceMultiplier": 1.2
-        },
-        {
-          "gasPriceStrategy": "providerRecommendedEip1559GasPrice",
-          "baseFeeMultiplier": 2,
-          "priorityFee": {
-            "value": 3.12,
-            "unit": "gwei"
-          }
         },
         {
           "gasPriceStrategy": "constantGasPrice",
@@ -124,7 +112,7 @@ respective parameters.
     "id": "11155111",
     "providers": {
       "infuraSepolia": {
-        "url": "${CHAIN_PROVIDER_URL_INFURA_SEPOLIA}"
+        "url": "${CP_INFURA_SEPOLIA_URL}"
       }
     },
     "type": "evm",
@@ -249,14 +237,15 @@ relevant only for some chains (e.g.
 
 (required) - A list of gas price oracle strategies that the Airnode will use in
 the specified order. Each strategy has its own unique set of associated fields
-that describes it. See [Gas Price Strategies](../concepts/gas-prices.md) for an
-in-depth understanding.
+that describes it.
 
-<!-- ##### `options.gasPriceOracle[n].gasPriceStrategy`
+::: tip Note
 
-(required) - The name of the gas price strategy. The supported strategies are
-below. For more detail on each, see the
-[Gas Prices](../concepts/gas-prices.md) page.-->
+It does not make sense to mix and match eip1559 and non-eip1559 strategies
+though it can be done. See [Gas Price Strategies](../concepts/gas-prices.md) in
+Concepts and Definitions for a better understanding of gas strategies.
+
+:::
 
 - [latestBlockPercentileGasPrice](../concepts/gas-prices.md#latestblockpercentilegasprice)
   - `percentile`<br/>(required) - The percentile of gas prices to return from a

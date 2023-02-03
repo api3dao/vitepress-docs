@@ -18,14 +18,50 @@ tags:
 # {{$frontmatter.title}}
 
 Airnode supports different strategies to calculate the gas price that it should
-use for submitting transactions. These can be defined in the `config.json`.
+use for submitting transactions. These can be defined in the `config.json` using
+the `chains.options.gasPriceOracle` field.
 
 The supported strategies include:
 
-- `latestBlockPercentileGasPrice`
-- `providerRecommendedGasPrice`
-- `providerRecommendedEip1559GasPrice`
-- `constantGasPrice`
+- [latestBlockPercentileGasPrice](./gas-prices.md#latestblockpercentilegasprice)
+- [providerRecommendedGasPrice](./gas-prices.md#providerrecommendedgasprice)
+- [providerRecommendedEip1559GasPrice](./gas-prices.md#providerrecommendedeip1559gasprice)
+- [constantGasPrice](./gas-prices.md#constantgasprice)
+
+Below are examples of each strategy.
+
+```json
+// latestBlockPercentileGasPrice
+{
+  "gasPriceStrategy": "latestBlockPercentileGasPrice",
+  "percentile": 60,
+  "minTransactionCount": 20,
+  "pastToCompareInBlocks": 20,
+  "maxDeviationMultiplier": 2
+}
+// providerRecommendedGasPrice
+{
+  "gasPriceStrategy": "providerRecommendedGasPrice",
+  "recommendedGasPriceMultiplier": 1.2
+}
+// providerRecommendedEip1559GasPrice
+{
+  "gasPriceStrategy": "providerRecommendedEip1559GasPrice",
+  "baseFeeMultiplier": 2,
+  "priorityFee": {
+    "value": 3.12,
+    "unit": "gwei"
+  }
+}
+// constantGasPrice
+{
+  "gasPriceStrategy": "constantGasPrice",
+  "gasPrice": {
+    "value": 10,
+    "unit": "gwei"
+  }
+}
+```
 
 The strategies are attempted in the order that they are defined in `config.json`
 where the Airnode will move on to the next strategy in the list if the current
@@ -34,12 +70,18 @@ intended to be used as the final fallback if all other strategies fail to return
 a gas price. Therefore, `constantGasPrice` should be set as the last strategy in
 the list.
 
+It does not make sense to mix and match eip1559
+(`providerRecommendedEip1559GasPrice`) and non-eip1559
+(`providerRecommendedGasPrice`) strategies though it can be done. The best
+practice is to use one or the other.
+
 ## latestBlockPercentileGasPrice
 
 The `latestBlockPercentileGasPrice` strategy calculates a gas price based on the
 specified percentile of previous transactions in recent blocks and sets the
 transaction to `type 0` and a `gasPrice` value. The parameters that the strategy
-uses to calculate the gas price can be configured.
+uses to calculate the gas price can be configured. This strategy can fail with
+local hardhat nodes because the chain may not have enough blocks.
 
 ```json
 {

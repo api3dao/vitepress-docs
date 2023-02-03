@@ -32,6 +32,10 @@ module.exports = [
         link: '/reference/airnode/latest/understand/',
       },
       {
+        text: 'Configuration Files',
+        link: '/reference/airnode/latest/understand/config-files',
+      },
+      {
         text: 'API Integration',
         link: '/reference/airnode/latest/understand/api-integration',
       },
@@ -39,11 +43,11 @@ module.exports = [
         text: 'API Security',
         link: '/reference/airnode/latest/understand/api-security',
       },
+
       {
         text: 'Configuring Airnode',
         link: '/reference/airnode/latest/understand/configuring',
       },
-
       {
         text: 'Using Authorizers',
         link: '/reference/airnode/latest/understand/apply-auth',

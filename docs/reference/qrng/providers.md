@@ -17,7 +17,7 @@ tags:
 API3 QRNG is built on [Airnode RRP](/reference/airnode/latest/concepts/), and as
 a result is provider-agnostic. See below for the providers that are currently
 available. Each provider has an Airnode address with an extended public key
-(xpub)) and two endpoint IDs.
+(xpub) and two endpoint IDs.
 
 - <b>`airnode`</b>: The address that belongs to the Airnode that will be called
   to get the QRNG data via its endpoints. This is not AirnodeRrpV0 contract
@@ -78,7 +78,7 @@ and a few testnets.
 ## byog Pseudorandom Numbers
 
 [**byog**<ExternalLinkImage/>](https://byog.io/) is an independent group within
-the API3 ecosystem that builds high-impact oracle services. **byog** imitates
+the API3 ecosystem that builds high-impact oracle services. **byog** emulates
 QRNG using
 [pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
 on [testnets](./chains.md#byog).

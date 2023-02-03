@@ -15,7 +15,32 @@ module.exports = [
     text: 'dAPIs',
     collapsible: true,
     collapsed: false,
-    items: [],
+    items: [
+      {
+        text: 'Calling a dAPI',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: '• Just the Code',
+            link: '/guides/dapis/just-the-code.md',
+          },
+          {
+            text: '• Using an API3 Market proxy<div style="margin-left:11px;">contract and Remix</div>',
+            link: '/guides/dapis/call-dapi-proxy/',
+          },
+          {
+            text: '• Using the DapiServer<div style="margin-left:11px;">contract and Remix</div>',
+            link: '/guides/dapis/call-dapi-dapiserver/',
+          },
+        ],
+      },
+
+      {
+        text: 'Starter Project',
+        link: '/guides/dapis/starter-project',
+      },
+    ],
   },
   {
     text: 'Airnode',
