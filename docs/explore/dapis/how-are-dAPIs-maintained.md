@@ -1,9 +1,9 @@
 ---
-title: dAPI Types
+title: How are dAPIs maintained?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/security-considerations.html
+path: /explore/dapis/how-are-dapis-maintained.html
 outline: deep
 tags:
 ---
