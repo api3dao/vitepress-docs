@@ -14,7 +14,11 @@ tags:
 
 # {{$frontmatter.title}}
 
-dAPIs are available as either self-funded or managed data feed products. Self-funded dAPIs are sourced from a single API provider and allow API3 to spin up any data on any chain without much overhead. Network fees for the self-funded dAPIs are paid from a respective sponsor wallet. Once funds are available on this wallet, updates on the associated dAPI will begin automatically (given the Airnode invocation restrictions). In the same way, the dAPI will stop being updated if the required funds for updates are not sufficiently available anymore. Sponsor wallets can be funded by anybody and the API3 Market is providing an intuative interface to check the status of respective self-funded dAPIs and fund them accordingly. Self-funded dAPIs provide developers with the tools to try out data feed services with minimal associated costs and no upfront commitment before committing to managed dAPIs. API3 does not recommend using self-funded dAPIs in a production environment. Read more in our security considerations. 
+There are various moving parts in the operation of dAPIs, which bring with a variety of security considerations that integrating parties should be aware of.
 
-## General dAPI considerations
+## Multi-sig dependency
 
+As previously mentioned, a dAPI is a mapping towards a specific Beacon or Beacon Set ID, which can be changed. Currently the ability to do so rests with multi-sigs that are operated on each chain that `dapiserver.sol` is deployed on. The multi-sig setup is a 3/n with members of the Core Technical Team (CTT) along with members of the dAPI team being part of it. When reading dAPIs like e.g. BTC/USD, this multi-sig could alter what data is being consumed by pointing the dAPI towards a different ID, which can cause intended or unintended damage. Similar to other oracle network designs, like the Chainlink Contract upgradability by a 4/9 multi-sig, there are trust implications being made that such abilities will not be abused. However, the long term goal is to limit this ability drastically once dAPI operations have matured, by capping the amount of changes that are allowed to be made in addition to giving the API3 DAO the ability to revoke dAPI name setting rights through a governance vote.
+
+
+## 

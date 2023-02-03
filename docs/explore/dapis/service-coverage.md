@@ -1,9 +1,9 @@
 ---
-title: dAPI Types
+title: Service Coverage
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/security-considerations.html
+path: /explore/dapis/service-coverage.html
 outline: deep
 tags:
 ---
