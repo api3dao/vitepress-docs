@@ -31,10 +31,8 @@ Managed dAPIs are sourced from multiple first-party oracles and aggregated using
 The API3 Market lists all available dAPIs, self-funded and managed alike. It represents a hub, that allows developers to browse through a catalogue of potential data feeds to integrate, fund their operation in the case of self-funded dAPIs, pay for the upgrade to a managed version or request new data types. Additionally it is going to play a cruical role in setting up required contracts for OEV (LINK) and Service Coverage (LINK). 
 
 
-
-
-For more information, please refer to [dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)<externalLinkImage/>
-and [Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)<externalLinkImage/>.
+## Medium Articles
+For more information, please refer to [dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)<externalLinkImage/>, [Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)<externalLinkImage/> and [Monetizing Data Feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd)<externalLinkImage/>.
 
 
 
