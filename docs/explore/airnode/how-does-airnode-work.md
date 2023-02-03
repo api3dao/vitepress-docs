@@ -12,10 +12,71 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+# How does Airnode work?
 
-For a technical overview of the software, see
+## Brining off-chain data on-chain
+
+Airnode is a serverless oracle node implemented with a “set and forget”
+philosophy. It consists of two parts:
+
+1. The off-chain **Airnode** (“the node”) that is self-hosted or deployed as
+   cloud provider functions (AWS or GCP).
+2. The on-chain **protocol contract** AirnodeRrpV0.sol. This is often referred
+   to as the oracle smart contracts.
+
+> <img src="../assets/images/summary-airnode-2-parts.png" width="350px">
+
+Airnode is designed with mechanisms that eliminate both on-chain and off-chain
+concerns of API providers. The set-and-forget framework of Airnode is all about
+its ease of implementation.
+
+::: info Read more For a technical overview of the software, see
 [Getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
+:::
+
+## Airnode Configuration Files
+
+The Airnode is defined by a file name
+[config.json](/reference/airnode/latest/deployment-files/config-json.md). It is
+the central element feeding data to beacons, the components that supply on-chain
+dAPIs with data behind the scenes.
+
+- See [Understanding Airnode](/reference/airnode/latest/understand/) to learn
+  how Airnode is defined by `config.json`.
+- See
+  [Deployment Files](/reference/airnode/latest/deployment-files/config-json.md)
+  to view the available configurations fields for `config.json`.
+- See
+  [config.json](/reference/airnode/latest/deployment-files/examples/config-json.md)
+  to view an example file.
+
+## Blockchain (RPC) Providers
+
+An oracle node requires access to a node on a blockchain (such as Ethereum) to
+be able to listen for request events and send transactions to fulfill requests.
+The Airnode model minimizes the node operation effort using managed services
+wherever possible.
+
+It is thus assumed that the typical user makes use of Ethereum providers such as
+Infura, Alchemy, etc. The number of such services is only expected to grow, so
+designing a solution depending on these is not expected to cause a problem in
+the future.
+
+As an example, the Infura provider allows for making 100,000 calls per day for
+free. An oracle that doesn't get any requests makes less than 3,000 calls per
+day (2 calls per minute), which allows the user to keep an oracle online for
+free, and upgrade to a paid plan once it gains traction.
+
+Although the expectation is that the user will be using an Ethereum provider,
+nothing prevents API providers from using a private Ethereum node. Furthermore,
+Airnode is designed to allow the usage of multiple Ethereum providers
+simultaneously. This is achieved by treating all of the integrated providers
+individually. The operations of an Airnode thus cannot be disrupted reliably
+unless all of its providers are malicious. Therefore, using multiple Ethereum
+providers is a better strategy to achieve the highest possible availability than
+using a private Ethereum node.-->
+
+# Technical Characterists of Airnode
 
 ## Statelessness
 

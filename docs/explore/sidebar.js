@@ -65,36 +65,24 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'What is Airnode?',
-        link: '/explore/airnode/what-is-airnode',
+        text: 'API Connectivity Problem',
+        link: '/explore/airnode/api-connectivity-problem',
+      },
+      {
+        text: 'How does Airnode work?',
+        link: '/explore/airnode/how-does-airnode-work',
       },
       {
         text: 'Why first-party oracles?',
         link: '/explore/airnode/why-first-party-oracles',
       },
       {
-        text: 'The Airnode Protocol',
-        link: '/explore/airnode/the-airnode-protocol',
+        text: 'monetizing-apis-in-web3',
+        link: '/explore/airnode/monetizing-apis-in-web3',
       },
       {
-        text: 'Pros and Cons',
-        link: '/explore/airnode/pros-and-cons',
-      },
-      {
-        text: 'Design Philosophy',
-        link: '/explore/airnode/design-philosophy',
-      },
-      {
-        text: 'Implementation',
-        link: '/explore/airnode/implementation',
-      },
-      {
-        text: 'Ethereum Providers',
-        link: '/explore/airnode/ethereum-providers',
-      },
-      {
-        text: 'Potential Obstacles',
-        link: '/explore/airnode/potential-obstacles',
+        text: 'unlocking-real-world-data',
+        link: '/explore/airnode/unlocking-real-world-data',
       },
     ],
   },
