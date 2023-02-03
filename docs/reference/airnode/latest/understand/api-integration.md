@@ -402,9 +402,7 @@ for more information.
 The current list of reserved parameters are `_type`, `_path`, `_times`,
 `_gasPrice`, and `_minConfirmations`. See
 [Reserved Parameters](/reference/ois/latest/reserved-parameters.md) in the OIS
-document set to understand what each of these parameters are for. Reserved
-parameters are best defined with no fixed/default values, as doing so provides
-the requester with the most flexibility.
+document set to understand what each of these parameters are for.
 
 #### parameters
 
