@@ -350,7 +350,7 @@ large number of endpoint parameters at no additional gas cost.
 Note that there are some cases where you may not want to map endpoints to API
 operations one-to-one. For example, an API operation can have a `header`
 parameter, `Accept`, that can take the values `application/json` or
-`applicatino/xml` to determine how to format the data that the API will respond
+`application/xml` to determine how to format the data that the API will respond
 to the call. Airnode expects responses to be in JSON format, and thus
 hard-coding this parameter as `JSON` would be more suitable than letting the
 requester decide, as there is only one valid choice. Again, the integrator's job
