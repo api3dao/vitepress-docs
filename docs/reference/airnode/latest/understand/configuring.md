@@ -66,11 +66,11 @@ are five root level fields in `config.json`.
 Each row in the `chains` array represents an Ethereum blockchain the Airnode
 will serve as identified by the `id`. Currently Airnode only supports Ethereum
 blockchains as denoted by `type: "evm"`. There are several supported
-blockchains, see them in the
-[Airnode contract addresses](../airnode-addresses.md) doc. You can use multiple
-chain providers for each chain and declare multiple chains each with one of more
-chain providers. See [Chains Providers](../concepts/chain-providers.md) in
-_Concepts and Definitions_.
+blockchains, see them in the [Airnode contract addresses](../) doc. You can use
+multiple chain providers for each chain and declare multiple chains each with
+one of more chain providers. See
+[Chains Providers](../concepts/chain-providers.md) in _Concepts and
+Definitions_.
 
 Below is a simple chain array with a single chain provider.
 

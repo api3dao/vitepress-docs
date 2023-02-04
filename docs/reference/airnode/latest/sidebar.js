@@ -3,11 +3,11 @@ module.exports = [
     text: '',
     collapsible: false,
     items: [
-      { text: 'Versions', link: '/reference/airnode/latest/' },
       {
-        text: 'Airnode Contract Addresses',
-        link: '/reference/airnode/latest/airnode-addresses',
+        text: 'Contract Addresses',
+        link: '/reference/airnode/latest/',
       },
+      { text: 'Versions', link: '/reference/airnode/latest/versions' },
       {
         text: 'Cloud Resources',
         link: '/reference/airnode/latest/cloud-resources',
@@ -25,7 +25,7 @@ module.exports = [
   {
     text: 'Understanding Airnode',
     collapsible: true,
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: 'Overview',
@@ -163,7 +163,7 @@ module.exports = [
   {
     text: 'Deployment Files',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/deployment-files/' },
 

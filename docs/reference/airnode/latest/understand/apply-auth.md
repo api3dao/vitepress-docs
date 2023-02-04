@@ -132,8 +132,8 @@ timestamps) on a per endpoint basis. Endpoints are declared in the
 case and can be implemented with the following steps:
 
 1. Add the RequesterAuthorizerWithAirnode
-   [authorizer contract address](../airnode-addresses.md#requesterauthorizerwithairnode)
-   to the array `chains[n].authorizers.requesterEndpointAuthorizers`.
+   [authorizer contract address](../#requesterauthorizerwithairnode) to the
+   array `chains[n].authorizers.requesterEndpointAuthorizers`.
 2. After your Airnode is deployed, call the Admin CLI command
    [set-whitelist-expiration](../packages/admin-cli.md#set-whitelist-expiration)
    to add the desired requester contract addresses to the whitelist maintained

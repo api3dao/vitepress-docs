@@ -1,5 +1,5 @@
 ---
-title: Versions
+title: Contract Addresses
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0
@@ -17,34 +17,38 @@ tags:
 
 # {{$frontmatter.title}}
 
-The latest version of Airnode is `{{versions.airnodeLatest}}`. See the
-[change log](https://github.com/api3dao/airnode/blob/master/packages/airnode-node/CHANGELOG.md)
-in the Airnode repo for all Airnode versions.
+Use the contract addresses listed in the tables below to interact with Airnode
+on EVM-compatible blockchains. Additional addresses will be added as contracts
+are deployed, but feel free to
+[submit a GitHub issue](https://github.com/api3dao/airnode/issues) requesting a
+new deployment.
 
-<table>
-    <tr v-if="versions.versionsAirnode" v-for="(item, index) in versions.versionsAirnode">
-        <td v-if="vrs === item.version"><b>{{item.version}}</b></td>
-        <td v-else><a  :href="item.path">{{item.version}}</a></td>
-    </tr>
-</table>
+## AirnodeRrpV0
 
-## Previous Versions (v0.x)
+### • mainnets
 
-Prior to version `v1.0` there are several `v0.x` versions of Airnode. Their
-documentation is available at
-[https://api3dao.github.io/api3-docs](https://api3dao.github.io/api3-docs).
+<ContractAddresses type="mainnet" contractName="AirnodeRrpV0"/>
 
-<table>
-    <tr v-for="(item, index) in versionsLegacy">
-        <td>{{item.version}}</td>
-    </tr>
-</table>
+### • testnets
 
-<script setup lang="ts">
-    import versions from '../../../.vitepress/versions.json';
-    import versionsLegacy from '../../../.vitepress/versionsAirnodeLegacy.json';
-    import { useData } from 'vitepress';
+<ContractAddresses type="testnet" contractName="AirnodeRrpV0"/>
 
-    const { frontmatter } = useData();
-    let vrs = frontmatter._value.version;
-</script>
+## RequesterAuthorizerWithAirnode
+
+### • mainnets
+
+<ContractAddresses type="mainnet" contractName="RequesterAuthorizerWithAirnode"/>
+
+### • testnets
+
+<ContractAddresses type="testnet" contractName="RequesterAuthorizerWithAirnode"/>
+
+## AccessControlRegistry
+
+### • mainnets
+
+<ContractAddresses type="mainnet" contractName="AccessControlRegistry"/>
+
+### • testnets
+
+<ContractAddresses type="testnet" contractName="AccessControlRegistry"/>

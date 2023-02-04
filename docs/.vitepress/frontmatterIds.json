@@ -371,16 +371,6 @@
     "tags": null
   },
   "42": {
-    "title": "Airnode Contract Addresses",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "Airnode",
-    "pageHeader": "Reference → Airnode → v1.0",
-    "path": "/reference/airnode/latest/airnode-addresses.html",
-    "version": "v1.0",
-    "outline": "deep",
-    "tags": null
-  },
-  "43": {
     "title": "Chain Idiosyncrasies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -390,7 +380,7 @@
     "outline": "deep",
     "tags": null
   },
-  "44": {
+  "43": {
     "title": "Cloud Resources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -400,8 +390,8 @@
     "outline": "deep",
     "tags": null
   },
-  "45": {
-    "title": "Versions",
+  "44": {
+    "title": "Contract Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
     "pageHeader": "Reference → Airnode → v1.0",
@@ -410,12 +400,22 @@
     "outline": "deep",
     "tags": null
   },
-  "46": {
+  "45": {
     "title": "Migration Guide",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
     "pageHeader": "Reference → Airnode → v1.0",
     "path": "/reference/airnode/latest/migration.html",
+    "version": "v1.0",
+    "outline": "deep",
+    "tags": null
+  },
+  "46": {
+    "title": "Versions",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v1.0",
+    "path": "/reference/airnode/latest/versions.html",
     "version": "v1.0",
     "outline": "deep",
     "tags": null

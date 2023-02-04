@@ -53,14 +53,20 @@ currently supports deploying to AWS and GCP. For AWS deployment, see the
 GCP deployment, see the
 [GCP Setup](../understand/configuring.md#gcp-setup-gcp-deployment-only).
 
+## Deployer Logs
+
+The deployer saves log files by default into the `config/logs/` direcotry, but
+this can be changed by passing a `--logs` argument to the command.
+
 ## Deployer Image Commands
 
-All five commands are similar for AWS and GCP. Any differences between AWS and
-GCP are noted where they exist.
+Commands are similar for AWS and GCP. Any differences between AWS and GCP are
+noted where they exist.
 
 - `deploy`
 - `list`
 - `info`
+- `rollback`
 - `fetch-files`
 - `remove`
 - `remove-with-receipt`
@@ -204,6 +210,35 @@ docker run -it --rm \
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
   api3/airnode-deployer:0.10.0 info aws2c6ef2b3
+```
+
+:::
+
+### `rollback`
+
+To revert to a previous version of a deployment, use the
+[rollback](../packages/deployer.md#rollback) command. Provide the deployment ID
+from the [list](./deployer-image.md#list) command above to specify which
+deployment will be changed. Also provide the desired version ID from the
+[info](./deployer-image.md#info) command above to revert to. The
+[rollback](../packages/deployer.md#rollback) command will then fetch the
+configuration files of the specified version and deploy the version using its
+configuration. Check this with the [info](./deployer-image.md#info) command
+above.
+
+::: code-group
+
+```sh [Linux/Mac/WSL2]
+docker run -it --rm \
+  -v "$(pwd):/app/config" \
+  api3/airnode-deployer:0.10.0 rollback aws2c6ef2b3 3580a278
+```
+
+```batch [Windows]
+# For Windows, use CMD (not PowerShell).
+docker run -it --rm ^
+  -v "%cd%:/app/config" ^
+  api3/airnode-deployer:0.10.0 rollback aws2c6ef2b3 3580a278
 ```
 
 :::
