@@ -76,8 +76,7 @@ Note the constructor parameter `airnodeRrpAddress`, which is the public address
 of the AirnodeRrpV0.sol protocol contract on the blockchain you wish to use. It
 is used by RrpRequesterV0.sol to point itself to AirnodeRrpV0.sol.
 
-See the list of all [Airnode contract addresses](../airnode-addresses.md) in the
-reference section.
+See the list of all [Airnode contract addresses](../) in the reference section.
 
 ## Step #2: Implement the request logic
 

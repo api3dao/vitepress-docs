@@ -57,8 +57,7 @@ However, this contract is shared for all requesters and Airnodes on a particular
 chain. This means that neither Airnode operators nor requesters need to deploy
 this contract themselves. Instead, API3 will deploy this contract once per chain
 and you simply connect your Airnode or requester contract to that deployed
-contract. See the [Airnode Contract Addresses](../airnode-addresses.md) for
-reference.
+contract. See the [Airnode Contract Addresses](../) for reference.
 
 The [`@api3/airnode-admin`](../packages/admin-cli.md) package is a CLI tool used
 to interact with `AirnodeRrpV0.sol` and perform administrative actions.

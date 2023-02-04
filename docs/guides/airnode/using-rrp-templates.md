@@ -105,8 +105,7 @@ First create a file that contains a JSON object, see the example below.
 ```
 
 - `airnode`: You will need the address of the `AirnodeRrpV0.sol` contract on a
-  desired network. See
-  [Airnode Contract Addresses](/reference/airnode/latest/airnode-addresses.md)
+  desired network. See [Airnode Contract Addresses](/reference/airnode/latest/)
   for a listings of several networks. The example above uses an address on
   Sepolia.
 
