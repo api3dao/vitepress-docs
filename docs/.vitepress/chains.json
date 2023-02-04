@@ -17,6 +17,7 @@
   "288": { "fullname": "Boba Ethereum", "type": "mainnet" },
   "416": { "fullname": "SX Network", "type": "mainnet" },
   "588": { "fullname": "Metis Stardust testnet", "type": "testnet" },
+  "647": { "fullname": "SX Network testnet", "type": "testnet" },
   "1088": { "fullname": "Metis Andromeda", "type": "mainnet" },
   "1284": { "fullname": "Moonbeam", "type": "mainnet" },
   "1285": { "fullname": "Moonriver", "type": "mainnet" },
@@ -30,9 +31,12 @@
   "43114": { "fullname": "Avalanche C-Chain", "type": "mainnet" },
   "43288": { "fullname": "Boba Avalanche", "type": "mainnet" },
   "56288": { "fullname": "Boba BNB", "type": "mainnet" },
+  "71401": { "fullname": "GodWoken testnet", "type": "testnet" },
+  "71402": { "fullname": "GodWoken", "type": "mainnet" },
   "80001": { "fullname": "Polygon Mumbai testnet", "type": "testnet" },
   "200101": { "fullname": "Milkomeda C1 testnet", "type": "testnet" },
   "421613": { "fullname": "Arbitrum testnet", "type": "testnet" },
   "11155111": { "fullname": "Ethereum-Sepolia", "type": "testnet" },
-  "1313161554": { "fullname": "Aurora", "type": "mainnet" }
+  "1313161554": { "fullname": "Aurora", "type": "mainnet" },
+  "1313161555": { "fullname": "Aurora testnet", "type": "testnet" }
 }

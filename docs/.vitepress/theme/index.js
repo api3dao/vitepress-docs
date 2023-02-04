@@ -22,6 +22,7 @@ import ChainName from '../../_components/ChainName.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
 import NavBox from '../../_components/NavBox.vue';
+import TodoLink from '../../_components/TodoLink.vue';
 
 export default {
   ...DefaultTheme,
@@ -52,6 +53,7 @@ export default {
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
     app.component('NavBox', NavBox);
+    app.component('TodoLink', TodoLink);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

@@ -1,10 +1,10 @@
 {
   "1": {
-    "title": "Design Philosophy",
+    "title": "What is Airnode?",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/design-philosophy.html",
+    "path": "/explore/airnode/api-connectivity-problem.html",
     "outline": "deep",
     "tags": null
   },
@@ -54,11 +54,11 @@
     "tags": null
   },
   "7": {
-    "title": "What is Airnode?",
+    "title": "Design Philosophy",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/what-is-airnode.html",
+    "path": "/explore/airnode/design-philosophy.html",
     "outline": "deep",
     "tags": null
   },

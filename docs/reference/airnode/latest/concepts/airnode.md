@@ -25,7 +25,7 @@ latest `v0.x` relase to the new docs.
 :::
 
 Airnode is a serverless oracle node implemented with a _"set and forget"_
-[philosophy](/explore/airnode/design-philosophy.md).
+[philosophy](/explore/airnode/unlocking-real-world-data.md).
 
 ::: danger TODO:
 

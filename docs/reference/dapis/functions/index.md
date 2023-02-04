@@ -47,9 +47,10 @@ contract mySmartContract {
 }
 ```
 
-Visit the [Guides](/guides/dapis/call-dapi-dapiserver/) section to learn how to
-use `DapiServer.sol`. Also visit the function calls of `DapiServer.sol` shown
-below.
+<TodoLink comment="/guides/dapis/call-dapi-dapiserver/"/>
+
+Visit the [Guides](/guides/) section to learn how to use `DapiServer.sol`. Also
+visit the function calls of `DapiServer.sol` shown below.
 
 - [readDataFeedWithDapiName()](./read-data-feed-with-dapi-name.md) - Returns a
   value and timestamp using the dAPI name.
