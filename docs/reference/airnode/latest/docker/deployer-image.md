@@ -53,10 +53,15 @@ currently supports deploying to AWS and GCP. For AWS deployment, see the
 GCP deployment, see the
 [GCP Setup](../understand/configuring.md#gcp-setup-gcp-deployment-only).
 
+## Deployer Logs
+
+The deployer saves log files by default into the `config/logs/` direcotry, but
+this can be changed by passing a `--logs` argument to the command.
+
 ## Deployer Image Commands
 
-All five commands are similar for AWS and GCP. Any differences between AWS and
-GCP are noted where they exist.
+Commands are similar for AWS and GCP. Any differences between AWS and GCP are
+noted where they exist.
 
 - `deploy`
 - `list`
