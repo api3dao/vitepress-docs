@@ -169,7 +169,6 @@ Options:
   -l, --logs                             Output path for log files                   [string] [default: "config/logs/"]
       --auto-remove                      Enable automatic removal of deployed resources for failed deployments
                                                                                               [boolean] [default: true]
-
 # Basic example
 airnode-deployer deploy
 
@@ -236,8 +235,7 @@ airnode-deployer info aws2c6ef2b3
 
 ### Reverting to a previous version
 
-In case you want to revert to one of the previous versions of your deployment,
-you can do so with the `rollback` command.
+Revert to a previous version of a deployment using the `rollback` command.
 
 #### rollback
 
@@ -271,13 +269,14 @@ retrieve them.
 ```bash
 # Fetch deployment files for the deployed Airnode
 Positionals:
-  deployment-id  ID of the deployment (from 'list' command)                                          [string] [required]
-  version-id     ID of the deployment version (from 'info' command)                                             [string]
+  deployment-id  ID of the deployment to fetch files for (from 'list' command)             [string] [required]
+  version-id     ID of the deployment version to fetch files for (from 'info' command)                [string]
+
 Options:
-      --version     Show version number                                                                        [boolean]
-      --debug       Run in debug mode                                                         [boolean] [default: false]
-      --help        Show help                                                                                  [boolean]
-  -o, --output-dir  Where to store fetched files                                           [string] [default: "config/"]
+      --version     Show version number                                                              [boolean]
+      --debug       Run in debug mode                                               [boolean] [default: false]
+      --help        Show help                                                                        [boolean]
+  -o, --output-dir  Where to store fetched files                                 [string] [default: "config/"]
 # Example
 airnode-deployer fetch-files aws2c6ef2b3
 ```
@@ -298,8 +297,8 @@ An Airnode can be removed in two different ways:
 # Removes a deployed Airnode instance
 
 Positionals:
-  deployment-id  ID of the deployment (from 'list' command) [string] [required]
-
+  deployment-id  ID of the deployment to remove (from 'list' command)
+                                                            [string] [required]
 Options:
      --version  Show version number                                   [boolean]
      --debug    Run in debug mode                    [boolean] [default: false]
