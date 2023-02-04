@@ -181,8 +181,7 @@ cycle off-chain. Nothing in `authorizers` can supersede permissions granted by
 (required) - An object that keeps the addresses of the protocol contracts
 deployed on the respective chain. It must include the `AirnodeRrp` contract
 address. Although you can deploy these contracts yourself, you are recommended
-to use the ones that were deployed by API3 listed
-[here](../airnode-addresses.md).
+to use the ones that were deployed by API3 listed [here](../).
 
 ### `id`
 
@@ -190,8 +189,7 @@ to use the ones that were deployed by API3 listed
 Ethereum-based chain, `id` should be the chain ID as described in
 [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#list-of-chain-ids).
 Refer to the documentations of the chain you will be using to find its chain ID.
-Supported chains are listed under
-[Airnode Contract Addresses](../airnode-addresses.md).
+Supported chains are listed under [Airnode Contract Addresses](../).
 
 ### `providers`
 

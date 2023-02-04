@@ -78,7 +78,7 @@ function nav() {
         { text: 'dAPIs', link: '/reference/dapis/' },
         {
           text: 'Airnode',
-          link: '/reference/airnode/latest/airnode-addresses',
+          link: '/reference/airnode/latest/',
         },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },

@@ -217,14 +217,14 @@ docker run -it --rm ^
 ### `rollback`
 
 To revert to a previous version of a deployment, use the
-[rollback](../../reference/packages/deployer.md#rollback) command. Provide the
-deployment ID from the [list](./deployer-image.md#list) command above to specify
-which deployment will be changed. Also provide the desired version ID from the
+[rollback](../packages/deployer.md#rollback) command. Provide the deployment ID
+from the [list](./deployer-image.md#list) command above to specify which
+deployment will be changed. Also provide the desired version ID from the
 [info](./deployer-image.md#info) command above to revert to. The
-[rollback](../../reference/packages/deployer.md#rollback) command will then
-fetch the configuration files of the specified version and deploy the version
-using its configuration. Check this with the [info](./deployer-image.md#info)
-command above.
+[rollback](../packages/deployer.md#rollback) command will then fetch the
+configuration files of the specified version and deploy the version using its
+configuration. Check this with the [info](./deployer-image.md#info) command
+above.
 
 ::: code-group
 
