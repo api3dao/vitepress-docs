@@ -3,7 +3,7 @@ title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v1.0
-path: /reference/airnode/latest/index.html
+path: /reference/airnode/latest/versions.html
 version: v1.0
 outline: deep
 tags:

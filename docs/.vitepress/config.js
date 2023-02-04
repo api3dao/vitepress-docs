@@ -76,7 +76,10 @@ function nav() {
       text: 'Reference',
       items: [
         { text: 'dAPIs', link: '/reference/dapis/' },
-        { text: 'Airnode', link: '/reference/airnode/latest/' },
+        {
+          text: 'Airnode',
+          link: '/reference/airnode/latest/airnode-addresses',
+        },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },
         { text: 'DAO Members', link: '/reference/dao-members/' },
