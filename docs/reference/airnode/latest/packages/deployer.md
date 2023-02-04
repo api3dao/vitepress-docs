@@ -212,6 +212,54 @@ Options:
 airnode-deployer info aws2c6ef2b3
 ```
 
+### Reverting to a previous version
+
+In case you want to revert to one of the previous versions of your deployment,
+you can do so with the `rollback` command.
+
+#### rollback
+
+```bash
+# Deploy one of the previous Airnode deployment versions
+
+Positionals:
+  deployment-id  ID of the deployment to rollback (from 'list' command)                              [string] [required]
+  version-id     ID of the deployment version to rollback to (from 'info' command)                   [string] [required]
+
+Options:
+      --version      Show version number                                                                       [boolean]
+      --debug        Run in debug mode                                                        [boolean] [default: false]
+      --help         Show help                                                                                 [boolean]
+  -r, --receipt      Output path for receipt file                              [string] [default: "config/receipt.json"]
+  -l, --logs         Output path for log files                                        [string] [default: "config/logs/"]
+      --auto-remove  Enable automatic removal of deployed resources for failed deployments     [boolean] [default: true]
+
+# Example
+airnode-deployer rollback aws808e2a22 5bbcd317
+```
+
+### Fetching deployment files
+
+During the Airnode deployment, your `config.json` and `secrets.env` are uploaded
+to the cloud provider of your choosing. You can use the `fetch-files` command to
+retrieve them.
+
+#### fetch-files
+
+```bash
+# Fetch deployment files for the deployed Airnode
+Positionals:
+  deployment-id  ID of the deployment (from 'list' command)                                          [string] [required]
+  version-id     ID of the deployment version (from 'info' command)                                             [string]
+Options:
+      --version     Show version number                                                                        [boolean]
+      --debug       Run in debug mode                                                         [boolean] [default: false]
+      --help        Show help                                                                                  [boolean]
+  -o, --output-dir  Where to store fetched files                                           [string] [default: "config/"]
+# Example
+airnode-deployer fetch-files aws2c6ef2b3
+```
+
 ### Airnode Removal
 
 An Airnode can be removed in two different ways:

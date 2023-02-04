@@ -61,6 +61,7 @@ GCP are noted where they exist.
 - `deploy`
 - `list`
 - `info`
+- `fetch-files`
 - `remove`
 - `remove-with-receipt`
 
@@ -249,9 +250,9 @@ A deployed Airnode can be removed via the
 deployment ID from the [list](./deployer-image.md#list) command above. Airnode's
 update history, that can be seen by the [info](./deployer-image.md#info)
 command, will be removed as well. Files for cloud provider authentication are
-needed for the command to run correctly: `aws.env` (for AWS) and/or `gcp.json`
-(for GCP). This is the recommended way to remove a deployment, but an
-alternative is the `remove-with-receipt` command.
+needed for the command to run correctly: `aws.env` (for AWS) or `gcp.json` (for
+GCP). This is the recommended way to remove a deployment, but an alternative is
+the `remove-with-receipt` command.
 
 ::: code-group
 
@@ -276,8 +277,7 @@ When an Airnode was deployed using the `deploy` command, a `receipt.json` file
 was created. This file is used to remove the Airnode. The
 [remove-with-receipt](../packages/deployer.md#remove-with-receipt) command is
 identical for AWS and GCP. Files for cloud provider authentication are needed
-for the command to run correctly: `aws.env` (for AWS) and/or `gcp.json` (for
-GCP).
+for the command to run correctly: `aws.env` (for AWS) or `gcp.json` (for GCP).
 
 ::: code-group
 

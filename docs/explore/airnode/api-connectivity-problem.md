@@ -3,7 +3,7 @@ title: What is Airnode?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/what-is-airnode.html
+path: /explore/airnode/api-connectivity-problem.html
 outline: deep
 tags:
 ---
@@ -154,8 +154,8 @@ will be funded by API3 in the form of grants.-->
 ## How does Airnode work?
 
 Airnode is has made it easy for API Providers to monetize their data to
-decentralized applicataions (dApps). To understand how Airnode serves data
-on-chain, read more about [how Airnode works](How-does-Airnode-work.md).
+decentralized applications (dApps). To understand how Airnode serves data
+on-chain, read more about [how Airnode works](how-does-airnode-work.md).
 
 <!--
 

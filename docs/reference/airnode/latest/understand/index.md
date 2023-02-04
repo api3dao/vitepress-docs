@@ -20,7 +20,7 @@ tags:
 Airnode is a first-party oracle that pushes off-chain API data to an on-chain
 requester. Airnode is the background component that supplies on-chain dAPIs with
 data. Learn more about what an Airnode is in the
-[Explore](/explore/airnode/what-is-airnode.md) section.
+[Explore](/explore/airnode/api-connectivity-problem.md) section.
 
 It may be helpful to view or run the Airnode quick start guides to get a simple
 understanding of an Airnode deployment. The demos

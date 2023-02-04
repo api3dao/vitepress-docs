@@ -57,12 +57,12 @@ the `dapiName` to a reader function.
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415...0000");
 ```
 
-See
-["Using an API3 Market proxy contract and Remix"](/guides/dapis/call-dapi-proxy/)
-and
-["Using the DapiServer contract and Remix"](/guides/dapis/call-dapi-dapiserver/)
-for a step-by-step guides on how to call a dAPI. Also visit the
-[reference section for dAPIs](/reference/dapis/).
+<TodoLink comment="/guides/dapis/call-dapi-proxy/"/>
+<TodoLink comment=""/>
+
+See ["Using an API3 Market proxy contract and Remix"](/) and
+["Using the DapiServer contract and Remix"](/) for a step-by-step guides on how
+to call a dAPI. Also visit the [reference section for dAPIs](/reference/dapis/).
 
 ## dAPI Composition
 

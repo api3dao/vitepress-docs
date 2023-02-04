@@ -315,7 +315,7 @@ reserved parameter, the requester's minimum confirmations value will be ignored.
 ## Encoding Multiple Values
 
 Solidity has support for decoding and "destructuring" multiple values. For
-example
+example:
 
 ```solidity
 function decodeMultipleParameters(bytes calldata data)
@@ -331,7 +331,7 @@ The example above demonstrates the decoding on chain of three values of types
 `string`, `uint256` and `address` respectively. You can instruct Airnode to
 encode these values using the `_type`, `_path`, and `_times` reserved parameters
 by separating the values using `,` (comma). For example using the following
-combination of reserved parameters
+combination of reserved parameters:
 
 ```js
 {
@@ -346,7 +346,7 @@ they all contain the same number of them. It will extract and convert each of
 the "split values". Notice, that an `""` (empty string) is used to specify that
 a certain reserved parameter should not be used for a certain "split value".
 
-For example, let's say the API response looks like this
+For example, let's say the API response looks like this:
 
 ```json
 {
