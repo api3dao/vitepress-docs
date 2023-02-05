@@ -85,7 +85,7 @@ module.exports = [
         link: '/guides/qrng/lottery-guide/',
       },
       {
-        text: 'QRNG YouTube Demos',
+        text: 'QRNG YouTube Tutorials',
         link: '/guides/qrng/youtube-demos/',
       },
     ],
