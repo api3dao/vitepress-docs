@@ -180,6 +180,9 @@ airnode-deployer deploy \
   --logs config/logs/
 ```
 
+See how [deploy](../docker/deployer-image.md#deploy) is used via the AWS/GCP
+deployer image.
+
 ### Listing Airnodes
 
 Once you've already deployed one or more Airnode, you can list your currently
@@ -209,6 +212,9 @@ airnode-deployer list
 airnode-deployer list --cloud-providers gcp
 ```
 
+See how [list](../docker/deployer-image.md#list) is used via the AWS/GCP
+deployer image.
+
 ### Fetching deployment information
 
 You can use the `info` command to retrieve information about existing
@@ -232,6 +238,9 @@ Options:
 # Example
 airnode-deployer info aws2c6ef2b3
 ```
+
+See how [info](../docker/deployer-image.md#info) is used via the AWS/GCP
+deployer image.
 
 ### Reverting to a previous version
 
@@ -258,6 +267,9 @@ Options:
 airnode-deployer rollback aws808e2a22 5bbcd317
 ```
 
+See how [rollback](../docker/deployer-image.md#rollback) is used via the AWS/GCP
+deployer image.
+
 ### Fetching deployment files
 
 During the Airnode deployment, your `config.json` and `secrets.env` are uploaded
@@ -280,6 +292,9 @@ Options:
 # Example
 airnode-deployer fetch-files aws2c6ef2b3
 ```
+
+See how [fetch-files](../docker/deployer-image.md#fetch-files) is used via the
+AWS/GCP deployer image.
 
 ### Airnode Removal
 
@@ -309,6 +324,9 @@ Options:
 airnode-deployer remove aws2c6ef2b3
 ```
 
+See how [remove](../docker/deployer-image.md#remove) is used via the AWS/GCP
+deployer image.
+
 #### remove-with-receipt
 
 ```bash
@@ -329,3 +347,12 @@ airnode-deployer remove-with-receipt \
   --receipt config/receipt.json \
   --logs config/logs/
 ```
+
+See how [remove-with-receipt](../docker/deployer-image.md#remove-with-receipt)
+is used via the AWS/GCP deployer image.
+
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='REFERENCE' id='_reference-airnode-deployer-image'/>
+</div>
