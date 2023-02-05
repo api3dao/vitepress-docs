@@ -21,11 +21,11 @@ tags:
 
 This is a simple tutorial that will walk you through building and deploying a
 decentralized lottery smart contract in Solidity using Remix to demonstrate the
-use of [API3's QRNG](/reference/qrng/) service. You will use the browser based
+use of [API3's QRNG](/reference/qrng/) service. You will use the browser-based
 [Remix IDE](https://remix.ethereum.org) and [MetaMask](https://metamask.io/).
 Some basic knowledge of these two tools is assumed.
 
-Currently QRNG has three [providers](/reference/qrng/providers.html), two of
+Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
 [byog provider](https://byog.io/), available only on testnets, which returns a
 pseudorandom number.
@@ -64,7 +64,7 @@ It should load up the `Lottery` contract.
 As a requester, our `Lottery.sol` contract will make requests to an Airnode,
 specifically the API3 QRNG, using the
 [Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html). It may
-be helpful to take a little time familiarize yourself if you haven't already.
+be helpful to take a little time to familiarize yourself if you haven't already.
 
 - You first need to define all the global variables - `pot`, `ticketPrice`,
   `week`, `endTime`, `MAX_NUMBER`, `airnodeAddress`, `endpointId` and
@@ -228,8 +228,8 @@ testnet ETH before moving forward. You can request some from
 
 :::
 
-Now deploy the Lottery contract and call it through Remix. It will call the the
-QRNG Airnode to request a random number.
+Now deploy the Lottery contract and call it through Remix. It will call the QRNG
+Airnode to request a random number.
 
 ### Compile and Deploy the Lottery Contract on Goerli Testnet
 
@@ -247,8 +247,8 @@ QRNG Airnode to request a random number.
   MetaMask** option under **Environment**. Connect your MetaMask. Make sure
   you’re on the Goerli Testnet.
 
-- The `endTime` will be the ending time of the lottery. To have it end on the
-  next week, execute this following code snippet. Use its output for `_ENDTIME`
+- The `endTime` will be the ending time of the lottery. To have it end in the
+  next week, execute the following code snippet. Use its output for `_ENDTIME`
 
   ```js
   console.log((nextWeek = Math.floor(Date.now() / 1000) + 9000));
@@ -292,14 +292,14 @@ npx @api3/airnode-admin derive-sponsor-wallet-address \
   # Use the above address from your command execution as the value for sponsorWallet.
 ```
 
-Click on the `setSponsorWallet` button to and enter your Sponsor Wallet Address
-to set it on-chain.
+Click on the `setSponsorWallet` button and enter your Sponsor Wallet Address to
+set it on-chain.
 
 > ![set sponsor](src/s4.png)
 
 ::: warning Designated Sponsor Wallets
 
-Sponsors should not fund a `sponsorWallet` with more then they can trust the
+Sponsors should not fund a `sponsorWallet` with more than they can trust the
 Airnode with, as the Airnode controls the private key to the `sponsorWallet`.
 The deployer of such Airnode undertakes no custody obligations, and the risk of
 loss or misuse of any excess funds sent to the `sponsorWallet` remains with the
@@ -313,7 +313,7 @@ To make a bet on-chain, we've defined a minimum ticket price that the user will
 have to pay to make a bet (0.0001 ETH). Under Deployed Contracts, select the
 `enter` function and enter your number. You will also need to send in the ticket
 price along with the bet. Head over to the top and enter the `ticketPrice` under
-value and click on transact.
+**VALUE** and click on transact.
 
 > ![Sending the bet](src/s7.png)
 
