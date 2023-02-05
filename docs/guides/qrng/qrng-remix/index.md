@@ -18,20 +18,22 @@ tags:
 ## Introduction
 
 This project is a simple and quick introduction to
-[API3's QRNG](../../../explore/qrng/index.md) service. Simply follow the steps
-to see how a smart contract can access an on-chain quantum random number. You
-will use the browser based [Remix IDE](https://remix.ethereum.org) and
+[API3's QRNG](/reference/qrng/) service. Simply follow the steps to see how a
+smart contract can access an on-chain quantum random number. You will use the
+browser based [Remix IDE](https://remix.ethereum.org) and
 [MetaMask](https://metamask.io/). Some basic knowledge of these two tools is
 assumed.
 
-Currently QRNG has three [providers](), two of which provide quantum random
-numbers. This guide will use the [byog provider](), available only on testnets,
-which returns a pseudorandom number.
+Currently QRNG has three [providers](/reference/qrng/providers.html), two of
+which provide quantum random numbers. This guide will use the
+[byog provider](https://byog.io/), available only on testnets, which returns a
+pseudorandom number.
 
 To begin, you need to deploy and sponsor the
-[`RemixQrngExample`](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol)
-with a matching [sponsor wallet](). The `RemixQrngExample` will be the primary
-contract that retrieves the random number.
+[`RemixQrngExample`](/reference/qrng/qrng-example.html) with a matching
+[sponsor wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet).
+The `RemixQrngExample` will be the primary contract that retrieves the random
+number.
 
 The `RemixQrngExample` submits a request for a random number to `AirnodeRrpV0`.
 Airnode gathers the request from the `AirnodeRrpV0` protocol contract, retrieves
@@ -39,19 +41,18 @@ the random number off-chain, and sends it back to `AirnodeRrpV0`. Once received,
 it performs a callback to the requester with the random number.
 
 You can read more about how API3 QRNG Airnode uses the
-[request-response protocol here]().
+[Request-Response Protocol here](/reference/airnode/latest/concepts/).
 
 ## Coding the `RemixQrngExample`
 
 Head on to [Remix online IDE](https://remix.ethereum.org) using a browser that
 you have added Metamask support to. Not all browsers support
-[MetaMask](https://metamask.io/download/).
+[MetaMask](https://metamask.io/download/). It should load up the
+`RemixQrngExample` contract.
 
-It should load up the `RemixQrngExample` contract.
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3dao/qrng-example/main/contracts/QrngExample.sol)
 
 > ![Add Contract](./src/qrng-add-contract.png)
-
-<button>Open in Remix</button>
 
 The `RemixQrngExample` will have five main functions: `setRequestParameters()`,
 `makeRequestUint256()`, `fulfillUint256()`, `makeRequestUint256Array()`, and
@@ -173,8 +174,9 @@ lacks adequate security features!
 
 :::
 
-This guide will use the [byog provider]() which has same usage as the production
-quantum random number generator [providers]() but returns a pseudorandom number.
+This guide will use the [byog provider](https://byog.io/) which has same usage
+as the production quantum random number generator
+[providers](/reference/qrng/providers.html) but returns a pseudorandom number.
 
 - Switch to the **DEPLOY & RUN TRANSACTIONS** tab. Use MetaMask and switch to
   the desired account and testnet for your deployment.
@@ -188,7 +190,8 @@ quantum random number generator [providers]() but returns a pseudorandom number.
 
 - Add the Airnode `_airnodeRrp` address parameter value for the constructor into
   the field next to the **Deploy** button. See the
-  [list of addresses](../reference/chains.md) for the testnet you are using.
+  [list of addresses](/reference/qrng/chains.html) for the testnet you are
+  using.
 
 - Click on **Deploy** and approve the transaction with MetaMask.
 

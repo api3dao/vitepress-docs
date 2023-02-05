@@ -16,14 +16,6 @@ tags:
 
 > <Video src="https://www.youtube.com/embed/Hss-8Tzg7TI"/>
 
-::: warning TODO
-
-- Review and fix the wording
-- Review Code Snippets and comments
-- `requestId` bit is unclear. Need to fix that
-
-:::
-
 ## Introduction
 
 [Airnodes](/reference/airnode/latest/concepts/airnode.html) are first-party
@@ -32,7 +24,8 @@ on-chain dApp. The Smart Contracts can request data from the Airnodes without
 going through any intermediary.
 
 This guide shows you how to code, deploy, and run a simple smart contract that
-requests data from an Airnode.
+requests data from an Airnode, via the
+[Request Response Protocol](/reference/airnode/latest/concepts/).
 
 ## Coding the Requester Contract
 
@@ -42,10 +35,10 @@ Make sure you're on a Testnet before trying to deploy the contracts on-chain!
 
 :::
 
-This is an example of a basic
+Given below is an example of a basic
 [Requester Contract](/reference/airnode/latest/concepts/requester.html) to
-request data from any Airnode. You can open the following contract in Remix and
-try deploying your own Requester Contract.
+request data from any Airnode. To follow along, you can open the following
+contract in Remix and try deploying your own Requester Contract.
 
 [Open in Remix](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
@@ -101,13 +94,35 @@ contract Requester is RrpRequesterV0 {
 
 ### Request Parameters
 
-A full request using the AirnodeRrpV0.sol contract `makeFullRequest` function
-requires all parameters needed by the Airnode application to be passed at
-runtime.
+A full request using the `AirnodeRrpV0.sol` contract's `makeFullRequest`
+function requires all parameters needed by the Airnode application to be passed
+at runtime.
+
+```solidity
+    function makeRequest(
+        address airnode,
+        bytes32 endpointId,
+        address sponsor,
+        address sponsorWallet,
+        bytes calldata parameters
+
+    ) external {
+        bytes32 requestId = airnodeRrp.makeFullRequest(
+            airnode,                        // airnode
+            endpointId,                     // endpointId
+            sponsor,                        // sponsor's address
+            sponsorWallet,                  // sponsorWallet
+            address(this),                  // fulfillAddress
+            this.fulfill.selector,          // fulfillFunctionId
+            parameters                      // encoded API parameters
+        );
+        incomingFulfillments[requestId] = true;
+    }
+```
 
 Since the `makeRequest` function makes a
 [full request](/reference/airnode/latest/concepts/request.html#full-request), it
-must gather the following parameters to pass on to `airnodeRrp.makeFullRequest`.
+needs the following parameters to pass on to `airnodeRrp.makeFullRequest`.
 
 - `airnode` and `endpointId`: As a pair, these uniquely identify the endpoint
   desired at a particular Airnode.
@@ -117,8 +132,8 @@ must gather the following parameters to pass on to `airnodeRrp.makeFullRequest`.
 
 - `sponsorWallet`: The
   [sponsor wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet)
-  address that the sponsor received when deriving the wallet for the Airnode
-  being called.
+  address that the sponsor derived using the Airnode's address and extended
+  public key.
 
 - `fulfillAddress` and `fulfillFunctionId`: The public address of your requester
   contract and its function that is called upon the return of the request.
@@ -129,14 +144,25 @@ must gather the following parameters to pass on to `airnodeRrp.makeFullRequest`.
   [Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.html)
   for how these are encoded. In most, cases the `parameters` are encoded
   off-chain and passed to the requester which only forwards them. You can use
-  the
-  [@api3/airnode-abi](/reference/specifications/airnode-abi-specifications.html#api3-airnode-abi)
-  package to perform the encoding and decoding.
+  the `@api3/airnode-abi` package to perform the encoding and decoding.
 
 ### Response Parameters
 
 The callback to a requester contains two parameters, as shown in the `fulfill`
-function in the code sample above.
+function in the code sample below.
+
+```solidity
+    function fulfill(bytes32 requestId, bytes calldata data)
+        external
+        onlyAirnodeRrp
+    {
+        require(incomingFulfillments[requestId], "No such request made");
+        delete incomingFulfillments[requestId];
+        int256 decodedData = abi.decode(data, (int256));
+
+        fulfilledData[requestId] = decodedData;
+    }
+```
 
 - `requestId`: First acquired when making the request and passed here as a
   reference to identify the request for which the response is intended.
@@ -155,7 +181,7 @@ testnet ETH before moving forward. You can request some from
 :::
 
 You now need to deploy the Requester Contract and call it through Remix. It will
-be calling the [Coingecko Airnode]() to request the latest price of Ethereum.
+be calling the Coingecko Airnode to request the latest price of Ethereum.
 
 ### Compile and Deploy the Requester Contract on Goerli Testnet
 
@@ -164,8 +190,8 @@ be calling the [Coingecko Airnode]() to request the latest price of Ethereum.
 
 > ![Opening the Requester Contract in Remix](src/s1.png)
 
-- Click compile on the right side of the dashboard and compile the Smart
-  Contract.
+- Click on the **COMPILE** tab on the left side of the dashboard and click on
+  **Compile Requester.sol**
 
 > ![Compiling the Requester](src/s2.png)
 
@@ -175,8 +201,8 @@ be calling the [Coingecko Airnode]() to request the latest price of Ethereum.
 
 - The `_rrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have
   already been deployed on-chain. You can check for your specific chain
-  [here](https://docs.api3.org/airnode/reference/airnode-addresses.html). Fill
-  it in and Deploy the Contract.
+  [here](/reference/airnode/latest/airnode-addresses.html). Fill it in and
+  Deploy the Contract.
 
 > ![Deploying the Requester](src/s3.png)
 
@@ -187,7 +213,7 @@ The
 needs to be derived from the requester's contract address, the Airnode address,
 and the Airnode xpub. The wallet is used to pay gas costs of the transactions.
 The sponsor wallet must be derived using the command
-[derive-sponsor-wallet-address](/reference/airnode/latest/concepts/sponsor.html#derive-a-sponsor-wallet)
+[derive-sponsor-wallet-address](/reference/airnode/latest/concepts/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 
@@ -224,9 +250,10 @@ sponsor.
 ### Encoding parameters
 
 `parameters` specify the API and Reserved Parameters (see
-[Airnode ABI specifications]() for how these are encoded). The parameters are
-required to be encoded in bytes32 before you send it. Use the [@airnode-abi]()
-library to encode the parameters off-chain and then send it to the Requester.
+[Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.html)
+for how these are encoded). The parameters are required to be encoded in bytes32
+before you send it. Use the `@api3/airnode-abi` library to encode the parameters
+off-chain and then send it to the Requester.
 
 You can encode your API Parameters off-chain using the following code snippet.
 
@@ -251,8 +278,8 @@ console.log(decodedData);
 
 ## Making the Request
 
-Head to Deploy & run transactions and click on the dropdown for your Requester
-under Deployed Contracts.
+Head over to the **Deploy & run transactions** tab, click on the `contract`
+dropdown and select `Requester.sol`
 
 Now select the `makeRequest` dropdown to see all the parameters you need to pass
 in order to make a full request to the Airnode. Populate all the fields and
