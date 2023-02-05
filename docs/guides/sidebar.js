@@ -23,10 +23,6 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Calling an Airnode - Remix Guide',
-        link: '/guides/airnode/calling-an-airnode/',
-      },
-      {
         text: 'Quick Start AWS',
         link: '/guides/airnode/quick-start-aws/',
       },
@@ -49,6 +45,10 @@ module.exports = [
       {
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
+      },
+      {
+        text: 'Calling an Airnode - Remix Guide',
+        link: '/guides/airnode/calling-an-airnode/',
       },
     ],
   },
@@ -73,15 +73,15 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'QRNG Example Project',
+        text: 'Getting Started with QRNG',
         link: '/guides/qrng/qrng-example',
       },
       {
-        text: 'Using QRNG - Remix Example',
+        text: 'Using QRNG - Remix Guide',
         link: '/guides/qrng/qrng-remix/',
       },
       {
-        text: 'Make a Lottery Contract using QRNG',
+        text: 'Building a Lottery with QRNG',
         link: '/guides/qrng/lottery-guide/',
       },
       {
