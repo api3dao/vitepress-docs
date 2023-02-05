@@ -20,11 +20,11 @@ tags:
 This project is a simple and quick introduction to
 [API3's QRNG](/reference/qrng/) service. Simply follow the steps to see how a
 smart contract can access an on-chain quantum random number. You will use the
-browser based [Remix IDE](https://remix.ethereum.org) and
+browser-based [Remix IDE](https://remix.ethereum.org) and
 [MetaMask](https://metamask.io/). Some basic knowledge of these two tools is
 assumed.
 
-Currently QRNG has three [providers](/reference/qrng/providers.html), two of
+Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
 [byog provider](https://byog.io/), available only on testnets, which returns a
 pseudorandom number.
@@ -174,8 +174,8 @@ lacks adequate security features!
 
 :::
 
-This guide will use the [byog provider](https://byog.io/) which has same usage
-as the production quantum random number generator
+This guide will use the [byog provider](https://byog.io/) which has the same
+usage as the production quantum random number generator
 [providers](/reference/qrng/providers.html) but returns a pseudorandom number.
 
 - Switch to the **DEPLOY & RUN TRANSACTIONS** tab. Use MetaMask and switch to
@@ -205,9 +205,9 @@ response.
 
 Under **Deployed Contracts** expand and expose the functions and variables of
 the contract. Note the address of the contract that is displayed with its name.
-This is the requester's contract address which will be needed later. Next expand
-the **`setRequestParameters`** function. Add the following to the corresponding
-fields for the function.
+This is the requester's contract address which will be needed later. Next,
+expand the **`setRequestParameters`** function. Add the following to the
+corresponding fields for the function.
 
 - `_airnode`: The airnode address of the desired QRNG service provider. Use
   **byog**
@@ -219,7 +219,7 @@ fields for the function.
 
 - `_endpointIdUint256Array`: The **byog** Airnode endpoint ID
   (`0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3`→<CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>)
-  which will returns an array of random numbers.
+  which will return an array of random numbers.
 
 - `_sponsorWallet`: A wallet derived from the Airnode address and the Airnode
   xpub used by **byog**, and the smart contract address for
