@@ -8,5 +8,10 @@
     "btnURL": "/reference/qrng/providers.html",
     "title": "List of available QRNG providers",
     "content": "The list of providers contains both quantum and pseudorandom number generators."
+  },
+  "_reference-airnode-deployer-image": {
+    "btnURL": "/reference/airnode/latest/docker/deployer-image.html",
+    "title": "AWS/GCP Deployer Image",
+    "content": "See code examples and other details for the ASW/GCP deployer image."
   }
 }
