@@ -12,7 +12,7 @@ tags:
 
 <SearchHighlight/>
 
-# Enabling API Providers to monetize data in Web3
+# API Providers can easilly monetize Web3
 
 API3 communicated with API providers extensively and observed a number of
 obstacles that might prevent them from oracle onboarding and operation. The key
