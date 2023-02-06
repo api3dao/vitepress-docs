@@ -77,11 +77,15 @@ module.exports = [
         link: '/explore/airnode/why-first-party-oracles',
       },
       {
-        text: 'monetizing-apis-in-web3',
+        text: 'Airnode tradeoffs',
+        link: '/explore/airnode/pros-and-cons',
+      },
+      {
+        text: 'Monetizing APIs in Web3',
         link: '/explore/airnode/monetizing-apis-in-web3',
       },
       {
-        text: 'unlocking-real-world-data',
+        text: 'Unlocking real-world data',
         link: '/explore/airnode/unlocking-real-world-data',
       },
     ],
