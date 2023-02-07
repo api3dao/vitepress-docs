@@ -70,7 +70,7 @@
       "enabled": false
     },
     "logFormat": "plain",
-    "logLevel": "INFO",
+    "logLevel": "DEBUG",
     "nodeVersion": "0.11.0",
     "stage": "quick-container"
   },
