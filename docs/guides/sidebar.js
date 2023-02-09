@@ -22,20 +22,12 @@ module.exports = [
         collapsed: false,
         items: [
           {
-            text: '• Funding a self-funded dAPI',
-            link: '/guides/dapis/funding-self-funded-dapi/',
+            text: '• Getting Started with Self-Funded dAPIs',
+            link: '/guides/dapis/getting-started-self-funded-dapi/',
           },
           {
-            text: '• Deploying a proxy for self-funded dAPIs',
-            link: '/guides/dapis/deploying-proxy-self-funded-dapi/',
-          },
-          {
-            text: '• Reading a self-funded dAPI proxy',
+            text: '• Reading a Self-Funded dAPI Proxy',
             link: '/guides/dapis/read-self-funded-dapi/',
-          },
-          {
-            text: '• Funding multiple self-funded dAPIs via Gelato',
-            link: '/guides/dapis/funding-multiple-self-funded-dapis/',
           },
         ],
       },
