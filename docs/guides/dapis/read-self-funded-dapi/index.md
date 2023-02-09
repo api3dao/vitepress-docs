@@ -18,6 +18,14 @@ tags:
 
 # {{$frontmatter.title}}
 
+::: info Prerequisites
+
+This section assumes that you have already deployed a self-funded dAPI proxy. If
+you have not done so, please follow this guide on
+[getting started with self-funded dAPIs](../getting-started-self-funded-dapi/index.md).
+
+:::
+
 dAPI proxies allows dAPIs to be used like libraries. This can reduce deployment
 costs because your smart contract just need to import the interface for calling
 the proxy contract. To read a different dAPI, your smart contract does not need
