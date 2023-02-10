@@ -13,10 +13,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-> A guide to use QRNG in your Smart Contracts
-
-## Introduction
-
 This project is a simple and quick introduction to
 [API3's QRNG](/reference/qrng/) service. Simply follow the steps to see how a
 smart contract can access an on-chain quantum random number. You will use the

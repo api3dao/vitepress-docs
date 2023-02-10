@@ -47,6 +47,30 @@ module.exports = [
         link: '/guides/airnode/monorepo-examples',
       },
       {
+        text: 'Deploying an Airnode',
+        link: '/guides/airnode/deploy-airnode/',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: 'Deploying an Airnode on AWS',
+            link: '/guides/airnode/quick-start-aws/',
+          },
+          {
+            text: 'Deploying an Airnode on Google Cloud',
+            link: '/guides/airnode/quick-start-gcp/',
+          },
+          {
+            text: 'Deploying an Airnode locally using Docker',
+            link: '/guides/airnode/quick-start-container/',
+          },
+          {
+            text: 'Deploying an Airnode using ChainAPI',
+            link: '/guides/airnode/deploy-airnode/',
+          },
+        ]
+      },
+      {
         text: 'Calling an Airnode - Remix Guide',
         link: '/guides/airnode/calling-an-airnode/',
       },
@@ -83,6 +107,10 @@ module.exports = [
       {
         text: 'Building a Lottery with QRNG',
         link: '/guides/qrng/lottery-guide/',
+      },
+      {
+        text: 'Minting Dynamic NFTs with QRNG',
+        link: '/guides/qrng/quantumon/',
       },
       {
         text: 'QRNG YouTube Tutorials',
