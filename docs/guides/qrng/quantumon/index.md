@@ -13,20 +13,24 @@ tags:
 
 # {{$frontmatter.title}}
 
-[Quantumon]() - Quantum Monsters are a collection of AI generated monsters that
-are minted to users with the help of [API3's QRNG]() and [DALL-E AI](). It
-utilises the power of [QRNG]() to generate unique random NFTs.
+[Quantumon](https://quantumon.xyz/) - Quantum Monsters are a collection of AI
+generated monsters that are minted to users with the help of
+[API3's QRNG](/reference/qrng/) and [DALL-E AI](https://openai.com/dall-e-2/).
+It utilises the power of QRNG to generate unique random NFTs.
 
 One of the most important aspects of NFTs is their perceived rarity making it
 very important for the attributes that affect rarity to be randomly generated.
 If a bad actor exploits the minting contract, they can keep the rare items for
 themselves making it unfair for everyone else. With QRNG, you can do fair
-distribution of NFTs using [“out of order”]() minting.
+distribution of NFTs using
+[“out of order”](https://www.justinsilver.com/technology/cryptocurrency/nft-mint-random-token-id/)
+minting.
 
 ## Understanding Quantumon
 
-To see how Quantumon works, you can visit the [Quantumon]() website. It uses an
-ERC-721 standard contract and QRNG to mint random NFTs and distribute them.
+To see how Quantumon works, you can visit the
+[Quantumon](https://quantumon.xyz/) website. It uses an ERC-721 standard
+contract and QRNG to mint random NFTs and distribute them.
 [Check out the code here]().
 
 Start by specifying the license, solidity version, importing the necessary
@@ -50,14 +54,14 @@ contract Quantumon is ERC721, RrpRequesterV0, Ownable {
   be transferred by the owner.
 
 - **ERC721** : This is
-  [Openzeppelin implementation of a Non Fungible Token(NFT)]() standard. This is
-  the contract we inherit to have the contract be able to mint and transfer
-  NFTs.
+  [Openzeppelin implementation of a Non Fungible Token(NFT)](https://docs.openzeppelin.com/contracts/3.x/erc721)
+  standard. This is the contract we inherit to have the contract be able to mint
+  and transfer NFTs.
 
 - **RrpRequesterV0** : The main contract will inherit this contract to be
   declared as a Requester that will be communicating with the
-  [Request Response Protocol(RRP)](). Using the RRP protocol you will request
-  for a random number from the QRNG Airnode.
+  [Request Response Protocol(RRP)](/reference/airnode/latest/concepts/). Using
+  the RRP protocol you will request for a random number from the QRNG Airnode.
 
 ### Constructor and Public Variables
 
@@ -130,12 +134,13 @@ contract Quantumon is ERC721, RrpRequesterV0, Ownable {
 
 The constructor of the contract will be invoked when we deploy the contract. The
 constructor will accept a single argument called `_airnodeRrp` . This argument
-is the address of the Airnode [Request Response Protocol]() of the chain this
-contract will be deployed to. A list of all the AirnodeRrp addresses can be
-found [here]() for each chain. This address is passed onto the constructor of
-`RrpRequesterV0` which sets the current deployed contract as a sponsor for
-itself. You don’t have to worry about sponsorship for now we will cover that in
-a bit.
+is the address of the Airnode
+[Request Response Protocol](/reference/airnode/latest/concepts/) of the chain
+this contract will be deployed to. A list of all the AirnodeRrp addresses can be
+found [here](/reference/airnode/latest/airnode-addresses.html) for each chain.
+This address is passed onto the constructor of `RrpRequesterV0` which sets the
+current deployed contract as a sponsor for itself. You don’t have to worry about
+sponsorship for now we will cover that in a bit.
 
 You also need to call the constructor of `ERC721` and give it the `tokenName`
 and `tokenSymbol` as arguments. In this case it is `QUANTUMON` for both the name
@@ -262,7 +267,7 @@ If we add 1, we get the metadata of the `1st` Quantumon. In total there are
 `9958` Quantumons which means there are `9958` metadata files. We want to be
 able to randomly choose the number that gets appended to this url, however if a
 Quantumon is already minted we don’t want to mint it again. To do this we use
-this [algorithm by Justin Silver]() that takes a random number and gives a
+this algorithm by Justin Silver that takes a random number and gives a
 completely unique non minted QuantumonId.
 
 ```solidity
