@@ -68,7 +68,7 @@ module.exports = [
             text: 'Deploying an Airnode using ChainAPI',
             link: '/guides/airnode/deploy-airnode/',
           },
-        ]
+        ],
       },
       {
         text: 'Calling an Airnode - Remix Guide',
