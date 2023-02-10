@@ -22,7 +22,7 @@ integration and deployment tools. It helps streamline the Airnode integration
 process for API providers.
 
 Using ChainAPI, API providers can configure and deploy an Airnode which links
-their API data to several blockchains
+their API data to several blockchains.
 
 ChainAPI can connect almost any API, whether open or authenticated, to Airnode.
 Airnode then queries your API operations to be consumed by EVM on-chain dAPPs,
@@ -49,13 +49,13 @@ identify yourself by signing a message for the same account._
 
 Complete the signup process and name your workspace.
 
-Workspaces provides you with a way to invite other users to help or collaborate
+Workspaces provide you with a way to invite other users to help or collaborate
 with integrations and deployments. This makes it easy to manage your Airnodes as
 a team or to outsource the process while still maintaining control over your
 integrations and deployments.
 
 > ![ChainAPI3](./src/2a.png) _To change the name of your workspace in the
-> future, click on name on the top-left of the dashboard_
+> future, click on **Name** on the top-left of the dashboard_
 
 Within ChainAPI you will be able to create and manage your integrations or
 Airnode deployments by navigating to the **Integrations** or **Deploy**
@@ -126,7 +126,7 @@ Select your Cloud Provider where you want your Airnode to be deployed.
 You won’t be able to change these settings again after saving your deployment.
 Be advised that the use of this service requires the user to engage third-party
 cloud service providers. ChainAPI is not responsible for any charges to the user
-by such third-parties
+by such third-parties.
 
 :::
 
