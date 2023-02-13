@@ -39,12 +39,13 @@ off-chain data. This phenomenon is referred to as the Oracle Problem. All the
 game theoretic and cryptographic methods proposed for various oracle solutions
 essentially aim to provide smart contracts access to paid APIs.
 
-Therefore, it would be more accurate to define the problem at hand as _the API
-connectivity problem_.
+As such it would be more accurate to define the problem at hand as _the API
+connectivity problem_. Solving the API connectivty problem has been a key
+consideration in the design of API3's offerings.
 
-As you read about API3 offerings, you will discover that this redefinition will
-have ripple effects across the entire solution, from how the ecosystem is built
-to the lowest levels of the protocol.
+As you read more about API3, you will discover that this redefinition will have
+ripple effects across the entire solution, from how the ecosystem is built to
+the lowest levels of the protocol.
 
 Additionally, existing oracle solutions fall short because they fail to make
 this distinction, resulting in inferior solutions that depend on third-party
@@ -125,7 +126,7 @@ cases being realized for two key reasons:
 2. The flexibility of being able to utilize Airnode to connect smart contracts
    to APIs during the devlopment cycle
 
-::: Get started
+::: tip Get started
 
 Get started as an API Provider [here](link.to.guide)
 

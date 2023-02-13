@@ -35,8 +35,8 @@ can be utilized within the product development cycle as data requirements arise.
 
 ::: info Read more
 
-For a technical overview of the software, see
-[Getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
+For a technical overview of Airnode see
+[getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
 :::
 
 ## Technical Characterists of Airnode
@@ -125,6 +125,13 @@ In addition, the protocol is implemented in a way that a blockchain service
 provider cannot tamper with the parameters of a request, but only deny service.
 Note this is not the case with alternative solutions, as they treat the
 blockchain service provider as a trusted party.
+
+::: tip Learn more
+
+Read more about how Airnode works in the
+[Airnode developer reference section](vitepress-docs/reference/airnode/latest/understand/).
+
+:::
 
 <!--## Statelessness
 

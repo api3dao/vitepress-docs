@@ -11,7 +11,7 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
-
+<!-- section to review upon staged beta of market -->
 # API3 Market Oracle Tool
 
 API3 has developed an oracle solution that enables smart contracts to access and
