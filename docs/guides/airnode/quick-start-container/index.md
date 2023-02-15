@@ -110,17 +110,10 @@ each of the there fields.
 ## 5. Deploy
 
 Make sure Docker is running and then run the Airnode client container from the
-root of the `quick-start-container` folder.
+root of the `quick-deploy-container` folder.
 
-Note that `--publish HOST_PORT:CONTAINER_PORT` parameter can have different
-values for the `HOST_PORT` and `CONTAINER_PORT`. E.g. parameter
-`--publish 8000:3000` would expose the web server on port 8000 on the host
-machine. When using [host networking](https://docs.docker.com/network/host/)
-(recommended for Linux) change the port via the
-[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
-property inside config.json.
-
-Run the following command to deploy the Airnode locally.
+Run the following command to deploy the Airnode locally. Note that the version
+of `api3/airnode-client` matches the `nodeVersion` in the config.json file.
 
 ::: code-group
 
@@ -132,14 +125,6 @@ docker run --detach \
   api3/airnode-client:0.9.2
 ```
 
-```sh [Linux (host networking)]
-docker run --detach \
-  --volume "$(pwd):/app/config" \
-  --name quick-start-container-airnode \
-  --network host \
-  api3/airnode-client:0.9.2
-```
-
 ```batch [Windows CMD]
 docker run --detach ^
   --volume "%cd%:/app/config" ^
@@ -148,7 +133,29 @@ docker run --detach ^
   api3/airnode-client:0.9.2
 ```
 
+```sh [Linux (host networking)]
+docker run --detach \
+  --volume "$(pwd):/app/config" \
+  --name quick-start-container-airnode \
+  --network host \
+  api3/airnode-client:0.9.2
+```
+
 :::
+
+Note that `--publish HOST_PORT:CONTAINER_PORT` parameter (Mac/WSL2/PowerShell)
+can have different values for the `HOST_PORT` and `CONTAINER_PORT`. E.g.
+parameter `--publish 8000:3000` would expose the web server on port 8000 on the
+host machine.
+
+For Linux, it's recommended to use
+[host networking](https://docs.docker.com/network/host/). When using host
+networking, change the port via
+[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
+property inside config.json.
+
+In the Docker desktop application view the container
+(quick-deploy-container-airnode) and its logs.
 
 ## 6. Test the Airnode
 
