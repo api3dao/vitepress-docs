@@ -35,7 +35,7 @@ which returns the current value of a coin. This guide does not detail the
 overall configuration of an Airnode, it is just a quick start guide then lends
 itself to understanding an Airnode deployment.
 
-## 1. Configuration Files
+## Configuration Files
 
 An Airnode deployment on GCP uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
@@ -46,13 +46,13 @@ These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply a GCP
 project ID, a chain provider url, a gateway key, and a mnemonic.
 
-## 2. Install Prerequisites
+## 1. Install Prerequisites
 
 Install the
 [Docker Desktop<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and
 launch it.
 
-## 3. Project Folder
+## 2. Project Folder
 
 Download the <a href="/zip-files/quick-start-gcp.zip" download>
 quick-start-gcp.zip</a> project folder. Extract it into any location.
@@ -63,7 +63,7 @@ quick-start-gcp
 └── secrets.env
 ```
 
-## 4. GCP Project Setup & Credentials
+## 3. GCP Project Setup & Credentials
 
 - First
   [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
@@ -90,7 +90,7 @@ quick-start-gcp
   this account. Download the key file and place in the root of the
   `/quick-start-gcp` project directory. Rename it `gcp.json`.
 
-## 5. Prepare Configuration Files
+## 4. Prepare Configuration Files
 
 Prepare the three configuration files. The Airnode deployer image looks for
 `config.json`, `secrets.env`, and `gcp.json` in the project root directory and
@@ -148,7 +148,7 @@ Add values for each.
 During [step #4](./#_4-gcp-project-setup-credentials) above, the `gcp.json` file
 should have been placed into the `/quick-start-gcp` project folder.
 
-## 6. Deploy
+## 5. Deploy
 
 Make sure Docker is running and then execute the deployer image from the root of
 the `quick-start-gcp` folder. A `receipt.json` file will be created upon
@@ -198,7 +198,7 @@ the Airnode in the next section.
 ℹ HTTP gateway URL: https://airnode-6a6cf2d-tutorial-gcp-httpgw-4fhnl4fi.ue.gateway.dev
 ```
 
-## 7. Test the Airnode
+## 6. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) without
@@ -315,7 +315,7 @@ curl -v ^
 
 <TutorialResponse/>
 
-## 8. Remove the Airnode
+## 7. Remove the Airnode
 
 When you are done with this guide you can remove the deployed Airnode. The
 following command uses the `receipt.json` file that was created when the Airnode
