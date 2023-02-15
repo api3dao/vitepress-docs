@@ -406,6 +406,7 @@ When the airnode makes the fullfillment transaction it will call
 
 :::warning Note: `generateQuantumon()` has the `onlyAirnodeRrpmodifier` which
 means that only the `AirnodeRrp`contract can call this function. 
+
 :::
 
 we decode the data, using `abi.decode(data, (uint256))` . We decode using
