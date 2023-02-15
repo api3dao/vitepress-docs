@@ -405,7 +405,7 @@ When the airnode makes the fullfillment transaction it will call
 `generateQuantumon()` with `requestId` and data as arguments.
 
 :::warning Note: `generateQuantumon()` has the `onlyAirnodeRrpmodifier` which
-means that only the `AirnodeRrp`contract can call this function. 
+means that only the `AirnodeRrp`contract can call this function.
 
 :::
 
