@@ -1,5 +1,5 @@
 ---
-title: Deploying an Airnode using ChainAPI
+title: Generating the Airnode Config using ChainAPI
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Deploying an Airnode
@@ -66,6 +66,10 @@ dashboards on the left hand navigation panel.
 To integrate your Airnode, select the **Integrate API** option in the top right
 hand of the dashboard.
 
+For this guide, we will be using the
+[dxFeed's Public REST API](https://tools.dxfeed.com/webservice/rest-demo.jsp) as
+an example. You can use any REST API you want.
+
 > ![ChainAPI3](./src/3.png)
 
 Enter the details about the API you want to Integrate.
@@ -76,11 +80,13 @@ You need to enter the base URL of your API along with all the endpoints that you
 want to integrate. If your API requires any security scheme (API Key, Basic HTTP
 Auth) you have the option to add that too.
 
+As it’s a public API, it doesn’t have any security schemes.
+
 > ![ChainAPI5](./src/5.png)
 
 You can now start adding all your endpoints. Start by adding the endpoint name,
 its path, the parameters and then the method to call it. You can add as many
-endpoints as you want. To add another endpoint, click on the **+ Add another
+endpoints as you want. To add another endpoint, click on the **Add another
 Endpoint** button.
 
 > ![ChainAPI6](./src/6.png)
@@ -88,6 +94,9 @@ Endpoint** button.
 Now you need to add all the parameters and define where they go
 (query/header/path/cookie). You can also decide if you want their values fixed
 or not.
+
+Here, the dxFeed REST API has one GET endpoint `/events.json` with some query
+parameters. You can add all the parameters that your API requires.
 
 [Reserved parameters](../../../reference/ois/latest/reserved-parameters.md)
 define what part of the response is to be picked and encoded before fulfillment.
@@ -110,7 +119,9 @@ for your Airnode.
 After adding all the required endpoints, you can now press finish and get ready
 to deploy your Airnode.
 
-## Deploying your Airnode
+<!-- Commented out the Deploying Airnode Part -->
+
+<!-- ## Deploying your Airnode
 
 To deploy the Airnode, go to the **Deploy** section on the menu. Click on **New
 Deployment** to create a deployment.
@@ -252,4 +263,4 @@ section on ChainAPI.
 
 > ![ChainAPI17](./src/17.png)
 
-You are now ready to make requests to your Airnode.
+You are now ready to make requests to your Airnode. -->

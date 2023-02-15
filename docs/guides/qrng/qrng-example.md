@@ -1,5 +1,5 @@
 ---
-title: QRNG Example
+title: Getting Started with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
