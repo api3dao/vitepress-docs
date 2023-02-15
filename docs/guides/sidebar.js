@@ -23,18 +23,6 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Quick Start AWS',
-        link: '/guides/airnode/quick-start-aws/',
-      },
-      {
-        text: 'Quick Start GCP',
-        link: '/guides/airnode/quick-start-gcp/',
-      },
-      {
-        text: 'Quick Start Docker Container',
-        link: '/guides/airnode/quick-start-container/',
-      },
-      {
         text: 'Making an RRP Request',
         link: '/guides/airnode/rrp-request',
       },
@@ -53,6 +41,10 @@ module.exports = [
         collapsed: false,
         items: [
           {
+            text: 'Generating the Airnode Config using ChainAPI',
+            link: '/guides/airnode/deploy-airnode/',
+          },
+          {
             text: 'Deploying an Airnode on AWS',
             link: '/guides/airnode/quick-start-aws/',
           },
@@ -64,14 +56,10 @@ module.exports = [
             text: 'Deploying an Airnode locally using Docker',
             link: '/guides/airnode/quick-start-container/',
           },
-          {
-            text: 'Deploying an Airnode using ChainAPI',
-            link: '/guides/airnode/deploy-airnode/',
-          },
         ],
       },
       {
-        text: 'Calling an Airnode - Remix Guide',
+        text: 'Calling an Airnode',
         link: '/guides/airnode/calling-an-airnode/',
       },
     ],

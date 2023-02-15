@@ -1,5 +1,5 @@
 ---
-title: Code and Deploy a Lottery Contract using QRNG
+title: Building a Lottery with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -14,10 +14,6 @@ tags:
 <PageHeader/>
 
 # {{$frontmatter.title}}
-
-> An on-chain Lottery to make bets using API3's QRNG Service
-
-## Introduction
 
 This is a simple tutorial that will walk you through building and deploying a
 decentralized lottery smart contract in Solidity using Remix to demonstrate the

@@ -1,5 +1,5 @@
 ---
-title: Dynamic NFTs - Quantumon
+title: Minting Dynamic NFTs with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -253,7 +253,9 @@ the blockchain) that is overridden to return the URI in the `_tokenURIs`
 mapping. The code comments explain what it does in more detail.
 
 :::tip Note: In solidity `string(abi.encodePacked(StringA,StringB))` returns the
-concatenation of `stringA` and `stringB`. :::
+concatenation of `stringA` and `stringB`. 
+
+:::
 
 ### How the NFTs are structured
 
@@ -403,7 +405,8 @@ When the airnode makes the fullfillment transaction it will call
 `generateQuantumon()` with `requestId` and data as arguments.
 
 :::warning Note: `generateQuantumon()` has the `onlyAirnodeRrpmodifier` which
-means that only the `AirnodeRrp`contract can call this function. :::
+means that only the `AirnodeRrp`contract can call this function. 
+:::
 
 we decode the data, using `abi.decode(data, (uint256))` . We decode using
 `uint256` because we know that `data` only contains a `uint256` random number.

@@ -1,5 +1,5 @@
 ---
-title: Quick Start Docker Container
+title: Deploying an Airnode locally using Docker
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
@@ -18,9 +18,12 @@ tags:
 
 # {{$frontmatter.title}}
 
-The **Airnode Quick Start** guides are simple introductions that demonstrate the
-deployment of an Airnode. Configuration files are provided with only minor
-changes to be made.
+This guide is a simple introduction that demonstrates the deployment of an
+Airnode. Configuration files are provided with only minor changes to be made. If
+you wish to use your own configuration files, you can generate them using
+ChainAPI. [Refer to this guide](../deploy-airnode/index.md). As ChainAPI doesn't
+have the option for a local deployment, you need to make some minor tweaks to
+the configuration files.
 
 This guide uses the latest release
 ([0.9.2<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
@@ -43,6 +46,9 @@ These files have been created and only require a few minor changes on your part
 to make the deployment of the demo Airnode successful. These changes are needed
 to supply a chain provider url and a mnemonic.
 
+You can also use the configuration files you generated using ChainAPI if you
+wish to deploy your own Airnode.
+
 ## 2. Install Prerequisites
 
 Install the [Docker Desktop](https://docs.docker.com/get-docker/) and launch it.
@@ -62,6 +68,22 @@ quick-start-container
 
 Prepare the two configuration files `config.json` and `secrets.env`. By default,
 the Airnode client image looks for them in the project root directory.
+
+If you've used ChainAPI to integrate your Airnode, extract the zip file and use
+that as the project directory.
+
+:::warning If you are using a configuration generated using ChainAPI, make sure
+to change the `nodeSettings.cloudProvider.type: "local"` in the `config.json`
+file.
+
+```json
+  "nodeSettings": {
+    "cloudProvider": {
+      "type": "local"
+    },
+```
+
+:::
 
 ### config.json
 
@@ -203,8 +225,14 @@ endpoints added to the `http` array can be tested.
 
 Use CURL to execute the HTTP gateway configured for the Airnode and get the
 results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
-network that Airnode was deployed for. As an alternative to CURL try an app such
-as [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
+network that Airnode was deployed for.
+
+:::info Custom ChainAPI configuration If you are using your own ChainAPI
+configuration, use the HTTP Gateway according to your OIS. 
+:::
+
+As an alternative to CURL try an app such as
+[Insomnia<externalLinkImage/>](https://insomnia.rest/) or
 [Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/).
 Windows users can also use
 [Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
