@@ -227,7 +227,8 @@ Use CURL to execute the HTTP gateway configured for the Airnode and get the
 results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
 network that Airnode was deployed for.
 
-:::info Custom ChainAPI configuration If you are using your own ChainAPI
+:::info 
+Custom ChainAPI configuration If you are using your own ChainAPI
 configuration, use the HTTP Gateway according to your OIS. 
 :::
 

@@ -253,7 +253,7 @@ the blockchain) that is overridden to return the URI in the `_tokenURIs`
 mapping. The code comments explain what it does in more detail.
 
 :::tip Note: In solidity `string(abi.encodePacked(StringA,StringB))` returns the
-concatenation of `stringA` and `stringB`. 
+concatenation of `stringA` and `stringB`.
 
 :::
 
