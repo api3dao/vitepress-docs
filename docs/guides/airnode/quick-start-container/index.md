@@ -151,7 +151,7 @@ host machine.
 For Linux, it's recommended to use
 [host networking](https://docs.docker.com/network/host/). When using host
 networking, change the port via
-[gatewayServerPort](../../../reference/deployment-files/config-json.md#cloudprovider-gatewayserverport)
+[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
 property inside config.json.
 
 In the Docker desktop application view the container
