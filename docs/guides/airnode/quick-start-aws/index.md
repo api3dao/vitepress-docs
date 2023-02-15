@@ -35,7 +35,7 @@ which returns the current value of a coin. This guide does not detail the
 overall configuration of an Airnode, it is just a quick start guide then lends
 itself to understanding an Airnode deployment.
 
-## 1. Configuration Files
+## Configuration Files
 
 An Airnode deployment on AWS uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
@@ -46,13 +46,13 @@ These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply AWS
 credentials, a chain provider url, a gateway key, and a mnemonic.
 
-## 2. Install Prerequisites
+## 1. Install Prerequisites
 
 Install the
 [Docker Desktop<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and
 launch it.
 
-## 3. Project Folder
+## 2. Project Folder
 
 Download the <a href="/zip-files/quick-start-aws.zip" download>
 quick-start-aws.zip</a> project folder. Extract it into any location.
@@ -64,7 +64,7 @@ quick-start-aws
 └── secrets.env
 ```
 
-## 4. Prepare Configuration Files
+## 3. Prepare Configuration Files
 
 Prepare the three configuration files. The Airnode deployer image looks for
 `config.json`, `secrets.env`, and `aws.env` in the project root directory and
@@ -142,7 +142,7 @@ create one. Unlike `secrets.env`, you cannot surround values with double quotes
 - `AWS_ACCESS_KEY_ID`: Is ACCESS_KEY_ID in IAM.
 - `AWS_SECRET_ACCESS_KEY`: Is SECRET_ACCESS_KEY in IAM.
 
-## 5. Deploy
+## 4. Deploy
 
 Make sure Docker is running and then execute the deployer image from the root of
 the `quick-start-aws` folder. A `receipt.json` file will be created upon
@@ -192,7 +192,7 @@ the Airnode in the next section.
 ℹ HTTP gateway URL: https://vfnss24505.execute-api.us-east-1.amazonaws.com/v1
 ```
 
-## 6. Test the Airnode
+## 5. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) without
@@ -309,7 +309,7 @@ curl -v ^
 
 <TutorialResponse/>
 
-## 7. Remove the Airnode
+## 6. Remove the Airnode
 
 When you are done with this guide you can remove the deployed Airnode. The
 following command uses the `receipt.json` file that was created when the Airnode
