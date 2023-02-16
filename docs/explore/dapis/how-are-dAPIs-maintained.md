@@ -13,4 +13,3 @@ tags:
 <SearchHighlight/>
 
 # {{$frontmatter.title}}
-

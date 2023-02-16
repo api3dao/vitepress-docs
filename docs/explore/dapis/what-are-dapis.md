@@ -108,8 +108,10 @@ The API3 Market lists all available dAPIs, self-funded and managed alike. It
 represents a hub, that allows developers to browse through a catalogue of
 potential data feeds to integrate, fund their operation in the case of
 self-funded dAPIs, pay for the upgrade to a managed version or request new data
-types. Additionally it is going to play a cruical role in setting up required
-contracts for OEV (LINK) and Service Coverage (LINK).
+types.
+
+<!--Additionally it is going to play a cruical role in setting up required
+contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->
 
 ## dAPI Maintenance
 
