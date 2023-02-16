@@ -2,9 +2,9 @@
 title: Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/airnode.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -19,8 +19,8 @@ tags:
 
 ::: danger WARNING
 
-This doc has been altered for `v1.0`. Do not overwrite when converting the
-latest `v0.x` relase to the new docs.
+This doc has been altered for `v0.11`. Do not overwrite when converting the
+latest `v0.x` release to the new docs.
 
 :::
 

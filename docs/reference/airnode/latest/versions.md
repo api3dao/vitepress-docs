@@ -2,9 +2,9 @@
 title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0
+pageHeader: Reference → Airnode → v0.11
 path: /reference/airnode/latest/versions.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -30,7 +30,7 @@ in the Airnode repo for all Airnode versions.
 
 ## Previous Versions (v0.x)
 
-Prior to version `v1.0` there are several `v0.x` versions of Airnode. Their
+Prior to version `v0.11` there are several `v0.x` versions of Airnode. Their
 documentation is available at
 [https://api3dao.github.io/api3-docs](https://api3dao.github.io/api3-docs).
 
