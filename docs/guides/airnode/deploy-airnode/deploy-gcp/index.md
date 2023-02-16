@@ -3,7 +3,7 @@ title: Deploying an Airnode on Google Cloud
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/quick-start-gcp/index.html
+path: /guides/airnode/deploy-airnode/deploy-gcp/
 outline: deep
 tags:
 deployerVersion: 0.9.2

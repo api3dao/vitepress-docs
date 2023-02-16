@@ -3,7 +3,7 @@ title: Deploying an Airnode on AWS
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/quick-start-aws/index.html
+path: /guides/airnode/deploy-airnode/deploy-aws/
 outline: deep
 tags:
 deployerVersion: 0.9.2
