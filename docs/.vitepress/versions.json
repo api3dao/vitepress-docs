@@ -6,10 +6,10 @@
       "path": "/reference/airnode/latest/"
     }
   ],
-  "oisLatest": "v1.4",
+  "oisLatest": "v2.0",
   "versionsOIS": [
     {
-      "version": "v1.4",
+      "version": "v2.0",
       "path": "/reference/ois/latest/"
     }
   ]
