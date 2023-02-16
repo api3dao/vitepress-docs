@@ -19,7 +19,7 @@ At the core, a **dAPI** is a mapping that points towards a **Beacon** or a
 such a dAPI is the interface to securely connect to a variety of oracle services
 such as price reference feeds or other data feeds used within DeFi.
 
-# What is a Beacon or a Beacon Set?
+## What is a Beacon or a Beacon Set?
 
 A Beacon is a point of data that is kept alive on-chain by a respective
 first-party oracle. It corresponds to an ID which is derived from the hash of
@@ -40,7 +40,7 @@ where they can be read directly through `readDataFeedValueWithId`.
 
 :::
 
-## Understanding dAPIs
+# Understanding dAPIs
 
 Through the use of the function `setDapiName` API3 can associate the ID of a
 Beacon or Beacon Set with a human-readable name like AVAX/USD. This makes it
@@ -102,31 +102,6 @@ production environments. Please read more about the
 [security consideration](/explore/dapis/security-considerations.md) of managed
 dAPIs.
 
-## API3 Market
-
-The API3 Market lists all available dAPIs, self-funded and managed alike. It
-represents a hub, that allows developers to browse through a catalogue of
-potential data feeds to integrate, fund their operation in the case of
-self-funded dAPIs, pay for the upgrade to a managed version or request new data
-types.
-
-<!--Additionally it is going to play a cruical role in setting up required
-contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->
-
-## dAPI Maintenance
-
-The exact process that is being followed currently and what is envisioned for
-the future can be found in
-[how are dAPIs maintained](/explore/dapis/how-are-dapis-maintained.md).
-
-## Medium Articles
-
-For more information, please refer to
-[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)<externalLinkImage/>,
-[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)<externalLinkImage/>
-and
-[Monetizing Data Feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd)<externalLinkImage/>.
-
 ## `DapiServer.sol`
 
 Developers use the
@@ -166,3 +141,28 @@ for a step-by-step guides on how to call a dAPI. Also visit the
   <NavBox type='GUIDE' id="_call-dapi-proxy"/>
   <NavBox type='GUIDE' id="_call-dapi-server"/>
 </div>
+
+## API3 Market
+
+The API3 Market lists all available dAPIs, self-funded and managed alike. It
+represents a hub, that allows developers to browse through a catalogue of
+potential data feeds to integrate, fund their operation in the case of
+self-funded dAPIs, pay for the upgrade to a managed version or request new data
+types.
+
+<!--Additionally it is going to play a cruical role in setting up required
+contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->
+
+## dAPI Maintenance
+
+The exact process that is being followed currently and what is envisioned for
+the future can be found in
+[how are dAPIs maintained](/explore/dapis/how-are-dapis-maintained.md).
+
+## Medium Articles
+
+For more information, please refer to
+[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)<externalLinkImage/>,
+[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)<externalLinkImage/>
+and
+[Monetizing Data Feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd)<externalLinkImage/>.
