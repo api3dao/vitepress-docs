@@ -22,7 +22,7 @@ tags:
 
 This section assumes that you have already deployed a self-funded dAPI proxy. If
 you have not done so, please follow this guide on
-[getting started with self-funded dAPIs](../getting-started-self-funded-dapi/index.md).
+[subscribing to self-funded dapis](../../market/subscribing-self-funded-dapis/index.md).
 
 :::
 
