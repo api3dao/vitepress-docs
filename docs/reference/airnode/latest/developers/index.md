@@ -2,9 +2,9 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → dApp Developers
 path: /reference/airnode/latest/developers/index.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---

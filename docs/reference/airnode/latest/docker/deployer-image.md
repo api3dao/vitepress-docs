@@ -2,9 +2,9 @@
 title: AWS/GCP Deployer Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Docker Images
+pageHeader: Reference → Airnode → v0.11 → Docker Images
 path: /reference/airnode/latest/docker/deployer-image.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---

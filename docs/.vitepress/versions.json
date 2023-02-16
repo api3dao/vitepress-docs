@@ -1,15 +1,15 @@
 {
-  "airnodeLatest": "v1.0",
+  "airnodeLatest": "v0.11",
   "versionsAirnode": [
     {
-      "version": "v1.0",
+      "version": "v0.11",
       "path": "/reference/airnode/latest/"
     }
   ],
-  "oisLatest": "v1.4",
+  "oisLatest": "v2.0",
   "versionsOIS": [
     {
-      "version": "v1.4",
+      "version": "v2.0",
       "path": "/reference/ois/latest/"
     }
   ]

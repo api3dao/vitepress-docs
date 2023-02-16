@@ -2,7 +2,7 @@
 title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v1.4
+pageHeader: Reference → OIS → v2.0
 path: /reference/ois/latest/index.html
 version:
 outline: deep
