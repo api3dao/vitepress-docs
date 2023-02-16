@@ -1,9 +1,9 @@
 ---
-title: Getting Started with Self-Funded dAPIs
+title: Subscribing to Self-Funded dAPIs
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → dAPIs
-path: /guides/dapis/getting-started-self-funded-dapi/index.html
+pageHeader: Guides → API3 Market
+path: /guides/market/subscribing-self-funded-dapis/
 outline: deep
 tags:
 ---

@@ -9,7 +9,12 @@ module.exports = [
     text: 'API3 Market',
     collapsible: true,
     collapsed: false,
-    items: [{ text: 'Subscribing to dAPIs ', link: '/guides/market/' }],
+    items: [
+      {
+        text: 'Subscribing to Self-Funded dAPIs ',
+        link: '/guides/market/subscribing-self-funded-dapis/',
+      },
+    ],
   },
   {
     text: 'dAPIs',
@@ -21,10 +26,6 @@ module.exports = [
         collapsible: true,
         collapsed: false,
         items: [
-          {
-            text: '• Getting Started with Self-Funded dAPIs',
-            link: '/guides/dapis/getting-started-self-funded-dapi/',
-          },
           {
             text: '• Reading a Self-Funded dAPI Proxy',
             link: '/guides/dapis/read-self-funded-dapi/',
@@ -45,19 +46,19 @@ module.exports = [
         collapsed: false,
         items: [
           {
-            text: 'Generating Airnode Config using ChainAPI',
+            text: '• Generating Airnode Config using ChainAPI',
             link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
           },
           {
-            text: 'Deploying Airnode via AWS',
+            text: '• Deploying Airnode via AWS',
             link: '/guides/airnode/deploy-airnode/deploy-aws/',
           },
           {
-            text: 'Deploying Airnode via GCP',
+            text: '• Deploying Airnode via GCP',
             link: '/guides/airnode/deploy-airnode/deploy-gcp/',
           },
           {
-            text: 'Deploying Airnode locally using Docker',
+            text: '• Deploying Airnode locally using Docker',
             link: '/guides/airnode/deploy-airnode/deploy-container/',
           },
         ],
