@@ -1,9 +1,9 @@
 ---
-title: Deploying an Airnode on Google Cloud
+title: Deploying an Airnode on AWS
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/quick-start-gcp/index.html
+path: /guides/airnode/deploy-airnode/deploy-aws/
 outline: deep
 tags:
 deployerVersion: 0.9.2
@@ -29,7 +29,7 @@ This guide uses the latest release
 ([{{$frontmatter.deployerVersion}}<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
 of the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
-deploys the off-chain component of Airnode (a.k.a., the node) to GCP. It uses an
+deploys the off-chain component of Airnode (a.k.a., the node) to AWS. It uses an
 API endpoint (`GET /simple/price`) from
 [CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
 which returns the current value of a coin. This guide does not detail the
@@ -38,17 +38,17 @@ itself to understanding an Airnode deployment.
 
 ## 1. Configuration Files
 
-An Airnode deployment on GCP uses the Docker
+An Airnode deployment on AWS uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
 requires three files as input: [config.json](#config-json),
-[secrets.env](#secrets-env), and gcp.json.
+[secrets.env](#secrets-env), and [aws.env](#aws-env).
 
 These files have been created and only require a few minor changes to make the
-deployment of the Airnode successful. These changes are needed to supply a GCP
-project ID, a chain provider url, a gateway key, and a mnemonic.
+deployment of the Airnode successful. These changes are needed to supply AWS
+credentials, a chain provider url, a gateway key, and a mnemonic.
 
-If you've used ChainAPI to integrate your Airnode, extract the zip file and use
-that as the project directory.
+You can also use the configuration files you generated using ChainAPI if you
+wish to deploy your own Airnode.
 
 ## 2. Install Prerequisites
 
@@ -58,49 +58,23 @@ launch it.
 
 ## 3. Project Folder
 
-Download the <a href="/zip-files/quick-start-gcp.zip" download>
-quick-start-gcp.zip</a> project folder. Extract it into any location.
+Download the <a href="/zip-files/quick-start-aws.zip" download>
+quick-start-aws.zip</a> project folder. Extract it into any location.
 
 If you've used ChainAPI to integrate your Airnode, extract the zip file and use
 that as the project directory.
 
 ```
-quick-start-gcp
+quick-start-aws
+├── aws.env
 ├── config.json
 └── secrets.env
 ```
 
-## 4. GCP Project Setup & Credentials
-
-- First
-  [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
-  (or use an existing GCP project) where the Airnode will be deployed. Once the
-  project is created, add the project ID to the [secrets.env](./#secrets-env)
-  file.
-
-- Make sure you have billing enabled for your project. To do so, you will need
-  to pair the project with your bank card, although no charges will be incurred
-  since the resource usage fits well within the free tier limit.
-
-- In order for Airnode to deploy successfully, you need to enable the
-  [App Engine Admin API<ExternalLinkImage/>](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
-  specifically for the project. After enabling it, wait a few minutes before
-  deploying the Airnode for this change to take effect.
-
-- Create a new service account from the
-  [IAM and admin > Service accounts<ExternalLinkImage/>](https://console.cloud.google.com/iam-admin/serviceaccounts)
-  menu. Grant this account access to the project by adding the role `Owner`
-  during creation.
-
-- Once the new service account is created, click on it to bring up its
-  management page. Select the KEYS tab and add a new access key of type JSON for
-  this account. Download the key file and place in the root of the
-  `/quick-start-gcp` project directory. Rename it `gcp.json`.
-
-## 5. Prepare Configuration Files
+## 4. Prepare Configuration Files
 
 Prepare the three configuration files. The Airnode deployer image looks for
-`config.json`, `secrets.env`, and `gcp.json` in the project root directory and
+`config.json`, `secrets.env`, and `aws.env` in the project root directory and
 writes `receipt.json` to the project root directory.
 
 ### config.json
@@ -117,6 +91,15 @@ This file requires no changes on your part. It has been created with just one
 API endpoint. It will instruct the Airnode to attach to the Sepolia test network
 and contains parameters to setup the off-chain Airnode.
 
+Note that `nodeSetting.cloudProvider.disableConcurrencyReservations` has been
+set to `true`. This is a precaution for new AWS accounts that have yet to
+address concurrency management. For production deployments,
+`disableConcurrencyReservations` should be set to `false`. See
+[disableConcurrencyReservations](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-disableconcurrencyreservations)
+under the `cloudProvider` key and
+[maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
+for more information.
+
 ### secrets.env
 
 ::: details secrets.env
@@ -127,7 +110,7 @@ and contains parameters to setup the off-chain Airnode.
 
 :::
 
-There are four values `config.json` extracts from `secrets.env` as shown below.
+There are three values `config.json` extracts from `secrets.env` as shown below.
 Add values for each.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url from a provider such as
@@ -143,22 +126,33 @@ Add values for each.
   npx @api3/airnode-admin generate-airnode-mnemonic
   ```
 
-- `PROJECT_ID`: Project ID of your GCP project. During
-  [step #4](./#_4-gcp-project-setup-credentials) above you should have added the
-  project ID to the `secrets.env` file.
-
 - `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
   Gateway. The expected length is 30 - 128 characters.
 
-### gcp.json
+### aws.env
 
-During [step #4](./#_4-gcp-project-setup-credentials) above, the `gcp.json` file
-should have been placed into the `/quick-start-gcp` project folder.
+::: details aws.env
 
-## 6. Deploy
+```sh
+<!--@include: ./src/aws.env-->
+```
+
+:::
+
+Add the access credentials from your AWS account. The deployer image will use
+these to install the Airnode functions to Lambda under your account's control.
+If you do not have an account watch this
+[video<ExternalLinkImage/>](https://www.youtube.com/watch?v=KngM5bfpttA) to
+create one. Unlike `secrets.env`, you cannot surround values with double quotes
+(").
+
+- `AWS_ACCESS_KEY_ID`: Is ACCESS_KEY_ID in IAM.
+- `AWS_SECRET_ACCESS_KEY`: Is SECRET_ACCESS_KEY in IAM.
+
+## 5. Deploy
 
 Make sure Docker is running and then execute the deployer image from the root of
-the `quick-start-gcp` folder. A `receipt.json` file will be created upon
+the `quick-start-aws` folder. A `receipt.json` file will be created upon
 completion. It contains some deployment information and is used to remove the
 Airnode.
 
@@ -199,13 +193,13 @@ Note the HTTP gateway URL in the output shown below. You will need it to test
 the Airnode in the next section.
 
 ```sh [output]
-✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-gcp to gcp us-east1
+✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-aws to aws us-east-1
 ℹ Outputted config/receipt.json
   This file does not contain any sensitive information.
-ℹ HTTP gateway URL: https://airnode-6a6cf2d-tutorial-gcp-httpgw-4fhnl4fi.ue.gateway.dev
+ℹ HTTP gateway URL: https://vfnss24505.execute-api.us-east-1.amazonaws.com/v1
 ```
 
-## 7. Test the Airnode
+## 6. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) without
@@ -329,7 +323,7 @@ curl -v ^
 
 <TutorialResponse/>
 
-## 8. Remove the Airnode
+## 7. Remove the Airnode
 
 When you are done with this guide you can remove the deployed Airnode. The
 following command uses the `receipt.json` file that was created when the Airnode
@@ -353,18 +347,9 @@ docker run -it --rm ^
 
 :::
 
-::: danger Post Removal
-
-After removing an Airnode it may be necessary to wait several minutes before
-deploying or redeploying Airnode again to the same GCP project. GCP takes
-several minutes to complete its behind the scenes clean-up of configured
-resources.
-
-:::
-
 ## Summary
 
-You have deployed an Airnode on GCP and tested it using the HTTP gateway that
+You have deployed an Airnode on AWS and tested it using the HTTP gateway that
 was enabled as part of the Airnode deployment. The Airnode, upon deployment,
 started contacting the `AirnodeRrpV0` contract on the Sepolia test network to
 gather any requests made by requesters to this Airnode. This guide did not
@@ -377,5 +362,5 @@ You made a CURL request (using HTTP) to the HTTP gateway. Airnode queried the
 API provider and sent back a response. All of this was performed without
 accessing the blockchain.
 
-Learn more about GCP resources that Airnode uses in the
+Learn more about AWS resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.

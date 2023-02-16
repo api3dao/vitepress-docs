@@ -3,7 +3,7 @@ title: Deploying an Airnode locally using Docker
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
-path: /guides/airnode/quick-start-container/index.html
+path: /guides/airnode/deploy-airnode/deploy-container/
 outline: deep
 tags:
   - airnode

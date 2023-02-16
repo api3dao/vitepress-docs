@@ -15,12 +15,6 @@ module.exports = [
     text: 'dAPIs',
     collapsible: true,
     collapsed: false,
-    items: [],
-  },
-  {
-    text: 'Airnode',
-    collapsible: true,
-    collapsed: false,
     items: [
       {
         text: 'Self-Funded dAPIs',
@@ -45,20 +39,44 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Generating Airnode Config using ChainAPI',
-        link: '/guides/airnode/deploy-airnode/',
+        text: 'Deploying an Airnode',
+        link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: 'Generating Airnode Config using ChainAPI',
+            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
+          },
+          {
+            text: 'Deploying Airnode via AWS',
+            link: '/guides/airnode/deploy-airnode/deploy-aws/',
+          },
+          {
+            text: 'Deploying Airnode via GCP',
+            link: '/guides/airnode/deploy-airnode/deploy-gcp/',
+          },
+          {
+            text: 'Deploying Airnode locally using Docker',
+            link: '/guides/airnode/deploy-airnode/deploy-container/',
+          },
+        ],
       },
       {
-        text: 'Deploying Airnode via AWS',
-        link: '/guides/airnode/quick-start-aws/',
+        text: 'Calling an Airnode',
+        link: '/guides/airnode/calling-an-airnode/',
       },
       {
-        text: 'Deploying Airnode via GCP',
-        link: '/guides/airnode/quick-start-gcp/',
+        text: 'Making an RRP Request',
+        link: '/guides/airnode/rrp-request',
       },
       {
-        text: 'Deploying Airnode locally using Docker',
-        link: '/guides/airnode/quick-start-container/',
+        text: 'Using RRP Templates',
+        link: '/guides/airnode/using-rrp-templates',
+      },
+      {
+        text: 'Monorepo Examples',
+        link: '/guides/airnode/monorepo-examples',
       },
     ],
   },
