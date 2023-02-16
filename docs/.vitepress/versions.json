@@ -1,8 +1,8 @@
 {
-  "airnodeLatest": "v1.0",
+  "airnodeLatest": "v0.11",
   "versionsAirnode": [
     {
-      "version": "v1.0",
+      "version": "v0.11",
       "path": "/reference/airnode/latest/"
     }
   ],

@@ -2,9 +2,9 @@
 title: Sponsor
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/sponsor.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---

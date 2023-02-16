@@ -1,8 +1,8 @@
 ---
 title: Configuration Files
-sidebarHeader: Explore
+sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
 path: /explore/reference/airnode/latest/understand/config-files.html
 outline: deep
 tags:
