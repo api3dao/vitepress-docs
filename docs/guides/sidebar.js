@@ -23,44 +23,42 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Deploying an Airnode',
-        link: '/guides/airnode/deploy-airnode/',
+        text: 'Self-Funded dAPIs',
         collapsible: true,
         collapsed: false,
         items: [
           {
-            text: 'Generating Airnode Config using ChainAPI',
-            link: '/guides/airnode/deploy-airnode/',
+            text: '• Getting Started with Self-Funded dAPIs',
+            link: '/guides/dapis/getting-started-self-funded-dapi/',
           },
           {
-            text: 'Deploying Airnode via AWS',
-            link: '/guides/airnode/quick-start-aws/',
-          },
-          {
-            text: 'Deploying Airnode via GCP',
-            link: '/guides/airnode/quick-start-gcp/',
-          },
-          {
-            text: 'Deploying Airnode locally using Docker',
-            link: '/guides/airnode/quick-start-container/',
+            text: '• Reading a Self-Funded dAPI Proxy',
+            link: '/guides/dapis/read-self-funded-dapi/',
           },
         ],
       },
+    ],
+  },
+  {
+    text: 'Airnode',
+    collapsible: true,
+    collapsed: false,
+    items: [
       {
-        text: 'Calling an Airnode',
-        link: '/guides/airnode/calling-an-airnode/',
+        text: 'Generating Airnode Config using ChainAPI',
+        link: '/guides/airnode/deploy-airnode/',
       },
       {
-        text: 'Making an RRP Request',
-        link: '/guides/airnode/rrp-request',
+        text: 'Deploying Airnode via AWS',
+        link: '/guides/airnode/quick-start-aws/',
       },
       {
-        text: 'Using RRP Templates',
-        link: '/guides/airnode/using-rrp-templates',
+        text: 'Deploying Airnode via GCP',
+        link: '/guides/airnode/quick-start-gcp/',
       },
       {
-        text: 'Monorepo Examples',
-        link: '/guides/airnode/monorepo-examples',
+        text: 'Deploying Airnode locally using Docker',
+        link: '/guides/airnode/quick-start-container/',
       },
     ],
   },
