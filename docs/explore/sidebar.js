@@ -96,11 +96,6 @@ module.exports = [
         text: 'Potential Obstacles',
         link: '/explore/airnode/potential-obstacles',
       },
-
-      {
-        text: 'Configuration Files',
-        link: '/explore/airnode/config-files',
-      },
     ],
   },
   /*{

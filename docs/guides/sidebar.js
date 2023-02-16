@@ -39,16 +39,32 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Quick Start AWS',
-        link: '/guides/airnode/quick-start-aws/',
+        text: 'Deploying an Airnode',
+        link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: 'Generating Airnode Config using ChainAPI',
+            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
+          },
+          {
+            text: 'Deploying Airnode via AWS',
+            link: '/guides/airnode/deploy-airnode/deploy-aws/',
+          },
+          {
+            text: 'Deploying Airnode via GCP',
+            link: '/guides/airnode/deploy-airnode/deploy-gcp/',
+          },
+          {
+            text: 'Deploying Airnode locally using Docker',
+            link: '/guides/airnode/deploy-airnode/deploy-container/',
+          },
+        ],
       },
       {
-        text: 'Quick Start GCP',
-        link: '/guides/airnode/quick-start-gcp/',
-      },
-      {
-        text: 'Quick Start Docker Container',
-        link: '/guides/airnode/quick-start-container/',
+        text: 'Calling an Airnode',
+        link: '/guides/airnode/calling-an-airnode/',
       },
       {
         text: 'Making an RRP Request',
@@ -85,16 +101,24 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'QRNG Example',
+        text: 'Getting Started with QRNG',
         link: '/guides/qrng/qrng-example',
       },
       {
-        text: 'Remix Example',
-        link: '/guides/qrng/remix-example/',
+        text: 'Using QRNG - Remix Guide',
+        link: '/guides/qrng/qrng-remix/',
       },
       {
-        text: 'Youtube QRNG-NFT Example',
-        link: '/guides/qrng/youtube-nft-example',
+        text: 'Building a Lottery with QRNG',
+        link: '/guides/qrng/lottery-guide/',
+      },
+      {
+        text: 'Minting Dynamic NFTs with QRNG',
+        link: '/guides/qrng/quantumon/',
+      },
+      {
+        text: 'QRNG YouTube Tutorials',
+        link: '/guides/qrng/youtube-demos/',
       },
     ],
   },
