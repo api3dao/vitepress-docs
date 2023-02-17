@@ -17,8 +17,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-<!--TocHeader /> <TOC class="table-of-contents" :include-level="[2,5]" /-->
-
 The processing schema is the same for both
 [pre-processing](./specification.md#_5-9-preprocessingspecifications) and
 [post-processing](./specification.md#_5-10-postprocessingspecifications).
@@ -30,11 +28,11 @@ so on.
 
 Every processing snippet follows this schema:
 
-- `environment` - Currently one of `Node 14` or `Node 14 async`. Both options
-  interpret the code as JavaScript and execute in Node.js version 14. The async
-  version can use asynchronous code. The code snippet is expected to call
-  `resolve(output)` with the output value as an argument. Airnode will use the
-  resolved value as the input to subsequent snippets (if defined).
+- `environment` - Currently one of `Node` or `Node async`. Both options
+  interpret the code as JavaScript and execute in Node.js. The async version can
+  use asynchronous code. The code snippet is expected to call `resolve(output)`
+  with the output value as an argument. Airnode will use the resolved value as
+  the input to subsequent snippets (if defined).
 - `value` - The processing code written as a string.
 - `timeoutMs` - The maximum timeout that this snippet can run. In case the
   timeout is exceeded an error is thrown.
@@ -67,7 +65,7 @@ should be escaped inside the `config.json` like this:
 
 ```json
 {
-  "environment": "Node 14",
+  "environment": "Node",
   "timeoutMs": 5000,
   "value": "console.log(`Received input \\${input}`);\nconst output = input;"
 }
@@ -139,7 +137,7 @@ endpoints: [
     "parameters": [],
     "preProcessingSpecifications": [
       {
-        "environment": "Node 14",
+        "environment": "Node",
         "timeoutMs": 5000,
         "value": "output = {randomNumber: Math.floor(Math.random() * 100)}"
       }
@@ -163,12 +161,12 @@ endpoints: [
 
 ### Example #2
 
-The code below is unrelated to the [use case](#use-case) mentioned earlier. This
-example creates an Airnode endpoint named `endpointThatSumsWith1000` with a
-parameter named `numberToSum`. Because there isn't an
-[operation field](specification.md#_5-2-operation) defined for this Airnode
-endpoint, a call to an API will not be made. The Airnode will instead execute a
-single specification defined in the
+The code below is unrelated to the [use case](#use-case-random-number) mentioned
+earlier. This example creates an Airnode endpoint named
+`endpointThatSumsWith1000` with a parameter named `numberToSum`. Because there
+isn't an [operation field](specification.md#_5-2-operation) defined for this
+Airnode endpoint, a call to an API will not be made. The Airnode will instead
+execute a single specification defined in the
 [preProcessingSpecifications](specification.md#_5-9-preprocessingspecifications)
 array.
 
@@ -194,7 +192,7 @@ endpoints: [
     ],
     "preProcessingSpecifications": [
       {
-        "environment": "Node 14",
+        "environment": "Node",
         "timeoutMs": 5000,
         "value": "output = {inputsSumWith1000: parseInt(input.numberToSum) + 1000}"
       }
