@@ -48,7 +48,7 @@ Read more in our
 
 :::
 
-## Advantages of self-funded dAPIs
+### Advantages of self-funded dAPIs
 
 Introducing a sponsor wallet mechanism for self-funded dAPIs provides serveral
 advantages for builders:
@@ -66,7 +66,7 @@ advantages for builders:
 Additionally, the API3 Market provides an intuitive interface to check the
 status of respective self-funded dAPIs and fund them accordingly.
 
-### Managed dAPIs
+# Managed dAPIs
 
 Managed dAPIs are sourced from multiple first-party oracles and aggregated using
 a median function. Compared to self-funded dAPIs, managed dAPIs are monetized,
@@ -102,13 +102,14 @@ capture value that would otherwise have gone to third parties.
 
 Learn more about Oracle Extractable Value within a summary of the
 
-## API3 Market
+# API3 Market
 
 The API3 Market lists all available dAPIs, self-funded and managed alike. It
 represents a hub that allows developers to:
 
-1 Browse through a catalogue of potential data feeds to integrate 2 Fund their
-operation in the case of self-funded dAPIs 3 Authorize for the upgrade to a
-managed version 4 Request new data types
+- Browse through a catalogue of potential data feeds to integrate
+- Fund their operation in the case of self-funded dAPIs
+- Authorize for the upgrade to a managed version
+- Request new data types
 
 Get started with dAPIs at the [API3 Market](https://market.api3.org/dapis).
