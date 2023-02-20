@@ -72,17 +72,17 @@ where they can be read directly through `readDataFeedValueWithId`.
 
 ::: info Read more
 
-Learn how Beacons are the building blocks for [Web3 data connectivity])(
-https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763).
+Learn how Beacons are the building blocks for
+[Web3 data connectivity](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763).
 
 :::
 
-### Why use dAPIs?
+## Why use dAPIs?
 
 Due to being composed out of first-party data feeds, dAPIs offer security,
 transparency, cost-efficiency and scalability in a turn-key package.
 
-Security
+_Security_
 
 Data used to update a first-party data feed is cryptographically signed by the
 owner of the data. This means that the data that will update a feed cannot be
@@ -90,7 +90,7 @@ tampered with once it leaves the source. Furthermore, the API providers host a
 first-party oracle node, Airnode, to push the data to the chain themselves. This
 renders denial of service attacks by third parties ineffective.
 
-Transparency
+_Transparency_
 
 The cryptographic signatures prove that the data that updates a feed comes
 directly from a specific API provider. Furthermore, Beacons that underpin dAPIs
@@ -99,7 +99,7 @@ which parameters. This provides complete transparency to the dApp developer,
 which is a big step from depending on a pseudonymous selection of third parties
 that intentionally obscure their data sources.
 
-Cost-efficiency
+_Cost-efficiency_
 
 dAPIs are cost efficient compared to third-party data feeds, as the user does
 not need to pay middlemen node operators for their services. Furthermore,
@@ -107,7 +107,7 @@ first-party data feeds do not require redundancy against middlemen layer
 attacks. This makes single-Beacon dAPIs feasible, and allows API3 to provide a
 wide variety of data feeds in a cost-efficient way.
 
-Scalability
+_Scalability_
 
 An inherently secure and cost-efficient data feed design allows API3 to build a
 large number of dAPIs on many chains. This is supplemented by purpose-designed
