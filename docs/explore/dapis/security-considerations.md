@@ -26,6 +26,7 @@ The multi-sig setup is a 3/n with members of the Core Technical Team (CTT) along
 with members of the dAPI team being part of it. When reading dAPIs like e.g.
 BTC/USD, this multi-sig could alter what data is being consumed by pointing the
 dAPI towards a different ID, which can cause intended or unintended damage.
+
 Similar to other oracle network designs, like the Chainlink Contract
 upgradability by a 4/9 multi-sig, there are trust implications being made that
 such abilities will not be abused. However, the long term goal is to limit this
