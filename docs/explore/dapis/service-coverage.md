@@ -100,7 +100,10 @@ capture value that would otherwise have gone to third parties.
 
 ::: info Read more
 
-Learn more about Oracle Extractable Value within a summary of the
+Learn more about Oracle Extractable Value in a summary of the
+[OEV Litepaper](https://medium.com/api3/oracle-extractable-value-oev-13c1b6d53c5b)
+
+:::
 
 # API3 Market
 
