@@ -28,8 +28,8 @@ chains.
 
 # Introducing dAPIs
 
-A dAPI is the interface that smart contracts connect to to access data feed
-aservices.
+A dAPI is the interface that smart contracts connect to access data feed
+services through.
 
 Through the use of the function `setDapiName` API3 can associate the ID of a
 Beacon or Beacon Set with a human-readable name like AVAX/USD. The benefit of
