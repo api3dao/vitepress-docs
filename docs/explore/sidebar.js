@@ -46,7 +46,7 @@ module.exports = [
         link: '/explore/dapis/why-use-dapis',
       },
       {
-        text: 'API Providers—Why power dAPIs?',
+        text: 'How do dAPIs work?',
         link: '/explore/dapis/why-power',
       },
       {

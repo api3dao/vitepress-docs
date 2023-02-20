@@ -1,9 +1,9 @@
 ---
-title: How are dAPIs maintained?
+title: Oracle Extractable Value
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/how-are-dapis-maintained.html
+path: /explore/dapis/oev.html
 outline: deep
 tags:
 ---
@@ -13,5 +13,3 @@ tags:
 <SearchHighlight/>
 
 # {{$frontmatter.title}}
-
-dAPIs 
