@@ -12,7 +12,7 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+# Understanding Airnode
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
 That way, they can provide data to any on-chain _decentralized app_ \(dApp\)
@@ -22,26 +22,30 @@ Airnode lets dApp developers write _smart contracts_ that interact with
 off-chain data of API providers at ease. It's designed to be easily deployed by
 any API provider with almost no maintenance.
 
-Learn more about the Airnode experience in Section 4 of the
-<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">API3
-Whitepaper</a><ExternalLinkImage/>, _Airnode: A Node Designed for First-Party
-Oracles_.
+::: info Learn more
+
+Read about Airnode in the _API3 Whitepaper:
+<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank"> A Node Designed
+for First-Party Oracles.</a><ExternalLinkImage/>_
+
+:::
 
 ## The API Connectivity Problem
 
 <!--Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid APIs described above.-->
 
 Smart contracts operating on a blockchain are limited in their access to
-off-chain data, this phenomenon is referred to as the ‘Oracle Problem. All the
+off-chain data. This phenomenon is referred to as the Oracle Problem. All the
 game theoretic and cryptographic methods proposed for various oracle solutions
 essentially aim to provide smart contracts access to paid APIs.
 
-Therefore, it would be more accurate to define the problem at hand as _the API
-connectivity problem_.
+As such it would be more accurate to define the problem at hand as _the API
+connectivity problem_. Solving the API connectivty problem has been a key
+consideration in the design of API3's offerings.
 
-As you read about API3 offerings, you will discover that this redefinition will
-have ripple effects across the entire solution, from how the ecosystem is built
-to the lowest levels of the protocol.
+As you read more about API3, you will discover that this redefinition will have
+ripple effects across the entire solution, from how the ecosystem is built to
+the lowest levels of the protocol.
 
 Additionally, existing oracle solutions fall short because they fail to make
 this distinction, resulting in inferior solutions that depend on third-party
@@ -121,6 +125,12 @@ cases being realized for two key reasons:
    Providers
 2. The flexibility of being able to utilize Airnode to connect smart contracts
    to APIs during the devlopment cycle
+
+::: tip Get started
+
+Get started as an API Provider [here](link.to.guide)
+
+:::
 
 ## Oracle Integration Standards (OIS)
 

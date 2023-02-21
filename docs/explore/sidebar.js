@@ -65,7 +65,7 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'API Connectivity Problem',
+        text: 'What is Airnode?',
         link: '/explore/airnode/api-connectivity-problem',
       },
       {
@@ -77,11 +77,11 @@ module.exports = [
         link: '/explore/airnode/why-first-party-oracles',
       },
       {
-        text: 'monetizing-apis-in-web3',
+        text: 'Monetizing APIs in Web3',
         link: '/explore/airnode/monetizing-apis-in-web3',
       },
       {
-        text: 'unlocking-real-world-data',
+        text: 'Accessing first-party data feeds',
         link: '/explore/airnode/unlocking-real-world-data',
       },
     ],
