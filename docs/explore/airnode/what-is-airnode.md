@@ -3,7 +3,7 @@ title: What is Airnode?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/api-connectivity-problem.html
+path: /explore/airnode/what-is-airnode.html
 outline: deep
 tags:
 ---
@@ -12,11 +12,12 @@ tags:
 
 <SearchHighlight/>
 
-# Understanding Airnode
+# {{$frontmatter.title}}
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
-That way, they can provide data to any on-chain _decentralized app_ \(dApp\)
-that's interested in their services, all without an intermediary.
+Airnode allows providers to publish data feeds
+([dAPIs](/explore/dapis/what-are-dapis.md)) to any on-chain _decentralized app_
+\(dApp\) that's interested in their services, all without an intermediary.
 
 Airnode lets dApp developers write _smart contracts_ that interact with
 off-chain data of API providers at ease. It's designed to be easily deployed by
@@ -53,7 +54,7 @@ oracles and ecosystems that exclude API providers. As such, API3 believes the
 oracle problem is ill-posed, instead we are faced with an API Connectivity
 Problem.
 
-## What is Airnode?
+## Key features
 
 Airnode is a fully-serverless oracle node that is designed specifically for API
 providers to operate their own oracles. Airnode has been designed to be a
@@ -84,7 +85,7 @@ oracle for free and start paying only after they start generating revenue. For
 smart contracts this makes accessing real world data economical, when
 considering the gas fees for oracle transactions.
 
-### 4. Fairer API Provider incentives
+### 4. Equitable API Provider incentives
 
 Airnodes protocol is designed in a way that the requester covers all gas costs
 for oracle transactions. Operating Airnode does not require the node operators
@@ -99,7 +100,7 @@ published by API3.
 
 :::
 
-## Airnode unlocks real world data for smart contracts
+## Unlock real world data for smart contracts
 
 <!--Airnode is designed to be a simple and straightforward solution for API
 providers, allowing them to make their API accessible over the Web with no

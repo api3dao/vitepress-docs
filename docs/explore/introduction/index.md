@@ -110,7 +110,7 @@ authentication, to name a few.
 
 ::: tip Learn
 
-Read more on how [Airnode works](/explore/airnode/api-connectivity-problem.md).
+Read more on how [Airnode works](/explore/airnode/what-is-airnode.md).
 
 :::
 

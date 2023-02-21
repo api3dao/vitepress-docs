@@ -24,11 +24,11 @@ on Web3.
 ## End-to-end first-party!
 
 API3 builds API provider-centric oracle solutions as first-party oracles known
-as [Airnode](../airnode/api-connectivity-problem.md). These services are
-provided directly by the API provider to the data consumer, with no middlemen,
-as dAPIs. As a result, they enable unmatched security and source transparency in
-a cost-efficient manner. Cutting out the rent-seeking middlemen in this way
-allows API providers to monetize their services on Web3 effectively.
+as [Airnode](/explore/airnode/what-is-airnode.md). These services are provided
+directly by the API provider to the data consumer, with no middlemen, as dAPIs.
+As a result, they enable unmatched security and source transparency in a
+cost-efficient manner. Cutting out the rent-seeking middlemen in this way allows
+API providers to monetize their services on Web3 effectively.
 
 dAPIs are API provider-centric versions of live data feeds, which are typically
 used in Web3 applications of financial nature. By directly providing
@@ -61,7 +61,7 @@ Join the growing number of API providers working with API3 to provide
 first-party oracle services. Airnode is designed specifically for API providers
 to operate, and API3 will always be here to help.
 
-- [What is Airnode?](/explore/airnode/api-connectivity-problem.md)
+- [What is Airnode?](/explore/airnode/what-is-airnode.md)
 - [Why first-party oracles?](/explore/airnode/why-first-party-oracles.md)
 - See the [Airnode](/reference/airnode/latest/) technical reference
   documentation.
