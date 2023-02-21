@@ -1,14 +1,5 @@
 {
   "1": {
-    "title": "What is Airnode?",
-    "sidebarHeader": "Explore",
-    "sidebarSubHeader": null,
-    "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/api-connectivity-problem.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "2": {
     "title": "Ethereum providers",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -17,7 +8,7 @@
     "outline": "deep",
     "tags": null
   },
-  "3": {
+  "2": {
     "title": "Implementation",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -26,7 +17,7 @@
     "outline": "deep",
     "tags": null
   },
-  "4": {
+  "3": {
     "title": "Potential Obstacles (of operating oracle nodes)",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -35,7 +26,7 @@
     "outline": "deep",
     "tags": null
   },
-  "5": {
+  "4": {
     "title": "Pros and Cons (of using Airnode)",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -44,7 +35,7 @@
     "outline": "deep",
     "tags": null
   },
-  "6": {
+  "5": {
     "title": "The Airnode Protocol",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -53,12 +44,21 @@
     "outline": "deep",
     "tags": null
   },
-  "7": {
+  "6": {
     "title": "Accessing first-party data feeds",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
     "path": "/explore/airnode/unlocking-real-world-data.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "7": {
+    "title": "What is Airnode?",
+    "sidebarHeader": "Explore",
+    "sidebarSubHeader": null,
+    "pageHeader": "Explore → Airnode",
+    "path": "/explore/airnode/what-is-airnode.html",
     "outline": "deep",
     "tags": null
   },

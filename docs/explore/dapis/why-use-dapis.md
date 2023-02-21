@@ -22,10 +22,9 @@ transparency, cost-efficiency, and scalability in a turn-key package.
 Data used to update a first-party data feed is cryptographically signed by the
 owner of the data. This means that the data that will update a feed cannot be
 tampered with once it leaves the source. Furthermore, the API providers host a
-first-party oracle node,
-[Airnode](/explore/airnode/api-connectivity-problem.html), to push the data to
-the chain themselves. This renders denial of service attacks by third parties
-ineffective.
+first-party oracle node, [Airnode](/explore/airnode/what-is-airnode.md), to push
+the data to the chain themselves. This renders denial of service attacks by
+third parties ineffective.
 
 ## Transparency
 

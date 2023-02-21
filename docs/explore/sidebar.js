@@ -66,7 +66,7 @@ module.exports = [
     items: [
       {
         text: 'What is Airnode?',
-        link: '/explore/airnode/api-connectivity-problem',
+        link: '/explore/airnode/what-is-airnode',
       },
       {
         text: 'How does Airnode work?',
@@ -86,17 +86,6 @@ module.exports = [
       },
     ],
   },
-  /*{
-    text: 'ChainAPI',
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: 'What is ChainAPI?',
-        link: '/explore/chainapi/',
-      },
-    ],
-  },*/
   {
     text: 'QRNG',
     collapsible: true,
