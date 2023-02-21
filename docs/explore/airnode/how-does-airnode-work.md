@@ -3,7 +3,7 @@ title: Implementation
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/implementation.html
+path: /explore/airnode/how-does-airnode-work.html
 outline: deep
 tags:
 ---
@@ -14,7 +14,8 @@ tags:
 
 # How does Airnode work?
 
-Airnode is a serverless oracle node implemented with a “set and forget”
+Airnode is a serverless oracle node implemented with a
+[set and forget](/explore/airnode/api-connectivity-problem.html#_1-set-and-forget)
 philosophy that brings off-chain data from APIs to on-chain smart contracts. It
 consists of two parts:
 
@@ -129,7 +130,7 @@ blockchain service provider as a trusted party.
 ::: tip Learn more
 
 Read more about how Airnode works in the
-[Airnode developer reference section](vitepress-docs/reference/airnode/latest/understand/).
+[Airnode developer reference section](/reference/airnode/latest/understand/).
 
 :::
 

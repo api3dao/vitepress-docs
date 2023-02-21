@@ -68,8 +68,8 @@ API providers to be the ideal first-party oracle service providers.
 <!--In this regard,
 QRNG is the closest thing to a first-party RNG service.-->
 
-After deploying an [Airnode](/explore/airnode/implementation.md) that is hosted
-by the API Provider developers can then access QRNG. It utilizes the
+After deploying an [Airnode](/explore/airnode/how-does-airnode-work.md) that is
+hosted by the API Provider developers can then access QRNG. It utilizes the
 request-response protocol to serve data on-chain, serving data as the API3 QRNG
 requester is called from a dApp. There are currently a handful of QRNG
 providers, with the ability for this number to expand in the
