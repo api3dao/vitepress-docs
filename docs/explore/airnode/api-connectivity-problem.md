@@ -12,7 +12,7 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+# Understanding Airnode
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
 That way, they can provide data to any on-chain _decentralized app_ \(dApp\)
