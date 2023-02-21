@@ -14,7 +14,8 @@ tags:
 
 # How does Airnode work?
 
-Airnode is a serverless oracle node implemented with a “set and forget”
+Airnode is a serverless oracle node implemented with a
+[set and forget](/explore/airnode/api-connectivity-problem.html#_1-set-and-forget)
 philosophy that brings off-chain data from APIs to on-chain smart contracts. It
 consists of two parts:
 

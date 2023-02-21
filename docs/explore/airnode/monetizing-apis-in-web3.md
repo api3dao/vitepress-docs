@@ -108,8 +108,10 @@ should be understood.
 
 - **First-party** oracles overcome the significant disadvantages of third-party
   oracle node solutions that use middlemen to deliver APIs to the blockchain.
-- Airnode's **simple** "set and forget" design avoids the time, complexity, and
-  cost of other third-party oracle node solutions.
+- Airnode's **simple**
+  [set and forget](/explore/airnode/api-connectivity-problem.html#_1-set-and-forget)
+  design avoids the time, complexity, and cost of other third-party oracle node
+  solutions.
 - Airnode is **stateless** and treats the blockchain as the single source of
   truth. This alone solves the majority of operational problems of traditional
   third-party oracle nodes while providing an overall higher level of
@@ -154,4 +156,6 @@ large majority of use cases.
 
 Providing the appropriate preparation has taken place deploying Airnode is a
 simple and low-effort process that doesn't require specific developer resources
-and benefits from the set and forget design principles.
+and benefits from the
+[set and forget](/explore/airnode/api-connectivity-problem.html#_1-set-and-forget)
+design principles.
