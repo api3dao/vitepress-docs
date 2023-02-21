@@ -12,7 +12,7 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+# Understanding Airnode
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
 That way, they can provide data to any on-chain _decentralized app_ \(dApp\)
@@ -22,30 +22,34 @@ Airnode lets dApp developers write _smart contracts_ that interact with
 off-chain data of API providers at ease. It's designed to be easily deployed by
 any API provider with almost no maintenance.
 
-Learn more about the Airnode experience in Section 4 of the
-<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">API3
-Whitepaper</a><ExternalLinkImage/>, _Airnode: A Node Designed for First-Party
-Oracles_.
+::: info Learn more
+
+Read about Airnode in the _API3 Whitepaper:
+<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank"> A Node Designed
+for First-Party Oracles.</a><ExternalLinkImage/>_
+
+:::
 
 ## The API Connectivity Problem
 
 <!--Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid APIs described above.-->
 
 Smart contracts operating on a blockchain are limited in their access to
-off-chain data, this phenomenon is referred to as the ‘Oracle Problem. All the
+off-chain data. This phenomenon is referred to as the Oracle Problem. All the
 game theoretic and cryptographic methods proposed for various oracle solutions
 essentially aim to provide smart contracts access to paid APIs.
 
-Therefore, it would be more accurate to define the problem at hand as _the API
-connectivity problem_.
+As such it would be more accurate to define the problem at hand as _the API
+connectivity problem_. Solving the API connectivity problem has been a key
+consideration in the design of API3's offerings.
 
-As you read about API3 offerings, you will discover that this redefinition will
-have ripple effects across the entire solution, from how the ecosystem is built
-to the lowest levels of the protocol.
+As you read more about API3, you will discover that this redefinition will have
+ripple effects across the entire solution, from how the ecosystem is built to
+the lowest levels of the protocol.
 
 Additionally, existing oracle solutions fall short because they fail to make
 this distinction, resulting in inferior solutions that depend on third-party
-oracles and ecosystems that exclude API providers. As such, API3 belives the
+oracles and ecosystems that exclude API providers. As such, API3 believes the
 oracle problem is ill-posed, instead we are faced with an API Connectivity
 Problem.
 
@@ -58,7 +62,7 @@ contract platforms, with no overhead or payment token friction.
 
 It addresses many of the issues API providers face in relation to oracle nodes:
 
-1. **Set and forget**
+### 1. Set and forget
 
 Airnode does not require any specific know-how to operate. In fact, it is
 difficult to even speak of any operation as Airnode is designed around the "set
@@ -66,13 +70,13 @@ and forget" principle. Airnode's stateless, serverless technology eliminates the
 need for day-to-day maintenance and monitoring, and provides superior resilience
 against permanent downtime or operator interventions.
 
-2. **Ease of deployment**
+### 2. Ease of deployment
 
 Oracle tooling has been developed to make Airnode simple and easy to deploy. A
 basic understanding of API operation is all that is needed with the process
-taking no longer than 30mins (should the appropiate preparation be in place).
+taking no longer than 30mins (should the appropriate preparation be in place).
 
-3. **Efficienct and flexible operation**
+### 3. Efficient and flexible operation
 
 It is built on services priced on-demand, meaning that the node operators are
 charged only by the usage of their node. This allows API providers to run an
@@ -80,10 +84,10 @@ oracle for free and start paying only after they start generating revenue. For
 smart contracts this makes accessing real world data economical, when
 considering the gas fees for oracle transactions.
 
-4. **Fairer API Provider incentives**
+### 4. Fairer API Provider incentives
 
 Airnodes protocol is designed in a way that the requester covers all gas costs
-for oracle transactions. Opearting Airnode does not require the node operators
+for oracle transactions. Operating Airnode does not require the node operators
 to handle cryptocurrency. Authentication happens through tooling within the API3
 ecosystem.
 
@@ -122,6 +126,12 @@ cases being realized for two key reasons:
 2. The flexibility of being able to utilize Airnode to connect smart contracts
    to APIs during the devlopment cycle
 
+::: tip Get started
+
+Get started as an API Provider [here](link.to.guide)
+
+:::
+
 ## Oracle Integration Standards (OIS)
 
 To reach its full potential, API3 will need hundreds, if not thousands, of first
@@ -152,6 +162,13 @@ The software is feature-complete for current protocols, and further development
 will be funded by API3 in the form of grants.-->
 
 ## How does Airnode work?
+
+::: danger Needed?
+
+The next section in the Sidebar is the next step in hte sidebar's progression.
+Below is the quick link to the same.
+
+:::
 
 Airnode is has made it easy for API Providers to monetize their data to
 decentralized applications (dApps). To understand how Airnode serves data

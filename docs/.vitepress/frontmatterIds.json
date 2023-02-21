@@ -22,7 +22,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/implementation.html",
+    "path": "/explore/airnode/how-does-airnode-work.html",
     "outline": "deep",
     "tags": null
   },
@@ -31,7 +31,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/potential-obstacles.html",
+    "path": "/explore/airnode/monetizing-apis-in-web3.html",
     "outline": "deep",
     "tags": null
   },
@@ -54,11 +54,11 @@
     "tags": null
   },
   "7": {
-    "title": "Design Philosophy",
+    "title": "Accessing first-party data feeds",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → Airnode",
-    "path": "/explore/airnode/design-philosophy.html",
+    "path": "/explore/airnode/unlocking-real-world-data.html",
     "outline": "deep",
     "tags": null
   },
@@ -1211,20 +1211,11 @@
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
     "pageHeader": "Reference → QRNG",
-    "path": "/reference/qrng/index.html",
+    "path": "/reference/qrng/chains.html",
     "outline": "deep",
     "tags": null
   },
   "126": {
-    "title": "Chains",
-    "sidebarHeader": "QRNG",
-    "sidebarSubHeader": null,
-    "pageHeader": "Reference → QRNG",
-    "path": "/reference/qrng/index.html",
-    "outline": "deep",
-    "tags": ["qrng", "anu"]
-  },
-  "127": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1233,7 +1224,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "128": {
+  "127": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1242,7 +1233,7 @@
     "outline": "deep",
     "tags": null
   },
-  "129": {
+  "128": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1251,7 +1242,7 @@
     "outline": "deep",
     "tags": null
   },
-  "130": {
+  "129": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1260,7 +1251,7 @@
     "outline": "deep",
     "tags": ["qrng", "solidity", "example", "remix"]
   },
-  "131": {
+  "130": {
     "title": "makeFullRequest()",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
