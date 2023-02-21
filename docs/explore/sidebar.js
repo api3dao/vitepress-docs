@@ -65,7 +65,7 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'API Connectivity Problem',
+        text: 'What is Airnode?',
         link: '/explore/airnode/api-connectivity-problem',
       },
       {
