@@ -22,7 +22,7 @@
       <div
         style="margin-top: -3px; font-weight: 700; font-family: Comic Sans MS"
       >
-        {{ type }}
+        {{ type }} <span v-if="type == 'REPO'">➚</span>
       </div>
     </button>
 
