@@ -32,7 +32,7 @@ container, in this case a locally run Docker container. It uses an API endpoint
 current value of a coin. This guide does not detail the overall configuration of
 an Airnode, it is just a quick start.
 
-## 1. Configuration Files
+## Configuration Files
 
 An Airnode Docker container deployment uses a Docker image (called
 [client image](/reference/airnode/latest/docker/client-image.md)) which requires
@@ -43,11 +43,11 @@ These files have been created and only require a few minor changes on your part
 to make the deployment of the demo Airnode successful. These changes are needed
 to supply a chain provider url and a mnemonic.
 
-## 2. Install Prerequisites
+## 1. Install Prerequisites
 
 Install the [Docker Desktop](https://docs.docker.com/get-docker/) and launch it.
 
-## 3. Project Folder
+## 2. Project Folder
 
 Download the <a href="/zip-files/quick-start-container.zip" download>
 quick-start-container.zip</a> project folder. Extract it into any location.
@@ -58,7 +58,7 @@ quick-start-container
 └── secrets.env
 ```
 
-## 4. Prepare Configuration Files
+## 3. Prepare Configuration Files
 
 Prepare the two configuration files `config.json` and `secrets.env`. By default,
 the Airnode client image looks for them in the project root directory.
@@ -107,20 +107,13 @@ each of the there fields.
 - `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
   Gateway. The expected length is 30 - 128 characters.
 
-## 5. Deploy
+## 4. Deploy
 
 Make sure Docker is running and then run the Airnode client container from the
-root of the `quick-start-container` folder.
+root of the `quick-deploy-container` folder.
 
-Note that `--publish HOST_PORT:CONTAINER_PORT` parameter can have different
-values for the `HOST_PORT` and `CONTAINER_PORT`. E.g. parameter
-`--publish 8000:3000` would expose the web server on port 8000 on the host
-machine. When using [host networking](https://docs.docker.com/network/host/)
-(recommended for Linux) change the port via the
-[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
-property inside config.json.
-
-Run the following command to deploy the Airnode locally.
+Run the following command to deploy the Airnode locally. Note that the version
+of `api3/airnode-client` matches the `nodeVersion` in the config.json file.
 
 ::: code-group
 
@@ -132,14 +125,6 @@ docker run --detach \
   api3/airnode-client:0.9.2
 ```
 
-```sh [Linux (host networking)]
-docker run --detach \
-  --volume "$(pwd):/app/config" \
-  --name quick-start-container-airnode \
-  --network host \
-  api3/airnode-client:0.9.2
-```
-
 ```batch [Windows CMD]
 docker run --detach ^
   --volume "%cd%:/app/config" ^
@@ -148,9 +133,31 @@ docker run --detach ^
   api3/airnode-client:0.9.2
 ```
 
+```sh [Linux (host networking)]
+docker run --detach \
+  --volume "$(pwd):/app/config" \
+  --name quick-start-container-airnode \
+  --network host \
+  api3/airnode-client:0.9.2
+```
+
 :::
 
-## 6. Test the Airnode
+Note that `--publish HOST_PORT:CONTAINER_PORT` parameter (Mac/WSL2/PowerShell)
+can have different values for the `HOST_PORT` and `CONTAINER_PORT`. E.g.
+parameter `--publish 8000:3000` would expose the web server on port 8000 on the
+host machine.
+
+For Linux, it's recommended to use
+[host networking](https://docs.docker.com/network/host/). When using host
+networking, change the port via
+[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
+property inside config.json.
+
+In the Docker desktop application view the container
+(quick-deploy-container-airnode) and its logs.
+
+## 5. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) without
@@ -246,7 +253,7 @@ curl -X POST \
 
 <TutorialResponse/>
 
-## 7. Start and Stop
+## 6. Start and Stop
 
 You can start and stop the Airnode with the Docker desktop application or via
 terminal commands.
@@ -257,7 +264,7 @@ docker stop quick-start-container-airnode
 docker start quick-start-container-airnode
 ```
 
-## 8. Logs
+## 7. Logs
 
 You can view the Airnode's logs with the Docker desktop application or via
 terminal commands.
@@ -268,7 +275,7 @@ docker logs quick-start-container-airnode
 docker logs --follow quick-start-container-airnode
 ```
 
-## 9. Remove the Airnode
+## 8. Remove the Airnode
 
 When you are done with the demo Airnode you can remove it. Do so using the
 Docker desktop application or by using the following terminal command. When

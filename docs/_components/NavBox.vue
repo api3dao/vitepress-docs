@@ -107,7 +107,7 @@ export default {
 
 <style scoped>
 .api3-nav-box {
-  width: 240px;
+  width: 200px;
   min-height: 115px;
   border: lightgrey solid 2px;
   border-radius: 0.3em;

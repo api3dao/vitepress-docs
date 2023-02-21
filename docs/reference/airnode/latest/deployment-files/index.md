@@ -2,9 +2,9 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Deployment Files
+pageHeader: Reference → Airnode → v0.11 → Deployment Files
 path: /reference/airnode/latest/deployment-files/index.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---

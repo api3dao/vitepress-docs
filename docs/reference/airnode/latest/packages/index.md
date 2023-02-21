@@ -2,9 +2,9 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Packages
+pageHeader: Reference → Airnode → v0.11 → Packages
 path: /reference/airnode/latest/packages/index.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -76,5 +76,5 @@ A package that can be used to validate Airnode configuration.
 The `airnode-ois` monorepo package was removed from the Airnode repo and is now
 in its own repo (`ois`) starting with Airnode `v0.8`.
 
-[**ois**:](https://github.com/api3dao/ois/tree/v1.4.0) Types for
+[**ois**:](https://github.com/api3dao/ois/tree/v2.0.0) Types for
 [Oracle Integration Specification (OIS)](/reference/ois/latest/specification.md).

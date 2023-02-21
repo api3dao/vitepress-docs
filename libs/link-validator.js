@@ -158,7 +158,11 @@ async function loadLinks() {
         // Go thru the links and add to master list (linksObj)
         for (var x = 0; x < links.length; x++) {
           let url = links[x];
-          if (url.indexOf('http://') === -1 && url.indexOf('https://') === -1) {
+          if (
+            url &&
+            url.indexOf('http://') === -1 &&
+            url.indexOf('https://') === -1
+          ) {
             url = baseURL + url;
             linksObj[url] = 'LINK src: ' + filePath;
           } else {

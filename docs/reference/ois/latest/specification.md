@@ -2,7 +2,7 @@
 title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v1.4
+pageHeader: Reference → OIS → v2.0
 path: /reference/ois/latest/specification.html
 version:
 outline: deep
@@ -371,19 +371,19 @@ node.
     ],
     "preProcessingSpecifications": [
       {
-        "environment": "Node 14",
+        "environment": "Node",
         "value": "const output = {...input, from: \"eth\"};",
         "timeoutMs": "5000"
       },
       {
-        "environment": "Node 14",
+        "environment": "Node",
         "value": "const output = {...input, from: input.from.toUpperCase()};",
         "timeoutMs": "5000"
       }
     ],
     "postProcessingSpecifications": [
       {
-        "environment": "Node 14",
+        "environment": "Node",
         "value": "const output = Math.round(input.price * 1000);",
         "timeoutMs": "5000"
       }
@@ -592,16 +592,16 @@ See the [Pre/Post Processing](./processing.md) doc for additional details.
 ```json
 "preProcessingSpecifications": [
   {
-    // Execute synchronously in Node.js version 14
-    "environment": "Node 14",
+    // Execute synchronously in Node.js
+    "environment": "Node",
     // Define a new "from" parameter with value "eth"
     "value": "const output = {...input, from: \"eth\"};",
     // Run for 5 seconds maximum
     "timeoutMs": "5000"
   },
   {
-    // Execute synchronously in Node.js version 14
-    "environment": "Node 14",
+    // Execute synchronously in Node.js
+    "environment": "Node",
     // Uppercase the "from" parameter defined by the previous snippet
     "value": "const output = {...input, from: input.from.toUpperCase()};",
     // Run for 5 seconds maximum
@@ -622,8 +622,8 @@ See the [Pre/Post Processing](./processing.md) doc for additional details.
 ```json
 "postProcessingSpecifications": [
   {
-    // Execute synchronously in Node.js version 14
-    "environment": "Node 14",
+    // Execute synchronously in Node.js
+    "environment": "Node",
     // Multiply the API return value by 1000 and round it to an integer
     "value": "const output = Math.round(input.price * 1000);",
     // Run for 5 seconds maximum
