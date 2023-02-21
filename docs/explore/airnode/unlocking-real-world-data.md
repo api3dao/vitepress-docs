@@ -1,9 +1,9 @@
 ---
-title: Design Philosophy
+title: Accessing first-party data feeds
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/design-philosophy.html
+path: /explore/airnode/unlocking-real-world-data.html
 outline: deep
 tags:
 ---
@@ -19,7 +19,7 @@ problem, API3 believes that an oracle node should be designed to interface APIs
 with smart contract platforms very well<!-- rather than as a sandbox that can
 purportedly be used for any imaginable purpose-->. The API3 solution to the API connectivity
 problem requires an expansive ecosystem of first-party oracles. Within this API3
-sees thousands of API Providers participating in the Web3 API Economny.
+sees thousands of API Providers participating in the Web3 API Economy.
 
 That said Airnode and first-party oracles will also be a fundamental development
 tool for smart contract developers.
@@ -104,32 +104,35 @@ As a developer it helps to understand what a **requester** is and what a
 
 ### What is a Requester?
 
-The term [requester](../concepts/requester.md) is important to remember. When
-requester is mentioned, the reference is to your smart contract that calls an
-Airnode.
+The term [requester](/reference/airnode/latest/concepts/requester.md) is
+important to remember. When requester is mentioned, the reference is to your
+smart contract that calls an Airnode.
 
 > <img src="/reference/airnode/latest/assets/images/requesters-sponsors-1.png" width="350px"/>
 
 As an example see the `myContract.sol` contract in the diagram within the
-[Overview](./) doc, it is a requester.
+[dAPP Developers Overview](/reference/airnode/latest/developers/) doc, it is a
+requester.
 
 ### What is a Sponsor?
 
-Equally important is the term [sponsor](../concepts/sponsor.md). A sponsor is an
-entity such as yourself, an organization, etc. Sponsors create relationships
-between requesters and Airnodes.
+Equally important is the term
+[sponsor](/reference/airnode/latest/concepts/sponsor.md). A sponsor is an entity
+such as yourself, an organization, etc. Sponsors create relationships between
+requesters and Airnodes.
 
 ### Sponsor's Requester/Airnode Relationships
 
 As a sponsor you will use the public address from an account within a mnemonic
 you own to "**sponsor a requester**" and then use the public address (known as a
-[sponsorAddress](../concepts/sponsor.md#sponsoraddress)) to "**derive a
-[sponsorWallet](../concepts/sponsor.md#sponsorwallet)**" for an Airnode. This
-action creates a relationship between a sponsor's requester and a particular
-Airnode. You do this because a sponsor is the entity that pays for the
-fulfillment of a request, the gas costs the Airnode will incur. These costs will
-be withdrawn from the `sponsorWallet` of the Airnode when the requester calls
-it.
+[sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress))
+to "**derive a
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)**"
+for an Airnode. This action creates a relationship between a sponsor's requester
+and a particular Airnode. You do this because a sponsor is the entity that pays
+for the fulfillment of a request, the gas costs the Airnode will incur. These
+costs will be withdrawn from the `sponsorWallet` of the Airnode when the
+requester calls it.
 
 ::: info Learn more
 
@@ -144,12 +147,12 @@ developer resource
 
 Within the explore section we have discussed the foundational aspects of Airnode
 and first-party oracles. However, as API are increasingly complex Airnode will
-be required to accomondate these developments. Additionally, API functionality
-needs to be comptable with an oracle node.
+be required to accommodate these developments. Additionally, API functionality
+needs to be compatible with an oracle node.
 
 ::: info Read more
 
-This functionality includes fucntions such as
+This functionality includes functions such as
 [Authorizers](/reference/airnode/latest/understand/apply-auth.html). An Airnode
 can authorize smart contracts (know as requesters) access to its endpoints using
 Authorizers.

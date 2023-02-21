@@ -3,7 +3,7 @@ title: Implementation
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/implementation.html
+path: /explore/airnode/how-does-airnode-work.html
 outline: deep
 tags:
 ---
@@ -129,7 +129,7 @@ blockchain service provider as a trusted party.
 ::: tip Learn more
 
 Read more about how Airnode works in the
-[Airnode developer reference section](vitepress-docs/reference/airnode/latest/understand/).
+[Airnode developer reference section](/reference/airnode/latest/understand/).
 
 :::
 

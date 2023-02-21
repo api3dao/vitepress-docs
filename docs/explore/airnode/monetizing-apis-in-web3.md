@@ -3,7 +3,7 @@ title: Potential Obstacles (of operating oracle nodes)
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
-path: /explore/airnode/potential-obstacles.html
+path: /explore/airnode/monetizing-apis-in-web3.html
 outline: deep
 tags:
 ---
@@ -18,8 +18,8 @@ The goal of API3 is to provide smart contract developers with an easy way to
 access off-chain resources from within their smart contracts, without having to
 worry about the security and trust implications of doing so.
 
-To acheive this goal it is imperitive API3 enables those opearting off-chain
-resources to be able to easilly serve and monetize their data in Web3.
+To achieve this goal it is imperative API3 enables those operating off-chain
+resources to be able to easily serve and monetize their data in Web3.
 
 ## Airnode is built with API Providers in mind
 
@@ -28,7 +28,7 @@ obstacles that might prevent them from oracle onboarding and operation. The key
 insights identified were:
 
 1. API Providers are not familiar with blockchain technology
-2. Hiring for skillsets of blockchain validator operation is difficult
+2. Hiring for skill sets of blockchain validator operation is difficult
 3. API Providers do not want to use cryptocurrencies
 
 ### Familiarity with blockchain is not required
@@ -152,6 +152,6 @@ large majority of use cases.
 
 # Oracle tooling
 
-Providing the appropiate prepartion has taken place deploying Airnode is a
+Providing the appropriate preparation has taken place deploying Airnode is a
 simple and low-effort process that doesn't require specific developer resources
-and benefits from the [set and forget]() design principles.
+and benefits from the set and forget design principles.
