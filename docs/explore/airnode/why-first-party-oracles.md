@@ -12,7 +12,7 @@ tags:
 
 <SearchHighlight/>
 
-# Why first-party oracles?
+# {{$frontmatter.title}}
 
 First-party oracles are integral to the API3 solution. Through using Airnode a
 smart contract is served by an oracle that is operated by the owner of an API,
