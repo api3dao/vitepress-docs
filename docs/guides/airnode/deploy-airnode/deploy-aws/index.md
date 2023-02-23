@@ -50,7 +50,7 @@ credentials, a chain provider url, a gateway key, and a mnemonic.
 You can also use the configuration files you generated using ChainAPI if you
 wish to deploy your own Airnode.
 
-## 2. Install Prerequisites
+## 1. Install Prerequisites
 
 Install the
 [Docker Desktop<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and

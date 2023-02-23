@@ -3,7 +3,7 @@ title: Subscribing to Self-Funded dAPIs
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → API3 Market
-path: /guides/market/subscribing-self-funded-dapis/
+path: /guides/dapis/subscribing-self-funded-dapis/
 outline: deep
 tags:
 ---
@@ -43,7 +43,7 @@ process consists of:
 - [Funding a sponsor wallet](#funding-a-sponsor-wallet)
 - [Deploying a proxy contract to access the data feed](#deploying-a-proxy-contract-to-access-the-data-feed)
 
-## Exploring and selecting your data feed
+## 1. Exploring and selecting your data feed
 
 The [API3 Market](https://market.api3.org) provides a list of all the dAPIs
 available across multiple chains including testnets. You can filter the list by
@@ -58,7 +58,7 @@ new feed using this form(link to request new feed). //TODO: update this
 
 :::
 
-## Funding a sponsor wallet
+## 2. Funding a sponsor wallet
 
 Once you have selected your dAPI, you can fund the dAPI by using the market UI
 to send funds to the sponsorWallet, make sure your:
@@ -126,7 +126,7 @@ the dAPI to start operating
 
 :::
 
-## Deploying a proxy contract to access the data feed
+## 3. Deploying a proxy contract to access the data feed
 
 Smart contracts can interact and read values from contracts that are already
 deployed on the blockchain. By deploying a proxy contract via the API3 market, a
@@ -186,8 +186,8 @@ UI.
 ### Verifying the deployed proxy contract
 
 Before using the proxy contract, you should verify if the proxy contract points
-to the correct `dapiNameHash` and `Dapiserver.sol` address.This can be done
-either by viewing the code of the proxy on a block explorer like etherscan.
+to the correct `dapiNameHash` and `dapiServer` address.This can be done by
+viewing the code of the proxy on the block explorer.
 
 The `dapiServer` address should be the same as the address of the `Dapiserver`
 contract. Please refer to this [link](../../../reference/dapis/chains.md) for

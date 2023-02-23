@@ -50,7 +50,7 @@ project ID, a chain provider url, a gateway key, and a mnemonic.
 If you've used ChainAPI to integrate your Airnode, extract the zip file and use
 that as the project directory.
 
-## 2. Install Prerequisites
+## 1. Install Prerequisites
 
 Install the
 [Docker Desktop<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and

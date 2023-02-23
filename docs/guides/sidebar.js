@@ -6,17 +6,6 @@ module.exports = [
     items: [{ text: 'Getting Started', link: '/guides/' }],
   },
   {
-    text: 'API3 Market',
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: 'Subscribing to Self-Funded dAPIs ',
-        link: '/guides/market/subscribing-self-funded-dapis/',
-      },
-    ],
-  },
-  {
     text: 'dAPIs',
     collapsible: true,
     collapsed: false,
@@ -27,7 +16,11 @@ module.exports = [
         collapsed: false,
         items: [
           {
-            text: '• Reading a Self-Funded dAPI Proxy',
+            text: 'Subscribing to Self-Funded dAPIs ',
+            link: '/guides/dapis/subscribing-self-funded-dapis/',
+          },
+          {
+            text: 'Reading a Self-Funded dAPI Proxy',
             link: '/guides/dapis/read-self-funded-dapi/',
           },
         ],

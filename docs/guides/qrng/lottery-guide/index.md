@@ -36,7 +36,7 @@ winning number. If there are no winners, the pot will be rolled over to the next
 week. Once deployed, the lottery will continue to run and operate itself
 automatically without any controlling parties.
 
-## Coding the `Lottery` Contract
+## 1. Coding the `Lottery` Contract
 
 ::: warning Check your Network!
 
@@ -214,7 +214,7 @@ receive() external payable {
 }
 ```
 
-## Deploying the Contract
+## 2. Deploying the Contract
 
 :::warning Set up your Testnet Metamask Account!
 
@@ -257,7 +257,7 @@ Airnode to request a random number.
 
 > ![Deploying the Lottery](src/s3.png)
 
-## Deriving the Sponsor Wallet
+## 3. Deriving the Sponsor Wallet
 
 The
 [Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet)
@@ -303,7 +303,7 @@ sponsor.
 
 :::
 
-## Making the Bet
+## 4. Making the Bet
 
 To make a bet on-chain, we've defined a minimum ticket price that the user will
 have to pay to make a bet (0.0001 ETH). Under Deployed Contracts, select the

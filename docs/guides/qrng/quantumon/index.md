@@ -26,7 +26,7 @@ distribution of NFTs using
 [“out of order”](https://www.justinsilver.com/technology/cryptocurrency/nft-mint-random-token-id/)
 minting.
 
-## Understanding Quantumon
+## 1. Defining the Imports
 
 To see how Quantumon works, you can visit the
 [Quantumon](https://quantumon.xyz/) website. It uses an ERC-721 standard
@@ -63,7 +63,7 @@ contract Quantumon is ERC721, RrpRequesterV0, Ownable {
   [Request Response Protocol(RRP)](/reference/airnode/latest/concepts/). Using
   the RRP protocol you will request for a random number from the QRNG Airnode.
 
-### Constructor and Public Variables
+## 2. Constructor and Public Variables
 
 ```solidity
 contract Quantumon is ERC721, RrpRequesterV0, Ownable {
@@ -146,7 +146,7 @@ You also need to call the constructor of `ERC721` and give it the `tokenName`
 and `tokenSymbol` as arguments. In this case it is `QUANTUMON` for both the name
 and symbol.
 
-### Setting the Request Parameters
+## 3. Setting the Request Parameters
 
 ```solidity
      function setRequestParameters(
@@ -168,7 +168,7 @@ has the `onlyOwner` modifier which means that only the owner of this contract
 can call this function. The `setRequestParameters` function should be called
 immediately after deploying the contract.
 
-### Metadata and TokenURI functions
+## 4. Metadata and TokenURI functions
 
 NFT platforms call the `tokenURI(uint256 tokenId)` function to get the url that
 points to the metadata of the NFT. This metadata contains different attributes
@@ -257,7 +257,7 @@ concatenation of `stringA` and `stringB`.
 
 :::
 
-### How the NFTs are structured
+## 5. How the NFTs are structured
 
 We have all the necessary variables and functions to request a random number and
 mint our NFT. In our case each NFT has a `_baseUrlExtended` that is set to
@@ -380,7 +380,7 @@ function.
 > be enough to cover the fulfillment transaction, however it depends on the gas
 > price and gas cost of the transaction, so vary it accordingly._
 
-### `generateQuantumons` function
+## 6. `generateQuantumons` function
 
 ```solidity
     function generateQuantumon(bytes32 requestId, bytes calldata data)

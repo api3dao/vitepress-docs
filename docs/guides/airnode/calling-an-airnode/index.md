@@ -27,7 +27,7 @@ This guide shows you how to code, deploy, and run a simple smart contract that
 requests data from an Airnode, via the
 [Request Response Protocol](/reference/airnode/latest/concepts/).
 
-## Coding the Requester Contract
+## 1. Coding the Requester Contract
 
 ::: warning Check your Network!
 
@@ -170,7 +170,7 @@ function in the code sample below.
   been encoded and contains a timestamp in addition to other response data.
   Decode it using the function decode() from the abi object.
 
-## Deploying and Sponsoring the Requester
+## 2. Deploying and Sponsoring the Requester
 
 :::warning Set up your Testnet Metamask Account!
 
@@ -276,7 +276,7 @@ console.log(encodedData);
 console.log(decodedData);
 ```
 
-## Making the Request
+## 3. Making the Request
 
 Head over to the **Deploy & run transactions** tab, click on the `contract`
 dropdown and select `Requester.sol`

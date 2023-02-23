@@ -39,7 +39,7 @@ it performs a callback to the requester with the random number.
 You can read more about how API3 QRNG Airnode uses the
 [Request-Response Protocol here](/reference/airnode/latest/concepts/).
 
-## Coding the `RemixQrngExample`
+## 1. Coding the `RemixQrngExample`
 
 Head on to [Remix online IDE](https://remix.ethereum.org) using a browser that
 you have added Metamask support to. Not all browsers support
@@ -152,7 +152,7 @@ is requested.
     }
 ```
 
-## Compiling the Contract
+## 2. Compiling the Contract
 
 Be sure the `RemixQrngExample.sol` contract is selected in the **FILE EXPLORER**
 tab. Switch to the **SOLIDITY COMPILER** tab. Select the `0.8.9` version of
@@ -161,7 +161,7 @@ RemixQrngExample.sol** button to compile the `RemixQrngExample.sol` contract.
 
 > <img src="./src/qrng-compile.png" width="350"/>
 
-## Deploying the Contract
+## 3. Deploying the Contract
 
 ::: danger Deploy to a testnet only.
 
@@ -193,7 +193,7 @@ usage as the production quantum random number generator
 
 > <img src="./src/qrng-deploy-contract-airnode-address.png" width="400"/>
 
-## Setting the Parameters
+## 4. Setting the Parameters
 
 Before making a request, parameters must be set. They determine which Airnode
 endpoint will be called and define the wallet used to pay the gas costs for the
@@ -273,7 +273,7 @@ random number.
 
 <SponsorWalletWarning/>
 
-## Make a Request
+## 5. Make a Request
 
 Be sure you have funded the sponsor wallet created in the last step. Its funds
 will be used to pay gas costs when Airnode returns a random number to the
@@ -296,7 +296,7 @@ not been made.
 
 > <img src="./src/qrng-response-wait.png" width="400"/>
 
-## View the Response
+## 6. View the Response
 
 The request is gathered by the off-chain Airnode which in turn calls the API
 provider. Once the API provider returns data, Airnode will callback to the
