@@ -26,11 +26,11 @@ you have not done so, please follow this guide on
 
 :::
 
-dAPI proxies allows dAPIs to be used like libraries. This can reduce deployment
-costs because your smart contract just need to import the interface for calling
-the proxy contract. To read a different dAPI, your smart contract does not need
-to change the code itself, rather it just needs to use a different proxy address
-when calling the `read()` function on the proxy contract.
+dAPI proxies allows dAPIs to be used like libraries. Your smart contract just
+need to import the interface for calling the proxy contract. To read a different
+dAPI, your smart contract does not need to change the code itself, rather it
+just needs to use a different proxy address when calling the `read()` function
+on the proxy contract.
 
 ```solidity
 // SPDX-License-Identifier: MIT
