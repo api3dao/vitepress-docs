@@ -24,6 +24,11 @@
     "title": "Quick Start GCP",
     "content": "Deploy the off-chain component of Airnode to GCP."
   },
+  "_airnode-quick-start-container": {
+    "btnURL": "/guides/airnode/container/",
+    "title": "Quick Start Docker Container",
+    "content": "Deploy the off-chain component of Airnode to a Docker container."
+  },
   "_qrng-remix-example": {
     "btnURL": "/guides/qrng/remix-example.html",
     "title": "QRNG Remix Example",

@@ -23,7 +23,7 @@ off-chain and requires no blockchain knowledge by an API provider. It is
 different than [Authorizers](../concepts/authorizers.md) which is an on-chain
 auth scheme.
 
-::: tip Alternative: Relayed Meta Data
+::: info Alternative: Relayed Meta Data
 
 As an alternative to authorizers and authorizations, an API provider can use
 [Relayed Meta Data](./api-security.md#relayed-meta-data-security-schemes) to
