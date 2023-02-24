@@ -20,6 +20,7 @@ module.exports = [
       },
       { text: 'Rosetta, Nodejs, esbuild', link: '/dev/rosetta' },
       { text: 'Google Analytics 4', link: '/dev/ga4' },
+      { text: 'VitePress Containers', link: '/dev/containers' },
     ],
   },
 ];

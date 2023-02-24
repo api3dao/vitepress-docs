@@ -631,3 +631,9 @@ See the [Pre/Post Processing](./processing.md) doc for additional details.
   }
 ]
 ```
+
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='REFERENCE' id="_reference-airnode-api-integrations"/>
+</div>

@@ -17,16 +17,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: tip Complete the following before configuring your Airnode.
-
-- [API Integration](api-integration.md)
-- [API Security](api-security.md)
-
-Note that this guide is complementary to, and not a replacement of, the
-[config.json reference documentation](../deployment-files/config-json.md).
-
-:::
-
 An Airnode is deployed or redeployed using configuration values from its
 `config.json` and `secrets.env` files. The `config.json` specifies the
 [Oracle Integration Specifications OIS](/reference/ois/latest/specification.md)
@@ -34,7 +24,7 @@ and other specific configuration details. The `secrets.env` file holds secrets,
 such as API keys and chain provider URLs, which are referenced within the
 config.json file using interpolation.
 
-> <img src="../assets/images/config-json.png" width="650px">
+> <img src="../assets/images/config-json.png" width="600px">
 >
 > - <p>The <b>config.json</b> file is used during the deployment/redeployment of an Airnode to configure its behavior and to provide mappings of API operations.</p>
 > - <p>The <b>secrets.env</b> file holds values for config.json that must be kept secret.</p>
@@ -52,7 +42,7 @@ The following example files are useful while reading this doc.
 Use the [config.json template](../deployment-files/templates/config-json.md) to
 build your own Airnode configuration file or alter the
 [config.json example](../deployment-files/examples/config-json.md) file. There
-are five root level fields in `config.json`.
+are six root level fields in `config.json`.
 
 - [chains](./configuring.md#chains)
 - [nodeSettings](./configuring.md#nodesettings)
@@ -181,7 +171,6 @@ The above example results in the following requests: A1, A2, B1, B2, and C1.
 
 Note, that this limit only applies to the requests initiated on chain. For
 example, requests initiated using HTTP gateway are not included in this limit.
-
 Also note that, this limit is configured per chain and the limits of different
 chains are unrelated to each other.
 
@@ -189,7 +178,8 @@ chains are unrelated to each other.
 
 #### References: `chains`
 
-The below links offer details for each field:
+The links below offer additional details for each field from the Deployment
+Files section:
 
 - [authorizers](../deployment-files/config-json.md#authorizers)
 - [contracts](../deployment-files/config-json.md#contracts)
@@ -258,6 +248,9 @@ note that that distinct API keys must be used for each.
 
 #### References: `nodeSettings`
 
+The links below offer additional details for each field from the Deployment
+Files section:
+
 - [cloudProvider](../deployment-files/config-json.md#cloudprovider)
   - [cloudProvider.type](../deployment-files/config-json.md#cloudprovider-type)
   - [cloudProvider.region](../deployment-files/config-json.md#cloudprovider-region)
@@ -283,16 +276,15 @@ note that that distinct API keys must be used for each.
 
 ### triggers
 
-The `triggers` field allows you to expose Airnode endpoints from an OIS
-selectively for the RRP protocol or via the HTTP gateway. For example, your OIS
-may include 10 endpoints, but you may only want to serve 2 for RRP and all 10
-for the gateway.
+The `triggers` field allow exposes Airnode endpoints from an OIS selectively for
+the RRP protocol or via the HTTP gateway. For example, an OIS object may include
+10 endpoints, but only two are desired for RRP and all 10 for the gateway.
 
-List the endpoints that you want to serve with the request–response protocol
-(RRP) under `triggers.rrp`. List the endpoints that you want to serve with the
-HTTP gateway under `triggers.http`. List the endpoints which can be used to get
-the signed data in `triggers.httpSignedData`. In most cases, you would create a
-trigger for each endpoint in your OIS object.
+List the endpoints to serve with the request–response protocol (RRP) under
+`triggers.rrp`. List the endpoints to serve with the HTTP gateway under
+`triggers.http`. List the endpoints which can be used to get the signed data in
+`triggers.httpSignedData`. In most cases create a trigger for each endpoint in
+your OIS object.
 
 ```json
 "triggers": {
@@ -331,6 +323,9 @@ endpoints can be triggers for `rrp`, `http`, and/or `httpSignedData` as desired.
 
 #### References: `triggers`
 
+The links below offer additional details for each field from the Deployment
+Files section:
+
 - [rrp](../deployment-files/config-json.md#rrp)
   - [rrp[n].endpointId](../deployment-files/config-json.md#rrp-n-endpointid)
   - [rrp[n].oisTitle](../deployment-files/config-json.md#rrp-n-oistitle)
@@ -351,6 +346,9 @@ The templates field allows you to specify templates to be used to make template
 requests. The array can be left empty if no templates will be used.
 
 #### References: templates
+
+The links below offer additional details for each field from the Deployment
+Files section:
 
 - [templateId](../deployment-files/config-json.md#templateid)
 - [endpointId](../deployment-files/config-json.md#endpointid)
@@ -375,8 +373,7 @@ would be `myOisTitle` and `mySecurityScheme` in the example below.
 `securitySchemeValue` is the value used for the authentication with the security
 scheme (e.g., the API key).
 
-Note that if you do not need a security scheme, leave the `apiCredentials` array
-empty.
+If no security scheme is needed, leave the `apiCredentials` array empty.
 
 ```json
 // apiCredentials
@@ -417,6 +414,9 @@ calls: `apiKey` and `http`. For more detail, visit the previous section on
 
 #### References: `apiCredentials`
 
+The links below offer additional details for each field from the Deployment
+Files section:
+
 - [oisTitle](../deployment-files/config-json.md#oistitle)
 - [securitySchemeName](../deployment-files/config-json.md#securityschemename)
 - [securitySchemeValue](../deployment-files/config-json.md#securityschemevalue)
@@ -453,8 +453,8 @@ build the node on AWS Lambda.
 ### Creating `aws.env` (AWS only)
 
 Follow [this video](https://www.youtube.com/watch?v=KngM5bfpttA) if needed. It
-will show you how to create an IAM user and get security credentials. Put them
-in the `aws.env` file as shown below. See an
+explains how to create an IAM user and get security credentials. Put them in the
+`aws.env` file as shown below. See an
 [example file](../deployment-files/templates/aws-env.md) in the reference
 section.
 
@@ -473,17 +473,17 @@ build the Airnode.
 
 ### Creating a GCP project
 
-First, you need to
-[create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+First
+[create a GCP project<ExternalLinkImage/>](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 under which will the Airnode be deployed. Once the project is created, insert
-its [projectId](./configuring.md#cloudprovider) into your `config.json`.
+its [projectId](./configuring.md#cloudprovider) into the `config.json` file.
 
 ### Enable required API
 
-In order for Airnode to deploy successfully, you need to enable
+In order for Airnode to deploy successfully, enable
 [App Engine Admin API](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
-for your GCP project. After enabling it, wait a few minutes before the
-deployment itself so the change will take place.
+for the GCP project. After enabling it, wait a few minutes before the deployment
+itself so the change will take place.
 
 ### Creating a Service Account
 
@@ -506,9 +506,3 @@ urls and security credentials, so they should be kept secret. Make sure that you
 do not push your credentials to a repository or otherwise expose them as these
 credentials can be used to gain access to your Airnode's private key, AWS
 account or GCP account.
-
-The next three steps in this guide are optional.
-
-- [Using Authorizers](./apply-auth.md) optional
-- [Heartbeat](./heartbeat.md) optional
-- [HTTP Gateways](./http-gateways.md) optional

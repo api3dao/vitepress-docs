@@ -22,9 +22,9 @@ request to a specified URL. This is both to signal that the Airnode is alive and
 working (useful especially right after the deployment) and also as a
 notification every time it runs (self-operates).
 
-> <img src="../assets/images/heartbeat.png" width="650ps"/>
+> <img src="../assets/images/heartbeat.png" width="550ps"/>
 >
-> 1.  <p>Airnode gathers on-chain requests targeting the API it supports.</p>
+> 1.  <p>Airnode gathers on-chain requests targeting the API operations it supports.</p>
 > 2.  <p>The required API operation for each request is called.</p>
 > 3.  <p>A response is sent to each request.</p>
 > 4.  <p>Finally Airnode makes a request to the heartbeat URL (HTTP POST). This could be to an operation within the API Airnode supports or to any cloud REST endpoint such as a monitoring service.</p>
@@ -104,8 +104,8 @@ Below is an example of what is included in the request body to `heartbeat.url`.
 
 The method by which the heartbeat payload is generated is as follows:
 
-- An object is marshalled to JSON - this object contains a timestamp, gateway
-  URLs, the cloud provider and cloud region.
+- An object is marshalled to JSON - this object contains multiple fields as
+  shown above.
 - The Airnode's mnemonic (using the default EVM derivation path to derive a key)
   is used to sign the payload.
 - The payload and signature are included in a new object and marshalled to JSON.

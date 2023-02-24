@@ -17,10 +17,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-## Cloud Provider Log Organization
-
 Airnode logs or log groups are named similarly in AWS and GCP and include the
-following hyphen-separated components: `airnode`, `<airnode short address>`,
+following hyphen-separated components: `airnode`, `<airnode deployment id>`,
 `<stage>`, and `<airnode cycle stage or request type>`, for example,
 `airnode-9e62180-tutorial-startCoordinator`. The possible Airnode cycle stages
 or request types and the logs they contain are as follows:
@@ -52,5 +50,5 @@ cycle stage.
 
 Running the `airnode-client` Docker image will output container logs to the
 command line. These logs are also available through the Docker interface e.g.
-under Containers within Docker Desktop. See
-[Airnode client image](../docker/client-image.md) for more information.
+under Containers within Docker Desktop. See the Docker
+[client image](../docker/client-image.md) for more information.

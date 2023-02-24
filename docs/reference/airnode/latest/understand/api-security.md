@@ -24,7 +24,7 @@ operations. There are two groups of security schemes.
 - [Relayed Meta Data Authentication](../concepts/relay-meta-auth.md)
 
 <!-- prettier-ignore-->
-> <img src="../assets/images/security-schemes.png" width="650px"/>
+> <img src="../assets/images/security-schemes.png" width="550px"/>
 > 
 > 1.  <p>The Airnode uses <i><b>Airnode Authentication Security Schemes</b></i> to authenticate itself to an API operation of which the values are known only by the Airnode.</p>
 > 2.  <p>The Airnode uses <i><b>Relayed Meta Data Security Schemes</b></i> to forward known information from the requester's request to an API operation.</p>
@@ -45,6 +45,11 @@ security scheme definition. The following security scheme types are supported.
   - relaySponsorWalletAddress
   - relayRequestId
 
+It is important to note that the security schemes in any given OIS object apply
+to all endpoints/API operations in the OIS object. If different security schemes
+are required by a mix of endpoints/API operations, then more than one OIS object
+will be required grouping endpoint/API operations based on their security needs.
+
 ## Airnode Authentication Security Schemes
 
 An Airnode can use the following security scheme types to authenticate itself to
@@ -53,47 +58,76 @@ API operations.
 - [apiKey](./api-security.md#apikey)
 - [http](./api-security.md#http)
 
+A security scheme requires a unique name within the OIS object for which it
+exists. This name groups the security scheme values for `in`, `type`, and` name`
+as shown in the two code examples below.
+
+- `securitySchemes.<schemeName>`
+- `security.<schemeName>`
+- `apiCredentials[n].securitySchemeName`
+
 ### apiKey
 
 The `apiKey` security scheme type allows you to define an API key the Airnode
-will send to your API operations. It is an object which consists of the
-following fields:
+will send to API operations. It is an object which consists of the following
+fields:
 
 - `type` must be `apiKey`
 - `in` can be one of the `query`, `header` or `cookie`. This value specifies how
-  should the value be sent to your API. When using the `query` option, the API
-  key will be sent in the request body for POST requests and in query string for
-  GET requests.
+  the value will be sent to an API operation. When using the `query` option, the
+  API key will be sent in the request body for POST requests and in query string
+  for GET requests.
 
-- `name` is the name of the API key that should be sent to your API. For example
+- `name` is the name of the API key that should be sent to an API. For example
   "X-Api-Key".
 
 ```json
-{
-  "requiresXApiKey": {
-    "in": "header",
-    "type": "apiKey",
-    "name": "X-api-key"
-  }
-}
+"ois": [
+  {
+    "oisFormat": "1.4.0",
+    "title": "Ois Title",
+    "version": "1.0.0",
+    "apiSpecifications": {
+      "paths": ...
+      "components": {
+        "securitySchemes": {
+          "requiresXApiKey": { <──────────────┐────┐
+            "in": "header",                   │    │
+            "type": "apiKey",                 │    │
+            "name": "X-api-key"               │    │
+          }                                   │    │
+        }                                     │    │
+      },                                      │    │
+      "security": {                           │    │
+        "requiresXApiKey": [] <───────────────┘    │
+      } ,                                          │
+      "endpoints": ...                             │
+    }                                              │
+  }                                                │
+]                                                  │
 ```
 
-The value of the `apiKey` goes in the `apiCredentials` field of `config.json`.
-Normally the value is accessed using interpolation from the `secrets.env` file.
+The value of the `apiKey` goes in the `apiCredentials` field of `config.json`
+designated by the proper `oisTitle` and `securitySchemeName` values, which is
+not part of the `ois` object, it exists in the root level of the `config.json`
+file. Normally the value is accessed using interpolation from the `secrets.env`
+file.
 
 ```json
-{
-  "oisTitle": "Ois Title",
-  "securitySchemeName": "requiresXApiKey",
-  "securitySchemeValue": "${X_API_KEY}" // interpolated from secrets.env
-}
+"apiCredentials": [                                │
+  {                                                │
+    "oisTitle": "Ois Title",                       │
+    "securitySchemeName": "requiresXApiKey", <─────┘
+    "securitySchemeValue": "${X_API_KEY}" // interpolated from secrets.env
+  }
+]
 ```
 
 ### http
 
-The `http` security scheme type allows you to define a `basic` or `bearer`
-authentication. This security scheme will always be sent in the headers. The
-security scheme value should be base64 encoded value "username:password" for
+The `http` security scheme type is used to define either a `basic` or `bearer`
+authentication scheme. This security scheme will always be sent in the headers.
+The security scheme value should be base64 encoded value "username:password" for
 `basic` auth and the encoded token for `bearer` auth. It is an object which
 consists of the following fields:
 
@@ -109,9 +143,11 @@ consists of the following fields:
 }
 ```
 
-The value of the `http` as (`basic or bearer`) goes in the `apiCredentials`
-field of `config.json`. Normally the value is accessed using interpolation from
-the `secrets.emv` file.
+The value of the `http` goes in the `apiCredentials` field of `config.json`
+designated by the proper `oisTitle` and `securitySchemeName` values, which is
+not part of the `ois` object, it exists in the root level of the `config.json`
+file. Normally the value is accessed using interpolation from the `secrets.env`
+file.
 
 ```json
 {
@@ -121,18 +157,18 @@ the `secrets.emv` file.
 }
 ```
 
-::: tip Authentication Tutorial
+::: info Authentication Tutorial
 
-The `authenticated-coinmarketcap` monorepo example demonstrates authentication,
-[see here](/guides/airnode/monorepo-examples.md).
+The [authenticated-coinmarketcap](/guides/airnode/monorepo-examples.md) monorepo
+example demonstrates authentication.
 
 :::
 
 ## Relayed Meta Data Security Schemes
 
 In addition to authenticating itself, Airnode can "relay" security information
-about a request to an API operation. This is different then
-[Authorization](./apply-auth.md) of requesters to access the Airnode.
+about a request to an API operation. This is different then the authorization of
+requesters using [Authorizers](./apply-auth.md) to access the Airnode.
 
 - [relayRequesterAddress](./api-security.md#relayrequesteraddress)
 - [relayChainId](./api-security.md#relaychainid)
@@ -141,25 +177,21 @@ about a request to an API operation. This is different then
 - [relaySponsorWalletAddress](./api-security.md#relaysponsorwalletaddress)
 - [relayRequestId](./api-security.md#relayrequestid)
 
-For relayed meta data security schemes you do not provide any values in
+For relayed meta data security schemes do not provide any values in
 [apiCredentials](../deployment-files/config-json.md#apicredentials) as they are
 extracted from the request by Airnode.
 
-::: tip Additional Processing Logic
-
-Note that Airnode is just relaying metadata to your API operations and does not
-perform any additional logic. You must implement any desired logic in your API
-operations. See
+Note that Airnode relays this metadata to an API operation and does not perform
+any additional processing logic. The API provider must implement any desired
+logic in the API operation for any desired security checks. See
 [Relayed Meta Data Authentication](../concepts/relay-meta-auth.md) for overview
 of its usage.
 
-:::
+::: info Relay Metadata Tutorial
 
-::: tip Relay Metadata Tutorial
-
-The `relay-security-schemes` monorepo example demonstrates how to relay multiple
-request metadata like chain ID and sponsor address to the API endpoint,
-[see here](/guides/airnode/monorepo-examples.md).
+The [relay-security-schemes](/guides/airnode/monorepo-examples.md) monorepo
+example demonstrates how to relay request metadata like chain ID and sponsor
+address to the API endpoint.
 
 :::
 
@@ -241,6 +273,50 @@ The `relayRequestId` security scheme type instructs Airnode to forward the
 }
 ```
 
+The following example shows how to set up relayed meta data to forward the
+`relayRequestId` and `relayChainId` from Airnode to an AP operation. Note that
+unlike the Airnode authentication security scheme, no values are stored in
+`apiCredentials` as Airnode passes these known values to the API operation.
+
+```json
+"ois": [
+  {
+    "oisFormat": "1.4.0",
+    "title": "Ois Title",
+    "version": "1.0.0",
+    "apiSpecifications": {
+      "paths": ...
+      "components": {
+        "securitySchemes": {
+          "myRelayed_requestId": { <────────────┐
+            "in": "header",                     │
+            "type": "relayRequestId",           │
+            "name": "requestId"                 │
+          },                                    │
+          "myRelayed_relayChainId": { <──────┐  │
+            "in": "query",                   │  │
+            "type": "relayChainId",          │  │
+            "name": "chainId"                │  │
+          }                                  │  │
+        }                                    │  │
+      },                                     │  │
+      "security": {                          │  │
+        "myRelayed_relayChainId": [], <──────┘  │
+        "myRelayed_requestId": [] <─────────────┘
+      },
+      "endpoints": ...
+    }
+  }
+]
+```
+
+::: info Remember
+
+The relayed meta data security schemes do not require a supplied value. Values
+will be provided (relayed) by Airnode depending on the particular request.
+
+:::
+
 ## Example
 
 OIS security is inspired by OAS security practices. This is implemented using
@@ -264,7 +340,9 @@ of security scheme and security field.
 {
   "ois": [
     {
+      ...
       "title": "My OIS title",
+      ...
       "apiSpecifications": {
         "components": {
           "securitySchemes": {
@@ -293,20 +371,20 @@ of security scheme and security field.
 
 ### Step #1: Define the security schemes for an OIS
 
-You use
+Use
 <code style="overflow-wrap:break-word;">ois[n].apiSpecifications.components.securitySchemes</code>
-to define the security schemes your API will use. Consider the partial
-`config.json` above that declares a security scheme named "requiresXApiKey".
+to define the security schemes the API operation requires. Consider the partial
+`config.json` above that declares a security scheme named `requiresXApiKey`.
 This scheme declares that the API requires an API key that must exist in the
-HTTP header named "X-api-key".
+HTTP header named `X-api-key`.
 
 ### Step #2: Turn on the defined security schemes
 
 When the scheme is defined, it is not turned on by default. You need to
 explicitly list the security schemes you intend to use in the `security` field
 located in `ois[n].apiSpecifications.security` object. The keys in this object
-are the names of security schemes to be used. Use empty array (`[]`) as values
-for now.
+are the names of security schemes to be used. Use empty array (`[]`) as its
+value.
 
 _Be aware that this step seems like extra work since there is no reason to
 define a security scheme that will not be used. However, Airnode may support
@@ -320,7 +398,7 @@ After defining and turning on a security scheme, it may be unclear what provides
 the value and how it is set.
 
 The authentication schemes are intended to be common for the whole OIS and set
-by the API provider using `apiCredentials` part of the `config.json`. The
+by the API provider using `apiCredentials` which is part of `config.json`. The
 `apiCredentials` is an array which specifies the values for all security schemes
 in all OIS definitions. Each element of this array contains the following fields
 
@@ -329,18 +407,6 @@ in all OIS definitions. Each element of this array contains the following fields
 - `securitySchemeValue` is the actual value that should be used by Airnode when
   making the API request. This value is usually a secret and it is recommended
   to interpolate it from `secrets.env`.
-
-If you want to base your API authentication on dynamic data, for example
-[requester](../concepts/requester.md) address, you can utilize the relayed meta
-data security schemes [described above](./api-security.md#relayrequesteraddress)
-which can forward metadata to all API operations.
-
-::: tip Relayed meta data security schemes values.
-
-The relayed meta data security schemes do not require a supplied value. Values
-will be provided (relayed) by Airnode depending on the particular request.
-
-:::
 
 ## Using Different Security Schemes
 

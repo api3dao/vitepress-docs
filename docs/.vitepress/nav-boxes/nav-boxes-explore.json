@@ -13,5 +13,10 @@
     "btnURL": "/",
     "title": "access a self funded feed",
     "content": "TODO: this box need a URL. Single sourced dAPIs used for development that are shared by the community."
+  },
+  "_what-is-airnode": {
+    "btnURL": "/explore/airnode/what-is-airnode.html",
+    "title": "What is Airnode?",
+    "content": "API provider owned and operated first-party oracle nodes."
   }
 }

@@ -17,71 +17,105 @@ tags:
 
 # {{$frontmatter.title}}
 
-Airnode is a first-party oracle that pushes off-chain API data to an on-chain
-requester. Airnode is the background component that supplies on-chain dAPIs with
-data. Learn more about what an Airnode is in the
-[Explore](/explore/airnode/what-is-airnode.md) section.
-
-It may be helpful to view or run the Airnode quick start guides to get a simple
-understanding of an Airnode deployment. The demos
-[Quick Deploy AWS](/guides/airnode/quick-start-aws/) and
-[Quick Deploy GCP](/guides/airnode/quick-start-gcp/) each have preconfigured
-downloadable project folders with files for a typical deployment. The
-**Understanding Airnode** section primarily focuses on a deployment to AWS but
-describes changes that are needed for GCP deployments when encountered.
+This section is a progression of pages that aims to provide a detailed
+understanding of the capabilities and functionality of Airnode. Airnode is a
+first-party oracle that pushes off-chain API data on-chain via data feeds
+(dAPIs) or using its request-response protocol (RRP). Airnode runs off-chain as
+a background component of the API3 ecosystem. Learn more about what an
+[Airnode](/explore/airnode/what-is-airnode.md) is.
 
 ## Project Folder
 
-Create a folder called `/my-airnode`. Add the files `config.json`,
-`secrets.env`, and `aws.env` to this folder as shown below. Optionally add
-`gcp.json` if you intend to deploy to GCP as well.
+A typical Airnode project folder contains files used to define the Airnode. Show
+below are typical project folders for each of AWS, GCP, and container
+deployments.
 
-```
+::: code-group
+
+```sh [AWS]
 my-airnode
-├── aws.env     <- For AWS deployment
-├── gcp.json    <- Optional for GCP deployment
+├── aws.env
 ├── config.json
 └── secrets.env
 ```
 
-This guide will explain the content of the configuration files and run the
-deployment within this project folder. Use the files in the
-[Templates](../deployment-files/templates/config-json.md) section of the docs to
-get a jump start if you are new to Airnode. Also consider the
-[Quick Start](/guides/airnode/quick-start-aws/) guides if you are new to Airnode
-before using this guide.
+```sh [GCP]
+my-airnode
+├── config.json
+├── gcp.json
+└── secrets.env
+```
 
-## Configuration
+```sh [Container]
+my-airnode
+├── config.json
+└── secrets.env
+```
 
-The main focus while creating an Airnode is the preparation of three files (two
-for GCP) that both define and support its creation.
+::: code-group
 
-- `config.json`: Defines the Airnode and its behavior.
-- `secrets.env`: Hold secrets referenced by `config.json` using interpolation.
-- `aws.env`: Holds the AWS credentials used by the Docker deployer image to
-  deploy the Airnode to AWS.
-- `gcp.json`: (GCP) only) Holds the GCP project ID and associated information
-  used by the Docker deployer image to deploy the Airnode to GCP.
+Both AWS and GCP have a platform specific file `aws.env` and `gcp.json`. Use the
+files in the [Templates](../deployment-files/templates/config-json.md) as an aid
+to create all but the `gcp.json` files. Also see the
+[Examples](../deployment-files/examples/config-json.md) for demonstration
+purposes.
 
-## Deployment
+## Configuration files
 
-Last is the deployment. There are two ways to run the Airnode. The most popular
-is with a cloud provider like AWS or GCP. You would use the Docker
-[Airnode Deployer Image](../docker/deployer-image.md) for this type of
-deployment. This guide will use the deployer image.
+- `config.json`: Defines Airnode and its behavior.
+- `secrets.env`: Secrets referenced by `config.json` using interpolation.
+- `aws.env`: AWS credentials.
+- `gcp.json`: GCP project information.
+
+The diagrams below depict the configuration files needed for a successful
+deployment of an Airnode to AWS, GCP, and a Docker Container.
+
+### AWS
+
+<img style="margin-top:15px;display: block;" src="../assets/images/api-provider-overview-aws.png" width="370">
+
+1. **config.json**: Contains the Airnode's configuration. It contains an
+   important element, called OIS, that maps an API to Airnode endpoints.
+2. **secrets.env**: Contains values that should not be exposed in config.json.
+3. **aws.env**: Contains AWS credentials required by the Docker deployer image.
+4. **deployer image**: Docker image that deploys the Airnode using its deploy
+   command.
+
+### GCP
+
+<img style="margin-top:15px;display: block;" src="../assets/images/api-provider-overview-gcp.png" width="370">
+
+1. **config.json**: Contains the Airnode's configuration. It contains an
+   important element, called OIS, that maps an API to Airnode endpoints.
+2. **secrets.env**: Contains values that should not be exposed in config.json.
+3. **gcp.json**: GCP project file.
+4. **deployer image**: Docker image that deploys the Airnode using its deploy
+   command.
+
+### Container
+
+<img style="margin-top:15px;display: block;" src="../assets/images/api-provider-overview-container.png" width="370">
+
+1. **config.json**: Contains the Airnode's configuration. It contains an
+   important element, called OIS, that maps an API to Airnode endpoints.
+2. **secrets.env**: Contains values that should not be exposed in config.json.
+3. **client image**: The Docker client image that contains the Airnode and runs
+   with the provided configuration.
+
+## Deploying
+
+There are two ways to deploy and run an Airnode. The most popular is with a
+cloud provider such as AWS or GCP. Use the Docker
+[Airnode Deployer Image](../docker/deployer-image.md) for these type of
+deployments.
 
 The second method is to run a containerized Airnode hosted internally or with a
-cloud provider service (e.g. AWS EC2 or Lightsail). Use the Docker
+cloud provider service (e.g. AWS, EC2, or Lightsail). Use the Docker
 [Airnode Client Image](../docker/client-image.md) for this type of deployment.
 
-## More...
+## More related material...
 
-Read the following sections for additional in-depth understanding of Airnode.
-
-- [API Integration](./api-integration.md)
-- [API Security](./api-security.md)
-- [Configuring Airnode](./configuring.md)
-- [Using Authorizers](./apply-auth.md) optional
-- [Heartbeat](./heartbeat.md) optional
-- [HTTP Gateways](./http-gateways.md) optional
-- [Deploying Airnode](./deploying.md)
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='EXPLORE' id="_what-is-airnode"/>
+  <NavBox type='GUIDE' id="_airnode-quick-start-aws"/>
+</div>

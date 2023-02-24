@@ -32,8 +32,8 @@ module.exports = [
         link: '/reference/airnode/latest/understand/',
       },
       {
-        text: 'Configuration Files',
-        link: '/reference/airnode/latest/understand/config-files',
+        text: 'Configuring Airnode',
+        link: '/reference/airnode/latest/understand/configuring',
       },
       {
         text: 'API Integration',
@@ -42,11 +42,6 @@ module.exports = [
       {
         text: 'API Security',
         link: '/reference/airnode/latest/understand/api-security',
-      },
-
-      {
-        text: 'Configuring Airnode',
-        link: '/reference/airnode/latest/understand/configuring',
       },
       {
         text: 'Using Authorizers',
@@ -140,7 +135,7 @@ module.exports = [
   {
     text: 'Docker Images',
     collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: 'Overview',
