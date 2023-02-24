@@ -43,10 +43,7 @@ https://renatello.com/dynamic-drop-down-list-in-vue-js/
       <option value="sa-east-1">South America (São Paulo) sa-east-1</option>
     </select>
 
-    <p>
-      Click the following links and delete all elements for each feature with
-      the <b>appropriate</b> <code>airnodeAddressShort</code>.
-    </p>
+    <p>Click the following links and delete all elements for each feature.</p>
     <!-- prettier-ignore -->
     <ul>
       <li><a :href="'https://' +region + '.console.aws.amazon.com/events/home?region=' + region + '#rules'" target="_aws-console">EventBridge<ExternalLinkImage/></a>

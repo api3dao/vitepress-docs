@@ -334,19 +334,21 @@ docker run -it --rm ^
 ## Manual Removal
 
 Optionally you can remove an Airnode manually though it is highly recommended
-that you do so using the deployer image commands
-[remove-with-receipt](#remove-with-receipt) or [remove](#remove). When removing
-manually, you will need the short Airnode address, `airnodeAddressShort` (e.g.,
-`0ab830c`) and the Airnode stage name (e.g., `production`). These are included
-in the element name of AWS and GCP deployed features. Airnode has a presence in
-several areas of both AWS and GCP as listed below.
+that you do so using the deployer image's `remove-with-receipt` or `remove`
+commands. When removing manually, you will need the Airnode's deployment ID,
+`deploymentId` (e.g., `awsef86dfad`) and the Airnode stage name (e.g.,
+`production`). They can be found in the
+[receipt.json](../../reference/deployment-files/receipt-json.md) file generated
+when deploying the Airnode. These are included in the element name of AWS and
+GCP deployed features. Airnode has a presence in several areas of both AWS and
+GCP as listed below.
 
-::: tip Remember!
+::: danger Remember
 
-Only delete elements of a feature with the `airnodeAddressShort` address and
-`stage` name contained in the element's name. There can be more than one
-Airnode. Example: (airnode-**6a6cf2d-production**-run), where `6a6cf2d` is the
-airnodeShortAddress and `production` is the stage name.
+Only delete elements of a feature with the `deploymentId` address and `stage`
+name contained in the element's name. There can be more than one Airnode.
+Example: (airnode-**awsef86dfad-production**-run), where `awsef86dfad` is the
+deploymentId and `production` is the stage name.
 
 :::
 
