@@ -33,10 +33,6 @@ module.exports = [
         collapsed: false,
         items: [
           {
-            text: '• Generating Airnode Config using ChainAPI',
-            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
-          },
-          {
             text: '• Deploying Airnode via AWS',
             link: '/guides/airnode/deploy-airnode/deploy-aws/',
           },
@@ -47,6 +43,10 @@ module.exports = [
           {
             text: '• Deploying Airnode locally using Docker',
             link: '/guides/airnode/deploy-airnode/deploy-container/',
+          },
+          {
+            text: '• Generating Airnode Config using ChainAPI',
+            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
           },
         ],
       },
