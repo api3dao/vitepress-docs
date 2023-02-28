@@ -31,7 +31,7 @@ services with minimal associated costs and no upfront commitment before
 committing to managed dAPIs.
 
 Self-funded dAPIs are sourced from a single first-party oracle where the oracle
-transactions feeds are paid from a respective sponsor wallet. Once funds are
+transactions fees are paid from a respective sponsor wallet. Once funds are
 available in this wallet, oracle updates on the associated dAPI will begin
 automatically (given the Airnode invocation restrictions).
 
