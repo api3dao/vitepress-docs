@@ -1,7 +1,6 @@
 module.exports = [
   {
     text: '',
-    collapsable: false,
     items: [
       {
         text: 'Contracts Overview',

@@ -25,8 +25,9 @@ in the deployer package.
 
 ::: tip Quick Deploy Demos
 
-See the [Quick Start](/guides/airnode/quick-start-aws/) guides to quickly deploy
-and remove a preconfigured Airnode using the deployer image.
+See the
+[Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/) guides
+to quickly deploy and remove a preconfigured Airnode using the deployer image.
 
 :::
 
@@ -338,10 +339,10 @@ that you do so using the deployer image's `remove-with-receipt` or `remove`
 commands. When removing manually, you will need the Airnode's deployment ID,
 `deploymentId` (e.g., `awsef86dfad`) and the Airnode stage name (e.g.,
 `production`). They can be found in the
-[receipt.json](../../reference/deployment-files/receipt-json.md) file generated
-when deploying the Airnode. These are included in the element name of AWS and
-GCP deployed features. Airnode has a presence in several areas of both AWS and
-GCP as listed below.
+[receipt.json](../deployment-files/receipt-json.md) file generated when
+deploying the Airnode. These are included in the element name of AWS and GCP
+deployed features. Airnode has a presence in several areas of both AWS and GCP
+as listed below.
 
 ::: danger Remember
 
