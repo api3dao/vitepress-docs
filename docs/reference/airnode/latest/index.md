@@ -20,8 +20,8 @@ tags:
 Use the contract addresses listed in the tables below to interact with Airnode
 on EVM-compatible blockchains. Additional addresses will be added as contracts
 are deployed, but feel free to
-[submit a GitHub issue](https://github.com/api3dao/airnode/issues) requesting a
-new deployment.
+[submit a GitHub issue<ExternalLinkImage/>](https://github.com/api3dao/airnode/issues)
+requesting a new deployment.
 
 ## AirnodeRrpV0
 
