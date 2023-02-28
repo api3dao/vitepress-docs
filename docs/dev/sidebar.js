@@ -1,7 +1,6 @@
 module.exports = [
   {
     text: '',
-    collapsible: false,
     items: [
       { text: 'Getting Started', link: '/dev/' },
       { text: 'DocSets', link: '/dev/docsets' },

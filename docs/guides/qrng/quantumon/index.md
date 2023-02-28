@@ -137,10 +137,10 @@ constructor will accept a single argument called `_airnodeRrp` . This argument
 is the address of the Airnode
 [Request Response Protocol](/reference/airnode/latest/concepts/) of the chain
 this contract will be deployed to. A list of all the AirnodeRrp addresses can be
-found [here](/reference/airnode/latest/airnode-addresses.html) for each chain.
-This address is passed onto the constructor of `RrpRequesterV0` which sets the
-current deployed contract as a sponsor for itself. You don’t have to worry about
-sponsorship for now we will cover that in a bit.
+found [here](/reference/airnode/latest/) for each chain. This address is passed
+onto the constructor of `RrpRequesterV0` which sets the current deployed
+contract as a sponsor for itself. You don’t have to worry about sponsorship for
+now we will cover that in a bit.
 
 You also need to call the constructor of `ERC721` and give it the `tokenName`
 and `tokenSymbol` as arguments. In this case it is `QUANTUMON` for both the name

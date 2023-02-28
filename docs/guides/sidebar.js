@@ -1,47 +1,37 @@
 module.exports = [
   {
     text: '',
-    collapsible: true,
     collapsed: false,
     items: [{ text: 'Getting Started', link: '/guides/' }],
   },
   {
     text: 'dAPIs',
-    collapsible: true,
     collapsed: false,
     items: [
       {
-        text: 'Self-Funded dAPIs',
-        collapsible: true,
-        collapsed: false,
-        items: [
-          {
-            text: 'Subscribing to Self-Funded dAPIs ',
-            link: '/guides/dapis/subscribing-self-funded-dapis/',
-          },
-          {
-            text: 'Reading a Self-Funded dAPI Proxy',
-            link: '/guides/dapis/read-self-funded-dapi/',
-          },
-        ],
+        text: 'Subscribing to Self-Funded dAPIs ',
+        link: '/guides/dapis/subscribing-self-funded-dapis/',
       },
+      {
+        text: 'Reading a Self-Funded dAPI Proxy',
+        link: '/guides/dapis/read-self-funded-dapi/',
+      },
+      /*{
+        text: 'Self-Funded dAPIs',
+        collapsed: false,
+        items: [],
+      },*/
     ],
   },
   {
     text: 'Airnode',
-    collapsible: true,
     collapsed: false,
     items: [
       {
         text: 'Deploying an Airnode',
         link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
-        collapsible: true,
         collapsed: false,
         items: [
-          {
-            text: '• Generating Airnode Config using ChainAPI',
-            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
-          },
           {
             text: '• Deploying Airnode via AWS',
             link: '/guides/airnode/deploy-airnode/deploy-aws/',
@@ -53,6 +43,10 @@ module.exports = [
           {
             text: '• Deploying Airnode locally using Docker',
             link: '/guides/airnode/deploy-airnode/deploy-container/',
+          },
+          {
+            text: '• Generating Airnode Config using ChainAPI',
+            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
           },
         ],
       },
@@ -74,24 +68,8 @@ module.exports = [
       },
     ],
   },
-  /*{
-    text: 'ChainAPI',
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: 'Integrate your API',
-        link: '/guides/chainapi/integrate',
-      },
-      {
-        text: 'Deploy an API Integration',
-        link: '/guides/chainapi/deploy',
-      },
-    ],
-  },*/
   {
     text: 'QRNG',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -118,7 +96,6 @@ module.exports = [
   },
   {
     text: 'DAO Members',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -145,7 +122,6 @@ module.exports = [
   },
   {
     text: 'Miscellaneous',
-    collapsible: true,
     collapsed: false,
     items: [
       { text: 'Create an Infura key', link: '/guides/infura-key' },

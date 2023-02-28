@@ -31,7 +31,7 @@ Airnode is deployed with the following files:
 - gcp.json: (GCP deployments only) holds GCP project information and is required
   by the Docker [deployer image](../docker/deployer-image.md). This file is
   downloaded from a GCP project. See the guide
-  [Quick Start GCP](/guides/airnode/quick-start-gcp/#_4-gcp-project-setup-credentials)
+  [Deploying an Airnode on GCP](/guides/airnode/deploy-airnode/deploy-gcp/#_4-gcp-project-setup-credentials)
   for more information.
 
 Airnode deployments utilize secrets such as security scheme values (i.e., API

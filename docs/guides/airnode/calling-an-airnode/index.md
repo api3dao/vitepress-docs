@@ -201,8 +201,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 
 - The `_rrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have
   already been deployed on-chain. You can check for your specific chain
-  [here](/reference/airnode/latest/airnode-addresses.html). Fill it in and
-  Deploy the Contract.
+  [here](/reference/airnode/latest/). Fill it in and Deploy the Contract.
 
 > ![Deploying the Requester](src/s3.png)
 

@@ -28,13 +28,11 @@ module.exports = [
   },
   {
     text: 'API3 Market Proxy Contracts',
-    collapsible: true,
     collapsed: false,
     items: [],
   },
   {
     text: 'DapiServer Contract',
-    collapsible: true,
     collapsed: false,
     items: [
       {

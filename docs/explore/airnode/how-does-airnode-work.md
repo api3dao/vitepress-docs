@@ -24,7 +24,7 @@ consists of two parts:
 2. The on-chain **protocol contract** AirnodeRrpV0.sol. This is often referred
    to as the oracle smart contracts.
 
-> <img src="../assets/images/summary-airnode-2-parts.png" width="350px">
+> <img src="../assets/images/summary-airnode-2-parts.png" width="350">
 
 Airnode is designed with mechanisms that eliminate both on-chain and off-chain
 concerns of API providers. The set-and-forget framework of Airnode is all about

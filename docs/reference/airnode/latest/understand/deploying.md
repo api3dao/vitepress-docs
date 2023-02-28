@@ -27,10 +27,11 @@ The recommended way to deploy Airnode is by using the Docker
 [deployer image](../docker/deployer-image.md). This image is simply a wrapper
 around the
 [deployer CLI](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer).
-Try the [Quick Start AWS](/guides/airnode/quick-start-aws/) tutorial if you wish
-to become familiar with the deployer image first. There are also tutorials for
-[GCP](/guides/airnode/quick-start-gcp/) and a
-[client Docker container](/guides/airnode/quick-start-container/).
+Try the
+[Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/)
+tutorial if you wish to become familiar with the deployer image first. There are
+also tutorials for [GCP](/guides/airnode/deploy-airnode/deploy-gcp/) and a
+[client Docker container](/guides/airnode/deploy-airnode/deploy-container/).
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,
 without requiring you to click through a lot of ever-changing graphical
@@ -138,9 +139,9 @@ bypassing the chain it was deployed to. There are examples that detail how to do
 this.
 
 - [HTTP Gateways](./http-gateways.md#using-curl)
-- [Quick Start AWS](/guides/airnode/quick-start-aws/index.md#_5-test-the-airnode)
-- [Quick Start GCP](/guides/airnode/quick-start-gcp/index.md#_6-test-the-airnode)
-- [Quick Start Docker Container](/guides/airnode/quick-start-container/index.md#_5-test-the-airnode)
+- [Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/#_5-test-the-airnode)
+- [Deploying an Airnode on GCP](/guides/airnode/deploy-airnode/deploy-gcp/#_6-test-the-airnode)
+- [Deploying an Airnode locally using Docker](/guides/airnode/deploy-airnode/deploy-gcp/#_5-test-the-airnode)
 
 ## Make an RRP request of the Airnode
 
