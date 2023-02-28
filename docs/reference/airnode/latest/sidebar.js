@@ -1,7 +1,7 @@
 module.exports = [
   {
     text: '',
-    collapsible: false,
+
     items: [
       {
         text: 'Contract Addresses',
@@ -24,8 +24,7 @@ module.exports = [
   },
   {
     text: 'Understanding Airnode',
-    collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: 'Overview',
@@ -71,7 +70,6 @@ module.exports = [
   },
   {
     text: 'Concepts and Definitions',
-    collapsible: true,
     collapsed: true,
     items: [
       {
@@ -134,7 +132,6 @@ module.exports = [
   },
   {
     text: 'Docker Images',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -157,7 +154,6 @@ module.exports = [
   },
   {
     text: 'Deployment Files',
-    collapsible: true,
     collapsed: false,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/deployment-files/' },
@@ -220,7 +216,6 @@ module.exports = [
   },
   {
     text: 'Specifications',
-    collapsible: true,
     collapsed: true,
     items: [
       {
@@ -239,7 +234,6 @@ module.exports = [
   },
   {
     text: 'Packages',
-    collapsible: true,
     collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/packages/' },
@@ -262,7 +256,6 @@ module.exports = [
 
   {
     text: 'dApp Developers',
-    collapsible: true,
     collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/developers/' },

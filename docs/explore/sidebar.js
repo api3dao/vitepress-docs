@@ -4,7 +4,6 @@ module.exports = [
     items: [
       {
         text: 'About our journey!',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -37,7 +36,6 @@ module.exports = [
   },
   {
     text: 'dAPIs',
-    collapsible: true,
     collapsed: false,
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
@@ -61,7 +59,6 @@ module.exports = [
   },
   {
     text: 'Airnode',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -88,7 +85,6 @@ module.exports = [
   },
   {
     text: 'QRNG',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -99,7 +95,7 @@ module.exports = [
   },
   {
     text: 'DAO Members',
-    collapsible: true,
+
     collapsed: false,
     items: [
       {
