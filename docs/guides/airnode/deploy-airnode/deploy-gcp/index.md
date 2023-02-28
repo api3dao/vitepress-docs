@@ -6,7 +6,6 @@ pageHeader: Guides → Airnode
 path: /guides/airnode/deploy-airnode/deploy-gcp/
 outline: deep
 tags:
-deployerVersion: 0.9.2
 ---
 
 <PageHeader/>
@@ -15,26 +14,22 @@ deployerVersion: 0.9.2
 
 # {{$frontmatter.title}}
 
-<!-- Dec 23rd, 2022: wkande
-GET READY FOR Airnode v0.10+
-The apiKey for the HTTP gateway will be removed.
--->
-
 This guide is a simple introduction that demonstrates the deployment of an
 Airnode. Configuration files are provided with only minor changes to be made. If
 you wish to use your own configuration files, you can generate them using
-ChainAPI. [Refer to this guide](../deploy-airnode/index.md).
+[ChainAPI<ExternalLinkImage/>](https://chainapi.com).
 
-This guide uses the latest release
-([{{$frontmatter.deployerVersion}}<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
+The latest release
+([0.11<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
 of the Airnode
-[deployer image](/reference/airnode/latest/docker/deployer-image.md) which
-deploys the off-chain component of Airnode (a.k.a., the node) to GCP. It uses an
-API endpoint (`GET /simple/price`) from
-[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
-which returns the current value of a coin. This guide does not detail the
-overall configuration of an Airnode, it is just a quick start guide then lends
-itself to understanding an Airnode deployment.
+[deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
+used to deploy the off-chain component of Airnode (a.k.a., the node) to GCP.
+
+This Airnode contains a single API operation (`GET /simple/price`) from
+[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+current value of a coin. This guide does not detail the overall configuration of
+an Airnode, it is just a quick start guide then lends itself to understanding an
+Airnode deployment
 
 ## Configuration Files
 

@@ -15,9 +15,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-[ChainAPI](https://chainapi.com/) is a platform that enables you to integrate
-and deploy the open-source
-[Airnode](../../../reference/airnode/latest/understand/) with its step-by-step
+[ChainAPI<ExternalLinkImage/>](https://chainapi.com/) is a platform that enables
+you to integrate and deploy the open-source
+[Airnode](/reference/airnode/latest/understand/) with its step-by-step
 integration and deployment tools. It helps streamline the Airnode integration
 process for API providers.
 
