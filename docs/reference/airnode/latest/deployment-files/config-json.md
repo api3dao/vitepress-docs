@@ -405,7 +405,8 @@ Airnode on-chain which is optional.
 periodically make a request to the specified URL signaling that it's active at
 the end of each cycle (every minute). There are plans in the future to allow the
 sending of a payload with information for reporting purposes. See the
-[Heartbeat](../understand/heartbeat.md) documentation for more information.
+[Heartbeat](/reference/airnode/latest/understand/heartbeat.md) documentation for
+more information.
 
 #### `heartbeat.enabled`
 

@@ -122,7 +122,8 @@ endpoints are not openly accessible. Therefore, the gateway URLs should be kept
 secret.
 
 The gateway URLs are also available as part of the payload sent from Airnode's
-[heartbeat](./heartbeat.md) to a specified heartbeat URL.
+[heartbeat](/reference/airnode/latest/understand/heartbeat.md) to a specified
+heartbeat URL.
 
 ### When deployed on a cloud provider
 
@@ -138,7 +139,8 @@ is a common web server for both gateways, which is exposed on the host machine.
 Doing so will make the gateways API accessible like a regular web server running
 on the machine. Each gateway has a separate endpoint as shown below. Note the
 `PORT` which is exposed as part of the Airnode client container. See the
-[Airnode client usage](../docker/client-image.md#usage) for more details.
+[Airnode client usage](/reference/airnode/latest/docker/client-image.md#usage)
+for more details.
 
 - `http://localhost:<PORT>/http-data/01234567-abcd-abcd-abcd-012345678abc/<endpointId>` -
   Gateway URL for the HTTP Gateway

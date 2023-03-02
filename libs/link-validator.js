@@ -52,9 +52,9 @@ var fs = require('fs');
 var ignore = JSON.parse(
   fs.readFileSync('./libs/link-validator-ignore.json', 'utf8')
 );
-console.log('| > Ignore list');
+console.log(colors.bold('| > Ignore list'));
 ignore.forEach((element) => {
-  console.log('|', element);
+  console.log('|', colors.bold.yellow(element));
 });
 console.log('|++++++++++++++++++++++++\n');
 
@@ -145,6 +145,7 @@ async function run(task) {
 }
 
 async function loadLinks() {
+  console.log('loadLinks()');
   file.walkSync(distDir, tempCB);
   for (let i = 0; i < arr.length; i++) {
     for (let z = 0; z < arr[i].files.length; z++) {
@@ -158,6 +159,7 @@ async function loadLinks() {
         // Go thru the links and add to master list (linksObj)
         for (var x = 0; x < links.length; x++) {
           let url = links[x];
+
           if (
             url &&
             url.indexOf('http://') === -1 &&
@@ -189,7 +191,7 @@ async function loadImages() {
         for (var x = 0; x < images.length; x++) {
           let url = images[x];
 
-          // Some may use data:image/ because they are small and VuePress converts to data:image
+          // Some may use data:image/ because they are small and VitePress converts to data:image
           // So skip them
           if (url.indexOf('data:image/') === -1) {
             if (

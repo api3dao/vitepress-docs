@@ -138,10 +138,10 @@ If you opted to enable the HTTP Gateway it can be used to test the Airnode while
 bypassing the chain it was deployed to. There are examples that detail how to do
 this.
 
-- [HTTP Gateways](./http-gateways.md#using-curl)
+- [HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md#using-curl)
 - [Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/#_5-test-the-airnode)
 - [Deploying an Airnode on GCP](/guides/airnode/deploy-airnode/deploy-gcp/#_6-test-the-airnode)
-- [Deploying an Airnode locally using Docker](/guides/airnode/deploy-airnode/deploy-gcp/#_5-test-the-airnode)
+- [Deploying an Airnode locally using Docker](/guides/airnode/deploy-airnode/deploy-container/#_5-test-the-airnode)
 
 ## Make an RRP request of the Airnode
 
