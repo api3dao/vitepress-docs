@@ -77,7 +77,21 @@ Learn how Beacons are the building blocks for
 
 :::
 
-## Why use dAPIs?
+## Understanding the dAPI Interface
+
+dAPIs possess a range of distinct attributes:
+
+- dAPIs have a standardized, user-friendly interface that intends to abstract
+  away the technical implementation.
+- A dApp uses the dAPI interface to access data feed services. These services
+  exist in a fully permissionless or authorized format.
+- dAPIs exist entirely on-chain as smart contracts and use first-party oracles
+  served in a variety of data feed services such as self-funded or managed dAPIs
+  (more on this later).
+- Through a dAPI smart contract, developers can access additional services such
+  as Service Coverage or Oracle Extractable Value.
+
+<!--## Why use dAPIs?
 
 Due to being composed out of first-party data feeds, dAPIs offer security,
 transparency, cost-efficiency and scalability in a turn-key package.
@@ -115,22 +129,32 @@ Airnode protocols and relayer schemes to improve efficiency while not degrading
 the security guarantees of a first-party data feed. The improved scalability of
 dAPIs also factors into building aggregated data feeds. Since first-party data
 feeds do not require redundancy at the middlemen layer, the aggregation costs
-less gas and source-level decentralization becomes more affordable.
+less gas and source-level decentralization becomes more affordable.-->
 
-## Understanding the `DapiServer.sol`
+## Accessing a dAPI: DapiServer.sol
 
 Developers use the
 [DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)<externalLinkImage/>
 contract to access dAPIs. `DapiServer.sol` reads directly from its data store of
 Beacons, which are powered by API provider-owned and operated
-[Airnodes](/reference/airnode/latest/).
+[Airnodes](/reference/airnode/latest/). A developer will deploy a proxy contract
+to access the dAPI. Now a developer can easily set the proxy contract address in
+his contract and start reading from the dAPIs.
 
-> <img src="../assets/images/dapp-beacon.png" width="550px"/>
+dAPI proxies allow dAPIs to be used like libraries. The smart contract just
+needs to import the interface for calling the proxy contract. To read a
+different dAPI, the contract does not need to change the code itself, rather it
+only needs to use a different proxy address when calling the read() function on
+the proxy contract.
+
+## Understanding the `DapiServer.sol`
+
+> <img src="../assets/images/00-a-What_are_dAPIs.png" width="550px"/>
 
 A dAPI can be pointed towards an individual Beacon or an aggregation of multiple
 Beacons (Beacon Set).
 
-> <img src="../assets/images/dapi-beacons.png" width="550px"/>
+> <img src="../assets/images/00-b-What_are_dAPIs.png" width="550px"/>
 
 Each dAPI has a human-readable name (e.g., `AVAX/USD`) that makes them easily
 accessible using `DapiServer.sol` by simply passing the encoded bytes32 value of
@@ -149,7 +173,7 @@ and
 for a step-by-step guides on how to call a dAPI. Also visit the
 [reference section for dAPIs](/reference/dapis/).
 
-## More related material...
+## More related material
 
 <div class="api3-css-nav-box-flex-row">
   <NavBox type='GUIDE' id="_dapi-just-the-code"/>
@@ -160,11 +184,11 @@ for a step-by-step guides on how to call a dAPI. Also visit the
 <!--Additionally it is going to play a cruical role in setting up required
 contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->
 
-## dAPI Maintenance
+<!--## dAPI Maintenance
 
 The exact process that is being followed currently and what is envisioned for
 the future can be found in
-[how are dAPIs maintained](/explore/dapis/how-are-dapis-maintained.md).
+[how are dAPIs maintained](/explore/dapis/how-are-dapis-maintained.md).-->
 
 <!--## Medium Articles
 

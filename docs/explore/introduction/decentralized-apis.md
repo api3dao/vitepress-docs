@@ -49,6 +49,22 @@ relayed RRP, relayed PSP and API-signed data.-->
 dAPIs are then delivered to builders from a variety of oracle services price
 reference data for the latest cryptocurrency, stock and commodity prices.-->
 
+### Understanding the dAPI Interface
+
+dAPIs is an interface to connect to data feeds. They have been specifically
+engineered for smart contracts to mimic traditional Web APIs. dAPIs possess a
+range of distinct attributes:
+
+- dAPIs have a standardized, user-friendly interface that intends to abstract
+  away the technical implementation.
+- A dApp uses the dAPI interface to access data feed services. These services
+  exist in a fully permissionless or authorized format.
+- dAPIs exist entirely on-chain as smart contracts and use first-party oracles
+  served in a variety of data feed services such as self-funded or managed dAPIs
+  (more on this later).
+- Through a dAPI smart contract, developers can access additional services such
+  as Service Coverage or Oracle Extractable Value.
+
 ## dAPI Services
 
 dAPIs have been designed to serve builders with data feeds that are appropiate
@@ -61,14 +77,17 @@ of:
 
 ### 1. Self-funded data feeds
 
-Self-funded data feeds serve reference data on-chain in a permissionless
-fashion.
+Self-funded dAPIs provide developers with the tools to use single-source data
+feed services with minimal associated costs and no upfront commitment, served in
+a fully permissionless fashion through the API3 Market. Once gas funds have been
+provided in the oracle sponsor wallet a dAPI will begin automatically post data
+on-chain when price deviation thresholds are met.
 
 To activate an oracle feed, users must deposit chain-native collateral to a
 designated dAPI sponsor wallet. This collateral will cover the costs of gas for
 oracle transactions.
 
--- illustration --
+<img src="../assets/images/09-Visual_that_communicates_how_a_self-funded_feed_works.png" width="550px"/>
 
 <!--Self-funded data feeds are permissionless price reference dAPIs where collateral for an oracle update transaction is provided by the user. Self-funded dAPIs are activated by funding a gas wallet using the API3 Market.-->
 
@@ -92,23 +111,22 @@ for oracle services are too prohibitive.
 
 ### 2. Managed data feeds (multi-source)
 
-In the live data feed use-case, a dAPI is a set of first-party oracles that is
-aggregated and wrapped by a higher-level interface.
+Managed dAPIs provide aggregated high-quality price reference data served
+on-chain by first-party oracles. dAPIs provide DeFi with a secure and
+transparent oracle solution that can be decentralized according to user
+requirements.
+
+Compared to self-funded dAPIs, managed dAPIs require user authorization through
+the API3 Market. As such reading an agreegated data feed is permissioned,
+meaning users need to register access to the dAPI. API3 will absorb gas fees and
+maintain dAPIs as part of the managed service.
 
 <!--higher-level? or user friendly?-->
-
-When accessing an agreegated data feed API3 will absorb gas fees and maintain as
-part of the dAPI service. As such reading an agreegated data feed is
-permissioned, meaning users need to register access to the dAPI.
 
 <!--Compared to single sourced (byog) dAPIs, API3 and the underlying API providers will also take over the gas management overhead from this point onward until the
 time that the service expires.-->
 
-dAPIs will provide aggregated high-quality price reference data served on-chain
-by first-party oracles. dAPIs provide DeFi with a secure and transparent oracle
-solution that can be decentralized according to user requirements.
-
---designing illustration--
+<img src="../assets/images/10-Visual_that_communicates_how_a_managed_service_feed.png" width="550px"/>
 
 <!--design illustration-->
 
@@ -133,8 +151,8 @@ uncomplicated process requiring only a few simple steps. Utilizing the tools
 available within the API3 Market, users can swiftly gain access to a dAPI with
 minimal effort.
 
-::: info Learn more
+::: info Get started
 
-Follow the dAPI starter project [link to starter project]
+Follow the this quick guide to get started with self-funded dAPIs.
 
 :::

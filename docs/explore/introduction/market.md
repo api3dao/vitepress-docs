@@ -23,15 +23,10 @@ possible.
 
 Smart contract developers access dAPIs through the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org), where data feeds are
-easily searched, monitored, and consumed. As of XXX self-funded data feeds are
-accessible, with agreegated feeds to be launched in the near future.
+easily searched, monitored, and consumed. Self-funded data feeds are accessible,
+with managed data feeds to be launched in the near future.
 
-[![API3 Market](../assets/images/market-website.png)](https://market.api3.org)
-
-Self-funded data feeds can now be accessed from the
-[API3 Market](https://market.api3.org).
-
-### Simplying access to real-world data
+[![API3 Market](../assets/images/market-screenshot-march2023.png)](https://market.api3.org)
 
 The API3 Market provides tooling to seamlessly access dAPI services. For
 self-funded data feeds this end-to-end process consists of:
@@ -40,16 +35,13 @@ self-funded data feeds this end-to-end process consists of:
 2. Funding a sponsor wallet
 3. Accessing a data feed through a proxy
 
-::: info Learn more
+<!--::: info Learn more
 
 Link to content piece associated to the concerns identified in journey mapping
 
-:::
+:::-->
 
-### Get started
+To utilize high-quality data feeds in your smart contracts follow the simple
+steps in the [API3 Market](https://market.api3.org)..
 
-For a limited time, dAPIs are free to use. Projects can integrate now to
-maximize their access to high quality price data during this free trial period.
-Visit the
-[Request Data<ExternalLinkImage/>](https://forms.monday.com/forms/embed/f44d0ed9dfd0154885f48fdb3b87a489?r=use1)
-form to get access.
+<img src="../assets/images/11-Visual_that_communicates_the_process_of_sponsoring_a_byog_feed_using_the_market.png" width="550px"/>

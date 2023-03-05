@@ -12,17 +12,15 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
-
-# Using dAPIs --need to switch the markdown file name--
+# {{$frontmatter.title}} # Using dAPIs
 
 A dAPI has been designed to be the user interface that enables builders to
 easilly access & manage to a variety of data feed services. Through the API3
 Market a variety of data feed services can be accessed:
 
-1- Self-funded dAPIs 2- Managed dAPIs
+1- Self-funded dAPIs
 
-Additionally, Oracle Extractable Value will be accessed via the dAPI interface.
+2- Managed dAPIs
 
 # Self-Funded dAPIs
 
@@ -35,7 +33,7 @@ transactions fees are paid from a respective sponsor wallet. Once funds are
 available in this wallet, oracle updates on the associated dAPI will begin
 automatically (given the Airnode invocation restrictions).
 
--- insert illustration explaining self-funded feeds --
+<img src="../assets/images/09-Visual_that_communicates_how_a_self-funded_feed_works.png" width="550px"/>
 
 In the same way, the dAPI will stop being updated if the required funds for
 updates are not sufficiently available anymore.
@@ -66,6 +64,21 @@ advantages for builders:
 Additionally, the API3 Market provides an intuitive interface to check the
 status of respective self-funded dAPIs and fund them accordingly.
 
+## Accessing a self-funded feed
+
+You can access a self-funded dAPI now through the
+[API3 Market](https://market.api3.org) in a permissionless and simple process.
+
+<img src="../assets/images/11-Visual_that_communicates_the_process_of_sponsoring_a_byog_feed_using_the_market.png" width="550px"/>
+
+::: tip
+
+Follow a guide on
+[how to use the API3 Market](/guides/dapis/call-dapi-dapiserver/index) to access
+a self-funded dAPI to get started in under 30mins.
+
+:::
+
 # Managed dAPIs
 
 Managed dAPIs are sourced from multiple first-party oracles and aggregated using
@@ -78,6 +91,8 @@ a desired amount of first-party oracles that should be included in the
 aggregation. API3 will create the respective Beacon Set from the best available
 first-party providers for the requested data set and point the dAPI towards this
 creation.
+
+<img src="../assets/images/10-Visual_that_communicates_how_a_managed_service_feed.png" width="550px"/>
 
 In addition, API3 takes over the gas management overhead associated with
 operating the respective dAPI. API3 recommends the usage of managed dAPIs in
@@ -93,18 +108,6 @@ overview.
 
 :::
 
-## Oracle Extractable Value (OEV)
-
-Oracle extractable value (OEV) refers to oracles making use of their position to
-capture value that would otherwise have gone to third parties.
-
-::: info Read more
-
-Learn more about Oracle Extractable Value in a summary of the
-[OEV Litepaper](https://medium.com/api3/oracle-extractable-value-oev-13c1b6d53c5b)
-
-:::
-
 # API3 Market
 
 The API3 Market lists all available dAPIs, self-funded and managed alike. It
@@ -114,5 +117,3 @@ represents a hub that allows developers to:
 - Fund their operation in the case of self-funded dAPIs
 - Authorize for the upgrade to a managed version
 - Request new data types
-
-Get started with dAPIs at the [API3 Market](https://market.api3.org/dapis).

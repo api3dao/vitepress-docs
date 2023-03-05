@@ -14,8 +14,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-There are various moving parts in the operation of dAPIs, which bring with a
-variety of security considerations that integrating parties should be aware of.
+There are various moving parts in the operation of dAPIs which bring with a
+variety of security considerations. When using dAPIs integrating parties should
+be aware of and understand these processes.
 
 ## Multi-sig dependency
 
