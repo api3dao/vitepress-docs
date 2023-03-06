@@ -77,10 +77,6 @@ There are just a few steps to create and place a template on-chain for a
 requester (smart contract) to use. Each template is identified by a`templateId`,
 which is the hash of its contents.
 
-<!--When you create a template record on-chain,
-[see 2. Upload Template](#2-upload-template), a templateId will be
-returned.-->
-
 ## 1. Create a template
 
 First create a file that contains a JSON object, see the example below.
@@ -121,7 +117,7 @@ First create a file that contains a JSON object, see the example below.
 Below are links that further discuss request parameters if you additional help.
 
 - [Request](/reference/airnode/latest/concepts/request.md)
-- [Making an RRP Request](rrp-request.md#request-parameters)
+- [Making an RRP Request](/guides/airnode/rrp-request.md#request-parameters)
 
 ## 2. Upload the template
 

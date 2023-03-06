@@ -18,8 +18,9 @@ tags:
 # {{$frontmatter.title}}
 
 The processing schema is the same for both
-[pre-processing](./specification.md#_5-9-preprocessingspecifications) and
-[post-processing](./specification.md#_5-10-postprocessingspecifications).
+[pre-processing](https://swagger.io/specification/specification.md#_5-9-preprocessingspecifications)
+and
+[post-processing](https://swagger.io/specification/specification.md#_5-10-postprocessingspecifications).
 
 The processing schema accepts an array of processing snippets which are chained.
 The first snippet receives parameters submitted as part of a template or
@@ -111,15 +112,15 @@ specification. Example #1 below implements this use case.
 
 This example creates an Airnode endpoint named `generateRandomNumber` with no
 parameters. Because there isn't an
-[operation field](specification.md#_5-2-operation) defined for this Airnode
-endpoint, a call to an API will not be made. The Airnode will instead execute a
-single specification defined in the
-[preProcessingSpecifications](specification.md#_5-9-preprocessingspecifications)
+[operation field](https://swagger.io/specification/specification.md#_5-2-operation)
+defined for this Airnode endpoint, a call to an API will not be made. The
+Airnode will instead execute a single specification defined in the
+[preProcessingSpecifications](https://swagger.io/specification/specification.md#_5-9-preprocessingspecifications)
 array.
 
 To implement the use case mentioned above, the
-[operation field](specification.md#_5-2-operation) will be undefined,
-`fixedOperationParameters` will be an empty array, and
+[operation field](https://swagger.io/specification/specification.md#_5-2-operation)
+will be undefined, `fixedOperationParameters` will be an empty array, and
 `preProcessingSpecifications` will be defined with a single specification.
 
 - A requester makes a request of the Airnode endpoint `generateRandomNumber`
@@ -161,13 +162,15 @@ endpoints: [
 
 ### Example #2
 
-The code below is unrelated to the [use case](#use-case-random-number) mentioned
-earlier. This example creates an Airnode endpoint named
+The code below is unrelated to the
+[use case](https://swagger.io/specification/processing.md#use-case-random-number)
+mentioned earlier. This example creates an Airnode endpoint named
 `endpointThatSumsWith1000` with a parameter named `numberToSum`. Because there
-isn't an [operation field](specification.md#_5-2-operation) defined for this
-Airnode endpoint, a call to an API will not be made. The Airnode will instead
-execute a single specification defined in the
-[preProcessingSpecifications](specification.md#_5-9-preprocessingspecifications)
+isn't an
+[operation field](https://swagger.io/specification/specification.md#_5-2-operation)
+defined for this Airnode endpoint, a call to an API will not be made. The
+Airnode will instead execute a single specification defined in the
+[preProcessingSpecifications](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
 array.
 
 - A requester passes the number `5` in the parameter named `numberToSum`.

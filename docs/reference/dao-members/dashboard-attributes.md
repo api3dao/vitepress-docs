@@ -20,8 +20,8 @@ appropriate function on the DAO pool contract.
 
 The following parameters can be updated via DAO proposal by calling
 [StateUtils.sol](https://github.com/api3dao/api3-dao/tree/main/packages/pool/contracts)<ExternalLinkImage/>
-functions within the [API3 Pool contract](pool.md). For reference, percentage
-values are based on `10^18 = 100%`.
+functions within the [API3 Pool contract](/reference/dao-members/pool.md). For
+reference, percentage values are based on `10^18 = 100%`.
 
 ::: danger TODO:
 

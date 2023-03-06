@@ -33,8 +33,9 @@ for an address, visit the
 [DAO Tracker wallets page](https://enormous.cloud/dao/api3/tracker/wallets)<ExternalLinkImage/>.
 
 You can vote on all proposals regardless of the percentage of staked tokens in
-the pool you own. See [How to Vote](./voting.md) for instructions.
-Alternatively, you can delegate your voting power to someone else. See the
+the pool you own. See [How to Vote](/guides/dao-members/voting.md) for
+instructions. Alternatively, you can delegate your voting power to someone else.
+See the
 [delegation pitch section](https://forum.api3.org/c/delegation-pitch/7)<ExternalLinkImage/>
 of the API3 forum for posts by community members offering to act as delegates or
 to post your own delegate pitch.
@@ -45,7 +46,8 @@ to post your own delegate pitch.
 
 The **Governance** page displays a list of active proposals and the **History**
 page displays proposals that have been executed or rejected. Watch the
-[Deposit and Withdraw](./videos.md#proposals-and-history) video.
+[Deposit and Withdraw](/guides/dao-members/videos.md#proposals-and-history)
+video.
 
 1. Navigate to the **Governance** page.
 
@@ -90,7 +92,7 @@ expected, for your proposal to succeed.
 2. Create an
    [official proposal ](https://forum.api3.org/t/api3-dao-example-proposal-template/52)<ExternalLinkImage/>
    post on the API3 forum. This should contain a link to the
-   [proposal description on IPFS](./proposals.md#using-ipfs-for-proposals).
+   [proposal description on IPFS](/guides/dao-members/proposals.md#using-ipfs-for-proposals).
 3. After receiving feedback from the above steps, create a formal proposal using
    the DAO dashboard as described below.
 
@@ -104,7 +106,8 @@ expected, for your proposal to succeed.
 For public addresses use the checksum version of the address where some
 alphabetical characters are capitalized. Copy your address to etherscan to get
 its checksum value. ENS names are allowed. See the
-[Using ENS Names](proposals.md#using-ens-names) section below.
+[Using ENS Names](/guides/dao-members/proposals.md#using-ens-names) section
+below.
 
 :::
 
@@ -117,8 +120,9 @@ tokens use. Add 6 zeros after the amount you are asking for.
 
 ### Create
 
-Watch the [Create a Proposal](./videos.md#proposals-and-history) video. To
-create a new proposal using the DAO dashboard:
+Watch the
+[Create a Proposal](/guides/dao-members/videos.md#proposals-and-history) video.
+To create a new proposal using the DAO dashboard:
 
 1. Click the **New Proposal** button on the Governance page.
 
@@ -140,7 +144,8 @@ create a new proposal using the DAO dashboard:
 4. Enter a **Description** that details the proposal.
 
    > A description can be typed text but consider using a PDF hosted on IPFS.
-   > See the [Using IPFS for Proposals](./proposals.md#using-ipfs-for-proposals)
+   > See the
+   > [Using IPFS for Proposals](/guides/dao-members/proposals.md#using-ipfs-for-proposals)
    > section below. Also consider adding a link back the forum where you posted
    > your proposal for discussion.
 

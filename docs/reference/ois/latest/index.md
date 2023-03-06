@@ -52,7 +52,7 @@ endpoint that maps to the same API operation.
 
 The following are three possible Airnode to API operation mapping examples.
 Mapping details are better documented in the next doc
-[Specification](./specification.md).
+[Specification](/reference/ois/latest/specification.md).
 
 ### Simple Airnode Endpoint
 

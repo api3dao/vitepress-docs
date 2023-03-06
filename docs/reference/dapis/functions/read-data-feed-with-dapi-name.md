@@ -19,7 +19,8 @@ This function reads a value and timestamp from a dAPI using its name. In the
 code example below, `_dapiName` is a dAPI name. For on-chain smart contracts the
 `msg.sender` argument received by the function
 [readDataFeedWithDapiName()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L729-L744)
-must have [read access](./index.md#read-access) for the dAPI requested.
+must have [read access](/reference/dapis/functions/index.md#read-access) for the
+dAPI requested.
 
 Calling from off-chain code (_using a library such as `ether.js`_) is not
 subject to coverage policies. Off-chain code is beyond the scope of this doc.
@@ -56,8 +57,8 @@ See another code example of `readDataFeedWithDapiName()` in the
 
 - `bytes32 dapiName` - The encoded bytes32 value of a dAPI name to retrieve a
   value and timestamp for. See
-  [Encode the dapiName](../dapi-names.md#encode-the-dapiname) to learn how to
-  encode the value of a `dapiName`.
+  [Encode the dapiName](/reference/dapis/dapi-names.md#encode-the-dapiname) to
+  learn how to encode the value of a `dapiName`.
 
 ## Returns
 

@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-[Airnodes](/reference/airnode/latest/concepts/airnode.html) are first-party
+[Airnodes](/reference/airnode/latest/concepts/airnode.md) are first-party
 oracles that are directly operated by the API Providers that provide data to any
 on-chain dApp. The Smart Contracts can request data from the Airnodes without
 going through any intermediary.
@@ -127,7 +127,7 @@ needs the following parameters to pass on to `airnodeRrp.makeFullRequest`.
 - `airnode` and `endpointId`: As a pair, these uniquely identify the endpoint
   desired at a particular Airnode.
 
-- `sponsor`: The [sponsor](/reference/airnode/latest/concepts/sponsor.html)
+- `sponsor`: The [sponsor](/reference/airnode/latest/concepts/sponsor.md)
   address.
 
 - `sponsorWallet`: The

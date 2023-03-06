@@ -56,13 +56,14 @@ OIS object is in these docs.
 - Open the [OIS template](/reference/ois/latest/template.md) in another browser
   window to follow along.
 - View an example of an Airnode
-  [config.json](../deployment-files/examples/config-json.md) file.
+  [config.json](/reference/airnode/latest/deployment-files/examples/config-json.md)
+  file.
 
 ## OIS Template
 
 OIS is a json object that is added to an Airnode's
-[config.json](../deployment-files/templates/config-json.md) file as the (`ois`)
-_key_, sometimes called a _field_. Try using the
+[config.json](/reference/airnode/latest/deployment-files/templates/config-json.md)
+file as the (`ois`) _key_, sometimes called a _field_. Try using the
 [OIS template](/reference/ois/latest/template.md) to construct an OIS and add it
 to the Airnode's config.json file later.
 
@@ -261,9 +262,9 @@ the non-nested application/json content-type is supported.
 
 It is not necessary to specify all API operation parameters, but only the ones
 the on-chain requester will need to be able to provide (see Airnode endpoint
-[parameters](./api-integration.md#parameters)), and the ones needed to hard-code
-a value for (see Airnode endpoint
-[fixed operation parameters](./api-integration.md#fixedoperationparameters)).
+[parameters](/reference/airnode/latest/understand/api-integration.md#parameters)),
+and the ones needed to hard-code a value for (see Airnode endpoint
+[fixed operation parameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)).
 
 ```json
 "paths": {
@@ -334,7 +335,7 @@ For example, if an API operation returns an asset price given its ticker (e.g.,
 parameter. The resulting endpoint would be a general one that returns prices for
 any kind of asset. On the other hand, hardcoding `BTC` as the asset whose price
 will be returned (using
-[fixed operation parameters](./api-integration.md#fixedoperationparameters)),
+[fixed operation parameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)),
 which would make the endpoint a specific one that only returns the BTC price.
 
 The recommended endpoint definition pattern is to create an Airnode endpoint for
@@ -343,9 +344,10 @@ themselves. This results in optimal flexibility, and essentially allows the
 requesters to use the entire API functionality on-chain. Normally, competitor
 oracle integrations strive to hard-code as many API parameters as possible
 because passing these parameters on-chain results in a gas cost overhead.
-However, the Airnode protocol uses [templates](../concepts/template.md) (not to
-be confused with the OIS template used for this guide), which allow requesters
-to specify a large number of endpoint parameters at no additional gas cost.
+However, the Airnode protocol uses
+[templates](/reference/airnode/latest/concepts/template.md) (not to be confused
+with the OIS template used for this guide), which allow requesters to specify a
+large number of endpoint parameters at no additional gas cost.
 
 Note that there are some cases where you may not want to map endpoints to API
 operations one-to-one. For example, an API operation can have a `header`
@@ -479,7 +481,7 @@ directly, and let the requester provide all API operation parameters through the
 Airnode endpoint parameters.
 
 Now that you have an OIS object, the next step is
-[API Security](./api-security.md).
+[API Security](/reference/airnode/latest/understand/api-security.md).
 
 ## More related material...
 

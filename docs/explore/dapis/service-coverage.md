@@ -73,4 +73,4 @@ To insure against potential system failures, the DAO pool can empower special
 transfers tokens from the DAO pool to the recipient. When this occurs, the total
 number of staked tokens goes down, and pool share value goes down in turn. See
 <a href="/api3-whitepaper-v1.0.3.pdf#page=31" target="_blank">Section 6.3,
-_"Service coverage process"_</a><ExternalLinkImage/>, of the API3 whitepaper.
+_"Service coverage process"_<ExternalLinkImage/></a>, of the API3 whitepaper.

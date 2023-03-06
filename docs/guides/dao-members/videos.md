@@ -20,9 +20,10 @@ tags:
 # {{$frontmatter.title}}
 
 The DAO dashboard videos have been incorporated the
-[Staking Tokens](staking.md), [Working with Proposals](proposals.md) and
-[How to Vote](voting.md) pages. This page allows quick access to all available
-dashboard videos.
+[Staking Tokens](/guides/dao-members/staking.md),
+[Working with Proposals](/guides/dao-members/proposals.md) and
+[How to Vote](/guides/dao-members/voting.md) pages. This page allows quick
+access to all available dashboard videos.
 
 ## Staking Page Overview
 

@@ -1,1 +1,8 @@
-["https://developer.offchainlabs.com/docs/arbgas"]
+[
+  "NOTE: The lib link-validator.js uses these as a 'contains' lookup.",
+  "https://developer.offchainlabs.com/docs/arbgas",
+  "https://swagger.io/",
+  "https://goerlifaucet.com/",
+  "/api3-whitepaper-v1.0.3.pdf",
+  "https://eth-goerli.gateway.pokt.network/v1/lb/"
+]

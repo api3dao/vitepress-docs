@@ -29,7 +29,6 @@ module.exports = [
     items: [
       {
         text: 'Deploying an Airnode',
-        link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
         collapsed: false,
         items: [
           {
@@ -65,6 +64,10 @@ module.exports = [
       {
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
+      },
+      {
+        text: 'Become an API Provider',
+        link: '/guides/airnode/become-api-provider',
       },
     ],
   },

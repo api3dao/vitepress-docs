@@ -8,6 +8,7 @@ var file = require('file');
 var colors = require('colors');
 const oust = require('oust');
 const axios = require('axios');
+const walkSync = require('walk-sync');
 
 /**
  * node ./libs/link-validator.js  http://127.0.0.1:8082  ./docs/.vitepress/dist/airnode/
@@ -26,6 +27,9 @@ console.log('| Link Validator');
 console.log('| baseURL:', baseURL);
 console.log('| distDir:', distDir);
 console.log('|++++++++++++++++++++++++');
+
+// All unique links found
+let linksObj = {};
 
 // Array of dir objects and their files {dir,files}
 let arr = [];
@@ -47,19 +51,30 @@ function tempCB(dirPath, dirs, files) {
   arr.push({ dir: dirPath, files: files });
 }
 
-// Ignore list
+// Load and display ignore list
 var fs = require('fs');
+const { link } = require('fs-extra');
 var ignore = JSON.parse(
   fs.readFileSync('./libs/link-validator-ignore.json', 'utf8')
 );
-console.log('| > Ignore list');
+console.log(colors.bold('| > Ignore list'));
 ignore.forEach((element) => {
-  console.log('|', element);
+  console.log('|', colors.bold.yellow(element));
 });
 console.log('|++++++++++++++++++++++++\n');
 
+// Test if url should be ignored.
+function ignoreUrl(url) {
+  for (var i = 0; i < ignore.length; i++) {
+    if (url.indexOf(ignore[i]) > -1) {
+      return true;
+    }
+  }
+  return false;
+}
+
 /**
- * Test a URL with Axios
+ * TEST LINK
  * @param {string} url: the URL to be tested
  * @param {string} filePath the file
  * @param {boolean} ignoreTimeout: if false a timeout cases a retry
@@ -69,10 +84,11 @@ async function testLink(url, filePath, ignoreTimeout) {
   try {
     // IGNORE: from ignore list AND
     // some a tags may have javascript:void(0) in href
-    if (ignore.indexOf(url) > -1 || url.indexOf('javascript:void(0)') > -1) {
+    if (ignoreUrl(url) || url.indexOf('javascript:void(0)') > -1) {
       return;
     }
 
+    //console.log(url);
     axios.defaults.timeout = 10000; // 10000ms
     let config = {
       headers: {
@@ -81,29 +97,53 @@ async function testLink(url, filePath, ignoreTimeout) {
     };
     const response = await axios.get(url, config);
 
-    // If the urlAnchor is missing/typo in the response.data, throw an error.
-    let arr = url.split('.html#');
-    let arr2 = url.split('/#');
+    // Checking the anchors
+    // Going forward from here the URL is valid, but there may be an anchor
 
     let urlAnchor = null;
-    // Which one is it? Only of the arrays will have 2 rows.
-    if (arr.length === 2) {
-      urlAnchor = '#' + arr[1];
-    } else if (arr2.length === 2) {
-      urlAnchor = '#' + arr2[1];
-    }
-
+    let arr = url.split('#');
+    // Rule #1
     // Sometimes the anchor indicator (#) is in the
     // path: https://api3.eth.link/#/history/secondary-6
     // This is not an anchor, ignore it.
-    if (urlAnchor && urlAnchor.indexOf('#/') > -1) {
-      urlAnchor = null;
+    if (url && url.indexOf('/#/') > -1) {
     }
+    // If there is an anchor process it here.
+    // Only internal anchors within the docs
+    else if (url.indexOf(baseURL) !== -1 && arr.length === 2) {
+      urlAnchor = '#' + arr[1];
+      //console.log('\n> Looking for urlAnchor:', urlAnchor);
+      //console.log('> SRC file:', filePath);
+      //console.log('> Target URL:', url);
 
-    // Look for urlAnchor in response.data.
-    if (urlAnchor && response.data.indexOf(urlAnchor + '"') === -1) {
-      throw new Error('Did not find anchor: ' + urlAnchor);
+      // Look for urlAnchor in response.data.
+      if (
+        urlAnchor &&
+        response.data.indexOf('href="' + urlAnchor + '"') === -1
+      ) {
+        //console.log(colors.red('> Anchor was NOT found in the response data.'));
+        throw new Error(
+          'Did not find anchor in the response data: ' + urlAnchor
+        );
+      }
+      // else {
+      //console.log('> Anchor was found in the response data.');
+      //}
     }
+    // There is an anchor with an .html file attached.
+    /*else if (url.indexOf('#') !== -1 && url.indexOf('.html#') === -1) {
+      throw new Error('Found anchor without a preceding .html file: ' + url);
+    }*/
+
+    // Which one is it? Only one of the arrays will have 2 rows.
+    /*if (arr.length === 2) {
+      urlAnchor = '#' + arr[1];
+      console.log('\n> urlAnchor', urlAnchor);
+    } else if (arr2.length === 2) {
+      console.log('\n>> urlAnchor', urlAnchor);
+      urlAnchor = '#' + arr2[1];
+    }*/
+
     process.stdout.write('.');
     return 0;
   } catch (error) {
@@ -122,10 +162,6 @@ async function testLink(url, filePath, ignoreTimeout) {
   }
 }
 
-let linksObj = {};
-/**
- * Creates a list of file paths from the rootDir
- */
 async function run(task) {
   let passed = 0;
   let failed = 0;
@@ -144,67 +180,42 @@ async function run(task) {
   console.log('\n');
 }
 
+/**
+ * LOAD LINKS
+ */
 async function loadLinks() {
-  file.walkSync(distDir, tempCB);
-  for (let i = 0; i < arr.length; i++) {
-    for (let z = 0; z < arr[i].files.length; z++) {
-      const filePath = arr[i].dir + '/' + arr[i].files[z];
+  const paths = walkSync(distDir);
+  const root = distDir.split('./docs/.vitepress/dist')[1];
+  for (let i = 0; i < paths.length; i++) {
+    // Only html files
+    const path = paths[i];
+    if (path.indexOf('.html') > 0) {
+      const htmlString = readFileSync(distDir + '/' + path, 'utf8');
+      const links = oust(htmlString, 'links');
+      // Go thru the links and add to master list (linksObj)
+      for (var x = 0; x < links.length; x++) {
+        let url = links[x];
 
-      // Only html files
-      if (filePath.indexOf('.html') > 0) {
-        const htmlString = readFileSync(filePath, 'utf8');
-        const links = oust(htmlString, 'links');
+        if ((url && url.indexOf('#') === 0) || url === '/') {
+          // If the URL starts with an anchor (#) tag
+          // or is to the root (/)
+          // do nothing
+        } else if (
+          url &&
+          url.indexOf('http://') === -1 &&
+          url.indexOf('https://') === -1
+        ) {
+          // These are internal links within the docs
+          url = baseURL + url;
 
-        // Go thru the links and add to master list (linksObj)
-        for (var x = 0; x < links.length; x++) {
-          let url = links[x];
-          if (
-            url &&
-            url.indexOf('http://') === -1 &&
-            url.indexOf('https://') === -1
-          ) {
-            url = baseURL + url;
-            linksObj[url] = 'LINK src: ' + filePath;
-          } else {
-            linksObj[url] = 'LINK src: ' + filePath;
-          }
-        } // Finished getting all links
-      } // end for
-    } // end for
-  }
-}
-
-async function loadImages() {
-  file.walkSync(distDir, tempCB);
-  for (let i = 0; i < arr.length; i++) {
-    for (let z = 0; z < arr[i].files.length; z++) {
-      const filePath = arr[i].dir + '/' + arr[i].files[z];
-
-      // Only html files
-      if (filePath.indexOf('.html') > 0) {
-        const htmlString = readFileSync(filePath, 'utf8');
-        const images = oust(htmlString, 'images');
-
-        // Go thru the images and add to master list (linksObj)
-        for (var x = 0; x < images.length; x++) {
-          let url = images[x];
-
-          // Some may use data:image/ because they are small and VuePress converts to data:image
-          // So skip them
-          if (url.indexOf('data:image/') === -1) {
-            if (
-              url.indexOf('http://') === -1 &&
-              url.indexOf('https://') === -1
-            ) {
-              url = baseURL + url;
-              linksObj[url] = 'IMAGE src: ' + filePath;
-            } else {
-              linksObj[url] = 'IMAGE src: ' + filePath;
-            }
-          }
-        } // Finished getting all images
-      } // end for
-    } // end for
+          linksObj[url] = 'LINK src: ' + root + '/' + path;
+        } else if (url) {
+          // URL could be undefined
+          // These are external links
+          linksObj[url] = 'LINK src: ' + root + '/' + path;
+        }
+      } // Finished getting all links
+    } // End if
   }
 }
 
@@ -227,10 +238,6 @@ async function printFailures() {
 }
 
 async function start() {
-  linksObj = {}; // Clear master list after each run()
-  await loadImages();
-  await run('images');
-
   linksObj = {};
   await loadLinks();
   await run('links');

@@ -6,9 +6,6 @@ pageHeader: Reference → QRNG → Contracts and Functions
 path: /reference/qrng/functions/make-full-request.html
 outline: deep
 tags:
-  - qrng
-  - make
-  - request
 ---
 
 <PageHeader/>
