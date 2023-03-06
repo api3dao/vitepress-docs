@@ -151,7 +151,7 @@ There is no conversion for `bytes32` - the value is expected to be a valid hex
 string representing the encoded 32 bytes value. This means that the encoding
 **must** be implemented on the API side. If you want to delegate the encoding to
 Airnode, see the documentation for
-[`string32`](adapter.md#string32-encoded-to-bytes32-on-chain).
+[`string32`](/reference/airnode/latest/packages/adapter.md#string32).
 
 For example, let's say the API wants to encode the following string
 `simple string` with length 13. Its encoding is
@@ -183,7 +183,8 @@ representing a valid address. Valid examples are:
 There is no conversion for `bytes` - the value is expected to be a valid hex
 string representing the encoded value. This means that the encoding to bytes
 **must** be implemented on the API side. If you want to send a string, see the
-documentation for [`string`](adapter.md#string).
+documentation for
+[`string`](/reference/airnode/latest/packages/adapter.md#string).
 
 For example, let's say the API wants to encode the following string
 `this is an example string that is a bit longer`. Its encoding is
@@ -254,8 +255,10 @@ nested array) will be converted according to the rules of the primitive type.
 For example:
 
 - `int256[]` - has primitive type `int256`. All elements of this array follow
-  the [`int256`](adapter.md#int256-or-uint256) rules.
+  the
+  [`int256`](/reference/airnode/latest/packages/adapter.md#int256-or-uint256)
+  rules.
 - `string32[7][][5]` - is a multidimensional array, where some dimensions are
   fixed and some not. This is irrelevant though, and all the elements are
   converted based on
-  [`string32`](adapter.md#string32-encoded-to-bytes32-on-chain) rules.
+  [`string32`](/reference/airnode/latest/packages/adapter.md#string32) rules.

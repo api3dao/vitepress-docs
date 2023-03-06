@@ -129,7 +129,7 @@ cases being realized for two key reasons:
 
 ::: tip Get started
 
-Get started as an API Provider [here](link.to.guide)
+Get started as an API Provider [here](/guides/airnode/become-api-provider.md)
 
 :::
 
@@ -173,7 +173,8 @@ Below is the quick link to the same.
 
 Airnode is has made it easy for API Providers to monetize their data to
 decentralized applications (dApps). To understand how Airnode serves data
-on-chain, read more about [how Airnode works](how-does-airnode-work.md).
+on-chain, read more about
+[how Airnode works](/explore/airnode/how-does-airnode-work.md).
 
 <!--
 

@@ -17,12 +17,14 @@ tags:
 
 # {{$frontmatter.title}}
 
-A request is made, by a [requester](requester.md), to either the
+A request is made, by a
+[requester](/reference/airnode/latest/concepts/requester.md), to either the
 `makeFullRequest()` or `makeTemplateRequest()` functions of the
-[AirnodeRrpV0.sol](./index.md#airnoderrpv0-sol) protocol contract which adds the
-request to its storage. The targeted off-chain [Airnode](airnode.md) gathers the
-request from AirnodeRrpV0.sol's storage and responds using the `fulFill()`
-function of AirnodeRrpV0.sol.
+[AirnodeRrpV0.sol](/reference/airnode/latest/concepts/index.md#airnoderrpv0-sol)
+protocol contract which adds the request to its storage. The targeted off-chain
+[Airnode](/reference/airnode/latest/concepts/airnode.md) gathers the request
+from AirnodeRrpV0.sol's storage and responds using the `fulFill()` function of
+AirnodeRrpV0.sol.
 
 > <img src="../assets/images/concepts-request.png" width="650px"/>
 >
@@ -32,7 +34,8 @@ function of AirnodeRrpV0.sol.
 > 4.  <p>Airnode gets data from the API and encodes it. The encoded response must have length at most 1024 bytes. (This is negligible in practice, since large responses are costly to store)</p>
 > 5.  <p>Airnode sends the response to fulFill() in AirnodeRrpV0 which in turn removes the pending requestId from storage and forwards the response to myFulFill(). The requestId is included as part of the response.</p>
 
-Learn more on how to [Call an Airnode](../developers/call-an-airnode.md).
+Learn more on how to
+[Call an Airnode](/reference/airnode/latest/developers/call-an-airnode.md).
 
 ## `requestId`
 
@@ -82,7 +85,8 @@ request.
 
 - `parameters` specify the API and
   [reserved](/reference/ois/latest/specification.md#_5-4-reservedparameters)
-  parameters (see [Airnode ABI specifications](../specifications/airnode-abi.md)
+  parameters (see
+  [Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md)
   for how these are encoded)
 
 ## Full Request
@@ -139,9 +143,8 @@ the same name, the one provided at request-time will be used.
 
 A request made to an Airnode has three possible outcomes:
 
-- [Fulfill](./request.md#fulfill)
-- [Fail](./request.md#fail)
-- [Ignore](./request.md#ignore)
+- [Fulfill](/reference/airnode/latest/concepts/request.md#fulfill)
+- [Fail](/reference/airnode/latest/concepts/request.md#fail)
 
 ### Fulfill
 

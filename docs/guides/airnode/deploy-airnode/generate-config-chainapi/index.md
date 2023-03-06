@@ -2,7 +2,7 @@
 title: Generating the Airnode Config using ChainAPI
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → Deploying an Airnode
+pageHeader: Guides → Airnode → Deploying an Airnode
 path: /guides/airnode/deploy-airnode/generate-config-chainapi/
 outline: deep
 tags:

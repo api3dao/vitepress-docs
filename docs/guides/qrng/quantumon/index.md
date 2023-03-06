@@ -3,7 +3,7 @@ title: Minting Dynamic NFTs with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
-path: /guides/qrng/qrng-remix/
+path: /guides/qrng/quantumon/index.html
 outline: deep
 tags:
   - qrng
@@ -16,7 +16,7 @@ tags:
 [Quantumon](https://quantumon.xyz/) - Quantum Monsters are a collection of AI
 generated monsters that are minted to users with the help of
 [API3's QRNG](/reference/qrng/) and [DALL-E AI](https://openai.com/dall-e-2/).
-It utilises the power of QRNG to generate unique random NFTs.
+It utilities the power of QRNG to generate unique random NFTs.
 
 One of the most important aspects of NFTs is their perceived rarity making it
 very important for the attributes that affect rarity to be randomly generated.
@@ -31,7 +31,7 @@ minting.
 To see how Quantumon works, you can visit the
 [Quantumon](https://quantumon.xyz/) website. It uses an ERC-721 standard
 contract and QRNG to mint random NFTs and distribute them.
-[Check out the code here]().
+[Check out the code here<ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
 
 Start by specifying the license, solidity version, importing the necessary
 contracts and then creating the actual contract itself.
@@ -47,7 +47,8 @@ contract Quantumon is ERC721, RrpRequesterV0, Ownable {
 }
 ```
 
-- **Ownable** : This is [Openzeppelin implementation of an ownership]()
+- **Ownable** : This is
+  [Openzeppelin implementation of an ownership<ExternalLinkImage/>](https://docs.openzeppelin.com/contracts/2.x/access-control)
   contract. Contracts that inherit the Ownable contract have access to modifiers
   that make it possible for certain function to only be invoked by the owner.
   The owner of the contract is the contract deployer. However the ownership can
@@ -425,8 +426,9 @@ Quantumon ids to be minted “out of order”).
 
 ## Conclusion
 
-In this guide, you learnt how Quantumon utilises QRNG to mint Quantumon
+In this guide, you learnt how Quantumon utilities QRNG to mint Quantumon
 Monsters. You also learnt how to request data from a QRNG Airnode and how to use
 the data to mint an NFT.
 
-[Click here]() to see the source code for the Quantumon contract.
+[Click here<ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4)
+to see the source code for the Quantumon contract.

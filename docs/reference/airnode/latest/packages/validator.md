@@ -19,14 +19,17 @@ tags:
 
 The
 [airnode-validator](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-validator)
-is used internally by the [Docker Images](../docker/) to validate the
-[configuration files](../understand/configuring.md) you provide when deploying
-an Airnode.
+is used internally by the [Docker Images](/reference/airnode/latest/docker/) to
+validate the
+[configuration files](/reference/airnode/latest/understand/configuring.md) you
+provide when deploying an Airnode.
 
 However, validator can also be used as a standalone package to verify the
 correctness of the configuration files without deploying the Airnode. The
-recommended way is to use the [validator CLI](./validator.md#cli-usage), but for
-advanced use cases you can use the [validator SDK](./validator.md#sdk-usage).
+recommended way is to use the
+[validator CLI](/reference/airnode/latest/packages/validator.md#cli-usage), but
+for advanced use cases you can use the
+[validator SDK](/reference/airnode/latest/packages/validator.md#sdk-usage).
 
 ## CLI Usage
 

@@ -52,13 +52,13 @@ import "@api3/airnode-protocol-v1/contracts/dapis/interfaces/IDapiServer.sol";
 ```
 
 See the details in the
-[dApp Developers section](./functions/read-data-feed-with-dapi-name.md) of the
-dAPI project.
+[dApp Developers section](/reference/dapis/functions/read-data-feed-with-dapi-name.md)
+of the dAPI project.
 
 ::: tip Consideration for "Ease of Use"
 
 Use the `DapiServer.sol` contract function
-[readDataFeedWithDapiName(\_dapiName)](./functions/read-data-feed-with-dapi-name.md)
+[readDataFeedWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-with-dapi-name.md)
 as the best way to access dAPI values as aggregated beacon values.
 
 :::

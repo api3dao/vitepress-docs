@@ -2,7 +2,7 @@
 title: Deploying an Airnode on Google Cloud
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → Airnode
+pageHeader: Guides → Airnode → Deploying an Airnode
 path: /guides/airnode/deploy-airnode/deploy-gcp/
 outline: deep
 tags:
@@ -70,8 +70,8 @@ quick-start-gcp
 - First
   [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
   (or use an existing GCP project) where the Airnode will be deployed. Once the
-  project is created, add the project ID to the [secrets.env](./#secrets-env)
-  file.
+  project is created, add the project ID to the
+  [secrets.env](/guides/airnode/deploy-airnode/deploy-gcp/#secrets-env) file.
 
 - Make sure you have billing enabled for your project. To do so, you will need
   to pair the project with your bank card, although no charges will be incurred
@@ -139,16 +139,18 @@ Add values for each.
   ```
 
 - `PROJECT_ID`: Project ID of your GCP project. During
-  [step #4](./#_4-gcp-project-setup-credentials) above you should have added the
-  project ID to the `secrets.env` file.
+  [step #4](/guides/airnode/deploy-airnode/deploy-gcp/#_3-gcp-project-setup-credentials)
+  above you should have added the project ID to the `secrets.env` file.
 
 - `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
   Gateway. The expected length is 30 - 128 characters.
 
 ### gcp.json
 
-During [step #4](./#_4-gcp-project-setup-credentials) above, the `gcp.json` file
-should have been placed into the `/quick-start-gcp` project folder.
+During
+[step #4](/guides/airnode/deploy-airnode/deploy-gcp/#_3-gcp-project-setup-credentials)
+above, the `gcp.json` file should have been placed into the `/quick-start-gcp`
+project folder.
 
 ## 5. Deploy
 

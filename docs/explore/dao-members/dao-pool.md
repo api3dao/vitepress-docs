@@ -16,9 +16,9 @@ tags:
 
 The API3 DAO has a single staking pool called the **DAO pool**. Staking API3
 tokens in the pool will grant representation and
-[inflationary rewards](./rewards.md). Staked tokens will be used as collateral
-to pay out service coverage claims as needed. To do this, the pool focuses on
-three token utilities and implements
+[inflationary rewards](/explore/dao-members/rewards.md). Staked tokens will be
+used as collateral to pay out service coverage claims as needed. To do this, the
+pool focuses on three token utilities and implements
 [service coverage](/explore/dapis/service-coverage.md) which, by design,
 balances rewards and risks through responsible governance.
 
@@ -42,8 +42,9 @@ mechanics will remove the need for a central authority at the ecosystem level.
 
 Staking simply means you are placing API3 tokens into the DAO pool. When staking
 tokens to the DAO pool you gain access to weekly inflationary
-[rewards](./rewards.md) but also share in the risk of service coverage. You are
-also granted voting rights on active DAO proposals and inflationary rewards.
+[rewards](/explore/dao-members/rewards.md) but also share in the risk of service
+coverage. You are also granted voting rights on active DAO proposals and
+inflationary rewards.
 
 To stake your tokens see the [Staking Tokens](/guides/dao-members/staking.md)
 guide. You can stake as many times as you’d like. Your percentage of all the
@@ -63,12 +64,13 @@ _Main utilities of the API3 token._
 
 > <img src="../assets/images/dao-pool-token-utils.png" width="200"/>
 >
-> 1. [Staking](dao-pool.md#staking): Grants membership in the API3 DAO and
->    rights to inflationary [rewards](./rewards.md).
-> 1. [Collateral](dao-pool.md#collateral): Backs service coverage that protect
->    users from damages caused by dAPI malfunctions.
-> 1. [Governance](dao-pool.md#governance): Grants direct representation in the
->    API3 DAO.
+> 1. [Staking](/explore/dao-members/dao-pool.md#staking): Grants membership in
+>    the API3 DAO and rights to inflationary
+>    [rewards](/explore/dao-members/rewards.md).
+> 1. [Collateral](/explore/dao-members/dao-pool.md#collateral): Backs service
+>    coverage that protect users from damages caused by dAPI malfunctions.
+> 1. [Governance](/explore/dao-members/dao-pool.md#governance): Grants direct
+>    representation in the API3 DAO.
 
 Note that it is critical for these three utilities to coincide. All governing
 entities must receive staking rewards for them to govern in a way that maximizes
@@ -95,8 +97,9 @@ inflationary rewards and exposes you to the risk of service coverage claims.
 
 **Benefits:**
 
-- Generates inflationary [rewards](./rewards.md) by decreasing the circulating
-  supply of API3 tokens through revenue burn from service coverage fees.
+- Generates inflationary [rewards](/explore/dao-members/rewards.md) by
+  decreasing the circulating supply of API3 tokens through revenue burn from
+  service coverage fees.
 - Improved token inflation protection compared to unstaked tokens.
 - Voting privileges on DAO proposals.
 
@@ -116,19 +119,20 @@ pool you earn 10% of rewards and will pay 10% of service coverage claims.
 The collateral utility has the participants share the DAO's operational risk and
 incentivizes them to minimize it.
 
-If staking tokens only yielded inflationary [rewards](./rewards.md), the sole
-governance incentive would be to maximize the revenue. This would be done by
-increasing the number of dAPI users aggressively, and the amount that is secured
-by the dAPIs with it. Doing so puts excessive pressure on a dAPI which is more
-likely to malfunction due to an attack. Therefore, this is not a sustainable
-governance strategy for decentralized data feeds.
+If staking tokens only yielded inflationary
+[rewards](/explore/dao-members/rewards.md), the sole governance incentive would
+be to maximize the revenue. This would be done by increasing the number of dAPI
+users aggressively, and the amount that is secured by the dAPIs with it. Doing
+so puts excessive pressure on a dAPI which is more likely to malfunction due to
+an attack. Therefore, this is not a sustainable governance strategy for
+decentralized data feeds.
 
 Exposing the governing parties to the risk would align their incentives with
 that of the DAO. The governing parties need to be penalized when a dAPI
 malfunction occurs using an onchain service coverage that provides dAPI users
 with quantifiable and trustless security guarantees. The
-[Service Coverage](dao-pool.md#service-coverage) uses staked tokens of the DAO
-pool as collateral, which means that when a dAPI malfunction is confirmed
+[Service Coverage](/explore/dapis/service-coverage.md) uses staked tokens of the
+DAO pool as collateral, which means that when a dAPI malfunction is confirmed
 through the dispute resolution protocol, user damages will be covered from the
 pool's staked tokens.
 
@@ -144,7 +148,8 @@ The only way to gain representation in the DAO is to stake API3 tokens in the
 pool. Staked tokens give their holders the right to take part in the governance
 of the API3 ecosystem through the DAO. To vote token holders must stake their
 API3 tokens in the pool, which also gives them access to weekly inflationary
-[rewards](./rewards.md) but also share in the risk of service coverage.
+[rewards](/explore/dao-members/rewards.md) but also share in the risk of service
+coverage.
 
 All governing parties will be exposed to all risks and rewards of API3, and will
 govern to optimize them. Inflationary rewards and the staked tokens being used

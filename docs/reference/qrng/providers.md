@@ -38,10 +38,11 @@ Australian National University is one of the leading research universities in
 Australia. Visit their website at
 [https://quantumnumbers.anu.edu.au<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/).
 
-ANU Quantum Random Numbers are only available on [mainnets](./chains.md#anu).
-For testnets use [byog](#byog-pseudorandom-random-numbers).
-[Quintessence](#quintessence-quantum-random-numbers) is available on mainnets
-and a few testnets.
+ANU Quantum Random Numbers are only available on
+[mainnets](/reference/qrng/chains.md#anu). For testnets use
+[byog](/reference/qrng/providers.md#byog-pseudorandom-numbers).
+[Quintessence](/reference/qrng/providers.md#quintessence-quantum-random-numbers)
+is available on mainnets and a few testnets.
 
 ### `airnode`
 
@@ -81,7 +82,7 @@ and a few testnets.
 the API3 ecosystem that builds high-impact oracle services. **byog** emulates
 QRNG using
 [pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
-on [testnets](./chains.md#byog).
+on [testnets](/reference/qrng/chains.md#byog).
 
 ### `airnode`
 

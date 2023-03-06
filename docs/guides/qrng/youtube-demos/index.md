@@ -3,10 +3,9 @@ title: QRNG YouTube Demos
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
-path: /guides/qrng/youtube-nft-example.html
+path: /guides/qrng/youtube-demos/index.html
 outline: deep
 tags:
-  - qrng
 ---
 
 <PageHeader/>

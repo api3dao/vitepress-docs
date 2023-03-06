@@ -8,6 +8,8 @@ module.exports = [
       { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
+      { text: 'Hyperlinks', link: '/dev/hyperlinks' },
+      { text: 'Link Validation', link: '/dev/link-validation' },
       { text: 'Tabs Component', link: '/dev/tabs' },
       {
         text: 'Page Styling',

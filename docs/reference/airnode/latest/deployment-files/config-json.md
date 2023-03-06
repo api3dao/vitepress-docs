@@ -32,18 +32,20 @@ database of an Airnode deployment. It contains five fields as show below.
 }
 ```
 
-- [chains](./config-json.md#chains): Blockchains the Airnode deployment will
-  serve on and configuration details
-- [nodeSettings](./config-json.md#nodesettings): General deployment parameters
-  such as node version and deployment configuration.
-- [triggers](./config-json.md#triggers): Which on-chain endpoints will be usable
-  by which an available protocol (currently only RRP) and under what endpoint
-  ID.
-- [templates](./config-json.md#templates):
-- [ois](./config-json.md#ois): API specifications and the corresponding on-chain
-  endpoints, kept as [OIS](/reference/ois/latest/specification.md) objects.
-- [apiCredentials](./config-json.md#apicredentials): Which API credentials will
-  be usable by which OIS and security scheme.
+- [chains](/reference/airnode/latest/deployment-files/config-json.md#chains):
+  Blockchains the Airnode deployment will serve on and configuration details
+- [nodeSettings](/reference/airnode/latest/deployment-files/config-json.md#nodesettings):
+  General deployment parameters such as node version and deployment
+  configuration.
+- [triggers](/reference/airnode/latest/deployment-files/config-json.md#triggers):
+  Which on-chain endpoints will be usable by which an available protocol
+  (currently only RRP) and under what endpoint ID.
+- [templates](/reference/airnode/latest/deployment-files/config-json.md#templates):
+- [ois](/reference/airnode/latest/deployment-files/config-json.md#ois): API
+  specifications and the corresponding on-chain endpoints, kept as
+  [OIS](/reference/ois/latest/specification.md) objects.
+- [apiCredentials](/reference/airnode/latest/deployment-files/config-json.md#apicredentials):
+  Which API credentials will be usable by which OIS and security scheme.
 
 ## chains
 
@@ -162,9 +164,10 @@ respective parameters.
 
 (required) - An object containing `authorizers` scheme types that contain
 authorizer contract addresses specifying the auth patterns that the
-[AirnodeRrpV0](../concepts/#airnoderrpv0-sol) contract should use on-chain.
-Learn more about authorizers in [Authorizers](../concepts/authorizers.md) and
-[Using Authorizers](../understand/apply-auth.md).
+[AirnodeRrpV0](/reference/airnode/latest/concepts/#airnoderrpv0-sol) contract
+should use on-chain. Learn more about authorizers in
+[Authorizers](/reference/airnode/latest/concepts/authorizers.md) and
+[Using Authorizers](/reference/airnode/latest/understand/apply-auth.md).
 
 ### `authorizations`
 
@@ -173,15 +176,16 @@ authorized endpointId/address pairs where the address is that of a requester.
 Airnode uses these pairs to determine access to its endpoints during its run
 cycle off-chain. Nothing in `authorizers` can supersede permissions granted by
 `authorizations` as they take precedence. Learn more about authorizations in
-[Authorizations](../concepts/authorizations.md) and
-[Using Authorizations](../understand/using-authorizations.md).
+[Authorizations](/reference/airnode/latest/concepts/authorizations.md) and
+[Using Authorizations](/reference/airnode/latest/understand/using-authorizations.md).
 
 ### `contracts`
 
 (required) - An object that keeps the addresses of the protocol contracts
 deployed on the respective chain. It must include the `AirnodeRrp` contract
-address. Although you can deploy these contracts yourself, you are recommended
-to use the ones that were deployed by API3 listed [here](../).
+address. Although you can deploy these contracts yourself, it is recommended to
+use the ones that were deployed by API3 listed
+[here](/reference/airnode/latest/).
 
 ### `id`
 
@@ -189,7 +193,8 @@ to use the ones that were deployed by API3 listed [here](../).
 Ethereum-based chain, `id` should be the chain ID as described in
 [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#list-of-chain-ids).
 Refer to the documentations of the chain you will be using to find its chain ID.
-Supported chains are listed under [Airnode Contract Addresses](../).
+Supported chains are listed under
+[Airnode Contract Addresses](/reference/airnode/latest/).
 
 ### `providers`
 
@@ -205,8 +210,8 @@ recommended to provide `url` via interpolation from the `secrets.env` file.
 ### `options`
 
 (required) - An object that configures chain-related options. See
-[Configuring an Airnode](../understand/configuring.md#chains) for some
-considerations.
+[Configuring an Airnode](/reference/airnode/latest/understand/configuring.md#chains)
+for some considerations.
 
 #### `options.fulfillmentGasLimit`
 
@@ -218,9 +223,9 @@ be repeated during Airnode's next run cycle.
 
 (optional) - An object of the form `{"value": 0, "unit": "wei"}` that configures
 the amount to subtract from the funds returned to the sponsor when making a
-[withdrawal](../concepts/sponsor.md#withdrawals). Defaults to zero and is
-relevant only for some chains (e.g.
-[Optimism](../chain-idiosyncrasies.md#optimism)).
+[withdrawal](/reference/airnode/latest/concepts/sponsor.md#withdrawals).
+Defaults to zero and is relevant only for some chains (e.g.
+[Optimism](/reference/airnode/latest/chain-idiosyncrasies.md#optimism)).
 
 ##### `options.withdrawalRemainder.value`
 
@@ -240,12 +245,13 @@ that describes it.
 ::: tip Note
 
 It does not make sense to mix and match eip1559 and non-eip1559 strategies
-though it can be done. See [Gas Price Strategies](../concepts/gas-prices.md) in
+though it can be done. See
+[Gas Price Strategies](/reference/airnode/latest/concepts/gas-prices.md) in
 Concepts and Definitions for a better understanding of gas strategies.
 
 :::
 
-- [latestBlockPercentileGasPrice](../concepts/gas-prices.md#latestblockpercentilegasprice)
+- [latestBlockPercentileGasPrice](/reference/airnode/latest/concepts/gas-prices.md#latestblockpercentilegasprice)
   - `percentile`<br/>(required) - The percentile of gas prices to return from a
     block.
   - `minTransactionCount`<br/>(required) - The minimum amount of transactions
@@ -255,11 +261,11 @@ Concepts and Definitions for a better understanding of gas strategies.
   - `maxDeviationMultiplier`<br/>(required) - The maximum deviation multiplier
     of the latest block gas price percentile compared to the reference block gas
     price percentile. Used to protect against large gas price spikes.
-- [providerRecommendedGasPrice](../concepts/gas-prices.md#providerrecommendedgasprice)
+- [providerRecommendedGasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedgasprice)
   - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
     two decimals that gets multiplied by the provider reported gas price. The
     resulting Gas Price will equal `Gas Price * providerRecommendedGasPrice`.
-- [providerRecommendedEip1559GasPrice](../concepts/gas-prices.md#providerrecommendedeip1559gasprice)
+- [providerRecommendedEip1559GasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee to
     yield the Maximum Fee for EIP-1559 transactions. Defaults to: `2`. The
     resulting Maximum Fee will equal
@@ -271,7 +277,7 @@ Concepts and Definitions for a better understanding of gas strategies.
     - `priorityFee.unit`<br/>(required) - The unit of the priority fee value. It
       can be one of the following: (wei, kwei, mwei, gwei, szabo, finney,
       ether).
-- [constantGasPrice](../concepts/gas-prices.md#constantgasprice)
+- [constantGasPrice](/reference/airnode/latest/concepts/gas-prices.md#constantgasprice)
   - `gasPrice`<br/>(required) - An object of the form
     `{"value": 0, "unit": "wei"}` that configures the amount to use as gas
     price.
@@ -290,10 +296,10 @@ and limiting
 number of spawned cloud functions based on this field.
 
 If you want to disable this behavior, see
-[disableConcurrencyReservations](#cloudprovider-disableconcurrencyreservations).
+[disableConcurrencyReservations](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-disableconcurrencyreservations).
 
 See
-[Configuring an Airnode](../understand/configuring.md#considerations-concurrency)
+[Configuring an Airnode](/reference/airnode/latest/understand/configuring.md#considerations-concurrency)
 for additional considerations.
 
 ### `blockHistoryLimit`
@@ -347,13 +353,14 @@ An object containing general deployment parameters of an Airnode.
 
 (required) - The cloud provider that the node will be deployed at and its
 configuration. Learn more about AWS or GCP resources that Airnode uses in the
-[Cloud Resources](../cloud-resources.md) documentation.
+[Cloud Resources](/reference/airnode/latest/cloud-resources.md) documentation.
 
 #### `cloudProvider.type`
 
 (required) - Currently `aws` and `gcp` are supported for serverless
-([deployer-image](../docker/deployer-image.md)). Use `local` to run Airnode as a
-docker container locally ([client-image](../docker/client-image.md)).
+([deployer-image](/reference/airnode/latest/docker/deployer-image.md)). Use
+`local` to run Airnode as a docker container locally
+([client-image](/reference/airnode/latest/docker/client-image.md)).
 
 #### `cloudProvider.region`
 
@@ -363,8 +370,9 @@ Airnode will be deployed to. An example AWS value would be `us-east-1` and an
 example GCP value would be `us-east1`. See the cloud provider's documentation
 for possible values, though not all regions can be deployed to. For GCP, make
 sure to choose a **region** and not a zone. See the
-[list of regions](../cloud-resources.md#supported-regions) that have been
-confirmed to work. For AWS, some regions are disabled by default and you must
+[list of regions](/reference/airnode/latest/cloud-resources.md#supported-regions)
+that have been confirmed to work. For AWS, some regions are disabled by default
+and you must
 [enable them](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html)
 before you can create and manage resources. Note that transferring a deployment
 from one region to the other is not trivial (i.e., it does not take one command
@@ -375,7 +383,8 @@ like deployment, but rather three) and is not advised.
 (required:<span style="font-size:small;color:gray">
 `if cloudProvider.type is AWS or GCP`</span>) - Disables concurrency
 reservations for spawned cloud functions. For more information refer to the
-[maxConcurrency](#maxconcurrency) section.
+[maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
+section.
 
 #### `cloudProvider.projectId`
 
@@ -394,10 +403,12 @@ useful, if the container is run using
 ### `airnodeWalletMnemonic`
 
 (required) - The wallet mnemonic that will be used as the Airnode's BIP 44
-wallet from which the Airnode's [address](../concepts/airnode.md#airnodeaddress)
-will be derived. It is not required to fund the wallet to run the Airnode but
-must be funded to announce the [xpub](../concepts/airnode.md#xpub) of the
-Airnode on-chain which is optional.
+wallet from which the Airnode's
+[address](/reference/airnode/latest/concepts/airnode.md#airnodeaddress) will be
+derived. It is not required to fund the wallet to run the Airnode but must be
+funded to announce the
+[xpub](/reference/airnode/latest/concepts/airnode.md#xpub) of the Airnode
+on-chain which is optional.
 
 ### `heartbeat`
 
@@ -405,7 +416,8 @@ Airnode on-chain which is optional.
 periodically make a request to the specified URL signaling that it's active at
 the end of each cycle (every minute). There are plans in the future to allow the
 sending of a payload with information for reporting purposes. See the
-[Heartbeat](../understand/heartbeat.md) documentation for more information.
+[Heartbeat](/reference/airnode/latest/understand/heartbeat.md) documentation for
+more information.
 
 #### `heartbeat.enabled`
 
@@ -426,7 +438,8 @@ to.
 ### `httpGateway`
 
 (required) - The Airnode's HTTP gateway can request endpoints without using the
-blockchain. See the [HTTP Gateways](../understand/http-gateways.md)
+blockchain. See the
+[HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md)
 documentation for more info.
 
 #### `httpGateway.enabled`
@@ -452,7 +465,8 @@ to allow all origins.
 ### `httpSignedDataGateway`
 
 (required) - The Airnode's HTTP gateway can request endpoints without using the
-blockchain. See the [HTTP Gateways](../understand/http-gateways.md)
+blockchain. See the
+[HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md)
 documentation for more info.
 
 #### `httpSignedDataGateway.enabled`
@@ -538,25 +552,28 @@ defined in an OIS.
 
 In the example above, the Airnode deployment has an OIS with the title
 `myOisTitle`. This OIS has an endpoint with the name `myEndpointName`. When the
-Airnode deployment detects a [request](../concepts/request.md) that references
-its [`airnodeAddress`](../concepts/airnode.md#airnodeaddress) and
+Airnode deployment detects a
+[request](/reference/airnode/latest/concepts/request.md) that references its
+[`airnodeAddress`](/reference/airnode/latest/concepts/airnode.md#airnodeaddress)
+and
 <code style="overflow-wrap: break-word;">0xd7ddc8ee64d6e540682ec844a5dd9737663ec3afe5751102eb4f966744751838</code>
-as the [`endpointId`](../concepts/endpoint.md#endpointid), it will call the
-specified endpoint (`myOisTitle`-`myEndpointName`) with the parameters provided
-in the request to fulfill it. See the
-[endpoint id documentation](../concepts/endpoint.md#endpointid) for the default
-convention for deriving the `endpointId`.
+as the
+[`endpointId`](/reference/airnode/latest/concepts/endpoint.md#endpointid), it
+will call the specified endpoint (`myOisTitle`-`myEndpointName`) with the
+parameters provided in the request to fulfill it. See the
+[endpoint id documentation](/reference/airnode/latest/concepts/endpoint.md#endpointid)
+for the default convention for deriving the `endpointId`.
 
 ### `rrp`
 
 (required) - An array of endpoints from OIS that the Airnode will respond to via
-the RRP protocol [AirnodeRrpV0.sol](../concepts/).
+the RRP protocol [AirnodeRrpV0.sol](/reference/airnode/latest/concepts/).
 
 #### `rrp[n].endpointId`
 
 (required) - A identifier derived for an oisTitle/endpointName pair. For
 derivation see:
-[derive-endpoint-id](../packages/admin-cli.md#derive-endpoint-id).
+[derive-endpoint-id](/reference/airnode/latest/packages/admin-cli.md#derive-endpoint-id).
 
 #### `rrp[n].oisTitle`
 
@@ -581,7 +598,7 @@ the HTTP gateway.
 
 (required) - A identifier derived for an oisTitle/endpointName pair. For
 derivation see:
-[derive-endpoint-id](../packages/admin-cli.md#derive-endpoint-id).
+[derive-endpoint-id](/reference/airnode/latest/packages/admin-cli.md#derive-endpoint-id).
 
 #### `http[n].oisTitle`
 
@@ -599,7 +616,7 @@ the HTTP Signed Data Gateway.
 #### `httpSignedData[n].endpointId`
 
 (required) - A identifier derived for an oisTitle/endpointName pair, see
-[derive-endpoint-id](../packages/admin-cli.md#derive-endpoint-id).
+[derive-endpoint-id](/reference/airnode/latest/packages/admin-cli.md#derive-endpoint-id).
 
 #### `httpSignedData[n].oisTitle`
 
@@ -612,11 +629,12 @@ the HTTP Signed Data Gateway.
 ## templates
 
 An array that includes the necessary information to make
-[Template Requests](../concepts/request.md#template-request). The `templates`
-array must be included in the `config.json` file. The array can be left empty if
-no templates are used . Valid templates will be used to make template requests
-without calling the contract to fetch the template from the chain. For details
-see [Using Templates](../developers/using-templates.md).
+[Template Requests](/reference/airnode/latest/concepts/request.md#template-request).
+The `templates` array must be included in the `config.json` file. The array can
+be left empty if no templates are used . Valid templates will be used to make
+template requests without calling the contract to fetch the template from the
+chain. For details see
+[Using Templates](/reference/airnode/latest/developers/using-templates.md).
 
 ```json
 // templates
@@ -634,14 +652,15 @@ see [Using Templates](../developers/using-templates.md).
 (required: <span style="font-size:small;color:gray;">
 `for each row in templates`</span>) - An identifier derived by hashing the
 Airnode address, the endpointId and the encoded parameters of the template. For
-derivation see: [Templates](../concepts/template.md#templateid).
+derivation see:
+[Templates](/reference/airnode/latest/concepts/template.md#templateid).
 
 ### `endpointId`
 
 (required: <span style="font-size:small;color:gray;">
 `for each row in templates`</span>) - An identifier derived for an
 oisTitle/endpointName pair. For derivation see:
-[derive-endpoint-id](../packages/admin-cli.md#derive-endpoint-id).
+[derive-endpoint-id](/reference/airnode/latest/packages/admin-cli.md#derive-endpoint-id).
 
 ### `encodedParameters`
 
@@ -653,8 +672,9 @@ oisTitle/endpointName pair. For derivation see:
 A list of OIS objects. Since each OIS specifies the integration of an API to an
 oracle, a single Airnode deployment can serve multiple APIs. To avoid
 duplication of content, see the
-[API Integration](../understand/api-integration.md) guide and the
-[Oracle Integration Specifications (OIS)](/reference/ois/latest/) documentation.
+[API Integration](/reference/airnode/latest/understand/api-integration.md) guide
+and the [Oracle Integration Specifications (OIS)](/reference/ois/latest/)
+documentation.
 
 ## apiCredentials
 
@@ -665,7 +685,8 @@ the respective security scheme. These would be `myOisTitle` and
 `mySecurityScheme` in the example below. `securitySchemeValue` is the value used
 for the authentication with the security scheme (e.g., the API key) which would
 be in `secrets.env` in the example below. For more implementation details, see
-the [API Security](../understand/api-security.md) documentation.
+the [API Security](/reference/airnode/latest/understand/api-security.md)
+documentation.
 
 The `security` field in the OIS object must be included and hold the names of
 all security schemes the API operation

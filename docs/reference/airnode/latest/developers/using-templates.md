@@ -64,8 +64,8 @@ struct Template {
 There are just a few steps to create and place a template on-chain for a
 requester contract to use. Each template is identified by a`templateId`, which
 is the hash of its contents. When you create a template record on-chain,
-[see Part #2: Upload Template](using-templates.md#part-2-upload-template), a
-templateId will be returned.
+[see Part #2: Upload Template](/reference/airnode/latest/developers/using-templates.md#part-2-upload-template),
+a templateId will be returned.
 
 <divider/>
 
@@ -75,8 +75,8 @@ First create a file that contains a template object. Below is an example. You
 will need the address of the Airnode and its endpointId to be called. Below are
 links that discuss request parameters if you need help.
 
-- [Reference > Request-Response Protocol > Request](../concepts/request.md)
-- [Calling an Airnode](./call-an-airnode.md#request-parameters)
+- [Reference > Request-Response Protocol > Request](/reference/airnode/latest/concepts/request.md)
+- [Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md#request-parameters)
 
 ```
 {

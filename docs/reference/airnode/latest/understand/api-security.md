@@ -20,8 +20,8 @@ tags:
 Airnode can pass along security information (schemes) when making calls to API
 operations. There are two groups of security schemes.
 
-- [Airnode Authentication](../concepts/airnode-auth.md)
-- [Relayed Meta Data Authentication](../concepts/relay-meta-auth.md)
+- [Airnode Authentication](/reference/airnode/latest/concepts/airnode-auth.md)
+- [Relayed Meta Data Authentication](/reference/airnode/latest/concepts/relay-meta-auth.md)
 
 <!-- prettier-ignore-->
 > <img src="../assets/images/security-schemes.png" width="550px"/>
@@ -55,8 +55,8 @@ will be required grouping endpoint/API operations based on their security needs.
 An Airnode can use the following security scheme types to authenticate itself to
 API operations.
 
-- [apiKey](./api-security.md#apikey)
-- [http](./api-security.md#http)
+- [apiKey]/reference/airnode/latest/understand/api-security.md#apikey)
+- [http](/reference/airnode/latest/understand/api-security.md#http)
 
 A security scheme requires a unique name within the OIS object for which it
 exists. This name groups the security scheme values for `in`, `type`, and` name`
@@ -168,24 +168,26 @@ example demonstrates authentication.
 
 In addition to authenticating itself, Airnode can "relay" security information
 about a request to an API operation. This is different then the authorization of
-requesters using [Authorizers](./apply-auth.md) to access the Airnode.
+requesters using
+[Authorizers](/reference/airnode/latest/understand/apply-auth.md) to access the
+Airnode.
 
-- [relayRequesterAddress](./api-security.md#relayrequesteraddress)
-- [relayChainId](./api-security.md#relaychainid)
-- [relayChainType](./api-security.md#relaychaintype)
-- [relaySponsorAddress](./api-security.md#relaysponsoraddress)
-- [relaySponsorWalletAddress](./api-security.md#relaysponsorwalletaddress)
-- [relayRequestId](./api-security.md#relayrequestid)
+- [relayRequesterAddress](/reference/airnode/latest/understand/api-security.md#relayrequesteraddress)
+- [relayChainId](/reference/airnode/latest/understand/api-security.md#relaychainid)
+- [relayChainType](/reference/airnode/latest/understand/api-security.md#relaychaintype)
+- [relaySponsorAddress](/reference/airnode/latest/understand/api-security.md#relaysponsoraddress)
+- [relaySponsorWalletAddress](/reference/airnode/latest/understand/api-security.md#relaysponsorwalletaddress)
+- [relayRequestId](/reference/airnode/latest/understand/api-security.md#relayrequestid)
 
 For relayed meta data security schemes do not provide any values in
-[apiCredentials](../deployment-files/config-json.md#apicredentials) as they are
-extracted from the request by Airnode.
+[apiCredentials](/reference/airnode/latest/deployment-files/config-json.md#apicredentials)
+as they are extracted from the request by Airnode.
 
 Note that Airnode relays this metadata to an API operation and does not perform
 any additional processing logic. The API provider must implement any desired
 logic in the API operation for any desired security checks. See
-[Relayed Meta Data Authentication](../concepts/relay-meta-auth.md) for overview
-of its usage.
+[Relayed Meta Data Authentication](/reference/airnode/latest/concepts/relay-meta-auth.md)
+for overview of its usage.
 
 ::: info Relay Metadata Tutorial
 
@@ -198,7 +200,7 @@ address to the API endpoint.
 ### relayRequesterAddress
 
 The `relayRequesterAddress` security scheme type instructs Airnode to forward
-the [requester](../concepts/requester.md) address.
+the [requester](/reference/airnode/latest/concepts/requester.md) address.
 
 ```json
 {
@@ -237,7 +239,7 @@ chain's type.
 ### relaySponsorAddress
 
 The `relaySponsorAddress` security scheme type instructs Airnode to forward the
-[sponsor address](../concepts/sponsor.md#sponsoraddress).
+[sponsor address](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress).
 
 ```json
 {
@@ -250,7 +252,8 @@ The `relaySponsorAddress` security scheme type instructs Airnode to forward the
 ### relaySponsorWalletAddress
 
 The `relaySponsorWalletAddress` security scheme type instructs Airnode to
-forward the [sponsor wallet address](../concepts/sponsor.md#sponsorwallet).
+forward the
+[sponsor wallet address](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
 
 ```json
 {
@@ -263,7 +266,7 @@ forward the [sponsor wallet address](../concepts/sponsor.md#sponsorwallet).
 ### relayRequestId
 
 The `relayRequestId` security scheme type instructs Airnode to forward the
-[id of the request](../concepts/request.md#requestid).
+[id of the request](/reference/airnode/latest/concepts/request.md#requestid).
 
 ```json
 {
@@ -322,16 +325,16 @@ will be provided (relayed) by Airnode depending on the particular request.
 OIS security is inspired by OAS security practices. This is implemented using
 the security schemes and security field. All supported security schemes are
 described in detail in the
-[Airnode Authentication Security Schemes](./api-security.md#airnode-authentication-security-schemes)
+[Airnode Authentication Security Schemes](/reference/airnode/latest/understand/api-security.md#airnode-authentication-security-schemes)
 and
-[Relayed Meta Data Security Schemes](./api-security.md#relayed-meta-data-security-schemes)
+[Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)
 sections above. The following example is related to _Airnode Authentication
 Security Schemes_. Working with security schemes can be described in three
 steps.
 
-1. [Define the security schemes for an OIS](./api-security.md#step-1-define-the-security-schemes-for-an-ois)
-2. [Turn on the defined security schemes](./api-security.md#step-2-turn-on-the-defined-security-schemes)
-3. [Specify the values for the defined security schemes](./api-security.md#step-3-specify-the-values-for-the-defined-security-schemes)
+1. [Define the security schemes for an OIS](/reference/airnode/latest/understand/api-security.md#step-1-define-the-security-schemes-for-an-ois)
+2. [Turn on the defined security schemes](/reference/airnode/latest/understand/api-security.md#step-2-turn-on-the-defined-security-schemes)
+3. [Specify the values for the defined security schemes](/reference/airnode/latest/understand/api-security.md#step-3-specify-the-values-for-the-defined-security-schemes)
 
 Following is an example of a partial `config.json` which demonstrates the usage
 of security scheme and security field.

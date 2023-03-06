@@ -29,7 +29,7 @@ voting power.
 
 The **Governance** page displays a list of active proposals to vote on and a
 link to delegate your voting power. Watch the
-[Vote and Delegate](./videos.md#vote-and-delegate) video.
+[Vote and Delegate](/guides/dao-members/videos.md#vote-and-delegate) video.
 
 ### Voting
 

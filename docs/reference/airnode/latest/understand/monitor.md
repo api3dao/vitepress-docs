@@ -26,9 +26,10 @@ or request types and the logs they contain are as follows:
 - `startCoordinator`: Logs for chain provider initialization and request
   fetching
 - `run`: Logs of API calls and withdrawals originating from blockchain requests
-- `httpReq`: Logs for [HTTP gateway requests](./http-gateways.md)
+- `httpReq`: Logs for
+  [HTTP gateway requests](/reference/airnode/latest/understand/http-gateways.md)
 - `httpSignedReq`: Logs for
-  [HTTP signed data gateway requests](./http-gateways.md)
+  [HTTP signed data gateway requests](/reference/airnode/latest/understand/http-gateways.md)
 
 ### AWS
 
@@ -51,4 +52,5 @@ cycle stage.
 Running the `airnode-client` Docker image will output container logs to the
 command line. These logs are also available through the Docker interface e.g.
 under Containers within Docker Desktop. See the Docker
-[client image](../docker/client-image.md) for more information.
+[client image](/reference/airnode/latest/docker/client-image.md) for more
+information.

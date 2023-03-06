@@ -34,9 +34,9 @@ dAPIs are API provider-centric versions of live data feeds, which are typically
 used in Web3 applications of financial nature. By directly providing
 continuously updated streams of off-chain data called _Beacons_, API providers
 can power dAPIs. For this, the API provider needs to own and operate an
-[Airnode](../../reference/airnode/latest/), which is configured to power Beacons
-that are the building blocks of dAPIs. API3 builds the solutions that are used
-in this process, and guides API providers in utilizing them.
+[Airnode](/reference/airnode/latest/), which is configured to power Beacons that
+are the building blocks of dAPIs. API3 builds the solutions that are used in
+this process, and guides API providers in utilizing them.
 
 ## Chains
 

@@ -30,9 +30,9 @@ The DAO Tracker features the following pages and content:
    locked by governance. The overview page also contains a list of API3 smart
    contracts and the circulating supply of API3.
 
-2. **Rewards** - history of inflationary [rewards](./rewards.md) containing the
-   APR, number of members that were staking, API3 staked, and rewards minted of
-   each epoch.
+2. **Rewards** - history of inflationary
+   [rewards](/explore/dao-members/rewards.md) containing the APR, number of
+   members that were staking, API3 staked, and rewards minted of each epoch.
 
 3. **Wallets** - staking participant wallets along with the voting power
    (absolute and percent), ownership, and accrued rewards of each. If the wallet

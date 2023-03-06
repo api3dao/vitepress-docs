@@ -13,8 +13,8 @@ tags:
 # {{$frontmatter.title}}
 
 Use newer versions of Nodejs. Currently the builds on GitHub are using `v18`.
-Apple M1 users see the page [Rosetta, Nodejs, esbuild](./rosetta.md) if you get
-an error.
+Apple M1 users see the page [Rosetta, Nodejs, esbuild](/dev/rosetta.md) if you
+get an error.
 
 ::: tip Nodejs `v18`
 

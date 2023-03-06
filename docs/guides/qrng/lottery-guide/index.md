@@ -6,9 +6,6 @@ pageHeader: Guides → QRNG
 path: /guides/airnode/lottery-guide/
 outline: deep
 tags:
-  - airnode
-  - lottery
-  - qrng
 ---
 
 <PageHeader/>
@@ -55,7 +52,7 @@ It should load up the `Lottery` contract.
 
 [Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
 
-> ![Add Contract](./src/lottery1.png)
+> ![Add Contract](/guides/qrng/lottery-guide/src/lottery1.png)
 
 As a requester, our `Lottery.sol` contract will make requests to an Airnode,
 specifically the API3 QRNG, using the
@@ -252,8 +249,7 @@ Airnode to request a random number.
 
 - The `_airnodeRrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts
   have already been deployed on-chain. You can check for your specific chain
-  [here](https://docs.api3.org/airnode/reference/airnode-addresses.html). Fill
-  it in and Deploy the Contract.
+  [here](/reference/airnode/latest/). Fill it in and Deploy the Contract.
 
 > ![Deploying the Lottery](src/s3.png)
 
@@ -357,4 +353,5 @@ check which number won that week.
 This is how you can use Quantum Randomness in your smart contracts. To learn
 more, head on to the [API3 QRNG Docs](/reference/qrng/).
 
-If you have any doubts/questions, hop on to our [Discord]().
+If you have any doubts/questions, visit the API3
+[Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).

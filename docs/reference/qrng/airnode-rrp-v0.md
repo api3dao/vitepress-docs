@@ -18,7 +18,8 @@ A requester (smart contract) uses the function `makeFullRequest()` from the
 [AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 contract (by way of
 [RrpRequesterV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol))
-to request, then receive, a quantum random number. See [Understanding QRNG](./).
+to request, then receive, a quantum random number. See
+[Understanding QRNG](/reference/qrng/).
 
 1. The requester "requests" the quantum random number and gets a `requestId` in
    return.
@@ -27,7 +28,8 @@ to request, then receive, a quantum random number. See [Understanding QRNG](./).
    function in the requester.
 
 The code snippets on this page are extracted from the
-[QRNGExample.sol](./qrng-example.md) contract. See it for completeness.
+[QRNGExample.sol](/reference/qrng/qrng-example.md) contract. See it for
+completeness.
 
 ## `airnode.makeFullRequest()`
 
@@ -58,7 +60,8 @@ function makeRequestUint256() external {
 ### Parameters
 
 - `address airnode`: Address of the Airnode to use. See the
-  [Chains](./chains.md) page for a list of address on different chains.
+  [Chains](/reference/qrng/chains.md) page for a list of address on different
+  chains.
 - `bytes32 endpointId`: Endpoint ID known by the Airnode that will map to an API
   provider call (allowed to be `bytes32(0)`).
 - `address sponsor`: Sponsor address, usually the requester's contract address.
@@ -69,10 +72,10 @@ function makeRequestUint256() external {
   fulfill.
 - `bytes calldata parameters`: There are no parameters QRNG endpoints require.
 
-See the [QrngExample.sol](./qrng-example.md) contract as an example on how to
-populate the parameters using its `setRequestParameters()` function. Setting
-parameter values once on the requester contract is useful as these parameter
-values usually do not change.
+See the [QrngExample.sol](/reference/qrng/qrng-example.md) contract as an
+example on how to populate the parameters using its `setRequestParameters()`
+function. Setting parameter values once on the requester contract is useful as
+these parameter values usually do not change.
 
 ### Returns
 
