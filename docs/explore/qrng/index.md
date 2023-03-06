@@ -80,8 +80,8 @@ future.<!-- review -->
 With the courtesy of the Australian National University (ANU) Airnode was hosted
 by ANU Quantum Random Numbers to serve Quantum RNG. This means that it is a
 first-party service. It is free of charge (apart from the gas costs),
-[easy to use](../../guides/qrng/qrng-example.md), and will be made available on
-as many [chains](../../reference/qrng/chains.md) as possible.
+[easy to use](/guides/qrng/qrng-example.md), and will be made available on as
+many [chains](/reference/qrng/chains.md) as possible.
 
 [Australian National University](https://www.anu.edu.au/)<ExternalLinkImage/> is
 one of the leading research universities in Australia, and also the provider of

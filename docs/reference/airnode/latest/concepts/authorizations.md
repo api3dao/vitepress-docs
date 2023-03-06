@@ -23,8 +23,8 @@ Airnode, its `config.json` file. These values are endpointId/address pairs that
 Airnode uses to allow access to its endpoints by requesters (smart contracts).
 Blockchain experience is not needed to use authorizations as Airnode performs
 these validations internally (off-chain). Nothing in
-[Authorizers](./authorizers.md) can supersede permissions granted by
-_authorizations_ as the latter takes precedence.
+[Authorizers](/reference/airnode/latest/concepts/authorizers.md) can supersede
+permissions granted by _authorizations_ as the latter takes precedence.
 
 The diagram below illustrates how Airnode utilizes authorizations.
 
@@ -36,7 +36,8 @@ The diagram below illustrates how Airnode utilizes authorizations.
 ## Are authorizations required?
 
 Authorizations are not required. An Airnode operator could use
-[Authorizers](./authorizers.md) or [Relayed Meta Data](./relay-meta-auth.md). It
+[Authorizers](/reference/airnode/latest/concepts/authorizers.md) or
+[Relayed Meta Data](/reference/airnode/latest/concepts/relay-meta-auth.md). It
 is possible to use both authorizers and relay security schemes together.
 
 ## Why is an authorizations scheme needed?
@@ -96,8 +97,8 @@ requester addresses that can access them.
 Other docs related to authorizations and relayed meta data:
 
 - Reference ➙ Deployment Files ➙
-  [config.json](../deployment-files/config-json.md)
+  [config.json](/reference/airnode/latest/deployment-files/config-json.md)
 - API Providers ➙ Build an Airnode ➙
-  [Using Authorizations](../understand/using-authorizations.md)
+  [Using Authorizations](/reference/airnode/latest/understand/using-authorizations.md)
 - API Providers ➙ Build an Airnode ➙ API Security ➙
-  [Relayed Meta Data Security Schemes](../understand/api-security.md#relayed-meta-data-security-schemes)
+  [Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)

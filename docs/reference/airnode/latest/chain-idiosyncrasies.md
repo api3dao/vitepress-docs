@@ -25,8 +25,9 @@ be comprehensive and we are interested in hearing if you encounter others.
 
 The idiosyncrasies below relate to the `chains` field of `config.json`. For the
 corresponding Airnode configuration guide section
-[see here](./understand/configuring.md#chains) and for the corresponding
-reference section [see here](./deployment-files/config-json.md#chains).
+[see her](/reference/airnode/latest/understand/configuring.md#chains) and for
+the corresponding reference section
+[see here](/reference/airnode/latest/deployment-files/config-json.md#chains).
 
 ### Avalanche
 
@@ -58,11 +59,11 @@ As a L2 scaling solution, Optimism has an L1 data fee and an L2 execution fee,
 which are
 [accounted for separately](https://community.optimism.io/docs/developers/build/transaction-fees/#displaying-fees-to-users).
 To cover the L1 data fee when a sponsor requests a
-[withdrawal](./concepts/sponsor.md#withdrawals), an amount has to be subtracted
-from the funds returned to the sponsor. The `withdrawalRemainder` parameter has
-been introduced specifically for this reason, though the value required will
-differ between Optimism mainnet and testnet due to differences in L1 gas fees.
-For Optimism testnet, a `withdrawalRemainder` of `1 gwei` should suffice, while
-for Optimism mainnet, a value as high as `2.4 finney` (`2400000 gwei`) may be
-required in order to cover an L1 gas price of `300 gwei` and `8000` L1 gas used
-by the transaction.
+[withdrawal](/reference/airnode/latest/concepts/sponsor.md#withdrawals), an
+amount has to be subtracted from the funds returned to the sponsor. The
+`withdrawalRemainder` parameter has been introduced specifically for this
+reason, though the value required will differ between Optimism mainnet and
+testnet due to differences in L1 gas fees. For Optimism testnet, a
+`withdrawalRemainder` of `1 gwei` should suffice, while for Optimism mainnet, a
+value as high as `2.4 finney` (`2400000 gwei`) may be required in order to cover
+an L1 gas price of `300 gwei` and `8000` L1 gas used by the transaction.

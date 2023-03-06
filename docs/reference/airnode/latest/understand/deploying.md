@@ -17,15 +17,17 @@ tags:
 
 # {{$frontmatter.title}}
 
-After integrating an API ([API Integration](api-integration.md)) and creating
-the configuration files ([Configuring Airnode](configuring.md)), the next step
-is to deploy the Airnode.
+After integrating an API
+([API Integration](/reference/airnode/latest/understand/api-integration.md)) and
+creating the configuration files
+([Configuring Airnode](/reference/airnode/latest/understand/configuring.md)),
+the next step is to deploy the Airnode.
 
 ## Deploy with Docker
 
 The recommended way to deploy Airnode is by using the Docker
-[deployer image](../docker/deployer-image.md). This image is simply a wrapper
-around the
+[deployer image](/reference/airnode/latest/docker/deployer-image.md). This image
+is simply a wrapper around the
 [deployer CLI](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer).
 Try the
 [Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/)
@@ -37,15 +39,16 @@ The deployer interacts with a cloud provider to deploy Airnode programmatically,
 without requiring you to click through a lot of ever-changing graphical
 interfaces. For it to do so, a cloud project setup and credentials are required
 and was discussed in
-[Configuring an Airnode](./configuring.md#aws-setup-aws-deployment-only). There
-is additional guidance in the AWS and GCP quick start tutorials mentioned above.
+[Configuring an Airnode](/reference/airnode/latest/understand/configuring.md#aws-setup-aws-deployment-only).
+There is additional guidance in the AWS and GCP quick start tutorials mentioned
+above.
 
 ## Install Docker
 
-The [deployer image](../docker/deployer-image.md) is containerized as a Docker
-image. This will deploy the Airnode to the cloud provider without the worry of
-installing dependencies and is the recommended way to do a deployment. If you do
-not already have docker installed go to the
+The [deployer image](/reference/airnode/latest/docker/deployer-image.md) is
+containerized as a Docker image. This will deploy the Airnode to the cloud
+provider without the worry of installing dependencies and is the recommended way
+to do a deployment. If you do not already have docker installed go to the
 [Docker website<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and
 install it.
 
@@ -75,14 +78,15 @@ my-airnode
 :::
 
 <!-- Use of .html below is intended. -->
-<WarningSimultaneousDeployments removeLink="../docker/deployer-image.html#manual-removal"/>
+<WarningSimultaneousDeployments removeLink="/reference/airnode/latest/docker/deployer-image.html#manual-removal"/>
 
 From the root of the project directory run the Docker image command
-[deploy](../docker/deployer-image.md#deploy) as shown below to deploy the
-Airnode. When the deployment has completed a `receipt.json` file will be written
-to the project directory, which is mounted to the `/app/config` directory within
-the container. This file contains important configuration information about the
-Airnode and is needed to remove the Airnode should the need arise.
+[deploy](/reference/airnode/latest/docker/deployer-image.md#deploy) as shown
+below to deploy the Airnode. When the deployment has completed a `receipt.json`
+file will be written to the project directory, which is mounted to the
+`/app/config` directory within the container. This file contains important
+configuration information about the Airnode and is needed to remove the Airnode
+should the need arise.
 
 <p><DeployerPermissionsWarning/></p>
 
@@ -146,14 +150,14 @@ this.
 ## Make an RRP request of the Airnode
 
 Once the Airnode is deployed, see
-[Calling an Airnode](../developers/call-an-airnode.md) to learn how requests are
-made using the request-response protocol (RRP).
+[Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md) to
+learn how requests are made using the request-response protocol (RRP).
 
 ## Removing the Airnode
 
 If you would like to remove a deployed Airnode, see the Docker image commands
-for [remove](../docker/deployer-image.md#remove) or
-[remove-with-receipt](../docker/deployer-image.md#remove-with-receipt)
+for [remove](/reference/airnode/latest/docker/deployer-image.md#remove) or
+[remove-with-receipt](/reference/airnode/latest/docker/deployer-image.md#remove-with-receipt)
 instructions.
 
 ## More related material...

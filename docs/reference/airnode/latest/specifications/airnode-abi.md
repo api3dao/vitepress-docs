@@ -72,7 +72,9 @@ notice is that `s` represents `string32`, but this is an artificial type and it
 is not part of
 [solidity types](https://docs.soliditylang.org/en/latest/types.html). This type
 is instead represented on chain as `bytes32`. The reasons for this are explained
-in depth in [string32 details](airnode-abi.md#string32) section.
+in depth in
+[string32 details](/reference/airnode/latest/specifications/airnode-abi.md#string32)
+section.
 
 ## Encoding format
 
@@ -176,7 +178,9 @@ If this hash is encoded as a `string32` type, Airnode will decode it as:
 ```
 
 which is probably not what the user is looking for. For these use cases, the
-user should use the [`bytes32`](airnode-abi.md#bytes32) type instead.
+user should use the
+[`bytes32`](/reference/airnode/latest/specifications/airnode-abi.md#bytes32)
+type instead.
 
 ### `bytes32`
 
@@ -197,14 +201,15 @@ When decoded by Airnode, the value would be the hash itself:
 ```
 
 If you want to store 32 byte string values on chain, use the
-[`string32`](airnode-abi.md#string32) type instead.
+[`string32`](/reference/airnode/latest/specifications/airnode-abi.md#string32)
+type instead.
 
 ### `bool`
 
-The `bool` type, encoded as charatcter `f` using the ABI specification schema
-can be used to encode a boolean value. The header symbol is `f`, because
-character `b` was already reserved for bytes encodings. So we chose letter `f`
-as bool values are commonly used to represent "boolean flags".
+The `bool` type, encoded as character `f` using the ABI specification schema can
+be used to encode a boolean value. The header symbol is `f`, because character
+`b` was already reserved for bytes encodings. So we chose letter `f` as bool
+values are commonly used to represent "boolean flags".
 
 ### Omitted types
 
@@ -225,15 +230,16 @@ thus is tolerated to avoid a more complex solution.
 is used so that you can decode the values later on. This means that each
 parameter will be padded with zeros to complete them to 32 bytes. Although this
 padding increases gas costs, ABI encoding/decoding functions being cheap
-balances this. Furthermore, the [template](../concepts/template.md) pattern used
-in the protocols allows for the referencing of these encoded parameters without
+balances this. Furthermore, the
+[template](/reference/airnode/latest/concepts/template.md) pattern used in the
+protocols allows for the referencing of these encoded parameters without
 explicitly passing them in requests, making the increased cost induced by
 padding irrelevant in most cases.
 
 ## `@api3/airnode-abi`
 
-Encode and decode parameters with the [airnode-abi](../packages/airnode-abi.md)
-package.
+Encode and decode parameters with the
+[airnode-abi](/reference/airnode/latest/packages/airnode-abi.md) package.
 
 ```js
 import { encode } from '@api3/airnode-abi';
@@ -250,10 +256,11 @@ console.log('ENCODED:', encodedData);
 console.log('\nDECODED:', decoded);
 ```
 
-See the package doc [airnode-abi](../packages/airnode-abi.md) for more
+See the package doc
+[airnode-abi](/reference/airnode/latest/packages/airnode-abi.md) for more
 information on how to encode and decode with Airnode ABI off-chain. Also see
 code samples in the
-[examples](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples)
+[examples](https://github.com/api3dao/airnode/tree/v0.10/packages/airnode-examples)
 package.
 
-- [request-utils.ts](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-examples/integrations/coingecko/request-utils.ts#L8)
+- [request-utils.ts](https://github.com/api3dao/airnode/blob/v0.10/packages/airnode-examples/integrations/coingecko/request-utils.ts#L8)

@@ -14,16 +14,17 @@ tags:
 
 # {{$frontmatter.title}}
 
-API3 aims to set up, maintain, and [monetize](./dao-pool.md#monetization) dAPIs
-at scale. Its success in doing so can be estimated by its total revenue, as this
-will increase with the number of dAPIs and the amount of funds secured by them.
-API3 generates revenue through subscription fees and service coverage fees. The
-fees can be made in any cryptocurrency, which will be received by the DAO in
-API3 tokens through a liquidity pool-based decentralized exchange. To align the
-governance incentives with API3’s success, combined with the inflationary
-rewards, the net revenue to the DAO will result in burning of API3 tokens. This
-mechanic will produce positive staking incentives using inflationary rewards and
-claim risks rather than revenue sharing.
+API3 aims to set up, maintain, and
+[monetize](/explore/dao-members/dao-pool.md#monetization) dAPIs at scale. Its
+success in doing so can be estimated by its total revenue, as this will increase
+with the number of dAPIs and the amount of funds secured by them. API3 generates
+revenue through subscription fees and service coverage fees. The fees can be
+made in any cryptocurrency, which will be received by the DAO in API3 tokens
+through a liquidity pool-based decentralized exchange. To align the governance
+incentives with API3’s success, combined with the inflationary rewards, the net
+revenue to the DAO will result in burning of API3 tokens. This mechanic will
+produce positive staking incentives using inflationary rewards and claim risks
+rather than revenue sharing.
 
 > <img src="../assets/images/dao-pool-staking-2.png" width="450"/>
 >

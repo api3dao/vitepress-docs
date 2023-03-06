@@ -25,10 +25,10 @@ several packages. Some of these packages are used by dApp developers and API
 providers to interact with or to build Airnode. A few are simply used for
 internal Airnode development.
 
-- [airnode-adapter](./adapter.md)
-- [airnode-admin](./admin-cli.md)
-- [airnode-abi](./airnode-abi.md)
-- [airnode-deployer](./deployer.md)
+- [airnode-adapter](/reference/airnode/latest/packages/adapter.md)
+- [airnode-admin](/reference/airnode/latest/packages/admin-cli.md)
+- [airnode-abi](/reference/airnode/latest/packages/airnode-abi.md)
+- [airnode-deployer](/reference/airnode/latest/packages/deployer.md)
 
 ---
 
@@ -50,7 +50,7 @@ A package/CLI tool to interact with the Airnode contracts across chains.
 
 [**airnode-abi**:](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-abi)
 Encoding and decoding utilities for Airnode according to the
-[Airnode ABI specifications](../specifications/airnode-abi.md).
+[Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md).
 
 [**airnode-deployer**:](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer)
 Tools to automate Airnode deployment.

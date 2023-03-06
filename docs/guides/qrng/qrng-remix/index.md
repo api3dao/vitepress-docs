@@ -3,7 +3,7 @@ title: Using QRNG with Remix
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
-path: /guides/qrng/qrng-remix/
+path: /guides/qrng/qrng-remix/index.html
 outline: deep
 tags:
   - qrng
@@ -48,7 +48,7 @@ you have added Metamask support to. Not all browsers support
 
 [Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3dao/qrng-example/main/contracts/QrngExample.sol)
 
-> ![Add Contract](./src/qrng-add-contract.png)
+> ![Add Contract](/guides/qrng/qrng-remix/src/qrng-add-contract.png)
 
 The `RemixQrngExample` will have five main functions: `setRequestParameters()`,
 `makeRequestUint256()`, `fulfillUint256()`, `makeRequestUint256Array()`, and
@@ -221,7 +221,7 @@ corresponding fields for the function.
   xpub used by **byog**, and the smart contract address for
   `RemixQrngExample.sol`. The wallet is used to pay gas costs to acquire a
   random number. A sponsor wallet must be derived using the command
-  [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address)
+  [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
   from the Admin CLI. Use the value of the _sponsor wallet address_ that the
   command outputs.
 

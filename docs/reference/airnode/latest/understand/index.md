@@ -55,10 +55,11 @@ my-airnode
 ::: code-group
 
 Both AWS and GCP have a platform specific file `aws.env` and `gcp.json`. Use the
-files in the [Templates](../deployment-files/templates/config-json.md) as an aid
-to create all but the `gcp.json` files. Also see the
-[Examples](../deployment-files/examples/config-json.md) for demonstration
-purposes.
+files in the
+[Templates](/reference/airnode/latest/deployment-files/templates/config-json.md)
+as an aid to create all but the `gcp.json` files. Also see the
+[Examples](/reference/airnode/latest/deployment-files/examples/config-json.md)
+for demonstration purposes.
 
 ## Configuration files
 
@@ -106,12 +107,13 @@ deployment of an Airnode to AWS, GCP, and a Docker Container.
 
 There are two ways to deploy and run an Airnode. The most popular is with a
 cloud provider such as AWS or GCP. Use the Docker
-[Airnode Deployer Image](../docker/deployer-image.md) for these type of
-deployments.
+[Airnode Deployer Image](/reference/airnode/latest/docker/deployer-image.md) for
+these type of deployments.
 
 The second method is to run a containerized Airnode hosted internally or with a
 cloud provider service (e.g. AWS, EC2, or Lightsail). Use the Docker
-[Airnode Client Image](../docker/client-image.md) for this type of deployment.
+[Airnode Client Image](/reference/airnode/latest/docker/client-image.md) for
+this type of deployment.
 
 ## More related material...
 

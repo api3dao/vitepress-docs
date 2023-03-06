@@ -53,9 +53,11 @@ package, see the
 [@api3/airnode-protocol](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
-[**byog**](#byog) imitates QRNG using pseudorandom numbers and is best used
-during development. Use [ANU](#anu) or [Quintessence](#quintessence) in
-production to acquire quantum random numbers.
+[**byog**](/reference/qrng/chains.md#byog) imitates QRNG using pseudorandom
+numbers and is best used during development. Use
+[ANU](/reference/qrng/chains.md#anu) or
+[Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
+quantum random numbers.
 
 <!--
 Do not use tabs to display the two tables below. Tabs does not support nested Vue components

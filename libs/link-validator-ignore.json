@@ -1,8 +1,8 @@
 [
+  "NOTE: The lib link-validator.js uses these as a 'contains' lookup.",
   "https://developer.offchainlabs.com/docs/arbgas",
-  "https://swagger.io/specification/specification.md#_5-9-preprocessingspecifications",
-  "https://swagger.io/specification/specification.md#_5-10-postprocessingspecifications",
-  "https://swagger.io/specification/specification.md#_5-2-operation",
-  "https://swagger.io/specification/processing.md#use-case-random-number",
-  "https://swagger.io/specification/"
+  "https://swagger.io/",
+  "https://goerlifaucet.com/",
+  "/api3-whitepaper-v1.0.3.pdf",
+  "https://eth-goerli.gateway.pokt.network/v1/lb/"
 ]

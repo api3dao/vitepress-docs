@@ -130,7 +130,7 @@ heartbeat URL.
 A gateway URL is generated for each gateway (when enabled) when Airnode is
 deployed. The URL including, the secret `UUID` path parameter, is displayed on
 the terminal at the end of an Airnode deployment using the
-[Docker image](../docker/deployer-image.md).
+[Docker image](/reference/airnode/latest/docker/deployer-image.md).
 
 ### When using Airnode client
 
@@ -171,12 +171,13 @@ required as part of the CURL call.
 
 \* Parameters for the gateways are named differently. The HTTP signed data
 gateway requires that the `encodedParameters` be encoded using
-[Airnode ABI](../specifications/airnode-abi.md).
+[Airnode ABI](/reference/airnode/latest/specifications/airnode-abi.md).
 
 ### Request
 
 Replace `<gatewayUrl>` in the examples below with the URL displayed in the
-terminal at the end of an Airnode deployment using a [Docker image](../docker/).
+terminal at the end of an Airnode deployment using a
+[Docker image](/reference/airnode/latest/docker/).
 
 ::: code-group
 
@@ -211,7 +212,7 @@ curl \
 
 rawValue: the API response
 encodedValue: the encoded bytes value that is sent as payload in the response transaction on chain
-values: an array of values after they are [extracted and converted](../packages/adapter.md#conversion) to the target type
+values: an array of values after they are [extracted and converted](/reference/airnode/latest/packages/adapter.md#conversion) to the target type
 
 ```
 

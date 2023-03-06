@@ -19,11 +19,12 @@ tags:
 
 The
 [airnode-deployer](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer)
-package is used primarily by the [Docker Images](../docker/). This CLI tool
-provides the underlying commands used by the Docker images when deploying an
-Airnode. API providers are strongly encouraged to use the
-[Docker Images](../docker/) when deploying an Airnode and not the deployer CLI
-commands.
+package is used primarily by the
+[Docker Images](/reference/airnode/latest/docker/). This CLI tool provides the
+underlying commands used by the Docker images when deploying an Airnode. API
+providers are strongly encouraged to use the
+[Docker Images](/reference/airnode/latest/docker/) when deploying an Airnode and
+not the deployer CLI commands.
 
 ## Usage
 
@@ -33,8 +34,8 @@ installing a global npm package or by manually building the airnode-deployer
 package. Using npx is the simplest method to interact with the deployer manually
 if you do not wish to use the Docker images.
 
-- [Using npx](./deployer.md#using-npx)
-- [Global Package](./deployer.md#global-package)
+- [Using npx](/reference/airnode/latest/packages/deployer.md#using-npx)
+- [Global Package](/reference/airnode/latest/packages/deployer.md#global-package)
 - [Build Manually](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer)
 
 ### Using npx
@@ -135,7 +136,7 @@ templates to get started quickly, but you will need to edit these with your own
 API details and secrets.
 
 <!-- Use of .html below is intended. -->
-<WarningSimultaneousDeployments removeLink="../docker/deployer-image.html#manual-removal"/>
+<WarningSimultaneousDeployments removeLink="/reference/airnode/latest/docker/deployer-image.html#manual-removal"/>
 
 Make sure `config.json` and `secrets.env` are available in the path for the
 `--configuration` argument.
@@ -180,8 +181,8 @@ airnode-deployer deploy \
   --logs config/logs/
 ```
 
-See how [deploy](../docker/deployer-image.md#deploy) is used via the AWS/GCP
-deployer image.
+See how [deploy](/reference/airnode/latest/docker/deployer-image.md#deploy) is
+used via the AWS/GCP deployer image.
 
 ### Listing Airnodes
 
@@ -212,8 +213,8 @@ airnode-deployer list
 airnode-deployer list --cloud-providers gcp
 ```
 
-See how [list](../docker/deployer-image.md#list) is used via the AWS/GCP
-deployer image.
+See how [list](/reference/airnode/latest/docker/deployer-image.md#list) is used
+via the AWS/GCP deployer image.
 
 ### Fetching deployment information
 
@@ -239,8 +240,8 @@ Options:
 airnode-deployer info aws2c6ef2b3
 ```
 
-See how [info](../docker/deployer-image.md#info) is used via the AWS/GCP
-deployer image.
+See how [info](/reference/airnode/latest/docker/deployer-image.md#info) is used
+via the AWS/GCP deployer image.
 
 ### Reverting to a previous version
 
@@ -267,8 +268,8 @@ Options:
 airnode-deployer rollback aws808e2a22 5bbcd317
 ```
 
-See how [rollback](../docker/deployer-image.md#rollback) is used via the AWS/GCP
-deployer image.
+See how [rollback](/reference/airnode/latest/docker/deployer-image.md#rollback)
+is used via the AWS/GCP deployer image.
 
 ### Fetching deployment files
 
@@ -293,16 +294,17 @@ Options:
 airnode-deployer fetch-files aws2c6ef2b3
 ```
 
-See how [fetch-files](../docker/deployer-image.md#fetch-files) is used via the
-AWS/GCP deployer image.
+See how
+[fetch-files](/reference/airnode/latest/docker/deployer-image.md#fetch-files) is
+used via the AWS/GCP deployer image.
 
 ### Airnode Removal
 
 An Airnode can be removed in two different ways:
 
 - **Best:** With `remove`, which uses the deployment ID found either in the
-  [deployment receipt file](../deployment-files/receipt-json.md) or via the
-  `list` command.
+  [deployment receipt file](/reference/airnode/latest/deployment-files/receipt-json.md)
+  or via the `list` command.
 - **Alternate:** With `remove-with-receipt`, which uses the deployment receipt
   created when the Airnode was deployed.
 
@@ -324,8 +326,8 @@ Options:
 airnode-deployer remove aws2c6ef2b3
 ```
 
-See how [remove](../docker/deployer-image.md#remove) is used via the AWS/GCP
-deployer image.
+See how [remove](/reference/airnode/latest/docker/deployer-image.md#remove) is
+used via the AWS/GCP deployer image.
 
 #### remove-with-receipt
 
@@ -348,7 +350,8 @@ airnode-deployer remove-with-receipt \
   --logs config/logs/
 ```
 
-See how [remove-with-receipt](../docker/deployer-image.md#remove-with-receipt)
+See how
+[remove-with-receipt](/reference/airnode/latest/docker/deployer-image.md#remove-with-receipt)
 is used via the AWS/GCP deployer image.
 
 ## More related material...

@@ -46,7 +46,7 @@ The QRNG example project
 using the requester address. The wallet is then used to pay gas costs when the
 Airnode responds to a request. An alternate method is to use the
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) as is the case with
-the [Remix Example](./remix-example/index.md) guide.
+the [Remix Example](/guides/qrng/remix-example/index.md) guide.
 
 <SponsorWalletWarning/>
 

@@ -39,14 +39,14 @@ of the protocol.
 
 The
 [AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
-contract sits between a [requester](./requester.md) and the
-[Airnode](./airnode.md). It inherits from four additional contracts as
-illustrated in the diagram above:
+contract sits between a
+[requester](/reference/airnode/latest/concepts/requester.md) and the Airnode. It
+inherits from four additional contracts as illustrated in the diagram above:
 
-- [IAirnodeRrpV0.sol](./index.md#iairnoderrp-sol)
-- [AuthorizationUtilsV0.sol](./index.md#authorizationutils-sol)
-- [WithdrawalUtilsV0.sol](./index.md#withdrawalutils-sol)
-- [TemplateUtilsV0.sol](./index.md#templateutilsv0-sol)
+- [IAirnodeRrpV0.sol](/reference/airnode/latest/concepts/index.md#iairnoderrpv0-sol)
+- [AuthorizationUtilsV0.sol](/reference/airnode/latest/concepts/index.md#authorizationutilsv0-sol)
+- [WithdrawalUtilsV0.sol](/reference/airnode/latest/concepts/index.md#withdrawalutilsv0-sol)
+- [TemplateUtilsV0.sol](/reference/airnode/latest/concepts/index.md#templateutilsv0-sol)
 
 This contract has two key responsibilities:
 
@@ -57,10 +57,12 @@ However, this contract is shared for all requesters and Airnodes on a particular
 chain. This means that neither Airnode operators nor requesters need to deploy
 this contract themselves. Instead, API3 will deploy this contract once per chain
 and you simply connect your Airnode or requester contract to that deployed
-contract. See the [Airnode Contract Addresses](../) for reference.
+contract. See the [Airnode Contract Addresses](/reference/airnode/latest/) for
+reference.
 
-The [`@api3/airnode-admin`](../packages/admin-cli.md) package is a CLI tool used
-to interact with `AirnodeRrpV0.sol` and perform administrative actions.
+The [`@api3/airnode-admin`](/reference/airnode/latest/packages/admin-cli.md)
+package is a CLI tool used to interact with `AirnodeRrpV0.sol` and perform
+administrative actions.
 
 ### IAirnodeRrpV0.sol
 
@@ -79,19 +81,21 @@ This interface inherits:
 
 The
 [AuthorizationUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol)
-contract implements Airnode [Authorizer](./authorizers.md) checks.
+contract implements Airnode
+[Authorizer](/reference/airnode/latest/concepts/authorizers.md) checks.
 
 ### WithdrawalUtilsV0.sol
 
 The
 [WithdrawalUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol)
-contract allows the [sponsor](./sponsor.md) to trigger a withdrawal request
-which is later fulfilled by Airnode and all sponsor wallet funds are sent back
-to the sponsor.
+contract allows the [sponsor](/reference/airnode/latest/concepts/sponsor.md) to
+trigger a withdrawal request which is later fulfilled by Airnode and all sponsor
+wallet funds are sent back to the sponsor.
 
 ### TemplateUtilsV0.sol
 
 The
 [TemplateUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol)
-contract is used to create and store Airnode [templates](./template.md) used to
-create a [template request](./request.md#template-request).
+contract is used to create and store Airnode
+[templates](/reference/airnode/latest/concepts/template.md) used to create a
+[template request](/reference/airnode/latest/concepts/request.md#template-request).

@@ -18,7 +18,7 @@ tags:
 ::: warning This function uses IDs.
 
 Be sure to understand the difference between using a name or ID. See
-[dAPI Names](../dapi-names.md).
+[dAPI Names](/reference/dapis/dapi-names.md).
 
 :::
 
@@ -27,7 +27,8 @@ using its ID. In the code example below, `_datafeedId` is a Beacon or Beacon set
 ID. For on-chain smart contracts the `msg.sender` argument received by the
 function
 [readDataFeedWithId()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L691-L703)
-must have [read access](./index.md#read-access) for the dAPI requested.
+must have [read access](/reference/dapis/functions/index.md#read-access) for the
+dAPI requested.
 
 Calling from off-chain code (_using a library such as `ether.js`_) is not
 subject to coverage policies. Off-chain code is beyond the scope of this doc.
