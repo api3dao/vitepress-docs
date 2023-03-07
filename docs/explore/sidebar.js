@@ -40,20 +40,16 @@ module.exports = [
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
       {
-        text: 'Why use dAPIs?',
-        link: '/explore/dapis/why-use-dapis',
-      },
-      {
-        text: 'API Providers—Why power dAPIs?',
-        link: '/explore/dapis/why-power',
-      },
-      {
-        text: 'Sponsoring a dAPI',
-        link: '/explore/dapis/sponsor-dapis',
-      },
-      {
-        text: 'Service Coverage',
+        text: 'Using dAPIs in your dApp',
         link: '/explore/dapis/service-coverage',
+      },
+      {
+        text: 'Security considerations',
+        link: '/explore/dapis/security-considerations',
+      },
+      {
+        text: 'OEV enabled dAPIs',
+        link: '/explore/dapis/oev',
       },
     ],
   },
