@@ -4,7 +4,6 @@ module.exports = [
     items: [
       {
         text: 'About our journey!',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -37,7 +36,6 @@ module.exports = [
   },
   {
     text: 'dAPIs',
-    collapsible: true,
     collapsed: false,
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
@@ -57,7 +55,6 @@ module.exports = [
   },
   {
     text: 'Airnode',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -65,54 +62,25 @@ module.exports = [
         link: '/explore/airnode/what-is-airnode',
       },
       {
+        text: 'How does Airnode work?',
+        link: '/explore/airnode/how-does-airnode-work',
+      },
+      {
         text: 'Why first-party oracles?',
         link: '/explore/airnode/why-first-party-oracles',
       },
       {
-        text: 'The Airnode Protocol',
-        link: '/explore/airnode/the-airnode-protocol',
+        text: 'Monetizing APIs in Web3',
+        link: '/explore/airnode/monetizing-apis-in-web3',
       },
       {
-        text: 'Pros and Cons',
-        link: '/explore/airnode/pros-and-cons',
-      },
-      {
-        text: 'Design Philosophy',
-        link: '/explore/airnode/design-philosophy',
-      },
-      {
-        text: 'Implementation',
-        link: '/explore/airnode/implementation',
-      },
-      {
-        text: 'Ethereum Providers',
-        link: '/explore/airnode/ethereum-providers',
-      },
-      {
-        text: 'Potential Obstacles',
-        link: '/explore/airnode/potential-obstacles',
-      },
-
-      {
-        text: 'Configuration Files',
-        link: '/explore/airnode/config-files',
+        text: 'Accessing first-party data feeds',
+        link: '/explore/airnode/unlocking-real-world-data',
       },
     ],
   },
-  /*{
-    text: 'ChainAPI',
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: 'What is ChainAPI?',
-        link: '/explore/chainapi/',
-      },
-    ],
-  },*/
   {
     text: 'QRNG',
-    collapsible: true,
     collapsed: false,
     items: [
       {
@@ -123,7 +91,7 @@ module.exports = [
   },
   {
     text: 'DAO Members',
-    collapsible: true,
+
     collapsed: false,
     items: [
       {

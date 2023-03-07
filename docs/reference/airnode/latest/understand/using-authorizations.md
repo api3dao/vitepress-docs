@@ -2,9 +2,9 @@
 title: Using Authorizations (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
 path: /reference/airnode/latest/understand/using-authorizations.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -18,16 +18,17 @@ tags:
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
-endpoints using [Authorizations](../concepts/authorizations.md). This method is
-off-chain and requires no blockchain knowledge by an API provider. It is
-different than [Authorizers](../concepts/authorizers.md) which is an on-chain
-auth scheme.
+endpoints using
+[Authorizations](/reference/airnode/latest/concepts/authorizations.md). This
+method is off-chain and requires no blockchain knowledge by an API provider. It
+is different than [Authorize/reference/airnode/latest/concepts/authorizers.md)
+which is an on-chain auth scheme.
 
-::: tip Alternative: Relayed Meta Data
+::: info Alternative: Relayed Meta Data
 
 As an alternative to authorizers and authorizations, an API provider can use
-[Relayed Meta Data](./api-security.md#relayed-meta-data-security-schemes) to
-authenticate a request. This approach is off-chain and requires no blockchain
+[Relayed Meta Data](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)
+to authenticate a request. This approach is off-chain and requires no blockchain
 knowledge by the API provider. Note that it is possible to use authorizers,
 authorizations, and relayed meta data together.
 

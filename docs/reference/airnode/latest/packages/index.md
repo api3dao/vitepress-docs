@@ -2,9 +2,9 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Packages
+pageHeader: Reference → Airnode → v0.11 → Packages
 path: /reference/airnode/latest/packages/index.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -25,10 +25,10 @@ several packages. Some of these packages are used by dApp developers and API
 providers to interact with or to build Airnode. A few are simply used for
 internal Airnode development.
 
-- [airnode-adapter](./adapter.md)
-- [airnode-admin](./admin-cli.md)
-- [airnode-abi](./airnode-abi.md)
-- [airnode-deployer](./deployer.md)
+- [airnode-adapter](/reference/airnode/latest/packages/adapter.md)
+- [airnode-admin](/reference/airnode/latest/packages/admin-cli.md)
+- [airnode-abi](/reference/airnode/latest/packages/airnode-abi.md)
+- [airnode-deployer](/reference/airnode/latest/packages/deployer.md)
 
 ---
 
@@ -50,7 +50,7 @@ A package/CLI tool to interact with the Airnode contracts across chains.
 
 [**airnode-abi**:](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-abi)
 Encoding and decoding utilities for Airnode according to the
-[Airnode ABI specifications](../specifications/airnode-abi.md).
+[Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md).
 
 [**airnode-deployer**:](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-deployer)
 Tools to automate Airnode deployment.
@@ -76,5 +76,5 @@ A package that can be used to validate Airnode configuration.
 The `airnode-ois` monorepo package was removed from the Airnode repo and is now
 in its own repo (`ois`) starting with Airnode `v0.8`.
 
-[**ois**:](https://github.com/api3dao/ois/tree/v1.4.0) Types for
-[Oracle Integration Specification (OIS)](/reference/ois/latest/ois.md).
+[**ois**:](https://github.com/api3dao/ois/tree/v2.0.0) Types for
+[Oracle Integration Specification (OIS)](/reference/ois/latest/specification.md).

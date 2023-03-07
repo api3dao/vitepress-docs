@@ -31,10 +31,11 @@ Before tokens can be staked you must deposit them in the DAO pool. Doing so will
 remove them from your wallet and place them into the DAO pool under the control
 of its smart contracts. Deposited tokens show as WITHDRAWABLE can be removed
 from the DAO pool at any time and returned to your wallet. Watch the
-[Deposit and Withdraw](./videos.md#deposit-and-withdraw) video.
+[Deposit and Withdraw](/guides/dao-members/videos.md#deposit-and-withdraw)
+video.
 
-Be sure your wallet is connected to your browser using mainnet, see
-[Preparing to use the Dashboard](./#preparing-to-use-the-dashboard).
+Be sure your wallet is connected to a browser using mainnet, see
+[Preparing to use the Dashboard](/guides/dao-members/#preparing-to-use-the-dashboard).
 
 ### Deposit
 
@@ -67,7 +68,7 @@ When you stake your deposited tokens you will be granted the right to create and
 vote on proposals. In addition you will earn rewards. Rewards are updated every
 seven days and are proportional to the number of tokens you have staked in the
 DAO pool (as a percentage of the DAO pool). Watch the
-[Stake and Earn](./videos.md#stake-and-earn) video.
+[Stake and Earn](/guides/dao-members/videos.md#stake-and-earn) video.
 
 1. Click the **_Stake_** button.
    > The tokens available to stake depends on the number deposited and are
@@ -90,7 +91,7 @@ can unstake your tokens at any time but you can only claim rewards after the one
 year locking period ends. Note that unstaking will revoke your most recent
 weekly reward payment. To protect the DAO from proposal spam, unstaking is
 subject to a seven day waiting period. Watch the
-[Unstake and Claim](./videos.md#unstake-and-claim) video.
+[Unstake and Claim](/guides/dao-members/videos.md#unstake-and-claim) video.
 
 1. Click the **_Initiate Unstake_** link.
 2. Enter the number of tokens to unstake (or select the **Max** link) and click

@@ -2,7 +2,7 @@
 title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v1.4
+pageHeader: Reference → OIS → v2.0
 path: /reference/ois/latest/index.html
 version:
 outline: deep
@@ -51,7 +51,8 @@ endpoint that maps to the same API operation.
 ## API Mapping Examples
 
 The following are three possible Airnode to API operation mapping examples.
-Mapping details are better documented in the next doc [Specification](./ois.md).
+Mapping details are better documented in the next doc
+[Specification](/reference/ois/latest/specification.md).
 
 ### Simple Airnode Endpoint
 

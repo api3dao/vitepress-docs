@@ -3,7 +3,7 @@ title: ID and Name Schemes
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/index.html
+path: /reference/dapis/schemes.html
 version:
 outline: deep
 tags:
@@ -37,9 +37,10 @@ are fixed.
 
 A dAPI's name is identical across all chains. When accessing a dAPI value with a
 function such as
-[readDataFeedWithName()](./functions/read-data-feed-with-dapi-name.md), the
-`dapiName` is passed as an encoded bytes32 value. Try it in the
-[ethers playground](https://playground.ethers.org/).
+[readDataFeedWithName()](/reference/dapis/functions/read-data-feed-with-dapi-name.md),
+the `dapiName` is passed as an encoded bytes32 value. Try the code sample below
+in the [ethers playground](https://playground.ethers.org/). Also see
+[Encode the dapiName](/reference/dapis/dapi-names.md#encode-the-dapiname).
 
 ```solidity
 ethers.utils.formatBytes32String("AVAX/USD");
@@ -49,5 +50,5 @@ ethers.utils.formatBytes32String("AVAX/USD");
 
 A Beacon's ID and its template are identical across chains. When accessing a
 Beacon's value with a function such as
-[readDataFeedWithId()](./functions/read-data-feed-with-id.md), the `beaconId` is
-needed.
+[readDataFeedWithId()](/reference/dapis/functions/read-data-feed-with-id.md),
+the `beaconId` is needed.

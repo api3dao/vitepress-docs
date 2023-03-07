@@ -2,9 +2,9 @@
 title: API Integration
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
 path: /reference/airnode/latest/understand/api-integration.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -19,28 +19,27 @@ tags:
 
 A successful integration of an API with an Airnode requires the mapping of each
 other's interface. This is accomplished using an OIS
-([Oracle Integration Specifications](/reference/ois/latest/ois.md)) json object,
-found in the config.json file, that is designed to follow three basic steps.
+([Oracle Integration Specifications](/reference/ois/latest/specification.md))
+json object, found in the config.json file, designed to with three basic steps.
 
-- API operations are specified
-- Airnode endpoints are specified
-- Airnode endpoints are mapped to API operations
+1. API operations are specified
+1. Airnode endpoints are specified
+1. Airnode endpoints are mapped to API operations
 
 <!-- prettier-ignore-->
-><img src="../assets/images/api-integration-ois.png" width="600px">
-> <br/><br/>
+><img src="../assets/images/api-integration-ois.png" width="500px">
+> 
 >
-> <p>The OIS object in config.json contains mapping information of API operations to Airnode endpoint definitions.</p>
+> <p style="font-size:small;width:80%;">The OIS object in config.json contains mapping information of API operations to Airnode endpoint definitions.</p>
 
 OIS is a mapping of API operations, such as `GET /coins/{id}`, to Airnode
-endpoints. When a requester contract calls a AirnodeRrpV0.sol contract request
-function, such as `makeFullRequest(..., callData)`, the callData is communicated
-to the off-chain Airnode which uses OIS mappings to translate the callData into
-a valid HTTP request for the appropriate API operation.
+endpoints. When a requester contract calls one of the AirnodeRrpV0.sol
+contract's request functions, such as `makeFullRequest(..., callData)`, the
+callData is communicated to the off-chain Airnode which uses OIS mappings to
+translate the callData into a valid HTTP request for the appropriate API
+operation.
 
-The only thing needed to integrate an API to Airnode is to create an OIS object
-which is in the Airnode's `config.json` file. This guide is an instructive
-approach to create an OIS object. OIS borrows formatting from
+OIS borrows formatting from
 [OAS OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md).
 If you have experience with OAS, OIS will seem familiar.
 
@@ -52,21 +51,21 @@ OIS object is in these docs.
 
 :::
 
-**Tips while using this guide.**
+**Tips while reading ths page.**
 
-- Open the [OIS template](../deployment-files/templates/ois-json.md) in another
-  browser window to follow along.
-- View an example of an
-  [Airnode config.json file](../deployment-files/examples/config-json.md) from
-  the Airnode Starter tutorial.
+- Open the [OIS template](/reference/ois/latest/template.md) in another browser
+  window to follow along.
+- View an example of an Airnode
+  [config.json](/reference/airnode/latest/deployment-files/examples/config-json.md)
+  file.
 
 ## OIS Template
 
 OIS is a json object that is added to an Airnode's
-[config.json](../deployment-files/templates/config-json.md) file as the (`ois`)
-_key_, sometimes called a _field_. Try using the
-[OIS template](../deployment-files/templates/ois-json.md) to construct an OIS
-and add it to the Airnode's config.json file later.
+[config.json](/reference/airnode/latest/deployment-files/templates/config-json.md)
+file as the (`ois`) _key_, sometimes called a _field_. Try using the
+[OIS template](/reference/ois/latest/template.md) to construct an OIS and add it
+to the Airnode's config.json file later.
 
 In the OIS template, there are some fields that contain `{FILL_*}`. This means
 that the value added is independent from other fields. On the other hand, if two
@@ -75,22 +74,22 @@ you must use the same value in them, because they are referencing each other.
 
 OIS uses a simplified version of the OAS. This means that if you have the
 OpenAPI specifications of the API that you are going to integrate, you are about
-80% done, because you can copy paste entire sections (but make sure that you
-make the necessary modifications to conform to the OIS format).
+80% done, because you can copy paste entire sections (but be sure to make the
+necessary modifications to conform to the OIS format).
 
-This guide will assume you do not have the OpenAPI specifications of the API
-that you will be integrating.
+The remainder of this page will assume you do not have the OpenAPI
+specifications of the API that you will be integrating.
 
 <!--------------- STEP 1 ---------------->
 
-## Step 1: Specify OIS Definitions
+## 1. Specify OIS Definitions
 
 Start building an OIS by adding three descriptive fields to the root of the OIS
 json object.
 
 ```json
 {
-  "oisFormat": "1.4.0",
+  "oisFormat": "2.0.0",
   "title": "myOisTitle",
   "version": "0.1.0",
   ...
@@ -100,27 +99,32 @@ json object.
 ### oisFormat
 
 A specific version of the
-[OIS Specification](/reference/ois/latest/ois.md#_1-oisformat) to be used. For
-this guide, which uses Airnode `v0.10.x`, the proper OIS version is `1.2.0`.
+[OIS Specification](/reference/ois/latest/specification.md#_1-oisformat) to be
+used. For this guide, which uses Airnode `v0.11.x`, the proper OIS version is
+`2.0.0`.
 
 ### title
 
 This is a unique title of the OIS. Note that an Airnode can be configured with
-more than one OIS and uses the title as the OIS identifier.
+more than one OIS object and uses the title as the OIS identifier.
 
 ### version
 
 This is the version of the OIS which allows for version-control of the OIS
-integration. It is recommended to use [semver](https://semver.org/) versioning.
-The initial version could be <`0.1.0`>.
+integration. It is recommended to use
+[semver<ExternalLinkImage/>](https://semver.org/) versioning. The initial
+version could be `0.1.0`.
 
 <!--------------- STEP 2 ---------------->
 
-## Step 2: Specifying the API
+## 2. Specifying the API
 
 The `apiSpecifications` field is used to describe the API and its operations.
 
 ```json
+"oisFormat": "2.0.0",
+"title": "myOisTitle",
+"version": "0.1.0",
 "apiSpecifications": {
   "servers": [...],
   "paths": {...},
@@ -130,7 +134,7 @@ The `apiSpecifications` field is used to describe the API and its operations.
 
 ### Servers
 
-The first step of specifying your API is to enter its _baseURL_ in the
+The first step of specifying an API is to enter its _baseURL_ in the
 `apiSpecifications.servers[0].url` field. Only one object (i.e., url) is allowed
 in the `apiSpecifications.servers` array. A warning is raised during conversion
 if servers has multiple elements. This baseURL will apply to all operations.
@@ -142,23 +146,23 @@ know tokens.
 
 <!-- markdown-link-check-disable-next-line -->
 
-> https://www.myapi.com/v1/tokens
+> `https://www.myapi.com/v1/tokens`
 
 There are two ways to segment this.
 
 <!-- markdown-link-check-disable-next-line -->
 
-> **baseURL:** https://www.myapi.com
+> **baseURL:** `https://www.myapi.com`
 >
-> **path:** /v1/data
+> **path:** `/v1/data`
 
 or
 
 <!-- markdown-link-check-disable-next-line -->
 
-> **baseURL**: https://www.myapi.com/v1
+> **baseURL**: `https://www.myapi.com/v1`
 >
-> **path:** /data
+> **path:** `/data`
 
 Because the call will be made to <`baseURL+path`> both will result in the same
 full URL.
@@ -195,7 +199,7 @@ _What is an API operation?_
 #### Operations
 
 In the examples below, `GET` refers to an
-[HTTP request method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
+[HTTP request method<ExternalLinkImage/>](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 This implies that you could have another API operation that can be specified
 using a different method but the same path.
 
@@ -208,15 +212,14 @@ using a different method but the same path.
 > method: POST
 
 Therefore, a path is not enough to specify an API operation by itself, you must
-also provide a method. If a new path is needed then it must start a new object
-in paths with its own methods. Currently only the GET and POST methods are
+also provide a method. If a new path is needed then it must be a new object in
+paths with its own methods. Currently only the GET and POST methods are
 supported by Airnode.
 
-With regards to the [OIS template](../deployment-files/templates/ois-json.md),
-the name of the element (denoted as `{FILL_PATH}`) should be replaced with the
-path (e.g., `/data`). Similarly, `{FILL_METHOD}` should be replaced with the
-method of the operation you want to integrate (e.g., `get`). The method must be
-lowercase.
+With regards to the [OIS template](/reference/ois/latest/template.md), the name
+of the element (denoted as `{FILL_PATH}`) should be replaced with the path
+(e.g., `/data`). Similarly, `{FILL_METHOD}` should be replaced with the method
+of the operation to integrate (e.g., `get`). The method must be lowercase.
 
 The following example illustrates three operations, `GET /data`, `POST /data`,
 `GET /tokens`.
@@ -259,9 +262,9 @@ the non-nested application/json content-type is supported.
 
 It is not necessary to specify all API operation parameters, but only the ones
 the on-chain requester will need to be able to provide (see Airnode endpoint
-[parameters](./api-integration.md#parameters)), and the ones that you want to
-hard-code a value for (see Airnode endpoint
-[fixed operation parameters](./api-integration.md#fixedoperationparameters)).
+[parameters](/reference/airnode/latest/understand/api-integration.md#parameters)),
+and the ones needed to hard-code a value for (see Airnode endpoint
+[fixed operation parameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)).
 
 ```json
 "paths": {
@@ -321,50 +324,49 @@ it will not return an error if omitted.
 
 <!--------------- STEP 1 ---------------->
 
-## Step 3: Specifying Airnode Endpoints
+## 3. Specifying Airnode Endpoints
 
 An Airnode endpoint is a service that Airnode exposes to on-chain requesters. It
 maps to an API operation, but the nature of this mapping is customizable. It is
 the integrator's job to define what this service is.
 
-For example, if your API operation returns an asset price given its ticker
-(e.g., `BTC`), you can specify the endpoint such that the requester provides the
-ticker as a parameter. The resulting endpoint would be a general one that
-returns prices for any kind of asset. On the other hand, you can hardcode `BTC`
-as the asset whose price will be returned (using
-[fixed operation parameters](./api-integration.md#fixedoperationparameters)),
-which would make your endpoint a specific one that only returns the BTC price.
+For example, if an API operation returns an asset price given its ticker (e.g.,
+`BTC`), specify the endpoint such that the requester provides the ticker as a
+parameter. The resulting endpoint would be a general one that returns prices for
+any kind of asset. On the other hand, hardcoding `BTC` as the asset whose price
+will be returned (using
+[fixed operation parameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)),
+which would make the endpoint a specific one that only returns the BTC price.
 
 The recommended endpoint definition pattern is to create an Airnode endpoint for
 each API operation, and allow the requesters to provide all operation parameters
 themselves. This results in optimal flexibility, and essentially allows the
-requesters to use the entire API functionality on-chain. Normally, oracle
-integrations strive to hard-code as many API parameters as possible because
-passing these parameters on-chain results in a gas cost overhead. However, the
-Airnode protocol uses [templates](../concepts/template.md) (not to be confused
+requesters to use the entire API functionality on-chain. Normally, competitor
+oracle integrations strive to hard-code as many API parameters as possible
+because passing these parameters on-chain results in a gas cost overhead.
+However, the Airnode protocol uses
+[templates](/reference/airnode/latest/concepts/template.md) (not to be confused
 with the OIS template used for this guide), which allow requesters to specify a
 large number of endpoint parameters at no additional gas cost.
 
 Note that there are some cases where you may not want to map endpoints to API
 operations one-to-one. For example, an API operation can have a `header`
 parameter, `Accept`, that can take the values `application/json` or
-`applicatino/xml` to determine how to format the data that the API will respond
+`application/xml` to determine how to format the data that the API will respond
 to the call. Airnode expects responses to be in JSON format, and thus
 hard-coding this parameter as `JSON` would be more suitable than letting the
 requester decide, as there is only one valid choice. Again, the integrator's job
 is to be aware of these subtleties and use judgement.
 
-After this brief detour, let us get back to filling in our OIS template.
-
-### Endpoints
+### Endpoints array
 
 The field `endpoints` is an array, with each row representing an Airnode
-endpoint. The first field you need to fill in is `name`. Make sure that it is
-descriptive and unique from other endpoint names. If you are integrating API
-operations to Airnode endpoints one-to-one, using the API operation path as the
-endpoint name is a decent choice (i.e., `/token`). Note that you would also add
-the method to this name if there were multiple operations with different methods
-for a single path (i.e., `GET/token`).
+endpoint. The first field to fill in is `name`. Make sure that it is descriptive
+and unique from other endpoint names. If you are integrating API operations to
+Airnode endpoints one-to-one, using the API operation path as the endpoint name
+is a decent choice (i.e., `/token`). Note that you would also add the method to
+this name if there were multiple operations with different methods for a single
+path (i.e., `GET/token`).
 
 The next step is to fill in `operation` object. Here, you need to enter the
 `path` and `method` of an API operation you have defined in
@@ -385,6 +387,19 @@ parameter set to
 <code style="overflow-wrap:break-word;">endpoints[n].fixedOperationParameters[n].value</code>.
 The requester does not supply a value for `fixedOperationParameters`.
 
+```json
+"fixedOperationParameters": [
+  {
+    "operationParameter": {
+      "in": "<FILL_OPERATION_PARAMETER_1_IN>",
+      "name": "<FILL_OPERATION_PARAMETER_1_NAME>"
+    },
+    "value": "<FILL_*>"
+  }
+  ],
+
+```
+
 An Airnode endpoint can have multiple `fixedOperationParameters`. An API
 operation parameter cannot be in both `endpoints[n].fixedOperationParameters`
 and `endpoints[n].parameters`.
@@ -394,21 +409,56 @@ and `endpoints[n].parameters`.
 The requester can provide some parameters that are not mapped to API operation
 parameters. These parameters are called "reserved parameters", and their names
 start with an underscore. See the
-[related OIS docs](/reference/ois/latest/ois.md#_5-4-reservedparameters) for
-more information.
+[related OIS docs](/reference/ois/latest/specification.md#_5-4-reservedparameters)
+for more information.
 
-The current list of reserved parameters are `_type`, `_path` and `_times`. See
+The current list of reserved parameters are `_type`, `_path`, `_times`,
+`_gasPrice`, and `_minConfirmations`. See
 [Reserved Parameters](/reference/ois/latest/reserved-parameters.md) in the OIS
-document set to understand what each of these parameters are for. In most cases,
-all three should be defined as reserved parameters with no fixed/default values,
-as doing so provides the requester with the most flexibility.
+document set to understand what each of these parameters are for.
 
 #### parameters
 
-Airnode endpoint parameters map to API operation parameters that the requester
-is allowed to provide values for. It refers to an API operation through its
-field `operationParameter`. You can also provide `default` values for endpoint
-parameters, though this is not recommended in most cases.
+Airnode endpoint
+[parameters](/reference/ois/latest/specification.md#_5-5-parameters) map to API
+operation [parameters](/reference/ois/latest/specification.md#_4-2-1-parameters)
+that the requester is allowed to provide values for. It refers to an API
+operation through its field `operationParameter`. You can also provide `default`
+values for endpoint parameters, though this is not recommended in most cases.
+
+```json
+// apiSpecifications.paths.<FILL_PATH>.<FILL_METHOD>.parameters[1]
+"paths": {
+  "<FILL_PATH>": {
+    "<FILL_METHOD>": {
+      "parameters": [
+        {
+          "in": "<FILL_OPERATION_PARAMETER_1_IN>",
+          "name": "<FILL_OPERATION_PARAMETER_1_NAME>"
+        },
+        {
+          "in": "<FILL_OPERATION_PARAMETER_2_IN>", <──────────┐
+          "name": "<FILL_OPERATION_PARAMETER_2_NAME>" <─────┐ │
+        }                                                   │ │
+      ]                                                     │ │
+    }                                                       │ │
+  }                                                         │ │
+},                                                          │ │
+                                                            │ │
+Mapping between API parameters and endpoint parameters.     │ │
+                                                            │ │
+// endpoints[0].parameters.operationParameter               │ │
+"parameters": [                                             │ │
+  {                                                         │ │
+    "name": "<FILL_*>",                                     │ │
+    "default": "<FILL_*>",                                  │ │
+    "operationParameter": {                                 │ │
+      "in": "<FILL_OPERATION_PARAMETER_2_IN>", <────────────┘ │
+      "name": "<FILL_OPERATION_PARAMETER_2_NAME>" <───────────┘
+    }
+  }
+]
+```
 
 Endpoint parameters have a `name` field, which does not have to be the same as
 the API operation parameter that they map to. As a separate note, an Airnode
@@ -431,4 +481,10 @@ directly, and let the requester provide all API operation parameters through the
 Airnode endpoint parameters.
 
 Now that you have an OIS object, the next step is
-[API Security](./api-security.md).
+[API Security](/reference/airnode/latest/understand/api-security.md).
+
+## More related material...
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='REFERENCE' id="_reference-ois-specifications"/>
+</div>

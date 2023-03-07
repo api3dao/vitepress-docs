@@ -1,13 +1,15 @@
 module.exports = [
   {
     text: '',
-    collapsible: false,
     items: [
       { text: 'Getting Started', link: '/dev/' },
       { text: 'DocSets', link: '/dev/docsets' },
+      { text: 'Nav Boxes', link: '/dev/navboxes' },
       { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
+      { text: 'Hyperlinks', link: '/dev/hyperlinks' },
+      { text: 'Link Validation', link: '/dev/link-validation' },
       { text: 'Tabs Component', link: '/dev/tabs' },
       {
         text: 'Page Styling',
@@ -19,6 +21,7 @@ module.exports = [
       },
       { text: 'Rosetta, Nodejs, esbuild', link: '/dev/rosetta' },
       { text: 'Google Analytics 4', link: '/dev/ga4' },
+      { text: 'VitePress Containers', link: '/dev/containers' },
     ],
   },
 ];

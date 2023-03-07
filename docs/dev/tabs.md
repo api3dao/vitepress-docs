@@ -12,10 +12,10 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: danger Deprecated
+::: danger Remooved
 
-The Tabs component has been deprecated in favor of the native `code-group`
-markdown component and the proper implementation of the TOC.
+The Tabs component has been removed in favor of the native `code-group` markdown
+component and the proper implementation of the TOC.
 
 :::
 
@@ -38,8 +38,7 @@ Example:
 ## Useful Vue Components
 
 Each component that Tabs can display must be added manually to the template of
-the component. See the component in the `vitepress-docs` repo
-[here](https://github.com/api3dao/vitepress-docs/blob/main/docs/_components/Tabs.vue).
+the component.
 
 ```html
 <template>

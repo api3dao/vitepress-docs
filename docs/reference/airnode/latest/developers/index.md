@@ -2,9 +2,9 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → dApp Developers
 path: /reference/airnode/latest/developers/index.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -28,7 +28,8 @@ performs a callback to the requester.
 In summary, you need to do two things.
 
 - Call `makeFullRequest()` or `makeTemplateRequest()` on the AirnodeRrpV0.sol
-  contract, which returns a [`requestId`](../concepts/request.md#requestid).
+  contract, which returns a
+  [`requestId`](/reference/airnode/latest/concepts/request.md#requestid).
 - Add a `myFulfill()` function (call it what you like) to your requester (your
   contract) where the off-chain Airnode can send the requested data when ready.
   The data includes the same `requestId` as the one returned at the time of
@@ -42,4 +43,5 @@ In summary, you need to do two things.
 > 4.  <p>Airnode performs a callback to a named function <code>myFulfill()</code> in myContract.sol via the AirnodeRrpV0.sol function <code>fulfill()</code> with the requested data and the <code>requestId</code>.</p>
 
 For a more detailed diagram see the first image in the
-[Calling an Airnode](./call-an-airnode.md) doc.
+[Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md)
+doc.

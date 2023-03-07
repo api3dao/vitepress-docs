@@ -8,5 +8,20 @@
     "btnURL": "/reference/qrng/providers.html",
     "title": "List of available QRNG providers",
     "content": "The list of providers contains both quantum and pseudorandom number generators."
+  },
+  "_reference-airnode-api-integrations": {
+    "btnURL": "/reference/airnode/latest/understand/api-integration.html",
+    "title": "Airnode API integration",
+    "content": "Learn more about mapping API operations to Airnode endpoints."
+  },
+  "_reference-ois-specifications": {
+    "btnURL": "/reference/ois/latest/specification.html",
+    "title": "OIS specifications",
+    "content": "Field-by-field definitions of the keys in an OIS object."
+  },
+  "_reference-airnode-deployer-image": {
+    "btnURL": "/reference/airnode/latest/docker/deployer-image.html",
+    "title": "AWS/GCP Deployer Image",
+    "content": "See code examples and other details for the ASW/GCP deployer image."
   }
 }

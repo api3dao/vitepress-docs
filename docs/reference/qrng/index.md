@@ -106,7 +106,7 @@ function fulfillUint256(bytes32 requestId, bytes calldata data)
 ...
 ```
 
-See [QrngExample.sol](./qrng-example.md) for a complete example.
+See [QrngExample.sol](/reference/qrng/qrng-example.md) for a complete example.
 
 An additional pair of functions
 ([makeRequestUint256Array()<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol#L98-L113)

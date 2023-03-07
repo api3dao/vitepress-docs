@@ -2,9 +2,9 @@
 title: HTTP Gateways (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
 path: /reference/airnode/latest/understand/http-gateways.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -28,7 +28,7 @@ Gateways.
 Both gateways are setup identically. The differences are in their purpose and
 response.
 
-> <img src="../assets/images/gateway.png" width="650px"/>
+> <img src="../assets/images/gateway.png" width="500px"/>
 
 ### HTTP Gateway
 
@@ -48,11 +48,11 @@ source that may in turn push data to a blockchain.
 Enable either gateway in the `config.json` file fields
 `nodeSettings.httpGateway` and `nodeSettings.httpSignedDataGateway`.
 
-- **enabled**: A boolean to enable/disable for the gateway.
+- **enabled**: A boolean to enable/disable the gateway.
 - **maxConcurrency**: (optional) A number higher than zero that represents the
-  maximum number of serverless functions serving gateway requests. When omitted,
-  there is no maximum concurrency set. This field is ignored for Airnode client
-  gateways.
+  maximum number of serverless function instance serving gateway requests. When
+  omitted, there is no maximum concurrency set. This field is ignored for
+  Airnode client gateways.
 - **corsOrigins**: A list of allowed origins, `['*']` to allow all origins or an
   empty array to disable CORS.
 
@@ -78,34 +78,32 @@ Enable either gateway in the `config.json` file fields
 },
 ```
 
-Add the desired endpoints the gateways can respond to in the `triggers.http[n]`
+Add the desired endpoints a gateway can respond to in the `triggers.http[n]`
 and/or `triggers.httpSignedData[n]` arrays. The corresponding arrays do not need
-to match. You may want to test all endpoints but only serve certain endpoints
-using the HTTP signed data gateway or via RRP.
+to match. It could be practical to test all endpoints but only serve certain
+endpoints using the HTTP signed data gateway or via RRP.
 
 ```json
 // in config.json
 "triggers": {
-  "rrp": [
-    {
-      "endpointId": "0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6",
-      "oisTitle": "CoinGecko Basic Request",
-      "endpointName": "coinMarketData",
-      "cacheResponses": false
-    }
-  ],
-  "http": [
-    {
+  ...
+  "http": [ // This endpoint can be served
+    {       // by the http gateway
       "endpointId": "0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6",
       "oisTitle": "CoinGecko Basic Request",
       "endpointName": "coinMarketData",
     }
   ],
-  "httpSignedData": [
-    {
+  "httpSignedData": [ // These endpoints can be served
+    {                 // by the http httpSignedData
       "endpointId": "0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6",
       "oisTitle": "CoinGecko Basic Request",
       "endpointName": "coinMarketData",
+    },
+    {
+      "endpointId": "5f5fa09c81d543e04c92087ac3ffe479ad55a04961cf4c9b37d897568c7ae805",
+      "oisTitle": "Market Indexes",
+      "endpointName": "indexByName",
     }
   ]
 }
@@ -124,14 +122,15 @@ endpoints are not openly accessible. Therefore, the gateway URLs should be kept
 secret.
 
 The gateway URLs are also available as part of the payload sent from Airnode's
-[heartbeat](./heartbeat.md) to your specified heartbeat URL.
+[heartbeat](/reference/airnode/latest/understand/heartbeat.md) to a specified
+heartbeat URL.
 
 ### When deployed on a cloud provider
 
 A gateway URL is generated for each gateway (when enabled) when Airnode is
-deployed. You can see the URLs including the secret `UUID` path parameter,
-displayed on your terminal at the end of an Airnode deployment using a
-[Docker image](../docker/).
+deployed. The URL including, the secret `UUID` path parameter, is displayed on
+the terminal at the end of an Airnode deployment using the
+[Docker image](/reference/airnode/latest/docker/deployer-image.md).
 
 ### When using Airnode client
 
@@ -140,7 +139,8 @@ is a common web server for both gateways, which is exposed on the host machine.
 Doing so will make the gateways API accessible like a regular web server running
 on the machine. Each gateway has a separate endpoint as shown below. Note the
 `PORT` which is exposed as part of the Airnode client container. See the
-[Airnode client usage](../docker/client-image.md#usage) for more details.
+[Airnode client usage](/reference/airnode/latest/docker/client-image.md#usage)
+for more details.
 
 - `http://localhost:<PORT>/http-data/01234567-abcd-abcd-abcd-012345678abc/<endpointId>` -
   Gateway URL for the HTTP Gateway
@@ -171,12 +171,13 @@ required as part of the CURL call.
 
 \* Parameters for the gateways are named differently. The HTTP signed data
 gateway requires that the `encodedParameters` be encoded using
-[Airnode ABI](../specifications/airnode-abi.md).
-
-Replace `<gatewayUrl>` in the examples below with the URL displayed in the
-terminal at the end of an Airnode deployment using a [Docker image](../docker/).
+[Airnode ABI](/reference/airnode/latest/specifications/airnode-abi.md).
 
 ### Request
+
+Replace `<gatewayUrl>` in the examples below with the URL displayed in the
+terminal at the end of an Airnode deployment using a
+[Docker image](/reference/airnode/latest/docker/).
 
 ::: code-group
 
@@ -211,7 +212,7 @@ curl \
 
 rawValue: the API response
 encodedValue: the encoded bytes value that is sent as payload in the response transaction on chain
-values: an array of values after they are [extracted and converted](../packages/adapter.md#conversion) to the target type
+values: an array of values after they are [extracted and converted](/reference/airnode/latest/packages/adapter.md#conversion) to the target type
 
 ```
 
@@ -229,13 +230,16 @@ signature: The response has been signed by Airnode.
 
 :::
 
-## Tutorials
+## More related material...
 
-The `airnode-examples` monorepo hosts examples demonstrating use of the HTTP
-Gateway and HTTP Signed Data Gateway,
-[see here](/guides/airnode/monorepo-examples.html). Furthermore, there are
-additional examples of using CURL to call the HTTP gateway in both the
-[Quick Deploy AWS](/guides/airnode/quick-start-aws/index.md#execute-endpoint)
-and
-[Quick Deploy GCP](/guides/airnode/quick-start-gcp/index.md#execute-endpoint)
-guides.
+The [airnode-example monorepo](/guides/airnode/monorepo-examples.html) hosts
+examples demonstrating use of the HTTP Gateway and HTTP Signed Data Gateway.
+Furthermore, there are additional examples of using CURL to call the HTTP
+gateway in the quick start tutorials.
+
+<div class="api3-css-nav-box-flex-row">
+  <NavBox type='REPO' id="_airnode-examples"/>
+  <NavBox type='GUIDE' id="_airnode-quick-start-aws"/>
+  <NavBox type='GUIDE' id="_airnode-quick-start-gcp"/>
+  <NavBox type='GUIDE' id="_airnode-quick-start-container"/>
+</div>

@@ -157,7 +157,8 @@ Beacons (Beacon Set).
 > <img src="../assets/images/00-b-What_are_dAPIs.png" width="550px"/>
 
 Each dAPI has a human-readable name (e.g., `AVAX/USD`) that makes them easily
-accessible using `DapiServer.sol` by simply passing the encoded bytes32 value of
+accessible using `DapiServer.sol`. Simple pass the
+[encoded bytes32 value](/reference/dapis/dapi-names.md#encode-the-dapiname) of
 the `dapiName` to a reader function.
 
 ```solidity
@@ -166,12 +167,12 @@ the `dapiName` to a reader function.
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415...0000");
 ```
 
-See
-["Using an API3 Market proxy contract and Remix"](/guides/dapis/call-dapi-proxy/)
-and
-["Using the DapiServer contract and Remix"](/guides/dapis/call-dapi-dapiserver/)
-for a step-by-step guides on how to call a dAPI. Also visit the
-[reference section for dAPIs](/reference/dapis/).
+<TodoLink comment="/guides/dapis/call-dapi-proxy/"/>
+<TodoLink comment=""/>
+
+See ["Using an API3 Market proxy contract and Remix"](/) and
+["Using the DapiServer contract and Remix"](/) for a step-by-step guides on how
+to call a dAPI. Also visit the [reference section for dAPIs](/reference/dapis/).
 
 ## More related material
 

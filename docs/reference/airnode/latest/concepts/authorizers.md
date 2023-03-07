@@ -2,9 +2,9 @@
 title: Authorizers
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/authorizers.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -19,9 +19,9 @@ tags:
 
 An Airnode can authorize requester contract access to its underlying API using
 authorizers. As an alternative, an API provider could also use
-[Relayed Meta Data Authentication](./relay-meta-auth.md) to authenticate
-requests. Authorizers require blockchain knowledge by the API provider, relayed
-meta data does not.
+[Relayed Meta Data Authentication](/reference/airnode/latest/concepts/relay-meta-auth.md)
+to authenticate requests. Authorizers require blockchain knowledge by the API
+provider, relayed meta data does not.
 
 When an Airnode receives a request, it can use on-chain authorizer contracts to
 verify if a response is warranted. Authorizers allow Airnodes to implement a
@@ -36,11 +36,11 @@ wide variety of policies. Below are some examples:
   owner's backend (for example, based on PayPal payments).
 
 A common use case for an authorizer is the
-[RequesterAuthorizerWithAirnode](#requesterauthorizerwithairnode) authorizer
-contract developed for Airnode operators to use right out-of-the-box. It allows
-the whitelisting of requester contracts (with or without expiration timestamps)
-on a per endpoint basis. This is the most common use case and may in fact
-satisfy the needs of many Airnodes.
+[RequesterAuthorizerWithAirnode](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithairnode)
+authorizer contract developed for Airnode operators to use right out-of-the-box.
+It allows the whitelisting of requester contracts (with or without expiration
+timestamps) on a per endpoint basis. This is the most common use case and may in
+fact satisfy the needs of many Airnodes.
 
 The diagram below illustrates how Airnode utilizes authorizers.
 
@@ -58,15 +58,15 @@ Airnode provides two authorizer contracts, one of which
 (`RequesterAuthorizerWithManager`) is meant to be used by the API3 DAO. They are
 detailed within this doc in sections below.
 
-- [RequesterAuthorizerWithAirnode](#requesterauthorizerwithairnode)
-- [RequesterAuthorizerWithManager](#requesterauthorizerwithmanager)
+- [RequesterAuthorizerWithAirnode](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithairnode)
+- [RequesterAuthorizerWithManager](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithmanager)
 
 Both these authorizer contracts inherit and extend the `RequesterAuthorizer`
 abstract contract which also extends the `Whitelist` contract. This means that
 both authorizer contracts will need to whitelist requester contracts prior to
 make them available to an Airnode. For `RequesterAuthorizerWithAirnode` this can
 be done using the
-[admin-cli](../packages/admin-cli.md#requesterauthorizerwithairnode).
+[admin-cli](/reference/airnode/latest/packages/admin-cli.md#requesterauthorizerwithairnode).
 
 The main difference between them is that `RequesterAuthorizerWithAirnode` allows
 the Airnode address to grant whitelisting roles for that specific Airnode. On
@@ -91,10 +91,10 @@ effectively implementing an on-chain call quota.
 ### Authorizer List
 
 Airnode authorizers are listed in the config.json file at
-[chains[n].authorizers](../understand/configuring.md#chains). An authorizer
-typically checks for a single condition (has the requester made their monthly
-payment, is the `requester` whitelisted, etc.). Authorizers can be combined to
-enforce more complex policies. If any of the authorizers in
+[chains[n].authorize/reference/airnode/latest/understand/configuring.md#chains).
+An authorizer typically checks for a single condition (has the requester made
+their monthly payment, is the `requester` whitelisted, etc.). Authorizers can be
+combined to enforce more complex policies. If any of the authorizers in
 `chains[n].authorizers` gives access, the request will considered to be
 authorized. From a logical standpoint, the authorization outcomes get *OR*ed.
 
@@ -167,9 +167,10 @@ achieve wide-spread adoption.
 ### Are authorizers required?
 
 Authorizers are not required. An Airnode operator could use
-[Authorizations](./authorizations.md) or
-[Relayed Meta Data Security Schemes](./relay-meta-auth.md). It is possible to
-use both authorizers, authorizations, and relay security schemes together.
+[Authorizations](/reference/airnode/latest/concepts/authorizations.md) or
+[Relayed Meta Data Security Schemes](/reference/airnode/latest/concepts/relay-meta-auth.md).
+It is possible to use both authorizers, authorizations, and relay security
+schemes together.
 
 ## How are authorizers implemented?
 
@@ -248,9 +249,10 @@ of each object resemble other `config.json` objects:
 `requesterEndpointAuthorizers` specifies an array of contract address that
 authorize requests and both `chainType` and `contracts` are configured
 equivalently to their like named parent `chains[n]` objects described in the
-[config.json reference](../deployment-files/config-json.md#chains). Lastly,
-`chainId` specifies the cross-chain (network) id and `chainProvider` is an
-object containing the chain provider url for the _chain specified by `chainId`_.
+[config.json reference](/reference/airnode/latest/deployment-files/config-json.md#chains).
+Lastly, `chainId` specifies the cross-chain (network) id and `chainProvider` is
+an object containing the chain provider url for the _chain specified by
+`chainId`_.
 
 Note that `crossChainRequesterAuthorizers` is an array that can contain multiple
 cross-chain authorizer objects, which allows for authorizers across multiple

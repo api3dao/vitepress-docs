@@ -3,7 +3,7 @@ title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapServer Contract
-path: /reference/dapis/functions/dapi-server-sol.html
+path: /reference/dapis/functions/
 version:
 outline: deep
 tags:
@@ -47,21 +47,22 @@ contract mySmartContract {
 }
 ```
 
-Visit the [Guides](/guides/dapis/call-dapi-dapiserver/) section to learn how to
-use `DapiServer.sol`. Also visit the function calls of `DapiServer.sol` shown
-below.
+<TodoLink comment="/guides/dapis/call-dapi-dapiserver/"/>
 
-- [readDataFeedWithDapiName()](./read-data-feed-with-dapi-name.md) - Returns a
-  value and timestamp using the dAPI name.
-- [readDataFeedValueWithDapiName()](./read-data-feed-value-with-dapi-name.md) -
+Visit the [Guides](/guides/) section to learn how to use `DapiServer.sol`. Also
+visit the function calls of `DapiServer.sol` shown below.
+
+- [readDataFeedWithDapiName()](/reference/dapis/functions/read-data-feed-with-dapi-name.md) -
+  Returns a value and timestamp using the dAPI name.
+- [readDataFeedValueWithDapiName()](/reference/dapis/functions/read-data-feed-value-with-dapi-name.md) -
   Returns a value using the dAPI name.
-- [readDataFeedWithId()](./read-data-feed-with-id.md) - Returns a value and
-  timestamp using a Beacon or Beacon set ID.
-- [readDataFeedValueWithId()](./read-data-feed-value-with-id.md) - Returns a
-  value using a Beacon or Beacon set ID.
-- [readerCanReadDataFeed()](./reader-can-read-datafeed.md) - Whether a reader
-  can read a dAPI, Beacon, or Beacon set.
-- [dataFeedIdToReaderToWhitelistStatus()](./data-feed-id-to-reader-to-whitelist-status.md)
+- [readDataFeedWithId()](/reference/dapis/functions/read-data-feed-with-id.md) -
+  Returns a value and timestamp using a Beacon or Beacon set ID.
+- [readDataFeedValueWithId()](/reference/dapis/functions/read-data-feed-value-with-id.md) -
+  Returns a value using a Beacon or Beacon set ID.
+- [readerCanReadDataFeed()](/reference/dapis/functions/reader-can-read-datafeed.md) -
+  Whether a reader can read a dAPI, Beacon, or Beacon set.
+- [dataFeedIdToReaderToWhitelistStatus()](/reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status.md)
   Details about the coverage policy status of a reader address for a dAPI,
   Beacon, or Beacon set.
 
@@ -72,4 +73,5 @@ may attempt to read. See available dAPIs on the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org) which can be used to
 gain access to a dAPI. During the preview period, all dAPIs on production
 networks have free access (limited time offer). See
-[Chains and Contracts](../chains.md), which lists supported networks.
+[Chains and Contracts](/reference/dapis/chains.md), which lists supported
+networks.

@@ -54,7 +54,9 @@ The DAO dashboard has three views as seen in the navigation menu in the upper
 left hand corner ( Staking, Governance, and History). Visit the following guides
 and learn more about the dashboard functionality.
 
-- [Staking Tokens](staking.md) - Stake API3 tokens into the DAO pool to gain
-  governance rights (proposals and voting) and earn rewards.
-- [Working with Proposals](proposals.md) - View and create proposals.
-- [How to Vote](voting.md) - Vote on proposals directly or through delegation.
+- [Staking Tokens](/guides/dao-members/staking.md) - Stake API3 tokens into the
+  DAO pool to gain governance rights (proposals and voting) and earn rewards.
+- [Working with Proposals](/guides/dao-members/proposals.md) - View and create
+  proposals.
+- [How to Vote](/guides/dao-members/voting.md) - Vote on proposals directly or
+  through delegation.

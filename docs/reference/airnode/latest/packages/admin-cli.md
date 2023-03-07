@@ -2,9 +2,9 @@
 title: Admin CLI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Packages
+pageHeader: Reference → Airnode → v0.11 → Packages
 path: /reference/airnode/latest/packages/admin-cli.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -21,22 +21,26 @@ Use the
 [airnode-admin](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-admin)
 Admin CLI tool to interact with Airnode across blockchains. There are commands
 for both developers (dApp) and API providers. Developers can sponsor
-[requester](../concepts/requester.md) contracts and derive
-[sponsorWallets](../concepts/sponsor.md#sponsorwallet) for Airnodes. API
-providers can build [Airnodes](../concepts/airnode.md) that serve their API data
-to requester contracts.
+[requester](/reference/airnode/latest/concepts/requester.md) contracts and
+derive
+[sponsorWallets](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
+for Airnodes. API providers can build
+[Airnodes](/reference/airnode/latest/concepts/airnode.md) that serve their API
+data to requester contracts.
 
 ::: warning Transaction Gas Costs
 
 Some commands will incur transaction fees. These are per call transaction gas
 costs and are relatively small. See the
-[<span style="color:green;">Developer Fees</span>](../developers/fees.md) doc.
+[<span style="color:green;">Developer Fees</span>](/reference/airnode/latest/developers/fees.md)
+doc.
 
 :::
 
 Almost all commands require you to provide a blockchain `providerUrl`. Following
 are just two examples of many possibilities. See the
-[Chain Providers](../concepts/chain-providers.md) doc for more information.
+[Chain Providers](/reference/airnode/latest/concepts/chain-providers.md) doc for
+more information.
 
 - <code style="overflow-wrap: break-word;">https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID></code>
 - `https://sepolia.infura.io/v3/<KEY>`
@@ -183,36 +187,40 @@ const requester = await adminSdk.sponsorRequester(requester, overrides);
 
 ## Sponsors
 
-Commands related to a [sponsor's](../concepts/sponsor.md) relationships between
-[requesters](../concepts/requester.md) and
-[sponsorWallets](../concepts/sponsor.md#sponsorwallet) as well as
-[templates](../concepts/template.md) used by a sponsor's requesters. Some of
-these commands connect to the
+Commands related to a [sponsor's](/reference/airnode/latest/concepts/sponsor.md)
+relationships between
+[requesters](/reference/airnode/latest/concepts/requester.md) and
+[sponsorWallets](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet) as
+well as [templates](/reference/airnode/latest/concepts/template.md) used by a
+sponsor's requesters. Some of these commands connect to the
 [AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract where the signer is sponsor account.
 
-- [sponsor-requester](admin-cli.md#sponsor-requester)
-- [unsponsor-requester](admin-cli.md#unsponsor-requester)
-- [get-sponsor-status](admin-cli.md#get-sponsor-status)
-- [derive-sponsor-wallet-address](admin-cli.md#derive-sponsor-wallet-address)
-- [create-template](admin-cli.md#create-template)
-- [create-inline-template](admin-cli.md#create-inline-template)
-- [get-template](admin-cli.md#get-template)
-- [request-withdrawal](admin-cli.md#request-withdrawal)
-- [check-withdrawal-request](admin-cli.md#check-withdrawal-request)
-- [verify-airnode-xpub](admin-cli.md#verify-airnode-xpub)
+- [sponsor-requester](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
+- [unsponsor-requester](/reference/airnode/latest/packages/admin-cli.md#unsponsor-requester)
+- [get-sponsor-status](/reference/airnode/latest/packages/admin-cli.md#get-sponsor-status)
+- [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
+- [create-template](/reference/airnode/latest/packages/admin-cli.md#create-template)
+- [create-inline-template](/reference/airnode/latest/packages/admin-cli.md#create-inline-template)
+- [get-template](/reference/airnode/latest/packages/admin-cli.md#get-template)
+- [request-withdrawal](/reference/airnode/latest/packages/admin-cli.md#request-withdrawal)
+- [check-withdrawal-request](/reference/airnode/latest/packages/admin-cli.md#check-withdrawal-request)
+- [verify-airnode-xpub](/reference/airnode/latest/packages/admin-cli.md#verify-airnode-xpub)
 
 ### `sponsor-requester`
 
-[Sponsors](../concepts/sponsor.md) a [requester](../concepts/requester.md)
-contract so that its requests can be fulfilled by the
-[sponsorWallet](../concepts/sponsor.md#sponsorwallet) of an Airnode. The account
-derived from the `mnemonic` you provide must belong to the sponsor.
+[Sponsors](/reference/airnode/latest/concepts/sponsor.md) a
+[requester](/reference/airnode/latest/concepts/requester.md) contract so that
+its requests can be fulfilled by the
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet) of
+an Airnode. The account derived from the `mnemonic` you provide must belong to
+the sponsor.
 
 Sponsoring a requester and using the returned `sponsorAddress` to derive a
-`sponsorWallet` for an Airnode creates a [relationship](../concepts/sponsor.md)
-between the requester and the Airnode, see the
-[`derive-sponsor-wallet-address`](admin-cli.md#derive-sponsor-wallet-address)
+`sponsorWallet` for an Airnode creates a
+[relationship](/reference/airnode/latest/concepts/sponsor.md) between the
+requester and the Airnode, see the
+[`derive-sponsor-wallet-address`](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 command.
 
 - `provider-url`: A valid blockchain provider URL.
@@ -256,10 +264,12 @@ npx @api3/airnode-admin sponsor-requester ^
 
 ### `unsponsor-requester`
 
-Removes the sponsorship of a [requester](../concepts/requester.md) contract so
-that its requests can no longer be fulfilled by the
-[sponsorWallet](../concepts/sponsor.md#sponsorwallet). The account derived from
-the `mnemonic` you provide here has to belong to the sponsor.
+Removes the sponsorship of a
+[requester](/reference/airnode/latest/concepts/requester.md) contract so that
+its requests can no longer be fulfilled by the
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
+The account derived from the `mnemonic` you provide here has to belong to the
+sponsor.
 
 - `provider-url`: A valid blockchain provider URL.
 - `sponsor-mnemonic`: A wallet owned by the sponsor. Must be the mnemonic used
@@ -299,8 +309,10 @@ npx @api3/airnode-admin unsponsor-requester ^
 
 ### `get-sponsor-status`
 
-Returns the sponsor status for a given [sponsor](../concepts/sponsor.md) and
-[requester](../concepts/requester.md) (`true` if sponsored, `false` otherwise).
+Returns the sponsor status for a given
+[sponsor](/reference/airnode/latest/concepts/sponsor.md) and
+[requester](/reference/airnode/latest/concepts/requester.md) (`true` if
+sponsored, `false` otherwise).
 
 - `provider-url`: A valid blockchain provider URL.
 - `sponsor-address`: The `sponsorAddress` returned when the requester was
@@ -330,11 +342,12 @@ npx @api3/airnode-admin get-sponsor-status ^
 ### `derive-sponsor-wallet-address`
 
 Derives the address of the wallet designated by an Airnode for a
-[sponsor](../concepts/sponsor.md), which is called the
-[sponsorWallet](../concepts/sponsor.md#sponsorwallet). This command will error
-if `airnode-xpub` does not belong to the HDNode with the path `m/44'/60'/0'` of
-the Airnode wallet. See the
-[`derive-airnode-xpub`](admin-cli.md#derive-airnode-xpub) command.
+[sponsor](/reference/airnode/latest/concepts/sponsor.md), which is called the
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
+This command will error if `airnode-xpub` does not belong to the HDNode with the
+path `m/44'/60'/0'` of the Airnode wallet. See the
+[`derive-airnode-xpub`](/reference/airnode/latest/packages/admin-cli.md#derive-airnode-xpub)
+command.
 
 - `airnode-xpub`: The extended public address of the Airnode for path
   `m/44'/60'/0'`.
@@ -361,10 +374,11 @@ npx @api3/airnode-admin derive-sponsor-wallet-address ^
 
 ### `create-template`
 
-Reads a file, uses its contents to create a [template](../concepts/template.md)
-and returns a `template-id`. Also see
-[Using Templates](../developers/using-templates.md) for an example template
-file.
+Reads a file, uses its contents to create a
+[template](/reference/airnode/latest/concepts/template.md) and returns a
+`template-id`. Also see
+[Using Templates](/reference/airnode/latest/developers/using-templates.md) for
+an example template file.
 
 - `provider-url`: A valid blockchain provider URL.
 - `mnemonic`: Used to pay gas costs from the mnemonic's default account unless a
@@ -409,13 +423,14 @@ config provides more clarity which templates can be used for template requests
 and also saves a blockchain call .
 
 The command reads a template file, uses its contents to create a
-[template](../concepts/template.md) and returns the data necessary to inline the
-template inside config. See [Using Templates](../developers/using-templates.md)
-for an example template file.
+[template](/reference/airnode/latest/concepts/template.md) and returns the data
+necessary to inline the template inside config. See
+[Using Templates](/reference/airnode/latest/developers/using-templates.md) for
+an example template file.
 
 This command does **not** create a template on chain. Be sure to use the
-[create-template](admin-cli.md#create-template) command on chain before making
-template requests.
+[create-template]/reference/airnode/latest/packages/admin-cli.md#create-template)
+command on chain before making template requests.
 
 - `template-file-path`: Path to the template file to create on-chain.
 
@@ -435,7 +450,8 @@ npx @api3/airnode-admin create-inline-template ^
 
 ### `get-template`
 
-Returns the [template](../concepts/template.md) for the given `template-id`.
+Returns the [template](/reference/airnode/latest/concepts/template.md) for the
+given `template-id`.
 
 - `provider-url`: A valid blockchain provider URL.
 - `template-id`: The id of a template to return.
@@ -460,18 +476,22 @@ npx @api3/airnode-admin get-template ^
 
 ### `request-withdrawal`
 
-Requests a [withdrawal](../concepts/sponsor.md#withdrawals) from a
-[sponsorWallet](../concepts/sponsor.md#sponsorwallet) managed by an Airnode.
+Requests a
+[withdrawal](/reference/airnode/latest/concepts/sponsor.md#withdrawals) from a
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
+managed by an Airnode.
 
 The funds will be returned to the account derived from the `sponsor-mnemonic`.
-This account must belong to a [sponsor](../concepts/sponsor.md) for the
-specified [sponsor wallet address](../concepts/sponsor.md#sponsorwallet) in the
-command.
+This account must belong to a
+[sponsor](/reference/airnode/latest/concepts/sponsor.md) for the specified
+[sponsor wallet address](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
+in the command.
 
 After the request is made, it needs to be fulfilled by Airnode, so the return
 value of this command is only a `withdrawal-request-id` which you can use to
-call [check-withdrawal-request](admin-cli.md#check-withdrawal-request) to see
-whether the request was processed or not.
+call
+[check-withdrawal-request](/reference/airnode/latest/packages/admin-cli.md#check-withdrawal-request)
+to see whether the request was processed or not.
 
 ::: warning Withdrawal Priority
 
@@ -524,9 +544,11 @@ npx @api3/airnode-admin request-withdrawal ^
 
 ### `check-withdrawal-request`
 
-Checks the status of the [withdrawal](../concepts/sponsor.md#withdrawals)
-request with the given `withdrawal-request-id` from the
-[request withdrawal command](admin-cli.md#request-withdrawal) above.
+Checks the status of the
+[withdrawal](/reference/airnode/latest/concepts/sponsor.md#withdrawals) request
+with the given `withdrawal-request-id` from the
+[request withdrawal command](/reference/airnode/latest/packages/admin-cli.md#request-withdrawal)
+above.
 
 - `provider-url`: A valid blockchain provider URL.
 - `withdrawal-request-id`: This id was returned by the `request-withdrawal`
@@ -554,12 +576,13 @@ npx @api3/airnode-admin check-withdrawal-request ^
 
 Verifies that the `airnode-xpub` belongs to the HDNode with the path
 `m/44'/60'/0'` of the Airnode wallet. This command checks that the Airnode
-address can be derived with provided Airnode [xpub](../concepts/airnode.md#xpub)
-with default derivation path `m/44'/60'/0'/0/0` and compares it with the
-`airnode-address`. This command will most likely be used by a
-[sponsor](../concepts/sponsor.md) to verify that the xpub belongs to the Airnode
-before calling the
-[derive-sponsor-wallet-address](admin-cli.md#derive-sponsor-wallet-address)
+address can be derived with provided Airnode
+[xpub](/reference/airnode/latest/concepts/airnode.md#xpub) with default
+derivation path `m/44'/60'/0'/0/0` and compares it with the `airnode-address`.
+This command will most likely be used by a
+[sponsor](/reference/airnode/latest/concepts/sponsor.md) to verify that the xpub
+belongs to the Airnode before calling the
+[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 command.
 
 ::: code-group
@@ -584,17 +607,19 @@ Helper commands for a previously deployed Airnode. Some of these commands
 connect to the AirnodeRrpV0.sol protocol contract where the signer must be the
 Airnode wallet.
 
-- [derive-airnode-xpub](admin-cli.md#derive-airnode-xpub)
-- [derive-endpoint-id](admin-cli.md#derive-endpoint-id)
-- [generate-airnode-mnemonic](admin-cli.md#generate-airnode-mnemonic)
-- [derive-airnode-address](admin-cli.md#derive-airnode-address)
+- [derive-airnode-xpub](/reference/airnode/latest/packages/admin-cli.md#derive-airnode-xpub)
+- [derive-endpoint-id](/reference/airnode/latest/packages/admin-cli.md#derive-endpoint-id)
+- [generate-airnode-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-airnode-mnemonic)
+- [derive-airnode-address](/reference/airnode/latest/packages/admin-cli.md#derive-airnode-address)
 
 ### `derive-airnode-xpub`
 
-Derives the Airnode extended public key ([xpub](../concepts/airnode.md#xpub)).
-This xpub must be announced via off-chain channels because it will be needed to
-derive a [sponsorWallet](../concepts/sponsor.md#sponsorwallet) address. See the
-[derive-sponsor-wallet-address](admin-cli.md#derive-sponsor-wallet-address)
+Derives the Airnode extended public key
+([xpub](/reference/airnode/latest/concepts/airnode.md#xpub)). This xpub must be
+announced via off-chain channels because it will be needed to derive a
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
+address. See the
+[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 command.
 
 - `airnode-mnemonic`: The Airnode mnemonic for which the xpub is to be derived.
@@ -613,11 +638,13 @@ npx @api3/airnode-admin derive-airnode-xpub --airnode-mnemonic "nature about sal
 
 ### `derive-endpoint-id`
 
-Derives an [endpointId](../deployment-files/config-json.md#triggers) from the
-OIS title and the endpoint's name. This command uses the convention described in
-the [triggers](../understand/configuring.md#triggers) section of the configuring
-airnode documentation. Add the `endpointId` to the config.json file
-(`triggers.rrp[n].endpointId`).
+Derives an
+[endpointId](/reference/airnode/latest/deployment-files/config-json.md#triggers)
+from the OIS title and the endpoint's name. This command uses the convention
+described in the
+[triggers](/reference/airnode/latest/understand/configuring.md#triggers) section
+of the configuring airnode documentation. Add the `endpointId` to the
+config.json file (`triggers.rrp[n].endpointId`).
 
 - `ois-title`: The title of the OIS from config.json (`ois.title`).
 - `endpoint-name`: The name of the endpoint from config.json
@@ -642,10 +669,11 @@ npx @api3/airnode-admin derive-endpoint-id ^
 ### `generate-airnode-mnemonic`
 
 Generates a unique mnemonic which can be used to create an
-[airnode wallet](../understand/configuring.md#airnodewalletmnemonic). In
+[airnode wallet](/reference/airnode/latest/concepts/airnode.md#mnemonic). In
 addition to the mnemonic, this command will also display the corresponding
-[airnode address](../concepts/airnode.md#airnodeaddress) and its extended public
-key ([xpub](../concepts/airnode.md#xpub)).
+[airnode address](/reference/airnode/latest/concepts/airnode.md#airnodeaddress)
+and its extended public key
+([xpub](/reference/airnode/latest/concepts/airnode.md#xpub)).
 
 ```sh
 npx @api3/airnode-admin generate-airnode-mnemonic
@@ -663,11 +691,12 @@ npx @api3/airnode-admin generate-mnemonic
 
 ### `derive-airnode-address`
 
-Derives the [airnode address](../concepts/airnode.md#airnodeaddress) which is
-the identifier of the particular Airnode on chain. The address is the default
-address of a BIP 44 wallet (with the path m/44'/60'/0'/0/0). Use this identifier
-for many other admin CLI commands, such as
-[derive-sponsor-wallet-address](admin-cli.md#derive-sponsor-wallet-address).
+Derives the
+[airnode address](/reference/airnode/latest/concepts/airnode.md#airnodeaddress)
+which is the identifier of the particular Airnode on chain. The address is the
+default address of a BIP 44 wallet (with the path m/44'/60'/0'/0/0). Use this
+identifier for many other admin CLI commands, such as
+[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address).
 
 - `airnode-mnemonic`: A mnemonic used to generate the airnode address.
 
@@ -688,22 +717,23 @@ npx @api3/airnode-admin derive-airnode-address ^
 ## RequesterAuthorizerWithAirnode
 
 RequesterAuthorizerWithAirnode contract was written by API3 as an
-[authorizer](../concepts/authorizers.md) contract that can be used by any
-Airnode. Airnode owners can use this contract in addition to authorizer
-contracts they have written themselves.
+[authorizer](/reference/airnode/latest/concepts/authorizers.md) contract that
+can be used by any Airnode. Airnode owners can use this contract in addition to
+authorizer contracts they have written themselves.
 
-This authorizer contract can whitelist [requesters](../concepts/requester.md)
-where each Airnode is adminned by themselves.
+This authorizer contract can whitelist
+[requesters](/reference/airnode/latest/concepts/requester.md) where each Airnode
+is adminned by themselves.
 
 These commands connect to the
 [RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
 contract.
 
-- [set-whitelist-expiration](admin-cli.md#set-whitelist-expiration)
-- [extend-whitelist-expiration](admin-cli.md#extend-whitelist-expiration)
-- [set-indefinite-whitelist-status](admin-cli.md#set-indefinite-whitelist-status)
-- [get-whitelist-status](admin-cli.md#get-whitelist-status)
-- [is-requester-whitelisted](admin-cli.md#is-requester-whitelisted)
+- [set-whitelist-expiration](/reference/airnode/latest/packages/admin-cli.md#set-whitelist-expiration)
+- [extend-whitelist-expiration](/reference/airnode/latest/packages/admin-cli.md#extend-whitelist-expiration)
+- [set-indefinite-whitelist-status](/reference/airnode/latest/packages/admin-cli.md#set-indefinite-whitelist-status)
+- [get-whitelist-status](/reference/airnode/latest/packages/admin-cli.md#get-whitelist-status)
+- [is-requester-whitelisted](/reference/airnode/latest/packages/admin-cli.md#is-requester-whitelisted)
 
 ### `set-whitelist-expiration`
 
@@ -716,7 +746,8 @@ previously set timestamp.
   `derivation-path` is specified. The mnemonic must be at least an Admin or
   Airnode wallet.
 - `provider-url`: A valid blockchain provider URL.
-- `endpoint-id`: The [`endpointId`](../deployment-files/config-json.md#triggers)
+- `endpoint-id`: The
+  [`endpointId`](/reference/airnode/latest/deployment-files/config-json.md#triggers)
   for which permission is granted (from OIS).
 - `requester-address`: The public address of the requester contract.
 - `expiration-timestamp`: A unix formatted timestamp.
@@ -768,7 +799,8 @@ timestamp.
 - `mnemonic`: Used to pay on-chain gas cost for this command's transaction. The
   mnemonic must be at least an Admin or Airnode wallet.
 - `provider-url`: A valid blockchain provider URL.
-- `endpoint-id`: The [`endpointId`](../deployment-files/config-json.md#triggers)
+- `endpoint-id`: The
+  [`endpointId`](/reference/airnode/latest/deployment-files/config-json.md#triggers)
   for which permission is granted (from OIS).
 - `requester-address`: The public address of the requester contract.
 - `expiration-timestamp`: A unix formatted timestamp.
@@ -821,7 +853,8 @@ even beyond the expiration period.
   mnemonic must be at least an Admin or Airnode wallet. The default address of
   the mnemonic will be used unless a derivation-path is provided.
 - `provider-url`: A valid blockchain provider URL.
-- `endpoint-id`: The [`endpointId`](../deployment-files/config-json.md#triggers)
+- `endpoint-id`: The
+  [`endpointId`](/reference/airnode/latest/deployment-files/config-json.md#triggers)
   for which permission is granted (from OIS).
 - `requester-address`: The public address of the requester contract.
 - `expiration-timestamp`: A unix formatted timestamp.
@@ -871,7 +904,8 @@ Called to get the detailed whitelist status of a requester for the
 Airnode–endpoint pair.
 
 - `provider-url`: A valid blockchain provider URL.
-- `endpoint-id`: The [`endpointId`](../deployment-files/config-json.md#triggers)
+- `endpoint-id`: The
+  [`endpointId`](/reference/airnode/latest/deployment-files/config-json.md#triggers)
   for which permission is granted (from OIS).
 - `requester-address`: The public address of the requester contract.
 - `airnode-address`: The public address of the Airnode.
@@ -904,7 +938,8 @@ Called to check if a requester is whitelisted to use the Airnode–endpoint pair
 
 - `provider-url`: A valid blockchain provider URL.
 - `requester-authorizer-with-airnode`: The authorizer contract address.
-- `endpoint-id`: The [`endpointId`](../deployment-files/config-json.md#triggers)
+- `endpoint-id`: The
+  [`endpointId`](/reference/airnode/latest/deployment-files/config-json.md#triggers)
   for which permission is granted (from OIS).
 - `requester-address`: The public address of the requester contract.
 - `airnode-address`: The public address of the Airnode.
@@ -934,5 +969,5 @@ npx @api3/airnode-admin is-requester-whitelisted ^
 ## More Examples
 
 You can find more examples in the
-[test directory](https://github.com/api3dao/airnode/tree/v0.11.0/packages/airnode-admin/test)
+[test directory](https://github.com/api3dao/airnode/tree/v0.10/packages/airnode-admin/test)
 of the `@api3-dao/airnode/package/admin` repo.

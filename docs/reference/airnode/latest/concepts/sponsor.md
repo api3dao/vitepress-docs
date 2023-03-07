@@ -2,9 +2,9 @@
 title: Sponsor
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/sponsor.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -18,21 +18,25 @@ tags:
 # {{$frontmatter.title}}
 
 A sponsor is an entity (individual, business, etc.). Sponsors create
-relationships between [requesters](requester.md) and
-[sponsorWallets](sponsor.md#sponsorwallet). They do so by sponsoring requesters
-and deriving sponsorWallets for Airnodes they want their requesters to call.
+relationships between
+[requesters](/reference/airnode/latest/concepts/requester.md) and
+[sponsorWallets](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
+They do so by sponsoring requesters and deriving sponsorWallets for Airnodes
+they want their requesters to call.
 
 > <img src="../assets/images/concepts-sponsor-relationships.png" width="350px"/>
 
 Making the relationship:
 
 - A sponsor "sponsors" a requester.
-- A sponsor "derives" a [sponsorWallet](sponsor.md#sponsorwallet) for a desired
-  Airnode.
+- A sponsor "derives" a
+  [sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
+  for a desired Airnode.
 
 Making a request.
 
-1. The now "sponsored" requester makes a [request](request.md) of an Airnode.
+1. The now "sponsored" requester makes a
+   [request](/reference/airnode/latest/concepts/request.md) of an Airnode.
    Parameters passed to the Airnode include the `sponsorAddress` and the
    `sponsorWalletAddress`.
 2. The Airnode verifies that the sponsor of the requester is the sponsor that
@@ -71,14 +75,16 @@ identities on-chain:
 
 ## sponsorWallet
 
-Each [Airnode](airnode.md) can keep a unique`sponsorWallet` for a sponsor. The
-wallet is identified by a `sponsorAddress/airnodeAddress` pair. A sponsor must
-take action to [derive](#derive-a-sponsor-wallet) a `sponsorWallet` for a
-particular Airnode. [Requesters](requester.md), that have been sponsored by a
-sponsor, can specify their requests be fulfilled by the `sponsorWallet`
-designated to the sponsor. This allows the sponsor to cover the gas cost of
-request fulfillments by the Airnode since the sponsor must send funds to this
-wallet before making the request.
+Each [Airnode](/reference/airnode/latest/concepts/airnode.md) can keep a
+unique`sponsorWallet` for a sponsor. The wallet is identified by a
+`sponsorAddress/airnodeAddress` pair. A sponsor must take action to
+[derive](/reference/airnode/latest/concepts/sponsor.md#derive-a-sponsor-wallet)
+a `sponsorWallet` for a particular Airnode.
+[Requesters](/reference/airnode/latest/concepts/requester.md), that have been
+sponsored by a sponsor, can specify their requests be fulfilled by the
+`sponsorWallet` designated to the sponsor. This allows the sponsor to cover the
+gas cost of request fulfillments by the Airnode since the sponsor must send
+funds to this wallet before making the request.
 
 Requests from the same `sponsorWallet` are performed sequentially to respect the
 transaction nonce. A single Airnode run will only attempt to serve five oldest
@@ -169,10 +175,10 @@ reduce unnecessary gas costs caused by microtransactions.
 
 If the sponsor decides not to use a particular `sponsorWallet` going forward,
 they can make a request to withdraw funds from it, see the
-[request-withdrawal](../packages/admin-cli.md#request-withdrawal) command. The
-Airnode listens for withdrawal requests and fulfills them automatically.
-Therefore, the sponsor should be able to receive their funds from their
-`sponsorWallet` in a few minutes notice. The `sponsorWallet` does not get
+[request-withdrawal](/reference/airnode/latest/packages/admin-cli.md#request-withdrawal)
+command. The Airnode listens for withdrawal requests and fulfills them
+automatically. Therefore, the sponsor should be able to receive their funds from
+their `sponsorWallet` in a few minutes notice. The `sponsorWallet` does not get
 deleted, and can be used in the future simply by funding it again.
 
 ::: warning Withdrawal Priority
@@ -194,9 +200,10 @@ particular Airnode to cover gas costs incurred by the Airnode in response to a
 request. Learn more about
 [sponsorships](/reference/airnode/latest/concepts/requesters-sponsors.md).
 
-Use the [Admin CLI tool](../packages/admin-cli.md#sponsor-requester) to sponsor
-a requester. An example can be seem in the
-[Requesters and Sponsors](./requesters-sponsors.md#how-to-sponsor-a-requester)
+Use the
+[Admin CLI tool](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
+to sponsor a requester. An example can be seem in the
+[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
 doc.
 
 ## Derive a Sponsor Wallet
@@ -205,13 +212,17 @@ When a sponsor wishes to access an Airnode (via a requester) it must create a
 `sponsorWallet` for the Airnode. Requesters that have been sponsored by the same
 sponsor, can specify their requests be fulfilled by the `sponsorWallet`
 belonging to the sponsor. A sponsor uses a
-[sponsorAddress](sponsor.md#sponsoraddress) and the [xpub](airnode.md#xpub) of a
-particular Airnode to derive a [sponsorWallet](#sponsorwallet) for the Airnode.
-The sponsor must also provide the [airnodeAddress](airnode.md#airnodeaddress)
+[sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress)
+and the [xpub](/reference/airnode/latest/concepts/airnode.md#xpub) of a
+particular Airnode to derive a
+[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet) for
+the Airnode. The sponsor must also provide the
+[airnodeAddress](/reference/airnode/latest/concepts/airnode.md#airnodeaddress)
 because it will be used to verify that the provided `xpub` belongs to the
 Airnode wallet before deriving a child sponsor wallet address.
 
-Use the [Admin CLI tool](../packages/admin-cli.md#derive-sponsor-wallet-address)
+Use the
+[Admin CLI tool](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 to derive a `sponsorWallet`. An example can be seem in the
-[Requesters and Sponsors](./requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
 doc.

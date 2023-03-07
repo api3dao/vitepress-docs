@@ -117,3 +117,4 @@ represents a hub that allows developers to:
 - Fund their operation in the case of self-funded dAPIs
 - Authorize for the upgrade to a managed version
 - Request new data types
+

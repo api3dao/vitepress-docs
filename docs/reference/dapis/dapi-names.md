@@ -1,9 +1,9 @@
 ---
-title: Using dAPI Names
+title: dAPI Names
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/index.html
+path: /reference/dapis/dapi-names.html
 version:
 outline: deep
 tags:
@@ -36,15 +36,16 @@ Need an image here of the proxy contract flow to `read()`,
 
 :::
 
-## For `DapiServer.sol` encode the `dapiName`
+## Encode the `dapiName`
 
-Pass a `dapiName`, as an encoded bytes32 value, to the desired `DapiServer.sol`
-reader function that uses `dapiName` as its parameter. This is done to save gas
-when your smart contract calls a "readByName" function on `DapiServer.sol`.
+To use functions on the `DapiServer.sol` contract that accept the `_dapiName`
+parameter, pass the `_dapiName` as an encoded bytes32 value. This is done to
+save gas when a smart contract calls a "readByName" function on
+`DapiServer.sol`.
 
-- [readDataFeedWithDapiName(\_dapiName)](./functions/read-data-feed-with-dapi-name.md) -
+- [readDataFeedWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-with-dapi-name.md) -
   returns a value and timestamp
-- [readDataFeedValueWithDapiName(\_dapiName)](./functions/read-data-feed-value-with-dapi-name.md) -
+- [readDataFeedValueWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-value-with-dapi-name.md) -
   returns a value
 
 The example below generates the encoded bytes32 value of AVAX/USD. Try encoding
@@ -56,7 +57,8 @@ ethers.utils.formatBytes32String("AVAX/USD");
 // Yields: 0x415641582f555344000000000000000000000000000000000000000000000000
 ```
 
-Then pass the encoded value to the functions mentioned above.
+Then pass the encoded value to either `readDataFeedWithDapiName()` or
+`readDataFeedValueWithDapiName()`.
 
 ```solidity
 // Calling readDataFeedWithDapiName() using the DapiServer contract
@@ -67,12 +69,12 @@ Then pass the encoded value to the functions mentioned above.
 ## Optionally, use Beacon and Beacon set IDs
 
 It is possible to use a Beacon or Beacon set ID by calling
-[readDataFeedId()](./functions/read-data-feed-with-id.md) and
-[readDataFeedValueById()](./functions/read-data-feed-value-with-id.md). Doing so
-is considered an advanced user flow. In practice reading with a name and reading
-with an ID are very different things. When you read with a name, you benefit
-from what the name maps to and how its value is aggregated from sourced Beacons.
-API3 manages dAPI name mappings to provide the best possible responses. When you
-read with an ID, you will always read a value directly from a Beacon or Beacon
-set. Also see
+[readDataFeedId()](/reference/dapis/functions/read-data-feed-with-id.md) and
+[readDataFeedValueById()](/reference/dapis/functions/read-data-feed-value-with-id.md).
+Doing so is considered an advanced user flow. In practice reading with a name
+and reading with an ID are very different things. When you read with a name, you
+benefit from what the name maps to and how its value is aggregated from sourced
+Beacons. API3 manages dAPI name mappings to provide the best possible responses.
+When you read with an ID, you will always read a value directly from a Beacon or
+Beacon set. Also see
 [dAPI Composition](/explore/dapis/what-are-dapis.html#dapi-composition).

@@ -1,5 +1,5 @@
 ---
-title: QRNG Example
+title: Getting Started with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -46,7 +46,7 @@ The QRNG example project
 using the requester address. The wallet is then used to pay gas costs when the
 Airnode responds to a request. An alternate method is to use the
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) as is the case with
-the [Remix Example](./remix-example/index.md) guide.
+the [Remix Example](/guides/qrng/remix-example/index.md) guide.
 
 <SponsorWalletWarning/>
 
@@ -70,7 +70,7 @@ the requester contract needs to make the withdrawal request by calling
 `requestWithdrawal` from the
 [WithdrawalUtilsV0](https://github.com/api3dao/airnode/blob/4f3454cf40e1b0a1373e954df96ac22e1ce2e43f/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol#L27)
 contract. The `AirnodeRrpV0` contract inherits this contract and therefore the
-[published addresses](/reference/airnode/latest/airnode-addresses.md) can be
-used. Second, a withdrawal function must be added to the requester contract such
-that the owner of the requester contract can transfer the requester contract
-balance to their address.
+[published addresses](/reference/airnode/latest/) can be used. Second, a
+withdrawal function must be added to the requester contract such that the owner
+of the requester contract can transfer the requester contract balance to their
+address.

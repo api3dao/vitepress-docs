@@ -2,9 +2,9 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Deployment Files → Templates
+pageHeader: Reference → Airnode → v0.11 → Deployment Files → Templates
 path: /reference/airnode/latest/deployment-files/templates/config-json.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -41,8 +41,9 @@ Consider the following relationships.
 - `ois[0].apiSpecifications.paths[path][method].parameters[1].in` is related to
   <code style="overflow-wrap: break-word;">ois[0].endpoints[0].parameters[0].operationParameter.in</code>
 
-See [config.json](../config-json.md) as a reference while building a config.json
-file.
+See
+[config.json](/reference/airnode/latest/deployment-files/templates/config-json.md)
+as a reference while building a config.json file.
 
 ```json
 {

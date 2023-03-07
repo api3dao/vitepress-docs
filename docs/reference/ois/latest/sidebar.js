@@ -4,7 +4,7 @@ module.exports = [
     collapsable: false,
     items: [
       { text: 'Understanding OIS', link: '/reference/ois/latest/' },
-      { text: 'Specification', link: '/reference/ois/latest/ois' },
+      { text: 'Specification', link: '/reference/ois/latest/specification' },
       {
         text: 'Reserved Parameter',
         link: '/reference/ois/latest/reserved-parameters',

@@ -2,8 +2,8 @@
 title: API3 Market
 sidebarHeader: Explore
 sidebarSubHeader:
-pageHeader: Explore → dAPIs
-path: /explore/dapis/market.html
+pageHeader: Explore → About our journey!
+path: /explore/introduction/market.html
 outline: deep
 tags:
 ---
@@ -11,7 +11,7 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
-
+<!-- section to review upon staged beta of market -->
 # API3 Market Oracle Tool
 
 API3 has developed an oracle solution that enables smart contracts to access and
@@ -28,6 +28,15 @@ with managed data feeds to be launched in the near future.
 
 <img src="../assets/images/11-Visual_that_communicates_the_process_of_sponsoring_a_byog_feed_using_the_market.png" width="550px"/>
 
+[![API3 Market](../assets/images/market-website.png)](https://market.api3.org)
+
+::: tip
+
+Self-funded data feeds can now be accessed from the
+[API3 Market](https://market.api3.org).
+
+:::
+
 The API3 Market provides tooling to seamlessly access dAPI services. For
 self-funded data feeds this end-to-end process consists of:
 
@@ -40,8 +49,3 @@ data for use within a smart contract. To utilize high-quality data feeds in your
 smart contracts follow the simple steps in the
 [API3 Market](https://market.api3.org).
 
-<!--::: info Learn more
-
-Link to content piece associated to the concerns identified in journey mapping
-
-:::-->

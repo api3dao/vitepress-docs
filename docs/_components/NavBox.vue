@@ -22,7 +22,7 @@
       <div
         style="margin-top: -3px; font-weight: 700; font-family: Comic Sans MS"
       >
-        {{ type }}
+        {{ type }} <span v-if="type == 'REPO'">➚</span>
       </div>
     </button>
 
@@ -107,7 +107,7 @@ export default {
 
 <style scoped>
 .api3-nav-box {
-  width: 240px;
+  width: 200px;
   min-height: 115px;
   border: lightgrey solid 2px;
   border-radius: 0.3em;

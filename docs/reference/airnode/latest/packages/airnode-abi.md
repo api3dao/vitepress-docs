@@ -2,9 +2,9 @@
 title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Packages
+pageHeader: Reference → Airnode → v0.11 → Packages
 path: /reference/airnode/latest/packages/airnode-abi.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -30,7 +30,8 @@ blockchains, this means that parameters can be encoded as well as decoded in
 Solidity (or Vyper), without any additional requirements.
 
 You can find additional documentation in
-[Airnode ABI Specifications](../specifications/airnode-abi.md) doc.
+[Airnode ABI Specifications](/reference/airnode/latest/specifications/airnode-abi.md)
+doc.
 
 ## Installation
 
@@ -55,8 +56,8 @@ yarn add @api3/airnode-abi
 Accepts an array of objects with the following required keys:
 
 1. `type` - The full list of accepted types can be found in the
-   [Airnode ABI](../specifications/airnode-abi.md#type-encodings) specifications
-   doc.
+   [Airnode ABI](/reference/airnode/latest/specifications/airnode-abi.md#type-encodings)
+   specifications doc.
 
 2. `name`
 

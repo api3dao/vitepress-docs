@@ -17,7 +17,7 @@ tags:
 API3 QRNG is built on [Airnode RRP](/reference/airnode/latest/concepts/), and as
 a result is provider-agnostic. See below for the providers that are currently
 available. Each provider has an Airnode address with an extended public key
-(xpub)) and two endpoint IDs.
+(xpub) and two endpoint IDs.
 
 - <b>`airnode`</b>: The address that belongs to the Airnode that will be called
   to get the QRNG data via its endpoints. This is not AirnodeRrpV0 contract
@@ -38,10 +38,11 @@ Australian National University is one of the leading research universities in
 Australia. Visit their website at
 [https://quantumnumbers.anu.edu.au<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/).
 
-ANU Quantum Random Numbers are only available on [mainnets](./chains.md#anu).
-For testnets use [byog](#byog-pseudorandom-random-numbers).
-[Quintessence](#quintessence-quantum-random-numbers) is available on mainnets
-and a few testnets.
+ANU Quantum Random Numbers are only available on
+[mainnets](/reference/qrng/chains.md#anu). For testnets use
+[byog](/reference/qrng/providers.md#byog-pseudorandom-numbers).
+[Quintessence](/reference/qrng/providers.md#quintessence-quantum-random-numbers)
+is available on mainnets and a few testnets.
 
 ### `airnode`
 
@@ -78,10 +79,10 @@ and a few testnets.
 ## byog Pseudorandom Numbers
 
 [**byog**<ExternalLinkImage/>](https://byog.io/) is an independent group within
-the API3 ecosystem that builds high-impact oracle services. **byog** imitates
+the API3 ecosystem that builds high-impact oracle services. **byog** emulates
 QRNG using
 [pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
-on [testnets](./chains.md#byog).
+on [testnets](/reference/qrng/chains.md#byog).
 
 ### `airnode`
 

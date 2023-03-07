@@ -18,7 +18,7 @@ tags:
 ::: warning This function uses IDs.
 
 Be sure to understand the difference between using a name or ID. See
-[dAPI Names](../index.md).
+[dAPI Names](/reference/dapis/dapi-names.md).
 
 :::
 
@@ -26,7 +26,8 @@ This function reads a value directly from a Beacon or Beacon set using its ID.
 In the code example below, `_datafeedId` is a Beacon or Beacon set ID. For
 on-chain smart contracts the `msg.sender` argument received by the function
 [readDataFeedValueWithId()](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.0/contracts/dapis/DapiServer.sol#L708-L721)
-must have [read access](./index.md#read-access) for the dAPI requested.
+must have [read access](/reference/dapis/functions/index.md#read-access) for the
+dAPI requested.
 
 Calling from off-chain code (_using a library such as `ether.js`_) is not
 subject to coverage policies. Off-chain code is beyond the scope of this doc.
@@ -67,16 +68,9 @@ See another code example of `readDataFeedValueWithId()` in the
 
 - `int224 value` - The value of the Beacon or Beacon set.
 
-::: tip Please note:
-
 The `DapiServer.sol` contract casts the reported data point to `int224`. If this
 is a problem (because the reported data may not fit into 224 bits or it is of a
 completely different type such as `bytes32`), do not use this contract and
 implement a customized version instead. The contract casts the timestamps to
 `uint32`, which means it will not work work past-2106 in the current form. If
 this is an issue, consider casting the timestamps to a larger type.
-
-:::
-
-If the timestamp is `0` then the function will revert with "_Data feed does not
-exist_".

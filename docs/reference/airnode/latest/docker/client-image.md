@@ -2,9 +2,9 @@
 title: Client Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Docker Images
+pageHeader: Reference → Airnode → v0.11 → Docker Images
 path: /reference/airnode/latest/docker/client-image.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -18,9 +18,9 @@ tags:
 # {{$frontmatter.title}}
 
 Usually the Airnode is deployed on a serverless platform using the
-[deployer](./deployer-image.md). However, there is another option which is to
-run the Airnode in a docker container on your machine locally, on premise or
-cloud hosted.
+[deployer](/reference/airnode/latest/docker/deployer-image.md). However, there
+is another option which is to run the Airnode in a docker container on your
+machine locally, on premise or cloud hosted.
 
 A docker client image has been published on
 [Docker Hub](https://hub.docker.com/r/api3/airnode-client). If you want to build
@@ -106,8 +106,9 @@ docker run --detach ^
 
 > If you want to connect Airnode to a blockchain running on localhost, you need
 > to make the blockchain accessible from within the docker itself. If you use
-> docker for linux you can use `--network="host"` parameter. For windows, wsl or
-> mac connect to `host.docker.internal` instead of `127.0.0.1`. See
+> docker for linux you can use `--network="host"` parameter. If you are using
+> Docker Desktop (on any platform), connect to
+> `http://host.docker.internal:8545` instead of `http://127.0.0.1:8545`. See
 > [https://stackoverflow.com/a/24326540](https://stackoverflow.com/a/24326540).
 
 ### Checking Airnode logs

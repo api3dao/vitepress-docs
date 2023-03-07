@@ -2,9 +2,9 @@
 title: Configuring Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
 path: /reference/airnode/latest/understand/configuring.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -17,24 +17,14 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: tip Complete the following before configuring your Airnode.
-
-- [API Integration](api-integration.md)
-- [API Security](api-security.md)
-
-Note that this guide is complementary to, and not a replacement of, the
-[config.json reference documentation](../deployment-files/config-json.md).
-
-:::
-
 An Airnode is deployed or redeployed using configuration values from its
 `config.json` and `secrets.env` files. The `config.json` specifies the
-[Oracle Integration Specifications OIS](/reference/ois/latest/ois.md) and other
-specific configuration details. The `secrets.env` file holds secrets, such as
-API keys and chain provider URLs, which are referenced within the config.json
-file using interpolation.
+[Oracle Integration Specifications OIS](/reference/ois/latest/specification.md)
+and other specific configuration details. The `secrets.env` file holds secrets,
+such as API keys and chain provider URLs, which are referenced within the
+config.json file using interpolation.
 
-> <img src="../assets/images/config-json.png" width="650px">
+> <img src="../assets/images/config-json.png" width="600px">
 >
 > - <p>The <b>config.json</b> file is used during the deployment/redeployment of an Airnode to configure its behavior and to provide mappings of API operations.</p>
 > - <p>The <b>secrets.env</b> file holds values for config.json that must be kept secret.</p>
@@ -43,23 +33,24 @@ file using interpolation.
 
 The following example files are useful while reading this doc.
 
-- [config.json](../deployment-files/examples/config-json.md)
-- [secrets.env](../deployment-files/examples/secrets-env.md)
-- [aws.env](../deployment-files/examples/aws-env.md)
+- [config.json](/reference/airnode/latest/deployment-files/examples/config-json.md)
+- [secrets.env](/reference/airnode/latest/deployment-files/examples/secrets-env.md)
+- [aws.env](/reference/airnode/latest/deployment-files/examples/aws-env.md)
 
 ## Creating `config.json`
 
-Use the [config.json template](../deployment-files/templates/config-json.md) to
-build your own Airnode configuration file or alter the
-[config.json example](../deployment-files/examples/config-json.md) file. There
-are five root level fields in `config.json`.
+Use the
+[config.json template](/reference/airnode/latest/deployment-files/templates/config-json.md)
+to build your own Airnode configuration file or alter the
+[config.json example](/reference/airnode/latest/deployment-files/examples/config-json.md)
+file. There are six root level fields in `config.json`.
 
-- [chains](./configuring.md#chains)
-- [nodeSettings](./configuring.md#nodesettings)
-- [triggers](./configuring.md#triggers)
-- [templates](./configuring.md#templates)
-- [ois](./configuring.md#ois)
-- [apiCredentials](./configuring.md#apicredentials)
+- [chains](/reference/airnode/latest/understand/configuring.md#chains)
+- [nodeSettings](/reference/airnode/latest/understand/configuring.md#nodesettings)
+- [triggers](/reference/airnode/latest/understand/configuring.md#triggers)
+- [templates](/reference/airnode/latest/understand/configuring.md#templates)
+- [ois](/reference/airnode/latest/understand/configuring.md#ois)
+- [apiCredentials](/reference/airnode/latest/understand/configuring.md#apicredentials)
 
 ### chains
 
@@ -67,9 +58,10 @@ Each row in the `chains` array represents an Ethereum blockchain the Airnode
 will serve as identified by the `id`. Currently Airnode only supports Ethereum
 blockchains as denoted by `type: "evm"`. There are several supported
 blockchains, see them in the
-[Airnode contract addresses](../airnode-addresses.md) doc. You can use multiple
-chain providers for each chain and declare multiple chains each with one of more
-chain providers. See [Chains Providers](../concepts/chain-providers.md) in
+[Airnode contract addresses](/reference/airnode/latest/) doc. You can use
+multiple chain providers for each chain and declare multiple chains each with
+one of more chain providers. See
+[Chains Providers](/reference/airnode/latest/concepts/chain-providers.md) in
 _Concepts and Definitions_.
 
 Below is a simple chain array with a single chain provider.
@@ -135,8 +127,9 @@ Below is a simple chain array with a single chain provider.
 
 ::: warning Idiosyncrasies
 
-See the dedicated [Chain Idiosyncrasies](../chain-idiosyncrasies.md) page for
-chain-specific configuration considerations.
+See the dedicated
+[Chain Idiosyncrasies](/reference/airnode/latest/chain-idiosyncrasies.md) page
+for chain-specific configuration considerations.
 
 :::
 
@@ -148,8 +141,8 @@ Airnode supports four strategies: `latestBlockPercentileGasPrice`,
 `constantGasPrice`. The only required strategy is `constantGasPrice` and it is
 recommended to place it as the last strategy in the list as it should be the
 final fallback for the Airnode to use if all other strategies fail. For more
-detail on these strategies, see the [Gas Prices](../concepts/gas-prices.md)
-page.
+detail on these strategies, see the
+[Gas Prices](/reference/airnode/latest/concepts/gas-prices.md) page.
 
 #### Considerations: Concurrency
 
@@ -181,7 +174,6 @@ The above example results in the following requests: A1, A2, B1, B2, and C1.
 
 Note, that this limit only applies to the requests initiated on chain. For
 example, requests initiated using HTTP gateway are not included in this limit.
-
 Also note that, this limit is configured per chain and the limits of different
 chains are unrelated to each other.
 
@@ -189,20 +181,21 @@ chains are unrelated to each other.
 
 #### References: `chains`
 
-The below links offer details for each field:
+The links below offer additional details for each field from the Deployment
+Files section:
 
-- [authorizers](../deployment-files/config-json.md#authorizers)
-- [contracts](../deployment-files/config-json.md#contracts)
-- [id](../deployment-files/config-json.md#id)
-- [providers](../deployment-files/config-json.md#providers)
-- [type](../deployment-files/config-json.md#type)
-- [options](../deployment-files/config-json.md#options)
-  - [options.fulfillmentGasLimit](../deployment-files/config-json.md#options-fulfillmentgaslimit)
-  - [options.gasPriceOracle](../deployment-files/config-json.md#options-gaspriceoracle-n)
-  - [options.withdrawalRemainder](../deployment-files/config-json.md#options-withdrawalremainder)
-- [maxConcurrency](../deployment-files/config-json.md#maxconcurrency)
-- [blockHistoryLimit](../deployment-files/config-json.md#blockhistorylimit)
-- [minConfirmations](../deployment-files/config-json.md#minconfirmations)
+- [authorizers](/reference/airnode/latest/deployment-files/config-json.md#authorizers)
+- [contracts](/reference/airnode/latest/deployment-files/config-json.md#contracts)
+- [id](/reference/airnode/latest/deployment-files/config-json.md#id)
+- [providers](/reference/airnode/latest/deployment-files/config-json.md#providers)
+- [type](/reference/airnode/latest/deployment-files/config-json.md#type)
+- [options](/reference/airnode/latest/deployment-files/config-json.md#options)
+  - [options.fulfillmentGasLimit](/reference/airnode/latest/deployment-files/config-json.md#options-fulfillmentgaslimit)
+  - [options.gasPriceOracle](/reference/airnode/latest/deployment-files/config-json.md#options-gaspriceoracle-n)
+  - [options.withdrawalRemainder](/reference/airnode/latest/deployment-files/config-json.md#options-withdrawalremainder)
+- [maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#maxconcurrency)
+- [blockHistoryLimit](/reference/airnode/latest/deployment-files/config-json.md#blockhistorylimit)
+- [minConfirmations](/reference/airnode/latest/deployment-files/config-json.md#minconfirmations)
 
 ### nodeSettings
 
@@ -246,53 +239,56 @@ supported cloud providers for hosting Airnode. Note that while many fields
 within `nodeSettings` are required by both, there are some cloud provider
 specific fields. For example, `cloudProvider.projectId` is only required with
 GCP. Also note that not all cloud provider regions can be deployed to; see the
-[cloudProvider.region reference](../deployment-files/config-json.md#cloudprovider-region)
+[cloudProvider.region reference](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-region)
 for more information.
 
 #### Considerations: Gateways
 
 Airnode offers two gateways for accessing provider HTTP endpoints without using
 the blockchain: `httpGateway` and `httpSignedDataGateway`. For more information
-on each of these see the [HTTP Gateways](./http-gateways.md) documentation. Also
-note that that distinct API keys must be used for each.
+on each of these see the
+[HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md)
+documentation. Also note that that distinct API keys must be used for each.
 
 #### References: `nodeSettings`
 
-- [cloudProvider](../deployment-files/config-json.md#cloudprovider)
-  - [cloudProvider.type](../deployment-files/config-json.md#cloudprovider-type)
-  - [cloudProvider.region](../deployment-files/config-json.md#cloudprovider-region)
-  - [cloudProvider.disableConcurrencyReservations](../deployment-files/config-json.md#cloudprovider-disableconcurrencyreservations)
-  - [cloudProvider.projectId](../deployment-files/config-json.md#cloudprovider-projectid)
-- [airnodeWalletMnemonic](../deployment-files/config-json.md#airnodewalletmnemonic)
-- [heartbeat](../deployment-files/config-json.md#heartbeat)
-  - [heartbeat.enabled](../deployment-files/config-json.md#heartbeat-enabled)
-  - [heartbeat.apiKey](../deployment-files/config-json.md#heartbeat-apikey)
-  - [heartbeat.url](../deployment-files/config-json.md#heartbeat-url)
-- [httpGateway](../deployment-files/config-json.md#httpgateway)
-  - [httpGateway.enabled](../deployment-files/config-json.md#httpgateway-enabled)
-  - [httpGateway.maxConcurrency](../deployment-files/config-json.md#httpgateway-corsorigins)
-  - [httpGateway.corsOrigins](../deployment-files/config-json.md#httpgateway-maxconcurrency)
-- [httpSignedDataGateway](../deployment-files/config-json.md#httpsigneddatagateway)
-  - [httpSignedDataGateway.enabled](../deployment-files/config-json.md#httpsigneddatagateway-enabled)
-  - [httpSignedDataGateway.maxConcurrency](../deployment-files/config-json.md#httpsigneddatagateway-maxconcurrency)
-  - [httpSignedDataGateway.corsOrigins](../deployment-files/config-json.md#httpsigneddatagateway-corsorigins)
-- [logFormat](../deployment-files/config-json.md#logformat)
-- [logLevel](../deployment-files/config-json.md#loglevel)
-- [nodeVersion](../deployment-files/config-json.md#nodeversion)
-- [stage](../deployment-files/config-json.md#stage)
+The links below offer additional details for each field from the Deployment
+Files section:
+
+- [cloudProvider](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider)
+  - [cloudProvider.type](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-type)
+  - [cloudProvider.region](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-region)
+  - [cloudProvider.disableConcurrencyReservations](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-disableconcurrencyreservations)
+  - [cloudProvider.projectId](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-projectid)
+- [airnodeWalletMnemonic](/reference/airnode/latest/deployment-files/config-json.md#airnodewalletmnemonic)
+- [heartbeat](/reference/airnode/latest/deployment-files/config-json.md#heartbeat)
+  - [heartbeat.enabled](/reference/airnode/latest/deployment-files/config-json.md#heartbeat-enabled)
+  - [heartbeat.apiKey](/reference/airnode/latest/deployment-files/config-json.md#heartbeat-apikey)
+  - [heartbeat.url](/reference/airnode/latest/deployment-files/config-json.md#heartbeat-url)
+- [httpGateway](/reference/airnode/latest/deployment-files/config-json.md#httpgateway)
+  - [httpGateway.enabled](/reference/airnode/latest/deployment-files/config-json.md#httpgateway-enabled)
+  - [httpGateway.maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#httpgateway-corsorigins)
+  - [httpGateway.corsOrigins](/reference/airnode/latest/deployment-files/config-json.md#httpgateway-maxconcurrency)
+- [httpSignedDataGateway](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddatagateway)
+  - [httpSignedDataGateway.enabled](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddatagateway-enabled)
+  - [httpSignedDataGateway.maxConcurrency](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddatagateway-maxconcurrency)
+  - [httpSignedDataGateway.corsOrigins](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddatagateway-corsorigins)
+- [logFormat](/reference/airnode/latest/deployment-files/config-json.md#logformat)
+- [logLevel](/reference/airnode/latest/deployment-files/config-json.md#loglevel)
+- [nodeVersion](/reference/airnode/latest/deployment-files/config-json.md#nodeversion)
+- [stage](/reference/airnode/latest/deployment-files/config-json.md#stage)
 
 ### triggers
 
-The `triggers` field allows you to expose Airnode endpoints from an OIS
-selectively for the RRP protocol or via the HTTP gateway. For example, your OIS
-may include 10 endpoints, but you may only want to serve 2 for RRP and all 10
-for the gateway.
+The `triggers` field allow exposes Airnode endpoints from an OIS selectively for
+the RRP protocol or via the HTTP gateway. For example, an OIS object may include
+10 endpoints, but only two are desired for RRP and all 10 for the gateway.
 
-List the endpoints that you want to serve with the request–response protocol
-(RRP) under `triggers.rrp`. List the endpoints that you want to serve with the
-HTTP gateway under `triggers.http`. List the endpoints which can be used to get
-the signed data in `triggers.httpSignedData`. In most cases, you would create a
-trigger for each endpoint in your OIS object.
+List the endpoints to serve with the request–response protocol (RRP) under
+`triggers.rrp`. List the endpoints to serve with the HTTP gateway under
+`triggers.http`. List the endpoints which can be used to get the signed data in
+`triggers.httpSignedData`. In most cases create a trigger for each endpoint in
+your OIS object.
 
 ```json
 "triggers": {
@@ -325,25 +321,29 @@ trigger for each endpoint in your OIS object.
 
 The `endpointId` required for `rrp`, `http`, and `httpSignedData` can be derived
 from the `oisTitle` and `endpointName` using the CLI command
-[derive-endpoint-id](../packages/admin-cli.md#derive-endpoint-id). Remember that
-an Airnode's config.json file can have more than one OIS object and that these
-endpoints can be triggers for `rrp`, `http`, and/or `httpSignedData` as desired.
+[derive-endpoint-id](/reference/airnode/latest/packages/admin-cli.md#derive-endpoint-id).
+Remember that an Airnode's config.json file can have more than one OIS object
+and that these endpoints can be triggers for `rrp`, `http`, and/or
+`httpSignedData` as desired.
 
 #### References: `triggers`
 
-- [rrp](../deployment-files/config-json.md#rrp)
-  - [rrp[n].endpointId](../deployment-files/config-json.md#rrp-n-endpointid)
-  - [rrp[n].oisTitle](../deployment-files/config-json.md#rrp-n-oistitle)
-  - [rrp[n].endpointName](../deployment-files/config-json.md#rrp-n-endpointname)
-  - [rrp[n].cacheResponses](../deployment-files/config-json.md#rrp-n-cacheresponses)
-- [http](../deployment-files/config-json.md#http)
-  - [http[n].endpointId](../deployment-files/config-json.md#http-n-endpointid)
-  - [http[n].oisTitle](../deployment-files/config-json.md#http-n-oistitle)
-  - [http[n].endpointName](../deployment-files/config-json.md#http-n-endpointname)
-- [httpSignedData](../deployment-files/config-json.md#httpsigneddata)
-  - [httpSignedData[n].endpointId](../deployment-files/config-json.md#httpsigneddata-n-endpointid)
-  - [httpSignedData[n].oisTitle](../deployment-files/config-json.md#httpsigneddata-n-oistitle)
-  - [httpSignedData[n].endpointName](../deployment-files/config-json.md#httpsigneddata-n-endpointname)
+The links below offer additional details for each field from the Deployment
+Files section:
+
+- [rrp](/reference/airnode/latest/deployment-files/config-json.md#rrp)
+  - [rrp[n].endpointId](/reference/airnode/latest/deployment-files/config-json.md#rrp-n-endpointid)
+  - [rrp[n].oisTitle](/reference/airnode/latest/deployment-files/config-json.md#rrp-n-oistitle)
+  - [rrp[n].endpointName](/reference/airnode/latest/deployment-files/config-json.md#rrp-n-endpointname)
+  - [rrp[n].cacheResponses](/reference/airnode/latest/deployment-files/config-json.md#rrp-n-cacheresponses)
+- [http](/reference/airnode/latest/deployment-files/config-json.md#http)
+  - [http[n].endpointId](/reference/airnode/latest/deployment-files/config-json.md#http-n-endpointid)
+  - [http[n].oisTitle](/reference/airnode/latest/deployment-files/config-json.md#http-n-oistitle)
+  - [http[n].endpointName](/reference/airnode/latest/deployment-files/config-json.md#http-n-endpointname)
+- [httpSignedData](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddata)
+  - [httpSignedData[n].endpointId](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddata-n-endpointid)
+  - [httpSignedData[n].oisTitle](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddata-n-oistitle)
+  - [httpSignedData[n].endpointName](/reference/airnode/latest/deployment-files/config-json.md#httpsigneddata-n-endpointname)
 
 ### templates
 
@@ -352,17 +352,21 @@ requests. The array can be left empty if no templates will be used.
 
 #### References: templates
 
-- [templateId](../deployment-files/config-json.md#templateid)
-- [endpointId](../deployment-files/config-json.md#endpointid)
-- [encodedParameters](../deployment-files/config-json.md#encodedparameters)
+The links below offer additional details for each field from the Deployment
+Files section:
+
+- [templateId](/reference/airnode/latest/deployment-files/config-json.md#templateid)
+- [endpointId](/reference/airnode/latest/deployment-files/config-json.md#endpointid)
+- [encodedParameters](/reference/airnode/latest/deployment-files/config-json.md#encodedparameters)
 
 ### ois
 
 The `ois` field is a list OIS objects that Airnode will be serving. This means
 that a single instance of an Airnode can serve multiple APIs. You can simply
 copy paste OIS objects that you will be serving into the `ois` list. Use the
-previous guide [API Integration](api-integration.md) to create an OIS object.
-The full specification is available in the
+previous guide
+[API Integration](/reference/airnode/latest/understand/api-integration.md) to
+create an OIS object. The full specification is available in the
 [Oracle Integration Specifications (OIS)](/reference/ois/latest/) documentation.
 
 ### apiCredentials
@@ -375,8 +379,7 @@ would be `myOisTitle` and `mySecurityScheme` in the example below.
 `securitySchemeValue` is the value used for the authentication with the security
 scheme (e.g., the API key).
 
-Note that if you do not need a security scheme, leave the `apiCredentials` array
-empty.
+If no security scheme is needed, leave the `apiCredentials` array empty.
 
 ```json
 // apiCredentials
@@ -413,19 +416,23 @@ empty.
 
 Currently Airnode supports the following security scheme types when making API
 calls: `apiKey` and `http`. For more detail, visit the previous section on
-[API Security](./api-security.md).
+[API Security](/reference/airnode/latest/understand/api-security.md).
 
 #### References: `apiCredentials`
 
-- [oisTitle](../deployment-files/config-json.md#oistitle)
-- [securitySchemeName](../deployment-files/config-json.md#securityschemename)
-- [securitySchemeValue](../deployment-files/config-json.md#securityschemevalue)
+The links below offer additional details for each field from the Deployment
+Files section:
+
+- [oisTitle](/reference/airnode/latest/deployment-files/config-json.md#oistitle)
+- [securitySchemeName](/reference/airnode/latest/deployment-files/config-json.md#securityschemename)
+- [securitySchemeValue](/reference/airnode/latest/deployment-files/config-json.md#securityschemevalue)
 
 ## Creating `secrets.env`
 
 The `secrets.env` file contains values (secrets) such as blockchain provider
 urls, chain provider urls, etc. These secrets are embedded in
-[config.json](../deployment-files/config-json.md) using interpolation.
+[config.json](/reference/airnode/latest/deployment-files/config-json.md) using
+interpolation.
 
 ```json
 // Sample interpolation value from config.json
@@ -439,24 +446,25 @@ urls, chain provider urls, etc. These secrets are embedded in
 HEARTBEAT_API_KEY="d714a900-3b9e-4e4d-8eae-756ef06a8836"
 ```
 
-Use the [secrets.env](../deployment-files/templates/secrets-env.md) template and
-refer to
-[Reference > Deployment Files > secrets.env](../deployment-files/secrets-env.md)
+Use the
+[secrets.env](/reference/airnode/latest/deployment-files/templates/secrets-env.md)
+template and refer to
+[Reference > Deployment Files > secrets.env](/reference/airnode/latest/deployment-files/secrets-env.md)
 as needed.
 
 ## AWS setup (AWS deployment only)
 
 When it is time to deploy the Airnode to AWS, the Docker
-[deployer image](../docker/deployer-image.md) will need the AWS credentials to
-build the node on AWS Lambda.
+[deployer image](/reference/airnode/latest/docker/deployer-image.md) will need
+the AWS credentials to build the node on AWS Lambda.
 
 ### Creating `aws.env` (AWS only)
 
 Follow [this video](https://www.youtube.com/watch?v=KngM5bfpttA) if needed. It
-will show you how to create an IAM user and get security credentials. Put them
-in the `aws.env` file as shown below. See an
-[example file](../deployment-files/templates/aws-env.md) in the reference
-section.
+explains how to create an IAM user and get security credentials. Put them in the
+`aws.env` file as shown below. See an
+[example file](/reference/airnode/latest/deployment-files/templates/aws-env.md)
+in the reference section.
 
 - Variable names cannot contain dashes (-) or start with a number.
 
@@ -468,22 +476,24 @@ AWS_SECRET_ACCESS_KEY=ABC7...89
 ## GCP setup (GCP deployment only)
 
 When it is time to deploy the Airnode to GCP, the Docker
-[deployer image](../docker/deployer-image.md) will need the GCP project ID to
-build the Airnode.
+[deployer image](/reference/airnode/latest/docker/deployer-image.md) will need
+the GCP project ID to build the Airnode.
 
 ### Creating a GCP project
 
-First, you need to
-[create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+First
+[create a GCP project<ExternalLinkImage/>](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 under which will the Airnode be deployed. Once the project is created, insert
-its [projectId](./configuring.md#cloudprovider) into your `config.json`.
+its
+[projectId](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider)
+into the `config.json` file.
 
 ### Enable required API
 
-In order for Airnode to deploy successfully, you need to enable
+In order for Airnode to deploy successfully, enable
 [App Engine Admin API](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
-for your GCP project. After enabling it, wait a few minutes before the
-deployment itself so the change will take place.
+for the GCP project. After enabling it, wait a few minutes before the deployment
+itself so the change will take place.
 
 ### Creating a Service Account
 
@@ -506,9 +516,3 @@ urls and security credentials, so they should be kept secret. Make sure that you
 do not push your credentials to a repository or otherwise expose them as these
 credentials can be used to gain access to your Airnode's private key, AWS
 account or GCP account.
-
-The next three steps in this guide are optional.
-
-- [Using Authorizers](./apply-auth.md) optional
-- [Heartbeat](./heartbeat.md) optional
-- [HTTP Gateways](./http-gateways.md) optional

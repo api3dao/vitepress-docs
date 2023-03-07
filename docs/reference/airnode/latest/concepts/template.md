@@ -2,9 +2,9 @@
 title: Template
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/template.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -18,9 +18,9 @@ tags:
 # {{$frontmatter.title}}
 
 An oracle request has many parameters. It is very common for
-[requesters](requester.md) (e.g., a data feed) to make repeated requests with
-the exact same parameters. In such instances, it is wasteful to pass all of
-these parameters repeatedly.
+[requesters](/reference/airnode/latest/concepts/requester.md) (e.g., a data
+feed) to make repeated requests with the exact same parameters. In such
+instances, it is wasteful to pass all of these parameters repeatedly.
 
 Templates are on-chain records of request parameters that the requesters can
 refer to while making requests. Additional advantages are reducing boilerplate

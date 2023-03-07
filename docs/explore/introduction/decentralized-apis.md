@@ -2,13 +2,10 @@
 title: Decentralized APIs (dAPIs)
 sidebarHeader: Explore
 sidebarSubHeader:
-pageHeader: Explore
+pageHeader: Explore → About our journey!
 path: /explore/introduction/decentralized-apis.html
 outline: deep
 tags:
-  - decentralization
-  - decentralized
-  - governance
 ---
 
 <PageHeader/>

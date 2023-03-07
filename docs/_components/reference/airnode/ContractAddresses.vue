@@ -54,10 +54,9 @@ import axios from 'axios';
 import chainsRef from '../../../.vitepress/chains.json';
 export default {
   name: 'ContractAddresses',
-  props: ['type', 'contractName', 'ignoreTabsSlot'],
+  props: ['type', 'contractName'],
   data: () => ({
     loaded: false,
-    //showSpinner: true,
     error: null,
     contracts: [],
     chains: {},
@@ -65,10 +64,7 @@ export default {
     items: [],
   }),
   mounted() {
-    console.log('this.ignoreTabsSlot', this.ignoreTabsSlot);
-    //if (this.ignoreTabsSlot) return;
     this.$nextTick(async function () {
-      console.log('----- MOUNTED ----- ContractAddresses -----');
       try {
         const response = await axios.get(
           'https://raw.githubusercontent.com/api3dao/airnode/master/packages/airnode-protocol/deployments/references.json'
@@ -79,7 +75,7 @@ export default {
         const important = [1, 3, 4, 5, 42, 11155111];
         let importantArr = [];
         let notImportantArr = [];
-        //console.log(response.data);
+
         for (const key in response.data[this.contractName]) {
           // Here the network is not in chainsRef list
           // Is it a testnet or mainnet, tell by its repo name
@@ -121,7 +117,6 @@ export default {
       }
 
       // Page state
-      //this.showSpinner = false;
       this.loaded = true;
     });
   },

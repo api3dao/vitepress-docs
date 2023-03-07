@@ -1,13 +1,13 @@
 module.exports = [
   {
     text: '',
-    collapsible: false,
+
     items: [
-      { text: 'Versions', link: '/reference/airnode/latest/' },
       {
-        text: 'Airnode Contract Addresses',
-        link: '/reference/airnode/latest/airnode-addresses',
+        text: 'Contract Addresses',
+        link: '/reference/airnode/latest/',
       },
+      { text: 'Versions', link: '/reference/airnode/latest/versions' },
       {
         text: 'Cloud Resources',
         link: '/reference/airnode/latest/cloud-resources',
@@ -24,12 +24,15 @@ module.exports = [
   },
   {
     text: 'Understanding Airnode',
-    collapsible: true,
     collapsed: false,
     items: [
       {
         text: 'Overview',
         link: '/reference/airnode/latest/understand/',
+      },
+      {
+        text: 'Configuring Airnode',
+        link: '/reference/airnode/latest/understand/configuring',
       },
       {
         text: 'API Integration',
@@ -39,11 +42,6 @@ module.exports = [
         text: 'API Security',
         link: '/reference/airnode/latest/understand/api-security',
       },
-      {
-        text: 'Configuring Airnode',
-        link: '/reference/airnode/latest/understand/configuring',
-      },
-
       {
         text: 'Using Authorizers',
         link: '/reference/airnode/latest/understand/apply-auth',
@@ -72,7 +70,6 @@ module.exports = [
   },
   {
     text: 'Concepts and Definitions',
-    collapsible: true,
     collapsed: true,
     items: [
       {
@@ -135,8 +132,7 @@ module.exports = [
   },
   {
     text: 'Docker Images',
-    collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       {
         text: 'Overview',
@@ -158,8 +154,7 @@ module.exports = [
   },
   {
     text: 'Deployment Files',
-    collapsible: true,
-    collapsed: true,
+    collapsed: false,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/deployment-files/' },
 
@@ -221,7 +216,6 @@ module.exports = [
   },
   {
     text: 'Specifications',
-    collapsible: true,
     collapsed: true,
     items: [
       {
@@ -240,7 +234,6 @@ module.exports = [
   },
   {
     text: 'Packages',
-    collapsible: true,
     collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/packages/' },
@@ -263,7 +256,6 @@ module.exports = [
 
   {
     text: 'dApp Developers',
-    collapsible: true,
     collapsed: true,
     items: [
       { text: 'Overview', link: '/reference/airnode/latest/developers/' },

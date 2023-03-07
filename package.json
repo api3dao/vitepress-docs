@@ -6,6 +6,9 @@
   "engines": {
     "node": "18"
   },
+  "resolutions": {
+    "watchpack": "1.6.1"
+  },
   "scripts": {
     "sync:VPFlyout": "cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue",
     "sync:VPNavBarTitle": "cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue",
@@ -34,7 +37,8 @@
     "prettier": "^2.8.1",
     "textversionjs": "^1.1.3",
     "tiny-emitter": "^2.1.0",
-    "vitepress": "^1.0.0-alpha.40",
-    "vue": "^3.2.45"
+    "vitepress": "1.0.0-alpha.49",
+    "vue": "3.2.47",
+    "walk-sync": "^3.0.0"
   }
 }

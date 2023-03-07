@@ -22,13 +22,15 @@ Airnode is a first-party oracle solution that addresses this problem. Like all
 design decisions, however, the advantages presented below have tradeoffs that
 should be understood.
 
-## Advantages
+### Advantages
 
 - First-party - First-party oracles overcome the significant disadvantages of
   third-party oracle node solutions that use middlemen to deliver APIs to the
   blockchain.
-- Simple - Airnode's simple "set and forget" design avoids the time, complexity,
-  and cost of other third-party oracle node solutions.
+- Simple - Airnode's simple
+  [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget)
+  design avoids the time, complexity, and cost of other third-party oracle node
+  solutions.
 - Stateless - Airnode is stateless and treats the blockchain as the single
   source of truth. This alone solves the majority of operational problems of
   traditional third-party oracle nodes while providing an overall higher level
@@ -48,7 +50,7 @@ should be understood.
 - Free - API3 does not charge for deploying and using Airnode. Under the AWS
   lambda free tier, operating an Airnode can even be free.
 
-## Tradeoffs
+### Tradeoffs
 
 - Requires knowledge - Some knowledge about how Airnode works is inherently
   necessary. The API provider needs to understand how to

@@ -2,9 +2,9 @@
 title: receipt.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → Deployment Files
+pageHeader: Reference → Airnode → v0.11 → Deployment Files
 path: /reference/airnode/latest/deployment-files/receipt-json.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -20,7 +20,8 @@ tags:
 A `receipt.json` file is outputted after each deployment and contains
 non-sensitive information about the deployment. The main use of a receipt file
 is to remove an Airnode deployment when no longer needed. See the
-[Airnode Removal documentation](../packages/deployer.md) for usage and commands.
+[Airnode Removal documentation](/reference/airnode/latest/packages/deployer.md)
+for usage and commands.
 
 It also provides the Airnode xpub for the hardened derivation path
 `m/44'/60'/0'` that must be announced off-chain in order for sponsors to derive
@@ -40,7 +41,6 @@ not generated for client deployments (deploying to a Docker container).
 {
   "airnodeWallet": {
     "airnodeAddress": "0xA30CA71Ba54E83127214D3271aEA8F5D6bD4Dace",
-    "airnodeAddressShort": "a30ca71",
     "airnodeXpub": "xpub6C8tvRgYkjNVaGMtpyZf4deBcUQHf7vgWUraVxY6gYiZhBYbPkFkLLWJzUUeVFdkKpVtatmXHX8kB76xgfmTpVZWbVWdq1rneaAY6a8RtbY"
   },
   "deployment": {
@@ -62,7 +62,6 @@ not generated for client deployments (deploying to a Docker container).
 {
   "airnodeWallet": {
     "airnodeAddress": "0xAcCc602FA6d1dD57cE11559Fe0c07895396a7359",
-    "airnodeAddressShort": "accc602",
     "airnodeXpub": "xpub6C6wfzZ8EptS8Ti2xZgukJFWkgBcFY2ygU4BDTTGtR2GmX3vvrx3YFat3i1XLfwvhtiCEty1GZnV1MSCKBBt7uYKBbrHaqWvP623w9jUNhW"
   },
   "deployment": {

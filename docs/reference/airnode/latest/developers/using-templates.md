@@ -2,9 +2,9 @@
 title: Using Templates
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → dApp Developers
 path: /reference/airnode/latest/developers/using-templates.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -64,8 +64,8 @@ struct Template {
 There are just a few steps to create and place a template on-chain for a
 requester contract to use. Each template is identified by a`templateId`, which
 is the hash of its contents. When you create a template record on-chain,
-[see Part #2: Upload Template](using-templates.md#part-2-upload-template), a
-templateId will be returned.
+[see Part #2: Upload Template](/reference/airnode/latest/developers/using-templates.md#part-2-upload-template),
+a templateId will be returned.
 
 <divider/>
 
@@ -75,8 +75,8 @@ First create a file that contains a template object. Below is an example. You
 will need the address of the Airnode and its endpointId to be called. Below are
 links that discuss request parameters if you need help.
 
-- [Reference > Request-Response Protocol > Request](../concepts/request.md)
-- [Calling an Airnode](./call-an-airnode.md#request-parameters)
+- [Reference > Request-Response Protocol > Request](/reference/airnode/latest/concepts/request.md)
+- [Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md#request-parameters)
 
 ```
 {
@@ -134,16 +134,8 @@ npx @api3/airnode-admin create-template \
 
 <divider/>
 
-## More on Templates
-
-You can create as many templates as needed. Call the `getTemplates`command in
-the @api3/airnode-admin package to get a list of the templates by
-their`templateIds`.
-
-::: tip Templates Tutorial
+## More related material...
 
 The
 [coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
 monorepo example demonstrates template requests.
-
-:::

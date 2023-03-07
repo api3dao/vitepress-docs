@@ -2,9 +2,9 @@
 title: Calling an Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v1.0 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → dApp Developers
 path: /reference/airnode/latest/developers/call-an-airnode.html
-version: v1.0
+version: v0.11
 outline: deep
 tags:
 ---
@@ -19,8 +19,9 @@ tags:
 
 A requester is a contract that can trigger an Airnode request. To do so, the
 requester needs to be sponsored and make the request using a matching sponsor
-wallet. See [Requesters and Sponsors](../concepts/requesters-sponsors.md) on how
-to sponsor a requester and derive the sponsor wallet.
+wallet. See
+[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md)
+on how to sponsor a requester and derive the sponsor wallet.
 
 Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")
 deployed as self hosted or cloud provider functions, e.g., AWS) and the on-chain
@@ -28,8 +29,8 @@ deployed as self hosted or cloud provider functions, e.g., AWS) and the on-chain
 which emits a blockchain event with the request parameters. Airnode listens to
 the events emitted by the AirnodeRrpV0 contract. During the next run cycle,
 Airnode gets the request parameters from the emitted event. The diagram below
-and the diagram in the [Overview](./) doc for developers illustrate the
-mechanics of the entire process.
+and the diagram in the [Overview](/reference/airnode/latest/developers/) doc for
+developers illustrate the mechanics of the entire process.
 
 The AirnodeRrpV0 protocol is designed to be flexible and is meant to serve a
 variety of use cases. See the Airnode
@@ -76,16 +77,17 @@ Note the constructor parameter `airnodeRrpAddress`, which is the public address
 of the AirnodeRrpV0.sol protocol contract on the blockchain you wish to use. It
 is used by RrpRequesterV0.sol to point itself to AirnodeRrpV0.sol.
 
-See the list of all [Airnode contract addresses](../airnode-addresses.md) in the
-reference section.
+See the list of all [Airnode contract addresses](/reference/airnode/latest/) in
+the reference section.
 
 ## Step #2: Implement the request logic
 
 There are two types of requests provided by the AirnodeRrpV0.sol contract. See
-the [Request](../concepts/request.md) page for information related to each
-request type.
+the [Request](/reference/airnode/latest/concepts/request.md) page for
+information related to each request type.
 
-This example uses a [full request](../concepts/request.md#full-request) type
+This example uses a
+[full request](/reference/airnode/latest/concepts/request.md#full-request) type
 (note the `airnodeRrp.makeFullRequest` function call in the code below) which is
 called from the requester's own function `callTheAirnode`. The function
 `makeFullRequest` requires that the requester pass all parameters needed by
@@ -148,20 +150,21 @@ A full request using the AirnodeRrpV0.sol contract `makeFullRequest` function
 requires all parameters needed by the Airnode application to be passed at
 runtime. This is in contrast to a template request that would use a template for
 some or all of the required parameters. Learn more about
-[using templates](using-templates.md).
+[using templates](/reference/airnode/latest/developers/using-templates.md).
 
 Since the `callTheAirnode` function makes a
-[full request](../concepts/request.md#full-request), it must gather the
-following parameters to pass on to `airnodeRrp.makeFullRequest`.
+[full request](/reference/airnode/latest/concepts/request.md#full-request), it
+must gather the following parameters to pass on to `airnodeRrp.makeFullRequest`.
 
 - **airnode** and **endpointId**: As a pair, these uniquely identify the
   endpoint desired at a particular Airnode.
 
 - **sponsor**: The
-  [sponsor](../concepts/requesters-sponsors.md#what-is-a-sponsor) address.
+  [sponsor](/reference/airnode/latest/concepts/requesters-sponsors.md#what-is-a-sponsor)
+  address.
 
 - **sponsorWallet**: The
-  [sponsor wallet](../concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+  [sponsor wallet](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
   address that the sponsor received when deriving the wallet for the Airnode
   being called.
 
@@ -170,15 +173,16 @@ following parameters to pass on to `airnodeRrp.makeFullRequest`.
   request.
 
 - **parameters**: Specify the API parameters and any
-  [reserved parameters](../specifications/reserved-parameters.md), these must be
-  encoded. See [Airnode ABI specifications](../specifications/airnode-abi.md)
+  [reserved parameters](/reference/airnode/latest/specifications/reserved-parameters.md),
+  these must be encoded. See
+  [Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md)
   for how these are encoded.
 
   In most, cases the parameters are encoded off-chain and passed to the
   requester which only forwards them. You can use the
-  [@api3/airnode-abi](../specifications/airnode-abi.md#api3-airnode-abi) package
-  to perform the encoding and decoding. Take a look at the JavaScript snippet
-  below.
+  [@api3/airnode-abi](/reference/airnode/latest/specifications/airnode-abi.md#api3-airnode-abi)
+  package to perform the encoding and decoding. Take a look at the JavaScript
+  snippet below.
 
   ```javascript
   // JavaScript snippet
@@ -210,8 +214,8 @@ following parameters to pass on to `airnodeRrp.makeFullRequest`.
 
 For additional information on request parameters when calling
 `airnodeRrp.makeFullRequest()`, see
-[Request Parameters](../concepts/request.md#request-parameters) in the Reference
-section.
+[Request Parameters](/reference/airnode/latest/concepts/request.md#request-parameters)
+in the Reference section.
 
 ## Step #3: Capture the Response
 
@@ -271,5 +275,5 @@ The callback to a requester contains two parameters, as shown in the
 
 Deploy the requester to the desired blockchain and then sponsor the requester.
 See
-[Requesters and Sponsors](../concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
+[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
