@@ -19,13 +19,14 @@ utilize valuable real-world data with ease. As such it is essential to make sure
 the process of accessing this data is as user-friendly and efficient as
 possible.
 
-## Overview
+## Reading a dAPI
 
 Smart contract developers access dAPIs through the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org), where data feeds are
-easily searched, previewed, and consumed. At the time of writing self-funded
-data feeds are accessible, with aggregated feeds to be launched in the near
-future.
+easily searched, monitored, and consumed. Self-funded data feeds are accessible,
+with managed data feeds to be launched in the near future.
+
+<img src="../assets/images/11-Visual_that_communicates_the_process_of_sponsoring_a_byog_feed_using_the_market.png" width="550px"/>
 
 [![API3 Market](../assets/images/market-website.png)](https://market.api3.org)
 
@@ -36,8 +37,6 @@ Self-funded data feeds can now be accessed from the
 
 :::
 
-### Simplying access to real-world data
-
 The API3 Market provides tooling to seamlessly access dAPI services. For
 self-funded data feeds this end-to-end process consists of:
 
@@ -45,26 +44,8 @@ self-funded data feeds this end-to-end process consists of:
 2. Funding a sponsor wallet
 3. Accessing a data feed through a proxy
 
-<!---
-::: info Learn more
+These simple steps enables a user to access the corresponding price reference
+data for use within a smart contract. To utilize high-quality data feeds in your
+smart contracts follow the simple steps in the
+[API3 Market](https://market.api3.org).
 
-_Link to content piece associated to the concerns identified in journey mapping_
-
-:::-->
-
-### Get started
-
-The API3 Market is very easy to use and the users can intuitively browse through
-the dAPIs. The easiest way to start with dAPIs is to find one that is already
-operational and try it out.
-
-Whilst the API3 Market is simple to use and uses a self-serve format, following
-the [How to fund Self-funded dAPI using API3 Market?](need to link when guide is
-added) to get started with self-funded dAPIs.
-
-::: tip Testnet dAPIs
-
-You can also access dAPIs on Testnets. Testnets are identified with the network
-logo grayed and in grey square.
-
-:::

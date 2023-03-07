@@ -6,71 +6,115 @@ pageHeader: Explore → dAPIs
 path: /explore/dapis/service-coverage.html
 outline: deep
 tags:
-  - dao
 ---
 
 <PageHeader/>
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+# {{$frontmatter.title}} # Using dAPIs
 
-::: warning Please note the service coverage is yet to be implemented. These
-will be implemented when a proposal with a quorum requirement of 50% has been
-passed.
+A dAPI has been designed to be the user interface that enables builders to
+easilly access & manage to a variety of data feed services. Through the API3
+Market a variety of data feed services can be accessed:
 
-:::
+1- Self-funded dAPIs
 
-API3 provides dAPI users with a quantifiable level of _security_ as on-chain
-service coverage. Staked tokens in the DAO pool are used to cover potential
-financial losses from dAPI malfunctions that the dAPI consumer might incur.
-Thanks to that, two things become possible:
+2- Managed dAPIs
 
-- Service coverage acts as a well-defined and trustless safety net in case of a
-  dAPI malfunction.
-- The coverage holds the governing parties responsible for dAPI malfunctions,
-  thus incentivizing them to govern towards more secure dAPIs.
+# Self-Funded dAPIs
 
-## Quantifiable and trustless security
+Self-funded dAPIs provide developers with the tools to try out data feed
+services with minimal associated costs and no upfront commitment before
+committing to managed dAPIs.
 
-API3 co-developed on-chain service coverage with Kleros that provides
-quantifiable and trustless _security_ to dAPI users. This service coverage will
-protect the dAPI user against damages caused by certain dAPI malfunctions up to
-a payout limit. Note that even if API3 did not provide this service, the dAPI
-user could have received on-chain service coverage using a third-party solution.
-Such a solution would tend toward charging very high service coverage premiums
-as they would not have access to the information and expertise to accurately
-assess dAPI risks.
+Self-funded dAPIs are sourced from a single first-party oracle where the oracle
+transactions fees are paid from a respective sponsor wallet. Once funds are
+available in this wallet, oracle updates on the associated dAPI will begin
+automatically (given the Airnode invocation restrictions).
 
-The proposed service coverage is special because it is collateralized by the
-funds staked by the governing parties of the API3 DAO into the DAO pool.
-Therefore, it not only provides _security_ to the dAPI user, but also creates a
-very strong incentive for dAPIs to be governed in a way that maximizes dAPI
-_security_, which will further decrease service coverage costs.
+<img src="../assets/images/09-Visual_that_communicates_how_a_self-funded_feed_works.png" width="550px"/>
 
-## Claim Risks
+In the same way, the dAPI will stop being updated if the required funds for
+updates are not sufficiently available anymore.
 
-The staked tokens in the pool are used as collateral for service coverage
-claims. Any payout results in the reduction of the total token count in the
-pool. The reduction is charged against each entity's percentage of tokens in the
-pool.
+::: warning Please note
 
-::: tip Claim Risks Example
-
-User X and Y both stake 500 API3 tokens, so each has 50% ownership in a 1000
-token DAO pool. There is a service coverage claim payout of 3.4 tokens and the
-pool is now 996.6 tokens. X and Y now own 498.3 tokens each based on their 50%
-ownership.
+API3 does not recommend using self-funded dAPIs in a production environment.
+Read more in our
+[security considerations](/explore/dapis/security-considerations.md).
 
 :::
 
-## ClaimsManager
+### Advantages of self-funded dAPIs
 
-To insure against potential system failures, the DAO pool can empower special
-`ClaimsManager` contracts to withdraw staked tokens directly. The approved
-`ClaimsManager` contracts do this by calling
-`payOutClaim(address recipient, uint256 amount)` in the DAO pool contract, which
-transfers tokens from the DAO pool to the recipient. When this occurs, the total
-number of staked tokens goes down, and pool share value goes down in turn. See
-<a href="/api3-whitepaper-v1.0.3.pdf#page=31" target="_blank">Section 6.3,
-_"Service coverage process"_<ExternalLinkImage/></a>, of the API3 whitepaper.
+Introducing a sponsor wallet mechanism for self-funded dAPIs provides serveral
+advantages for builders:
+
+- Developers can utilize dAPIs in a permissionless fashion using the self-serve
+  tooling within the [API3 Market](https://market.api3.org/dapis)
+- Developers have the ability to use an oracle within early stages of the
+  development life cycle without an ongoing commitment
+- dApps that may only require data feeds for a short period of time can activate
+  a self-funded dAPI as needed
+- Whilst a self-funded dAPI provides access to a single API Provider, the feed
+  does provide access to a median price from the agreegation of multiple data
+  sources
+
+Additionally, the API3 Market provides an intuitive interface to check the
+status of respective self-funded dAPIs and fund them accordingly.
+
+## Accessing a self-funded feed
+
+You can access a self-funded dAPI now through the
+[API3 Market](https://market.api3.org) in a permissionless and simple process.
+
+<img src="../assets/images/11-Visual_that_communicates_the_process_of_sponsoring_a_byog_feed_using_the_market.png" width="550px"/>
+
+::: tip
+
+Follow a guide on
+[how to use the API3 Market](/guides/dapis/call-dapi-dapiserver/index) to access
+a self-funded dAPI to get started in under 30mins.
+
+:::
+
+# Managed dAPIs
+
+Managed dAPIs are sourced from multiple first-party oracles and aggregated using
+a median function. Compared to self-funded dAPIs, managed dAPIs are monetized,
+as API3 requires payment in USDC on Ethereum Mainnet to operate them.
+
+To access a managed dAPI users need to authorize access through the API3 Market.
+Self-funded dAPIs can be upgraded by paying for a managed version and selecting
+a desired amount of first-party oracles that should be included in the
+aggregation. API3 will create the respective Beacon Set from the best available
+first-party providers for the requested data set and point the dAPI towards this
+creation.
+
+<img src="../assets/images/10-Visual_that_communicates_how_a_managed_service_feed.png" width="550px"/>
+
+In addition, API3 takes over the gas management overhead associated with
+operating the respective dAPI. API3 recommends the usage of managed dAPIs in
+production environments. Please read more about the
+[security consideration](/explore/dapis/security-considerations.md) of managed
+dAPIs.
+
+::: info Read more
+
+Learn more about dAPI managed services through reading our
+[monetizing data feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd)
+overview.
+
+:::
+
+# API3 Market
+
+The API3 Market lists all available dAPIs, self-funded and managed alike. It
+represents a hub that allows developers to:
+
+- Browse through a catalogue of potential data feeds to integrate
+- Fund their operation in the case of self-funded dAPIs
+- Authorize for the upgrade to a managed version
+- Request new data types
+
