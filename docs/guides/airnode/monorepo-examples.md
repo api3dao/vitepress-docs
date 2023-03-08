@@ -29,10 +29,9 @@ of the Airnode monorepo:
 - [coingecko-pre-processing](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/integrations/coingecko-pre-processing) -
   demonstration of the [pre-processing](/reference/ois/latest/processing.md)
   feature.
-- [coingecko-signed-data<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/integrations/coingecko-signed-data) -
-  demonstration of
-  [signed data](/reference/airnode/latest/understand/http-gateways.md) retrieval
-  for beacon updates.
+- [coingecko-http-gateways<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations/coingecko-http-gateways)
+  demonstration of the
+  [HTTP gateway and HTTP signed data gateway](/reference/airnode/latest/understand/http-gateways.md).
 - [coingecko-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/integrations/coingecko-template) -
   demonstration of
   [template](/reference/airnode/latest/developers/using-templates.md) requests.
