@@ -44,8 +44,13 @@ export default {
   methods: {
     async loadChainsFromRepo() {
       try {
+        // March 8th, 2023
+        // https://db-api-prod.api3.org/api/docs-chains-reference
+        // The production endpoint is broken, Aaron said to use stage for now. There is an issue
+        // as a reminder to switch back in hte future.
+        // When making the switch back to prod, be sure to change "api3-docs" as well.
         const response = await axios.get(
-          'https://db-api-prod.api3.org/api/docs-chains-reference'
+          'https://db-api-staging.api3.org/api/docs-chains-reference'
         );
         this.chains = response.data;
         this.chainsCnt = Object.keys(this.chains).length; //keys.length;
