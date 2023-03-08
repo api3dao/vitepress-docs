@@ -26,7 +26,7 @@ approach is secure, transparent, cost-efficient and scalable. API3 composes
 dAPIs out of Beacons, and provides them as turn-key data feed solutions on many
 chains.
 
-# Introducing dAPIs
+## Introducing dAPIs
 
 A dAPI is the interface that smart contracts connect to access data feed
 services through.
@@ -51,7 +51,9 @@ towards the newly created ID.
 ::: info Read more
 
 Learn more about dAPIs by reading
-[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
+[dAPIs: APIs for dApps<ExternalLinkImage/>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
+
+:::
 
 ## What is a Beacon or a Beacon Set?
 
@@ -67,13 +69,13 @@ aggregations between multiple Beacons. The resulting ID of a Beacon Set always
 represents the specific Beacons that make it up and cannot be changed.
 
 Values for Beacons or Beacon Sets are kept up to date on-chain on
-[DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)<externalLinkImage/>,
+[DapiServer.sol<externalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol),
 where they can be read directly through `readDataFeedValueWithId`.
 
 ::: info Read more
 
 Learn how Beacons are the building blocks for
-[Web3 data connectivity](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763).
+[Web3 data connectivity<ExternalLinkImage/>](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763).
 
 :::
 

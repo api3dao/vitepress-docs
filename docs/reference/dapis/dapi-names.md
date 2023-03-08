@@ -76,5 +76,5 @@ and reading with an ID are very different things. When you read with a name, you
 benefit from what the name maps to and how its value is aggregated from sourced
 Beacons. API3 manages dAPI name mappings to provide the best possible responses.
 When you read with an ID, you will always read a value directly from a Beacon or
-Beacon set. Also see
-[dAPI Composition](/explore/dapis/what-are-dapis.html#dapi-composition).
+Beacon set. Learn more about
+[dAPI Composition](/explore/dapis/what-are-dapis.md).

@@ -76,30 +76,29 @@ container. The below commands are run from the depicted directory.
 
 ### Running Airnode
 
-It is recommended to run the Airnode in a detached mode using the `--detach`
-parameter, but you may run the it without it as well.
+Use the following command to run Airnode:
 
 ::: code-group
 
 ```sh [Linux/Mac/WSL2]
-docker run --detach \
+docker run \
   --volume $(pwd):/app/config \
   --name airnode \
-  api3/airnode-client:0.10.0
+  api3/airnode-client:0.11.0
 ```
 
 ```powershell [Windows PowerShell]
-docker run --detach \
+docker run  \
   --volume $(pwd):/app/config \
   --name airnode \
-  api3/airnode-client:0.10.0
+  api3/airnode-client:0.11.0
 ```
 
 ```batch [Windows]
-docker run --detach ^
+docker run  ^
   --volume %cd%:/app/config ^
   --name airnode ^
-  api3/airnode-client:0.10.0
+  api3/airnode-client:0.11.0
 ```
 
 :::
@@ -113,9 +112,9 @@ docker run --detach ^
 
 ### Checking Airnode logs
 
-If you run the Airnode in a detached mode, you need to use the `logs` command to
-access the logs. You can also use `--follow` parameter to stream the Airnode log
-output.
+Logs will be output to the console after running the above command. If you
+decide to run Airnode in detached mode with `--detach`, you need to use the
+`logs` command, optionally with `--follow`, to access the logs.
 
 ```bash
 docker logs airnode

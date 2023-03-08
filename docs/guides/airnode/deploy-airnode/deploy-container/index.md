@@ -138,7 +138,7 @@ of `api3/airnode-client` matches the `nodeVersion` in the config.json file.
 ::: code-group
 
 ```sh [Mac/WSL2/PowerShell]
-docker run --detach \
+docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --publish 3000:3000 \
@@ -146,7 +146,7 @@ docker run --detach \
 ```
 
 ```batch [Windows CMD]
-docker run --detach ^
+docker run ^
   --volume "%cd%:/app/config" ^
   --name quick-start-container-airnode ^
   --publish 3000:3000 ^
@@ -154,7 +154,7 @@ docker run --detach ^
 ```
 
 ```sh [Linux (host networking)]
-docker run --detach \
+docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --network host \
