@@ -358,9 +358,9 @@ AWS and GCP as listed below.
 
 ::: danger Remember
 
-Only delete elements of a feature with the `deploymentId` address and `stage`
-name contained in the element's name. There can be more than one Airnode.
-Example: (airnode-**awsef86dfad-production**-run), where `awsef86dfad` is the
+Only delete elements of a feature with the `deploymentId` and `stage` name
+contained in the element's name. There can be more than one Airnode. Example:
+(airnode-**awsef86dfad-production**-run), where `awsef86dfad` is the
 deploymentId and `production` is the stage name.
 
 :::
