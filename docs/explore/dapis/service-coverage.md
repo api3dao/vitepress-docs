@@ -74,8 +74,8 @@ You can access a self-funded dAPI now through the
 ::: tip
 
 Follow a guide on
-[how to use the API3 Market](/guides/dapis/call-dapi-dapiserver/index) to access
-a self-funded dAPI to get started in under 30mins.
+[how to use the API3 Market](/guides/dapis/read-self-funded-dapi/) to access a
+self-funded dAPI to get started in under 30mins.
 
 :::
 
@@ -117,4 +117,3 @@ represents a hub that allows developers to:
 - Fund their operation in the case of self-funded dAPIs
 - Authorize for the upgrade to a managed version
 - Request new data types
-

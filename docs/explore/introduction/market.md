@@ -48,4 +48,3 @@ These simple steps enables a user to access the corresponding price reference
 data for use within a smart contract. To utilize high-quality data feeds in your
 smart contracts follow the simple steps in the
 [API3 Market](https://market.api3.org).
-

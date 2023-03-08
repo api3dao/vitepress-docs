@@ -62,7 +62,7 @@ depending on how an oracle node is being utilized. As such Airnode utilizes a
 range of protocols to ensure a data feed achieves the appropiate efficiency for
 the respective use case.
 
-::: tip Key point
+::: info Key point
 
 An oracle utilizes a smart contracts to implement the protocol in a variety of
 patterns.
@@ -93,7 +93,7 @@ much larger variety of use cases in the form of dAPIs.
 ::: info Key point
 
 DeFi data feeds served via dAPIs utilize the publish-subscribe protocol. Learn
-more about [dAPIs](/explore/dapis/why-use-dapis.md).
+more about [dAPIs](/explore/dapis/service-coverage.md).
 
 :::
 
@@ -174,7 +174,7 @@ The API3 Market is a tool that enables developers to browse and use first-party
 data feeds in a self-serve manor. Developers can use a dAPI's interface to
 consume first-party data<!--price?--> feed services in smart contracts.
 
-::: tip decentralized APIs
+::: info decentralized APIs
 
 A dAPI interface provides a secure way for developers to access our data feed
 services and utilize them in their projects.
