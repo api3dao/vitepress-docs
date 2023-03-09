@@ -3,7 +3,7 @@ title: Remix Reload Contract
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides
-path: /guides/remix-reload-contract.html
+path: /guides/misc/remix-reload-contract.html
 outline: deep
 tags:
 ---

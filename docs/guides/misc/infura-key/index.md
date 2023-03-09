@@ -3,7 +3,7 @@ title: Create an Infura key
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides
-path: /guides/infura-key.html
+path: /guides/misc/infura-key.html
 outline: deep
 tags:
 ---
@@ -29,13 +29,13 @@ Select the <b>CREATE NEW KEY</b>. Note that Infura projects have been renamed as
 keys. If you already have a key you wish to use, click on the <b>MANAGE KEY</b>
 button to the right of the key name and go the next step (#3).
 
-<img src="./assets/images/infura-key-new.png" style="border:solid 1px lightgrey;width:70%;">
+<img src="./src/infura-key-new.png" style="border:solid 1px lightgrey;width:70%;">
 
 In the <b>CREATE NEW KEY</b> overlay select Web3 API from the <b>NETWORK</b>
 picklist. Then give the key a name (suggestion: API3 testing) and select the
 <b>CREATE</b> button.
 
-<img src="./assets/images/infura-key-create.png" style="border:solid 1px lightgrey;width:40%">
+<img src="./src/infura-key-create.png" style="border:solid 1px lightgrey;width:40%">
 
 ## 3. Get the Sepolia endpoint URL
 
@@ -46,7 +46,7 @@ The API KEY has several network endpoints available, some are free and others
 are paid. The Sepolia endpoint is free. Select the Sepolia network from the
 picklist in the <b>Ethereum</b> box then select the copy icon.
 
-<img src="./assets/images/infura-key-endpoint.png" style="border:solid 1px lightgrey;width:40%">
+<img src="./src/infura-key-endpoint.png" style="border:solid 1px lightgrey;width:40%">
 
 The key will look as shown below. Use the URL when guides call for the Sepolia
 blockchain provider URL.
