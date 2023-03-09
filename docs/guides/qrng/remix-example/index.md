@@ -92,7 +92,7 @@ should the need arise.
 
 ::: warning Remix Reload Contract
 
-The [Remix Reload Contract](/guides/remix-reload-contract.md) guide will step
+The [Remix Reload Contract](/guides/misc/remix-reload-contract/) guide will step
 you through the process to reload a deployed contract in order to interact with
 it again.
 
