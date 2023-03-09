@@ -38,6 +38,19 @@ action. Sections that are purely instructional must be placed before or after
 the progression. Sections in the progression can contain instructional
 explanations as they are related to the action the reader must perform.
 
+## Directory structure
+
+Most guides use a simple directory structure to contain its markdown and other
+asset files locally. As a rule the primary markdown page is named `index.md`. In
+the example below, `src` might contain images, code sample, and other required
+files.
+
+```sh
+testnets-metamask
+├── src
+└── index.md
+```
+
 ## Other formatting rules
 
 1. Single page layout using markdown elements.

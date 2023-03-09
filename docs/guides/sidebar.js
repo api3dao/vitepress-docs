@@ -127,10 +127,14 @@ module.exports = [
     text: 'Miscellaneous',
     collapsed: false,
     items: [
-      { text: 'Create an Infura key', link: '/guides/infura-key' },
+      {
+        text: 'Add testnets to MetaMask',
+        link: '/guides/misc/testnets-metamask/',
+      },
+      { text: 'Create an Infura key', link: '/guides/misc/infura-key/' },
       {
         text: 'Remix Reload Contract',
-        link: '/guides/remix-reload-contract',
+        link: '/guides/misc/remix-reload-contract/',
       },
     ],
   },
