@@ -1,9 +1,9 @@
 ---
-title: Understanding dAPIs
+title: dAPI Names
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/
+path: /reference/dapis/index.html
 outline: deep
 tags:
 ---
@@ -14,24 +14,71 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: danger TODO
+A dAPI is a live data point associated with human readable `dapiName`. dAPI
+definitions simplify access and can return aggregated Beacon values or a single
+Beacon value. This is suitable where the more recent data point (meaning its set
+of Beacons could change as needed) is always more favorable, e.g., in the
+context of an asset price data feed.
 
-Should the comparison of Proxy verses DapServer.sol be here or in Explore?
-Possibly move some of the content about what is a dAPI (/explore) to this page.
+## With API3 Market proxy contracts
+
+When using a API3 Market proxy contract your smart contract does not need to use
+a `dapiName` as a parameter to the `read()` function inside the proxy contract.
+The `dapiName` is integrated for you when the proxy contract is deployed by the
+API3 Market UI. You can create more than one proxy contract where each is tied
+to a single dAPI. If you want to use a different dAPI just update the proxy
+address you'll be reading from inside you smart contract. See the guide
+[Reading a self-funded dAPI proxy](https://vitepress-docs.web.app/guides/dapis/read-self-funded-dapi/)
+and learn how to use a proxy contract.
+
+## With DapiServer functions
+
+::: info Best practice
+
+Consider using dAPIs with
+[API3 Market<ExternalLinkImage/>](https:///market.api3.org) proxy contracts. The
+API3 Market UI provides a simple experience to set up proxy contract allowing
+fast access to any dAPI on many networks.
 
 :::
 
-## API3 Market Proxy Contracts
+To use functions directly on the `DapiServer.sol` contract that accept the
+`_dapiName` parameter, pass the `_dapiName` as an encoded bytes32 value. This is
+done to save gas when a smart contracts calls a "readByName" function on
+`DapiServer.sol`.
 
-Proxy contracts from the API3 Market are the preferred method to use dAPIs in a
-smart contract.
+- [readDataFeedWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-with-dapi-name.md) -
+  returns a value and timestamp
+- [readDataFeedValueWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-value-with-dapi-name.md) -
+  returns a value
 
-## `DapiServer.sol` Contract
+The example below generates the encoded bytes32 value of AVAX/USD. Try encoding
+AVAX/USD in the [ethers playground](https://playground.ethers.org/).
 
-## More related material...
+```solidity
+// Encode the dapiName (such as AVAX/USD) to bytes32
+ethers.utils.formatBytes32String("AVAX/USD");
+// Yields: 0x415641582f555344000000000000000000000000000000000000000000000000
+```
 
-::: danger TODO:
+Then pass the encoded value to either `readDataFeedWithDapiName()` or
+`readDataFeedValueWithDapiName()`.
 
-Add "More related material..." to /explore and /guides
+```solidity
+// Calling readDataFeedWithDapiName() using the DapiServer contract
+(value, timestamp) =
+  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415641582f555344000000000000000000000000000000000000000000000000");
+```
 
-:::
+### Optionally, use Beacon and Beacon set IDs
+
+It is possible to use a Beacon or Beacon set ID by calling
+[readDataFeedId()](/reference/dapis/functions/read-data-feed-with-id.md) and
+[readDataFeedValueById()](/reference/dapis/functions/read-data-feed-value-with-id.md).
+Doing so is considered an advanced user flow. In practice reading with a name
+and reading with an ID are very different things. When you read with a name, you
+benefit from what the name maps to and how its value is aggregated from sourced
+Beacons. API3 manages dAPI name mappings to provide the best possible responses.
+When you read with an ID, you will always read a value directly from a Beacon or
+Beacon set. Learn more about
+[dAPI Composition](/explore/dapis/what-are-dapis.md).

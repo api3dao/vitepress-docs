@@ -56,8 +56,8 @@ See another code example of `readDataFeedWithDapiName()` in the
 
 - `bytes32 dapiName` - The encoded bytes32 value of a dAPI name to retrieve a
   value and timestamp for. See
-  [Encode the dapiName](/reference/dapis/dapi-names.md#encode-the-dapiname) to
-  learn how to encode the value of a `dapiName`.
+  [Encode the dapiName](/reference/dapis/#with-dapiserver-functions) to learn
+  how to encode the value of a `dapiName`.
 
 ## Returns
 

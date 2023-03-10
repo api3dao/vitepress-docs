@@ -39,7 +39,7 @@ function such as
 [readDataFeedWithName()](/reference/dapis/functions/read-data-feed-with-dapi-name.md),
 the `dapiName` is passed as an encoded bytes32 value. Try the code sample below
 in the [ethers playground](https://playground.ethers.org/). Also see
-[Encode the dapiName](/reference/dapis/dapi-names.md#encode-the-dapiname).
+[Encode the dapiName](/reference/dapis/#with-dapiserver-functions).
 
 ```solidity
 ethers.utils.formatBytes32String("AVAX/USD");

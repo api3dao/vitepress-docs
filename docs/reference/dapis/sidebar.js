@@ -9,7 +9,7 @@ module.exports = [
       },*/
       {
         text: 'dAPI Names',
-        link: '/reference/dapis/dapi-names',
+        link: '/reference/dapis/',
       },
       {
         text: 'ID and Name Schemes',
