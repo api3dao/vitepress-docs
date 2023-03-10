@@ -4,7 +4,6 @@ sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapServer Contract
 path: /reference/dapis/functions/read-data-feed-value-with-dapi-name.html
-version:
 outline: deep
 tags:
 ---

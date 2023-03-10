@@ -4,7 +4,6 @@ sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
 path: /reference/dapis/dapi-names.html
-version:
 outline: deep
 tags:
 ---
@@ -21,26 +20,31 @@ Beacon value. This is suitable where the more recent data point (meaning its set
 of Beacons could change as needed) is always more favorable, e.g., in the
 context of an asset price data feed.
 
-## When using a proxy contract
+## With API3 Market proxy contracts
 
 When using a API3 Market proxy contract your smart contract does not need to use
 a `dapiName` as a parameter to the `read()` function inside the proxy contract.
 The `dapiName` is integrated for you when the proxy contract is deployed by the
-API3 Marker UI. You can create more than one proxy contract where each is tied
+API3 Market UI. You can create more than one proxy contract where each is tied
 to a single dAPI. If you want to use a different dAPI just update the proxy
-address you'll be reading from inside you smart contract.
+address you'll be reading from inside you smart contract. See the guide
+[Reading a self-funded dAPI proxy](https://vitepress-docs.web.app/guides/dapis/read-self-funded-dapi/)
+and learn how to use a proxy contract.
 
-::: danger TODO
+## With DapiServer functions
 
-Need an image here of the proxy contract flow to `read()`,
+::: info Best practice
+
+Consider using dAPIs with
+[API3 Market<ExternalLinkImage/>](https:///market.api3.org) proxy contracts. The
+API3 Market UI provides a simple experience to set up proxy contract allowing
+fast access to any dAPI on many networks.
 
 :::
 
-## Encode the `dapiName`
-
-To use functions on the `DapiServer.sol` contract that accept the `_dapiName`
-parameter, pass the `_dapiName` as an encoded bytes32 value. This is done to
-save gas when a smart contract calls a "readByName" function on
+To use functions directly on the `DapiServer.sol` contract that accept the
+`_dapiName` parameter, pass the `_dapiName` as an encoded bytes32 value. This is
+done to save gas when a smart contracts calls a "readByName" function on
 `DapiServer.sol`.
 
 - [readDataFeedWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-with-dapi-name.md) -
@@ -66,7 +70,7 @@ Then pass the encoded value to either `readDataFeedWithDapiName()` or
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415641582f555344000000000000000000000000000000000000000000000000");
 ```
 
-## Optionally, use Beacon and Beacon set IDs
+### Optionally, use Beacon and Beacon set IDs
 
 It is possible to use a Beacon or Beacon set ID by calling
 [readDataFeedId()](/reference/dapis/functions/read-data-feed-with-id.md) and

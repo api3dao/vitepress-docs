@@ -4,7 +4,6 @@ sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
 path: /reference/dapis/schemes.html
-version:
 outline: deep
 tags:
 ---
