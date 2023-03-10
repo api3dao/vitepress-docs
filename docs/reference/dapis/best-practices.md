@@ -15,6 +15,13 @@ tags:
 
 # {{$frontmatter.title}}
 
+::: danger TODO:
+
+This doc does not make sense. Move its parts into other pages where they can add
+value.
+
+:::
+
 dAPIs are aggregated from multiple beacons using a decentralized pool of
 independent Airnodes. All Airnodes are API provider owned and operated. API
 providers supply data to the `DAPIServer` contract which lives on many chains.
@@ -90,4 +97,4 @@ contract. API3 cannot alter values from API providers.s
 
 All [API3 sources code](https://github.com/orgs/api3dao/repositories?type=all)
 is open sourced and can be verified by anyone. Consider reading through API3
-source code to verify claims of security. s
+source code to verify claims of security.

@@ -24,7 +24,7 @@ you run out of gas, you can fund the dAPI again to keep it available for use.
 This is a good option if you are not planning to use the dAPI for a long period
 of time or if you are not planning to use the dAPI in a production environment.
 
-::: tip
+::: info Managed dAPIs
 
 If you are planning to use your dAPI for a long period of time or if you are
 planning to use your dAPI in a production environment, we recommend that you use
@@ -44,9 +44,9 @@ process consists of:
   - [1. Exploring and selecting your data feed](#1-exploring-and-selecting-your-data-feed)
   - [2. Funding a sponsor wallet](#2-funding-a-sponsor-wallet)
   - [3. Deploying a proxy contract to access the data feed](#3-deploying-a-proxy-contract-to-access-the-data-feed)
-    - [Deploying a proxy contract during funding](#deploying-a-proxy-contract-during-funding)
-    - [Deploying a proxy contract from the API3 Market details page](#deploying-a-proxy-contract-from-the-api3-market-details-page)
-    - [Verifying the deployed proxy contract](#verifying-the-deployed-proxy-contract)
+    - [3a. Deploying a proxy contract during funding](#3a-deploying-a-proxy-contract-during-funding)
+    - [3b. Deploying a proxy contract from the API3 Market details page](#3b-deploying-a-proxy-contract-from-the-api3-market-details-page)
+    - [3c. Verifying the deployed proxy contract](#3c-verifying-the-deployed-proxy-contract)
 
 ## 1. Exploring and selecting your data feed
 
@@ -94,7 +94,7 @@ time.
   <img src="../../assets/images/gas-estimator.png" />
 </p>
 
-::: danger Estimation is not accurate
+::: warning Estimation is not accurate
 
 The estimation is calculated assuming there are 10 oracle updates per day on the
 current gas costs of the respective chain. Users need to be aware that any
@@ -111,7 +111,7 @@ data feed. 15 minutes later the feed will activate.
 </p>
 Always verify that you are signing a transaction with the expected amount, networks, and destination address. Each dAPI has a unique funding address.
 
-::: danger Note
+::: warning Note
 
 Funds sent to the wallet address will not be returned.
 
@@ -151,7 +151,7 @@ already deployed proxy contract which will be visible on the API3 market.
 
 :::
 
-### Deploying a proxy contract during funding
+### 3a. Deploying a proxy contract during funding
 
 If you are deploying a proxy contract during the funding process, you will see
 the following UI.
@@ -170,7 +170,7 @@ contract address will be shown on the UI.
   <img src="../../assets/images/dapi-proxy-confirmation.png" />
 </p>
 
-### Deploying a proxy contract from the API3 Market details page
+### 3b. Deploying a proxy contract from the API3 Market details page
 
 If you are deploying a proxy contract from the API3 Market details page, you
 will see the following UI.
@@ -188,10 +188,10 @@ UI.
   <img src="../../assets/images/dapi-proxy-confirmation2.png" />
 </p>
 
-### Verifying the deployed proxy contract
+### 3c. Verifying the deployed proxy contract
 
 Before using the proxy contract, you should verify if the proxy contract points
-to the correct `dapiNameHash` and `dapiServer` address.This can be done by
+to the correct `dapiNameHash` and `dapiServer` address. This can be done by
 viewing the code of the proxy on the block explorer.
 
 The `dapiServer` address should be the same as the address of the `Dapiserver`
@@ -209,8 +209,8 @@ $ ethers eval 'utils.solidityKeccak256(["bytes32"],[utils.formatBytes32String("E
 0x9e6138f8f57d7b493a8364edb0a0ac92399dfd890eecb9121050836a1749ba42 ← dapiNameHash
 ```
 
-Where `ETH/USD` is the `dapiName` we got from the details page of the dAPI on
-the API3 Market.
+Where `ETH/USD` is the `dapiName` from the details page of the dAPI on the API3
+Market.
 
 Once you have verified the `dapiNameHash` and `dapiServer` address, you can
 start using the proxy contract to read the data feed.

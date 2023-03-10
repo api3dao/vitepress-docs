@@ -2,9 +2,8 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
-pageHeader: Reference → dAPIs → DapServer Contract
-path: /reference/dapis/functions/
-version:
+pageHeader: Reference → dAPIs → DapiServer Contract
+path: /reference/dapis/functions/index.html
 outline: deep
 tags:
 ---
@@ -24,6 +23,15 @@ Airnode address and a template ID. This is suitable where the more recent data
 point is always more favorable, e.g., in the context of an asset price data
 feed. Beacons can also be seen as one-Airnode data feeds that can be used
 individually or combined to build Beacon sets.
+
+::: info Best practice
+
+Consider using dAPIs with
+[API3 Market<ExternalLinkImage/>](https:///market.api3.org) proxy contracts. The
+API3 Market UI provides a simple experience to set up proxy contract allowing
+fast access to any dAPI on many networks.
+
+:::
 
 ## Implementation
 

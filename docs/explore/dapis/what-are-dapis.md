@@ -160,8 +160,8 @@ Beacons (Beacon Set).
 
 Each dAPI has a human-readable name (e.g., `AVAX/USD`) that makes them easily
 accessible using `DapiServer.sol`. Simple pass the
-[encoded bytes32 value](/reference/dapis/dapi-names.md#encode-the-dapiname) of
-the `dapiName` to a reader function.
+[encoded bytes32 value](/reference/dapis/#with-dapiserver-functions) of the
+`dapiName` to a reader function.
 
 ```solidity
 // Reading the AVAX/USD dAPI using the DapiServer contract

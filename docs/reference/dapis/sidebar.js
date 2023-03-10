@@ -3,13 +3,13 @@ module.exports = [
     text: '',
     collapsable: false,
     items: [
-      {
+      /*{
         text: 'Understanding dAPIs',
         link: '/reference/dapis/',
-      },
+      },*/
       {
         text: 'dAPI Names',
-        link: '/reference/dapis/dapi-names',
+        link: '/reference/dapis/',
       },
       {
         text: 'ID and Name Schemes',
@@ -24,12 +24,11 @@ module.exports = [
         text: 'Chains and Contracts',
         link: '/reference/dapis/chains',
       },
+      {
+        text: 'API3 Market proxy contracts',
+        link: '/reference/dapis/proxy-contracts',
+      },
     ],
-  },
-  {
-    text: 'API3 Market Proxy Contracts',
-    collapsed: false,
-    items: [],
   },
   {
     text: 'DapiServer Contract',

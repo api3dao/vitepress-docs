@@ -4,7 +4,6 @@ sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapServer Contract
 path: /reference/dapis/functions/read-data-feed-value-with-dapi-name.html
-version:
 outline: deep
 tags:
 ---
@@ -56,8 +55,8 @@ See another code example of `readDataFeedValueWithDapiName()` in the
 
 - `bytes32 dapiName` - The encoded bytes32 value of a dAPI name to retrieve a
   value for (no timestamp). See
-  [Encode the dapiName](/reference/dapis/dapi-names.md#encode-the-dapiname) to
-  learn how to encode the value of a `dapiName`.
+  [Encode the dapiName](/reference/dapis/#with-dapiserver-functions) to learn
+  how to encode the value of a `dapiName`.
 
 ## Returns
 
