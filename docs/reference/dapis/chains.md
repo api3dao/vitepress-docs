@@ -14,9 +14,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-dAPIs can be read on the following chains using the
-[DapiServer.sol](/reference/dapis/functions/) contract addresses listed below.
-Use the [API3 Market<ExternalLinkImage/>](https://market.api3.org/) website to
-find the desired dAPI names and the networks they are available on.
+dAPIs can be read on the following chains using
+[API3 Market proxy contracts](/reference/dapis/proxy-contracts.md). Use the
+[API3 Market<ExternalLinkImage/>](https://market.api3.org/) website create proxy
+contracts.
 
 <ChainsList/>

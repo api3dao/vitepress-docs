@@ -32,6 +32,7 @@ are fixed.
 - Beacon ID: The hash of a Beacon's parameters.
 - Beacon set ID: The hash of the Beacon IDs in the Beacon set.
 
+<!--
 ## dAPI Names
 
 A dAPI's name is identical across all chains. When accessing a dAPI value with a
@@ -39,7 +40,7 @@ function such as
 [readDataFeedWithName()](/reference/dapis/functions/read-data-feed-with-dapi-name.md),
 the `dapiName` is passed as an encoded bytes32 value. Try the code sample below
 in the [ethers playground](https://playground.ethers.org/). Also see
-[Encode the dapiName](/reference/dapis/#with-dapiserver-functions).
+[Encode the dapiName](/reference/dapis/).
 
 ```solidity
 ethers.utils.formatBytes32String("AVAX/USD");
@@ -51,3 +52,4 @@ A Beacon's ID and its template are identical across chains. When accessing a
 Beacon's value with a function such as
 [readDataFeedWithId()](/reference/dapis/functions/read-data-feed-with-id.md),
 the `beaconId` is needed.
+-->
