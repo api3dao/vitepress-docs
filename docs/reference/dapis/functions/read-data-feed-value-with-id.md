@@ -4,7 +4,6 @@ sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → DapServer Contract
 path: /reference/dapis/functions/read-data-feed-value-with-id.html
-version:
 outline: deep
 tags:
 ---
@@ -18,7 +17,7 @@ tags:
 ::: warning This function uses IDs.
 
 Be sure to understand the difference between using a name or ID. See
-[dAPI Names](/reference/dapis/dapi-names.md).
+[dAPI Names](/reference/dapis/).
 
 :::
 
