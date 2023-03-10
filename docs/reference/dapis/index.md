@@ -1,5 +1,5 @@
 ---
-title: dAPI Names
+title: Understanding dAPIs
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
@@ -14,71 +14,53 @@ tags:
 
 # {{$frontmatter.title}}
 
-A dAPI is a live data point associated with human readable `dapiName`. dAPI
-definitions simplify access and can return aggregated Beacon values or a single
-Beacon value. This is suitable where the more recent data point (meaning its set
-of Beacons could change as needed) is always more favorable, e.g., in the
-context of an asset price data feed.
+dAPIs are continuously updated streams of off-chain data, such as the latest
+cryptocurrency, stock, and commodity prices. They can power various
+decentralized applications such as DeFi lending, synthetic assets, stable coins,
+derivatives, NFTs and more.
 
-## With API3 Market proxy contracts
+## Api3ServerV1.sol
 
-When using a API3 Market proxy contract your smart contract does not need to use
-a `dapiName` as a parameter to the `read()` function inside the proxy contract.
-The `dapiName` is integrated for you when the proxy contract is deployed by the
-API3 Market UI. You can create more than one proxy contract where each is tied
-to a single dAPI. If you want to use a different dAPI just update the proxy
-address you'll be reading from inside you smart contract. See the guide
-[Reading a self-funded dAPI proxy](https://vitepress-docs.web.app/guides/dapis/read-self-funded-dapi/)
-and learn how to use a proxy contract.
+API providers, owners of first-party Airnodes, send data feed values to the
+`Api3ServerV1.sol` contract on-chain which stores the feed values as individual
+beacons.
 
-## With DapiServer functions
+<img src="./assets/images/beacons.png" style="width:80%;">
 
-::: info Best practice
+`Api3ServerV1.sol` holds the definitions for thousands of dAPIs, each of which
+is an aggregated value of multiple beacons or the value of a single beacon.
 
-Consider using dAPIs with
-[API3 Market<ExternalLinkImage/>](https:///market.api3.org) proxy contracts. The
-API3 Market UI provides a simple experience to set up proxy contract allowing
-fast access to any dAPI on many networks.
+## API3 Market proxy contracts
 
-:::
+dAPIs can be read easily from the `Api3ServerV1.sol` contract with API3 Market
+proxy contracts. Use the API3 Market UI to create a custom proxy contract for
+any dAPI such as [AAVE/USD<ExternalLinkImage/>](https://market.api3.org). A
+custom proxy contract describes a single unique dAPI.
 
-To use functions directly on the `DapiServer.sol` contract that accept the
-`_dapiName` parameter, pass the `_dapiName` as an encoded bytes32 value. This is
-done to save gas when a smart contracts calls a "readByName" function on
-`DapiServer.sol`.
+<img src="./assets/images/proxy.png" style="width:80%;">
 
-- [readDataFeedWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-with-dapi-name.md) -
-  returns a value and timestamp
-- [readDataFeedValueWithDapiName(\_dapiName)](/reference/dapis/functions/read-data-feed-value-with-dapi-name.md) -
-  returns a value
-
-The example below generates the encoded bytes32 value of AVAX/USD. Try encoding
-AVAX/USD in the [ethers playground](https://playground.ethers.org/).
+Create as many proxy contracts as needed. Each one has an on-chain address that
+is used to read the value of a desired dAPI.
 
 ```solidity
-// Encode the dapiName (such as AVAX/USD) to bytes32
-ethers.utils.formatBytes32String("AVAX/USD");
-// Yields: 0x415641582f555344000000000000000000000000000000000000000000000000
+return IDapiProxy(dapiProxyAddress).read();
 ```
 
-Then pass the encoded value to either `readDataFeedWithDapiName()` or
-`readDataFeedValueWithDapiName()`.
+See the guide
+[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
+learn how to use a proxy contract.
 
-```solidity
-// Calling readDataFeedWithDapiName() using the DapiServer contract
-(value, timestamp) =
-  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415641582f555344000000000000000000000000000000000000000000000000");
-```
+## Security
 
-### Optionally, use Beacon and Beacon set IDs
+dApp developers do not need to trust API3 as all Airnodes are owned and operated
+by an API provider. Each API provider has deployed their Airnode using a
+`secrets.env` file that API3 does not possess. Therefore the Airnode operates
+under the complete autonomy of the API provider who's signed data is used to
+update
+[Api3ServerV1sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/Api3ServerV1.sol)
+contract. API3 cannot alter values from API providers.s
 
-It is possible to use a Beacon or Beacon set ID by calling
-[readDataFeedId()](/reference/dapis/functions/read-data-feed-with-id.md) and
-[readDataFeedValueById()](/reference/dapis/functions/read-data-feed-value-with-id.md).
-Doing so is considered an advanced user flow. In practice reading with a name
-and reading with an ID are very different things. When you read with a name, you
-benefit from what the name maps to and how its value is aggregated from sourced
-Beacons. API3 manages dAPI name mappings to provide the best possible responses.
-When you read with an ID, you will always read a value directly from a Beacon or
-Beacon set. Learn more about
-[dAPI Composition](/explore/dapis/what-are-dapis.md).
+All
+[API3 sources code<ExternalLinkImage/>](https://github.com/orgs/api3dao/repositories?type=all)
+is open sourced and can be verified by anyone. Consider reading through API3
+source code to verify claims of security.

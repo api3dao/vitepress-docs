@@ -3,21 +3,17 @@ module.exports = [
     text: '',
     collapsable: false,
     items: [
-      /*{
+      {
         text: 'Understanding dAPIs',
         link: '/reference/dapis/',
-      },*/
+      },
       {
         text: 'dAPI Names',
-        link: '/reference/dapis/',
+        link: '/reference/dapis/dapi-names',
       },
       {
         text: 'ID and Name Schemes',
         link: '/reference/dapis/schemes',
-      },
-      {
-        text: 'Best Practices',
-        link: '/reference/dapis/best-practices',
       },
 
       {
@@ -30,7 +26,7 @@ module.exports = [
       },
     ],
   },
-  {
+  /*{
     text: 'DapiServer Contract',
     collapsed: false,
     items: [
@@ -63,5 +59,5 @@ module.exports = [
         link: '/reference/dapis/functions/data-feed-id-to-reader-to-whitelist-status',
       },
     ],
-  },
+  },*/
 ];
