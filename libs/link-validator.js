@@ -104,7 +104,7 @@ async function testLink(url, filePath, ignoreTimeout) {
     let arr = url.split('#');
     // Rule #1
     // Sometimes the anchor indicator (#) is in the
-    // path: https://api3.eth.link/#/history/secondary-6
+    // path: https://api3.eth/#/history/secondary-6
     // This is not an anchor, ignore it.
     if (url && url.indexOf('/#/') > -1) {
     }
