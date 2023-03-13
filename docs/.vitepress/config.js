@@ -75,7 +75,7 @@ function nav() {
     {
       text: 'Reference',
       items: [
-        { text: 'dAPIs', link: '/reference/dapis/' },
+        { text: 'dAPIs', link: '/reference/dapis/understand/' },
         {
           text: 'Airnode',
           link: '/reference/airnode/latest/',

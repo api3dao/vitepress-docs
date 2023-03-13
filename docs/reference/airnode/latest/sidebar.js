@@ -3,10 +3,10 @@ module.exports = [
     text: '',
 
     items: [
-      {
-        text: 'Contract Addresses',
+      /*{
+        text: 'Airnode',
         link: '/reference/airnode/latest/',
-      },
+      },*/
       { text: 'Versions', link: '/reference/airnode/latest/versions' },
       {
         text: 'Cloud Resources',

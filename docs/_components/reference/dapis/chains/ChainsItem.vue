@@ -3,28 +3,27 @@
 -->
 
 <template>
-  <div>
-    <div class="bc-chains-name">
-      <a :href="chain.explorerUrl"
-        >{{ chain.fullName }} <ExternalLinkImage
-      /></a>
-    </div>
+  <div class="api3-bc-chains-name">
+    <a :href="chain.explorerUrl"
+      >{{ chain.fullName }} <ExternalLinkImage />
 
-    <div style="float: right; margin-top: -28px; font-size: small">
-      {{ chain.nativeToken }}
-    </div>
+      <div class="api3-bc-chain-token">
+        {{ chain.nativeToken }}
+      </div>
 
-    <div class="bc-chains-id">
-      Id: <b>{{ chain.id }}</b>
-    </div>
+      <div class="api3-bc-chains-id">
+        Id: <b>{{ chain.id }}</b>
+      </div>
 
-    <!-- Contracts -->
-    <div class="bc-chains-contract-address">
+      <!-- Contracts -->
+      <!--div class="bc-chains-contract-address">
       AirnodeRrpV0: <span>{{ chain.contracts['AirnodeRrpV0'] }}</span
-      ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" /> <br />DapiServer:
+      ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" />
+      <br />DapiServer:
       <span>{{ chain.contracts['DapiServer'] }}</span
       ><CopyIcon :text="chain.contracts['DapiServer']" />
-    </div>
+    </div-->
+    </a>
   </div>
 </template>
 
@@ -36,22 +35,30 @@ export default {
 </script>
 
 <style>
-.bc-chains-name {
+.api3-bc-chains-name {
   font-size: large;
   font-weight: bold;
   margin-bottom: 5px;
   cursor: pointer;
 }
-.bc-chains-short-name {
+.api3-bc-chains-short-name {
   font-size: small;
   margin-bottom: 3px;
 }
-.bc-chains-id {
+.api3-bc-chain-token {
+  float: right;
+  margin-top: -7px;
   font-size: small;
+  color: gray;
 }
-.bc-chains-contract-address {
+
+.api3-bc-chains-id {
+  font-size: small;
+  color: gray;
+}
+/*.api3-bc-chains-contract-address {
   font-family: courier;
   font-size: small;
   margin-top: 3px;
-}
+}*/
 </style>
