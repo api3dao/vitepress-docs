@@ -75,8 +75,8 @@ of:
 ### 1. Self-funded data feeds
 
 Self-funded dAPIs provide developers with the tools to use single-source data
-feed services with minimal associated costs and no upfront commitment, served in
-a fully permissionless fashion through the API3 Market. Once gas funds have been
+feed services with no upfront commitment. They are served in a fully
+permissionless fashion through the API3 Market. Once gas funds have been
 provided in the oracle sponsor wallet a dAPI will begin automatically post data
 on-chain when price deviation thresholds are met.
 
@@ -92,19 +92,15 @@ Self-funded data feeds are provided as an output of a single first-party oracle
 that triggers price updates on-chain to a 1% deviation threshold. As such these
 dAPIs are appropiate for early-stage of dApp development.
 
-::: tip You can now access self funded data feeds
-
-<div class="api3-css-nav-box-flex-row">
-    <NavBox type='EXPLORE' id="_access-a-self-funded-data-feed"/>
-</div>
-
-:::
-
 <!--In cases where a single source is deemed insufficient or the overhead of keeping a wallet topped up for oracle services is undesirable, API3 recommends to utilize an ageeegated data feed.-->
 
 API3 suggests using an aggregated data feed when a single source does not
 provide enough reliability, or the costs associated with topping up your wallet
 for oracle services are too prohibitive.
+
+<div class="api3-css-nav-box-flex-row">
+    <NavBox type='EXPLORE' id="_access-a-self-funded-data-feed"/>
+</div>
 
 ### 2. Managed data feeds (multi-source)
 

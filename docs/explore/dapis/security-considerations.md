@@ -14,11 +14,11 @@ tags:
 
 # {{$frontmatter.title}}
 
-There are various moving parts in the operation of dAPIs which bring with a
+There are various moving parts in the operation of dAPIs which bring with it a
 variety of security considerations. When using dAPIs integrating parties should
 be aware of and understand these processes.
 
-## Multi-sig dependency
+# Multi-sig dependency
 
 As previously mentioned, a dAPI is a mapping towards a specific Beacon or Beacon
 Set ID, which can be changed. Currently the ability to do so rests with
@@ -35,7 +35,9 @@ ability drastically once dAPI operations have matured, by capping the amount of
 changes that are allowed to be made in addition to giving the API3 DAO the
 ability to revoke dAPI name setting rights through a governance vote.
 
-## Self-funded dAPIs - Sponsor Wallets
+# Self-funded dAPIs
+
+### Sponsor Wallets
 
 Self-funded dAPIs will only update if the respective sponsor wallet has
 sufficient funds available to create the on-chain transaction. Consequently, it
@@ -46,9 +48,7 @@ projects like Gelato. Please note, that funds send to a sponsor wallet are not
 recoverable, which means that sending small amounts to keep it operational
 repeatatly is recommended over sending large amounts.
 
-## Self-funded dAPIs
-
-## Self-funded dAPIs - Single First-Party Oracle
+### Single First-Party Oracle
 
 Compared to managed dAPIs, self-funded dAPIs are maintained by a single
 first-party oracle and are hence susceptible to more risk. Downtime in the used
@@ -59,7 +59,9 @@ and it should be avoided using them in production environments. Instead,
 production use-cases should upgrade to managed dAPIs if their desired data feed
 statisfies their requirements in self-funded form.
 
-## Managed dAPIs - Maintaining dAPIs
+# Managed dAPIs
+
+### Maintaining dAPIs
 
 With managed dAPIs, API3 takes over the gas management overhead that is
 associated with running dAPIs. The underlying Beacons/Beacon Set of a dAPI are

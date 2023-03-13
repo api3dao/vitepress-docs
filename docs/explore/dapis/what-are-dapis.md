@@ -14,22 +14,24 @@ tags:
 
 # {{$frontmatter.title}}
 
-dAPIs are continuously updated streams of off-chain data, such as the latest
-cryptocurrency, stock and commodity prices. They can power various decentralized
-applications such as DeFi lending, synthetic assets, stable coins, derivatives,
-NFTs and more.
+A dAPI is the interface that smart contracts connect to access data feed
+services through. Through dAPIs smart contracts connect to continuously updated
+streams of off-chain data, such as the latest cryptocurrency, forex, stock and
+commodity prices.
+
+<!--They can power various decentralized applications such as DeFi
+lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
+
+### Understanding dAPIs
 
 dAPIs are composed of Beacons, which are first-party data feeds. A Beacon is
 directly powered by the owner of the data, the API provider. Compared to
 third-party oracle solutions, which involve middlemen node operators, this
 approach is secure, transparent, cost-efficient and scalable. API3 composes
-dAPIs out of Beacons, and provides them as turn-key data feed solutions on many
+dAPIs out of Beacons, d provides them as turn-key data feed solutions on many
 chains.
 
-## Introducing dAPIs
-
-A dAPI is the interface that smart contracts connect to access data feed
-services through.
+### dAPIs connect smart contracts to first-party data feeds
 
 Through the use of the function `setDapiName` API3 can associate the ID of a
 Beacon or Beacon Set with a human-readable name like AVAX/USD. The benefit of
@@ -50,12 +52,12 @@ towards the newly created ID.
 
 ::: info Read more
 
-Learn more about dAPIs by reading
+Dive into the design decisions about dAPIs by reading
 [dAPIs: APIs for dApps<ExternalLinkImage/>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
 
 :::
 
-## What is a Beacon or a Beacon Set?
+### What is a Beacon or a Beacon Set?
 
 A Beacon is a point of data that is kept alive on-chain by a respective
 first-party oracle. It corresponds to an ID which is derived from the hash of
@@ -79,7 +81,7 @@ Learn how Beacons are the building blocks for
 
 :::
 
-## Understanding the dAPI Interface
+# dAPI: A standardized interface
 
 dAPIs possess a range of distinct attributes:
 
@@ -133,23 +135,27 @@ dAPIs also factors into building aggregated data feeds. Since first-party data
 feeds do not require redundancy at the middlemen layer, the aggregation costs
 less gas and source-level decentralization becomes more affordable.-->
 
-## Accessing a dAPI: DapiServer.sol
+## DapiServer.sol
 
-Developers use the
+A developer will deploy a proxy contract to access a dAPI. Through this proxy
+developers use the
 [DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)<externalLinkImage/>
-contract to access dAPIs. `DapiServer.sol` reads directly from its data store of
-Beacons, which are powered by API provider-owned and operated
-[Airnodes](/reference/airnode/latest/). A developer will deploy a proxy contract
-to access the dAPI. Now a developer can easily set the proxy contract address in
-his contract and start reading from the dAPIs.
+contract to access dAPIs. Now a developer can easily set the proxy contract
+address in his contract and start reading from the dAPIs.
 
-dAPI proxies allow dAPIs to be used like libraries. The smart contract just
-needs to import the interface for calling the proxy contract. To read a
-different dAPI, the contract does not need to change the code itself, rather it
-only needs to use a different proxy address when calling the read() function on
-the proxy contract.
+The `DapiServer.sol` contract reads directly from its data store of Beacons,
+which are powered by API provider-operated
+[Airnodes](/reference/airnode/latest/). Thus dAPI proxies allow dAPIs to be used
+like libraries. The smart contract only needs to import the interface for
+calling the proxy contract.
 
-## Understanding the `DapiServer.sol`
+This means once a dAPI is integrated to read a different data feed, the contract
+does not need to change the code itself, rather it only needs to use a different
+proxy address when calling the read() function on the proxy contract. If the
+dAPI interface has previously been imported, it abstracts away the technical
+implmentation of accessing new data feeds.
+
+### Understanding the `DapiServer.sol`
 
 > <img src="../assets/images/00-a-What_are_dAPIs.png" width="550px"/>
 
