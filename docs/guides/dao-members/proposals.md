@@ -248,10 +248,8 @@ ERC20 token contract where `address` is the address of a _multisig_ wallet, you
 can
 [set a reverse record with the multisig](https://medium.com/the-ethereum-name-service/you-can-now-manage-ens-names-with-gnosis-safe-9ddcb7e6c4ac)<ExternalLinkImage/>
 to your ENS name. See Parameters in
-[this proposal](https://bafybeice5xg7dk6alljdkkkv4v65r6x5tgy3cpbxti4tlcd4yuyfzsz6mq.ipfs.dweb.link/#/history/secondary-31)<ExternalLinkImage/>
+[this proposal](https://api3.eth/#/history/secondary-31)<ExternalLinkImage/>
 for an example.
-
-<!-- The link above used to be https://api3.eth.link/#/history/secondary-6 -->
 
 ## Using IPFS for Proposals
 
