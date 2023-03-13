@@ -25,7 +25,7 @@ let latestDocsets = [
   '/dist/reference/dao-members/',
   '/dist/reference/chainapi/',
   '/dist/reference/dapis/',
-  '/dist/reference/airnode/latest/',
+  //'/dist/reference/airnode/latest/',
   '/dist/reference/ois/latest/',
 ];
 
