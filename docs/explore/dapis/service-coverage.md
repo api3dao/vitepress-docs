@@ -25,15 +25,16 @@ decentralized API and access data feed services. There are two types of dAPIs:
 
 # Self-funded dAPIs
 
-Self-funded dAPIs offer developers the opportunity to experience data feeds with
-minimal up-front commitment, providing a low commitment and permissionless
-option for developers prior to using a managed dAPIs.
+Self-funded dAPIs currently rely on a single first-party oracle. They offer
+developers the opportunity to experience data feeds with minimal up-front
+commitment, providing a low commitment and permissionless option for developers
+prior to using a managed dAPIs.
 
 ### Using Self-funded dAPIs
 
-Self-funded data feeds requires users to provide collateral for a sponsor
-wallet, activating oracle transactions. Once funds are available in the sponsor
-wallet data feed updates will begin automatically.
+Self-funded dAPIs requires users to provide collateral for a sponsor wallet,
+activating oracle transactions. Once funds are available in the sponsor wallet
+data feed updates will begin automatically.
 
   <img src="../assets/images/09-Visual_that_communicates_how_a_self-funded_feed_works.png" width="550px"/>
 
@@ -90,19 +91,15 @@ A self-funded data feed provides advantages for builders:
   development life cycle without an ongoing commitment
 - dApps that may only require data feeds for a short period of time can activate
   a self-funded dAPI as needed
-- Whilst a self-funded dAPI provides access to a single API Provider, the feed
-  does provide access to a median price from the agreegation of multiple data
-  sources
 
-Whilst there are advantages to using a self-funded data feed, users should
-consider the security implications of using the model if the dApp is in
-production.
+Whilst there are advantages to using a self-funded dAP, users should consider
+the security implications of using the model if the dApp is in production.
 
 ::: warning Please note
 
-Self-funded data feeds rely on a single first-party oracle. Therefore, users
-should consider if they provide an appropiate solution if securing funds within
-a DeFi protocol.
+Self-funded dAPIs currently rely on a single first-party oracle. Therefore,
+users should consider if they provide an appropiate solution when securing funds
+within a DeFi protocol or other scenarios where .
 
 :::
 
