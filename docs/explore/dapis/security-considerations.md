@@ -23,7 +23,7 @@ be aware of and understand these processes.
 As previously mentioned, a dAPI is a mapping towards a specific Beacon or Beacon
 Set ID, which can be changed. Currently the ability to do so rests with
 multi-sigs that are operated on each chain that `dapiserver.sol` is deployed on.
-The multi-sig setup is a 3/n with members of the Core Technical Team (CTT) along
+The multi-sig setup is a 4/n with members of the Core Technical Team (CTT) along
 with members of the dAPI team being part of it. When reading dAPIs like e.g.
 BTC/USD, this multi-sig could alter what data is being consumed by pointing the
 dAPI towards a different ID, which can cause intended or unintended damage.
@@ -54,10 +54,8 @@ Compared to managed dAPIs, self-funded dAPIs are maintained by a single
 first-party oracle and are hence susceptible to more risk. Downtime in the used
 API, deployed Airnode or deployed Airseeker to maintain the respective dAPI will
 consequently lead to a stale data point. For this reason, self-funded dAPIs are
-treated as an introduction to API3 as well as a testing ground for data feeds
-and it should be avoided using them in production environments. Instead,
-production use-cases should upgrade to managed dAPIs if their desired data feed
-statisfies their requirements in self-funded form.
+treated as an introduction to API3 as well as a testing ground for data feeds.
+It is recommended that use cases with higher security requirements make use of managed dAPIs.
 
 # Managed dAPIs
 
@@ -65,17 +63,15 @@ statisfies their requirements in self-funded form.
 
 With managed dAPIs, API3 takes over the gas management overhead that is
 associated with running dAPIs. The underlying Beacons/Beacon Set of a dAPI are
-kept up to date through Airseeker, which is a serverless function that collects
-signed data from the respective underlying Airnodes of a Beacon/Beacon Set
-through Airnodes HTTP-Gateway and updates them on-chain through the usage of
+kept up to date through by collecting signed data from the respective underlying Airnodes of a Beacon/Beacon Set
+through Airnodes HTTP-Gateway and updating them on-chain through the usage of
 `updateBeaconWithSignedData` or `updateBeaconSetWithSignedData` respectively.
-API3 is running multiple Airseekers with dedicated wallets that are monitored
+API3 is operating multiple Airnodes with dedicated wallets that are monitored
 and kept funded. However, the setup in it's current form is dependend on API3 to
-maintain Beacons/Beacon Sets in both running Airseekers and having sufficient
+maintain Beacons/Beacon Sets in both pushing data on-chain and having sufficient
 funds available to cover associated network costs. Additional ways of keeping
 Beacons/Beacon Sets updated without relying on API3 are currently being
-developed and will be introduced as a decentralized alternative alongside using
-Airseeker.
+developed and will be introduced as a decentralized alternative alongside the current implementation.
 
 ###
 

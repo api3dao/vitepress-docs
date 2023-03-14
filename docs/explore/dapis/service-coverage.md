@@ -26,22 +26,17 @@ decentralized API and access data feed services. There are two types of dAPIs:
 # Self-funded dAPIs
 
 Self-funded dAPIs currently rely on a single first-party oracle. They offer
-developers the opportunity to experience data feeds with minimal up-front
-commitment, providing a low commitment and permissionless option for developers
-prior to using a managed dAPIs.
+developers the opportunity to make use of data feeds with minimal up-front commitment and are accessible permissionlessly for developers. 
 
 ### Using Self-funded dAPIs
 
-Self-funded dAPIs requires users to provide collateral for a sponsor wallet,
-activating oracle transactions. Once funds are available in the sponsor wallet
-data feed updates will begin automatically.
+Self-funded dAPIs require users to provide funds necessary for creating on-chain transaction to a a sponsor wallet.
+Once sufficient funds are available, updates will begin automatically within a 15 minute window. 
+In accordance with deviation thresholds and heartbeat these funds will be used to maintain the on-chain price of the respective dAPI until they are depleted. 
+
 
   <img src="../assets/images/09-Visual_that_communicates_how_a_self-funded_feed_works.png" width="550px"/>
 
-In the same way, the data feed will stop being updated if the required funds for
-updates are not sufficiently available anymore. As users fund the sponsor wallet
-to activate the feed in a permissionless fashion, users have the ability to
-self-operate data feeds.
 
 ::: tip Developer info
 
@@ -50,7 +45,7 @@ starter kit](link to API3 DAO starter kit).
 
 :::
 
-<!--API3 does not recommend using self-funded dAPIs in a production environment.
+<!--Self-funded dAPIs currently rely on a single first-party oracle and projects utilizing these in production and high value use cases should consider the risk and security implications. 
 Read more in our
 [security considerations](/explore/dapis/security-considerations.md)-->
 
@@ -92,16 +87,7 @@ A self-funded data feed provides advantages for builders:
 - dApps that may only require data feeds for a short period of time can activate
   a self-funded dAPI as needed
 
-Whilst there are advantages to using a self-funded dAP, users should consider
-the security implications of using the model if the dApp is in production.
 
-::: warning Please note
-
-Self-funded dAPIs currently rely on a single first-party oracle. Therefore,
-users should consider if they provide an appropiate solution when securing funds
-within a DeFi protocol or other scenarios where .
-
-:::
 
 <!--Additionally, the API3 Market provides an intuitive interface to check the
 status of respective self-funded dAPIs and fund them accordingly.-->
@@ -113,19 +99,16 @@ using a median function.
 
 ### Accessing Managed dAPIs
 
-To access a managed data feeds users need to authorize access through the API3
-Market. Self-funded dAPIs can be upgraded by paying for a managed version and
-selecting a desired amount of first-party oracles that should be included in the
-aggregation. API3 will create the respective Beacon Set from the best available
-first-party providers for the requested data set and point the dAPI towards this
-creation.
+A self-funded dAPI can be upgraded to a managed dAPI by paying the API3 DAO. The API3 Market will faciliate this process and allow potential users to specify 
+desired amount of first-party oracles that should be included in the aggregation. API3 will create the respective Beacon Set from the best available
+first-party providers for the requested data set and point the dAPI towards this creation.
 
 <img src="../assets/images/10-Visual_that_communicates_how_a_managed_service_feed.png" width="550px"/>
 
 In addition, API3 takes over the gas management overhead associated with
-operating managed dAPI. Compared to self-funded dAPIs, managed dAPIs are
+operating managed dAPIs. Compared to self-funded dAPIs, managed dAPIs are
 monetized, as API3 requires payment in USDC on Ethereum Mainnet to operate them.
-API3 recommends the usage of managed dAPIs in production environments.
+API3 recommends the usage of managed dAPIs in high value production use cases.
 
 # API3 Market
 
@@ -134,7 +117,7 @@ represents a hub that allows developers to:
 
 - Browse through a catalogue of potential data feeds to integrate
 - Fund their operation in the case of self-funded dAPIs
-- Authorize for the upgrade to a managed version
+- Pay for the upgrade to a managed version
 - Request new data types
 
 You can head to the [API3 Market](https://market.api3.org/dapis) now and use

@@ -14,9 +14,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-A dAPI is the interface that smart contracts connect to access data feed
-services through. Through dAPIs smart contracts connect to continuously updated
-streams of off-chain data, such as the latest cryptocurrency, forex, stock and
+A dAPI is a standardized interface that smart contracts can use to access data feed
+services, that are continuously updated. These can range from the latest cryptocurrency, forex, stock or
 commodity prices.
 
 <!--They can power various decentralized applications such as DeFi
@@ -24,28 +23,22 @@ lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
 
 ### Understanding dAPIs
 
-dAPIs are composed of Beacons, which are first-party data feeds. A Beacon is
-directly powered by the owner of the data, the API provider. Compared to
-third-party oracle solutions, which involve middlemen node operators, this
-approach is secure, transparent, cost-efficient and scalable. API3 composes
-dAPIs out of Beacons, d provides them as turn-key data feed solutions on many
-chains.
+dAPIs are composed of a Beacon or a set of Beacons, which are first-party data feeds. A Beacon is
+directly powered and maintained on-chain by the owner of the data, the API provider, which effectively removes third-party middlemen that other oracle solutions rely on. This 
+approach creates source transparency in addition to, higher security, cost-efficiency and scalability through less parties being involved in the oracle service operation. 
 
 ### dAPIs connect smart contracts to first-party data feeds
 
 Through the use of the function `setDapiName` API3 can associate the ID of a
-Beacon or Beacon Set with a human-readable name like AVAX/USD. The benefit of
+Beacon or Beacon Set with a human-readable name like ETH/USD. The benefit of
 this approach is that the dApps continue reading the same dAPI name through
 `readDataFeedWithDapiName` without being required to make any changes to their
 oracle specifications, effectively turning dAPIs into a turn-key data feed
 solution for smart contract engineers.
 
 At the core, a **dAPI** is a mapping that points towards a **Beacon** or a
-**Beacon Set**, similarly to how an ENS name is mapped to a wallet address. As
-such a dAPI is the interface to securely connect to a variety of oracle services
-such as price reference feeds or other data feeds used within DeFi.
-
-This makes it possible for the API3 DAO to take over the management overhead
+**Beacon Set**, similarly to how an ENS name is mapped to a wallet address.
+The ability to control this mapping allows the API3 DAO to take over the management overhead
 that is associated with oracle infrastructure by e.g. creating a new Beacon Set
 if one first-party oracle becomes unavailable and pointing the name "AVAX/USD"
 towards the newly created ID.
