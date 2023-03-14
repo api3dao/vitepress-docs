@@ -23,13 +23,11 @@ context of an asset price data feed.
 ## With API3 Market proxy contracts
 
 When using a API3 Market proxy contract a smart contract does not need to use a
-`dapiName` as a parameter to the `read()` function inside the proxy contract.
-The `dapiName` is integrated for you when the proxy contract is deployed by the
-API3 Market UI. You can create more than one proxy contract where each is tied
-to a single dAPI. If you want to use a different dAPI just update the proxy
-contract address you'll be reading from inside you smart contract. See the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn how to create and use a proxy contract.
+`dapiName` as a parameter to the `read()` function inside a proxy contract. The
+`dapiName` is integrated into the proxy contract when it is deployed by the API3
+Market UI. There are thousands of dAPIs available across many chains. Use the
+API3 Market to find a desired dAPI and acquire the adddress to its proxy
+contract. See the guide
 
 <!--
 ## With DapiServer functions
