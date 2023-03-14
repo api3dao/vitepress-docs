@@ -23,7 +23,7 @@ module.exports = [
       },*/
     ],
   },
-  {
+  /*{
     text: 'Airnode',
     collapsed: false,
     items: [
@@ -70,8 +70,8 @@ module.exports = [
         link: '/guides/airnode/become-api-provider',
       },
     ],
-  },
-  {
+  },*/
+  /*{
     text: 'QRNG',
     collapsed: false,
     items: [
@@ -96,8 +96,8 @@ module.exports = [
         link: '/guides/qrng/youtube-demos/',
       },
     ],
-  },
-  {
+  },*/
+  /*{
     text: 'DAO Members',
     collapsed: false,
     items: [
@@ -122,7 +122,7 @@ module.exports = [
         link: '/guides/dao-members/videos',
       },
     ],
-  },
+  },*/
   {
     text: 'Miscellaneous',
     collapsed: false,

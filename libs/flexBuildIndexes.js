@@ -19,14 +19,14 @@ let indexLatest = new Index({
 });
 // The latest docsets
 let latestDocsets = [
-  '/dist/explore/',
-  '/dist/guides/',
-  '/dist/reference/qrng/',
-  '/dist/reference/dao-members/',
-  '/dist/reference/chainapi/',
+  '/dist/explore/introduction/',
+  '/dist/explore/dapis/',
+  '/dist/guides/dapis/',
+  //'/dist/reference/qrng/',
+  //'/dist/reference/dao-members/',
   '/dist/reference/dapis/',
-  '/dist/reference/airnode/latest/',
-  '/dist/reference/ois/latest/',
+  //'/dist/reference/airnode/latest/',
+  //'/dist/reference/ois/latest/',
 ];
 
 /**
