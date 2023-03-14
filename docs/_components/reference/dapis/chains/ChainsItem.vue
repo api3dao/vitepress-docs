@@ -3,27 +3,26 @@
 -->
 
 <template>
-  <div class="api3-bc-chains-name">
-    <a :href="chain.explorerUrl"
+  <div>
+    <a class="api3-bc-chains-name" :href="chain.explorerUrl"
       >{{ chain.fullName }} <ExternalLinkImage />
-
-      <div class="api3-bc-chain-token">
-        {{ chain.nativeToken }}
-      </div>
-
-      <div class="api3-bc-chains-id">
-        Id: <b>{{ chain.id }}</b>
-      </div>
-
-      <!-- Contracts -->
-      <!--div class="bc-chains-contract-address">
-      AirnodeRrpV0: <span>{{ chain.contracts['AirnodeRrpV0'] }}</span
-      ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" />
-      <br />DapiServer:
-      <span>{{ chain.contracts['DapiServer'] }}</span
-      ><CopyIcon :text="chain.contracts['DapiServer']" />
-    </div-->
     </a>
+
+    <div class="api3-bc-chain-token">
+      {{ chain.nativeToken }}
+    </div>
+
+    <div class="api3-bc-chains-id">
+      Id: <b>{{ chain.id }}</b>
+    </div>
+
+    <!-- Contracts -->
+    <div class="api3-bc-chains-contract-address">
+      <!--AirnodeRrpV0: <span>{{ chain.contracts['AirnodeRrpV0'] }}</span
+        ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" /> <br /> -->
+      Api3ServerV1.sol: <span>{{ chain.contracts['DapiServer'] }}</span
+      ><CopyIcon :text="chain.contracts['DapiServer']" />
+    </div>
   </div>
 </template>
 
@@ -39,7 +38,6 @@ export default {
   font-size: large;
   font-weight: bold;
   margin-bottom: 5px;
-  cursor: pointer;
 }
 .api3-bc-chains-short-name {
   font-size: small;
@@ -56,9 +54,10 @@ export default {
   font-size: small;
   color: gray;
 }
-/*.api3-bc-chains-contract-address {
+.api3-bc-chains-contract-address {
   font-family: courier;
   font-size: small;
   margin-top: 3px;
-}*/
+  color: gray;
+}
 </style>

@@ -24,7 +24,7 @@ contract. API3 cannot alter values from API providers.
 
 Also consider the decentralized nature of the API3 DAO. A true DAO that operates
 transparently with regards to all of its management practices. All
-[API3 sources code<ExternalLinkImage/>](https://github.com/orgs/api3dao/repositories?type=all)
+[API3 source code<ExternalLinkImage/>](https://github.com/orgs/api3dao/repositories?type=all)
 is open sourced and can be verified by anyone. Consider reading through API3
 source code to verify claims of security. Questions, jump on
 [Discord](https://discord.com/channels/758003776174030948/765618225144266793).
