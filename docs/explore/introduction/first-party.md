@@ -34,7 +34,7 @@ decentralized applications can make requests to the oracle and receive
 responses. Certain protocols may be more appropiate depending on how an oracle
 node is being utilized.
 
-::: tip Key takeout
+::: warning Key takeout
 
 1. The oracle node is a traditional application that needs hosting.
 2. The protocol smart contract is deployed on-chain and runs trustlessly, i.e.,
