@@ -498,8 +498,8 @@ be used to allow all origins.
 
 (required) - OEV gateway is used in the OEV flow to sign the data won in the
 auction. See the
-[OEV Gateway](../../grp-providers/guides/build-an-airnode/oev-gateway.md)
-documentation for more info.
+[OEV Gateway](/reference/airnode/latest/understand/oev-gateway.md) documentation
+for more info.
 
 #### `oevGateway.enabled`
 

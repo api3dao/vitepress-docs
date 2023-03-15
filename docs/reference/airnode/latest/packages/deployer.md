@@ -82,7 +82,7 @@ airnode-deployer deploy \
   If you need help setting up an AWS IAM user you can follow
   [this video tutorial](https://www.youtube.com/watch?v=bT19B3IBWHE). Note that
   this step is done for you when using the Docker
-  [deployer image](../docker/deployer-image.md).
+  [deployer image](/reference/airnode/latest/docker/deployer-image.md).
 
 ### Setup
 

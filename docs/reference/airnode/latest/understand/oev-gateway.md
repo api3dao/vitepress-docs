@@ -64,13 +64,15 @@ endpoints are not openly accessible. Therefore, the gateway URL should be kept
 secret.
 
 The gateway URL is also available as part of the payload sent from Airnode's
-[heartbeat](./heartbeat.md) to your specified heartbeat URL.
+[heartbeat](/reference/airnode/latest/understand/heartbeat.md) to your specified
+heartbeat URL.
 
 ### When deployed on a cloud provider
 
 A gateway URL is generated when Airnode is deployed. You can see the URLs
 including the secret `UUID` path parameter, displayed on your terminal at the
-end of an Airnode deployment using a [Docker image](../../docker/).
+end of an Airnode deployment using a
+[Docker image](/reference/airnode/latest/docker/).
 
 ### When using Airnode client
 
@@ -78,7 +80,8 @@ Airnode client can be used to run Airnode as a docker container locally. There
 is a common web server for the gateway, which is exposed on the host machine.
 Doing so will make the gateway API accessible like a regular web server running
 on the machine. Note the `PORT` which is exposed as part of the Airnode client
-container. See the [Airnode client usage](../../docker/client-image.md#usage)
+container. See the
+[Airnode client usage](/reference/airnode/latest/docker/client-image.md#usage)
 for more details.
 
 - `http://localhost:<PORT>/sign-oev/01234567-abcd-abcd-abcd-012345678abc` -
