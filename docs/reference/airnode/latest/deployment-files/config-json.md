@@ -344,6 +344,11 @@ An object containing general deployment parameters of an Airnode.
     "maxConcurrency": 20,
     "corsOrigins": []
   },
+  "oevGateway": {
+    "enabled": true,
+    "maxConcurrency": 20,
+    "corsOrigins": []
+  },
   "logFormat": "json",
   "logLevel": "INFO"
 }
@@ -488,6 +493,31 @@ set.
 `if httpSignedDataGateway.enabled is true`</span>) - A list of allowed origins.
 An empty array (`[]`) can be used to disable CORS and the wildcard (`['*']`) can
 be used to allow all origins.
+
+### `oevGateway`
+
+(required) - OEV gateway is used in the OEV flow to sign the data won in the
+auction. See the
+[OEV Gateway](../../grp-providers/guides/build-an-airnode/oev-gateway.md)
+documentation for more info.
+
+#### `oevGateway.enabled`
+
+(required) - Enable or disable, using `true` or `false`, the OEV gateway.
+
+#### `oevGateway.maxConcurrency`
+
+(required: <span style="font-size:small;color:gray;">
+`if oevGateway.enabled is true`</span>) - A number higher than zero representing
+the maximum number of serverless functions serving OEV gateway requests running
+at the same time. When omitted, there is no maximum concurrency set.
+
+#### `oevGateway.corsOrigins`
+
+(required: <span style="font-size:small;color:gray;">
+`if oevGateway.enabled is true`</span>) - A list of allowed origins. An empty
+array (`[]`) can be used to disable CORS and the wildcard (`['*']`) can be used
+to allow all origins.
 
 ### `logFormat`
 
