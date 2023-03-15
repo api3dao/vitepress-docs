@@ -3,10 +3,10 @@ module.exports = [
     text: '',
 
     items: [
-      /*{
+      {
         text: 'Airnode',
         link: '/reference/airnode/latest/',
-      },*/
+      },
       { text: 'Versions', link: '/reference/airnode/latest/versions' },
       {
         text: 'Cloud Resources',
@@ -57,6 +57,10 @@ module.exports = [
       {
         text: 'HTTP Gateways',
         link: '/reference/airnode/latest/understand/http-gateways',
+      },
+      {
+        text: 'OEV Gateway',
+        link: '/reference/airnode/latest/understand/oev-gateway',
       },
       {
         text: 'Deploying Airnode',
