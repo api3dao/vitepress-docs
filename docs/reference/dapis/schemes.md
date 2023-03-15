@@ -14,23 +14,26 @@ tags:
 
 # {{$frontmatter.title}}
 
-What is the difference between a dAPI name and a Beacon or Beacon set ID? dAPI
-names are the principle means used to get API provider data held by Beacons. Any
-one Beacon, identified by an ID, has a single value. A dAPI may in fact get
-values from several Beacons and average the values, and/or apply other logic,
+An Airnode places the value of a datafeed on-chain into a beacon. Therefore
+beacons are the on-chain persistent state of a datafeed value.
+
+What is the difference between a dAPI name and a beacon or beacon set ID? dAPI
+names are the principle means used to get API provider data held by beacons. Any
+one beacon, identified by an ID, has a single value. A dAPI may in fact get
+values from several beacons and average the values, and/or apply other logic,
 before returning a single value to the reader.
 
-dAPIs can be fluid because they use a publicly known set of Beacons to source
-values from. The list of Beacons could be altered for best-in-time results (e.g.
-Beacon availability) without a reader needing to change the code of its smart
-contract. Beacons could come and go but dAPIs are durable. Because of this
-flexibility it is always best to use the dAPI name rather than Beacon IDs which
-are fixed.
+dAPIs can be fluid because they use a publicly known set of beacons to source
+values from. The list of beacons could be altered for best-in-time results (e.g.
+beacon availability) without a dApp owner needing to change the code of its
+smart contract. Beacons could come and go but dAPIs are durable. Because of this
+flexibility it is always best to use a dAPI, identified by its name, rather than
+beacon IDs which are fixed.
 
-- dAPI name: A human readable name that represents a Beacon or Beacon set. The
+- dAPI name: A human readable name that represents a beacon or beacon set. The
   name is assigned when the dAPI is created and never changes.
-- Beacon ID: The hash of a Beacon's parameters.
-- Beacon set ID: The hash of the Beacon IDs in the Beacon set.
+- Beacon ID: The hash of a beacon's parameters.
+- Beacon set ID: The hash of the beacon IDs in the beacon set.
 
 <!--
 ## dAPI Names

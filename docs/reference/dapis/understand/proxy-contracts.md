@@ -24,20 +24,20 @@ its address) reads from a single predetermined dAPI.
 Currently dPAIs are under an expansive development cycle and in March of 2023
 the first functional **Self-funded dAPIs** were made available.
 
-| Self-funded dAPIs                                     | Managed dAPIs                                         |
-| ----------------------------------------------------- | ----------------------------------------------------- |
-| (March 2023)                                          | \* (Summer 2023)                                      |
-| Single public proxy contract                          | Additional private proxy contracts                    |
-| Single sourced datafeed (beacon) <br/> no aggregation | Multiple sourced datafeeds (beacons)                  |
-| Gas costs are community funded                        | Gas costs are managed by API3 using<br/> upgrade fees |
+| Self-funded dAPIs                           | Managed dAPIs                                         |
+| ------------------------------------------- | ----------------------------------------------------- |
+| March 2023                                  | \* Summer 2023                                        |
+| Single public proxy contract                | Additional private proxy contracts                    |
+| Sourced from a single<br/>datafeed (beacon) | Sourced from multiple<br/>datafeeds (beacons)         |
+| Gas costs are community funded              | Gas costs are managed <br/>by API3 using upgrade fees |
 
 <div style="margin-left:10px;margin-top:-15px;font-size:small;font-family:courier;">* Managed
 dAPIs are forthcoming, the release date is not available at this time.</div>
 
-Development of dAPIs beyond self-funded and managed dAPIs will include OEV and
-service coverage. More details on these concepts will be forthcoming once
-managed dAPIs are released. Please feel-free to ask questions about the
-evolutions of dAPIs on
+Development and expansion of dAPIs beyond self-funded and managed dAPIs will
+include OEV and service coverage. More details on these concepts will be
+forthcoming once managed dAPIs are released. Please feel-free to ask questions
+about the evolution of dAPIs on
 [Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
 
 ## Self funded dAPIs
@@ -49,11 +49,12 @@ places the dAPI's value on-chain when a deviation threshold is reached.
 
 Any dApp owner can fund a dAPI and any dApp owner can use the dAPI. Meaning that
 if three dApp owners are using the dAPI and only one provides funding, the other
-two would benefit. However this is not best practice for the two that are not
-providing funding as their dApp could fail if the original dApp decides to stop
-providing funding. So the community benefits from a community funding approach.
+two would benefit. However this is not best practice for the two that do not
+provide funding as their dApp could fail if the original dApp decides to
+discontinue further funding. So the community benefits from a community funding
+approach.
 
-### Single sourced datafeed
+### Single source datafeed
 
 Unlike the forthcoming
 [managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis),
@@ -68,7 +69,7 @@ For example, the proxy contract for the self-funded dAPI
 has an address of `0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2` on the Mumbai
 testnet. This is the only proxy contract in existence for this self-funded dAPI
 on Mumbai. Therefore, any dApp can call the above mentioned proxy contract to
-get the price (value) of ZIL/USD using this address.
+get the price (value) of ZIL/USD using its address.
 
 <img src="../assets/images/proxy-self-funded.png" style="width:75%;">
 

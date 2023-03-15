@@ -17,19 +17,25 @@ tags:
 dAPIs are continuously updated streams of off-chain data, such as the latest
 cryptocurrency, stock, and commodity prices. They can power various
 decentralized applications such as DeFi lending, synthetic assets, stable coins,
-derivatives, NFTs and more.
+derivatives, NFTs, and more.
 
 ## Datafeeds stored on-chain
 
 API providers, owners of first-party Airnodes, store datafeed values on-chain as
 individual beacons that in are turn sourced by the
-[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/v1/contracts/dapis/Api3ServerV1.sol)
+[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/Api3ServerV1.sol)
 contract as dAPIs.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
 
 `Api3ServerV1.sol` manages the definitions for thousands of dAPIs, each of which
 is an aggregated value of multiple beacons or the value of a single beacon.
+
+- [Self-funded dAPIs](/reference/dapis/understand/proxy-contracts.md#self-funded-dapis):
+  sourced from a single datafeed (beacon)
+- [Managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis):
+  sourced from multiple datafeeds (beacons)
+
 Functions in `Api3ServerV1.sol` expose dAPIs values to API3 Market
 [proxy contracts](/reference/dapis/understand/proxy-contracts.md). dApps do not
 call the `Api3ServerV1.sol` contract directly but use intuitive proxy contracts
