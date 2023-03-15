@@ -52,6 +52,9 @@
     "httpSignedDataGateway": {
       "enabled": false
     },
+    "oevGateway": {
+      "enabled": false
+    },
     "logFormat": "plain",
     "logLevel": "INFO",
     "nodeVersion": "0.11.0",
