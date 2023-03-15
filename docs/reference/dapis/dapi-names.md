@@ -15,19 +15,19 @@ tags:
 # {{$frontmatter.title}}
 
 A dAPI is a live data point associated with human readable `dapiName`. dAPI
-definitions simplify access and can return aggregated Beacon values or a single
-Beacon value. This is suitable where the more recent data point (meaning its set
-of Beacons could change as needed) is always more favorable, e.g., in the
-context of an asset price data feed.
+definitions simplify access and can return aggregated datafeed (beacon) values
+or a single datafeed (beacon) value. This is suitable where the more recent data
+point (meaning its set of beacons could change as needed) is always more
+favorable, e.g., in the context of an asset price data feed.
 
 ## With API3 Market proxy contracts
 
-When using a API3 Market proxy contract a smart contract does not need to use a
-`dapiName` as a parameter to the `read()` function inside a proxy contract. The
-`dapiName` is integrated into the proxy contract when it is deployed by the API3
-Market UI. There are thousands of dAPIs available across many chains. Use the
-API3 Market to find a desired dAPI and acquire the adddress to its proxy
-contract. See the guide
+When using a API3 Market proxy contract, a dApp smart contract does not need to
+use a `dapiName` as a parameter to the `read()` function inside a proxy
+contract. The `dapiName` is integrated into the proxy contract when it is
+deployed by the API3 Market UI. There are thousands of dAPIs available across
+many chains. Use the API3 Market to find a desired dAPI and acquire the address
+to its proxy contract.
 
 <!--
 ## With DapiServer functions
