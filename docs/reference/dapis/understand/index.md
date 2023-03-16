@@ -41,6 +41,31 @@ Functions in `Api3ServerV1.sol` expose dAPIs values to API3 Market
 call the `Api3ServerV1.sol` contract directly but use intuitive proxy contracts
 to get the value of a dAPI.
 
+## The role of Airnode
+
+Airnode is a flexible off-chain module that can support multiple protocols. Most
+noticeably are its implementation of the request-response protocol (RRP) and
+datafeeds.
+
+An Airnode is owned by an API provider and integrates itself along side their
+API operations. Functionality within Airnode monitors one or more API operations
+hosted by an API provider and looks for a preset deviation of a datafeed value
+(e.g., plus or minus 1%). When the deviation threshold is reached, Airnode
+pushes the new value on-chain into the beacon store. Each beacon represents a
+value from a single API operation.
+
+<img src="../assets/images/beacons-airnode.png" style="width:80%;">
+
+In the diagram above, company ABC has two API operations (B and C) and a single
+Airnode that monitors the API operations. When the deviation threshold is
+reached for either operation it will update the corresponding beacons, in this
+case `1FeexV6A` and `1AC4fMwg`.
+
+Note that company XYZ has an operations (A) that provides the value of ZIL/USD
+just like operation (B) from company ABC. A dAPI can now aggregate the value of
+operations (A) and (B) since they are the same datafeed but from different
+companies.
+
 <!--## Reading dAPIs
 
 dApps can be read dAPIs easily with API3 Market
