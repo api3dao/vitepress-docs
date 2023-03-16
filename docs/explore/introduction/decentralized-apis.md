@@ -31,13 +31,6 @@ from the perspective of a dApp. They have a standardized, user-friendly
 interface that <!--intends to--> abstracts away the technical implementation and
 can be composed of a variety of Airnode protocols. <!-- is this correct?-->
 
-::: info Learn more
-
-Read more about the [oracle protocols](/explore/dapis/what-are-dapis.md) dAPIs
-utilize.
-
-:::
-
 <!--These typically encompass Request-response Protocol (RRP), Publish-subscribe Protocol (PSP),
 relayed RRP, relayed PSP and API-signed data.-->
 
@@ -62,6 +55,13 @@ range of distinct attributes:
 - Through a dAPI smart contract, developers can access additional services such
   as Service Coverage or Oracle Extractable Value.
 
+::: info Read more
+
+Dive into the design decisions about dAPIs by reading
+[dAPIs: APIs for dApps<ExternalLinkImage/>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
+
+:::
+
 ## dAPI Services
 
 dAPIs have been designed to serve builders with data feeds that are appropiate
@@ -72,33 +72,27 @@ of:
 1. Self-funded data feeds (single-source)
 2. Managed data feeds (multi-source)
 
-### 1. Self-funded data feeds
+### 1. Self-funded dAPIs
 
 Self-funded dAPIs provide developers with the tools to use single-source data
-feed services with minimal associated costs and no upfront commitment, served in
-a fully permissionless fashion through the API3 Market. Once gas funds have been
+feed services with no upfront commitment. They are served in a fully
+permissionless fashion through the API3 Market. Once gas funds have been
 provided in the oracle sponsor wallet a dAPI will begin automatically post data
 on-chain when price deviation thresholds are met.
-
-To activate an oracle feed, users must deposit chain-native collateral to a
-designated dAPI sponsor wallet. This collateral will cover the costs of gas for
-oracle transactions.
-
-<img src="../assets/images/09-Visual_that_communicates_how_a_self-funded_feed_works.png" width="550px"/>
-
-<!--Self-funded data feeds are permissionless price reference dAPIs where collateral for an oracle update transaction is provided by the user. Self-funded dAPIs are activated by funding a gas wallet using the API3 Market.-->
 
 Self-funded data feeds are provided as an output of a single first-party oracle
 that triggers price updates on-chain to a 1% deviation threshold. As such these
 dAPIs are appropiate for early-stage of dApp development.
 
-::: tip You can now access self funded data feeds
+#### Activating a self-funded dAPI
 
-<div class="api3-css-nav-box-flex-row">
-    <NavBox type='EXPLORE' id="_access-a-self-funded-data-feed"/>
-</div>
+To activate an oracle feed, users must deposit chain-native collateral to a
+designated dAPI sponsor wallet. This collateral will cover the costs of gas for
+oracle transactions.
 
-:::
+ <img src="../assets/images/Sponsoring_a_feed_overview.png" style="width:500px">
+
+<!--Self-funded data feeds are permissionless price reference dAPIs where collateral for an oracle update transaction is provided by the user. Self-funded dAPIs are activated by funding a gas wallet using the API3 Market.-->
 
 <!--In cases where a single source is deemed insufficient or the overhead of keeping a wallet topped up for oracle services is undesirable, API3 recommends to utilize an ageeegated data feed.-->
 
@@ -106,7 +100,14 @@ API3 suggests using an aggregated data feed when a single source does not
 provide enough reliability, or the costs associated with topping up your wallet
 for oracle services are too prohibitive.
 
-### 2. Managed data feeds (multi-source)
+Follow this quick guide to
+[get started with self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/).
+
+<!--<div class="api3-css-nav-box-flex-row">
+    <NavBox type='EXPLORE' id="_access-a-self-funded-data-feed"/>
+</div>-->
+
+### 2. Managed dAPIs
 
 Managed dAPIs provide aggregated high-quality price reference data served
 on-chain by first-party oracles. dAPIs provide DeFi with a secure and
@@ -123,11 +124,11 @@ maintain dAPIs as part of the managed service.
 <!--Compared to single sourced (byog) dAPIs, API3 and the underlying API providers will also take over the gas management overhead from this point onward until the
 time that the service expires.-->
 
-<img src="../assets/images/10-Visual_that_communicates_how_a_managed_service_feed.png" width="550px"/>
+ <img src="../assets/images/Managed_dAPI_visual.png" style="width:500px">
 
 <!--design illustration-->
 
-### Service coverage
+<!--### Service coverage
 
 API3 provides dAPI users with a quantifiable level of security as on-chain
 service coverage. Staked tokens in the DAO pool are used to cover potential
@@ -137,7 +138,7 @@ financial losses from dAPI malfunctions that the dAPI consumer might incur.
 
 Service coverage is not a live service and will be accessible in the future.
 
-:::
+:::-->
 
 ### Accessing dAPIs
 
@@ -150,6 +151,7 @@ minimal effort.
 
 ::: info Get started
 
-Follow the this quick guide to get started with self-funded dAPIs.
+Follow this quick guide to
+[get started with self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/).
 
 :::

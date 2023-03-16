@@ -34,7 +34,7 @@ decentralized applications can make requests to the oracle and receive
 responses. Certain protocols may be more appropiate depending on how an oracle
 node is being utilized.
 
-::: tip Key takeout
+::: warning Key takeout
 
 1. The oracle node is a traditional application that needs hosting.
 2. The protocol smart contract is deployed on-chain and runs trustlessly, i.e.,
@@ -59,6 +59,8 @@ API3's Airnode is a first-party oracle as the node is hosted in the
 infrastructure of the API provider. Likewise, this means protocols serving data
 do so in a first-party manor.
 
+<img src="../assets/images/02-What_is_Airnode.png" width="350px"/>
+
 ::: info Learn more
 
 See the article,
@@ -67,7 +69,7 @@ for a comparison of the two types of oracles.
 
 :::
 
-## Advantages of first-party oracles
+## Advantages
 
 For dApps first-party oracles and the data feeds they output offer a range of
 benefits for builders.
@@ -95,9 +97,7 @@ architecture.
 <a href="/api3-whitepaper-v1.0.3.pdf#page=10" target="_blank">API3
 Whitepaper</a><externalLinkImage/> _Issues with Third-Party Oracles as Middlemen_ for a detailed explanation). In contrast, first-party oracles are both secure and cost-efficient due to not having a middleman on the interface path. -->
 
-## First-party oracle governance
-
-### Legacy oracle governance
+<!-- Legacy oracle governance
 
 Traditionally an oracle network makes the same request to multiple independent
 oracles and reduces their responses to a single answer through predetermined
@@ -107,13 +107,13 @@ Individual malicious oracles cannot manipulate the outcome of this process,
 which provides a degree of decentralization and trustlessness. Here, an
 important thing to consider is how the oracle network is governed.
 
-<img src="../assets/images/central-governance.png" width="300"/> >
 <img src="../assets/images/decentral-governance.png" width="300"/>
 
-<!--::: danger TODO
-The diagram above and below do not illustrate the governance issue well. They
-need to be blended into one. Or maybe they go away.
+02-b-First*vs_Third_party_oracles-Descentralized_API*(dAPI)
+
 ::: -->
+
+## First-party oracle governance
 
 If a central entity can switch the oracles or APIs used in the aggregator in and
 out, or even replace the aggregator itself making use of a proxy mechanism, they
@@ -123,14 +123,6 @@ This eliminates the decentralization and trustlessness qualities that using an
 oracle network provides. Therefore, it is not adequate to use an oracle network
 to achieve decentralization, this oracle network must be governed decentrally as
 well.
-
-::: info Learn more
-
-See the medium article,
-[Why API3 DAO?<externalLinkImage/>](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
-on DAOs and decentralized governance.
-
-:::
 
 ### Decentrally governed oracles
 
@@ -143,7 +135,7 @@ API connectivity problem. Consider the following:
 3. For API level decentralization, decentrally-governed oracle networks should
    be employed.
 
-> <img src="../assets/images/dapi.png" width="350"/>
+   <img src="../assets/images/02-b-First_vs_Third_party_oracles-Descentralized_API_(dAPI).png" width="500"/>
 
 API3 delivers decentralized interfaces to APIs to facilitate this through
 governance.
@@ -155,6 +147,14 @@ A decentralized API is a product which contains:
 
 By taking advantage of the advantages offered by decentralization, developers
 can build applications with elevated security and trustworthiness.
+
+::: info Learn more
+
+See the medium article,
+[Why API3 DAO?<externalLinkImage/>](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
+on DAOs and decentralized governance.
+
+:::
 
 <!--
 Due to being defined as a full product rather than an interface, unlike a
