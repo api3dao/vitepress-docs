@@ -14,54 +14,49 @@ tags:
 
 # {{$frontmatter.title}}
 
-dAPIs are continuously updated streams of off-chain data, such as the latest
-cryptocurrency, stock and commodity prices. They can power various decentralized
-applications such as DeFi lending, synthetic assets, stable coins, derivatives,
-NFTs and more.
+A dAPI is a standardized interface that smart contracts can use to access data
+feed services, that are continuously updated. These can range from the latest
+cryptocurrency, forex, stock or commodity prices.
 
-dAPIs are composed of Beacons, which are first-party data feeds. A Beacon is
-directly powered by the owner of the data, the API provider. Compared to
-third-party oracle solutions, which involve middlemen node operators, this
-approach is secure, transparent, cost-efficient and scalable. API3 composes
-dAPIs out of Beacons, and provides them as turn-key data feed solutions on many
-chains.
+<!--They can power various decentralized applications such as DeFi
+lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
 
-## Introducing dAPIs
+### Understanding dAPIs
 
-A dAPI is the interface that smart contracts connect to access data feed
-services through.
+dAPIs are composed of a Beacon or a set of Beacons, which are first-party data
+feeds. A Beacon is directly powered and maintained on-chain by the owner of the
+data, the API provider, which effectively removes third-party middlemen that
+other oracle solutions rely on. This approach creates source transparency in
+addition to, higher security, cost-efficiency and scalability through less
+parties being involved in the oracle service operation.
+
+### dAPIs connect smart contracts to first-party data feeds
 
 Through the use of the function `setDapiName` API3 can associate the ID of a
-Beacon or Beacon Set with a human-readable name like AVAX/USD. The benefit of
+Beacon or Beacon Set with a human-readable name like ETH/USD. The benefit of
 this approach is that the dApps continue reading the same dAPI name through
 `readDataFeedWithDapiName` without being required to make any changes to their
 oracle specifications, effectively turning dAPIs into a turn-key data feed
 solution for smart contract engineers.
 
+<img src="../assets/images/02-b-First_vs_Third_party_oracles-Descentralized_API_(dAPI).png" width="400"/>
+
 At the core, a **dAPI** is a mapping that points towards a **Beacon** or a
-**Beacon Set**, similarly to how an ENS name is mapped to a wallet address. As
-such a dAPI is the interface to securely connect to a variety of oracle services
-such as price reference feeds or other data feeds used within DeFi.
+**Beacon Set**, similarly to how an ENS name is mapped to a wallet address. The
+ability to control this mapping allows the API3 DAO to take over the management
+overhead that is associated with oracle infrastructure by e.g. creating a new
+Beacon Set if one first-party oracle becomes unavailable and pointing the name
+"AVAX/USD" towards the newly created ID.
 
-This makes it possible for the API3 DAO to take over the management overhead
-that is associated with oracle infrastructure by e.g. creating a new Beacon Set
-if one first-party oracle becomes unavailable and pointing the name "AVAX/USD"
-towards the newly created ID.
-
-::: info Read more
-
-Learn more about dAPIs by reading
-[dAPIs: APIs for dApps<ExternalLinkImage/>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
-
-:::
-
-## What is a Beacon or a Beacon Set?
+### What is a Beacon or a Beacon Set?
 
 A Beacon is a point of data that is kept alive on-chain by a respective
 first-party oracle. It corresponds to an ID which is derived from the hash of
 the Airnode address that is deployed by an API Provider, in combination with the
 request parameters. This resulting ID will always represent a specific provider
 with specific request parameters and cannot be changed.
+
+<img src="../assets/images/dAPI_explainer_advanced.png" style="width:500px">
 
 Following the same principle, a Beacon Set is addressed by an ID, which is
 derived from the hash of multiple Beacons. This allows for the creation of
@@ -72,14 +67,7 @@ Values for Beacons or Beacon Sets are kept up to date on-chain on
 [DapiServer.sol<externalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol),
 where they can be read directly through `readDataFeedValueWithId`.
 
-::: info Read more
-
-Learn how Beacons are the building blocks for
-[Web3 data connectivity<ExternalLinkImage/>](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763).
-
-:::
-
-## Understanding the dAPI Interface
+# dAPI: A standardized interface
 
 dAPIs possess a range of distinct attributes:
 
@@ -92,6 +80,13 @@ dAPIs possess a range of distinct attributes:
   (more on this later).
 - Through a dAPI smart contract, developers can access additional services such
   as Service Coverage or Oracle Extractable Value.
+
+::: info Read more
+
+Dive into the design decisions about dAPIs by reading
+[dAPIs: APIs for dApps<ExternalLinkImage/>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
+
+:::
 
 <!--## Why use dAPIs?
 
@@ -133,40 +128,42 @@ dAPIs also factors into building aggregated data feeds. Since first-party data
 feeds do not require redundancy at the middlemen layer, the aggregation costs
 less gas and source-level decentralization becomes more affordable.-->
 
-## Accessing a dAPI: DapiServer.sol
+## API3Server.sol
 
-Developers use the
-[DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)<externalLinkImage/>
-contract to access dAPIs. `DapiServer.sol` reads directly from its data store of
-Beacons, which are powered by API provider-owned and operated
-[Airnodes](/reference/airnode/latest/). A developer will deploy a proxy contract
-to access the dAPI. Now a developer can easily set the proxy contract address in
-his contract and start reading from the dAPIs.
+A developer will deploy a proxy contract to access a dAPI. Through this proxy
+developers use the
+[API3Server.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)<externalLinkImage/>
+contract to access dAPIs. Now a developer can easily set the proxy contract
+address in his contract and start reading from the dAPIs.
 
-dAPI proxies allow dAPIs to be used like libraries. The smart contract just
-needs to import the interface for calling the proxy contract. To read a
-different dAPI, the contract does not need to change the code itself, rather it
-only needs to use a different proxy address when calling the read() function on
-the proxy contract.
+<img src="../assets/images/dAPI_explainer.png" style="width:500px">
 
-## Understanding the `DapiServer.sol`
+The `API3ServerV1.sol` contract reads directly from its data store of Beacons,
+which are powered by API provider-operated
+[Airnodes](/reference/airnode/latest/). Thus proxies allow dAPIs to be used like
+libraries. The smart contract only needs to import the interface for calling the
+proxy contract.
 
-> <img src="../assets/images/00-a-What_are_dAPIs.png" width="550px"/>
+This means once a dAPI is integrated to read a different data feed, the contract
+does not need to change the code itself, rather it only needs to use a different
+proxy address when calling the read() function on the proxy contract. If the
+dAPI interface has previously been imported, it abstracts away the technical
+implmentation of accessing new data feeds.
+
+### Understanding the `API3ServerV1.sol`
 
 A dAPI can be pointed towards an individual Beacon or an aggregation of multiple
 Beacons (Beacon Set).
 
-> <img src="../assets/images/00-b-What_are_dAPIs.png" width="550px"/>
-
 Each dAPI has a human-readable name (e.g., `AVAX/USD`) that makes them easily
-accessible using `DapiServer.sol`. Simple pass the
+accessible using `API3ServerV1.sol`. Simple pass the
 [encoded bytes32 value](/reference/dapis/) of the `dapiName` to a reader
 function.
 
 ```solidity
 // Reading the AVAX/USD dAPI using the DapiServer contract
-(value, timestamp) =
-  IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("0x415...0000");
+address proxy = "0x415...0000";
+(value, timestamp) = IProxy(proxy).read();
 ```
 
 <TodoLink comment="/guides/dapis/call-dapi-proxy/"/>

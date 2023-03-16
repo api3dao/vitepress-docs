@@ -21,6 +21,8 @@ deliver traditional API services to smart contract platforms in a decentralized
 and trust-minimized way. It is governed by a decentralized autonomous
 organization (DAO), namely the API3 DAO.
 
+<img src="../assets/images/06-a-API3_DAO-Op1.png" style="width:400px">
+
 The goal of API3 is to provide developers with an easy way to access off-chain
 resources from within their smart contracts, without having to worry about the
 security and trust implications of doing so.
@@ -37,7 +39,7 @@ Within this introduction of API3 we will explore;
 - APIs within the blockchain
 - Airnode & First-party oracles
 - Data feeds: Decentralized APIs (dAPIs)
-- API3 Market: Oracle tooling
+- API3 Market
 
 If you wish to view a detailed discussion of the API3 project, read the
 [API3 Whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf).
@@ -48,6 +50,8 @@ An API is used to communicate with a specific application to receive services or
 data from it. It is often a well-defined and documented protocol one can use to
 interact with an application programmatically. This has led to Web2 developers
 integrating APIs to build increasingly complex and capable applications.
+
+<img src="../assets/images/API_use_cases_intro.png" style="width:400px">
 
 In the context of decentralized applications, this definition is quite useless,
 and even misguiding. Instead, we should see APIs as channels businesses use to
@@ -97,11 +101,11 @@ Through simplifying how an API provider can monetize their data within Web3,
 hundreds of Airnodes have been deployed. Once an API has had Airnode deployed
 protocols serve this data on-chain.
 
+<img src="../assets/images/04-Airnode_Design_Philosophy.png" style="width:400px">
+
 <!--These include the Request-Response or
 Publish-Subscribe protocols and depend on the data type and the decentralized
 applications (dApp) use case.-->
-
-> <img src="../assets/images/oracle-map.png" width="450"/>
 
 To ensure API3 provided developers with an easy way to access off-chain
 resources from within their smart contract, Airnode also has range of common
