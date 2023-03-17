@@ -14,41 +14,33 @@ tags:
 
 # {{$frontmatter.title}}
 
-## What is an oracle?
-
 An oracle is an agent that acts as an intermediary between a smart contract
 platform and an API. In other words, a decentralized application can use an
-oracle to call an API. It is important to understand that an oracle consists of
-two parts:
+oracle to call an API. It is important to understand that an oracle can access
+API data in more than one way on behave of a dApp.
 
-**1. The oracle node**
+In a traditional sense, an oracle node acts as a proxy by listening for requests
+made on the blockchain. The oracle then calls the API over the Web and fulfills
+the requests by making transactions on the blockchain. This is known as the
+request-response protocol (RRP). An oracle uses its own smart contracts to
+implement a protocol. This defines how decentralized applications can make
+requests to the oracle and receive responses.
 
-Typically an oracle node acts as a proxy by listening for requests made on the
-blockchain. The oracle then calls the API over the Web and fulfills the requests
-by making transactions on the blockchain.
+Moving beyond the RRP protocol, certain protocols may be more appropriate
+depending on how an oracle node is being utilized such as for datafeeds, which
+have values stored on-chain. In fact datafeeds are what dApp owners desire the
+most. API3 provides datafeeds know as [dAPIs](/explore/dapis/what-are-dapis.md).
 
-**2. Protocol (oracle smart contracts)**
-
-An oracle uses smart contracts to implement the protocol. This defines how
-decentralized applications can make requests to the oracle and receive
-responses. Certain protocols may be more appropiate depending on how an oracle
-node is being utilized.
-
-::: warning Key takeout
-
-1. The oracle node is a traditional application that needs hosting.
-2. The protocol smart contract is deployed on-chain and runs trustlessly, i.e.,
-   no specific party needs to host it.
-
-:::
+The tough question that comes into play, who owns and operates the oracle?
 
 ## First-party oracles
 
 <!-- Based on this information, it looks like simply having an oracle solves the API
 connectivity problem.-->
 
-When considering if an oracle is first or third party, there is an important
-point to consider: Who will host the oracle node?
+When considering if an
+[oracle is first or third party](https://hackernoon.com/the-difference-between-first-party-and-third-party-oracles),
+there is an important point to consider: Who will host the oracle node?
 
 1. If an API provider hosts the oracle node, the oracle is called a first-party
    oracle.
@@ -61,37 +53,29 @@ do so in a first-party manor.
 
 <img src="../assets/images/02-What_is_Airnode.png" width="350px"/>
 
-::: info Learn more
+### Advantages
 
-See the article,
-[First-Party vs Third-Party Oracles](https://hackernoon.com/the-difference-between-first-party-and-third-party-oracles)
-for a comparison of the two types of oracles.
-
-:::
-
-## Advantages
-
-For dApps first-party oracles and the data feeds they output offer a range of
-benefits for builders.
+First-party oracles and the data feeds they provide offer a range of benefits
+for dApp owners.
 
 - **Security:** First-party oracles are more secure because there is no
   middleman on the interface path.
 
-- **Cost Efficiency:** Avoiding the middle man tax means first-party oracles are
+- **Cost efficiency:** Avoiding the middle man tax means first-party oracles are
   cost efficient.
 
 - **Transparency:** Enhanced source transparency means reputation can be gauged
   when looking to utilize real-world data in dApps.
 
-- **Flexibility:** They also are increasingly flexible when it comes to
-  delivering oracle services and first-party data feeds can be utilized in a
-  multitude of ways to best serve the users application.
+- **Signed data:** Data from the API provider is signed before it is pushed
+  through a first-party oracle and onto any chain.
 
-<!--The transparency & immutability of the blockchain ensures the reputation of data providers is brought on chain with the data feeds. The flexibility refers to the ease of associating Airnode with API Providers endpoints and associated API data. -->
+- **Flexibility:** These type of oracles also are increasingly flexible when it
+  comes to delivering oracle services and first-party data feeds can be utilized
+  in a multitude of ways to best serve the users application.
 
-For these reasons, API3 believes in order for us to facilitate meaningful smart
-contract applications with data a first-party oracle provides the optimal
-architecture.
+For these reasons, API3 believes in order to facilitate meaningful dApps,
+first-party oracle must provide an optimal architecture.
 
 <!--Third-party oracles are both insecure and expensive (see the
 <a href="/api3-whitepaper-v1.0.3.pdf#page=10" target="_blank">API3
@@ -146,15 +130,10 @@ A decentralized API is a product which contains:
 2. Decentralized governance and interfaces
 
 By taking advantage of the advantages offered by decentralization, developers
-can build applications with elevated security and trustworthiness.
-
-::: info Learn more
-
-See the medium article,
+can build applications with elevated security and trustworthiness. See the
+medium article,
 [Why API3 DAO?<externalLinkImage/>](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
 on DAOs and decentralized governance.
-
-:::
 
 <!--
 Due to being defined as a full product rather than an interface, unlike a

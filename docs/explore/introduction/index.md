@@ -55,18 +55,16 @@ integrating APIs to build increasingly complex and capable applications.
 
 In the context of decentralized applications, this definition is quite useless,
 and even misguiding. Instead, we should see APIs as channels businesses use to
-monetize their data and services.
-
-::: tip See the article
-
-[APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
-for a more complete background on APIs.
-
-:::
+monetize their data and services. See the medium article
+[APIs: The Digital Glue](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
+for additional background on APIs.
 
 ## The API Connectivity Problem
 
-<!--The fact that a smart contract cannot access API data not presently on the blockchain is commonly known as _the oracle problem_.--> Smart contracts operating on a blockchain are limited in their access to off-chain data, this phenomenon is referred to as the ‘Oracle Problem.' This is only worth consideration because it includes not being able to call the paid APIs described above.
+Smart contracts operating on a blockchain are limited in their access to
+off-chain data, this phenomenon is referred to as the **Oracle Problem**. This
+is only worth consideration because it includes not being able to call the paid
+APIs described above.
 
 All the game theoretic and cryptographic methods proposed for various oracle
 solutions essentially aim to provide smart contracts access to these paid APIs.
@@ -79,16 +77,9 @@ to the lowest levels of the protocol.
 
 Additionally, existing oracle solutions fall short because they fail to make
 this distinction, resulting in inferior solutions that depend on third-party
-oracles and ecosystems that exclude API providers. As such, API3 belives the
-oracle problem is ill-posed, instead we are faced with an API Connectivity
-Problem.
-
-::: tip See the article
-
-[The API Connectivity Problem](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)<ExternalLinkImage/>
-for a more relative information.
-
-:::
+oracles and ecosystems that exclude API providers. As such, API3 believes the
+oracle problem is ill-posed, instead we are faced with an
+[API Connectivity Problem<ExternalLinkImage/>](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636).
 
 ## Airnode
 
@@ -98,29 +89,31 @@ on-chain, without an intermediary, to any decentralized app (dApp) interested in
 their services.
 
 Through simplifying how an API provider can monetize their data within Web3,
-hundreds of Airnodes have been deployed. Once an API has had Airnode deployed
-protocols serve this data on-chain.
+hundreds of Airnodes have been deployed. Once an API is connected to an Airnode,
+API data can be pushed on-chain.
 
 <img src="../assets/images/04-Airnode_Design_Philosophy.png" style="width:400px">
 
-<!--These include the Request-Response or
-Publish-Subscribe protocols and depend on the data type and the decentralized
-applications (dApp) use case.-->
+Airnode also has range of common features built into it. These include
+implementations such as pre and post processing,
+[authentication<ExternalLinkImage/>](https://docs.api3.org/airnode/v0.10/concepts/relay-meta-auth.html),
+or
+[authorizations<ExternalLinkImage/>](https://docs.api3.org/airnode/v0.10/concepts/authorizations.html),
+to name a few.
 
-To ensure API3 provided developers with an easy way to access off-chain
-resources from within their smart contract, Airnode also has range of common
-features built into it. These include functions such as pre & post processing or
-authentication, to name a few.
+### Self operating
 
-::: tip Learn
+At its core, Airnode brings the ability for API providers to easily run their
+own [first-party oracle](/explore/introduction/first-party.md) nodes. Doing so
+means that it is the API provider's Airnode that places its signed API data
+on-chain.
 
-Read more on how [Airnode works](/explore/airnode/what-is-airnode.md).
+## More related material...
 
-:::
+Read more on how [Airnode works](https://docs.api3.org/airnode/v0.10/).
 
-### Summary
+[API Connectivity Problem<ExternalLinkImage/>](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)
 
-Enabling the oracle to be operated by the API Provider data itself means
-requested data is served on-chain directly from the source. Thus at its core,
-Airnode brings the ability for API providers to easily run their own
-[first-party oracle](/explore/introduction/first-party.md) nodes.
+[API3 whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
+
+[APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)

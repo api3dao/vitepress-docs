@@ -21,14 +21,14 @@ possible.
 
 ### What is the API3 Market?
 
-The API3 Market provides tooling for Smart contract developers access dAPIs.
-Through the [API3 Market<ExternalLinkImage/>](https://market.api3.org) data
-feeds are easily searched, monitored, and consumed.
+The API3 Market provides tooling for dApp owners to access dAPIs. Use the
+[API3 Market<ExternalLinkImage/>](https://market.api3.org) to search for dAPIs,
+obtain dAPI proxy contract addresses, and monitor dAPIs..
 
 <img src="../assets/images/API3_market_march2023_v1.png" style="width:1200px">
 
 From the API3 Market developers will manage all data feed subscriptions. Once
-the dAPI interface has been imported to a dApps contracts, upgrading a data feed
+the dAPI interface has been imported to a dApps contract, upgrading a data feed
 happens through the API3 Market.
 
 ### Get started with self-funded dAPIs
@@ -42,9 +42,9 @@ Currently, self-funded dAPIs can be accessed through a quick and simple process:
 <img src="../assets/images/self_funded_market_process_notext.png" style="width:500px">
 
 Self-funded data feeds are currently accessible at the
-[API3 Market](https://market.api3.org), with managed data feeds launching in the
-coming months.
+[API3 Market<ExternalLinkImage/>](https://market.api3.org), with managed data
+feeds launching in the coming months.
 
-Whilst the API3 Market UI is intuitive you can
-[follow a simple guide to sponsor, activate and read](/guides/dapis/subscribing-self-funded-dapis/)
-a self-funded dAPI.
+While the API3 Market UI is intuitive, follow this
+[simple guide](/guides/dapis/subscribing-self-funded-dapis/) to sponsor,
+activate and read a self-funded dAPI.
