@@ -49,7 +49,7 @@ module.exports = [
       },
       {
         text: 'OEV enabled dAPIs',
-        link: '/explore/dapis/oev',
+        link: '/explore/dapis/OEV',
       },
     ],
   },
