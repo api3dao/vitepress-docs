@@ -3,7 +3,7 @@ title: Reading dAPIs
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/understand/red-dapis.html
+path: /reference/dapis/understand/read-dapis.html
 outline: deep
 tags:
 ---
