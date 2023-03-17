@@ -3,7 +3,7 @@ title: How are dAPIs maintained?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/how-are-dapis-maintained.html
+path: /explore/dapis/how-are-dAPIs-maintained.html
 outline: deep
 tags:
 ---
