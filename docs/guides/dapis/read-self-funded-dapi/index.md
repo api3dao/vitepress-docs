@@ -34,20 +34,35 @@ on the proxy contract.
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity 0.8.17;
 
-contract MyContract  {
-    import "@api3/airnode-protocol-v1/contracts/dapis/proxies/interfaces/IDapiProxy.sol";
-    import "@openzeppelin/contracts/ownership/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@api3/contracts/v0.8/interfaces/IProxy.sol";
 
-    address dapiProxy;
+contract DataFeedReaderExample is Ownable {
+    // This contract reads from a single proxy. Your contract can read from multiple proxies.
+    address public proxy;
 
-    function setDapiProxyAddress(address _proxyAddress) public onlyOwner {
-        dapiProxy = _proxyAddress;
+    // Updating the proxy address is a security-critical action. In this example, only
+    // the owner is allowed to do so.
+    function setProxy(address _proxy) public onlyOwner {
+        proxy = _proxy;
     }
 
-    function readDapi public view returns (int224 value, uint32 timestamp) {
-        return IDapiProxy(dapiProxy).read();
+    function readDataFeed()
+        external
+        view
+        returns (int224 value, uint256 timestamp)
+    {
+        (value, timestamp) = IProxy(proxy).read();
+        // If you have any assumptions about `value` and `timestamp`, make sure
+        // to validate them right after reading from the proxy.
     }
 }
 ```
+
+For more information on how to read from a self-funded dAPI proxy, please refer
+to the
+[datafeed-reader-exomple](https://github.com/api3dao/data-feed-reader-example)
+repository which contains a hardhat project with a sample smart contract that
+reads from a self-funded dAPI proxy.
