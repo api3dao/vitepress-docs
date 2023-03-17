@@ -112,7 +112,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → dAPIs",
-    "path": "/explore/dapis/oev.html",
+    "path": "/explore/dapis/OEV.html",
     "outline": "deep",
     "tags": null
   },
@@ -121,7 +121,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → dAPIs",
-    "path": "/explore/dapis/how-are-dapis-maintained.html",
+    "path": "/explore/dapis/how-are-dAPIs-maintained.html",
     "outline": "deep",
     "tags": null
   },
@@ -1157,7 +1157,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/understand/red-dapis.html",
+    "path": "/reference/dapis/understand/read-dapis.html",
     "outline": "deep",
     "tags": null
   },

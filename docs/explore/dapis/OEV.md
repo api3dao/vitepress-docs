@@ -3,7 +3,7 @@ title: Oracle Extractable Value
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → dAPIs
-path: /explore/dapis/oev.html
+path: /explore/dapis/OEV.html
 outline: deep
 tags:
 ---
