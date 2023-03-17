@@ -2,8 +2,8 @@
 title: Subscribing to Self-Funded dAPIs
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → API3 Market
-path: /guides/dapis/subscribing-self-funded-dapis/
+pageHeader: Guides → dAPIs
+path: /guides/dapis/subscribing-self-funded-dapis/index.html
 outline: deep
 tags:
 ---
@@ -35,31 +35,39 @@ will be available to your users at all times.
 
 ## API3 Market
 
-The [API3 Market](https://market.api3.org) provides all the tooling to
-seamlessly access dAPI services. For self-funded data feeds this end-to-end
-process consists of:
+The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
+tooling to seamlessly access dAPI services. For self-funded data feeds this
+end-to-end process consists of:
 
-- [{{$frontmatter.title}}](#frontmattertitle)
-  - [API3 Market](#api3-market)
-  - [1. Exploring and selecting your data feed](#1-exploring-and-selecting-your-data-feed)
-  - [2. Funding a sponsor wallet](#2-funding-a-sponsor-wallet)
-  - [3. Deploying a proxy contract to access the data feed](#3-deploying-a-proxy-contract-to-access-the-data-feed)
-    - [3a. Deploying a proxy contract during funding](#3a-deploying-a-proxy-contract-during-funding)
-    - [3b. Deploying a proxy contract from the API3 Market details page](#3b-deploying-a-proxy-contract-from-the-api3-market-details-page)
-    - [3c. Verifying the deployed proxy contract](#3c-verifying-the-deployed-proxy-contract)
+<p>
+1. Exploring and selecting your data feed <br/>
+2. Funding a sponsor wallet <br/>
+3. Deploying a proxy contract to access the data feed <br/>
+ <span style="margin-left:20px;">
+ 3a. Deploying a proxy contract during funding <br/>
+ </span>
+ <span style="margin-left:20px;">
+ 3b. Deploying a proxy contract from the API3 Market details page <br/>
+ </span>
+ <span style="margin-left:20px;">
+ 3c. Verifying the deployed proxy contract <br/>
+ </span>
+</p>
 
 ## 1. Exploring and selecting your data feed
 
-The [API3 Market](https://market.api3.org) provides a list of all the dAPIs
-available across multiple chains including testnets. You can filter the list by
-chains and data providers. You can also search for a specific dAPI by name. Once
-selected you will land on the details page where you can find more information
-about the dAPI.
+The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides a list
+of all the dAPIs available across multiple chains including testnets. You can
+filter the list by chains and data providers. You can also search for a specific
+dAPI by name. Once selected you will land on the details page where you can find
+more information about the dAPI.
 
 ::: info Request a feed
 
 In case you cannot find the desired dAPI on the API3 Market, you can request a
-new feed using this form(link to request new feed). //TODO: update this
+new feed using
+[<span style="color:rgb(16, 185, 129);">this form<ExternalLinkImage/></span>](https://api3dao.typeform.com/to/yT2Gt2fd)
+which is also available on the API3 Market website.
 
 :::
 
@@ -94,7 +102,7 @@ time.
   <img src="../../assets/images/gas-estimator.png" />
 </p>
 
-::: warning Estimation is not accurate
+::: warning Estimation is not 100% accurate
 
 The estimation is calculated assuming there are 10 oracle updates per day on the
 current gas costs of the respective chain. Users need to be aware that any
@@ -195,8 +203,9 @@ to the correct `dapiNameHash` and `dapiServer` address. This can be done by
 viewing the code of the proxy on the block explorer.
 
 The `dapiServer` address should be the same as the address of the `Dapiserver`
-contract. Please refer to this [link](/reference/dapis/chains.md) for the
-contract address of the `Dapiserver` contract on different chains.
+contract. Refer to the
+[chains and contract addresses](/reference/dapis/chains.md) page for the address
+of the `Dapiserver` contract on different chains.
 
 The `dapiNameHash` should be the same as the `dapiNameHash` of the dAPI you are
 using which can be computed using the following cli commands:

@@ -22,7 +22,7 @@ loaded on a compatible browser.
 
 ## 1. Go to the ChainList website
 
-Use the [ChainList<ExternalListImage/>](https://chainlist.org/) website and
+Use the [ChainList<ExternalLinkImage/>](https://chainlist.org/) website and
 search for Mumbai, ensure that the Testnets checkbox is enabled.
 
 <img src="./src/image1.png" style="width:70%;border:solid lightgrey 1px;">
