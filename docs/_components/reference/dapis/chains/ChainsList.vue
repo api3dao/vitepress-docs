@@ -52,6 +52,7 @@ export default {
         const response = await axios.get(
           'https://db-api-staging.api3.org/api/docs-chains-reference'
         );
+        //console.log(response.data);
         this.chains = response.data;
         this.chainsCnt = Object.keys(this.chains).length; //keys.length;
       } catch (err) {
