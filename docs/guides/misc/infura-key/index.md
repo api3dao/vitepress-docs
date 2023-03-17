@@ -20,8 +20,9 @@ page. Infura provides access to Sepolia with its free plan.
 
 ## 1. Access your account
 
-To get started go to [Infura](https://www.infura.io) and create an account if
-you do not have one. If you do login. Infura will present your dashboard.
+To get started go to [Infura<ExternalLinkImage/>](https://www.infura.io) and
+create an account if you do not have one. If you do login. Infura will present
+your dashboard.
 
 ## 2. Create a key
 
@@ -55,9 +56,10 @@ blockchain provider URL.
 https://sepolia.infura.io/v3/ec3dda...b3618a2
 ```
 
-## More related material...
+<!--## More related material...
 
 <div class="api3-css-nav-box-flex-row">
     <NavBox type='REFERENCE' id="_airnode-quick-start-aws"/>
     <NavBox type='REFERENCE' id="_airnode-quick-start-gcp"/>
 </div>
+-->

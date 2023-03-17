@@ -23,6 +23,7 @@
   "1285": { "fullname": "Moonriver", "type": "mainnet" },
   "1287": { "fullname": "Moonbase Alpha testnet", "type": "testnet" },
   "1294": { "fullname": "Boba Moonbeam", "type": "mainnet" },
+  "1442": { "fullname": "zkEVM testnet", "type": "testnet" },
   "2001": { "fullname": "Milkomeda", "type": "mainnet" },
   "4002": { "fullname": "Fantom testnet", "type": "testnet" },
   "42161": { "fullname": "Arbitrum One", "type": "mainnet" },

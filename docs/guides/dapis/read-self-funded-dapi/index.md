@@ -22,7 +22,7 @@ tags:
 
 This section assumes that you have already deployed a self-funded dAPI proxy. If
 you have not done so, please follow this guide on
-[subscribing to self-funded dapis](/guides/dapis/subscribing-self-funded-dapis/index.md).
+[<span style="color:rgb(16, 185, 129);">subscribing to self-funded dapis</span>](/guides/dapis/subscribing-self-funded-dapis/index.md).
 
 :::
 
@@ -63,6 +63,6 @@ contract DataFeedReaderExample is Ownable {
 
 For more information on how to read from a self-funded dAPI proxy, please refer
 to the
-[datafeed-reader-exomple](https://github.com/api3dao/data-feed-reader-example)
+[datafeed-reader-example](https://github.com/api3dao/data-feed-reader-example)
 repository which contains a hardhat project with a sample smart contract that
 reads from a self-funded dAPI proxy.

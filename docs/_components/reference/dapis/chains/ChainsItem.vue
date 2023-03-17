@@ -18,10 +18,15 @@
 
     <!-- Contracts -->
     <div class="api3-bc-chains-contract-address">
-      <!--AirnodeRrpV0: <span>{{ chain.contracts['AirnodeRrpV0'] }}</span
-        ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" /> <br /> -->
-      Api3ServerV1.sol: <span>{{ chain.contracts['DapiServer'] }}</span
-      ><CopyIcon :text="chain.contracts['DapiServer']" />
+      Api3ServerV1.sol: <span>{{ chain.contracts['Api3ServerV1'] }}</span
+      ><CopyIcon :text="chain.contracts['Api3ServerV1']" /> <br />
+
+      DapiServer.sol:
+      <span>{{ chain.contracts['DapiServer'] }}</span
+      ><CopyIcon :text="chain.contracts['DapiServer']" /> <br />
+
+      AirnodeRrpV0.sol: <span>{{ chain.contracts['AirnodeRrpV0'] }}</span
+      ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" />
     </div>
   </div>
 </template>
