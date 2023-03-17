@@ -1,18 +1,13 @@
 {
-  "_dapi-just-the-code": {
-    "btnURL": "/guides/dapis/just-the-code.html",
-    "title": "Calling a dAPI - just the code",
-    "content": "Code examples of a simple call to dAPIs."
+  "_subscribe-self-funded-dapi": {
+    "btnURL": "/guides/dapis/subscribing-self-funded-dapis/",
+    "title": "Subscribe to a self-funded dAPI",
+    "content": "Use the API3 Market and obtain access to self-funded dAPIs."
   },
-  "_call-dapi-proxy": {
-    "btnURL": "/guides/dapis/call-dapi-proxy/",
-    "title": "Calling a dAPI - API3 Market",
-    "content": "Using an API3 Market proxy contract: Remix IDE."
-  },
-  "_call-dapi-server": {
-    "btnURL": "/guides/dapis/call-dapi-dapiserver/",
-    "title": "Calling a dAPI - DapiServer.sol",
-    "content": "Using the on-chain DapiServer.sol contract: Remix IDE."
+  "_read-dapi-proxy": {
+    "btnURL": "/guides/dapis/read-self-funded-dapi/",
+    "title": "Reading a dAPI",
+    "content": "Use a proxy contract to call a dAPI."
   },
   "_airnode-quick-start-aws": {
     "btnURL": "/guides/airnode/quick-start-aws/",

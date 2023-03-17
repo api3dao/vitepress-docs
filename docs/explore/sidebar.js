@@ -40,7 +40,7 @@ module.exports = [
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
       {
-        text: 'Using dAPIs in your dApp',
+        text: 'Using dAPIs in a dApp',
         link: '/explore/dapis/service-coverage',
       },
       {
@@ -49,7 +49,7 @@ module.exports = [
       },
       {
         text: 'OEV enabled dAPIs',
-        link: '/explore/dapis/oev',
+        link: '/explore/dapis/OEV',
       },
     ],
   },

@@ -27,7 +27,7 @@ improve it.
 
 ## Prerequisites
 
-it is recommended to do all of the below before attempting to contribute, and
+It is recommended to do all of the below before attempting to contribute, and
 make sure to ask any questions you have on
 [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
 

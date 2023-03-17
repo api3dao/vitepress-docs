@@ -50,9 +50,7 @@ auctioning off the arbitrage opportunities and returning this value to your
 dapp. This can allow you to attract more liquidity and provide lower fees to
 traders, thus driving more volume to your dApp.
 
-::: info Read more
+## More related material...
 
 Learn more about Oracle Extractable Value in a summary of the
-[OEV Litepaper](https://medium.com/api3/oracle-extractable-value-oev-13c1b6d53c5b)
-
-:::
+[OEV Litepaper<ExternalLinkImage/>](https://medium.com/api3/oracle-extractable-value-oev-13c1b6d53c5b).
