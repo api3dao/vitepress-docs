@@ -18,21 +18,24 @@ tags:
 feed services, that are continuously updated. These can range from the latest
 cryptocurrency, forex, stock or commodity prices.-->
 
-dAPIs are on-chain data feeds sourced from off-chain first-party oracles owned
-and operated by API providers themselves. Data feeds are continuously updated by
-first-party oracles using signed data. dApp owners can read the on-chain value
-of any dAPI in realtime.
+dAPIs are on-chain data feeds sourced from off-chain
+[first-party oracles](/explore/introduction/first-party.md) owned and operated
+by API providers themselves. Data feeds are continuously updated by first-party
+oracles using signed data. dApp owners can read the on-chain value of any dAPI
+in realtime.
 
 <!--They can power various decentralized applications such as DeFi
 lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
 
-dAPIs are composed of a beacon or a set of beacons and are sometimes referred to
-as first-party data feeds because they are sourced from first-party oracles.
-Therefore a beacon is directly powered and maintained on-chain by the owner of
-the data, the API provider, which effectively removes third-party middlemen that
-other oracle solutions rely on. This approach creates source transparency in
-addition to, higher security, cost-efficiency and scalability through less
-parties being involved in the oracle service operation.
+dAPIs are composed of a
+[beacon](/reference/dapis/understand/#data-feeds-stored-on-chain-as-beacons) or
+a set of beacons and are sometimes referred to as first-party data feeds because
+they are sourced from first-party oracles. Therefore a beacon is directly
+powered and maintained on-chain by the owner of the data, the API provider,
+which effectively removes third-party middlemen that other oracle solutions rely
+on. This approach creates source transparency in addition to, higher security,
+cost-efficiency and scalability through less parties being involved in the
+oracle service operation.
 
 ## dAPIs connect smart contracts to first-party data feeds
 

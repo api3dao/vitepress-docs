@@ -3,7 +3,7 @@ module.exports = [
     text: 'Understanding dAPIs',
     items: [
       {
-        text: '• dAPIs are datafeeds',
+        text: '• dAPIs are data feeds',
         link: '/reference/dapis/understand/',
       },
       {
