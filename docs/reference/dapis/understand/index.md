@@ -28,7 +28,7 @@ stable coins, derivatives, NFTs, and more.
 
 API providers, owners of first-party Airnodes, store data feed values on-chain
 as individual beacons that in are turn sourced by the
-[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/Api3ServerV1.sol)
+[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract as dAPIs.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
