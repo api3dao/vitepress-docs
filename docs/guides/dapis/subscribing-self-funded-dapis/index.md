@@ -199,13 +199,13 @@ UI.
 ### 3c. Verifying the deployed proxy contract
 
 Before using the proxy contract, you should verify if the proxy contract points
-to the correct `dapiNameHash` and `dapiServer` address. This can be done by
+to the correct `dapiNameHash` and `api3ServerV1` address. This can be done by
 viewing the code of the proxy on the block explorer.
 
-The `dapiServer` address should be the same as the address of the `Dapiserver`
-contract. Refer to the
+The `api3ServerV1` address should be the same as the address of the
+`Api3ServerV1` contract. Refer to the
 [chains and contract addresses](/reference/dapis/chains.md) page for the address
-of the `Dapiserver` contract on different chains.
+of the `Api3ServerV1` contract on different chains.
 
 The `dapiNameHash` should be the same as the `dapiNameHash` of the dAPI you are
 using which can be computed using the following cli commands:
@@ -221,5 +221,5 @@ $ ethers eval 'utils.solidityKeccak256(["bytes32"],[utils.formatBytes32String("E
 Where `ETH/USD` is the `dapiName` from the details page of the dAPI on the API3
 Market.
 
-Once you have verified the `dapiNameHash` and `dapiServer` address, you can
+Once you have verified the `dapiNameHash` and `Api3ServerV1` address, you can
 start using the proxy contract to read the data feed.
