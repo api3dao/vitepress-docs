@@ -14,11 +14,11 @@ tags:
 
 # {{$frontmatter.title}}
 
-dApp developers need not trust API3 as all Airnodes (which provide datafeed
+dApp developers need not trust API3 as all Airnodes (which provide data feed
 values) are owned and operated by an API provider. Each API provider has
 deployed their Airnode using a `secrets.env` file that API3 does not possess.
 Therefore the Airnode operates under the complete autonomy of the API provider
-who's signed data is used to update the datafeed values sourced by the
+who's signed data is used to update the data feed values sourced by the
 [Api3ServerV1sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/Api3ServerV1.sol)
 contract. API3 cannot alter values from API providers.
 
