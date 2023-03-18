@@ -1,5 +1,5 @@
 ---
-title: dAPIs are datafeeds
+title: dAPIs are data feeds
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
@@ -14,16 +14,21 @@ tags:
 
 # {{$frontmatter.title}}
 
-dAPIs are continuously updated streams of off-chain data, such as the latest
-cryptocurrency, stock, and commodity prices. They can power various
-decentralized applications such as DeFi lending, synthetic assets, stable coins,
-derivatives, NFTs, and more.
+dAPIs are on-chain data feeds sourced from off-chain first-party oracles owned
+and operated by API providers themselves. Data feeds are continuously updated by
+first-party oracles using signed data. dApp owners can read the on-chain value
+of any dAPI in realtime.
 
-## Datafeeds stored on-chain
+dAPIs can serve a variety of continuously updated streams of off-chain data,
+such as the latest cryptocurrency, stock, and commodity prices. They can power
+various decentralized applications such as DeFi lending, synthetic assets,
+stable coins, derivatives, NFTs, and more.
 
-API providers, owners of first-party Airnodes, store datafeed values on-chain as
-individual beacons that in are turn sourced by the
-[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/Api3ServerV1.sol)
+## Data feeds stored on-chain as beacons
+
+API providers, owners of first-party Airnodes, store data feed values on-chain
+as individual beacons that in are turn sourced by the
+[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract as dAPIs.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
@@ -32,9 +37,9 @@ contract as dAPIs.
 is an aggregated value of multiple beacons or the value of a single beacon.
 
 - [Self-funded dAPIs](/reference/dapis/understand/proxy-contracts.md#self-funded-dapis):
-  sourced from a single datafeed (beacon)
+  sourced from a single data feed (beacon)
 - [Managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis):
-  sourced from multiple datafeeds (beacons)
+  sourced from multiple data feeds (beacons)
 
 Functions in `Api3ServerV1.sol` expose dAPIs values to API3 Market
 [proxy contracts](/reference/dapis/understand/proxy-contracts.md). dApps do not
@@ -45,11 +50,11 @@ to get the value of a dAPI.
 
 Airnode is a flexible off-chain module that can support multiple protocols. Most
 noticeably are its implementation of the request-response protocol (RRP) and
-datafeeds.
+data feeds.
 
 An Airnode is owned by an API provider and integrates itself along side their
 API operations. Functionality within Airnode monitors one or more API operations
-hosted by an API provider and looks for a preset deviation of a datafeed value
+hosted by an API provider and looks for a preset deviation of a data feed value
 (e.g., plus or minus 1%). When the deviation threshold is reached, Airnode
 pushes the new value on-chain into the beacon store. Each beacon represents a
 value from a single API operation.
@@ -63,7 +68,7 @@ case `1FeexV6A` and `1AC4fMwg`.
 
 Note that company XYZ has an operations (A) that provides the value of ZIL/USD
 just like operation (B) from company ABC. A dAPI can now aggregate the value of
-operations (A) and (B) since they are the same datafeed but from different
+operations (A) and (B) since they are the same data feed but from different
 companies.
 
 <!--## Reading dAPIs

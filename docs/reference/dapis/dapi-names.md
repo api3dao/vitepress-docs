@@ -15,9 +15,9 @@ tags:
 # {{$frontmatter.title}}
 
 A dAPI is a live data point associated with human readable `dapiName`. dAPI
-definitions simplify access and can return aggregated datafeed (beacon) values
-or a single datafeed (beacon) value. This is suitable where the more recent data
-point (meaning its set of beacons could change as needed) is always more
+definitions simplify access and can return aggregated data feed (beacon) values
+or a single data feed (beacon) value. This is suitable where the more recent
+data point (meaning its set of beacons could change as needed) is always more
 favorable, e.g., in the context of an asset price data feed.
 
 ## With API3 Market proxy contracts

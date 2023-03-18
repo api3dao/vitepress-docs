@@ -24,12 +24,12 @@ its address) reads from a single predetermined dAPI.
 Currently dPAIs are under an expansive development cycle and in March of 2023
 the first functional **Self-funded dAPIs** were made available.
 
-| Self-funded dAPIs                           | Managed dAPIs                                         |
-| ------------------------------------------- | ----------------------------------------------------- |
-| March 2023                                  | \* Summer 2023                                        |
-| Single public proxy contract                | Additional private proxy contracts                    |
-| Sourced from a single<br/>datafeed (beacon) | Sourced from multiple<br/>datafeeds (beacons)         |
-| Gas costs are community funded              | Gas costs are managed <br/>by API3 using upgrade fees |
+| Self-funded dAPIs                            | Managed dAPIs                                         |
+| -------------------------------------------- | ----------------------------------------------------- |
+| March 2023                                   | \* Summer 2023                                        |
+| Single public proxy contract                 | Additional private proxy contracts                    |
+| Sourced from a single<br/>data feed (beacon) | Sourced from multiple<br/>data feeds (beacons)        |
+| Gas costs are community funded               | Gas costs are managed <br/>by API3 using upgrade fees |
 
 <div style="margin-left:10px;margin-top:-15px;font-size:small;font-family:courier;">* Managed
 dAPIs are forthcoming, the release date is not available at this time.</div>
@@ -43,7 +43,7 @@ about the evolution of dAPIs on
 ## Self funded dAPIs
 
 Self-funded dAPIs were made available in March 2023. These are community funded
-and community manage dAPIs that are only sourced from a single datafeed
+and community manage dAPIs that are only sourced from a single data feed
 (beacon). The funding is used to pay gas costs incurred by an Airnode as it
 places the dAPI's value on-chain when a deviation threshold is reached.
 
@@ -54,12 +54,12 @@ provide funding as their dApp could fail if the original dApp decides to
 discontinue further funding. So the community benefits from a community funding
 approach.
 
-### Single source datafeed
+### Single source data feed
 
 Unlike the forthcoming
 [managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis),
-self-funded dAPIs are sourced from one datafeed (beacon). This may not make them
-ideal for a dApp on a production chain.
+self-funded dAPIs are sourced from one data feed (beacon). This may not make
+them ideal for a dApp on a production chain.
 
 ### Proxy contract uniqueness
 

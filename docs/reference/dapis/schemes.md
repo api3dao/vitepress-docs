@@ -14,8 +14,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-An Airnode places the value of a datafeed on-chain into a beacon. Therefore
-beacons are the on-chain persistent state of a datafeed value.
+An Airnode places the value of a data feed on-chain into a beacon. Therefore
+beacons are the on-chain persistent state of a data feed value.
 
 What is the difference between a dAPI name and a beacon or beacon set ID? dAPI
 names are the principle means used to get API provider data held by beacons. Any
