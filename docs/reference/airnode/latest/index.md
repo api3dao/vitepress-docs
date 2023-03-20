@@ -52,3 +52,7 @@ requesting a new deployment.
 ### • testnets
 
 <ContractAddresses type="testnet" contractName="AccessControlRegistry"/>
+
+## RequesterAuthorizerWithErc721
+
+Coming soon.

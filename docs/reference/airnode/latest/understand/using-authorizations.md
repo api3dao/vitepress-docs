@@ -58,16 +58,14 @@ requester addresses that can access them.
         "id": "1",
         ...
         "authorizers": {
-            "requesterEndpointAuthorizers": [
-                "0xeabb...C123",
-                "0xCE5e...1abc"
-            ]                The scheme type requesterEndpointAuthorizations
+            "requesterEndpointAuthorizers": []
+                             The scheme type requesterEndpointAuthorizations
         },                   grants access to endpointId/address pairs
-        "authorizations": {  ⬇︎
+        "authorizations": {  ⬇
             "requesterEndpointAuthorizations": {
                 "0x6db9...7af6": ["0xdhrt...A498"],
                 "0x8dd9...5ad7": ["0xdhrt...A498", "0xcse0...D236"],
-                       ⬆︎                 ⬆︎                ⬆︎
+                       ⬆                 ⬆                ⬆
                        endpointId         requester addresses
             }
         },

@@ -72,7 +72,10 @@ Below is a simple chain array with a single chain provider.
     "authorizers": {
       "requesterEndpointAuthorizers": [
         "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-      ]
+      ],
+      "crossChainRequesterAuthorizers": [],
+      "requesterAuthorizersWithErc721": [],
+      "crossChainRequesterAuthorizersWithErc721": []
     },
     "authorizations": {
         "requesterEndpointAuthorizations": {}
