@@ -48,7 +48,7 @@ module.exports = [
         link: '/explore/dapis/security-considerations',
       },
       {
-        text: 'OEV enabled dAPIs',
+        text: 'OEV capture with dAPIs',
         link: '/explore/dapis/OEV',
       },
     ],
