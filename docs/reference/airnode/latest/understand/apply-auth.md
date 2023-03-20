@@ -53,55 +53,51 @@ endpoints. However, rather than serve them publicly, you may want to:
 - Only serve sponsors who have made a subscription payment.
 - Only serve sponsors who have gone through KYC.
 
-You can use different authorizer contracts for an Airnode deployment per chain
-by declaring them in the `config.json` file under `chains[n].authorizers`. Add
-one or more authorizer contract addresses to the
-`chains[n].authorizers.requesterEndpointAuthorizers` array or add one or more
-cross-chain authorizer objects to the
-`chains[n].authorizers.crossChainRequesterAuthorizers` array as shown below. If
-the `requesterEndpointAuthorizers` array is left empty then all requests will be
-accepted by the Airnode but still could be filtered by using
+The `chains[n].authorizers` object within `config.json` enables requests to be
+authorized in a variety of ways and even across chains. Currently, the
+authorizers include `requesterEndpointAuthorizers`,
+`crossChainRequesterAuthorizers`, `requesterAuthorizersWithErc721`, and
+`crossChainRequesterAuthorizersWithErc721`.
+
+Note that when all `chains[n].authorizers` values are empty arrays, all requests
+are authorized, but still can be filtered by using
 [Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes).
 
+Below are examples of how to use the authorizers.
+
 ```json
-{                       // The scheme type
- ...                    // authorizers.requesterEndpointAuthorizers
- "chains":[             // lists on-chain authorizer contract addresses
-    {                   // such as the pre-built
-      "id": "1",        // RequesterAuthorizerWithAirnode contract
-      ...               // or custom authorizer contracts.
-      "authorizers": {
-        "requesterEndpointAuthorizers": [  // Requests must satisfy at least
+{
+ ...
+ "chains":[
+    {                   Scheme type requesterEndpointAuthorizers lists
+      "id": "1",        on-chain authorizer contract addresses
+      ...               such as RequesterAuthorizerWithAirnode
+      "authorizers": {  ⬇
+        "requesterEndpointAuthorizers": [  // Requests must be authorized by
           "0xeabb...C123",                 // one of the authorizer contracts
           "0xCE5e...1abc"
         ],
-        "crossChainRequesterAuthorizers": []
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": []
       }
     },
     {
       "id": "2",
       ...
-      "authorizers": {
-        "requesterEndpointAuthorizers": [], // All requests will be processed
-        "crossChainRequesterAuthorizers": []
+      "authorizers": { // All requests are authorized
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": []
       },
     },
     {
       "id": "3",
       ...
       "authorizers": {
-        "requesterEndpointAuthorizers": [  // Requests must satisfy a
-          "0xeabb...C123"                  // single authorizer contract
-        ],
-        "crossChainRequesterAuthorizers": []
-      }
-    },
-    {
-      "id": "4",
-      ...
-      "authorizers": {
-        "requesterEndpointAuthorizers": [  // Requests must satisfy a
-          "0xeabb...C123"                  // single authorizer contract
+        "requesterEndpointAuthorizers": [  // Requests must be authorized by
+          "0xeabb...C123"                  // a single authorizer contract
         ],                                 // OR an authorizer contract deployed
                                            // on a different chain (Ethereum mainnet)
         "crossChainRequesterAuthorizers": [
@@ -114,6 +110,45 @@ accepted by the Airnode but still could be filtered by using
             },
             "chainProvider": {
               "url": "https://mainnet.infura.io/..."
+            }
+          }
+        ],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": []
+      }
+    },
+    {
+      "id": "4",
+      ...
+      "authorizers": {
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [
+          {  // Requests are authorized by an NFT deposit on the same chain as the request
+            "erc721s": ["0x00bDB2315678afecb367f032d93F642f64180a00"],
+            "RequesterAuthorizerWithErc721": "0x999DB2315678afecb367f032d93F642f64180aa9"
+          }
+        ],
+        "crossChainRequesterAuthorizersWithErc721": []
+      }
+    },
+    {
+      "id": "5",
+      ...
+      "authorizers": {
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": [
+          {  // Requests are authorized by an NFT deposit on Ethereum mainnet
+            "erc721s": ["0x3FbDB2315678afecb367f032d93F642f64180aa6"],
+            "chainType": "evm",
+            "chainId": "1",
+            "contracts": {
+              "RequesterAuthorizerWithErc721": "0x6bbbb2315678afecb367f032d93F642f64180aa4"
+            },
+            "chainProvider": {
+              "url": "http://127.0.0.2"
             }
           }
         ]
