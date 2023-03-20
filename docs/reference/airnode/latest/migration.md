@@ -103,7 +103,8 @@ Adds two new authorizers, `requesterAuthorizersWithErc721` and
 `crossChainRequesterAuthorizersWithErc721`, that enable request authorization
 using ERC721 tokens. These new fields are required, but their values may be
 empty arrays if this feature is not required. For further details, see the
-[Authorizers](../concepts/authorizers.md#how-are-authorizers-implemented) page.
+[Authorizers](/reference/airnode/latest/concepts/authorizers.md#how-are-authorizers-implemented)
+page.
 
 ```diff
   "chains": [
