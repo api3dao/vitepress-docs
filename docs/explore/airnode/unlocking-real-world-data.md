@@ -93,7 +93,7 @@ much larger variety of use cases in the form of dAPIs.
 ::: info Key point
 
 DeFi data feeds served via dAPIs utilize the publish-subscribe protocol. Learn
-more about [dAPIs](/explore/dapis/service-coverage.md).
+more about [dAPIs](/explore/dapis/using-dapis.md).
 
 :::
 
