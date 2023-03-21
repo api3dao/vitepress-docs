@@ -7,19 +7,33 @@
         "type": 301
       },
       {
+        "source": "/latest/",
+        "destination": "/reference/airnode/latest/",
+        "type": 301
+      },
+      {
+        "source": "/next/",
+        "destination": "/reference/airnode/next/",
+        "type": 301
+      },
+      {
         "source": "/airnode/latest/",
         "destination": "/reference/airnode/latest/",
         "type": 301
       },
-
       {
-        "source": "/ois/latest/",
-        "destination": "/reference/ois/v1.2/",
+        "source": "/airnode/next/",
+        "destination": "/reference/airnode/next/",
         "type": 301
       },
       {
-        "source": "/latest/",
-        "destination": "/reference/airnode/latest/",
+        "source": "/ois/latest/",
+        "destination": "/reference/ois/latest/",
+        "type": 301
+      },
+      {
+        "source": "/ois/next/",
+        "destination": "/reference/ois/next/",
         "type": 301
       }
     ],
