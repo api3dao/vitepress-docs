@@ -41,7 +41,7 @@ module.exports = [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
       {
         text: 'Using dAPIs in a dApp',
-        link: '/explore/dapis/service-coverage',
+        link: '/explore/dapis/using-dapis',
       },
       {
         text: 'Security considerations',

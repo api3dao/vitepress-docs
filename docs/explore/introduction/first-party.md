@@ -17,7 +17,7 @@ tags:
 An oracle is an agent that acts as an intermediary between a smart contract
 platform and an API. In other words, a decentralized application can use an
 oracle to call an API. It is important to understand that an oracle can access
-API data in more than one way on behave of a dApp.
+API data in more than one way on behalf of a dApp.
 
 In a traditional sense, an oracle node acts as a proxy by listening for requests
 made on the blockchain. The oracle then calls the API over the Web and fulfills

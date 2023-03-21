@@ -1,5 +1,5 @@
 ---
-title: HTTP Gateways (optional)
+title: OEV Gateway (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
