@@ -12,7 +12,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: danger Remooved
+::: danger Removed
 
 The Tabs component has been removed in favor of the native `code-group` markdown
 component and the proper implementation of the TOC.
