@@ -19,8 +19,8 @@ tokens in the pool will grant representation and
 [inflationary rewards](/explore/dao-members/rewards.md). Staked tokens will be
 used as collateral to pay out service coverage claims as needed. To do this, the
 pool focuses on three token utilities and implements
-[service coverage](/explore/dapis/service-coverage.md) which, by design,
-balances rewards and risks through responsible governance.
+[service coverage](/explore/dapis/using-dapis.md) which, by design, balances
+rewards and risks through responsible governance.
 
 ## Tokens
 
@@ -131,8 +131,8 @@ Exposing the governing parties to the risk would align their incentives with
 that of the DAO. The governing parties need to be penalized when a dAPI
 malfunction occurs using an onchain service coverage that provides dAPI users
 with quantifiable and trustless security guarantees. The
-[Service Coverage](/explore/dapis/service-coverage.md) uses staked tokens of the
-DAO pool as collateral, which means that when a dAPI malfunction is confirmed
+[Service Coverage](/explore/dapis/using-dapis.md) uses staked tokens of the DAO
+pool as collateral, which means that when a dAPI malfunction is confirmed
 through the dispute resolution protocol, user damages will be covered from the
 pool's staked tokens.
 
@@ -174,9 +174,9 @@ clients. API3 follows the same scheme for dAPIs.
 To gain access to a dAPI, a dApp will pay a recurring subscription fee, which
 may be fixed or customized for the dApp based on a specific use case. These
 prices will be determined by the respective team, and will include a premium if
-the dApp wants to receive [Service Coverage](/explore/dapis/service-coverage).
-The payment can be made in any cryptocurrency, which will be received by the DAO
-in API3 tokens through a liquidity pool-based decentralized exchange.
+the dApp wants to receive [Service Coverage](/explore/dapis/using-dapis.md). The
+payment can be made in any cryptocurrency, which will be received by the DAO in
+API3 tokens through a liquidity pool-based decentralized exchange.
 
 ### API provider compensation
 

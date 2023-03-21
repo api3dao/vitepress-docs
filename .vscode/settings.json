@@ -54,6 +54,8 @@
     "docset",
     "docsets",
     "Sepolia",
+    "permissionlessly",
+    "permissionless"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

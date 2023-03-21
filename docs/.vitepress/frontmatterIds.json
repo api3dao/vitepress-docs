@@ -139,7 +139,7 @@
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
     "pageHeader": "Explore → dAPIs",
-    "path": "/explore/dapis/service-coverage.html",
+    "path": "/explore/dapis/using-dapis.html",
     "outline": "deep",
     "tags": null
   },
@@ -1019,7 +1019,7 @@
     "tags": null
   },
   "108": {
-    "title": "HTTP Gateways (optional)",
+    "title": "OEV Gateway (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
     "pageHeader": "Reference → Airnode → v0.11 → Understanding Airnode",

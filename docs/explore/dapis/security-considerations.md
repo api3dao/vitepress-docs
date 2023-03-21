@@ -40,9 +40,10 @@ ability to revoke dAPI name setting rights through a governance vote.
 Compared to managed dAPIs, self-funded dAPIs are sourced from a single datafeed
 (beacon) and are hence susceptible to more risk. Downtime with the associated
 Airnode or the sourced API operation will consequently lead to a stale data
-point. For this reason, self-funded dAPIs are treated as an introduction to API3
-as well as a testing ground for data feeds. It is recommended that use cases
-with higher security requirements make use of managed dAPIs.
+point. For this reason, self-funded dAPIs are treated as an introduction to
+dAPIs as well as a testing ground for data feeds. It is recommended that use
+cases with higher security requirements make use of managed dAPIs when
+available.
 
 ### Sponsor Wallets
 
@@ -57,19 +58,16 @@ repeatatly is recommended over sending large amounts.
 
 ## Managed dAPIs
 
-With managed dAPIs, API3 takes over the gas management overhead that is
-associated with running dAPIs. The underlying beacons/beacon set of a dAPI are
-kept up to date through by collecting signed data from the respective underlying
-Airnodes of a beacon/beacon Set through Airnodes HTTP-Gateway and updating them
-on-chain through the usage of `updateBeaconWithSignedData` or
-`updateBeaconSetWithSignedData` respectively.
+Manage dAPIs are still under development. With managed dAPIs, API3 takes over
+the gas management overhead that is associated with running dAPIs. The
+underlying [beacon sets](/reference/dapis/understand/index.md) of a managed dAPI
+are kept up to date by collecting signed data from the respective underlying
+Airnodes of a beacon set via Airnode's HTTP-Gateway and updating the beacon
+values on-chain.
 
-### Maintaining dAPIs
+### Working towards absolute decentralization
 
-API3 is operating multiple Airnodes with dedicated wallets that are monitored
-and kept funded. However, the setup in it's current form is dependent on API3 to
-maintain beacons/beacon sets in both pushing data on-chain and having sufficient
-funds available to cover associated network costs. Additional ways of keeping
-beacons/beacon sets updated without relying on API3 are currently being
-developed and will be introduced as a decentralized alternative alongside the
-current implementation.
+It is important that no central authority has the opportunity to impact the
+delivery of a dAPI's value. API3 is committed to keep the beacon sets behind a
+managed dAPI updated in a completely decentralized fashion. Therefore
+decentralization will be a key feature when managed dAPIs are made available.
