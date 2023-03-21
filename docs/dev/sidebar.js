@@ -4,6 +4,7 @@ module.exports = [
     items: [
       { text: 'Getting Started', link: '/dev/' },
       { text: 'DocSets', link: '/dev/docsets' },
+      { text: 'Versioning', link: '/dev/versioning' },
       { text: 'Nav Boxes', link: '/dev/navboxes' },
       { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Firebase', link: '/dev/firebase' },
