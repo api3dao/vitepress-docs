@@ -67,8 +67,6 @@ is the hash of its contents. When you create a template record on-chain,
 [see Part #2: Upload Template](/reference/airnode/latest/developers/using-templates.md#part-2-upload-template),
 a templateId will be returned.
 
-<divider/>
-
 ## Part #1: Build a Template
 
 First create a file that contains a template object. Below is an example. You
@@ -101,8 +99,6 @@ If you create more than one template using the same parameter values for an
 Airnode/endpointID the same`templateId`will be returned for each. Only one
 template is created when the parameters are the same.
 
-<divider/>
-
 ## Part #2: Upload Template
 
 Use the
@@ -131,8 +127,6 @@ npx @api3/airnode-admin create-template \
   --mnemonic "nature about salad..." \
   --templateFilePath ./template.json
 ```
-
-<divider/>
 
 ## More related material...
 
