@@ -85,13 +85,10 @@ to send funds to the sponsorWallet, make sure your:
   <img src="../../assets/images/dapi-page.png" />
 </p>
 
-To fund the dAPI, you need to click on the "Fund sponsor wallet" button.
-Depending upon if a proxy contract is already deployed, you will see a different
-UI.
+To fund the dAPI, you need to click on the "Fund Gas" button.
 
-<p align="center" style="display:flex">
+<p align="center">
   <img   width="50%" src="../../assets/images/dapi-fund-gas.png" />
-  <img   width="50%" src="../../assets/images/dapi-fund-gas2.png" />
 </p>
 
 This will bring up the API3 gas estimator UI that allows users to understand how
@@ -168,8 +165,8 @@ the following UI.
   <img src="../../assets/images/dapi-fund-gas2.png" />
 </p>
 
-Clicking on the "Deploy proxy" button will initiate a transaction to your
-metamask that will deploy a proxy contract.
+Clicking on the "Get proxy" button will initiate a transaction to your metamask
+that will deploy a proxy contract.
 
 Once the transaction is broadcasted & confirmed on the blockchain, the proxy
 contract address will be shown on the UI.
@@ -187,10 +184,9 @@ will see the following UI.
   <img src="../../assets/images/dapi-market-detail.png" />
 </p>
 
-Clicking on the "Deploy proxy" button will initiate a transaction to your
-metamask that will deploy a proxy contract. Once the transaction is broadcasted
-& confirmed on the blockchain, the proxy contract address will be shown on the
-UI.
+Clicking on the "Get Proxy" button will initiate a transaction to your metamask
+that will deploy a proxy contract. Once the transaction is broadcasted &
+confirmed on the blockchain, the proxy contract address will be shown on the UI.
 
 <p align="center">
   <img src="../../assets/images/dapi-proxy-confirmation2.png" />
