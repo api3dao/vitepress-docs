@@ -3,6 +3,7 @@
 import DefaultTheme from 'vitepress/theme';
 import SidebarHeader from './components/SidebarHeader.vue';
 import LegacyDocs from './components/LegacyDocs.vue';
+import Market from './components/Market.vue';
 
 const { Layout } = DefaultTheme;
 </script>
@@ -12,6 +13,6 @@ const { Layout } = DefaultTheme;
     <template #sidebar-nav-before>
       <SidebarHeader style="margin-top: 5px" />
     </template>
-    <template #aside-outline-after> <LegacyDocs /> </template>
+    <template #aside-outline-after> <LegacyDocs /> <Market /></template>
   </Layout>
 </template>
