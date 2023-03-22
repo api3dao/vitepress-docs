@@ -18,16 +18,7 @@ let indexLatest = new Index({
   tokenize: 'full',
 });
 // The latest docsets
-let latestDocsets = [
-  '/dist/explore/introduction/',
-  '/dist/explore/dapis/',
-  '/dist/guides/dapis/',
-  //'/dist/reference/qrng/',
-  //'/dist/reference/dao-members/',
-  '/dist/reference/dapis/',
-  //'/dist/reference/airnode/latest/',
-  //'/dist/reference/ois/latest/',
-];
+let latestDocsets = ['/dist/explore/', '/dist/guides/', '/dist/reference/'];
 
 /**
  * Callback for file.walkSync, add each
