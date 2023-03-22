@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
+import Api3Layout from './Api3Layout.vue';
 import VersionPicklist from '../../_components/reference/VersionPicklist.vue';
 import SearchBtn from '../../_components/search/SearchBtn.vue';
 import SearchResults from '../../_components/search/SearchResults.vue';
@@ -27,6 +28,9 @@ import TodoLink from '../../_components/TodoLink.vue';
 
 export default {
   ...DefaultTheme,
+  // override the Layout with a wrapper component that
+  // injects the slots
+  Layout: Api3Layout,
   enhanceApp({ app }) {
     app.component('VersionPicklist', VersionPicklist);
     app.component('SearchBtn', SearchBtn);
