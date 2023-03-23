@@ -127,11 +127,12 @@ cases being realized for two key reasons:
 2. The flexibility of being able to utilize Airnode to connect smart contracts
    to APIs during the devlopment cycle
 
+<!--
 ::: tip Get started
 
 Get started as an API Provider [here](/guides/airnode/become-api-provider.md)
 
-:::
+:::-->
 
 ## Oracle Integration Standards (OIS)
 
