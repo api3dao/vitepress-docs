@@ -70,30 +70,3 @@ Note that company XYZ has an operations (A) that provides the value of ZIL/USD
 just like operation (B) from company ABC. A dAPI can now aggregate the value of
 operations (A) and (B) since they are the same data feed but from different
 companies.
-
-<!--## Reading dAPIs
-
-dApps can be read dAPIs easily with API3 Market
-[proxy contracts](/reference/dapis/understand/proxy-contracts.md). Use the API3
-Market UI to obtain the proxy contract address for any dAPI such as
-[AAVE/USD<ExternalLinkImage/>](https://staging.api3-market.pages.dev/dapis/polygon-testnet/AAVE-USD)
-on the Mumbai network. A proxy contract describes a single unique dAPI.
-
-<img src="../assets/images/proxy.png" style="width:80%;">
-
-Use as many proxy contracts desired. Each self-funded dAPI has an on-chain proxy
-contract address that is used to read its value. The address for the dAPI
-AAVE/USD on the Mumbai network is `0xa8785d83A31B21065F27b640F50694b39B1bda9a`.
-
-```solidity
-return IDapiProxy(0xa8785d83A31B21065F27b640F50694b39B1bda9a).read();
-```
-
-## More related material...
-
-See the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn more on how to use a proxy contract.
-
-Learn more about the differences between a [self-funded]() and [managed]() dAPI.
--->

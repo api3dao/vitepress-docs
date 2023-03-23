@@ -60,10 +60,10 @@ module.exports = [
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
       },
-      {
+      /*{
         text: 'Become an API Provider',
         link: '/guides/airnode/become-api-provider',
-      },
+      },*/
     ],
   },
   {

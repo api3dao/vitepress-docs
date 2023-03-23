@@ -13,6 +13,6 @@ const { Layout } = DefaultTheme;
     <template #sidebar-nav-before>
       <SidebarHeader style="margin-top: 5px" />
     </template>
-    <template #aside-outline-after> <LegacyDocs /> <Market /></template>
+    <template #aside-outline-after> <Market /> <LegacyDocs /> </template>
   </Layout>
 </template>

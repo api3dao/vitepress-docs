@@ -96,10 +96,9 @@ API data can be pushed on-chain.
 
 Airnode also has range of common features built into it. These include
 implementations such as pre and post processing,
-[authentication<ExternalLinkImage/>](https://docs.api3.org/airnode/v0.10/concepts/relay-meta-auth.html),
-or
-[authorizations<ExternalLinkImage/>](https://docs.api3.org/airnode/v0.10/concepts/authorizations.html),
-to name a few.
+[authentication](/reference/airnode/latest/concepts/relay-meta-auth.html), or
+[authorizations](/reference/airnode/latest/concepts/authorizations.html), to
+name a few.
 
 ### Self operating
 
@@ -110,7 +109,8 @@ on-chain.
 
 ## More related material...
 
-Read more on how [Airnode works](https://docs.api3.org/airnode/v0.10/).
+Read more on how
+[Airnode works](/reference/airnode/latest/understand/index.html).
 
 [API Connectivity Problem<ExternalLinkImage/>](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)
 

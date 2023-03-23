@@ -6,7 +6,7 @@ hero:
   text: data feeds powered by Airnode
   tagline:
     Airnode-enabled APIs serve data on-chain directly from the source. These
-    first-party oracles then form form a variety of data feed services.
+    first-party oracles then form a variety of data feed services.
 
   image:
     src: /beacons.svg
