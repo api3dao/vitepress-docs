@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Some of the guides require a blockchain provider URL to interact with the
@@ -63,3 +65,5 @@ https://sepolia.infura.io/v3/ec3dda...b3618a2
     <NavBox type='REFERENCE' id="_airnode-quick-start-gcp"/>
 </div>
 -->
+
+<FlexEndTag/>

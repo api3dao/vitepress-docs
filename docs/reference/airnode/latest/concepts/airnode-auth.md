@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API providers can instruct Airnode to authenticate requests to their endpoints.
@@ -91,3 +93,5 @@ curl -H "X-API-KEY: abcdef12345" \
 curl -H "Cookie: X-API-KEY:abcdef12345" \
   -X GET https://mydao.com?token=API3
 ```
+
+<FlexEndTag/>

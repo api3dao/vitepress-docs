@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Use the deployer image to deploy or remove an Airnode with a cloud provider such
@@ -375,3 +377,5 @@ deploymentId and `production` is the stage name.
 
 Learn more about AWS or GCP resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
+
+<FlexEndTag/>

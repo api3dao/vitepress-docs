@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The `config.json` defines a single Airnode deployment. The file contents are a
@@ -776,3 +778,5 @@ empty.
 `for each row in apiCredentials`</span>) - The value of the security scheme used
 (as defined by `ois[n].components.securitySchemes.{securitySchemeName}` for the
 authentication. Usually stored in `secrets.env`.
+
+<FlexEndTag/>

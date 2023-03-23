@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 ::: danger WARNING
@@ -170,3 +172,5 @@ npx @api3/airnode-admin verify-airnode-xpub \
 # output
 Airnode xpub is: VALID
 ```
+
+<FlexEndTag/>

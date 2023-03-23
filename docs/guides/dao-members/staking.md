@@ -18,6 +18,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Staking API3 tokens in the [DAO pool](/explore/dao-members/dao-pool.md) makes
@@ -122,3 +124,5 @@ To protect the DAO from proposal spam, unstaking is subject to a seven day
 waiting period.
 
 :::
+
+<FlexEndTag/>

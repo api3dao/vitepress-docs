@@ -11,6 +11,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This project is a simple and quick introduction to
@@ -308,3 +312,5 @@ successfully completed the randomNumber will be present. The value of
 **waitingFulfillment** will be _false_.
 
 > <img src="./src/qrng-response-complete.png" width="400"/>
+
+<FlexEndTag/>

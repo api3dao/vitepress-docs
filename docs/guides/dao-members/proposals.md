@@ -18,6 +18,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Staking tokens in the DAO pool gives you governance rights to create and vote on
@@ -290,3 +292,5 @@ posting. Lastly, create the proposal using the DAO dashboard. Since the proposal
 contains the IPFS hashed link in the description field, the PDF should be
 considered final and changing the hashed link in the forum at this point would
 caution the voter.
+
+<FlexEndTag/>

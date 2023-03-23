@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
@@ -361,3 +363,5 @@ accessing the blockchain.
 
 Learn more about AWS resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
+
+<FlexEndTag/>

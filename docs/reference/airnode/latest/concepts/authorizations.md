@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Authorizations use scheme types that map values that in turn provide access to
@@ -102,3 +104,5 @@ Other docs related to authorizations and relayed meta data:
   [Using Authorizations](/reference/airnode/latest/understand/using-authorizations.md)
 - API Providers ➙ Build an Airnode ➙ API Security ➙
   [Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)
+
+<FlexEndTag/>

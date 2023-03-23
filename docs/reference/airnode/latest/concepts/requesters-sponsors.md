@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 ::: danger TODO:
@@ -263,3 +265,5 @@ again. Since the sponsorWallet was already created for the
 `sponsorAddress/airnodeAddress` pair, the command will only return the public
 address for the wallet. However you must use the same `sponsorAddress` used when
 the wallet was first created or a new sponsorWallet will be created.
+
+<FlexEndTag/>

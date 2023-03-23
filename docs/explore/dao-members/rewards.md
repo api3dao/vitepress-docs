@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 aims to set up, maintain, and
@@ -130,3 +132,5 @@ later, the rewards you will receive next week will get unlocked 1 year 1 week
 later, etc.) This 1 year-lock is the secret sauce to good decentralized
 governance, it essentially aligns the incentives of the stakers/governors with
 the ones of the DAO/project/token for a whole year.
+
+<FlexEndTag/>

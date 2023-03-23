@@ -12,9 +12,9 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+<FlexStartTag/>
 
-## The API3 DAO
+# {{$frontmatter.title}}
 
 [API3<ExternalLinkImage/>](https://api3.org) is a collaborative project to
 deliver traditional API services to smart contract platforms in a decentralized
@@ -117,3 +117,5 @@ Read more on how
 [API3 whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
 
 [APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
+
+<FlexEndTag/>

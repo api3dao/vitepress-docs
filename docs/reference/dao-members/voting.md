@@ -19,6 +19,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3's voting app implements a simple quorum-based voting mechanism with:
@@ -62,3 +64,5 @@ OR
 > 3. the total "yes" vote exceeds the "no" vote, and
 > 4. at least 50% (for Primary voting app proposals) or 15% (for Secondary
 >    voting app proposals) of all voting power has voted "yes" on the proposal.
+
+<FlexEndTag/>

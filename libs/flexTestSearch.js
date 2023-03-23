@@ -12,12 +12,19 @@ let indexLatest = new Index({
   Rebuild the indexAll from index files
 */
 const retrieveIndexAll = () => {
-  const keys = fs
+  let keys = fs
     .readdirSync('docs/public/indexes/all/', {
       withFileTypes: true,
     })
     .filter((item) => !item.isDirectory())
     .map((item) => item.name.slice(0, -5));
+
+  // Need to filter the array since Apple likes to add a hidden file ".DS_"
+  keys = keys.filter(filterKeys);
+  function filterKeys(key) {
+    return ['cfg', 'ctx', 'map', 'reg'].includes(key);
+  }
+  console.log('retrieveIndexAll keys array', keys);
 
   for (let i = 0, key; i < keys.length; i += 1) {
     key = keys[i];
@@ -30,16 +37,22 @@ const retrieveIndexAll = () => {
   Rebuild the indexLatest from index files
 */
 const retrieveIndexLatest = () => {
-  const keys = fs
+  let keys = fs
     .readdirSync('docs/public/indexes/latest/', {
       withFileTypes: true,
     })
     .filter((item) => !item.isDirectory())
     .map((item) => item.name.slice(0, -5));
 
+  // Need to filter the array since Apple likes to add a hidden file ".DS_"
+  keys = keys.filter(filterKeys);
+  function filterKeys(key) {
+    return ['cfg', 'ctx', 'map', 'reg'].includes(key);
+  }
+  console.log('retrieveIndexLatest keys array', keys);
+
   for (let i = 0, key; i < keys.length; i += 1) {
     key = keys[i];
-    console.log(key);
     const data = fs.readFileSync(
       `docs/public/indexes/latest/${key}.json`,
       'utf8'

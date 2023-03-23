@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode's `config.json` file defines it behavior. Airnode can be deployed to
@@ -36,3 +38,5 @@ a cloud provider such as ASW or GCP or in a local Docker container.
 ```
 
 :::
+
+<FlexEndTag/>

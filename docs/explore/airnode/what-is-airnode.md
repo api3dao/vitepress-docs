@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
@@ -222,3 +224,5 @@ it requires API modifications to implement off-chain signing. This results in a
 severely limited API selection even compared to the regular third-party
 oracle-based solutions, and restricts the growth potential of the solution's
 ecosystem to the application-scale. -->
+
+<FlexEndTag/>

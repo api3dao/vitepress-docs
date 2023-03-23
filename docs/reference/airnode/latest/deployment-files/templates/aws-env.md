@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The `aws.env` contains AWS credentials from an IAM user. These credentials are
@@ -28,3 +30,5 @@ Variable names cannot contain dashes (-) or start with a number.
 AWS_ACCESS_KEY_ID=<FILL_*>
 AWS_SECRET_ACCESS_KEY=<FILL_*>
 ```
+
+<FlexEndTag/>

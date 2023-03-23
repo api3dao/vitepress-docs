@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 First-party oracles are integral to the API3 solution. Through using Airnode a
@@ -39,7 +41,7 @@ Understand more by reading our Medium post on
 
 :::
 
-## {{$frontmatter.title}}
+#<FlexStartTag/> # {{$frontmatter.title}}
 
 First-party oracles bring several advantages to smart contract engineers. The
 noteable benefits are:
@@ -112,3 +114,5 @@ of their data.
 Replace this with a content box linking to 'monetizing apis n web3'
 
 :::
+
+<FlexEndTag/>

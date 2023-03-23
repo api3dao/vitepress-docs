@@ -16,6 +16,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 With Self-Funded dAPIs, you can fund the dAPI with your own funds. The amount of
@@ -223,3 +225,5 @@ Market.
 
 Once you have verified the `dapiNameHash` and `Api3ServerV1` address, you can
 start using the proxy contract to read the data feed.
+
+<FlexEndTag/>

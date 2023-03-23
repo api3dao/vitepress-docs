@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Proxy contracts from the
@@ -114,3 +116,5 @@ and learn more on how to fund a dAPI.
 See the guide
 [Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
 learn more on how to use a proxy contract to read the value of a dAPI.
+
+<FlexEndTag/>

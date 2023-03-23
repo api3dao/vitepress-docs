@@ -1,5 +1,5 @@
 ---
-title: Accessing first-party data feeds
+title: Access real world data
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
@@ -12,7 +12,9 @@ tags:
 
 <SearchHighlight/>
 
-# Access real world data for smart contracts
+<FlexStartTag/>
+
+# {{$frontmatter.title}}
 
 Preferring the better-specified API connectivity problem over the oracle
 problem, API3 believes that an oracle node should be designed to interface APIs
@@ -210,3 +212,5 @@ themselves. As a result, this imposes fairly restrictive requirements:
 - The API provider cannot stake funds that would expose them to financial risk
   due to compliance, legal and accounting reasons. The security mechanics of the
   protocol thus should not depend on oracles to stake.-->
+
+<FlexEndTag/>

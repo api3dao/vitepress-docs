@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An oracle is an agent that acts as an intermediary between a smart contract
@@ -155,3 +157,5 @@ short), which are blockchain-native, decentralized API services. From the user's
 experience of using a dAPI would be very similar to a Web developer using a
 traditional API; they would find a dAPI they need, pay the subscription fee, and
 enjoy access.-->
+
+<FlexEndTag/>

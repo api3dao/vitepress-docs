@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 dAPIs are on-chain data feeds sourced from off-chain first-party oracles owned
@@ -70,3 +72,5 @@ Note that company XYZ has an operations (A) that provides the value of ZIL/USD
 just like operation (B) from company ABC. A dAPI can now aggregate the value of
 operations (A) and (B) since they are the same data feed but from different
 companies.
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Smart contract platforms typically emulate a deterministic virtual machine,
@@ -128,3 +130,5 @@ leveraging these.
   <NavBox type='GUIDE' id='_qrng-remix-example'/>
   <NavBox type='REPO' id='_qrng-starter-project'/>
 </div>
+
+<FlexEndTag/>

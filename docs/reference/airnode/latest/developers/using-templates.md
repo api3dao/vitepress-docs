@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 <!-- TODO: 2021-11-02 wkande: Should this doc speak to creating a templateId? See the code
@@ -133,3 +135,5 @@ npx @api3/airnode-admin create-template \
 The
 [coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
 monorepo example demonstrates template requests.
+
+<FlexEndTag/>

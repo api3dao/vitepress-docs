@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 <!--TocHeader />
@@ -29,3 +31,5 @@ project.
 <div class="api3-css-nav-box-flex-row">
   <NavBox type='REPO' id='_qrng-starter-project'/>
 </div>
+
+<FlexEndTag/>

@@ -14,6 +14,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The [DAO Dashboard](https://dao.api3.org) is the portal to participate in the
@@ -60,3 +62,5 @@ and learn more about the dashboard functionality.
   proposals.
 - [How to Vote](/guides/dao-members/voting.md) - Vote on proposals directly or
   through delegation.
+
+<FlexEndTag/>

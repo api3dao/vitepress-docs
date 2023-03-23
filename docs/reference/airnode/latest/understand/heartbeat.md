@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 At the end of an Airnode's run (every minute), Airnode can make an HTTP POST
@@ -159,3 +161,5 @@ The overall content to the heartbeat URL is as follows:
     <td>timestamp:</td><td>This is the heartbeat timestamp.</td><td>body</td>
   </tr>
 </table>
+
+<FlexEndTag/>

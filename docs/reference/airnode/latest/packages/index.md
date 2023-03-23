@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode is a fully-serverless oracle node that is designed specifically for API
@@ -78,3 +80,5 @@ in its own repo (`ois`) starting with Airnode `v0.8`.
 
 [**ois**:](https://github.com/api3dao/ois/tree/v2.0.0) Types for
 [Oracle Integration Specification (OIS)](/reference/ois/latest/specification.md).
+
+<FlexEndTag/>

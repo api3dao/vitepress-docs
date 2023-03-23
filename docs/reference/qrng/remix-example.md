@@ -16,6 +16,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This contract is the one included in the
@@ -31,3 +33,5 @@ numbers, see the [QRNG Example](/guides/qrng/qrng-example.md) guide.
 <div class="api3-css-nav-box-flex-row">
   <NavBox type='GUIDE' id='_qrng-remix-example'/>
 </div>
+
+<FlexEndTag/>

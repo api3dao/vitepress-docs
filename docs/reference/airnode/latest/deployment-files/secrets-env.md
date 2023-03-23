@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The `secrets.env` file is bundled with a
@@ -53,3 +55,5 @@ HEARTBEAT_URL="https://your.heartbeat.service.io/airnode"
 # GCP only
 GCP_PROJECT_ID="my-gcp-airnode-project-01"
 ```
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The
@@ -96,3 +98,5 @@ const decoded = decode(encodedData);
 console.log(decoded);
 // { from: 'ETH', amount: ethers.BigNumber.from('100000') }
 ```
+
+<FlexEndTag/>

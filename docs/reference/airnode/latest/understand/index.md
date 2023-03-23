@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This section is a progression of pages that aims to provide a detailed
@@ -121,3 +123,5 @@ this type of deployment.
   <NavBox type='EXPLORE' id="_what-is-airnode"/>
   <NavBox type='GUIDE' id="_airnode-quick-start-aws"/>
 </div>
+
+<FlexEndTag/>

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 As outlined on the page [What are dAPIs?](/explore/dapis/what-are-dapis.md),
@@ -132,3 +134,5 @@ dAPis. It represents a hub that allows developers to:
 You can head to the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org/dapis) now and use
 self-funded dAPIs.
+
+<FlexEndTag/>

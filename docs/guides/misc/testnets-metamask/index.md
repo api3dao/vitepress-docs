@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 ChainList is a list of EVM networks. Use its information to connect wallets and
@@ -34,3 +36,5 @@ Locate the Mumbai box (ChainId 80001 and Currency MATIC) and select the
 **Add to MetaMask** button.
 
 <img src="./src/image2.png" style="width:40%;border:solid lightgrey 1px;">
+
+<FlexEndTag/>
