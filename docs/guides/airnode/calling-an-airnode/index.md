@@ -216,7 +216,7 @@ The
 needs to be derived from the requester's contract address, the Airnode address,
 and the Airnode xpub. The wallet is used to pay gas costs of the transactions.
 The sponsor wallet must be derived using the command
-[derive-sponsor-wallet-address](/reference/airnode/latest/concepts/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
+[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 

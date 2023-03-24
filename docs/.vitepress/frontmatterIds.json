@@ -610,16 +610,6 @@
     "tags": null
   },
   "67": {
-    "title": "Requesters and Sponsors",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "Airnode",
-    "pageHeader": "Reference → Airnode → v0.11 → Concepts and Definitions",
-    "path": "/reference/airnode/latest/concepts/requesters-sponsors.html",
-    "version": "v0.11",
-    "outline": "deep",
-    "tags": null
-  },
-  "68": {
     "title": "Sponsor",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -629,7 +619,7 @@
     "outline": "deep",
     "tags": null
   },
-  "69": {
+  "68": {
     "title": "Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -639,7 +629,7 @@
     "outline": "deep",
     "tags": null
   },
-  "70": {
+  "69": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -649,7 +639,7 @@
     "outline": "deep",
     "tags": null
   },
-  "71": {
+  "70": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -659,7 +649,7 @@
     "outline": "deep",
     "tags": null
   },
-  "72": {
+  "71": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -669,7 +659,7 @@
     "outline": "deep",
     "tags": null
   },
-  "73": {
+  "72": {
     "title": "receipt.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -679,7 +669,7 @@
     "outline": "deep",
     "tags": null
   },
-  "74": {
+  "73": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -689,7 +679,7 @@
     "outline": "deep",
     "tags": null
   },
-  "75": {
+  "74": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -698,7 +688,7 @@
     "outline": "deep",
     "tags": null
   },
-  "76": {
+  "75": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -708,7 +698,7 @@
     "outline": "deep",
     "tags": null
   },
-  "77": {
+  "76": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -718,7 +708,7 @@
     "outline": "deep",
     "tags": null
   },
-  "78": {
+  "77": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -728,7 +718,7 @@
     "outline": "deep",
     "tags": null
   },
-  "79": {
+  "78": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -738,7 +728,7 @@
     "outline": "deep",
     "tags": null
   },
-  "80": {
+  "79": {
     "title": "OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -748,7 +738,7 @@
     "outline": "deep",
     "tags": null
   },
-  "81": {
+  "80": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -758,41 +748,51 @@
     "outline": "deep",
     "tags": null
   },
-  "82": {
+  "81": {
     "title": "Calling an Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
-    "pageHeader": "Reference → Airnode → v0.11 → dApp Developers",
+    "pageHeader": "Reference → Airnode → v0.11 → Airnode for dApp Developers",
     "path": "/reference/airnode/latest/developers/call-an-airnode.html",
     "version": "v0.11",
     "outline": "deep",
     "tags": null
   },
-  "83": {
+  "82": {
     "title": "Fees",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
-    "pageHeader": "Reference → Airnode → v0.11 →dApp Developers",
+    "pageHeader": "Reference → Airnode → v0.11 → Airnode for dApp Developers",
     "path": "/reference/airnode/latest/developers/fees.html",
     "version": "v0.11",
     "outline": "deep",
     "tags": null
   },
-  "84": {
-    "title": "Overview",
+  "83": {
+    "title": "Airnode RRP",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
-    "pageHeader": "Reference → Airnode → v0.11 → dApp Developers",
+    "pageHeader": "Reference → Airnode → v0.11 → Airnode for dApp Developers",
     "path": "/reference/airnode/latest/developers/index.html",
     "version": "v0.11",
     "outline": "deep",
     "tags": null
   },
-  "85": {
-    "title": "Using Templates",
+  "84": {
+    "title": "Requesters and Sponsors",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
-    "pageHeader": "Reference → Airnode → v0.11 → dApp Developers",
+    "pageHeader": "Reference → Airnode → v0.11 → Airnode for dApp Developers",
+    "path": "/reference/airnode/latest/developers/requesters-sponsors.html",
+    "version": "v0.11",
+    "outline": "deep",
+    "tags": null
+  },
+  "85": {
+    "title": "Using Templates (RRP)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.11 → Airnode for dApp Developers",
     "path": "/reference/airnode/latest/developers/using-templates.html",
     "version": "v0.11",
     "outline": "deep",

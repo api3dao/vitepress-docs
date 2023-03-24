@@ -140,7 +140,7 @@ requester calls it.
 
 Understand the process of sponsoring a requester and deriving a sponsor wallet
 using the admin CLI commands within the
-[Sponsor & Requester](/reference/airnode/latest/concepts/requesters-sponsors.md)
+[Sponsor & Requester](/reference/airnode/latest/developers/requesters-sponsors.md)
 developer resource
 
 :::

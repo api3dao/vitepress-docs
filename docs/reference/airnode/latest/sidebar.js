@@ -112,10 +112,7 @@ module.exports = [
         text: 'Sponsor',
         link: '/reference/airnode/latest/concepts/sponsor',
       },
-      {
-        text: 'Requesters and Sponsors',
-        link: '/reference/airnode/latest/concepts/requesters-sponsors',
-      },
+
       {
         text: 'Template',
         link: '/reference/airnode/latest/concepts/template',
@@ -257,19 +254,22 @@ module.exports = [
       },
     ],
   },
-
   {
-    text: 'dApp Developers',
+    text: 'Airnode for dApp Developers',
     collapsed: true,
     items: [
-      { text: 'Overview', link: '/reference/airnode/latest/developers/' },
+      { text: 'Airnode RRP', link: '/reference/airnode/latest/developers/' },
 
       {
         text: 'Calling Airnode (RRP)',
         link: '/reference/airnode/latest/developers/call-an-airnode',
       },
       {
-        text: 'Using Templates',
+        text: 'Requesters and Sponsors',
+        link: '/reference/airnode/latest/developers/requesters-sponsors',
+      },
+      {
+        text: 'Using Templates (RRP)',
         link: '/reference/airnode/latest/developers/using-templates',
       },
       { text: 'Fees', link: '/reference/airnode/latest/developers/fees' },

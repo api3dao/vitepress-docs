@@ -2,7 +2,7 @@
 title: Calling an Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
 path: /reference/airnode/latest/developers/call-an-airnode.html
 version: v0.11
 outline: deep
@@ -22,7 +22,7 @@ tags:
 A requester is a contract that can trigger an Airnode request. To do so, the
 requester needs to be sponsored and make the request using a matching sponsor
 wallet. See
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)
 on how to sponsor a requester and derive the sponsor wallet.
 
 Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")
@@ -162,11 +162,11 @@ must gather the following parameters to pass on to `airnodeRrp.makeFullRequest`.
   endpoint desired at a particular Airnode.
 
 - **sponsor**: The
-  [sponsor](/reference/airnode/latest/concepts/requesters-sponsors.md#what-is-a-sponsor)
+  [sponsor](/reference/airnode/latest/developers/requesters-sponsors.md#what-is-a-sponsor)
   address.
 
 - **sponsorWallet**: The
-  [sponsor wallet](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+  [sponsor wallet](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
   address that the sponsor received when deriving the wallet for the Airnode
   being called.
 
@@ -277,7 +277,7 @@ The callback to a requester contains two parameters, as shown in the
 
 Deploy the requester to the desired blockchain and then sponsor the requester.
 See
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
 
 <FlexEndTag/>

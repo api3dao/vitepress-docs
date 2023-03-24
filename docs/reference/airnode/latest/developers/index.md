@@ -1,8 +1,8 @@
 ---
-title: Overview
+title: Airnode RRP
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
 path: /reference/airnode/latest/developers/index.html
 version: v0.11
 outline: deep
@@ -20,12 +20,13 @@ tags:
 # {{$frontmatter.title}}
 
 Airnode is a first-party oracle that can push off-chain API data to an on-chain
-contract. While dApp developers will find dAPIs popular there is the option for
-them to access Airnode data using its request-response protocol. In the diagram
-below, a contract is called a requester. It makes a request to the on-chain RRP
-protocol contract (AirnodeRrpV0.sol) that adds the request to the event logs.
-The off-chain Airnode then accesses the event logs, gets the API data and
-performs a callback to the requester.
+contract. While dApp developers will find [dAPIs](/reference/dapis/understand/)
+popular and the most useful aspect of an Airnode's capabilities, there is the
+option for developers to access Airnode data using its request-response
+protocol. In the diagram below, a contract is called a requester. It makes a
+request to the on-chain RRP protocol contract (AirnodeRrpV0.sol) that adds the
+request to the event logs. The off-chain Airnode then accesses the event logs,
+gets the API data and performs a callback to the requester.
 
 In summary, you need to do two things.
 
