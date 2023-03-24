@@ -18,16 +18,7 @@ let indexLatest = new Index({
   tokenize: 'full',
 });
 // The latest docsets
-let latestDocsets = [
-  '/dist/explore/introduction/',
-  '/dist/explore/dapis/',
-  '/dist/guides/dapis/',
-  //'/dist/reference/qrng/',
-  //'/dist/reference/dao-members/',
-  '/dist/reference/dapis/',
-  //'/dist/reference/airnode/latest/',
-  //'/dist/reference/ois/latest/',
-];
+let latestDocsets = ['/dist/explore/', '/dist/guides/', '/dist/reference/'];
 
 /**
  * Callback for file.walkSync, add each
@@ -42,7 +33,7 @@ function walkCB(dirPath, dirs, files) {
 /*
   Build the content json files used to create FlexSearch indexes.
   Get the innerText from the html and create a 
-  content page for the html page in /libs/flexSearchFiles
+  content page for the html page in /indexes/content-files
 */
 function buildContentFile(path) {
   const contentDir = 'indexes/content-files';
@@ -63,13 +54,17 @@ function buildContentFile(path) {
 
   // Get the html files and extract the text from the html
   const htmlString = fs.readFileSync(path, 'utf8');
+  //console.log(htmlString.split('On this page')[3]);
   var plainText = textVersion(htmlString);
 
   // Remove the nav and side bar stuff
-  plainText = plainText.split('Table of Contents for current page')[1];
+  //plainText = plainText.split('Table of Contents for current page')[1];
+  //console.log(plainText.split('On this page')[1]);
+  plainText = plainText.split('FLEX_START_TAG')[1];
 
   // Remove footer below next/previous pages
-  plainText = plainText.split('[Previous page')[0];
+  //plainText = plainText.split('[Next page')[0];
+  plainText = plainText.split('FLEX_END_TAG')[0];
 
   // Remove excessive ==== and -----
   plainText = plainText.replace(/=====/g, '');
@@ -77,6 +72,7 @@ function buildContentFile(path) {
 
   // Remove line feeds
   plainText = plainText.replace(/\n/g, ' ');
+  //console.log(plainText);
 
   // Updates the lookup file so search can find the page by its ID
   addToFrontmatter(id, frontmatter);
@@ -91,10 +87,10 @@ function buildContentFile(path) {
   // Update the in memory flexSearch indexes to be exported later
   // All files (from all docsets) go into indexAll
   indexAll.add(id, json.content);
+
   // Only add path within the latest docsets
   latestDocsets.forEach((element) => {
     if (path.indexOf(element) > -1) {
-      //console.log(path);
       indexLatest.add(id, json.content);
     }
   });
@@ -147,6 +143,7 @@ function start() {
         !skipFiles.includes(dir + '/' + files[x]) &&
         dir.indexOf('/dist/dev') === -1
       ) {
+        // if (dir.indexOf('/explore/airnode') > -1)
         buildContentFile(dir + '/' + files[x]);
       }
     }

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
@@ -127,11 +129,12 @@ cases being realized for two key reasons:
 2. The flexibility of being able to utilize Airnode to connect smart contracts
    to APIs during the devlopment cycle
 
+<!--
 ::: tip Get started
 
 Get started as an API Provider [here](/guides/airnode/become-api-provider.md)
 
-:::
+:::-->
 
 ## Oracle Integration Standards (OIS)
 
@@ -221,3 +224,5 @@ it requires API modifications to implement off-chain signing. This results in a
 severely limited API selection even compared to the regular third-party
 oracle-based solutions, and restricts the growth potential of the solution's
 ecosystem to the application-scale. -->
+
+<FlexEndTag/>

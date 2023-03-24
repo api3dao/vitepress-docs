@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Use the contract addresses listed in the tables below to interact with Airnode
@@ -56,3 +58,5 @@ requesting a new deployment.
 ## RequesterAuthorizerWithErc721
 
 Coming soon.
+
+<FlexEndTag/>

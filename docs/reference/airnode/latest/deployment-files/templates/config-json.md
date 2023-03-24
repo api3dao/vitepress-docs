@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A template for an Airnode's configuration file. Below are notations to help
@@ -267,3 +269,5 @@ as a reference while building a config.json file.
   ]
 }
 ```
+
+<FlexEndTag/>

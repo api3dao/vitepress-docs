@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Preferring the better-specified API connectivity problem over the oracle
@@ -94,3 +96,5 @@ that does not add any gas cost overheads. Although dAPI monetization is a
 completely independent matter, the flexibility that Airnode provides will carry
 over, say, it will be possible to implement a dAPI where the users assume all
 gas costs, which is not possible with the existing oracle solutions.
+
+<FlexEndTag/>

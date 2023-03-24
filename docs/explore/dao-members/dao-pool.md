@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The API3 DAO has a single staking pool called the **DAO pool**. Staking API3
@@ -185,3 +187,5 @@ their existing pricing models. This will be done using stable coins wherever
 possible, some API providers categorically reject handling cryptocurrency as
 payment. In such cases, the DAO will provide a grant that will be paid out in
 return of the proof that the API provider is compensated in fiat by the grantee.
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A successful integration of an API with an Airnode requires the mapping of each
@@ -488,3 +490,5 @@ Now that you have an OIS object, the next step is
 <div class="api3-css-nav-box-flex-row">
   <NavBox type='REFERENCE' id="_reference-ois-specifications"/>
 </div>
+
+<FlexEndTag/>

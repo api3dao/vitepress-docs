@@ -12,6 +12,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 > <Video src="https://www.youtube.com/embed/Hss-8Tzg7TI"/>
@@ -309,3 +313,5 @@ the response. Click on call and you will see the API response. Here, you can see
 your requested data decoded in `int256`
 
 > ![Making the Request](src/s7.png)
+
+<FlexEndTag/>

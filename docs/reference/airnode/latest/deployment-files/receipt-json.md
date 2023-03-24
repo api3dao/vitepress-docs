@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A `receipt.json` file is outputted after each deployment and contains
@@ -81,3 +83,5 @@ not generated for client deployments (deploying to a Docker container).
 ```
 
 :::
+
+<FlexEndTag/>

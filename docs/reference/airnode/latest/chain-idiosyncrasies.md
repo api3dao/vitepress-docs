@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Differences in chain design inevitably lead to some unique chain-specific
@@ -67,3 +69,5 @@ testnet due to differences in L1 gas fees. For Optimism testnet, a
 `withdrawalRemainder` of `1 gwei` should suffice, while for Optimism mainnet, a
 value as high as `2.4 finney` (`2400000 gwei`) may be required in order to cover
 an L1 gas price of `300 gwei` and `8000` L1 gas used by the transaction.
+
+<FlexEndTag/>

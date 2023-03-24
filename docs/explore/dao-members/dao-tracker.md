@@ -13,6 +13,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The [DAO Tracker](https://enormous.cloud/dao/api3/tracker/)<ExternalLinkImage/>
@@ -42,3 +44,5 @@ The DAO Tracker features the following pages and content:
    percentage votes for and against each.
 
 5. **Treasury** - contract addresses and balances of each API3 DAO treasury.
+
+<FlexEndTag/>

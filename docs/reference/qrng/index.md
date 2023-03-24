@@ -14,6 +14,7 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
 # {{$frontmatter.title}}
 
 The API3 QRNG service is implemented using the Airnode request–response protocol
@@ -126,3 +127,5 @@ on-chain in response to a request, which the requester needs to pay for.
   <NavBox type='GUIDE' id='_qrng-remix-example'/>
   <NavBox type='REPO' id='_qrng-starter-project'/>
 </div>
+
+<FlexEndTag/>

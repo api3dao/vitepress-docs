@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode serves an API to a blockchain according to
@@ -60,3 +62,5 @@ be an issue.
 Airnodes can assign a list of authorizers for each chain it responds to. See
 [Authorizers](/reference/airnode/latest/concepts/authorizers.md) for more
 information.
+
+<FlexEndTag/>

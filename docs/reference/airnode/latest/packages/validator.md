@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The
@@ -148,3 +150,5 @@ if (parseResult.success) {
 
 See the build instructions for the validator in the
 [airnode package repository](https://github.com/api3dao/airnode/tree/v0.10/packages/airnode-validator).
+
+<FlexEndTag/>

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide is an introduction to API3's QRNG service. Follow along to see how a
@@ -217,3 +219,5 @@ successfully completed the randomNumber will be present. The value of
 <div class="api3-css-nav-box-flex-row">
   <NavBox  type='REFERENCE' id="_reference-qrng-providers"/>
 </div>
+
+<FlexEndTag/>

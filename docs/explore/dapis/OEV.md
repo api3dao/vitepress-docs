@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Oracle extractable value (OEV) refers to oracles making use of their position to
@@ -59,3 +61,5 @@ attracts more users and volume.
 
 Learn more about Oracle Extractable Value in a summary of the
 [OEV Litepaper<ExternalLinkImage/>](https://medium.com/api3/oracle-extractable-value-oev-13c1b6d53c5b).
+
+<FlexEndTag/>

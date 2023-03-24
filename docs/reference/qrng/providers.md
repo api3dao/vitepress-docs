@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 QRNG is built on [Airnode RRP](/reference/airnode/latest/concepts/), and as
@@ -158,3 +160,5 @@ perfectly unpredictable true random numbers.
     <span style="font-family:courier">0x4554e958a68d68de6a4f6365ff868836780e84ac3cba75ce3f4c78a85faa8047</span>
     <CopyIcon text="0x4554e958a68d68de6a4f6365ff868836780e84ac3cba75ce3f4c78a85faa8047"/>
 </div>
+
+<FlexEndTag/>

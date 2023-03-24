@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 OEV gateway is used in the OEV flow to sign the data won in the auction. The
@@ -175,3 +177,5 @@ identifying given OEV update.
 - `timestamp` - UNIX timestamp of the signature
 - `encodedValue` - Encoded OEV update value
 - `signature` - Signature of the OEV update by Airnode
+
+<FlexEndTag/>

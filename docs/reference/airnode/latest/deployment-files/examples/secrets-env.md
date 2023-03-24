@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Variable names cannot contain dashes (-) or start with a number.
@@ -40,3 +42,5 @@ SS_CURRENCY_CONVERTER_API_KEY=""
 ```
 
 :::
+
+<FlexEndTag/>

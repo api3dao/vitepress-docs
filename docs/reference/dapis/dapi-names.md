@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A dAPI is a live data point associated with human readable `dapiName`. dAPI
@@ -82,3 +84,5 @@ When you read with an ID, you will always read a value directly from a Beacon or
 Beacon set. Learn more about
 [dAPI Composition](/explore/dapis/what-are-dapis.md).
  -->
+
+<FlexEndTag/>

@@ -39,6 +39,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Requests will be responded to after `minConfirmations` blocks (see
@@ -170,3 +172,5 @@ Quintessence is available on selected mainnets and testnets.
 | [<ChainName chainId="11155111"/>](https://sepolia.etherscan.io) | 11155111 | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
 
 </div>
+
+<FlexEndTag/>

@@ -10,6 +10,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This is a simple tutorial that will walk you through building and deploying a
@@ -355,3 +359,5 @@ more, head on to the [API3 QRNG Docs](/reference/qrng/).
 
 If you have any doubts/questions, visit the API3
 [Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
+
+<FlexEndTag/>

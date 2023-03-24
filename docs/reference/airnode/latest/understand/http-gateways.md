@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 As part of the Airnode deployment you can decide to deploy two different HTTP
@@ -243,3 +245,5 @@ gateway in the quick start tutorials.
   <NavBox type='GUIDE' id="_airnode-quick-start-gcp"/>
   <NavBox type='GUIDE' id="_airnode-quick-start-container"/>
 </div>
+
+<FlexEndTag/>

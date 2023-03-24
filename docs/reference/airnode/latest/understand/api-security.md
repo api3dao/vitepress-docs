@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode can pass along security information (schemes) when making calls to API
@@ -455,3 +457,5 @@ an additional secret goes in the query).
 
 If the API you are integrating is publicly accessible, you can set both the
 `security schemes` and `security` fields to empty objects.
+
+<FlexEndTag/>

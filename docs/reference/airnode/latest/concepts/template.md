@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An oracle request has many parameters. It is very common for
@@ -48,3 +50,5 @@ templateId = keccak256(abi.encodePacked(
   parameters
 ));
 ```
+
+<FlexEndTag/>

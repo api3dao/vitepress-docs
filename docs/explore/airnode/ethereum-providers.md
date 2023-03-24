@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An oracle node requires access to a node on a blockchain (such as Ethereum) to
@@ -34,3 +36,5 @@ individually. The operations of an Airnode thus cannot be disrupted reliably
 unless all of its providers are malicious. Therefore, using multiple Ethereum
 providers is a better strategy to achieve the highest possible availability than
 using a private Ethereum node.
+
+<FlexEndTag/>

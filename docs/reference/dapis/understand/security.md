@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 dApp developers need not trust API3 as all Airnodes (which provide data feed
@@ -28,3 +30,5 @@ transparently with regards to all of its management practices. All
 is open sourced and can be verified by anyone. Consider reading through API3
 source code to verify claims of security. Questions, jump on
 [Discord](https://discord.com/channels/758003776174030948/765618225144266793).
+
+<FlexEndTag/>

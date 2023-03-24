@@ -1,5 +1,5 @@
 ---
-title: Potential Obstacles (of operating oracle nodes)
+title: Monetize an API in Web3
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
@@ -12,7 +12,9 @@ tags:
 
 <SearchHighlight/>
 
-# Monetize an API in Web3
+<FlexStartTag/>
+
+# {{$frontmatter.title}}
 
 The goal of API3 is to provide smart contract developers with an easy way to
 access off-chain resources from within their smart contracts, without having to
@@ -159,3 +161,5 @@ simple and low-effort process that doesn't require specific developer resources
 and benefits from the
 [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget) design
 principles.
+
+<FlexEndTag/>

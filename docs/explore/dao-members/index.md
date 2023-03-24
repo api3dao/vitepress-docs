@@ -13,6 +13,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 is governed by a Decentralized Autonomous Organization (DAO). The DAO is a
@@ -97,3 +99,5 @@ Each team is expected to produce sufficiently detailed progress reports that
 enable the DAO to evaluate team performance with respect to proposed goals.
 These public reports have the additional benefit of increased accountability as
 dAPI users and the general public can audit API3 operations.
+
+<FlexEndTag/>

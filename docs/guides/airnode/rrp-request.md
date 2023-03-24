@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide steps through the process of making a direct request of an Airnode
@@ -294,3 +296,5 @@ Deploy the requester to the desired blockchain and then sponsor the requester.
 See
 [Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
+
+<FlexEndTag/>

@@ -1,5 +1,5 @@
 ---
-title: Implementation
+title: How does Airnode work?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
@@ -12,7 +12,9 @@ tags:
 
 <SearchHighlight/>
 
-# How does Airnode work?
+<FlexStartTag/>
+
+# {{$frontmatter.title}}
 
 Airnode is a serverless oracle node implemented with a
 [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget)
@@ -258,3 +260,5 @@ dAPIs with data behind the scenes.
 - See
   [config.json](/reference/airnode/latest/deployment-files/examples/config-json.md)
   to view an example file.
+
+<FlexEndTag/>

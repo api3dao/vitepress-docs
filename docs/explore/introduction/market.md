@@ -11,8 +11,10 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
-<!-- section to review upon staged beta of market -->
-# API3 Market
+
+<FlexStartTag/>
+
+# {{$frontmatter.title}}
 
 API3 has developed an oracle solution that enables smart contracts to access and
 utilize valuable real-world data with ease. As such it is essential to make sure
@@ -48,3 +50,5 @@ feeds launching in the coming months.
 While the API3 Market UI is intuitive, follow this
 [simple guide](/guides/dapis/subscribing-self-funded-dapis/) to sponsor,
 activate and read a self-funded dAPI.
+
+<FlexEndTag/>

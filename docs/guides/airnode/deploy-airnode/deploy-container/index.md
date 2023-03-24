@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
@@ -329,3 +331,5 @@ Finally the API integration was tested using the
 You made a CURL request (using HTTP) to the HTTP gateway. Airnode queried the
 API provider and sent back a response. All of this was performed without
 accessing the blockchain.
+
+<FlexEndTag/>

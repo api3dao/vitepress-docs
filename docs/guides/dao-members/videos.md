@@ -17,6 +17,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The DAO dashboard videos have been incorporated the
@@ -52,3 +54,5 @@ access to all available dashboard videos.
 ## Vote and Delegate
 
 > <Video src="https://www.youtube.com/embed/K_EZFMjXUPA"/>
+
+<FlexEndTag/>

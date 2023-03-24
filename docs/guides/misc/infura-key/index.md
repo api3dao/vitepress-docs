@@ -2,8 +2,8 @@
 title: Create an Infura key
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides
-path: /guides/misc/infura-key.html
+pageHeader: Guides → Miscellaneous
+path: /guides/misc/infura-key/index.html
 outline: deep
 tags:
 ---
@@ -11,6 +11,8 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -63,3 +65,5 @@ https://sepolia.infura.io/v3/ec3dda...b3618a2
     <NavBox type='REFERENCE' id="_airnode-quick-start-gcp"/>
 </div>
 -->
+
+<FlexEndTag/>

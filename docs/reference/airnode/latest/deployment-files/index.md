@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode is deployed with the following files:
@@ -51,3 +53,5 @@ The deployer image outputs a
 [receipt.json](/reference/airnode/latest/deployment-files/receipt-json.md) file
 after deployment, which contains information about the deployment that can be
 referred to later on for interaction or removal.
+
+<FlexEndTag/>

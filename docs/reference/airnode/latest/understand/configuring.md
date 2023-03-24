@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode is deployed or redeployed using configuration values from its
@@ -519,3 +521,5 @@ urls and security credentials, so they should be kept secret. Make sure that you
 do not push your credentials to a repository or otherwise expose them as these
 credentials can be used to gain access to your Airnode's private key, AWS
 account or GCP account.
+
+<FlexEndTag/>

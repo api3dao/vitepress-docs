@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The
@@ -359,3 +361,5 @@ is used via the AWS/GCP deployer image.
 <div class="api3-css-nav-box-flex-row">
   <NavBox type='REFERENCE' id='_reference-airnode-deployer-image'/>
 </div>
+
+<FlexEndTag/>

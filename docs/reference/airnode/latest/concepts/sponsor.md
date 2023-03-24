@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A sponsor is an entity (individual, business, etc.). Sponsors create
@@ -226,3 +228,5 @@ Use the
 to derive a `sponsorWallet`. An example can be seem in the
 [Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
 doc.
+
+<FlexEndTag/>

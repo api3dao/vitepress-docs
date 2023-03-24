@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Reserved parameters are part of an OIS object as part of the `endpoints` field
@@ -376,3 +378,5 @@ The [weather-multi-value](/guides/airnode/monorepo-examples.md) monorepo example
 demonstrates encoding of multiple values of different types.
 
 :::
+
+<FlexEndTag/>

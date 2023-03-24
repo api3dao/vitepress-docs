@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A request is made, by a
@@ -208,3 +210,5 @@ made but not yet fulfilled/failed. If a requester has made a request, received a
 Airnode has called back `fail()` instead.Returns `true` if the request is
 awaiting fulfillment (i.e., `true` if `fulfill()` or `fail()` is not called back
 yet), `false` otherwise.
+
+<FlexEndTag/>

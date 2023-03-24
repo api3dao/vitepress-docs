@@ -2,8 +2,8 @@
 title: Add testnets to MetaMask
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides
-path: /guides/misc/testnets-metamask.html
+pageHeader: Guides → Miscellaneous
+path: /guides/misc/testnets-metamask/index.html
 outline: deep
 tags:
 ---
@@ -11,6 +11,8 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -34,3 +36,5 @@ Locate the Mumbai box (ChainId 80001 and Currency MATIC) and select the
 **Add to MetaMask** button.
 
 <img src="./src/image2.png" style="width:40%;border:solid lightgrey 1px;">
+
+<FlexEndTag/>
