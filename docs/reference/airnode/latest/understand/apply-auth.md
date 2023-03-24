@@ -51,7 +51,7 @@ Airnode's `airnodeAddress`. Sponsors (via their sponsored requesters) use
 endpoints. However, rather than serve them publicly, you may want to:
 
 - Only serve your own
-  [requester contracts](/reference/airnode/latest/concepts/requesters-sponsors.md).
+  [requester contracts](/reference/airnode/latest/developers/requesters-sponsors.md).
 - Only serve sponsors who have made a subscription payment.
 - Only serve sponsors who have gone through KYC.
 

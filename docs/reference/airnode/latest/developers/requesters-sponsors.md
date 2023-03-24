@@ -2,8 +2,8 @@
 title: Requesters and Sponsors
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/requesters-sponsors.html
+pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
+path: /reference/airnode/latest/developers/requesters-sponsors.html
 version: v0.11
 outline: deep
 tags:
@@ -19,16 +19,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-::: danger TODO:
-
-This documented needs to be split out by requesters and sponsors and merged into
-the `requester.md` or `sponsor.md` files in Concepts and Definitions.
-
-OR merge the separate docs to this one.
-
-:::
-
-As a developer it helps to understand what a **requester** is and what a
+As a dApp developer it helps to understand what a **requester** is and what a
 **sponsor** does. They are both important parts of the Airnode ecosystem. This
 doc will further define them and walk you through the process of sponsoring a
 requester and deriving a sponsor wallet using the admin CLI commands.
@@ -64,7 +55,7 @@ for the fulfillment of a request, the gas costs the Airnode will incur. These
 costs will be withdrawn from the `sponsorWallet` of the Airnode when the
 requester calls it.
 
-::: tip sponsorAddress
+::: info sponsorAddress
 
 A [sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress)
 is a public address of an account from a mnemonic, usually the default account.

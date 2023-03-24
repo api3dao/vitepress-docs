@@ -36,7 +36,7 @@ An Airnode is a first-party oracle that can push off-chain API data to on-chain
 smart contracts, known as a requester, using RRP. A requester is a contract that
 can trigger an Airnode request. To do so, the requester needs to be sponsored
 and make the request using a matching sponsor wallet. See
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)
 on how to sponsor a requester and derive the sponsor wallet.
 
 In the diagram below a requester makes a request to the on-chain RRP protocol
@@ -178,11 +178,11 @@ must gather the following parameters to pass on to
   endpoint desired at a particular Airnode.
 
 - **sponsor**: The
-  [sponsor](/reference/airnode/latest/concepts/requesters-sponsors.md#what-is-a-sponsor)
+  [sponsor](/reference/airnode/latest/developers/requesters-sponsors.md#what-is-a-sponsor)
   address.
 
 - **sponsorWallet**: The
-  [sponsor wallet](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+  [sponsor wallet](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
   address that the sponsor received when deriving the wallet for the Airnode
   being called.
 
@@ -294,7 +294,7 @@ The callback to a requester contains two parameters, as shown in the
 
 Deploy the requester to the desired blockchain and then sponsor the requester.
 See
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
 
 <FlexEndTag/>

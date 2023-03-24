@@ -1,8 +1,8 @@
 ---
-title: Using Templates
+title: Using Templates (RRP)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → dApp Developers
+pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
 path: /reference/airnode/latest/developers/using-templates.html
 version: v0.11
 outline: deep
