@@ -354,8 +354,8 @@
     "title": "Create an Infura key",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
-    "pageHeader": "Guides",
-    "path": "/guides/misc/infura-key.html",
+    "pageHeader": "Guides → Miscellaneous",
+    "path": "/guides/misc/infura-key/index.html",
     "outline": "deep",
     "tags": null
   },
@@ -363,8 +363,8 @@
     "title": "Remix Reload Contract",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
-    "pageHeader": "Guides",
-    "path": "/guides/misc/remix-reload-contract.html",
+    "pageHeader": "Guides → Miscellaneous",
+    "path": "/guides/misc/remix-reload-contract/index.html",
     "outline": "deep",
     "tags": null
   },
@@ -372,8 +372,8 @@
     "title": "Add testnets to MetaMask",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
-    "pageHeader": "Guides",
-    "path": "/guides/misc/testnets-metamask.html",
+    "pageHeader": "Guides → Miscellaneous",
+    "path": "/guides/misc/testnets-metamask/index.html",
     "outline": "deep",
     "tags": null
   },
