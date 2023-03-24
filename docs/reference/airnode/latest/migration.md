@@ -153,5 +153,6 @@ to learn more about this feature.
 - There's a new gateway available called the OEV gateway. Read the
   [OEV gateway](/reference/airnode/latest/understand/oev-gateway.md) doc to
   learn more about this feature.
+- The heartbeat payload now includes `deployment_id`.
 
 <FlexEndTag/>
