@@ -16,6 +16,10 @@ module.exports = [
         text: 'Reading a Self-Funded dAPI Proxy',
         link: '/guides/dapis/read-self-funded-dapi/',
       },
+      {
+        text: 'Automate funding of multiple dAPIs with Gelato',
+        link: '/guides/dapis/funding-multiple-daps-gelato/',
+      },
     ],
   },
   {
