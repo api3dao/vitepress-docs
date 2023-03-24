@@ -2,8 +2,8 @@
 title: Add testnets to MetaMask
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides
-path: /guides/misc/testnets-metamask.html
+pageHeader: Guides → Miscellaneous
+path: /guides/misc/testnets-metamask/index.html
 outline: deep
 tags:
 ---

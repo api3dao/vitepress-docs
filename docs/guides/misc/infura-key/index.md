@@ -2,8 +2,8 @@
 title: Create an Infura key
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides
-path: /guides/misc/infura-key.html
+pageHeader: Guides → Miscellaneous
+path: /guides/misc/infura-key/index.html
 outline: deep
 tags:
 ---
