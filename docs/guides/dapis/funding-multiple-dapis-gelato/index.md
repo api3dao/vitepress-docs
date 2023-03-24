@@ -3,7 +3,7 @@ title: Automate funding of multiple Self-Funded dAPIs with Gelato
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
-path: /guides/dapis/funding-multiple-daps-gelato/index.html
+path: /guides/dapis/funding-multiple-dapis-gelato/index.html
 outline: deep
 tags:
 ---
@@ -15,6 +15,8 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -28,10 +30,10 @@ issues with the gelato platform, please contact the Gelato team directly.
 
 Gelato is a decentralized automation platform that allows you to automate tasks
 on multiple blockchain networks. In this guide, we will show you how to use
-Gelato to automate the funding of multiple dAPI sponorWallets. This is useful if
-you have multiple dAPIs that you want to use in your smart contract. Instead of
-manually funding each dAPI at regular intervals, you can use Gelato to automate
-the process.
+Gelato to automate the funding of multiple dAPI `sponsorWallets`. This is useful
+if you have multiple dAPIs that you want to use in your smart contract. Instead
+of manually funding each dAPI at regular intervals, you can use Gelato to
+automate the process.
 
 This following contract will be used in this guide. Open it in
 [Remix](https://remix.ethereum.org/#url=https://gist.githubusercontent.com/Ashar2shahid/a63d5b04ff9640c2f860f54dffa78995/raw/ce0a9461b817f59774deb1aaaa368438e4e3328b/Automation.sol)
@@ -63,7 +65,7 @@ contract Automation is Ownable, AutomateReady {
     // @param _sponsorWallets Array of sponsor wallet addresses
     // @param _minimumBalance Minimum balance required in sponsor wallet
     // @param _fundAmount Amount to be funded to sponsor wallet
-    function intializeWallet(address[] calldata _sponsorWallets, uint256 _minimumBalance, uint256 _fundAmount) public onlyOwner {
+    function initializeWallet(address[] calldata _sponsorWallets, uint256 _minimumBalance, uint256 _fundAmount) public onlyOwner {
         sponsorWallets = _sponsorWallets;
         minimumBalance = _minimumBalance;
         fundAmount = _fundAmount;
@@ -131,7 +133,7 @@ Deploy the contract using the following parameters:
 
 ## 2. Initializing the contract
 
-Initialize the contract by calling the `intializeWallet()` function using the
+Initialize the contract by calling the `initializeWallet()` function using the
 following parameters:
 
 - `_sponsorWallets` : Array of sponsor wallet addresses. The sponsor wallet for
@@ -156,7 +158,7 @@ Once the contract is deployed and initialized, you need to create a task on
 gelato. Head over to the [App Platform](https://app.gelato.network/) and connect
 your wallet.
 
-### 3.a Preqrequisites
+### 3.a Prerequisites
 
 Make sure that:
 
@@ -195,14 +197,16 @@ redirected to the task creation page. Follow the steps below to create the task:
 
 - Give the task a name and click on the `Create Task` button.
 
-## 4. Tranferring gas funds to the contract
+## 4. Transferring gas funds to the contract
 
 Once the task is created, you need to **transfer the gas funds** to the deployed
 `Automation.sol` contract. You can do this by directly sending funds to the
 contract address. Once funded, gelato keepers will monitor the balance of the
 sponsorWallets and fund the sponsorWallets if the balance is less than the
 minimum balance. A small fee will be deducted from the contract balance and sent
-to the Gelato network for providing the automation serivce.
+to the Gelato network for providing the automation service.
 
 With this, you have now setup an automation service for your self-funded dAPIs
 and don't need to manually fund each sponsor wallet.
+
+<FlexEndTag/>

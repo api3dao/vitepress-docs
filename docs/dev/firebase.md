@@ -17,6 +17,9 @@ hosting. All sites are build automatically using GitHub
 [workflows](https://github.com/api3dao/vitepress-docs/tree/main/.github/workflows)
 stored in the `vitepress-docs` repo.
 
+- Production: https://vitepress-docs.web.app
+- Staging: https://vitepress-docs--stage-1sggkn03.web.app
+
 ## Repo Branches
 
 The branch `live-site` is used to generate the production web site for the docs,
