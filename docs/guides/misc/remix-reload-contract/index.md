@@ -2,8 +2,8 @@
 title: Remix Reload Contract
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides
-path: /guides/misc/remix-reload-contract.html
+pageHeader: Guides → Miscellaneous
+path: /guides/misc/remix-reload-contract/index.html
 outline: deep
 tags:
 ---
@@ -11,6 +11,8 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -53,3 +55,5 @@ probably did not use the correct contract address.
 Watch this short video that explains the above steps in more detail.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_bPAEltRhrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<FlexEndTag/>

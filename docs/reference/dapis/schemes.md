@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode places the value of a data feed on-chain into a beacon. Therefore
@@ -56,3 +58,5 @@ Beacon's value with a function such as
 [readDataFeedWithId()](/reference/dapis/functions/read-data-feed-with-id.md),
 the `beaconId` is needed.
 -->
+
+<FlexEndTag/>

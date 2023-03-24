@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The core of the DAO is a set of smart contracts based on Aragon's
@@ -41,3 +43,5 @@ list of contract addresses.
 
 <!-- Add mainnet addresses to this list -->
 <!-- Add the main DAO contract to this list -->
+
+<FlexEndTag/>

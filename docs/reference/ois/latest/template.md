@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An OIS (Oracle Integration Specifications) JSON object is part of an Airnode's
@@ -113,3 +115,5 @@ for your particular use case. You can also check out the OISes created for our
   ]
 }
 ```
+
+<FlexEndTag/>

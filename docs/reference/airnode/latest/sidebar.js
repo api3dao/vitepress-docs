@@ -4,7 +4,7 @@ module.exports = [
 
     items: [
       {
-        text: 'Airnode',
+        text: 'Contract Addresses',
         link: '/reference/airnode/latest/',
       },
       { text: 'Versions', link: '/reference/airnode/latest/versions' },

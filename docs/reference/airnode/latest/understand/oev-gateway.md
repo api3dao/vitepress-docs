@@ -1,5 +1,5 @@
 ---
-title: HTTP Gateways (optional)
+title: OEV Gateway (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
@@ -14,6 +14,8 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -175,3 +177,5 @@ identifying given OEV update.
 - `timestamp` - UNIX timestamp of the signature
 - `encodedValue` - Encoded OEV update value
 - `signature` - Signature of the OEV update by Airnode
+
+<FlexEndTag/>

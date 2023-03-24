@@ -15,6 +15,10 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 <<< @/reference/ois/latest/example.json
+
+<FlexEndTag/>

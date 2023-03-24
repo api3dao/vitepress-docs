@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Some attributes that determine values displayed on the DAO dashboard (such as
@@ -38,3 +40,5 @@ below.
 | minApr                       | 2.5 \* 10^16     | `setMinApr(uint256 _minApr)`                                             | Minimum reward APR                                                                               |
 | proposalVotingPowerThreshold | 0.1 \* 10^16     | `setProposalVotingPowerThreshold(uint256 _proposalVotingPowerThreshold)` | Percentage of all shares that must be held to create a new proposal                              |
 | unstakeWaitPeriod            | 604800 (seconds) | `setUnstakeWaitPeriod(uint256 _unstakeWaitPeriod)`                       | Length of time a member must wait after scheduling unstake before unstaking tokens from the pool |
+
+<FlexEndTag/>

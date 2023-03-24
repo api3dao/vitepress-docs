@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The Oracle Integration Specification (OIS) is based on
@@ -644,3 +646,5 @@ additional details.
 <div class="api3-css-nav-box-flex-row">
   <NavBox type='REFERENCE' id="_reference-airnode-api-integrations"/>
 </div>
+
+<FlexEndTag/>

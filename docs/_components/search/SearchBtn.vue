@@ -144,7 +144,7 @@ export default {
       this.indexAll = new Index({
         tokenize: 'full',
       });
-      console.log('buildIndexAll() MODE', import.meta.env.MODE);
+      //console.log('buildIndexAll() MODE', import.meta.env.MODE);
 
       let cfg = await axios.get('/indexes/all/cfg.json');
       let ctx = await axios.get('/indexes/all/ctx.json');
@@ -160,7 +160,7 @@ export default {
       this.indexLatest = new Index({
         tokenize: 'full',
       });
-      console.log('buildIndexLatest() MODE', import.meta.env.MODE);
+      //console.log('buildIndexLatest() MODE', import.meta.env.MODE);
       let cfg = await axios.get('/indexes/latest/cfg.json');
       let ctx = await axios.get('/indexes/latest/ctx.json');
       let map = await axios.get('/indexes/latest/map.json');

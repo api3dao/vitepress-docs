@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Using Docker is the easiest way to both deploy an Airnode to a cloud provider
@@ -46,3 +48,5 @@ images access to the host directory by
 ## DockerHub
 
 <DockerHubImages/>
+
+<FlexEndTag/>

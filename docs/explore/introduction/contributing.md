@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 is open to any proposals and improvements. Please feel free to contribute.
@@ -87,3 +89,5 @@ See the [dev documentation](/dev/) for an overview of the API3 technical
 documentation site. It contains instructions on the make-up of the docs and on
 how to clone, setup, and run the project locally. For non-DAO members a PR from
 a fork is always welcome.
+
+<FlexEndTag/>

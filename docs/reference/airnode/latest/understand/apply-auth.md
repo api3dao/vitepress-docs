@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
@@ -178,3 +180,5 @@ case and can be implemented with the following steps:
 
 Once implemented, only requester contract addresses you have added to
 RequesterAuthorizerWithAirnode will have access to your Airnode.
+
+<FlexEndTag/>

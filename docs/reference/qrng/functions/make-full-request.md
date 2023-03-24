@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 QNRG uses the `makeFullRequest()` function in the
@@ -30,3 +32,5 @@ protocol contract to get a quantum random number.
 ```
 
 - `airnode`: The address of the Airnode.
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode logs or log groups are named similarly in AWS and GCP and include the
@@ -54,3 +56,5 @@ command line. These logs are also available through the Docker interface e.g.
 under Containers within Docker Desktop. See the Docker
 [client image](/reference/airnode/latest/docker/client-image.md) for more
 information.
+
+<FlexEndTag/>

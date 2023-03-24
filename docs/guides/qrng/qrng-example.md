@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
@@ -74,3 +76,5 @@ contract. The `AirnodeRrpV0` contract inherits this contract and therefore the
 withdrawal function must be added to the requester contract such that the owner
 of the requester contract can transfer the requester contract balance to their
 address.
+
+<FlexEndTag/>

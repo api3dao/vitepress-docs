@@ -20,14 +20,9 @@ module.exports = [
         text: 'Automate funding of multiple dAPIs with Gelato',
         link: '/guides/dapis/funding-multiple-daps-gelato/',
       },
-      /*{
-        text: 'Self-Funded dAPIs',
-        collapsed: false,
-        items: [],
-      },*/
     ],
   },
-  /*{
+  {
     text: 'Airnode',
     collapsed: false,
     items: [
@@ -69,13 +64,13 @@ module.exports = [
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
       },
-      {
+      /*{
         text: 'Become an API Provider',
         link: '/guides/airnode/become-api-provider',
-      },
+      },*/
     ],
-  },*/
-  /*{
+  },
+  {
     text: 'QRNG',
     collapsed: false,
     items: [
@@ -100,8 +95,8 @@ module.exports = [
         link: '/guides/qrng/youtube-demos/',
       },
     ],
-  },*/
-  /*{
+  },
+  {
     text: 'DAO Members',
     collapsed: false,
     items: [
@@ -126,7 +121,7 @@ module.exports = [
         link: '/guides/dao-members/videos',
       },
     ],
-  },*/
+  },
   {
     text: 'Miscellaneous',
     collapsed: false,

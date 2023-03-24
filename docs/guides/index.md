@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Guides for the API3 ecosystem have been placed here to help eliminate the hunt
@@ -24,3 +26,5 @@ and concepts at API3. If you have an idea for a guide that you wish was here,
 please create a
 [GitHub issue<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs).
 This will help us create a full and comprehensive list.
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode supports different strategies to calculate the gas price that it should
@@ -206,3 +208,5 @@ the amount to use as gas price.
 (wei, kwei, mwei, gwei, szabo, finney, ether).
 
   </div>
+
+<FlexEndTag/>

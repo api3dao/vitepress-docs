@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Chain providers provide access to an evm on behalf of an API provider. Your
@@ -285,3 +287,5 @@ each has a unique `id` and `type` and a list of `providers` for each.
   }
 ],
 ```
+
+<FlexEndTag/>

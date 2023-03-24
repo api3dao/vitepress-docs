@@ -11,6 +11,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 [Quantumon](https://quantumon.xyz/) - Quantum Monsters are a collection of AI
@@ -432,3 +436,5 @@ the data to mint an NFT.
 
 [Click here<ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4)
 to see the source code for the Quantumon contract.
+
+<FlexEndTag/>

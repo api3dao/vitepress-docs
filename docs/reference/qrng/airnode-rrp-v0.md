@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A requester (smart contract) uses the function `makeFullRequest()` from the
@@ -111,3 +113,5 @@ function fulfillUint256(bytes32 requestId, bytes calldata data)
         emit ReceivedUint256(requestId, qrngUint256);
     }
 ```
+
+<FlexEndTag/>

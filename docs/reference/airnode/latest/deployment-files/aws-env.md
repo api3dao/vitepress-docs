@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 When it is time to deploy the Airnode to AWS, the Docker
@@ -26,3 +28,5 @@ or start with a number.
 AWS_ACCESS_KEY_ID=XYZ...123
 AWS_SECRET_ACCESS_KEY=ABC7...89
 ```
+
+<FlexEndTag/>

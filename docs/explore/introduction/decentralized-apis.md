@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 dAPIs are on-chain data feeds sourced from off-chain first-party oracles owned
@@ -109,3 +111,5 @@ See the guide
 
 See the guide
 [Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/).
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode can authorize requester contract access to its underlying API using
@@ -548,3 +550,5 @@ event SetWhitelistStatusPastExpiration(
 The `isAuthorized()` function will be called by AirnodeRrpV0 to verify the
 authorization status of a request. This function will return true for all
 whitelisted requester contracts, admins and the meta-admin address.
+
+<FlexEndTag/>

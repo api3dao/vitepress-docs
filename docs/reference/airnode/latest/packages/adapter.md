@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The
@@ -262,3 +264,5 @@ For example:
   fixed and some not. This is irrelevant though, and all the elements are
   converted based on
   [`string32`](/reference/airnode/latest/packages/adapter.md#string32) rules.
+
+<FlexEndTag/>

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 aims to set up, maintain, and
@@ -46,7 +48,7 @@ share will not always be one token.
 
 In essence, inflationary rewards entice token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as
-collateral for service [coverage policies](/explore/dapis/service-coverage), and
+collateral for service [coverage policies](/explore/dapis/using-dapis.md), and
 encourages the staker to participate in governance to ensure that the risk is
 minimized. As a combination of the two, an inflationary governance token used as
 collateral attracts all token holders to participate in governance, which is
@@ -130,3 +132,5 @@ later, the rewards you will receive next week will get unlocked 1 year 1 week
 later, etc.) This 1 year-lock is the secret sauce to good decentralized
 governance, it essentially aligns the incentives of the stakers/governors with
 the ones of the DAO/project/token for a whole year.
+
+<FlexEndTag/>

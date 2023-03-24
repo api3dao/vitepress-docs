@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide steps through the process of making a template request of an Airnode
@@ -183,3 +185,5 @@ npx @api3/airnode-admin get-template \
 <div class="api3-css-nav-box-flex-row">
     <NavBox  type='REPO' id="_airnode-coingecko-template"/>
 </div>
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode is a first-party oracle that can push off-chain API data to an on-chain
@@ -45,3 +47,5 @@ In summary, you need to do two things.
 For a more detailed diagram see the first image in the
 [Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md)
 doc.
+
+<FlexEndTag/>

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 dAPIs can be read on the following chains using
@@ -20,3 +22,5 @@ Use the [API3 Market<ExternalLinkImage/>](https://market.api3.org/) website to
 create proxy contracts.
 
 <ChainsList/>
+
+<FlexEndTag/>

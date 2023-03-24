@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The following guide assumes a valid v0.10.x `config.json` file. All changes
@@ -37,6 +39,8 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 4. `chains[n].authorizers.requesterAuthorizersWithErc721` and
    `chains[n].authorizers.crossChainRequesterAuthorizersWithErc721` added.
+
+5. Section `nodeSettings.oevGateway` was added.
 
 ## Details
 
@@ -120,9 +124,34 @@ page.
   ]
 ```
 
+5. With the new OEV gateway feature there's a new section in the `config.json`
+   file for it. The new section `nodeSettings.oevGateway` needs to be added in
+   order for the configuration file to be valid.
+
+```diff
+{
+  "httpSignedDataGateway": {
+    "enabled": false
+  },
++ "oevGateway": {
++   "enabled": false
++ },
+  "logFormat": "plain",
+  "logLevel": "INFO",
+}
+```
+
+Read the [OEV gateway](/reference/airnode/latest/understand/oev-gateway.md) doc
+to learn more about this feature.
+
 ## New features
 
 - The Node.js version of Airnode was upgraded from 14 to 18.
 - The `coingecko-signed-data` and `coingecko-testable` HTTP gateway
   `airnode-examples` integrations have been combined into a single
   `coingecko-http-gateways` integration.
+- There's a new gateway available called the OEV gateway. Read the
+  [OEV gateway](/reference/airnode/latest/understand/oev-gateway.md) doc to
+  learn more about this feature.
+
+<FlexEndTag/>

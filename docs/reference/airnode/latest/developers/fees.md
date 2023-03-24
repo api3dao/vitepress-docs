@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 There are some one-time setup/maintenance costs and some ongoing costs of
@@ -65,3 +67,5 @@ save costs. The subscription (even if free) will most likely involve the use of
 a security scheme such as an API key that must be used to access the data. See
 [Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md) to
 learn more on how to pass the security credentials to an Airnode.
+
+<FlexEndTag/>

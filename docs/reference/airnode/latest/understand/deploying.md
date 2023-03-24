@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 After integrating an API
@@ -168,3 +170,5 @@ instructions.
   <NavBox type='GUIDE' id="_airnode-quick-start-gcp"/>
   <NavBox type='GUIDE' id="_airnode-quick-start-container"/>
 </div>
+
+<FlexEndTag/>
