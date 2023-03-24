@@ -37,7 +37,6 @@ function walkCB(dirPath, dirs, files) {
 */
 function buildContentFile(path) {
   const contentDir = 'indexes/content-files';
-  console.log(path);
 
   // Make sure the /flexContentFiles dir exists
   fse.ensureDirSync(contentDir);
