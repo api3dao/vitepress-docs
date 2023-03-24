@@ -14,7 +14,7 @@
         "
       >
         <img
-          src="/public/api3-inactive.png"
+          src="/api3-inactive.png"
           style="float: left; margin-top: -5px; width: 40px"
         />
         <span style="color: white">API3 MARKET </span>
