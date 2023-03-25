@@ -35,7 +35,7 @@ contract as dAPIs.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
 
-`Api3ServerV1.sol` manages the definitions for thousands of dAPIs, each of which
+`Api3ServerV1.sol` manages the definitions for hundreds of dAPIs, each of which
 is an aggregated value of multiple beacons or the value of a single beacon.
 
 - [Self-funded dAPIs](/reference/dapis/understand/proxy-contracts.md#self-funded-dapis):

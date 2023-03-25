@@ -1,12 +1,22 @@
 <template>
   <div style="font-weight: 400; font-size: large">
-    <span style="font-size: small">📂</span> {{ text }}
-    <div style="font-size: small; margin-left: 25px" v-show="subText">
+    <img
+      src="/img/Folder-Dark.png"
+      v-if="isDark"
+      style="width: 11%; float: left"
+    />
+    <img
+      src="/img/Folder-Light.png"
+      v-if="!isDark"
+      style="width: 11%; float: left"
+    />
+    <span style="margin-left: 5px">{{ text }}</span>
+    <div style="font-size: small; margin-left: 28px" v-show="subText">
       {{ subText }} <VersionPicklist v-show="show" />
     </div>
     <div
       style="width: 207px; margin-top: 5px; border-bottom: solid 1px lightgrey"
-    />
+    ></div>
   </div>
 </template>
 
@@ -21,6 +31,7 @@ export default {
     subText: undefined,
     show: undefined,
     api3_navbarReferenceBtn: undefined,
+    isDark: undefined,
   }),
   mounted() {
     const { page } = useData();
@@ -29,6 +40,13 @@ export default {
     this.setHeader(page._value.frontmatter);
     this.setReferenceBtnState(page._value.relativePath);
 
+    this.isDark = useData().isDark.value;
+
+    // Changes the folder icon
+    watch(useData().isDark, (dark) => {
+      this.isDark = dark;
+    });
+    // Adjust the sub header based on hte page selected
     watch(page, (currentPage) => {
       this.showVersions(currentPage.relativePath);
       this.setHeader(currentPage.frontmatter);

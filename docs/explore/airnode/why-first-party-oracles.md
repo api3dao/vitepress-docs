@@ -100,14 +100,14 @@ resulting in a strong mutual bond between the two.
 
 ## Empowering API Providers
 
-Through experiece of engaging API Providers we realized the incentive structure
+Through experience of engaging API Providers we realized the incentive structure
 that see thousands of APIs served to Web3 were misaligned for those responsible
 for serving the data. Airnode and the corresponding first-party oracles have
 been designed with the API Provider in mind.
 
 With consideration of the API Provider, first-party represents increased
-flexiblility in deployment & configuration and the ability to ensure ownership
-of their data.
+flexibility in deployment & configuration and the ability to ensure ownership of
+their data.
 
 ::: info Read more
 
