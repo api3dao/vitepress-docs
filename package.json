@@ -20,7 +20,8 @@
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky install",
     "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
-    "flex:test": "node libs/flexTestSearch.js;"
+    "flex:test": "node libs/flexTestSearch.js;",
+    "axios:build": "node libs/axiosBuildScripts.js; yarn format;"
   },
   "devDependencies": {
     "axios": "^1.2.1",

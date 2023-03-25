@@ -14,8 +14,6 @@ import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
 import ContractAddresses from '../../_components/reference/airnode/ContractAddresses.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
-import ChainsList from '../../_components/reference/dapis/chains/ChainsList.vue';
-import ChainsItem from '../../_components/reference/dapis/chains/ChainsItem.vue';
 import DockerHubImages from '../../_components/reference/airnode/DockerHubImages.vue';
 import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeAws.vue';
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
@@ -51,8 +49,6 @@ export default {
     app.component('CopyIcon', CopyIcon);
     app.component('ContractAddresses', ContractAddresses);
     app.component('SponsorWalletWarning', SponsorWalletWarning);
-    app.component('ChainsList', ChainsList);
-    app.component('ChainsItem', ChainsItem);
     app.component('DockerHubImages', DockerHubImages);
     app.component('DeleteAirnodeAws', DeleteAirnodeAws);
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);

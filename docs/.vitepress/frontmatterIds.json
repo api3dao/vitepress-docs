@@ -1098,15 +1098,6 @@
     ]
   },
   "115": {
-    "title": "Chains and Contracts",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/chains.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "116": {
     "title": "dAPI Names",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1115,12 +1106,21 @@
     "outline": "deep",
     "tags": null
   },
-  "117": {
+  "116": {
     "title": "ID and Name Schemes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs",
     "path": "/reference/dapis/schemes.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "117": {
+    "title": "Chains and Contracts",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs",
+    "path": "/reference/dapis/chains/index.html",
     "outline": "deep",
     "tags": null
   },

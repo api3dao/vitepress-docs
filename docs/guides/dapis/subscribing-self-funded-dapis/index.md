@@ -202,7 +202,7 @@ viewing the code of the proxy on the block explorer.
 
 The `api3ServerV1` address should be the same as the address of the
 `Api3ServerV1` contract. Refer to the
-[chains and contract addresses](/reference/dapis/chains.md) page for the address
+[chains and contract addresses](/reference/dapis/chains/) page for the address
 of the `Api3ServerV1` contract on different chains.
 
 The `dapiNameHash` should be the same as the `dapiNameHash` of the dAPI you are
