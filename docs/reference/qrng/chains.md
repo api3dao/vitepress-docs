@@ -55,7 +55,7 @@ package, see the
 [@api3/airnode-protocol](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
-[**byog**](/reference/qrng/chains.md#byog) imitates QRNG using pseudorandom
+[**Nodary**](/reference/qrng/chains.md#nodary) imitates QRNG using pseudorandom
 numbers and is best used during development. Use
 [ANU](/reference/qrng/chains.md#anu) or
 [Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
@@ -98,15 +98,16 @@ ANU is only available on mainnets.
 
 </div>
 
-## byog
+## Nodary
 
-**byog** is best used for development and is only available on several testnets.
+**Nodary** is best used for development and is only available on several
+testnets.
 
 ### Testnets
 
 <div class="testnets">
 
-<div style="position:absolute;right:0px;margin-top:-30px;">byog</div>
+<div style="position:absolute;right:0px;margin-top:-30px;">Nodary</div>
 
 | Network                                                                                | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | -------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |

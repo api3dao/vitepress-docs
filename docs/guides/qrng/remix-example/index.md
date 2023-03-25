@@ -24,7 +24,7 @@ two tools is assumed. This guide uses the Goerli testnet so you will need
 
 Currently QRNG has three [providers](/reference/qrng/providers.md), two of which
 provide quantum random numbers. This guide will use the
-[byog](/reference/qrng/providers.md#byog-pseudorandom-numbers) provider,
+[byog](/reference/qrng/providers.md#nodary-pseudorandom-numbers) provider,
 available only on testnets, which returns a pseudorandom number.
 
 ## 1. Load the Remix workspace
@@ -65,7 +65,7 @@ RemixQrngExample.sol</b> button to compile the `RemixQrngExample.sol` contract.
 
 Do not deploy the `RemixQrngExample.sol` contract to a production network. It
 lacks adequate security features. This guide will use the
-[byog](/reference/qrng/providers.md#byog-pseudorandom-numbers) provider which
+[byog](/reference/qrng/providers.md#nodary-pseudorandom-numbers) provider which
 has same usage as the production quantum random number generator
 [providers](/reference/qrng/providers.md) but returns a pseudorandom number.
 
@@ -79,7 +79,7 @@ has same usage as the production quantum random number generator
 
 - Next to the **Deploy** button, add the AirnodeRrpV0 `_airnodeRrp` address
   (`0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd`→<CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/>)
-  on the [Goerli network](/reference/qrng/chains.html#byog) as the parameter
+  on the [Goerli network](/reference/qrng/chains.md#nodary) as the parameter
   value for the smart contract's constructor.
 
 - Select the <b>Deploy</b> button and approve the transaction with MetaMask.
