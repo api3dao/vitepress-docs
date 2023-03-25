@@ -25,19 +25,9 @@
           "
           type="text"
           id="search-value"
-        /><!--br />
-        <input
-          type="checkbox"
-          id="checkBox"
-          @click="search()"
-          class="api3-search-checkbox"
         />
-        <label for="indexType" style="font-size: small">
-          Include older Airnode and OIS versions
-        </label-->
       </form>
       <SearchResults v-show="results" :results="results" />
-      <br />
     </div>
   </teleport>
   <span>
@@ -46,7 +36,8 @@
       style="user-select: none"
       @click="openModal()"
     >
-      🔍
+      <img src="/img/Magnifier-Dark.png" v-if="isDark" style="width: 40%" />
+      <img src="/img/Magnifier-Light.png" v-if="!isDark" style="width: 40%" />
     </button>
   </span>
 </template>
@@ -61,7 +52,7 @@
 */
 import Index from 'flexsearch';
 /**
- * Directly importing the local files for the indexes will beak the VitePress build.
+ * Directly importing the local files for the indexes will break the VitePress build.
  * It seems that it has issue importing large files like map.json.
  * Keep this note and the comments import lines below for future
  * reference while this is explored with the VitePress team.
@@ -72,6 +63,9 @@ import frontmatter from '../../.vitepress/frontmatterIds.json';
 import axios from 'axios';
 import eventBus from '../../.vitepress/theme/eventBus.ts';
 
+import { useData } from 'vitepress';
+import { watch } from 'vue';
+
 export default {
   name: 'SearchBtn',
   data: () => ({
@@ -81,6 +75,7 @@ export default {
     indexLatest: undefined,
     results: [],
     useIndexAll: false,
+    isDark: undefined,
   }),
   setup() {
     return {
@@ -92,7 +87,7 @@ export default {
   methods: {
     search() {
       let val = document.getElementById('search-value').value;
-      let checkbox = false; //document.getElementById('checkBox');
+      let checkbox = false;
 
       this.results = [];
       if (val.length < 3) {
@@ -174,8 +169,16 @@ export default {
   },
 
   async mounted() {
+    // Used by the search icon
+    this.isDark = useData().isDark.value;
+
     this.$nextTick(function () {
       localStorage.removeItem('search-words');
+    });
+
+    // Changes the search icon
+    watch(useData().isDark, (dark) => {
+      this.isDark = dark;
     });
   },
 };
