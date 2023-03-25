@@ -54,16 +54,12 @@ function buildContentFile(path) {
 
   // Get the html files and extract the text from the html
   const htmlString = fs.readFileSync(path, 'utf8');
-  //console.log(htmlString.split('On this page')[3]);
   var plainText = textVersion(htmlString);
 
-  // Remove the nav and side bar stuff
-  //plainText = plainText.split('Table of Contents for current page')[1];
-  //console.log(plainText.split('On this page')[1]);
+  // FlexStartTag: Just the content
   plainText = plainText.split('FLEX_START_TAG')[1];
 
-  // Remove footer below next/previous pages
-  //plainText = plainText.split('[Next page')[0];
+  // FlexEndTag: Just the content
   plainText = plainText.split('FLEX_END_TAG')[0];
 
   // Remove excessive ==== and -----
@@ -124,6 +120,13 @@ function exportLatestIndexFiles() {
 }
 
 /*
+  It is important that the file have the FLEX_START_TAG in it.
+  Some markdown files exists to be included inside others and
+  do not contain frontmatter.
+*/
+const ignoreFiles = ['chains-list.html'];
+
+/*
   Load all HTML files from /docs/.vitepress/dist 
 */
 function start() {
@@ -143,8 +146,10 @@ function start() {
         !skipFiles.includes(dir + '/' + files[x]) &&
         dir.indexOf('/dist/dev') === -1
       ) {
-        // if (dir.indexOf('/explore/airnode') > -1)
-        buildContentFile(dir + '/' + files[x]);
+        // If the md file is an inclusive file do not build a content file for it.
+        if (!ignoreFiles.includes(files[x])) {
+          buildContentFile(dir + '/' + files[x]);
+        }
       }
     }
   }

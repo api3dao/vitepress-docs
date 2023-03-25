@@ -1,0 +1,414 @@
+{
+  "arbitrum-testnet": {
+    "name": "arbitrum-testnet",
+    "fullName": "Arbitrum Goerli Testnet",
+    "id": "421613",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Arbitrum_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://goerli.arbiscan.io/"
+  },
+  "arbitrum-nova": {
+    "name": "arbitrum-nova",
+    "fullName": "Arbitrum Nova",
+    "id": "42170",
+    "contracts": {
+      "AirnodeRrpV0": "0xd864A45334C7a632cA9149993682354D7f967F28"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "",
+    "testnet": false,
+    "explorerUrl": "https://nova.arbiscan.io"
+  },
+  "arbitrum": {
+    "name": "arbitrum",
+    "fullName": "Arbitrum One",
+    "id": "42161",
+    "contracts": {
+      "AirnodeRrpV0": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xC3E76D8829259f2A34541746de2F8A0509Dc1987"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Arbitrum_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://arbiscan.io"
+  },
+  "avalanche": {
+    "name": "avalanche",
+    "fullName": "Avalanche C-Chain",
+    "id": "43114",
+    "contracts": {
+      "AirnodeRrpV0": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x291a11cbbC441201562A6418Fd11bBeb0675b4e4"
+    },
+    "nativeToken": "AVAX",
+    "blockTime": 19.8,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Avalanche_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://snowtrace.io/"
+  },
+  "avalanche-testnet": {
+    "name": "avalanche-testnet",
+    "fullName": "Avalanche Fuji Testnet",
+    "id": "43113",
+    "contracts": {
+      "AirnodeRrpV0": "0x7f5AF7a37a33898544717AAa6c35c111dCe95b28",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xdC91ea613247C0C9438A6F64Cc0E08291198981a"
+    },
+    "nativeToken": "AVAX",
+    "blockTime": 19.8,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Avalanche_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://testnet.snowtrace.io"
+  },
+  "bsc": {
+    "name": "bsc",
+    "fullName": "BNB Chain",
+    "id": "56",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x8B0A67D060C86919Ae76Ca3FA69c68Ff98E85c3c"
+    },
+    "nativeToken": "BNB",
+    "blockTime": 3.01,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/BSC_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://bscscan.com"
+  },
+  "bsc-testnet": {
+    "name": "bsc-testnet",
+    "fullName": "BNB Chain Testnet",
+    "id": "97",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "BNB",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/BSC_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://testnet.bscscan.com"
+  },
+  "goerli": {
+    "name": "goerli",
+    "fullName": "Ethereum Goerli Testnet",
+    "id": "5",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x368A8C0a75fD707e4f7bF15DD1aA25ED554fE22c"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Ethereum_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://goerli.etherscan.io"
+  },
+  "mainnet": {
+    "name": "mainnet",
+    "fullName": "Ethereum Mainnet",
+    "id": "1",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xFb10b1b0f68b3EaAcA1eCD12a47Cf7F55BeabB98"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Ethereum_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://etherscan.io"
+  },
+  "sepolia": {
+    "name": "sepolia",
+    "fullName": "Ethereum Sepolia Testnet",
+    "id": "11155111",
+    "contracts": {
+      "AirnodeRrpV0": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Ethereum_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.etherscan.io"
+  },
+  "fantom": {
+    "name": "fantom",
+    "fullName": "Fantom",
+    "id": "250",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507"
+    },
+    "nativeToken": "FTM",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Fantom_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://ftmscan.com"
+  },
+  "fantom-testnet": {
+    "name": "fantom-testnet",
+    "fullName": "Fantom Testnet",
+    "id": "4002",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCCc843194F02Ef93b8ee9A9F7b5F9273604Acd12"
+    },
+    "nativeToken": "FTM",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Fantom_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://testnet.ftmscan.com"
+  },
+  "gnosis": {
+    "name": "gnosis",
+    "fullName": "Gnosis Chain",
+    "id": "100",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "XDAI",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Gnosis_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://gnosisscan.io"
+  },
+  "gnosis-testnet": {
+    "name": "gnosis-testnet",
+    "fullName": "Gnosis Testnet",
+    "id": "10200",
+    "contracts": {
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76"
+    },
+    "nativeToken": "XDAI",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Gnosis_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://blockscout.com/gnosis/chiado"
+  },
+  "metis": {
+    "name": "metis",
+    "fullName": "Metis",
+    "id": "1088",
+    "contracts": {
+      "AirnodeRrpV0": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
+      "Api3ServerV1": "0x784b1ce3fa1e60Bc1cf924711f0D5AA484C9b37e",
+      "DapiServer": "0x50f8f227DEbA0028607a37B615A4EbBbF0E5b42E"
+    },
+    "nativeToken": "METIS",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Metis_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://andromeda-explorer.metis.io"
+  },
+  "metis-testnet": {
+    "name": "metis-testnet",
+    "fullName": "Metis Testnet",
+    "id": "599",
+    "contracts": {
+      "Api3ServerV1": "0xDDe9CE3736939d59A70c446c8A4AB6714CB4a41a"
+    },
+    "nativeToken": "METIS",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Metis_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://andromeda-explorer.metis.io/"
+  },
+  "milkomeda": {
+    "name": "milkomeda",
+    "fullName": "Milkomeda C1",
+    "id": "2001",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xC3E76D8829259f2A34541746de2F8A0509Dc1987"
+    },
+    "nativeToken": "MADA",
+    "blockTime": 4,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Milkomeda_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/"
+  },
+  "milkomeda-testnet": {
+    "name": "milkomeda-testnet",
+    "fullName": "Milkomeda C1 Testnet",
+    "id": "200101",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "MADA",
+    "blockTime": 4,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Milkomeda_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/"
+  },
+  "moonbeam-testnet": {
+    "name": "moonbeam-testnet",
+    "fullName": "Moonbase Alpha Testnet",
+    "id": "1287",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "DEV",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Moonbeam_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://moonbase.moonscan.io"
+  },
+  "moonbeam": {
+    "name": "moonbeam",
+    "fullName": "Moonbeam",
+    "id": "1284",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "GLMR",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Moonbeam_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://moonscan.io"
+  },
+  "moonriver": {
+    "name": "moonriver",
+    "fullName": "Moonriver",
+    "id": "1285",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xdC91ea613247C0C9438A6F64Cc0E08291198981a"
+    },
+    "nativeToken": "MOVR",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Moonriver_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://moonriver.moonscan.io"
+  },
+  "optimism": {
+    "name": "optimism",
+    "fullName": "Optimism",
+    "id": "10",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xB33B89de8b18350A2AD05DadF1959fC1C9321008"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Optimism_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://optimistic.etherscan.io"
+  },
+  "optimism-testnet": {
+    "name": "optimism-testnet",
+    "fullName": "Optimism Goerli Testnet",
+    "id": "420",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Optimism_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://goerli-optimism.etherscan.io"
+  },
+  "polygon": {
+    "name": "polygon",
+    "fullName": "Polygon",
+    "id": "137",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xd7CA5BD7a45985D271F216Cb1CAD82348464f6d5"
+    },
+    "nativeToken": "MATIC",
+    "blockTime": 2.3,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Polygon_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://polygonscan.com"
+  },
+  "polygon-testnet": {
+    "name": "polygon-testnet",
+    "fullName": "Polygon Mumbai Testnet",
+    "id": "80001",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0x71Da7A936fCaEd1Ee364Df106B12deF6D1Bf1f14"
+    },
+    "nativeToken": "MATIC",
+    "blockTime": 2.3,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/Polygon_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://mumbai.polygonscan.com"
+  },
+  "zkevm-testnet": {
+    "name": "zkevm-testnet",
+    "fullName": "Polygon zkEVM Testnet",
+    "id": "1442",
+    "contracts": {
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/zkEVM_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://testnet-zkevm.polygonscan.com/"
+  },
+  "rsk": {
+    "name": "rsk",
+    "fullName": "RSK",
+    "id": "30",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "RBTC",
+    "blockTime": 30,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/RSK_icon.webp",
+    "testnet": false,
+    "explorerUrl": "https://explorer.rsk.co"
+  },
+  "rsk-testnet": {
+    "name": "rsk-testnet",
+    "fullName": "RSK Testnet",
+    "id": "31",
+    "contracts": {
+      "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251"
+    },
+    "nativeToken": "TRBTC",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/RSK_icon.webp",
+    "testnet": true,
+    "explorerUrl": "https://explorer.testnet.rsk.co"
+  }
+}
