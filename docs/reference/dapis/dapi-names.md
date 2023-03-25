@@ -27,7 +27,7 @@ favorable, e.g., in the context of an asset price data feed.
 When using a API3 Market proxy contract, a dApp smart contract does not need to
 use a `dapiName` as a parameter to the `read()` function inside a proxy
 contract. The `dapiName` is integrated into the proxy contract when it is
-deployed by the API3 Market UI. There are thousands of dAPIs available across
+deployed by the API3 Market UI. There are hundreds of dAPIs available across
 many chains. Use the API3 Market to find a desired dAPI and acquire the address
 to its proxy contract.
 
