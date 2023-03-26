@@ -12,12 +12,10 @@ import OisAirnodeVersions from '../../_components/reference/ois/OisAirnodeVersio
 import InfoBtnBlue from '../../_components/InfoBtnBlue.vue';
 import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
-import ContractAddresses from '../../_components/reference/airnode/ContractAddresses.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
 import DockerHubImages from '../../_components/reference/airnode/DockerHubImages.vue';
 import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeAws.vue';
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
-import ChainName from '../../_components/ChainName.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
 import NavBox from '../../_components/NavBox.vue';
@@ -47,12 +45,10 @@ export default {
     app.component('InfoBtnBlue', InfoBtnBlue);
     app.component('ExternalLinkImage', ExternalLinkImage);
     app.component('CopyIcon', CopyIcon);
-    app.component('ContractAddresses', ContractAddresses);
     app.component('SponsorWalletWarning', SponsorWalletWarning);
     app.component('DockerHubImages', DockerHubImages);
     app.component('DeleteAirnodeAws', DeleteAirnodeAws);
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);
-    app.component('ChainName', ChainName);
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
     app.component('NavBox', NavBox);

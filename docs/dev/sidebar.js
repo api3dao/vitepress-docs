@@ -11,7 +11,6 @@ module.exports = [
       { text: 'Frontmatter', link: '/dev/frontmatter' },
       { text: 'Hyperlinks', link: '/dev/hyperlinks' },
       { text: 'Link Validation', link: '/dev/link-validation' },
-      { text: 'Tabs Component', link: '/dev/tabs' },
       {
         text: 'Page Styling',
         link: '/dev/page-styling',
