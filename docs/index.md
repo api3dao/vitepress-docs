@@ -48,10 +48,10 @@ dAPIs are continuously updated streams of off-chain data, such as the latest
     <NavBox type='GUIDE' id="_call-dapi-server"/>
   </div>
 
-  <div class="api3-land-title">byog</div>
+  <div class="api3-land-title">nodary</div>
   <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.</div>
   <div class="api3-css-nav-box-flex-row">
-    <NavBox type='EXPLORE' id="_what-is-byog"/>
+    <NavBox type='EXPLORE' id="_what-is-nodary"/>
   </div>
 
 
