@@ -37,7 +37,7 @@ The DAO votes on high-level matters such as staking incentives and
 collateralization, as well as grant proposals that provide DAO treasury funds to
 teams working in support of the DAO.
 
-> <img src="../assets/images/dao.png" width="450"/>
+> <img src="../assets/images/06-a-API3_DAO-Op1.png" width="450"/>
 
 ## DAO Structure
 

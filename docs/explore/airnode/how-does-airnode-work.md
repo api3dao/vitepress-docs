@@ -18,29 +18,33 @@ tags:
 
 Airnode is a serverless oracle node implemented with a
 [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget)
-philosophy that brings off-chain data from APIs to on-chain smart contracts. It
-consists of two parts:
+philosophy that brings off-chain data from APIs to on-chain smart contracts.
+
+It consists of two parts:
 
 1. The off-chain **Airnode** (“the node”) that is self-hosted or deployed as
    cloud provider functions (AWS or GCP).
 2. The on-chain **protocol contract** AirnodeRrpV0.sol. This is often referred
    to as the oracle smart contracts.
 
-> <img src="../assets/images/summary-airnode-2-parts.png" width="350">
+  <img src="../assets/images/02-What_is_Airnode.png" style="width:350px">
 
 Airnode is designed with mechanisms that eliminate both on-chain and off-chain
 concerns of API providers. The set-and-forget framework of Airnode is all about
 its ease of implementation.
 
+<img src="../assets/images/04-Airnode_Design_Philosophy.png" style="width:350px">
+
 For smart contract developers Airnode is a tool to utilize data from Web2 APIs
 within smart contract functions. The ease and flexibility of deployment means it
 can be utilized within the product development cycle as data requirements arise.
 
-::: info Read more
+<!---::: info Read more
 
 For a technical overview of Airnode see
 [getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
 :::
+-->
 
 ## Technical Characterists of Airnode
 
@@ -91,7 +95,7 @@ Additionally, bare serverless functions are easy to port across cloud providers
 [Terraform Framework](https://www.terraform.io/)<ExternalLinkImage/>),
 especially when their cloud provider-specific dependencies are limited.
 
-::: tip Key point
+::: warning Note
 
 Due to being stateless Airnode is able to reset itself quickly and easily,
 providing a solution for most potential issues.
@@ -129,7 +133,7 @@ provider cannot tamper with the parameters of a request, but only deny service.
 Note this is not the case with alternative solutions, as they treat the
 blockchain service provider as a trusted party.
 
-::: tip Learn more
+::: info Learn more
 
 Read more about how Airnode works in the
 [Airnode developer reference section](/reference/airnode/latest/understand/).

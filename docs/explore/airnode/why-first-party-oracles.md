@@ -14,7 +14,7 @@ tags:
 
 <FlexStartTag/>
 
-# {{$frontmatter.title}}
+# Defining first-party oracles
 
 First-party oracles are integral to the API3 solution. Through using Airnode a
 smart contract is served by an oracle that is operated by the owner of an API,
@@ -34,14 +34,9 @@ infrastructure of the API provider this means protocols serving data do so in a
 first-party manor. This is opposed to being served by a middle node layer that
 is seen within third-party oracles.
 
-::: info Read more
+# <FlexStartTag/>
 
-Understand more by reading our Medium post on
-[first-party vs third-party oracles](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
-
-:::
-
-#<FlexStartTag/> # {{$frontmatter.title}}
+# {{$frontmatter.title}}
 
 First-party oracles bring several advantages to smart contract engineers. The
 noteable benefits are:
@@ -98,21 +93,28 @@ group that is doing the heavy lifting — the API providers. Incentivizing API
 providers aligns their financial interests with the ones of the API3 ecosystem,
 resulting in a strong mutual bond between the two.
 
+::: info Learn more
+
+Understand more by reading
+[first-party vs third-party oracles](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
+
+:::
+
 ## Empowering API Providers
 
 Through experience of engaging API Providers we realized the incentive structure
-that see thousands of APIs served to Web3 were misaligned for those responsible
-for serving the data. Airnode and the corresponding first-party oracles have
-been designed with the API Provider in mind.
+that sees API accessibility scale were misaligned for those responsible serving
+the data, the API Providers. Thus Airnode and the corresponding first-party
+oracles have been designed with the those operating the API in mind.
 
 With consideration of the API Provider, first-party represents increased
 flexibility in deployment & configuration and the ability to ensure ownership of
 their data.
 
-::: info Read more
+<!--::: info Read more
 
 Replace this with a content box linking to 'monetizing apis n web3'
 
-:::
+:::-->
 
 <FlexEndTag/>
