@@ -17,19 +17,25 @@ tags:
 # {{$frontmatter.title}}
 
 This guide steps through the process of making a direct request of an Airnode
-using RRP (request-response protocol) to get data from an API provider. Another
-example of a guide that explains how to use the RRP is the
-[QRNG > Remix Example](/guides/qrng/remix-example/index.md).
+using RRP (request-response protocol) to get data from an API provider.
 
-::: warning Consider dAPIs
+An Airnode is a first-party oracle that can push off-chain API data to on-chain
+smart contracts, known as a requester, using RRP. A requester is any smart
+contract that executes an Airnode request. Learn about the mechanics of
+[Airnode's request-response protocol](/reference/airnode/latest/developers/index.md)
+(RRP) as used by a requester.
+
+::: info Consider dAPIs
 
 While using the Airnode's RRP protocol to acquire API provider data is usable it
 is not as efficient or as straight forward as using a dAPI. Therefore, best
-practices usually entail using a [dAPI](/explore/dapis/what-are-dapis.md) to
-acquire API provider data.
+practices usually entail using a
+[<span style="color:rgb(16, 185, 129);">dAPI</span>](/explore/dapis/what-are-dapis.md)
+to acquire API provider data.
 
 :::
 
+<!--
 ## How the RRP protocol works
 
 An Airnode is a first-party oracle that can push off-chain API data to on-chain
@@ -67,6 +73,7 @@ doc.
 
 The following section of this document discusses the requester implementation,
 its deployment and sponsoring.
+-->
 
 ## 1. Inherit RrpRequesterV0.sol
 
@@ -296,5 +303,19 @@ Deploy the requester to the desired blockchain and then sponsor the requester.
 See
 [Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
+
+## More related material...
+
+Learn about the mechanics of
+[Airnode's request-response protocol](/reference/airnode/latest/developers/index.md)
+(RRP) as used by a requester.
+
+Another example of a guide that explains how to use the RRP is the QRNG
+[Remix Example](/guides/qrng/remix-example/index.md).
+
+A requester needs to be sponsored and make the request using a matching sponsor
+wallet. See
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)
+on how to sponsor a requester and derive the sponsor wallet.
 
 <FlexEndTag/>

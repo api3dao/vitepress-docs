@@ -1,17 +1,13 @@
 ---
-title: Using RRP Templates
+title: Making RRP Template Requests
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
 path: /guides/airnode/using-rrp-templates.html
 outline: deep
-tags:
-  - airnode
-  - rrp
-  - templates
 ---
 
-<PageHeader/>
+9 <PageHeader/>
 
 <SearchHighlight/>
 
@@ -23,17 +19,22 @@ This guide steps through the process of making a template request of an Airnode
 using RRP (request-response protocol) to get data from an API provider. This
 approach allows a smart contract to store the parameters for an RRP call in a
 template. This is advantageous when a call to an Airnode will be made using the
-same parameters each time.
+same parameters each time. See
+[Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
+amd learn more about the technical specifications of a template as used by a
+requester.
 
-::: warning Consider dAPIs
+::: info Consider dAPIs
 
 While using the Airnode's RRP protocol to acquire API provider data is usable it
 is not as efficient or as straight forward as using a dAPI. Therefore, best
-practices usually entail using a [dAPI](/explore/dapis/what-are-dapis.md) to
-acquire API provider data.
+practices usually entail using a
+[<span style="color:rgb(16, 185, 129);">dAPI</span>](/explore/dapis/what-are-dapis.md)
+to acquire API provider data.
 
 :::
 
+<!--
 ## Why use templates?
 
 A request to an Airnode can have many parameters. It is very common for
@@ -74,10 +75,11 @@ struct Template {
   bytes parameters;
 }
 ```
+-->
 
-There are just a few steps to create and place a template on-chain for a
-requester (smart contract) to use. Each template is identified by a`templateId`,
-which is the hash of its contents.
+There are just a few steps to create and place a template on-chain for use by a
+requester (smart contract). Each template is identified by a `templateId`, which
+is the hash of its contents.
 
 ## 1. Create a template
 
@@ -182,8 +184,8 @@ npx @api3/airnode-admin get-template \
 
 ## More related material...
 
-<div class="api3-css-nav-box-flex-row">
-    <NavBox  type='REPO' id="_airnode-coingecko-template"/>
-</div>
+See the
+[Coingecko example](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)
+that utilizes an Airnode template request in the Airnode repo.
 
 <FlexEndTag/>

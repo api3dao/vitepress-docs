@@ -1,5 +1,5 @@
 ---
-title: Calling an Airnode
+title: Calling an Airnode (RRP)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
@@ -19,14 +19,16 @@ tags:
 
 # {{$frontmatter.title}}
 
-A requester is a contract that can trigger an Airnode request. To do so, the
+A requester is a contract that can trigger an Airnode RRP request. To do so, the
 requester needs to be sponsored and make the request using a matching sponsor
 wallet. See
 [Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)
 on how to sponsor a requester and derive the sponsor wallet.
 
-Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")
-deployed as self hosted or cloud provider functions, e.g., AWS) and the on-chain
+## How it works
+
+Airnode RRP consists of two parts: the off-chain **Airnode** (a.k.a. "the node")
+deployed as self hosted or cloud provider functions (e.g., AWS) and the on-chain
 **protocol contract** AirnodeRrpV0.sol. A requester calls the protocol contract,
 which emits a blockchain event with the request parameters. Airnode listens to
 the events emitted by the AirnodeRrpV0 contract. During the next run cycle,
@@ -42,18 +44,23 @@ for potential design patterns.
 Ignoring the mechanics of the overall process, the requester calling an Airnode
 primarily focuses on two tasks, indicated by points A & B in the diagram below.
 
-- <span style="color:green;font-weight:bold;">1</span>: Make the request
-- <span style="color:blue;font-weight:bold;">2</span>: Accept and decode the
-  response
+- <span style="color:green;font-weight:bold;">A</span>: Make the request
+- <span style="color:blue;font-weight:bold;">B</span>: `myFulfill()` accepts and
+  decodes the response
 
 > <img src="../assets/images/call-an-airnode.png" width="650px"/>
 >
-> 1.  <p>A requester makes a request to the AirnodeRrpV0 contract which adds the <code>requestId</code> to storage, emits the request to the event logs and returns the <code>requestId</code> to the requester. The request is retrieved by the Airnode during its next run cycle. It then verifies the requester is authorized by checking authorizer contracts assigned to the Airnode.</p>
-> 2.  <p>If the request is authorized, Airnode proceeds to respond. It first gathers the requested data from the API and calls the <code>fulfill()</code> function in AirnodeRrpV0, which removes the pending <code>requestId</code> from storage and makes a callback to <code>myFulfill()</code>. The gas costs associated 
->     with the response are covered by the sponsor of the requester.</p>
+> - <p>A requester makes a request to the AirnodeRrpV0 contract which adds the <code>requestId</code> to storage, emits the request to the event logs and returns the <code>requestId</code> to the requester. The request is retrieved by the Airnode during its next run cycle. It then verifies the requester is authorized by checking authorizer contracts assigned to the Airnode.</p>
+> - <p>If the request is authorized, Airnode proceeds to respond. It first gathers the requested data from the API and calls the <code>fulfill()</code> function in AirnodeRrpV0, which removes the pending <code>requestId</code> from storage and makes a callback to <code>myFulfill()</code>. The gas costs associated 
+>    with the response are covered by the sponsor of the requester.</p>
 
+See the guide [ Making an RRP Request](/guides/airnode/rrp-request.html) and
+learn how to make a RRP request of an Airnode.
+
+<!--
 The following section of this document discusses the requester implementation,
 its deployment and sponsoring.
+
 
 ## Step #1: Inherit RrpRequesterV0.sol
 
@@ -279,5 +286,6 @@ Deploy the requester to the desired blockchain and then sponsor the requester.
 See
 [Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
+-->
 
 <FlexEndTag/>

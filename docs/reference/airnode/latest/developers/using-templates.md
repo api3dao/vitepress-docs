@@ -19,10 +19,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-<!-- TODO: 2021-11-02 wkande: Should this doc speak to creating a templateId? See the code
-example ./code/create-template-id.js which may not be used anywhere in
-these docs at this time. -->
-
 A request to an Airnode can have many parameters. It is very common for
 requester contracts (e.g., a data feed) to make repeated requests with the exact
 same parameters. In such instances, it is wasteful to pass all of these
@@ -62,6 +58,8 @@ struct Template {
   bytes parameters;
 }
 ```
+
+<!--
 
 There are just a few steps to create and place a template on-chain for a
 requester contract to use. Each template is identified by a`templateId`, which
@@ -130,7 +128,13 @@ npx @api3/airnode-admin create-template \
   --templateFilePath ./template.json
 ```
 
+-->
+
 ## More related material...
+
+See the guide
+[Making RRP Template Requests](/guides/airnode/using-rrp-templates.md) and learn
+how to create and use a template.
 
 The
 [coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
