@@ -24,8 +24,8 @@ Some basic knowledge of these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
-[byog provider](https://byog.io/), available only on testnets, which returns a
-pseudorandom number.
+[nodary provider](https://nodary.io/), available only on testnets, which returns
+a pseudorandom number.
 
 Anyone can choose a number 1–10,000 and buy a ticket to enter into a weekly
 lottery. The ticket revenue is collected into a pot in the contract. After 7
@@ -269,11 +269,11 @@ command
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 
-::: details byog QRNG Airnode Details
+::: details nodary QRNG Airnode Details
 
 ```
-byog QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
-byog QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
+nodary QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
+nodary QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
 ```
 
 :::
