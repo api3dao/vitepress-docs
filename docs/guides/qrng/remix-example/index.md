@@ -65,8 +65,8 @@ RemixQrngExample.sol</b> button to compile the `RemixQrngExample.sol` contract.
 
 Do not deploy the `RemixQrngExample.sol` contract to a production network. It
 lacks adequate security features. This guide will use the
-[nodary](/reference/qrng/providers.md#nodary-pseudorandom-numbers) provider which
-has same usage as the production quantum random number generator
+[nodary](/reference/qrng/providers.md#nodary-pseudorandom-numbers) provider
+which has same usage as the production quantum random number generator
 [providers](/reference/qrng/providers.md) but returns a pseudorandom number.
 
 - Switch to the <b>DEPLOY & RUN TRANSACTIONS</b> tab. Use MetaMask and switch to
