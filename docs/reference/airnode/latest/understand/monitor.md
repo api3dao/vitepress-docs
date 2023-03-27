@@ -29,9 +29,11 @@ or request types and the logs they contain are as follows:
   fetching
 - `run`: Logs of API calls and withdrawals originating from blockchain requests
 - `httpReq`: Logs for
-  [HTTP gateway requests](/reference/airnode/latest/understand/http-gateways.md)
+  [HTTP gateway requests](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
 - `httpSignedReq`: Logs for
   [HTTP signed data gateway requests](/reference/airnode/latest/understand/http-gateways.md)
+- `signOevReq`: Logs for
+  [OEV gateway requests](/reference/airnode/latest/understand/oev-gateway.md)
 
 ### AWS
 
