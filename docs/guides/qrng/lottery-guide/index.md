@@ -3,7 +3,7 @@ title: Building a Lottery with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
-path: /guides/airnode/lottery-guide/
+path: /guides/qrng/lottery-guide/index.html
 outline: deep
 tags:
 ---
