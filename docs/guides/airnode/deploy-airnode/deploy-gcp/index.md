@@ -37,8 +37,10 @@ Airnode deployment
 
 An Airnode deployment on GCP uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
-requires three files as input: [config.json](#config-json),
-[secrets.env](#secrets-env), and gcp.json.
+requires three files as input:
+[config.json](/guides/airnode/deploy-airnode/deploy-gcp/index.md#config-json),
+[secrets.env](/guides/airnode/deploy-airnode/deploy-gcp/index.md#secrets-env),
+and gcp.json.
 
 These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply a GCP
