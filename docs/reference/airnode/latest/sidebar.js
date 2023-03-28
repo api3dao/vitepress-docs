@@ -259,11 +259,6 @@ module.exports = [
     collapsed: true,
     items: [
       { text: 'Airnode RRP', link: '/reference/airnode/latest/developers/' },
-
-      {
-        text: 'Calling Airnode (RRP)',
-        link: '/reference/airnode/latest/developers/call-an-airnode',
-      },
       {
         text: 'Requesters and Sponsors',
         link: '/reference/airnode/latest/developers/requesters-sponsors',

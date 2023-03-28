@@ -152,8 +152,8 @@ this.
 ## Make an RRP request of the Airnode
 
 Once the Airnode is deployed, see
-[Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md) to
-learn how requests are made using the request-response protocol (RRP).
+[Calling an Airnode](/reference/airnode/latest/developers/index.md) to learn how
+requests are made using the request-response protocol (RRP).
 
 ## Removing the Airnode
 

@@ -57,7 +57,7 @@ module.exports = [
         link: '/guides/airnode/rrp-request',
       },
       {
-        text: 'Using RRP Templates',
+        text: 'Making RRP Template Requests',
         link: '/guides/airnode/using-rrp-templates',
       },
       {
