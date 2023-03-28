@@ -35,49 +35,6 @@ to acquire API provider data.
 
 :::
 
-<!--
-## Why use templates?
-
-A request to an Airnode can have many parameters. It is very common for
-requester contracts to make repeated requests using the exact same parameters.
-In such instances, it is wasteful to pass all of these parameters repeatedly.
-Templates are used to hold a set of parameter values on-chain that can be used
-repeatedly when calling the`makeTemplateRequest()`function in
-[AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.9/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol).
-Unlike`makeFullRequest(), makeTemplateRequest()`requires that a requester
-pass`templateId`which identifies a template.
-
-```solidity
-function makeTemplateRequest(
-    bytes32 templateId,
-    address sponsor,
-    address sponsorWallet,
-    address fulfillAddress,
-    bytes4 fulfillFunctionId,
-    bytes calldata parameters
-) external override returns (bytes32 requestId) {
-```
-
-When a template is used to make a request, the parameters encoded in
-`templateId` and in `parameters` will be used by the Airnode. In case
-`templateId` and `parameters` include a parameter with the same name, the one
-provided in `parameters` will be used.
-
-The structure of a template, as shown below, is simple.
-
-- address of the desired Airnode
-- endpointId from the Airnode
-- endpoint parameters
-
-```solidity
-struct Template {
-  address airnode;
-  bytes32 endpointId;
-  bytes parameters;
-}
-```
--->
-
 There are just a few steps to create and place a template on-chain for use by a
 requester (smart contract). Each template is identified by a `templateId`, which
 is the hash of its contents.
