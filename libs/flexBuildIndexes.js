@@ -17,8 +17,9 @@ let indexAll = new Index({
 let indexLatest = new Index({
   tokenize: 'full',
 });
-// The latest docsets
-let latestDocsets = ['/dist/explore/', '/dist/guides/', '/dist/reference/'];
+
+// The docsets
+let docsets = ['/dist/explore/', '/dist/guides/', '/dist/reference/'];
 
 /**
  * Callback for file.walkSync, add each
@@ -85,7 +86,7 @@ function buildContentFile(path) {
   indexAll.add(id, json.content);
 
   // Only add path within the latest docsets
-  latestDocsets.forEach((element) => {
+  docsets.forEach((element) => {
     if (path.indexOf(element) > -1) {
       indexLatest.add(id, json.content);
     }
