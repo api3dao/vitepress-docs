@@ -144,7 +144,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --publish 3000:3000 \
-  api3/airnode-client:0.9.2
+  api3/airnode-client:0.11
 ```
 
 ```batch [Windows CMD]
@@ -152,7 +152,7 @@ docker run ^
   --volume "%cd%:/app/config" ^
   --name quick-start-container-airnode ^
   --publish 3000:3000 ^
-  api3/airnode-client:0.9.2
+  api3/airnode-client:0.11
 ```
 
 ```sh [Linux (host networking)]
@@ -160,7 +160,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --network host \
-  api3/airnode-client:0.9.2
+  api3/airnode-client:0.11
 ```
 
 :::

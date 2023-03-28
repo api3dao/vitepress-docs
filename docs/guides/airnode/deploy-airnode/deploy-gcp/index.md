@@ -181,7 +181,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 ```batch [Windows]
@@ -189,7 +189,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 :::
@@ -339,7 +339,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -347,7 +347,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 :::
