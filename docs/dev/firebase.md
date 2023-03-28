@@ -36,13 +36,13 @@ From branch main locally:
 
 ```bash
 git branch -d live-site
-git checkout -b live-site 1cd2b41
+git checkout -b live-site <abc>
 git push origin live-site --force
 ```
 
-1. Delete the live-site branch locally
-2. Checkout a new branch, live-site, from main commit 1cd2b41,  which is the
-   commit before the last main commit
+1. Delete the live-site branch locally.
+2. Checkout a new branch, live-site, from main commit `<abc>`,  which is the
+   commit before the last main commit.
 3. Force push live-site to github. This now puts live-site 1 commit behind main
    in the network graph, thereby enabling a clean PR from main into live-site.
 

@@ -38,9 +38,9 @@ Airnode deployment
 An Airnode deployment on AWS uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
 requires three files as input:
-[config.json](/guides/airnode/deploy-airnode/deploy-aws/#config-json),
-[secrets.env](/guides/airnode/deploy-airnode/deploy-aws/#secrets-env), and
-[aws.env](/guides/airnode/deploy-airnode/deploy-aws/#aws-env).
+[config.json](/guides/airnode/deploy-airnode/deploy-aws/index.md#config-json),
+[secrets.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#secrets-env),
+and [aws.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#aws-env).
 
 These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply AWS

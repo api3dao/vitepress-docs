@@ -1,6 +1,6 @@
 <!-- Why this file. In order for the flex search to index the chain info they
 cannot be inside a Vue component since it is rendered at runtime. The chains.json
-file here is read during teh vite build so the data will actually end up inside
+file here is read during the Vite build so the data will actually end up inside
 /dist/<filename>.
 -->
 
@@ -12,7 +12,7 @@ DO NOT place line breaks between HTML element like <div>.
 They will not render as HTML but rather text. No idea why!
 -->
 
-<div class="bc-chains-box" v-for="(chain, index) in chains">
+<div class="api3-bc-chains-box" v-for="(chain, index) in chains">
     <a class="api3-bc-chains-name" :href="chain.explorerUrl"
       >{{ chain.fullName }} <ExternalLinkImage />
     </a>
@@ -41,10 +41,6 @@ They will not render as HTML but rather text. No idea why!
   font-weight: bold;
   margin-bottom: 5px;
 }
-.api3-bc-chains-short-name {
-  font-size: small;
-  margin-bottom: 3px;
-}
 .api3-bc-chain-token {
   float: right;
   margin-top: -7px;
@@ -62,7 +58,7 @@ They will not render as HTML but rather text. No idea why!
   margin-top: 3px;
   color: gray;
 }
-.bc-chains-box {
+.api3-bc-chains-box {
   overflow-wrap: anywhere;
   padding-top: 5px;
   padding-left: 16px;

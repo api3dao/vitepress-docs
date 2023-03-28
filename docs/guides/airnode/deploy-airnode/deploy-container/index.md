@@ -38,8 +38,9 @@ Airnode deployment
 An Airnode Docker container deployment uses a Docker image (called
 [client image](/reference/airnode/latest/docker/client-image.md)) which requires
 two files as input:
-[config.json](/guides/airnode/deploy-airnode/deploy-container/#config-json) and
-[secrets.env](/guides/airnode/deploy-airnode/deploy-container/#secrets-env).
+[config.json](/guides/airnode/deploy-airnode/deploy-container/index.md#config-json)
+and
+[secrets.env](/guides/airnode/deploy-airnode/deploy-container/index.md#secrets-env).
 
 These files have been created and only require a few minor changes on your part
 to make the deployment of the demo Airnode successful. These changes are needed
