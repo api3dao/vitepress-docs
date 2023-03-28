@@ -19,7 +19,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-Airnode is a serverless oracle node implemented with a _"set and forget"_
+Airnode is a serverless oracle node implemented with a "set and forget"
 [philosophy](/explore/airnode/unlocking-real-world-data.md). Airnode is flexible
 in that it can move API provider data on-chain for multiple purposes. The most
 important of which are data feeds ([dAPIs](/reference/dapis/understand/)) and
@@ -46,8 +46,8 @@ on-chain smart contracts) that request data served by a particular Airnode. This
 is done using the request-response protocol (RRP) mechanism of Airnode. The
 AirnodeRrpV0 protocol is designed to be flexible and is meant to serve a variety
 of use cases. See the the
-[Calling Airnode (RRP)](/reference/airnode/latest/developers/call-an-airnode.md)
-for more details on how an RRP request is made. Also see the Airnode
+[Calling Airnode (RRP)](/reference/airnode/latest/developers/index.md) for more
+details on how an RRP request is made. Also see the Airnode
 [requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
 for potential design patterns.
 

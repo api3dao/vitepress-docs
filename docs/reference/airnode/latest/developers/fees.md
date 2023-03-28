@@ -47,7 +47,7 @@ response to a request.
   funded manually by a sponsor using their preferred wallet management tool such
   as MetaMask.
 
-- [Calling](/reference/airnode/latest/developers/call-an-airnode.md) an Airnode:
+- [Calling](/reference/airnode/latest/developers/index.md) an Airnode:
   Transaction gas fees are withdrawn from the sponsor wallet related to the
   Airnode being called by a sponsored requester.
 
@@ -65,7 +65,7 @@ provider's website and then subscribe to a level of service offered. These types
 of services are usually billed monthly and can be based on an annual rate to
 save costs. The subscription (even if free) will most likely involve the use of
 a security scheme such as an API key that must be used to access the data. See
-[Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md) to
-learn more on how to pass the security credentials to an Airnode.
+[Calling an Airnode](/reference/airnode/latest/developers/index.md) to learn
+more on how to pass the security credentials to an Airnode.
 
 <FlexEndTag/>
