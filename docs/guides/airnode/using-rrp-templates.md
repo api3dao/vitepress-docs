@@ -7,7 +7,7 @@ path: /guides/airnode/using-rrp-templates.html
 outline: deep
 ---
 
-9 <PageHeader/>
+<PageHeader/>
 
 <SearchHighlight/>
 
@@ -22,7 +22,8 @@ template. This is advantageous when a call to an Airnode will be made using the
 same parameters each time. See
 [Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
 amd learn more about the technical specifications of a template as used by a
-requester.
+requester. As a prerequisite to this guide first try the guide
+[Making an RRP Request](/guides/airnode/rrp-request.md).
 
 ::: info Consider dAPIs
 
@@ -136,7 +137,7 @@ the following.
 - A mnemonic for gas to fund the record creation.
 - The local path to a template file.
 
-::: tip mnemonic
+::: info mnemonic
 
 This wallet pays the transaction gas costs to write the template record
 on-chain. This is not the wallet(s) that will pay gas costs to actually execute
@@ -182,7 +183,42 @@ npx @api3/airnode-admin get-template \
 }
 ```
 
+## 4. Make a request using the template
+
+A requester can use the template by calling a different function from
+`AirnodeRrpV0.sol` when making a request. See the guide
+[Making an RRP Request](/guides/airnode/rrp-request.md#_2-implement-the-request-logic)
+and use the function `makeTemplateRequest()` rather than `makeFullRequest()`.
+Note that the parameter for each are slightly different. The `templateId `
+replaces both the `airnode` and `endpointId`.
+
+When calling `makeTemplateRequest()` the parameter `parameters` is used to
+provide addition parameters to those in the template, if any are required.
+
+Replace the function call `makeFullRequest()` with `makeTemplateRequest()` in
+the
+[Making an RRP Request](/guides/airnode/rrp-request.md#_2-implement-the-request-logic)
+guide.
+
+```solidity
+bytes32 requestId = airnodeRrp.makeTemplateRequest(
+  templateId,                     // templateId
+  sponsor,                        // sponsor's address
+  sponsorWallet,                  // sponsorWallet
+  address(this),                  // fulfillAddress
+  this.airnodeCallback.selector,  // fulfillFunctionId
+  parameters                      // Additional API parameters
+);
+```
+
 ## More related material...
+
+See the guide [Making an RRP Request](/guides/airnode/rrp-request.md).
+
+See
+[Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
+amd learn more about the technical specifications of a template as used by a
+requester.
 
 See the
 [Coingecko example](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)

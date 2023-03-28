@@ -27,7 +27,7 @@ option for developers to access Airnode data using its request-response protocol
 [AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract facilitates RRP and is designed to be flexible and is meant to
 serve a variety of use cases. See the Airnode
-[requester examples](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
+[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
 for potential design patterns.
 
 ## It starts with a requester
@@ -85,9 +85,13 @@ deployed as self hosted or cloud provider functions (e.g., AWS) and the on-chain
 > - <p>If the request is authorized, Airnode proceeds to respond. It first gathers the requested data from the API and calls the <code>fulfill()</code> function in AirnodeRrpV0, which removes the pending <code>requestId</code> from storage and makes a callback to <code>myFulfill()</code>. The gas costs associated 
 >    with the response are covered by the sponsor of the requester.</p>
 
-## More erelated material...
+## More related material...
 
 See the guide [ Making an RRP Request](/guides/airnode/rrp-request.html) and
 learn how to make a RRP request of an Airnode.
+
+See the Airnode
+[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
+for potential design patterns.
 
 <FlexEndTag/>

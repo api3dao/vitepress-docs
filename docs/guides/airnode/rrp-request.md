@@ -313,6 +313,12 @@ Learn about the mechanics of
 Another example of a guide that explains how to use the RRP is the QRNG
 [Remix Example](/guides/qrng/remix-example/index.md).
 
+The guide
+[Making an RRP Template Requests](/guides/airnode/using-rrp-tempalates.md) uses
+on-chain templates which maintains a list of parameters used when make an RRP
+request. This is advantageous when a call to an Airnode will be made using the
+same parameters each time.
+
 A requester needs to be sponsored and make the request using a matching sponsor
 wallet. See
 [Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)

@@ -28,7 +28,7 @@ requester and deriving a sponsor wallet using the admin CLI commands.
 
 The term [requester](/reference/airnode/latest/concepts/requester.md) is
 important to remember. When requester is mentioned, the reference is to your
-smart contract that calls an Airnode.
+smart contract that makes a request of an Airnode.
 
 > <img src="../assets/images/requesters-sponsors-1.png" width="350px"/>
 
@@ -73,9 +73,7 @@ The `sponsorAddress` is used to uniquely identify a sponsor.
    `sponsorAddress`.
 3. The requester can now make requests of the Airnode.
 
-> ![image](../assets/images/sponsor-overview.png)
-
----
+> <img src="../assets/images/sponsor-overview.png" style="width:90%">
 
 In the above diagram it is possible to use the same sponsorAddress
 `(0xF4...dDyu9)` to derive other sponsor wallets for other Airnodes. And it is
