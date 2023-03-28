@@ -25,7 +25,7 @@ The latest release
 ([0.11<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
 of the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
-used to deploy the off-chain component of Airnode (a.k.a., the node) to GCP.
+used to deploy the off-chain component of Airnode (a.k.a., the node) to AWS.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
 [CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
@@ -175,7 +175,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 ```batch [Windows]
@@ -183,7 +183,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 :::
@@ -333,7 +333,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -341,7 +341,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 :::
