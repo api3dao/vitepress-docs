@@ -28,8 +28,8 @@ revenue to the DAO will result in burning of API3 tokens. This mechanic will
 produce positive staking incentives using inflationary rewards and claim risks
 rather than revenue sharing.
 
-> <img src="../assets/images/dao-pool-staking-2.png" width="450"/>
->
+> <img src="../assets/images/08-Inflationary_Rewards.png" width="450"/>
+
 > <p>Fees from revenue are burned. Inflationary rewards are distributed by the DAO. Service coverage claims are paid to dAPI covered entities from the pool of staked tokens.</p>
 
 ## Earning Rewards
@@ -44,7 +44,7 @@ the current total number of issued shares divided by the total number of tokens
 staked. Since the reward adds additional tokens to the pool, the "price" for one
 share will not always be one token.
 
-## Financial attraction of rewards
+## Financial Attraction of Rewards
 
 In essence, inflationary rewards entice token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as

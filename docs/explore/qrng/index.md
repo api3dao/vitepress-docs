@@ -29,7 +29,7 @@ number generation (PRNG) methods are used to generate _adequately
 random-looking_ numbers. Unless stated otherwise, RNG oracle services should be
 expected to be PRNG-based.
 
---Insert Graphic comparing hash pseudo & qrng-
+<img src="../assets/images/RNG_types.png" style="width:800px">
 
 Quantum random number generation (QRNG) is a method of random number generation
 based on quantum phenomena. There are different methods of implementing QRNG

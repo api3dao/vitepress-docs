@@ -64,8 +64,8 @@ utilities:
 
 _Main utilities of the API3 token._
 
-> <img src="../assets/images/dao-pool-token-utils.png" width="200"/>
->
+<img src="../assets/images/07-b-The_DAO_pool-Token_Utilities.png" style="width:350px">
+
 > 1. [Staking](/explore/dao-members/dao-pool.md#staking): Grants membership in
 >    the API3 DAO and rights to inflationary
 >    [rewards](/explore/dao-members/rewards.md).
@@ -91,8 +91,8 @@ governance voting rights and take part in providing API3 users with quantifiable
 _security_ in the form of service coverage. The DAO pool also grants you
 inflationary rewards and exposes you to the risk of service coverage claims.
 
-> <img src="../assets/images/dao-pool-staking.png" width="350"/>
->
+> <img src="../assets/images/07-a-The_DAO_pool-Staking.png" width="350"/>
+
 > <p class="diagram-line" style="color:gray;margin-top:25px;">Staked tokens in the DAO pool grant 
 > governance voting rights, inflationary rewards and are used to fund the coverage 
 > service which exposes staked tokens to the risks of service coverage claims.</p>
