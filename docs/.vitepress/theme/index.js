@@ -9,7 +9,6 @@ import DeployerPermissionsWarning from '../../_components/guides/DeployerPermiss
 import VersionWarning from '../../_components/VersionWarning.vue';
 import PageHeader from '../../_components/PageHeader.vue';
 import OisAirnodeVersions from '../../_components/reference/ois/OisAirnodeVersions.vue';
-import InfoBtnBlue from '../../_components/InfoBtnBlue.vue';
 import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
@@ -20,7 +19,6 @@ import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
 import NavBox from '../../_components/NavBox.vue';
 import NavBoxViewer from '../../_components/NavBoxViewer.vue';
-import TodoLink from '../../_components/TodoLink.vue';
 import FlexStartTag from '../../_components/FlexStartTag.vue';
 import FlexEndTag from '../../_components/FlexEndTag.vue';
 
@@ -42,7 +40,6 @@ export default {
     app.component('VersionWarning', VersionWarning);
     app.component('PageHeader', PageHeader);
     app.component('OisAirnodeVersions', OisAirnodeVersions);
-    app.component('InfoBtnBlue', InfoBtnBlue);
     app.component('ExternalLinkImage', ExternalLinkImage);
     app.component('CopyIcon', CopyIcon);
     app.component('SponsorWalletWarning', SponsorWalletWarning);
@@ -53,7 +50,6 @@ export default {
     app.component('SearchHighlight', SearchHighlight);
     app.component('NavBox', NavBox);
     app.component('NavBoxViewer', NavBoxViewer);
-    app.component('TodoLink', TodoLink);
     app.component('FlexStartTag', FlexStartTag);
     app.component('FlexEndTag', FlexEndTag);
   },

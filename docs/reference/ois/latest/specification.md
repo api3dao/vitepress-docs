@@ -174,9 +174,9 @@ the non-nested application/json content-type is supported.</p>
 
 ### 4.3. `components`
 
-[<InfoBtnBlue/>](/reference/airnode/latest/understand/api-security.md)
-(Required) An object where security schemes can be found under
-`securitySchemes.{securitySchemeName}` with the following elements:
+(Required) An object where
+[security schemes](/reference/airnode/latest/understand/api-security.md) can be
+found under `securitySchemes.{securitySchemeName}` with the following elements:
 
 - `type`
 - `name`
@@ -436,10 +436,10 @@ respective API operation.-->
 
 ### 5.3. `fixedOperationParameters`
 
-[<InfoBtnBlue/>](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)
 (Required) A list of objects specifying the fixed parameters for an API
-operation. While required, the fixedOperationParameters array can be left empty.
-Each object has the following elements:
+operation. While required, the
+[fixedOperationParameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)
+array can be left empty. Each object has the following elements:
 
 - `operationParameter`
 - `value`
@@ -467,13 +467,13 @@ that cannot be overridden by the requester.
 
 ### 5.4. `reservedParameters`
 
-[<InfoBtnBlue/>](/reference/airnode/latest/understand/api-integration.md#reservedparameters)
-
 A list of objects that specify reserved Airnode endpoint parameters that do not
 map to any API operation parameters, but are used for special purposes by the
 Airnode. See the
 [Reserved Parameters](/reference/ois/latest/reserved-parameters.md) doc for an
-in-depth explanation. Each object has the following elements:
+in-depth explanation and
+[reservedParameters](/reference/airnode/latest/understand/api-integration.md#reservedparameters).
+Each object has the following elements:
 
 - `name`
 - `fixed`
@@ -504,10 +504,10 @@ provided by a requester. Cannot be used together with `fixed`.
 
 ### 5.5. `parameters`
 
-[<InfoBtnBlue/>](/reference/airnode/latest/understand/api-integration.md#parameters)
-(Optional) A list of objects that specify Airnode endpoint parameters that map
-to an particular API operation's parameters. Each object has the following
-elements:
+(Optional) A list of objects that specify Airnode endpoint
+[parameters](/reference/airnode/latest/understand/api-integration.md#parameters)
+that map to an particular API operation's parameters. Each object has the
+following elements:
 
 - `operationParameter`
 - `name`
