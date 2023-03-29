@@ -87,15 +87,15 @@ with extreme concurrent usage, Airnode uses it for different reasons:
 
 3. Serverless functions are priced on-demand: Airnode does not require major
    concurrent usage, resulting in cost-efficiency and even let the user stay
-   within free tier [AWS](https://aws.amazon.com/free)<ExternalLinkImage/>,
-   [GCP](https://cloud.google.com/free)<ExternalLinkImage/> limits.
+   within free tier [AWS<ExternalLinkImage/>](https://aws.amazon.com/free),
+   [GCP<ExternalLinkImage/>](https://cloud.google.com/free) limits.
 
 Additionally, bare serverless functions are easy to port across cloud providers
 (e.g., using
-[Terraform Framework](https://www.terraform.io/)<ExternalLinkImage/>),
+[Terraform Framework<ExternalLinkImage/>](https://www.terraform.io/)),
 especially when their cloud provider-specific dependencies are limited.
 
-::: warning Note
+::: info Note
 
 Due to being stateless Airnode is able to reset itself quickly and easily,
 providing a solution for most potential issues.
@@ -136,7 +136,7 @@ blockchain service provider as a trusted party.
 ::: info Learn more
 
 Read more about how Airnode works in the
-[Airnode developer reference section](/reference/airnode/latest/understand/).
+[<span style="color:rgb(16, 185, 129);">Airnode reference section</span>](/reference/airnode/latest/understand/).
 
 :::
 
@@ -228,13 +228,14 @@ individual, meaning all providers must be malicious for Airnode operations to be
 disrupted reliably. Additionally, using multiple Ethereum providers helps
 achieve the highest possible availability.
 
-::: tip Airnode operates on free RPC tiers
+::: info Airnode operates on free RPC tiers
 
 An Airnode that receives no requests consumes fewer than 3,000 calls per day
 which is included within the free plans of RPC providers such as
-[Alchemy](https://www.alchemy.com/overviews/rpc-node),
-[Infura](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods) or
-[Pokt](https://docs.pokt.network/use/public-rpc/).
+[<span style="color:rgb(16, 185, 129);">Alchemy<ExternalLinkImage/></span>](https://www.alchemy.com/overviews/rpc-node),
+[<span style="color:rgb(16, 185, 129);">Infura<ExternalLinkImage/></span>](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods),
+or
+[<span style="color:rgb(16, 185, 129);">Pokt<ExternalLinkImage/></span>](https://docs.pokt.network/use/public-rpc/).
 
 :::
 

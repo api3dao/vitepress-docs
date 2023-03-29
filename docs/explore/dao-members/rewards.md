@@ -74,7 +74,7 @@ schedule.
 
 Reward amount is represented as APR (annual percentage rate). You can derive APY
 (annual percentage yield) using an
-[online calculator](https://www.aprtoapy.com/)<ExternalLinkImage/>. There is a
+[online calculator<ExternalLinkImage/>](https://www.aprtoapy.com/). There is a
 governable "APR update step", which is the step size each week the APR will be
 updated with. Also there are governable minimum and maximum APR values, but
 these (especially maximum APR) are there as safety measures and should not
@@ -102,7 +102,7 @@ of the total token supply when `mintReward` is called, APR will be raised by 1%
 for the next reward payout (and vice versa). Thus, APR will constantly be
 adjusted, but it will always stay between a designated maximum and minimum.
 
-:::tip Example
+:::info Example
 
 Rewards Distribution User X stakes 600 tokens and user Y stakes 400, so there is
 a 60% (X) 40% (Y) split ownership in the 1000 token DAO pool. For a particular
