@@ -88,15 +88,15 @@ below a particular price. Either of these patterns can be used to implement the
 live data feeds that DeFi applications use today, but they can also support a
 much larger variety of use cases in the form of dAPIs.
 
-::: warning Note
+<!--
+::: info Note
 
 An oracle utilizes a smart contracts to implement the protocol in a variety of
-patterns optimized for the use case.
-
-dAPIs utilize the publish-subscribe protocol. Learn more about
-[dAPIs](/explore/dapis/using-dapis.md).
+patterns optimized for the use case. dAPIs utilize the publish-subscribe
+protocol. Learn more about [dAPIs](/explore/dapis/using-dapis.md).
 
 :::
+-->
 
 ## Airnode Requesters and Sponsors
 
@@ -141,7 +141,7 @@ requester calls it.
 
 Understand the process of sponsoring a requester and deriving a sponsor wallet
 using the admin CLI commands within the
-[Sponsor & Requester](/reference/airnode/latest/developers/requesters-sponsors.md)
+[<span style="color:rgb(16, 185, 129);">Sponsor and Requester</span>](/reference/airnode/latest/developers/requesters-sponsors.md)
 developer resource
 
 :::

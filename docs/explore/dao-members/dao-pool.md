@@ -28,7 +28,7 @@ rewards and risks through responsible governance.
 
 API3 is the native token of the API3 project. The API3 ecosystem is a single
 token environment. Check out the Medium post
-[API3 Tokenomics Update](https://medium.com/api3/api3-tokenomics-update-f032d6e49b30)<ExternalLinkImage/>
+[API3 Tokenomics Update<ExternalLinkImage/>](https://medium.com/api3/api3-tokenomics-update-f032d6e49b30)
 for an in-depth overview on API3 tokenomics.
 
 ### Unstaked Tokens
@@ -81,7 +81,7 @@ them to govern in a way that minimizes **_security_** risks. "_Security_" refers
 to a "guarantee or reliability of dAPI service"
 
 Reference <a href="/api3-whitepaper-v1.0.3.pdf#page=25" target="_blank">section
-5.4 _"API3 Tokenomics"_</a><ExternalLinkImage/> of the API3 whitepaper.
+5.4 _API3 Tokenomics_<ExternalLinkImage/></a> of the API3 whitepaper.
 
 ### Staking
 
@@ -139,7 +139,7 @@ through the dispute resolution protocol, user damages will be covered from the
 pool's staked tokens.
 
 See <a href="/api3-whitepaper-v1.0.3.pdf#page=27" target="_blank">Section 5.4.2,
-_"Collateral"_</a><ExternalLinkImage/>, of the API3 whitepaper.
+_Collateral_<ExternalLinkImage/></a>, of the API3 whitepaper.
 
 ### Governance
 

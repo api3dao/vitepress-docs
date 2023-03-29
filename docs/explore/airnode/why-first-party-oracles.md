@@ -14,12 +14,14 @@ tags:
 
 <FlexStartTag/>
 
-# Defining first-party oracles
+# {{$frontmatter.title}}
 
 First-party oracles are integral to the API3 solution. Through using Airnode a
 smart contract is served by an oracle that is operated by the owner of an API,
 and not by a third party. As such, the output of an API that has seen Airnode
 deployed is a first-party oracle.
+
+## Defining first-party oracles
 
 When considering if an oracle is first or third party, there is an important
 point to consider: Who will host the oracle node?
@@ -29,17 +31,13 @@ point to consider: Who will host the oracle node?
 2. If a third-party middleman hosts the oracle node, the oracle is called a
    third-party oracle.
 
-As API3's Airnode is a first-party oracle as the node is hosted in the
-infrastructure of the API provider this means protocols serving data do so in a
-first-party manor. This is opposed to being served by a middle node layer that
+API3's Airnode is a first-party oracle as the node is hosted in the
+infrastructure of the API provider. This means protocols serving data do so in a
+first-party manner. This is opposed to being served by a middle node layer that
 is seen within third-party oracles.
 
-# <FlexStartTag/>
-
-# {{$frontmatter.title}}
-
 First-party oracles bring several advantages to smart contract engineers. The
-noteable benefits are:
+notable benefits are:
 
 1. Increased privacy
 2. Cost efficiency
@@ -96,7 +94,7 @@ resulting in a strong mutual bond between the two.
 ::: info Learn more
 
 Understand more by reading
-[first-party vs third-party oracles](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
+[<span style="color:rgb(16, 185, 129);">first-party vs third-party oracles<ExternalLinkImage/></span>](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
 
 :::
 
