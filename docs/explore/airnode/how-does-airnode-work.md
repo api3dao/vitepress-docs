@@ -87,12 +87,12 @@ with extreme concurrent usage, Airnode uses it for different reasons:
 
 3. Serverless functions are priced on-demand: Airnode does not require major
    concurrent usage, resulting in cost-efficiency and even let the user stay
-   within free tier [AWS](https://aws.amazon.com/free)<ExternalLinkImage/>,
-   [GCP](https://cloud.google.com/free)<ExternalLinkImage/> limits.
+   within free tier [AWS<ExternalLinkImage/>](https://aws.amazon.com/free),
+   [GCP<ExternalLinkImage/>](https://cloud.google.com/free) limits.
 
 Additionally, bare serverless functions are easy to port across cloud providers
 (e.g., using
-[Terraform Framework](https://www.terraform.io/)<ExternalLinkImage/>),
+[Terraform Framework<ExternalLinkImage/>](https://www.terraform.io/)),
 especially when their cloud provider-specific dependencies are limited.
 
 ::: info Note

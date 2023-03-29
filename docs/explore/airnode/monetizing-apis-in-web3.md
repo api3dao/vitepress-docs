@@ -110,10 +110,10 @@ should be understood.
 
 - **First-party** oracles overcome the significant disadvantages of third-party
   oracle node solutions that use middlemen to deliver APIs to the blockchain.
-- Airnode's **simple**
+- Airnode's **simple** design and
   [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget)
-  design avoids the time, complexity, and cost of other third-party oracle node
-  solutions.
+  philosophy avoids the time, complexity, and cost of other third-party oracle
+  node solutions.
 - Airnode is **stateless** and treats the blockchain as the single source of
   truth. This alone solves the majority of operational problems of traditional
   third-party oracle nodes while providing an overall higher level of
@@ -126,11 +126,11 @@ should be understood.
   making the requests) specify a sponsor (account that sponsors the transaction)
   to pay for the response transaction.-->
 - Airnode and other API3 projects are **open source** and developed on
-  [GitHub](https://github.com/api3dao)<ExternalLinkImage/>.
+  [GitHub<ExternalLinkImage/>](https://github.com/api3dao).
 - Due to its stateless nature Airnode is inherently more **secure** than other
   solutions. Nonetheless, API3 remains highly focused on security and has a
   track record of favorable
-  [external security audits](https://github.com/api3dao/api3-dao/tree/main/reports)<ExternalLinkImage/>.
+  [external security audits<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/tree/main/reports).
 - API3 does **not charge** for deploying and using Airnode. Under the AWS lambda
   free tier, operating an Airnode can even be free.
 
