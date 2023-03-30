@@ -47,13 +47,13 @@ Decentralized PRNG (e.g., RANDAO, VRF) has been the popular way of building RNG
 oracle services. However, this configuration suffers from the same issues as any
 third-party oracle network, in that setting up an oracle node that can provide
 PRNG is trivial, which exposes the solution to
-[Sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack)<ExternalLinkImage/>.
+[Sybil attacks<ExternalLinkImage/>](https://en.wikipedia.org/wiki/Sybil_attack).
 Then, one needs to trust the governing entity to select the network
 participants, which means decentralized PRNG is only as secure and decentralized
 as the governing entity.
 
 The
-[API3 whitepaper](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)<ExternalLinkImage/>
+[API3 whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
 proposes first-party oracles, which are oracles that own the data they serve, as
 the solution that optimally counters the Sybil attack risk. However, RNG is an
 awkward case where it is not possible to talk of an ownership of the data. Here,
@@ -82,13 +82,13 @@ future.<!-- review -->
 With the courtesy of the Australian National University (ANU) Airnode was hosted
 by ANU Quantum Random Numbers to serve Quantum RNG. This means that it is a
 first-party service. It is free of charge (apart from the gas costs),
-[easy to use](/guides/qrng/qrng-example.md), and will be made available on as
-many [chains](/reference/qrng/chains.md) as possible.
+[easy to use](/guides/qrng/index.md), and will be made available on as many
+[chains](/reference/qrng/chains.md) as possible.
 
-[Australian National University](https://www.anu.edu.au/)<ExternalLinkImage/> is
+[Australian National University<ExternalLinkImage/>](https://www.anu.edu.au/) is
 one of the leading research universities in Australia, and also the provider of
 the well-known and widely used
-[Quantum Random Numbers API](https://quantumnumbers.anu.edu.au/)<ExternalLinkImage/>,
+[Quantum Random Numbers API<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/),
 which is powered by novel research done by the ANU quantum optics group as
 described below:
 
@@ -103,9 +103,9 @@ described below:
 > By carefully measuring these fluctuations, we are able to generate ultra-high
 > bandwidth random numbers. <br/><br/> The technical details on how the random
 > numbers are generated can be found in
-> [Appl. Phys. Lett. 98, 231103 (2011)](https://dx.doi.org/10.1063/1.3597793)<ExternalLinkImage/>
+> [Appl. Phys. Lett. 98, 231103 (2011)<ExternalLinkImage/>](https://dx.doi.org/10.1063/1.3597793)
 > and
-> [Phys. Rev. Applied 3, 054004 (2015)](https://dx.doi.org/10.1103/PhysRevApplied.3.054004)<ExternalLinkImage/>.
+> [Phys. Rev. Applied 3, 054004 (2015)<ExternalLinkImage/>](https://dx.doi.org/10.1103/PhysRevApplied.3.054004).
 
 ::: info Contribute
 
@@ -117,18 +117,16 @@ components of this public utility at the
 
 ## What to expect next?
 
-API3 QRNG is built on [Airnode](/reference/airnode/latest/), which means any
-future improvements to Airnode will also be available for API3 QRNG. Most
-importantly, this includes faster, cheaper, and more customizable request
-fulfillments. In addition, integrations to more chains and QRNG providers will
-be made available over time, and higher-level QRNG services will be built
-leveraging these.
+API3 QRNG is built on Airnode, which means any future improvements to Airnode
+will also be available for API3 QRNG. Most importantly, this includes faster,
+cheaper, and more customizable request fulfillments. In addition, integrations
+to more chains and QRNG providers will be made available over time, and
+higher-level QRNG services will be built leveraging these.
 
-## More related material...
+See these guides and learn how to use QRNG:
 
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='GUIDE' id='_qrng-remix-example'/>
-  <NavBox type='REPO' id='_qrng-starter-project'/>
-</div>
+- [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md)
+- [Building a Lottery with QRNG](/guides/qrng/lottery-guide/index.md)
+- [QRNG Example (repo based)<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
 
 <FlexEndTag/>

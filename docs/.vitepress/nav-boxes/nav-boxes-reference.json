@@ -22,6 +22,6 @@
   "_reference-airnode-deployer-image": {
     "btnURL": "/reference/airnode/latest/docker/deployer-image.html",
     "title": "AWS/GCP Deployer Image",
-    "content": "See code examples and other details for the ASW/GCP deployer image."
+    "content": "See code examples and other details for the AWS/GCP deployer image."
   }
 }

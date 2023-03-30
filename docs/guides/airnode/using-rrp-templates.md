@@ -21,7 +21,9 @@ approach allows a smart contract to store the parameters for an RRP call in a
 template. This is advantageous when a call to an Airnode will be made using the
 same parameters each time. See
 [Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
-amd learn more about the technical specifications of a template as used by a
+and
+[Coingecko example](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)
+to learn more about the technical specifications of a template as used by a
 requester. As a prerequisite to this guide first try the guide
 [Making an RRP Request](/guides/airnode/rrp-request.md).
 
@@ -167,18 +169,5 @@ bytes32 requestId = airnodeRrp.makeTemplateRequest(
   parameters                      // Additional API parameters
 );
 ```
-
-## More related material...
-
-See the guide [Making an RRP Request](/guides/airnode/rrp-request.md).
-
-See
-[Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
-amd learn more about the technical specifications of a template as used by a
-requester.
-
-See the
-[Coingecko example](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)
-that utilizes an Airnode template request in the Airnode repo.
 
 <FlexEndTag/>

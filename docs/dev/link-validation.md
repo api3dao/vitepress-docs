@@ -78,5 +78,5 @@ sure to use the correct port displayed by VitePress server.
 # Open a new terminal window.
 # Run from the vitepress-docs project root.
 # Start the nodejs script.
-node ./libs/link-validator.js  http://127.0.0.1:8082  ./docs/.vitepress/dist/
+node ./libs/link-validator.js  http://localhost:8082  ./docs/.vitepress/dist/
 ```

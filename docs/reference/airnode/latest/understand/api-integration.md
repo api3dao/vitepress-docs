@@ -485,10 +485,4 @@ Airnode endpoint parameters.
 Now that you have an OIS object, the next step is
 [API Security](/reference/airnode/latest/understand/api-security.md).
 
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='REFERENCE' id="_reference-ois-specifications"/>
-</div>
-
 <FlexEndTag/>

@@ -144,7 +144,9 @@ them easy to categorize. The contract
 dAPI name and the beacon(s) it uses for the dAPI. dApps use an API3 Marker proxy
 contract to read any dAPI from `API3ServerV1.sol`.
 
-ADevelopers use a proxy contract to access a dAPI. Proxy contracts use the
+dApp owners use a proxy contract, available on the
+[API3 Market<ExternalLinkImage/>](https://market.api3.org), to access a dAPI.
+Proxy contracts use the
 [API3Server.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract to access dAPIs. Developers can easily set the proxy contract address
 in a dApp contract to start reading from the dAPIs.
@@ -164,13 +166,11 @@ proxy address when calling the read() function on the proxy contract. If the
 dAPI interface has previously been imported, it abstracts away the technical
 implementation of accessing new data feeds.
 
-## More related material...
+Refer to these guides and learn how to fund a self-funded dAPI and to read the
+dAPI using a proxy contract:
 
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='GUIDE' id="_subscribe-self-funded-dapi"/>
-  <NavBox type='GUIDE' id="_read-dapi-proxy"/>
-
-</div>
+- [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/index.md)
+- [Reading a Self-Funded dAPI Proxy](/guides/dapis/read-self-funded-dapi/index.md)
 
 <!--Additionally it is going to play a cruical role in setting up required
 contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->

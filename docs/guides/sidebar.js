@@ -76,10 +76,10 @@ module.exports = [
     items: [
       {
         text: 'Getting Started with QRNG',
-        link: '/guides/qrng/qrng-example',
+        link: '/guides/qrng/',
       },
       {
-        text: 'Using QRNG - Remix Guide',
+        text: 'Using QRNG - Remix Example',
         link: '/guides/qrng/qrng-remix/',
       },
       {

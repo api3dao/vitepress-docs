@@ -214,10 +214,4 @@ successfully completed the randomNumber will be present. The value of
 
 <img src="./assets/qrng-response-complete.png" style="width:50%"/>
 
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox  type='REFERENCE' id="_reference-qrng-providers"/>
-</div>
-
 <FlexEndTag/>

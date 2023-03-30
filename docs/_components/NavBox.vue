@@ -37,8 +37,7 @@
 </template>
 
 <script>
-import { useRouter } from 'vitepress';
-import { useData } from 'vitepress';
+import { useRouter, useData } from 'vitepress';
 import explore from '../.vitepress/nav-boxes/nav-boxes-explore.json';
 import guide from '../.vitepress/nav-boxes/nav-boxes-guides.json';
 import reference from '../.vitepress/nav-boxes/nav-boxes-reference.json';
