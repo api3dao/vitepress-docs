@@ -59,14 +59,10 @@ struct Template {
 }
 ```
 
-## More related material...
-
 See the guide
 [Making RRP Template Requests](/guides/airnode/using-rrp-templates.md) and learn
-how to create and use a template.
-
-The
-[coingecko-template](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
+how to create and use a template. Also visit the
+[coingecko-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-examples/integrations/coingecko-template)
 monorepo example demonstrates template requests.
 
 <FlexEndTag/>

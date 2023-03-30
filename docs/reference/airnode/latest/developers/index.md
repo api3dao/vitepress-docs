@@ -68,6 +68,9 @@ from the the API provider, then performs a callback to the requester.
 > 3.  <p>Airnode gathers response data from the API specified in the request.</p>
 > 4.  <p>Airnode performs a callback to a named function <code>myFulfill()</code> in myContract.sol via the AirnodeRrpV0.sol function <code>fulfill()</code> with the requested data and the <code>requestId</code>.</p>
 
+See the guide [ Making an RRP Request](/guides/airnode/rrp-request.html) and
+learn how to make a RRP request of an Airnode.
+
 ## A deeper dive
 
 This section, through its detailed illustration, builds on the previous section
@@ -84,14 +87,5 @@ deployed as self hosted or cloud provider functions (e.g., AWS) and the on-chain
 > - <p>A requester makes a request to the AirnodeRrpV0 protocol contract which adds the <code>requestId</code> to storage, emits the request to the event logs and returns the <code>requestId</code> to the requester. The request is retrieved by the Airnode during its next run cycle. It then verifies the requester is authorized by checking authorizer contracts assigned to the Airnode.</p>
 > - <p>If the request is authorized, Airnode proceeds to respond. It first gathers the requested data from the API and calls the <code>fulfill()</code> function in AirnodeRrpV0, which removes the pending <code>requestId</code> from storage and makes a callback to <code>myFulfill()</code>. The gas costs associated 
 >    with the response are covered by the sponsor of the requester.</p>
-
-## More related material...
-
-See the guide [ Making an RRP Request](/guides/airnode/rrp-request.html) and
-learn how to make a RRP request of an Airnode.
-
-See the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
-for potential design patterns.
 
 <FlexEndTag/>

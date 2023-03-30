@@ -107,15 +107,4 @@ own [first-party oracle](/explore/introduction/first-party.md) nodes. Doing so
 means that it is the API provider's Airnode that places its signed API data
 on-chain.
 
-## More related material...
-
-Read more on how
-[Airnode works](/reference/airnode/latest/understand/index.html).
-
-[API Connectivity Problem<ExternalLinkImage/>](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)
-
-[API3 whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
-
-[APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
-
 <FlexEndTag/>

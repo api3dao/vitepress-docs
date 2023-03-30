@@ -1,5 +1,5 @@
 ---
-title: Using QRNG with Remix
+title: Using QRNG - Remix Example
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -26,7 +26,7 @@ assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
-[nodary provider](https://nodary.io/), available only on testnets, which returns
+[Nodary provider](https://nodary.io/), available only on testnets, which returns
 a pseudorandom number.
 
 To begin, you need to deploy and sponsor the

@@ -264,24 +264,4 @@ See
 [Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
 
-## More related material...
-
-Learn about the mechanics of
-[Airnode's request-response protocol](/reference/airnode/latest/developers/index.md)
-(RRP) as used by a requester.
-
-Another example of a guide that explains how to use the RRP is the QRNG
-[Remix Example](/guides/qrng/remix-example/index.md).
-
-The guide
-[Making an RRP Template Requests](/guides/airnode/using-rrp-templates.md) uses
-on-chain templates which maintains a list of parameters used when make an RRP
-request. This is advantageous when a call to an Airnode will be made using the
-same parameters each time.
-
-A requester needs to be sponsored and make the request using a matching sponsor
-wallet. See
-[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)
-on how to sponsor a requester and derive the sponsor wallet.
-
 <FlexEndTag/>

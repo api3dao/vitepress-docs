@@ -117,11 +117,10 @@ cloud provider service (e.g. AWS, EC2, or Lightsail). Use the Docker
 [Airnode Client Image](/reference/airnode/latest/docker/client-image.md) for
 this type of deployment.
 
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='EXPLORE' id="_what-is-airnode"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-aws"/>
-</div>
+Try the guide AWS
+[Deploying Airnode via AWS](/guides/airnode/deploy-airnode/deploy-aws/index.md)
+as a quick introduction to an Airnode deployment. Also be sure to visit
+[ChainAPI<ExternalLinkImage/>](https://chainapi.com) and try its user-friendly
+UI that deploys an Airnode.
 
 <FlexEndTag/>

@@ -32,7 +32,10 @@ object is in these docs.
 
 :::
 
-See the article
+For an overview that explains how Airnode maps its endpoints to API provider
+operations, see
+[API integration](/reference/airnode/latest/understand/api-integration.html).
+Also see the medium article
 [Setting Oracle Integration Standards<ExternalLinkImage/>](https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e)
 for an overview of OIS.
 
@@ -303,7 +306,7 @@ schemes are assign to the entire API.
 (Required) A list of objects, each specifying an Airnode endpoint with the
 following fields:
 
-::: tip Please Note
+::: info Please Note
 
 Fields denoted by \* are for documentation purposes and not used by Airnode
 node.
@@ -640,11 +643,5 @@ additional details.
   }
 ]
 ```
-
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='REFERENCE' id="_reference-airnode-api-integrations"/>
-</div>
 
 <FlexEndTag/>

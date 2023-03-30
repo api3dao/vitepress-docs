@@ -81,8 +81,10 @@ return IDapiProxy(0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2).read();
 ```
 
 See the guide
+[Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
+and learn more on how to fund a dAPI. Also see the guide
 [Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn how to use a proxy contract.
+learn more on how to use a proxy contract to read the value of a dAPI.
 
 ## Managed dAPIs
 
@@ -106,15 +108,5 @@ they may be using.
 The specifications for the concept of a managed dAPI may change to some degree
 as development continues. The full feature specification will be updated here as
 this type of dAPIs is made available.
-
-## More related material...
-
-See the guide
-[Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
-and learn more on how to fund a dAPI.
-
-See the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn more on how to use a proxy contract to read the value of a dAPI.
 
 <FlexEndTag/>
