@@ -20,7 +20,7 @@ tags:
 The [DAO Tracker<ExternalLinkImage/>](https://tracker.api3.org) is a
 community-developed tool that provides additional insight into the DAO pool
 beyond what is offered by the intentionally minimalist DAO Dashboard. Its
-[open source codebase<ExternalLinkImage/>](https://github.com/EnormousCloud/api3-dao-tracker)
+[open source codebase<ExternalLinkImage/>](https://github.com/api3dao/api3-tracker)
 was developed by GitHub user **EnormousCloud**.
 
 ![dao-tracker](../assets/images/dao-tracker.png)
