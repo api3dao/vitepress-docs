@@ -32,7 +32,7 @@ the DAO as described in
 [Dashboard Attributes](/reference/dao-members/dashboard-attributes.md) upon
 acceptance using a proposal. To view the percentage of staked tokens in the pool
 for an address, visit the
-[DAO Tracker wallets page](https://enormous.cloud/dao/api3/tracker/wallets)<ExternalLinkImage/>.
+[DAO Tracker wallets page](https://tracker.api3.org/wallets)<ExternalLinkImage/>.
 
 You can vote on all proposals regardless of the percentage of staked tokens in
 the pool you own. See [How to Vote](/guides/dao-members/voting.md) for
