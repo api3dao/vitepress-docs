@@ -238,7 +238,7 @@ Airnode to request a random number.
 - Click on the **COMPILE** tab on the left side of the dashboard and click on
   **Compile Lottery.sol**
 
-  <img src="src/s2.png" style="width:50%">
+  <img src="./src/s2.png" style="width:50%">
 
 - Head to Deploy and run Transactions and select **Injected Provider —
   MetaMask** option under **Environment**. Connect your MetaMask. Make sure
@@ -291,7 +291,7 @@ npx @api3/airnode-admin derive-sponsor-wallet-address \
 Click on the `setSponsorWallet` button and enter your Sponsor Wallet Address to
 set it on-chain.
 
-<img src="src/s4.png" style="width:45%">
+<img src="./src/s4.png" style="width:45%">
 
 ::: warning Designated Sponsor Wallets
 
@@ -335,7 +335,7 @@ Enter the amount to fund the sponsor wallet (0.01 ETH) and call
 Head over to [Goerli Testnet Explorer](https://goerli.etherscan.io/) and check
 your `sponsorWallet` for any new transactions.
 
-<img src="src/s11.png" style="border:1px solid lightgrey">
+<img src="./src/s11.png" style="border:1px solid lightgrey">
 
 Here, You can see the latest `Fulfill` transaction.
 
