@@ -68,11 +68,11 @@ build complete in 5.20s.
 If the build displays errors or warnings (such as broken links) address them as
 needed.
 
-### Memory
+## Memory
 
 It maybe necessary to increase the memory for Nodejs to run `yarn docs:dev` or
-`yarn docs:build`. Make corrections as needed. For m1, M2 Mac users this may be
-a sign of a [Rosetta issue](/dev/rosetta.md) which should be addressed before
+`yarn docs:build`. Make corrections as needed. For Apple silicon this may be a
+sign of a [Rosetta issue](/dev/rosetta.md) which should be addressed before
 committing to additional memory for Nodejs.
 
 ```sh
