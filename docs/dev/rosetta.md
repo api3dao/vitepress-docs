@@ -21,7 +21,7 @@ using CLI running with Rosetta on, and NPM will install the wrong
 a version of Nodejs and NPM installed with its installer or install it using
 your CLI with Rosetta deactivated.
 
-::: tip Nodejs `v18`
+::: info Nodejs `v18`
 
 It is best to use nodejs `v18` which gives the best performance and is the
 engine described in the
