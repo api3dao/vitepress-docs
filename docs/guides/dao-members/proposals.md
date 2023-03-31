@@ -103,7 +103,7 @@ expected, for your proposal to succeed.
   In general, a proposal type of _Primary_ has a larger treasury and more permissions but has more stringent voting settings than a _Secondary_ type. For a technical breakdown of the different permissions granted to the DAO's proposal types (and corresponding Agents) see this [README](https://github.com/api3dao/api3-dao/blob/develop/packages/dao/README.md#permissions).
   -->
 
-::: tip Public Address and ENS Names
+::: info Public Address and ENS Names
 
 For public addresses use the checksum version of the address where some
 alphabetical characters are capitalized. Copy your address to etherscan to get
@@ -113,7 +113,7 @@ below.
 
 :::
 
-::: tip USDC Precision
+::: info USDC Precision
 
 USDC uses 6 decimal places of precision as opposed to 18 that many other ERC20
 tokens use. Add 6 zeros after the amount you are asking for.
@@ -264,7 +264,7 @@ How does the voter know that it's the exact same proposal they had read earlier
 in the forum? IPFS addressing content by its hash is convenient here, because
 any change you'll make to your proposal will change its hash.
 
-> <img src="../assets/images/ipfs-proposals.png" width="550"/>
+<img src="../assets/images/ipfs-proposals.png" width="550"/>
 
 To host a proposal description on IPFS:
 

@@ -197,7 +197,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 - Click on the **COMPILE** tab on the left side of the dashboard and click on
   **Compile Requester.sol**
 
-> ![Compiling the Requester](src/s2.png)
+> ![Compiling the Requester](./src/s2.png)
 
 - Head to Deploy and run Transactions and select Injected Provider — MetaMask
   option under Environment. Connect your MetaMask. Make sure you’re on the
@@ -207,7 +207,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
   already been deployed on-chain. You can check for your specific chain
   [here](/reference/airnode/latest/). Fill it in and Deploy the Contract.
 
-> ![Deploying the Requester](src/s3.png)
+> ![Deploying the Requester](./src/s3.png)
 
 ### Sponsor the Requester
 
