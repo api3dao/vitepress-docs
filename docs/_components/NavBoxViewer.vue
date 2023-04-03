@@ -1,7 +1,7 @@
 <template>
   <div class="api3-css-nav-box-flex-row">
     <div v-for="(box, id) in list" v-bind:key="id">
-      <code style="font-size: x-small">{{ id }} - {{ type }}</code>
+      <code style="font-size: x-small">{{ id }}</code>
       <NavBox v-bind:type="type" v-bind:id="id" style="'solid 1px black" />
     </div>
   </div>
