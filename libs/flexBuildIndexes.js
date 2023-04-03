@@ -190,7 +190,15 @@ async function start() {
         // Its content will be part of its parent file.
         if (!ignoreFiles.includes(files[x])) {
           try {
-            await buildContentFile(dir + '/' + files[x]);
+            // TEMP TEMP TEMP TEMP TEMP TEMP TEMP TEMP
+            if (
+              dir.indexOf('/reference/airnode') === -1 &&
+              dir.indexOf('/reference/ois') === -1 &&
+              dir.indexOf('/reference/qrng') === -1 &&
+              dir.indexOf('/reference/dao-members') === -1
+            ) {
+              await buildContentFile(dir + '/' + files[x]);
+            }
           } catch (err) {
             console.log('>>> ERROR');
             console.error(dir + '/' + files[x]);

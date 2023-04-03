@@ -1,5 +1,5 @@
 ---
-title: Nav Boxes
+title: NavBoxes
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
