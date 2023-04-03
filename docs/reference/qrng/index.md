@@ -14,6 +14,7 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
 # {{$frontmatter.title}}
 
 The API3 QRNG service is implemented using the Airnode request–response protocol
@@ -23,7 +24,7 @@ contract
 [RrpRequesterV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol))
 to acquire a random number.
 
-::: tip QRNG example project
+::: info QRNG example project
 
 After reading this page, visit and run the
 [QRNG Example](https://github.com/api3dao/qrng-example/blob/main/README.md)
@@ -114,15 +115,16 @@ and
 [fulfillUint256Array()<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/contracts/QrngExample.sol#L115-L131))
 can be used to acquire an array of random numbers.
 
+See the guide [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md) for
+an in-depth tutorial on how use QRNG. Also see the
+[QRNG Example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
+repo, an example project that demonstrates the usage of the Airnode
+request–response protocol to receive API3 QRNG services.
+
 ## Gas Costs
 
 Using the QRNG service is free, meaning there is no subscription fee to pay.
 There is a gas cost incurred on-chain when Airnode places the random number
 on-chain in response to a request, which the requester needs to pay for.
 
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='GUIDE' id='_qrng-remix-example'/>
-  <NavBox type='REPO' id='_qrng-starter-project'/>
-</div>
+<FlexEndTag/>

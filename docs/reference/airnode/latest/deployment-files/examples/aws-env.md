@@ -14,6 +14,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 - Variable names cannot contain dashes (-) or start with a number.
@@ -22,3 +24,5 @@ tags:
 AWS_ACCESS_KEY_ID=AKIA...GYZWRAHOH
 AWS_SECRET_ACCESS_KEY=B87...UD/LEl6Z/ZCMXO9
 ```
+
+<FlexEndTag/>

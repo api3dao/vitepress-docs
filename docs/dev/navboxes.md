@@ -1,5 +1,5 @@
 ---
-title: Nav Boxes
+title: NavBoxes
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
@@ -12,7 +12,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-A NavBox displays a link to related material. They are rendered using the
+A NavBox displays a link to related material and are only used on the landing
+page. They are rendered using the
 [NavBox.vue](https://github.com/api3dao/vitepress-docs/blob/main/docs/_components/NavBox.vue)
 component which loads NavBox data from four JSON files:
 
@@ -24,10 +25,7 @@ component which loads NavBox data from four JSON files:
 ## Using a NavBox
 
 NavBoxes must be embedded within a div element that utilizes the class
-`api3-css-nav-box-flex-row`. Other than the landing page or certain browsers,
-the NavBoxes will probably display three to a row. They are commonly used at the
-bottom of a page under a section called "**More related material...**". They are
-also useful to stress the importance of certain content within (inline) a doc.
+`api3-css-nav-box-flex-row`.
 
 ```
 <div class="api3-css-nav-box-flex-row">
@@ -38,22 +36,22 @@ also useful to stress the importance of certain content within (inline) a doc.
 </div>
 ```
 
-- `type`: Tells the NavBox component which JSON file to read.
-- `id`: Pulls the appropriate object from the selected JSON file.
+- `type`: Tells the NavBox component which JSON file to read
+- `id`: Pulls the appropriate object from the selected JSON file
 
 <div class="api3-css-nav-box-flex-row">
     <NavBox type='EXPLORE' id="_what-are-dapis"/>
-    <NavBox type='GUIDE' id="_dapi-just-the-code"/>
-    <NavBox type='GUIDE' id="_call-dapi-proxy"/>
+    <NavBox type='GUIDE' id="_read-dapi-proxy"/>
+    <NavBox type='REPO' id="_qrng-starter-project"/>
 
 </div>
 
 ## Adding new NavBoxes
 
 Simply update one of the four JSON files. Likewise a NavBox can be edited to
-further refine its content in these files. Remember that other doc authors may
-be happy with the content of an existing NavBox. Before making changes reach out
-on the vitepress Slack channel.
+further refine its content. Remember that other doc authors may be happy with
+the content of an existing NavBox. Before making changes reach out on the
+vitepress Slack channel.
 
 ## Browse current NavBoxes
 

@@ -55,7 +55,11 @@
     "docsets",
     "Sepolia",
     "permissionlessly",
-    "permissionless"
+    "permissionless",
+    "Gelato",
+    "incentivizing",
+    "PRNG",
+    "nodary"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

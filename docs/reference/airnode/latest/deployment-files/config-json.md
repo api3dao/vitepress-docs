@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The `config.json` defines a single Airnode deployment. The file contents are a
@@ -219,9 +221,11 @@ for some considerations.
 
 #### `options.fulfillmentGasLimit`
 
-(required) - The maximum gas limit allowed when Airnode responds to a request,
-paid by the requester. If exceeded, the request is marked as failed and will not
-be repeated during Airnode's next run cycle.
+(optional) - The maximum gas limit allowed when Airnode responds to a request,
+paid by the requester. If specified, this value will be used as the gas limit
+for the fulfillment. Note that if the gas cost exceeds the limit given, the
+request will be marked as failed and will not be retried during the next cycle.
+If not specified, Airnode will attempt to estimate the gas limit automatically.
 
 #### `options.withdrawalRemainder`
 
@@ -776,3 +780,5 @@ empty.
 `for each row in apiCredentials`</span>) - The value of the security scheme used
 (as defined by `ois[n].components.securitySchemes.{securitySchemeName}` for the
 authentication. Usually stored in `secrets.env`.
+
+<FlexEndTag/>

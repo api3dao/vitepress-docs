@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 At its core, **Airnode** lets API providers easily run their own _oracle nodes_.
@@ -22,14 +24,6 @@ Airnode allows providers to publish data feeds
 Airnode lets dApp developers write _smart contracts_ that interact with
 off-chain data of API providers at ease. It's designed to be easily deployed by
 any API provider with almost no maintenance.
-
-::: info Learn more
-
-Read about Airnode in the _API3 Whitepaper:
-<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank"> A Node Designed
-for First-Party Oracles.</a><ExternalLinkImage/>_
-
-:::
 
 ## The API Connectivity Problem
 
@@ -44,6 +38,8 @@ As such it would be more accurate to define the problem at hand as _the API
 connectivity problem_. Solving the API connectivity problem has been a key
 consideration in the design of API3's offerings.
 
+<img src="../assets/images/API_use_cases_intro.png" style="width:400px">
+
 As you read more about API3, you will discover that this redefinition will have
 ripple effects across the entire solution, from how the ecosystem is built to
 the lowest levels of the protocol.
@@ -53,6 +49,15 @@ this distinction, resulting in inferior solutions that depend on third-party
 oracles and ecosystems that exclude API providers. As such, API3 believes the
 oracle problem is ill-posed, instead we are faced with an API Connectivity
 Problem.
+
+::: info Learn more
+
+Read about Airnode in the API3 Whitepaper:
+<a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">
+<span style="color:rgb(16, 185, 129);">A Node Designed for First-Party
+Oracles<ExternalLinkImage/></span></a>.
+
+:::
 
 ## Key features
 
@@ -92,15 +97,15 @@ for oracle transactions. Operating Airnode does not require the node operators
 to handle cryptocurrency. Authentication happens through tooling within the API3
 ecosystem.
 
-::: tip Learn more
+::: info Learn more
 
-A high-level overview of Airnode can be found in
-[a dedicated Medium article](https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840)<ExternalLinkImage/>
+A high-level overview of Airnode can be found in the
+[<span style="color:rgb(16, 185, 129);">dedicated Medium article<ExternalLinkImage/></span>](https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840)
 published by API3.
 
 :::
 
-## Unlock real world data for smart contracts
+## Connecting APIs to the blockchain
 
 <!--Airnode is designed to be a simple and straightforward solution for API
 providers, allowing them to make their API accessible over the Web with no
@@ -118,6 +123,8 @@ soon as they identify a need for the API Providers’ services. Consequently,
 Airnode helps to eliminate any restrictions when it comes to application
 development allowing developers to quickly leverage additional resources.
 
+<img src="../assets/images/05-How_Airnode_works.png" style="width:350px">
+
 For smart contracts engineers this means access to real world data as needed
 within the development lifecycle. This translates to a host of meaningful use
 cases being realized for two key reasons:
@@ -125,13 +132,14 @@ cases being realized for two key reasons:
 1. Increased data availability through the correct incentivsation of API
    Providers
 2. The flexibility of being able to utilize Airnode to connect smart contracts
-   to APIs during the devlopment cycle
+   to APIs
 
+<!--
 ::: tip Get started
 
 Get started as an API Provider [here](/guides/airnode/become-api-provider.md)
 
-:::
+:::-->
 
 ## Oracle Integration Standards (OIS)
 
@@ -142,8 +150,8 @@ Airnode in an even more scalable way. To this end proprietary integration tools
 will be open sourced for Airnode.
 
 Borrowing from the
-[OpenAPI Specification format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md)<ExternalLinkImage/>,
-Oracle Integration Specifications (OIS) define the operations of an API, the
+[OpenAPI Specification format<ExternalLinkImage/>](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md),
+Oracle Integration Specifications (OIS) defines the operations of an API, the
 endpoints of an oracle, and a way of mapping them to each other. Airnode users
 will be able to serve an API over their oracle simply by providing its OIS to
 their node. Integrations made in this standardized format will be very easy to
@@ -163,13 +171,6 @@ The software is feature-complete for current protocols, and further development
 will be funded by API3 in the form of grants.-->
 
 ## How does Airnode work?
-
-::: danger Needed?
-
-The next section in the Sidebar is the next step in hte sidebar's progression.
-Below is the quick link to the same.
-
-:::
 
 Airnode is has made it easy for API Providers to monetize their data to
 decentralized applications (dApps). To understand how Airnode serves data
@@ -221,3 +222,5 @@ it requires API modifications to implement off-chain signing. This results in a
 severely limited API selection even compared to the regular third-party
 oracle-based solutions, and restricts the growth potential of the solution's
 ecosystem to the application-scale. -->
+
+<FlexEndTag/>

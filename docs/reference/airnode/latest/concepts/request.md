@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A request is made, by a
@@ -35,7 +37,7 @@ AirnodeRrpV0.sol.
 > 5.  <p>Airnode sends the response to fulFill() in AirnodeRrpV0 which in turn removes the pending requestId from storage and forwards the response to myFulFill(). The requestId is included as part of the response.</p>
 
 Learn more on how to
-[Call an Airnode](/reference/airnode/latest/developers/call-an-airnode.md).
+[Call an Airnode](/reference/airnode/latest/developers/index.md).
 
 ## `requestId`
 
@@ -208,3 +210,5 @@ made but not yet fulfilled/failed. If a requester has made a request, received a
 Airnode has called back `fail()` instead.Returns `true` if the request is
 awaiting fulfillment (i.e., `true` if `fulfill()` or `fail()` is not called back
 yet), `false` otherwise.
+
+<FlexEndTag/>

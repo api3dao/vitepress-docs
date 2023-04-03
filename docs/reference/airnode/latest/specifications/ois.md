@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The `ois` JSON object, in the `config.json` file that defines an Airnode, is an
@@ -26,3 +28,5 @@ Airnode can serve endpoints from more than one API.
 Learn more about
 [Oracle Integration Specifications (OIS)](/reference/ois/latest/) in its
 versioned document set.
+
+<FlexEndTag/>

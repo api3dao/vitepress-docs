@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 There are various moving parts in the operation of dAPIs which bring with it a
@@ -71,3 +73,5 @@ It is important that no central authority has the opportunity to impact the
 delivery of a dAPI's value. API3 is committed to keep the beacon sets behind a
 managed dAPI updated in a completely decentralized fashion. Therefore
 decentralization will be a key feature when managed dAPIs are made available.
+
+<FlexEndTag/>

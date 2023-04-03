@@ -24,16 +24,16 @@ The three steps:
 
 1. `yarn dev:build`: When doing a local build VitePress will valid markdown
    links and does so very well. Fix them before proceeding. This step will also
-   catch bad `src` paths for images.
+   catch bad `src` paths for images. It does not validate anchors.
 2. Search the code base for `](#`. This will show markdown links that link
    directly to an anchor. While this will work, the anchors cannot be validated
    by `/libs/link-validator.js`, see [Hyperlinks](/dev/hyperlinks.md) to
    understand how to fix them.
-3. Run hte `/libs/link-validator.js` script.
+3. Run the `/libs/link-validator.js` script.
 
 ## Using the script
 
-The script must be run locally and will not work as a GitHub action
+The script must be run locally and will not work as a GitHub action.
 
 ### 1. Build the docs
 
@@ -70,14 +70,13 @@ an indicator for failures as it steps through each file. There will be a summary
 of all link failures at the end of the script output.
 
 You can run the Link Validator against the entire `/dist` folder which will
-validate everything (/pre-alpha, v0.11, /dapis, etc.) but this can be time
-consuming. Narrowing the scope of the validation to a particular folder can
-hasten the validation process. Be sure to use the correct port displayed by
-VitePress server.
+validate all docsets but this can be time consuming. Narrowing the scope of the
+validation to a particular folder (docset) can hasten the validation process. Be
+sure to use the correct port displayed by VitePress server.
 
 ```sh
 # Open a new terminal window.
 # Run from the vitepress-docs project root.
 # Start the nodejs script.
-node ./libs/link-validator.js  http://127.0.0.1:8082  ./docs/.vitepress/dist/
+node ./libs/link-validator.js  http://localhost:8082  ./docs/.vitepress/dist/
 ```

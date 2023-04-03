@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 embraces the ideology of a decentralized web and the power of open source.
@@ -72,3 +74,5 @@ The advantages that Airnode provides will greatly outweigh the tradeoffs for the
 large majority of use cases.
 
 <!-- TODO: provide benchmarks -->
+
+<FlexEndTag/>

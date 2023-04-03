@@ -2,8 +2,8 @@
 title: Create an Infura key
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides
-path: /guides/misc/infura-key.html
+pageHeader: Guides → Miscellaneous
+path: /guides/misc/infura-key/index.html
 outline: deep
 tags:
 ---
@@ -11,6 +11,8 @@ tags:
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -56,10 +58,4 @@ blockchain provider URL.
 https://sepolia.infura.io/v3/ec3dda...b3618a2
 ```
 
-<!--## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-    <NavBox type='REFERENCE' id="_airnode-quick-start-aws"/>
-    <NavBox type='REFERENCE' id="_airnode-quick-start-gcp"/>
-</div>
--->
+<FlexEndTag/>

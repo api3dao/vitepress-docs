@@ -1,5 +1,5 @@
 ---
-title: Implementation
+title: How does Airnode work?
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
@@ -12,33 +12,39 @@ tags:
 
 <SearchHighlight/>
 
-# How does Airnode work?
+<FlexStartTag/>
+
+# {{$frontmatter.title}}
 
 Airnode is a serverless oracle node implemented with a
 [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget)
-philosophy that brings off-chain data from APIs to on-chain smart contracts. It
-consists of two parts:
+philosophy that brings off-chain data from APIs to on-chain smart contracts.
+
+It consists of two parts:
 
 1. The off-chain **Airnode** (“the node”) that is self-hosted or deployed as
    cloud provider functions (AWS or GCP).
 2. The on-chain **protocol contract** AirnodeRrpV0.sol. This is often referred
    to as the oracle smart contracts.
 
-> <img src="../assets/images/summary-airnode-2-parts.png" width="350">
+  <img src="../assets/images/02-What_is_Airnode.png" style="width:350px">
 
 Airnode is designed with mechanisms that eliminate both on-chain and off-chain
 concerns of API providers. The set-and-forget framework of Airnode is all about
 its ease of implementation.
 
+<img src="../assets/images/04-Airnode_Design_Philosophy.png" style="width:350px">
+
 For smart contract developers Airnode is a tool to utilize data from Web2 APIs
 within smart contract functions. The ease and flexibility of deployment means it
 can be utilized within the product development cycle as data requirements arise.
 
-::: info Read more
+<!---::: info Read more
 
 For a technical overview of Airnode see
 [getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
 :::
+-->
 
 ## Technical Characterists of Airnode
 
@@ -81,15 +87,15 @@ with extreme concurrent usage, Airnode uses it for different reasons:
 
 3. Serverless functions are priced on-demand: Airnode does not require major
    concurrent usage, resulting in cost-efficiency and even let the user stay
-   within free tier [AWS](https://aws.amazon.com/free)<ExternalLinkImage/>,
-   [GCP](https://cloud.google.com/free)<ExternalLinkImage/> limits.
+   within free tier [AWS<ExternalLinkImage/>](https://aws.amazon.com/free),
+   [GCP<ExternalLinkImage/>](https://cloud.google.com/free) limits.
 
 Additionally, bare serverless functions are easy to port across cloud providers
 (e.g., using
-[Terraform Framework](https://www.terraform.io/)<ExternalLinkImage/>),
+[Terraform Framework<ExternalLinkImage/>](https://www.terraform.io/)),
 especially when their cloud provider-specific dependencies are limited.
 
-::: tip Key point
+::: info Note
 
 Due to being stateless Airnode is able to reset itself quickly and easily,
 providing a solution for most potential issues.
@@ -127,10 +133,10 @@ provider cannot tamper with the parameters of a request, but only deny service.
 Note this is not the case with alternative solutions, as they treat the
 blockchain service provider as a trusted party.
 
-::: tip Learn more
+::: info Learn more
 
 Read more about how Airnode works in the
-[Airnode developer reference section](/reference/airnode/latest/understand/).
+[<span style="color:rgb(16, 185, 129);">Airnode reference section</span>](/reference/airnode/latest/understand/).
 
 :::
 
@@ -222,13 +228,14 @@ individual, meaning all providers must be malicious for Airnode operations to be
 disrupted reliably. Additionally, using multiple Ethereum providers helps
 achieve the highest possible availability.
 
-::: tip Airnode operates on free RPC tiers
+::: info Airnode operates on free RPC tiers
 
 An Airnode that receives no requests consumes fewer than 3,000 calls per day
 which is included within the free plans of RPC providers such as
-[Alchemy](https://www.alchemy.com/overviews/rpc-node),
-[Infura](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods) or
-[Pokt](https://docs.pokt.network/use/public-rpc/).
+[<span style="color:rgb(16, 185, 129);">Alchemy<ExternalLinkImage/></span>](https://www.alchemy.com/overviews/rpc-node),
+[<span style="color:rgb(16, 185, 129);">Infura<ExternalLinkImage/></span>](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods),
+or
+[<span style="color:rgb(16, 185, 129);">Pokt<ExternalLinkImage/></span>](https://docs.pokt.network/use/public-rpc/).
 
 :::
 
@@ -258,3 +265,5 @@ dAPIs with data behind the scenes.
 - See
   [config.json](/reference/airnode/latest/deployment-files/examples/config-json.md)
   to view an example file.
+
+<FlexEndTag/>

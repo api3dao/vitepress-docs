@@ -12,59 +12,28 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide steps through the process of making a direct request of an Airnode
-using RRP (request-response protocol) to get data from an API provider. Another
-example of a guide that explains how to use the RRP is the
-[QRNG > Remix Example](/guides/qrng/remix-example/index.md).
+using RRP (request-response protocol) to get data from an API provider.
 
-::: warning Consider dAPIs
+An Airnode is a first-party oracle that can push off-chain API data to on-chain
+smart contracts, known as a requester, using RRP. A requester is any smart
+contract that executes an Airnode request. Learn about the mechanics of
+[Airnode's request-response protocol](/reference/airnode/latest/developers/index.md)
+(RRP) as used by a requester.
+
+::: info Consider dAPIs
 
 While using the Airnode's RRP protocol to acquire API provider data is usable it
 is not as efficient or as straight forward as using a dAPI. Therefore, best
-practices usually entail using a [dAPI](/explore/dapis/what-are-dapis.md) to
-acquire API provider data.
+practices usually entail using a
+[<span style="color:rgb(16, 185, 129);">dAPI</span>](/explore/dapis/what-are-dapis.md)
+to acquire API provider data.
 
 :::
-
-## How the RRP protocol works
-
-An Airnode is a first-party oracle that can push off-chain API data to on-chain
-smart contracts, known as a requester, using RRP. A requester is a contract that
-can trigger an Airnode request. To do so, the requester needs to be sponsored
-and make the request using a matching sponsor wallet. See
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md)
-on how to sponsor a requester and derive the sponsor wallet.
-
-In the diagram below a requester makes a request to the on-chain RRP protocol
-contract (AirnodeRrpV0.sol) that adds the request to its event logs. During its
-run cycle the off-chain Airnode accesses the event logs, gets the requested data
-from the the API provider, then performs a callback to the requester.
-
-In summary, you only need to do two things.
-
-- Call `makeFullRequest()` or `makeTemplateRequest()` on the AirnodeRrpV0.sol
-  contract, which returns a
-  [requestId](/reference/airnode/latest/concepts/request.md#requestid).
-- Add a `myFulfill()` function (call it what you like) to your requester (your
-  smart contract) where the off-chain Airnode can send the requested data when
-  ready. The data includes the same `requestId` as the one returned at the time
-  of making the request.
-
-> <img src="../assets/images/developer-overview.png" style="max-width:550px;"/>
->
-> 1.  <p>The requester (myContract.sol) makes a request to the RRP protocol contract (AirnodeRrpV0.sol) by calling <code>makeFullRequest()</code> which adds the request to the event logs and returns a <code>requestId</code> to the requester.</p>
-> 2.  <p>Airnode retrieves the on-chain request from the event logs during its run cycle.</p>
-> 3.  <p>Airnode gathers response data from the API specified in the request.</p>
-> 4.  <p>Airnode performs a callback to a named function <code>myFulfill()</code> in myContract.sol via the AirnodeRrpV0.sol function <code>fulfill()</code> with the requested data and the <code>requestId</code>.</p>
-
-For a more detailed diagram see the first image in the
-[Airnode: concepts and definitions](/reference/airnode/latest/concepts/airnode.md#airnode-processes-rrp-requests)
-doc.
-
-The following section of this document discusses the requester implementation,
-its deployment and sponsoring.
 
 ## 1. Inherit RrpRequesterV0.sol
 
@@ -176,11 +145,11 @@ must gather the following parameters to pass on to
   endpoint desired at a particular Airnode.
 
 - **sponsor**: The
-  [sponsor](/reference/airnode/latest/concepts/requesters-sponsors.md#what-is-a-sponsor)
+  [sponsor](/reference/airnode/latest/developers/requesters-sponsors.md#what-is-a-sponsor)
   address.
 
 - **sponsorWallet**: The
-  [sponsor wallet](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+  [sponsor wallet](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
   address that the sponsor received when deriving the wallet for the Airnode
   being called.
 
@@ -292,5 +261,7 @@ The callback to a requester contains two parameters, as shown in the
 
 Deploy the requester to the desired blockchain and then sponsor the requester.
 See
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 to learn more about sponsoring a requester.
+
+<FlexEndTag/>

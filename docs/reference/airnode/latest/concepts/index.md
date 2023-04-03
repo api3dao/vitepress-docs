@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The first protocol implemented for Airnode is request–response. An Airnode
@@ -99,3 +101,5 @@ The
 contract is used to create and store Airnode
 [templates](/reference/airnode/latest/concepts/template.md) used to create a
 [template request](/reference/airnode/latest/concepts/request.md#template-request).
+
+<FlexEndTag/>

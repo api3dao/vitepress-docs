@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The processing schema is the same for both
@@ -216,3 +218,5 @@ endpoints: [
   }
 ]
 ```
+
+<FlexEndTag/>

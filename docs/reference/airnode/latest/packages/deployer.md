@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The
@@ -354,8 +356,4 @@ See how
 [remove-with-receipt](/reference/airnode/latest/docker/deployer-image.md#remove-with-receipt)
 is used via the AWS/GCP deployer image.
 
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='REFERENCE' id='_reference-airnode-deployer-image'/>
-</div>
+<FlexEndTag/>

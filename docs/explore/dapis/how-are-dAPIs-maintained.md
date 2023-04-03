@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 composes dAPIs out of individual beacons and beacon sets, and provides them
@@ -33,3 +35,5 @@ read a particular dAPI.
 ::: info Read more
 
 Learn about how the dAPI Server
+
+<FlexEndTag/>

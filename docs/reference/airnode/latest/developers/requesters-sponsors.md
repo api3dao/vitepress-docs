@@ -2,8 +2,8 @@
 title: Requesters and Sponsors
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/requesters-sponsors.html
+pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
+path: /reference/airnode/latest/developers/requesters-sponsors.html
 version: v0.11
 outline: deep
 tags:
@@ -15,18 +15,11 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
-::: danger TODO:
-
-This documented needs to be split out by requesters and sponsors and merged into
-the `requester.md` or `sponsor.md` files in Concepts and Definitions.
-
-OR merge the separate docs to this one.
-
-:::
-
-As a developer it helps to understand what a **requester** is and what a
+As a dApp developer it helps to understand what a **requester** is and what a
 **sponsor** does. They are both important parts of the Airnode ecosystem. This
 doc will further define them and walk you through the process of sponsoring a
 requester and deriving a sponsor wallet using the admin CLI commands.
@@ -35,7 +28,7 @@ requester and deriving a sponsor wallet using the admin CLI commands.
 
 The term [requester](/reference/airnode/latest/concepts/requester.md) is
 important to remember. When requester is mentioned, the reference is to your
-smart contract that calls an Airnode.
+smart contract that makes a request of an Airnode.
 
 > <img src="../assets/images/requesters-sponsors-1.png" width="350px"/>
 
@@ -62,7 +55,7 @@ for the fulfillment of a request, the gas costs the Airnode will incur. These
 costs will be withdrawn from the `sponsorWallet` of the Airnode when the
 requester calls it.
 
-::: tip sponsorAddress
+::: info sponsorAddress
 
 A [sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress)
 is a public address of an account from a mnemonic, usually the default account.
@@ -80,9 +73,7 @@ The `sponsorAddress` is used to uniquely identify a sponsor.
    `sponsorAddress`.
 3. The requester can now make requests of the Airnode.
 
-> ![image](../assets/images/sponsor-overview.png)
-
----
+> <img src="../assets/images/sponsor-overview.png" style="width:90%">
 
 In the above diagram it is possible to use the same sponsorAddress
 `(0xF4...dDyu9)` to derive other sponsor wallets for other Airnodes. And it is
@@ -263,3 +254,5 @@ again. Since the sponsorWallet was already created for the
 `sponsorAddress/airnodeAddress` pair, the command will only return the public
 address for the wallet. However you must use the same `sponsorAddress` used when
 the wallet was first created or a new sponsorWallet will be created.
+
+<FlexEndTag/>

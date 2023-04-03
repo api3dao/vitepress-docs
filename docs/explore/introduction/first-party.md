@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An oracle is an agent that acts as an intermediary between a smart contract
@@ -27,9 +29,10 @@ implement a protocol. This defines how decentralized applications can make
 requests to the oracle and receive responses.
 
 Moving beyond the RRP protocol, certain protocols may be more appropriate
-depending on how an oracle node is being utilized such as for datafeeds, which
-have values stored on-chain. In fact datafeeds are what dApp owners desire the
-most. API3 provides datafeeds know as [dAPIs](/explore/dapis/what-are-dapis.md).
+depending on how an oracle node is being utilized such as for data feeds, which
+have values stored on-chain. In fact data feeds are what dApp owners desire the
+most. API3 provides data feeds know as
+[dAPIs](/explore/dapis/what-are-dapis.md).
 
 The tough question that comes into play, who owns and operates the oracle?
 
@@ -154,3 +157,5 @@ short), which are blockchain-native, decentralized API services. From the user's
 experience of using a dAPI would be very similar to a Web developer using a
 traditional API; they would find a dAPI they need, pay the subscription fee, and
 enjoy access.-->
+
+<FlexEndTag/>

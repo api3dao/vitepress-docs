@@ -12,12 +12,16 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 First-party oracles are integral to the API3 solution. Through using Airnode a
 smart contract is served by an oracle that is operated by the owner of an API,
 and not by a third party. As such, the output of an API that has seen Airnode
 deployed is a first-party oracle.
+
+## Defining first-party oracles
 
 When considering if an oracle is first or third party, there is an important
 point to consider: Who will host the oracle node?
@@ -27,22 +31,13 @@ point to consider: Who will host the oracle node?
 2. If a third-party middleman hosts the oracle node, the oracle is called a
    third-party oracle.
 
-As API3's Airnode is a first-party oracle as the node is hosted in the
-infrastructure of the API provider this means protocols serving data do so in a
-first-party manor. This is opposed to being served by a middle node layer that
+API3's Airnode is a first-party oracle as the node is hosted in the
+infrastructure of the API provider. This means protocols serving data do so in a
+first-party manner. This is opposed to being served by a middle node layer that
 is seen within third-party oracles.
 
-::: info Read more
-
-Understand more by reading our Medium post on
-[first-party vs third-party oracles](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
-
-:::
-
-## {{$frontmatter.title}}
-
 First-party oracles bring several advantages to smart contract engineers. The
-noteable benefits are:
+notable benefits are:
 
 1. Increased privacy
 2. Cost efficiency
@@ -96,19 +91,28 @@ group that is doing the heavy lifting — the API providers. Incentivizing API
 providers aligns their financial interests with the ones of the API3 ecosystem,
 resulting in a strong mutual bond between the two.
 
+::: info Learn more
+
+Understand more by reading
+[<span style="color:rgb(16, 185, 129);">first-party vs third-party oracles<ExternalLinkImage/></span>](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
+
+:::
+
 ## Empowering API Providers
 
-Through experiece of engaging API Providers we realized the incentive structure
-that see thousands of APIs served to Web3 were misaligned for those responsible
-for serving the data. Airnode and the corresponding first-party oracles have
-been designed with the API Provider in mind.
+Through experience of engaging API Providers we realized the incentive structure
+that sees API accessibility scale were misaligned for those responsible serving
+the data, the API Providers. Thus Airnode and the corresponding first-party
+oracles have been designed with the those operating the API in mind.
 
 With consideration of the API Provider, first-party represents increased
-flexiblility in deployment & configuration and the ability to ensure ownership
-of their data.
+flexibility in deployment & configuration and the ability to ensure ownership of
+their data.
 
-::: info Read more
+<!--::: info Read more
 
 Replace this with a content box linking to 'monetizing apis n web3'
 
-:::
+:::-->
+
+<FlexEndTag/>

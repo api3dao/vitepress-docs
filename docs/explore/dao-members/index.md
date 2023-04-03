@@ -13,6 +13,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 is governed by a Decentralized Autonomous Organization (DAO). The DAO is a
@@ -35,7 +37,7 @@ The DAO votes on high-level matters such as staking incentives and
 collateralization, as well as grant proposals that provide DAO treasury funds to
 teams working in support of the DAO.
 
-> <img src="../assets/images/dao.png" width="450"/>
+> <img src="../assets/images/06-a-API3_DAO-Op1.png" width="450"/>
 
 ## DAO Structure
 
@@ -97,3 +99,5 @@ Each team is expected to produce sufficiently detailed progress reports that
 enable the DAO to evaluate team performance with respect to proposed goals.
 These public reports have the additional benefit of increased accountability as
 dAPI users and the general public can audit API3 operations.
+
+<FlexEndTag/>

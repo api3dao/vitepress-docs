@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Differences in chain design inevitably lead to some unique chain-specific
@@ -42,13 +44,18 @@ manifests as the `maxFeePerGas` being set to less than the block
 Execution costs on Arbitrum are calculated slightly differently than Ethereum,
 which impacts the gas required to fulfill requests. To account for this, we
 recommend a minimum value of `5000000` for `fulfillmentGasLimit` when using both
-Arbitrum mainnet and testnet. For more on ArbGas
-[see here](https://developer.offchainlabs.com/docs/arbgas).
+Arbitrum mainnet and testnet. Note that `fulfillmentGasLimit` is optional, so if
+you prefer not to specify it, Airnode will attempt to estimate the appropriate
+gas limit automatically. Read more about
+[ArbGas<ExternalLinkImage/>](https://developer.offchainlabs.com/docs/arbgas) gas
+and fees.
 
 ### Metis
 
-On the Metis testnet Stardust, though not on the Metis mainnet Andromeda, we
-recommend a `fulfillmentGasLimit` of at least `5000000`.
+On the Metis testnet Stardust, though not on the Metis mainnet Andromeda, it is
+recommended to use a `fulfillmentGasLimit` of at least `5000000`. If you prefer
+not to specify it, Airnode will attempt to estimate the appropriate gas limit
+automatically.
 
 ### Optimism
 
@@ -67,3 +74,5 @@ testnet due to differences in L1 gas fees. For Optimism testnet, a
 `withdrawalRemainder` of `1 gwei` should suffice, while for Optimism mainnet, a
 value as high as `2.4 finney` (`2400000 gwei`) may be required in order to cover
 an L1 gas price of `300 gwei` and `8000` L1 gas used by the transaction.
+
+<FlexEndTag/>

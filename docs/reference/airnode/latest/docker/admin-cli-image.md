@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 <!-- TODO: link [docker hub](https://hub.docker.com/r/api3/airnode-admin) once image is published -->
@@ -52,3 +54,5 @@ docker run api3/airnode-admin:0.10.0 get-sponsor-status \
   --sponsor-address 0x9Ec6C4... \
   --requester-address 0x2c2e12...
 ```
+
+<FlexEndTag/>

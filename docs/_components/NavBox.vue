@@ -6,39 +6,40 @@
     v-else-if="box"
     :class="[{ api3_nav_box_border: theme.isDark }]"
     class="api3-nav-box"
-    v-on:click="navigate()"
   >
-    <!-- BUTTON -->
-    <button
-      :v-if="btnStyles"
-      class="api3-nav-box-btn"
-      :style="{
-        'background-color': btnStyles.backgroundColor,
-        color: btnStyles.color,
-        border: btnStyles.border,
-        opacity: '0.8',
-      }"
-    >
-      <div
-        style="margin-top: -3px; font-weight: 700; font-family: Comic Sans MS"
+    <a :href="box.btnURL">
+      <!-- BUTTON -->
+      <button
+        :v-if="btnStyles"
+        class="api3-nav-box-btn"
+        :style="{
+          'background-color': btnStyles.backgroundColor,
+          color: btnStyles.color,
+          border: btnStyles.border,
+          opacity: '0.8',
+        }"
       >
-        {{ type }} <span v-if="type == 'REPO'">➚</span>
-      </div>
-    </button>
+        <div
+          style="margin-top: -3px; font-weight: 700; font-family: Comic Sans MS"
+        >
+          {{ type }} <span v-if="type == 'REPO'">➚</span>
+        </div>
+      </button>
 
-    <!-- CONTENT -->
-    <div style="margin-top: 10px; font-size: medium; font-weight: 600">
-      {{ box.title }}
-    </div>
-    <div style="font-size: small; padding-left: 10px">
-      {{ box.content }}
-    </div>
+      <!-- TITLE -->
+      <div style="margin-top: 10px; font-size: medium; font-weight: 600">
+        {{ box.title }}
+      </div>
+      <!-- CONTENT -->
+      <div style="font-size: small; padding-left: 10px; color: gray">
+        {{ box.content }}
+      </div>
+    </a>
   </div>
 </template>
 
 <script>
-import { useRouter } from 'vitepress';
-import { useData } from 'vitepress';
+import { useRouter, useData } from 'vitepress';
 import explore from '../.vitepress/nav-boxes/nav-boxes-explore.json';
 import guide from '../.vitepress/nav-boxes/nav-boxes-guides.json';
 import reference from '../.vitepress/nav-boxes/nav-boxes-reference.json';
@@ -58,15 +59,6 @@ export default {
     },
     box: undefined,
   }),
-  methods: {
-    navigate() {
-      if (this.type === 'REPO') {
-        location.href = this.box.btnURL;
-      } else {
-        this.router.go(this.box.btnURL);
-      }
-    },
-  },
   mounted() {
     this.$nextTick(async function () {});
     if (this.type === 'EXPLORE') {
@@ -115,9 +107,7 @@ export default {
   margin-bottom: 15px;
   margin-right: 25px;
 }
-.api3-nav-box:hover {
-  cursor: pointer;
-}
+
 .api3-nav-box-btn {
   min-width: 77px;
   border: solid 1px black;
@@ -128,5 +118,20 @@ export default {
 }
 .api3_nav_box_border {
   border: solid 1px gray;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 </style>

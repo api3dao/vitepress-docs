@@ -16,6 +16,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 With Self-Funded dAPIs, you can fund the dAPI with your own funds. The amount of
@@ -81,26 +83,17 @@ to send funds to the sponsorWallet, make sure your:
 - Balance of the wallet should be greater than the amount you are sending to the
   sponsorWallet
 
-<p align="center">
-  <img src="../../assets/images/dapi-page.png" />
-</p>
+<img src="../../assets/images/dapi-page.png" />
 
-To fund the dAPI, you need to click on the "Fund sponsor wallet" button.
-Depending upon if a proxy contract is already deployed, you will see a different
-UI.
+To fund the dAPI, you need to click on the "Fund Gas" button.
 
-<p align="center" style="display:flex">
-  <img   width="50%" src="../../assets/images/dapi-fund-gas.png" />
-  <img   width="50%" src="../../assets/images/dapi-fund-gas2.png" />
-</p>
+<img  style="width:45%" src="../../assets/images/dapi-fund-gas.png" />
 
 This will bring up the API3 gas estimator UI that allows users to understand how
 much gas is needed for the dAPI to provide on-chain values for the selected
 time.
 
-<p align="center">
-  <img src="../../assets/images/gas-estimator.png" />
-</p>
+<img src="../../assets/images/gas-estimator.png" style="width:70%"/>
 
 ::: warning Estimation is not 100% accurate
 
@@ -114,10 +107,10 @@ Clicking ''Send'' will initiate a transaction sending the amount entered into
 the gas estimator from a users wallet to the sponsor wallet of the respective
 data feed. 15 minutes later the feed will activate.
 
-<p align="center">
-  <img src="../../assets/images/dapi-send-sponsorwallet.png" />
-</p>
-Always verify that you are signing a transaction with the expected amount, networks, and destination address. Each dAPI has a unique funding address.
+<img src="../../assets/images/dapi-send-sponsorwallet.png" style="width:70%"/>
+
+Always verify that you are signing a transaction with the expected amount,
+networks, and destination address. Each dAPI has a unique funding address.
 
 ::: warning Note
 
@@ -128,9 +121,7 @@ Funds sent to the wallet address will not be returned.
 Once the transaction is broadcasted & confirmed on the blockchain a transaction
 confirmation screen will appear.
 
-<p align="center">
-  <img src="../../assets/images/dapi-confirm-funding.png" />
-</p>
+<img src="../../assets/images/dapi-confirm-funding.png" style="width:60%"/>
 
 ::: info 15 mins to start the feed
 
@@ -164,37 +155,28 @@ already deployed proxy contract which will be visible on the API3 market.
 If you are deploying a proxy contract during the funding process, you will see
 the following UI.
 
-<p align="center">
-  <img src="../../assets/images/dapi-fund-gas2.png" />
-</p>
+<img src="../../assets/images/dapi-fund-gas2.png" style="width:70%"/>
 
-Clicking on the "Deploy proxy" button will initiate a transaction to your
-metamask that will deploy a proxy contract.
+Clicking on the "Get proxy" button will initiate a transaction to your metamask
+that will deploy a proxy contract.
 
 Once the transaction is broadcasted & confirmed on the blockchain, the proxy
 contract address will be shown on the UI.
 
-<p align="center">
-  <img src="../../assets/images/dapi-proxy-confirmation.png" />
-</p>
+<img src="../../assets/images/dapi-proxy-confirmation.png" style="width:60%"/>
 
 ### 3b. Deploying a proxy contract from the API3 Market details page
 
 If you are deploying a proxy contract from the API3 Market details page, you
 will see the following UI.
 
-<p align="center">
-  <img src="../../assets/images/dapi-market-detail.png" />
-</p>
+<img src="../../assets/images/dapi-market-detail.png"/>
 
-Clicking on the "Deploy proxy" button will initiate a transaction to your
-metamask that will deploy a proxy contract. Once the transaction is broadcasted
-& confirmed on the blockchain, the proxy contract address will be shown on the
-UI.
+Clicking on the "Get Proxy" button will initiate a transaction to your metamask
+that will deploy a proxy contract. Once the transaction is broadcasted &
+confirmed on the blockchain, the proxy contract address will be shown on the UI.
 
-<p align="center">
-  <img src="../../assets/images/dapi-proxy-confirmation2.png" />
-</p>
+<img src="../../assets/images/dapi-proxy-confirmation2.png" style="width:60%"/>
 
 ### 3c. Verifying the deployed proxy contract
 
@@ -204,7 +186,7 @@ viewing the code of the proxy on the block explorer.
 
 The `api3ServerV1` address should be the same as the address of the
 `Api3ServerV1` contract. Refer to the
-[chains and contract addresses](/reference/dapis/chains.md) page for the address
+[chains and contract addresses](/reference/dapis/chains/) page for the address
 of the `Api3ServerV1` contract on different chains.
 
 The `dapiNameHash` should be the same as the `dapiNameHash` of the dAPI you are
@@ -223,3 +205,5 @@ Market.
 
 Once you have verified the `dapiNameHash` and `Api3ServerV1` address, you can
 start using the proxy contract to read the data feed.
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
@@ -49,7 +51,7 @@ Airnode's `airnodeAddress`. Sponsors (via their sponsored requesters) use
 endpoints. However, rather than serve them publicly, you may want to:
 
 - Only serve your own
-  [requester contracts](/reference/airnode/latest/concepts/requesters-sponsors.md).
+  [requester contracts](/reference/airnode/latest/developers/requesters-sponsors.md).
 - Only serve sponsors who have made a subscription payment.
 - Only serve sponsors who have gone through KYC.
 
@@ -178,3 +180,5 @@ case and can be implemented with the following steps:
 
 Once implemented, only requester contract addresses you have added to
 RequesterAuthorizerWithAirnode will have access to your Airnode.
+
+<FlexEndTag/>

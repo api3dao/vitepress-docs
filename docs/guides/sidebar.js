@@ -16,11 +16,10 @@ module.exports = [
         text: 'Reading a Self-Funded dAPI Proxy',
         link: '/guides/dapis/read-self-funded-dapi/',
       },
-      /*{
-        text: 'Self-Funded dAPIs',
-        collapsed: false,
-        items: [],
-      },*/
+      {
+        text: 'Automate funding of multiple dAPIs with Gelato',
+        link: '/guides/dapis/funding-multiple-dapis-gelato/',
+      },
     ],
   },
   /*{
@@ -58,29 +57,29 @@ module.exports = [
         link: '/guides/airnode/rrp-request',
       },
       {
-        text: 'Using RRP Templates',
+        text: 'Making RRP Template Requests',
         link: '/guides/airnode/using-rrp-templates',
       },
       {
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
       },
-      {
-        text: 'Become an API Provider',
-        link: '/guides/airnode/become-api-provider',
-      },
+      //{
+        //text: 'Become an API Provider',
+        //link: '/guides/airnode/become-api-provider',
+      //},
     ],
-  },*/
-  /*{
+  },
+  {
     text: 'QRNG',
     collapsed: false,
     items: [
       {
         text: 'Getting Started with QRNG',
-        link: '/guides/qrng/qrng-example',
+        link: '/guides/qrng/',
       },
       {
-        text: 'Using QRNG - Remix Guide',
+        text: 'Using QRNG - Remix Example',
         link: '/guides/qrng/qrng-remix/',
       },
       {
@@ -96,8 +95,8 @@ module.exports = [
         link: '/guides/qrng/youtube-demos/',
       },
     ],
-  },*/
-  /*{
+  },
+  {
     text: 'DAO Members',
     collapsed: false,
     items: [

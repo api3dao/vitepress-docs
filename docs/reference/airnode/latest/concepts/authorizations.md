@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Authorizations use scheme types that map values that in turn provide access to
@@ -28,7 +30,7 @@ permissions granted by _authorizations_ as the latter takes precedence.
 
 The diagram below illustrates how Airnode utilizes authorizations.
 
-> <img src="../assets/images/concepts-authorizations.png" width="650px"/>
+> <img src="../assets/images/concepts-authorizations.png" width="550px"/>
 >
 > 1. <p class="diagram-line">When Airnode starts it reads its list of authorizations (endpointId/address pairs) declared in <code>config.json</code>.</p>
 > 2. <p class="diagram-line">Airnode validates each request, checking that the requested endpoint and address of the requester is in fact in authorizations as a valid endpointId/address pair. For requests that are validated, Airnode proceeds to fulfill the request.</p>
@@ -102,3 +104,5 @@ Other docs related to authorizations and relayed meta data:
   [Using Authorizations](/reference/airnode/latest/understand/using-authorizations.md)
 - API Providers ➙ Build an Airnode ➙ API Security ➙
   [Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)
+
+<FlexEndTag/>

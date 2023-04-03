@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
@@ -36,8 +38,9 @@ Airnode deployment
 An Airnode Docker container deployment uses a Docker image (called
 [client image](/reference/airnode/latest/docker/client-image.md)) which requires
 two files as input:
-[config.json](/guides/airnode/deploy-airnode/deploy-container/#config-json) and
-[secrets.env](/guides/airnode/deploy-airnode/deploy-container/#secrets-env).
+[config.json](/guides/airnode/deploy-airnode/deploy-container/index.md#config-json)
+and
+[secrets.env](/guides/airnode/deploy-airnode/deploy-container/index.md#secrets-env).
 
 These files have been created and only require a few minor changes on your part
 to make the deployment of the demo Airnode successful. These changes are needed
@@ -142,7 +145,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --publish 3000:3000 \
-  api3/airnode-client:0.9.2
+  api3/airnode-client:0.11
 ```
 
 ```batch [Windows CMD]
@@ -150,7 +153,7 @@ docker run ^
   --volume "%cd%:/app/config" ^
   --name quick-start-container-airnode ^
   --publish 3000:3000 ^
-  api3/airnode-client:0.9.2
+  api3/airnode-client:0.11
 ```
 
 ```sh [Linux (host networking)]
@@ -158,7 +161,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --network host \
-  api3/airnode-client:0.9.2
+  api3/airnode-client:0.11
 ```
 
 :::
@@ -329,3 +332,5 @@ Finally the API integration was tested using the
 You made a CURL request (using HTTP) to the HTTP gateway. Airnode queried the
 API provider and sent back a response. All of this was performed without
 accessing the blockchain.
+
+<FlexEndTag/>

@@ -13,6 +13,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 [ChainAPI<ExternalLinkImage/>](https://chainapi.com/) is a platform that enables
@@ -32,3 +36,5 @@ To get started, go to [ChainAPI<ExternalLinkImage/>](https://chainapi.com/) and
 login using [MetaMask<ExternalLinkImage/>](https://metamask.io/).
 
 <img src="./src/chainapi.png" width="450" style="border:solid lightgrey 1px;">
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 OIS (or Oracle Integration Specifications) is a JSON object that describes an
@@ -158,3 +160,5 @@ in the `value` can be returned to the requester.
     },
 ]
 ```
+
+<FlexEndTag/>

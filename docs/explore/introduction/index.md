@@ -12,9 +12,9 @@ tags:
 
 <SearchHighlight/>
 
-# {{$frontmatter.title}}
+<FlexStartTag/>
 
-## The API3 DAO
+# {{$frontmatter.title}}
 
 [API3<ExternalLinkImage/>](https://api3.org) is a collaborative project to
 deliver traditional API services to smart contract platforms in a decentralized
@@ -96,10 +96,9 @@ API data can be pushed on-chain.
 
 Airnode also has range of common features built into it. These include
 implementations such as pre and post processing,
-[authentication<ExternalLinkImage/>](https://docs.api3.org/airnode/v0.10/concepts/relay-meta-auth.html),
-or
-[authorizations<ExternalLinkImage/>](https://docs.api3.org/airnode/v0.10/concepts/authorizations.html),
-to name a few.
+[authentication](/reference/airnode/latest/concepts/relay-meta-auth.html), or
+[authorizations](/reference/airnode/latest/concepts/authorizations.html), to
+name a few.
 
 ### Self operating
 
@@ -108,12 +107,4 @@ own [first-party oracle](/explore/introduction/first-party.md) nodes. Doing so
 means that it is the API provider's Airnode that places its signed API data
 on-chain.
 
-## More related material...
-
-Read more on how [Airnode works](https://docs.api3.org/airnode/v0.10/).
-
-[API Connectivity Problem<ExternalLinkImage/>](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)
-
-[API3 whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
-
-[APIs: The Digital Glue<ExternalLinkImage/>](https://medium.com/api3/apis-the-digital-glue-7ac87566e773)
+<FlexEndTag/>

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 QRNG is built on [Airnode RRP](/reference/airnode/latest/concepts/), and as
@@ -40,7 +42,7 @@ Australia. Visit their website at
 
 ANU Quantum Random Numbers are only available on
 [mainnets](/reference/qrng/chains.md#anu). For testnets use
-[byog](/reference/qrng/providers.md#byog-pseudorandom-numbers).
+[Nodary](/reference/qrng/providers.md#nodary-pseudorandom-numbers).
 [Quintessence](/reference/qrng/providers.md#quintessence-quantum-random-numbers)
 is available on mainnets and a few testnets.
 
@@ -76,13 +78,13 @@ is available on mainnets and a few testnets.
     <CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>
 </div>
 
-## byog Pseudorandom Numbers
+## Nodary Pseudorandom Numbers
 
-[**byog**<ExternalLinkImage/>](https://byog.io/) is an independent group within
-the API3 ecosystem that builds high-impact oracle services. **byog** emulates
-QRNG using
+[**Nodary**<ExternalLinkImage/>](https://nodary.io/) is an independent group
+within the API3 ecosystem that builds high-impact oracle services. **Nodary**
+emulates QRNG using
 [pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
-on [testnets](/reference/qrng/chains.md#byog).
+on [testnets](/reference/qrng/chains.md#nodary).
 
 ### `airnode`
 
@@ -158,3 +160,5 @@ perfectly unpredictable true random numbers.
     <span style="font-family:courier">0x4554e958a68d68de6a4f6365ff868836780e84ac3cba75ce3f4c78a85faa8047</span>
     <CopyIcon text="0x4554e958a68d68de6a4f6365ff868836780e84ac3cba75ce3f4c78a85faa8047"/>
 </div>
+
+<FlexEndTag/>

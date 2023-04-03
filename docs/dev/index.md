@@ -16,11 +16,11 @@ Use newer versions of Nodejs. Currently the builds on GitHub are using `v18`.
 Apple M1 users see the page [Rosetta, Nodejs, esbuild](/dev/rosetta.md) if you
 get an error.
 
-::: tip Nodejs `v18`
+::: info Nodejs `v18`
 
 It is best to use nodejs `v18` which gives the best performance and is the
 engine described in the
-[package.json<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+[<span style="color:rgb(16, 185, 129);">package.json<ExternalLinkImage/></span>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
 file.
 
 :::
@@ -51,29 +51,32 @@ yarn docs:dev
 ## Push the working branch
 
 Before pushing your working branch to the remote repo, be sure that the branch
-builds. It maybe necessary to increase the memory for NodejsMake corrections as
-needed. If the build displays errors or warnings (such as broken links) address
-them as needed.
-
-```sh
-// If you get a memory error, change the memory space for Nodejs
-// usually 1024 or 2048 will work
-export NODE_OPTIONS=--max_old_space_size=1024
-```
+builds.
 
 ```sh
 yarn docs:build
 
 // Output shown below
-$ yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; yarn sync:VPSidebar; yarn sync:sidebarHeader; vitepress build docs;
-$ cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue
-$ cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue
-$ cp docs/_components/vitepress/VPNavBar.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBar.vue
-$ cp docs/_components/vitepress/VPSidebar.vue  node_modules/vitepress/dist/client/theme-default/components/VPSidebar.vue
-$ cp docs/_components/vitepress/SidebarHeader.vue  node_modules/vitepress/dist/client/theme-default/components/SidebarHeader.vue
-vitepress v1.0.0-alpha.36
+  vitepress v1.0.0-alpha.61
+
 ✓ building client + server bundles...
 ✓ rendering pages...
-build complete in 5.85s.
-✨  Done in 6.89s.
+build complete in 5.20s.
+✨  Done in 6.19s.
+```
+
+If the build displays errors or warnings (such as broken links) address them as
+needed.
+
+## Memory
+
+It maybe necessary to increase the memory for Nodejs to run `yarn docs:dev` or
+`yarn docs:build`. Make corrections as needed. For Apple silicon this may be a
+sign of a [Rosetta issue](/dev/rosetta.md) which should be addressed before
+committing to additional memory for Nodejs.
+
+```sh
+// If you get a memory error, change the memory space for Nodejs
+// usually 1024 or 2048 will work
+export NODE_OPTIONS=--max_old_space_size=1024
 ```

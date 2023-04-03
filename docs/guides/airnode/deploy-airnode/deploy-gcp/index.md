@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
@@ -35,8 +37,10 @@ Airnode deployment
 
 An Airnode deployment on GCP uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
-requires three files as input: [config.json](#config-json),
-[secrets.env](#secrets-env), and gcp.json.
+requires three files as input:
+[config.json](/guides/airnode/deploy-airnode/deploy-gcp/index.md#config-json),
+[secrets.env](/guides/airnode/deploy-airnode/deploy-gcp/index.md#secrets-env),
+and gcp.json.
 
 These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply a GCP
@@ -179,7 +183,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 ```batch [Windows]
@@ -187,7 +191,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 :::
@@ -337,7 +341,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -345,7 +349,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 :::
@@ -376,3 +380,5 @@ accessing the blockchain.
 
 Learn more about GCP resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
+
+<FlexEndTag/>

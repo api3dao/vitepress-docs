@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 API3 aims to set up, maintain, and
@@ -26,8 +28,8 @@ revenue to the DAO will result in burning of API3 tokens. This mechanic will
 produce positive staking incentives using inflationary rewards and claim risks
 rather than revenue sharing.
 
-> <img src="../assets/images/dao-pool-staking-2.png" width="450"/>
->
+> <img src="../assets/images/08-Inflationary_Rewards.png" width="450"/>
+
 > <p>Fees from revenue are burned. Inflationary rewards are distributed by the DAO. Service coverage claims are paid to dAPI covered entities from the pool of staked tokens.</p>
 
 ## Earning Rewards
@@ -42,7 +44,7 @@ the current total number of issued shares divided by the total number of tokens
 staked. Since the reward adds additional tokens to the pool, the "price" for one
 share will not always be one token.
 
-## Financial attraction of rewards
+## Financial Attraction of Rewards
 
 In essence, inflationary rewards entice token holders to stake and preserve the
 value of their tokens. However, staking is risky due to the funds being used as
@@ -72,7 +74,7 @@ schedule.
 
 Reward amount is represented as APR (annual percentage rate). You can derive APY
 (annual percentage yield) using an
-[online calculator](https://www.aprtoapy.com/)<ExternalLinkImage/>. There is a
+[online calculator<ExternalLinkImage/>](https://www.aprtoapy.com/). There is a
 governable "APR update step", which is the step size each week the APR will be
 updated with. Also there are governable minimum and maximum APR values, but
 these (especially maximum APR) are there as safety measures and should not
@@ -100,7 +102,7 @@ of the total token supply when `mintReward` is called, APR will be raised by 1%
 for the next reward payout (and vice versa). Thus, APR will constantly be
 adjusted, but it will always stay between a designated maximum and minimum.
 
-:::tip Example
+:::info Example
 
 Rewards Distribution User X stakes 600 tokens and user Y stakes 400, so there is
 a 60% (X) 40% (Y) split ownership in the 1000 token DAO pool. For a particular
@@ -130,3 +132,5 @@ later, the rewards you will receive next week will get unlocked 1 year 1 week
 later, etc.) This 1 year-lock is the secret sauce to good decentralized
 governance, it essentially aligns the incentives of the stakers/governors with
 the ones of the DAO/project/token for a whole year.
+
+<FlexEndTag/>

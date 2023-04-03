@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Airnode logs or log groups are named similarly in AWS and GCP and include the
@@ -27,9 +29,11 @@ or request types and the logs they contain are as follows:
   fetching
 - `run`: Logs of API calls and withdrawals originating from blockchain requests
 - `httpReq`: Logs for
-  [HTTP gateway requests](/reference/airnode/latest/understand/http-gateways.md)
+  [HTTP gateway requests](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
 - `httpSignedReq`: Logs for
   [HTTP signed data gateway requests](/reference/airnode/latest/understand/http-gateways.md)
+- `signOevReq`: Logs for
+  [OEV gateway requests](/reference/airnode/latest/understand/oev-gateway.md)
 
 ### AWS
 
@@ -54,3 +58,5 @@ command line. These logs are also available through the Docker interface e.g.
 under Containers within Docker Desktop. See the Docker
 [client image](/reference/airnode/latest/docker/client-image.md) for more
 information.
+
+<FlexEndTag/>

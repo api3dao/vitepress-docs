@@ -18,11 +18,18 @@ The current docsets are as follows:
 - Explore: `/explore/`
 - Guides: `/guides`
 - Reference: `/reference`
-  - Airnode: `/reference/airnode/latest/` Each version of Airnode is a docset.
-  - OIS: `/reference/ois/latest/` Each version of OIS is a docset.
+  - Airnode: Each version of Airnode is a docset.
+    - `/reference/airnode/next/`
+    - `/reference/airnode/latest/`
+    - `/reference/airnode/v0.11/`
+  - OIS: Each version of OIS is a docset.
+    - `/reference/ois/next/`
+    - `/reference/ois/latest/`
+    - `/reference/ois/v2.0/`
   - QRNG: `/reference/qrng/`
   - dAPIs: `/reference/dapis/`
   - DAO Members `/reference/dao-members/`
 - Docs Development `/dev/`
 
-For more information about `/latest` see [Versioning](/dev/versioning.md).
+For more information about `/latest` and `/next` see
+[Airnode/OIS Versioning](/dev/versioning.md).

@@ -16,6 +16,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 ::: info Prerequisites
@@ -66,3 +68,5 @@ to the
 [datafeed-reader-example](https://github.com/api3dao/data-feed-reader-example)
 repository which contains a hardhat project with a sample smart contract that
 reads from a self-funded dAPI proxy.
+
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The `secrets.env` contains the secrets that the respective Airnode deployments
@@ -34,3 +36,5 @@ HEARTBEAT_URL="<FILL_*>"
 # Used for GCP only
 GCP_PROJECT_ID="<FILL_*>"
 ```
+
+<FlexEndTag/>

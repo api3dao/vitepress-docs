@@ -12,6 +12,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 > <Video src="https://www.youtube.com/embed/Hss-8Tzg7TI"/>
@@ -193,7 +197,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 - Click on the **COMPILE** tab on the left side of the dashboard and click on
   **Compile Requester.sol**
 
-> ![Compiling the Requester](src/s2.png)
+> ![Compiling the Requester](./src/s2.png)
 
 - Head to Deploy and run Transactions and select Injected Provider — MetaMask
   option under Environment. Connect your MetaMask. Make sure you’re on the
@@ -203,7 +207,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
   already been deployed on-chain. You can check for your specific chain
   [here](/reference/airnode/latest/). Fill it in and Deploy the Contract.
 
-> ![Deploying the Requester](src/s3.png)
+> ![Deploying the Requester](./src/s3.png)
 
 ### Sponsor the Requester
 
@@ -212,7 +216,7 @@ The
 needs to be derived from the requester's contract address, the Airnode address,
 and the Airnode xpub. The wallet is used to pay gas costs of the transactions.
 The sponsor wallet must be derived using the command
-[derive-sponsor-wallet-address](/reference/airnode/latest/concepts/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
+[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 
@@ -309,3 +313,5 @@ the response. Click on call and you will see the API response. Here, you can see
 your requested data decoded in `int256`
 
 > ![Making the Request](src/s7.png)
+
+<FlexEndTag/>

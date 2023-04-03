@@ -1,19 +1,17 @@
 ---
-title: Using RRP Templates
+title: Making RRP Template Requests
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode
 path: /guides/airnode/using-rrp-templates.html
 outline: deep
-tags:
-  - airnode
-  - rrp
-  - templates
 ---
 
 <PageHeader/>
 
 <SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -21,61 +19,27 @@ This guide steps through the process of making a template request of an Airnode
 using RRP (request-response protocol) to get data from an API provider. This
 approach allows a smart contract to store the parameters for an RRP call in a
 template. This is advantageous when a call to an Airnode will be made using the
-same parameters each time.
+same parameters each time. See
+[Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
+and
+[Coingecko example](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)
+to learn more about the technical specifications of a template as used by a
+requester. As a prerequisite to this guide first try the guide
+[Making an RRP Request](/guides/airnode/rrp-request.md).
 
-::: warning Consider dAPIs
+::: info Consider dAPIs
 
 While using the Airnode's RRP protocol to acquire API provider data is usable it
 is not as efficient or as straight forward as using a dAPI. Therefore, best
-practices usually entail using a [dAPI](/explore/dapis/what-are-dapis.md) to
-acquire API provider data.
+practices usually entail using a
+[<span style="color:rgb(16, 185, 129);">dAPI</span>](/explore/dapis/what-are-dapis.md)
+to acquire API provider data.
 
 :::
 
-## Why use templates?
-
-A request to an Airnode can have many parameters. It is very common for
-requester contracts to make repeated requests using the exact same parameters.
-In such instances, it is wasteful to pass all of these parameters repeatedly.
-Templates are used to hold a set of parameter values on-chain that can be used
-repeatedly when calling the`makeTemplateRequest()`function in
-[AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.9/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol).
-Unlike`makeFullRequest(), makeTemplateRequest()`requires that a requester
-pass`templateId`which identifies a template.
-
-```solidity
-function makeTemplateRequest(
-    bytes32 templateId,
-    address sponsor,
-    address sponsorWallet,
-    address fulfillAddress,
-    bytes4 fulfillFunctionId,
-    bytes calldata parameters
-) external override returns (bytes32 requestId) {
-```
-
-When a template is used to make a request, the parameters encoded in
-`templateId` and in `parameters` will be used by the Airnode. In case
-`templateId` and `parameters` include a parameter with the same name, the one
-provided in `parameters` will be used.
-
-The structure of a template, as shown below, is simple.
-
-- address of the desired Airnode
-- endpointId from the Airnode
-- endpoint parameters
-
-```solidity
-struct Template {
-  address airnode;
-  bytes32 endpointId;
-  bytes parameters;
-}
-```
-
-There are just a few steps to create and place a template on-chain for a
-requester (smart contract) to use. Each template is identified by a`templateId`,
-which is the hash of its contents.
+There are just a few steps to create and place a template on-chain for use by a
+requester (smart contract). Each template is identified by a `templateId`, which
+is the hash of its contents.
 
 ## 1. Create a template
 
@@ -132,7 +96,7 @@ the following.
 - A mnemonic for gas to fund the record creation.
 - The local path to a template file.
 
-::: tip mnemonic
+::: info mnemonic
 
 This wallet pays the transaction gas costs to write the template record
 on-chain. This is not the wallet(s) that will pay gas costs to actually execute
@@ -178,8 +142,32 @@ npx @api3/airnode-admin get-template \
 }
 ```
 
-## More related material...
+## 4. Make a request using the template
 
-<div class="api3-css-nav-box-flex-row">
-    <NavBox  type='REPO' id="_airnode-coingecko-template"/>
-</div>
+A requester can use the template by calling a different function from
+`AirnodeRrpV0.sol` when making a request. See the guide
+[Making an RRP Request](/guides/airnode/rrp-request.md#_2-implement-the-request-logic)
+and use the function `makeTemplateRequest()` rather than `makeFullRequest()`.
+Note that the parameter for each are slightly different. The `templateId `
+replaces both the `airnode` and `endpointId`.
+
+When calling `makeTemplateRequest()` the parameter `parameters` is used to
+provide addition parameters to those in the template, if any are required.
+
+Replace the function call `makeFullRequest()` with `makeTemplateRequest()` in
+the
+[Making an RRP Request](/guides/airnode/rrp-request.md#_2-implement-the-request-logic)
+guide.
+
+```solidity
+bytes32 requestId = airnodeRrp.makeTemplateRequest(
+  templateId,                     // templateId
+  sponsor,                        // sponsor's address
+  sponsorWallet,                  // sponsorWallet
+  address(this),                  // fulfillAddress
+  this.airnodeCallback.selector,  // fulfillFunctionId
+  parameters                      // Additional API parameters
+);
+```
+
+<FlexEndTag/>

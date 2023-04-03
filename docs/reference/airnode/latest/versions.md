@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The latest version of Airnode is `{{versions.airnodeLatest}}`. See the
@@ -48,3 +50,5 @@ documentation is available at
     const { frontmatter } = useData();
     let vrs = frontmatter._value.version;
 </script>
+
+<FlexEndTag/>

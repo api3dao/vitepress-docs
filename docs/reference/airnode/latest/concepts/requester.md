@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A requester is a contract that makes Airnode requests. While making a request,
@@ -33,3 +35,5 @@ calling back another contract.
 
 See the
 [Airnode requester examples](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts).
+
+<FlexEndTag/>

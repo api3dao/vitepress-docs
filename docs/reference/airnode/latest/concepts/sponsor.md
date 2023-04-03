@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 A sponsor is an entity (individual, business, etc.). Sponsors create
@@ -198,12 +200,12 @@ a requester". This sponsorship is know to have, and be defined by, a
 This sponsorship allows the requester to use the sponsor's `sponsorWallet` for a
 particular Airnode to cover gas costs incurred by the Airnode in response to a
 request. Learn more about
-[sponsorships](/reference/airnode/latest/concepts/requesters-sponsors.md).
+[sponsorships](/reference/airnode/latest/developers/requesters-sponsors.md).
 
 Use the
 [Admin CLI tool](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
 to sponsor a requester. An example can be seem in the
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-sponsor-a-requester)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-sponsor-a-requester)
 doc.
 
 ## Derive a Sponsor Wallet
@@ -224,5 +226,7 @@ Airnode wallet before deriving a child sponsor wallet address.
 Use the
 [Admin CLI tool](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 to derive a `sponsorWallet`. An example can be seem in the
-[Requesters and Sponsors](/reference/airnode/latest/concepts/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
+[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
 doc.
+
+<FlexEndTag/>

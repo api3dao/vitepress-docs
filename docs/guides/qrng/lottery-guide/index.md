@@ -3,12 +3,16 @@ title: Building a Lottery with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
-path: /guides/airnode/lottery-guide/
+path: /guides/qrng/lottery-guide/index.html
 outline: deep
 tags:
 ---
 
 <PageHeader/>
+
+<SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -20,8 +24,8 @@ Some basic knowledge of these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
-[byog provider](https://byog.io/), available only on testnets, which returns a
-pseudorandom number.
+[nodary provider](https://nodary.io/), available only on testnets, which returns
+a pseudorandom number.
 
 Anyone can choose a number 1–10,000 and buy a ticket to enter into a weekly
 lottery. The ticket revenue is collected into a pot in the contract. After 7
@@ -52,7 +56,7 @@ It should load up the `Lottery` contract.
 
 [Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
 
-> ![Add Contract](/guides/qrng/lottery-guide/src/lottery1.png)
+![Add Contract](/guides/qrng/lottery-guide/src/lottery1.png)
 
 As a requester, our `Lottery.sol` contract will make requests to an Airnode,
 specifically the API3 QRNG, using the
@@ -63,17 +67,17 @@ be helpful to take a little time to familiarize yourself if you haven't already.
   `week`, `endTime`, `MAX_NUMBER`, `airnodeAddress`, `endpointId` and
   `sponsorWallet`.
 
-```Solidity
-    // Global Variables
-    uint256 public pot = 0; // total amount of ether in the pot
-    uint256 public ticketPrice = 0.0001 ether; // price of a single ticket
-    uint256 public week = 1; // current week counter
-    uint256 public endTime; // datetime that current week ends and lottery is closable
-    uint256 public constant MAX_NUMBER = 10000; // highest possible number
-    address public constant airnodeAddress = 0x9d3C147cA16DB954873A498e0af5852AB39139f2;
-    bytes32 public constant endpointId = 0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78;
-    address payable public sponsorWallet;
-```
+  ```Solidity
+      // Global Variables
+      uint256 public pot = 0; // total amount of ether in the pot
+      uint256 public ticketPrice = 0.0001 ether; // price of a single ticket
+      uint256 public week = 1; // current week counter
+      uint256 public endTime; // datetime that current week ends and lottery is closable
+      uint256 public constant MAX_NUMBER = 10000; // highest possible number
+      address public constant airnodeAddress = 0x9d3C147cA16DB954873A498e0af5852AB39139f2;
+      bytes32 public constant endpointId = 0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78;
+      address payable public sponsorWallet;
+  ```
 
 - Add the constructor function that will take the `_airnodeRrpAddress`
 
@@ -81,16 +85,16 @@ be helpful to take a little time to familiarize yourself if you haven't already.
   will end. After the lottery ends, the next week will begin and will end 7 days
   after the original `endTime`.
 
-```Solidity
-    /// @notice Initialize the contract with a set day and time of the week winners can be chosen
-    /// @param _endTime Unix time when the lottery becomes closable
-    constructor(uint256 _endTime, address _airnodeRrpAddress)
-        RrpRequesterV0(_airnodeRrpAddress)
-    {
-        if (_endTime <= block.timestamp) revert EndTimeReached(_endTime);
-        endTime = _endTime; // store the end time of the lottery
-    }
-```
+  ```Solidity
+      /// @notice Initialize the contract with a set day and time of the week winners can be chosen
+      /// @param _endTime Unix time when the lottery becomes closable
+      constructor(uint256 _endTime, address _airnodeRrpAddress)
+          RrpRequesterV0(_airnodeRrpAddress)
+      {
+          if (_endTime <= block.timestamp) revert EndTimeReached(_endTime);
+          endTime = _endTime; // store the end time of the lottery
+      }
+  ```
 
 The `Lottery` contract will have five main functions: `setSponsorWallet()`,
 `enter()`, `getWinningNumber()`, `closeWeek()` and `getEntriesForNumber()`.
@@ -99,29 +103,29 @@ The `Lottery` contract will have five main functions: `setSponsorWallet()`,
   [Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet).
   We will need to fund this wallet later.
 
-```Solidity
-    function setSponsorWallet(address payable _sponsorWallet)
-        external
-        onlyOwner
-    {
-        sponsorWallet = _sponsorWallet;
-    }
-```
+  ```Solidity
+      function setSponsorWallet(address payable _sponsorWallet)
+          external
+          onlyOwner
+      {
+          sponsorWallet = _sponsorWallet;
+      }
+  ```
 
 - The `enter()` function will take in `_number` as a parameter. It will be the
   participant's chosen lottery number for which they're buying a ticket. It will
   then add the user's address to list of entries for their number under the
   current week and add the funds to the `pot`.
 
-```solidity
-function enter(uint256 _number) external payable {
-    require(_number <= MAX_NUMBER, "Number must be 1-MAX_NUMBER"); // guess has to be between 1 and MAX_NUMBER
-    if (block.timestamp >= endTime) revert EndTimeReached(endTime); // lottery has to be open
-    require(msg.value == ticketPrice, "Ticket price is 0.0001 ether"); // user needs to send 0.0001 ether with the transaction
-    tickets[week][_number].push(msg.sender); // add user's address to list of entries for their number under the current week
-    pot += ticketPrice; // account for the ticket sale in the pot
-}
-```
+  ```solidity
+  function enter(uint256 _number) external payable {
+      require(_number <= MAX_NUMBER, "Number must be 1-MAX_NUMBER"); // guess has to be between 1 and MAX_NUMBER
+      if (block.timestamp >= endTime) revert EndTimeReached(endTime); // lottery has to be open
+      require(msg.value == ticketPrice, "Ticket price is 0.0001 ether"); // user needs to send 0.0001 ether with the transaction
+      tickets[week][_number].push(msg.sender); // add user's address to list of entries for their number under the current week
+      pot += ticketPrice; // account for the ticket sale in the pot
+  }
+  ```
 
 Users can call this function with a number 1-10000 and a value of 0.001 ether to
 buy a lottery ticket. The user's address is added to the addresses array in the
@@ -132,24 +136,24 @@ buy a lottery ticket. The user's address is added to the addresses array in the
   `AirnodeRrpV0.sol` protocol contract which adds the request to its storage and
   emits a `requestId`.
 
-```Solidity
-function getWinningNumber() external payable {
-  // require(block.timestamp > endTime, "Lottery has not ended"); // not available until end time has passed
-  require(msg.value >= 0.01 ether, "Please top up sponsor wallet"); // user needs to send 0.01 ether with the transaction
-  bytes32 requestId = airnodeRrp.makeFullRequest(
-      airnodeAddress,
-      endpointId,
-      address(this), // Use the contract address as the sponsor. This will allow us to skip the step of sponsoring the requester
-      sponsorWallet,
-      address(this), // Return the response to this contract
-      this.closeWeek.selector, // Call this function with the response
-      "" // No params
-  );
-  pendingRequestIds[requestId] = true; // Store the request id in the pending request mapping
-  emit RequestedRandomNumber(requestId); // Emit an event that the request has been made
-  sponsorWallet.call{value: msg.value}(""); // Send funds to sponsor wallet
-}
-```
+  ```Solidity
+  function getWinningNumber() external payable {
+    // require(block.timestamp > endTime, "Lottery has not ended"); // not available until end time has passed
+    require(msg.value >= 0.01 ether, "Please top up sponsor wallet"); // user needs to send 0.01 ether with the transaction
+    bytes32 requestId = airnodeRrp.makeFullRequest(
+        airnodeAddress,
+        endpointId,
+        address(this), // Use the contract address as the sponsor. This will allow us to skip the step of sponsoring the requester
+        sponsorWallet,
+        address(this), // Return the response to this contract
+        this.closeWeek.selector, // Call this function with the response
+        "" // No params
+    );
+    pendingRequestIds[requestId] = true; // Store the request id in the pending request mapping
+    emit RequestedRandomNumber(requestId); // Emit an event that the request has been made
+    sponsorWallet.call{value: msg.value}(""); // Send funds to sponsor wallet
+  }
+  ```
 
 - The off-chain QRNG Airnode gathers the request and performs a callback to the
   contract with the random number. Here, the `closeWeek()` function fulfills the
@@ -159,37 +163,37 @@ function getWinningNumber() external payable {
 - It then checks from an array of addresses who participated in the lottery,
   divides the pot evenly among the winners and sends it to each winner.
 
-```solidity
-    function closeWeek(bytes32 requestId, bytes calldata data)
-        external
-        onlyAirnodeRrp
-    {
-        require(pendingRequestIds[requestId], "No such request made");
-        delete pendingRequestIds[requestId]; // remove request id from pending request ids
+  ```solidity
+      function closeWeek(bytes32 requestId, bytes calldata data)
+          external
+          onlyAirnodeRrp
+      {
+          require(pendingRequestIds[requestId], "No such request made");
+          delete pendingRequestIds[requestId]; // remove request id from pending request ids
 
-        uint256 _randomNumber = abi.decode(data, (uint256)) % MAX_NUMBER; // get the random number from the data
-        emit ReceivedRandomNumber(requestId, _randomNumber); // emit the random number as an event
+          uint256 _randomNumber = abi.decode(data, (uint256)) % MAX_NUMBER; // get the random number from the data
+          emit ReceivedRandomNumber(requestId, _randomNumber); // emit the random number as an event
 
-        // require(block.timestamp > endTime, "Lottery is open"); // will prevent duplicate closings. If someone closed it first it will increment the end time and not allow
+          // require(block.timestamp > endTime, "Lottery is open"); // will prevent duplicate closings. If someone closed it first it will increment the end time and not allow
 
-        winningNumber[week] = _randomNumber;
-        address[] memory winners = tickets[week][_randomNumber]; // get list of addresses that chose the random number this week
-        unchecked {
-            ++week; // increment week counter, will not overflow on human timelines
-        }
-        endTime += 7 days; // set end time for 7 days later
-        if (winners.length > 0) {
-            uint256 earnings = pot / winners.length; // divide pot evenly among winners
-            pot = 0; // reset pot
-            for (uint256 i = 0; i < winners.length; ) {
-                payable(winners[i]).call{value: earnings}(""); // send earnings to each winner
-                unchecked {
-                    ++i;
-                }
-            }
-        }
-
-```
+          winningNumber[week] = _randomNumber;
+          address[] memory winners = tickets[week][_randomNumber]; // get list of addresses that chose the random number this week
+          unchecked {
+              ++week; // increment week counter, will not overflow on human timelines
+          }
+          endTime += 7 days; // set end time for 7 days later
+          if (winners.length > 0) {
+              uint256 earnings = pot / winners.length; // divide pot evenly among winners
+              pot = 0; // reset pot
+              for (uint256 i = 0; i < winners.length; ) {
+                  payable(winners[i]).call{value: earnings}(""); // send earnings to each winner
+                  unchecked {
+                      ++i;
+                  }
+              }
+          }
+      }
+  ```
 
 The `getEntriesForNumber()` is a read only function that returns the list of
 addresses that chose the given number for the given week.
@@ -229,12 +233,12 @@ Airnode to request a random number.
 - [Click here](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
   to open the Lottery Contract in Remix.
 
-> ![Opening the Requester Contract in Remix](src/s1.png)
+  ![Opening the Requester Contract in Remix](src/s1.png)
 
 - Click on the **COMPILE** tab on the left side of the dashboard and click on
   **Compile Lottery.sol**
 
-> ![Compiling the Requester](src/s2.png)
+  <img src="./src/s2.png" style="width:50%">
 
 - Head to Deploy and run Transactions and select **Injected Provider —
   MetaMask** option under **Environment**. Connect your MetaMask. Make sure
@@ -251,7 +255,7 @@ Airnode to request a random number.
   have already been deployed on-chain. You can check for your specific chain
   [here](/reference/airnode/latest/). Fill it in and Deploy the Contract.
 
-> ![Deploying the Lottery](src/s3.png)
+  ![Deploying the Lottery](src/s3.png)
 
 ## 3. Deriving the Sponsor Wallet
 
@@ -261,15 +265,15 @@ needs to be derived from the requester's contract address (Lottery contract in
 this case), the Airnode address, and the Airnode xpub. The wallet is used to pay
 gas costs of the transactions. The sponsor wallet must be derived using the
 command
-[derive-sponsor-wallet-address](/reference/airnode/latest/concepts/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
+[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 
-::: details byog QRNG Airnode Details
+::: details Nodary QRNG Airnode Details
 
 ```
-byog QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
-byog QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
+nodary QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
+nodary QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
 ```
 
 :::
@@ -287,7 +291,7 @@ npx @api3/airnode-admin derive-sponsor-wallet-address \
 Click on the `setSponsorWallet` button and enter your Sponsor Wallet Address to
 set it on-chain.
 
-> ![set sponsor](src/s4.png)
+<img src="./src/s4.png" style="width:45%">
 
 ::: warning Designated Sponsor Wallets
 
@@ -307,13 +311,13 @@ have to pay to make a bet (0.0001 ETH). Under Deployed Contracts, select the
 price along with the bet. Head over to the top and enter the `ticketPrice` under
 **VALUE** and click on transact.
 
-> ![Sending the bet](src/s7.png)
+![Sending the bet](src/s7.png)
 
-> ![Sending the bet#2](src/s6.png)
+![Sending the bet#2](src/s6.png)
 
 You can also check the Ticket Price by running the `ticketPrice` function.
 
-> ![checking ticket price](src/s5.png)
+![checking ticket price](src/s5.png)
 
 Next, you need a way for people to call Airnode for a random number when the
 lottery is closed. Call the `getWinningNumber` function in the contract to make
@@ -324,18 +328,18 @@ function will also fund the sponsor wallet.
 Enter the amount to fund the sponsor wallet (0.01 ETH) and call
 `getWinningNumber`
 
-> ![getWinningBet](src/s7.png)
+![getWinningBet](src/s7.png)
 
-> ![getWinningBet#2](src/s9.png)
+![getWinningBet#2](src/s9.png)
 
 Head over to [Goerli Testnet Explorer](https://goerli.etherscan.io/) and check
 your `sponsorWallet` for any new transactions.
 
-> ![Making the Request](src/s11.png)
+<img src="./src/s11.png" style="border:1px solid lightgrey">
 
 Here, You can see the latest `Fulfill` transaction.
 
-::: tip You might need to wait for a minute or two
+::: info You might need to wait for a minute or two
 
 The Airnode calls the fulfill() function in `AirnodeRrpV0.sol` that will in turn
 call back the requester contract at `fulfillAddress` using function
@@ -346,12 +350,13 @@ call back the requester contract at `fulfillAddress` using function
 You can check the winning number by calling `winningNumber`. Pass in the week to
 check which number won that week.
 
-> ![Making the Request](src/s10.png)
+![Making the Request](src/s10.png)
 
 ## Conclusion
 
 This is how you can use Quantum Randomness in your smart contracts. To learn
-more, head on to the [API3 QRNG Docs](/reference/qrng/).
-
-If you have any doubts/questions, visit the API3
+more, head on to the [API3 QRNG Docs](/reference/qrng/). If you have any
+doubts/questions, visit the API3
 [Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
+
+<FlexEndTag/>

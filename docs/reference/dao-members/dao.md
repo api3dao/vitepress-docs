@@ -17,6 +17,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 The API3 DAO contract is the core DAO contract, and it serves a coordinating and
@@ -32,3 +34,5 @@ See the
 contract code and the list of contracts it inherits from.
 
 - BaseTemplate
+
+<FlexEndTag/>

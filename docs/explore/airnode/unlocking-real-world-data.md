@@ -1,5 +1,5 @@
 ---
-title: Accessing first-party data feeds
+title: Access real world data
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → Airnode
@@ -12,7 +12,9 @@ tags:
 
 <SearchHighlight/>
 
-# Access real world data for smart contracts
+<FlexStartTag/>
+
+# {{$frontmatter.title}}
 
 Preferring the better-specified API connectivity problem over the oracle
 problem, API3 believes that an oracle node should be designed to interface APIs
@@ -57,19 +59,15 @@ A first-party oracle consists of two parts:
 2. Protocol (oracle smart contracts)
 
 An oracle protocol defines how decentralized applications can make requests to
-the oracle and receive responses. Certain protocols may be more appropiate
-depending on how an oracle node is being utilized. As such Airnode utilizes a
-range of protocols to ensure a data feed achieves the appropiate efficiency for
-the respective use case.
+the oracle and receive responses.
 
-::: info Key point
+<img src="../assets/images/05-How_Airnode_works.png" style="width:350px">
 
-An oracle utilizes a smart contracts to implement the protocol in a variety of
-patterns.
+Certain protocols may be more appropiate depending on how an oracle node is
+being utilized. As such Airnode utilizes a range of protocols to ensure a data
+feed achieves the appropiate efficiency for the respective use case.
 
-:::
-
-### Request-response
+### Request-response Protocol
 
 The first and the most commonly used API style follows the request–response
 pattern, where the user makes a request with parameters and the API responds as
@@ -90,12 +88,15 @@ below a particular price. Either of these patterns can be used to implement the
 live data feeds that DeFi applications use today, but they can also support a
 much larger variety of use cases in the form of dAPIs.
 
-::: info Key point
+<!--
+::: info Note
 
-DeFi data feeds served via dAPIs utilize the publish-subscribe protocol. Learn
-more about [dAPIs](/explore/dapis/using-dapis.md).
+An oracle utilizes a smart contracts to implement the protocol in a variety of
+patterns optimized for the use case. dAPIs utilize the publish-subscribe
+protocol. Learn more about [dAPIs](/explore/dapis/using-dapis.md).
 
 :::
+-->
 
 ## Airnode Requesters and Sponsors
 
@@ -109,6 +110,8 @@ important to remember. When requester is mentioned, the reference is to your
 smart contract that calls an Airnode.
 
 > <img src="/reference/airnode/latest/assets/images/requesters-sponsors-1.png" width="350px"/>
+
+<!--<img src="../assets/images/03-solving_the_API_connectivity_problem_Airnode.png" style="width:350px">-->
 
 As an example see the `myContract.sol` contract in the diagram within the
 [dAPP Developers Overview](/reference/airnode/latest/developers/) doc, it is a
@@ -138,12 +141,12 @@ requester calls it.
 
 Understand the process of sponsoring a requester and deriving a sponsor wallet
 using the admin CLI commands within the
-[Sponsor & Requester](/reference/airnode/latest/concepts/requesters-sponsors.md)
+[<span style="color:rgb(16, 185, 129);">Sponsor and Requester</span>](/reference/airnode/latest/developers/requesters-sponsors.md)
 developer resource
 
 :::
 
-## Additional functionality & future development
+<!-- ## Additional functionality & future development
 
 Within the explore section we have discussed the foundational aspects of Airnode
 and first-party oracles. However, as API are increasingly complex Airnode will
@@ -157,7 +160,7 @@ This functionality includes functions such as
 can authorize smart contracts (know as requesters) access to its endpoints using
 Authorizers.
 
-:::
+::: -->
 
 ## API3 Market
 
@@ -173,13 +176,6 @@ how API3's data feed services will be consumed by DeFi protocols.-->
 The API3 Market is a tool that enables developers to browse and use first-party
 data feeds in a self-serve manor. Developers can use a dAPI's interface to
 consume first-party data<!--price?--> feed services in smart contracts.
-
-::: info decentralized APIs
-
-A dAPI interface provides a secure way for developers to access our data feed
-services and utilize them in their projects.
-
-:::
 
 <!--
 ## Requirements
@@ -210,3 +206,5 @@ themselves. As a result, this imposes fairly restrictive requirements:
 - The API provider cannot stake funds that would expose them to financial risk
   due to compliance, legal and accounting reasons. The security mechanics of the
   protocol thus should not depend on oracles to stake.-->
+
+<FlexEndTag/>

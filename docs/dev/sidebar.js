@@ -4,14 +4,13 @@ module.exports = [
     items: [
       { text: 'Getting Started', link: '/dev/' },
       { text: 'DocSets', link: '/dev/docsets' },
-      { text: 'Versioning', link: '/dev/versioning' },
-      { text: 'Nav Boxes', link: '/dev/navboxes' },
+      { text: 'Airnode/OIS Versioning', link: '/dev/versioning' },
+      { text: 'NavBoxes', link: '/dev/navboxes' },
       { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
       { text: 'Hyperlinks', link: '/dev/hyperlinks' },
       { text: 'Link Validation', link: '/dev/link-validation' },
-      { text: 'Tabs Component', link: '/dev/tabs' },
       {
         text: 'Page Styling',
         link: '/dev/page-styling',

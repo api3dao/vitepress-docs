@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 [Contract application binary interface (ABI)](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html)
@@ -264,3 +266,5 @@ code samples in the
 package.
 
 - [request-utils.ts](https://github.com/api3dao/airnode/blob/v0.10/packages/airnode-examples/integrations/coingecko/request-utils.ts#L8)
+
+<FlexEndTag/>

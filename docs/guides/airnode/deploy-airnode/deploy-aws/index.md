@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
@@ -23,7 +25,7 @@ The latest release
 ([0.11<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
 of the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
-used to deploy the off-chain component of Airnode (a.k.a., the node) to GCP.
+used to deploy the off-chain component of Airnode (a.k.a., the node) to AWS.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
 [CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
@@ -36,9 +38,9 @@ Airnode deployment
 An Airnode deployment on AWS uses the Docker
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) which
 requires three files as input:
-[config.json](/guides/airnode/deploy-airnode/deploy-aws/#config-json),
-[secrets.env](/guides/airnode/deploy-airnode/deploy-aws/#secrets-env), and
-[aws.env](/guides/airnode/deploy-airnode/deploy-aws/#aws-env).
+[config.json](/guides/airnode/deploy-airnode/deploy-aws/index.md#config-json),
+[secrets.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#secrets-env),
+and [aws.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#aws-env).
 
 These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply AWS
@@ -173,7 +175,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 ```batch [Windows]
@@ -181,7 +183,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 deploy
+  api3/airnode-deployer:0.11 deploy
 ```
 
 :::
@@ -331,7 +333,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -339,7 +341,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.9.2 remove-with-receipt
+  api3/airnode-deployer:0.11 remove-with-receipt
 ```
 
 :::
@@ -361,3 +363,5 @@ accessing the blockchain.
 
 Learn more about AWS resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
+
+<FlexEndTag/>

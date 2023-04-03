@@ -11,6 +11,10 @@ tags:
 
 <PageHeader/>
 
+<SearchHighlight/>
+
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 [Quantumon](https://quantumon.xyz/) - Quantum Monsters are a collection of AI
@@ -253,8 +257,8 @@ If the `tokenId` hasn’t been minted it will revert.
 the blockchain) that is overridden to return the URI in the `_tokenURIs`
 mapping. The code comments explain what it does in more detail.
 
-:::tip Note: In solidity `string(abi.encodePacked(StringA,StringB))` returns the
-concatenation of `stringA` and `stringB`.
+::: info Note: In solidity `string(abi.encodePacked(StringA,StringB))` returns
+the concatenation of `stringA` and `stringB`.
 
 :::
 
@@ -326,7 +330,7 @@ To understand `sponsor` and `sponsorWallets`, we need to first understand the
 first party oracle architecture. The diagram below will help you understand it a
 little better.
 
-![First Party Oracle Architecture](./src/fpoa.webp)
+<img src="./src/fpoa.webp" style="width:80%">
 
 Essentially when you call `makeFullRequest()` an event is emitted and the API’s
 airnode is listening to this event. Based on the event it makes the call to the
@@ -353,7 +357,7 @@ npx @api3/airnode-admin derive-sponsor-wallet-address \
   --sponsor-address 0x9Ec6C4...
 ```
 
-![First Party Oracle Architecture](./src/sponsor.webp)
+<img src="./src/sponsor.webp" style="width:50%;">
 
 By inheriting the `RrpRequesterV0` contract, we declare the contract as its own
 sponsor. This means that we can substitute the address of the deployed contract
@@ -426,9 +430,11 @@ Quantumon ids to be minted “out of order”).
 
 ## Conclusion
 
-In this guide, you learnt how Quantumon utilities QRNG to mint Quantumon
-Monsters. You also learnt how to request data from a QRNG Airnode and how to use
-the data to mint an NFT.
+In this guide, you learned Quantumon utilities QRNG and minted Quantumon
+Monsters. You also learned how to request data from a QRNG Airnode and how to
+use the data to mint an NFT.
 
-[Click here<ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4)
-to see the source code for the Quantumon contract.
+See the source code for the
+[Quantumon contract <ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
+
+<FlexEndTag/>

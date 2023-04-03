@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
@@ -73,3 +75,5 @@ requester addresses that can access them.
  ]
 }
 ```
+
+<FlexEndTag/>

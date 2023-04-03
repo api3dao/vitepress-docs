@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-Most $frontmatter keys are required.
+Most `$frontmatter` keys are required.
 
 ### `title`
 

@@ -12,20 +12,24 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 <!--TocHeader />
 <TOC class="table-of-contents" :include-level="[2,3]" /-->
 
-This contract is the one included in the
-[QRNG Example](/guides/qrng/qrng-example.md) guide. Be sure to visit and run the
-project.
+This contract gets an array of random numbers. It is also possible to get a
+single random number as with the the example contract
+[RemixQrngExample.sol](/reference/qrng/remix-example.md).
 
 <!-- prettier-ignore -->
 <<< @/reference/qrng/QrngExample.txt{solidity}
 
-## More related material...
+See the guide [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md) for
+an in-depth tutorial on how use QRNG. Also see the
+[QRNG Example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
+repo, an example project that demonstrates the usage of the Airnode
+request–response protocol to receive API3 QRNG services.
 
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='REPO' id='_qrng-starter-project'/>
-</div>
+<FlexEndTag/>

@@ -1,5 +1,5 @@
 ---
-title: Using QRNG with Remix
+title: Using QRNG - Remix Example
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -10,6 +10,10 @@ tags:
 ---
 
 <PageHeader/>
+
+<SearchHighlight/>
+
+<FlexStartTag/>
 
 # {{$frontmatter.title}}
 
@@ -22,8 +26,8 @@ assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
-[byog provider](https://byog.io/), available only on testnets, which returns a
-pseudorandom number.
+[Nodary provider](https://nodary.io/), available only on testnets, which returns
+a pseudorandom number.
 
 To begin, you need to deploy and sponsor the
 [`RemixQrngExample`](/reference/qrng/qrng-example.html) with a matching
@@ -170,7 +174,7 @@ lacks adequate security features!
 
 :::
 
-This guide will use the [byog provider](https://byog.io/) which has the same
+This guide will use the [nodary provider](https://nodary.io/) which has the same
 usage as the production quantum random number generator
 [providers](/reference/qrng/providers.html) but returns a pseudorandom number.
 
@@ -206,19 +210,19 @@ expand the **`setRequestParameters`** function. Add the following to the
 corresponding fields for the function.
 
 - `_airnode`: The airnode address of the desired QRNG service provider. Use
-  **byog**
+  **nodary**
   (`0x6238772544f029ecaBfDED4300f13A3c4FE84E1D`→<CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/>).
 
-- `_endpointIdUint256`: The **byog** Airnode endpoint ID
+- `_endpointIdUint256`: The **nodary** Airnode endpoint ID
   (`0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78`→<CopyIcon text="0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78"/>)
   which will return a single random number.
 
-- `_endpointIdUint256Array`: The **byog** Airnode endpoint ID
+- `_endpointIdUint256Array`: The **nodary** Airnode endpoint ID
   (`0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3`→<CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>)
   which will return an array of random numbers.
 
 - `_sponsorWallet`: A wallet derived from the Airnode address and the Airnode
-  xpub used by **byog**, and the smart contract address for
+  xpub used by **nodary**, and the smart contract address for
   `RemixQrngExample.sol`. The wallet is used to pay gas costs to acquire a
   random number. A sponsor wallet must be derived using the command
   [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
@@ -231,8 +235,8 @@ corresponding fields for the function.
     --airnode-xpub xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo \
     --sponsor-address <use-the-address-of: RemixQrngExample.sol>
 
-    # --airnode-address: Airnode address (byog provider)
-    # --airnode-xpub:    Airnode xpub (byog provider)
+    # --airnode-address: Airnode address (nodary provider)
+    # --airnode-xpub:    Airnode xpub (nodary provider)
     # --sponsor-address: Use the smart contract address for
     #                    RemixQrngExample.sol as displayed in the Remix IDE.
 
@@ -308,3 +312,5 @@ successfully completed the randomNumber will be present. The value of
 **waitingFulfillment** will be _false_.
 
 > <img src="./src/qrng-response-complete.png" width="400"/>
+
+<FlexEndTag/>

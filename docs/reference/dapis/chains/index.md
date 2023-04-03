@@ -3,7 +3,7 @@ title: Chains and Contracts
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs
-path: /reference/dapis/chains.html
+path: /reference/dapis/chains/index.html
 outline: deep
 tags:
 ---
@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 dAPIs can be read on the following chains using
@@ -19,4 +21,7 @@ dAPIs can be read on the following chains using
 Use the [API3 Market<ExternalLinkImage/>](https://market.api3.org/) website to
 create proxy contracts.
 
-<ChainsList/>
+<br/>
+<!--@include: ./chains-list.md-->
+
+<FlexEndTag/>

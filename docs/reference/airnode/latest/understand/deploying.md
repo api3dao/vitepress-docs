@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 After integrating an API
@@ -33,7 +35,10 @@ Try the
 [Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/)
 tutorial if you wish to become familiar with the deployer image first. There are
 also tutorials for [GCP](/guides/airnode/deploy-airnode/deploy-gcp/) and a
-[client Docker container](/guides/airnode/deploy-airnode/deploy-container/).
+[client Docker container](/guides/airnode/deploy-airnode/deploy-container/) as
+well as several repo based examples in the
+[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.10.0/packages/airnode-examples)
+package.
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,
 without requiring you to click through a lot of ever-changing graphical
@@ -150,8 +155,8 @@ this.
 ## Make an RRP request of the Airnode
 
 Once the Airnode is deployed, see
-[Calling an Airnode](/reference/airnode/latest/developers/call-an-airnode.md) to
-learn how requests are made using the request-response protocol (RRP).
+[Calling an Airnode](/reference/airnode/latest/developers/index.md) to learn how
+requests are made using the request-response protocol (RRP).
 
 ## Removing the Airnode
 
@@ -160,11 +165,4 @@ for [remove](/reference/airnode/latest/docker/deployer-image.md#remove) or
 [remove-with-receipt](/reference/airnode/latest/docker/deployer-image.md#remove-with-receipt)
 instructions.
 
-## More related material...
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='REPO' id="_airnode-examples"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-aws"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-gcp"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-container"/>
-</div>
+<FlexEndTag/>

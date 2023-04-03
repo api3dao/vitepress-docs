@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 dAPIs are on-chain data feeds sourced from off-chain first-party oracles owned
@@ -85,7 +87,9 @@ requires only a few simple steps. Utilizing the tools available within the API3
 Market, dApp owners can swiftly gain access to a dAPI with minimal effort.
 Follow the guide
 [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
-to get started.
+to get started. Then see the guide
+[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
+understand how to read a dAPI.
 
 ### Managed dAPIs
 
@@ -102,10 +106,4 @@ gas fees (using access fees charged) as part of a portfolio of managed dAPIs.
 
  <img src="../assets/images/Managed_dAPI_visual.png" style="width:500px">
 
-## More related material...
-
-See the guide
-[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/).
-
-See the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/).
+<FlexEndTag/>

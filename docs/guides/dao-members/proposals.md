@@ -18,6 +18,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Staking tokens in the DAO pool gives you governance rights to create and vote on
@@ -30,7 +32,7 @@ the DAO as described in
 [Dashboard Attributes](/reference/dao-members/dashboard-attributes.md) upon
 acceptance using a proposal. To view the percentage of staked tokens in the pool
 for an address, visit the
-[DAO Tracker wallets page](https://enormous.cloud/dao/api3/tracker/wallets)<ExternalLinkImage/>.
+[DAO Tracker wallets page](https://tracker.api3.org/wallets)<ExternalLinkImage/>.
 
 You can vote on all proposals regardless of the percentage of staked tokens in
 the pool you own. See [How to Vote](/guides/dao-members/voting.md) for
@@ -101,7 +103,7 @@ expected, for your proposal to succeed.
   In general, a proposal type of _Primary_ has a larger treasury and more permissions but has more stringent voting settings than a _Secondary_ type. For a technical breakdown of the different permissions granted to the DAO's proposal types (and corresponding Agents) see this [README](https://github.com/api3dao/api3-dao/blob/develop/packages/dao/README.md#permissions).
   -->
 
-::: tip Public Address and ENS Names
+::: info Public Address and ENS Names
 
 For public addresses use the checksum version of the address where some
 alphabetical characters are capitalized. Copy your address to etherscan to get
@@ -111,7 +113,7 @@ below.
 
 :::
 
-::: tip USDC Precision
+::: info USDC Precision
 
 USDC uses 6 decimal places of precision as opposed to 18 that many other ERC20
 tokens use. Add 6 zeros after the amount you are asking for.
@@ -262,7 +264,7 @@ How does the voter know that it's the exact same proposal they had read earlier
 in the forum? IPFS addressing content by its hash is convenient here, because
 any change you'll make to your proposal will change its hash.
 
-> <img src="../assets/images/ipfs-proposals.png" width="550"/>
+<img src="../assets/images/ipfs-proposals.png" width="550"/>
 
 To host a proposal description on IPFS:
 
@@ -290,3 +292,5 @@ posting. Lastly, create the proposal using the DAO dashboard. Since the proposal
 contains the IPFS hashed link in the description field, the PDF should be
 considered final and changing the hashed link in the forum at this point would
 caution the voter.
+
+<FlexEndTag/>

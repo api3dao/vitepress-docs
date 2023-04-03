@@ -12,9 +12,12 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
-Proxy contracts from the [API3 Market](https://market.api3.org) allow for simple
+Proxy contracts from the
+[API3 Market<ExternalLinkImage/>](https://market.api3.org) allow for simple
 access to dAPIs by any dApp. Use the API3 Market UI to easily obtain proxy
 contracts and use them to read the value of any dAPI. Each proxy contract (using
 its address) reads from a single predetermined dAPI.
@@ -65,7 +68,7 @@ them ideal for a dApp on a production chain.
 
 Each self-funded dAPI has only one proxy contract for all dApp owners to use.
 For example, the proxy contract for the self-funded dAPI
-[ZIL/USD<ExternalLinkImage/>](https://staging.api3-market.pages.dev/dapis/polygon-testnet/ZIL-USD)
+[ZIL/USD<ExternalLinkImage/>](https://market.api3.org/dapis/polygon-testnet/ZIL-USD)
 has an address of `0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2` on the Mumbai
 testnet. This is the only proxy contract in existence for this self-funded dAPI
 on Mumbai. Therefore, any dApp can call the above mentioned proxy contract to
@@ -78,8 +81,10 @@ return IDapiProxy(0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2).read();
 ```
 
 See the guide
+[Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
+and learn more on how to fund a dAPI. Also see the guide
 [Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn how to use a proxy contract.
+learn more on how to use a proxy contract to read the value of a dAPI.
 
 ## Managed dAPIs
 
@@ -104,12 +109,4 @@ The specifications for the concept of a managed dAPI may change to some degree
 as development continues. The full feature specification will be updated here as
 this type of dAPIs is made available.
 
-## More related material...
-
-See the guide
-[Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
-and learn more on how to fund a dAPI.
-
-See the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn more on how to use a proxy contract to read the value of a dAPI.
+<FlexEndTag/>

@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 Usually the Airnode is deployed on a serverless platform using the
@@ -131,3 +133,5 @@ docker logs --follow airnode
 ```bash
 docker stop airnode
 ```
+
+<FlexEndTag/>

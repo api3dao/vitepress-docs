@@ -15,6 +15,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 As part of the Airnode deployment you can decide to deploy two different HTTP
@@ -230,16 +232,4 @@ signature: The response has been signed by Airnode.
 
 :::
 
-## More related material...
-
-The [airnode-example monorepo](/guides/airnode/monorepo-examples.html) hosts
-examples demonstrating use of the HTTP Gateway and HTTP Signed Data Gateway.
-Furthermore, there are additional examples of using CURL to call the HTTP
-gateway in the quick start tutorials.
-
-<div class="api3-css-nav-box-flex-row">
-  <NavBox type='REPO' id="_airnode-examples"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-aws"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-gcp"/>
-  <NavBox type='GUIDE' id="_airnode-quick-start-container"/>
-</div>
+<FlexEndTag/>

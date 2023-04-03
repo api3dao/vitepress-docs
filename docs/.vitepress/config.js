@@ -53,7 +53,7 @@ export default {
       '/explore/': require('../explore/sidebar.js'),
       '/guides/': require('../guides/sidebar.js'),
       //'/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
-      //'/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
+      '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
       //'/reference/qrng/': require('../reference/qrng/sidebar.js'),
       //'/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
@@ -82,7 +82,7 @@ function nav() {
         },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },
-        { text: 'DAO Members', link: '/reference/dao-members/' },*/
+        { text: 'DAO Members', link: '/reference/dao-members/' }*/
       ],
     },
   ];

@@ -12,6 +12,8 @@ tags:
 
 <SearchHighlight/>
 
+<FlexStartTag/>
+
 # {{$frontmatter.title}}
 
 There are examples of various Airnode functionality in the
@@ -49,3 +51,5 @@ of the Airnode monorepo:
   [encoding multiple parameters](/reference/ois/latest/reserved-parameters.md#encoding-multiple-values)
   including the transaction timestamp, time of sunset, temperature, and a
   description of the weather.
+
+<FlexEndTag/>

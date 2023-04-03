@@ -6,7 +6,7 @@ hero:
   text: data feeds powered by Airnode
   tagline:
     Airnode-enabled APIs serve data on-chain directly from the source. These
-    first-party oracles then form form a variety of data feed services.
+    first-party oracles then form a variety of data feed services.
 
   image:
     src: /beacons.svg
@@ -48,10 +48,10 @@ dAPIs are continuously updated streams of off-chain data, such as the latest
     <NavBox type='GUIDE' id="_call-dapi-server"/>
   </div>
 
-  <div class="api3-land-title">byog</div>
+  <div class="api3-land-title">nodary</div>
   <div class="api3-land-title-desc">Community single sourced dAPIs suitable for development and prototyping.</div>
   <div class="api3-css-nav-box-flex-row">
-    <NavBox type='EXPLORE' id="_what-is-byog"/>
+    <NavBox type='EXPLORE' id="_what-is-nodary"/>
   </div>
 
 
