@@ -1,8 +1,8 @@
 <template>
   <div class="api3-css-nav-box-flex-row">
     <div v-for="(box, id) in list" v-bind:key="id">
-      <code style="font-size: x-small">{{ id }}</code>
-      <NavBox v-bind:type="type" v-bind:id="id" />
+      <code style="font-size: x-small">{{ id }} - {{ type }}</code>
+      <NavBox v-bind:type="type" v-bind:id="id" style="'solid 1px black" />
     </div>
   </div>
 </template>
@@ -19,22 +19,14 @@ export default {
   data: () => ({
     list: null,
   }),
-  methods: {
-    navigate() {
-      if (this.type === 'REPO') {
-        location.href = this.box.btnURL;
-      } else {
-        this.router.go(this.box.btnURL);
-      }
-    },
-  },
   mounted() {
     this.$nextTick(async function () {});
-    console.log(this.type);
+
     if (this.type === 'EXPLORE') this.list = explore;
     else if (this.type === 'GUIDE') this.list = guide;
     else if (this.type === 'REFERENCE') this.list = reference;
     else if (this.type === 'REPO') this.list = repo;
+    console.log(this.type);
     console.log(this.list);
   },
 };
