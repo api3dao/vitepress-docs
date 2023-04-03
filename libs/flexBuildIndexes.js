@@ -2,14 +2,14 @@
  * See /dev/flexsearch.md
  */
 
-var textVersion = require('textversionjs');
 const yaml = require('js-yaml');
 const fs = require('fs');
 var file = require('file');
 const fse = require('fs-extra');
 const { Index } = require('flexsearch');
+const parse = require('html-dom-parser');
 
-let filesArr = [];
+let directoriesArr = [];
 let id = 1; // Used as the id for each page added to the index
 let indexAll = new Index({
   tokenize: 'full',
@@ -28,16 +28,47 @@ let docsets = ['/dist/explore/', '/dist/guides/', '/dist/reference/'];
  * @param {*} files
  */
 function walkCB(dirPath, dirs, files) {
-  filesArr.push({ dir: dirPath, files: files });
+  directoriesArr.push({ dir: dirPath, files: files });
 }
 
-/*
-  Build the content json files used to create FlexSearch indexes.
-  Get the innerText from the html and create a 
-  content page for the html page in /indexes/content-files
-*/
-function buildContentFile(path) {
+/**
+ * --------------------------------------------------------------
+ * Build the content json files used to create FlexSearch indexes.
+ * Get the innerText from the html and create a
+ * content page for the html page in /indexes/content-files
+ * --------------------------------------------------------------
+ */
+async function buildContentFile(path) {
   const contentDir = 'indexes/content-files';
+  let plainText = ''; // Populated by the function processBaseObj(obj)
+
+  /**
+   * This function parses all the elements in hte parsed file between FLEX markers
+   * @param  obj
+   */
+  async function processBaseObj(obj) {
+    if (obj.type === 'text') {
+      plainText += ' ' + obj.data;
+    } else if (obj.type === 'comment') {
+      // skip it
+    } else if (!obj.children) {
+      console.log(' NO CHILDREN');
+    } else if (obj.type) {
+      // Look out for <a> elements without children in the above line of code.
+      // May need to change: else if (obj.type&& obj.children)
+
+      for (let i = 0; i < obj.children.length; i++) {
+        let child = obj.children[i];
+        if (child.type === 'text') {
+          plainText += ' ' + child.data;
+        } else if (child.children) {
+          for (let z = 0; z < child.children.length; z++) {
+            await processBaseObj(child.children[z]);
+          }
+        }
+      }
+    }
+  }
 
   // Make sure the /flexContentFiles dir exists
   fse.ensureDirSync(contentDir);
@@ -46,35 +77,40 @@ function buildContentFile(path) {
   let parsedPath = path.split('/.vitepress/dist')[1];
   let contentPath = contentDir + parsedPath.replace('.html', '.json');
 
-  // frontmatter and url: /explore
+  // The frontmatter and url ex: /explore
   const pathMarkdown =
     'docs/' + path.split('docs/.vitepress/dist/')[1].replace('.html', '.md');
   let frontmatter = yaml.load(
     fs.readFileSync(pathMarkdown, 'utf8').split('---')[1]
   );
 
-  // Get the html files and extract the text from the html
-  const htmlString = fs.readFileSync(path, 'utf8');
-  var plainText = textVersion(htmlString);
+  // Get the html
+  let htmlString = fs.readFileSync(path, 'utf8');
 
-  // FlexStartTag: Just the content
-  plainText = plainText.split('FLEX_START_TAG')[1];
+  // Parse the content between the flex tags.
+  let s = htmlString.split('>FLEX_START_TAG</span>')[1]; // From <FlexStartTag/>
 
-  // FlexEndTag: Just the content
-  plainText = plainText.split('FLEX_END_TAG')[0];
+  // Wrap the content with a div element
+  let parsedHtml =
+    '<div>' + s.split('<span class="api3-flex-end-tag"')[0] + '</div>'; // From <FlexEndTag/>
+  // Parse with html-dom-parser to get the JSON object
+  let obj = parse(parsedHtml);
+  // Start the process of text extraction
+  await processBaseObj(obj[0]); // Zero is the outer div we added above
 
-  // Remove excessive ==== and -----
+  // Remove excessive spaces, line feeds, ====, and -----
   plainText = plainText.replace(/=====/g, '');
   plainText = plainText.replace(/-----/g, '');
-
-  // Remove line feeds
-  plainText = plainText.replace(/\n/g, ' ');
-  //console.log(plainText);
+  plainText = plainText.replace(/&#39;/g, "'"); //'
+  plainText = plainText.replace(/\n/g, '');
+  plainText = plainText.replace(/    /g, ' ');
+  plainText = plainText.replace(/   /g, ' ');
+  plainText = plainText.replace(/  /g, ' ');
 
   // Updates the lookup file so search can find the page by its ID
-  addToFrontmatter(id, frontmatter);
+  await addToFrontmatter(id, frontmatter);
 
-  // Create the json object and write file to search-files dir
+  // Create the json object and write file to /indexes/content-files/ dir
   let json = {
     id: id,
     content: plainText,
@@ -99,7 +135,7 @@ function buildContentFile(path) {
   Updates the frontmatterIds file so search can find the page by its ID
 */
 let frontmatterObj = {};
-function addToFrontmatter(id, frontmatter) {
+async function addToFrontmatter(id, frontmatter) {
   frontmatterObj[id] = frontmatter;
 }
 
@@ -130,17 +166,20 @@ const ignoreFiles = ['chains-list.html'];
 /*
   Load all HTML files from /docs/.vitepress/dist 
 */
-function start() {
+async function start() {
+  console.log('> Creating content pages in /indexes/content-files/');
   file.walkSync('./docs/.vitepress/dist', walkCB);
   const skipFiles = [
     './docs/.vitepress/dist/index.html',
     './docs/.vitepress/dist/team.html',
     './docs/.vitepress/dist/404.html',
   ];
-  for (let i = 0; i < filesArr.length; i++) {
-    const dir = filesArr[i].dir;
-    const files = filesArr[i].files;
-    // Each file in the dir json object
+  // For each directory in directoriesArr, will list its files with inner loop below
+  for (let i = 0; i < directoriesArr.length; i++) {
+    const dir = directoriesArr[i].dir;
+    const files = directoriesArr[i].files;
+
+    // For each file in directoriesArr
     for (let x = 0; x < files.length; x++) {
       if (
         files[x].indexOf('.html') > -1 &&
@@ -148,33 +187,39 @@ function start() {
         dir.indexOf('/dist/dev') === -1
       ) {
         // If the md file is an inclusive file do not build a content file for it.
+        // Its content will be part of its parent file.
         if (!ignoreFiles.includes(files[x])) {
-          buildContentFile(dir + '/' + files[x]);
+          try {
+            await buildContentFile(dir + '/' + files[x]);
+          } catch (err) {
+            console.log('>>> ERROR');
+            console.error(dir + '/' + files[x]);
+            console.error(err);
+          }
         }
       }
     }
   }
+  console.log('\n> Finishing');
+  console.log(
+    '> Creating "all" files in /public/indexes/all (async operation *)'
+  );
+  exportAllIndexFiles();
+
+  console.log(
+    '> Creating "latest" files in  /public/indexes/latest (async operation *)'
+  );
+  exportLatestIndexFiles();
+
+  console.log('> Creating frontmatterIds file in /.vitepress/');
+  fs.writeFileSync(
+    'docs/.vitepress/frontmatterIds.json',
+    JSON.stringify(frontmatterObj)
+  );
 }
 
 console.log('\n----- Building FlexSearch Indexes -----');
 fse.ensureDirSync('docs/public/indexes/all');
 fse.ensureDirSync('docs/public/indexes/latest');
 
-console.log('> Creating content pages in /indexes/content-files/');
 start();
-
-console.log(
-  '> Creating "all" files in /public/indexes/all (async operation *)'
-);
-exportAllIndexFiles();
-
-console.log(
-  '> Creating "latest" files in  /public/indexes/latest (async operation *)'
-);
-exportLatestIndexFiles();
-
-console.log('> Creating frontmatterIds file in /.vitepress/');
-fs.writeFileSync(
-  'docs/.vitepress/frontmatterIds.json',
-  JSON.stringify(frontmatterObj)
-);
