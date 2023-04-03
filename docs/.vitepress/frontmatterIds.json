@@ -1244,14 +1244,5 @@
     "path": "/reference/qrng/remix-example.html",
     "outline": "deep",
     "tags": ["qrng", "solidity", "example", "remix"]
-  },
-  "131": {
-    "title": "makeFullRequest()",
-    "sidebarHeader": "QRNG",
-    "sidebarSubHeader": null,
-    "pageHeader": "Reference → QRNG → Contracts and Functions",
-    "path": "/reference/qrng/functions/make-full-request.html",
-    "outline": "deep",
-    "tags": null
   }
 }

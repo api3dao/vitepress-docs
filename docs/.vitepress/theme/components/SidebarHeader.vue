@@ -46,7 +46,7 @@ export default {
     watch(useData().isDark, (dark) => {
       this.isDark = dark;
     });
-    // Adjust the sub header based on hte page selected
+    // Adjust the sub header based on the page selected
     watch(page, (currentPage) => {
       this.showVersions(currentPage.relativePath);
       this.setHeader(currentPage.frontmatter);

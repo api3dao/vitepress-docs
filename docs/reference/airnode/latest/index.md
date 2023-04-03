@@ -25,12 +25,6 @@ are deployed, but feel free to
 [submit a GitHub issue<ExternalLinkImage/>](https://github.com/api3dao/airnode/issues)
 requesting a new deployment.
 
-<script setup lang="ts">
-    import AirnodeRrpV0 from './src/AirnodeRrpV0.json';
-    import AccessControlRegistry from './src/AccessControlRegistry.json';
-    import RequesterAuthorizerWithAirnode from './src/RequesterAuthorizerWithAirnode.json';
-</script>
-
 ## AirnodeRrpV0
 
 <!--------------------------------------->
@@ -183,9 +177,15 @@ requesting a new deployment.
 
 ## RequesterAuthorizerWithErc721
 
-<!--------------------------------------->
-
 Coming soon.
+
+<FlexEndTag/>
+
+<script setup lang="ts">
+    import AirnodeRrpV0 from './src/AirnodeRrpV0.json';
+    import AccessControlRegistry from './src/AccessControlRegistry.json';
+    import RequesterAuthorizerWithAirnode from './src/RequesterAuthorizerWithAirnode.json';
+</script>
 
 <style scoped>
 .contract-addresses-address {
@@ -206,5 +206,3 @@ Coming soon.
   /*-webkit-transition: all 1s linear;*/
 }
 </style>
-
-<FlexEndTag/>
