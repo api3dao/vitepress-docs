@@ -70,3 +70,5 @@ The following regions are supported.
 |                      | us-east-2      |
 |                      | us-west-1      |
 |                      | us-west-2      |
+
+<FlexEndTag/>
