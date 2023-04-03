@@ -22,7 +22,7 @@ module.exports = [
       },
     ],
   },
-  {
+  /*{
     text: 'Airnode',
     collapsed: false,
     items: [
@@ -64,10 +64,10 @@ module.exports = [
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
       },
-      /*{
-        text: 'Become an API Provider',
-        link: '/guides/airnode/become-api-provider',
-      },*/
+      //{
+        //text: 'Become an API Provider',
+        //link: '/guides/airnode/become-api-provider',
+      //},
     ],
   },
   {
@@ -121,7 +121,7 @@ module.exports = [
         link: '/guides/dao-members/videos',
       },
     ],
-  },
+  },*/
   {
     text: 'Miscellaneous',
     collapsed: false,
