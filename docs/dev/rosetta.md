@@ -12,14 +12,14 @@ tags:
 
 # {{$frontmatter.title}}
 
-This page refers to M1 Macs that have implemented the use of Rosetta. It is best
-not to use Rosetta with the VitePress docs. While it may work it almost always
-results in longer builds and other processes. Other issues can arise such as the
-Rosetta platform error. This usually happens when Nodejs and NPM are installed
-using CLI running with Rosetta on, and NPM will install the wrong
-[esbuild](https://esbuild.github.io/getting-started/) package. It is best to use
-a version of Nodejs and NPM installed with its installer or install it using
-your CLI with Rosetta deactivated.
+This page refers to Apple silicon Macs that have implemented the use of Rosetta.
+It is best not to use Rosetta with the VitePress docs. While it may work it
+almost always results in longer builds and other processes. Other issues can
+arise such as the Rosetta platform error. This usually happens when Nodejs and
+NPM are installed using CLI running with Rosetta on, and NPM will install the
+wrong [esbuild](https://esbuild.github.io/getting-started/) package. It is best
+to use a version of Nodejs and NPM installed with its installer or install it
+using your CLI with Rosetta deactivated.
 
 ::: info Nodejs `v18`
 
