@@ -25,6 +25,30 @@ Any files that are not part of the docs but are desired to be retained should go
 into the `/archive` folder before running `yarn docs:build` which will create
 the `/dist` folder. This prevents such files from being indexed.
 
+## `<FlexStartTag/>` and `<FlexEndTag/>`
+
+For the `/lib/flexBuildIndexes.js` script to extract the content from a markdown
+file, the file must contain the markers `<FlexStartTag/>` and `<FlexEndTag/>`.
+The script will only extract DOM text content between the markers. This will
+result in the exclusion of headers and footers.
+
+```js{10,14}
+---
+title: FlexSearch
+...
+---
+
+<PageHeader />
+
+<SearchHighlight />
+
+<FlexStartTag />
+
+# {{$frontmatter.title}}
+...
+<FlexEndTag />
+```
+
 ## Vue components and Flex indexes
 
 Vue components that do not immediately return HTML content will not index since
@@ -54,7 +78,8 @@ axios: build;
 ## 2. Build the `/dist` folder
 
 Build the `/dist` folder with the latest HTML files. All markdown files in
-`/docs` are converted to HTML files and are added to `/dist`.
+`/docs` are converted to HTML files and are added to `/dist`. All files must
+contain hte extraction markers `<Flex...Tag/>`.
 
 ```js
 yarn docs:build

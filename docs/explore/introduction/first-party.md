@@ -42,7 +42,7 @@ The tough question that comes into play, who owns and operates the oracle?
 connectivity problem.-->
 
 When considering if an
-[oracle is first or third party](https://hackernoon.com/the-difference-between-first-party-and-third-party-oracles),
+[oracle is first or third party<ExternalLinkImage/>](https://hackernoon.com/the-difference-between-first-party-and-third-party-oracles),
 there is an important point to consider: Who will host the oracle node?
 
 1. If an API provider hosts the oracle node, the oracle is called a first-party
