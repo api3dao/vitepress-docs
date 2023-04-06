@@ -971,7 +971,7 @@ npx @api3/airnode-admin is-requester-whitelisted ^
 ## More Examples
 
 You can find more examples in the
-[test directory](https://github.com/api3dao/airnode/tree/v0.10/packages/airnode-admin/test)
+[test directory](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-admin/test)
 of the `@api3-dao/airnode/package/admin` repo.
 
 <FlexEndTag/>
