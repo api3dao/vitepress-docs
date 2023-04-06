@@ -22,7 +22,7 @@ tags:
 The processing schema is the same for both
 [pre-processing](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
 and
-[post-processing](/reference/ois/latest//specification.md#_5-10-postprocessingspecifications).
+[post-processing](/reference/ois/latest/specification.md#_5-10-postprocessingspecifications).
 
 The processing schema accepts an array of processing snippets which are chained.
 The first snippet receives parameters submitted as part of a template or
@@ -114,10 +114,10 @@ specification. Example #1 below implements this use case.
 
 This example creates an Airnode endpoint named `generateRandomNumber` with no
 parameters. Because there isn't an
-[operation field](/reference/ois/latest//specification.md#_5-2-operation)
-defined for this Airnode endpoint, a call to an API will not be made. The
-Airnode will instead execute a single specification defined in the
-[preProcessingSpecifications](/reference/ois/latest//specification.md#_5-9-preprocessingspecifications)
+[operation field](/reference/ois/latest/specification.md#_5-2-operation) defined
+for this Airnode endpoint, a call to an API will not be made. The Airnode will
+instead execute a single specification defined in the
+[preProcessingSpecifications](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
 array.
 
 To implement the use case mentioned above, the
