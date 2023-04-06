@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 Use the
-[airnode-admin](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-admin)
+[airnode-admin](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-admin)
 Admin CLI tool to interact with Airnode across blockchains. There are commands
 for both developers (dApp) and API providers. Developers can sponsor
 [requester](/reference/airnode/latest/concepts/requester.md) contracts and
@@ -48,9 +48,9 @@ more information.
 - `https://sepolia.infura.io/v3/<KEY>`
 
 The CLI connects to the
-[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 or the
-[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
+[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
 contract, which addresses are derived from the current chain. You can optionally
 specify the contract addresses yourself by providing optional
 `airnode-rrp-address` or `requester-authorizer-with-airnode` command argument
@@ -195,7 +195,7 @@ relationships between
 [sponsorWallets](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet) as
 well as [templates](/reference/airnode/latest/concepts/template.md) used by a
 sponsor's requesters. Some of these commands connect to the
-[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract where the signer is sponsor account.
 
 - [sponsor-requester](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
@@ -728,7 +728,7 @@ This authorizer contract can whitelist
 is adminned by themselves.
 
 These commands connect to the
-[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.8/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
+[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
 contract.
 
 - [set-whitelist-expiration](/reference/airnode/latest/packages/admin-cli.md#set-whitelist-expiration)

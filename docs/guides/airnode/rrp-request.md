@@ -38,7 +38,7 @@ to acquire API provider data.
 ## 1. Inherit RrpRequesterV0.sol
 
 A requester inherits from the
-[RrpRequesterV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.9/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol)
+[RrpRequesterV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol)
 contract. This will expose the AirnodeRrpV0.sol protocol contract to the
 requester allowing it to make Airnode requests.
 

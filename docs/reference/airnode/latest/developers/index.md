@@ -27,7 +27,7 @@ option for developers to access Airnode data using its request-response protocol
 [AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract facilitates RRP and is designed to be flexible and is meant to
 serve a variety of use cases. See the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
+[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
 for potential design patterns.
 
 ## It starts with a requester

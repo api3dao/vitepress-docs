@@ -86,7 +86,7 @@ Below are links that further discuss request parameters if you additional help.
 ## 2. Upload the template
 
 Use the
-[create-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-admin#create-template)
+[create-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-admin#create-template)
 command in the @api3/airnode-admin package to move your template on-chain. The
 command`create-template`reads a file, uses its contents to create a template and
 returns a`templateId`. To create a new template record on-chain you will need

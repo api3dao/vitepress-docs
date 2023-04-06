@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-validator](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-validator)
+[airnode-validator](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-validator)
 is used internally by the [Docker Images](/reference/airnode/latest/docker/) to
 validate the
 [configuration files](/reference/airnode/latest/understand/configuring.md) you
