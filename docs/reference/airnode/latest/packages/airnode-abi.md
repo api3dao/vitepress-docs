@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-abi](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-abi)
+[airnode-abi<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-abi)
 package is a unique way to encode and decode parameters for use with Airnode.
 Parameters are provided with encoding types, names and values. The types are
 shortened and grouped with a version as the "header". The name/value pairs are
@@ -38,10 +38,10 @@ doc.
 ## Installation
 
 You can install
-[@api3/airnode-abi](https://www.npmjs.com/package/@api3/airnode-abi?activeTab=dependencies)
+[@api3/airnode-abi<ExternalLinkImage />](https://www.npmjs.com/package/@api3/airnode-abi?activeTab=dependencies)
 with either
-[npm](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions)
-or [Yarn](https://yarnpkg.com/en/docs/install)
+[npm<ExternalLinkImage />](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions)
+or [Yarn<ExternalLinkImage />](https://yarnpkg.com/en/docs/install)
 
 ```sh
 # npm

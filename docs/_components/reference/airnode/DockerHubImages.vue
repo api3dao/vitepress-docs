@@ -16,27 +16,24 @@ inside the Airnode doc set.
         <a
           :href="'https://hub.docker.com/r/api3/airnode-deployer/tags'"
           target="_docker-hub"
-          >AWS/GCP Deployer Images
+          >AWS/GCP Deployer Images<ExternalLinkImage />
         </a>
-        <ExternalLinkImage />
       </li>
 
       <li>
         <a
           :href="'https://hub.docker.com/r/api3/airnode-client/tags'"
           target="_docker-hub"
-          >Client Images
+          >Client Images<ExternalLinkImage />
         </a>
-        <ExternalLinkImage />
       </li>
 
       <li>
         <a
           :href="'https://hub.docker.com/r/api3/airnode-admin/tags'"
           target="_docker-hub"
-          >Admin CLI Images
+          >Admin CLI Images<ExternalLinkImage />
         </a>
-        <ExternalLinkImage />
       </li>
     </ul>
 

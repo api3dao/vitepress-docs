@@ -94,7 +94,7 @@ requests to prevent timeout issues. For high volatility use cases it is
 recommended to use multiple sponsors (and thus sponsor wallets) as the requests
 from different sponsor wallets are performed in parallel.
 
-::: tip Wallet and Protocols
+::: info Wallet and Protocols
 
 A sponsorWallet derived for a particular sponsor depends on the Airnode protocol
 (RRP, the forthcoming PSP protocol, etc.). This means that a sponsorWallet

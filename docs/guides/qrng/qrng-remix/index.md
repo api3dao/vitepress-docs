@@ -20,14 +20,14 @@ tags:
 This project is a simple and quick introduction to
 [API3's QRNG](/reference/qrng/) service. Simply follow the steps to see how a
 smart contract can access an on-chain quantum random number. You will use the
-browser-based [Remix IDE](https://remix.ethereum.org) and
-[MetaMask](https://metamask.io/). Some basic knowledge of these two tools is
-assumed.
+browser-based [Remix IDE<ExternalLinkImage/>](https://remix.ethereum.org) and
+[MetaMask<ExternalLinkImage/>](https://metamask.io/). Some basic knowledge of
+these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
 which provide quantum random numbers. This guide will use the
-[Nodary provider](https://nodary.io/), available only on testnets, which returns
-a pseudorandom number.
+[Nodary provider<ExternalLinkImage/>](https://nodary.io/), available only on
+testnets, which returns a pseudorandom number.
 
 To begin, you need to deploy and sponsor the
 [`RemixQrngExample`](/reference/qrng/qrng-example.html) with a matching
@@ -45,12 +45,12 @@ You can read more about how API3 QRNG Airnode uses the
 
 ## 1. Coding the `RemixQrngExample`
 
-Head on to [Remix online IDE](https://remix.ethereum.org) using a browser that
-you have added Metamask support to. Not all browsers support
-[MetaMask](https://metamask.io/download/). It should load up the
-`RemixQrngExample` contract.
+Head on to [Remix online IDE<ExternalLinkImage/>](https://remix.ethereum.org)
+using a browser that you have added Metamask support to. Not all browsers
+support [MetaMask<ExternalLinkImage/>](https://metamask.io/download/). It should
+load up the `RemixQrngExample` contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3dao/qrng-example/main/contracts/QrngExample.sol)
+[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3dao/qrng-example/main/contracts/QrngExample.sol)
 
 > ![Add Contract](/guides/qrng/qrng-remix/src/qrng-add-contract.png)
 
@@ -174,7 +174,8 @@ lacks adequate security features!
 
 :::
 
-This guide will use the [nodary provider](https://nodary.io/) which has the same
+This guide will use the
+[Nodary provider<ExternalLinkImage/>](https://nodary.io/) which has the same
 usage as the production quantum random number generator
 [providers](/reference/qrng/providers.html) but returns a pseudorandom number.
 

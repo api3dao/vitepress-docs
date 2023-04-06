@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-deployer](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer)
+[airnode-deployer<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer)
 package is used primarily by the
 [Docker Images](/reference/airnode/latest/docker/). This CLI tool provides the
 underlying commands used by the Docker images when deploying an Airnode. API
@@ -31,14 +31,14 @@ not the deployer CLI commands.
 ## Usage
 
 The deployer's commands can be run using
-[npx](https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx),
+[npx<ExternalLinkImage/>](https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx),
 installing a global npm package or by manually building the airnode-deployer
 package. Using npx is the simplest method to interact with the deployer manually
 if you do not wish to use the Docker images.
 
 - [Using npx](/reference/airnode/latest/packages/deployer.md#using-npx)
 - [Global Package](/reference/airnode/latest/packages/deployer.md#global-package)
-- [Build Manually](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer)
+- [Build Manually<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer)
 
 ### Using npx
 
@@ -131,9 +131,9 @@ cp config/secrets.env.example config/secrets.env
 
 When creating or updating an Airnode the `config.json` and `secrets.env` files
 are needed. You can use the provided example
-[config.json](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-deployer/config/config.example.json)
+[config.json<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-deployer/config/config.example.json)
 and
-[secrets.env](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-deployer/config/secrets.example.env)
+[secrets.env<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-deployer/config/secrets.example.env)
 templates to get started quickly, but you will need to edit these with your own
 API details and secrets.
 

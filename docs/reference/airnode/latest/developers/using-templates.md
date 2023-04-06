@@ -25,7 +25,7 @@ same parameters. In such instances, it is wasteful to pass all of these
 parameters repeatedly. Templates are used to hold a set of parameter values
 on-chain that can be used repeatedly when calling
 the`makeTemplateRequest()`function in
-[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol).
+[AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol).
 Unlike`makeFullRequest(), makeTemplateRequest()`requires that a requester
 pass`templateId`which identifies a template.
 

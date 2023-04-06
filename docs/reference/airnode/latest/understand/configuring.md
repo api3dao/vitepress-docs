@@ -130,11 +130,11 @@ Below is a simple chain array with a single chain provider.
 ],
 ```
 
-::: warning Idiosyncrasies
+::: info Idiosyncrasies
 
 See the dedicated
-[Chain Idiosyncrasies](/reference/airnode/latest/chain-idiosyncrasies.md) page
-for chain-specific configuration considerations.
+[<span style="color: rgb(16, 185, 129)">Chain Idiosyncrasies</span>](/reference/airnode/latest/chain-idiosyncrasies.md)
+page for chain-specific configuration considerations.
 
 :::
 

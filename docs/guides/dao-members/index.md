@@ -18,22 +18,24 @@ tags:
 
 # {{$frontmatter.title}}
 
-The [DAO Dashboard](https://dao.api3.org) is the portal to participate in the
-API3 DAO. It is aimed at API3 members and others that want to understand how to
-interact with the DAO or modify/reuse any of its infrastructure.
+The [DAO Dashboard<ExternalLinkImage/>](https://dao.api3.org) is the portal to
+participate in the API3 DAO. It is aimed at API3 members and others that want to
+understand how to interact with the DAO or modify/reuse any of its
+infrastructure.
 
 ![dao-dashboard](../assets/images/dao-dashboard.png)
 
 ## Preparing to use the Dashboard
 
 The guides for DAO Members to use the dashboard require a digital wallet such as
-[MetaMask](https://metamask.io/download/)<ExternalLinkImage/> to be integrated
+[MetaMask<ExternalLinkImage/>](https://metamask.io/download/) to be integrated
 with your browser.
 
-1. Access the [DAO Dashboard](https://dao.api3.org) on **Mainnet**.
+1. Access the [DAO Dashboard<ExternalLinkImage/>](https://dao.api3.org) on
+   **Mainnet**.
 
 2. Install a digital wallet (such as
-   [MetaMask](https://metamask.io/download/)<ExternalLinkImage/>) for your
+   [MetaMask<ExternalLinkImage/>](https://metamask.io/download/)) for your
    preferred browser.
 
 3. Connect your wallet by clicking the **Connect Wallet** button in the upper
