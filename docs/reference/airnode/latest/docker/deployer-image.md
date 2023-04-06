@@ -25,11 +25,12 @@ build the images yourself see the
 [README](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-deployer/docker)
 in the deployer package.
 
-::: tip Quick Deploy Demos
+::: info Quick Deploy Demos
 
 See the
-[Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/) guides
-to quickly deploy and remove a preconfigured Airnode using the deployer image.
+[<span style="color:rgb(16, 185, 129);">Deploying an Airnode on AWS</span>](/guides/airnode/deploy-airnode/deploy-aws/)
+guides to quickly deploy and remove a preconfigured Airnode using the deployer
+image.
 
 :::
 
