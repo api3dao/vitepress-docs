@@ -29,8 +29,9 @@ fields. On the other hand, if two fields contain the same expression (e.g.,
 because they are referencing each other.
 
 The file below is a basic template for OIS. Note, that it might look differently
-for your particular use case. You can also check out the OISes created for our
-[examples in Airnode repository](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations).
+for your particular use case. You can also check out the OISes created for the
+examples in the
+[Airnode repository](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations).
 
 ```json
 {
