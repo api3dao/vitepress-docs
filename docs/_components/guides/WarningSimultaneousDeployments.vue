@@ -13,7 +13,10 @@ WARNING: Do not place HTML comment lines inside paragraph elements.
       Avoid running multiple deployments simultaneously as doing so might result
       in a broken deployment. If this occurs, the standard removal approach may
       not succeed and
-      <a :href="removeLink">Manual Removal</a> may be required.
+      <a :href="removeLink"
+        ><span style="color: rgb(16, 185, 129)">Manual Removal</span></a
+      >
+      may be required.
     </p>
   </div>
 </template>

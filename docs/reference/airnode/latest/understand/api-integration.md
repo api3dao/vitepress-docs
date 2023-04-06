@@ -45,7 +45,7 @@ OIS borrows formatting from
 [OAS OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md).
 If you have experience with OAS, OIS will seem familiar.
 
-::: tip OAS
+::: info OAS
 
 It is not recommended to refer to OAS for help while creating your OIS object.
 OIS only borrows formatting practices from OAS. Everything needed to create an

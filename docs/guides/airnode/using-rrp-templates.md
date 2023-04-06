@@ -22,7 +22,7 @@ template. This is advantageous when a call to an Airnode will be made using the
 same parameters each time. See
 [Using Templates (RRP)](/reference/airnode/latest/developers/using-templates.md)
 and
-[Coingecko example](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)
+[Coingecko example<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-template)
 to learn more about the technical specifications of a template as used by a
 requester. As a prerequisite to this guide first try the guide
 [Making an RRP Request](/guides/airnode/rrp-request.md).
@@ -86,7 +86,7 @@ Below are links that further discuss request parameters if you additional help.
 ## 2. Upload the template
 
 Use the
-[create-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-admin#create-template)
+[create-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-admin#create-template)
 command in the @api3/airnode-admin package to move your template on-chain. The
 command`create-template`reads a file, uses its contents to create a template and
 returns a`templateId`. To create a new template record on-chain you will need

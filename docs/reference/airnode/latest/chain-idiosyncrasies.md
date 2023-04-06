@@ -25,11 +25,12 @@ be comprehensive and we are interested in hearing if you encounter others.
 
 ## config.json - `chains` field
 
-The idiosyncrasies below relate to the `chains` field of `config.json`. For the
-corresponding Airnode configuration guide section
-[see her](/reference/airnode/latest/understand/configuring.md#chains) and for
-the corresponding reference section
-[see here](/reference/airnode/latest/deployment-files/config-json.md#chains).
+The idiosyncrasies below relate to the `chains` field of `config.json` discussed
+in
+[Configuring Airnode](/reference/airnode/latest/understand/configuring.md#chains)
+and
+[Deployment Files](/reference/airnode/latest/deployment-files/config-json.md#chains)
+section.
 
 ### Avalanche
 

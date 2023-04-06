@@ -83,7 +83,7 @@ is available on mainnets and a few testnets.
 [**Nodary**<ExternalLinkImage/>](https://nodary.io/) is an independent group
 within the API3 ecosystem that builds high-impact oracle services. **Nodary**
 emulates QRNG using
-[pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
+[pseudorandom numbers<ExternalLinkImage/>](https://www.mathworks.com/help/stats/generating-random-data.html)
 on [testnets](/reference/qrng/chains.md#nodary).
 
 ### `airnode`
@@ -124,8 +124,8 @@ Australian-based
 [Quintessence Labs<ExternalLinkImage/>](https://www.quintessencelabs.com/) is a
 global leader in quantum cybersecurity, recognized for its advanced
 quantum-resilient data protection capabilities. Its trademarked
-[qStream](https://www.quintessencelabs.com/products#qrng) generator creates
-perfectly unpredictable true random numbers.
+[qStream<ExternalLinkImage/>](https://www.quintessencelabs.com/products#qrng)
+generator creates perfectly unpredictable true random numbers.
 
 <!-- Need css for mobile -->
 

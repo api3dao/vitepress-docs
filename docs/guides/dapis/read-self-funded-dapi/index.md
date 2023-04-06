@@ -65,7 +65,7 @@ contract DataFeedReaderExample is Ownable {
 
 For more information on how to read from a self-funded dAPI proxy, please refer
 to the
-[datafeed-reader-example](https://github.com/api3dao/data-feed-reader-example)
+[datafeed-reader-example<ExternalLinkImage/>](https://github.com/api3dao/data-feed-reader-example)
 repository which contains a hardhat project with a sample smart contract that
 reads from a self-funded dAPI proxy.
 

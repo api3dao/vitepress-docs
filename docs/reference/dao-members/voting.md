@@ -39,7 +39,7 @@ commands a larger treasury and can update all DAO settings, while the secondary
 commands a much smaller treasury and can update some of the DAO settings.
 
 See the
-[Api3Voting.sol](https://github.com/api3dao/api3-dao/blob/main/packages/api3-voting/contracts/Api3Voting.sol)<ExternalLinkImage/>
+[Api3Voting.sol<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/blob/main/packages/api3-voting/contracts/Api3Voting.sol)
 contract code and the Aragon contracts it inherits from.
 
 - BaseTemplate

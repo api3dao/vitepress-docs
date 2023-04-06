@@ -22,14 +22,15 @@ tags:
 Use the deployer image to deploy or remove an Airnode with a cloud provider such
 as AWS. The simplest way is to use the pre-built packages. If you would rather
 build the images yourself see the
-[README](https://github.com/api3dao/airnode/tree/v0.9/packages/airnode-deployer/docker)
+[README](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer/docker)
 in the deployer package.
 
-::: tip Quick Deploy Demos
+::: info Quick Deploy Demos
 
 See the
-[Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/) guides
-to quickly deploy and remove a preconfigured Airnode using the deployer image.
+[<span style="color:rgb(16, 185, 129);">Deploying an Airnode on AWS</span>](/guides/airnode/deploy-airnode/deploy-aws/)
+guides to quickly deploy and remove a preconfigured Airnode using the deployer
+image.
 
 :::
 
@@ -105,14 +106,14 @@ some deployment information and is used to remove the Airnode.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 deploy
+  api3/airnode-deployer:0.11.0 deploy
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 deploy
+  api3/airnode-deployer:0.11.0 deploy
 ```
 
 :::
@@ -144,7 +145,7 @@ Use the following example to avoid the automatic removal of the Airnode.
 docker run -it --rm \
 -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
 -v "$(pwd):/app/config" \
-api3/airnode-deployer:0.10.0 deploy --auto-remove false
+api3/airnode-deployer:0.11.0 deploy --auto-remove false
 ```
 
 ### `list`
@@ -161,14 +162,14 @@ and/or `gcp.json` (for GCP).
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 list
+  api3/airnode-deployer:0.11.0 list
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 list
+  api3/airnode-deployer:0.11.0 list
 ```
 
 :::
@@ -182,14 +183,14 @@ just the cloud providers you want the deployer to list from.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 list --cloud-providers aws
+  api3/airnode-deployer:0.11.0 list --cloud-providers aws
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 list --cloud-providers aws
+  api3/airnode-deployer:0.11.0 list --cloud-providers aws
 ```
 
 :::
@@ -210,14 +211,14 @@ run correctly: `aws.env` (for AWS) and/or `gcp.json` (for GCP).
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 info aws2c6ef2b3
+  api3/airnode-deployer:0.11.0 info aws2c6ef2b3
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 info aws2c6ef2b3
+  api3/airnode-deployer:0.11.0 info aws2c6ef2b3
 ```
 
 :::
@@ -241,14 +242,14 @@ version using its configuration. Check this with the
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 rollback aws2c6ef2b3 3580a278
+  api3/airnode-deployer:0.11.0 rollback aws2c6ef2b3 3580a278
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 rollback aws2c6ef2b3 3580a278
+  api3/airnode-deployer:0.11.0 rollback aws2c6ef2b3 3580a278
 ```
 
 :::
@@ -278,14 +279,14 @@ GCP).
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 fetch-files aws2c6ef2b3
+  api3/airnode-deployer:0.11.0 fetch-files aws2c6ef2b3
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 fetch-files aws2c6ef2b3
+  api3/airnode-deployer:0.11.0 fetch-files aws2c6ef2b3
 ```
 
 :::
@@ -308,14 +309,14 @@ the recommended way to remove a deployment, but an alternative is the
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 remove aws2c6ef2b3
+  api3/airnode-deployer:0.11.0 remove aws2c6ef2b3
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 remove aws2c6ef2b3
+  api3/airnode-deployer:0.11.0 remove aws2c6ef2b3
 ```
 
 :::
@@ -334,14 +335,14 @@ are needed for the command to run correctly: `aws.env` (for AWS) or `gcp.json`
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.10.0 remove-with-receipt
+  api3/airnode-deployer:0.11.0 remove-with-receipt
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.10.0 remove-with-receipt
+  api3/airnode-deployer:0.11.0 remove-with-receipt
 ```
 
 :::

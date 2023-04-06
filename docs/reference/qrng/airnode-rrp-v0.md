@@ -17,9 +17,9 @@ tags:
 # {{$frontmatter.title}}
 
 A requester (smart contract) uses the function `makeFullRequest()` from the
-[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 contract (by way of
-[RrpRequesterV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol))
+[RrpRequesterV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol))
 to request, then receive, a quantum random number. See
 [Understanding QRNG](/reference/qrng/).
 

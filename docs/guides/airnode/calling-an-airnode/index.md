@@ -44,7 +44,7 @@ Given below is an example of a basic
 request data from any Airnode. To follow along, you can open the following
 contract in Remix and try deploying your own Requester Contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -290,14 +290,15 @@ click on Transact.
 
 > ![Making the Request](src/s5.png)
 
-Head over to [Goerli Testnet Explorer](https://goerli.etherscan.io/) and check
-your `sponsorWallet` for any new transactions.
+Head over to
+[Goerli Testnet Explorer<ExternalLinkImage/>](https://goerli.etherscan.io/) and
+check your `sponsorWallet` for any new transactions.
 
 > ![Making the Request](src/s6.png)
 
 Here, you can see the latest `Fulfill` transaction.
 
-::: tip You might need to wait for a minute or two
+::: info You might need to wait for a minute or two
 
 The Airnode calls the fulfill() function in `AirnodeRrpV0.sol` that will in turn
 call back the requester contract at `fulfillAddress` using function

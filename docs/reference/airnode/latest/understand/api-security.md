@@ -86,7 +86,7 @@ fields:
 ```json
 "ois": [
   {
-    "oisFormat": "1.4.0",
+    "oisFormat": "2.0.0",
     "title": "Ois Title",
     "version": "1.0.0",
     "apiSpecifications": {
@@ -161,8 +161,9 @@ file.
 
 ::: info Authentication Tutorial
 
-The [authenticated-coinmarketcap](/guides/airnode/monorepo-examples.md) monorepo
-example demonstrates authentication.
+The
+[<span style="color: rgb(16, 185, 129)">authenticated-coinmarketcap</span>](/guides/airnode/monorepo-examples.md)
+monorepo example demonstrates authentication.
 
 :::
 
@@ -193,9 +194,10 @@ for overview of its usage.
 
 ::: info Relay Metadata Tutorial
 
-The [relay-security-schemes](/guides/airnode/monorepo-examples.md) monorepo
-example demonstrates how to relay request metadata like chain ID and sponsor
-address to the API endpoint.
+The
+[<span style="color: rgb(16, 185, 129)">relay-security-schemes</span>](/guides/airnode/monorepo-examples.md)
+monorepo example demonstrates how to relay request metadata like chain ID and
+sponsor address to the API endpoint.
 
 :::
 
@@ -286,7 +288,7 @@ unlike the Airnode authentication security scheme, no values are stored in
 ```json
 "ois": [
   {
-    "oisFormat": "1.4.0",
+    "oisFormat": "2.0.0",
     "title": "Ois Title",
     "version": "1.0.0",
     "apiSpecifications": {

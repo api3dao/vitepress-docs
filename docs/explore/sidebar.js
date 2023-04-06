@@ -53,7 +53,7 @@ module.exports = [
       },
     ],
   },
-  /*{
+  {
     text: 'Airnode',
     collapsed: false,
     items: [
@@ -111,5 +111,5 @@ module.exports = [
         link: '/explore/dao-members/dao-tracker',
       },
     ],
-  },*/
+  },
 ];

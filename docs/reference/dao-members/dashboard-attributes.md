@@ -21,16 +21,9 @@ the STAKING TARGET) can be changed by creating a proposal and calling the
 appropriate function on the DAO pool contract.
 
 The following parameters can be updated via DAO proposal by calling
-[StateUtils.sol](https://github.com/api3dao/api3-dao/tree/main/packages/pool/contracts)<ExternalLinkImage/>
+[StateUtils.sol<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/tree/main/packages/pool/contracts)
 functions within the [API3 Pool contract](/reference/dao-members/pool.md). For
 reference, percentage values are based on `10^18 = 100%`.
-
-::: danger TODO:
-
-The statement above (`10^18 = 100%`) does not match the values in the table
-below.
-
-:::
 
 | Parameter Name               | Initial Value    | Function Signature                                                       | Description                                                                                      |
 | ---------------------------- | ---------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |

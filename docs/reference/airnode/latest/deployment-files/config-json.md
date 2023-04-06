@@ -259,12 +259,12 @@ Defaults to zero and is relevant only for some chains (e.g.
 the specified order. Each strategy has its own unique set of associated fields
 that describes it.
 
-::: tip Note
+::: info Note
 
 It does not make sense to mix and match eip1559 and non-eip1559 strategies
 though it can be done. See
-[Gas Price Strategies](/reference/airnode/latest/concepts/gas-prices.md) in
-Concepts and Definitions for a better understanding of gas strategies.
+[<span style="color: rgb(16, 185, 129)">Gas Price Strategies</span>](/reference/airnode/latest/concepts/gas-prices.md)
+in Concepts and Definitions for a better understanding of gas strategies.
 
 :::
 

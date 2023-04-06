@@ -135,7 +135,7 @@ cases being realized for two key reasons:
    to APIs
 
 <!--
-::: tip Get started
+::: info Get started
 
 Get started as an API Provider [here](/guides/airnode/become-api-provider.md)
 
