@@ -204,10 +204,12 @@ Supported chains are listed under
 
 ### `providers`
 
-(required) - List of chain providers. Note that multiple can be used
-simultaneously. The Airnode deployment will expect to find the URLs of each of
-these chain providers in their respective `url` fields. It is generally
-recommended to provide `url` via interpolation from the `secrets.env` file.
+(required) - An object specifying one or more providers. Each provider object
+has an arbitrary name field and an object as a value. The value for the `url`
+field within this inner object specifies the url of the chain provider. It is
+generally recommended to provide the `url` value via interpolation from
+`secrets.env`. Also note that each provider name should be unique. For more see
+[Chain Providers](../concepts/chain-providers.md).
 
 ### `type`
 
