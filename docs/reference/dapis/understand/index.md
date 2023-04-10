@@ -26,7 +26,7 @@ such as the latest cryptocurrency, stock, and commodity prices. They can power
 various decentralized applications such as DeFi lending, synthetic assets,
 stable coins, derivatives, NFTs, and more.
 
-## Data feeds stored on-chain as beacons
+## Data feeds values stored on-chain
 
 API providers, owners of first-party Airnodes, store data feed values on-chain
 as individual beacons that in are turn sourced by the
