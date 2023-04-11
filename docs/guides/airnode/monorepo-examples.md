@@ -37,9 +37,6 @@ of the Airnode monorepo:
 - [coingecko-template<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations/coingecko-template) -
   demonstration of
   [template](/reference/airnode/latest/developers/using-templates.md) requests.
-- [coingecko-testable<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations/coingecko-testable) -
-  demonstration of how to test the endpoint using the
-  [HTTP gateway](/reference/airnode/latest/understand/http-gateways.md).
 - [failing-example<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations/failing-example) -
   demonstration of Airnode error handling through an invalid request.
 - [relay-security-schemes<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/integrations/relay-security-schemes) -
