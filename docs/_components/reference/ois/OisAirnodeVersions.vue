@@ -14,18 +14,18 @@
       <th>Airnode version</th>
       <th>Latest compatible OIS version</th>
       <tr>
-        <td>0.2.x through 0.7.x</td>
+        <td>0.11.x</td>
         <td>
-          <a href="https://github.com/api3dao/ois/tree/v1.0.0" target="_blank"
-            >1.0.0 <ExternalLinkImage
+          <a href="https://github.com/api3dao/ois/tree/v2.0.0" target="_blank"
+            >2.0.0 <ExternalLinkImage
           /></a>
         </td>
       </tr>
       <tr>
-        <td>0.8.x</td>
+        <td>0.10.x</td>
         <td>
-          <a href="https://github.com/api3dao/ois/tree/v1.1.2" target="_blank"
-            >1.1.2 <ExternalLinkImage
+          <a href="https://github.com/api3dao/ois/tree/v1.4.0" target="_blank"
+            >1.4.0 <ExternalLinkImage
           /></a>
         </td>
       </tr>
@@ -38,10 +38,18 @@
         </td>
       </tr>
       <tr>
-        <td>0.10.x</td>
+        <td>0.8.x</td>
         <td>
-          <a href="https://github.com/api3dao/ois/tree/v1.4.0" target="_blank"
-            >1.4.0 <ExternalLinkImage
+          <a href="https://github.com/api3dao/ois/tree/v1.1.2" target="_blank"
+            >1.1.2 <ExternalLinkImage
+          /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>0.2.x through 0.7.x</td>
+        <td>
+          <a href="https://github.com/api3dao/ois/tree/v1.0.0" target="_blank"
+            >1.0.0 <ExternalLinkImage
           /></a>
         </td>
       </tr>

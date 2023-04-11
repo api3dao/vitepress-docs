@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="https://docs.api3.org" target="_blank"
+    <a href="https://old-docs.api3.org" target="_blank"
       ><button
         style="
           margin-top: 20px;

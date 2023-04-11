@@ -55,8 +55,9 @@ change.
 
 You can import `AirnodeRrpV0` addresses from the `@api3/airnode-protocol`
 package, see the
-[QRNG example project](https://github.com/api3dao/qrng-example). The
-[@api3/airnode-protocol](https://www.npmjs.com/package/@api3/airnode-protocol)
+[QRNG example project<ExternalLinkImage/>](https://github.com/api3dao/qrng-example).
+The
+[@api3/airnode-protocol<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
 [**Nodary**](/reference/qrng/chains.md#nodary) imitates QRNG using pseudorandom

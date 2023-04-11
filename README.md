@@ -18,10 +18,15 @@ The technical documentation has moved from
 Firebase is used to host the `vitepress-docs` technical documentation.
 
 - production:
-  - https://docs.api3.org
-  - https://vitepress-docs.web.app
+  - https://docs.api3.org (vitepress-docs) https://vitepress-docs.web.app
+  - http://old-docs.api3.org (api3-docs) https://api3dao.github.io/api3-docs
+  -
 - staging:
+
   - https://vitepress-docs--stage-1sggkn03.web.app/
+
+- Production legacy docs
+  - http://old-docs.api3.org (api3-docs) https://api3dao.github.io/api3-docs
 
 Additionally each PR has its own Firebase preview site. The URL will be
 available in the PR's comments

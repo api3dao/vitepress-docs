@@ -46,7 +46,7 @@ Signifies what Solidity type the API response will be encoded to before
 fulfillment.
 
 Support is provided for most common
-[solidity types<ExternalLinkImage/>](https://docs.soliditylang.org/en/latest/abi-spec.html#types),
+[Solidity types<ExternalLinkImage/>](https://docs.soliditylang.org/en/latest/abi-spec.html#types),
 but the following are not supported.
 
 - Custom bits integer types - e.g. `uint32` or `uint8`
@@ -97,14 +97,12 @@ The `string32` is an artificial type that is not supported by solidity. It is
 instead encoded to `bytes32` and provides a cheaper alternative to the regular
 `string` type for values with less than 32 characters.
 
-:::warning Limitations
+::: warning Limitations
 
 While using `string32` is more efficient, decoding the original string from
-`bytes32` on chain is both difficult and expensive.
-
-Also bear in mind that this type is able to encode only strings shorter than 32
-characters. If the value is longer, it will be trimmed and only first 31
-characters will be encoded.
+`bytes32` on chain is both difficult and expensive. Also bear in mind that this
+type is able to encode only strings shorter than 32 characters. If the value is
+longer, it will be trimmed and only first 31 characters will be encoded.
 
 :::
 
@@ -135,8 +133,7 @@ For example
 - `string32[]` - is an array of `string32` values, which will be encoded to
   `bytes32[]` on chain
 - `string[2][][3]` - 3 dimensional string array, where first dimension contains
-  3 elements, second unboundedly many and last dimension only 2. Notice, that
-  this
+  3 elements, second unboundedly many and last dimension only 2. Note that this
   [definition is read backwards<ExternalLinkImage/>](https://ethereum.stackexchange.com/questions/64331/why-is-multidimensional-array-declaration-order-reversed)
   compared to C-style languages
 
@@ -167,7 +164,7 @@ provided or is an empty string (needed for
 [encoding multiple values](/reference/ois/latest/reserved-parameters.md#encoding-multiple-values)),
 Airnode will use the API response itself to fulfill the request.
 
-:::warning Beware the separator
+::: warning Beware the separator
 
 Make sure the keys in the path of the API response do not contain `.`, because
 it will be incorrectly considered as a separator.
@@ -178,8 +175,8 @@ it will be incorrectly considered as a separator.
 }
 ```
 
-The `_path` defined as `"strange.key"` will not work. As workaround you can
-[escape the separator](/reference/ois/latest/reserved-parameters.md#escaping-separators).
+A `_path` defined as `"strange.key"` will not work. As workaround you can
+[<span style="color:rgb(16, 185, 129);">escape the separator</span>](/reference/ois/latest/reserved-parameters.md#escaping-separators).
 
 :::
 
@@ -372,10 +369,11 @@ sent on chain. You can use
 [testing gateway](/reference/airnode/latest/understand/deploying.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.
 
-::: tip Multiple Reserved Parameters Tutorial
+::: info Multiple Reserved Parameters Tutorial
 
-The [weather-multi-value](/guides/airnode/monorepo-examples.md) monorepo example
-demonstrates encoding of multiple values of different types.
+The
+[<span style="color:rgb(16, 185, 129);">weather-multi-value</span>](/guides/airnode/monorepo-examples.md)
+monorepo example demonstrates encoding of multiple values of different types.
 
 :::
 

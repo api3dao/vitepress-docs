@@ -48,7 +48,7 @@ AirnodeRrpV0 protocol is designed to be flexible and is meant to serve a variety
 of use cases. See the the
 [Calling Airnode (RRP)](/reference/airnode/latest/developers/index.md) for more
 details on how an RRP request is made. Also see the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.8/packages/airnode-examples/contracts)
+[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
 for potential design patterns.
 
 <!--Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")

@@ -46,7 +46,7 @@ already been funded and any dApp owner can proceed to use the dAPI.
 
   <img src="../assets/images/Sponsoring_a_feed_overview.png" style="width:500px">
 
-<!--::: tip Developer info
+<!--::: info Developer info
 
 dAPI implmentation to your solidity contract is simple, learn more [within this
 starter kit](link to API3 DAO starter kit).
