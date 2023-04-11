@@ -4,9 +4,11 @@
     "fullName": "Arbitrum Goerli Testnet",
     "id": "421613",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
     },
     "nativeToken": "ETH",
@@ -33,10 +35,13 @@
     "fullName": "Arbitrum One",
     "id": "42161",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xC3E76D8829259f2A34541746de2F8A0509Dc1987",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0x944609FF0729435F87Ef429EC155d7539A83B9C8"
     },
     "nativeToken": "ETH",
     "blockTime": null,
@@ -49,10 +54,13 @@
     "fullName": "Avalanche C-Chain",
     "id": "43114",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x291a11cbbC441201562A6418Fd11bBeb0675b4e4",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
     },
     "nativeToken": "AVAX",
     "blockTime": 19.8,
@@ -65,10 +73,13 @@
     "fullName": "Avalanche Fuji Testnet",
     "id": "43113",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0x7f5AF7a37a33898544717AAa6c35c111dCe95b28",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xdC91ea613247C0C9438A6F64Cc0E08291198981a",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0x4923968942E8aae4656ae4913874EB7312e0F7c7"
     },
     "nativeToken": "AVAX",
     "blockTime": 19.8,
@@ -81,10 +92,13 @@
     "fullName": "BNB Chain",
     "id": "56",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x8B0A67D060C86919Ae76Ca3FA69c68Ff98E85c3c",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "BNB",
     "blockTime": 3.01,
@@ -97,10 +111,13 @@
     "fullName": "BNB Chain Testnet",
     "id": "97",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "BNB",
     "blockTime": null,
@@ -113,10 +130,13 @@
     "fullName": "Ethereum Goerli Testnet",
     "id": "5",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x368A8C0a75fD707e4f7bF15DD1aA25ED554fE22c",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "ETH",
     "blockTime": null,
@@ -129,10 +149,13 @@
     "fullName": "Ethereum Mainnet",
     "id": "1",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xFb10b1b0f68b3EaAcA1eCD12a47Cf7F55BeabB98",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "ETH",
     "blockTime": null,
@@ -145,10 +168,13 @@
     "fullName": "Ethereum Sepolia Testnet",
     "id": "11155111",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0x55D72F0eb10e85D390B20DA57aa3122312647c0d"
     },
     "nativeToken": "ETH",
     "blockTime": null,
@@ -161,10 +187,13 @@
     "fullName": "Fantom",
     "id": "250",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x7E1B9dC5f85c6EB7bBdF053352E784F3da7a6507",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "FTM",
     "blockTime": null,
@@ -177,10 +206,13 @@
     "fullName": "Fantom Testnet",
     "id": "4002",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCCc843194F02Ef93b8ee9A9F7b5F9273604Acd12",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "FTM",
     "blockTime": null,
@@ -193,10 +225,13 @@
     "fullName": "Gnosis Chain",
     "id": "100",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "XDAI",
     "blockTime": null,
@@ -209,7 +244,9 @@
     "fullName": "Gnosis Testnet",
     "id": "10200",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
     },
     "nativeToken": "XDAI",
@@ -223,10 +260,13 @@
     "fullName": "Metis",
     "id": "1088",
     "contracts": {
+      "AccessControlRegistry": "0x824cb5cE2894cBA4eDdd005c5029eD17F5FEcf99",
       "AirnodeRrpV0": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
       "Api3ServerV1": "0x784b1ce3fa1e60Bc1cf924711f0D5AA484C9b37e",
       "DapiServer": "0x50f8f227DEbA0028607a37B615A4EbBbF0E5b42E",
-      "ProxyFactory": "0xd9b82260eaaa2CDe8150474C94C130ca681bB127"
+      "OwnableCallForwarder": "0x2D6D050Fc44d4db1c8577f4cF87905811fA126b2",
+      "ProxyFactory": "0xd9b82260eaaa2CDe8150474C94C130ca681bB127",
+      "RequesterAuthorizerWithAirnode": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
     },
     "nativeToken": "METIS",
     "blockTime": null,
@@ -239,7 +279,9 @@
     "fullName": "Metis Testnet",
     "id": "599",
     "contracts": {
+      "AccessControlRegistry": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d",
       "Api3ServerV1": "0xDDe9CE3736939d59A70c446c8A4AB6714CB4a41a",
+      "OwnableCallForwarder": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
       "ProxyFactory": "0x3d0Ca9e5490E36627beA9a8cb3cefa12D7cDc0af"
     },
     "nativeToken": "METIS",
@@ -253,10 +295,13 @@
     "fullName": "Milkomeda C1",
     "id": "2001",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xC3E76D8829259f2A34541746de2F8A0509Dc1987",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "MADA",
     "blockTime": 4,
@@ -269,10 +314,13 @@
     "fullName": "Milkomeda C1 Testnet",
     "id": "200101",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "MADA",
     "blockTime": 4,
@@ -285,10 +333,13 @@
     "fullName": "Moonbase Alpha Testnet",
     "id": "1287",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "DEV",
     "blockTime": null,
@@ -301,10 +352,13 @@
     "fullName": "Moonbeam",
     "id": "1284",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "GLMR",
     "blockTime": null,
@@ -317,10 +371,13 @@
     "fullName": "Moonriver",
     "id": "1285",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xdC91ea613247C0C9438A6F64Cc0E08291198981a",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "MOVR",
     "blockTime": null,
@@ -333,10 +390,13 @@
     "fullName": "Optimism",
     "id": "10",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xB33B89de8b18350A2AD05DadF1959fC1C9321008",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "ETH",
     "blockTime": null,
@@ -349,9 +409,11 @@
     "fullName": "Optimism Goerli Testnet",
     "id": "420",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
     },
     "nativeToken": "ETH",
@@ -365,10 +427,13 @@
     "fullName": "Polygon",
     "id": "137",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xd7CA5BD7a45985D271F216Cb1CAD82348464f6d5",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "MATIC",
     "blockTime": 2.3,
@@ -381,10 +446,13 @@
     "fullName": "Polygon Mumbai Testnet",
     "id": "80001",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0x71Da7A936fCaEd1Ee364Df106B12deF6D1Bf1f14",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "MATIC",
     "blockTime": 2.3,
@@ -397,7 +465,9 @@
     "fullName": "Polygon zkEVM",
     "id": "1101",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
     },
     "nativeToken": "ETH",
@@ -411,7 +481,9 @@
     "fullName": "Polygon zkEVM Testnet",
     "id": "1442",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
     },
     "nativeToken": "ETH",
@@ -425,10 +497,13 @@
     "fullName": "RSK",
     "id": "30",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "RBTC",
     "blockTime": 30,
@@ -441,15 +516,34 @@
     "fullName": "RSK Testnet",
     "id": "31",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
+      "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "TRBTC",
     "blockTime": null,
     "logoPath": "https://main.api3-market.pages.dev/images/chains/RSK_icon.webp",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.rsk.co"
+  },
+  "zksync-goerli-testnet": {
+    "name": "zksync-goerli-testnet",
+    "fullName": "zkSync Era Testnet",
+    "id": "280",
+    "contracts": {
+      "AccessControlRegistry": "0xFAF0129B9C1fA35C8a9B1e664Dd6247aE624C002",
+      "Api3ServerV1": "0x9104356BB320Ab72FffbDCfe979577fc78377821",
+      "OwnableCallForwarder": "0xD6A26d7612c2781b380e13Cf542d846F9A360BD7",
+      "ProxyFactory": "0xb9ed9a0Ecfcc544D8eB82BeeBE79B03e13012d7c"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://main.api3-market.pages.dev/images/chains/zksync.webp",
+    "testnet": true,
+    "explorerUrl": "https://zksync2-testnet.zkscan.io/"
   }
 }
