@@ -209,7 +209,7 @@ has an arbitrary name field and an object as a value. The value for the `url`
 field within this inner object specifies the url of the chain provider. It is
 generally recommended to provide the `url` value via interpolation from
 `secrets.env`. Also note that each provider name should be unique. For more see
-[Chain Providers](../concepts/chain-providers.md).
+[Chain Providers](/reference/airnode/latest/concepts/chain-providers.md).
 
 ### `type`
 

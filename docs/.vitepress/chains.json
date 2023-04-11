@@ -14,6 +14,7 @@
   "100": { "fullname": "Gnosis Chain", "type": "mainnet" },
   "137": { "fullname": "Polygon", "type": "mainnet" },
   "250": { "fullname": "Fantom Opera", "type": "mainnet" },
+  "280": { "fullname": "zkSync Era Testnet", "type": "testnet" },
   "288": { "fullname": "Boba Ethereum", "type": "mainnet" },
   "416": { "fullname": "SX Network", "type": "mainnet" },
   "588": { "fullname": "Metis Stardust testnet", "type": "testnet" },

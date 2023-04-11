@@ -24,10 +24,17 @@ They will not render as HTML but rather text. No idea why!
     </div>
     <!-- Contracts -->
     <div class="api3-bc-chains-contract-address">
+      <div>
       Api3ServerV1.sol: <span>{{ chain.contracts['Api3ServerV1'] }}</span
-      ><CopyIcon :text="chain.contracts['Api3ServerV1']" /> <br />
+      ><CopyIcon :text="chain.contracts['Api3ServerV1']" /> 
+      </div>
+      <div v-if="chain.contracts['AirnodeRrpV0']">
       AirnodeRrpV0.sol: <span>{{ chain.contracts['AirnodeRrpV0'] }}</span
       ><CopyIcon :text="chain.contracts['AirnodeRrpV0']" />
+      </div>
+      <div>
+      ProxyFactory.sol: <span>{{ chain.contracts['ProxyFactory'] }}</span
+      ><CopyIcon :text="chain.contracts['ProxyFactory']" /></div>
     </div>
 </div>
 
