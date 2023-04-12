@@ -4,7 +4,7 @@ sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Docker Images
 path: /reference/airnode/next/docker/deployer-image.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---

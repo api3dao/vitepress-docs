@@ -4,7 +4,7 @@ sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Specifications
 path: /reference/airnode/next/specifications/ois.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
