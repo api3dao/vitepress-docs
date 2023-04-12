@@ -2,7 +2,7 @@
 title: Using Authorizations (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
 path: /reference/airnode/next/understand/using-authorizations.html
 version: v0.11
 outline: deep

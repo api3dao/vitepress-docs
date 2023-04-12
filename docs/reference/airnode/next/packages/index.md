@@ -2,7 +2,7 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Packages
+pageHeader: Reference → Airnode → v0.12 → Packages
 path: /reference/airnode/next/packages/index.html
 version: v0.11
 outline: deep

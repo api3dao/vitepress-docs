@@ -2,7 +2,7 @@
 title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Packages
+pageHeader: Reference → Airnode → v0.12 → Packages
 path: /reference/airnode/next/packages/airnode-abi.html
 version: v0.11
 outline: deep

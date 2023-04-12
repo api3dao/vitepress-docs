@@ -2,7 +2,7 @@
 title: Authorizations
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
 path: /reference/airnode/next/concepts/authorizations.html
 version: v0.11
 outline: deep

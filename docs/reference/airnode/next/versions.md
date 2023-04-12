@@ -2,7 +2,7 @@
 title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11
+pageHeader: Reference → Airnode → v0.12
 path: /reference/airnode/next/versions.html
 version: v0.11
 outline: deep

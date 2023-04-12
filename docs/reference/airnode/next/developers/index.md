@@ -2,7 +2,7 @@
 title: Airnode RRP
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
+pageHeader: Reference → Airnode → v0.12 → Airnode for dApp Developers
 path: /reference/airnode/next/developers/index.html
 version: v0.11
 outline: deep
