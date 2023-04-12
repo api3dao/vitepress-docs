@@ -3,7 +3,7 @@ title: Requesters and Sponsors
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
-path: /reference/airnode/latest/developers/requesters-sponsors.html
+path: /reference/airnode/next/developers/requesters-sponsors.html
 version: v0.11
 outline: deep
 tags:
@@ -26,19 +26,19 @@ requester and deriving a sponsor wallet using the admin CLI commands.
 
 ## What is a Requester?
 
-The term [requester](/reference/airnode/latest/concepts/requester.md) is
-important to remember. When requester is mentioned, the reference is to your
-smart contract that makes a request of an Airnode.
+The term [requester](/reference/airnode/next/concepts/requester.md) is important
+to remember. When requester is mentioned, the reference is to your smart
+contract that makes a request of an Airnode.
 
 > <img src="../assets/images/requesters-sponsors-1.png" width="350px"/>
 
 As an example see the `myContract.sol` contract in the diagram within the
-[Overview](/reference/airnode/latest/concepts/) doc, it is a requester.
+[Overview](/reference/airnode/next/concepts/) doc, it is a requester.
 
 ## What is a Sponsor?
 
 Equally important is the term
-[sponsor](/reference/airnode/latest/concepts/sponsor.md). A sponsor is an entity
+[sponsor](/reference/airnode/next/concepts/sponsor.md). A sponsor is an entity
 such as yourself, an organization, etc. Sponsors create relationships between
 requesters and Airnodes.
 
@@ -46,9 +46,9 @@ requesters and Airnodes.
 
 As a sponsor you will use the public address from an account within a mnemonic
 you own to "**sponsor a requester**" and then use the public address (known as a
-[sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress))
-to "**derive a
-[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)**"
+[sponsorAddress](/reference/airnode/next/concepts/sponsor.md#sponsoraddress)) to
+"**derive a
+[sponsorWallet](/reference/airnode/next/concepts/sponsor.md#sponsorwallet)**"
 for an Airnode. This action creates a relationship between a sponsor's requester
 and a particular Airnode. You do this because a sponsor is the entity that pays
 for the fulfillment of a request, the gas costs the Airnode will incur. These
@@ -57,7 +57,7 @@ requester calls it.
 
 ::: info sponsorAddress
 
-A [sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress)
+A [sponsorAddress](/reference/airnode/next/concepts/sponsor.md#sponsoraddress)
 is a public address of an account from a mnemonic, usually the default account.
 Rather than the default account another account from the mnemonic can be used.
 The `sponsorAddress` is used to uniquely identify a sponsor.
@@ -120,22 +120,22 @@ request. Therefore the sponsor pays for the fulfillment of the request.
 Sponsors need to keep their sponsorWallets topped off if they want Airnodes to
 fulfill requests made by their requesters. However this does not cover the cost
 of API data that the Airnode serves, see
-[API Provider Fees](/reference/airnode/latest/developers/fees.md#api-provider-fees).
+[API Provider Fees](/reference/airnode/next/developers/fees.md#api-provider-fees).
 
 ## Admin CLI Commands
 
 There are several sponsor and requester related commands in the
-[Admin CLI Commands](/reference/airnode/latest/packages/admin-cli.md) package.
-You can also see a list of available commands using
+[Admin CLI Commands](/reference/airnode/next/packages/admin-cli.md) package. You
+can also see a list of available commands using
 `npx @api3/airnode-admin --help`.
 
 In the next two sections of this doc you will use two commands from the
 `@api3/airnode-admin` package to _sponsor a requester_ and to _derive a sponsor
 wallet_.
 
-1. [sponsor-requester](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
+1. [sponsor-requester](/reference/airnode/next/packages/admin-cli.md#sponsor-requester)
    sponsors a requester.
-2. [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)creates
+2. [derive-sponsor-wallet-address](/reference/airnode/next/packages/admin-cli.md#derive-sponsor-wallet-address)creates
    a sponsor wallet associated with an Airnode.
 
 ## How to Sponsor a Requester
@@ -154,7 +154,7 @@ on-chain. This command has transaction gas costs.
   alternate account to use from the mnemonic rather than the default account.
 
 Executing the command
-[sponsor-requester](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
+[sponsor-requester](/reference/airnode/next/packages/admin-cli.md#sponsor-requester)
 will sponsor a requester and returns the requesterAddress and sponsorAddress.
 
 ::: code-group
@@ -186,10 +186,10 @@ sponsorWallet is created it must be funded using the public address
 (`sponsorWalletAddress`) returned by the command
 `derive-sponsor-wallet-address`. Each Airnode keeps a separate list of
 individual sponsorWallets that can access the Airnode. Learn more about a
-[sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
+[sponsorWallet](/reference/airnode/next/concepts/sponsor.md#sponsorwallet).
 
 To derive a sponsorWallet for an Airnode execute the
-[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
+[derive-sponsor-wallet-address](/reference/airnode/next/packages/admin-cli.md#derive-sponsor-wallet-address)
 command using the parameters detailed in the list below. There are no
 transaction gas costs to do so.
 
@@ -228,7 +228,7 @@ npx @api3/airnode-admin derive-sponsor-wallet-address ^
 Sponsors need to keep their sponsorWallets topped off if they want Airnodes to
 fulfill requests made by their requesters. However this does not cover the cost
 of API data that the Airnode serves, see
-[API Provider Fees](/reference/airnode/latest/developers/fees.md#api-provider-fees).
+[API Provider Fees](/reference/airnode/next/developers/fees.md#api-provider-fees).
 
 If you forget the public address (`sponsorWalletAddress`) of the sponsorWallet
 simply run `derive-sponsor-wallet-address` again. Since the wallet already

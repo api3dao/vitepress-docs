@@ -3,7 +3,7 @@ title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Deployment Files → Templates
-path: /reference/airnode/latest/deployment-files/templates/config-json.html
+path: /reference/airnode/next/deployment-files/templates/config-json.html
 version: v0.11
 outline: deep
 tags:
@@ -44,7 +44,7 @@ Consider the following relationships.
   <code style="overflow-wrap: break-word;">ois[0].endpoints[0].parameters[0].operationParameter.in</code>
 
 See
-[config.json](/reference/airnode/latest/deployment-files/templates/config-json.md)
+[config.json](/reference/airnode/next/deployment-files/templates/config-json.md)
 as a reference while building a config.json file.
 
 ```json

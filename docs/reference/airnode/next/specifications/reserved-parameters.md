@@ -3,7 +3,7 @@ title: Reserved Parameters
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Specifications
-path: /reference/airnode/latest/specifications/reserved-parameters.html
+path: /reference/airnode/next/specifications/reserved-parameters.html
 version: v0.11
 outline: deep
 tags:

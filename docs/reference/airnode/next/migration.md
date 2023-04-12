@@ -3,7 +3,7 @@ title: Migration Guide
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11
-path: /reference/airnode/latest/migration.html
+path: /reference/airnode/next/migration.html
 version: v0.11
 outline: deep
 tags:
@@ -107,7 +107,7 @@ Adds two new authorizers, `requesterAuthorizersWithErc721` and
 `crossChainRequesterAuthorizersWithErc721`, that enable request authorization
 using ERC721 tokens. These new fields are required, but their values may be
 empty arrays if this feature is not required. For further details, see the
-[Authorizers](/reference/airnode/latest/concepts/authorizers.md#how-are-authorizers-implemented)
+[Authorizers](/reference/airnode/next/concepts/authorizers.md#how-are-authorizers-implemented)
 page.
 
 ```diff
@@ -141,8 +141,8 @@ page.
 }
 ```
 
-Read the [OEV gateway](/reference/airnode/latest/understand/oev-gateway.md) doc
-to learn more about this feature.
+Read the [OEV gateway](/reference/airnode/next/understand/oev-gateway.md) doc to
+learn more about this feature.
 
 ## New features
 
@@ -151,8 +151,8 @@ to learn more about this feature.
   `airnode-examples` integrations have been combined into a single
   `coingecko-http-gateways` integration.
 - There's a new gateway available called the OEV gateway. Read the
-  [OEV gateway](/reference/airnode/latest/understand/oev-gateway.md) doc to
-  learn more about this feature.
+  [OEV gateway](/reference/airnode/next/understand/oev-gateway.md) doc to learn
+  more about this feature.
 - The heartbeat payload now includes `deployment_id`.
 
 <FlexEndTag/>

@@ -3,7 +3,7 @@ title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Packages
-path: /reference/airnode/latest/packages/index.html
+path: /reference/airnode/next/packages/index.html
 version: v0.11
 outline: deep
 tags:
@@ -27,10 +27,10 @@ has several packages. Some of these packages are used by dApp developers and API
 providers to interact with or to build Airnode. A few are simply used for
 internal Airnode development.
 
-- [airnode-adapter](/reference/airnode/latest/packages/adapter.md)
-- [airnode-admin](/reference/airnode/latest/packages/admin-cli.md)
-- [airnode-abi](/reference/airnode/latest/packages/airnode-abi.md)
-- [airnode-deployer](/reference/airnode/latest/packages/deployer.md)
+- [airnode-adapter](/reference/airnode/next/packages/adapter.md)
+- [airnode-admin](/reference/airnode/next/packages/admin-cli.md)
+- [airnode-abi](/reference/airnode/next/packages/airnode-abi.md)
+- [airnode-deployer](/reference/airnode/next/packages/deployer.md)
 
 ---
 
@@ -52,7 +52,7 @@ systems for development. If you are using Windows, consider
 
 - [airnode-abi<ExternalLinkImage />:](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-abi)
   Encoding and decoding utilities for Airnode according to the
-  [Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md).
+  [Airnode ABI specifications](/reference/airnode/next/specifications/airnode-abi.md).
 
 - [airnode-deployer<ExternalLinkImage />:](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer)
   Tools to automate Airnode deployment.

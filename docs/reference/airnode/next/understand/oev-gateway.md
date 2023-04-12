@@ -3,7 +3,7 @@ title: OEV Gateway (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
-path: /reference/airnode/latest/understand/oev-gateway.html
+path: /reference/airnode/next/understand/oev-gateway.html
 version: v0.11
 outline: deep
 tags:
@@ -67,7 +67,7 @@ endpoints are not openly accessible. Therefore, the gateway URL should be kept
 secret.
 
 The gateway URL is also available as part of the payload sent from Airnode's
-[heartbeat](/reference/airnode/latest/understand/heartbeat.md) to your specified
+[heartbeat](/reference/airnode/next/understand/heartbeat.md) to your specified
 heartbeat URL.
 
 ### When deployed on a cloud provider
@@ -75,7 +75,7 @@ heartbeat URL.
 A gateway URL is generated when Airnode is deployed. You can see the URLs
 including the secret `UUID` path parameter, displayed on your terminal at the
 end of an Airnode deployment using a
-[Docker image](/reference/airnode/latest/docker/).
+[Docker image](/reference/airnode/next/docker/).
 
 ### When using Airnode client
 
@@ -84,8 +84,8 @@ is a common web server for the gateway, which is exposed on the host machine.
 Doing so will make the gateway API accessible like a regular web server running
 on the machine. Note the `PORT` which is exposed as part of the Airnode client
 container. See the
-[Airnode client usage](/reference/airnode/latest/docker/client-image.md#usage)
-for more details.
+[Airnode client usage](/reference/airnode/next/docker/client-image.md#usage) for
+more details.
 
 - `http://localhost:<PORT>/sign-oev/01234567-abcd-abcd-abcd-012345678abc` -
   Gateway URL for the OEV Gateway

@@ -3,7 +3,7 @@ title: Airnode Authentication
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/airnode-auth.html
+path: /reference/airnode/next/concepts/airnode-auth.html
 version: v0.11
 outline: deep
 tags:

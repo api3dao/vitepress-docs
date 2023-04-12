@@ -3,7 +3,7 @@ title: Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/airnode.html
+path: /reference/airnode/next/concepts/airnode.html
 version: v0.11
 outline: deep
 tags:
@@ -24,7 +24,7 @@ Airnode is a serverless oracle node implemented with a "set and forget"
 in that it can move API provider data on-chain for multiple purposes. The most
 important of which are data feeds ([dAPIs](/reference/dapis/understand/)) and
 also in response to dApp direct requests for API provider data
-([RRP](/reference/airnode/latest/developers/)).
+([RRP](/reference/airnode/next/developers/)).
 
 ## Airnode sources data to dAPIs
 
@@ -41,12 +41,12 @@ operations. This mechanism updates beacons on-chain as needed.
 ## Airnode processes RRP requests
 
 An Airnode is capable of serving the data from one or more APIs directly to
-[requesters](/reference/airnode/latest/concepts/requester.md) (which are
-on-chain smart contracts) that request data served by a particular Airnode. This
-is done using the request-response protocol (RRP) mechanism of Airnode. The
-AirnodeRrpV0 protocol is designed to be flexible and is meant to serve a variety
-of use cases. See the the
-[Calling Airnode (RRP)](/reference/airnode/latest/developers/index.md) for more
+[requesters](/reference/airnode/next/concepts/requester.md) (which are on-chain
+smart contracts) that request data served by a particular Airnode. This is done
+using the request-response protocol (RRP) mechanism of Airnode. The AirnodeRrpV0
+protocol is designed to be flexible and is meant to serve a variety of use
+cases. See the the
+[Calling Airnode (RRP)](/reference/airnode/next/developers/index.md) for more
 details on how an RRP request is made. Also see the Airnode
 [requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
 for potential design patterns.
@@ -77,7 +77,7 @@ primarily focuses on two tasks, indicated by points A & B in the diagram below.
 
 Each and every Airnode has a unique mnemonic identifying its wallet. This
 mnemonic is kept secret and Airnode is publicly identified using the default
-[address](/reference/airnode/latest/concepts/airnode.md#airnodeaddress) derived
+[address](/reference/airnode/next/concepts/airnode.md#airnodeaddress) derived
 from the mnemonic.
 
 ## airnodeAddress
@@ -86,11 +86,11 @@ An Airnode is identified by the default address of a BIP 44 wallet (with the
 path `m/44'/60'/0'/0/0`) which is referred to as the `airnodeAddress`. This
 address is same for all chains on which Airnode operates. The wallet mnemonic is
 specified in the
-[secrets.env](/reference/airnode/latest/deployment-files/secrets-env.md) file
-when deploying the Airnode.
+[secrets.env](/reference/airnode/next/deployment-files/secrets-env.md) file when
+deploying the Airnode.
 
 Use the admin CLI command
-[derive-airnode-address](/reference/airnode/latest/packages/admin-cli.md#derive-airnode-address)
+[derive-airnode-address](/reference/airnode/next/packages/admin-cli.md#derive-airnode-address)
 to derive the `airnodeAddress` from the mnemonic for informational purposes.
 
 ```bash
@@ -105,12 +105,12 @@ Airnode address: 0xaBd9...
 
 The Airnode owner announces the _extended public key_ (`xpub` of the hardened
 derivation path `m/44'/60'/0'`) off-chain. Then a sponsor derives a
-[sponsor wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
-for the Airnode using the `xpub` and `airnodeAddress`. The sponsor wallet will
-then be used by the Airnode to fulfill requests made by the sponsor's contracts.
+[sponsor wallet](/reference/airnode/next/concepts/sponsor.md#sponsorwallet) for
+the Airnode using the `xpub` and `airnodeAddress`. The sponsor wallet will then
+be used by the Airnode to fulfill requests made by the sponsor's contracts.
 
 Use the admin CLI command
-[derive-airnode-xpub](/reference/airnode/latest/packages/admin-cli.md#derive-airnode-xpub)
+[derive-airnode-xpub](/reference/airnode/next/packages/admin-cli.md#derive-airnode-xpub)
 to get the `xpub` of an Airnode by passing the same mnemonic used to create the
 `airnodeAddress`.
 
@@ -125,7 +125,7 @@ Airnode xpub: xpub6CUGRUo...
 ## Admin CLI: `generate-airnode-mnemonic`
 
 The
-[generate-airnode-mnemonic](/reference/airnode/latest/packages/admin-cli.md#generate-airnode-mnemonic)
+[generate-airnode-mnemonic](/reference/airnode/next/packages/admin-cli.md#generate-airnode-mnemonic)
 command is useful because it will generate a mnemonic as well as return the
 `airnodeAddress` and `xpub`.
 
@@ -150,7 +150,7 @@ The Airnode xpub for this mnemonic is: xpub6CUGRUo...
 
 The `xpub` that the Airnode owner has announced is not verified on-chain. A
 sponsor can verify the `xpub` off-chain. Use the admin CLI command
-[verify-xpub](/reference/airnode/latest/packages/admin-cli.md#verify-airnode-xpub)
+[verify-xpub](/reference/airnode/next/packages/admin-cli.md#verify-airnode-xpub)
 command from the admin CLI.
 
 ```bash
