@@ -19,36 +19,32 @@ tags:
 
 # {{$frontmatter.title}}
 
-The latest version of Airnode is `{{versions.airnodeLatest}}`. See the
-[change log](https://github.com/api3dao/airnode/blob/master/packages/airnode-node/CHANGELOG.md)
-in the Airnode repo for all Airnode versions.
+The latest version of Airnode is `v0.11`. See the
+[change log<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-node/CHANGELOG.md)
+in the Airnode repo for all Airnode versions. Below is a list of Airnode
+versions included in this documentation website.
 
-<table>
-    <tr v-if="versions.versionsAirnode" v-for="(item, index) in versions.versionsAirnode">
-        <td v-if="vrs === item.version"><b>{{item.version}}</b></td>
-        <td v-else><a  :href="item.path">{{item.version}}</a></td>
-    </tr>
-</table>
+|       |
+| ----- |
+| v0.11 |
 
-## Previous Versions (v0.x)
+## Other Versions
 
 Prior to version `v0.11` there are several `v0.x` versions of Airnode. Their
 documentation is available at
-[https://api3dao.github.io/api3-docs](https://api3dao.github.io/api3-docs).
+[https://old-docs.api3.org<ExternalLinkImage/>](https://old-docs.api3.org).
 
-<table>
-    <tr v-for="(item, index) in versionsLegacy">
-        <td>{{item.version}}</td>
-    </tr>
-</table>
-
-<script setup lang="ts">
-    import versions from '../../../.vitepress/versions.json';
-    import versionsLegacy from '../../../.vitepress/versionsAirnodeLegacy.json';
-    import { useData } from 'vitepress';
-
-    const { frontmatter } = useData();
-    let vrs = frontmatter._value.version;
-</script>
+|           |
+| --------- |
+| v0.10     |
+| v0.9      |
+| v0.8      |
+| v0.7      |
+| v0.6      |
+| v0.5      |
+| v0.4      |
+| v0.3      |
+| v0.2      |
+| pre-alpha |
 
 <FlexEndTag/>

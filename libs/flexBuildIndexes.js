@@ -18,8 +18,16 @@ let indexLatest = new Index({
   tokenize: 'full',
 });
 
-// The docsets
-let docsets = ['/dist/explore/', '/dist/guides/', '/dist/reference/'];
+// The latest docsets
+let latestDocsets = [
+  '/dist/explore/',
+  '/dist/guides/',
+  '/dist/reference/qrng',
+  '/dist/reference/dapis/',
+  '/dist/reference/dao-members/',
+  '/dist/reference/ois/latest/',
+  '/dist/reference/airnode/latest/',
+];
 
 /**
  * Callback for file.walkSync, add each
@@ -122,7 +130,7 @@ async function buildContentFile(path) {
   indexAll.add(id, json.content);
 
   // Only add path within the latest docsets
-  docsets.forEach((element) => {
+  latestDocsets.forEach((element) => {
     if (path.indexOf(element) > -1) {
       indexLatest.add(id, json.content);
     }
