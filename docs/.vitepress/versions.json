@@ -1,6 +1,11 @@
 {
+  "airnodeNext": "v0.12",
   "airnodeLatest": "v0.11",
   "versionsAirnode": [
+    {
+      "version": "v0.12",
+      "path": "/reference/airnode/next/"
+    },
     {
       "version": "v0.11",
       "path": "/reference/airnode/latest/"

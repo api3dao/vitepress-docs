@@ -1,21 +1,19 @@
 <!--
-Shows itself when a versioned doc set (Airnode or OIS) is 
+Shows itself when a versioned docset (Airnode or OIS) is 
 not displaying its latest version.
-Each page in a versioned doc set adds this component under its title.
+Each page in a versioned docset adds this component under its title.
 
 WARNING: Do not place HTML comment lines inside paragraph elements.
 -->
 
 <template>
   <div v-if="show" class="version-warning-box">
-    This is an older version of {{ docSet }}. Try
-    <a class="version-warning-link" :href="docSetPath">{{ docSetVersion }}</a>
-    which is the latest version.
+    This is an older version of {{ docSet }}. See the
+    <a class="version-warning-link" :href="docSetPath">latest</a>.
   </div>
 </template>
 
 <script>
-import { versionsAirnode, versionsOIS } from '../.vitepress/versions.json';
 import { useRoute } from 'vitepress';
 
 export default {
@@ -29,26 +27,13 @@ export default {
   }),
   methods: {
     parseRoute() {
-      const arr = this.path.split('/');
-      if (
-        arr[2] === 'airnode' &&
-        versionsAirnode
-          .map((x) => x.path)
-          .indexOf('/reference/airnode/' + arr[3] + '/') !== 0
-      ) {
+      if (this.path.indexOf('/reference/airnode/v') > -1) {
         this.docSet = 'Airnode';
-        this.docSetVersion = versionsAirnode[0].label;
-        this.docSetPath = versionsAirnode[0].path;
+        this.docSetPath = '/reference/airnode/latest/';
         this.show = true;
-      } else if (
-        arr[2] === 'ois' &&
-        versionsOIS
-          .map((x) => x.path)
-          .indexOf('/reference/ois/' + arr[3] + '/') !== 0
-      ) {
-        this.docSet = 'OIS';
-        this.docSetVersion = versionsOIS[0].version;
-        this.docSetPath = versionsOIS[0].path;
+      } else if (this.path.indexOf('/reference/ois/v') > -1) {
+        this.docSet = 'Airnode';
+        this.docSetPath = '/reference/ois/latest/';
         this.show = true;
       }
     },
@@ -74,7 +59,7 @@ export default {
   color: white;
   background-color: #7963b2;
   border-radius: 0.4em;
-  max-width: 500px;
+  max-width: 400px;
   font-size: small;
 }
 </style>

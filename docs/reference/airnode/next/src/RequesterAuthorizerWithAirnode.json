@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1",
+    "fullname": "Ethereum",
+    "shortname": "mainnet",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": true
+  },
+  {
+    "id": "3",
+    "fullname": "Ropsten (deprecated)",
+    "shortname": "ropsten",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": true
+  },
+  {
+    "id": "4",
+    "fullname": "Rinkeby (deprecated)",
+    "shortname": "rinkeby",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": true
+  },
+  {
+    "id": "5",
+    "fullname": "Ethereum-Goerli",
+    "shortname": "goerli",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": true
+  },
+  {
+    "id": "10",
+    "fullname": "Optimism",
+    "shortname": "optimism",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "30",
+    "fullname": "RSK",
+    "shortname": "rsk",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "31",
+    "fullname": "RSK testnet",
+    "shortname": "rsk-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "42",
+    "fullname": "Kovan (deprecated)",
+    "shortname": "kovan",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "56",
+    "fullname": "BNB Chain",
+    "shortname": "bsc",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "77",
+    "fullname": "POA Network Sokol testnet",
+    "shortname": "gnosis-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "97",
+    "fullname": "BNB Chain testnet",
+    "shortname": "bsc-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "100",
+    "fullname": "Gnosis Chain",
+    "shortname": "gnosis",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "137",
+    "fullname": "Polygon",
+    "shortname": "polygon",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "250",
+    "fullname": "Fantom Opera",
+    "shortname": "fantom",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "288",
+    "fullname": "Boba Ethereum",
+    "shortname": "boba-ethereum",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1",
+    "important": false
+  },
+  {
+    "id": "416",
+    "fullname": "SX Network",
+    "shortname": "sx-network",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38",
+    "important": false
+  },
+  {
+    "id": "420",
+    "fullname": "Optimism testnet",
+    "shortname": "optimism-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "588",
+    "fullname": "Metis Stardust testnet",
+    "shortname": "metis-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x5997C09be60196b7De9dE73C88dd7776f2875401",
+    "important": false
+  },
+  {
+    "id": "647",
+    "fullname": "SX Network testnet",
+    "shortname": "sx-network-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC",
+    "important": false
+  },
+  {
+    "id": "1088",
+    "fullname": "Metis Andromeda",
+    "shortname": "metis",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d",
+    "important": false
+  },
+  {
+    "id": "1284",
+    "fullname": "Moonbeam",
+    "shortname": "moonbeam",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "1285",
+    "fullname": "Moonriver",
+    "shortname": "moonriver",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "1287",
+    "fullname": "Moonbase Alpha testnet",
+    "shortname": "moonbeam-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "1294",
+    "fullname": "Boba Moonbeam",
+    "shortname": "boba-moonbeam",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x7D15b4676c7FFfdcb69E838518B2182223aE46d3",
+    "important": false
+  },
+  {
+    "id": "2001",
+    "fullname": "Milkomeda",
+    "shortname": "milkomeda",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "4002",
+    "fullname": "Fantom testnet",
+    "shortname": "fantom-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "42161",
+    "fullname": "Arbitrum One",
+    "shortname": "arbitrum",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x944609FF0729435F87Ef429EC155d7539A83B9C8",
+    "important": false
+  },
+  {
+    "id": "42170",
+    "fullname": "Arbitrum Nova",
+    "shortname": "arbitrum-nova",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "43113",
+    "fullname": "Avalanche Fuji testnet",
+    "shortname": "avalanche-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4923968942E8aae4656ae4913874EB7312e0F7c7",
+    "important": false
+  },
+  {
+    "id": "43114",
+    "fullname": "Avalanche C-Chain",
+    "shortname": "avalanche",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d",
+    "important": false
+  },
+  {
+    "id": "43288",
+    "fullname": "Boba Avalanche",
+    "shortname": "boba-avalanche",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "56288",
+    "fullname": "Boba BNB",
+    "shortname": "boba-bnb",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC",
+    "important": false
+  },
+  {
+    "id": "71401",
+    "fullname": "GodWoken testnet",
+    "shortname": "godwoken-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "71402",
+    "fullname": "GodWoken",
+    "shortname": "godwoken",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x7D15b4676c7FFfdcb69E838518B2182223aE46d3",
+    "important": false
+  },
+  {
+    "id": "80001",
+    "fullname": "Polygon Mumbai testnet",
+    "shortname": "polygon-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "200101",
+    "fullname": "Milkomeda C1 testnet",
+    "shortname": "milkomeda-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "421613",
+    "fullname": "Arbitrum testnet",
+    "shortname": "arbitrum-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  },
+  {
+    "id": "11155111",
+    "fullname": "Ethereum-Sepolia",
+    "shortname": "sepolia",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x55D72F0eb10e85D390B20DA57aa3122312647c0d",
+    "important": true
+  },
+  {
+    "id": "1313161554",
+    "fullname": "Aurora",
+    "shortname": "aurora",
+    "type": "mainnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38",
+    "important": false
+  },
+  {
+    "id": "1313161555",
+    "fullname": "Aurora testnet",
+    "shortname": "aurora-testnet",
+    "type": "testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178",
+    "important": false
+  }
+]

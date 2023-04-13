@@ -1010,6 +1010,585 @@
     "tags": null
   },
   "107": {
+    "title": "Chain Idiosyncrasies",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12",
+    "path": "/reference/airnode/next/chain-idiosyncrasies.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "108": {
+    "title": "Cloud Resources",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12",
+    "path": "/reference/airnode/next/cloud-resources.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "109": {
+    "title": "Contract Addresses",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12",
+    "path": "/reference/airnode/next/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "110": {
+    "title": "Migration Guide",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12",
+    "path": "/reference/airnode/next/migration.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "111": {
+    "title": "Versions",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12",
+    "path": "/reference/airnode/next/versions.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "112": {
+    "title": "Airnode Authentication",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/airnode-auth.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "113": {
+    "title": "Airnode",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/airnode.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "114": {
+    "title": "Authorizations",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/authorizations.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "115": {
+    "title": "Authorizers",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/authorizers.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "116": {
+    "title": "Chain Providers",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/chain-providers.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "117": {
+    "title": "Endpoint",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/endpoint.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "118": {
+    "title": "Gas Price Strategies",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/gas-prices.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "119": {
+    "title": "Request-Response Protocol",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "120": {
+    "title": "Relayed Meta Data Authentication",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/relay-meta-auth.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "121": {
+    "title": "Request",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/request.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "122": {
+    "title": "Requester",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/requester.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "123": {
+    "title": "Sponsor",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/sponsor.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "124": {
+    "title": "Template",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Concepts and Definitions",
+    "path": "/reference/airnode/next/concepts/template.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "125": {
+    "title": "aws.env",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files",
+    "path": "/reference/airnode/next/deployment-files/aws-env.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "126": {
+    "title": "config.json",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files",
+    "path": "/reference/airnode/next/deployment-files/config-json.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "127": {
+    "title": "Overview",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files",
+    "path": "/reference/airnode/next/deployment-files/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "128": {
+    "title": "receipt.json",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files",
+    "path": "/reference/airnode/next/deployment-files/receipt-json.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "129": {
+    "title": "secrets.env",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files",
+    "path": "/reference/airnode/next/deployment-files/secrets-env.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "130": {
+    "title": "aws.env",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Examples",
+    "basepath": "/reference/airnode/next/deployment-files/examples/",
+    "outline": "deep",
+    "tags": null
+  },
+  "131": {
+    "title": "config.json",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Examples",
+    "path": "/reference/airnode/next/deployment-files/examples/config-json.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "132": {
+    "title": "secrets.env",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Examples",
+    "path": "/reference/airnode/next/deployment-files/examples/secrets-env.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "133": {
+    "title": "aws.env",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Templates",
+    "path": "/reference/airnode/next/deployment-files/templates/aws-env.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "134": {
+    "title": "config.json",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Templates",
+    "path": "/reference/airnode/next/deployment-files/templates/config-json.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "135": {
+    "title": "OIS Object",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Templates",
+    "path": "/reference/airnode/next/deployment-files/templates/ois-json.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "136": {
+    "title": "secrets.env",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Deployment Files → Templates",
+    "path": "/reference/airnode/next/deployment-files/templates/secrets-env.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "137": {
+    "title": "Fees",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Airnode for dApp Developers",
+    "path": "/reference/airnode/next/developers/fees.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "138": {
+    "title": "Airnode RRP",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Airnode for dApp Developers",
+    "path": "/reference/airnode/next/developers/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "139": {
+    "title": "Requesters and Sponsors",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Airnode for dApp Developers",
+    "path": "/reference/airnode/next/developers/requesters-sponsors.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "140": {
+    "title": "Using Templates (RRP)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Airnode for dApp Developers",
+    "path": "/reference/airnode/next/developers/using-templates.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "141": {
+    "title": "Admin CLI Image",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Docker Images",
+    "path": "/reference/airnode/next/docker/admin-cli-image.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "142": {
+    "title": "Client Image",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Docker Images",
+    "path": "/reference/airnode/next/docker/client-image.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "143": {
+    "title": "AWS/GCP Deployer Image",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Docker Images",
+    "path": "/reference/airnode/next/docker/deployer-image.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "144": {
+    "title": "Overview",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Docker Images",
+    "path": "/reference/airnode/next/docker/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "145": {
+    "title": "Adapter",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Packages",
+    "path": "/reference/airnode/next/packages/adapter.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "146": {
+    "title": "Admin CLI",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Packages",
+    "path": "/reference/airnode/next/packages/admin-cli.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "147": {
+    "title": "Airnode ABI",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Packages",
+    "path": "/reference/airnode/next/packages/airnode-abi.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "148": {
+    "title": "Deployer",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Packages",
+    "path": "/reference/airnode/next/packages/deployer.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "149": {
+    "title": "Overview",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Packages",
+    "path": "/reference/airnode/next/packages/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "150": {
+    "title": "Validator",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Packages",
+    "path": "/reference/airnode/next/packages/validator.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "151": {
+    "title": "Airnode ABI",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Specifications",
+    "path": "/reference/airnode/next/specifications/airnode-abi.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "152": {
+    "title": "Oracle Integration Specifications (OIS)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Specifications",
+    "path": "/reference/airnode/next/specifications/ois.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "153": {
+    "title": "Reserved Parameters",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Specifications",
+    "path": "/reference/airnode/next/specifications/reserved-parameters.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "154": {
+    "title": "API Integration",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/api-integration.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "155": {
+    "title": "API Security",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/api-security.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "156": {
+    "title": "Using Authorizers (optional)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/apply-auth.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "157": {
+    "title": "Configuring Airnode",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/configuring.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "158": {
+    "title": "Deploying Airnode",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/deploying.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "159": {
+    "title": "Heartbeat (optional)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/heartbeat.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "160": {
+    "title": "HTTP Gateways (optional)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/http-gateways.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "161": {
+    "title": "Overview",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/index.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "162": {
+    "title": "Monitor Airnode",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/monitor.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "163": {
+    "title": "OEV Gateway (optional)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/oev-gateway.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "164": {
+    "title": "Using Authorizations (optional)",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "Airnode",
+    "pageHeader": "Reference → Airnode → v0.12 → Understanding Airnode",
+    "path": "/reference/airnode/next/understand/using-authorizations.html",
+    "version": "v0.12",
+    "outline": "deep",
+    "tags": null
+  },
+  "165": {
     "title": "DAO (Api3Template.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1024,7 +1603,7 @@
       "BaseTemplate"
     ]
   },
-  "108": {
+  "166": {
     "title": "Dashboard Attributes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1033,7 +1612,7 @@
     "outline": "deep",
     "tags": null
   },
-  "109": {
+  "167": {
     "title": "Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1042,7 +1621,7 @@
     "outline": "deep",
     "tags": null
   },
-  "110": {
+  "168": {
     "title": "Pool (Api3Pool.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1051,7 +1630,7 @@
     "outline": "deep",
     "tags": null
   },
-  "111": {
+  "169": {
     "title": "Voting (Api3Voting.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -1068,7 +1647,7 @@
       "BaseTemplate"
     ]
   },
-  "112": {
+  "170": {
     "title": "dAPI Names",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1077,7 +1656,7 @@
     "outline": "deep",
     "tags": null
   },
-  "113": {
+  "171": {
     "title": "ID and Name Schemes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1086,7 +1665,7 @@
     "outline": "deep",
     "tags": null
   },
-  "114": {
+  "172": {
     "title": "Chains and Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1095,7 +1674,7 @@
     "outline": "deep",
     "tags": null
   },
-  "115": {
+  "173": {
     "title": "dAPIs are data feeds",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1104,7 +1683,7 @@
     "outline": "deep",
     "tags": null
   },
-  "116": {
+  "174": {
     "title": "Proxy contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1113,7 +1692,7 @@
     "outline": "deep",
     "tags": null
   },
-  "117": {
+  "175": {
     "title": "Reading dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1122,7 +1701,7 @@
     "outline": "deep",
     "tags": null
   },
-  "118": {
+  "176": {
     "title": "Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1131,7 +1710,7 @@
     "outline": "deep",
     "tags": null
   },
-  "119": {
+  "177": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1141,7 +1720,7 @@
     "outline": "deep",
     "tags": null
   },
-  "120": {
+  "178": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1151,7 +1730,7 @@
     "outline": "deep",
     "tags": null
   },
-  "121": {
+  "179": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1161,7 +1740,7 @@
     "outline": "deep",
     "tags": null
   },
-  "122": {
+  "180": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1171,7 +1750,7 @@
     "outline": "deep",
     "tags": null
   },
-  "123": {
+  "181": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1181,7 +1760,7 @@
     "outline": "deep",
     "tags": null
   },
-  "124": {
+  "182": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1191,7 +1770,7 @@
     "outline": "deep",
     "tags": null
   },
-  "125": {
+  "183": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1200,7 +1779,7 @@
     "outline": "deep",
     "tags": null
   },
-  "126": {
+  "184": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1209,7 +1788,7 @@
     "outline": "deep",
     "tags": null
   },
-  "127": {
+  "185": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1218,7 +1797,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "128": {
+  "186": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1227,7 +1806,7 @@
     "outline": "deep",
     "tags": null
   },
-  "129": {
+  "187": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1236,7 +1815,7 @@
     "outline": "deep",
     "tags": null
   },
-  "130": {
+  "188": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,

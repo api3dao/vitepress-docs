@@ -46,11 +46,11 @@ reference
 
 Using the versions depicted above (`v0.11, v0.12 as latest, and v0.13 as next`)
 the process of moving `/next` into production means turning `/next` into
-`/latest`. Before this can be done, `/latest` must first become `v0.13`.
+`/latest`. Before this can be done, `/latest` must first become `v0.11`.
 
 In order to advance the versioning the following actions occur:
 
-1. rename the `/latest` folder to `vx.xx`
+1. rename the `/latest` folder to `vx.xx`, now an older version
 1. rename `/next` to `/latest`
 1. create a new folder `/next` as a copy of `/latest`
 
@@ -58,12 +58,19 @@ Update links and other version specific content. For each folder that has been
 renamed make the following changes.
 
 1. Update `themeConfig.sidebar` in `/.vitepress/config.js`
-1. Update `/.vitepress/versions.json` to reflect the latest version.
+1. Update `/.vitepress/versions.json` to reflect the latest and next versions.
 1. Update internal hyperlinks in the content. In latest use `/latest`, next use
    `/next`. For folders of a specific version use the correct version number.
+1. Be sure the above step also changed the `basePath` in frontmatter.
+1. Change frontmatter `version:` to the proper version.
 1. For `/latest` look for and change external links to API3 repos that may use
    older repo tags, `/master`, or `/main`. Some repos may not use tags and
    `/main` must be used, some may have tags unrelated to Airnode. Evaluate each
    link for changes as needed.
+1. For `/next` change frontmatter `pageHeader: Reference → Airnode → vx.x` to
+   the proper version.
 1. `/next` will not have a repo tag created until its version is release. Use
    the version of `/latest` in the mean time.
+1. Update the [Releases](/reference/ois/latest/index.md#releases) section in OIS
+   which maps OIS versions to Airnode versions.
+1. Update the [Versions](/reference/airnode/latest/versions.md) page in Airnode.

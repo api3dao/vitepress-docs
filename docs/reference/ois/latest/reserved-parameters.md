@@ -4,7 +4,7 @@ sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.0
 path: /reference/ois/latest/reserved-parameters.html
-version:
+version: v2.0
 outline: deep
 tags:
 ---
