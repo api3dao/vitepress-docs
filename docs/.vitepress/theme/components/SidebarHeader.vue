@@ -12,7 +12,7 @@
     />
     <span style="margin-left: 5px">{{ text }}</span>
     <div style="font-size: small; margin-left: 28px" v-show="subText">
-      {{ subText }} <VersionPicklist v-show="show" />
+      {{ subText }} <VersionPicklist v-show="showVersionPickList" />
     </div>
     <div
       style="width: 207px; margin-top: 5px; border-bottom: solid 1px lightgrey"
@@ -29,7 +29,7 @@ export default {
   data: () => ({
     text: undefined,
     subText: undefined,
-    show: undefined,
+    showVersionPickList: undefined,
     api3_navbarReferenceBtn: undefined,
     isDark: undefined,
   }),
@@ -78,9 +78,9 @@ export default {
         path.indexOf('reference/airnode/') > -1 ||
         path.indexOf('reference/ois/') > -1
       ) {
-        this.show = true;
+        this.showVersionPickList = true;
       } else {
-        this.show = undefined;
+        this.showVersionPickList = undefined;
       }
     },
     setHeader(frontmatter) {
