@@ -57,16 +57,20 @@ export default {
      */
     setStaticVersion(frontmatter) {
       this.staticVersion = undefined;
+      // Only Airnode and OIS
       if (
         this.path.indexOf('/reference/airnode/') > -1 ||
-        (this.path.indexOf('/reference/ois/') > -1 && this.version.length < 2)
+        this.path.indexOf('/reference/ois/') > -1
       ) {
-        this.staticVersion = frontmatter.version;
+        // Must have more than one version OR populate static version display
+        if (this.versions.length < 2) {
+          this.staticVersion = frontmatter.version;
+        }
       }
     },
     setPickListData() {
       // Only for Airnode and OIS
-      // slice makes a copy of the original versions array
+      // slice() makes a copy of the original versions array
       if (this.path.indexOf('/reference/airnode/') > -1) {
         this.versions = versionsArray.versionsAirnode.slice();
       } else if (this.path.indexOf('/reference/ois/') > -1) {
