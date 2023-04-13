@@ -58,7 +58,7 @@ Update links and other version specific content. For each folder that has been
 renamed make the following changes.
 
 1. Update `themeConfig.sidebar` in `/.vitepress/config.js`
-1. Update `/.vitepress/versions.json` to reflect the latest version.
+1. Update `/.vitepress/versions.json` to reflect the latest and next versions.
 1. Update internal hyperlinks in the content. In latest use `/latest`, next use
    `/next`. For folders of a specific version use the correct version number.
 1. Be sure the above step also changed the `basePath` in frontmatter.
@@ -71,3 +71,6 @@ renamed make the following changes.
    the proper version.
 1. `/next` will not have a repo tag created until its version is release. Use
    the version of `/latest` in the mean time.
+1. Update the [Releases](/reference/ois/latest/index.md#releases) section in OIS
+   which maps OIS versions to Airnode versions.
+1. Update the [Versions](/reference/airnode/latest/versions.md) page in Airnode.
