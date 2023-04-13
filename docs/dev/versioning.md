@@ -46,11 +46,11 @@ reference
 
 Using the versions depicted above (`v0.11, v0.12 as latest, and v0.13 as next`)
 the process of moving `/next` into production means turning `/next` into
-`/latest`. Before this can be done, `/latest` must first become `v0.13`.
+`/latest`. Before this can be done, `/latest` must first become `v0.11`.
 
 In order to advance the versioning the following actions occur:
 
-1. rename the `/latest` folder to `vx.xx`
+1. rename the `/latest` folder to `vx.xx`, now an older version
 1. rename `/next` to `/latest`
 1. create a new folder `/next` as a copy of `/latest`
 
