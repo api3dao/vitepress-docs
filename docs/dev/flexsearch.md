@@ -72,7 +72,7 @@ indexes.
 Build the local data files via the Axios script.
 
 ```js
-axios: build;
+yarn axios:build;
 ```
 
 ## 2. Build the `/dist` folder
