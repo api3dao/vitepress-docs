@@ -1,10 +1,12 @@
 /**
- * See /dev/axios.md
+ * See /dev/axios-scripts.md
  */
 
 const axios = require('axios');
 const fs = require('fs');
 const chainsRef = require('../docs/.vitepress/chains.json');
+
+const versionsRef = require('../docs/.vitepress/versions.json');
 
 async function dapiChains() {
   const response = await axios.get(
@@ -13,48 +15,68 @@ async function dapiChains() {
   const chains = response.data;
 
   fs.writeFileSync(
-    'docs/reference/dapis/chains/chains.json',
+    'docs/reference/dapis/src/chains.json',
     JSON.stringify(chains)
   );
 }
 
-async function contractAddresses(contractName) {
-  const response = await axios.get(
-    'https://raw.githubusercontent.com/api3dao/airnode/master/packages/airnode-protocol/deployments/references.json'
-  );
-  const obj = response.data;
-  // Create a file for each contract
-  let arr = [];
-  Object.keys(obj[contractName]).forEach((key) => {
-    // These chains get listed (and highlighted) first in display tables.
-    // They are considered important.
-    let important = ['1', '3', '4', '5', '43', '11155111'].includes(key);
+async function contractAddresses(contractName, vrs, path) {
+  try {
+    const response = await axios.get(
+      'https://raw.githubusercontent.com/api3dao/airnode/' +
+        vrs +
+        '/packages/airnode-protocol/deployments/references.json'
+    );
+    const obj = response.data;
 
-    arr.push({
-      id: key,
-      fullname: chainsRef[key].fullname,
-      shortname: obj.chainNames[key],
-      type: chainsRef[key].type,
-      contractName: contractName,
-      contractAddress: obj[contractName][key],
-      important: important,
+    let arr = [];
+    Object.keys(obj[contractName]).forEach((key) => {
+      arr.push({
+        id: key,
+        fullname: chainsRef[key].fullname,
+        shortname: obj.chainNames[key],
+        contractName: contractName,
+        contractAddress: obj[contractName][key],
+      });
     });
-  });
 
-  fs.writeFileSync(
-    'docs/reference/airnode/latest/src/' + contractName + '.json',
-    JSON.stringify(arr)
-  );
+    fs.writeFileSync(
+      'docs' + path + 'src/' + contractName + '.json',
+      JSON.stringify(arr)
+    );
+  } catch (err) {
+    console.error(
+      `Error:
+      failed to write file for path: ${path}
+      using vrs: ${vrs}
+      ${err.message}`
+    );
+    console.log('------------------');
+  }
 }
 
-console.log('\n----- Building Axios Scripts -----');
+console.log('\n----- Building Axios based script files -----');
 
 console.log('> Building chains.json in docs/reference/dapis/chains/');
 dapiChains();
 
-console.log(
-  '> Building contract addresses files in docs/reference/airnode/latest/src/'
-);
-contractAddresses('AirnodeRrpV0');
-contractAddresses('RequesterAuthorizerWithAirnode');
-contractAddresses('AccessControlRegistry');
+console.log('> Building Airnode version specific contract address files');
+versionsRef.versionsAirnode.forEach((el) => {
+  let path = el.path;
+  let vrs = el.version;
+  let msg = '';
+
+  // Is the version the "/next" release?
+  // If so then use the /latest version, but the path of /next.
+  if (el.version === versionsRef.airnodeNext) {
+    vrs = versionsRef.airnodeLatest;
+    path = el.path;
+    msg = '(This is /next so using version from /latest)';
+  }
+
+  console.log('  ✺ path:', path, '▶︎', 'vrs:', vrs, '▶︎', msg);
+  contractAddresses('AirnodeRrpV0', vrs, path);
+  contractAddresses('RequesterAuthorizerWithAirnode', vrs, path);
+  contractAddresses('AccessControlRegistry', vrs, path);
+});
+console.log('------------------');
