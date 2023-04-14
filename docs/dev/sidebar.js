@@ -7,6 +7,7 @@ module.exports = [
       { text: 'Airnode/OIS Versioning', link: '/dev/versioning' },
       { text: 'NavBoxes', link: '/dev/navboxes' },
       { text: 'FlexSearch', link: '/dev/flexsearch' },
+      { text: 'Axios Scripts', link: '/dev/axios-scripts' },
       { text: 'Firebase', link: '/dev/firebase' },
       { text: 'Frontmatter', link: '/dev/frontmatter' },
       { text: 'Hyperlinks', link: '/dev/hyperlinks' },

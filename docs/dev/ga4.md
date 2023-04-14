@@ -1,6 +1,6 @@
 ---
-title: Frontmatter
-sidebarHeader: Google Analytics 4
+title: Google Analytics
+sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
 path: /dev/ga4.html

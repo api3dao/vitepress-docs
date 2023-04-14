@@ -3,360 +3,280 @@
     "id": "1",
     "fullname": "Ethereum",
     "shortname": "mainnet",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": true
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "3",
-    "fullname": "Ropsten (deprecated)",
+    "fullname": "Ropsten testnet (deprecated)",
     "shortname": "ropsten",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": true
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "4",
-    "fullname": "Rinkeby (deprecated)",
+    "fullname": "Rinkeby testnet (deprecated)",
     "shortname": "rinkeby",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": true
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "5",
-    "fullname": "Ethereum-Goerli",
+    "fullname": "Ethereum Goerli testnet",
     "shortname": "goerli",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": true
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "10",
     "fullname": "Optimism",
     "shortname": "optimism",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "30",
     "fullname": "RSK",
     "shortname": "rsk",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "31",
     "fullname": "RSK testnet",
     "shortname": "rsk-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "42",
-    "fullname": "Kovan (deprecated)",
+    "fullname": "Kovan testnet (deprecated)",
     "shortname": "kovan",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "56",
     "fullname": "BNB Chain",
     "shortname": "bsc",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "77",
     "fullname": "POA Network Sokol testnet",
     "shortname": "gnosis-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "97",
     "fullname": "BNB Chain testnet",
     "shortname": "bsc-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "100",
     "fullname": "Gnosis Chain",
     "shortname": "gnosis",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "137",
     "fullname": "Polygon",
     "shortname": "polygon",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "250",
     "fullname": "Fantom Opera",
     "shortname": "fantom",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "288",
     "fullname": "Boba Ethereum",
     "shortname": "boba-ethereum",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38",
-    "important": false
+    "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38"
   },
   {
     "id": "416",
     "fullname": "SX Network",
     "shortname": "sx-network",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xE338f63170c42bA0d2a888f18F6185369779009c",
-    "important": false
+    "contractAddress": "0xE338f63170c42bA0d2a888f18F6185369779009c"
   },
   {
     "id": "420",
     "fullname": "Optimism testnet",
     "shortname": "optimism-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "588",
     "fullname": "Metis Stardust testnet",
     "shortname": "metis-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x4923968942E8aae4656ae4913874EB7312e0F7c7",
-    "important": false
+    "contractAddress": "0x4923968942E8aae4656ae4913874EB7312e0F7c7"
   },
   {
     "id": "647",
     "fullname": "SX Network testnet",
     "shortname": "sx-network-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778",
-    "important": false
+    "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778"
   },
   {
     "id": "1088",
     "fullname": "Metis Andromeda",
     "shortname": "metis",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
-    "important": false
+    "contractAddress": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E"
   },
   {
     "id": "1284",
     "fullname": "Moonbeam",
     "shortname": "moonbeam",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "1285",
     "fullname": "Moonriver",
     "shortname": "moonriver",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "1287",
     "fullname": "Moonbase Alpha testnet",
     "shortname": "moonbeam-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "1294",
     "fullname": "Boba Moonbeam",
     "shortname": "boba-moonbeam",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1",
-    "important": false
+    "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
   },
   {
     "id": "2001",
     "fullname": "Milkomeda",
     "shortname": "milkomeda",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "4002",
     "fullname": "Fantom testnet",
     "shortname": "fantom-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "42161",
     "fullname": "Arbitrum One",
     "shortname": "arbitrum",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924",
-    "important": false
+    "contractAddress": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
   },
   {
     "id": "42170",
     "fullname": "Arbitrum Nova",
     "shortname": "arbitrum-nova",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xd864A45334C7a632cA9149993682354D7f967F28",
-    "important": false
+    "contractAddress": "0xd864A45334C7a632cA9149993682354D7f967F28"
   },
   {
     "id": "43113",
     "fullname": "Avalanche Fuji testnet",
     "shortname": "avalanche-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x7f5AF7a37a33898544717AAa6c35c111dCe95b28",
-    "important": false
+    "contractAddress": "0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"
   },
   {
     "id": "43114",
     "fullname": "Avalanche C-Chain",
     "shortname": "avalanche",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
-    "important": false
+    "contractAddress": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E"
   },
   {
     "id": "43288",
     "fullname": "Boba Avalanche",
     "shortname": "boba-avalanche",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xd864A45334C7a632cA9149993682354D7f967F28",
-    "important": false
+    "contractAddress": "0xd864A45334C7a632cA9149993682354D7f967F28"
   },
   {
     "id": "56288",
     "fullname": "Boba BNB",
     "shortname": "boba-bnb",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778",
-    "important": false
+    "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778"
   },
   {
     "id": "71401",
     "fullname": "GodWoken testnet",
     "shortname": "godwoken-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "71402",
     "fullname": "GodWoken",
     "shortname": "godwoken",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1",
-    "important": false
+    "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
   },
   {
     "id": "80001",
     "fullname": "Polygon Mumbai testnet",
     "shortname": "polygon-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
     "shortname": "milkomeda-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "421613",
     "fullname": "Arbitrum testnet",
     "shortname": "arbitrum-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "11155111",
     "fullname": "Ethereum-Sepolia",
     "shortname": "sepolia",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
-    "important": true
+    "contractAddress": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"
   },
   {
     "id": "1313161554",
     "fullname": "Aurora",
     "shortname": "aurora",
-    "type": "mainnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xE338f63170c42bA0d2a888f18F6185369779009c",
-    "important": false
+    "contractAddress": "0xE338f63170c42bA0d2a888f18F6185369779009c"
   },
   {
     "id": "1313161555",
     "fullname": "Aurora testnet",
     "shortname": "aurora-testnet",
-    "type": "testnet",
     "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
-    "important": false
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   }
 ]
