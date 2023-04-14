@@ -39,7 +39,7 @@ They will not render as HTML but rather text. No idea why!
 </div>
 
 <script setup lang="ts">
-    import chains from './chains.json';
+    import chains from '../src/chains.json';
 </script>
 
 <style>
