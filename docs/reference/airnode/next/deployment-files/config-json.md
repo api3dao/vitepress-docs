@@ -607,8 +607,8 @@ and
 as the [`endpointId`](/reference/airnode/next/concepts/endpoint.md#endpointid),
 it will call the specified endpoint (`myOisTitle`-`myEndpointName`) with the
 parameters provided in the request to fulfill it. See the
-[endpoint id documentation](/reference/airnode/next/concepts/endpoint.md#endpointid)
-for the default convention for deriving the `endpointId`.
+[endpointId documentation](/reference/airnode/next/concepts/endpoint.md#endpointid)
+for `endpointId` derivation instructions.
 
 ### `rrp`
 

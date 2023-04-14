@@ -25,51 +25,20 @@ are deployed, but feel free to
 [submit a GitHub issue<ExternalLinkImage/>](https://github.com/api3dao/airnode/issues)
 requesting a new deployment.
 
+The contract addresses listed below are sourced from the Airnode monorepo
+[airnode-protocol](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-protocol)
+and can be found in its
+[deployments](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-protocol/deployments)
+directory.
+
 ## AirnodeRrpV0
 
-<!--------------------------------------->
-
-### • mainnets
-
-<!--ContractAddresses type="mainnet" contractName="AirnodeRrpV0"/-->
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<!-- important -->
-<tr v-for="(chain, index) in AirnodeRrpV0" class="contract_tr_highlight">
-    <td v-if="chain.important && chain.type ==='mainnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="chain.important && chain.type ==='mainnet'">{{chain.id}}</td>
-    <td v-if="chain.important && chain.type ==='mainnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-<!-- not important -->
 <tr v-for="(chain, index) in AirnodeRrpV0">
-    <td v-if="!chain.important && chain.type ==='mainnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="!chain.important && chain.type ==='mainnet'">{{chain.id}}</td>
-    <td v-if="!chain.important && chain.type ==='mainnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-</table>
-
-### • testnets
-
-<!--ContractAddresses type="testnet" contractName="AirnodeRrpV0"/-->
-<table >
-<th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<!-- important -->
-<tr v-for="(chain, index) in AirnodeRrpV0" class="contract_tr_highlight">
-    <td v-if="chain.important && chain.type ==='testnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="chain.important && chain.type ==='testnet'">{{chain.id}}</td>
-    <td v-if="chain.important && chain.type ==='testnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-<!-- not important -->
-<tr v-for="(chain, index) in AirnodeRrpV0">
-    <td v-if="!chain.important && chain.type ==='testnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="!chain.important && chain.type ==='testnet'">{{chain.id}}</td>
-    <td v-if="!chain.important && chain.type ==='testnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+    <td style="max-width:150px;">{{chain.fullname}}</td>
+    <td>{{chain.id}}</td>
+    <td  class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
         <CopyIcon :text="chain.contractAddress" />
     </td>
 </tr>
@@ -77,49 +46,12 @@ requesting a new deployment.
 
 ## RequesterAuthorizerWithAirnode
 
-<!--------------------------------------->
-
-### • mainnets
-
-<!--ContractAddresses type="mainnet" contractName="RequesterAuthorizerWithAirnode"/-->
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<!-- important -->
-<tr v-for="(chain, index) in RequesterAuthorizerWithAirnode" class="contract_tr_highlight">
-    <td v-if="chain.important && chain.type ==='mainnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="chain.important && chain.type ==='mainnet'">{{chain.id}}</td>
-    <td v-if="chain.important && chain.type ==='mainnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-<!-- not important -->
 <tr v-for="(chain, index) in RequesterAuthorizerWithAirnode">
-    <td v-if="!chain.important && chain.type ==='mainnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="!chain.important && chain.type ==='mainnet'">{{chain.id}}</td>
-    <td v-if="!chain.important && chain.type ==='mainnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-</table>
-
-### • testnets
-
-<!--ContractAddresses type="testnet" contractName="RequesterAuthorizerWithAirnode"/-->
-<table >
-<th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<!-- important -->
-<tr v-for="(chain, index) in RequesterAuthorizerWithAirnode" class="contract_tr_highlight">
-    <td v-if="chain.important && chain.type ==='testnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="chain.important && chain.type ==='testnet'">{{chain.id}}</td>
-    <td v-if="chain.important && chain.type ==='testnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-<!-- not important -->
-<tr v-for="(chain, index) in RequesterAuthorizerWithAirnode">
-    <td v-if="!chain.important && chain.type ==='testnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="!chain.important && chain.type ==='testnet'">{{chain.id}}</td>
-    <td v-if="!chain.important && chain.type ==='testnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+    <td style="max-width:150px;">{{chain.fullname}}</td>
+    <td>{{chain.id}}</td>
+    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
         <CopyIcon :text="chain.contractAddress" />
     </td>
 </tr>
@@ -127,49 +59,12 @@ requesting a new deployment.
 
 ## AccessControlRegistry
 
-<!--------------------------------------->
-
-### • mainnets
-
-<!--ContractAddresses type="mainnet" contractName="AccessControlRegistry"/-->
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<!-- important -->
-<tr v-for="(chain, index) in AccessControlRegistry" class="contract_tr_highlight">
-    <td v-if="chain.important && chain.type ==='mainnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="chain.important && chain.type ==='mainnet'">{{chain.id}}</td>
-    <td v-if="chain.important && chain.type ==='mainnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-<!-- not important -->
 <tr v-for="(chain, index) in AccessControlRegistry">
-    <td v-if="!chain.important && chain.type ==='mainnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="!chain.important && chain.type ==='mainnet'">{{chain.id}}</td>
-    <td v-if="!chain.important && chain.type ==='mainnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-</table>
-
-### • testnets
-
-<!--ContractAddresses type="testnet" contractName="AccessControlRegistry"/-->
-<table >
-<th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<!-- important -->
-<tr v-for="(chain, index) in AccessControlRegistry" class="contract_tr_highlight">
-    <td v-if="chain.important && chain.type ==='testnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="chain.important && chain.type ==='testnet'">{{chain.id}}</td>
-    <td v-if="chain.important && chain.type ==='testnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-<!-- not important -->
-<tr v-for="(chain, index) in AccessControlRegistry">
-    <td v-if="!chain.important && chain.type ==='testnet'" style="max-width:150px;">{{chain.fullname}}</td>
-    <td v-if="!chain.important && chain.type ==='testnet'">{{chain.id}}</td>
-    <td v-if="!chain.important && chain.type ==='testnet'" class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+    <td style="max-width:150px;">{{chain.fullname}}</td>
+    <td>{{chain.id}}</td>
+    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
         <CopyIcon :text="chain.contractAddress" />
     </td>
 </tr>
@@ -199,10 +94,5 @@ Coming soon.
   margin-left: 5px;
   cursor: pointer;
   height: 11px;
-}
-.contract_tr_highlight td {
-  background-color: #e5ecf9;
-  color: black;
-  /*-webkit-transition: all 1s linear;*/
 }
 </style>

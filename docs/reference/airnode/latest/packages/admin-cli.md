@@ -642,11 +642,9 @@ npx @api3/airnode-admin derive-airnode-xpub --airnode-mnemonic "nature about sal
 
 Derives an
 [endpointId](/reference/airnode/latest/deployment-files/config-json.md#triggers)
-from the OIS title and the endpoint's name. This command uses the convention
-described in the
-[triggers](/reference/airnode/latest/understand/configuring.md#triggers) section
-of the configuring airnode documentation. Add the `endpointId` to the
-config.json file (`triggers.rrp[n].endpointId`).
+from the OIS title and the endpoint's name as described in the
+[endpoint](/reference/airnode/latest/concepts/endpoint.md) documentation. Add
+the `endpointId` to the config.json file (`triggers.rrp[n].endpointId`).
 
 - `ois-title`: The title of the OIS from config.json (`ois.title`).
 - `endpoint-name`: The name of the endpoint from config.json
