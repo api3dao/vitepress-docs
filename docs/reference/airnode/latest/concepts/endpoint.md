@@ -25,13 +25,12 @@ composed of [operations](/reference/ois/latest/specification.md#_5-2-operation),
 which represent individual functionalities that an API offers. OIS maps each API
 operation to an [endpoint](/reference/ois/latest/specification.md#_5-endpoints),
 which can be thought of as an Airnode operation. The endpoints that an Airnode
-will serve over the request–response protocol are listed under
-[trigge/reference/airnode/latest/deployment-files/config-json.md#triggers) of
-[config.json](/reference/airnode/latest/deployment-files/config-json.md).
+will serve over the request–response protocol are listed under triggers of
+[config.json](/reference/airnode/latest/deployment-files/config-json.md#triggers).
 
 ## `endpointId`
 
-`endpointId` identifies specific endpoints that an Airnode serves, and is
+`endpointId` identifies a specific endpoint that an Airnode serves, and is
 computed in JS (using ethers.js) as follows:
 
 ```js
@@ -49,7 +48,7 @@ endpoint ID.
 
 Note that this means that an `endpointId` is not unique, and two Airnodes can
 serve equivalent endpoints using the same ID (in fact, this is the desired
-outcome).This is not an issue, as requests are made with a `airnode` (Airnode's
+outcome). This is not an issue, as requests are made with a `airnode` (Airnode's
 `address`) and `endpointId` pair.
 
 This convention of determining an `endpointId` is not enforced at the

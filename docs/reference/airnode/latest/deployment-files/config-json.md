@@ -610,7 +610,7 @@ as the
 [`endpointId`](/reference/airnode/latest/concepts/endpoint.md#endpointid), it
 will call the specified endpoint (`myOisTitle`-`myEndpointName`) with the
 parameters provided in the request to fulfill it. See the
-[endpoint id documentation](/reference/airnode/latest/concepts/endpoint.md#endpointid)
+[endpointId documentation](/reference/airnode/latest/concepts/endpoint.md#endpointid)
 for the default convention for deriving the `endpointId`.
 
 ### `rrp`
