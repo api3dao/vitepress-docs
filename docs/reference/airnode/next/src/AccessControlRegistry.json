@@ -2,280 +2,245 @@
   {
     "id": "1",
     "fullname": "Ethereum",
-    "shortname": "mainnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
-    "id": "3",
-    "fullname": "Ropsten testnet (deprecated)",
-    "shortname": "ropsten",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
-    "id": "4",
-    "fullname": "Rinkeby testnet (deprecated)",
-    "shortname": "rinkeby",
+    "alias": "ethereum",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "5",
     "fullname": "Ethereum Goerli testnet",
-    "shortname": "goerli",
+    "alias": "ethereum-goerli-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "10",
     "fullname": "Optimism",
-    "shortname": "optimism",
+    "alias": "optimism",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "30",
     "fullname": "RSK",
-    "shortname": "rsk",
+    "alias": "rsk",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "31",
     "fullname": "RSK testnet",
-    "shortname": "rsk-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
-    "id": "42",
-    "fullname": "Kovan testnet (deprecated)",
-    "shortname": "kovan",
+    "alias": "rsk-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "56",
-    "fullname": "BNB Chain",
-    "shortname": "bsc",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
-    "id": "77",
-    "fullname": "POA Network Sokol testnet",
-    "shortname": "gnosis-testnet",
+    "fullname": "BSC",
+    "alias": "bsc",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "97",
-    "fullname": "BNB Chain testnet",
-    "shortname": "bsc-testnet",
+    "fullname": "BSC testnet",
+    "alias": "bsc-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "100",
     "fullname": "Gnosis Chain",
-    "shortname": "gnosis",
+    "alias": "gnosis",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "137",
     "fullname": "Polygon",
-    "shortname": "polygon",
+    "alias": "polygon",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "250",
-    "fullname": "Fantom Opera",
-    "shortname": "fantom",
+    "fullname": "Fantom",
+    "alias": "fantom",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "288",
-    "fullname": "Boba Ethereum",
-    "shortname": "boba-ethereum",
+    "fullname": "Boba/Ethereum",
+    "alias": "boba-ethereum",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x7D15b4676c7FFfdcb69E838518B2182223aE46d3"
   },
   {
     "id": "416",
     "fullname": "SX Network",
-    "shortname": "sx-network",
+    "alias": "sx",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
   },
   {
     "id": "420",
     "fullname": "Optimism testnet",
-    "shortname": "optimism-testnet",
+    "alias": "optimism-goerli-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
-    "id": "588",
-    "fullname": "Metis Stardust testnet",
-    "shortname": "metis-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0xe40f1a1A546B70003D9ddF66B89C261cA46A0CF0"
-  },
-  {
     "id": "647",
     "fullname": "SX Network testnet",
-    "shortname": "sx-network-testnet",
+    "alias": "sx-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xD223DfDCb888CA1539bb3459a83c543A1608F038"
   },
   {
     "id": "1088",
-    "fullname": "Metis Andromeda",
-    "shortname": "metis",
+    "fullname": "Metis",
+    "alias": "metis",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
   },
   {
     "id": "1284",
     "fullname": "Moonbeam",
-    "shortname": "moonbeam",
+    "alias": "moonbeam",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "1285",
     "fullname": "Moonriver",
-    "shortname": "moonriver",
+    "alias": "moonriver",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "1287",
-    "fullname": "Moonbase Alpha testnet",
-    "shortname": "moonbeam-testnet",
+    "fullname": "Moonbeam testnet",
+    "alias": "moonbeam-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "1294",
-    "fullname": "Boba Moonbeam",
-    "shortname": "boba-moonbeam",
+    "fullname": "Boba/Moonbeam",
+    "alias": "boba-moonbeam",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x8E7D155C6E124a5C2c8DE2AFFCd8702e3660E482"
   },
   {
     "id": "2001",
-    "fullname": "Milkomeda",
-    "shortname": "milkomeda",
+    "fullname": "Milkomeda C1",
+    "alias": "milkomeda-c1",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "4002",
     "fullname": "Fantom testnet",
-    "shortname": "fantom-testnet",
+    "alias": "fantom-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "42161",
-    "fullname": "Arbitrum One",
-    "shortname": "arbitrum",
+    "fullname": "Arbitrum",
+    "alias": "arbitrum",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x5aB00E30453EEAd35025A761ED65d51d74574C24"
   },
   {
     "id": "42170",
     "fullname": "Arbitrum Nova",
-    "shortname": "arbitrum-nova",
+    "alias": "arbitrum-nova",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "43113",
-    "fullname": "Avalanche Fuji testnet",
-    "shortname": "avalanche-testnet",
+    "fullname": "Avalanche testnet",
+    "alias": "avalanche-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x5997C09be60196b7De9dE73C88dd7776f2875401"
   },
   {
     "id": "43114",
-    "fullname": "Avalanche C-Chain",
-    "shortname": "avalanche",
+    "fullname": "Avalanche",
+    "alias": "avalanche",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
   },
   {
     "id": "43288",
-    "fullname": "Boba Avalanche",
-    "shortname": "boba-avalanche",
+    "fullname": "Boba/Avalanche",
+    "alias": "boba-avalanche",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "56288",
-    "fullname": "Boba BNB",
-    "shortname": "boba-bnb",
+    "fullname": "Boba/BNB",
+    "alias": "boba-bnb",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xD223DfDCb888CA1539bb3459a83c543A1608F038"
   },
   {
     "id": "71401",
-    "fullname": "GodWoken testnet",
-    "shortname": "godwoken-testnet",
+    "fullname": "Godwoken testnet",
+    "alias": "godwoken-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "71402",
-    "fullname": "GodWoken",
-    "shortname": "godwoken",
+    "fullname": "Godwoken",
+    "alias": "godwoken",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x8E7D155C6E124a5C2c8DE2AFFCd8702e3660E482"
   },
   {
     "id": "80001",
-    "fullname": "Polygon Mumbai testnet",
-    "shortname": "polygon-testnet",
+    "fullname": "Polygon testnet",
+    "alias": "polygon-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
-    "shortname": "milkomeda-testnet",
+    "alias": "milkomeda-c1-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "421613",
     "fullname": "Arbitrum testnet",
-    "shortname": "arbitrum-testnet",
+    "alias": "arbitrum-goerli-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
     "id": "11155111",
-    "fullname": "Ethereum-Sepolia",
-    "shortname": "sepolia",
+    "fullname": "Ethereum Sepolia testnet",
+    "alias": "ethereum-sepolia-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xF6d2675468989387e96127546e0CBC9A384fa418"
   },
   {
     "id": "1313161554",
     "fullname": "Aurora",
-    "shortname": "aurora",
+    "alias": "aurora",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
   },
   {
     "id": "1313161555",
     "fullname": "Aurora testnet",
-    "shortname": "aurora-testnet",
+    "alias": "aurora-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   }

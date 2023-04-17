@@ -24,6 +24,7 @@
     "axios:build": "node libs/axiosBuildScripts.js; yarn format;"
   },
   "devDependencies": {
+    "@api3/chains": "^2.1.0",
     "axios": "^1.2.1",
     "colors": "^1.4.0",
     "file": "^0.2.2",
