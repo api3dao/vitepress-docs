@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { useFlyout } from '../composables/flyout.js';
+import { useFlyout } from '../composables/flyout';
 import VPIconChevronDown from './icons/VPIconChevronDown.vue';
 import VPIconMoreHorizontal from './icons/VPIconMoreHorizontal.vue';
 import VPMenu from './VPMenu.vue';
@@ -23,16 +23,11 @@ function onBlur() {
 </script>
 
 <template>
-  <!-- wkande: Jan 2023: VitPress version alpha-40 broke the 
-margin on top of drop down menus. Add a style to adjust for it.
-style="margin-top: 20px"
--->
   <div
     class="VPFlyout"
     ref="el"
     @mouseenter="open = true"
     @mouseleave="open = false"
-    style="margin-top: 20px"
   >
     <button
       type="button"
@@ -100,31 +95,19 @@ style="margin-top: 20px"
   display: flex;
   align-items: center;
   padding: 0 12px;
-  height: var(--vp-nav-height-mobile);
+  height: var(--vp-nav-height);
   color: var(--vp-c-text-1);
   transition: color 0.5s;
-}
-
-@media (min-width: 960px) {
-  .button {
-    height: var(--vp-nav-height-desktop);
-  }
 }
 
 .text {
   display: flex;
   align-items: center;
-  line-height: var(--vp-nav-height-mobile);
+  line-height: var(--vp-nav-height);
   font-size: 14px;
   font-weight: 500;
   color: var(--vp-c-text-1);
   transition: color 0.25s;
-}
-
-@media (min-width: 960px) {
-  .text {
-    line-height: var(--vp-nav-height-desktop);
-  }
 }
 
 .option-icon {
@@ -150,16 +133,10 @@ style="margin-top: 20px"
 
 .menu {
   position: absolute;
-  top: calc(var(--vp-nav-height-mobile) / 2 + 20px);
+  top: calc(var(--vp-nav-height) / 2 + 20px);
   right: 0;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
-}
-
-@media (min-width: 960px) {
-  .menu {
-    top: calc(var(--vp-nav-height-desktop) / 2 + 20px);
-  }
 }
 </style>
