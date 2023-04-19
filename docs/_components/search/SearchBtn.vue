@@ -159,9 +159,8 @@ export default {
         ctx,
         map,
         reg = undefined;
-      console.log('buildIndexLatest() MODE', import.meta.env.MODE);
+      //console.log('buildIndexLatest() MODE', import.meta.env.MODE);
       if (import.meta.env.MODE === 'development') {
-        console.log('DEV');
         cfg = await axios.get('/indexes/latest/cfg.json');
         ctx = await axios.get('/indexes/latest/ctx.json');
         map = await axios.get('/indexes/latest/map.json');
