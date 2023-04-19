@@ -430,7 +430,7 @@ necessary to inline the template inside config. See
 example template file.
 
 This command does **not** create a template on chain. Be sure to use the
-[create-template]/reference/airnode/next/packages/admin-cli.md#create-template)
+[create-template](/reference/airnode/next/packages/admin-cli.md#create-template)
 command on chain before making template requests.
 
 - `template-file-path`: Path to the template file to create on-chain.
