@@ -129,7 +129,7 @@ export default {
 
       this.isModalActive = true;
       if (!this.indexLatest) this.buildIndexLatest();
-      if (!this.indexAll) this.buildIndexAll();
+      //if (!this.indexAll) this.buildIndexAll();
     },
     hideModal() {
       localStorage.removeItem('search-words');
@@ -155,11 +155,30 @@ export default {
       this.indexLatest = new Index({
         tokenize: 'full',
       });
+      let cfg,
+        ctx,
+        map,
+        reg = undefined;
       //console.log('buildIndexLatest() MODE', import.meta.env.MODE);
-      let cfg = await axios.get('/indexes/latest/cfg.json');
-      let ctx = await axios.get('/indexes/latest/ctx.json');
-      let map = await axios.get('/indexes/latest/map.json');
-      let reg = await axios.get('/indexes/latest/reg.json');
+      if (import.meta.env.MODE === 'development') {
+        cfg = await axios.get('/indexes/latest/cfg.json');
+        ctx = await axios.get('/indexes/latest/ctx.json');
+        map = await axios.get('/indexes/latest/map.json');
+        reg = await axios.get('/indexes/latest/reg.json');
+      } else {
+        cfg = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/cfg.json'
+        );
+        ctx = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/ctx.json'
+        );
+        map = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/map.json'
+        );
+        reg = await axios.get(
+          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/reg.json'
+        );
+      }
 
       this.indexLatest.import('cfg', cfg.data);
       this.indexLatest.import('ctx', ctx.data);
