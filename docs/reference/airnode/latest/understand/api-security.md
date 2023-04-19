@@ -57,7 +57,7 @@ will be required grouping endpoint/API operations based on their security needs.
 An Airnode can use the following security scheme types to authenticate itself to
 API operations.
 
-- [apiKey]/reference/airnode/latest/understand/api-security.md#apikey)
+- [apiKey](/reference/airnode/latest/understand/api-security.md#apikey)
 - [http](/reference/airnode/latest/understand/api-security.md#http)
 
 A security scheme requires a unique name within the OIS object for which it

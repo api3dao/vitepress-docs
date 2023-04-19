@@ -114,11 +114,10 @@ page.
   "chains": [
     {
       "authorizers": {
-        "requesterEndpointAuthorizers": [],
--       "crossChainRequesterAuthorizers": []
-+       "crossChainRequesterAuthorizers": [],
 +       "requesterAuthorizersWithErc721": [],
-+       "crossChainRequesterAuthorizersWithErc721": []
++       "crossChainRequesterAuthorizersWithErc721": [],
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": []
       },
     }
   ]

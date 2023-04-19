@@ -94,8 +94,6 @@ ANU is only available on mainnets.
 
 <div style="position:absolute;right:0px;margin-top:18px;">ANU</div>
 
-This is a test: {{getChainNameById(1)}}
-
 | Network                                                                             | ID    | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | ----------------------------------------------------------------------------------- | ----- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [{{getChainNameById(1)}}](https://etherscan.io)                                     | 1     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 6                |
