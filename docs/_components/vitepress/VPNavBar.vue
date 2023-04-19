@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useWindowScroll } from '@vueuse/core';
-import { useSidebar } from '../composables/sidebar.js';
+import { useSidebar } from '../composables/sidebar';
 import VPNavBarTitle from './VPNavBarTitle.vue';
 import VPNavBarSearch from './VPNavBarSearch.vue';
 import VPNavBarMenu from './VPNavBarMenu.vue';
@@ -47,6 +47,7 @@ const classes = computed(() => ({
         <div class="curtain" />
         <div class="content-body">
           <slot name="nav-bar-content-before" />
+          <!-- wkande Sep, 2022 comment out VPNavBarSearch below-->
           <!--VPNavBarSearch class="search" /-->
           <VPNavBarMenu class="menu" />
           <!-- wkande Sep, 2022 added custom search -->
@@ -75,6 +76,7 @@ const classes = computed(() => ({
   height: var(--vp-nav-height);
   transition: border-color 0.5s, background-color 0.5s;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .VPNavBar.has-sidebar {
@@ -93,13 +95,9 @@ const classes = computed(() => ({
     padding: 0;
   }
 
-  .VPNavBar.fill {
+  .VPNavBar.fill:not(.has-sidebar) {
     border-bottom-color: var(--vp-c-gutter);
     background-color: var(--vp-nav-bg-color);
-  }
-
-  .VPNavBar.has-sidebar.fill {
-    background-color: transparent;
   }
 }
 
@@ -109,6 +107,11 @@ const classes = computed(() => ({
   margin: 0 auto;
   max-width: calc(var(--vp-layout-max-width) - 64px);
   height: var(--vp-nav-height);
+  pointer-events: none;
+}
+
+.container > .title,
+.container > .content {
   pointer-events: none;
 }
 
