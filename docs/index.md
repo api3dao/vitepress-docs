@@ -20,7 +20,7 @@ hero:
       link: https://github.com/api3dao
     - theme: alt
       text: Documentation Contributions
-      link: https://github.com/api3dao/api3-docs
+      link: https://github.com/api3dao/vitepress-docs/
 ---
 
 <!--
