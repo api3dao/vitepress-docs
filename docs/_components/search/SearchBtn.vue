@@ -166,7 +166,6 @@ export default {
         map = await axios.get('/indexes/latest/map.json');
         reg = await axios.get('/indexes/latest/reg.json');
       } else {
-        console.log('PROD');
         cfg = await axios.get(
           'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/cfg.json'
         );
