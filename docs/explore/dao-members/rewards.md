@@ -17,12 +17,13 @@ tags:
 # {{$frontmatter.title}}
 
 API3 aims to set up, maintain, and
-[monetize](/explore/dao-members/dao-pool.md#monetization) dAPIs at scale. API3 generates
-revenue through on-chain subscription, OEV, and service coverage fees. 
-To align the governance incentives with API3’s success, 
-combined with the inflationary rewards, the net revenue to the DAO is directed to smart contracts 
-which programmatically buy and burn API3 tokens. This mechanic will
-produce positive staking incentives combined with the inflationary governance rewards, and is balanced with service coverage claim risks.
+[monetize](/explore/dao-members/dao-pool.md#monetization) dAPIs at scale. API3
+generates revenue through on-chain subscription, OEV, and service coverage fees.
+To align the governance incentives with API3’s success, combined with the
+inflationary rewards, the net revenue to the DAO is directed to smart contracts
+which programmatically buy and burn API3 tokens. This mechanic will produce
+positive staking incentives combined with the inflationary governance rewards,
+and is balanced with service coverage claim risks.
 
 > <img src="../assets/images/08-Inflationary_Rewards.png" width="450"/>
 
@@ -30,28 +31,28 @@ produce positive staking incentives combined with the inflationary governance re
 
 ## Earning Rewards
 
-Earning inflationary rewards is simple: everyone who has staked API3 tokens into the 
-DAO pool contract to participate in governance will earn
-rewards as they are minted to the DAO pool. When you schedule tokens to be
-unstaked, you stop earning rewards for those tokens.
+Earning inflationary rewards is simple: everyone who has staked API3 tokens into
+the DAO pool contract to participate in governance will earn rewards as they are
+minted to the DAO pool. When you schedule tokens to be unstaked, you stop
+earning rewards for those tokens.
 
 Remember that when you stake, you receive non-transferable pool shares equal to
 the current total number of pool shares divided by the total number of tokens
-staked. Since the reward adds additional tokens to the pool, one pool
-share does not always correspond to one token.
+staked. Since the reward adds additional tokens to the pool, one pool share does
+not always correspond to one token.
 
 ## Incentives of Rewards
 
-In essence, inflationary rewards entice token holders to stake and avoid relative dilution of 
-their tokens. However, staking is risky due to the staked tokens being used as
-collateral for service coverage policies, which
-encourages the staker to participate in governance to ensure that the risk is
-minimized. As a combination of the two, an inflationary governance token used as
-collateral attracts all token holders to participate in governance, which is
-ideal because it maximizes the decentralization of governance. Inflationary
-rewards are automatically minted weekly by the DAO governance smart contract. 
-Furthermore, inflationary rewards are locked for a year, which results
-in governing parties sharing the project’s long term interests.
+In essence, inflationary rewards entice token holders to stake and avoid
+relative dilution of their tokens. However, staking is risky due to the staked
+tokens being used as collateral for service coverage policies, which encourages
+the staker to participate in governance to ensure that the risk is minimized. As
+a combination of the two, an inflationary governance token used as collateral
+attracts all token holders to participate in governance, which is ideal because
+it maximizes the decentralization of governance. Inflationary rewards are
+automatically minted weekly by the DAO governance smart contract. Furthermore,
+inflationary rewards are locked for a year, which results in governing parties
+sharing the project’s long term interests.
 
 <!--
 > ![dao-pool-staking-2](../assets/images/token-weekly-emission.png)
@@ -64,16 +65,17 @@ As a result the change in the total supply of API3 tokens is illustrated below.
 ## Reward Calculation And Distribution
 
 The staking reward will float to have the total staked amount reach equilibrium
-at the target. In other words, the staking reward is programmed to increase while the staked
-amount is below the target, and vice versa. There is no pre-determined schedule.
+at the target. In other words, the staking reward is programmed to increase
+while the staked amount is below the target, and vice versa. There is no
+pre-determined schedule.
 
-Reward amount is represented as APR (annual percentage rate) in API3 tokens. You can derive APY
-(annual percentage yield) using an
+Reward amount is represented as APR (annual percentage rate) in API3 tokens. You
+can derive APY (annual percentage yield) using an
 [online calculator<ExternalLinkImage/>](https://www.aprtoapy.com/). There is a
 governable "APR update step", which is the step size each week the APR will be
 updated with. Also there are governable minimum and maximum APR values, but
-these (especially maximum APR) are there as safety measures. In general, governing the stake target
-will be the primary tool for regulating rewards.
+these (especially maximum APR) are there as safety measures. In general,
+governing the stake target will be the primary tool for regulating rewards.
 
 Rewards are added as staked API3 tokens into the DAO pool each time the
 `mintReward` function is called. `mintReward` is callable by anyone, once per
@@ -100,9 +102,9 @@ adjusted, but it will always stay between a designated maximum and minimum.
 
 Rewards Distribution User X stakes 600 tokens and user Y stakes 400, so there is
 a 60% (X) 40% (Y) split ownership in the 1000 token DAO pool. For a particular
-week the reward mint is 1% (10 total tokens) and the pool is now 1010 tokens.
-X at 60% now has 606 tokens and Y has 404. Remember that the 10 reward tokens
-are locked for a period of one year.
+week the reward mint is 1% (10 total tokens) and the pool is now 1010 tokens. X
+at 60% now has 606 tokens and Y has 404. Remember that the 10 reward tokens are
+locked for a period of one year.
 
 :::
 
