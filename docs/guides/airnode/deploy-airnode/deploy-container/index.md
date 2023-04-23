@@ -31,7 +31,15 @@ This Airnode contains a single API operation (`GET /simple/price`) from
 [CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
 current value of a coin. This guide does not detail the overall configuration of
 an Airnode, it is just a quick start guide then lends itself to understanding an
-Airnode deployment
+Airnode deployment.
+
+Please note that this tutorial only creates an off-chain Airnode and will test
+it using its off-chain
+[HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md). It does
+not attempt to make an RRP (request-response protocol) call from a smart
+contract. If you wish to make an RRP call, please see the guides
+[Making an RRP Request](/guides/airnode/rrp-request.md) and
+[Calling an Airnode](/guides/airnode/calling-an-airnode/).
 
 ## Configuration Files
 
@@ -114,9 +122,10 @@ network. There are a few variables this file will extract (interpolate) from
 There are three values `config.json` extracts from `secrets.env`. Add values for
 each of the there fields.
 
-- `CHAIN_PROVIDER_URL`: A blockchain provider url from a provider such as
-  [Infura](https://infura.io/). Use a url for the Sepolia test network. If you
-  need one see the page [Create an Infura key](/guides/misc/infura-key/).
+- `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
+  provider such as [Infura<ExternalLinkImage/>](https://infura.io/). Use a url
+  for the Sepolia test network. If you need help creating one see the guide
+  [Create an Infura key](/guides/misc/infura-key/).
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
   wallet. The wallet does not need to be funded. Use the Admin CLI command
@@ -183,9 +192,9 @@ In the Docker desktop application view the container
 ## 5. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
-[HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) without
-accessing the blockchain. You provide endpoint parameters to get a response from
-an integrated API.
+off-chain [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md)
+without accessing the blockchain. You provide endpoint parameters to get a
+response from an integrated API.
 
 ### HTTP Gateway
 
@@ -235,8 +244,10 @@ Use CURL to execute the HTTP gateway configured for the Airnode and get the
 results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
 network that Airnode was deployed for.
 
-:::info Custom ChainAPI configuration If you are using your own ChainAPI
-configuration, use the HTTP Gateway according to your OIS.
+:::info Custom ChainAPI configuration
+
+If you are using your own ChainAPI configuration, use the HTTP Gateway according
+to your OIS.
 
 :::
 
@@ -323,14 +334,18 @@ docker rm quick-start-container-airnode
 You have deployed an Airnode into a Docker container and tested it using the
 HTTP gateway that was enabled as part of the Airnode deployment. The Airnode,
 upon deployment, started contacting the `AirnodeRrpV0` contract on a local test
-network to gather any requests made by requesters to this Airnode. This guide
-did not address making a request on-chain as its purpose was simply to quickly
-deploy a functional Airnode.
+network to gather any requests made by requesters to this Airnode.
 
-Finally the API integration was tested using the
-[HTTP gateway](/reference/airnode/latest/understand/http-gateways.md#http-gateway).
-You made a CURL request (using HTTP) to the HTTP gateway. Airnode queried the
-API provider and sent back a response. All of this was performed without
-accessing the blockchain.
+Finally the API integration was tested using the Airnode's off-chain
+[HTTP gateway](/reference/airnode/latest/understand/http-gateways.md). You made
+a CURL request (using HTTP) to the HTTP gateway. Airnode queried the API
+provider and sent back a response. All of this was performed without accessing
+the blockchain.
+
+This guide did not address making an on-chain request as its purpose was to
+quickly deploy a functional Airnode. See the guides
+[Making an RRP Request](/guides/airnode/rrp-request.md) and
+[Calling an Airnode](/guides/airnode/calling-an-airnode/) to learn how your
+smart contract can make an RRP call to an Airnode.
 
 <FlexEndTag/>
