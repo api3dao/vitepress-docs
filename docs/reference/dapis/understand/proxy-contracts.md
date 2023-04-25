@@ -43,7 +43,7 @@ sourced from multiple beacons.
 
 ## dAPI roadmap
 
-Currently dPAIs are under an expansive development cycle and in March of 2023
+Currently dAPIs are under an expansive development cycle and in March of 2023
 the first functional **Self-funded dAPIs** were made available.
 
 | Self-funded dAPIs                            | Managed dAPIs                                         |

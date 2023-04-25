@@ -48,7 +48,7 @@ export default {
         // https://db-api-prod.api3.org/api/docs-chains-reference
         // https://db-api-staging.api3.org/api/docs-chains-reference
         // The production endpoint is broken, Aaron said to use stage for now. There is an issue
-        // as a reminder to switch back in hte future.
+        // as a reminder to switch back in the future.
         // When making the switch back to prod, be sure to change "api3-docs" as well.
         // Should we need to filter the chains later
         // network.filter(network => network.contracts['API3ServerV1'] !== undefined)

@@ -97,7 +97,7 @@ purposes without proper security audits and testing.
   [IProxy Interface](/reference/dapis/iproxy-interface.md).
 
 - The contract has a public variable called `proxyAddress` which is the address
-  of the proxy contract that will be used to access the desired dPAI via its
+  of the proxy contract that will be used to access the desired dAPI via its
   proxy contract. The `setProxyAddress()` function is a public function that
   allows the owner of the contract to update the proxy contract address.
 
