@@ -51,7 +51,7 @@ async function buildContentFile(path) {
   let plainText = ''; // Populated by the function processBaseObj(obj)
 
   /**
-   * This function parses all the elements in hte parsed file between FLEX markers
+   * This function parses all the elements in the parsed file between FLEX markers
    * @param  obj
    */
   async function processBaseObj(obj) {

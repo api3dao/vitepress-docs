@@ -7,12 +7,16 @@ module.exports = [
         link: '/reference/dapis/understand/',
       },
       {
+        text: '• Reading dAPIs',
+        link: '/reference/dapis/understand/read-dapis',
+      },
+      {
         text: '• Proxy contracts',
         link: '/reference/dapis/understand/proxy-contracts',
       },
       {
-        text: '• Reading dAPIs',
-        link: '/reference/dapis/understand/read-dapis',
+        text: '• IProxy interface',
+        link: '/reference/dapis/understand/iproxy',
       },
       {
         text: '• Security',

@@ -1684,6 +1684,15 @@
     "tags": null
   },
   "174": {
+    "title": "IProxy interface",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs",
+    "path": "/reference/dapis/understand/iproxy.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "175": {
     "title": "Proxy contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1692,7 +1701,7 @@
     "outline": "deep",
     "tags": null
   },
-  "175": {
+  "176": {
     "title": "Reading dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1701,7 +1710,7 @@
     "outline": "deep",
     "tags": null
   },
-  "176": {
+  "177": {
     "title": "Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -1710,7 +1719,7 @@
     "outline": "deep",
     "tags": null
   },
-  "177": {
+  "178": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1720,7 +1729,7 @@
     "outline": "deep",
     "tags": null
   },
-  "178": {
+  "179": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1730,7 +1739,7 @@
     "outline": "deep",
     "tags": null
   },
-  "179": {
+  "180": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1740,7 +1749,7 @@
     "outline": "deep",
     "tags": null
   },
-  "180": {
+  "181": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1750,7 +1759,7 @@
     "outline": "deep",
     "tags": null
   },
-  "181": {
+  "182": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1760,7 +1769,7 @@
     "outline": "deep",
     "tags": null
   },
-  "182": {
+  "183": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1770,7 +1779,7 @@
     "outline": "deep",
     "tags": null
   },
-  "183": {
+  "184": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1779,7 +1788,7 @@
     "outline": "deep",
     "tags": null
   },
-  "184": {
+  "185": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1788,7 +1797,7 @@
     "outline": "deep",
     "tags": null
   },
-  "185": {
+  "186": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1797,7 +1806,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "186": {
+  "187": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1806,7 +1815,7 @@
     "outline": "deep",
     "tags": null
   },
-  "187": {
+  "188": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1815,7 +1824,7 @@
     "outline": "deep",
     "tags": null
   },
-  "188": {
+  "189": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
