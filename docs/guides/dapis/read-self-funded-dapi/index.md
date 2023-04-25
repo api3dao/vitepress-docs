@@ -94,7 +94,7 @@ purposes without proper security audits and testing.
   `@api3/contracts/v0.8/interfaces` library, which defines a function called
   `read()` that reads data from a dAPI data feed. Be sure to use the proper
   IProxy interface version for the version of Solidity you are using, see
-  [IProxy Interface](/reference/dapis/iproxy-interface.md).
+  [IProxy Interface](/reference/dapis/understand/iproxy.md).
 
 - The contract has a public variable called `proxyAddress` which is the address
   of the proxy contract that will be used to access the desired dAPI via its
