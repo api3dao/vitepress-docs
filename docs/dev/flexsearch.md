@@ -79,7 +79,7 @@ yarn axios:build;
 
 Build the `/dist` folder with the latest HTML files. All markdown files in
 `/docs` are converted to HTML files and are added to `/dist`. All files must
-contain hte extraction markers `<Flex...Tag/>`.
+contain the extraction markers `<Flex...Tag/>`.
 
 ```js
 yarn docs:build
