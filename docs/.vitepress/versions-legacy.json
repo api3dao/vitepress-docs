@@ -1,0 +1,62 @@
+{
+  "versionsAirnode": [
+    {
+      "version": "v0.10",
+      "path": "https://old-docs.api3.org/airnode/v0.10/"
+    },
+    {
+      "version": "v0.9",
+      "path": "https://old-docs.api3.org/airnode/v0.9/"
+    },
+    {
+      "version": "v0.8",
+      "path": "https://old-docs.api3.org/airnode/v0.8/"
+    },
+    {
+      "version": "v0.7",
+      "path": "https://old-docs.api3.org/airnode/v0.7/"
+    },
+    {
+      "version": "v0.6",
+      "path": "https://old-docs.api3.org/airnode/v0.6/"
+    },
+    {
+      "version": "v0.5",
+      "path": "https://old-docs.api3.org/airnode/v0.5/"
+    },
+    {
+      "version": "v0.4",
+      "path": "https://old-docs.api3.org/airnode/v0.4/"
+    },
+    {
+      "version": "v0.3",
+      "path": "https://old-docs.api3.org/airnode/v0.3/"
+    },
+    {
+      "version": "v0.2",
+      "path": "https://old-docs.api3.org/airnode/v0.2/"
+    },
+    {
+      "version": "pre-alpha",
+      "path": "https://old-docs.api3.org/airnode/pre-alpha/"
+    }
+  ],
+  "versionsOIS": [
+    {
+      "version": "v1.4",
+      "path": "https://old-docs.api3.org/ois/v1.4/"
+    },
+    {
+      "version": "v1.2",
+      "path": "https://old-docs.api3.org/ois/v1.2/"
+    },
+    {
+      "version": "v1.1",
+      "path": "https://old-docs.api3.org/ois/v1.1/"
+    },
+    {
+      "version": "v1.0",
+      "path": "https://old-docs.api3.org/ois/v1.0/"
+    }
+  ]
+}
