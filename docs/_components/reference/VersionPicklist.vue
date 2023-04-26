@@ -77,7 +77,9 @@ export default {
       } else {
         // Going to old docs
         var a = document.createElement('a');
-        a.target = '_oldDocs';
+        // Be careful adding target back in. MacOS in DEV is fine
+        // but running a local build on localhost:8082 you get a pop-up blocked message.
+        // a.target = '_oldDocs';
         a.href = this.path;
         a.click();
 
