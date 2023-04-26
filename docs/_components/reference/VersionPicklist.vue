@@ -76,6 +76,7 @@ export default {
       // if present at all.
       if (
         window.location.href.indexOf('localhost:5173') === -1 &&
+        this.versions.length > 0 &&
         this.versions[0].path.indexOf('/next') !== -1
       ) {
         this.versions.shift();
@@ -88,9 +89,13 @@ export default {
       } else {
         // Going to old docs
         var a = document.createElement('a');
-        // Be careful adding target back in. MacOS in DEV is fine
+        // Be careful adding target for MacOS,  in DEV it is fine,
         // but running a local build on localhost:8082 you get a pop-up blocked message.
-        // a.target = '_oldDocs';
+        // For other browser we want a new tab because the state of the newer docs is preserved
+        // in its tab.
+        if (window.navigator.userAgent.indexOf('Safari') === -1) {
+          a.target = '_oldDocs';
+        }
         a.href = this.path;
         a.click();
 
