@@ -35,17 +35,17 @@ Prior to version `v0.11` there are several `v0.x` versions of Airnode. Their
 documentation is available at
 [https://old-docs.api3.org<ExternalLinkImage/>](https://old-docs.api3.org).
 
-|           |
-| --------- |
-| v0.10     |
-| v0.9      |
-| v0.8      |
-| v0.7      |
-| v0.6      |
-| v0.5      |
-| v0.4      |
-| v0.3      |
-| v0.2      |
-| pre-alpha |
+|                                                                               |
+| ----------------------------------------------------------------------------- |
+| [v0.10<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.10/)         |
+| [v0.9<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.9/)           |
+| [v0.8<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.8/)           |
+| [v0.7<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.7/)           |
+| [v0.6<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.6/)           |
+| [v0.5<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.5/)           |
+| [v0.4<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.4/)           |
+| [v0.3<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.3/)           |
+| [v0.2<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.2/)           |
+| [pre-alpha<ExternalLinkImage/>](https://old-docs.api3.org/airnode/pre-alpha/) |
 
 <FlexEndTag/>

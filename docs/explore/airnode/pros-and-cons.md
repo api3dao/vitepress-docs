@@ -17,12 +17,11 @@ tags:
 # {{$frontmatter.title}}
 
 API3 embraces the ideology of a decentralized web and the power of open source.
-Furthermore it believes that the
-[oracle problem is ill-posed](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)<ExternalLinkImage/>
-and instead, the problem to be solved is how to connect APIs to the blockchain.
-Airnode is a first-party oracle solution that addresses this problem. Like all
-design decisions, however, the advantages presented below have tradeoffs that
-should be understood.
+Furthermore it believes that the oracle problem is ill-posed and instead, the
+problem to be solved is how to connect APIs to the blockchain. Airnode is a
+first-party oracle solution that addresses this problem. Like all design
+decisions, however, the advantages presented below have tradeoffs that should be
+understood.
 
 ### Advantages
 
