@@ -1780,6 +1780,16 @@
     "tags": null
   },
   "184": {
+    "title": "Versions",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.0",
+    "path": "/reference/ois/latest/versions.html",
+    "version": "v2.0",
+    "outline": "deep",
+    "tags": null
+  },
+  "185": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1788,7 +1798,7 @@
     "outline": "deep",
     "tags": null
   },
-  "185": {
+  "186": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1797,7 +1807,7 @@
     "outline": "deep",
     "tags": null
   },
-  "186": {
+  "187": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1806,7 +1816,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "187": {
+  "188": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1815,7 +1825,7 @@
     "outline": "deep",
     "tags": null
   },
-  "188": {
+  "189": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1824,7 +1834,7 @@
     "outline": "deep",
     "tags": null
   },
-  "189": {
+  "190": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,

@@ -8,7 +8,6 @@ import WarningSimultaneousDeployments from '../../_components/guides/WarningSimu
 import DeployerPermissionsWarning from '../../_components/guides/DeployerPermissionsWarning.vue';
 import VersionWarning from '../../_components/VersionWarning.vue';
 import PageHeader from '../../_components/PageHeader.vue';
-import OisAirnodeVersions from '../../_components/reference/ois/OisAirnodeVersions.vue';
 import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
@@ -39,7 +38,6 @@ export default {
     app.component('DeployerPermissionsWarning', DeployerPermissionsWarning);
     app.component('VersionWarning', VersionWarning);
     app.component('PageHeader', PageHeader);
-    app.component('OisAirnodeVersions', OisAirnodeVersions);
     app.component('ExternalLinkImage', ExternalLinkImage);
     app.component('CopyIcon', CopyIcon);
     app.component('SponsorWalletWarning', SponsorWalletWarning);

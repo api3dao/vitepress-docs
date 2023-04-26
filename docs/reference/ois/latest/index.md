@@ -45,14 +45,6 @@ endpoint that maps to the same API operation.
 > - <p>B)<b> ois.endpoints:  </b>Defines Airnode endpoints.</p>
 >   <p>Relationships exist between an Airnode endpoint and an API operation.</p>
 
-## Releases
-
-<br/>
-<OisAirnodeVersions/>
-
-Documentation for versions `v1.0.0` through `v1.4.0` are available on the
-[legacy documentation site<ExternalLinkImage/>](https://old-docs.api3.org).
-
 ## API Mapping Examples
 
 The following are three possible Airnode to API operation mapping examples.

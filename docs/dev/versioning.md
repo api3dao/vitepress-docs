@@ -71,6 +71,6 @@ renamed make the following changes.
    the proper version.
 1. `/next` will not have a repo tag created until its version is release. Use
    the version of `/latest` in the mean time.
-1. Update the [Releases](/reference/ois/latest/index.md#releases) section in OIS
-   which maps OIS versions to Airnode versions.
+1. Update the [Versions](/reference/ois/latest/versions.md) page in OIS which
+   maps OIS versions to Airnode versions.
 1. Update the [Versions](/reference/airnode/latest/versions.md) page in Airnode.
