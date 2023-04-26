@@ -78,8 +78,8 @@ An OIS has five root fields (keys).
 ## 1. `oisFormat`
 
 (Required) The OIS format version followed while generating the specifications.
-
-<OisAirnodeVersions/>
+See [Versions](/reference/ois/latest/versions) for a list of OIS versions used
+by each Airnode version.
 
 ## 2. `title`
 
