@@ -28,6 +28,7 @@ export default {
   // injects the slots
   Layout: Api3Layout,
   enhanceApp({ app }) {
+    console.log('API3 documentation loading...');
     app.component('VersionPicklist', VersionPicklist);
     app.component('SearchBtn', SearchBtn);
     app.component('SearchResults', SearchResults);
