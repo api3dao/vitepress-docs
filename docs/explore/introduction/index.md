@@ -78,8 +78,8 @@ to the lowest levels of the protocol.
 Additionally, existing oracle solutions fall short because they fail to make
 this distinction, resulting in inferior solutions that depend on third-party
 oracles and ecosystems that exclude API providers. As such, API3 believes the
-oracle problem is ill-posed, instead we are faced with an
-[API Connectivity Problem<ExternalLinkImage/>](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636).
+oracle problem is ill-posed, instead we are faced with an API Connectivity
+Problem.
 
 ## Airnode
 
