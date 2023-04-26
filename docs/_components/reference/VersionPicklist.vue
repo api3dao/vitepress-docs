@@ -69,6 +69,17 @@ export default {
         this.versions = [];
         this.versionsLegacy = [];
       }
+
+      // Alter the version array for PROD only.
+      // For PROD remove "/next" for Airnode and OIS
+      // The top of the versions array will always be the /next version
+      // if present at all.
+      if (
+        window.location.href.indexOf('localhost:5173') === -1 &&
+        this.versions[0].path.indexOf('/next') !== -1
+      ) {
+        this.versions.shift();
+      }
     },
     goToRoute() {
       if (this.path.indexOf('https://') === -1) {
