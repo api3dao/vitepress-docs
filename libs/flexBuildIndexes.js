@@ -153,20 +153,32 @@ async function addToFrontmatter(id, frontmatter) {
 function exportAllIndexFiles() {
   indexAll.export((key, data) => {
     let dir = 'docs/public/indexes/all';
-    fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
+    const path = `${dir}/${key}.json`;
+    fse.writeFileSync(path, data !== undefined ? data : '');
+    outputFileSize(path);
   });
 }
 
 function exportLatestIndexFiles() {
   indexLatest.export((key, data) => {
     let dir = 'docs/public/indexes/latest';
-    fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
+    const path = `${dir}/${key}.json`;
+    fse.writeFileSync(path, data !== undefined ? data : '');
+    outputFileSize(path);
   });
+}
+
+function outputFileSize(path) {
+  var stats = fs.statSync(path);
+  var fileSizeInBytes = stats.size;
+  // Convert the file size to megabytes
+  var fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
+  console.log(' >', path, fileSizeInMegabytes, 'MB');
 }
 
 /*
   It is important that the file have the FLEX_START_TAG in it.
-  Some markdown files exists to be included inside others and
+  Some markdown files exist to be included inside others and
   do not contain frontmatter.
 */
 const ignoreFiles = ['chains-list.html'];
