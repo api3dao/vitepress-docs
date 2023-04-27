@@ -34,7 +34,7 @@ notification every time it runs (self-operates).
 Turn on the optional heartbeat functionality by setting all fields in the
 `config.json` section for `nodeSettings.heartbeat`.
 
-```json
+```json{12-16}
 {
   ois:{...},
   triggers:{...},
@@ -95,7 +95,8 @@ The table below illustrates the parameters passed to the Heartbeat URL.
 | oev_gateway_url              | body   | string |
 | signature                    | body   | string |
 
-Below is an example of what is included in the request body to `heartbeat.url`.
+Below is an example of what is included in the request body. Note that
+`airnode-heartbeat-api-key` can be found in the request header and not the body.
 
 ```json
 {
