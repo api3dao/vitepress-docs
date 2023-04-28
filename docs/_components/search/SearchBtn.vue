@@ -27,12 +27,14 @@
           id="search-value"
         />
         <br />
+        <!-- HIDE checkbox until Airnode v0.12 deploys -->
         <input
+          v-if="1 === 8"
           type="checkbox"
           @change="handleCheckboxChange(event)"
           class="api3-search-checkbox"
           id="indexCheckbox"
-        /><span style="margin-left: 10px; font-size: small"
+        /><span v-if="1 === 8" style="margin-left: 10px; font-size: small"
           >Include all Airnode/OIS versions</span
         >
       </form>
