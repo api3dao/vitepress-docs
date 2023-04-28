@@ -28,16 +28,11 @@
         />
       </form>
       <SearchResults v-if="isIndexLoaded" :results="results" />
-      <!--img
+      <img
         v-show="!isIndexLoaded"
         src="/img/circle-loading-gif.webp"
-        style="
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 10%;
-        "
-      /-->
+        style="display: block; margin: auto; width: 10%"
+      />
     </div>
   </teleport>
   <span>
