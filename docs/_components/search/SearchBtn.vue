@@ -9,7 +9,7 @@
         <div style="font-size: 24pt; transform: scaleY(0.7)">X</div>
       </button>
 
-      <form action="">
+      <form action="" v-show="isIndexLoaded">
         <input
           placeholder="min 3 characters each word"
           autocomplete="off"
@@ -27,7 +27,17 @@
           id="search-value"
         />
       </form>
-      <SearchResults v-show="results" :results="results" />
+      <SearchResults v-if="isIndexLoaded" :results="results" />
+      <!--img
+        v-show="!isIndexLoaded"
+        src="/img/circle-loading-gif.webp"
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 10%;
+        "
+      /-->
     </div>
   </teleport>
   <span>
@@ -69,13 +79,11 @@ import { watch } from 'vue';
 export default {
   name: 'SearchBtn',
   data: () => ({
-    showModal: false,
-    isModalActive: false,
-    indexAll: undefined,
-    indexLatest: undefined,
-    results: [],
-    useIndexAll: false,
-    isDark: undefined,
+    isModalActive: false, // template uses this to hide overlay
+    isIndexLoaded: false,
+    index: undefined,
+    results: undefined,
+    isDark: false,
   }),
   setup() {
     return {
@@ -85,6 +93,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * Run search, triggered by keypress
+     */
     search() {
       let val = document.getElementById('search-value').value;
       let checkbox = false;
@@ -100,90 +111,74 @@ export default {
       localStorage.setItem('search-words', val.toLowerCase());
       this.sendEvent();
 
-      // indexLatest (default)
-      let ids;
-      if (checkbox === false) {
-        ids = this.indexLatest.search({
-          query: val.toLowerCase(),
-          index: ['content'],
-          limit: 100,
-        });
-      }
-      // indexAll
-      else {
-        ids = this.indexAll.search({
-          query: val.toLowerCase(),
-          index: ['content'],
-          limit: 100,
-        });
-      }
+      let ids = this.index.search({
+        query: val.toLowerCase(),
+        index: ['content'],
+        limit: 100,
+      });
 
       // Build results set
       ids.forEach((id) => {
         this.results.push({ id: id, frontmatter: frontmatter[id] });
       });
     },
+    /**
+     * Opens the search overlay, load index
+     */
     async openModal() {
       document.getElementById('search-value').value = '';
       this.results = [];
 
       this.isModalActive = true;
-      if (!this.indexLatest) this.buildIndexLatest();
-      //if (!this.indexAll) this.buildIndexAll();
+      if (!this.index) this.buildIndex('latest');
     },
+    /**
+     * Close the search overlay, clear index
+     */
     hideModal() {
       localStorage.removeItem('search-words');
       this.isModalActive = false;
+      this.index = undefined;
+      this.isIndexLoaded = false;
     },
-    async buildIndexAll() {
-      this.indexAll = new Index({
-        tokenize: 'full',
-      });
-      //console.log('buildIndexAll() MODE', import.meta.env.MODE);
-
-      let cfg = await axios.get('/indexes/all/cfg.json');
-      let ctx = await axios.get('/indexes/all/ctx.json');
-      let map = await axios.get('/indexes/all/map.json');
-      let reg = await axios.get('/indexes/all/reg.json');
-
-      this.indexAll.import('cfg', cfg.data);
-      this.indexAll.import('ctx', ctx.data);
-      this.indexAll.import('map', map.data);
-      this.indexAll.import('reg', reg.data);
-    },
-    async buildIndexLatest() {
-      this.indexLatest = new Index({
+    /**
+     * Build the index by name
+     * @param {*} name
+     */
+    async buildIndex(name) {
+      this.index = new Index({
         tokenize: 'full',
       });
       let cfg,
         ctx,
         map,
         reg = undefined;
-      //console.log('buildIndexLatest() MODE', import.meta.env.MODE);
+      console.log('buildIndex() MODE', import.meta.env.MODE);
       if (import.meta.env.MODE === 'development') {
-        cfg = await axios.get('/indexes/latest/cfg.json');
-        ctx = await axios.get('/indexes/latest/ctx.json');
-        map = await axios.get('/indexes/latest/map.json');
-        reg = await axios.get('/indexes/latest/reg.json');
+        cfg = await axios.get(`/indexes/${name}/cfg.json`);
+        ctx = await axios.get(`/indexes/${name}/ctx.json`);
+        map = await axios.get(`/indexes/${name}/map.json`);
+        reg = await axios.get(`/indexes/${name}/reg.json`);
       } else {
         cfg = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/cfg.json'
+          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/cfg.json`
         );
         ctx = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/ctx.json'
+          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/ctx.json`
         );
         map = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/map.json'
+          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/map.json`
         );
         reg = await axios.get(
-          'https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/latest/reg.json'
+          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/reg.json`
         );
       }
 
-      this.indexLatest.import('cfg', cfg.data);
-      this.indexLatest.import('ctx', ctx.data);
-      this.indexLatest.import('map', map.data);
-      this.indexLatest.import('reg', reg.data);
+      this.index.import('cfg', cfg.data);
+      this.index.import('ctx', ctx.data);
+      this.index.import('map', map.data);
+      this.index.import('reg', reg.data);
+      this.isIndexLoaded = true;
     },
   },
 
