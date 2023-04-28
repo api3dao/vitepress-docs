@@ -11,6 +11,9 @@ const parse = require('html-dom-parser');
 
 let directoriesArr = [];
 let id = 1; // Used as the id for each page added to the index
+let indexAllDev = new Index({
+  tokenize: 'full',
+});
 let indexAll = new Index({
   tokenize: 'full',
 });
@@ -125,9 +128,18 @@ async function buildContentFile(path) {
   };
   fse.outputFileSync(contentPath, JSON.stringify(json));
 
+  // ----------------------------------
+  // ----- START > add to indexes -----
   // Update the in memory flexSearch indexes to be exported later
-  // All files (from all docsets) go into indexAll
-  indexAll.add(id, json.content);
+  // Exclude the docset /dev
+
+  // All files (from all docsets) go into indexAllDev including /next
+  indexAllDev.add(id, json.content);
+
+  // All files (from all docsets) go into indexAll excluding /next
+  if (path.indexOf('/next/') === -1) {
+    indexAll.add(id, json.content);
+  }
 
   // Only add path within the latest docsets
   latestDocsets.forEach((element) => {
@@ -135,6 +147,8 @@ async function buildContentFile(path) {
       indexLatest.add(id, json.content);
     }
   });
+  // ----- END > add to indexes -----
+  // --------------------------------
 
   id++;
 }
@@ -150,26 +164,40 @@ async function addToFrontmatter(id, frontmatter) {
 /*
   Export all flex indexes to disk /public/indexes/all
 */
+function exportAllDevIndexFiles() {
+  indexAllDev.export((key, data) => {
+    let dir = 'docs/public/indexes/all-dev';
+    const path = `${dir}/${key}.json`;
+    fse.writeFileSync(path, data !== undefined ? data : '');
+    outputFileSize(path);
+  });
+}
+
 function exportAllIndexFiles() {
   indexAll.export((key, data) => {
     let dir = 'docs/public/indexes/all';
-    fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
+    const path = `${dir}/${key}.json`;
+    fse.writeFileSync(path, data !== undefined ? data : '');
+    outputFileSize(path);
   });
 }
 
 function exportLatestIndexFiles() {
   indexLatest.export((key, data) => {
     let dir = 'docs/public/indexes/latest';
-    fse.writeFileSync(`${dir}/${key}.json`, data !== undefined ? data : '');
+    const path = `${dir}/${key}.json`;
+    fse.writeFileSync(path, data !== undefined ? data : '');
+    outputFileSize(path);
   });
 }
 
-/*
-  It is important that the file have the FLEX_START_TAG in it.
-  Some markdown files exists to be included inside others and
-  do not contain frontmatter.
-*/
-const ignoreFiles = ['chains-list.html'];
+function outputFileSize(path) {
+  var stats = fs.statSync(path);
+  var fileSizeInBytes = stats.size;
+  // Convert the file size to megabytes
+  var fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
+  console.log(' >', path, fileSizeInMegabytes, 'MB');
+}
 
 /*
   Load all HTML files from /docs/.vitepress/dist 
@@ -177,6 +205,11 @@ const ignoreFiles = ['chains-list.html'];
 async function start() {
   console.log('> Creating content pages in /indexes/content-files/');
   file.walkSync('./docs/.vitepress/dist', walkCB);
+
+  // It is important that the file have the FLEX_START_TAG in it.
+  // Some markdown files exist to be included inside others and
+  // do not contain frontmatter.
+  const inclusiveFiles = ['chains-list.html'];
   const skipFiles = [
     './docs/.vitepress/dist/index.html',
     './docs/.vitepress/dist/team.html',
@@ -187,7 +220,7 @@ async function start() {
     const dir = directoriesArr[i].dir;
     const files = directoriesArr[i].files;
 
-    // For each file in directoriesArr
+    // For each file in directoriesArr, excluding docset /dev
     for (let x = 0; x < files.length; x++) {
       if (
         files[x].indexOf('.html') > -1 &&
@@ -196,7 +229,7 @@ async function start() {
       ) {
         // If the md file is an inclusive file do not build a content file for it.
         // Its content will be part of its parent file.
-        if (!ignoreFiles.includes(files[x])) {
+        if (!inclusiveFiles.includes(files[x])) {
           try {
             await buildContentFile(dir + '/' + files[x]);
           } catch (err) {
@@ -209,6 +242,12 @@ async function start() {
     }
   }
   console.log('\n> Finishing');
+
+  console.log(
+    '> Creating "all-dev" files in /public/indexes/all-dev (async operation *)'
+  );
+  exportAllDevIndexFiles();
+
   console.log(
     '> Creating "all" files in /public/indexes/all (async operation *)'
   );
@@ -227,6 +266,7 @@ async function start() {
 }
 
 console.log('\n----- Building FlexSearch Indexes -----');
+fse.ensureDirSync('docs/public/indexes/all-dev');
 fse.ensureDirSync('docs/public/indexes/all');
 fse.ensureDirSync('docs/public/indexes/latest');
 
