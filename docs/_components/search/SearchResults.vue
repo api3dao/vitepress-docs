@@ -1,8 +1,3 @@
-<!--
-Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
--->
-
-<!-- v-click-outside="onClickOutside" -->
 <template>
   <div style="user-select: none">
     <div style="float: right; font-size: x-small">
@@ -42,30 +37,6 @@ Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
         </span>
       </a>
     </div>
-
-    <!-- Removed from input, keep in case needed - @keyup.enter="go(focusIndex)"-->
-    <!--div class="sb-search-input-box">
-      <input
-        ref="input"
-        aria-label="Search"
-        :value="query"
-        :class="{ focused: focused }"
-        placeholder="minimum 3 characters"
-        autocomplete="off"
-        spellcheck="false"
-        @input="query = $event.target.value"
-        @focus="focused = true"
-        @blur="focused = false"
-        @keyup.up="onUp"
-        @keyup.down="onDown"
-      />&nbsp;&nbsp;<span v-if="suggestions">({{ suggestionsCnt }})</span>
-      <div
-        style="margin-top: -11px; float: right; font-size: x-small; color: red"
-        v-if="suggestions && cntLimit"
-      >
-        result set limit reached
-      </div>
-    </div-->
   </div>
 </template>
 
