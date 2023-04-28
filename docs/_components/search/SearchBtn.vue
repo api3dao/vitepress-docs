@@ -26,8 +26,19 @@
           type="text"
           id="search-value"
         />
+        <br />
+        <!-- HIDE checkbox until Airnode v0.12 deploys -->
+        <input
+          v-if="1 === 8"
+          type="checkbox"
+          @change="handleCheckboxChange(event)"
+          class="api3-search-checkbox"
+          id="indexCheckbox"
+        /><span v-if="1 === 8" style="margin-left: 10px; font-size: small"
+          >Include all Airnode/OIS versions</span
+        >
       </form>
-      <SearchResults v-if="isIndexLoaded" :results="results" />
+      <SearchResults v-if="isIndexLoaded" :found="found" :results="results" />
       <img
         v-show="!isIndexLoaded"
         src="/img/circle-loading-gif.webp"
@@ -59,9 +70,7 @@ import Index from 'flexsearch';
 /**
  * Directly importing the local files for the indexes will break the VitePress build.
  * It seems that it has issue importing large files like map.json.
- * Keep this note and the comments import lines below for future
- * reference while this is explored with the VitePress team.
- * Use axios to get the indexes, thus VitePress (via Vite) will not try and load them.
+ * Use axios to get the indexes, thus VitePress (via Vite build) will not try and load them.
  */
 
 import frontmatter from '../../.vitepress/frontmatterIds.json';
@@ -79,6 +88,7 @@ export default {
     index: undefined,
     results: undefined,
     isDark: false,
+    found: 0, // number of rows the search found
   }),
   setup() {
     return {
@@ -88,12 +98,12 @@ export default {
     };
   },
   methods: {
-    /**
+    /** --------------------------------
      * Run search, triggered by keypress
      */
     search() {
       let val = document.getElementById('search-value').value;
-      let checkbox = false;
+      this.found = 0;
 
       this.results = [];
       if (val.length < 3) {
@@ -105,19 +115,24 @@ export default {
       // Store the search words into localStorage
       localStorage.setItem('search-words', val.toLowerCase());
       this.sendEvent();
-
       let ids = this.index.search({
         query: val.toLowerCase(),
         index: ['content'],
-        limit: 100,
+        limit: 1000,
       });
+      this.found = ids.length;
 
-      // Build results set
+      // Cut the results array down to 100 rows
+      if (this.found > 100) {
+        ids = ids.slice(0, 100);
+      }
+
+      // Build results set, only add the first 100 rows
       ids.forEach((id) => {
         this.results.push({ id: id, frontmatter: frontmatter[id] });
       });
     },
-    /**
+    /** -----------------------------------
      * Opens the search overlay, load index
      */
     async openModal() {
@@ -127,7 +142,7 @@ export default {
       this.isModalActive = true;
       if (!this.index) this.buildIndex('latest');
     },
-    /**
+    /** ------------------------------------
      * Close the search overlay, clear index
      */
     hideModal() {
@@ -135,8 +150,22 @@ export default {
       this.isModalActive = false;
       this.index = undefined;
       this.isIndexLoaded = false;
+      this.found = 0;
     },
-    /**
+    async handleCheckboxChange(e) {
+      var cb = document.getElementById('indexCheckbox');
+      if (cb.checked) {
+        if (import.meta.env.MODE === 'development') {
+          await this.buildIndex('all-dev');
+        } else {
+          await this.buildIndex('all');
+        }
+      } else {
+        await this.buildIndex('latest');
+      }
+      this.search();
+    },
+    /** ----------------------
      * Build the index by name
      * @param {*} name
      */
@@ -148,7 +177,7 @@ export default {
         ctx,
         map,
         reg = undefined;
-      console.log('buildIndex() MODE', import.meta.env.MODE);
+      // console.log('buildIndex() MODE', import.meta.env.MODE);
       if (import.meta.env.MODE === 'development') {
         cfg = await axios.get(`/indexes/${name}/cfg.json`);
         ctx = await axios.get(`/indexes/${name}/ctx.json`);
@@ -176,7 +205,6 @@ export default {
       this.isIndexLoaded = true;
     },
   },
-
   async mounted() {
     // Used by the search icon
     this.isDark = useData().isDark.value;
@@ -198,6 +226,7 @@ export default {
   transform: scale(1.4);
   border-color: black;
   margin-top: 10px;
+  margin-left: 10px;
 }
 .api3-search-modal {
   overflow-y: auto;
