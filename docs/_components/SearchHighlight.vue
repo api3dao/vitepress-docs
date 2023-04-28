@@ -2,6 +2,9 @@
 The component highlights text that is typed into the 
 SearchBtn.vue component. Each page has this component at the top of the page.
 -->
+<!--
+Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
+-->
 
 <template>
   <div v-show="1 === 2">SearchHighlight.vue</div>
