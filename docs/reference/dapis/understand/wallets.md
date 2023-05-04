@@ -36,9 +36,9 @@ which allows you to find a dAPI, fund its sponsor wallet, and obtain its
 >
 > **Data feed updates:**
 >
-> Airnode monitors the value of an API provider's API endpoint based on a
-> heartbeat parameter. If the on-chain value deviates by 1% from the API
-> provider value, the data feed's beacon is updated on-chain.
+> Airnode monitors the value of an API provider's API endpoint based on its
+> `updateInterval` parameter. If the on-chain value deviates by 1% from the API
+> provider value, the dAPI's beacon is updated on-chain.
 
 :::info Deviation: Self-funded dAPIs
 

@@ -78,15 +78,15 @@ companies.
 Currently dAPIs are under an expansive development cycle and in March of 2023
 the first functional **Self-funded dAPIs** were made available.
 
-| Self-funded dAPIs                            | Managed dAPIs                                         |
-| -------------------------------------------- | ----------------------------------------------------- |
-| March 2023                                   | \* Summer 2023                                        |
-| Single public proxy contract                 | Single public proxy contract                          |
-| 1% deviation                                 | Multiple deviations<br/>(0.25%, 0.5%, 1%, 5%)         |
-| 60 second interval                           | 30-60 second interval                                 |
-| 24 hour heartbeat                            | 2 minute or 24 hour heartbeat                         |
-| Sourced from a single<br/>data feed (beacon) | Sourced from multiple<br/>data feeds (beacons)        |
-| Gas costs are community funded               | Gas costs are managed <br/>by API3 using upgrade fees |
+| Self-funded dAPIs                                                               | Managed dAPIs                                         |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| March 2023                                                                      | \* Summer 2023                                        |
+| Single public [proxy contract](/reference/dapis/understand/proxy-contracts.md)  | Single public proxy contract                          |
+| 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%, 5%)         |
+| 60 second [interval](/reference/dapis/understand/deviations.md#update-interval) | 30-60 second interval                                 |
+| 24 hour [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)        | 2 minute or 24 hour heartbeat                         |
+| Sourced from a single<br/>data feed (beacon)                                    | Sourced from multiple<br/>data feeds (beacons)        |
+| Gas costs are community funded                                                  | Gas costs are managed <br/>by API3 using upgrade fees |
 
 <div style="margin-left:10px;margin-top:-15px;font-size:small;font-family:courier;">* Managed
 dAPIs are under development, the release date is not available at this time.</div>
