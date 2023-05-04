@@ -17,11 +17,11 @@ tags:
 # {{$frontmatter.title}}
 
 dAPIs can be read on the following chains using
-[API3 Market proxy contracts](/reference/dapis/understand/proxy-contracts.md).
-Use the [API3 Market<ExternalLinkImage/>](https://market.api3.org/) website to
-create proxy contracts.
+[proxy contracts](/reference/dapis/understand/proxy-contracts.md) via the
+[IProxy](/reference/dapis/understand/iproxy.md) interface. Use the
+[API3 Market<ExternalLinkImage/>](https://market.api3.org/) website to acquire
+proxy contract addresses.
 
-<br/>
 <!--@include: ./chains-list.md-->
 
 <FlexEndTag/>
