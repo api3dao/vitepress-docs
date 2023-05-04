@@ -49,7 +49,7 @@ the heartbeat) the dAPI value is forcibly updated. For example:
 
 Self-funded dAPIs are only available on the API3 Market with a deviation
 threshold of 1% and a
-[heartbeat](/reference/dapis/understand/devaitions.md#Heartbeat) of 24 hours.
+[heartbeat](/reference/dapis/understand/deviations.md#heartbeat) of 24 hours.
 
 | Deviation | Heartbeat |
 | --------- | --------- |
@@ -58,7 +58,7 @@ threshold of 1% and a
 ## Managed dAPIs
 
 Managed dAPIs will be available on the API3 Market with multiple deviation
-thresholds and [heartbeat](/reference/dapis/understand/devaitions.md#Heartbeat)
+thresholds and [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 settings.
 
 | Deviation | Heartbeat |

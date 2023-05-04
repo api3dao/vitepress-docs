@@ -37,11 +37,11 @@ contract as dAPIs.
 `Api3ServerV1.sol` manages the definitions for hundreds of dAPIs, each of which
 is an aggregated value of multiple beacons or the value of a single beacon.
 
-- [Self-funded dAPIs](/reference/dapis/understand/proxy-contracts.md#self-funded-dapis):
+- [Self-funded dAPIs](/reference/dapis/understand/index.md#self-funded-dapis):
   sourced from a single data feed (beacon)
-- [Managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis):
-  sourced from multiple data feeds (beacons) - _managed dAPIs are currently
-  under development_
+- [Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis): sourced
+  from multiple data feeds (beacons) - _managed dAPIs are currently under
+  development_
 
 Functions in `Api3ServerV1.sol` expose dAPIs values to API3 Market
 [proxy contracts](/reference/dapis/understand/proxy-contracts.md). dApps do not
@@ -114,9 +114,9 @@ approach.
 ### Single source data feed
 
 Unlike the forthcoming
-[managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis),
-self-funded dAPIs are sourced from one data feed (beacon). This may not make
-them ideal to use on a production chain.
+[managed dAPIs](/reference/dapis/understand/index.md#managed-dapis), self-funded
+dAPIs are sourced from one data feed (beacon). This may not make them ideal to
+use on a production chain.
 
 See the guide
 [Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
