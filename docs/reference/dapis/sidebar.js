@@ -19,6 +19,14 @@ module.exports = [
         link: '/reference/dapis/understand/iproxy',
       },
       {
+        text: '• Deviation thresholds',
+        link: '/reference/dapis/understand/deviations',
+      },
+      {
+        text: '• Sponsor wallets',
+        link: '/reference/dapis/understand/wallets',
+      },
+      {
         text: '• Security',
         link: '/reference/dapis/understand/security',
       },
