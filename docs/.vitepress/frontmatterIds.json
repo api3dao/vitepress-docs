@@ -1675,51 +1675,69 @@
     "tags": null
   },
   "173": {
-    "title": "dAPIs are data feeds",
+    "title": "Deviation thresholds",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/understand/index.html",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/wallets.html",
     "outline": "deep",
     "tags": null
   },
   "174": {
-    "title": "IProxy interface",
+    "title": "dAPIs are data feeds",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/understand/iproxy.html",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/index.html",
     "outline": "deep",
     "tags": null
   },
   "175": {
-    "title": "Proxy contracts",
+    "title": "IProxy interface",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/understand/proxy-contracts.html",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/iproxy.html",
     "outline": "deep",
     "tags": null
   },
   "176": {
-    "title": "Reading dAPIs",
+    "title": "Proxy contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/understand/read-dapis.html",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/proxy-contracts.html",
     "outline": "deep",
     "tags": null
   },
   "177": {
-    "title": "Security",
+    "title": "Reading dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs",
-    "path": "/reference/dapis/understand/security.html",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/read-dapis.html",
     "outline": "deep",
     "tags": null
   },
   "178": {
+    "title": "Security",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/security.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "179": {
+    "title": "Sponsor wallets",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/wallets.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "180": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1729,7 +1747,7 @@
     "outline": "deep",
     "tags": null
   },
-  "179": {
+  "181": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1739,7 +1757,7 @@
     "outline": "deep",
     "tags": null
   },
-  "180": {
+  "182": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1749,7 +1767,7 @@
     "outline": "deep",
     "tags": null
   },
-  "181": {
+  "183": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1759,7 +1777,7 @@
     "outline": "deep",
     "tags": null
   },
-  "182": {
+  "184": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1769,7 +1787,7 @@
     "outline": "deep",
     "tags": null
   },
-  "183": {
+  "185": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1779,7 +1797,7 @@
     "outline": "deep",
     "tags": null
   },
-  "184": {
+  "186": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -1789,7 +1807,7 @@
     "outline": "deep",
     "tags": null
   },
-  "185": {
+  "187": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1798,7 +1816,7 @@
     "outline": "deep",
     "tags": null
   },
-  "186": {
+  "188": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1807,7 +1825,7 @@
     "outline": "deep",
     "tags": null
   },
-  "187": {
+  "189": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1816,7 +1834,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "188": {
+  "190": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1825,7 +1843,7 @@
     "outline": "deep",
     "tags": null
   },
-  "189": {
+  "191": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1834,7 +1852,7 @@
     "outline": "deep",
     "tags": null
   },
-  "190": {
+  "192": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
