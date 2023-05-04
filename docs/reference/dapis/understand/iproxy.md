@@ -2,7 +2,7 @@
 title: IProxy interface
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
-pageHeader: Reference → dAPIs
+pageHeader: Reference → dAPIs → Understanding dAPIs
 path: /reference/dapis/understand/iproxy.html
 outline: deep
 tags:
