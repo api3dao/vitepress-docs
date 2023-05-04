@@ -2,7 +2,7 @@
 title: IProxy interface
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
-pageHeader: Reference → dAPIs
+pageHeader: Reference → dAPIs → Understanding dAPIs
 path: /reference/dapis/understand/iproxy.html
 outline: deep
 tags:
@@ -17,8 +17,8 @@ tags:
 # {{$frontmatter.title}}
 
 For every
-[self-funded dAPI](/reference/dapis/understand/proxy-contracts.md#self-funded-dapis)
-there is a single publicly available proxy contract that reads the dAPI's data
+[self-funded dAPI](/reference/dapis/understand/index.md#self-funded-dapis) there
+is a single publicly available proxy contract that reads the dAPI's data
 (`value` int224, `timestamp` uint256). You do not access the proxy contract
 directly but rather use the `IProxy` interface. The `IProxy` interface is part
 of the npm package

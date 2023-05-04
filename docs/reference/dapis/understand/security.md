@@ -2,7 +2,7 @@
 title: Security
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
-pageHeader: Reference → dAPIs
+pageHeader: Reference → dAPIs → Understanding dAPIs
 path: /reference/dapis/understand/security.html
 outline: deep
 tags:
