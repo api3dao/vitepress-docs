@@ -57,7 +57,7 @@ based on multiple use cases. These consist of:
 
 ### Self-funded dAPIs
 
-[Self-funded dAPIs](/reference/dapis/understand/proxy-contracts.md#self-funded-dapis)
+[Self-funded dAPIs](/reference/dapis/understand/index.md#self-funded-dapis)
 provide developers with the tools to use single-source data feed with no upfront
 commitment. They are served in a fully permissionless fashion through the API3
 Market. Once gas funds have been provided in a sponsor wallet, the dAPI will
@@ -93,11 +93,10 @@ understand how to read a dAPI.
 
 ### Managed dAPIs
 
-[Managed dAPIs](/reference/dapis/understand/proxy-contracts.md#managed-dapis)
-(currently under development) provide aggregated high-quality price reference
-data served on-chain by first-party oracles. dAPIs provide DeFi with a secure
-and transparent solution that can be decentralized according to their
-requirements.
+[Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis) (currently
+under development) provide aggregated high-quality price reference data served
+on-chain by first-party oracles. dAPIs provide DeFi with a secure and
+transparent solution that can be decentralized according to their requirements.
 
 Compared to self-funded dAPIs, managed dAPIs require authorization through the
 API3 Market. As such reading an aggregated data feed is permissioned, meaning
