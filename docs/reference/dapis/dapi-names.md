@@ -22,14 +22,15 @@ or a single data feed (beacon) value. This is suitable where the more recent
 data point (meaning its set of beacons could change as needed) is always more
 favorable, e.g., in the context of an asset price data feed.
 
-## With API3 Market proxy contracts
+## API3 Market proxy contracts and IProxy
 
-When using a API3 Market proxy contract, a dApp smart contract does not need to
-use a `dapiName` as a parameter to the `read()` function inside a proxy
-contract. The `dapiName` is integrated into the proxy contract when it is
-deployed by the API3 Market UI. There are hundreds of dAPIs available across
-many chains. Use the API3 Market to find a desired dAPI and acquire the address
-to its proxy contract.
+When using a API3 Market proxy contract, a dApp smart contract does not use a
+`dapiName`. The `dapiName` is integrated into the proxy contract when it is
+deployed by the API3 Market UI. Access to the dAPI is done using the
+[IProxy](/reference/dapis/understand/iproxy.md) interface and the address of the
+[proxy contract](/reference/dapis/understand/proxy-contracts.md). There are
+hundreds of dAPIs available across many chains. Use the API3 Market to find a
+desired dAPI and acquire the address to its proxy contract.
 
 <!--
 ## With DapiServer functions
