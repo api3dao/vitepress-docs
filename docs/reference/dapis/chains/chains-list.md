@@ -13,7 +13,7 @@ They will not render as HTML but rather text or you get an error. No idea why!
 -->
 
 <div class="api3-bc-chains-box" v-for="(chain, index) in chains">
-    <a class="api3-bc-chains-name" :href="chain.explorerUrl"
+    <a class="api3-bc-chains-name" :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']"
       >{{ chain.fullName }} <ExternalLinkImage />
     </a>
     <div class="api3-bc-chain-token">
