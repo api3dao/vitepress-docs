@@ -3,37 +3,36 @@ cannot be inside a Vue component since it is rendered at runtime. The chains.jso
 file here is read during the Vite build so the data will actually end up inside
 /dist/<filename>.
 -->
-
 <!-- Remember that any change to the HTML will most likely
 require a restart of the dev server-->
-
 <!-- WARNING
 DO NOT place line breaks between HTML element like <div>.
 They will not render as HTML but rather text or you get an error. No idea why!
 -->
-
 <div class="api3-bc-chains-box" v-for="(chain, index) in chains">
-    <a class="api3-bc-chains-name" :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']"
-      >{{ chain.fullName }} <ExternalLinkImage />
-    </a>
+    <div class="api3-bc-chains-name" :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']"
+      >{{ chain.fullName }} 
+    </div>
     <div class="api3-bc-chain-token">
       {{ chain.nativeToken }}
     </div>
     <div class="api3-bc-chains-id">
-      Id: <b>{{ chain.id }}</b>
+      Chain Id: <b>{{ chain.id }}</b>
     </div>
-    <!-- Contracts -->
     <div class="api3-bc-chains-contract-address">
-      <div v-if="chain.contracts['Api3ServerV1']">
-      Api3ServerV1.sol: <span>- {{ chain.contracts['Api3ServerV1'] }}</span
-      ><CopyIcon :text="chain.contracts['Api3ServerV1']"/>
+      <div class="api3-bc-chains-contract-address" v-if="chain.contracts['Api3ServerV1']">
+        Api3ServerV1.sol:
+        <a :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']">
+          <span>{{ chain.contracts['Api3ServerV1'] }}<ExternalLinkImage /></span>
+        </a><CopyIcon :text="chain.contracts['Api3ServerV1']"/>
       </div>
-      <div v-if="chain.contracts['ProxyFactory']">
-      ProxyFactory.sol: <span>{{ chain.contracts['ProxyFactory'] }}</span
-      ><CopyIcon :text="chain.contracts['ProxyFactory']"/>
+      <div class="api3-bc-chains-contract-address" v-if="chain.contracts['ProxyFactory']">
+        ProxyFactory.sol:
+        <a :href="chain.explorerUrl+'/address/'+chain.contracts['ProxyFactory']">
+          <span>{{ chain.contracts['ProxyFactory'] }}<ExternalLinkImage /></span>
+        </a><CopyIcon :text="chain.contracts['ProxyFactory']"/>
       </div>
     </div>
-
 </div>
 
 <script setup lang="ts">
@@ -45,10 +44,11 @@ They will not render as HTML but rather text or you get an error. No idea why!
   font-size: large;
   font-weight: bold;
   margin-bottom: 5px;
+  color:gray;
 }
 .api3-bc-chain-token {
   float: right;
-  margin-top: -7px;
+  margin-top: -34px;
   font-size: small;
   color: gray;
 }
