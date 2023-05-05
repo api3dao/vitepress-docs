@@ -9,12 +9,6 @@
 /docs/.vitepress/public
 /docs/.vuepress/styles
 
-# airnode
-/docs/reference/airnode/latest/assets
-
-#ois
-/docs/reference/ois/latest/assets
-
 #dev
 /docs/dev/using-metamask/src/HelloWorld.sol.js
 /docs/dev/using-metamask/src/HelloWorld.sol
@@ -22,10 +16,11 @@
 # The flexsearch files can be huge, skip them. 
 # These are auto genereated anyway.
 /indexes
-/docs/public/indexes/all
-/docs/public/indexes/latest
+/docs/public/indexes
 
-# other
+# assets
+/docs/reference/ois/latest/assets
+/docs/reference/airnode/latest/assets
 /docs/reference/dao-members/assets
 /docs/reference/dapis/assets
 /docs/reference/chainapi/assets

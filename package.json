@@ -19,7 +19,7 @@
     "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky install",
-    "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
+    "flex:build": "node libs/flexBuildIndexes.js;",
     "flex:test": "node libs/flexTestSearch.js;",
     "axios:build": "node libs/axiosBuildScripts.js; yarn format;"
   },
