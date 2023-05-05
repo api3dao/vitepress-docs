@@ -22,13 +22,13 @@ They will not render as HTML but rather text or you get an error. No idea why!
     <div class="api3-bc-chains-contract-address">
       <div class="api3-bc-chains-contract-address" v-if="chain.contracts['Api3ServerV1']">
         Api3ServerV1.sol:
-        <a :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']">
+        <a :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']" target="_chainExplore">
           <span>{{ chain.contracts['Api3ServerV1'] }}<ExternalLinkImage /></span>
         </a><CopyIcon :text="chain.contracts['Api3ServerV1']"/>
       </div>
       <div class="api3-bc-chains-contract-address" v-if="chain.contracts['ProxyFactory']">
         ProxyFactory.sol:
-        <a :href="chain.explorerUrl+'/address/'+chain.contracts['ProxyFactory']">
+        <a :href="chain.explorerUrl+'/address/'+chain.contracts['ProxyFactory']" target="_chainExplore">
           <span>{{ chain.contracts['ProxyFactory'] }}<ExternalLinkImage /></span>
         </a><CopyIcon :text="chain.contracts['ProxyFactory']"/>
       </div>
