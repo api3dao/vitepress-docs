@@ -105,7 +105,7 @@ Airnodes regardless if they need to. There is no harm in this scenario.
   sponsorWallet for each Airnode was derived with the same `sponsorAddress` the
   sponsorWallets are different since they are derived using the airnode's xpub
   plus the `sponsorAddress`. The sponsor must fund both wallets separately using
-  the unique `sponsorWalletAddress` of the two sponsorWallets.
+  the unique `sponsorWallet` address of the two sponsorWallets.
 
 ### Things to Remember
 
@@ -183,7 +183,7 @@ npx @api3/airnode-admin sponsor-requester ^
 
 To use a particular Airnode you must _derive a sponsorWallet_. Once the
 sponsorWallet is created it must be funded using the public address
-(`sponsorWalletAddress`) returned by the command
+(`sponsorWallet` address) returned by the command
 `derive-sponsor-wallet-address`. Each Airnode keeps a separate list of
 individual sponsorWallets that can access the Airnode. Learn more about a
 [sponsorWallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
@@ -201,7 +201,7 @@ transaction gas costs to do so.
   sponsoring a requester.
 
 The command `derive-sponsor-wallet-address` will return the public address
-(`sponsorWalletAddress`) of the sponsorWallet to be funded by the sponsor.
+(`sponsorWallet` address) of the sponsorWallet to be funded by the sponsor.
 
 ::: code-group
 
@@ -230,7 +230,7 @@ fulfill requests made by their requesters. However this does not cover the cost
 of API data that the Airnode serves, see
 [API Provider Fees](/reference/airnode/latest/developers/fees.md#api-provider-fees).
 
-If you forget the public address (`sponsorWalletAddress`) of the sponsorWallet
+If you forget the public address (`sponsorWallet` address) of the sponsorWallet
 simply run `derive-sponsor-wallet-address` again. Since the wallet already
 exists for the airnodeAddress/sponsorAddress pair it will just return the
 address.
@@ -242,13 +242,13 @@ address.
 During and after sponsoring requesters and deriving a sponsorWallet there are a
 few things to keep track of.
 
-| Item                   | Description                                                                                                                                                                                                                                                          |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sponsor's mnemonic     | The mnemonic from which the `sponsorAddress` was extracted.                                                                                                                                                                                                          |
-| sponsor address        | The public address of an account derived from a sponsor's mnemonic when sponsoring a requester. Record which `sponsorAddress` was used to create a sponsorWallet for each Airnode.                                                                                   |
-| sponsor wallet address | Record the `sponsorWalletAddress` of the sponsorWallet derived for an Airnode. For each Airnode you have derived a sponsorWallet, the Airnode keeps the private key and returns the public address (`sponsorWalletAddress`) which is used to fund the sponsorWallet. |
+| Item                   | Description                                                                                                                                                                                                                                                            |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sponsor's mnemonic     | The mnemonic from which the `sponsorAddress` was extracted.                                                                                                                                                                                                            |
+| sponsor address        | The public address of an account derived from a sponsor's mnemonic when sponsoring a requester. Record which `sponsorAddress` was used to create a sponsorWallet for each Airnode.                                                                                     |
+| sponsor wallet address | Record the `sponsorWallet` address of the sponsorWallet derived for an Airnode. For each Airnode you have derived a sponsorWallet, the Airnode keeps the private key and returns the public address (`sponsorWallet` address) which is used to fund the sponsorWallet. |
 
-You can acquire the public address (`sponsorWalletAddress`) of a sponsorWallet
+You can acquire the public address (`sponsorWallet` address) of a sponsorWallet
 later, if you lose it, by running the command `derive-sponsor-wallet-address`
 again. Since the sponsorWallet was already created for the
 `sponsorAddress/airnodeAddress` pair, the command will only return the public
