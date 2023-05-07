@@ -23,7 +23,7 @@ use of [API3's QRNG](/reference/qrng/) service. You will use the browser-based
 [MetaMask<ExternalLinkImage/>](https://metamask.io/). Some basic knowledge of
 these two tools is assumed.
 
-Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
+Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
 [Nodary provider<ExternalLinkImage/>](https://nodary.io/), available only on
 testnets, which returns a pseudorandom number.
@@ -61,8 +61,8 @@ It should load up the `Lottery` contract.
 
 As a requester, our `Lottery.sol` contract will make requests to an Airnode,
 specifically the API3 QRNG, using the
-[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html). It may
-be helpful to take a little time to familiarize yourself if you haven't already.
+[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.md). It may be
+helpful to take a little time to familiarize yourself if you haven't already.
 
 - You first need to define all the global variables - `pot`, `ticketPrice`,
   `week`, `endTime`, `MAX_NUMBER`, `airnodeAddress`, `endpointId` and
@@ -101,7 +101,7 @@ The `Lottery` contract will have five main functions: `setSponsorWallet()`,
 `enter()`, `getWinningNumber()`, `closeWeek()` and `getEntriesForNumber()`.
 
 - The `setSponsorWallet()` function will set the address of the
-  [Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet).
+  [Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
   We will need to fund this wallet later.
 
   ```Solidity
@@ -261,12 +261,12 @@ Airnode to request a random number.
 ## 3. Deriving the Sponsor Wallet
 
 The
-[Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet)
+[Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
 needs to be derived from the requester's contract address (Lottery contract in
 this case), the Airnode address, and the Airnode xpub. The wallet is used to pay
 gas costs of the transactions. The sponsor wallet must be derived using the
 command
-[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
+[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 
