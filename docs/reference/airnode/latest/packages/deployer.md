@@ -118,6 +118,30 @@ cp config/secrets.env.example config/secrets.env
 ```
 -->
 
+## Credentials
+
+When using the `airnode-deployer` Docker image, AWS or GCP credentials are
+loaded automatically. Conversely, when using the deployer CLI directly, you will
+need to first load AWS or GCP credentials into the environment manually as
+described below.
+
+### AWS Credentials
+
+For AWS, there are two options:
+
+1. Set the environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
+   (and `AWS_SESSION_TOKEN` as well, if using temporary credentials) to their
+   appropriate values.
+2. Populate the AWS `credentials` file. See the AWS documentation for the
+   [expected file format](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html#file-format-creds)
+   as well as its
+   [default location](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html).
+
+### GCP Credentials
+
+Set the environmental variable `GOOGLE_APPLICATION_CREDENTIALS` to the path of
+the `gcp.json` credentials file.
+
 ## Commands
 
 - `deploy`
