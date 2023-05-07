@@ -29,8 +29,8 @@ understood.
   third-party oracle node solutions that use middlemen to deliver APIs to the
   blockchain.
 - Simple - Airnode's simple
-  [set and forget](/explore/airnode/what-is-airnode.html#_1-set-and-forget)
-  design avoids the time, complexity, and cost of other third-party oracle node
+  [set and forget](/explore/airnode/what-is-airnode.md#_1-set-and-forget) design
+  avoids the time, complexity, and cost of other third-party oracle node
   solutions.
 - Stateless - Airnode is stateless and treats the blockchain as the single
   source of truth. This alone solves the majority of operational problems of

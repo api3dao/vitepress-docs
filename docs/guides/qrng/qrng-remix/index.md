@@ -24,14 +24,14 @@ browser-based [Remix IDE<ExternalLinkImage/>](https://remix.ethereum.org) and
 [MetaMask<ExternalLinkImage/>](https://metamask.io/). Some basic knowledge of
 these two tools is assumed.
 
-Currently, QRNG has three [providers](/reference/qrng/providers.html), two of
+Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
 [Nodary provider<ExternalLinkImage/>](https://nodary.io/), available only on
 testnets, which returns a pseudorandom number.
 
 To begin, you need to deploy and sponsor the
-[`RemixQrngExample`](/reference/qrng/qrng-example.html) with a matching
-[sponsor wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet).
+[`RemixQrngExample`](/reference/qrng/qrng-example.md) with a matching
+[sponsor wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
 The `RemixQrngExample` will be the primary contract that retrieves the random
 number.
 
@@ -177,7 +177,7 @@ lacks adequate security features!
 This guide will use the
 [Nodary provider<ExternalLinkImage/>](https://nodary.io/) which has the same
 usage as the production quantum random number generator
-[providers](/reference/qrng/providers.html) but returns a pseudorandom number.
+[providers](/reference/qrng/providers.md) but returns a pseudorandom number.
 
 - Switch to the **DEPLOY & RUN TRANSACTIONS** tab. Use MetaMask and switch to
   the desired account and testnet for your deployment.
@@ -191,8 +191,7 @@ usage as the production quantum random number generator
 
 - Add the Airnode `_airnodeRrp` address parameter value for the constructor into
   the field next to the **Deploy** button. See the
-  [list of addresses](/reference/qrng/chains.html) for the testnet you are
-  using.
+  [list of addresses](/reference/qrng/chains.md) for the testnet you are using.
 
 - Click on **Deploy** and approve the transaction with MetaMask.
 

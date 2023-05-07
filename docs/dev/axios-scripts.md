@@ -24,7 +24,7 @@ The local data files provide for a better page load experience rather than
 real-time data access from the monorepo. More importantly, the local data files
 allow the vite build to pre-render the html so that Flex can index its content,
 see
-[Vue components and Flex indexes](/dev/flexsearch.html#vue-components-and-flex-indexes).
+[Vue components and Flex indexes](/dev/flexsearch.md#vue-components-and-flex-indexes).
 
 ## Building the local data files
 

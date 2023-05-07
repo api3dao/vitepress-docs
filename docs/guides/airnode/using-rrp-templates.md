@@ -126,7 +126,7 @@ one template is created when the parameters are the same.
 ## 3. Retrieving the template
 
 You can retrieve the template from the chain using the Admin CLI command
-[get-template](/reference/airnode/latest/packages/admin-cli.html#get-template)
+[get-template](/reference/airnode/latest/packages/admin-cli.md#get-template)
 using the `templateId`. Note that the parameters are ABI encoded.
 
 ```sh
