@@ -40,7 +40,7 @@ Making a request.
 1. The now "sponsored" requester makes a
    [request](/reference/airnode/next/concepts/request.md) of an Airnode.
    Parameters passed to the Airnode include the `sponsorAddress` and the
-   `sponsorWalletAddress`.
+   `sponsorWallet` address.
 2. The Airnode verifies that the sponsor of the requester is the sponsor that
    derived the `sponsorWallet` associated with the Airnode.
 3. The Airnode uses the respective sponsor's `sponsorWallet` to fulfill the
@@ -54,10 +54,10 @@ How a requester refers to the sponsor.
    the requester is sponsored, and if so, emits the request event.
 
 2. Next Airnode derives the `sponsorWallet` address using the provided
-   `sponsorAddress`, then checks if this matches `sponsorWallet`. Airnode will
-   ignore the request if the two do not match. This is done this way because
-   deriving the `sponsorWallet` address from the `sponsorAddress` on-chain is
-   not feasible.
+   `sponsorAddress`, then checks if this matches `sponsorWallet` address
+   provided in the request. Airnode will ignore the request if the two do not
+   match. This is done this way because deriving the `sponsorWallet` address
+   from the `sponsorAddress` on-chain is not feasible.
 
 ## sponsorAddress
 
@@ -142,7 +142,7 @@ m/44'/60'/0'/1/...
 ```
 
 Anyone can use the xpub that the Airnode has announced (through off-chain
-channels) and the sponsor's `sponsorAddress` to derive a `sponsorWalletAddress`
+channels) and the sponsor's `sponsorAddress` to derive a `sponsorWallet` address
 for a specific Airnode–sponsor pair. In other words, a sponsor can calculate the
 address of their respective sponsor wallet for an Airnode and have requesters
 use it to make requests right away.

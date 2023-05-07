@@ -40,9 +40,9 @@ Make sure you're on a Testnet before trying to deploy the contracts on-chain!
 :::
 
 Given below is an example of a basic
-[Requester Contract](/reference/airnode/latest/concepts/requester.html) to
-request data from any Airnode. To follow along, you can open the following
-contract in Remix and try deploying your own Requester Contract.
+[Requester Contract](/reference/airnode/latest/concepts/requester.md) to request
+data from any Airnode. To follow along, you can open the following contract in
+Remix and try deploying your own Requester Contract.
 
 [Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
@@ -125,7 +125,7 @@ at runtime.
 ```
 
 Since the `makeRequest` function makes a
-[full request](/reference/airnode/latest/concepts/request.html#full-request), it
+[full request](/reference/airnode/latest/concepts/request.md#full-request), it
 needs the following parameters to pass on to `airnodeRrp.makeFullRequest`.
 
 - `airnode` and `endpointId`: As a pair, these uniquely identify the endpoint
@@ -135,7 +135,7 @@ needs the following parameters to pass on to `airnodeRrp.makeFullRequest`.
   address.
 
 - `sponsorWallet`: The
-  [sponsor wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet)
+  [sponsor wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
   address that the sponsor derived using the Airnode's address and extended
   public key.
 
@@ -143,9 +143,9 @@ needs the following parameters to pass on to `airnodeRrp.makeFullRequest`.
   contract and its function that is called upon the return of the request.
 
 - `parameters`: Specify the API parameters and any
-  [reserved parameters](/reference/ois/latest/reserved-parameters.html), these
+  [reserved parameters](/reference/ois/latest/reserved-parameters.md), these
   must be encoded. See
-  [Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.html)
+  [Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md)
   for how these are encoded. In most, cases the `parameters` are encoded
   off-chain and passed to the requester which only forwards them. You can use
   the `@api3/airnode-abi` package to perform the encoding and decoding.
@@ -212,11 +212,11 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 ### Sponsor the Requester
 
 The
-[Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet)
+[Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
 needs to be derived from the requester's contract address, the Airnode address,
 and the Airnode xpub. The wallet is used to pay gas costs of the transactions.
 The sponsor wallet must be derived using the command
-[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.html#how-to-derive-a-sponsor-wallet)
+[derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request. **This wallet needs to be funded.**
 
@@ -253,7 +253,7 @@ sponsor.
 ### Encoding parameters
 
 `parameters` specify the API and Reserved Parameters (see
-[Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.html)
+[Airnode ABI specifications](/reference/airnode/latest/specifications/airnode-abi.md)
 for how these are encoded). The parameters are required to be encoded in bytes32
 before you send it. Use the `@api3/airnode-abi` library to encode the parameters
 off-chain and then send it to the Requester.
