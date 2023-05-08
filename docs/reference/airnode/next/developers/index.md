@@ -68,8 +68,8 @@ from the the API provider, then performs a callback to the requester.
 > 3.  <p>Airnode gathers response data from the API specified in the request.</p>
 > 4.  <p>Airnode performs a callback to a named function <code>myFulfill()</code> in myContract.sol via the AirnodeRrpV0.sol function <code>fulfill()</code> with the requested data and the <code>requestId</code>.</p>
 
-See the guide [ Making an RRP Request](/guides/airnode/rrp-request.html) and
-learn how to make a RRP request of an Airnode.
+See the guide [ Making an RRP Request](/guides/airnode/rrp-request.md) and learn
+how to make a RRP request of an Airnode.
 
 ## A deeper dive
 

@@ -71,11 +71,12 @@ pre-determined schedule.
 
 Reward amount is represented as APR (annual percentage rate) in API3 tokens. You
 can derive APY (annual percentage yield) using an
-[online calculator<ExternalLinkImage/>](https://www.aprtoapy.com/). There is a
-governable "APR update step", which is the step size each week the APR will be
-updated with. Also there are governable minimum and maximum APR values, but
-these (especially maximum APR) are there as safety measures. In general,
-governing the stake target will be the primary tool for regulating rewards.
+[online calculator<ExternalLinkImage/>](https://www.omnicalculator.com/finance/apy).
+There is a governable "APR update step", which is the step size each week the
+APR will be updated with. Also there are governable minimum and maximum APR
+values, but these (especially maximum APR) are there as safety measures. In
+general, governing the stake target will be the primary tool for regulating
+rewards.
 
 Rewards are added as staked API3 tokens into the DAO pool each time the
 `mintReward` function is called. `mintReward` is callable by anyone, once per

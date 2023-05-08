@@ -4,10 +4,12 @@
   "versionsAirnode": [
     {
       "version": "v0.12",
+      "alias": "next",
       "path": "/reference/airnode/next/"
     },
     {
       "version": "v0.11",
+      "alias": "latest",
       "path": "/reference/airnode/latest/"
     }
   ],
@@ -15,6 +17,7 @@
   "versionsOIS": [
     {
       "version": "v2.0",
+      "alias": "latest",
       "path": "/reference/ois/latest/"
     }
   ]

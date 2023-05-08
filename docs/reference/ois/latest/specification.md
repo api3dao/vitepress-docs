@@ -34,8 +34,8 @@ object is in these docs.
 
 For an overview that explains how Airnode maps its endpoints to API provider
 operations, see
-[API integration](/reference/airnode/latest/understand/api-integration.html).
-Also see the medium article
+[API integration](/reference/airnode/latest/understand/api-integration.md). Also
+see the medium article
 [Setting Oracle Integration Standards<ExternalLinkImage/>](https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e)
 for an overview of OIS.
 
