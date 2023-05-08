@@ -91,6 +91,10 @@ module.exports = [
         link: '/guides/qrng/quantumon/',
       },
       {
+        text: `Building a Roulette with QRNG`,
+        link: '/guides/qrng/roulette-guide/',
+      },
+      {
         text: 'QRNG YouTube Tutorials',
         link: '/guides/qrng/youtube-demos/',
       },
