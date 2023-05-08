@@ -1,5 +1,5 @@
 ---
-title: Building a Roulette with QRNG
+title: Building an on-chain Roulette with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -26,10 +26,10 @@ contract.
 [Click here to try out the Roulette](https://qrng-roulette.netlify.app/)
 
 Before starting, make sure you have a proper understanding of
-[Airnode](https://docs.api3.org/explore/airnode/what-is-airnode.html) and
-[how it works.](https://docs.api3.org/reference/airnode/latest/concepts/airnode.html)
+[Airnode](/explore/airnode/what-is-airnode.html) and
+[how it works.](/reference/airnode/latest/concepts/airnode.html)
 
-[Read more about QRNG and how it works.](https://docs.api3.org/reference/qrng/)
+[Read more about QRNG and how it works.](/reference/qrng/)
 
 ## Introduction
 
@@ -80,12 +80,12 @@ It should load up the Roulette contract.
 
 The Roulette contract is going to be the main Requester contract that makes
 request to the QRNG Airnode using the
-[Request-Response Protocol (RRP)](https://docs.api3.org/reference/qrng/airnode-rrp-v0.html).
+[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html).
 
 You first start by importing the `RrpRequesterV0`, which is the
-[Request-Response Protocol (RRP)](https://docs.api3.org/reference/qrng/airnode-rrp-v0.html).
+[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html).
 You can then start coding the `Roulette` contract by inheriting from
-`RrpRequesterV0`
+`RrpRequesterV0`.
 
 You then define the following state variables:
 
@@ -246,7 +246,7 @@ contract with the random number. The `fulfillUint256()` is a callback function
 that is called by `AirnodeRrp` when a response is received.
 
 `_qrngUint256` stores the random number which is further passed to the
-`_spinComplete()` with the `requestId`
+`_spinComplete()` with the `requestId`.
 
 Finally, the function emits a `ReceivedUint256` event with the received
 `requestId` and the decoded `_qrngUint256`.
@@ -330,7 +330,7 @@ The `setRequestParameters` sets the QRNG `airnode` address, `endpointId`, and
 the contract.
 
 The `topUpSponsorWallet()` is used to top up the `sponsorWallet` address. You
-will later derive it using the [Airnode admin CLI]().
+will later derive it using the [Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.html).
 
 ```solidity
   function setRequestParameters(address _airnode, bytes32 _endpointId, address payable _sponsorWallet) external {
@@ -677,7 +677,7 @@ remaining balance being kept by the house.
 If the spin result is not equal to 0 or 37, then the function checks if the
 result is a black number or not. If it is a black number and the user bet on
 black, or if it is a red number and the user bet on red, then the user wins and
-will receive double their bet amount
+will receive double their bet amount.
 
 ```solidity
 function checkIfColorWon(uint256 _spin) internal returns (uint256) {
@@ -719,14 +719,14 @@ function checkIfColorWon(uint256 _spin) internal returns (uint256) {
 }
 ```
 
-> The complete contract code can be found [here]()
+> The complete contract code can be found [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol)
 
 ## Deploying the `Roulette` Contract
 
 ::: warning Set up your Testnet Metamask Account!
 
 Make sure you've already configured your Metamask wallet and funded it with some
-testnet ETH before moving forward. You can request some from [here➚]()
+testnet MATIC before moving forward. You can request some from [here➚](https://mumbaifaucet.com).
 
 :::
 
@@ -758,10 +758,10 @@ Fill it in and click on **transact** to deploy the contract.
 
 ### 3. Deriving the Sponsor Wallet
 
-The [Sponsor Wallet]() needs to be derived from the requester's contract address
+The [Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet) needs to be derived from the requester's contract address
 (Lottery contract in this case), the Airnode address, and the Airnode xpub. The
 wallet is used to pay gas costs of the transactions. The sponsor wallet must be
-derived using the command [derive-sponsor-wallet-address]() from the Admin CLI.
+derived using the command [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address) from the Admin CLI.
 Use the value of the sponsor wallet address that the command outputs while
 making the request.
 
@@ -857,3 +857,7 @@ check the `Fulfill` transaction, you can see:
 - The rest of the bet amount is kept by the house.
 
 ![](/guides/qrng/roulette-guide/src/SS9.png)
+
+## Conclusion
+
+This is how you can use QRNG to build an on-chain Roulette. To learn more, go to the [QRNG reference section](/reference/qrng/). If you have any doubts/questions, visit the [API3 Discord➚](https://discord.com/channels/758003776174030948/765618225144266793).
