@@ -16,7 +16,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-![Roulette](/guides/qrng/roulette-guide/src/SS2.png)
+> ![Roulette](/guides/qrng/roulette-guide/src/SS2.png)
 
 This example project demonstrates how to code a Solidity roulette game that uses
 API3's QRNG for true randomness. You will use Remix IDE to code and deploy the
