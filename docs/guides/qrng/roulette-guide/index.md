@@ -439,7 +439,7 @@ The function first checks that the user has placed a bet on a third of the table
 and that the spin is complete. It then calculates the winning third of the table
 based on the spin result. If the user's bet matches the winning third of the
 table, they receive their bet amount multiplied by 3. If they have not won, 10%
-of their bet amount is sent to the sponsorWallet to ensure future fulfillment,
+of their bet amount is sent to the `sponsorWallet` to ensure future fulfillment,
 2% to the deployer, and the rest is kept by the house.
 
 Finally, the function resets the user's current bet and the bet type, emits an
