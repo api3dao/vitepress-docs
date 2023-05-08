@@ -10,11 +10,12 @@
     "watchpack": "2.4.0"
   },
   "scripts": {
+    "sync:NotFound": "cp docs/_components/vitepress/NotFound.vue  node_modules/vitepress/dist/client/theme-default/NotFound.vue",
     "sync:VPFlyout": "cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue",
     "sync:VPNavBarTitle": "cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue",
     "sync:VPNavBar": "cp docs/_components/vitepress/VPNavBar.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBar.vue",
-    "docs:dev": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress dev docs",
-    "docs:build": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress build docs;",
+    "docs:dev": "yarn sync:NotFound; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress dev docs",
+    "docs:build": "yarn sync:NotFound; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress build docs;",
     "docs:serve": "vitepress serve docs --port 8082",
     "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
