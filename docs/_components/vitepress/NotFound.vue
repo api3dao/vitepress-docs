@@ -60,7 +60,6 @@ onMounted(() => {
 <template>
   <!-- wkande: May 2023: Added showMsg next line -->
   <div class="NotFound" v-if="showMsg === 1">
-    {{ showMsg }}
     <p class="code">404</p>
     <h1 class="title">PAGE NOT FOUND</h1>
     <div class="divider" />
