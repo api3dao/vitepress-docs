@@ -76,8 +76,8 @@ onMounted(() => {
     <!-- GO TO LEGACY DOCS -->
     <blockquote class="quote" v-if="legacyURL">
       <hr />
-      The URL send appears to be from the legacy documentation. The button below
-      should take you there.
+      The URL send appears to be a page from the legacy documentation. The
+      button below should take you there.
       <div class="action">
         <a class="link" :href="legacyURL" aria-label="Airnode latest release">
           Legacy Documentation
