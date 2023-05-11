@@ -3,27 +3,22 @@ import { onMounted, ref } from 'vue';
 import { withBase } from 'vitepress';
 import { useData } from './composables/data';
 import { useLangs } from './composables/langs';
-// wkande: May 2023: Added next import
 import versions from '../../../../../docs/.vitepress/versions';
 
 const { site } = useData();
 const { localeLinks } = useLangs({ removeCurrent: false });
-// wkande: May 2023: Added showMsg next line -->
+
+// Shows the content body
 const showMsg = ref<number>(0);
+// Used to remap to older docs and to show sub content within the content body
+const legacyURL = ref<string>();
 
 const root = ref('/');
-
-// wkande: May 2023: Added function below
-// To prevent flicker when redirecting, hide the content body (msg)
-function showMessage() {
-  // wkande: May 2023: https://vuedose.tips/the-101-guide-to-script-setup-in-vue-3
-  showMsg.value++;
-}
 
 onMounted(() => {
   let pathName = window.location.pathname;
 
-  // wkande: May 2023: Airnode /latest and /next
+  // Translate Airnode /latest and /next from versions in the path
   for (var i = 0; i < versions.versionsAirnode.length; i++) {
     const element = versions.versionsAirnode[i];
     if (pathName.indexOf('/reference/airnode/' + element.version + '/') > -1) {
@@ -33,7 +28,7 @@ onMounted(() => {
     }
   }
 
-  // wkande: May 2023: OIS /latest and /next
+  // Translate OIS /latest and /next from versions in the path
   for (var i = 0; i < versions.versionsOIS.length; i++) {
     const element = versions.versionsOIS[i];
     if (pathName.indexOf('/reference/ois/' + element.version + '/') > -1) {
@@ -43,9 +38,23 @@ onMounted(() => {
     }
   }
 
-  // wkande: May 2023: Added function call below
-  showMessage();
+  // Now show the body content since the /latest and /next translation was not needed
+  showMsg.value++;
 
+  // Did the reader sent a URL for OIS or Airnode in old-doc.api3.org
+  // prettier-ignore
+  const legacyVrs = ['/pre-alpha','/v0.2','/v0.3','/v0.4','/v0.5','/v0.6',
+    '/v0.7','/v0.8','/v0.9','/v0.10','/v1.0','/v0.1','/v1.2','/v1.4',
+  ];
+  legacyVrs.forEach((element) => {
+    if (pathName.indexOf(element) > -1) {
+      legacyURL.value =
+        'https://old-docs.api3.org' + pathName + window.location.hash;
+      return false;
+    }
+  });
+
+  // The following was originally part of the VitePress code
   const path = window.location.pathname
     .replace(site.value.base, '')
     .replace(/(^.*?\/).*$/, '/$1');
@@ -58,12 +67,29 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- wkande: May 2023: Added showMsg next line -->
+  <!-- Added showMsg next line -->
   <div class="NotFound" v-if="showMsg === 1">
     <p class="code">404</p>
     <h1 class="title">PAGE NOT FOUND</h1>
     <div class="divider" />
-    <blockquote class="quote">
+
+    <!-- GO TO LEGACY DOCS -->
+    <blockquote class="quote" v-if="legacyURL">
+      <hr />
+      The page requested appears to be in the legacy documentation. The button
+      below should take you there.
+      <div class="action">
+        <a class="link" :href="legacyURL" aria-label="Airnode latest release">
+          Legacy Documentation
+        </a>
+      </div>
+      <br />
+      <hr />
+
+      Otherwise try these popular sections in the API3 Technical Documentation.
+    </blockquote>
+
+    <blockquote class="quote" v-else>
       But if you don't change your direction, and if you keep looking, you may
       end up where you are heading.
     </blockquote>
@@ -73,7 +99,7 @@ onMounted(() => {
         Take me home
       </a>
     </div>
-    <!-- wkande: May 2023: Added Airnode button -->
+    <!-- Added Airnode button -->
     <div class="action">
       <a
         class="link"
@@ -83,7 +109,7 @@ onMounted(() => {
         Airnode latest release
       </a>
     </div>
-    <!-- wkande: May 2023: Added OIS button -->
+    <!-- Added OIS button -->
     <div class="action">
       <a
         class="link"
