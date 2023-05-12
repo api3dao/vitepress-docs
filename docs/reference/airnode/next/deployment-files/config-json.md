@@ -283,6 +283,9 @@ in Concepts and Definitions for a better understanding of gas strategies.
   - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
     two decimals that gets multiplied by the provider reported gas price. The
     resulting Gas Price will equal `Gas Price * providerRecommendedGasPrice`.
+    If the calculated `providerRecommendedGasPrice` exceeds `baseFee * 5`,
+    we use `baseFee * 2 + 3` as the gas price. Otherwise, we continue using
+    `providerRecommendedGasPrice` as usual.
 - [providerRecommendedEip1559GasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee to
     yield the Maximum Fee for EIP-1559 transactions. Defaults to: `2`. The
