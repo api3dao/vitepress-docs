@@ -147,7 +147,7 @@ Airnode supports four strategies: `latestBlockPercentileGasPrice`,
 recommended to place it as the last strategy in the list as it should be the
 final fallback for the Airnode to use if all other strategies fail. For more
 detail on these strategies, see the
-[Gas Prices](/reference/airnode/next/concepts/gas-prices.md) page.
+[Gas Price Strategies](/reference/airnode/next/concepts/gas-prices.md) page.
 
 #### Considerations: Concurrency
 
