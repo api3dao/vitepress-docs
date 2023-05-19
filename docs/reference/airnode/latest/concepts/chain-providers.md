@@ -26,7 +26,7 @@ each with one of more chain providers. Below are some of the chain providers you
 might use.
 
 - [Pocket](https://www.pokt.network/)
-- [Infura](https://infura.io)
+- [Infura](https://www.infura.io/)
 - [Alchemy](https://www.alchemy.com/)
 
 ## One Provider

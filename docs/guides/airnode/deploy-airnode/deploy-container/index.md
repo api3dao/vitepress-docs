@@ -123,8 +123,8 @@ There are three values `config.json` extracts from `secrets.env`. Add values for
 each of the there fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
-  provider such as [Infura<ExternalLinkImage/>](https://infura.io/). Use a url
-  for the Sepolia test network. If you need help creating one see the guide
+  provider such as [Infura<ExternalLinkImage/>](https://www.infura.io/). Use a
+  url for the Sepolia test network. If you need help creating one see the guide
   [Create an Infura key](/guides/misc/infura-key/).
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital

@@ -118,7 +118,10 @@ against large gas price spikes.
 
 The `providerRecommendedGasPrice` strategy gets a gas price estimate from the
 provider, applies the defined multiplier to it and sets the transaction
-to`type 0` and a `gasPrice` value.
+to`type 0` and a `gasPrice` value. To handle gas price spikes, if the calculated
+`providerRecommendedGasPrice` exceeds `baseFee * 5`, we adjust the gas price
+accordingly. Instead of using the excessive `providerRecommendedGasPrice`, we
+return a calculated `gasPrice` value based on `baseFee * 2 + 3`.
 
 ```json
 {

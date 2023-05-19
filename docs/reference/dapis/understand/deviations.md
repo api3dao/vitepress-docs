@@ -3,7 +3,7 @@ title: Deviation thresholds
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → Understanding dAPIs
-path: /reference/dapis/understand/wallets.html
+path: /reference/dapis/understand/deviations.html
 outline: deep
 tags:
 ---
@@ -67,7 +67,6 @@ settings.
 | 0.25%     | 24 hours  |
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
-| 5%        | 24 hours  |
 
 <div style="margin-left:10px;margin-top:-15px;font-size:small;font-family:courier;">Managed
 dAPIs are under development, the release date is not available at this time.</div>

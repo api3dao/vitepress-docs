@@ -82,7 +82,7 @@ the first functional **Self-funded dAPIs** were made available.
 | ------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | March 2023                                                                      | \* Summer 2023                                        |
 | Single public [proxy contract](/reference/dapis/understand/proxy-contracts.md)  | Single public proxy contract                          |
-| 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%, 5%)         |
+| 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%)             |
 | 60 second [interval](/reference/dapis/understand/deviations.md#update-interval) | 30-60 second interval                                 |
 | 24 hour [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)        | 2 minute or 24 hour heartbeat                         |
 | Sourced from a single<br/>data feed (beacon)                                    | Sourced from multiple<br/>data feeds (beacons)        |
