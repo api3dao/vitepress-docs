@@ -828,8 +828,8 @@ randomness request.
 Fill in the amount in wei under **VALUE** on the tab above and click on
 `topUpSponsorWallet()`
 
-For Polygon Mumbai, 0.05 (50000000000000000 wei) Matic should be sufficient for
-now.
+For Polygon Mumbai, `0.05` (`50000000000000000` wei) Matic should be sufficient
+for now.
 
 After funding the `sponsorWallet`, we are also supposed to fund the main
 contract(house) too. You can use Metamask to send some funds to the house. Copy
@@ -878,8 +878,8 @@ number.
 This means you lost the bet. If you head back over to the block explorer and
 check the `Fulfill` transaction, you can see:
 
-- The contract sent 0.000001 MATIC to the `sponsorWallet`.
-- The contract also sent 0.0000002 MATIC back to the deployer of the contract.
+- The contract sent `0.000001` MATIC to the `sponsorWallet`.
+- The contract also sent `0.0000002` MATIC back to the deployer of the contract.
 - The rest of the bet amount is kept by the house.
 
 ![](/guides/qrng/roulette-guide/src/SS9.png)
