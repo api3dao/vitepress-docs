@@ -78,9 +78,35 @@ It should load up the Roulette contract.
 
 > ![Remix 1](/guides/qrng/roulette-guide/src/SS1.png)
 
+### Importing the `RrpRequesterV0`
+
 The Roulette contract is going to be the main Requester contract that makes
 request to the QRNG Airnode using the
 [Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html).
+
+```solidity
+pragma solidity >=0.8.4;
+
+import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
+
+contract Roulette is RrpRequesterV0 {
+  uint256 public constant MIN_BET = 10000000000000; // .001 ETH
+  uint256 spinCount;
+  address airnode;
+  address immutable deployer;
+  address payable sponsorWallet;
+  bytes32 endpointId;
+
+  // ~~~~~~~ ENUMS ~~~~~~~
+
+  enum BetType {
+    Color,
+    Number,
+    EvenOdd,
+    Third,
+	 Half
+  }
+```
 
 You first start by importing the `RrpRequesterV0`, which is the
 [Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html). You can
@@ -110,36 +136,6 @@ EvenOdd
 Third
 Half
 ```
-
-These values represent different types of bets that players can make in the game
-of Roulette.
-
-```solidity
-pragma solidity >=0.8.4;
-
-import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
-
-contract Roulette is RrpRequesterV0 {
-  uint256 public constant MIN_BET = 10000000000000; // .001 ETH
-  uint256 spinCount;
-  address airnode;
-  address immutable deployer;
-  address payable sponsorWallet;
-  bytes32 endpointId;
-
-  // ~~~~~~~ ENUMS ~~~~~~~
-
-  enum BetType {
-    Color,
-    Number,
-    EvenOdd,
-    Third,
-	 Half
-  }
-```
-
-The contract defines several mapping variables to store information about user
-bets and the results of each spin in the game of Roulette:
 
 ```solidity
   mapping(address => bool) public userBetAColor;
@@ -172,7 +168,11 @@ bets and the results of each spin in the game of Roulette:
 
 ```
 
-The contract also defines several error messages and events:
+These values represent different types of bets that players can make in the game
+of Roulette.
+
+The contract defines several mapping variables to store information about user
+bets and the results of each spin in the game of Roulette:
 
 ```solidity
   error HouseBalanceTooLow();
@@ -190,14 +190,7 @@ The contract also defines several error messages and events:
   event WinningNumber(uint256 indexed spinNumber, uint256 winningNumber);
 ```
 
-The constructor function will take the `_airnodeRrpAddress` during deployment of
-the contract. You also need to set the `deployer` variable to the address of the
-user who deployed the contract `(msg.sender)`.
-
-It also sets certain numbers as black by setting their corresponding values in
-the `blackNumber` mapping to `true`. These numbers are 2, 4, 6, 8, 10, 11, 13,
-15, 17, 20, 22, 24, 26, 28, 29, 31, 33, and 35. These are the numbers on a
-roulette wheel that are colored black.
+The contract also defines several error messages and events:
 
 ```solidity
   constructor(address _airnodeRrp) RrpRequesterV0(_airnodeRrp) {
@@ -220,6 +213,44 @@ roulette wheel that are colored black.
     blackNumber[31] = true;
     blackNumber[33] = true;
     blackNumber[35] = true;
+  }
+```
+
+The constructor function will take the `_airnodeRrp` address during deployment
+of the contract. You also need to set the `deployer` variable to the address of
+the user who deployed the contract `(msg.sender)`.
+
+It also sets certain numbers as black by setting their corresponding values in
+the `blackNumber` mapping to `true`. These numbers are 2, 4, 6, 8, 10, 11, 13,
+15, 17, 20, 22, 24, 26, 28, 29, 31, 33, and 35. These are the numbers on a
+roulette wheel that are colored black.
+
+```solidity
+  function _spinRouletteWheel(uint256 _spinCount) internal {
+    require(!spinIsComplete[_spinCount], "spin already complete");
+    require(_spinCount == userToSpinCount[msg.sender], "!= msg.sender spinCount");
+    bytes32 requestId = airnodeRrp.makeFullRequest(
+      airnode,
+      endpointId,
+      address(this),
+      sponsorWallet,
+      address(this),
+      this.fulfillUint256.selector,
+      ""
+    );
+    expectingRequestWithIdToBeFulfilled[requestId] = true;
+    requestIdToSpinCount[requestId] = _spinCount;
+    emit RequestedUint256(requestId);
+  }
+
+  function fulfillUint256(bytes32 requestId, bytes calldata data) external onlyAirnodeRrp {
+    require(expectingRequestWithIdToBeFulfilled[requestId], "Unexpected Request ID");
+    expectingRequestWithIdToBeFulfilled[requestId] = false;
+    uint256 _qrngUint256 = abi.decode(data, (uint256));
+    requestIdToResult[requestId] = _qrngUint256;
+    _spinComplete(requestId, _qrngUint256);
+    finalNumber = (_qrngUint256 % 37);
+    emit ReceivedUint256(requestId, _qrngUint256);
   }
 ```
 
@@ -251,31 +282,26 @@ Finally, the function emits a `ReceivedUint256` event with the received
 `requestId` and the decoded `_qrngUint256`.
 
 ```solidity
-  function _spinRouletteWheel(uint256 _spinCount) internal {
-    require(!spinIsComplete[_spinCount], "spin already complete");
-    require(_spinCount == userToSpinCount[msg.sender], "!= msg.sender spinCount");
-    bytes32 requestId = airnodeRrp.makeFullRequest(
-      airnode,
-      endpointId,
-      address(this),
-      sponsorWallet,
-      address(this),
-      this.fulfillUint256.selector,
-      ""
-    );
-    expectingRequestWithIdToBeFulfilled[requestId] = true;
-    requestIdToSpinCount[requestId] = _spinCount;
-    emit RequestedUint256(requestId);
-  }
-
-  function fulfillUint256(bytes32 requestId, bytes calldata data) external onlyAirnodeRrp {
-    require(expectingRequestWithIdToBeFulfilled[requestId], "Unexpected Request ID");
-    expectingRequestWithIdToBeFulfilled[requestId] = false;
-    uint256 _qrngUint256 = abi.decode(data, (uint256));
-    requestIdToResult[requestId] = _qrngUint256;
-    _spinComplete(requestId, _qrngUint256);
-    finalNumber = (_qrngUint256 % 37);
-    emit ReceivedUint256(requestId, _qrngUint256);
+  function _spinComplete(bytes32 _requestId, uint256 _qrngUint256) internal {
+    uint256 _spin = requestIdToSpinCount[_requestId];
+    if (_qrngUint256 == 0) {
+      spinResult[_spin] = 37;
+    } else {
+      spinResult[_spin] = _qrngUint256;
+    }
+    spinIsComplete[_spin] = true;
+    if (spinToBetType[_spin] == BetType.Number) {
+      checkIfNumberWon(_spin);
+    } else if (spinToBetType[_spin] == BetType.Color) {
+      checkIfColorWon(_spin);
+    } else if (spinToBetType[_spin] == BetType.EvenOdd) {
+      checkIfEvenOddWon(_spin);
+	 } else if (spinToBetType[_spin] == BetType.Half) {
+		checkIfHalfWon(_spin);
+    } else if (spinToBetType[_spin] == BetType.Third) {
+      checkIfThirdWon(_spin);
+    }
+    emit SpinComplete(_requestId, _spin, spinResult[_spin]);
   }
 ```
 
@@ -300,37 +326,7 @@ Finally, the function emits a `SpinComplete` event with the request ID, spin
 number, and spin result as parameters, to notify the user interface and other
 contracts that the spin has been completed.
 
-```solidity
-  function _spinComplete(bytes32 _requestId, uint256 _qrngUint256) internal {
-    uint256 _spin = requestIdToSpinCount[_requestId];
-    if (_qrngUint256 == 0) {
-      spinResult[_spin] = 37;
-    } else {
-      spinResult[_spin] = _qrngUint256;
-    }
-    spinIsComplete[_spin] = true;
-    if (spinToBetType[_spin] == BetType.Number) {
-      checkIfNumberWon(_spin);
-    } else if (spinToBetType[_spin] == BetType.Color) {
-      checkIfColorWon(_spin);
-    } else if (spinToBetType[_spin] == BetType.EvenOdd) {
-      checkIfEvenOddWon(_spin);
-	 } else if (spinToBetType[_spin] == BetType.Half) {
-		checkIfHalfWon(_spin);
-    } else if (spinToBetType[_spin] == BetType.Third) {
-      checkIfThirdWon(_spin);
-    }
-    emit SpinComplete(_requestId, _spin, spinResult[_spin]);
-  }
-```
-
-The `setRequestParameters` sets the QRNG `airnode` address, `endpointId`, and
-`sponsorWallet` on-chain. This function can only be called by the deployer of
-the contract.
-
-The `topUpSponsorWallet()` is used to top up the `sponsorWallet` address. You
-will later derive it using the
-[Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.html).
+### Setting the Request Parameters
 
 ```solidity
   function setRequestParameters(address _airnode, bytes32 _endpointId, address payable _sponsorWallet) external {
@@ -351,9 +347,15 @@ will later derive it using the
   receive() external payable {}
 ```
 
-This function allows a user to place a bet on a single-number (0 to 36) in the
-roulette wheel. If the user's bet matches the number where the ball lands, the
-payout will be 35 times the bet amount.
+The `setRequestParameters` sets the QRNG `airnode` address, `endpointId`, and
+`sponsorWallet` on-chain. This function can only be called by the deployer of
+the contract.
+
+The `topUpSponsorWallet()` is used to top up the `sponsorWallet` address. You
+will later derive it using the
+[Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.html).
+
+### Betting on a Single Number
 
 ```solidity
   function betNumber(uint256 _numberBet) external payable returns (uint256) {
@@ -374,13 +376,9 @@ payout will be 35 times the bet amount.
   }
 ```
 
-`checkIfNumberWon()` is called internally to determine whether a user has won a
-bet on a single number, after the roulette wheel has been spun and the random
-result has been obtained.
-
-If the roulette spin resulted in a number that does not match the user's bet,
-then the user loses the bet and the bet amount is split between the
-`sponsorWallet` (10%), the deployer wallet (2%) and the house (88%).
+The `betNumber()` function allows a user to place a bet on a single-number (0
+to 36) in the roulette wheel. If the user's bet matches the number where the
+ball lands, the payout will be 35 times the bet amount.
 
 ```solidity
   function checkIfNumberWon(uint256 _spin) internal returns (uint256) {
@@ -408,9 +406,15 @@ then the user loses the bet and the bet amount is split between the
   }
 ```
 
-`betOneThird()` is a payable function allows a user to place a bet on one of
-three sections of the roulette table (1st, 2nd, or 3rd). The bet pays out 3:1 if
-the section bet on is correct after the spin.
+`checkIfNumberWon()` is called internally to determine whether a user has won a
+bet on a single number, after the roulette wheel has been spun and the random
+result has been obtained.
+
+If the roulette spin resulted in a number that does not match the user's bet,
+then the user loses the bet and the bet amount is split between the
+`sponsorWallet` (10%), the deployer wallet (2%) and the house (88%).
+
+### Betting on a Dozen
 
 ```solidity
   function betOneThird(uint256 _oneThirdBet) external payable returns (uint256) {
@@ -431,20 +435,9 @@ the section bet on is correct after the spin.
   }
 ```
 
-`checkIfThirdWon()` is used to check if a user has won or lost their bet on a
-third of the roulette table after a spin is complete. The function is called
-internally and returns the winning number of the spin.
-
-The function first checks that the user has placed a bet on a third of the table
-and that the spin is complete. It then calculates the winning third of the table
-based on the spin result. If the user's bet matches the winning third of the
-table, they receive their bet amount multiplied by 3. If they have not won, 10%
-of their bet amount is sent to the `sponsorWallet` to ensure future fulfillment,
-2% to the deployer, and the rest is kept by the house.
-
-Finally, the function resets the user's current bet and the bet type, emits an
-event with the winning number of the spin, and returns the winning number of the
-spin.
+`betOneThird()` is a payable function allows a user to place a bet on one of
+three sections of the roulette table (1st, 2nd, or 3rd). The bet pays out 3:1 if
+the section bet on is correct after the spin.
 
 ```solidity
   function checkIfThirdWon(uint256 _spin) internal returns (uint256) {
@@ -487,12 +480,20 @@ spin.
   }
 ```
 
-`betHalf()` allows users to place a bet on the first or second half of the
-table, with a payout of 2:1 if correct after the spin. `_halfBet` takes in 1 or
-2 as it's parameters that represents first and second half of the table.
+`checkIfThirdWon()` is used to check if a user has won or lost their bet on a
+third of the roulette table after a spin is complete. The function is called
+internally and returns the winning number of the spin.
 
-The function returns the `userToSpinCount[msg.sender]` value, which is the spin
-count for the user that just placed a bet.
+The function first checks that the user has placed a bet on a third of the table
+and that the spin is complete. It then calculates the winning third of the table
+based on the spin result. If the user's bet matches the winning third of the
+table, they receive their bet amount multiplied by 3. If they have not won, 10%
+of their bet amount is sent to the `sponsorWallet` to ensure future fulfillment,
+2% to the deployer, and the rest is kept by the house.
+
+Finally, the function resets the user's current bet and the bet type, emits an
+event with the winning number of the spin, and returns the winning number of the
+spin.
 
 ```solidity
   function betHalf(uint256 _halfBet) external payable returns (uint256) {
@@ -513,18 +514,14 @@ count for the user that just placed a bet.
   }
 ```
 
-`checkIfHalfWon()` checks whether a user has won a half bet after a spin is
-complete. It first checks that the user has placed a half bet, that the spin is
-complete, and that the user has placed a bet. It then calculates the result of
-the spin, which is an integer between 0 and 36 inclusive. If the result is 37,
-which represents 00, the bet is unsuccessful, and the user's bet is returned to
-them.
+### Betting on Half of the Table
 
-If the user's bet is successful, the function checks whether the user has bet on
-the correct half of the table. If they have, their bet is multiplied by two and
-returned to them. If they have not, 10% of their bet is sent to the sponsor
-wallet to ensure future fulfillment, 2% is sent to the deployer, and the rest is
-kept by the house.
+`betHalf()` allows users to place a bet on the first or second half of the
+table, with a payout of 2:1 if correct after the spin. `_halfBet` takes in 1 or
+2 as it's parameters that represents first and second half of the table.
+
+The function returns the `userToSpinCount[msg.sender]` value, which is the spin
+count for the user that just placed a bet.
 
 ```solidity
   function checkIfHalfWon(uint256 _spin) internal returns (uint256) {
@@ -562,9 +559,18 @@ kept by the house.
   }
 ```
 
-`betEvenOdd()` allows user to place an odd or even bet, which pays out 2:1 if
-they are correct. It takes in a boolean `true` or `false` as a parameter for
-even or odd bets.
+`checkIfHalfWon()` checks whether a user has won a half bet after a spin is
+complete. It first checks that the user has placed a half bet, that the spin is
+complete, and that the user has placed a bet. It then calculates the result of
+the spin, which is an integer between 0 and 36 inclusive. If the result is 37,
+which represents 00, the bet is unsuccessful, and the user's bet is returned to
+them.
+
+If the user's bet is successful, the function checks whether the user has bet on
+the correct half of the table. If they have, their bet is multiplied by two and
+returned to them. If they have not, 10% of their bet is sent to the sponsor
+wallet to ensure future fulfillment, 2% is sent to the deployer, and the rest is
+kept by the house.
 
 ```solidity
 function betEvenOdd(bool _isEven) external payable returns (uint256) {
@@ -586,21 +592,11 @@ function betEvenOdd(bool _isEven) external payable returns (uint256) {
   }
 ```
 
-`checkIfEvenOddWon()` is an internal function used to check if a user's even/odd
-bet has won after a spin has been completed. It first retrieves the address of
-the user who placed the bet on this spin, and checks that the user had actually
-placed a bet and that it was an even/odd bet. It then checks the result of the
-spin, which is stored in the `spinResult` mapping under the given `_spin` key.
-If the result is equal to 37, which represents the 0 value on the roulette
-wheel, the user's bet is returned to them.
+### Betting on Even/Odd
 
-If the result is not 37, the function determines if the user's bet was
-successful based on whether they bet on even or odd. If the user bet on even and
-the result is even, or if the user bet on odd and the result is odd, then the
-user wins and is paid out twice their bet amount. If the user's bet is
-unsuccessful, 10% of their bet is sent to the designated `sponsorWallet` to
-ensure future payouts, 2% is sent to the deployer's wallet, and the remaining
-amount is kept by the house.
+`betEvenOdd()` allows user to place an odd or even bet, which pays out 2:1 if
+they are correct. It takes in a boolean `true` or `false` as a parameter for
+even or odd bets.
 
 ```solidity
   function checkIfEvenOddWon(uint256 _spin) internal returns (uint256) {
@@ -635,12 +631,21 @@ amount is kept by the house.
   }
 ```
 
-`betColor()` allows user to place a black or red bet, which pays out 2:1 if they
-are correct. It takes in a `_isBlack` variable as a parameter, i.e, `true` for
-black, `false` for red.
+`checkIfEvenOddWon()` is an internal function used to check if a user's even/odd
+bet has won after a spin has been completed. It first retrieves the address of
+the user who placed the bet on this spin, and checks that the user had actually
+placed a bet and that it was an even/odd bet. It then checks the result of the
+spin, which is stored in the `spinResult` mapping under the given `_spin` key.
+If the result is equal to 37, which represents the 0 value on the roulette
+wheel, the user's bet is returned to them.
 
-The function sets the `spinToBetType` mapping for this spin to `BetType.Color`,
-and then calls `_spinRouletteWheel(spinCount)`
+If the result is not 37, the function determines if the user's bet was
+successful based on whether they bet on even or odd. If the user bet on even and
+the result is even, or if the user bet on odd and the result is odd, then the
+user wins and is paid out twice their bet amount. If the user's bet is
+unsuccessful, 10% of their bet is sent to the designated `sponsorWallet` to
+ensure future payouts, 2% is sent to the deployer's wallet, and the remaining
+amount is kept by the house.
 
 ```solidity
 function betColor(bool _isBlack) external payable returns (uint256) {
@@ -663,21 +668,14 @@ function betColor(bool _isBlack) external payable returns (uint256) {
 
 ```
 
-`checkIfColorWon()` is an internal function that checks the result for a colour
-bet when the spin is complete. It gets the user address from the mapping to
-verify all the conditions.
+### Betting on a Color
 
-Then, it calculates the result of the spin by taking the modulo of the spin
-result with 37. If the spin result is equal to 37, this indicates that the spin
-failed to fulfill, and the user's bet amount will be returned to them. If the
-spin result is 0, then the function will send 10% of the user's bet amount to
-the sponsor wallet to ensure future fulfills, and 2% to the deployer, with the
-remaining balance being kept by the house.
+`betColor()` allows user to place a black or red bet, which pays out 2:1 if they
+are correct. It takes in a `_isBlack` variable as a parameter, i.e, `true` for
+black, `false` for red.
 
-If the spin result is not equal to 0 or 37, then the function checks if the
-result is a black number or not. If it is a black number and the user bet on
-black, or if it is a red number and the user bet on red, then the user wins and
-will receive double their bet amount.
+The function sets the `spinToBetType` mapping for this spin to `BetType.Color`,
+and then calls `_spinRouletteWheel(spinCount)`
 
 ```solidity
 function checkIfColorWon(uint256 _spin) internal returns (uint256) {
@@ -718,6 +716,22 @@ function checkIfColorWon(uint256 _spin) internal returns (uint256) {
   }
 }
 ```
+
+`checkIfColorWon()` is an internal function that checks the result for a colour
+bet when the spin is complete. It gets the user address from the mapping to
+verify all the conditions.
+
+Then, it calculates the result of the spin by taking the modulo of the spin
+result with 37. If the spin result is equal to 37, this indicates that the spin
+failed to fulfill, and the user's bet amount will be returned to them. If the
+spin result is 0, then the function will send 10% of the user's bet amount to
+the sponsor wallet to ensure future fulfills, and 2% to the deployer, with the
+remaining balance being kept by the house.
+
+If the spin result is not equal to 0 or 37, then the function checks if the
+result is a black number or not. If it is a black number and the user bet on
+black, or if it is a red number and the user bet on red, then the user wins and
+will receive double their bet amount.
 
 > The complete contract code can be found
 > [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol)
@@ -772,7 +786,14 @@ outputs while making the request.
 
 **This wallet needs to be funded.**
 
-!qrng deets
+::: details Nodary QRNG Airnode Details
+
+```
+nodary QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
+nodary QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
+```
+
+:::
 
 ```sh
 npx @api3/airnode-admin derive-sponsor-wallet-address \
