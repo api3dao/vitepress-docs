@@ -61,6 +61,12 @@ console.log(colors.bold('| > Ignore list'));
 ignore.forEach((element) => {
   console.log('|', colors.bold.yellow(element));
 });
+console.log('|++++++++++++++++++++++++');
+// Legends
+console.log(colors.bold('| > Legends'));
+console.log('| . link validated');
+console.log('| ~ link ignored, see /libs/link-validator-ignore.json');
+console.log('| ' + colors.bold.red('X link validation failed'));
 console.log('|++++++++++++++++++++++++\n');
 
 // Test if url should be ignored.
@@ -85,6 +91,7 @@ async function testLink(url, filePath, ignoreTimeout) {
     // IGNORE: from ignore list AND
     // some a tags may have javascript:void(0) in href
     if (ignoreUrl(url) || url.indexOf('javascript:void(0)') > -1) {
+      process.stdout.write('~');
       return;
     }
 
