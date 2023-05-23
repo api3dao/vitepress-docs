@@ -333,8 +333,9 @@ and that these endpoints can be triggers for `rrp`, `http`, and/or
 
 #### Considerations: cached responses
 
-Airnode has the ability to cache API responses, per request ID, to the local
-filesystem. This only applies to blockchain requests. The flow is:
+When setting `triggers.rrp[n].cacheResponses = true` Airnode has the ability to
+cache API responses, per request ID, to the local filesystem. This only applies
+to blockchain requests. The flow is:
 
 1. A request is received from the Blockchain.
 1. The Airnode does an HTTP/S call to a remote API based on the request.
