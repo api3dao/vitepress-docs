@@ -636,7 +636,8 @@ derivation see:
 
 (required) - Whether to cache API responses for an endpoint by `requestId` and
 return the cached response. Useful for non-idempotent API operations like random
-number generators.
+number generators. See
+[Considerations: cached responses](/reference/airnode/latest/understand/configuring.md#considerations-cached-responses).
 
 ### `http`
 
