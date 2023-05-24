@@ -126,9 +126,6 @@ You then define the following state variables:
 - `endpointId`: A `bytes32` variable to store the unique identifier for the QRNG
   API endpoint.
 
-The contract also defines an enumeration type called `BetType` with five
-possible values:
-
 ```
 Color
 Number
@@ -136,6 +133,12 @@ EvenOdd
 Third
 Half
 ```
+
+The contract also defines an enumeration type called `BetType` with five
+possible values.
+
+These values represent different types of bets that players can make in the game
+of Roulette.
 
 ```solidity
   mapping(address => bool) public userBetAColor;
@@ -168,11 +171,8 @@ Half
 
 ```
 
-These values represent different types of bets that players can make in the game
-of Roulette.
-
 The contract defines several mapping variables to store information about user
-bets and the results of each spin in the game of Roulette:
+bets and the results of each spin in the game of Roulette.
 
 ```solidity
   error HouseBalanceTooLow();
@@ -190,7 +190,7 @@ bets and the results of each spin in the game of Roulette:
   event WinningNumber(uint256 indexed spinNumber, uint256 winningNumber);
 ```
 
-The contract also defines several error messages and events:
+The contract also defines several error messages and events.
 
 ```solidity
   constructor(address _airnodeRrp) RrpRequesterV0(_airnodeRrp) {
@@ -224,6 +224,8 @@ It also sets certain numbers as black by setting their corresponding values in
 the `blackNumber` mapping to `true`. These numbers are 2, 4, 6, 8, 10, 11, 13,
 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, and 35. These are the numbers on a
 roulette wheel that are colored black.
+
+### Making a Request for a Random Number
 
 ```solidity
   function _spinRouletteWheel(uint256 _spinCount) internal {
@@ -858,12 +860,12 @@ For this example, let's bet on all the even numbers of the table. As the
 bet.
 
 Set the value to `10000000000000` wei and select `betEvenOdd()`. Pass in `true`
-to select all the even numbers on the table and click on **transact**
+to select all the even numbers on the table and click on **transact**.
 
 ![](/guides/qrng/roulette-guide/src/SS6.png)
 
 Now wait for the bet to be complete (For the QRNG Airnode to fulfill your
-request)
+request).
 
 You can also check your `sponsorWallet` address on the block explorer to see if
 the QRNG Airnode fulfilled the request.
