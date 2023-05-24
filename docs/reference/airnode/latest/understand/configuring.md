@@ -333,14 +333,14 @@ and that these endpoints can be triggers for `rrp`, `http`, and/or
 
 #### Considerations: cached responses
 
-When setting `triggers.rrp[n].cacheResponses = true` Airnode has the ability to
-cache API responses, per request ID, to the local filesystem. This only applies
-to blockchain requests. The flow is:
+When setting `triggers.rrp[n].cacheResponses` to `true`, Airnode caches API
+responses on the local filesystem per request ID. This only applies to
+blockchain requests. The flow is:
 
 1. A request is received from the Blockchain.
 1. The Airnode does an HTTP/S call to a remote API based on the request.
-1. [with caching enabled] Airnode stores the response locally, in the local
-   filesystem, per request ID.
+1. [with caching enabled] Airnode stores the response on the local filesystem by
+   request ID.
 1. Airnode then follows the usual process of extracting the response,
    post-processing it and sending the response back on chain as a fulfillment
    callback.
@@ -349,8 +349,8 @@ to blockchain requests. The flow is:
 1. If during the next cycle, if the Airnode gets the same request and it isn't
    fulfilled, it will try and fulfill the request again. Ordinarily, it would
    follow steps 1, 2 and 4 (as shown above) without caching enabled, but with
-   caching enabled it will read the previous API response value from the local
-   filesystem and send that back to the chain.
+   caching enabled it will fulfill the response using the cached API response
+   value.
 
 Clearance of the local filesystem cache is dependant on the environment Airnode
 runs in. As a guideline:
@@ -360,28 +360,24 @@ runs in. As a guideline:
 - Docker persists as long as the container remains running.
 
 If the local filesystem is cleared, the cache is lost and if a repeat request is
-received after the cache has been cleared, Airnode will contact the remote API
-again. Airnode self-clears cached data after the data has reached 1 hour's age.
+received after the cache has been cleared, Airnode will repeat the API call.
+Airnode self-clears cached data after the data has reached 1 hour's age.
 
 Furthermore, as an example: if an Airnode Lambda environment/container has been
-"warm" for 2.4 hours and AIrnode gets a request, that request will only be
+"warm" for 2.4 hours and Airnode gets a request, that request will only be
 cached until the container resets, in this case 2.5 hours - 2.4 hours = 0.1
-hours remaining to the environment being cleared.
+hours.
 
-Caching on serverless infrastructure is unreliable and best effort. If request
-caching is mission critical Airnode should be run in a Docker container with a
-persistent `/tmp` directory.
+As described above, caching on serverless infrastructure is unreliable and if
+request caching is mission critical, Airnode should be run in a Docker container
+with a persistent `/tmp` directory.
 
 Caching is useful for non-idempotent API operations like random number
-generators. Consider these two use-cases:
+generators. Consider the following use-case:
 
-- Consider an endpoint called `https://acme.cool/toggle` that simply toggles
-  between two values - you probably wouldn't want something to be toggled
-  multiple times for one request (repeated fulfillment attempts over multiple
-  cycles).
-- Random Numbers; a malicious blockchain provider can selectively block
-  fulfillments containing numbers they don't like, allowing them to improve
-  their odds of winning in a random-number betting game.
+> Random Numbers: a malicious blockchain provider can selectively block
+> fulfillments containing numbers they don't like, allowing them to improve
+> their odds of winning in a random-number betting game.
 
 #### References: `triggers`
 
