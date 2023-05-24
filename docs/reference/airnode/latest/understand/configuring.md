@@ -347,8 +347,8 @@ blockchain requests. The flow is:
 1. After all current requests are processed, Airnode then exits until the next
    cycle (the next minute).
 1. If during the next cycle, if the Airnode gets the same request and it isn't
-   fulfilled, it will try and fulfill the request again. Ordinarily, it would
-   follow steps 1, 2 and 4 (as shown above) without caching enabled, but with
+   fulfilled, it will try and fulfill the request again. Ordinarily, without
+   caching enabled, it would follow steps 1, 2 and 4 (as shown above), but with
    caching enabled it will fulfill the response using the cached API response
    value.
 
@@ -363,10 +363,10 @@ If the local filesystem is cleared, the cache is lost and if a repeat request is
 received after the cache has been cleared, Airnode will repeat the API call.
 Airnode self-clears cached data after the data has reached 1 hour's age.
 
-Furthermore, as an example: if an Airnode Lambda environment/container has been
-"warm" for 2.4 hours and Airnode gets a request, that request will only be
-cached until the container resets, in this case 2.5 hours - 2.4 hours = 0.1
-hours.
+Furthermore, as an example: "if an Airnode AWS Lambda environment/container"
+(since this example of 2.5 hrs is specific to AWS) has been "warm" for 2.4 hours
+and Airnode gets a request, that request will only be cached until the container
+resets, in this case 2.5 hours - 2.4 hours = 0.1 hours.
 
 As described above, caching on serverless infrastructure is unreliable and if
 request caching is mission critical, Airnode should be run in a Docker container
@@ -375,9 +375,9 @@ with a persistent `/tmp` directory.
 Caching is useful for non-idempotent API operations like random number
 generators. Consider the following use-case:
 
-> Random Numbers: a malicious blockchain provider can selectively block
-> fulfillments containing numbers they don't like, allowing them to improve
-> their odds of winning in a random-number betting game.
+> Random Numbers: in the absence of caching, a malicious blockchain provider can
+> selectively block fulfillments containing numbers they don't like, allowing
+> them to improve their odds of winning in a random-number betting game.
 
 #### References: `triggers`
 
