@@ -138,7 +138,7 @@ as a reference while building a config.json file.
      },
     "logFormat": "json",
     "logLevel": "INFO",
-    "nodeVersion": "0.11.0",
+    "nodeVersion": "0.11.1",
     "stage": "<FILL_*>"
   },
   "triggers": {

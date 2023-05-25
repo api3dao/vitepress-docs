@@ -31,7 +31,7 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 1. `ois[n].oisFormat` updated to "2.0.0".
 
-2. `nodeSettings.nodeVersion` updated to "0.11.0".
+2. `nodeSettings.nodeVersion` updated to "0.11.1".
 
 3. `ois[n].endpoints[n].preProcessingSpecifications` and
    `ois[n].endpoints[n].postProcessingSpecifications` have an updated allowed
@@ -57,12 +57,12 @@ Updated to "2.0.0"
 
 2. `nodeSettings.nodeVersion`
 
-Updated to "0.11.0"
+Updated to "0.11.1"
 
 ```diff
 {
 - "nodeVersion": "0.10.0"
-+ "nodeVersion": "0.11.0"
++ "nodeVersion": "0.11.1"
 }
 ```
 

@@ -22,7 +22,7 @@ you wish to use your own configuration files, you can generate them using
 [ChainAPI<ExternalLinkImage/>](https://chainapi.com).
 
 The latest release
-([0.11<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
+([0.11.1<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
 of the Airnode [client image](/reference/airnode/latest/docker/client-image.md)
 will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
 a Docker container, in this case a locally run Docker container.
@@ -154,7 +154,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --publish 3000:3000 \
-  api3/airnode-client:0.11
+  api3/airnode-client:0.11.1
 ```
 
 ```batch [Windows CMD]
@@ -162,7 +162,7 @@ docker run ^
   --volume "%cd%:/app/config" ^
   --name quick-start-container-airnode ^
   --publish 3000:3000 ^
-  api3/airnode-client:0.11
+  api3/airnode-client:0.11.1
 ```
 
 ```sh [Linux (host networking)]
@@ -170,7 +170,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --network host \
-  api3/airnode-client:0.11
+  api3/airnode-client:0.11.1
 ```
 
 :::
