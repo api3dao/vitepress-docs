@@ -1,33 +1,34 @@
 module.exports = [
   {
     text: 'Understanding dAPIs',
+    collapsed: false,
     items: [
       {
-        text: '• dAPIs are data feeds',
+        text: 'dAPIs are data feeds',
         link: '/reference/dapis/understand/',
       },
       {
-        text: '• Reading dAPIs',
+        text: 'Reading dAPIs',
         link: '/reference/dapis/understand/read-dapis',
       },
       {
-        text: '• Proxy contracts',
+        text: 'Proxy contracts',
         link: '/reference/dapis/understand/proxy-contracts',
       },
       {
-        text: '• IProxy interface',
+        text: 'IProxy interface',
         link: '/reference/dapis/understand/iproxy',
       },
       {
-        text: '• Deviation thresholds',
+        text: 'Deviation thresholds',
         link: '/reference/dapis/understand/deviations',
       },
       {
-        text: '• Sponsor wallets',
+        text: 'Sponsor wallets',
         link: '/reference/dapis/understand/wallets',
       },
       {
-        text: '• Security',
+        text: 'Security',
         link: '/reference/dapis/understand/security',
       },
     ],
