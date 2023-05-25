@@ -17,10 +17,7 @@ tags:
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
-Airnode. Configuration files are provided with only minor changes to be made. If
-you wish to use your own configuration files, you can generate them using
-[ChainAPI<ExternalLinkImage/>](https://chainapi.com).
-
+Airnode. Configuration files are provided with only minor changes to be made.
 The latest release
 ([0.11.1<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
 of the Airnode
@@ -54,9 +51,6 @@ These files have been created and only require a few minor changes to make the
 deployment of the Airnode successful. These changes are needed to supply AWS
 credentials, a chain provider url, a gateway key, and a mnemonic.
 
-You can also use the configuration files you generated using ChainAPI if you
-wish to deploy your own Airnode.
-
 ## 1. Install Prerequisites
 
 Install the
@@ -67,9 +61,6 @@ launch it.
 
 Download the <a href="/zip-files/quick-start-aws.zip" download>
 quick-start-aws.zip</a> project folder. Extract it into any location.
-
-If you've used ChainAPI to integrate your Airnode, extract the zip file and use
-that as the project directory.
 
 ```
 quick-start-aws
@@ -82,7 +73,7 @@ quick-start-aws
 
 Prepare the three configuration files. The Airnode deployer image looks for
 `config.json`, `secrets.env`, and `aws.env` in the project root directory and
-writes `receipt.json` to the project root directory.
+writes `receipt.json` to the project root folder.
 
 ### config.json
 
@@ -260,13 +251,6 @@ endpoints added to the `http` array can be tested.
 Use CURL to execute the HTTP gateway configured for the Airnode and get the
 results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
 network that Airnode was deployed for.
-
-:::info Custom ChainAPI configuration
-
-If you are using your own ChainAPI configuration, use the HTTP Gateway according
-to your OIS.
-
-:::
 
 As an alternative to CURL try an app such as
 [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
