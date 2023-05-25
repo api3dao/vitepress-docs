@@ -17,6 +17,9 @@
 # These are auto genereated anyway.
 /indexes
 /docs/public/indexes
+/docs/public/img
+/docs/public/zip-files
+/docs/public/api3-whitepaper-v1.0.3.pdf
 
 # assets
 /docs/reference/ois/latest/assets
