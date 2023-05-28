@@ -67,16 +67,18 @@
     },
     "httpGateway": {
       "enabled": true,
-      "apiKey": "${HTTP_GATEWAY_API_KEY}",
       "maxConcurrency": 20,
       "corsOrigins": []
     },
     "httpSignedDataGateway": {
       "enabled": false
     },
+    "oevGateway": {
+      "enabled": false
+    },
     "logFormat": "plain",
     "logLevel": "DEBUG",
-    "nodeVersion": "0.11.0",
+    "nodeVersion": "0.11.1",
     "stage": "quick-gcp"
   },
   "triggers": {

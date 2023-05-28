@@ -17,12 +17,9 @@ tags:
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
-Airnode. Configuration files are provided with only minor changes to be made. If
-you wish to use your own configuration files, you can generate them using
-[ChainAPI<ExternalLinkImage/>](https://chainapi.com).
-
-The latest release
-([0.11<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
+Airnode. Configuration files are provided with only minor changes to be made.
+The
+[latest release <ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags)
 of the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
 used to deploy the off-chain component of Airnode (a.k.a., the node) to AWS.
@@ -48,14 +45,10 @@ An Airnode deployment on AWS uses the Docker
 requires three files as input:
 [config.json](/guides/airnode/deploy-airnode/deploy-aws/index.md#config-json),
 [secrets.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#secrets-env),
-and [aws.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#aws-env).
-
-These files have been created and only require a few minor changes to make the
-deployment of the Airnode successful. These changes are needed to supply AWS
-credentials, a chain provider url, a gateway key, and a mnemonic.
-
-You can also use the configuration files you generated using ChainAPI if you
-wish to deploy your own Airnode.
+and [aws.env](/guides/airnode/deploy-airnode/deploy-aws/index.md#aws-env). These
+files have been created and only require a few minor changes to make the
+deployment of the Airnode successful. The changes are needed to supply AWS
+credentials, a chain provider url, and a mnemonic.
 
 ## 1. Install Prerequisites
 
@@ -68,9 +61,6 @@ launch it.
 Download the <a href="/zip-files/quick-start-aws.zip" download>
 quick-start-aws.zip</a> project folder. Extract it into any location.
 
-If you've used ChainAPI to integrate your Airnode, extract the zip file and use
-that as the project directory.
-
 ```
 quick-start-aws
 ├── aws.env
@@ -82,7 +72,7 @@ quick-start-aws
 
 Prepare the three configuration files. The Airnode deployer image looks for
 `config.json`, `secrets.env`, and `aws.env` in the project root directory and
-writes `receipt.json` to the project root directory.
+writes `receipt.json` to the project root folder.
 
 ### config.json
 
@@ -117,7 +107,7 @@ for more information.
 
 :::
 
-There are three values `config.json` extracts from `secrets.env` as shown below.
+There are two values `config.json` extracts from `secrets.env` as shown below.
 Add values for each.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url from a provider such as
@@ -132,9 +122,6 @@ Add values for each.
   ```sh [generate-airnode-mnemonic]
   npx @api3/airnode-admin generate-airnode-mnemonic
   ```
-
-- `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
-  Gateway. The expected length is 30 - 128 characters.
 
 ### aws.env
 
@@ -183,7 +170,7 @@ the line containing these variables.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.11 deploy
+  api3/airnode-deployer:latest deploy
 ```
 
 ```batch [Windows]
@@ -191,19 +178,19 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.11 deploy
+  api3/airnode-deployer:latest deploy
 ```
 
 :::
 
-Note the HTTP gateway URL in the output shown below. You will need it to test
-the Airnode in the next section.
+Make note of the `HTTP gateway URL` in your output as shown below as it will be
+different. You will need it to test the Airnode.
 
 ```sh [output]
-✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 tutorial-aws to aws us-east-1
+✔ Deployed Airnode 0x6A6cF2d0094c73b7aBb22Cd6196824BCBB830125 quick-aws to aws us-east-1
 ℹ Outputted config/receipt.json
   This file does not contain any sensitive information.
-ℹ HTTP gateway URL: https://vfnss24505.execute-api.us-east-1.amazonaws.com/v1
+ℹ HTTP gateway URL: https://0h2jjn4iw0.execute-api.us-east-1.amazonaws.com/v1/6445039b-309e-9173-0320-f0b0731eb34d
 ```
 
 ## 5. Test the Airnode
@@ -227,7 +214,6 @@ endpoints added to the `http` array can be tested.
   ...
   "httpGateway": {
     "enabled": true, // The gateway is activated for this Airnode
-    "apiKey": "${HTTP_GATEWAY_API_KEY}",
     "maxConcurrency": 20,
     "corsOrigins": []
   },
@@ -261,13 +247,6 @@ Use CURL to execute the HTTP gateway configured for the Airnode and get the
 results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
 network that Airnode was deployed for.
 
-:::info Custom ChainAPI configuration
-
-If you are using your own ChainAPI configuration, use the HTTP Gateway according
-to your OIS.
-
-:::
-
 As an alternative to CURL try an app such as
 [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
 [Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/).
@@ -275,21 +254,17 @@ Windows users can also use
 [Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
 (WSL2) to run CURL for Linux.
 
-In order to test an endpoint make a HTTP POST request with the `endpointId` as a
-path parameter, the `Content-Type` header set to `application/json`, the
-`x-api-key` header set to the `HTTP_GATEWAY_API_KEY`, and place the endpoint
-parameter in the request body as a key/value pair.
+In order to test an endpoint make a HTTP POST request with the `Content-Type`
+header set to `application/json`, the endpoint parameters in the request body as
+a key/value pairs, and the `endpointId` as a path parameter in the URL.
 
 - `-X`: POST
 - `-H`: The `Content-Type` using the value of `application/json`.
-- `-H`: The `x-api-key` using the value of the `HTTP_GATEWAY_API_KEY` from
-  `secrets.env`. Update the placeholder in the CURL example below with its
-  value.
 - `-d`: Use request body data to pass the endpoint parameter key/value pair.
 - `url`:
-  - `<httpGatewayUrl>`: The base URL to the gateway including the secret `UUID`
-    path parameter, displayed in the terminal at the end of an Airnode
-    deployment. Update the placeholder in the CURL example below with its value.
+  - `<httpGatewayUrl>`: The HTTP gateway URL as displayed in the terminal at the
+    end of an Airnode deployment. Update the placeholder in the CURL example
+    below with its value.
   - <code style="overflow-wrap:break-word;">0x6db9...c27af6</code>: Passed as a
     path parameter, the endpointId to call, see `triggers.rrp[0].endpointId` in
     the `config.json` file.
@@ -302,7 +277,6 @@ parameter in the request body as a key/value pair.
 curl -v \
 -X POST \
 -H 'Content-Type: application/json' \
--H 'x-api-key: <HTTP_GATEWAY_API_KEY-from-secrets.env>' \
 -d '{"parameters": {"coinIds": "api3", "coinVs_currencies": "usd"}}' \
 '<httpGatewayUrl>/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6'
 ```
@@ -311,14 +285,11 @@ curl -v \
 curl -v ^
 -X POST ^
 -H "Content-Type: application/json" ^
--H "x-api-key: <apiKey-from-secrets.env>" ^
 -d "{\"parameters\": {\"coinIds\": \"api3\", \"coinVs_currencies\": \"usd\"}}" ^
 "<httpGatewayUrl>/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6"
 ```
 
 :::
-
-<br/>
 
 #### Response
 
@@ -343,7 +314,7 @@ was deployed.
 ```sh [Linux/Mac/WSL2]
 docker run -it --rm \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.11 remove-with-receipt
+  api3/airnode-deployer:latest remove-with-receipt
 ```
 
 ```batch [Windows]
@@ -351,7 +322,7 @@ docker run -it --rm \
 
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.11 remove-with-receipt
+  api3/airnode-deployer:latest remove-with-receipt
 ```
 
 :::
