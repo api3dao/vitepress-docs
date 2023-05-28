@@ -244,7 +244,7 @@ a key/value pairs, and the `endpointId` as a path parameter in the URL.
 curl -X POST \
   -d '{"parameters":{"coinIds":"api3","coinVs_currencies":"usd"}}' \
   -H 'Content-Type: application/json' \
-  'http://localhost:3000/http-data/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6'
+  'http://localhost:3000/http-data/01234567-abcd-abcd-abcd-012345678abc/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6'
 ```
 
 ### Response
