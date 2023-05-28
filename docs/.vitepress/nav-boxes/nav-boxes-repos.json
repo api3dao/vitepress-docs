@@ -10,7 +10,7 @@
     "content": "A repo based example project that demonstrates the usage of the Airnode request–response protocol to receive API3 QRNG services."
   },
   "_airnode-examples": {
-    "btnURL": "https://github.com/api3dao/airnode/tree/v0.11.0/packages/airnode-examples",
+    "btnURL": "https://github.com/api3dao/airnode/tree/v0.11.1/packages/airnode-examples",
     "title": " Airnode monorepo example",
     "content": "Contains scripts and the necessary steps to run an Airnode instance."
   }

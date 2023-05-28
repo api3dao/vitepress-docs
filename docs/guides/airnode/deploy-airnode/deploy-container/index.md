@@ -17,12 +17,9 @@ tags:
 # {{$frontmatter.title}}
 
 This guide is a simple introduction that demonstrates the deployment of an
-Airnode. Configuration files are provided with only minor changes to be made. If
-you wish to use your own configuration files, you can generate them using
-[ChainAPI<ExternalLinkImage/>](https://chainapi.com).
-
-The latest release
-([0.11<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags))
+Airnode. Configuration files are provided with only minor changes to be made.
+The
+[latest release <ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-client/tags)
 of the Airnode [client image](/reference/airnode/latest/docker/client-image.md)
 will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
 a Docker container, in this case a locally run Docker container.
@@ -49,13 +46,9 @@ two files as input:
 [config.json](/guides/airnode/deploy-airnode/deploy-container/index.md#config-json)
 and
 [secrets.env](/guides/airnode/deploy-airnode/deploy-container/index.md#secrets-env).
-
 These files have been created and only require a few minor changes on your part
-to make the deployment of the demo Airnode successful. These changes are needed
-to supply a chain provider url and a mnemonic.
-
-You can also use the configuration files you generated using ChainAPI if you
-wish to deploy your own Airnode.
+to make the deployment of the demo Airnode successful. The changes are needed to
+supply a chain provider url and a mnemonic.
 
 ## 1. Install Prerequisites
 
@@ -76,23 +69,6 @@ quick-start-container
 
 Prepare the two configuration files `config.json` and `secrets.env`. By default,
 the Airnode client image looks for them in the project root directory.
-
-If you've used ChainAPI to integrate your Airnode, extract the zip file and use
-that as the project directory.
-
-:::warning If you are using a configuration generated using ChainAPI, make sure
-to change the `nodeSettings.cloudProvider.type: "local"` in the `config.json`
-file.
-
-```json
-  "nodeSettings": {
-    "cloudProvider": {
-      "type": "local"
-    },
-  }
-```
-
-:::
 
 ### config.json
 
@@ -119,7 +95,7 @@ network. There are a few variables this file will extract (interpolate) from
 
 :::
 
-There are three values `config.json` extracts from `secrets.env`. Add values for
+There are two values `config.json` extracts from `secrets.env`. Add values for
 each of the there fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
@@ -136,16 +112,14 @@ each of the there fields.
   npx @api3/airnode-admin generate-airnode-mnemonic
   ```
 
-- `HTTP_GATEWAY_API_KEY`: Make up an apiKey to authenticate calls to the HTTP
-  Gateway. The expected length is 30 - 128 characters.
-
 ## 4. Deploy
 
-Make sure Docker is running and then run the Airnode client container from the
-root of the `quick-deploy-container` folder.
+If your Docker Desktop application already has an image named
+`api3/airnode-client:latest` remove it first. The version behind `latest` may
+have changed since it was last used.
 
-Run the following command to deploy the Airnode locally. Note that the version
-of `api3/airnode-client` matches the `nodeVersion` in the config.json file.
+Run the following command to deploy the Airnode locally from the root of the
+quick-deploy-container folder.
 
 ::: code-group
 
@@ -154,7 +128,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --publish 3000:3000 \
-  api3/airnode-client:0.11
+  api3/airnode-client:latest
 ```
 
 ```batch [Windows CMD]
@@ -162,7 +136,7 @@ docker run ^
   --volume "%cd%:/app/config" ^
   --name quick-start-container-airnode ^
   --publish 3000:3000 ^
-  api3/airnode-client:0.11
+  api3/airnode-client:latest
 ```
 
 ```sh [Linux (host networking)]
@@ -170,7 +144,7 @@ docker run \
   --volume "$(pwd):/app/config" \
   --name quick-start-container-airnode \
   --network host \
-  api3/airnode-client:0.11
+  api3/airnode-client:latest
 ```
 
 :::
@@ -210,7 +184,6 @@ endpoints added to the `http` array can be tested.
   ...
   "httpGateway": {
     "enabled": true, // The gateway is activated for this Airnode
-    "apiKey": "${HTTP_GATEWAY_API_KEY}",
     "maxConcurrency": 20,
     "corsOrigins": []
   },
@@ -244,13 +217,6 @@ Use CURL to execute the HTTP gateway configured for the Airnode and get the
 results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
 network that Airnode was deployed for.
 
-:::info Custom ChainAPI configuration
-
-If you are using your own ChainAPI configuration, use the HTTP Gateway according
-to your OIS.
-
-:::
-
 As an alternative to CURL try an app such as
 [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
 [Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/).
@@ -258,27 +224,26 @@ Windows users can also use
 [Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
 (WSL2) to run CURL for Linux.
 
-In order to test an endpoint make a HTTP POST request with the `endpointId` as a
-path parameter, the `Content-Type` header set to `application/json`, the
-`x-api-key` header set to the `HTTP_GATEWAY_API_KEY`, and place the endpoint
-parameter in the request body as a key/value pair.
+In order to test an endpoint make a HTTP POST request with the `Content-Type`
+header set to `application/json`, the endpoint parameters in the request body as
+a key/value pairs, and the `endpointId` as a path parameter in the URL.
 
 - `-X`: POST
 - `-H`: The `Content-Type` using the value of `application/json`.
-- `-H`: The `x-api-key` using the value of the `HTTP_GATEWAY_API_KEY` from
-  `secrets.env`. Update the placeholder in the CURL example below with its
-  value.
 - `-d`: Use request body data to pass the endpoint parameter key/value pair.
-- `url`: The base URL (`http://localhost:3000/http-data`) to the gateway
-  appended with the path parameter which is the `endpointId`
-  (`0x6db9...c27af6`).
+- `url`:
+  - `<httpGatewayUrl>`: The HTTP gateway URL as displayed in the terminal at the
+    end of an Airnode deployment. Update the placeholder in the CURL example
+    below with its value.
+  - <code style="overflow-wrap:break-word;">0x6db9...c27af6</code>: Passed as a
+    path parameter, the endpointId to call, see `triggers.rrp[0].endpointId` in
+    the `config.json` file.
 
 ```sh
 # For Windows CMD replace line termination marker \ with ^
 curl -X POST \
   -d '{"parameters":{"coinIds":"api3","coinVs_currencies":"usd"}}' \
   -H 'Content-Type: application/json' \
-  -H 'x-api-key: <HTTP_GATEWAY_API_KEY>' \
   'http://localhost:3000/http-data/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6'
 ```
 
