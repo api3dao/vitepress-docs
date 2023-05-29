@@ -263,8 +263,8 @@ Windows users can also use
 (WSL2) to run CURL for Linux.
 
 In order to test an endpoint make a HTTP POST request with the `Content-Type`
-header set to `application/json`, the endpoint parameters in the request body as
-a key/value pairs, and the `endpointId` as a path parameter in the URL.
+header set to `application/json`, the endpoint parameters in the request body,
+and the `endpointId` as a path parameter.
 
 - `-X`: POST
 - `-H`: The `Content-Type` using the value of `application/json`.
