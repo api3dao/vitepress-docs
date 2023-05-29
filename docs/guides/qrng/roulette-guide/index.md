@@ -225,6 +225,35 @@ the `blackNumber` mapping to `true`. These numbers are 2, 4, 6, 8, 10, 11, 13,
 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, and 35. These are the numbers on a
 roulette wheel that are colored black.
 
+### Setting the Request Parameters
+
+```solidity
+  function setRequestParameters(address _airnode, bytes32 _endpointId, address payable _sponsorWallet) external {
+    require(msg.sender == deployer, "msg.sender not deployer");
+    airnode = _airnode;
+    endpointId = _endpointId;
+    sponsorWallet = _sponsorWallet;
+  }
+
+  /// @notice sends msg.value to sponsorWallet to ensure Airnode continues responses
+  function topUpSponsorWallet() external payable {
+    require(msg.value != 0, "msg.value == 0");
+    (bool sent, ) = sponsorWallet.call{ value: msg.value }("");
+    if (!sent) revert TransferToSponsorWalletFailed();
+  }
+
+  // to refill the "house" (address(this)) if bankrupt
+  receive() external payable {}
+```
+
+The `setRequestParameters` sets the QRNG `airnode` address, `endpointId`, and
+`sponsorWallet` on-chain. This function can only be called by the deployer of
+the contract.
+
+The `topUpSponsorWallet()` is used to top up the `sponsorWallet` address. You
+will later derive it using the
+[Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.html).
+
 ### Making a Request for a Random Number
 
 ```solidity
@@ -327,35 +356,6 @@ specific helper function to check if the user won or lost the bet.
 Finally, the function emits a `SpinComplete` event with the request ID, spin
 number, and spin result as parameters, to notify the user interface and other
 contracts that the spin has been completed.
-
-### Setting the Request Parameters
-
-```solidity
-  function setRequestParameters(address _airnode, bytes32 _endpointId, address payable _sponsorWallet) external {
-    require(msg.sender == deployer, "msg.sender not deployer");
-    airnode = _airnode;
-    endpointId = _endpointId;
-    sponsorWallet = _sponsorWallet;
-  }
-
-  /// @notice sends msg.value to sponsorWallet to ensure Airnode continues responses
-  function topUpSponsorWallet() external payable {
-    require(msg.value != 0, "msg.value == 0");
-    (bool sent, ) = sponsorWallet.call{ value: msg.value }("");
-    if (!sent) revert TransferToSponsorWalletFailed();
-  }
-
-  // to refill the "house" (address(this)) if bankrupt
-  receive() external payable {}
-```
-
-The `setRequestParameters` sets the QRNG `airnode` address, `endpointId`, and
-`sponsorWallet` on-chain. This function can only be called by the deployer of
-the contract.
-
-The `topUpSponsorWallet()` is used to top up the `sponsorWallet` address. You
-will later derive it using the
-[Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.html).
 
 ### Betting on a Single Number
 
