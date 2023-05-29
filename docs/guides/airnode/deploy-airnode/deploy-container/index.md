@@ -118,6 +118,17 @@ If your Docker Desktop application already has an image named
 `api3/airnode-client:latest` remove it first. The version behind `latest` may
 have changed since it was last used.
 
+For the Docker command below, note that `--publish HOST_PORT:CONTAINER_PORT`
+parameter (Mac/WSL2/PowerShell) can have different values for the `HOST_PORT`
+and `CONTAINER_PORT`. E.g. parameter `--publish 8000:3000` would expose the web
+server on port 8000 on the host machine.
+
+For Linux, it's recommended to use
+[host networking](https://docs.docker.com/network/host/). When using host
+networking, change the port via
+[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
+property inside config.json.
+
 Run the following command to deploy the Airnode locally from the root of the
 quick-deploy-container folder.
 
@@ -149,16 +160,13 @@ docker run \
 
 :::
 
-Note that `--publish HOST_PORT:CONTAINER_PORT` parameter (Mac/WSL2/PowerShell)
-can have different values for the `HOST_PORT` and `CONTAINER_PORT`. E.g.
-parameter `--publish 8000:3000` would expose the web server on port 8000 on the
-host machine.
+Make note of the `HTTP gateway URL` in the output as shown below. It will be
+different. You will need it to test the Airnode.
 
-For Linux, it's recommended to use
-[host networking](https://docs.docker.com/network/host/). When using host
-networking, change the port via
-[gatewayServerPort](/reference/airnode/latest/deployment-files/config-json.md#cloudprovider-gatewayserverport)
-property inside config.json.
+```sh [output]
+# The following line should appear within the first ten lines of the output
+INFO HTTP (testing) gateway listening for request on "http://localhost:3000/http-data/k897...38x9fi/:endpointId"
+```
 
 In the Docker desktop application view the container
 (quick-deploy-container-airnode) and its logs.
@@ -167,8 +175,8 @@ In the Docker desktop application view the container
 
 After a successful deployment the Airnode can be tested directly using its
 off-chain [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md)
-without accessing the blockchain. You provide endpoint parameters to get a
-response from an integrated API.
+thus bypassing the RRP protocol contract on blockchains. You provide endpoint
+parameters to get a response from an integrated API.
 
 ### HTTP Gateway
 
@@ -225,16 +233,16 @@ Windows users can also use
 (WSL2) to run CURL for Linux.
 
 In order to test an endpoint make a HTTP POST request with the `Content-Type`
-header set to `application/json`, the endpoint parameters in the request body as
-a key/value pairs, and the `endpointId` as a path parameter in the URL.
+header set to `application/json`, the endpoint parameters in the request body,
+and the `endpointId` as a path parameter.
 
 - `-X`: POST
 - `-H`: The `Content-Type` using the value of `application/json`.
 - `-d`: Use request body data to pass the endpoint parameter key/value pair.
 - `url`:
   - `<httpGatewayUrl>`: The HTTP gateway URL as displayed in the terminal at the
-    end of an Airnode deployment. Update the placeholder in the CURL example
-    below with its value.
+    end of an Airnode deployment less the `:endpointId` placeholder. Update the
+    placeholder in the CURL example below with its value.
   - <code style="overflow-wrap:break-word;">0x6db9...c27af6</code>: Passed as a
     path parameter, the endpointId to call, see `triggers.rrp[0].endpointId` in
     the `config.json` file.
@@ -244,7 +252,7 @@ a key/value pairs, and the `endpointId` as a path parameter in the URL.
 curl -X POST \
   -d '{"parameters":{"coinIds":"api3","coinVs_currencies":"usd"}}' \
   -H 'Content-Type: application/json' \
-  'http://localhost:3000/http-data/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6'
+  '<httpGatewayUrl>/0x6db9e3e3d073ad12b66d28dd85bcf49f58577270b1cc2d48a43c7025f5c27af6'
 ```
 
 ### Response
