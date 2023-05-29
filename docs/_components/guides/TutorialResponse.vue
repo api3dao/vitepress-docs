@@ -6,8 +6,8 @@
 <template>
   <div>
     <p>
-      Note the JSON response <code>values</code> is the API3 price multiplied by
-      <code>1e6</code>, which results from setting the
+      Note the JSON response field <code>values</code> is the API3 price
+      multiplied by <code>1e6</code>, which results from setting the
       <code>_times</code> reserved parameter to <code>1000000</code> in
       <code>config.json</code>. This manipulation is necessary in order to
       correctly handle floating point numbers.
