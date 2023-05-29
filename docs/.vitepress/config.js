@@ -20,10 +20,14 @@ export default {
       {},
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-D3LJ95MXN9');",
     ],
-    ['link', { rel: 'stylesheet', href: '/api3.css' }],
+    ['link', { rel: 'stylesheet', href: '/styles/api3.css' }],
     [
       'link',
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/small-logo.png' },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/img/small-logo.png',
+      },
     ],
     [
       'link',
@@ -31,7 +35,7 @@ export default {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/small-logo.png',
+        href: '/img/small-logo.png',
       },
     ],
     [
@@ -40,14 +44,14 @@ export default {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/small-logo.png',
+        href: '/img/small-logo.png',
       },
     ],
   ],
   themeConfig: {
     logo: {
-      light: '/API3-Active.png',
-      dark: '/api3-inactive.png',
+      light: '/img/API3-Active.png',
+      dark: '/img/api3-inactive.png',
     },
     siteTitle: 'Documentation',
     socialLinks: [
