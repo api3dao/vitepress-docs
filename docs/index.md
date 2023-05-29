@@ -9,7 +9,7 @@ hero:
     first-party oracles then form a variety of data feed services.
 
   image:
-    src: /beacons.svg
+    src: /img/beacons.svg
     alt: API3
   actions:
     - theme: brand
