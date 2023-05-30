@@ -16,25 +16,23 @@ tags:
 
 # {{$frontmatter.title}}
 
-This guide is a simple introduction that demonstrates the deployment of an
-Airnode. Configuration files are provided with only minor changes to be made.
-The
-[latest release <ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags)
+This guide demonstrates the deployment of an Airnode followed by an off-chain
+[HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) request.
+Configuration files are provided with only minor changes to be made. The
+[latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags)
 of the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
-used to deploy the off-chain component of Airnode (a.k.a., the node) to GCP.
+used to deploy the off-chain component of Airnode (a.k.a., the node) to to GCP.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
-current value of a coin. This guide does not detail the overall configuration of
-an Airnode, it is just a quick start guide then lends itself to understanding an
-Airnode deployment.
+[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
+which returns the current value of a coin. This guide does not detail the
+overall configuration of an Airnode, it is just a quick start guide then lends
+itself to understanding an Airnode deployment.
 
-Please note that this tutorial only creates an off-chain Airnode and will test
-it using its off-chain
-[HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md). It does
-not attempt to make an RRP (request-response protocol) call from a smart
-contract. If you wish to make an RRP call, please see the guides
+Please note that this tutorial does not involve the blockchain nor an RRP
+(request-response protocol) call from a smart contract. If you wish to make an
+RRP call, please see the guides
 [Making an RRP Request](/guides/airnode/rrp-request.md) and
 [Calling an Airnode](/guides/airnode/calling-an-airnode/).
 
@@ -45,9 +43,10 @@ An Airnode deployment on GCP uses the Docker
 requires three files as input:
 [config.json](/guides/airnode/deploy-airnode/deploy-gcp/index.md#config-json),
 [secrets.env](/guides/airnode/deploy-airnode/deploy-gcp/index.md#secrets-env),
-and gcp.json. These files have been created and only require a few minor changes
-to make the deployment of the Airnode successful. The changes are needed to
-supply a GCP project ID, a chain provider url, and a mnemonic.
+and gcp.json. The `config.json` and `secrets.env` files have been created and
+only require a few minor changes to make the deployment of the Airnode
+successful. The changes are needed to supply a GCP project ID, a chain provider
+url, and a mnemonic.
 
 ## 1. Install Prerequisites
 
@@ -69,7 +68,7 @@ quick-start-gcp
 ## 3. GCP Project Setup & Credentials
 
 - First
-  [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+  [create a GCP project<ExternalLinkImage/>](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
   (or use an existing GCP project) where the Airnode will be deployed. Once the
   project is created, add the project ID to the
   [secrets.env](/guides/airnode/deploy-airnode/deploy-gcp/#secrets-env) file.
@@ -110,8 +109,9 @@ writes `receipt.json` to the project root directory.
 :::
 
 This file requires no changes on your part. It has been created with just one
-API endpoint. It will instruct the Airnode to attach to the Sepolia test network
-and contains parameters to setup the off-chain Airnode.
+API endpoint and configured to listen to requests on the Sepolia test network,
+though this tutorial will not make any such requests. There are a few variables
+this file will interpolate from `secrets.env`.
 
 ### secrets.env
 
@@ -123,8 +123,8 @@ and contains parameters to setup the off-chain Airnode.
 
 :::
 
-There are three values `config.json` extracts from `secrets.env` as shown below.
-Add values for each.
+There are three values `config.json` interpolates from `secrets.env`. Add values
+for each of these fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
   provider such as [Infura<ExternalLinkImage/>](https://www.infura.io/). Use a
@@ -204,16 +204,15 @@ different. You will need it to test the Airnode.
 ## 6. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
-off-chain [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md)
-without accessing the blockchain. You provide endpoint parameters to get a
-response from an integrated API.
+off-chain [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md).
+As a reminder, this is independent of the blockchain and RRP contract.
 
 ### HTTP Gateway
 
-Looking at the `config.json` code snippet below shows the HTTP gateway was
-activated for the Airnode. Furthermore the endpoint for `/simple/price` (with an
-`endpointId` of `0x6...af6`) has been added to `triggers.http[n]`. Only those
-endpoints added to the `http` array can be tested.
+Looking at the `config.json` code snippet below shows that the HTTP gateway is
+configured for the Airnode. Furthermore, the endpoint for `/simple/price` (with
+an `endpointId` of `0x6...af6`) is present in `triggers.http[n]`. Only those
+endpoints added to the `http` array can be tested using the HTTP gateway.
 
 ::: details Expand to view: HTTP gateway and endpoint ID
 
@@ -251,18 +250,17 @@ endpoints added to the `http` array can be tested.
 
 ### Execute Endpoint
 
-Use CURL to execute the HTTP gateway configured for the Airnode and get the
-results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
-network that Airnode was deployed for.
+Use CURL to execute a HTTP gateway request for the CoinGecko endpoint
+`/simple/price`.
 
-As an alternative to CURL try an app such as
+As an alternative to CURL, an app such as
 [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
-[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/).
-Windows users can also use
+[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/) can
+be used. Windows users can also use
 [Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
-(WSL2) to run CURL for Linux.
+(WSL2) to run CURL on Linux.
 
-In order to test an endpoint make a HTTP POST request with the `Content-Type`
+In order to test an endpoint, make a HTTP POST request with the `Content-Type`
 header set to `application/json`, the endpoint parameters in the request body,
 and the `endpointId` as a path parameter.
 
@@ -271,11 +269,10 @@ and the `endpointId` as a path parameter.
 - `-d`: Use request body data to pass the endpoint parameter key/value pair.
 - `url`:
   - `<httpGatewayUrl>`: The HTTP gateway URL as displayed in the terminal at the
-    end of an Airnode deployment. Update the placeholder in the CURL example
-    below with its value.
+    end of an Airnode deployment, less the `:endpointId` placeholder.
   - <code style="overflow-wrap:break-word;">0x6db9...c27af6</code>: Passed as a
-    path parameter, the endpointId to call, see `triggers.rrp[0].endpointId` in
-    the `config.json` file.
+    path parameter, the `endpointId` to call. The value originates from
+    `triggers.rrp[0].endpointId` in the `config.json` file.
 
 #### Request
 
@@ -346,24 +343,20 @@ resources.
 
 ## Summary
 
-You have deployed an Airnode on GCP and tested it using the HTTP gateway that
-was enabled as part of the Airnode deployment. The Airnode, upon deployment,
-started contacting the `AirnodeRrpV0` contract on the Sepolia test network to
-gather any requests made by requesters to this Airnode. This guide did not
-address making a request on-chain as its purpose was simply to quickly deploy a
-functional Airnode.
+You have deployed an Airnode on GCP with its HTTP gateway enabled. The Airnode,
+upon deployment, started contacting the `AirnodeRrpV0` contract on the Sepolia
+test network to gather any requests made by requesters to this Airnode. However
+this guide did not address making a request on-chain as its purpose was to
+quickly deploy a functional Airnode. See the guides
+[Making an RRP Request](/guides/airnode/rrp-request.md) and
+[Calling an Airnode](/guides/airnode/calling-an-airnode/) to learn how your
+smart contract can make an RRP call to an Airnode.
 
 Finally the API integration was tested using the Airnode's off-chain
 [HTTP gateway](/reference/airnode/latest/understand/http-gateways.md). You made
 a CURL request (using HTTP) to the HTTP gateway. Airnode queried the API
 provider and sent back a response. All of this was performed without accessing
 the blockchain.
-
-This guide did not address making an on-chain request as its purpose was to
-quickly deploy a functional Airnode. See the guides
-[Making an RRP Request](/guides/airnode/rrp-request.md) and
-[Calling an Airnode](/guides/airnode/calling-an-airnode/) to learn how your
-smart contract can make an RRP call to an Airnode.
 
 Learn more about GCP resources that Airnode uses in the
 [Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.

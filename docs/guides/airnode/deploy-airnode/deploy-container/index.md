@@ -19,16 +19,16 @@ tags:
 This guide demonstrates local deployment of an Airnode followed by an off-chain
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) request.
 Configuration files are provided with only minor changes to be made. The
-[latest release <ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-client/tags)
+[latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-client/tags)
 of the Airnode [client image](/reference/airnode/latest/docker/client-image.md)
 will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
 a Docker container, in this case a locally run Docker container.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
-current value of a coin. This guide does not detail the overall configuration of
-an Airnode, it is just a quick start guide then lends itself to understanding an
-Airnode deployment.
+[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
+which returns the current value of a coin. This guide does not detail the
+overall configuration of an Airnode, it is just a quick start guide then lends
+itself to understanding an Airnode deployment.
 
 Please note that this tutorial does not involve the blockchain nor an RRP
 (request-response protocol) call from a smart contract. If you wish to make an
