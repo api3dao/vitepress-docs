@@ -16,25 +16,23 @@ tags:
 
 # {{$frontmatter.title}}
 
-This guide is a simple introduction that demonstrates the deployment of an
-Airnode. Configuration files are provided with only minor changes to be made.
-The
-[latest release <ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-client/tags)
+This guide demonstrates local deployment of an Airnode followed by an off-chain
+[HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) request.
+Configuration files are provided with only minor changes to be made. The
+[latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-client/tags)
 of the Airnode [client image](/reference/airnode/latest/docker/client-image.md)
 will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
 a Docker container, in this case a locally run Docker container.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
-current value of a coin. This guide does not detail the overall configuration of
-an Airnode, it is just a quick start guide then lends itself to understanding an
-Airnode deployment.
+[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
+which returns the current value of a coin. This guide does not detail the
+overall configuration of an Airnode, it is just a quick start guide then lends
+itself to understanding an Airnode deployment.
 
-Please note that this tutorial only creates an off-chain Airnode and will test
-it using its off-chain
-[HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md). It does
-not attempt to make an RRP (request-response protocol) call from a smart
-contract. If you wish to make an RRP call, please see the guides
+Please note that this tutorial does not involve the blockchain nor an RRP
+(request-response protocol) call from a smart contract. If you wish to make an
+RRP call, please see the guides
 [Making an RRP Request](/guides/airnode/rrp-request.md) and
 [Calling an Airnode](/guides/airnode/calling-an-airnode/).
 
@@ -81,9 +79,9 @@ the Airnode client image looks for them in the project root directory.
 :::
 
 This file requires no changes on your part. It has been created with just one
-API endpoint. It will instruct the Airnode to attach to the Sepolia test
-network. There are a few variables this file will extract (interpolate) from
-`secrets.env`.
+API endpoint and configured to listen to requests on the Sepolia test network,
+though this tutorial will not make any such requests. There are a few variables
+this file will interpolate from `secrets.env`.
 
 ### secrets.env
 
@@ -95,8 +93,8 @@ network. There are a few variables this file will extract (interpolate) from
 
 :::
 
-There are two values `config.json` extracts from `secrets.env`. Add values for
-each of the there fields.
+There are two values `config.json` interpolates from `secrets.env`. Add values
+for each of these fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
   provider such as [Infura<ExternalLinkImage/>](https://www.infura.io/). Use a
@@ -120,8 +118,8 @@ have changed since it was last used.
 
 For the Docker command below, note that `--publish HOST_PORT:CONTAINER_PORT`
 parameter (Mac/WSL2/PowerShell) can have different values for the `HOST_PORT`
-and `CONTAINER_PORT`. E.g. parameter `--publish 8000:3000` would expose the web
-server on port 8000 on the host machine.
+and `CONTAINER_PORT`, e.g. `--publish 8000:3000` would expose the web server on
+port 8000 on the host machine.
 
 For Linux, it's recommended to use
 [host networking](https://docs.docker.com/network/host/). When using host
@@ -160,30 +158,27 @@ docker run \
 
 :::
 
-Make note of the `HTTP gateway URL` in the output as shown below. It will be
-different. You will need it to test the Airnode.
+In the console output, or equivalently in the `quick-deploy-container-airnode`
+Docker desktop container logs, make note of the `HTTP gateway URL` as shown
+below. It will be different and you will need it to test the Airnode.
 
 ```sh [output]
 # The following line should appear within the first ten lines of the output
 INFO HTTP (testing) gateway listening for request on "http://localhost:3000/http-data/k897...38x9fi/:endpointId"
 ```
 
-In the Docker desktop application view the container
-(quick-deploy-container-airnode) and its logs.
-
 ## 5. Test the Airnode
 
 After a successful deployment the Airnode can be tested directly using its
-off-chain [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md)
-thus bypassing the RRP protocol contract on blockchains. You provide endpoint
-parameters to get a response from an integrated API.
+off-chain [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md).
+As a reminder, this is independent of the blockchain and RRP contract.
 
 ### HTTP Gateway
 
-Looking at the `config.json` code snippet below shows the HTTP gateway was
-activated for the Airnode. Furthermore the endpoint for `/simple/price` (with an
-`endpointId` of `0x6...af6`) has been added to `triggers.http[n]`. Only those
-endpoints added to the `http` array can be tested.
+Looking at the `config.json` code snippet below shows that the HTTP gateway is
+configured for the Airnode. Furthermore, the endpoint for `/simple/price` (with
+an `endpointId` of `0x6...af6`) is present in `triggers.http[n]`. Only those
+endpoints added to the `http` array can be tested using the HTTP gateway.
 
 ::: details Expand to view: HTTP gateway and endpoint ID
 
@@ -221,18 +216,17 @@ endpoints added to the `http` array can be tested.
 
 ### Execute Endpoint
 
-Use CURL to execute the HTTP gateway configured for the Airnode and get the
-results from the CoinGecko endpoint `/simple/price` bypassing the Sepolia test
-network that Airnode was deployed for.
+Use CURL to execute a HTTP gateway request for the CoinGecko endpoint
+`/simple/price`.
 
-As an alternative to CURL try an app such as
+As an alternative to CURL, an app such as
 [Insomnia<externalLinkImage/>](https://insomnia.rest/) or
-[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/).
-Windows users can also use
+[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/) can
+be used. Windows users can also use
 [Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
-(WSL2) to run CURL for Linux.
+(WSL2) to run CURL on Linux.
 
-In order to test an endpoint make a HTTP POST request with the `Content-Type`
+In order to test an endpoint, make a HTTP POST request with the `Content-Type`
 header set to `application/json`, the endpoint parameters in the request body,
 and the `endpointId` as a path parameter.
 
@@ -241,11 +235,10 @@ and the `endpointId` as a path parameter.
 - `-d`: Use request body data to pass the endpoint parameter key/value pair.
 - `url`:
   - `<httpGatewayUrl>`: The HTTP gateway URL as displayed in the terminal at the
-    end of an Airnode deployment less the `:endpointId` placeholder. Update the
-    placeholder in the CURL example below with its value.
+    end of an Airnode deployment, less the `:endpointId` placeholder.
   - <code style="overflow-wrap:break-word;">0x6db9...c27af6</code>: Passed as a
-    path parameter, the endpointId to call, see `triggers.rrp[0].endpointId` in
-    the `config.json` file.
+    path parameter, the `endpointId` to call. The value originates from
+    `triggers.rrp[0].endpointId` in the `config.json` file.
 
 ```sh
 # For Windows CMD replace line termination marker \ with ^
@@ -291,9 +284,9 @@ docker logs --follow quick-start-container-airnode
 
 ## 8. Remove the Airnode
 
-When you are done with the demo Airnode you can remove it. Do so using the
-Docker desktop application or by using the following terminal command. When
-using the terminal command be sure to stop the container first if running.
+When you are done with the demo Airnode you can remove it by using the Docker
+desktop application or by using the following terminal command. When using the
+terminal command be sure to stop the container first if running.
 
 ```sh
 # Stop the container if it is running.
@@ -304,16 +297,13 @@ docker rm quick-start-container-airnode
 
 ## Summary
 
-You have deployed an Airnode into a Docker container and tested it using the
-HTTP gateway that was enabled as part of the Airnode deployment. The Airnode,
-upon deployment, started contacting the `AirnodeRrpV0` contract on a local test
-network to gather any requests made by requesters to this Airnode.
+You have deployed a local Airnode using the Docker client image and tested an
+API integration using the Airnode's off-chain
+[HTTP gateway](/reference/airnode/latest/understand/http-gateways.md).
 
-Finally the API integration was tested using the Airnode's off-chain
-[HTTP gateway](/reference/airnode/latest/understand/http-gateways.md). You made
-a CURL request (using HTTP) to the HTTP gateway. Airnode queried the API
-provider and sent back a response. All of this was performed without accessing
-the blockchain.
+To do so, you made a CURL request (using HTTP) to the HTTP gateway, following
+which Airnode queried the API provider and returned a response. All of this was
+performed without accessing the blockchain.
 
 This guide did not address making an on-chain request as its purpose was to
 quickly deploy a functional Airnode. See the guides
