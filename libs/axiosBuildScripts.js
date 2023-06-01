@@ -26,19 +26,15 @@ async function dapiChains() {
  * Build the list of contract addresses for multiple
  * chains for the Airnode docset, and for each version.
  * @param {*} contractName
- * @param {*} vrs
+ * @param {*} url
  * @param {*} path
  */
-async function airnodeContractAddresses(contractName, vrs, path) {
+async function airnodeContractAddresses(contractName, url, path) {
   try {
-    const response = await axios.get(
-      'https://raw.githubusercontent.com/api3dao/airnode/' +
-        vrs +
-        '/packages/airnode-protocol/deployments/references.json'
-    );
+    const response = await axios.get(url);
     const obj = response.data;
 
-    //console.log('\n=>', contractName, vrs, path);
+    //console.log('\n=>', contractName, url, path);
     let arr = [];
     Object.keys(obj[contractName]).forEach((key) => {
       // Get the chain obj from @api3/chains. If undefined is returned then skip
@@ -71,9 +67,9 @@ async function airnodeContractAddresses(contractName, vrs, path) {
     );
   } catch (err) {
     console.error(
-      `Error:
+      `Error: ${contractName}
       failed to write file for path: ${path}
-      using vrs: ${vrs}
+      from repo ${url}
       ${err.message}`
     );
     console.log('------------------');
@@ -118,8 +114,21 @@ versionsRef.versionsAirnode.forEach((el) => {
   }
 
   console.log('  ✺ path:', path, '▶︎', 'vrs:', vrs, '▶︎', msg);
-  airnodeContractAddresses('AirnodeRrpV0', vrs, path);
-  airnodeContractAddresses('RequesterAuthorizerWithAirnode', vrs, path);
-  airnodeContractAddresses('AccessControlRegistry', vrs, path);
+  let url =
+    'https://raw.githubusercontent.com/api3dao/airnode/' +
+    vrs +
+    '/packages/airnode-protocol/deployments/references.json';
+  airnodeContractAddresses('AirnodeRrpV0', url, path);
+  airnodeContractAddresses('RequesterAuthorizerWithAirnode', url, path);
+  airnodeContractAddresses('AccessControlRegistry', url, path);
+
+  /**
+   * There is a need to add the RequesterAuthorizerWithErc721 contract addresses
+   * from the airnode-protocol-v1 repo. The repo is supposed to be migrated in the
+   * monorepo. Will pull the contract from main only.
+   */
+  url =
+    'https://raw.githubusercontent.com/api3dao/airnode-protocol-v1/main/deployments/references.json';
+  airnodeContractAddresses('RequesterAuthorizerWithErc721', url, path);
 });
 console.log('------------------');
