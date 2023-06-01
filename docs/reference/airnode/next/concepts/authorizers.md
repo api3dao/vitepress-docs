@@ -260,9 +260,12 @@ of each object resemble other `config.json` objects:
 authorize requests and both `chainType` and `contracts` are configured
 equivalently to their like named parent `chains[n]` objects described in the
 [config.json reference](/reference/airnode/next/deployment-files/config-json.md#chains).
-Lastly, `chainId` specifies the cross-chain (network) id and `chainProvider` is
-an object containing the chain provider url for the _chain specified by
-`chainId`_.
+Note that the `contracts` object may be omitted if there is an existing API3
+`AirnodeRrpV0` deployment for the given chain, in which case Airnode will
+default to this address. A full listing of deployments can be found
+[here](/reference/airnode/next/). Lastly, `chainId` specifies the cross-chain
+(network) id and `chainProvider` is an object containing the chain provider url
+for the _chain specified by `chainId`_.
 
 Note that `crossChainRequesterAuthorizers` is an array that can contain multiple
 cross-chain authorizer objects, which allows for authorizers across multiple
@@ -304,10 +307,14 @@ one chain to be authorized by NFT deposits on the same chain. More specifically,
 it defines an array of objects that allow for ERC721 authorization on the same
 chain as the chain specified by the `id` field of the parent `chains` object.
 The object consists of two fields: `erc721s`, an array of ERC721 contract
-addresses, and `RequesterAuthorizerWithErc721`, the address of the
-`RequesterAuthorizerWithErc721` contract. In the example below, a request would
-be authorized on chain _2_ if the requester has deposited a token with the
-contract address `0x00bDB2315678afecb367f032d93F642f64180a00` to the
+addresses, and the conditionally optional `RequesterAuthorizerWithErc721`, the
+address of the `RequesterAuthorizerWithErc721` contract. This latter field can
+be omitted if there is an existing API3 `RequesterAuthorizerWithErc721`
+deployment for the given chain, in which case Airnode will default to this
+address. A full listing of deployments can be found
+[here](/reference/airnode/next/). In the example below, a request would be
+authorized on chain _2_ if the requester has deposited a token with the contract
+address `0x00bDB2315678afecb367f032d93F642f64180a00` to the
 `RequesterAuthorizerWithErc721` contract at address
 `0x999DB2315678afecb367f032d93F642f64180aa9`. If multiple ERC721 contracts are
 specified, the requester will be authorized if a token corresponding to _any_ of
@@ -342,18 +349,22 @@ requests on one chain to be authorized by NFT deposits on a different chain.
 More specifically, it defines an array of objects that allow for ERC721
 cross-chain request authorization. Like `crossChainRequesterAuthorizers`, some
 of the fields within each object resemble other `config.json` objects:
-`chainType` and `contracts` are configured equivalently to their like named
-parent `chains[n]` objects described in the
+`chainType` is configured equivalently to its like-named parent `chains[n]`
+object described in the
 [config.json reference](/reference/airnode/next/deployment-files/config-json.md#chains),
 `chainId` specifies the cross-chain (network) id, and `chainProvider` is an
 object containing the chain provider url for the _chain specified by `chainId`_.
 The `erc721s` field value is an array of ERC721 contract addresses and within
-`contracts`, `RequesterAuthorizerWithErc721` specifies an address of the
-`RequesterAuthorizerWithErc721` contract _on the chain specified by `chainId`_.
-If multiple ERC721 contracts are specified in `erc721s`, the requester will be
-authorized if a token corresponding to _any_ of the specified ERC721 contracts
-has been deposited. For deployed `RequesterAuthorizerWithErc721` contract
-addresses, see the
+the conditionally optional `contracts` object, `RequesterAuthorizerWithErc721`
+specifies an address of the `RequesterAuthorizerWithErc721` contract _on the
+chain specified by `chainId`_ (the cross-chain). The `contracts` object may be
+omitted if there is an existing API3 deployment for the
+`RequesterAuthorizerWithErc721` contract on the cross-chain, in which case
+Airnode will default to this address. A full listing of deployments can be found
+[here](/reference/airnode/next/). If multiple ERC721 contracts are specified in
+`erc721s`, the requester will be authorized if a token corresponding to _any_ of
+the specified ERC721 contracts has been deposited. For deployed
+`RequesterAuthorizerWithErc721` contract addresses, see the
 [Airnode Contract Addresses](/reference/airnode/next/index.md#requesterauthorizerwitherc721)
 page.
 

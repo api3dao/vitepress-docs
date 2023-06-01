@@ -187,10 +187,12 @@ cycle off-chain. Nothing in `authorizers` can supersede permissions granted by
 
 ### `contracts`
 
-(required) - An object that keeps the addresses of the protocol contracts
-deployed on the respective chain. It must include the `AirnodeRrp` contract
-address. Although you can deploy these contracts yourself, it is recommended to
-use the ones that were deployed by API3 listed [here](/reference/airnode/next/).
+(conditionally optional) - An object that keeps the addresses of the protocol
+contracts deployed on the respective chain. Currently this object has one member
+field corresponding to the `AirnodeRrp` contract address. The `contracts` object
+may be omitted if there is an existing API3 `AirnodeRrpV0` deployment for the
+respective chain, in which case Airnode will default to using this address. A
+full listing of deployments can be found [here](/reference/airnode/next/).
 
 ### `id`
 
