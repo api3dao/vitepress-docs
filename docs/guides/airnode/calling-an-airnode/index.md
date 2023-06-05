@@ -44,12 +44,12 @@ Given below is an example of a basic
 data from any Airnode. To follow along, you can open the following contract in
 Remix and try deploying your own Requester Contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
 
 ```solidity
-//SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
-// [!code focus:2]
+
 import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -58,15 +58,15 @@ contract Requester is RrpRequesterV0, Ownable {
     mapping(bytes32 => bool) public incomingFulfillments;
     mapping(bytes32 => int256) public fulfilledData;
 
-// Make sure you specify the right _rrpAddress for your chain while deploying the contract.
+    // Make sure you specify the right _rrpAddress for your chain while deploying the contract.
     constructor(address _rrpAddress) RrpRequesterV0(_rrpAddress) {}
 
-// To receive funds from the sponsor wallet.
+    // To receive funds from the sponsor wallet and send them to the owner.
     receive() external payable {
-        }
+        payable(owner()).transfer(address(this).balance);
+    }
 
-// The main makeRequest function that will trigger the Airnode request.
-// [!code focus:18]
+    // The main makeRequest function that will trigger the Airnode request.
     function makeRequest(
         address airnode,
         bytes32 endpointId,
@@ -86,7 +86,7 @@ contract Requester is RrpRequesterV0, Ownable {
         );
         incomingFulfillments[requestId] = true;
     }
-    // [!code focus:11]
+
     function fulfill(bytes32 requestId, bytes calldata data)
         external
         onlyAirnodeRrp
@@ -97,19 +97,12 @@ contract Requester is RrpRequesterV0, Ownable {
         fulfilledData[requestId] = decodedData;
     }
 
-// To withdraw funds from the sponsor wallet to the contract.
-
+    // To withdraw funds from the sponsor wallet to the contract.
     function withdraw(address airnode, address sponsorWallet) external onlyOwner {
         airnodeRrp.requestWithdrawal(
         airnode,
         sponsorWallet
         );
-    }
-
-// Withdraw funds from the contract.
-
-    function withdrawFromContract() external onlyOwner {
-        payable(msg.sender).transfer(address(this).balance);
     }
 }
 ```
@@ -192,9 +185,9 @@ function in the code sample below.
   been encoded and contains a timestamp in addition to other response data.
   Decode it using the function decode() from the abi object.
 
-### `withdraw()` method
+### Withdrawal
 
-The withdraw function is used to withdraw funds from the designated sponsor
+The `withdraw()` function is used to withdraw funds from the designated sponsor
 wallet to the sponsor. In this case, we're using the `RrpRequesterV0` for which
 the sponsor is the Requester contract itself.
 
@@ -345,14 +338,22 @@ your requested data decoded in `int256`
 
 > ![Making the Request](src/s7.png)
 
-## 4. Withdrawing Funds from the sponsor wallet (optional)
+## 4. Withdrawing Funds from the `sponsorWallet` (optional)
 
-You can withdraw funds from the sponsor wallet to your Requester contract by
+You can withdraw funds from the sponsor wallet to address of the owner by
 calling the `withdraw()` function.
 
 The Airnode listens for withdrawal requests and fulfills them automatically.
-Therefore, the sponsor (in this case, the Requester contract itself) should be
-able to receive their funds from their `sponsorWallet` in a few minutes notice.
+Therefore, the Requester contract makes a request for withdrawal to the Airnode.
+The Airnode then fulfills the request, calls the `recieve()` function in the
+Requester contract, that sends the funds back to the owner.
+
+```solidity
+    receive() external payable {
+        payable(owner()).transfer(address(this).balance);
+    }
+```
+
 The `sponsorWallet` does not get deleted, and can be used in the future simply
 by funding it again.
 
@@ -368,8 +369,6 @@ sponsor wallet for any new transactions.
 
 > ![Making the Request](src/s9.png)
 
-The funds from the `sponsorWallet` have been transferred to the Requester
-contract. Click on `withdrawFromContract()` to withdraw the funds from the
-Requester contract to your address.
+The funds from the `sponsorWallet` have been transferred to the owner.
 
 <FlexEndTag/>
