@@ -66,7 +66,7 @@ Make sure you're on a Testnet before trying to deploy the contracts on-chain!
 :::
 
 > The complete contract code can be found
-> [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol)
+> [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol).
 
 Head on to [Remix online IDE](https://remix.ethereum.org) using a browser that
 you have added Metamask support to. Not all browsers support
@@ -736,7 +736,7 @@ black, or if it is a red number and the user bet on red, then the user wins and
 will receive double their bet amount.
 
 > The complete contract code can be found
-> [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol)
+> [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol).
 
 ## Deploying the `Roulette` Contract
 
@@ -828,7 +828,7 @@ will fund the `sponsorWallet`. This wallet will be responsible to fulfill the
 randomness request.
 
 Fill in the amount in wei under **VALUE** on the tab above and click on
-`topUpSponsorWallet()`
+`topUpSponsorWallet()`.
 
 For Polygon Mumbai, `0.05` (`50000000000000000` wei) Matic should be sufficient
 for now.
@@ -851,7 +851,7 @@ Now you're ready to make a bet of your choice.
 - use `betHalf()` to bet on either the first or the second half of the numbers
   on the board.
 - use `betEvenOdd()` to bet on either the set of all even or odd numbers on the
-  board
+  board.
 - use `betColor()` to bet on all the red or black numbers on the board.
 - use `betNumber()` to bet on any one number you wishe on the board.
 
