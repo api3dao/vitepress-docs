@@ -244,4 +244,13 @@ Airnode endpoint into the form below and select the **Decode** button.
 
 <EthersAbiCoder types="int256,int256"/>
 
+## Summary
+
+In this guide you extended the data from the API operation with additional
+summary values. For more examples on how to use `preProcessingSpecifications`
+and `postProcessingSpecifications` see the following monorepo examples.
+
+- [coingecko-pre-processing<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-pre-processing)
+- [coingecko-post-processing<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-post-processing)
+
 <FlexEndTag />
