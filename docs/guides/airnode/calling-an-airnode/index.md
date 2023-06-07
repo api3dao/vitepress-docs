@@ -99,10 +99,7 @@ contract Requester is RrpRequesterV0, Ownable {
 
     // To withdraw funds from the sponsor wallet to the contract.
     function withdraw(address airnode, address sponsorWallet) external onlyOwner {
-        airnodeRrp.requestWithdrawal(
-        airnode,
-        sponsorWallet
-        );
+        airnodeRrp.requestWithdrawal(airnode, sponsorWallet);
     }
 }
 ```
