@@ -8,17 +8,17 @@
       },
       {
         "source": "/latest",
-        "destination": "/reference/airnode/latest/",
+        "destination": "/reference/airnode/latest/understand/",
         "type": 301
       },
       {
         "source": "/next",
-        "destination": "/reference/airnode/next/",
+        "destination": "/reference/airnode/next/understand/",
         "type": 301
       },
       {
         "source": "/airnode",
-        "destination": "/reference/airnode/latest/",
+        "destination": "/reference/airnode/latest/understand/",
         "type": 301
       },
       {

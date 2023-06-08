@@ -96,7 +96,7 @@ function nav() {
         { text: 'dAPIs', link: '/reference/dapis/understand/' },
         {
           text: 'Airnode',
-          link: '/reference/airnode/latest/',
+          link: '/reference/airnode/latest/understand/',
         },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },
