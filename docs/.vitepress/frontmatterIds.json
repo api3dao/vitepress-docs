@@ -1808,6 +1808,76 @@
     "tags": null
   },
   "187": {
+    "title": "Example OIS Object",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.1",
+    "path": "/reference/ois/next/example.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "188": {
+    "title": "Understanding OIS",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.1",
+    "path": "/reference/ois/next/index.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "189": {
+    "title": "Pre/Post Processing",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → 2.0",
+    "path": "/reference/ois/next/processing.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "190": {
+    "title": "Reserved Parameters",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.1",
+    "path": "/reference/ois/next/reserved-parameters.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "191": {
+    "title": "Specification",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.1",
+    "path": "/reference/ois/next/specification.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "192": {
+    "title": "OIS Template",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.1",
+    "path": "/reference/ois/next/template.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "193": {
+    "title": "Versions",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.1",
+    "path": "/reference/ois/next/versions.html",
+    "version": "v2.1",
+    "outline": "deep",
+    "tags": null
+  },
+  "194": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1816,7 +1886,7 @@
     "outline": "deep",
     "tags": null
   },
-  "188": {
+  "195": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1825,7 +1895,7 @@
     "outline": "deep",
     "tags": null
   },
-  "189": {
+  "196": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1834,7 +1904,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "190": {
+  "197": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1843,7 +1913,7 @@
     "outline": "deep",
     "tags": null
   },
-  "191": {
+  "198": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -1852,7 +1922,7 @@
     "outline": "deep",
     "tags": null
   },
-  "192": {
+  "199": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
