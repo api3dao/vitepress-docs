@@ -71,6 +71,7 @@ export default {
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/airnode/next/': require('../reference/airnode/next/sidebar.js'),
       '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
+      '/reference/ois/next/': require('../reference/ois/next/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
       '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
@@ -95,7 +96,7 @@ function nav() {
         { text: 'dAPIs', link: '/reference/dapis/understand/' },
         {
           text: 'Airnode',
-          link: '/reference/airnode/latest/',
+          link: '/reference/airnode/latest/understand/',
         },
         { text: 'OIS', link: '/reference/ois/latest/' },
         { text: 'QRNG', link: '/reference/qrng/' },

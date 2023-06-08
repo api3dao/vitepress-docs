@@ -67,6 +67,8 @@ renamed make the following changes.
    older repo tags, `/master`, or `/main`. Some repos may not use tags and
    `/main` must be used, some may have tags unrelated to Airnode. Evaluate each
    link for changes as needed.
+1. Look for links to api3 repos that use older version such as Airnode `v0.11`
+   or OIS `v2.0`. These need to use the proper verions.
 1. For `/next` change frontmatter `pageHeader: Reference → Airnode → vx.x` to
    the proper version.
 1. `/next` will not have a repo tag created until its version is release. Use
