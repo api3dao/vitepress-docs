@@ -16,6 +16,11 @@
   "oisLatest": "v2.0",
   "versionsOIS": [
     {
+      "version": "v2.1",
+      "alias": "latest",
+      "path": "/reference/ois/next/"
+    },
+    {
       "version": "v2.0",
       "alias": "latest",
       "path": "/reference/ois/latest/"
