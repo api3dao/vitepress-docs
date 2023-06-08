@@ -17,6 +17,11 @@
         "type": 301
       },
       {
+        "source": "/airnode/",
+        "destination": "/reference/airnode/latest/",
+        "type": 301
+      },
+      {
         "source": "/airnode/latest/",
         "destination": "/reference/airnode/latest/",
         "type": 301
@@ -27,6 +32,11 @@
         "type": 301
       },
       {
+        "source": "/ois/",
+        "destination": "/reference/ois/latest/",
+        "type": 301
+      },
+      {
         "source": "/ois/latest/",
         "destination": "/reference/ois/latest/",
         "type": 301
@@ -34,6 +44,21 @@
       {
         "source": "/ois/next/",
         "destination": "/reference/ois/next/",
+        "type": 301
+      },
+      {
+        "source": "/dapis/",
+        "destination": "/reference/dapis/",
+        "type": 301
+      },
+      {
+        "source": "/qrng/",
+        "destination": "/reference/qrng/",
+        "type": 301
+      },
+      {
+        "source": "/dao-members/",
+        "destination": "/reference/dao-members/",
         "type": 301
       }
     ],
