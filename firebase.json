@@ -2,17 +2,17 @@
   "hosting": {
     "redirects": [
       {
-        "source": "/config.json/",
+        "source": "/config.json",
         "destination": "/reference/airnode/latest/deployment-files/config-json.html",
         "type": 301
       },
       {
-        "source": "/latest/",
+        "source": "/latest",
         "destination": "/reference/airnode/latest/",
         "type": 301
       },
       {
-        "source": "/next/",
+        "source": "/next",
         "destination": "/reference/airnode/next/",
         "type": 301
       },
@@ -22,47 +22,22 @@
         "type": 301
       },
       {
-        "source": "/airnode/latest/",
-        "destination": "/reference/airnode/latest/",
-        "type": 301
-      },
-      {
-        "source": "/airnode/next/",
-        "destination": "/reference/airnode/next/",
-        "type": 301
-      },
-      {
         "source": "/ois",
         "destination": "/reference/ois/latest/",
         "type": 301
       },
       {
-        "source": "/ois/",
-        "destination": "/reference/ois/latest/",
+        "source": "/dapis",
+        "destination": "/reference/dapis/understand/",
         "type": 301
       },
       {
-        "source": "/ois/latest/",
-        "destination": "/reference/ois/latest/",
-        "type": 301
-      },
-      {
-        "source": "/ois/next/",
-        "destination": "/reference/ois/next/",
-        "type": 301
-      },
-      {
-        "source": "/dapis/",
-        "destination": "/reference/dapis/",
-        "type": 301
-      },
-      {
-        "source": "/qrng/",
+        "source": "/qrng",
         "destination": "/reference/qrng/",
         "type": 301
       },
       {
-        "source": "/dao-members/",
+        "source": "/dao-members",
         "destination": "/reference/dao-members/",
         "type": 301
       }
