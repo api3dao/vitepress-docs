@@ -32,7 +32,7 @@
         "type": 301
       },
       {
-        "source": "/ois{,**}",
+        "source": "/ois{,/**}",
         "destination": "/reference/ois/latest/",
         "type": 301
       },
