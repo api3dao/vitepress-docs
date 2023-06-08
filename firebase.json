@@ -37,6 +37,11 @@
         "type": 301
       },
       {
+        "source": "/ois.html",
+        "destination": "/reference/ois/latest/",
+        "type": 301
+      },
+      {
         "source": "/ois/",
         "destination": "/reference/ois/latest/",
         "type": 301
