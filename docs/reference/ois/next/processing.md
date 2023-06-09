@@ -40,7 +40,7 @@ Every processing snippet follows this schema:
 - `timeoutMs` - The maximum timeout that this snippet can run. In case the
   timeout is exceeded an error is thrown.
 
-## Inputs
+## Input and Output
 
 The processing snippet receives an `input` value which is either the initial
 value or the output value from the previous processing snippet. The snippet must
