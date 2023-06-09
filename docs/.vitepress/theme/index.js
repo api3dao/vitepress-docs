@@ -20,6 +20,7 @@ import NavBox from '../../_components/NavBox.vue';
 import NavBoxViewer from '../../_components/NavBoxViewer.vue';
 import FlexStartTag from '../../_components/FlexStartTag.vue';
 import FlexEndTag from '../../_components/FlexEndTag.vue';
+import EthersAbiCoder from '../../_components/EthersAbiCoder.vue';
 
 export default {
   ...DefaultTheme,
@@ -50,6 +51,7 @@ export default {
     app.component('NavBoxViewer', NavBoxViewer);
     app.component('FlexStartTag', FlexStartTag);
     app.component('FlexEndTag', FlexEndTag);
+    app.component('EthersAbiCoder', EthersAbiCoder);
   },
   globalSearch: { index: { tag: 'myTags' } },
 };

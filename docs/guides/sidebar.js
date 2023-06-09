@@ -49,6 +49,10 @@ module.exports = [
         ],
       },
       {
+        text: 'Post processing',
+        link: '/guides/airnode/post-processing/',
+      },
+      {
         text: 'Calling an Airnode',
         link: '/guides/airnode/calling-an-airnode/',
       },
