@@ -465,7 +465,9 @@ following elements:
 #### 5.3.2. `value`
 
 (Required) The value to be used for the respective parameter of an API operation
-that cannot be overridden by the requester.
+that cannot be overridden by the requester. This is allowed to be any type,
+including an object; for example, the following specifies an array containing
+multiple primitives: `["finalized", false]`.
 
 ### 5.4. `reservedParameters`
 
