@@ -19,17 +19,25 @@ tags:
 
 # {{$frontmatter.title}}
 
+The processing schema accepts an array of processing snippets (user defined
+code) which are chained. The first snippet receives parameters submitted as part
+of a template or on-chain request. The output of this snippet is passed to the
+second snippet and so on.
+
+Airnode executes snippets for `preProcessingSpecifications` and
+`postProcessingSpecifications` during its run cycle. The following describes the
+work flow Airnode uses:
+
+1. Run `preProcessingSpecifications`
+2. Airnode calls requested OIS endpoint
+3. Run `postProcessingSpecifications`
+4. Airnode encodes the response values defined by reservedParameters
+
 The processing schema is the same for both
-[pre-processing](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
+[`preProcessingSpecifications`](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
 and
-[post-processing](/reference/ois/latest/specification.md#_5-10-postprocessingspecifications).
-
-The processing schema accepts an array of processing snippets which are chained.
-The first snippet receives parameters submitted as part of a template or
-on-chain request. The output of this snippet is passed to the second snippet and
-so on.
-
-Every processing snippet follows this schema:
+[`postProcessingSpecifications`](/reference/ois/latest/specification.md#_5-10-postprocessingspecifications).
+Snippets for both specifications follow this schema:
 
 - `environment` - Currently one of `Node` or `Node async`. Both options
   interpret the code as JavaScript and execute in Node.js. The async version can
@@ -39,6 +47,9 @@ Every processing snippet follows this schema:
 - `value` - The processing code written as a string.
 - `timeoutMs` - The maximum timeout that this snippet can run. In case the
   timeout is exceeded an error is thrown.
+
+Try the [Post processing](/guides/airnode/post-processing/) guide to further
+understand pre/post processing.
 
 ## Input and Output
 
