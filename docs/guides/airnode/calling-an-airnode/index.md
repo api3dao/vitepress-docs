@@ -200,7 +200,7 @@ It calls the `requestWithdrawal` function of the `airnodeRrp` contract.
 
 Make sure you've already configured your Metamask wallet and funded it with some
 testnet ETH before moving forward. You can request some from
-[here](https://faucet.paradigm.xyz/)
+[here<ExternalLinkImage/>](https://faucet.paradigm.xyz/)
 
 :::
 
@@ -209,7 +209,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 
 ### Compile and Deploy the Requester Contract on Goerli Testnet
 
-- [Click here](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+- [Click here<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
   to open the Requester Contract in Remix.
 
 > ![Opening the Requester Contract in Remix](src/s1.png)
@@ -252,8 +252,8 @@ Coingecko's Endpoint ID (`/simple/price`) = 0xfb87102cdabadf905321521ba0b3cbf74a
 
 ```sh
 npx @api3/airnode-admin derive-sponsor-wallet-address \
-  --airnode-xpub xpub6CeoWe3yV6yiewhdpfXDcj4JURNar7yuD95AtS6eba18z6aZaXzKKrVH9bNb8nMDptUA4vcAEr6HoYEMCpNwsGCeVqQhvXsHLJheVF8K6VM \
-  --airnode-address 0x09c623940ad5729A36d6982E9F8e132214FEaA3d \
+  --airnode-xpub xpub6CnJr6BxgEpTBs9Aso71S5EkcRsR4MHzzKGTRA8aoyYhyvqgcacZFnx6a6quX47Vo97oACohk2isNAz68jnmDqrxQ9C1dKWMZtDN6tyVHaG \
+  --airnode-address 0x478f9e54E5B2ee1D0A05cae1FaA3591CAA1b7091 \
   --sponsor-address <Use the address of your Deployed Requester>
 
   Sponsor wallet address: 0x6394...5906757
