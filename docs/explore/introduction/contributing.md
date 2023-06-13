@@ -89,6 +89,8 @@ frictionless as possible. To support this, we provide the below framework as
 modules for contributors to engage with. We appreciate the individual nature of
 contribution and these frameworks are flexible.
 
+<!-- please review the below -->
+
 1. Technical contributions
 
 Tier 1: Experienced
