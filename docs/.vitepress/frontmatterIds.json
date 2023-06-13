@@ -242,15 +242,6 @@
     "outline": "deep"
   },
   "28": {
-    "title": "Calling an Airnode",
-    "sidebarHeader": "Guides",
-    "sidebarSubHeader": null,
-    "pageHeader": "Guides → Calling an Airnode",
-    "path": "/guides/airnode/calling-an-airnode/",
-    "outline": "deep",
-    "tags": ["airnode", "calling an airnode"]
-  },
-  "29": {
     "title": "Deploying an Airnode on AWS",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -259,7 +250,7 @@
     "outline": "deep",
     "tags": null
   },
-  "30": {
+  "29": {
     "title": "Deploying an Airnode locally using Docker",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -268,7 +259,7 @@
     "outline": "deep",
     "tags": null
   },
-  "31": {
+  "30": {
     "title": "Deploying an Airnode on Google Cloud",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -277,7 +268,7 @@
     "outline": "deep",
     "tags": null
   },
-  "32": {
+  "31": {
     "title": "Generating the Airnode Config using ChainAPI",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -286,7 +277,7 @@
     "outline": "deep",
     "tags": ["airnode", "deploy airnode", "chainapi"]
   },
-  "33": {
+  "32": {
     "title": "Post processing",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -295,7 +286,7 @@
     "outline": "deep",
     "tags": null
   },
-  "34": {
+  "33": {
     "title": "DAO Dashboard",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -304,7 +295,7 @@
     "outline": "deep",
     "tags": ["dao", "guides"]
   },
-  "35": {
+  "34": {
     "title": "Working with Proposals",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -313,7 +304,7 @@
     "outline": "deep",
     "tags": ["dao", "proposals", "history", "ens", "ipfs", "guides"]
   },
-  "36": {
+  "35": {
     "title": "Staking Tokens",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -322,7 +313,7 @@
     "outline": "deep",
     "tags": ["dao", "staking", "deposit", "withdraw", "unstake", "guides"]
   },
-  "37": {
+  "36": {
     "title": "Videos",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -331,7 +322,7 @@
     "outline": "deep",
     "tags": ["dao", "members", "dao members", "guides", "videos"]
   },
-  "38": {
+  "37": {
     "title": "How to Vote",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -340,7 +331,7 @@
     "outline": "deep",
     "tags": ["dao", "voting", "guides"]
   },
-  "39": {
+  "38": {
     "title": "Automate funding of multiple Self-Funded dAPIs with Gelato",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -349,7 +340,7 @@
     "outline": "deep",
     "tags": null
   },
-  "40": {
+  "39": {
     "title": "Reading a self-funded dAPI proxy",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -358,7 +349,7 @@
     "outline": "deep",
     "tags": null
   },
-  "41": {
+  "40": {
     "title": "Subscribing to Self-Funded dAPIs",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -367,7 +358,7 @@
     "outline": "deep",
     "tags": null
   },
-  "42": {
+  "41": {
     "title": "Create an Infura key",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -376,7 +367,7 @@
     "outline": "deep",
     "tags": null
   },
-  "43": {
+  "42": {
     "title": "Remix Reload Contract",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -385,7 +376,7 @@
     "outline": "deep",
     "tags": null
   },
-  "44": {
+  "43": {
     "title": "Add testnets to MetaMask",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -394,7 +385,7 @@
     "outline": "deep",
     "tags": null
   },
-  "45": {
+  "44": {
     "title": "Getting Started with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -403,7 +394,7 @@
     "outline": "deep",
     "tags": null
   },
-  "46": {
+  "45": {
     "title": "Building a Lottery with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -412,7 +403,7 @@
     "outline": "deep",
     "tags": null
   },
-  "47": {
+  "46": {
     "title": "Using QRNG - Remix Example",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -421,7 +412,7 @@
     "outline": "deep",
     "tags": ["qrng"]
   },
-  "48": {
+  "47": {
     "title": "Minting Dynamic NFTs with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -429,6 +420,15 @@
     "path": "/guides/qrng/quantumon/index.html",
     "outline": "deep",
     "tags": ["qrng"]
+  },
+  "48": {
+    "title": "Building an on-chain Roulette with QRNG",
+    "sidebarHeader": "Guides",
+    "sidebarSubHeader": null,
+    "pageHeader": "Guides → QRNG",
+    "path": "/guides/qrng/roulette-guide/index.html",
+    "outline": "deep",
+    "tags": null
   },
   "49": {
     "title": "QRNG YouTube Demos",
