@@ -892,3 +892,5 @@ This is how you can use QRNG to build an on-chain Roulette. To learn more, go to
 the [QRNG reference section](/reference/qrng/). If you have any
 doubts/questions, visit the
 [API3 Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
+
+<FlexEndTag/>
