@@ -174,6 +174,8 @@ create
 [GitHub issues<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/issues)
 to make suggestions.
 
+<!-- split into its own page -->
+
 # Contributing to the Technical Documentation
 
 See the [dev documentation](/dev/) for an overview of the API3 technical
@@ -183,7 +185,8 @@ a fork is always welcome.
 
 ## Vitepress
 
-XXX
+API3's documentation has been created on Vitepress and utilizes a vue.js
+framework. There's
 
 ## Feedback
 
