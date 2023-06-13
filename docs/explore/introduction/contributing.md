@@ -17,8 +17,8 @@ tags:
 # {{$frontmatter.title}}
 
 We think critical infrastructure, like API3 DAO's first-party oracles, should
-implement open and transparent processes suitable for what will be a
-programmatically driven protocol.
+implement open and transparent contributor processes to align to our vision of
+being a programmatically driven protocol.
 
 To support DAO governance all core teams publish a public proposal at regular
 intervals, meaning strategy & operations are accessible on the
@@ -50,7 +50,7 @@ organized in a modular structure to offer clear and attainable tasks. For
 instance, a bounty might be created for a specific job that is expected to be
 completed within two days. This structure allows any member of the community to
 take on the job, complete it, and subsequently receive the designated grant as a
-reward.
+reward retrospectively.
 
 Should participants wish to discuss the job before beginning, they are
 encouraged to do so within the [API3 Discord channel](), fostering an
@@ -59,23 +59,68 @@ if members have ideas for new bounty challenges, they are welcome to propose
 them, allowing for a constant influx of fresh ideas and fostering a sense of
 ownership and participation in the community's shared goals.
 
-<!--To see the current community bounties see the community bounty notion board.-->
+::: tip Live bounty board
 
-### Propose ideas and new initiatives
+Head to the community (bounty board)[notion.io].
 
-Many of the core team contributors were API3 community members and a strategic
-advatnage of API3 is the ability for the viewpoints of the community to turn
-into idea. We welcome ad-hoc ideas that support proposals or broader initatives
-that would support the DAO.
+:::
+
+### Propose ideas under the contributor framework
 
 Individuals with a technical background can contribute to the project (through
-development, integrations, writing documentation, etc.). The general point is
-that one needs to be able to use a solution proficiently before being able to
-improve it.
+development, integrations, writing documentation, etc.). Although the general
+challenge is that one needs to be able to use a solution proficiently before
+being able to improve it. If this applies we suggest digesting the get started
+materials.
+
+To begin with, this contribution may look like:
 
 - opening issues
 - making pull requests
 - proposing features
+
+Marketeers, creatives and community builders can contribute to DAO subteams with
+ad-hoc projects or to support areas that are lacking focus. The challenge here
+is accurately scoping, forming a brief and then delivering in alignment with the
+core contributors.
+
+Regardless of the contributors skill API3's vision is for participation to be as
+frictionless as possible. To support this, we provide the below framework as
+modules for contributors to engage with. We appreciate the individual nature of
+contribution and these frameworks are flexible.
+
+1. Technical contributions
+
+Tier 1: Experienced
+
+API3 will offer $400 of API3 Tokens for contributors that would classify as
+experienced (5years+ experience in a certain field)
+
+Tier 2: Learning
+
+API3 will offer $250 of API3 Tokens for contributors that are learning about
+their technical area of expertiese.
+
+2. Non-technical contributions
+
+Tier 1: Experienced
+
+API3 will offer $300 of API3 Tokens for contributors that would classify as
+experienced (5years+ experience in a certain field) per day
+
+Tier 2: Learning
+
+API3 will offer $250 of API3 Tokens for contributors that are learning about
+their technical area of expertiese.
+
+# Submit your own proposal
+
+We welcome proposals that bring new ideas or sub-teams to the DAO. Generally
+engaging the DAO through our community in a constructive manor will help
+sentiment check a proposal and help shape it to align to current contributors.
+If you are proposing an initiative that would require collaboration with a
+current sub team, we suggest co-ordinating proactively and outlining how you
+will work together.
 
 ::: info Join the API3 Community
 
@@ -103,7 +148,7 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
   cover to cover. It is a light read that touches on all subjects that you will
   need to know about superficially.
 
-### Technical contributors
+**Technical contributors**
 
 - Read the entirety of these docs. Take notes and cross-reference, but do not
   expect to understand everything. Feel free to ask questions.
@@ -113,7 +158,7 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
 - Go through the issues, PRs, etc. and understand the current focus of the
   development team by viewing the development board.
 
-### Technical tutorials
+**Technical tutorials**
 
 - Integrate an API to an Airnode (Run and understand the Airnode starter
   tutorial)
@@ -134,6 +179,10 @@ documentation site. It contains instructions on the make-up of the docs and on
 how to clone, setup, and run the project locally. For non-DAO members a PR from
 a fork is always welcome.
 
+## Vitepress
+
+XXX
+
 ## Feedback
 
 If you have any feedback for the documentation we always would like to hear it
@@ -146,7 +195,7 @@ We welcome all developers to contribute to the growth and enhancement of API3
 DAO by submitting any issues or suggestions you come across via our issue
 tracker - your insight is invaluable in making our technology better.
 
-# Join the API3 community on the following services.
+# Join the API3 community
 
 - [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
 - Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
