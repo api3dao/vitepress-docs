@@ -44,23 +44,29 @@ Given below is an example of a basic
 data from any Airnode. To follow along, you can open the following contract in
 Remix and try deploying your own Requester Contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
-// [!code focus:2]
+
 import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-// A Requester that will return the requested data by calling the specified airnode.
-
-contract Requester is RrpRequesterV0 {
+// A Requester that will return the requested data by calling the specified Airnode.
+contract Requester is RrpRequesterV0, Ownable {
     mapping(bytes32 => bool) public incomingFulfillments;
     mapping(bytes32 => int256) public fulfilledData;
 
     // Make sure you specify the right _rrpAddress for your chain while deploying the contract.
     constructor(address _rrpAddress) RrpRequesterV0(_rrpAddress) {}
-// [!code focus:18]
+
+    // To receive funds from the sponsor wallet and send them to the owner.
+    receive() external payable {
+        payable(owner()).transfer(address(this).balance);
+    }
+
+    // The main makeRequest function that will trigger the Airnode request.
     function makeRequest(
         address airnode,
         bytes32 endpointId,
@@ -70,7 +76,7 @@ contract Requester is RrpRequesterV0 {
 
     ) external {
         bytes32 requestId = airnodeRrp.makeFullRequest(
-            airnode,                        // airnode
+            airnode,                        // airnode address
             endpointId,                     // endpointId
             sponsor,                        // sponsor's address
             sponsorWallet,                  // sponsorWallet
@@ -81,8 +87,6 @@ contract Requester is RrpRequesterV0 {
         incomingFulfillments[requestId] = true;
     }
 
-    // The callback function with the requested data
-    // [!code focus:4]
     function fulfill(bytes32 requestId, bytes calldata data)
         external
         onlyAirnodeRrp
@@ -90,8 +94,12 @@ contract Requester is RrpRequesterV0 {
         require(incomingFulfillments[requestId], "No such request made");
         delete incomingFulfillments[requestId];
         int256 decodedData = abi.decode(data, (int256));
-        // [!code focus:2]
         fulfilledData[requestId] = decodedData;
+    }
+
+    // To withdraw funds from the sponsor wallet to the contract.
+    function withdraw(address airnode, address sponsorWallet) external onlyOwner {
+        airnodeRrp.requestWithdrawal(airnode, sponsorWallet);
     }
 }
 ```
@@ -174,13 +182,25 @@ function in the code sample below.
   been encoded and contains a timestamp in addition to other response data.
   Decode it using the function decode() from the abi object.
 
+### Withdrawal
+
+The `withdraw()` function is used to withdraw funds from the designated sponsor
+wallet to the sponsor. In this case, we're using the `RrpRequesterV0` for which
+the sponsor is the Requester contract itself.
+
+It calls the `requestWithdrawal` function of the `airnodeRrp` contract.
+
+- `airnode`: The address of the Airnode.
+
+- `sponsorWallet`: The address of the sponsor wallet.
+
 ## 2. Deploying and Sponsoring the Requester
 
 :::warning Set up your Testnet Metamask Account!
 
 Make sure you've already configured your Metamask wallet and funded it with some
 testnet ETH before moving forward. You can request some from
-[here](https://faucet.paradigm.xyz/)
+[here<ExternalLinkImage/>](https://faucet.paradigm.xyz/)
 
 :::
 
@@ -189,7 +209,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 
 ### Compile and Deploy the Requester Contract on Goerli Testnet
 
-- [Click here](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+- [Click here<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
   to open the Requester Contract in Remix.
 
 > ![Opening the Requester Contract in Remix](src/s1.png)
@@ -223,17 +243,17 @@ outputs while making the request. **This wallet needs to be funded.**
 ::: details Coingecko's Airnode Details
 
 ```
-Coingecko's Airnode Address = 0x09c623940ad5729A36d6982E9F8e132214FEaA3d
-Coingecko's Airnode XPUB = xpub6CeoWe3yV6yiewhdpfXDcj4JURNar7yuD95AtS6eba18z6aZaXzKKrVH9bNb8nMDptUA4vcAEr6HoYEMCpNwsGCeVqQhvXsHLJheVF8K6VM
-Coingecko's Endpoint ID (`/simple/price`) = 0x484d51e779e2e2fe0ee39b5fb676f4bddd237dc972d261f3aa4cca69990c0e54
+Coingecko's Airnode Address = 0x478f9e54E5B2ee1D0A05cae1FaA3591CAA1b7091
+Coingecko's Airnode XPUB = xpub6CnJr6BxgEpTBs9Aso71S5EkcRsR4MHzzKGTRA8aoyYhyvqgcacZFnx6a6quX47Vo97oACohk2isNAz68jnmDqrxQ9C1dKWMZtDN6tyVHaG
+Coingecko's Endpoint ID (`/simple/price`) = 0xfb87102cdabadf905321521ba0b3cbf74ad09c5d400ac2eccdbef8d6143e78c4
 ```
 
 :::
 
 ```sh
 npx @api3/airnode-admin derive-sponsor-wallet-address \
-  --airnode-xpub xpub6CeoWe3yV6yiewhdpfXDcj4JURNar7yuD95AtS6eba18z6aZaXzKKrVH9bNb8nMDptUA4vcAEr6HoYEMCpNwsGCeVqQhvXsHLJheVF8K6VM \
-  --airnode-address 0x09c623940ad5729A36d6982E9F8e132214FEaA3d \
+  --airnode-xpub xpub6CnJr6BxgEpTBs9Aso71S5EkcRsR4MHzzKGTRA8aoyYhyvqgcacZFnx6a6quX47Vo97oACohk2isNAz68jnmDqrxQ9C1dKWMZtDN6tyVHaG \
+  --airnode-address 0x478f9e54E5B2ee1D0A05cae1FaA3591CAA1b7091 \
   --sponsor-address <Use the address of your Deployed Requester>
 
   Sponsor wallet address: 0x6394...5906757
@@ -279,6 +299,13 @@ console.log(encodedData);
 console.log(decodedData);
 ```
 
+It should output the encoded parameters. If you want, you can copy the encoded
+parameters directly from here:
+
+```
+0x315353535300000000000000000000000000000000000000000000000000000076735f63757272656e63696573000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120696473000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001605f7061746800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001a05f7479706500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000000375736400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007626974636f696e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b626974636f696e2e7573640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006696e743235360000000000000000000000000000000000000000000000000000
+```
+
 ## 3. Making the Request
 
 Head over to the **Deploy & run transactions** tab, click on the `contract`
@@ -314,5 +341,38 @@ the response. Click on call and you will see the API response. Here, you can see
 your requested data decoded in `int256`
 
 > ![Making the Request](src/s7.png)
+
+## 4. Withdrawing Funds from the `sponsorWallet` (optional)
+
+You can withdraw funds from the sponsor wallet to address of the owner by
+calling the `withdraw()` function.
+
+The Airnode listens for withdrawal requests and fulfills them automatically.
+Therefore, the Requester contract makes a request for withdrawal to the Airnode.
+The Airnode then fulfills the request, calls the `recieve()` function in the
+Requester contract, that sends the funds back to the owner.
+
+```solidity
+    receive() external payable {
+        payable(owner()).transfer(address(this).balance);
+    }
+```
+
+The `sponsorWallet` does not get deleted, and can be used in the future simply
+by funding it again.
+
+Simply pass in the `airnode` and the `sponsorWallet` address and click
+**transact**. Confirm the transaction on Metamask.
+
+> ![Making the Request](src/s8.png)
+
+_[Click here to read more about how sponsors, requesters and withdrawals work](//reference/airnode/latest/concepts/sponsor.html)_
+
+Now wait for the Airnode to fulfill the withdrawal request. You can check the
+sponsor wallet for any new transactions.
+
+> ![Making the Request](src/s9.png)
+
+The funds from the `sponsorWallet` have been transferred to the owner.
 
 <FlexEndTag/>
