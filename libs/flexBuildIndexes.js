@@ -214,7 +214,10 @@ async function start() {
     './docs/.vitepress/dist/index.html',
     './docs/.vitepress/dist/team.html',
     './docs/.vitepress/dist/404.html',
+    'docs/.vitepress/dist/guides/airnode/calling-an-airnode/index.html',
   ];
+  console.log('Skip files:');
+  console.log(skipFiles);
   // For each directory in directoriesArr, will list its files with inner loop below
   for (let i = 0; i < directoriesArr.length; i++) {
     const dir = directoriesArr[i].dir;

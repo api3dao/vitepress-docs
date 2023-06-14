@@ -35,15 +35,11 @@ will be calculated after calling the CoinGecko operation
 
 A local Docker container running Airnode is needed. Go to the guide
 [Deploying Airnode locally using Docker](/guides/airnode/deploy-airnode/deploy-container/index.md)
-to set one up. Once the container is running, return to step #2 below.
+and run steps #1-3. Make the following adjustment when doing so:
 
-## 2. Update the `config.json` file
-
-The project that was used for the Airnode deployed in step #1 above contains a
-`config.json` file. Rename it to something like `config-org.json` and create a
-new blank file named `config.json` in the same project folder. Then copy and
-paste the contents of the `config.json` file show below into your newly created
-file.
+- After downloading the
+  [Project folder](/guides/airnode/deploy-airnode/deploy-container/#_2-project-folder)
+  (step #2) replace the `config.json` file's content with the following content.
 
 ::: details Copy/paste config.json
 
@@ -52,6 +48,13 @@ file.
 ```
 
 :::
+
+Once the project folder from the **Deploying Airnode locally using Docker**
+guide has been download and the `config.json` file updated, return to step #2
+below. But first read about the changes made to the newer `config.json` file
+shown below.
+
+### `paths`
 
 The newer `config.json` file points to a different API provider operation
 (`/coins/{coin}/market_chart`).
@@ -68,7 +71,7 @@ The newer `config.json` file points to a different API provider operation
 },
 ```
 
-## 3. Review the `postProcessingSpecifications`
+### `postProcessingSpecifications`
 
 After calling the API provider's operation but before encoding the resulting
 values for on-chain use, Airnode will run the post processing code defined in
@@ -107,19 +110,10 @@ input.avg_market_cap = (avg_market_cap / 7).toString();
 output = input;
 ```
 
-## 4. Remove the existing Docker container
-
-The Docker container you created in step #1 must be deleted and a new one
-created which uses the newer `config.jon` file. From within the Docker desktop
-app find the docker container named **quick-start-container-airnode** and delete
-it.
-
-<img src="./src/delete-container.png"/>
-
-## 5. Redeploy the Docker container
+## 2. Deploy the Docker container
 
 From your project root run the Docker container deploy command. It will use the
-newer `config.json` file you have created.
+updated `config.json` file.
 
 ::: code-group
 
@@ -150,27 +144,17 @@ docker run \
 :::
 
 Leave the command active in the terminal window. It will display the log items
-from the container. If you wish to close it then use the log monitor from within
-the Docker desktop app by selecting **View details** from the container's
-**Action** menu.
+resulting from the container's deployment. Note the line in the output contains
+the `httpGateway` URL which you will use in step #3.
 
-<img src="./src/view-logs.png" style="width:70%;border:solid 1px lightgray;"/>
-
-```sh
-% docker run \
-  --volume "$(pwd):/app/config" \
-  --name quick-start-container-airnode \
-  --publish 3000:3000 \
-  api3/airnode-client:latest
-WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
-[2023-06-06 21:49:44.565] INFO Gateway "httpSignedDataGateway" not enabled.
-[2023-06-06 21:49:44.586] INFO Gateway "oevGateway" not enabled.
+```sh (2)
+...
 [2023-06-06 21:49:44.596] INFO HTTP (testing) gateway listening for request on "http://localhost:3000/http-data/01234567-abcd-abcd-abcd-012345678abc/:endpointId"
-[2023-06-06 21:49:44.607] INFO API gateway server running on "http://localhost:3000"
+...
 
 ```
 
-## 6. Call the Airnode endpoint
+## 3. Call the Airnode endpoint
 
 Use CURL and call the Airnode endpoint that gets the market data from the
 CoinGecko operation `/coins/{coin}/market_chart`. The CURL command will call the
@@ -179,16 +163,22 @@ to get the response. The
 [httpGateway](/reference/airnode/latest/understand/http-gateways.md) is a
 testing tool not normally enabled on production systems.
 
+### Request
+
 ```sh
 # For Windows CMD replace line termination marker \ with ^
 curl -X POST \
   -d '{"parameters":{"air_coin":"api3","air_vs_currency":"usd"}}' \
   -H 'Content-Type: application/json' \
   'http://localhost:3000/http-data/01234567-abcd-abcd-abcd-012345678abc/0x2de6e288ed16965b68a62d4b2a747b094b3c857941285e625bed3a7be31445e4' | json_pp
+```
 
+### Response
+
+```sh
 # response
 {
-   "encodedValue" : "0x00000000000000000000000000000000000000000000000000000000001309ed00000000000000000000000000000000000000000000000000000000065b158a",
+   "encodedValue" : "0x0...58a",
    "rawValue" : {
       "avg_market_cap" : "106632586.97711395",
       "avg_price" : "1.2477250309068642",
@@ -236,7 +226,7 @@ the mappings of the `reservedParameters` field in the `config.json` file to
 determine what data should go into the `values` field. Airnode then encoded the
 values into the `encodedValue` field suitable for use on-chain.
 
-## 7. Verify `encodedValue`
+## 4. Verify `encodedValue`
 
 Verify that `encodedValue` actually contains the two numbers in the `values`
 field. Copy and paste the `encodedValue` string you received after executing the
@@ -247,8 +237,9 @@ Airnode endpoint into the form below and select the **Decode** button.
 ## Summary
 
 In this guide you extended the data from the API operation with additional
-summary values. For more examples on how to use `preProcessingSpecifications`
-and `postProcessingSpecifications` see the following monorepo examples.
+summary values using post processing. For more examples on how to use
+`preProcessingSpecifications` and `postProcessingSpecifications` see the
+following monorepo examples.
 
 - [coingecko-pre-processing<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-pre-processing)
 - [coingecko-post-processing<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-post-processing)
