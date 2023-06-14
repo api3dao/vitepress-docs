@@ -363,7 +363,7 @@ Simply pass in the `airnode` and the `sponsorWallet` address and click
 
 > ![Making the Request](src/s8.png)
 
-_[Click here to read more about how sponsors, requesters and withdrawals work](//reference/airnode/latest/concepts/sponsor.html)_
+_[Click here to read more about how sponsors, requesters and withdrawals work](/reference/airnode/latest/concepts/sponsor.md)_
 
 Now wait for the Airnode to fulfill the withdrawal request. You can check the
 sponsor wallet for any new transactions.
