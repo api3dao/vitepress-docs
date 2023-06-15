@@ -26,8 +26,8 @@ contract.
 [Click here to try out the Roulette<ExternalLinkImage/>](https://qrng-roulette.netlify.app/)
 
 Before starting, make sure you have a proper understanding of
-[Airnode](/explore/airnode/what-is-airnode.html) and
-[how it works.](/reference/airnode/latest/concepts/airnode.html)
+[Airnode](/explore/airnode/what-is-airnode.md) and
+[how it works.](/reference/airnode/latest/concepts/airnode.md)
 
 [Read more about QRNG and how it works.](/reference/qrng/)
 
@@ -82,7 +82,7 @@ It should load up the Roulette contract.
 
 The Roulette contract is going to be the main Requester contract that makes
 request to the QRNG Airnode using the
-[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html).
+[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.md).
 
 ```solidity
 pragma solidity >=0.8.4;
@@ -109,7 +109,7 @@ contract Roulette is RrpRequesterV0 {
 ```
 
 You first start by importing the `RrpRequesterV0`, which is the
-[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.html). You can
+[Request-Response Protocol (RRP)](/reference/qrng/airnode-rrp-v0.md). You can
 then start coding the `Roulette` contract by inheriting from `RrpRequesterV0`.
 
 You then define the following state variables:
@@ -252,7 +252,7 @@ the contract.
 
 The `topUpSponsorWallet()` is used to top up the `sponsorWallet` address. You
 will later derive it using the
-[Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.html).
+[Airnode admin CLI](/reference/airnode/latest/packages/admin-cli.md).
 
 ### Making a Request for a Random Number
 
@@ -777,12 +777,12 @@ Fill it in and click on **transact** to deploy the contract.
 ### 3. Deriving the Sponsor Wallet
 
 The
-[Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet)
+[Sponsor Wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet)
 needs to be derived from the requester's contract address (Lottery contract in
 this case), the Airnode address, and the Airnode xpub. The wallet is used to pay
 gas costs of the transactions. The sponsor wallet must be derived using the
 command
-[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address)
+[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 from the Admin CLI. Use the value of the sponsor wallet address that the command
 outputs while making the request.
 
