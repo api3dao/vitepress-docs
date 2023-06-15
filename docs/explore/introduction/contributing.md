@@ -65,13 +65,25 @@ Head to the community (bounty board)[notion.io].
 
 :::
 
-### Propose ideas under the contributor framework
+### Submit your own proposal
 
-Individuals with a technical background can contribute to the project (through
-development, integrations, writing documentation, etc.). Although the general
-challenge is that one needs to be able to use a solution proficiently before
-being able to improve it. If this applies we suggest digesting the get started
-materials.
+We welcome proposals that bring new ideas or sub-teams to the DAO. Generally
+engaging the DAO through our community in a constructive manor will help
+sentiment check a proposal and help shape it to align to current contributors.
+If you are proposing an initiative that would require collaboration with a
+current sub team, we suggest co-ordinating proactively and outlining how you
+will work together.
+
+# Propose ideas under the contributor framework
+
+Individuals with a relevant background can contribute to the project in a
+flexible manor, replicating similar freelancer/consultancy type figures commonly
+seen.
+
+For technical folks this could be through development, integrations, writing
+documentation, etc.. Although the general challenge is that one needs to be able
+to use a solution proficiently before being able to improve it. If this applies
+we suggest digesting the get started materials.
 
 To begin with, this contribution may look like:
 
@@ -87,42 +99,28 @@ core contributors.
 Regardless of the contributors skill API3's vision is for participation to be as
 frictionless as possible. To support this, we provide the below framework as
 modules for contributors to engage with. We appreciate the individual nature of
-contribution and these frameworks are flexible.
+contribution and these frameworks are flexible, but we ask for those seeking to
+support API3 DAO's proposed objectives.
 
 <!-- please review the below -->
 
 1. Technical contributions
 
-Tier 1: Experienced
+- API3 will offer $400 of API3 Tokens for contributors that would classify as
+  experienced (3-5years+ experience in a certain field).
 
-API3 will offer $400 of API3 Tokens for contributors that would classify as
-experienced (5years+ experience in a certain field)
-
-Tier 2: Learning
-
-API3 will offer $250 of API3 Tokens for contributors that are learning about
-their technical area of expertiese.
+- API3 will offer $250 of API3 Tokens for contributors that are learning about
+  their technical area of expertiese.
 
 2. Non-technical contributions
 
-Tier 1: Experienced
+- API3 will offer $300 of API3 Tokens for contributors that would classify as
+  experienced (5years+ experience in a certain field) per day
 
-API3 will offer $300 of API3 Tokens for contributors that would classify as
-experienced (5years+ experience in a certain field) per day
+- API3 will offer $200 of API3 Tokens for contributors that are learning about
+  their technical area of expertiese.
 
-Tier 2: Learning
-
-API3 will offer $250 of API3 Tokens for contributors that are learning about
-their technical area of expertiese.
-
-# Submit your own proposal
-
-We welcome proposals that bring new ideas or sub-teams to the DAO. Generally
-engaging the DAO through our community in a constructive manor will help
-sentiment check a proposal and help shape it to align to current contributors.
-If you are proposing an initiative that would require collaboration with a
-current sub team, we suggest co-ordinating proactively and outlining how you
-will work together.
+Please provide a clear scope of work with detailed estmations of what
 
 ::: info Join the API3 Community
 
