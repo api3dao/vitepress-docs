@@ -214,7 +214,6 @@ async function start() {
     './docs/.vitepress/dist/index.html',
     './docs/.vitepress/dist/team.html',
     './docs/.vitepress/dist/404.html',
-    'docs/.vitepress/dist/guides/airnode/calling-an-airnode/index.html',
   ];
   console.log('Skip files:');
   console.log(skipFiles);
