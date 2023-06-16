@@ -53,13 +53,14 @@ take on the job, complete it, and subsequently receive the designated grant as a
 reward retrospectively.
 
 Should participants wish to discuss the job before beginning, they are
-encouraged to do so within the [API3 Discord channel](), fostering an
-environment of open communication and collaborative decision-making. Moreover,
-if members have ideas for new bounty challenges, they are welcome to propose
-them, allowing for a constant influx of fresh ideas and fostering a sense of
-ownership and participation in the community's shared goals.
+encouraged to do so within the
+[API3 Discord channel](https://discord.gg/qnRrcfnm5W), fostering an environment
+of open communication and collaborative decision-making. Moreover, if members
+have ideas for new bounty challenges, they are welcome to propose them, allowing
+for a constant influx of fresh ideas and fostering a sense of ownership and
+participation in the community's shared goals.
 
-::: tip Live bounty board
+::: tip API3 bounty board
 
 Head to the community (bounty board)[notion.io].
 
@@ -107,7 +108,7 @@ support API3 DAO's proposed objectives.
 1. Technical contributions
 
 - API3 will offer $400 of API3 Tokens for contributors that would classify as
-  experienced (3-5years+ experience in a certain field).
+  experienced.
 
 - API3 will offer $250 of API3 Tokens for contributors that are learning about
   their technical area of expertiese.
@@ -172,33 +173,9 @@ create
 [GitHub issues<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/issues)
 to make suggestions.
 
-<!-- split into its own page -->
+### Join the API3 Community
 
-# Contributing to the Technical Documentation
-
-See the [dev documentation](/dev/) for an overview of the API3 technical
-documentation site. It contains instructions on the make-up of the docs and on
-how to clone, setup, and run the project locally. For non-DAO members a PR from
-a fork is always welcome.
-
-## Vitepress
-
-API3's documentation has been created on Vitepress and utilizes a vue.js
-framework. There's
-
-## Feedback
-
-If you have any feedback for the documentation we always would like to hear it
-within the community or via our feedback template. Contributions can be rewarded
-within bounty frameworks if there is an appropiate fix and is scoped accurately.
-
-## Submit an issue
-
-We welcome all developers to contribute to the growth and enhancement of API3
-DAO by submitting any issues or suggestions you come across via our issue
-tracker - your insight is invaluable in making our technology better.
-
-# Join the API3 community
+Within the community we p
 
 - [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
 - Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)

@@ -31,7 +31,14 @@ module.exports = [
 
       //{ text: 'Blog Posts on Medium', link: '/explore/introduction/blog' },
       //{ text: 'Jobs', link: '/explore/introduction/jobs' },
-      { text: 'Contributing', link: '/explore/introduction/contributing' },
+      {
+        text: 'Contributing to the DAO',
+        link: '/explore/introduction/contributing',
+      },
+      {
+        test: 'Feedback & Contribution to API3 Docs',
+        link: 'explore/introduction/feedback',
+      },
     ],
   },
   {
