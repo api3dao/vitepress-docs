@@ -1,28 +1,5 @@
 module.exports = [
   {
-    text: '',
-
-    items: [
-      {
-        text: 'Contract Addresses',
-        link: '/reference/airnode/next/',
-      },
-      { text: 'Versions', link: '/reference/airnode/next/versions' },
-      {
-        text: 'Cloud Resources',
-        link: '/reference/airnode/next/cloud-resources',
-      },
-      {
-        text: 'Chain Idiosyncrasies',
-        link: '/reference/airnode/next/chain-idiosyncrasies',
-      },
-      {
-        text: 'Migration Guide',
-        link: '/reference/airnode/next/migration',
-      },
-    ],
-  },
-  {
     text: 'Understanding Airnode',
     collapsed: false,
     items: [
@@ -69,6 +46,45 @@ module.exports = [
       {
         text: 'Monitoring Airnode',
         link: '/reference/airnode/next/understand/monitor',
+      },
+    ],
+  },
+  {
+    text: 'Airnode for dApp Developers',
+    collapsed: false,
+    items: [
+      { text: 'Airnode RRP', link: '/reference/airnode/next/developers/' },
+      {
+        text: 'Requesters and Sponsors',
+        link: '/reference/airnode/next/developers/requesters-sponsors',
+      },
+      {
+        text: 'Using Templates (RRP)',
+        link: '/reference/airnode/next/developers/using-templates',
+      },
+      { text: 'Fees', link: '/reference/airnode/next/developers/fees' },
+    ],
+  },
+  {
+    text: 'Deployment References',
+    collapsed: false,
+    items: [
+      {
+        text: 'Contract Addresses',
+        link: '/reference/airnode/next/',
+      },
+      { text: 'Versions', link: '/reference/airnode/next/versions' },
+      {
+        text: 'Cloud Resources',
+        link: '/reference/airnode/next/cloud-resources',
+      },
+      {
+        text: 'Chain Idiosyncrasies',
+        link: '/reference/airnode/next/chain-idiosyncrasies',
+      },
+      {
+        text: 'Migration Guide',
+        link: '/reference/airnode/next/migration',
       },
     ],
   },
@@ -252,22 +268,6 @@ module.exports = [
         text: 'Validator',
         link: '/reference/airnode/next/packages/validator',
       },
-    ],
-  },
-  {
-    text: 'Airnode for dApp Developers',
-    collapsed: true,
-    items: [
-      { text: 'Airnode RRP', link: '/reference/airnode/next/developers/' },
-      {
-        text: 'Requesters and Sponsors',
-        link: '/reference/airnode/next/developers/requesters-sponsors',
-      },
-      {
-        text: 'Using Templates (RRP)',
-        link: '/reference/airnode/next/developers/using-templates',
-      },
-      { text: 'Fees', link: '/reference/airnode/next/developers/fees' },
     ],
   },
 ];

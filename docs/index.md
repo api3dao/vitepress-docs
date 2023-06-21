@@ -15,12 +15,24 @@ hero:
     - theme: brand
       text: Explore
       link: /explore/introduction/
+    - theme: brand
+      text: Guides
+      link: /guides/
+    - theme: brand
+      text: DAO Members
+      link: /explore/dao-members/
     - theme: alt
-      text: API3 on GitHub
-      link: https://github.com/api3dao
+      text: Airnode Reference
+      link: /reference/airnode/latest/understand/
     - theme: alt
-      text: Documentation Contributions
-      link: https://github.com/api3dao/vitepress-docs/
+      text: dAPIs Reference
+      link: /reference/dapis/understand/
+    - theme: alt
+      text: OIS Reference
+      link: /reference/ois/latest/
+    - theme: alt
+      text: QRNG Reference
+      link: /reference/qrng/
 ---
 
 <!--
