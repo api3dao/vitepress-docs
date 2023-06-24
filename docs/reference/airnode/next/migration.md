@@ -19,8 +19,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-The following guide assumes a valid v0.10.x `config.json` file. All changes
-listed below will need to be implemented in order to migrate to Airnode v0.11.x.
+The following guide assumes a valid v0.11.x `config.json` file. All changes
+listed below will need to be implemented in order to migrate to Airnode v0.12.x.
 This document is written in a way that will preserve existing behavior with
 earlier Airnode versions.
 
@@ -29,129 +29,125 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 ## Summary
 
-1. `ois[n].oisFormat` updated to "2.0.0".
+1. `ois[n].oisFormat` updated to "2.1.0".
 
-2. `nodeSettings.nodeVersion` updated to "0.11.0".
+2. `nodeSettings.nodeVersion` updated to "0.12.0".
 
-3. `ois[n].endpoints[n].preProcessingSpecifications` and
-   `ois[n].endpoints[n].postProcessingSpecifications` have an updated allowed
-   Node environment value.
+3. Fields specifying `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract
+   addresses on chains for which there is an API3 deployment are now optional.
+   See details below for additional information.
 
-4. `chains[n].authorizers.requesterAuthorizersWithErc721` and
-   `chains[n].authorizers.crossChainRequesterAuthorizersWithErc721` added.
-
-5. Section `nodeSettings.oevGateway` was added.
+4. The `value` for a `fixedOperationParameters` object is now allowed to be any
+   type.
 
 ## Details
 
 1. `ois[n].oisFormat`
 
-Updated to "2.0.0"
+Updated to "2.1.0"
 
 ```diff
 {
-- "oisFormat": "1.4.0"
-+ "oisFormat": "2.0.0"
+- "oisFormat": "2.0.0"
++ "oisFormat": "2.1.0"
 }
 ```
 
 2. `nodeSettings.nodeVersion`
 
-Updated to "0.11.0"
+Updated to "0.12.0"
 
 ```diff
 {
-- "nodeVersion": "0.10.0"
-+ "nodeVersion": "0.11.0"
+- "nodeVersion": "0.11.1"
++ "nodeVersion": "0.12.0"
 }
 ```
 
-3. `ois[n].endpoints[n].preProcessingSpecifications` and
-   `ois[n].endpoints[n].postProcessingSpecifications`
-
-Removes `14` from the `Node 14` environment value to represent that the Node
-version of the pre- and post-processing environments is dictated by the Node.js
-version of Airnode. As of v0.11, the Node.js version of Airnode was upgraded
-from 14 to 18.
+3. `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` addresses are now optional
+   if there is an API3 deployment for that contract on the specified chain. A
+   table of such deployments can be found on the
+   [Contract Addresses](./index.md) page. The following illustrates how the
+   addresses can be omitted. First, within the `chains[n]` object:
 
 ```diff
 {
-  "preProcessingSpecifications": [
-    {
--     "environment": "Node 14",
-+     "environment": "Node",
-      "timeoutMs": 5000,
-      "value": ""
-    }
-  ]
+- "contracts": {
+-   "AirnodeRrp": "0x..."
+- },
 }
 ```
+
+And second, within the `chains[n].authorizers` object:
 
 ```diff
 {
-  "postProcessingSpecifications": [
-    {
--     "environment": "Node 14",
-+     "environment": "Node",
-      "timeoutMs": 5000,
-      "value": ""
-    }
-  ]
+  "authorizers": {
+    "requesterEndpointAuthorizers": [],
+    "crossChainRequesterAuthorizers": [
+      {
+        "requesterEndpointAuthorizers": ["0x..."],
+        "chainType": "evm",
+        "chainId": "5",
+-       "contracts": {
+-         "AirnodeRrp": "0x..."
+-       },
+        "chainProvider": {
+          "url": "http://127.0.0.2"
+        }
+      }
+    ],
+    "requesterAuthorizersWithErc721": [
+      {
+-       "RequesterAuthorizerWithErc721": "0x...",
+        "erc721s": ["0x..."]
+      }
+    ],
+    "crossChainRequesterAuthorizersWithErc721": [
+      {
+        "erc721s": ["0x..."],
+        "chainType": "evm",
+        "chainId": "5",
+-       "contracts": {
+-         "RequesterAuthorizerWithErc721": "0x..."
+-       },
+        "chainProvider": {
+          "url": "http://127.0.0.2"
+        }
+      }
+    ]
+  }
 }
 ```
 
-4. `chains[n].authorizers.requesterAuthorizersWithErc721` and
-   `chains[n].authorizers.crossChainRequesterAuthorizersWithErc721`
+4. The `value` for a `fixedOperationParameters` object is now allowed to be any
+   type, including an object; for example, the following specifies an array
+   containing multiple primitives.
 
-Adds two new authorizers, `requesterAuthorizersWithErc721` and
-`crossChainRequesterAuthorizersWithErc721`, that enable request authorization
-using ERC721 tokens. These new fields are required, but their values may be
-empty arrays if this feature is not required. For further details, see the
-[Authorizers](/reference/airnode/next/concepts/authorizers.md#how-are-authorizers-implemented)
-page.
-
-```diff
-  "chains": [
+```json
+{
+  "fixedOperationParameters": [
     {
-      "authorizers": {
-+       "requesterAuthorizersWithErc721": [],
-+       "crossChainRequesterAuthorizersWithErc721": [],
-        "requesterEndpointAuthorizers": [],
-        "crossChainRequesterAuthorizers": []
+      "operationParameter": {
+        "in": "query",
+        "name": "params"
       },
+      "value": ["finalized", false]
     }
   ]
-```
-
-5. With the new OEV gateway feature there's a new section in the `config.json`
-   file for it. The new section `nodeSettings.oevGateway` needs to be added in
-   order for the configuration file to be valid.
-
-```diff
-{
-  "httpSignedDataGateway": {
-    "enabled": false
-  },
-+ "oevGateway": {
-+   "enabled": false
-+ },
-  "logFormat": "plain",
-  "logLevel": "INFO",
 }
 ```
 
-Read the [OEV gateway](/reference/airnode/next/understand/oev-gateway.md) doc to
-learn more about this feature.
+## New features and updates
 
-## New features
-
-- The Node.js version of Airnode was upgraded from 14 to 18.
-- The `coingecko-signed-data` and `coingecko-testable` HTTP gateway
-  `airnode-examples` integrations have been combined into a single
-  `coingecko-http-gateways` integration.
-- There's a new gateway available called the OEV gateway. Read the
-  [OEV gateway](/reference/airnode/next/understand/oev-gateway.md) doc to learn
-  more about this feature.
-- The heartbeat payload now includes `deployment_id`.
+- There is no longer a hardcoded limit to the maximum number of sponsor wallet
+  requests processed each cycle.
+- The following changes were made to the HTTP gateway:
+  1. Data is returned from successful API calls that fail response processing.
+     For an example see the
+     [HTTP Gateways](./understand/http-gateways.md#http-gateway) page.
+  2. Reserved parameters are inaccessible in response pre/post processing. This
+     is only relevant if reserved parameters are being _modified_ in pre/post
+     processing (advanced use case).
 
 <FlexEndTag/>
