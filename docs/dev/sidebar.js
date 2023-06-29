@@ -5,7 +5,6 @@ module.exports = [
       { text: 'Getting Started', link: '/dev/' },
       { text: 'DocSets', link: '/dev/docsets' },
       { text: 'Airnode/OIS Versioning', link: '/dev/versioning' },
-      { text: 'NavBoxes', link: '/dev/navboxes' },
       { text: 'FlexSearch', link: '/dev/flexsearch' },
       { text: 'Axios Scripts', link: '/dev/axios-scripts' },
       { text: 'Firebase', link: '/dev/firebase' },
