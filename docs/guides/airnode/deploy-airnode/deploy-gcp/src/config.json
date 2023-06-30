@@ -78,7 +78,7 @@
     },
     "logFormat": "plain",
     "logLevel": "DEBUG",
-    "nodeVersion": "2",
+    "nodeVersion": "0.11.2",
     "stage": "quick-gcp"
   },
   "triggers": {
