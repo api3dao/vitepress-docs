@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The following guide assumes a valid v0.10.x `config.json` file. All changes
-listed below will need to be implemented in order to migrate to Airnode v0.11.x.
+listed below will need to be implemented in order to migrate to Airnode v0.11.2.
 This document is written in a way that will preserve existing behavior with
 earlier Airnode versions.
 
@@ -29,9 +29,10 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 ## Summary
 
-1. `ois[n].oisFormat` updated to "2.0.0".
+1. `ois[n].oisFormat` updated to "2.1.0". Note that Airnode v0.11.0 and v0.11.1
+   use "2.0.0".
 
-2. `nodeSettings.nodeVersion` updated to "0.11.1".
+2. `nodeSettings.nodeVersion` updated to "0.11.2".
 
 3. `ois[n].endpoints[n].preProcessingSpecifications` and
    `ois[n].endpoints[n].postProcessingSpecifications` have an updated allowed
@@ -46,23 +47,23 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 1. `ois[n].oisFormat`
 
-Updated to "2.0.0"
+Updated to "2.1.0". Note that Airnode v0.11.0 and v0.11.1 use "2.0.0".
 
 ```diff
 {
 - "oisFormat": "1.4.0"
-+ "oisFormat": "2.0.0"
++ "oisFormat": "2.1.0"
 }
 ```
 
 2. `nodeSettings.nodeVersion`
 
-Updated to "0.11.1"
+Updated to "0.11.2"
 
 ```diff
 {
 - "nodeVersion": "0.10.0"
-+ "nodeVersion": "0.11.1"
++ "nodeVersion": "0.11.2"
 }
 ```
 
@@ -153,5 +154,23 @@ to learn more about this feature.
   [OEV gateway](/reference/airnode/latest/understand/oev-gateway.md) doc to
   learn more about this feature.
 - The heartbeat payload now includes `deployment_id`.
+- The `value` for a `fixedOperationParameters` object is now allowed to be any
+  type, including an object; for example, the following specifies an array
+  containing multiple primitives. Note that this feature is only available
+  beginning in v0.11.2.
+
+  ```json
+  {
+    "fixedOperationParameters": [
+      {
+        "operationParameter": {
+          "in": "query",
+          "name": "params"
+        },
+        "value": ["finalized", false]
+      }
+    ]
+  }
+  ```
 
 <FlexEndTag/>

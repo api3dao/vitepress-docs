@@ -16,8 +16,6 @@ import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeA
 import DeleteAirnodeGcp from '../../_components/reference/airnode/DeleteAirnodeGcp.vue';
 import Video from '../../_components/Video.vue';
 import SearchHighlight from '../../_components/SearchHighlight.vue';
-import NavBox from '../../_components/NavBox.vue';
-import NavBoxViewer from '../../_components/NavBoxViewer.vue';
 import FlexStartTag from '../../_components/FlexStartTag.vue';
 import FlexEndTag from '../../_components/FlexEndTag.vue';
 import EthersAbiCoder from '../../_components/EthersAbiCoder.vue';
@@ -47,8 +45,6 @@ export default {
     app.component('DeleteAirnodeGcp', DeleteAirnodeGcp);
     app.component('Video', Video);
     app.component('SearchHighlight', SearchHighlight);
-    app.component('NavBox', NavBox);
-    app.component('NavBoxViewer', NavBoxViewer);
     app.component('FlexStartTag', FlexStartTag);
     app.component('FlexEndTag', FlexEndTag);
     app.component('EthersAbiCoder', EthersAbiCoder);

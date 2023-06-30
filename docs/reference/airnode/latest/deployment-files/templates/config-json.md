@@ -138,7 +138,7 @@ as a reference while building a config.json file.
      },
     "logFormat": "json",
     "logLevel": "INFO",
-    "nodeVersion": "0.11.1",
+    "nodeVersion": "0.11.2",
     "stage": "<FILL_*>"
   },
   "triggers": {
@@ -174,7 +174,7 @@ as a reference while building a config.json file.
   ],
   "ois": [
     {
-      "oisFormat": "2.0.0",
+      "oisFormat": "2.1.0",
       "version": "<FILL_*>",
       "title": "<FILL_OIS_TITLE>",
       "apiSpecifications": {

@@ -77,7 +77,7 @@
     },
     "logFormat": "plain",
     "logLevel": "DEBUG",
-    "nodeVersion": "0.11.1",
+    "nodeVersion": "0.11.2",
     "stage": "quick-aws"
   },
   "triggers": {
@@ -101,7 +101,7 @@
   "templates": [],
   "ois": [
     {
-      "oisFormat": "2.0.0",
+      "oisFormat": "2.1.0",
       "title": "CoinGecko Basic Request",
       "version": "1.0.0",
       "apiSpecifications": {

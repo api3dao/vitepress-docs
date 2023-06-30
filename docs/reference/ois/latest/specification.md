@@ -63,7 +63,7 @@ An OIS has five root fields (keys).
 
 ```json
 {
-  "oisFormat": "2.0.0",
+  "oisFormat": "2.1.0",
   "title": "myOisTitle",
   "version": "1.2.3",
   "apiSpecifications": {

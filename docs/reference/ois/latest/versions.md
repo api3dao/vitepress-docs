@@ -24,6 +24,7 @@ deploying.
 
 | Airnode version     | Latest compatible OIS version                                    |
 | ------------------- | ---------------------------------------------------------------- |
+| 0.11.2              | 2.1.0                                                            |
 | 0.11.0 and 0.11.1   | 2.0.0                                                            |
 | 0.10.x              | [1.4.0<ExternalLinkImage/>](https://old-docs.api3.org/ois/v1.4/) |
 | 0.9.x               | [1.2.0<ExternalLinkImage/>](https://old-docs.api3.org/ois/v1.2/) |

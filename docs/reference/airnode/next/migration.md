@@ -19,8 +19,8 @@ tags:
 
 # {{$frontmatter.title}}
 
-The following guide assumes a valid v0.11.x `config.json` file. All changes
-listed below will need to be implemented in order to migrate to Airnode v0.12.x.
+The following guide assumes a valid v0.11.2 `config.json` file. All changes
+listed below will need to be implemented in order to migrate to Airnode v0.12.0.
 This document is written in a way that will preserve existing behavior with
 earlier Airnode versions.
 
@@ -29,7 +29,8 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 ## Summary
 
-1. `ois[n].oisFormat` updated to "2.1.0".
+1. `ois[n].oisFormat` updated to "2.1.0". This has not changed since v0.11.2,
+   but has changed since v0.11.0 and v0.11.1 for which it was "2.0.0".
 
 2. `nodeSettings.nodeVersion` updated to "0.12.0".
 
@@ -37,14 +38,12 @@ such as airnode-deployer, airnode-admin, etc., and new features.
    addresses on chains for which there is an API3 deployment are now optional.
    See details below for additional information.
 
-4. The `value` for a `fixedOperationParameters` object is now allowed to be any
-   type.
-
 ## Details
 
 1. `ois[n].oisFormat`
 
-Updated to "2.1.0"
+Updated to "2.1.0". This has not changed since v0.11.2, but has changed since
+v0.11.0 and v0.11.1 for which it was "2.0.0".
 
 ```diff
 {
@@ -59,7 +58,7 @@ Updated to "0.12.0"
 
 ```diff
 {
-- "nodeVersion": "0.11.1"
+- "nodeVersion": "0.11.2"
 + "nodeVersion": "0.12.0"
 }
 ```
@@ -120,24 +119,6 @@ And second, within the `chains[n].authorizers` object:
 }
 ```
 
-4. The `value` for a `fixedOperationParameters` object is now allowed to be any
-   type, including an object; for example, the following specifies an array
-   containing multiple primitives.
-
-```json
-{
-  "fixedOperationParameters": [
-    {
-      "operationParameter": {
-        "in": "query",
-        "name": "params"
-      },
-      "value": ["finalized", false]
-    }
-  ]
-}
-```
-
 ## New features and updates
 
 - There is no longer a hardcoded limit to the maximum number of sponsor wallet
@@ -145,9 +126,29 @@ And second, within the `chains[n].authorizers` object:
 - The following changes were made to the HTTP gateway:
   1. Data is returned from successful API calls that fail response processing.
      For an example see the
-     [HTTP Gateways](./understand/http-gateways.md#http-gateway) page.
+     [HTTP Gateways](/reference/airnode/next/understand/http-gateways.md#http-gateway)
+     page.
   2. Reserved parameters are inaccessible in response pre/post processing. This
      is only relevant if reserved parameters are being _modified_ in pre/post
      processing (advanced use case).
+- The `value` for a `fixedOperationParameters` object is now allowed to be any
+  type, including an object; for example, the following specifies an array
+  containing multiple primitives. This has not changed since v0.11.2, but has
+  changed since v0.11.0 and v0.11.1 for which it was only allowed to be a
+  string.
+
+  ```json
+  {
+    "fixedOperationParameters": [
+      {
+        "operationParameter": {
+          "in": "query",
+          "name": "params"
+        },
+        "value": ["finalized", false]
+      }
+    ]
+  }
+  ```
 
 <FlexEndTag/>
