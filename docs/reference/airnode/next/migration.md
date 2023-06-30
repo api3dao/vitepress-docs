@@ -126,7 +126,8 @@ And second, within the `chains[n].authorizers` object:
 - The following changes were made to the HTTP gateway:
   1. Data is returned from successful API calls that fail response processing.
      For an example see the
-     [HTTP Gateways](./understand/http-gateways.md#http-gateway) page.
+     [HTTP Gateways](/reference/airnode/next/understand/http-gateways.md#http-gateway)
+     page.
   2. Reserved parameters are inaccessible in response pre/post processing. This
      is only relevant if reserved parameters are being _modified_ in pre/post
      processing (advanced use case).
