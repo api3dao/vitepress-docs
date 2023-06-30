@@ -35,7 +35,7 @@ examples in the
 
 ```json
 {
-  "oisFormat": "2.0.0",
+  "oisFormat": "2.1.0",
   "title": "<FILL_*>",
   "version": "<FILL_*>",
   "apiSpecifications": {

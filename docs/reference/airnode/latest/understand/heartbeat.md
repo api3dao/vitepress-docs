@@ -68,7 +68,7 @@ Turn on the optional heartbeat functionality by setting all fields in the
        },
       "logFormat": "json",
       "logLevel": "INFO",
-      "nodeVersion": "0.11.1",
+      "nodeVersion": "2",
       "stage": "testnet",
   }
 }
