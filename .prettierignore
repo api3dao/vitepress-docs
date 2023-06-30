@@ -5,6 +5,7 @@
 /archives
 
 # .vitepress
+/docs/.vitepress/cache
 /docs/.vitepress/dist
 /docs/.vitepress/public
 /docs/.vuepress/styles
