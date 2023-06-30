@@ -37,7 +37,6 @@ documentation is available at
 
 |                                                                               |
 | ----------------------------------------------------------------------------- |
-| [v0.10<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.11/)         |
 | [v0.10<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.10/)         |
 | [v0.9<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.9/)           |
 | [v0.8<ExternalLinkImage/>](https://old-docs.api3.org/airnode/v0.8/)           |
