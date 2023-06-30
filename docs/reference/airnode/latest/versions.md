@@ -19,18 +19,18 @@ tags:
 
 # {{$frontmatter.title}}
 
-The latest version of Airnode is `v0.11`. See
+The latest version of Airnode is `v0.11.x`. See
 [releases<ExternalLinkImage/>](https://github.com/api3dao/airnode/releases) in
 the Airnode repo for all Airnode versions. Below is a list of Airnode versions
 included in this documentation website.
 
-|       |
-| ----- |
-| v0.11 |
+|         |
+| ------- |
+| v0.11.x |
 
 ## Other Versions
 
-Prior to version `v0.11` there are several `v0.x` versions of Airnode. Their
+Prior to version `v0.11.x` there are several `v0.x` versions of Airnode. Their
 documentation is available at
 [https://old-docs.api3.org<ExternalLinkImage/>](https://old-docs.api3.org).
 
