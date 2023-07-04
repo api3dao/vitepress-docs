@@ -56,13 +56,14 @@ The following regions are supported.
 | -------------------- | -------------- |
 | asia-northeast1      | ap-northeast-1 |
 | australia-southeast1 | ap-northeast-2 |
-| europe-west1         | ap-south-1     |
-| europe-west2         | ap-southeast-1 |
-| us-central1          | ap-southeast-2 |
-| us-east1             | ca-central-1   |
-| us-east4             | eu-central-1   |
-| us-west2             | eu-north-1     |
-| us-west4             | eu-west-1      |
+| europe-west1         | ap-northeast-3 |
+| europe-west2         | ap-south-1     |
+| us-central1          | ap-southeast-1 |
+| us-east1             | ap-southeast-2 |
+| us-east4             | ca-central-1   |
+| us-west2             | eu-central-1   |
+| us-west4             | eu-north-1     |
+|                      | eu-west-1      |
 |                      | eu-west-2      |
 |                      | eu-west-3      |
 |                      | sa-east-1      |
