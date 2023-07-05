@@ -36,8 +36,8 @@ module.exports = [
         link: '/explore/introduction/contributing',
       },
       {
-        test: 'Feedback & Contribution to API3 Docs',
-        link: 'explore/introduction/feedback',
+        text: 'Feedback to API3 Docs',
+        link: '/explore/introduction/documentation-feedback',
       },
     ],
   },

@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: API3 DAO Welcomes Community Participation
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore
@@ -14,26 +14,27 @@ tags:
 
 <FlexStartTag/>
 
-# {{$frontmatter.title}}
+# {{$frontmatter.title}} 
 
 We think critical infrastructure, like API3 DAO's first-party oracles, should
 implement open and transparent contributor processes to align to our vision of
 being a programmatically driven protocol.
 
-To support DAO governance and inform voters, all teams publish a public proposal at regular
-intervals, meaning strategy & operations are accessible on the
+To support DAO governance and inform voters, all teams publish a public proposal
+at regular intervals, meaning strategy & operations are accessible on the
 [API3 Governance Forum](https://forum.api3.org/) for all to understand.
 Additionally, teams generally update the community with retrospective reports.
 
-# API3 DAO welcomes community participation
+## Types of contributors
 
 Community participants within a Decentralized Autonomous Organization (DAO) have
 an active role in shaping the future of the project. Our aim is to simplify the
 process for those who wish to participate, providing predefined methods for
 engagement. Generally these take forum in three routes:
 
-1- Core team contributions 2- Completion of pre-defined bounties 3- New
-initiatives or ideas
+- Core team contributions 
+- Completion of pre-defined bounties 
+- New initiatives or ideas
 
 ### Contributors can engage with proposals made by the core teams
 
@@ -52,20 +53,6 @@ completed within two days. This structure allows any member of the community to
 take on the job, complete it, and subsequently receive the designated grant as a
 reward retrospectively.
 
-Should participants wish to discuss the job before beginning, they are
-encouraged to do so within the
-[API3 Discord channel](https://discord.gg/qnRrcfnm5W), fostering an environment
-of open communication and collaborative decision-making. Moreover, if members
-have ideas for new bounty challenges, they are welcome to propose them, allowing
-for a constant influx of fresh ideas and fostering a sense of ownership and
-participation in the community's shared goals.
-
-::: tip API3 bounty board
-
-Head to the community (bounty board)[notion.io].
-
-:::
-
 ### Submit your own proposal
 
 We welcome proposals that bring new ideas or sub-teams to the DAO. Generally
@@ -75,14 +62,17 @@ If you are proposing an initiative that would require collaboration with a
 current sub team, we suggest co-ordinating proactively and outlining how you
 will work together.
 
-# Propose ideas under the contributor framework
+# Put forward your ideas to the API3 DAO
 
-Individuals with a relevant background can contribute to the project in a
-flexible manner, replicating similar freelancer/consultancy type figures commonly
-seen.
+Regardless of the contributor's skill, API3's vision is for participation to be
+as frictionless as possible. Individuals with a relevant background can
+contribute to the project in a flexible manner, replicating similar
+freelancer/consultancy type figures commonly seen.
+
+## Technical contributors
 
 For technical folks this could be through development, integrations, writing
-documentation, etc.. Although the general challenge is that one needs to be able
+documentation, etc. Although the general challenge is that one needs to be able
 to use a solution proficiently before being able to improve it. If this applies
 we suggest digesting the get started materials.
 
@@ -92,38 +82,21 @@ To begin with, this contribution may look like:
 - making pull requests
 - proposing features
 
-Marketers, creatives and community builders can contribute to DAO subteams with
-ad-hoc projects or to support areas that are lacking focus. The challenge here
-is accurately scoping, forming a brief proposed solution method, and then delivering 
-in alignment with other involved contributors.
-
-Regardless of the contributor's skill, API3's vision is for participation to be as
-frictionless as possible. To support this, we provide the below framework as
-modules for contributors to engage with. We appreciate the individual nature of
-contribution and these frameworks are flexible, but we ask for those seeking to
-support API3 DAO's proposed objectives.
-
-<!-- please review the below -->
-
-
-Prospective contributors should provide a clear scope of work with (1) detailed deliverables and estimations of completion time, (2) any applicable 
-coordination with other contributors necessary to accomplish the deliverables, and (3) the amount of API3 tokens requested.
-
-::: info Join the API3 Community
-
-Many valued core contributors started their relationship with API3 through our
-[community<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W) and we advise
-those to join and engage.
-
-:::
-
-# Getting started
+### To get started
 
 We recommend spending some time learning about API3 DAO's oracle technology
 before looking to contribute from an engineer perspective. We welcome you to ask
 any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
 
-### Explore API3
+- Read the entirety of these docs. Take notes and cross-reference, but do not
+  expect to understand everything. Feel free to ask questions.
+- Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page
+  and find everything about.. everything. Explore the many repositories to gain
+  in-depth knowledge about API3.
+- Go through the issues, PRs, etc. and understand the current focus of the
+  development team by viewing the development board.
+
+### If you are learning about blockchain & oracles
 
 - Read the
   [getting started<ExternalLinkImage/>](docs/explore/introduction/index.md)
@@ -135,31 +108,47 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
   cover to cover. It is a light read that touches on all subjects that you will
   need to know about superficially.
 
-**Technical contributors**
+## Non-technical contributors
 
-- Read the entirety of these docs. Take notes and cross-reference, but do not
-  expect to understand everything. Feel free to ask questions.
-- Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page
-  and find everything about.. everything. Explore the many repositories to gain
-  in-depth knowledge about API3.
-- Go through the issues, PRs, etc. and understand the current focus of the
-  development team by viewing the development board.
+Marketers, creatives and community builders can contribute to DAO subteams with
+ad-hoc projects or to support areas that are lacking focus. The challenge here
+is accurately scoping, forming a brief proposed solution method, and then
+delivering in alignment with other involved contributors.
 
-**Technical tutorials**
+Contirbutions may look like:
 
-- Integrate an API to an Airnode (Run and understand the Airnode starter
-  tutorial)
-- Build a dApp that uses API3 QRNG
-- Utilize API3 Price Feeds
+- blog posts, community resources
+- ambassador activity, setting of events
+- art or branded merch
 
-### Engage
+# How do I access funds to support my efforts? 
 
-This page will be updated as more materials are produced. Please feel free to
-create
-[GitHub issues<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/issues)
-to make suggestions.
+Prospective contributors should provide a clear scope of work with (1) detailed
+deliverables and estimations of completion time (2) any applicable coordination
+with other contributors necessary to accomplish the deliverables and (3) the
+amount of API3 tokens requested.
 
-### Join the API3 Community
+We appreciate the individual nature of contributing and these frameworks are
+flexible, yet linking these activities to the challenges outlined in team
+proposals will support our hollisitic objectives and be more likely supported.
+
+## Ecosystem fast bounties & retropective grants
+
+The API3 Ecosystem team has a dedicated pool of funds to support micro-grants from community contributors. This can be retrospective or pre-planned, but has been created to make rewarding contribution frictionless and simple. 
+
+## This can be submitted in a variety of way
+
+- Join the API3 [community<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
+and submit within the ecosystem contributor request channel. 
+- Submit an
+overview onto the [API3 forums](https://forum.api3.org/). 
+- Email
+ecosystem@api3.org with an overview
+
+Within this process we welcome open dialogue and as a DAO recongize that
+extenral contributors and diversity in thought is a strenght. 
+
+### We invite all curious contributors to engage API3 
 
 - [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
 - Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
