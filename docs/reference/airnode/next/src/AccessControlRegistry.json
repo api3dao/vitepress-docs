@@ -126,13 +126,6 @@
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
-    "id": "1294",
-    "fullname": "Boba/Moonbeam",
-    "alias": "boba-moonbeam",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x8E7D155C6E124a5C2c8DE2AFFCd8702e3660E482"
-  },
-  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
