@@ -1,12 +1,3 @@
----
-name: Feedback template
-about: Default template for feedback
-title: ''
-labels: ''
-assignees: ''
-
----
-
 ## Context
 < Please provide some background about why you’re providing this feedback. This could include a brief description of what you were trying to do or what part of the codebase your feedback is related to. >
 
