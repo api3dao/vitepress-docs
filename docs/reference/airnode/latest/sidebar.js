@@ -62,7 +62,10 @@ module.exports = [
         text: 'Using Templates (RRP)',
         link: '/reference/airnode/latest/developers/using-templates',
       },
-      { text: 'Fees', link: '/reference/airnode/latest/developers/fees' },
+      {
+        text: 'Verify Airnode Addresses',
+        link: '/reference/airnode/latest/developers/verify-airnode-addresses',
+      },
     ],
   },
   {
