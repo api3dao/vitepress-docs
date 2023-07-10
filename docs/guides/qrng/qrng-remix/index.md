@@ -45,18 +45,19 @@ You can read more about how API3 QRNG Airnode uses the
 
 ## 1. Coding the `RemixQrngExample`
 
-Head on to [Remix online IDE<ExternalLinkImage/>](https://remix.ethereum.org)
+Head on to
+[Remix online IDE<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
 using a browser that you have added Metamask support to. Not all browsers
 support [MetaMask<ExternalLinkImage/>](https://metamask.io/download/). It should
 load up the `RemixQrngExample` contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3dao/qrng-example/main/contracts/QrngExample.sol)
+[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
 
 > ![Add Contract](/guides/qrng/qrng-remix/src/qrng-add-contract.png)
 
-The `RemixQrngExample` will have five main functions: `setRequestParameters()`,
-`makeRequestUint256()`, `fulfillUint256()`, `makeRequestUint256Array()`, and
-`fulfillUint256Array()`.
+The `RemixQrngExample` will have seven main functions: `setRequestParameters()`,
+`makeRequestUint256()`, `fulfillUint256()`, `makeRequestUint256Array()`
+`fulfillUint256Array()`, `getRandomNumber()` and `getRandomNumberArray()`.
 
 - The `setRequestParameters()` takes in `airnode`, `endpointIdUint256`,
   `_endpointIdUint256Array`, `sponsorWallet` and sets these parameters on-chain.
@@ -90,9 +91,7 @@ The `RemixQrngExample` will have five main functions: `setRequestParameters()`,
             this.fulfillUint256.selector,
             ""
         );
-        waitingFulfillment[requestId] = true;
-        latestRequest.requestId = requestId;
-        latestRequest.randomNumber = 0;
+        expectingRequestWithIdToBeFulfilled[requestId] = true;
         emit RequestedUint256(requestId);
     }
 ```
@@ -106,13 +105,13 @@ The `RemixQrngExample` will have five main functions: `setRequestParameters()`,
         onlyAirnodeRrp
     {
         require(
-            waitingFulfillment[requestId],
+            expectingRequestWithIdToBeFulfilled[requestId],
             "Request ID not known"
         );
-        waitingFulfillment[requestId] = false;
+        expectingRequestWithIdToBeFulfilled[requestId] = false;
         uint256 qrngUint256 = abi.decode(data, (uint256));
         // Do what you want with `qrngUint256` here...
-        latestRequest.randomNumber = qrngUint256;
+        _qrngUint256 = qrngUint256;
         emit ReceivedUint256(requestId, qrngUint256);
     }
 ```
@@ -152,7 +151,21 @@ is requested.
         expectingRequestWithIdToBeFulfilled[requestId] = false;
         uint256[] memory qrngUint256Array = abi.decode(data, (uint256[]));
         // Do what you want with `qrngUint256Array` here...
+        _qrngUint256Array = qrngUint256Array;
         emit ReceivedUint256Array(requestId, qrngUint256Array);
+    }
+```
+
+`getRandomNumber()` and and `getRandomNumberArray()` are getter functions that
+returns the random number and random number array respectively.
+
+```solidity
+    function getRandomNumber() public view returns (uint256) {
+        return _qrngUint256;
+    }
+
+function getRandomNumberArray() public view returns (uint256[] memory) {
+        return _qrngUint256Array;
     }
 ```
 
@@ -287,18 +300,42 @@ Each request made will use the parameters set in the last step. You can change
 the parameters at any time and subsequent requests will use the newer parameter
 set.
 
-To make a request select the **makeRequest** button in Remix. Approve the
-transaction with MetaMask.
+### To request a single random number:
+
+To make a request for a single random number, select the `makeRequestUint256()`
+button in Remix. Approve the transaction with MetaMask.
+
+> <img src="./src/qrng-single.png" width="400"/>
+
+### To request an array of random numbers:
+
+To make a request for an array of random numbers, select the
+`makeRequestUint256Array()` button in Remix, add the required array size and
+click on **transact**. Approve the transaction with MetaMask.
+
+> <img src="./src/qrng-array.png" width="400"/>
 
 <!-- prettier-ignore -->
-As soon as the transaction completes in MetaMask, select the **lastRequest** button in Remix. You will see the
-`requestId` and a `randomNumber` which equals _0_. This is because the random
-number has yet to be returned to the callback function. Copy and paste the
-`requestId` into the field for **`waitingFulfillment`** and
+As soon as the transaction completes in MetaMask, select the **getRandomNumber/getRandomNumberArray** button in Remix. This will return the value of `_qrngUint256`/`_qrngUint256Array` which equals _0_. This is because the random
+number/ random number array has yet to be returned to the callback function. Copy and paste the
+`requestId` into the field for **`expectingRequestWithIdToBeFulfilled`** and
 select the button. You will see the value is _true_, meaning the callback has
 not been made.
 
-> <img src="./src/qrng-response-wait.png" width="400"/>
+> <img src="./src/qrng-response-wait.png" />
+
+::: info You might need to wait for a minute or two
+
+The Airnode calls the fulfill() function in `AirnodeRrpV0.sol` that will in turn
+call back the requester contract at `fulfillAddress` using function
+`fulfillFunctionId` to deliver data.
+
+:::
+
+Head over to the block explorer and check your `sponsorWallet` for any new
+transactions. Here, you can see the latest `Fulfill` transaction.
+
+> <img src="./src/qrng-fulfill.png" />
 
 ## 6. View the Response
 
@@ -307,9 +344,9 @@ provider. Once the API provider returns data, Airnode will callback to the
 `RemixQrngExample.sol` contract function
 `fulfillUint256(bytes32 requestId, bytes calldata data)`.
 
-Select the the **lastRequest** button in Remix again. If the callback has been
-successfully completed the randomNumber will be present. The value of
-**waitingFulfillment** will be _false_.
+select the **getRandomNumber/getRandomNumberArray** button in Remix again. If
+the callback has been successfully completed the randomNumber will be present.
+The value of **expectingRequestWithIdToBeFulfilled** will be _false_.
 
 > <img src="./src/qrng-response-complete.png" width="400"/>
 
