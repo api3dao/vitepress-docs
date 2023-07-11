@@ -65,7 +65,7 @@ module.exports = [
       { text: 'Fees', link: '/reference/airnode/next/developers/fees' },
       {
         text: 'Verify Airnode Addresses',
-        link: '/reference/airnode/latest/developers/verify-airnode-addresses',
+        link: '/reference/airnode/next/developers/verify-airnode-addresses',
       },
     ],
   },

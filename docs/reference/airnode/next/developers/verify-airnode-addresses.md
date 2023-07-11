@@ -1,5 +1,5 @@
 ---
-title: Verify Airnode addresses
+title: Verify Airnode Addresses
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.11 → Verify Airnode Addresses
@@ -21,11 +21,11 @@ tags:
 
 An Airnode is owned and operated by an API provider. Every Airnode has a unique
 on-chain
-[`airnodeAddress`](/reference/airnode/next/concepts/airnode.html#airnodeaddress)
+[`airnodeAddress`](/reference/airnode/next/concepts/airnode.md#airnodeaddress)
 created and known by its API provider. API providers normally announce their
 Airnode addresses in the form of a DNS `TXT` record within their DNS
-registration thus proving ownership. An Airnode's address is the same for all
-chains.
+registration, which also serves to prove ownership. An Airnode's address is the
+same for all chains.
 
 The key for the `TXT` record is `chainapi-verification-keys` and is an array of
 Airnode addresses owned by the API provider. Below is an example of the Airnode
