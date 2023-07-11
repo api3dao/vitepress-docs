@@ -67,7 +67,7 @@ will work together.
 Regardless of the contributor's skill, API3's vision is for participation to be
 as frictionless as possible. Individuals with a relevant background can
 contribute to the project in a flexible manner, replicating similar
-freelancer/consultancy type figures commonly seen.
+freelancer/consultancy type models commonly seen.
 
 ## Technical contributors
 
