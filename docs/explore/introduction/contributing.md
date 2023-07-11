@@ -59,7 +59,7 @@ We welcome proposals that bring new ideas or sub-teams to the DAO. Generally
 engaging the DAO through our community in a constructive manner will help
 sentiment check a proposal and help shape it to align to current contributors.
 If you are proposing an initiative that would require collaboration with a
-current sub team, we suggest co-ordinating proactively and outlining how you
+current sub team, we suggest coordinating proactively and outlining how you
 will work together.
 
 # Put forward your ideas to the API3 DAO
