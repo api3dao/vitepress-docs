@@ -30,7 +30,7 @@ Additionally, teams generally update the community with ongoing reports.
 Community participants within a Decentralized Autonomous Organization (DAO) have
 an active role in shaping the future of the project. Our aim is to simplify the
 process for those who wish to participate, providing predefined methods for
-engagement. Generally these take forum in three routes:
+engagement. Generally these take three forms:
 
 - Core team contributions 
 - Completion of pre-defined bounties 
