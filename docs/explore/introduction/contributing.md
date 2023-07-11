@@ -149,7 +149,7 @@ overview and sentiment check onto the [API3 forums](https://forum.api3.org/).
 ecosystem@api3.org with an overview
 
 Within this process we welcome open dialogue and as a DAO recongize that
-extenral contributors and diversity in thought is a strenght. 
+external contributors and diversity in thought is a strenght. 
 
 ### We invite all curious contributors to engage API3 
 
