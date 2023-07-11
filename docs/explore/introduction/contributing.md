@@ -23,7 +23,7 @@ being a programmatically driven protocol.
 To support DAO governance and inform voters, all teams publish a public proposal
 at regular intervals, meaning strategy & operations are accessible on the
 [API3 Governance Forum](https://forum.api3.org/) for all to understand.
-Additionally, teams generally update the community with retrospective reports.
+Additionally, teams generally update the community with ongoing reports.
 
 ## Types of contributors
 
