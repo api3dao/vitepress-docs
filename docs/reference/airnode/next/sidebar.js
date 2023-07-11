@@ -63,6 +63,10 @@ module.exports = [
         link: '/reference/airnode/next/developers/using-templates',
       },
       { text: 'Fees', link: '/reference/airnode/next/developers/fees' },
+      {
+        text: 'Verify Airnode Addresses',
+        link: '/reference/airnode/next/developers/verify-airnode-addresses',
+      },
     ],
   },
   {
