@@ -17,7 +17,7 @@ tags:
 # {{$frontmatter.title}} 
 
 We think critical infrastructure, like API3 DAO's first-party oracles, should
-implement open and transparent contributor processes to align to our vision of
+implement open and transparent contributor processes to align with our vision of
 being a programmatically driven protocol.
 
 To support DAO governance and inform voters, all teams publish a public proposal
