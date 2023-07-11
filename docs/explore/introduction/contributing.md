@@ -14,7 +14,7 @@ tags:
 
 <FlexStartTag/>
 
-# {{$frontmatter.title}} 
+# {{$frontmatter.title}}
 
 We think critical infrastructure, like API3 DAO's first-party oracles, should
 implement open and transparent contributor processes to align with our vision of
@@ -32,8 +32,8 @@ an active role in shaping the future of the project. Our aim is to simplify the
 process for those who wish to participate, providing predefined methods for
 engagement. Generally these take three forms:
 
-- Core team contributions 
-- Completion of pre-defined bounties 
+- Core team contributions
+- Completion of pre-defined bounties
 - New initiatives or ideas
 
 ### Contributors can engage with proposals made by the core teams
@@ -59,8 +59,8 @@ We welcome proposals that bring new ideas or sub-teams to the DAO. Generally
 engaging the DAO through our community in a constructive manner will help
 sentiment check a proposal and help shape it to align to current contributors.
 If you are proposing an initiative that would require collaboration with a
-current sub team, we suggest coordinating proactively and outlining how you
-will work together.
+current sub team, we suggest coordinating proactively and outlining how you will
+work together.
 
 ## Put forward your ideas to the API3 DAO
 
@@ -91,8 +91,11 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
 - Read the entirety of these docs. Take notes and cross-reference, but do not
   expect to understand everything. Feel free to ask questions.
 - Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page
- to explore the many repositories of API3's oracle stack and gain in-depth knowledge.
- - Head to the [API3 Community Hub](https://github.com/api3-ecosystem/doc-hub.git) with get started tutorials & demo projects.
+  to explore the many repositories of API3's oracle stack and gain in-depth
+  knowledge.
+- Head to the
+  [API3 Community Hub](https://github.com/api3-ecosystem/doc-hub.git) with get
+  started tutorials & demo projects.
 - Go through the issues, PRs, etc. and understand the current focus of the
   development team by viewing the development board.
 
@@ -110,20 +113,19 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
 
 ## Non-technical contributors
 
-Marketers, creatives and community builders can contribute to DAO with
-ad-hoc projects or to support specific areas within subteams. The challenge here
-is accurately scoping, forming a brief proposed solution method, and then
+Marketers, creatives and community builders can contribute to DAO with ad-hoc
+projects or to support specific areas within subteams. The challenge here is
+accurately scoping, forming a brief proposed solution method, and then
 delivering in alignment with other involved contributors.
 
 Amoung many other types, contirbutions may look like:
 
 - blog posts, community resources
 - ambassador activity, setting of events
-- graphic design, creative 
+- graphic design, creative
 - testers, user research
 
-
-## How do I access funds to support my efforts? 
+## How do I access funds to support my efforts?
 
 Prospective contributors should provide a clear scope of work with (1) detailed
 deliverables and estimations of completion time (2) any applicable coordination
@@ -136,22 +138,25 @@ proposals will support our hollisitic objectives and be more likely supported.
 
 ### Ecosystem fast bounties & retropective grants
 
-The API3 Ecosystem team has a dedicated pool of funds to support micro-grants from community contributors. This can be retrospective or pre-planned, but has been created to make rewarding contribution frictionless and simple. 
+The API3 Ecosystem team has a dedicated pool of funds to support micro-grants
+from community contributors. This can be retrospective or pre-planned, but has
+been created to make rewarding contribution frictionless and simple.
 
 ### This can be submitted in a variety of way
 
 - Join the API3 [community<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
-and submit within the ecosystem contributor request channel. 
-- Submit an
-overview and sentiment check onto the [API3 forums](https://forum.api3.org/). 
-- Follow the [proposal guidelines](https://docs.api3.org/guides/dao-members/proposals.html#proposal-creation) provided by API3 DAO.
-- Email
-ecosystem@api3.org with an overview
+  and submit within the ecosystem contributor request channel.
+- Submit an overview and sentiment check onto the
+  [API3 forums](https://forum.api3.org/).
+- Follow the
+  [proposal guidelines](https://docs.api3.org/guides/dao-members/proposals.html#proposal-creation)
+  provided by API3 DAO.
+- Email ecosystem@api3.org with an overview
 
 Within this process we welcome open dialogue and as a DAO recongize that
-external contributors and diversity in thought is a strenght. 
+external contributors and diversity in thought is a strenght.
 
-### We invite all curious contributors to engage API3 
+### We invite all curious contributors to engage API3
 
 - [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
 - Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)

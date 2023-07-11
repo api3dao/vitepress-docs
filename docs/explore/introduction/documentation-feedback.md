@@ -45,7 +45,8 @@ Please submit to https://github.com/api3dao/vitepress-docs/issues.
 
 ::: tip Feedback is valueable
 
-Feedback is valueable and any submission shared with be rewarded with a retrospective bounty of up to $250 of API3 
+Feedback is valueable and any submission shared with be rewarded with a
+retrospective bounty of up to $250 of API3
 
 :::
 
@@ -56,7 +57,8 @@ documentation site. It contains instructions on the make-up of the docs and on
 how to clone, setup, and run the project locally. For non-DAO members a PR from
 a fork is always welcome.
 
-You can also see the [Contributing](/docs/explore/introduction/contributing.md) overview on how to engage further.
+You can also see the [Contributing](/docs/explore/introduction/contributing.md)
+overview on how to engage further.
 
 ### Join the API3 testers guild
 
