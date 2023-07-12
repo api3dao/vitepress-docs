@@ -28,7 +28,7 @@ or communicate these concepts we would like to hear from you.
 This might include scenarios such as:
 
 - Ideas for us to communicate technical ideas in a simpler way
-- Areas that you think we could emphasise the 'why' behind our technical design
+- Areas that you think we could emphasize the 'why' behind our technical design
 - Points of difference within API3 that you think we should further highlight or
   communicate
 
@@ -43,9 +43,9 @@ template. Your insight is invaluable in making our technology better.
 
 Please submit to https://github.com/api3dao/vitepress-docs/issues.
 
-::: tip Feedback is valueable
+::: tip Feedback is valuable
 
-Feedback is valueable and any submission shared with be rewarded with a
+Feedback is valuable and any submission shared with be rewarded with a
 retrospective bounty of up to $250 of API3
 
 :::
@@ -60,11 +60,11 @@ a fork is always welcome.
 You can also see the [Contributing](/docs/explore/introduction/contributing.md)
 overview on how to engage further.
 
-### Join the API3 testers guild
+<!--### Join the API3 testers guild
 
 API3 Testers Guild is a community of professionals involved to testing API3
 products & services. The Guild often conducts workshops, webinars, and
 conferences to foster a dynamic and up-to-date understanding of testing in the
-evolving tech landscape.
+evolving tech landscape.-->
 
 <FlexEndTag/>

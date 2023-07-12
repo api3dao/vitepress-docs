@@ -111,14 +111,14 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
   cover to cover. It is a light read that touches on all subjects that you will
   need to know about superficially.
 
-## Non-technical contributors
+### Non-technical contributors
 
 Marketers, creatives and community builders can contribute to DAO with ad-hoc
 projects or to support specific areas within subteams. The challenge here is
 accurately scoping, forming a brief proposed solution method, and then
 delivering in alignment with other involved contributors.
 
-Amoung many other types, contirbutions may look like:
+Among many other types, contributions may look like:
 
 - blog posts, community resources
 - ambassador activity, setting of events
@@ -134,15 +134,15 @@ amount of API3 tokens requested.
 
 We appreciate the individual nature of contributing and these frameworks are
 flexible, yet linking these activities to the challenges outlined in team
-proposals will support our hollisitic objectives and be more likely supported.
+proposals will support our holistic objectives and be more likely supported.
 
-### Ecosystem fast bounties & retropective grants
+### Ecosystem fast bounties & retrospective grants
 
 The API3 Ecosystem team has a dedicated pool of funds to support micro-grants
 from community contributors. This can be retrospective or pre-planned, but has
 been created to make rewarding contribution frictionless and simple.
 
-### This can be submitted in a variety of way
+### Submit a proposal to the DAO
 
 - Join the API3 [community<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
   and submit within the ecosystem contributor request channel.
@@ -153,10 +153,10 @@ been created to make rewarding contribution frictionless and simple.
   provided by API3 DAO.
 - Email ecosystem@api3.org with an overview
 
-Within this process we welcome open dialogue and as a DAO recongize that
-external contributors and diversity in thought is a strenght.
+Within this process we welcome open dialogue and as a DAO recognize that
+external contributors and diversity in thought is a strength.
 
-### We invite all curious contributors to engage API3
+### We invite all curious contributors to engage API3 
 
 - [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
 - Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
@@ -164,3 +164,4 @@ external contributors and diversity in thought is a strenght.
 - [YouTube Channel<ExternalLinkImage/>](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
 
 <FlexEndTag/>
+
