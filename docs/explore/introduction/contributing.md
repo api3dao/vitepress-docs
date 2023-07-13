@@ -156,7 +156,7 @@ been created to make rewarding contribution frictionless and simple.
 Within this process we welcome open dialogue and as a DAO recognize that
 external contributors and diversity in thought is a strength.
 
-### We invite all curious contributors to engage API3 
+### We invite all curious contributors to engage API3
 
 - [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
 - Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
@@ -164,4 +164,3 @@ external contributors and diversity in thought is a strength.
 - [YouTube Channel<ExternalLinkImage/>](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
 
 <FlexEndTag/>
-
