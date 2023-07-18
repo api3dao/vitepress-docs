@@ -25,7 +25,8 @@ interested in. You can find them in the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org) website. If a proxy
 contract has not been created for a particular dAPI use the API3 Market UI to do
 so, see the guide
-[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/) or [Subscribing to a Managed dAPI](/guides/dapis/subscribing-managed-dapis/).
+[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
+or [Subscribing to a Managed dAPI](/guides/dapis/subscribing-managed-dapis/).
 
 ## 1. Add npm package
 
@@ -108,8 +109,7 @@ purposes without proper security audits and testing.
 
 ## Summary
 
-For additional information on how to read from a dAPI proxy, please
-refer to the
+For additional information on how to read from a dAPI proxy, please refer to the
 [datafeed-reader-example<ExternalLinkImage/>](https://github.com/api3dao/data-feed-reader-example)
 repository which contains a hardhat project with a sample smart contract that
 reads from a dAPI proxy.

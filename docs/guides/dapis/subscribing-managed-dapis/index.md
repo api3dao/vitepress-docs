@@ -40,9 +40,12 @@ The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
 tooling to seamlessly access dAPI services. For self-funded data feeds this
 end-to-end process consists of:
 
-- [Exploring, selecting and configuring your dAPI](/guides/dapis/subscribing-managed-dapis/#exploring-selecting-and-configuring-your-dapi) <br/>
-- [Placing an order for a Managed dAPI Service](/guides/dapis/subscribing-managed-dapis/#placing-an-order-for-a-managed-dapi-service) <br/>
-- [Waiting for the dAPI to get updated](/guides/dapis/subscribing-managed-dapis/#waiting-for-the-dapi-to-get-updated) <br/>
+- [Exploring, selecting and configuring your dAPI](/guides/dapis/subscribing-managed-dapis/#exploring-selecting-and-configuring-your-dapi)
+  <br/>
+- [Placing an order for a Managed dAPI Service](/guides/dapis/subscribing-managed-dapis/#placing-an-order-for-a-managed-dapi-service)
+  <br/>
+- [Waiting for the dAPI to get updated](/guides/dapis/subscribing-managed-dapis/#waiting-for-the-dapi-to-get-updated)
+  <br/>
 
 ## Exploring, selecting and configuring your dAPI
 
