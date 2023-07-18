@@ -1,9 +1,9 @@
 ---
-title: Reading a self-funded dAPI proxy
+title: Reading a dAPI proxy
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → dAPIs
-path: /guides/dapis/read-self-funded-dapi/index.html
+path: /guides/dapis/read-a-dapi/index.html
 outline: deep
 tags:
 ---
@@ -25,7 +25,7 @@ interested in. You can find them in the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org) website. If a proxy
 contract has not been created for a particular dAPI use the API3 Market UI to do
 so, see the guide
-[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/).
+[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/) or [Subscribing to a Managed dAPI](/guides/dapis/subscribing-managed-dapis/).
 
 ## 1. Add npm package
 
@@ -108,10 +108,10 @@ purposes without proper security audits and testing.
 
 ## Summary
 
-For additional information on how to read from a self-funded dAPI proxy, please
+For additional information on how to read from a dAPI proxy, please
 refer to the
 [datafeed-reader-example<ExternalLinkImage/>](https://github.com/api3dao/data-feed-reader-example)
 repository which contains a hardhat project with a sample smart contract that
-reads from a self-funded dAPI proxy.
+reads from a dAPI proxy.
 
 <FlexEndTag/>
