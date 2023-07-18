@@ -57,7 +57,7 @@ documentation site. It contains instructions on the make-up of the docs and on
 how to clone, setup, and run the project locally. For non-DAO members a PR from
 a fork is always welcome.
 
-You can also see the [Contributing](/docs/explore/introduction/contributing.md)
+You can also see the [Contributing](/explore/introduction/contributing.md)
 overview on how to engage further.
 
 <!--### Join the API3 testers guild

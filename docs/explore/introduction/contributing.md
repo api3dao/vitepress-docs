@@ -101,8 +101,7 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
 
 ### If you are learning about blockchain & oracles
 
-- Read the
-  [getting started<ExternalLinkImage/>](docs/explore/introduction/index.md)
+- Read the [getting started<ExternalLinkImage/>](/explore/introduction/index.md)
   section in the API3 Docs
 - (For the curious) Explore the API3 codebase on
   [GitHub<ExternalLinkImage/>](https://github.com/api3dao)
