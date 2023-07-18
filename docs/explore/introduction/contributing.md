@@ -22,8 +22,9 @@ being a programmatically driven protocol.
 
 To support DAO governance and inform voters, all teams publish a public proposal
 at regular intervals, meaning strategy & operations are accessible on the
-[API3 Governance Forum](https://forum.api3.org/) for all to understand.
-Additionally, teams generally update the community with ongoing reports.
+[API3 Governance Forum<ExternalLinkImage/>](https://forum.api3.org/) for all to
+understand. Additionally, teams generally update the community with ongoing
+reports.
 
 ## Types of contributors
 
@@ -74,7 +75,8 @@ freelancer/consultancy type models commonly seen.
 For technical folks this could be through development, integrations, writing
 documentation, etc. Although the general challenge is that one needs to be able
 to use a solution proficiently before being able to improve it. If this applies
-we suggest digesting the [get started materials](index.md).
+we suggest digesting the
+[get started materials](/explore/introduction/index.md).
 
 To begin with, this contribution may look like:
 
@@ -94,8 +96,8 @@ any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
   to explore the many repositories of API3's oracle stack and gain in-depth
   knowledge.
 - Head to the
-  [API3 Community Hub](https://github.com/api3-ecosystem/doc-hub.git) with get
-  started tutorials & demo projects.
+  [API3 Community Hub<ExternalLinkImage/>](https://github.com/api3-ecosystem/doc-hub.git)
+  with get started tutorials & demo projects.
 - Go through the issues, PRs, etc. and understand the current focus of the
   development team by viewing the development board.
 
@@ -146,9 +148,9 @@ been created to make rewarding contribution frictionless and simple.
 - Join the API3 [community<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
   and submit within the ecosystem contributor request channel.
 - Submit an overview and sentiment check onto the
-  [API3 forums](https://forum.api3.org/).
+  [API3 forums<ExternalLinkImage/>](https://forum.api3.org/).
 - Follow the
-  [proposal guidelines](https://docs.api3.org/guides/dao-members/proposals.html#proposal-creation)
+  [proposal guidelines](/guides/dao-members/proposals.md#proposal-creation)
   provided by API3 DAO.
 - Email ecosystem@api3.org with an overview
 
