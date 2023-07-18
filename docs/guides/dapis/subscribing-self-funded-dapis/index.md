@@ -20,7 +20,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-With Self-Funded dAPIs, you can fund the dAPI with your own funds. The amount of
+With [Self-Funded dAPIs](/explore/dapis/using-dapis.html#self-funded-dapis), you can fund the dAPI with your own funds. The amount of
 gas you supply will determine how long your dAPI will be available for use. If
 you run out of gas, you can fund the dAPI again to keep it available for use.
 This is a good option if you are not planning to use the dAPI for a long period
@@ -30,7 +30,7 @@ of time or if you are not planning to use the dAPI in a production environment.
 
 If you are planning to use your dAPI for a long period of time or if you are
 planning to use your dAPI in a production environment, we recommend that you use
-managed dAPIs provided by the API3DAO. This way, you can be sure that your dAPI
+Managed dAPIs provided by the API3 DAO. This way, you can be sure that your dAPI
 will be available to your users at all times.
 
 :::
@@ -41,20 +41,14 @@ The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
 tooling to seamlessly access dAPI services. For self-funded data feeds this
 end-to-end process consists of:
 
-<p>
-1. Exploring and selecting your data feed <br/>
-2. Funding a sponsor wallet <br/>
-3. Deploying a proxy contract to access the data feed <br/>
- <span style="margin-left:20px;">
- 3a. Deploying a proxy contract during funding <br/>
- </span>
- <span style="margin-left:20px;">
- 3b. Deploying a proxy contract from the API3 Market details page <br/>
- </span>
- <span style="margin-left:20px;">
- 3c. Verifying the deployed proxy contract <br/>
- </span>
-</p>
+
+- [Exploring and selecting your data feed](/guides/dapis/subscribing-self-funded-dapis/#_1-exploring-and-selecting-your-data-feed) <br/>
+- [Funding a sponsor wallet](/dapis/subscribing-self-funded-dapis/#_2-funding-a-sponsor-wallet) <br/>
+- [Deploying a proxy contract to access the data feed](/guides/dapis/subscribing-self-funded-dapis/#_3-deploying-a-proxy-contract-to-access-the-data-feed) <br/>
+  - [Deploying a proxy contract during funding](/guides/dapis/subscribing-self-funded-dapis/#_3a-deploying-a-proxy-contract-during-funding) <br/>
+  - [Deploying a proxy contract from the API3 Market details page](/guides/dapis/subscribing-self-funded-dapis/#_3b-deploying-a-proxy-contract-from-the-api3-market-details-page) <br/>
+  - [Verifying the deployed proxy contract](/guides/dapis/subscribing-self-funded-dapis/#_3c-verifying-the-deployed-proxy-contract) <br/>
+
 
 ## 1. Exploring and selecting your data feed
 
