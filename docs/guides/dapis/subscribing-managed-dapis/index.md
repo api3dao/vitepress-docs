@@ -58,7 +58,7 @@ information about the dAPI.
 Once you have selected your dAPI, you will then be presented with an option to
 choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
 
-<img src="src/1.png" style="width:60%"/>
+<img src="../../assets/images/managed_1.png" style="width:60%"/>
 
 Managed dAPIs gives you an option to configure the dAPI's
 [devation threshold](/reference/dapis/understand/deviations) and
@@ -86,14 +86,14 @@ presented with a summary of your order. If you have multiple dAPIs in your cart,
 you'll have to pay for them individually. If you are happy with the order,
 select **Proceed to Payment**.
 
-<img src="src/2.png" style="width:60%"/>
+<img src="../../assets/images/managed_2.png" style="width:60%"/>
 
 This will take you to the payment page where you can place the order for the
 selected feed/s. You can see the order summary and the total price. If you are
 happy with the order, select **Connect Wallet**, and confirm the transaction on
 MetaMask.
 
-<img src="src/3.png" />
+<img src="../../assets/images/managed_3.png" />
 
 Once the transaction is confirmed, you will be presented with a confirmation
 page. You can also view the order details and status on the
