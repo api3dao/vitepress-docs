@@ -46,6 +46,17 @@ Below are examples of each strategy.
   "gasPriceStrategy": "providerRecommendedGasPrice",
   "recommendedGasPriceMultiplier": 1.2
 }
+// sanitizedProviderRecommendedGasPrice
+{
+  "gasPriceStrategy": "sanitizedProviderRecommendedGasPrice",
+  "recommendedGasPriceMultiplier": 1.2,
+  "baseFeeMultiplier": 2,
+  "baseFeeMultiplierThreshold": 5,
+  "priorityFee": {
+    "value": 3.12,
+    "unit": "gwei",
+  },
+}
 // providerRecommendedEip1559GasPrice
 {
   "gasPriceStrategy": "providerRecommendedEip1559GasPrice",
@@ -132,6 +143,54 @@ to`type 0` and a `gasPrice` value.
 (required) - A number with a maximum of two decimals that gets multiplied by the
 provider reported gas price. The resulting Gas Price will equal
 `Gas Price * providerRecommendedGasPrice`.
+
+## sanitizedProviderRecommendedGasPrice
+
+The `sanitizedProviderRecommendedGasPrice` strategy builds upon `providerRecommendedGasPrice` strategy by leveraging Base Fee reported in block header also ensuring that the gas price remains reasonable and capped based on specified parameters when necessary. The strategy calculates the gas estimation by using the `providerRecommendedGasPrice`. It then compares this value to the Base Fee multiplied by the baseFeeMultiplierThreshold. If the multiplied gas estimation exceeds the threshold, it multiplies the Base Fee with the baseFeeMultiplier, adds the priorityFee, and returns this value. Otherwise, it returns the value from the `providerRecommendedGasPrice` strategy. Similar to the former, it sets the transaction to`type 0` and a `gasPrice` value.
+
+```json
+{
+  "gasPriceStrategy": "sanitizedProviderRecommendedGasPrice",
+  "recommendedGasPriceMultiplier": 1.2,
+  "baseFeeMultiplierThreshold": 5,
+  "baseFeeMultiplier": 2,
+  "priorityFee": {
+    "value": 3.12,
+    "unit": "gwei"
+  }
+}
+```
+
+### `recommendedGasPriceMultiplier`
+
+(required) - A number with a maximum of two decimals that gets multiplied by the
+provider reported gas price. This value will be passed to parent strategy `providerRecommendedGasPrice`.
+
+### `baseFeeMultiplierThreshold`
+
+(required) - A threshold value used to determine whether the strategy should sanitize the gas estimation from the `providerRecommendedGasPrice` strategy.
+
+### `baseFeeMultiplier`
+
+(required) - Number multiplied by the Base Fee. The resulting sanitized gas price will equal
+`(Base Fee * baseFeeMultiplier) + priorityFee`.
+
+### `priorityFee`
+
+(required) - An object that configures Priority Fee.
+
+  <div style="margin-left:32px;">
+
+#### `priorityFee.value`
+
+(required) - A number specifying priority fee value.
+
+#### `priorityFee.unit`
+
+(required) - The unit of the priority fee value. It can be one of the following:
+(wei, kwei, mwei, gwei, szabo, finney, ether).
+
+  </div>
 
 ## providerRecommendedEip1559GasPrice
 
