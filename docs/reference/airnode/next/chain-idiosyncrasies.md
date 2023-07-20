@@ -51,11 +51,6 @@ gas limit automatically. Read more about
 [ArbGas<ExternalLinkImage/>](https://developer.offchainlabs.com/docs/arbgas) gas
 and fees.
 
-<!-- ADD BACK FOR v0.12 -->
-<!--Note that `fulfillmentGasLimit` is optional, so if
-you prefer not to specify it, Airnode will attempt to estimate the appropriate
-gas limit automatically.-->
-
 ### Metis
 
 On the Metis testnet Stardust, though not on the Metis mainnet Andromeda, it is
@@ -63,9 +58,6 @@ recommended to use a `fulfillmentGasLimit` of at least `5000000`. If you prefer
 not to specify it, Airnode will attempt to estimate the appropriate gas limit
 automatically.
 
-<!-- ADD BACK FOR v0.12 -->
-<!--If unspecified, Airnode will attempt to estimate the appropriate gas limit
-automatically.-->
 
 ### Optimism
 
