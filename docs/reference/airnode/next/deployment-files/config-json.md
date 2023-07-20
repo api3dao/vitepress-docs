@@ -224,20 +224,11 @@ for some considerations.
 
 #### `options.fulfillmentGasLimit`
 
-(required) - The maximum gas limit allowed when Airnode responds to a request,
-paid by the requester. If exceeded, the request is marked as failed and will not
-be repeated during Airnode's next run cycle.
-
-<!-- CHANGE FOR v0.12 -->
-<!--
-The above paragraph becomes as follow:
-
 (optional) - The maximum gas limit allowed when Airnode responds to a request,
 paid by the requester. If specified, this value will be used as the gas limit
 for the fulfillment. Note that if the gas cost exceeds the limit given, the
 request will be marked as failed and will not be retried during the next cycle.
 If not specified, Airnode will attempt to estimate the gas limit automatically.
--->
 
 #### `options.withdrawalRemainder`
 
@@ -284,10 +275,7 @@ in Concepts and Definitions for a better understanding of gas strategies.
 - [providerRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedgasprice)
   - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
     two decimals that gets multiplied by the provider reported gas price. The
-    resulting Gas Price will equal `Gas Price * providerRecommendedGasPrice`. If
-    the calculated `providerRecommendedGasPrice` exceeds `baseFee * 5`, we use
-    `baseFee * 2 + 3` as the gas price. Otherwise, we continue using
-    `providerRecommendedGasPrice` as usual.
+    resulting Gas Price will equal `Gas Price * providerRecommendedGasPrice`.
 - [providerRecommendedEip1559GasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee to
     yield the Maximum Fee for EIP-1559 transactions. Defaults to: `2`. The
