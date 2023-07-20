@@ -45,9 +45,9 @@ manifests as the `maxFeePerGas` being set to less than the block
 Execution costs on Arbitrum are calculated slightly differently than Ethereum,
 which impacts the gas required to fulfill requests. To account for this, it is
 recommended to use a minimum value of `5000000` for `fulfillmentGasLimit` when
-using both Arbitrum mainnet and testnet. Note that `fulfillmentGasLimit` is optional,
-so if it is not specified, Airnode will attempt to estimate the appropriate
-gas limit automatically. Read more about
+using both Arbitrum mainnet and testnet. Note that `fulfillmentGasLimit` is
+optional, so if it is not specified, Airnode will attempt to estimate the
+appropriate gas limit automatically. Read more about
 [ArbGas<ExternalLinkImage/>](https://developer.offchainlabs.com/docs/arbgas) gas
 and fees.
 
@@ -55,8 +55,8 @@ and fees.
 
 On the Metis testnet Stardust, though not on the Metis mainnet Andromeda, it is
 recommended to use a `fulfillmentGasLimit` of at least `5000000`. Note that
-`fulfillmentGasLimit` is optional, so if it is not specified, Airnode will attempt
-to estimate the appropriate gas limit automatically.
+`fulfillmentGasLimit` is optional, so if it is not specified, Airnode will
+attempt to estimate the appropriate gas limit automatically.
 
 ### Optimism
 
