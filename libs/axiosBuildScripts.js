@@ -47,7 +47,7 @@ async function airnodeContractAddresses(contractName, url, path) {
       } else if (!c) {
         const fullname = getChainInfo(key); //chainsRef[key].fullname;
         console.log(
-          `   chainId: ${key} (${fullname}) was not found and has been omitted.`
+          `   airnodeContractAddresses(): chainId: ${key} (${fullname}) was not found in API3/chains and has been omitted.`
         );
         return;
       }
