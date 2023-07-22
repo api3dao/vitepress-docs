@@ -61,6 +61,22 @@ source code of Airnode to understand how processing works and what modules are
 made available to the snippet code. Modules cannot be imported directly in cloud
 environments.
 
+## Accessing endpoint parameters
+
+Endpoint parameters, with the exception of reserved parameters, are accessible
+within pre-processing and post-processing via the immutable `endpointParameters`
+object. For example, if there was a parameter named `myParameter` defined in the
+`endpoints[n].parameters` array, its value could be accessed using
+`endpointParameters.myParameter` within pre-processing and post-processing code
+snippets.
+
+::: info Accessing reserved parameters
+
+Note that reserved parameters are inaccessible in both pre-processing and
+post-processing.
+
+:::
+
 ## Interpolation
 
 Note, that config.json supports interpolation of secrets via the JavaScript
