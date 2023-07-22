@@ -30,7 +30,9 @@ signed data. The gas costs for self-funded dAPIs are managed by the users
 themselves. As long as the sponsor wallet of the dAPI has enough gas, it will be
 updated.
 
-Self-funded dAPIs also use the same [`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1) contract to store and update datafeed values.
+Self-funded dAPIs also use the same
+[`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
+contract to store and update datafeed values.
 
 A dAPI Name is a human readable name that represents a `beaconId`.
 
@@ -76,6 +78,7 @@ building high-impact oracle services. They currently operate 139 crypto, forex,
 stock and commodity asset price data feeds each on 24 chains, adding up to a
 total 3336 unique data feeds.
 
-See the guide [Subscribing to Self-funded dAPIs]() and learn more on how to access Self-funded dAPIs.
+See the guide [Subscribing to Self-funded dAPIs]() and learn more on how to
+access Self-funded dAPIs.
 
 <FlexEndTag/>
