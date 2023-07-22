@@ -30,6 +30,10 @@ signed data. The gas costs for self-funded dAPIs are managed by the users
 themselves. As long as the sponsor wallet of the dAPI has enough gas, it will be
 updated.
 
+Self-funded dAPIs also use the same [`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1) contract to store and update datafeed values.
+
+A dAPI Name is a human readable name that represents a `beaconId`.
+
 A `beaconId` for each dAPI is derived from the hash of the provider's Airnode's
 address, Template ID and encoded parameters of the dAPI.
 
@@ -45,7 +49,7 @@ gas costs of updating the beacon. The Sponsor wallet is derived from the
 Like [Airnode](), [Airseeker<ExternalLinkImage/>]() is a serverless lambda
 function that is responsible for updating the values of each `beaconId` for each
 dAPI. It is used to update the beacons with signed responses from
-[Airnode's http gateway]().
+[Airnode's HTTP-Gateway]().
 
 Airseeker uses Airnode's built-in HTTP-Gateway to receive signed data and push
 it on-chain in a tamper proof way.
@@ -59,17 +63,19 @@ threshold is set to 1% and the heartbeat is set to 24 hours.
 
 No aggregation services are provided for self-funded dAPIs.
 
-For Self-funded dAPIs, the data provider is running its own Airnode and
+For Self-funded dAPIs, A single data provider is running its own Airnode and
 Airseeker and the dAPIs are pointed to it's own `beaconIds`. Anyone who decides
-to fund a self-funded dAPI will be funding the the Nodary's underlying
-`beaconId` and their wallet that the dAPI is pointed towards.
+to fund a self-funded dAPI will be funding the the data provider's underlying
+`beaconId` and their wallet that the dAPI is mapped towards.
 
 ## Provider for Self-funded dAPIs
 
 Currently, for self-funded dAPIs, [Nodary<ExternalLinkImage/>]() is the data
-provider. Nodary is an independent group within the API3 ecosystem that are
+provider. Nodary is an independent group within the API3 Ecosystem that are
 building high-impact oracle services. They currently operate 139 crypto, forex,
 stock and commodity asset price data feeds each on 24 chains, adding up to a
 total 3336 unique data feeds.
+
+See the guide [Subscribing to Self-funded dAPIs]() and learn more on how to access Self-funded dAPIs.
 
 <FlexEndTag/>
