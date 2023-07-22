@@ -8,6 +8,14 @@ module.exports = [
         link: '/reference/dapis/understand/',
       },
       {
+        text: 'Managed dAPIs',
+        link: '/reference/dapis/understand/managed',
+      },
+      {
+        text: 'Self-funded dAPIs',
+        link: '/reference/dapis/understand/self-funded',
+      },
+      {
         text: 'Reading dAPIs',
         link: '/reference/dapis/understand/read-dapis',
       },
