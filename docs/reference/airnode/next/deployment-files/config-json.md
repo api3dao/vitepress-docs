@@ -294,8 +294,8 @@ in Concepts and Definitions for a better understanding of gas strategies.
     `providerRecommendedGasPrice` strategy.
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee. The
     resulting sanitized gas price will equal `(Base Fee * baseFeeMultiplier) + priorityFee`.
-  - `priorityFee`:<br/>(required) - An object that configures Priority Fee.
-    - `priorityFee.value`<br/>(required) - A number specifying priority fee value.
+  - `priorityFee`:<br/>(required) - An object that configures the Priority Fee.
+    - `priorityFee.value`<br/>(required) - A number specifying the priority fee value.
     - `priorityFee.unit`<br/>(required) - The unit of the priority fee value. It
       can be one of the following: (wei, kwei, mwei, gwei, szabo, finney,
       ether).

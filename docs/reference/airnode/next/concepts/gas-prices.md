@@ -27,6 +27,7 @@ The supported strategies include:
 
 - [latestBlockPercentileGasPrice](/reference/airnode/next/concepts/gas-prices.md#latestblockpercentilegasprice)
 - [providerRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedgasprice)
+- [sanitizedProviderRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
 - [providerRecommendedEip1559GasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
 - [constantGasPrice](/reference/airnode/next/concepts/gas-prices.md#constantgasprice)
 
@@ -146,7 +147,7 @@ provider reported gas price. The resulting Gas Price will equal
 
 ## sanitizedProviderRecommendedGasPrice
 
-The `sanitizedProviderRecommendedGasPrice` strategy builds upon `providerRecommendedGasPrice` strategy by leveraging Base Fee reported in block header also ensuring that the gas price remains reasonable and capped based on specified parameters when necessary. The strategy calculates the gas estimation by using the `providerRecommendedGasPrice`. It then compares this value to the Base Fee multiplied by the baseFeeMultiplierThreshold. If the multiplied gas estimation exceeds the threshold, it multiplies the Base Fee with the baseFeeMultiplier, adds the priorityFee, and returns this value. Otherwise, it returns the value from the `providerRecommendedGasPrice` strategy. Similar to the former, it sets the transaction to`type 0` and a `gasPrice` value.
+The `sanitizedProviderRecommendedGasPrice` strategy builds upon the `providerRecommendedGasPrice` strategy to ensure that the gas price remains reasonable and capped based on specified parameters. The strategy estimates gas by first determining the `providerRecommendedGasPrice`. It then compares this value, multiplied by `recommendedGasPriceMultiplier`, to the Base Fee reported in block headers multiplied by the `baseFeeMultiplierThreshold`. If the former is greater than the latter, it multiplies the Base Fee with the `baseFeeMultiplier`, adds the `priorityFee`, and returns this value. Otherwise, it returns the value from the `providerRecommendedGasPrice` strategy. Similar to the former, it sets the transaction to `type 0` and a `gasPrice` value.
 
 ```json
 {
@@ -177,13 +178,13 @@ provider reported gas price. This value will be passed to parent strategy `provi
 
 ### `priorityFee`
 
-(required) - An object that configures Priority Fee.
+(required) - An object that configures the Priority Fee.
 
   <div style="margin-left:32px;">
 
 #### `priorityFee.value`
 
-(required) - A number specifying priority fee value.
+(required) - A number specifying the priority fee value.
 
 #### `priorityFee.unit`
 
