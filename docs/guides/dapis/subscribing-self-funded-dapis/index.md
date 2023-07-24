@@ -176,6 +176,6 @@ confirmed on the blockchain, the proxy contract address will be shown on the UI.
 <img src="../../assets/images/dapi-proxy-confirmation2.png" style="width:60%"/>
 
 To get started with using the dAPI, you can follow the
-[Reading a dAPI Proxy guide](/guides/dapis/read-self-funded-dapi/).
+[Reading a dAPI Proxy guide](/guides/dapis/read-a-dapi/).
 
 <FlexEndTag/>

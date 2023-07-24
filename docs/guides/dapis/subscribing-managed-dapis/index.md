@@ -52,8 +52,9 @@ end-to-end process consists of:
 The [API3 Market<ExternalLinkImage/>](market.api3.org/) provides a list of all
 the dAPIs available across multiple chains including testnets. You can filter
 the list by chains and data providers. You can also search for a specific dAPI
-by name. Once selected you will land on the details page where you can find more
-information about the dAPI.
+by name. Once selected, you will land on the details page
+[(eg ETH/USD on polygon)<ExternalLinkImage/>](https://market.api3.org/dapis/polygon/ETH-USD)
+where you can find more information about the dAPI.
 
 Once you have selected your dAPI, you will then be presented with an option to
 choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
@@ -76,22 +77,21 @@ _[Click here](/reference/dapis/understand/deviations.html#update-interval) to
 read more if you are unsure what suits your dApp_
 
 Check the final price and time frame for the selected configuration. If you are
-happy with the it, select **Add to Cart**. You can also add other dAPIs on the
-same nework to your cart.
+happy with it, select **Add to Cart**. You can also add other dAPIs on the same
+nework to your cart.
 
 ## Placing an order for a Managed dAPI Service
 
 Once you have added all the dAPIs, you can proceed to checkout. You will be
 presented with a summary of your order. If you have multiple dAPIs in your cart,
-you'll have to pay for them individually. If you are happy with the order,
-select **Proceed to Payment**.
+you'll have to pay for them individually. To proceed with the order, select
+**Proceed to Payment**.
 
 <img src="../../assets/images/managed_2.png" style="width:60%"/>
 
 This will take you to the payment page where you can place the order for the
-selected feed/s. You can see the order summary and the total price. If you are
-happy with the order, select **Connect Wallet**, and confirm the transaction on
-MetaMask.
+selected feeds. You can see the order summary and the total price. If it looks
+fine, select **Connect Wallet**, and confirm the transaction on MetaMask.
 
 <img src="../../assets/images/managed_3.png" />
 
@@ -116,6 +116,6 @@ the dAPI.
 :::
 
 To get started with using the dAPI, you can follow the
-[Reading a dAPI Proxy guide](/guides/dapis/read-self-funded-dapi/).
+[Reading a dAPI Proxy guide](/guides/dapis/read-a-dapi/).
 
 <FlexEndTag/>
