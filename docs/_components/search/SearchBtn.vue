@@ -29,13 +29,12 @@
         <br />
         <!-- HIDE checkbox until Airnode v0.12 deploys -->
         <input
-          v-if="1 === 8"
           type="checkbox"
           @change="handleCheckboxChange(event)"
           class="api3-search-checkbox"
           id="indexCheckbox"
-        /><span v-if="1 === 8" style="margin-left: 10px; font-size: small"
-          >Include all Airnode/OIS versions</span
+        /><span style="margin-left: 10px; font-size: small"
+          >Include older Airnode/OIS versions</span
         >
       </form>
       <SearchResults v-if="isIndexLoaded" :found="found" :results="results" />
