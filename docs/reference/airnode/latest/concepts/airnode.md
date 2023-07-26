@@ -2,9 +2,9 @@
 title: Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/airnode.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -48,7 +48,7 @@ AirnodeRrpV0 protocol is designed to be flexible and is meant to serve a variety
 of use cases. See the the
 [Calling Airnode (RRP)](/reference/airnode/latest/developers/index.md) for more
 details on how an RRP request is made. Also see the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
+[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples/contracts)
 for potential design patterns.
 
 <!--Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")

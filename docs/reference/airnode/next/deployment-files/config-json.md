@@ -2,7 +2,7 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files
+pageHeader: Reference → Airnode → v0.13 → Deployment Files
 path: /reference/airnode/next/deployment-files/config-json.html
 version: v0.12
 outline: deep
@@ -284,9 +284,11 @@ in Concepts and Definitions for a better understanding of gas strategies.
     determine whether the strategy should sanitize the gas estimation from the
     `providerRecommendedGasPrice` strategy.
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee. The
-    resulting sanitized gas price will equal `(Base Fee * baseFeeMultiplier) + priorityFee`.
+    resulting sanitized gas price will equal
+    `(Base Fee * baseFeeMultiplier) + priorityFee`.
   - `priorityFee`:<br/>(required) - An object that configures the Priority Fee.
-    - `priorityFee.value`<br/>(required) - A number specifying the priority fee value.
+    - `priorityFee.value`<br/>(required) - A number specifying the priority fee
+      value.
     - `priorityFee.unit`<br/>(required) - The unit of the priority fee value. It
       can be one of the following: (wei, kwei, mwei, gwei, szabo, finney,
       ether).

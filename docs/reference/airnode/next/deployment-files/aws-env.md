@@ -2,7 +2,7 @@
 title: aws.env
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files
+pageHeader: Reference → Airnode → v0.13 → Deployment Files
 path: /reference/airnode/next/deployment-files/aws-env.html
 version: v0.12
 outline: deep

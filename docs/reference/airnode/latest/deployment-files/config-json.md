@@ -2,9 +2,9 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Deployment Files
+pageHeader: Reference → Airnode → v0.12 → Deployment Files
 path: /reference/airnode/latest/deployment-files/config-json.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -187,11 +187,12 @@ cycle off-chain. Nothing in `authorizers` can supersede permissions granted by
 
 ### `contracts`
 
-(required) - An object that keeps the addresses of the protocol contracts
-deployed on the respective chain. It must include the `AirnodeRrp` contract
-address. Although you can deploy these contracts yourself, it is recommended to
-use the ones that were deployed by API3 listed
-[here](/reference/airnode/latest/).
+(conditionally optional) - An object that keeps the addresses of the protocol
+contracts deployed on the respective chain. Currently this object has one member
+field corresponding to the `AirnodeRrp` contract address. The `contracts` object
+may be omitted if there is an existing API3 `AirnodeRrpV0` deployment for the
+respective chain, in which case Airnode will default to using this address. A
+full listing of deployments can be found [here](/reference/airnode/latest/).
 
 ### `id`
 
@@ -223,9 +224,11 @@ for some considerations.
 
 #### `options.fulfillmentGasLimit`
 
-(required) - The maximum gas limit allowed when Airnode responds to a request,
-paid by the requester. If exceeded, the request is marked as failed and will not
-be repeated during Airnode's next run cycle.
+(optional) - The maximum gas limit allowed when Airnode responds to a request,
+paid by the requester. If specified, this value will be used as the gas limit
+for the fulfillment. Note that if the gas cost exceeds the limit given, the
+request will be marked as failed and will not be retried during the next cycle.
+If not specified, Airnode will attempt to estimate the gas limit automatically.
 
 #### `options.withdrawalRemainder`
 
@@ -273,6 +276,22 @@ in Concepts and Definitions for a better understanding of gas strategies.
   - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
     two decimals that gets multiplied by the provider reported gas price. The
     resulting Gas Price will equal `Gas Price * providerRecommendedGasPrice`.
+- [sanitizedProviderRecommendedGasPrice](/reference/airnode/latest/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
+  - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
+    two decimals that gets multiplied by the provider reported gas price. This
+    value will be passed to parent strategy `providerRecommendedGasPrice`.
+  - `baseFeeMultiplierThreshold`<br/>(required) - A threshold value used to
+    determine whether the strategy should sanitize the gas estimation from the
+    `providerRecommendedGasPrice` strategy.
+  - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee. The
+    resulting sanitized gas price will equal
+    `(Base Fee * baseFeeMultiplier) + priorityFee`.
+  - `priorityFee`:<br/>(required) - An object that configures the Priority Fee.
+    - `priorityFee.value`<br/>(required) - A number specifying the priority fee
+      value.
+    - `priorityFee.unit`<br/>(required) - The unit of the priority fee value. It
+      can be one of the following: (wei, kwei, mwei, gwei, szabo, finney,
+      ether).
 - [providerRecommendedEip1559GasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee to
     yield the Maximum Fee for EIP-1559 transactions. Defaults to: `2`. The
@@ -328,7 +347,7 @@ An object containing general deployment parameters of an Airnode.
 ```json
 // nodeSettings
 {
-  "nodeVersion": "0.11.2",
+  "nodeVersion": "0.11.0",
   "cloudProvider": {
     "type": "gcp",
     "region": "us-east1",
@@ -600,7 +619,7 @@ as the
 will call the specified endpoint (`myOisTitle`-`myEndpointName`) with the
 parameters provided in the request to fulfill it. See the
 [endpointId documentation](/reference/airnode/latest/concepts/endpoint.md#endpointid)
-for the default convention for deriving the `endpointId`.
+for `endpointId` derivation instructions.
 
 ### `rrp`
 

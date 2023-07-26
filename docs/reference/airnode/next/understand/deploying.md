@@ -2,7 +2,7 @@
 title: Deploying Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
 path: /reference/airnode/next/understand/deploying.html
 version: v0.12
 outline: deep
@@ -30,14 +30,14 @@ next step is to deploy the Airnode.
 The recommended way to deploy Airnode is by using the Docker
 [deployer image](/reference/airnode/next/docker/deployer-image.md). This image
 is simply a wrapper around the
-[deployer CLI](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer).
+[deployer CLI](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer).
 Try the
 [Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/)
 tutorial if you wish to become familiar with the deployer image first. There are
 also tutorials for [GCP](/guides/airnode/deploy-airnode/deploy-gcp/) and a
 [client Docker container](/guides/airnode/deploy-airnode/deploy-container/) as
 well as several repo based examples in the
-[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.11.0/packages/airnode-examples)
+[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.12.0/packages/airnode-examples)
 package.
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,

@@ -2,7 +2,7 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files → Templates
+pageHeader: Reference → Airnode → v0.13 → Deployment Files → Templates
 path: /reference/airnode/next/deployment-files/templates/config-json.html
 version: v0.12
 outline: deep

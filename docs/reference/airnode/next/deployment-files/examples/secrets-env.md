@@ -2,7 +2,7 @@
 title: secrets.env
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files → Examples
+pageHeader: Reference → Airnode → v0.13 → Deployment Files → Examples
 path: /reference/airnode/next/deployment-files/examples/secrets-env.html
 version: v0.12
 outline: deep

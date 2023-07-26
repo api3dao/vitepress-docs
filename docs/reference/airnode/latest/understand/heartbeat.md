@@ -2,9 +2,9 @@
 title: Heartbeat (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
 path: /reference/airnode/latest/understand/heartbeat.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -68,7 +68,7 @@ Turn on the optional heartbeat functionality by setting all fields in the
        },
       "logFormat": "json",
       "logLevel": "INFO",
-      "nodeVersion": "0.11.2",
+      "nodeVersion": "0.11.0",
       "stage": "testnet",
   }
 }

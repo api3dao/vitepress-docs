@@ -70,6 +70,7 @@ export default {
       '/guides/': require('../guides/sidebar.js'),
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/airnode/next/': require('../reference/airnode/next/sidebar.js'),
+      '/reference/airnode/v0.11/': require('../reference/airnode/v0.11/sidebar.js'),
       '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
       '/reference/ois/next/': require('../reference/ois/next/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),

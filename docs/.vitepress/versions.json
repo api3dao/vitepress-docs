@@ -1,16 +1,21 @@
 {
-  "airnodeNext": "v0.12",
-  "airnodeLatest": "v0.11",
+  "airnodeNext": "v0.13",
+  "airnodeLatest": "v0.12",
   "versionsAirnode": [
     {
-      "version": "v0.12",
+      "version": "v0.13",
       "alias": "next",
       "path": "/reference/airnode/next/"
     },
     {
-      "version": "v0.11",
+      "version": "v0.12",
       "alias": "latest",
       "path": "/reference/airnode/latest/"
+    },
+    {
+      "version": "v0.11",
+      "alias": "latest",
+      "path": "/reference/airnode/v0.11/"
     }
   ],
   "oisLatest": "v2.0",
