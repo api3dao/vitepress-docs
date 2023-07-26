@@ -2,9 +2,9 @@
 title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.1
+pageHeader: Reference → OIS → v2.2
 path: /reference/ois/next/versions.html
-version: v2.1
+version: v2.2
 outline: deep
 tags:
 ---
@@ -24,6 +24,7 @@ deploying.
 
 | Airnode version     | Latest compatible OIS version                                    |
 | ------------------- | ---------------------------------------------------------------- |
+| 0.12.0              | 2.1.0                                                            |
 | 0.11.2              | 2.1.0                                                            |
 | 0.11.0 and 0.11.1   | 2.0.0                                                            |
 | 0.10.x              | [1.4.0<ExternalLinkImage/>](https://old-docs.api3.org/ois/v1.4/) |

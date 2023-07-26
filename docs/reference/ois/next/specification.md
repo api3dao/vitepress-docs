@@ -2,9 +2,9 @@
 title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.1
+pageHeader: Reference → OIS → v2.2
 path: /reference/ois/next/specification.html
-version: v2.1
+version: v2.2
 outline: deep
 tags:
 ---
@@ -63,7 +63,7 @@ An OIS has five root fields (keys).
 
 ```json
 {
-  "oisFormat": "2.0.0",
+  "oisFormat": "2.2.0",
   "title": "myOisTitle",
   "version": "1.2.3",
   "apiSpecifications": {

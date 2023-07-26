@@ -22,11 +22,6 @@ module.exports = [
         text: 'OIS Template',
         link: '/reference/ois/latest/template',
       },
-      /*
-      '/reference/ois/latest/processing.md',
-      '/reference/ois/latest/example.md',
-      '/reference/ois/latest/ois-template.md',
-      */
     ],
   },
 ];

@@ -4,7 +4,7 @@ sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Deployment Files → Examples
 path: /reference/airnode/next/deployment-files/examples/config-json.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---

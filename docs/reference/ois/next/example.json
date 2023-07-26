@@ -1,6 +1,6 @@
 [
   {
-    "oisFormat": "2.0.0",
+    "oisFormat": "2.2.0",
     "title": "CoinGecko basic request",
     "version": "1.2.3",
     "apiSpecifications": {

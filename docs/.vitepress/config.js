@@ -73,6 +73,7 @@ export default {
       '/reference/airnode/v0.11/': require('../reference/airnode/v0.11/sidebar.js'),
       '/reference/ois/latest/': require('../reference/ois/latest/sidebar.js'),
       '/reference/ois/next/': require('../reference/ois/next/sidebar.js'),
+      '/reference/ois/2.0/': require('../reference/ois/2.0/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
       '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),

@@ -4,7 +4,7 @@ sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
 path: /reference/airnode/next/concepts/chain-providers.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
