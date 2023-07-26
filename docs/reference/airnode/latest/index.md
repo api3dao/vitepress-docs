@@ -2,9 +2,9 @@
 title: Contract Addresses
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11
+pageHeader: Reference → Airnode → v0.12
 path: /reference/airnode/latest/index.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -26,9 +26,9 @@ are deployed, but feel free to
 requesting a new deployment.
 
 The contract addresses listed below are sourced from the Airnode monorepo
-[airnode-protocol<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-protocol)
+[airnode-protocol<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-protocol)
 and can be found in its
-[deployments<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-protocol/deployments)
+[deployments<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-protocol/deployments)
 directory.
 
 ## AirnodeRrpV0

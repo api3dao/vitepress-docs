@@ -2,9 +2,9 @@
 title: Migration Guide
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12
+pageHeader: Reference → Airnode → v0.13
 path: /reference/airnode/next/migration.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -66,8 +66,9 @@ Updated to "0.12.0"
 3. `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` addresses are now optional
    if there is an API3 deployment for that contract on the specified chain. A
    table of such deployments can be found on the
-   [Contract Addresses](./index.md) page. The following illustrates how the
-   addresses can be omitted. First, within the `chains[n]` object:
+   [Contract Addresses](/reference/airnode/next/index.md) page. The following
+   illustrates how the addresses can be omitted. First, within the `chains[n]`
+   object:
 
 ```diff
 {

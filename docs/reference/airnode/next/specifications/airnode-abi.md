@@ -2,9 +2,9 @@
 title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Specifications
+pageHeader: Reference → Airnode → v0.13 → Specifications
 path: /reference/airnode/next/specifications/airnode-abi.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -262,9 +262,9 @@ See the package doc
 [airnode-abi](/reference/airnode/next/packages/airnode-abi.md) for more
 information on how to encode and decode with Airnode ABI off-chain. Also see
 code samples in the
-[examples<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples)
+[examples<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples)
 package. Lastly see the file
-[request-utils.ts<ExternalLinkImage />](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-examples/integrations/coingecko/request-utils.ts#L9)
+[request-utils.ts<ExternalLinkImage />](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-examples/integrations/coingecko/request-utils.ts#L9)
 for example syntax on encoding parameters.
 
 <FlexEndTag/>

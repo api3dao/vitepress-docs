@@ -2,9 +2,9 @@
 title: Requester
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
 path: /reference/airnode/next/concepts/requester.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -33,6 +33,6 @@ may specify the request such that the request is fulfilled by the Airnode
 calling back another contract.
 
 See the
-[Airnode requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts).
+[Airnode requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples/contracts).
 
 <FlexEndTag/>

@@ -1,29 +1,40 @@
 {
-  "airnodeNext": "v0.12",
-  "airnodeLatest": "v0.11",
+  "airnodeNext": "v0.13",
+  "airnodeLatest": "v0.12",
   "versionsAirnode": [
     {
-      "version": "v0.12",
+      "version": "v0.13",
       "alias": "next",
       "path": "/reference/airnode/next/"
     },
     {
-      "version": "v0.11",
+      "version": "v0.12",
       "alias": "latest",
       "path": "/reference/airnode/latest/"
+    },
+    {
+      "version": "v0.11",
+      "alias": "latest",
+      "path": "/reference/airnode/v0.11/"
     }
   ],
-  "oisLatest": "v2.0",
+  "oisNext": "v2.2",
+  "oisLatest": "v2.1",
   "versionsOIS": [
+    {
+      "version": "v2.2",
+      "alias": "next",
+      "path": "/reference/ois/next/"
+    },
     {
       "version": "v2.1",
       "alias": "latest",
-      "path": "/reference/ois/next/"
+      "path": "/reference/ois/latest/"
     },
     {
       "version": "v2.0",
       "alias": "latest",
-      "path": "/reference/ois/latest/"
+      "path": "/reference/ois/2.0/"
     }
   ]
 }

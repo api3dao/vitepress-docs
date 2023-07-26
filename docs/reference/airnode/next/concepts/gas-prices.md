@@ -2,9 +2,9 @@
 title: Gas Price Strategies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
 path: /reference/airnode/next/concepts/gas-prices.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -147,7 +147,16 @@ provider reported gas price. The resulting Gas Price will equal
 
 ## sanitizedProviderRecommendedGasPrice
 
-The `sanitizedProviderRecommendedGasPrice` strategy builds upon the `providerRecommendedGasPrice` strategy to ensure that the gas price remains reasonable and capped based on specified parameters. The strategy estimates gas by first determining the `providerRecommendedGasPrice`. It then compares this value, multiplied by `recommendedGasPriceMultiplier`, to the Base Fee reported in block headers multiplied by the `baseFeeMultiplierThreshold`. If the former is greater than the latter, it multiplies the Base Fee with the `baseFeeMultiplier`, adds the `priorityFee`, and returns this value. Otherwise, it returns the value from the `providerRecommendedGasPrice` strategy. Similar to the former, it sets the transaction to `type 0` and a `gasPrice` value.
+The `sanitizedProviderRecommendedGasPrice` strategy builds upon the
+`providerRecommendedGasPrice` strategy to ensure that the gas price remains
+reasonable and capped based on specified parameters. The strategy estimates gas
+by first determining the `providerRecommendedGasPrice`. It then compares this
+value, multiplied by `recommendedGasPriceMultiplier`, to the Base Fee reported
+in block headers multiplied by the `baseFeeMultiplierThreshold`. If the former
+is greater than the latter, it multiplies the Base Fee with the
+`baseFeeMultiplier`, adds the `priorityFee`, and returns this value. Otherwise,
+it returns the value from the `providerRecommendedGasPrice` strategy. Similar to
+the former, it sets the transaction to `type 0` and a `gasPrice` value.
 
 ```json
 {
@@ -165,16 +174,18 @@ The `sanitizedProviderRecommendedGasPrice` strategy builds upon the `providerRec
 ### `recommendedGasPriceMultiplier`
 
 (required) - A number with a maximum of two decimals that gets multiplied by the
-provider reported gas price. This value will be passed to parent strategy `providerRecommendedGasPrice`.
+provider reported gas price. This value will be passed to parent strategy
+`providerRecommendedGasPrice`.
 
 ### `baseFeeMultiplierThreshold`
 
-(required) - A threshold value used to determine whether the strategy should sanitize the gas estimation from the `providerRecommendedGasPrice` strategy.
+(required) - A threshold value used to determine whether the strategy should
+sanitize the gas estimation from the `providerRecommendedGasPrice` strategy.
 
 ### `baseFeeMultiplier`
 
-(required) - Number multiplied by the Base Fee. The resulting sanitized gas price will equal
-`(Base Fee * baseFeeMultiplier) + priorityFee`.
+(required) - Number multiplied by the Base Fee. The resulting sanitized gas
+price will equal `(Base Fee * baseFeeMultiplier) + priorityFee`.
 
 ### `priorityFee`
 

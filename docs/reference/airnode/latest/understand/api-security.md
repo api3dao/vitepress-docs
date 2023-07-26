@@ -2,9 +2,9 @@
 title: API Security
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
 path: /reference/airnode/latest/understand/api-security.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -86,7 +86,7 @@ fields:
 ```json
 "ois": [
   {
-    "oisFormat": "2.1.0",
+    "oisFormat": "2.0.0",
     "title": "Ois Title",
     "version": "1.0.0",
     "apiSpecifications": {
@@ -288,7 +288,7 @@ unlike the Airnode authentication security scheme, no values are stored in
 ```json
 "ois": [
   {
-    "oisFormat": "2.1.0",
+    "oisFormat": "2.0.0",
     "title": "Ois Title",
     "version": "1.0.0",
     "apiSpecifications": {

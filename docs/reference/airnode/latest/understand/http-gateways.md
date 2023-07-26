@@ -2,9 +2,9 @@
 title: HTTP Gateways (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
 path: /reference/airnode/latest/understand/http-gateways.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -37,6 +37,28 @@ response.
 The regular HTTP gateway is strictly for testing purposes. Using a simple tool
 like CURL you can test that endpoints in the Airnode configuration are working
 properly without accessing the blockchain.
+
+In order to facilitate testing, HTTP gateway requests have the following
+differences in handling when compared to blockchain requests or requests to the
+HTTP signed data gateway:
+
+1. Data from a request that yields a successful API call but fails response
+   processing are returned in the response. This is in contrast to the other
+   types of requests for which only an error would be returned. The intention is
+   to facilitate configuration of reserved parameters that dictate how API call
+   responses are processed. Under this scenario, the response will include:
+
+   ```json
+   {
+     "success": true,
+     "errorMessage": "string",
+     "data": data
+   }
+   ```
+
+2. Reserved parameters are inaccessible in response pre/post processing. This is
+   only relevant if reserved parameters are being _modified_ in pre/post
+   processing (advanced use case).
 
 ### HTTP Signed Data Gateway
 

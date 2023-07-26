@@ -2,9 +2,9 @@
 title: API Integration
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
 path: /reference/airnode/latest/understand/api-integration.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -91,7 +91,7 @@ json object.
 
 ```json
 {
-  "oisFormat": "2.1.0",
+  "oisFormat": "2.0.0",
   "title": "myOisTitle",
   "version": "0.1.0",
   ...
@@ -102,7 +102,7 @@ json object.
 
 A specific version of the
 [OIS Specification](/reference/ois/latest/specification.md#_1-oisformat) to be
-used. For Airnode `v0.11.2`, the proper OIS version is `2.1.0`.
+used. For Airnode `v0.12`, the proper OIS version is `2.1.0`.
 
 ### title
 
@@ -123,7 +123,7 @@ version could be `0.1.0`.
 The `apiSpecifications` field is used to describe the API and its operations.
 
 ```json
-"oisFormat": "2.1.0",
+"oisFormat": "2.0.0",
 "title": "myOisTitle",
 "version": "0.1.0",
 "apiSpecifications": {

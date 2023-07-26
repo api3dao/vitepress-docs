@@ -2,9 +2,9 @@
 title: Sponsor
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/sponsor.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -54,7 +54,7 @@ How a requester refers to the sponsor.
    the requester is sponsored, and if so, emits the request event.
 
 2. Next Airnode derives the `sponsorWallet` address using the provided
-   `sponsorAddress`, then checks if this matches the `sponsorWallet` address
+   `sponsorAddress`, then checks if this matches `sponsorWallet` address
    provided in the request. Airnode will ignore the request if the two do not
    match. This is done this way because deriving the `sponsorWallet` address
    from the `sponsorAddress` on-chain is not feasible.

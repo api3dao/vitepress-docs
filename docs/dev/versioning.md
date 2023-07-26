@@ -50,12 +50,14 @@ the process of moving `/next` into production means turning `/next` into
 
 In order to advance the versioning the following actions occur:
 
-1. rename the `/latest` folder to `vx.xx`, now an older version
-1. rename `/next` to `/latest`
-1. create a new folder `/next` as a copy of `/latest`
+1. Rename the `/latest` folder to `vx.xx`, now an older version.
+1. Rename `/next` to `/latest`.
+1. Create a new folder `/next` as a copy of `/latest` "**after**" completing the
+   updates below to the newly renamed `/latest` and `vx.xx`. Then follow the
+   below steps again for the new `/next`.
 
-Update links and other version specific content. For each folder that has been
-renamed make the following changes.
+Update links and other version specific content. For `vx.xx`, `/latest`, and
+`/next` review the following and make the following changes where needed.
 
 1. Update `themeConfig.sidebar` in `/.vitepress/config.js`
 1. Update `/.vitepress/versions.json` to reflect the latest and next versions.
@@ -68,7 +70,7 @@ renamed make the following changes.
    `/main` must be used, some may have tags unrelated to Airnode. Evaluate each
    link for changes as needed.
 1. Look for links to api3 repos that use older version such as Airnode `v0.11`
-   or OIS `v2.0`. These need to use the proper verions.
+   or OIS `v2.0`. These need to use the proper versions.
 1. For `/next` change frontmatter `pageHeader: Reference → Airnode → vx.x` to
    the proper version.
 1. `/next` will not have a repo tag created until its version is release. Use
