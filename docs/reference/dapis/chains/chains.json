@@ -26,7 +26,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "",
+    "logoPath": "https://assets-global.website-files.com/5f973c97cf5aea614f93a26c/64471068ff9a63295521f382_arbitrum-logo.png",
     "testnet": false,
     "explorerUrl": "https://nova.arbiscan.io"
   },
