@@ -2,9 +2,9 @@
 title: receipt.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files
+pageHeader: Reference → Airnode → v0.13 → Deployment Files
 path: /reference/airnode/next/deployment-files/receipt-json.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---

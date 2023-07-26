@@ -2,9 +2,9 @@
 title: API Integration
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
 path: /reference/airnode/next/understand/api-integration.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -102,7 +102,7 @@ json object.
 
 A specific version of the
 [OIS Specification](/reference/ois/latest/specification.md#_1-oisformat) to be
-used. For Airnode `v0.11.2`, the proper OIS version is `2.1.0`.
+used. For Airnode `v0.12`, the proper OIS version is `2.1.0`.
 
 ### title
 

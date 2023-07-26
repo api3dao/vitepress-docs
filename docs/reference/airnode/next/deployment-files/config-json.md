@@ -2,9 +2,9 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files
+pageHeader: Reference → Airnode → v0.13 → Deployment Files
 path: /reference/airnode/next/deployment-files/config-json.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -276,6 +276,22 @@ in Concepts and Definitions for a better understanding of gas strategies.
   - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
     two decimals that gets multiplied by the provider reported gas price. The
     resulting Gas Price will equal `Gas Price * providerRecommendedGasPrice`.
+- [sanitizedProviderRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
+  - `recommendedGasPriceMultiplier`<br/>(required) - A number with a maximum of
+    two decimals that gets multiplied by the provider reported gas price. This
+    value will be passed to parent strategy `providerRecommendedGasPrice`.
+  - `baseFeeMultiplierThreshold`<br/>(required) - A threshold value used to
+    determine whether the strategy should sanitize the gas estimation from the
+    `providerRecommendedGasPrice` strategy.
+  - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee. The
+    resulting sanitized gas price will equal
+    `(Base Fee * baseFeeMultiplier) + priorityFee`.
+  - `priorityFee`:<br/>(required) - An object that configures the Priority Fee.
+    - `priorityFee.value`<br/>(required) - A number specifying the priority fee
+      value.
+    - `priorityFee.unit`<br/>(required) - The unit of the priority fee value. It
+      can be one of the following: (wei, kwei, mwei, gwei, szabo, finney,
+      ether).
 - [providerRecommendedEip1559GasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
   - `baseFeeMultiplier`<br/>(required) - Number multiplied by the Base Fee to
     yield the Maximum Fee for EIP-1559 transactions. Defaults to: `2`. The

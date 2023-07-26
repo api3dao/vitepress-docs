@@ -2,9 +2,9 @@
 title: Pre/Post Processing
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → 2.0
+pageHeader: Reference → OIS → 2.1
 path: /reference/ois/next/processing.html
-version: v2.1
+version: v2.2
 outline: deep
 tags:
 ---
@@ -34,9 +34,9 @@ work flow Airnode uses:
 4. Airnode encodes the response values defined by reservedParameters
 
 The processing schema is the same for both
-[`preProcessingSpecifications`](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
+[`preProcessingSpecifications`](/reference/ois/next/specification.md#_5-9-preprocessingspecifications)
 and
-[`postProcessingSpecifications`](/reference/ois/latest/specification.md#_5-10-postprocessingspecifications).
+[`postProcessingSpecifications`](/reference/ois/next/specification.md#_5-10-postprocessingspecifications).
 Snippets for both specifications follow this schema:
 
 - `environment` - Currently one of `Node` or `Node async`. Both options
@@ -60,6 +60,22 @@ The processing snippet can use most Node.js built-in modules. Refer to the
 source code of Airnode to understand how processing works and what modules are
 made available to the snippet code. Modules cannot be imported directly in cloud
 environments.
+
+## Accessing endpoint parameters
+
+Endpoint parameters, with the exception of reserved parameters, are accessible
+within pre-processing and post-processing via the immutable `endpointParameters`
+object. For example, if there was a parameter named `myParameter` defined in the
+`endpoints[n].parameters` array, its value could be accessed using
+`endpointParameters.myParameter` within pre-processing and post-processing code
+snippets.
+
+::: info Accessing reserved parameters
+
+Note that reserved parameters are inaccessible in both pre-processing and
+post-processing.
+
+:::
 
 ## Interpolation
 

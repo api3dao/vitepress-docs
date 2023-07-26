@@ -2,9 +2,9 @@
 title: Adapter
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Packages
+pageHeader: Reference → Airnode → v0.13 → Packages
 path: /reference/airnode/next/packages/adapter.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-adapter<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-adapter)
+[airnode-adapter<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-adapter)
 package has multiple responsibilities. It is used for building requests from an
 [Oracle Integration Specification (OIS)](/reference/ois/latest/), executing
 them, parsing the responses, but also converting and encoding them for on chain

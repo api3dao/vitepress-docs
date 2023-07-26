@@ -2,9 +2,9 @@
 title: Airnode RRP
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Airnode for dApp Developers
+pageHeader: Reference → Airnode → v0.12 → Airnode for dApp Developers
 path: /reference/airnode/latest/developers/index.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -27,7 +27,7 @@ option for developers to access Airnode data using its request-response protocol
 [AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract facilitates RRP and is designed to be flexible and is meant to
 serve a variety of use cases. See the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
+[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples/contracts)
 for potential design patterns.
 
 ## It starts with a requester

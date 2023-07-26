@@ -2,9 +2,9 @@
 title: AWS/GCP Deployer Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Docker Images
+pageHeader: Reference → Airnode → v0.13 → Docker Images
 path: /reference/airnode/next/docker/deployer-image.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -22,7 +22,7 @@ tags:
 Use the deployer image to deploy or remove an Airnode with a cloud provider such
 as AWS. The simplest way is to use the pre-built packages. If you would rather
 build the images yourself see the
-[README](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-deployer/docker)
+[README](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer/docker)
 in the deployer package.
 
 ::: info Quick Deploy Demos

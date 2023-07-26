@@ -2,9 +2,9 @@
 title: Gas Price Strategies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
 path: /reference/airnode/next/concepts/gas-prices.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -27,6 +27,7 @@ The supported strategies include:
 
 - [latestBlockPercentileGasPrice](/reference/airnode/next/concepts/gas-prices.md#latestblockpercentilegasprice)
 - [providerRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedgasprice)
+- [sanitizedProviderRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
 - [providerRecommendedEip1559GasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
 - [constantGasPrice](/reference/airnode/next/concepts/gas-prices.md#constantgasprice)
 
@@ -45,6 +46,17 @@ Below are examples of each strategy.
 {
   "gasPriceStrategy": "providerRecommendedGasPrice",
   "recommendedGasPriceMultiplier": 1.2
+}
+// sanitizedProviderRecommendedGasPrice
+{
+  "gasPriceStrategy": "sanitizedProviderRecommendedGasPrice",
+  "recommendedGasPriceMultiplier": 1.2,
+  "baseFeeMultiplier": 2,
+  "baseFeeMultiplierThreshold": 5,
+  "priorityFee": {
+    "value": 3.12,
+    "unit": "gwei",
+  },
 }
 // providerRecommendedEip1559GasPrice
 {
@@ -132,6 +144,65 @@ to`type 0` and a `gasPrice` value.
 (required) - A number with a maximum of two decimals that gets multiplied by the
 provider reported gas price. The resulting Gas Price will equal
 `Gas Price * providerRecommendedGasPrice`.
+
+## sanitizedProviderRecommendedGasPrice
+
+The `sanitizedProviderRecommendedGasPrice` strategy builds upon the
+`providerRecommendedGasPrice` strategy to ensure that the gas price remains
+reasonable and capped based on specified parameters. The strategy estimates gas
+by first determining the `providerRecommendedGasPrice`. It then compares this
+value, multiplied by `recommendedGasPriceMultiplier`, to the Base Fee reported
+in block headers multiplied by the `baseFeeMultiplierThreshold`. If the former
+is greater than the latter, it multiplies the Base Fee with the
+`baseFeeMultiplier`, adds the `priorityFee`, and returns this value. Otherwise,
+it returns the value from the `providerRecommendedGasPrice` strategy. Similar to
+the former, it sets the transaction to `type 0` and a `gasPrice` value.
+
+```json
+{
+  "gasPriceStrategy": "sanitizedProviderRecommendedGasPrice",
+  "recommendedGasPriceMultiplier": 1.2,
+  "baseFeeMultiplierThreshold": 5,
+  "baseFeeMultiplier": 2,
+  "priorityFee": {
+    "value": 3.12,
+    "unit": "gwei"
+  }
+}
+```
+
+### `recommendedGasPriceMultiplier`
+
+(required) - A number with a maximum of two decimals that gets multiplied by the
+provider reported gas price. This value will be passed to parent strategy
+`providerRecommendedGasPrice`.
+
+### `baseFeeMultiplierThreshold`
+
+(required) - A threshold value used to determine whether the strategy should
+sanitize the gas estimation from the `providerRecommendedGasPrice` strategy.
+
+### `baseFeeMultiplier`
+
+(required) - Number multiplied by the Base Fee. The resulting sanitized gas
+price will equal `(Base Fee * baseFeeMultiplier) + priorityFee`.
+
+### `priorityFee`
+
+(required) - An object that configures the Priority Fee.
+
+  <div style="margin-left:32px;">
+
+#### `priorityFee.value`
+
+(required) - A number specifying the priority fee value.
+
+#### `priorityFee.unit`
+
+(required) - The unit of the priority fee value. It can be one of the following:
+(wei, kwei, mwei, gwei, szabo, finney, ether).
+
+  </div>
 
 ## providerRecommendedEip1559GasPrice
 

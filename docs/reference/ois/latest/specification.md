@@ -2,9 +2,9 @@
 title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.0
+pageHeader: Reference → OIS → v2.1
 path: /reference/ois/latest/specification.html
-version: v2.0
+version: v2.1
 outline: deep
 tags:
 ---
@@ -224,7 +224,7 @@ Allowed values: `query`, `header`, `cookie`
 
 (Only if `type` is http) The name of the HTTP Authorization scheme to be used in
 the
-[Authorization header as defined in RFC7235](https://tools.ietf.org/html/rfc7235#section-5.1).
+[Authorization header as defined in RFC7235<ExternalLinkImage/>](https://tools.ietf.org/html/rfc7235#section-5.1).
 
 Allowed values: (`basic` and `bearer`).
 
@@ -466,7 +466,9 @@ following elements:
 #### 5.3.2. `value`
 
 (Required) The value to be used for the respective parameter of an API operation
-that cannot be overridden by the requester.
+that cannot be overridden by the requester. This is allowed to be any type,
+including an object; for example, the following specifies an array containing
+multiple primitives: `["finalized", false]`.
 
 ### 5.4. `reservedParameters`
 

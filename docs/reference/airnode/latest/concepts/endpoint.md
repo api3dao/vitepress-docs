@@ -2,9 +2,9 @@
 title: Endpoint
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/endpoint.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -30,8 +30,8 @@ will serve over the request–response protocol are listed under triggers of
 
 ## `endpointId`
 
-`endpointId` identifies a specific endpoint that an Airnode serves, and is
-computed in JS (using ethers.js) as follows:
+`endpointId` identifies a specific endpoint that an Airnode serves. Its
+derivation, shown below, is enforced by `airnode-validator`.
 
 ```js
 ethers.utils.keccak256(
@@ -50,11 +50,6 @@ Note that this means that an `endpointId` is not unique, and two Airnodes can
 serve equivalent endpoints using the same ID (in fact, this is the desired
 outcome). This is not an issue, as requests are made with a `airnode` (Airnode's
 `address`) and `endpointId` pair.
-
-This convention of determining an `endpointId` is not enforced at the
-protocol-level. For example, one could choose to generate an `endpointId`
-randomly, and as long as requesters use the correct `endpointId`, this will not
-be an issue.
 
 ## Authorizers
 

@@ -91,6 +91,13 @@
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
+    "id": "599",
+    "fullname": "Metis testnet",
+    "alias": "metis-goerli-testnet",
+    "contractName": "AccessControlRegistry",
+    "contractAddress": "0x81A850254769a6C87d4F11B9F80bCc5bE1CcF50E"
+  },
+  {
     "id": "647",
     "fullname": "SX Network testnet",
     "alias": "sx-testnet",
@@ -136,6 +143,13 @@
     "id": "4002",
     "fullname": "Fantom testnet",
     "alias": "fantom-testnet",
+    "contractName": "AccessControlRegistry",
+    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
+  },
+  {
+    "id": "10200",
+    "fullname": "Gnosis Chain testnet",
+    "alias": "gnosis-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },

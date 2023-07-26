@@ -2,9 +2,9 @@
 title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Packages
+pageHeader: Reference → Airnode → v0.12 → Packages
 path: /reference/airnode/latest/packages/airnode-abi.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-abi<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-abi)
+[airnode-abi<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-abi)
 package is a unique way to encode and decode parameters for use with Airnode.
 Parameters are provided with encoding types, names and values. The types are
 shortened and grouped with a version as the "header". The name/value pairs are
