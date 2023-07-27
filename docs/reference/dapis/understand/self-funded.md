@@ -30,17 +30,17 @@ signed data. The gas costs for self-funded dAPIs are managed by the users
 themselves. As long as the sponsor wallet of the dAPI has enough gas, it will be
 updated.
 
-Self-funded dAPIs also use the same
+Datafeed values for Self-funded dAPIs are also stored on-chain within the same
 [`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
-contract to store and update datafeed values.
+contract and are updated on the basis of `beaconIds`. The provider who is
+running an Airnode is also running an Airseeker that is responsible for updating
+the values of each `beaconId` for each dAPI.
 
-A dAPI Name is a human readable name that represents a `beaconId`.
+dAPIs are human-readable mappings that maps to a certain `beaconId`.
 
 A `beaconId` for each dAPI is derived from the hash of the provider's Airnode's
-address, Template ID and encoded parameters of the dAPI.
-
-The provider who is running an Airnode is also running an Airseeker that is
-responsible for updating the values of each `beaconId` for each dAPI.
+address and its Template ID(a hash of one of the Airnode's `endpointId` and
+encoded parameters).
 
 For each beacon, there is a dedicated Sponsor wallet that is used to pay for the
 gas costs of updating the beacon. The Sponsor wallet is derived from the

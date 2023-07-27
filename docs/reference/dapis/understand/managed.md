@@ -23,34 +23,32 @@ and avaibality of Managed dAPIs is managed by the dAPI team within [API3 DAO]().
 ## How it works
 
 [Datafeed values are stored on-chain](/reference/dapis/understand/#data-feeds-values-stored-on-chain)
-and are updated by the
+within the
 [`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
-contract. The `beaconId` for each dAPI gets updated when the price hits the set
-[deviation threshold]()/[heartbeat]() using [Airseeker<ExternalLinkImage/>]().
-The Airseeker is responsible for updating each individual `beaconId` for each
+contract and are updated on the basis of `beaconIds`. To provide aggregated
+data, beacon sets are used which are a collection of multiple `beaconIds` that
+are then used to calculate the aggregated value on-chain using a median
+function. The median value is then used to update the `beaconSetId` of the dAPI.
+Beacon sets get updated by updating each underlying beacon using
+`updateBeaconWithSignedData` and then calling the function to update the beacon
+set `updateBeaconSetWithBeacons`.
+
+dAPIs are human-readable mappings that maps to a certain `beaconId` or
+`beaconSetId`. The `beaconId` for each dAPI gets updated when the price hits the
+set [deviation threshold]()/[heartbeat]() using [Airnode's Signed Data]().
+[Airseeker<ExternalLinkImage/>]() and other entites who have access to Airnode's
+signed data are responsible for updating each individual `beaconId` for each
 dAPI.
 
-A dAPI Name is a human readable name that represents a `beaconId` or
-`beaconSetId`.
-
 A `beaconId` for each dAPI is derived from the hash of the provider's Airnode's
-address, Template ID and encoded parameters of the dAPI.
+address and its Template ID(a hash of one of the Airnode's `endpointId` and
+encoded parameters).
 
-Providers who are running an Airnode are also running an Airseeker that is
-responsible for updating the values of each `beaconId` for each dAPI. Currently,
-the dAPI team is also running an Airseeker for each dAPI with different
-configurations.
-
-To provide aggregated data, beacon sets are used which are a collection of
-multiple `beaconIds` that are then used to calculate the aggregated value
-on-chain using a median function. The median value is then used to update the
-`beaconSetId` of the dAPI. Beacon sets get updated by updating each underlying
-beacon (`updateBeaconWithSignedData`) and then calling the update beacon set
-function (`updateBeaconSetWithBeacons`)
-
-For each beacon, there is a dedicated Sponsor wallet that is used to pay for the
-gas costs of updating the beacon. The Sponsor wallet is derived from the
-`beaconId` and its update parameters.
+The dAPI team is running Airseekers which are primarily responsible for updating
+the `beaconId` based on the specification of the dAPI. Providers also update the
+`beaconId` at a higher deviation threshold/heartbeat as a fallback. There are
+also other entites that serve as additional fallback which operate at an even
+higher deviation threshold/heartbeat.
 
 ## Airseeker
 
@@ -66,7 +64,7 @@ Similar to Airnode's OIS, Airseeker also requires a configuration file that is
 used to configure the Airseeker.
 [Click here to see an example of an Airseeker configuration file.<ExternalLinkImage/>](https://github.com/api3dao/airseeker/blob/main/config/airseeker.example.json).
 The configuration file is used to configure the deviation thresholds and
-heartbeat for each `beaconId`.
+heartbeat for each `beaconId` or `beaconSetId`.
 
 ## Providers for Managed dAPIs
 
@@ -102,8 +100,8 @@ the dAPI.
 :::
 
 With Managed dAPIs, dApps can have an option to configure the dAPI's devation
-threshold and heartbeat. For each Managed feed, the dApp have the following
-options to choose from:
+threshold and heartbeat. For Managed feeds, the dApp have the following options
+to choose from:
 
 | Deviation | Heartbeat |
 | --------- | --------- |
