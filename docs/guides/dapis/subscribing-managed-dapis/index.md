@@ -37,8 +37,8 @@ will be available to your users at all times.
 ## API3 Market
 
 The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
-tooling to seamlessly access dAPI services. For self-funded data feeds this
-end-to-end process consists of:
+tooling to seamlessly access dAPI services. For Managed dAPIs, this end-to-end
+process consists of:
 
 - [Exploring, selecting and configuring your dAPI](/guides/dapis/subscribing-managed-dapis/#exploring-selecting-and-configuring-your-dapi)
   <br/>
@@ -63,8 +63,8 @@ choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
 
 Managed dAPIs gives you an option to configure the dAPI's
 [devation threshold](/reference/dapis/understand/deviations) and
-[heartbeat](/reference/dapis/understand/deviations.html#heartbeat). For each
-Managed feed, you will have the following options to choose from:
+[heartbeat](/reference/dapis/understand/deviations.html#heartbeat). For Managed
+dAPIs, you will have the following options to choose from:
 
 | Deviation | Heartbeat |
 | --------- | --------- |
@@ -72,6 +72,13 @@ Managed feed, you will have the following options to choose from:
 | 0.25%     | 24 hours  |
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
+
+::: info Note
+
+Not all dAPIs support all the configurations. It depends on the asset and chain.
+Check the [API3 Market]() for more info.
+
+:::
 
 _[Click here](/reference/dapis/understand/deviations.html#update-interval) to
 read more if you are unsure what suits your dApp_
@@ -83,9 +90,10 @@ nework to your cart.
 ## Placing an order for a Managed dAPI Service
 
 Once you have added all the dAPIs, you can proceed to checkout. You will be
-presented with a summary of your order. If you have multiple dAPIs in your cart,
-you'll have to pay for them individually. To proceed with the order, select
-**Proceed to Payment**.
+presented with a summary of your order. If you have multiple dAPIs on the same
+chain in your cart, you can pay for all of them in one single order. You cannot
+add multiple dAPIs on different chains in the same order. To proceed with the
+order, select **Proceed to Payment**.
 
 <img src="../../assets/images/managed_2.png" style="width:60%"/>
 
