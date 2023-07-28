@@ -113,8 +113,8 @@ An Airnode may wish to create two Airnode endpoints mapped to a single API
 operation whereas the requester does not pass any argument. While the API
 operation returns any token value based on a path parameter `id`, Airnode will
 only allow one particular token per Airnode endpoint. This is done using
-`fixedOOperationParameters` rather than normal `parameters`. By applying a
-`value` to `fixedOOperationParameters` for each Airnode endpoint, only the token
+`fixedOperationParameters` rather than normal `parameters`. By applying a
+`value` to `fixedOperationParameters` for each Airnode endpoint, only the token
 in the `value` can be returned to the requester.
 
 ```json
@@ -133,7 +133,7 @@ in the `value` can be returned to the requester.
                     "in": "path",
                     "name": "id"
                 },
-                "value":"API#"
+                "value":"API3"
     ...
     },
     {

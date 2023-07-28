@@ -2,9 +2,9 @@
 title: Verify Airnode Addresses
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.11 → Verify Airnode Addresses
+pageHeader: Reference → Airnode → v0.12 → Verify Airnode Addresses
 path: /reference/airnode/next/developers/verify-airnode-addresses.html
-version: v0.11
+version: v0.12
 outline: deep
 tags:
 ---

@@ -86,21 +86,21 @@ Use the following command to run Airnode:
 docker run \
   --volume $(pwd):/app/config \
   --name airnode \
-  api3/airnode-client:0.11.0
+  api3/airnode-client:0.12.0
 ```
 
 ```powershell [Windows PowerShell]
 docker run  \
   --volume $(pwd):/app/config \
   --name airnode \
-  api3/airnode-client:0.11.0
+  api3/airnode-client:0.12.0
 ```
 
 ```batch [Windows]
 docker run  ^
   --volume %cd%:/app/config ^
   --name airnode ^
-  api3/airnode-client:0.11.0
+  api3/airnode-client:0.12.0
 ```
 
 :::
