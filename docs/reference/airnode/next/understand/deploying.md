@@ -101,14 +101,14 @@ need arise.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.11.0 deploy
+  api3/airnode-deployer:0.12.0 deploy
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.11.0 deploy
+  api3/airnode-deployer:0.12.0 deploy
 ```
 
 :::
@@ -134,7 +134,7 @@ deployment was successful or not.
       "disableConcurrencyReservations": false
     },
     "stage": "dev",
-    "nodeVersion": "0.11.0",
+    "nodeVersion": "0.12.0",
     "timestamp": "2022-03-26T02:37:55.506Z"
   },
   "success": true
