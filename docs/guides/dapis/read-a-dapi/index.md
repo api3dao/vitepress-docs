@@ -20,6 +20,8 @@ tags:
 
 # {{$frontmatter.title}}
 
+> <Video src="https://www.youtube.com/embed/1ASnpYO66mw"/>
+
 This guide requires a proxy contract address for a particular dAPI you are
 interested in. You can find them in the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org) website. If a proxy

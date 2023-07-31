@@ -20,6 +20,8 @@ tags:
 
 # {{$frontmatter.title}}
 
+> <Video src="https://www.youtube.com/embed/kY3ExNjG_9c"/>
+
 With [Self-Funded dAPIs](/explore/dapis/using-dapis.html#self-funded-dapis), you
 can fund the dAPI with your own funds. The amount of gas you supply will
 determine how long your dAPI will be available for use. If you run out of gas,
