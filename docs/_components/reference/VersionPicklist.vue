@@ -115,6 +115,5 @@ export default {
   width: 100px;
   font-size: small;
   padding-left: 3px;
-  background-color: transparent;
 }
 </style>
