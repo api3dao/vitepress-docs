@@ -14,7 +14,7 @@
     },
     {
       "version": "v0.11",
-      "alias": "latest",
+      "alias": "v0.11",
       "path": "/reference/airnode/v0.11/"
     }
   ],
@@ -33,7 +33,7 @@
     },
     {
       "version": "v2.0",
-      "alias": "latest",
+      "alias": "v2.0",
       "path": "/reference/ois/2.0/"
     }
   ]
