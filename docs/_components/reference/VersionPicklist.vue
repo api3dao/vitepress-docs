@@ -2,13 +2,16 @@
   <span>
     <select @change="goToRoute" v-model="path" class="api3-version-select">
       <option v-for="vrs in versions" :key="vrs.path" :value="vrs.path">
-        <span>{{ vrs.version }}</span>
+        <span style="color: black; line-height: 1.6">{{ vrs.version }}</span>
         <!-- https://unicode-table.com/en/sets/arrow-symbols/#down-arrows -->
         <span v-if="path === vrs.path">&nbsp;&#9660;</span>
       </option>
-      <optgroup label="Legacy documentation">
+      <optgroup
+        style="color: black; line-height: 1.6"
+        label="Legacy documentation"
+      >
         <option v-for="vrs in versionsLegacy" :key="vrs.path" :value="vrs.path">
-          <span>{{ vrs.version }}</span>
+          <span style="color: black; line-height: 1.6">{{ vrs.version }}</span>
           <span v-if="path === vrs.path">&nbsp;&#9660;</span>
         </option>
       </optgroup>
@@ -115,5 +118,6 @@ export default {
   width: 100px;
   font-size: small;
   padding-left: 3px;
+  border-radius: 0.3em;
 }
 </style>
