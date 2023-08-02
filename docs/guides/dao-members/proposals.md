@@ -174,15 +174,18 @@ To create a new proposal using the DAO dashboard:
    > The arguments must be provided in JSON array format where the values are
    > stringified.
 
+<!-- prettier will add a space between the elements in the array.
+A space wil cause the transaction to fail in solidity. -->
+<!-- prettier-ignore -->
    ```json
-   ["0xF4EB52Cf9D31a...d1663d78ddDEE9", "499999000000"]
+   ["0xF4EB52Cf9D31a...d1663d78ddDEE9","499999000000"]
    ```
 
-   In the example above, the respective Agent (primary or secondary) would be
-   calling the USDC contract (`0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`) to
-   transfer 499,999 USDC to `0xF4EB52Cf9D31a...d1663d78ddDEE9`. Note that since
-   `transfer(address,uint256)` transfers funds from the sender to the specified
-   address, the USDC is asked to be supplied from the Agent's balance.
+In the example above, the respective Agent (primary or secondary) would be
+calling the USDC contract (`0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`) to
+transfer 499,999 USDC to `0xF4EB52Cf9D31a...d1663d78ddDEE9`. Note that since
+`transfer(address,uint256)` transfers funds from the sender to the specified
+address, the USDC is asked to be supplied from the Agent's balance.
 
 9. When you are ready, click the **Create** button at the bottom of the page.
 
