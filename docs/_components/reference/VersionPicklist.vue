@@ -1,25 +1,41 @@
 <template>
-  <span>
-    <select @change="goToRoute" v-model="path" class="api3-version-select">
-      <option v-for="vrs in versions" :key="vrs.path" :value="vrs.path">
-        <span>{{ vrs.version }}</span>
-        <!-- https://unicode-table.com/en/sets/arrow-symbols/#down-arrows -->
-        <span v-if="path === vrs.path">&nbsp;&#9660;</span>
-      </option>
-      <optgroup label="Legacy documentation">
-        <option v-for="vrs in versionsLegacy" :key="vrs.path" :value="vrs.path">
-          <span>{{ vrs.version }}</span>
-          <span v-if="path === vrs.path">&nbsp;&#9660;</span>
-        </option>
-      </optgroup>
-    </select>
+  <span style="user-select: none">
+    <!-- https://unicode-table.com/en/sets/arrow-symbols/#down-arrows -->
+    <!-- prettier-ignore -->
+    <span
+      v-if="showVersions"
+      style="cursor: pointer"
+      @click="showVersions = !showVersions">
+      {{ selectedVersion }}&nbsp;&#9660;
+    </span>
+    <!-- prettier-ignore -->
+    <span v-else style="cursor: pointer" @click="showVersions = !showVersions">
+      {{ selectedVersion }}
+      <span style="transform: rotate(270deg); display: inline-block">
+        &#9660;
+      </span>
+    </span>
+
+    <div v-if="showVersions">
+      <div v-for="(v, index) in versions" :key="index">
+        <a :href="v.path" target="_oldDocs">{{ v.version }}</a>
+      </div>
+      <i>Legacy Documentation</i><ExternalLinkImage />
+      <div
+        v-for="(v, index) in versionsLegacy"
+        :key="index"
+        style="margin-left: 10px"
+      >
+        <a :href="v.path">{{ v.version }}</a>
+      </div>
+    </div>
   </span>
 </template>
 
 <script>
 import versionsArray from '../../.vitepress/versions';
 import versionsLegacyArray from '../../.vitepress/versions-legacy';
-import { useRouter, useData, useRoute } from 'vitepress';
+import { useData, useRoute } from 'vitepress';
 import { watch } from 'vue';
 
 // https://github.com/vuejs/vue-router/issues/3379
@@ -29,9 +45,11 @@ export default {
   data: () => ({
     path: undefined,
     lastPath: undefined,
+    selectedVersion: '',
     versions: [], // Do not use undefined or the template will error when loaded
     versionsLegacy: [], // Same as above
-    goRouterFunc: useRouter().go,
+    showVersions: false,
+    toggleIcon: '&#5125;', // &#9660;
   }),
   mounted() {
     // Watch for page change and alter the picklist as needed
@@ -59,12 +77,23 @@ export default {
     setPickListData() {
       // Only for Airnode and OIS
       // slice() makes a copy of the original versions array
+
       if (this.path.indexOf('/reference/airnode/') > -1) {
         this.versions = versionsArray.versionsAirnode.slice();
         this.versionsLegacy = versionsLegacyArray.versionsAirnode.slice();
+        this.versions.forEach((element) => {
+          if (this.lastPath === element.path) {
+            this.selectedVersion = element.version;
+          }
+        });
       } else if (this.path.indexOf('/reference/ois/') > -1) {
         this.versions = versionsArray.versionsOIS.slice();
         this.versionsLegacy = versionsLegacyArray.versionsOIS.slice();
+        this.versions.forEach((element) => {
+          if (this.lastPath === element.path) {
+            this.selectedVersion = element.version;
+          }
+        });
       } else {
         this.versions = [];
         this.versionsLegacy = [];
@@ -75,46 +104,15 @@ export default {
       // The top of the versions array will always be the /next version
       // if present at all.
       if (
-        window.location.href.indexOf('localhost:5173') === -1 &&
+        window.location.href.indexOf('localhost:') === -1 &&
         this.versions.length > 0 &&
         this.versions[0].path.indexOf('/next') !== -1
       ) {
         this.versions.shift();
       }
     },
-    goToRoute() {
-      if (this.path.indexOf('https://') === -1) {
-        this.lastPath = this.path;
-        this.goRouterFunc(this.path);
-      } else {
-        // Going to old docs
-        var a = document.createElement('a');
-        // Be careful adding target for MacOS,  in DEV it is fine,
-        // but running a local build on localhost:8082 you get a pop-up blocked message.
-        // For other browser we want a new tab because the state of the newer docs is preserved
-        // in its tab.
-        if (window.navigator.userAgent.indexOf('Safari') === -1) {
-          a.target = '_oldDocs';
-        }
-        a.href = this.path;
-        a.click();
-
-        // Set the path to lastPath
-        // Used to set the select list tot he last "new docs" version
-        // when going to the old docs.
-        this.path = this.lastPath;
-      }
-    },
   },
 };
 </script>
 
-<style scoped>
-.api3-version-select {
-  cursor: pointer;
-  width: 100px;
-  font-size: small;
-  padding-left: 3px;
-  background-color: transparent;
-}
-</style>
+<style scoped></style>

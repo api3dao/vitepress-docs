@@ -69,6 +69,7 @@ Update links and other version specific content. For `vx.xx`, `/latest`, and
    older repo tags, `/master`, or `/main`. Some repos may not use tags and
    `/main` must be used, some may have tags unrelated to Airnode. Evaluate each
    link for changes as needed.
+1. Look for links with versions that use x.x.x (i.e. Admin cli, 0.12.0)
 1. Look for links to api3 repos that use older version such as Airnode `v0.11`
    or OIS `v2.0`. These need to use the proper versions.
 1. For `/next` change frontmatter `pageHeader: Reference → Airnode → vx.x` to
