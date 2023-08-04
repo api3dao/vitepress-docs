@@ -19,137 +19,29 @@ tags:
 
 # {{$frontmatter.title}}
 
-The following guide assumes a valid v0.11.2 `config.json` file. All changes
-listed below will need to be implemented in order to migrate to Airnode v0.12.0.
-This document is written in a way that will preserve existing behavior with
-earlier Airnode versions.
+The following guide assumes a valid v0.12 `config.json` file. All changes listed
+below will need to be implemented in order to migrate to Airnode v0.13.0. This
+document is written in a way that will preserve existing behavior with earlier
+Airnode versions.
 
 The document also mentions changes to user facing services related to Airnode,
 such as airnode-deployer, airnode-admin, etc., and new features.
 
 ## Summary
 
-1. `ois[n].oisFormat` updated to "2.1.0". This has not changed since v0.11.2,
-   but has changed since v0.11.0 and v0.11.1 for which it was "2.0.0".
-
-2. `nodeSettings.nodeVersion` updated to "0.12.0".
-
-3. Fields specifying `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract
-   addresses on chains for which there is an API3 deployment are now optional.
-   See details below for additional information.
+1. `nodeSettings.nodeVersion` updated to "0.13.0".
 
 ## Details
 
-1. `ois[n].oisFormat`
+1. `nodeSettings.nodeVersion`
 
-Updated to "2.1.0". This has not changed since v0.11.2, but has changed since
-v0.11.0 and v0.11.1 for which it was "2.0.0".
-
-```diff
-{
-- "oisFormat": "2.0.0"
-+ "oisFormat": "2.1.0"
-}
-```
-
-2. `nodeSettings.nodeVersion`
-
-Updated to "0.12.0"
+Updated to "0.13.0"
 
 ```diff
 {
-- "nodeVersion": "0.11.2"
-+ "nodeVersion": "0.12.0"
-}
-```
-
-3. `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` addresses are now optional
-   if there is an API3 deployment for that contract on the specified chain. A
-   table of such deployments can be found on the
-   [Contract Addresses](/reference/airnode/next/index.md) page. The following
-   illustrates how the addresses can be omitted. First, within the `chains[n]`
-   object:
-
-```diff
-{
-- "contracts": {
--   "AirnodeRrp": "0x..."
-- },
-}
-```
-
-And second, within the `chains[n].authorizers` object:
-
-```diff
-{
-  "authorizers": {
-    "requesterEndpointAuthorizers": [],
-    "crossChainRequesterAuthorizers": [
-      {
-        "requesterEndpointAuthorizers": ["0x..."],
-        "chainType": "evm",
-        "chainId": "5",
--       "contracts": {
--         "AirnodeRrp": "0x..."
--       },
-        "chainProvider": {
-          "url": "http://127.0.0.2"
-        }
-      }
-    ],
-    "requesterAuthorizersWithErc721": [
-      {
--       "RequesterAuthorizerWithErc721": "0x...",
-        "erc721s": ["0x..."]
-      }
-    ],
-    "crossChainRequesterAuthorizersWithErc721": [
-      {
-        "erc721s": ["0x..."],
-        "chainType": "evm",
-        "chainId": "5",
--       "contracts": {
--         "RequesterAuthorizerWithErc721": "0x..."
--       },
-        "chainProvider": {
-          "url": "http://127.0.0.2"
-        }
-      }
-    ]
-  }
+- "nodeVersion": "0.12.0"
++ "nodeVersion": "0.13.0"
 }
 ```
 
 ## New features and updates
-
-- There is no longer a hardcoded limit to the maximum number of sponsor wallet
-  requests processed each cycle.
-- The following changes were made to the HTTP gateway:
-  1. Data is returned from successful API calls that fail response processing.
-     For an example see the
-     [HTTP Gateways](/reference/airnode/next/understand/http-gateways.md#http-gateway)
-     page.
-  2. Reserved parameters are inaccessible in response pre/post processing. This
-     is only relevant if reserved parameters are being _modified_ in pre/post
-     processing (advanced use case).
-- The `value` for a `fixedOperationParameters` object is now allowed to be any
-  type, including an object; for example, the following specifies an array
-  containing multiple primitives. This has not changed since v0.11.2, but has
-  changed since v0.11.0 and v0.11.1 for which it was only allowed to be a
-  string.
-
-  ```json
-  {
-    "fixedOperationParameters": [
-      {
-        "operationParameter": {
-          "in": "query",
-          "name": "params"
-        },
-        "value": ["finalized", false]
-      }
-    ]
-  }
-  ```
-
-<FlexEndTag/>
