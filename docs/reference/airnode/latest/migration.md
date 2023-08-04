@@ -101,7 +101,7 @@ Updated to "0.12.0"
 - Gas can now be automatically estimated for RRP fulfillments on supported
   chains by excluding `chains[n].options.fulfillmentGasLimit` from
   `config.json`. For more details see the
-  [corresponding documentation](/reference/airnode/latest/deployment-files/config-json.md#optionsfulfillmentgaslimit).
+  [corresponding documentation](/reference/airnode/latest/deployment-files/config-json.md#options-fulfillmentgaslimit).
 
 - `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract addresses are now
   optional if there is an API3 deployment for that contract on the specified
