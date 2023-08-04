@@ -34,10 +34,6 @@ such as airnode-deployer, airnode-admin, etc., and new features.
 
 2. `nodeSettings.nodeVersion` updated to "0.12.0".
 
-3. Fields specifying `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract
-   addresses on chains for which there is an API3 deployment are now optional.
-   See details below for additional information.
-
 ## Details
 
 1. `ois[n].oisFormat`
@@ -63,75 +59,20 @@ Updated to "0.12.0"
 }
 ```
 
-3. `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` addresses are now optional
-   if there is an API3 deployment for that contract on the specified chain. A
-   table of such deployments can be found on the
-   [Contract Addresses](/reference/airnode/latest/index.md) page. The following
-   illustrates how the addresses can be omitted. First, within the `chains[n]`
-   object:
-
-```diff
-{
-- "contracts": {
--   "AirnodeRrp": "0x..."
-- },
-}
-```
-
-And second, within the `chains[n].authorizers` object:
-
-```diff
-{
-  "authorizers": {
-    "requesterEndpointAuthorizers": [],
-    "crossChainRequesterAuthorizers": [
-      {
-        "requesterEndpointAuthorizers": ["0x..."],
-        "chainType": "evm",
-        "chainId": "5",
--       "contracts": {
--         "AirnodeRrp": "0x..."
--       },
-        "chainProvider": {
-          "url": "http://127.0.0.2"
-        }
-      }
-    ],
-    "requesterAuthorizersWithErc721": [
-      {
--       "RequesterAuthorizerWithErc721": "0x...",
-        "erc721s": ["0x..."]
-      }
-    ],
-    "crossChainRequesterAuthorizersWithErc721": [
-      {
-        "erc721s": ["0x..."],
-        "chainType": "evm",
-        "chainId": "5",
--       "contracts": {
--         "RequesterAuthorizerWithErc721": "0x..."
--       },
-        "chainProvider": {
-          "url": "http://127.0.0.2"
-        }
-      }
-    ]
-  }
-}
-```
-
 ## New features and updates
 
 - There is no longer a hardcoded limit to the maximum number of sponsor wallet
   requests processed each cycle.
-- The following changes were made to the HTTP gateway:
-  1. Data is returned from successful API calls that fail response processing.
-     For an example see the
-     [HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
-     page.
-  2. Reserved parameters are inaccessible in response pre/post processing. This
-     is only relevant if reserved parameters are being _modified_ in pre/post
-     processing (advanced use case).
+
+- Data from the HTTP Gateway is returned from successful API calls that fail
+  response processing in order to assist with debugging. For an example, see the
+  [HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
+  page.
+
+- In all pre-processing and post-processing steps, parameters are now immutably
+  exposed via an `endpointParameters` object and reserved parameters are no
+  longer accessible.
+
 - The `value` for a `fixedOperationParameters` object is now allowed to be any
   type, including an object; for example, the following specifies an array
   containing multiple primitives. This has not changed since v0.11.2, but has
@@ -149,6 +90,73 @@ And second, within the `chains[n].authorizers` object:
         "value": ["finalized", false]
       }
     ]
+  }
+  ```
+
+- A new gas strategy, `sanitizedProviderRecommendedGasPrice`, has been added.
+  See the
+  [gas price documentation](/reference/airnode/latest/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
+  for more details.
+
+- Gas can now be automatically estimated for RRP fulfillments on supported
+  chains by excluding `chains[n].options.fulfillmentGasLimit` from
+  `config.json`. For more details see the
+  [corresponding documentation](/reference/airnode/latest/deployment-files/config-json.md#options-fulfillmentgaslimit).
+
+- `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract addresses are now
+  optional if there is an API3 deployment for that contract on the specified
+  chain. A table of such deployments can be found on the
+  [Contract Addresses](/reference/airnode/latest/index.md) page. The following
+  illustrates how the addresses can be omitted. First, within the `chains[n]`
+  object:
+
+  ```diff
+  {
+  - "contracts": {
+  -   "AirnodeRrp": "0x..."
+  - },
+  }
+  ```
+
+  And second, within the `chains[n].authorizers` object:
+
+  ```diff
+  {
+    "authorizers": {
+      "requesterEndpointAuthorizers": [],
+      "crossChainRequesterAuthorizers": [
+        {
+          "requesterEndpointAuthorizers": ["0x..."],
+          "chainType": "evm",
+          "chainId": "5",
+  -       "contracts": {
+  -         "AirnodeRrp": "0x..."
+  -       },
+          "chainProvider": {
+            "url": "http://127.0.0.2"
+          }
+        }
+      ],
+      "requesterAuthorizersWithErc721": [
+        {
+  -       "RequesterAuthorizerWithErc721": "0x...",
+          "erc721s": ["0x..."]
+        }
+      ],
+      "crossChainRequesterAuthorizersWithErc721": [
+        {
+          "erc721s": ["0x..."],
+          "chainType": "evm",
+          "chainId": "5",
+  -       "contracts": {
+  -         "RequesterAuthorizerWithErc721": "0x..."
+  -       },
+          "chainProvider": {
+            "url": "http://127.0.0.2"
+          }
+        }
+      ]
+    }
   }
   ```
 
