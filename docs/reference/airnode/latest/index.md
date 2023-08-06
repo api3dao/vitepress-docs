@@ -83,6 +83,19 @@ directory.
 </tr>
 </table>
 
+## AirnodeRrpV0DryRun
+
+<table>
+<th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
+<tr v-for="(chain, index) in AirnodeRrpV0DryRun">
+    <td style="max-width:150px;">{{chain.fullname}}</td>
+    <td>{{chain.id}}</td>
+    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+        <CopyIcon :text="chain.contractAddress" />
+    </td>
+</tr>
+</table>
+
 <FlexEndTag/>
 
 <script setup lang="ts">
@@ -90,6 +103,7 @@ directory.
     import AccessControlRegistry from './src/AccessControlRegistry.json';
     import RequesterAuthorizerWithAirnode from './src/RequesterAuthorizerWithAirnode.json';
     import RequesterAuthorizerWithErc721 from './src/RequesterAuthorizerWithErc721.json';
+    import AirnodeRrpV0DryRun from './src/AirnodeRrpV0DryRun.json';
 </script>
 
 <style scoped>

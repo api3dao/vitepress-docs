@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "fullname": "Ethereum",
+    "alias": "ethereum",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "5",
+    "fullname": "Ethereum Goerli testnet",
+    "alias": "ethereum-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "10",
+    "fullname": "Optimism",
+    "alias": "optimism",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "30",
+    "fullname": "RSK",
+    "alias": "rsk",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "31",
+    "fullname": "RSK testnet",
+    "alias": "rsk-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "56",
+    "fullname": "BSC",
+    "alias": "bsc",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "97",
+    "fullname": "BSC testnet",
+    "alias": "bsc-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "100",
+    "fullname": "Gnosis Chain",
+    "alias": "gnosis",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "137",
+    "fullname": "Polygon",
+    "alias": "polygon",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "250",
+    "fullname": "Fantom",
+    "alias": "fantom",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "288",
+    "fullname": "Boba/Ethereum",
+    "alias": "boba-ethereum",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0xde30a3268fbdcef628AF51d0850009a9A1714138"
+  },
+  {
+    "id": "416",
+    "fullname": "SX Network",
+    "alias": "sx",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0xEb9Ef2411608b9E6A14625110CD9349154b5e3ba"
+  },
+  {
+    "id": "420",
+    "fullname": "Optimism testnet",
+    "alias": "optimism-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "599",
+    "fullname": "Metis testnet",
+    "alias": "metis-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x4923968942E8aae4656ae4913874EB7312e0F7c7"
+  },
+  {
+    "id": "647",
+    "fullname": "SX Network testnet",
+    "alias": "sx-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x3e10e6eF3c602885a9Cafd9785BD2143c52fbFF1"
+  },
+  {
+    "id": "1088",
+    "fullname": "Metis",
+    "alias": "metis",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0xeefA1A591052DB4208C6BcD1E716B136E07cb692"
+  },
+  {
+    "id": "1284",
+    "fullname": "Moonbeam",
+    "alias": "moonbeam",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "1285",
+    "fullname": "Moonriver",
+    "alias": "moonriver",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "1287",
+    "fullname": "Moonbeam testnet",
+    "alias": "moonbeam-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "2001",
+    "fullname": "Milkomeda C1",
+    "alias": "milkomeda-c1",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "4002",
+    "fullname": "Fantom testnet",
+    "alias": "fantom-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "10200",
+    "fullname": "Gnosis Chain testnet",
+    "alias": "gnosis-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "42161",
+    "fullname": "Arbitrum",
+    "alias": "arbitrum",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x368A8C0a75fD707e4f7bF15DD1aA25ED554fE22c"
+  },
+  {
+    "id": "42170",
+    "fullname": "Arbitrum Nova",
+    "alias": "arbitrum-nova",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "43113",
+    "fullname": "Avalanche testnet",
+    "alias": "avalanche-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x705787063B11142a9a48F4D2f4bfB56214828261"
+  },
+  {
+    "id": "43114",
+    "fullname": "Avalanche",
+    "alias": "avalanche",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x824cb5cE2894cBA4eDdd005c5029eD17F5FEcf99"
+  },
+  {
+    "id": "43288",
+    "fullname": "Boba/Avalanche",
+    "alias": "boba-avalanche",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "56288",
+    "fullname": "Boba/BNB",
+    "alias": "boba-bnb",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0xdCED7ECFf6941613e739A30AeADa0F4FB85e5724"
+  },
+  {
+    "id": "71401",
+    "fullname": "Godwoken testnet",
+    "alias": "godwoken-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "71402",
+    "fullname": "Godwoken",
+    "alias": "godwoken",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0xbe28bd4921345dC632B3a55114091Be37b2DB739"
+  },
+  {
+    "id": "80001",
+    "fullname": "Polygon testnet",
+    "alias": "polygon-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "200101",
+    "fullname": "Milkomeda C1 testnet",
+    "alias": "milkomeda-c1-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "421613",
+    "fullname": "Arbitrum testnet",
+    "alias": "arbitrum-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "11155111",
+    "fullname": "Ethereum Sepolia testnet",
+    "alias": "ethereum-sepolia-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0xFb10b1b0f68b3EaAcA1eCD12a47Cf7F55BeabB98"
+  },
+  {
+    "id": "1313161554",
+    "fullname": "Aurora",
+    "alias": "aurora",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x04b833bD6339570B01aff994A72ea33cF92bD0EF"
+  },
+  {
+    "id": "1313161555",
+    "fullname": "Aurora testnet",
+    "alias": "aurora-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  }
+]
