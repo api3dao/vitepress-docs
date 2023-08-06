@@ -122,6 +122,11 @@ versionsRef.versionsAirnode.forEach((el) => {
   airnodeContractAddresses('RequesterAuthorizerWithAirnode', url, path);
   airnodeContractAddresses('AccessControlRegistry', url, path);
 
+  // AirnodeRrpV0DryRun was added in v0.12
+  if (vrs !== 'v0.11') {
+    airnodeContractAddresses('AirnodeRrpV0DryRun', url, path);
+  }
+
   /**
    * There is a need to add the RequesterAuthorizerWithErc721 contract addresses
    * from the airnode-protocol-v1 repo. The repo is supposed to be migrated in the
