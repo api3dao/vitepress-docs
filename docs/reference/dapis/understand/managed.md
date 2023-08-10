@@ -16,9 +16,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-Managed dAPIs are sourced directly from mulitple [first-party]() data providers
-running an [Airnode]() and aggregated using Airnode's signed data. The gas costs
-and avaibality of Managed dAPIs is managed by the dAPI team within [API3 DAO]().
+Managed dAPIs are sourced directly from mulitple [first-party](/explore/airnode/why-first-party-oracles.html) data providers
+running an [Airnode](/reference/airnode/latest/understand/) and aggregated using Airnode's signed data. The gas costs
+and avaibality of Managed dAPIs is managed by the dAPI team within [API3 DAO](/explore/dao-members/).
 
 ## How it works
 
@@ -35,8 +35,8 @@ set `updateBeaconSetWithBeacons`.
 
 dAPIs are human-readable mappings that maps to a certain `beaconId` or
 `beaconSetId`. The `beaconId` for each dAPI gets updated when the price hits the
-set [deviation threshold]()/[heartbeat]() using [Airnode's Signed Data]().
-[Airseeker<ExternalLinkImage/>]() and other entites who have access to Airnode's
+set [deviation threshold](/reference/dapis/understand/deviations.html)/[heartbeat](/reference/dapis/understand/deviations.html#heartbeat) using [Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.html).
+[Airseeker](/reference/dapis/understand/managed.html#airseeker) and other entites who have access to Airnode's
 signed data are responsible for updating each individual `beaconId` for each
 dAPI.
 
@@ -52,10 +52,10 @@ higher deviation threshold/heartbeat.
 
 ## Airseeker
 
-Like [Airnode](), [Airseeker<ExternalLinkImage/>]() is a serverless lambda
+Like Airnode, [Airseeker<ExternalLinkImage/>](https://github.com/api3dao/airseeker/) is a serverless lambda
 function that is responsible for updating the values of each `beaconId` for each
 dAPI. It is used to update the beacons with signed responses from
-[Airnode's HTTP-Gateway]().
+[Airnode's HTTP-Gateway](/reference/airnode/latest/understand/http-gateways.html).
 
 Airseeker uses Airnode's built-in HTTP-Gateway to receive signed data and push
 it on-chain in a tamper proof way.
@@ -68,7 +68,7 @@ heartbeat for each `beaconId` or `beaconSetId`.
 
 ## Providers for Managed dAPIs
 
-Currently, the [API3 Market<ExternalLinkImage/>]() has 4 differnet asset classes
+Currently, the [API3 Market<ExternalLinkImage/>](https://market.api3.org/) has 4 differnet asset classes
 that are listed below. For each type, there are multiple providers that are
 running an Airnode and are providing data for the dAPIs. The providers are
 listed below:
@@ -110,7 +110,7 @@ to choose from:
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
 
-See the guide [Subscribing to Managed dAPIs]() and learn more on how to access
+See the guide [Subscribing to Managed dAPIs](/guides/dapis/subscribing-managed-dapis/) and learn more on how to access
 Managed dAPIs.
 
 <FlexEndTag/>
