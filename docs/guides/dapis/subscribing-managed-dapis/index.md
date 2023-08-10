@@ -76,7 +76,7 @@ dAPIs, you will have the following options to choose from:
 ::: info Note
 
 Not all dAPIs support all the configurations. It depends on the asset and chain.
-Check the [API3 Market]() for more info.
+Check the [API3 Market](https://market.api3.org/) for more info.
 
 :::
 
