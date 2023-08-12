@@ -2338,6 +2338,15 @@
     "tags": null
   },
   "240": {
+    "title": "Managed dAPIs",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/managed.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "241": {
     "title": "Proxy contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2346,7 +2355,7 @@
     "outline": "deep",
     "tags": null
   },
-  "241": {
+  "242": {
     "title": "Reading dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2355,7 +2364,7 @@
     "outline": "deep",
     "tags": null
   },
-  "242": {
+  "243": {
     "title": "Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2364,7 +2373,16 @@
     "outline": "deep",
     "tags": null
   },
-  "243": {
+  "244": {
+    "title": "Self-funded dAPIs",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
+    "path": "/reference/dapis/understand/self-funded.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "245": {
     "title": "Sponsor wallets",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2373,7 +2391,7 @@
     "outline": "deep",
     "tags": null
   },
-  "244": {
+  "246": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2383,7 +2401,7 @@
     "outline": "deep",
     "tags": null
   },
-  "245": {
+  "247": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2393,7 +2411,7 @@
     "outline": "deep",
     "tags": null
   },
-  "246": {
+  "248": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2403,7 +2421,7 @@
     "outline": "deep",
     "tags": null
   },
-  "247": {
+  "249": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2413,7 +2431,7 @@
     "outline": "deep",
     "tags": null
   },
-  "248": {
+  "250": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2423,7 +2441,7 @@
     "outline": "deep",
     "tags": null
   },
-  "249": {
+  "251": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2433,7 +2451,7 @@
     "outline": "deep",
     "tags": null
   },
-  "250": {
+  "252": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2443,7 +2461,7 @@
     "outline": "deep",
     "tags": null
   },
-  "251": {
+  "253": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2453,7 +2471,7 @@
     "outline": "deep",
     "tags": null
   },
-  "252": {
+  "254": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2463,7 +2481,7 @@
     "outline": "deep",
     "tags": null
   },
-  "253": {
+  "255": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2473,7 +2491,7 @@
     "outline": "deep",
     "tags": null
   },
-  "254": {
+  "256": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2483,7 +2501,7 @@
     "outline": "deep",
     "tags": null
   },
-  "255": {
+  "257": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2493,7 +2511,7 @@
     "outline": "deep",
     "tags": null
   },
-  "256": {
+  "258": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2503,7 +2521,7 @@
     "outline": "deep",
     "tags": null
   },
-  "257": {
+  "259": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2513,7 +2531,7 @@
     "outline": "deep",
     "tags": null
   },
-  "258": {
+  "260": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2523,7 +2541,7 @@
     "outline": "deep",
     "tags": null
   },
-  "259": {
+  "261": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2533,7 +2551,7 @@
     "outline": "deep",
     "tags": null
   },
-  "260": {
+  "262": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2543,7 +2561,7 @@
     "outline": "deep",
     "tags": null
   },
-  "261": {
+  "263": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2553,7 +2571,7 @@
     "outline": "deep",
     "tags": null
   },
-  "262": {
+  "264": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2563,7 +2581,7 @@
     "outline": "deep",
     "tags": null
   },
-  "263": {
+  "265": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2573,7 +2591,7 @@
     "outline": "deep",
     "tags": null
   },
-  "264": {
+  "266": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2583,7 +2601,7 @@
     "outline": "deep",
     "tags": null
   },
-  "265": {
+  "267": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2592,7 +2610,7 @@
     "outline": "deep",
     "tags": null
   },
-  "266": {
+  "268": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2601,7 +2619,7 @@
     "outline": "deep",
     "tags": null
   },
-  "267": {
+  "269": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2610,7 +2628,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "268": {
+  "270": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2619,7 +2637,7 @@
     "outline": "deep",
     "tags": null
   },
-  "269": {
+  "271": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2628,7 +2646,7 @@
     "outline": "deep",
     "tags": null
   },
-  "270": {
+  "272": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
