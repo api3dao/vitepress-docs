@@ -22,14 +22,14 @@ that are sourced directly from multiple
 using [Airnode's](/explore/airnode/what-is-airnode.html) signed data. It
 utilises first-party oracles, enabling data to be served directly from reputable
 API providers via the Airnode. Unlike self-funded dAPIs, API3 manages the gas
-costs and the availability of the Managed dAPIs. This guide will walk you
-through the process of subscribing to a Managed dAPI.
+costs and the availability of the managed dAPIs. This guide will walk you
+through the process of subscribing to a managed dAPI.
 
 ::: info Managed dAPIs
 
 If you are planning to use your dAPI for a long period of time or if you are
 planning to use your dAPI in a production environment, we recommend that you use
-Managed dAPIs provided by the API3 DAO. This way, you can be sure that your dAPI
+managed dAPIs provided by the API3 DAO. This way, you can be sure that your dAPI
 will be available to your users at all times.
 
 :::
@@ -37,7 +37,7 @@ will be available to your users at all times.
 ## API3 Market
 
 The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
-tooling to seamlessly access dAPI services. For Managed dAPIs, this end-to-end
+tooling to seamlessly access dAPI services. For managed dAPIs, this end-to-end
 process consists of:
 
 - [Exploring, selecting and configuring your dAPI](/guides/dapis/subscribing-managed-dapis/#exploring-selecting-and-configuring-your-dapi)
@@ -62,8 +62,8 @@ choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
 <img src="../../assets/images/managed_1.png" style="width:60%"/>
 
 Managed dAPIs gives you an option to configure the dAPI's
-[devation threshold](/reference/dapis/understand/deviations) and
-[heartbeat](/reference/dapis/understand/deviations.html#heartbeat). For Managed
+[deviation threshold](/reference/dapis/understand/deviations) and
+[heartbeat](/reference/dapis/understand/deviations.html#heartbeat). For managed
 dAPIs, you will have the following options to choose from:
 
 | Deviation | Heartbeat |
@@ -85,7 +85,7 @@ read more if you are unsure what suits your dApp_
 
 Check the final price and time frame for the selected configuration. If you are
 happy with it, select **Add to Cart**. You can also add other dAPIs on the same
-nework to your cart.
+network to your cart.
 
 ## Placing an order for a Managed dAPI Service
 
