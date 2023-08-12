@@ -35,9 +35,8 @@ Beacon sets get updated by updating each underlying beacon using
 `updateBeaconWithSignedData` and then calling the function to update the beacon
 set `updateBeaconSetWithBeacons`.
 
-dAPIs are human-readable mappings that maps to a `beaconId` or
-`beaconSetId`. The `beaconId` for each dAPI gets updated when the price hits the
-set
+dAPIs are human-readable mappings that maps to a `beaconId` or `beaconSetId`.
+The `beaconId` for each dAPI gets updated when the price hits the set
 [deviation threshold](/reference/dapis/understand/deviations.html)/[heartbeat](/reference/dapis/understand/deviations.html#heartbeat)
 using
 [Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.html).
@@ -107,8 +106,8 @@ the dAPI.
 :::
 
 With Managed dAPIs, dApps can have an option to configure the dAPI's devation
-threshold and heartbeat. For Managed feeds, dApps have the following options
-to choose from based on the chain and dAPI:
+threshold and heartbeat. For Managed feeds, dApps have the following options to
+choose from based on the chain and dAPI:
 
 | Deviation | Heartbeat |
 | --------- | --------- |
