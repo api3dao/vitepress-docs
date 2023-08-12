@@ -40,8 +40,7 @@ is an aggregated value of multiple beacons or the value of a single beacon.
 - [Self-funded dAPIs](/reference/dapis/understand/index.md#self-funded-dapis):
   sourced from a single data feed (beacon)
 - [Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis): sourced
-  from multiple data feeds (beacons) - _managed dAPIs are currently under
-  development_
+  from multiple data feeds (beacons)
 
 Functions in `Api3ServerV1.sol` expose dAPIs values to API3 Market
 [proxy contracts](/reference/dapis/understand/proxy-contracts.md). dApps do not
@@ -75,8 +74,8 @@ companies.
 
 ## dAPI roadmap
 
-Currently dAPIs are under an expansive development cycle and in March of 2023
-the first functional **Self-funded dAPIs** were made available.
+Currently dAPIs are under an expansive development cycle and as of August of
+2023 both **Self-funded dAPIs** and **Managed dAPIs** are available.
 
 | Self-funded dAPIs                                                               | Managed dAPIs                                         |
 | ------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -88,13 +87,9 @@ the first functional **Self-funded dAPIs** were made available.
 | Sourced from a single<br/>data feed (beacon)                                    | Sourced from multiple<br/>data feeds (beacons)        |
 | Gas costs are community funded                                                  | Gas costs are managed <br/>by API3 using upgrade fees |
 
-<div style="margin-left:10px;margin-top:-15px;font-size:small;font-family:courier;">* Managed
-dAPIs are under development, the release date is not available at this time.</div>
-
 Development and expansion of dAPIs beyond self-funded and managed dAPIs will
 include OEV and service coverage. More details on these concepts will be
-forthcoming once managed dAPIs are released. Please feel-free to ask questions
-about the evolution of dAPIs on
+forthcoming. Please feel-free to ask questions about the evolution of dAPIs on
 [Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
 
 ## Self funded dAPIs
@@ -113,10 +108,9 @@ approach.
 
 ### Single source data feed
 
-Unlike the forthcoming
-[managed dAPIs](/reference/dapis/understand/index.md#managed-dapis), self-funded
-dAPIs are sourced from one data feed (beacon). This may not make them ideal to
-use on a production chain.
+Unlike [managed dAPIs](/reference/dapis/understand/index.md#managed-dapis),
+self-funded dAPIs are sourced from one data feed (beacon). This may not make
+them ideal to use on a production chain.
 
 See the guide
 [Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
@@ -126,19 +120,13 @@ learn how to use a proxy contract address to read a dAPI.
 
 ## Managed dAPIs
 
-Managed dAPIs are currently under development. A managed dAPI is actually the
-process of upgrading a self-funded dAPI to become a managed dAPI. Here the dApp
-that does the upgrade pays a small fee which is used to pay gas costs incurred
-by the Airnode to place the dAPI value on-chain. Unlike self-funded dAPIs, API3
-will manage the gas cost with the fees collected. This is advantages as the dApp
-owner does not need to worry about the community based funding model that might
-cause the dAPI to shut down due to lack of funding.
-
-### Changing specifications
-
-The specifications for the concept of a managed dAPI may change to some degree
-as development continues. The full feature specification will be updated here as
-this type of dAPI is made available.
+A managed dAPI is actually the process of upgrading a self-funded dAPI to become
+a managed dAPI. Here the dApp that does the upgrade pays a small fee which is
+used to pay gas costs incurred by the Airnode to place the dAPI value on-chain.
+Unlike self-funded dAPIs, API3 will manage the gas cost with the fees collected.
+This is advantages as the dApp owner does not need to worry about the community
+based funding model that might cause the dAPI to shut down due to lack of
+funding.
 
 <FlexEndTag/>
 

@@ -35,8 +35,8 @@ import "@api3/contracts/v0.8/interfaces/IProxy.sol";
 ```
 
 Self funded dAPIs have a single public proxy contract used by the community and
-are sourced from a single beacon. Managed dAPIs (under development) use the same
-proxy contact and can be sourced from multiple beacons.
+are sourced from a single beacon. Managed dAPIs use the same proxy contact and
+can be sourced from multiple beacons.
 
 ![proxy-contracts.png](../assets/images/proxy-contracts.png)
 
