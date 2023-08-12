@@ -129,7 +129,7 @@ For smart contracts engineers this means access to real world data as needed
 within the development lifecycle. This translates to a host of meaningful use
 cases being realized for two key reasons:
 
-1. Increased data availability through the correct incentivsation of API
+1. Increased data availability through the correct incentivization of API
    Providers
 2. The flexibility of being able to utilize Airnode to connect smart contracts
    to APIs
