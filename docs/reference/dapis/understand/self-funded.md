@@ -46,7 +46,7 @@ encoded parameters).
 
 For each beacon, there is a dedicated Sponsor wallet that is used to pay for the
 gas costs of updating the beacon. The Sponsor wallet is derived from the
-`beaconId` and its update parameters.
+`beaconId` ,its update parameters and the extended Public key of the `Airseeker` mnemonic.
 
 ## Airseeker
 
@@ -74,7 +74,7 @@ No aggregation services are provided for self-funded dAPIs.
 For Self-funded dAPIs, A single data provider is running its own Airnode and
 Airseeker and the dAPIs are pointed to it's own `beaconIds`. Anyone who decides
 to fund a self-funded dAPI will be funding the the data provider's underlying
-`beaconId` and their wallet that the dAPI is mapped towards.
+`beaconId` and their Sponsor wallets. 
 
 ## Provider for Self-funded dAPIs
 
