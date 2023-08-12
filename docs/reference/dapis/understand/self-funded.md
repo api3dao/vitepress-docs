@@ -24,7 +24,7 @@ unless it is funded again.
 ## How it works
 
 Unlike [Managed dAPIs](/reference/dapis/understand/managed.html), self-funded
-dAPIs are single-source datafeeds. The data is sourced from a single
+dAPIs are single-source data feeds. The data is sourced from a single
 [first-party](/explore/airnode/why-first-party-oracles.html) data provider
 running an [Airnode](/reference/airnode/latest/understand/) and an
 [Airseeker](/reference/dapis/understand/self-funded.html#airseeker) which
