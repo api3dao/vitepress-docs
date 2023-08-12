@@ -113,7 +113,9 @@ Market.
 After placing the order, you will have to wait for the dAPI to get updated. It
 usually takes 5 business days for the dAPI team to update the dAPI for the
 requested configuration. Once the dAPI is updated, you can start using it in
-your dApp.
+your dApp via the proxy address present in the dAPI page
+
+<img src="../../assets/images/managed-proxy-address.png" style="width:60%"/>
 
 ::: info Note
 
