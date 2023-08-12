@@ -113,7 +113,7 @@ well.
 
 ### Decentrally governed oracles
 
-Decentrally-governed networks of first-party oracles would adquately solve the
+Decentrally-governed networks of first-party oracles would adequately solve the
 API connectivity problem. Consider the following:
 
 1. Decentralized applications need access to APIs.

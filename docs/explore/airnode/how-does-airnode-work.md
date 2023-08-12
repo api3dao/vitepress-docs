@@ -222,8 +222,8 @@ Airnode requires access to a blockchain RPC node to:
 2. Trigger transactions to fulfill requests from an API Provider to the smart
    contract
 
-To avoid distruption to oracle operation Airnode has been designed to allow the
-useage of multiple RPC providers simulaneously. Each RPC provider is treated as
+To avoid disruption to oracle operation, Airnode has been designed to allow the
+usage of multiple RPC providers simultaneously. Each RPC provider is treated as
 individual, meaning all providers must be malicious for Airnode operations to be
 disrupted reliably. Additionally, using multiple Ethereum providers helps
 achieve the highest possible availability.

@@ -63,9 +63,9 @@ the oracle and receive responses.
 
 <img src="../assets/images/05-How_Airnode_works.png" style="width:350px">
 
-Certain protocols may be more appropiate depending on how an oracle node is
+Certain protocols may be more appropriate depending on how an oracle node is
 being utilized. As such Airnode utilizes a range of protocols to ensure a data
-feed achieves the appropiate efficiency for the respective use case.
+feed achieves the appropriate efficiency for the respective use case.
 
 ### Request-response Protocol
 
