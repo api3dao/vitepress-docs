@@ -49,9 +49,9 @@ threshold when updating the value of its beacon.
 
 ## Managed dAPIs
 
-Forthcoming managed dAPIs do not use sponsor wallets. The gas costs for managed
-dAPIs are managed by API3 using the fees when self-funded dAPIs are upgraded to
-managed dAPIs. The fees are deposited into a common wallet that Airnodes uses to
-cover gas costs when updating data feeds.
+Managed dAPIs do not use sponsor wallets. The gas costs for managed dAPIs are
+managed by API3 using the fees when self-funded dAPIs are upgraded to managed
+dAPIs. The fees are deposited into a common wallet that Airnodes uses to cover
+gas costs when updating data feeds.
 
 <FlexEndTag/>

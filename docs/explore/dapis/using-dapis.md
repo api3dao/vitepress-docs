@@ -23,7 +23,7 @@ dApp owners to connect to a decentralized API and access its data feeds. There
 are two types of dAPIs:
 
 - Self-funded dAPIs
-- Managed dAPIs (under development)
+- Managed dAPIs
 
 ## Self-funded dAPIs
 
@@ -102,7 +102,7 @@ status of respective self-funded dAPIs and fund them accordingly.-->
 ## Managed dAPIs
 
 Managed dAPIs are sourced from multiple first-party oracles and aggregated using
-a median function. Managed dAPIs are currently under development.
+a median function.
 
 ### Accessing Managed dAPIs
 
@@ -123,12 +123,12 @@ API3 recommends the usage of managed dAPIs in high value production use cases.
 
 # API3 Market
 
-The API3 Market lists all available dAPIs, self-funded and (in-time) managed
-dAPis. It represents a hub that allows developers to:
+The API3 Market lists all available dAPIs, self-funded and managed dAPis. It
+represents a hub that allows developers to:
 
 - Browse through a catalogue of potential data feeds to integrate
 - Fund their operation in the case of self-funded dAPIs
-- Pay for the upgrade to a managed version (under development)
+- Pay for the upgrade to a managed version
 - Request new data types
 
 You can head to the

@@ -51,7 +51,7 @@ across the full application development cycle. As such, dAPIs provide products
 based on multiple use cases. These consist of:
 
 1. Self-funded data feeds (single-source)
-2. Managed data feeds (multi-source and under development)
+2. Managed data feeds (multi-source)
 3. Service Coverage (under design and development)
 4. Oracle Extractable Value (under design and development)
 
@@ -93,10 +93,10 @@ understand how to read a dAPI.
 
 ### Managed dAPIs
 
-[Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis) (currently
-under development) provide aggregated high-quality price reference data served
-on-chain by first-party oracles. dAPIs provide DeFi with a secure and
-transparent solution that can be decentralized according to their requirements.
+[Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis) provide
+aggregated high-quality price reference data served on-chain by first-party
+oracles. dAPIs provide DeFi with a secure and transparent solution that can be
+decentralized according to their requirements.
 
 Compared to self-funded dAPIs, managed dAPIs require authorization through the
 API3 Market. As such reading an aggregated data feed is permissioned, meaning
