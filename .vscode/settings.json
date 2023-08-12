@@ -59,7 +59,8 @@
     "Gelato",
     "incentivizing",
     "PRNG",
-    "nodary"
+    "nodary",
+    "permissioned"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

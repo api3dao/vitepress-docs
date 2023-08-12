@@ -51,21 +51,20 @@ available.
 
 Self-funded dAPIs will only update if the respective sponsor wallet has
 sufficient funds available to create the on-chain transaction. Consequently, it
-is imperetive that the status of a respective sponsor wallet is monitored if it
+is imperative that the status of a respective sponsor wallet is monitored if it
 is used in any capacity because there will be no updates without funds. Keeping
 the sponsor wallet at a desired level can be automated with services offered by
 projects like Gelato. Please note, that funds send to a sponsor wallet are not
 recoverable, which means that sending small amounts to keep it operational
-repeatatly is recommended over sending large amounts.
+repeatedly is recommended over sending large amounts.
 
 ## Managed dAPIs
 
-Manage dAPIs are still under development. With managed dAPIs, API3 takes over
-the gas management overhead that is associated with running dAPIs. The
-underlying [beacon sets](/reference/dapis/understand/index.md) of a managed dAPI
-are kept up to date by collecting signed data from the respective underlying
-Airnodes of a beacon set via Airnode's HTTP-Gateway and updating the beacon
-values on-chain.
+With managed dAPIs, API3 takes over the gas management overhead that is
+associated with running dAPIs. The underlying
+[beacon sets](/reference/dapis/understand/index.md) of a managed dAPI are kept
+up to date by collecting signed data from the respective underlying Airnodes of
+a beacon set via Airnode's HTTP-Gateway and updating the beacon values on-chain.
 
 ### Working towards absolute decentralization
 
