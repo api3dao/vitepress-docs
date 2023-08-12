@@ -16,6 +16,8 @@ tags:
 
 # {{$frontmatter.title}}
 
+> <Video src="https://www.youtube.com/embed/FVI16FAJgjQ"/>
+
 <!--A dAPI is a standardized interface that smart contracts can use to access data
 feed services, that are continuously updated. These can range from the latest
 cryptocurrency, forex, stock or commodity prices.-->
