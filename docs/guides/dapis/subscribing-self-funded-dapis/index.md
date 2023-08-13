@@ -20,17 +20,20 @@ tags:
 
 # {{$frontmatter.title}}
 
-With Self-Funded dAPIs, you can fund the dAPI with your own funds. The amount of
-gas you supply will determine how long your dAPI will be available for use. If
-you run out of gas, you can fund the dAPI again to keep it available for use.
-This is a good option if you are not planning to use the dAPI for a long period
-of time or if you are not planning to use the dAPI in a production environment.
+> <Video src="https://www.youtube.com/embed/kY3ExNjG_9c"/>
+
+With [Self-Funded dAPIs](/explore/dapis/using-dapis.html#self-funded-dapis), you
+can fund the dAPI with your own funds. The amount of gas you supply will
+determine how long your dAPI will be available for use. If you run out of gas,
+you can fund the dAPI again to keep it available for use. This is a good option
+if you are not planning to use the dAPI for a long period of time or if you are
+not planning to use the dAPI in a production environment.
 
 ::: info Managed dAPIs
 
 If you are planning to use your dAPI for a long period of time or if you are
 planning to use your dAPI in a production environment, we recommend that you use
-managed dAPIs provided by the API3DAO. This way, you can be sure that your dAPI
+Managed dAPIs provided by the API3 DAO. This way, you can be sure that your dAPI
 will be available to your users at all times.
 
 :::
@@ -41,20 +44,16 @@ The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
 tooling to seamlessly access dAPI services. For self-funded data feeds this
 end-to-end process consists of:
 
-<p>
-1. Exploring and selecting your data feed <br/>
-2. Funding a sponsor wallet <br/>
-3. Deploying a proxy contract to access the data feed <br/>
- <span style="margin-left:20px;">
- 3a. Deploying a proxy contract during funding <br/>
- </span>
- <span style="margin-left:20px;">
- 3b. Deploying a proxy contract from the API3 Market details page <br/>
- </span>
- <span style="margin-left:20px;">
- 3c. Verifying the deployed proxy contract <br/>
- </span>
-</p>
+- [Exploring and selecting your data feed](/guides/dapis/subscribing-self-funded-dapis/#_1-exploring-and-selecting-your-data-feed)
+  <br/>
+- [Funding a sponsor wallet](/dapis/subscribing-self-funded-dapis/#_2-funding-a-sponsor-wallet)
+  <br/>
+- [Deploying a proxy contract to access the data feed](/guides/dapis/subscribing-self-funded-dapis/#_3-deploying-a-proxy-contract-to-access-the-data-feed)
+  <br/>
+  - [Deploying a proxy contract during funding](/guides/dapis/subscribing-self-funded-dapis/#_3a-deploying-a-proxy-contract-during-funding)
+    <br/>
+  - [Deploying a proxy contract from the API3 Market details page](/guides/dapis/subscribing-self-funded-dapis/#_3b-deploying-a-proxy-contract-from-the-api3-market-details-page)
+    <br/>
 
 ## 1. Exploring and selecting your data feed
 
@@ -121,7 +120,7 @@ Funds sent to the wallet address will not be returned.
 Once the transaction is broadcasted & confirmed on the blockchain a transaction
 confirmation screen will appear.
 
-<img src="../../assets/images/dapi-confirm-funding.png" style="width:60%"/>
+<img src="../../assets/images/dapi-confirm-funding.png" style="width:70%"/>
 
 ::: info 15 mins to start the feed
 
@@ -163,7 +162,7 @@ that will deploy a proxy contract.
 Once the transaction is broadcasted & confirmed on the blockchain, the proxy
 contract address will be shown on the UI.
 
-<img src="../../assets/images/dapi-proxy-confirmation.png" style="width:60%"/>
+<img src="../../assets/images/dapi-proxy-confirmation.png" style="width:70%"/>
 
 ### 3b. Deploying a proxy contract from the API3 Market details page
 
@@ -178,32 +177,7 @@ confirmed on the blockchain, the proxy contract address will be shown on the UI.
 
 <img src="../../assets/images/dapi-proxy-confirmation2.png" style="width:60%"/>
 
-### 3c. Verifying the deployed proxy contract
-
-Before using the proxy contract, you should verify if the proxy contract points
-to the correct `dapiNameHash` and `api3ServerV1` address. This can be done by
-viewing the code of the proxy on the block explorer.
-
-The `api3ServerV1` address should be the same as the address of the
-`Api3ServerV1` contract. Refer to the
-[chains and contract addresses](/reference/dapis/chains/) page for the address
-of the `Api3ServerV1` contract on different chains.
-
-The `dapiNameHash` should be the same as the `dapiNameHash` of the dAPI you are
-using which can be computed using the following cli commands:
-
-```bash
-$ npm install -g @ethersproject/cli
-
-$ ethers eval 'utils.solidityKeccak256(["bytes32"],[utils.formatBytes32String("ETH/USD")])'
-
-0x9e6138f8f57d7b493a8364edb0a0ac92399dfd890eecb9121050836a1749ba42 ← dapiNameHash
-```
-
-Where `ETH/USD` is the `dapiName` from the details page of the dAPI on the API3
-Market.
-
-Once you have verified the `dapiNameHash` and `Api3ServerV1` address, you can
-start using the proxy contract to read the data feed.
+To get started with using the dAPI, you can follow the
+[Reading a dAPI Proxy guide](/guides/dapis/read-a-dapi/).
 
 <FlexEndTag/>

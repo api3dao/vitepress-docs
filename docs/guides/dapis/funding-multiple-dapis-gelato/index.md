@@ -20,6 +20,8 @@ tags:
 
 # {{$frontmatter.title}}
 
+> <Video src="https://www.youtube.com/embed/9tbxmPXZs6A"/>
+
 ::: warning Third-party application
 
 Gelato is a third-party application that is not developed by the API3 team. The
