@@ -16,6 +16,8 @@ tags:
 
 # {{$frontmatter.title}}
 
+> <Video src="https://www.youtube.com/embed/wLZ4pyqAFuE"/>
+
 As outlined on the page [What are dAPIs?](/explore/dapis/what-are-dapis.md),
 API3 has created a unified, user-friendly implementation that is designed to
 simplify the process of obtaining data feed services. The API3 Market enables
@@ -26,6 +28,8 @@ are two types of dAPIs:
 - Managed dAPIs
 
 ## Self-funded dAPIs
+
+> <Video src="https://www.youtube.com/embed/NVgT93QDzzQ"/>
 
 Self-funded dAPIs currently rely on a single first-party oracle. They offer dApp
 owners the opportunity to make use of data feeds with minimal up-front
