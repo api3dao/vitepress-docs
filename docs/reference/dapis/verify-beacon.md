@@ -38,8 +38,9 @@ section.
 
 ## Verifying beaconId
 
-Navigate to the parameters page of a dAPI. As an example for
-[ETH/USD on gnosis chain](https://market.api3.org/dapis/gnosis/ETH-USD/parameters)
+From the API3 [Market<externalLinkImage/>](https://market.api3.org/dapis),
+navigate to the parameters page of a dAPI. As an example for
+[ETH/USD on gnosis chain<externalLinkImage/>](https://market.api3.org/dapis/gnosis/ETH-USD/parameters)
 the parameters are as follows:
 
 <img src="./assets/images/dapi-parameters.png"/>
@@ -74,9 +75,9 @@ const beaconId = hre.ethers.utils.solidityKeccak256(
 
 ## Verifying beaconSetId
 
-beacon sets are a collection of `beaconIds` that provide the aggregated median
+Beacon sets are a collection of `beaconIds` that provide the aggregated median
 value of the underlying `beaconIds`. The `beaconSetId` is a hash of all the
-underlying `beaconIds` and points to the Datafeed containing the median value.
+underlying `beaconIds` and points to the datafeed containing the median value.
 Following is an ethers.js script to derive the `beaconSetId`.
 
 ```javascript
@@ -87,3 +88,5 @@ const beaconSetId = hre.ethers.utils.keccak256(
   )
 );
 ```
+
+<FlexEndTag/>
