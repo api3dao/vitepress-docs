@@ -46,7 +46,7 @@ end-to-end process consists of:
 
 - [Exploring and selecting your data feed](/guides/dapis/subscribing-self-funded-dapis/#_1-exploring-and-selecting-your-data-feed)
   <br/>
-- [Funding a sponsor wallet](/dapis/subscribing-self-funded-dapis/#_2-funding-a-sponsor-wallet)
+- [Funding a sponsor wallet](/guides/dapis/subscribing-self-funded-dapis/#_2-funding-a-sponsor-wallet)
   <br/>
 - [Deploying a proxy contract to access the data feed](/guides/dapis/subscribing-self-funded-dapis/#_3-deploying-a-proxy-contract-to-access-the-data-feed)
   <br/>

@@ -159,7 +159,7 @@ The `API3ServerV1.sol` contract reads directly from its data store of beacons,
 which are powered by API provider-operated
 [Airnodes](/reference/airnode/latest/). Thus proxies allow dAPIs to be used like
 libraries. The smart contract only needs to
-[import the interface](/guides/dapis/read-a-dapi/index.md#2-read-a-dapi) for
+[import the interface](/guides/dapis/read-a-dapi/index.md#_2-read-a-dapi) for
 calling the proxy contract.
 
 This means once a dAPI is integrated to read a different data feed, the contract
