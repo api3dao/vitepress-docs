@@ -49,10 +49,10 @@ process consists of:
 
 ## Exploring, selecting and configuring your dAPI
 
-The [API3 Market<ExternalLinkImage/>](market.api3.org/) provides a list of all
-the dAPIs available across multiple chains including testnets. You can filter
-the list by chains and data providers. You can also search for a specific dAPI
-by name. Once selected, you will land on the details page
+The [API3 Market<ExternalLinkImage/>](https://market.api3.org/) provides a list
+of all the dAPIs available across multiple chains including testnets. You can
+filter the list by chains and data providers. You can also search for a specific
+dAPI by name. Once selected, you will land on the details page
 [(eg ETH/USD on polygon)<ExternalLinkImage/>](https://market.api3.org/dapis/polygon/ETH-USD)
 where you can find more information about the dAPI.
 

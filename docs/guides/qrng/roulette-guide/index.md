@@ -853,7 +853,7 @@ Now you're ready to make a bet of your choice.
 - use `betEvenOdd()` to bet on either the set of all even or odd numbers on the
   board.
 - use `betColor()` to bet on all the red or black numbers on the board.
-- use `betNumber()` to bet on any one number you wishe on the board.
+- use `betNumber()` to bet on any one number you wish on the board.
 
 For this example, let's bet on all the even numbers of the table. As the
 `MIN_BET` is set to be `10000000000000` wei, we'll use that value for making the
