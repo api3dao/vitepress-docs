@@ -67,7 +67,7 @@ Once derived the beaconId is the hash of the `templateId` and Airnode address:
 import { ethers } from 'ethers';
 
 const beaconId = hre.ethers.utils.solidityKeccak256(
-  ['bytes32', 'bytes32'],
+  ['bytes32', 'address'],
   [templateId, AirnodeAddress]
 );
 ```
