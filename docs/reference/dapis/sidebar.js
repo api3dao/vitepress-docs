@@ -54,7 +54,10 @@ module.exports = [
         text: 'ID and Name Schemes',
         link: '/reference/dapis/schemes',
       },
-
+      {
+        text: 'Verifying the source of a dAPI',
+        link: '/reference/dapis/verify-beacon',
+      },
       {
         text: 'Chains and Contracts',
         link: '/reference/dapis/chains/',
