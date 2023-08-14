@@ -26,7 +26,7 @@ tags:
 
 Gelato is a third-party application that is not developed by the API3 team. The
 API3 team does not provide support for Gelato. If you have any questions or
-issues with the gelato platform, please contact the Gelato team directly.
+issues with the Gelato platform, please contact the Gelato team directly.
 
 :::
 
@@ -157,7 +157,7 @@ following parameters:
 ## 3. Creating the task
 
 Once the contract is deployed and initialized, you need to create a task on
-gelato. Head over to the
+Gelato. Head over to the
 [App Platform<ExternalLinkImage/>](https://app.gelato.network/) and connect your
 wallet.
 
@@ -205,7 +205,7 @@ create the task:
 
 Once the task is created, you need to **transfer the gas funds** to the deployed
 `Automation.sol` contract. You can do this by directly sending funds to the
-contract address. Once funded, gelato keepers will monitor the balance of the
+contract address. Once funded, Gelato keepers will monitor the balance of the
 sponsorWallets and fund the sponsorWallets if the balance is less than the
 minimum balance. A small fee will be deducted from the contract balance and sent
 to the Gelato network for providing the automation service.

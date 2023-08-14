@@ -41,8 +41,7 @@ the dAPI's data (`value` int224, `timestamp` uint256).
 (value, timestamp) = IProxy(0xa8785d83A31B21065F27b640F50694b39B1bda9a).read();
 ```
 
-See the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
+See the guide [Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and
 learn more on how to use a proxy contract address.
 
 <FlexEndTag/>

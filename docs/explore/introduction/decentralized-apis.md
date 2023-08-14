@@ -88,8 +88,8 @@ Market, dApp owners can swiftly gain access to a dAPI with minimal effort.
 Follow the guide
 [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
 to get started. Then see the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-understand how to read a dAPI.
+[Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and understand
+how to read a dAPI.
 
 ### Managed dAPIs
 

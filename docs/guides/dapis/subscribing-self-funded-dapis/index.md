@@ -22,7 +22,7 @@ tags:
 
 > <Video src="https://www.youtube.com/embed/kY3ExNjG_9c"/>
 
-With [Self-Funded dAPIs](/explore/dapis/using-dapis.html#self-funded-dapis), you
+With [Self-Funded dAPIs](/explore/dapis/using-dapis.md#self-funded-dapis), you
 can fund the dAPI with your own funds. The amount of gas you supply will
 determine how long your dAPI will be available for use. If you run out of gas,
 you can fund the dAPI again to keep it available for use. This is a good option
@@ -46,7 +46,7 @@ end-to-end process consists of:
 
 - [Exploring and selecting your data feed](/guides/dapis/subscribing-self-funded-dapis/#_1-exploring-and-selecting-your-data-feed)
   <br/>
-- [Funding a sponsor wallet](/dapis/subscribing-self-funded-dapis/#_2-funding-a-sponsor-wallet)
+- [Funding a sponsor wallet](/guides/dapis/subscribing-self-funded-dapis/#_2-funding-a-sponsor-wallet)
   <br/>
 - [Deploying a proxy contract to access the data feed](/guides/dapis/subscribing-self-funded-dapis/#_3-deploying-a-proxy-contract-to-access-the-data-feed)
   <br/>

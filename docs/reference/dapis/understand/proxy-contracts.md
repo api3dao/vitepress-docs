@@ -24,8 +24,8 @@ contract is linked to a single dAPI on a particular network.
 
 dApp owners use the address of a proxy contract to read dAPIs with the
 [IProxy interface](/reference/dapis/understand/iproxy.md). See the guide
-[Reading a self-funded dAPI proxy ](/guides/dapis/read-self-funded-dapi/) for a
-complete working example.
+[Reading a self-funded dAPI proxy ](/guides/dapis/read-a-dapi/) for a complete
+working example.
 
 ```
 import "@api3/contracts/v0.8/interfaces/IProxy.sol";

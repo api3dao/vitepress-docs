@@ -23,14 +23,14 @@ unless it is funded again.
 
 ## How it works
 
-Unlike [Managed dAPIs](/reference/dapis/understand/managed.html), self-funded
+Unlike [Managed dAPIs](/reference/dapis/understand/managed.md), self-funded
 dAPIs are single-source data feeds. The data is sourced from a single
-[first-party](/explore/airnode/why-first-party-oracles.html) data provider
-running an [Airnode](/reference/airnode/latest/understand/) and an
-[Airseeker](/reference/dapis/understand/self-funded.html#airseeker) which
-updates the `beaconId` with Airnode's signed data. The gas costs for self-funded
-dAPIs are managed by the users themselves. As long as the sponsor wallet of the
-dAPI has enough gas, it will be updated.
+[first-party](/explore/airnode/why-first-party-oracles.md) data provider running
+an [Airnode](/reference/airnode/latest/understand/) and an
+[Airseeker](/reference/dapis/understand/self-funded.md#airseeker) which updates
+the `beaconId` with Airnode's signed data. The gas costs for self-funded dAPIs
+are managed by the users themselves. As long as the sponsor wallet of the dAPI
+has enough gas, it will be updated.
 
 Datafeed values for Self-funded dAPIs are also stored on-chain within the same
 [`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
@@ -56,7 +56,7 @@ Like Airnode,
 serverless lambda function that is responsible for updating the values of each
 `beaconId` for each dAPI. It is used to update the beacons with signed responses
 from
-[Airnode's HTTP-Gateway](/reference/airnode/latest/understand/http-gateways.html).
+[Airnode's HTTP-Gateway](/reference/airnode/latest/understand/http-gateways.md).
 
 Airseeker uses Airnode's built-in HTTP-Gateway to receive signed data and push
 it on-chain in a tamper proof way.
@@ -65,8 +65,8 @@ Similar to Airnode's OIS, Airseeker also requires a configuration file that is
 used to configure the Airseeker.
 [Click here to see an example of an Airseeker configuration file.<ExternalLinkImage/>](https://github.com/api3dao/airseeker/blob/main/config/airseeker.example.json).
 The configuration file is used to configure the
-[deviation thresholds](/reference/dapis/understand/deviations.html) and
-[heartbeat](/reference/dapis/understand/deviations.html#heartbeat) for each
+[deviation thresholds](/reference/dapis/understand/deviations.md) and
+[heartbeat](/reference/dapis/understand/deviations.md#heartbeat) for each
 `beaconId`. For self-funded dAPIs, the deviation threshold is set to 1% and the
 heartbeat is set to 24 hours.
 
