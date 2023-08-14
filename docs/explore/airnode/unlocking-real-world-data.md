@@ -156,7 +156,7 @@ needs to be compatible with an oracle node.
 ::: info Read more
 
 This functionality includes functions such as
-[Authorizers](/reference/airnode/latest/understand/apply-auth.html). An Airnode
+[Authorizers](/reference/airnode/latest/understand/apply-auth.md). An Airnode
 can authorize smart contracts (know as requesters) access to its endpoints using
 Authorizers.
 

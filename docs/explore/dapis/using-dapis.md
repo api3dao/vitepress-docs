@@ -52,7 +52,7 @@ already been funded and any dApp owner can proceed to use the dAPI.
 
 <!--::: info Developer info
 
-dAPI implmentation to your solidity contract is simple, learn more [within this
+dAPI implementation to your solidity contract is simple, learn more [within this
 starter kit](link to API3 DAO starter kit).
 
 :::-->
@@ -71,7 +71,7 @@ dAPIs. To use a self-funded data feed you:
 - [Fund a sponsor wallet](/guides/dapis/subscribing-self-funded-dapis/) (if not
   already funded)
 - Deploy the proxy contract (if not already deployed)
-- [Read the dAPI](/guides/dapis/read-self-funded-dapi/)
+- [Read the dAPI](/guides/dapis/read-a-dapi/)
 
   <img src="../assets/images/self_funded_market_process_notext.png" style="width:500px">
 
@@ -83,7 +83,7 @@ a [proxy contract](/reference/dapis/understand/proxy-contracts.md).
 ::: info Get started
 
 Developers can use the API3 Market now to
-[<span style="color:rgb(16, 185, 129);">read</span>](/guides/dapis/read-self-funded-dapi/)
+[<span style="color:rgb(16, 185, 129);">read</span>](/guides/dapis/read-a-dapi/)
 a self-funded dAPI.
 
 :::

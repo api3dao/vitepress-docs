@@ -17,7 +17,7 @@ tags:
 # {{$frontmatter.title}}
 
 Managed dAPIs are sourced directly from multiple
-[first-party](/explore/airnode/why-first-party-oracles.html) data providers
+[first-party](/explore/airnode/why-first-party-oracles.md) data providers
 running an [Airnode](/reference/airnode/latest/understand/) and aggregated using
 Airnode's signed data. The gas costs and availability of managed dAPIs is
 managed by the dAPI team within [API3 DAO](/explore/dao-members/).
@@ -37,12 +37,12 @@ set `updateBeaconSetWithBeacons`.
 
 dAPIs are human-readable mappings that maps to a `beaconId` or `beaconSetId`.
 The `beaconId` for each dAPI gets updated when the price hits the set
-[deviation threshold](/reference/dapis/understand/deviations.html)/[heartbeat](/reference/dapis/understand/deviations.html#heartbeat)
+[deviation threshold](/reference/dapis/understand/deviations.md)/[heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 using
-[Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.html).
-[Airseeker](/reference/dapis/understand/managed.html#airseeker) and other
-entities who have access to Airnode's signed data are responsible for updating
-each individual `beaconId` for each dAPI.
+[Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.md).
+[Airseeker](/reference/dapis/understand/managed.md#airseeker) and other entities
+who have access to Airnode's signed data are responsible for updating each
+individual `beaconId` for each dAPI.
 
 A `beaconId` for each dAPI is derived from the hash of the provider's Airnode's
 address and its Template ID(a hash of one of the Airnode's `endpointId` and
@@ -61,7 +61,7 @@ Like Airnode,
 serverless lambda function that is responsible for updating the values of each
 `beaconId` for each dAPI. It is used to update the beacons with signed responses
 from
-[Airnode's HTTP-Signed-Gateway](/reference/airnode/latest/understand/http-gateways.html).
+[Airnode's HTTP-Signed-Gateway](/reference/airnode/latest/understand/http-gateways.md).
 
 Airseeker uses Airnode's built-in HTTP-Gateway to receive signed data and push
 it on-chain in a tamper proof way.
@@ -84,7 +84,7 @@ providers are listed below:
 | Cryptocurrency | Nodary, Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
 | Forex          | Nodary, Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
 | Commodities    | Nodary, Finage, Twelvedata, dxFeed, Tradermade                          |
-| Equities       | Nodary, Finage, Twelvedata, IEXCloud, finnhub, dxfeed                   |
+| Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxfeed                   |
 
 All the data providers listed here are selected and properly tested by the dAPI
 team to ensure the highest quality data availability for the listed dAPIs.

@@ -115,8 +115,8 @@ them ideal to use on a production chain.
 See the guide
 [Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
 and learn more on how to fund a dAPI. Also see the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-self-funded-dapi/) and
-learn how to use a proxy contract address to read a dAPI.
+[Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and learn how to
+use a proxy contract address to read a dAPI.
 
 ## Managed dAPIs
 

@@ -16,14 +16,14 @@ tags:
 
 # {{$frontmatter.title}}
 
-[Managed dAPIs](/explore/dapis/using-dapis.html#managed-dapis) are datafeeds
-that are sourced directly from multiple
+[Managed dAPIs](/explore/dapis/using-dapis.md#managed-dapis) are datafeeds that
+are sourced directly from multiple
 [first-party oracles](/explore/airnode/why-first-party-oracles) and aggregated
-using [Airnode's](/explore/airnode/what-is-airnode.html) signed data. It
-utilises first-party oracles, enabling data to be served directly from reputable
-API providers via the Airnode. Unlike self-funded dAPIs, API3 manages the gas
-costs and the availability of the managed dAPIs. This guide will walk you
-through the process of subscribing to a managed dAPI.
+using [Airnode's](/explore/airnode/what-is-airnode.md) signed data. It utilises
+first-party oracles, enabling data to be served directly from reputable API
+providers via the Airnode. Unlike self-funded dAPIs, API3 manages the gas costs
+and the availability of the managed dAPIs. This guide will walk you through the
+process of subscribing to a managed dAPI.
 
 ::: info Managed dAPIs
 
@@ -63,7 +63,7 @@ choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
 
 Managed dAPIs gives you an option to configure the dAPI's
 [deviation threshold](/reference/dapis/understand/deviations) and
-[heartbeat](/reference/dapis/understand/deviations.html#heartbeat). For managed
+[heartbeat](/reference/dapis/understand/deviations.md#heartbeat). For managed
 dAPIs, you will have the following options to choose from:
 
 | Deviation | Heartbeat |
@@ -80,8 +80,8 @@ Check the [API3 Market](https://market.api3.org/) for more info.
 
 :::
 
-_[Click here](/reference/dapis/understand/deviations.html#update-interval) to
-read more if you are unsure what suits your dApp_
+_[Click here](/reference/dapis/understand/deviations.md#update-interval) to read
+more if you are unsure what suits your dApp_
 
 Check the final price and time frame for the selected configuration. If you are
 happy with it, select **Add to Cart**. You can also add other dAPIs on the same
