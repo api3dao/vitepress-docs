@@ -2311,6 +2311,15 @@
     "tags": null
   },
   "237": {
+    "title": "Verify dAPI sources",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "dAPIs",
+    "pageHeader": "Reference → dAPIs",
+    "path": "/reference/dapis/verify-beacon.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "238": {
     "title": "Chains and Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2319,7 +2328,7 @@
     "outline": "deep",
     "tags": null
   },
-  "238": {
+  "239": {
     "title": "Deviation thresholds",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2328,7 +2337,7 @@
     "outline": "deep",
     "tags": null
   },
-  "239": {
+  "240": {
     "title": "dAPIs are data feeds",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2337,7 +2346,7 @@
     "outline": "deep",
     "tags": null
   },
-  "240": {
+  "241": {
     "title": "IProxy interface",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2346,7 +2355,7 @@
     "outline": "deep",
     "tags": null
   },
-  "241": {
+  "242": {
     "title": "Managed dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2355,7 +2364,7 @@
     "outline": "deep",
     "tags": null
   },
-  "242": {
+  "243": {
     "title": "Proxy contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2364,7 +2373,7 @@
     "outline": "deep",
     "tags": null
   },
-  "243": {
+  "244": {
     "title": "Reading dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2373,7 +2382,7 @@
     "outline": "deep",
     "tags": null
   },
-  "244": {
+  "245": {
     "title": "Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2382,7 +2391,7 @@
     "outline": "deep",
     "tags": null
   },
-  "245": {
+  "246": {
     "title": "Self-funded dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2391,7 +2400,7 @@
     "outline": "deep",
     "tags": null
   },
-  "246": {
+  "247": {
     "title": "Sponsor wallets",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -2400,7 +2409,7 @@
     "outline": "deep",
     "tags": null
   },
-  "247": {
+  "248": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2410,7 +2419,7 @@
     "outline": "deep",
     "tags": null
   },
-  "248": {
+  "249": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2420,7 +2429,7 @@
     "outline": "deep",
     "tags": null
   },
-  "249": {
+  "250": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2430,7 +2439,7 @@
     "outline": "deep",
     "tags": null
   },
-  "250": {
+  "251": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2440,7 +2449,7 @@
     "outline": "deep",
     "tags": null
   },
-  "251": {
+  "252": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2450,7 +2459,7 @@
     "outline": "deep",
     "tags": null
   },
-  "252": {
+  "253": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2460,7 +2469,7 @@
     "outline": "deep",
     "tags": null
   },
-  "253": {
+  "254": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2470,7 +2479,7 @@
     "outline": "deep",
     "tags": null
   },
-  "254": {
+  "255": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2480,7 +2489,7 @@
     "outline": "deep",
     "tags": null
   },
-  "255": {
+  "256": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2490,7 +2499,7 @@
     "outline": "deep",
     "tags": null
   },
-  "256": {
+  "257": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2500,7 +2509,7 @@
     "outline": "deep",
     "tags": null
   },
-  "257": {
+  "258": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2510,7 +2519,7 @@
     "outline": "deep",
     "tags": null
   },
-  "258": {
+  "259": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2520,7 +2529,7 @@
     "outline": "deep",
     "tags": null
   },
-  "259": {
+  "260": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2530,7 +2539,7 @@
     "outline": "deep",
     "tags": null
   },
-  "260": {
+  "261": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2540,7 +2549,7 @@
     "outline": "deep",
     "tags": null
   },
-  "261": {
+  "262": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2550,7 +2559,7 @@
     "outline": "deep",
     "tags": null
   },
-  "262": {
+  "263": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2560,7 +2569,7 @@
     "outline": "deep",
     "tags": null
   },
-  "263": {
+  "264": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2570,7 +2579,7 @@
     "outline": "deep",
     "tags": null
   },
-  "264": {
+  "265": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2580,7 +2589,7 @@
     "outline": "deep",
     "tags": null
   },
-  "265": {
+  "266": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2590,7 +2599,7 @@
     "outline": "deep",
     "tags": null
   },
-  "266": {
+  "267": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2600,7 +2609,7 @@
     "outline": "deep",
     "tags": null
   },
-  "267": {
+  "268": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -2610,7 +2619,7 @@
     "outline": "deep",
     "tags": null
   },
-  "268": {
+  "269": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2619,7 +2628,7 @@
     "outline": "deep",
     "tags": null
   },
-  "269": {
+  "270": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2628,7 +2637,7 @@
     "outline": "deep",
     "tags": null
   },
-  "270": {
+  "271": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2637,7 +2646,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "271": {
+  "272": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2646,7 +2655,7 @@
     "outline": "deep",
     "tags": null
   },
-  "272": {
+  "273": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -2655,7 +2664,7 @@
     "outline": "deep",
     "tags": null
   },
-  "273": {
+  "274": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,

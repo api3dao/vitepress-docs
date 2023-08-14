@@ -33,7 +33,7 @@ the `beaconId` based on the specification of the dAPI. Providers also update the
 
 To verify that the airnode address of a beaconId belongs to the provider listed
 in the market, refer to the
-[Verify Airnode Addresses](../airnode/latest/developers/verify-airnode-addresses.md)
+[Verify Airnode Addresses](/reference/airnode/latest/developers/verify-airnode-addresses.md)
 section.
 
 ## Verifying beaconId
@@ -49,7 +49,7 @@ The templateId is calculated by taking the hash of the `encodedParameters` and
 `endpointId`.
 
 Following is an ethers.js script to derive the templateId (you need
-[airnode-abi](../airnode/latest/packages/airnode-abi.md) installed):
+[airnode-abi](/reference/airnode/latest/packages/airnode-abi.md) installed):
 
 ```javascript
 import { encode } from '@api3/airnode-abi';
