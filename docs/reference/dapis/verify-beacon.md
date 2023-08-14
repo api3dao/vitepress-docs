@@ -1,5 +1,5 @@
 ---
-title: Verifying the source of a dAPI
+title: Verify dAPI sources
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs

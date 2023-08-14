@@ -55,7 +55,7 @@ module.exports = [
         link: '/reference/dapis/schemes',
       },
       {
-        text: 'Verifying the source of a dAPI',
+        text: 'Verify dAPI sources',
         link: '/reference/dapis/verify-beacon',
       },
       {
