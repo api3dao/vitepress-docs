@@ -45,8 +45,8 @@ repo
 ## Usage
 
 Use the address of a proxy contract to read dAPIs with `IProxy`. See the guide
-[Reading a self-funded dAPI proxy ](/guides/dapis/read-self-funded-dapi/) for a
-complete working example. Proxy contract addresses are available on the
+[Reading a self-funded dAPI proxy ](/guides/dapis/read-a-dapi/) for a complete
+working example. Proxy contract addresses are available on the
 [API3 Market<ExternalLinkImage/>](https://market.api3.org).
 
 ```

@@ -37,13 +37,13 @@ or a set of beacons and are sometimes referred to as first-party data feeds
 because they are sourced from first-party oracles. Therefore a beacon is
 directly powered and maintained on-chain by the owner of the data, the API
 provider, which effectively removes third-party middlemen that other oracle
-solutions rely on. This approach creates source transparency in addition to,
-higher security, cost-efficiency and scalability through less parties being
+solutions rely on. This approach creates source transparency in addition to
+higher security, cost-efficiency, and scalability through less parties being
 involved in the oracle service operation.
 
 ## dAPIs connect smart contracts to first-party data feeds
 
-Through the use of the proxy contract function `read()` API3 can associate the
+Through the use of the proxy contract function `read()`, API3 can associate the
 ID of a beacon or beacon set with a human-readable name like ETH/USD. The
 benefit of this approach is that dApps continue to read the same dAPI name
 without being required to make any changes to their code, effectively turning
@@ -55,8 +55,8 @@ At the core, a **dAPI** is a mapping that points towards a **beacon** or a
 **beacon set**, similarly to how an ENS name is mapped to a wallet address. The
 ability to control this mapping allows the API3 DAO to take over the management
 overhead that is associated with oracle infrastructure by e.g. creating a new
-beacon set if one first-party oracle becomes unavailable and pointing the name
-"AVAX/USD" towards the newly created ID.
+beacon set if one first-party oracle becomes unavailable and pointing the name,
+e.g. `AVAX/USD`, towards the newly created ID.
 
 ## What is a Beacon or a Beacon Set?
 
@@ -143,7 +143,7 @@ A dAPI points to an individual beacon or an aggregation of multiple beacons
 (beacon set). Each dAPI has a human-readable name (e.g., `AVAX/USD`) that makes
 them easy to categorize. The contract
 [API3ServerV1.sol](/reference/dapis/understand/) maintains the link between a
-dAPI name and the beacon(s) it uses for the dAPI. dApps use an API3 Marker proxy
+dAPI name and the beacon(s) it uses for the dAPI. dApps use an API3 Market proxy
 contract to read any dAPI from `API3ServerV1.sol`.
 
 dApp owners use a proxy contract, available on the
@@ -159,8 +159,8 @@ The `API3ServerV1.sol` contract reads directly from its data store of beacons,
 which are powered by API provider-operated
 [Airnodes](/reference/airnode/latest/). Thus proxies allow dAPIs to be used like
 libraries. The smart contract only needs to
-[import the interface](/guides/dapis/read-self-funded-dapi/) for calling the
-proxy contract.
+[import the interface](/guides/dapis/read-a-dapi/index.md#2-read-a-dapi) for
+calling the proxy contract.
 
 This means once a dAPI is integrated to read a different data feed, the contract
 does not need to change the code itself, rather it only needs to use a different
@@ -172,9 +172,9 @@ Refer to these guides and learn how to fund a self-funded dAPI and to read the
 dAPI using a proxy contract:
 
 - [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/index.md)
-- [Reading a Self-Funded dAPI Proxy](/guides/dapis/read-self-funded-dapi/index.md)
+- [Reading a Self-Funded dAPI Proxy](/guides/dapis/read-a-dapi/)
 
-<!--Additionally it is going to play a cruical role in setting up required
+<!--Additionally it is going to play a crucial role in setting up required
 contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->
 
 <!--## dAPI Maintenance
