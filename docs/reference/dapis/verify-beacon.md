@@ -49,7 +49,7 @@ The `templateId` is calculated by taking the hash of the `encodedParameters` and
 `endpointId`.
 
 Following is an ethers.js v5 script to derive the `templateId` (you need
-[airnode-abi](../airnode/latest/packages/airnode-abi.md) installed):
+[airnode-abi](reference/airnode/latest/packages/airnode-abi.md) installed):
 
 ```javascript
 import { encode } from '@api3/airnode-abi';
@@ -83,6 +83,8 @@ underlying `beaconIds` and points to the Datafeed containing the median value.
 Following is an ethers.js v5 script to derive the `beaconSetId`.
 
 ```javascript
+import { ethers } from 'ethers';
+
 const beaconSetId = ethers.utils.keccak256(
   ethers.utils.defaultAbiCoder.encode(
     ['bytes32[]'],
