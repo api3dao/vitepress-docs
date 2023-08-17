@@ -31,8 +31,8 @@ The dAPI team is running Airseekers which are primarily responsible for updating
 the `beaconId` based on the specification of the dAPI. Providers also update the
 `beaconId` at a higher deviation threshold/heartbeat as a fallback.
 
-To verify that the airnode address of a `beaconId` belongs to the provider listed
-in the market, refer to the
+To verify that the airnode address of a `beaconId` belongs to the provider
+listed in the market, refer to the
 [Verify Airnode Addresses](/reference/airnode/latest/developers/verify-airnode-addresses.md)
 section.
 
@@ -48,13 +48,13 @@ the parameters are as follows:
 The `templateId` is calculated by taking the hash of the `encodedParameters` and
 `endpointId`.
 
-<<<<<<< Updated upstream
-Following is an ethers.js script to derive the templateId (you need
+<<<<<<< Updated upstream Following is an ethers.js script to derive the
+templateId (you need
 [airnode-abi](/reference/airnode/latest/packages/airnode-abi.md) installed):
-=======
-Following is an ethers.js v5 script to derive the `templateId` (you need
+======= Following is an ethers.js v5 script to derive the `templateId` (you need
 [airnode-abi](../airnode/latest/packages/airnode-abi.md) installed):
->>>>>>> Stashed changes
+
+> > > > > > > Stashed changes
 
 ```javascript
 import { encode } from '@api3/airnode-abi';
@@ -73,21 +73,24 @@ Once derived the `beaconId` is the hash of the Airnode address and `templateId`:
 import { ethers } from 'ethers';
 
 const beaconId = ethers.utils.keccak256(
-    hre.ethers.utils.solidityPack(['address', 'bytes32'], [AirnodeAddress, templateId])
-  );
+  hre.ethers.utils.solidityPack(
+    ['address', 'bytes32'],
+    [AirnodeAddress, templateId]
+  )
+);
 ```
 
 ## Verifying beaconSetId
 
 Beacon sets are a collection of `beaconIds` that provide the aggregated median
 value of the underlying `beaconIds`. The `beaconSetId` is a hash of all the
-<<<<<<< Updated upstream
-underlying `beaconIds` and points to the datafeed containing the median value.
-Following is an ethers.js script to derive the `beaconSetId`.
-=======
-underlying `beaconIds` and points to the Datafeed containing the median value.
-Following is an ethers.js v5 script to derive the `beaconSetId`.
->>>>>>> Stashed changes
+<<<<<<< Updated upstream underlying `beaconIds` and points to the datafeed
+containing the median value. Following is an ethers.js script to derive the
+`beaconSetId`. ======= underlying `beaconIds` and points to the Datafeed
+containing the median value. Following is an ethers.js v5 script to derive the
+`beaconSetId`.
+
+> > > > > > > Stashed changes
 
 ```javascript
 const beaconSetId = ethers.utils.keccak256(
