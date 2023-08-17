@@ -48,13 +48,9 @@ the parameters are as follows:
 The `templateId` is calculated by taking the hash of the `encodedParameters` and
 `endpointId`.
 
-<<<<<<< Updated upstream Following is an ethers.js script to derive the
-templateId (you need
-[airnode-abi](/reference/airnode/latest/packages/airnode-abi.md) installed):
-======= Following is an ethers.js v5 script to derive the `templateId` (you need
+Following is an ethers.js v5 script to derive the `templateId` (you need
 [airnode-abi](../airnode/latest/packages/airnode-abi.md) installed):
 
-> > > > > > > Stashed changes
 
 ```javascript
 import { encode } from '@api3/airnode-abi';
@@ -82,15 +78,8 @@ const beaconId = ethers.utils.keccak256(
 
 ## Verifying beaconSetId
 
-Beacon sets are a collection of `beaconIds` that provide the aggregated median
-value of the underlying `beaconIds`. The `beaconSetId` is a hash of all the
-<<<<<<< Updated upstream underlying `beaconIds` and points to the datafeed
-containing the median value. Following is an ethers.js script to derive the
-`beaconSetId`. ======= underlying `beaconIds` and points to the Datafeed
-containing the median value. Following is an ethers.js v5 script to derive the
-`beaconSetId`.
-
-> > > > > > > Stashed changes
+Beacon sets are a collection of `beaconIds` that provide the aggregated median value of the underlying `beaconIds`. The `beaconSetId` is a hash of all the underlying `beaconIds` and points to the Datafeed
+containing the median value. Following is an ethers.js v5 script to derive the `beaconSetId`.
 
 ```javascript
 const beaconSetId = ethers.utils.keccak256(
