@@ -19,7 +19,7 @@ tags:
 This guide demonstrates Airnode's ability to execute its
 [`postProcessingSpecifications`](/reference/ois/latest/processing.md) capability
 which runs user defined code during its run cycle. The following describes the
-work flow Airnode uses:
+workflow Airnode uses:
 
 1. Run `preProcessingSpecifications`
 2. Airnode calls requested OIS endpoint
@@ -50,7 +50,7 @@ and run steps #1-3. Make the following adjustment when doing so:
 :::
 
 Once the project folder from the **Deploying Airnode locally using Docker**
-guide has been download and the `config.json` file updated, return to step #2
+guide has been downloaded and the `config.json` file updated, return to step #2
 below. But first read about the changes made to the newer `config.json` file
 shown below.
 
