@@ -84,7 +84,7 @@ is a short list of requirements a DAO member must meet to create proposals.
 
 ### Promote
 
-Creating a proposal is a process and is highly recommended, and to some extend
+Creating a proposal is a process and is highly recommended, and to some extent
 expected, for your proposal to succeed.
 
 1. Promote your idea and gather feedback on the API3 forum using a
@@ -148,7 +148,7 @@ To create a new proposal using the DAO dashboard:
    > A description can be typed text but consider using a PDF hosted on IPFS.
    > See the
    > [Using IPFS for Proposals](/guides/dao-members/proposals.md#using-ipfs-for-proposals)
-   > section below. Also consider adding a link back the forum where you posted
+   > section below. Also consider adding a link back to the forum where you posted
    > your proposal for discussion.
 
 5. Enter the **Target Contract** address.
@@ -242,7 +242,7 @@ parameters, you can use this ENS name instead of the account address. Before
 making the transaction that will create the proposal, the DAO dashboard will
 look up the address that the ENS name is pointing to and use the raw address in
 the proposal. Therefore, changing the address that the ENS name is pointing to
-after this look up operation **WILL NOT** have an affect on the proposal.
+after this look up operation **WILL NOT** have an effect on the proposal.
 
 For voters to see your ENS name instead of the raw address on the proposal
 details page, you will have to use the
