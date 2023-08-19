@@ -262,7 +262,7 @@ npx @api3/airnode-admin derive-sponsor-wallet-address \
 
 ::: warning Designated Sponsor Wallets
 
-Sponsors should not fund a `sponsorWallet` with more then they can trust the
+Sponsors should not fund a `sponsorWallet` with more than they can trust the
 Airnode with, as the Airnode controls the private key to the `sponsorWallet`.
 The deployer of such Airnode undertakes no custody obligations, and the risk of
 loss or misuse of any excess funds sent to the `sponsorWallet` remains with the
@@ -346,7 +346,7 @@ calling the `withdraw()` function.
 
 The Airnode listens for withdrawal requests and fulfills them automatically.
 Therefore, the Requester contract makes a request for withdrawal to the Airnode.
-The Airnode then fulfills the request, calls the `recieve()` function in the
+The Airnode then fulfills the request, calls the `receive()` function in the
 Requester contract, that sends the funds back to the owner.
 
 ```solidity
