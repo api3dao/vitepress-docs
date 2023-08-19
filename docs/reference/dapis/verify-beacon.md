@@ -77,7 +77,7 @@ const beaconId = ethers.utils.solidityKeccak256(
 
 Beacon sets are a collection of `beaconIds` that provide the aggregated median
 value of the underlying `beaconIds`. The `beaconSetId` is a hash of all the
-underlying `beaconIds` and points to the Datafeed containing the median value.
+underlying `beaconIds` and points to the datafeed containing the median value.
 Following is an ethers.js v5 script to derive the `beaconSetId`.
 
 ```javascript
