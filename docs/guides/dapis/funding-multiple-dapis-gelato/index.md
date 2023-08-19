@@ -37,7 +37,7 @@ if you have multiple dAPIs that you want to use in your smart contract. Instead
 of manually funding each dAPI at regular intervals, you can use Gelato to
 automate the process.
 
-This following contract will be used in this guide. Open it in
+The following contract will be used in this guide. Open it in
 [Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://gist.githubusercontent.com/Ashar2shahid/a63d5b04ff9640c2f860f54dffa78995/raw/ce0a9461b817f59774deb1aaaa368438e4e3328b/Automation.sol).
 
 ```solidity
