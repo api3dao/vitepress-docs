@@ -30,7 +30,7 @@ your dashboard.
 
 Select the <b>CREATE NEW KEY</b>. Note that Infura projects have been renamed as
 keys. If you already have a key you wish to use, click on the <b>MANAGE KEY</b>
-button to the right of the key name and go the next step (#3).
+button to the right of the key name and go to the next step (#3).
 
 <img src="./src/infura-key-new.png" style="border:solid 1px lightgrey;width:70%;">
 

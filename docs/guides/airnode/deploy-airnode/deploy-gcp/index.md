@@ -22,7 +22,7 @@ Configuration files are provided with only minor changes to be made. The
 [latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags)
 of the Airnode
 [deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
-used to deploy the off-chain component of Airnode (a.k.a., the node) to to GCP.
+used to deploy the off-chain component of Airnode (a.k.a., the node) to GCP.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
 [CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)

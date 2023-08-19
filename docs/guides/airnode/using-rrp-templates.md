@@ -30,7 +30,7 @@ requester. As a prerequisite to this guide first try the guide
 ::: info Consider dAPIs
 
 While using the Airnode's RRP protocol to acquire API provider data is usable it
-is not as efficient or as straight forward as using a dAPI. Therefore, best
+is not as efficient or as straightforward as using a dAPI. Therefore, best
 practices usually entail using a
 [<span style="color:rgb(16, 185, 129);">dAPI</span>](/explore/dapis/what-are-dapis.md)
 to acquire API provider data.
