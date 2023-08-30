@@ -148,8 +148,8 @@ To create a new proposal using the DAO dashboard:
    > A description can be typed text but consider using a PDF hosted on IPFS.
    > See the
    > [Using IPFS for Proposals](/guides/dao-members/proposals.md#using-ipfs-for-proposals)
-   > section below. Also consider adding a link back to the forum where you posted
-   > your proposal for discussion.
+   > section below. Also consider adding a link back to the forum where you
+   > posted your proposal for discussion.
 
 5. Enter the **Target Contract** address.
 
