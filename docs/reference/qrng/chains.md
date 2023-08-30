@@ -171,10 +171,11 @@ Quintessence is available on selected mainnets and testnets.
 | [{{getChainNameById(137)}}](https://polygonscan.com)                                | 137        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 20               |
 | [{{getChainNameById(30)}}](https://explorer.rsk.co)                                 | 30         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 3                |
 | [{{getChainNameById(416)}}](https://explorer.sx.technology)                         | 416        | <code>0xE338f63170c42bA0d2a888f18F6185369779009c</code><CopyIcon text="0xE338f63170c42bA0d2a888f18F6185369779009c"/> | 20               |
-| [{{getChainNameById(5000)}}](https://explorer.mantle.xyz/)                                 | 5000         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10                |
-| [{{getChainNameById(8453)}}](https://basescan.org/)                                 | 8453         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10                |
-| [{{getChainNameById(1101)}}](https://zkevm.polygonscan.com/)                                 | 1101         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10                |
-| [{{getChainNameById(59144)}}](https://lineascan.build/)                                 | 59144         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10                |
+| [{{getChainNameById(5000)}}](https://explorer.mantle.xyz/)                          | 5000       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+| [{{getChainNameById(8453)}}](https://basescan.org/)                                 | 8453       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+| [{{getChainNameById(1101)}}](https://zkevm.polygonscan.com/)                        | 1101       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+| [{{getChainNameById(59144)}}](https://lineascan.build/)                             | 59144      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+
 </div>
 
 ### Testnets
