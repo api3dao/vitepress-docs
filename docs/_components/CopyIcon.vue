@@ -5,7 +5,7 @@
   <span style="display: inline-block; max-width: 58px">
     <a
       :id="iconId"
-      href="#"
+      href="javascript:void(0)"
       class="contract-addresses-copy-icon"
       v-on:click="copyText()"
     >
