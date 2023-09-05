@@ -49,7 +49,7 @@ The `templateId` is calculated by taking the hash of the `encodedParameters` and
 `endpointId`.
 
 Following is an `ethers.js` v5 script to derive the `templateId` (you need
-[`@airnode-abi`](reference/airnode/latest/packages/airnode-abi.md) installed):
+[`@airnode-abi`](/reference/airnode/latest/packages/airnode-abi.md) installed):
 
 ```javascript
 import { encode } from '@api3/airnode-abi';

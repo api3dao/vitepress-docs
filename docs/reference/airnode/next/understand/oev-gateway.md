@@ -22,7 +22,7 @@ tags:
 OEV gateway is used in the OEV flow to sign the data won in the OEV auction. The
 data is signed by the Airnode so that only the searcher who won the auction can
 use it to update the data feed. You can learn more about OEV at
-https://api3.org/oev.
+https://api3.org.
 
 ## Setup
 
