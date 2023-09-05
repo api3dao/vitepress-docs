@@ -3,10 +3,10 @@ layout: home
 
 hero:
   name: API3
-  text: data feeds powered by Airnode
+  text: Documentation
   tagline:
-    Airnode-enabled APIs serve data on-chain directly from the source. These
-    first-party oracles then form a variety of data feed services.
+    API3 builds solutions that bridge the gap between off-chain data and
+    on-chain applications with maximum security and minimal latency.
 
   image:
     src: /img/beacons.svg
