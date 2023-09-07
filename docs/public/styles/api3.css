@@ -12,7 +12,7 @@ a {
  * Moved to use the default theme color. Works best with light/dark modes 
 */
 code {
-  color: inherit !important;
+  color: #909090 !important;
 }
 
 :root {
