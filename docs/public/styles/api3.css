@@ -7,11 +7,16 @@
 a {
   text-decoration: none !important;
 }
+/** 
+ * Starting with Vitepress rc.10, inline code blocks used the color green.
+ * Moved to use the default theme color. Works best with light/dark modes 
+*/
+code {
+  color: inherit !important;
+}
 
 :root {
   --vp-home-hero-name-color: rgb(66, 184, 131);
-
-  --vp-code-color: var('black');
 
   --vp-c-brand-1: var(--vp-c-green-1);
   --vp-c-brand-2: var(--vp-c-green-2);
