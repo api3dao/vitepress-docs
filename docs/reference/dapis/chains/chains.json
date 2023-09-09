@@ -13,7 +13,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Arbitrum.webp",
+    "logoPath": "https://market.api3.org/images/chains/Arbitrum.webp",
     "testnet": true,
     "explorerUrl": "https://goerli.arbiscan.io"
   },
@@ -46,7 +46,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Arbitrum.webp",
+    "logoPath": "https://market.api3.org/images/chains/Arbitrum.webp",
     "testnet": false,
     "explorerUrl": "https://arbiscan.io"
   },
@@ -66,7 +66,7 @@
     },
     "nativeToken": "AVAX",
     "blockTime": 19.8,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Avalanche.webp",
+    "logoPath": "https://market.api3.org/images/chains/Avalanche.webp",
     "testnet": false,
     "explorerUrl": "https://snowtrace.io"
   },
@@ -85,7 +85,7 @@
     },
     "nativeToken": "AVAX",
     "blockTime": 19.8,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Avalanche-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Avalanche-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://testnet.snowtrace.io"
   },
@@ -101,7 +101,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Base-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Base-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://goerli.basescan.org"
   },
@@ -121,7 +121,7 @@
     },
     "nativeToken": "BNB",
     "blockTime": 3.01,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/BNB.webp",
+    "logoPath": "https://market.api3.org/images/chains/BNB.webp",
     "testnet": false,
     "explorerUrl": "https://bscscan.com"
   },
@@ -140,7 +140,7 @@
     },
     "nativeToken": "BNB",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/BNB-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/BNB-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://testnet.bscscan.com"
   },
@@ -156,7 +156,7 @@
     },
     "nativeToken": "CRO",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Cronos-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Cronos-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://explorer.cronos.org/testnet"
   },
@@ -176,7 +176,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Eth-Goerli-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Eth-Goerli-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://goerli.etherscan.io"
   },
@@ -196,7 +196,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Eth-Mainnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Eth-Mainnet.webp",
     "testnet": false,
     "explorerUrl": "https://etherscan.io"
   },
@@ -216,7 +216,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Eth-Sepolia-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Eth-Sepolia-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://sepolia.etherscan.io"
   },
@@ -236,7 +236,7 @@
     },
     "nativeToken": "FTM",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Fantom.webp",
+    "logoPath": "https://market.api3.org/images/chains/Fantom.webp",
     "testnet": false,
     "explorerUrl": "https://ftmscan.com"
   },
@@ -255,7 +255,7 @@
     },
     "nativeToken": "FTM",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Fantom-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Fantom-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://testnet.ftmscan.com"
   },
@@ -275,7 +275,7 @@
     },
     "nativeToken": "XDAI",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Gnosis.webp",
+    "logoPath": "https://market.api3.org/images/chains/Gnosis.webp",
     "testnet": false,
     "explorerUrl": "https://gnosisscan.io"
   },
@@ -291,7 +291,7 @@
     },
     "nativeToken": "XDAI",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Gnosis-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Gnosis-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://blockscout.com/gnosis/chiado"
   },
@@ -307,7 +307,7 @@
     },
     "nativeToken": "KAVA",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Kava-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Kava-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.kava.io"
   },
@@ -323,9 +323,23 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Linea-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Linea-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://goerli.lineascan.build"
+  },
+  "mantle": {
+    "name": "mantle",
+    "fullName": "Mantle",
+    "id": "5000",
+    "contracts": {
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+    },
+    "nativeToken": "MNT",
+    "blockTime": null,
+    "logoPath": "https://market.api3.org/images/chains/Mantle.webp",
+    "testnet": false,
+    "explorerUrl": "https://explorer.mantle.xyz"
   },
   "mantle-goerli-testnet": {
     "name": "mantle-goerli-testnet",
@@ -339,7 +353,7 @@
     },
     "nativeToken": "MNT",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Mantle-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Mantle-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.mantle.xyz"
   },
@@ -358,7 +372,7 @@
     },
     "nativeToken": "METIS",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Metis_icon.webp",
+    "logoPath": "https://market.api3.org/images/chains/Metis_icon.webp",
     "testnet": false,
     "explorerUrl": "https://andromeda-explorer.metis.io"
   },
@@ -374,7 +388,7 @@
     },
     "nativeToken": "METIS",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Metis_icon.webp",
+    "logoPath": "https://market.api3.org/images/chains/Metis_icon.webp",
     "testnet": true,
     "explorerUrl": "https://andromeda-explorer.metis.io"
   },
@@ -393,7 +407,7 @@
     },
     "nativeToken": "MADA",
     "blockTime": 4,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Milkomeda_icon.webp",
+    "logoPath": "https://market.api3.org/images/chains/Milkomeda_icon.webp",
     "testnet": false,
     "explorerUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com"
   },
@@ -412,7 +426,7 @@
     },
     "nativeToken": "MADA",
     "blockTime": 4,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Milkomeda_icon.webp",
+    "logoPath": "https://market.api3.org/images/chains/Milkomeda_icon.webp",
     "testnet": true,
     "explorerUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com"
   },
@@ -431,7 +445,7 @@
     },
     "nativeToken": "DEV",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Moonbeam-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Moonbeam-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://moonbase.moonscan.io"
   },
@@ -451,7 +465,7 @@
     },
     "nativeToken": "GLMR",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Moonbeam.webp",
+    "logoPath": "https://market.api3.org/images/chains/Moonbeam.webp",
     "testnet": false,
     "explorerUrl": "https://moonscan.io"
   },
@@ -471,7 +485,7 @@
     },
     "nativeToken": "MOVR",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Moonriver.webp",
+    "logoPath": "https://market.api3.org/images/chains/Moonriver.webp",
     "testnet": false,
     "explorerUrl": "https://moonriver.moonscan.io"
   },
@@ -491,7 +505,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Optimism.webp",
+    "logoPath": "https://market.api3.org/images/chains/Optimism.webp",
     "testnet": false,
     "explorerUrl": "https://optimistic.etherscan.io"
   },
@@ -509,7 +523,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Optimism-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Optimism-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://goerli-optimism.etherscan.io"
   },
@@ -529,7 +543,7 @@
     },
     "nativeToken": "MATIC",
     "blockTime": 2.3,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Polygon.webp",
+    "logoPath": "https://market.api3.org/images/chains/Polygon.webp",
     "testnet": false,
     "explorerUrl": "https://polygonscan.com"
   },
@@ -548,7 +562,7 @@
     },
     "nativeToken": "MATIC",
     "blockTime": 2.3,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Polygon-Mumbai-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Polygon-Mumbai-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://mumbai.polygonscan.com"
   },
@@ -565,7 +579,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Polygon-zkEVM.webp",
+    "logoPath": "https://market.api3.org/images/chains/Polygon-zkEVM.webp",
     "testnet": false,
     "explorerUrl": "https://zkevm.polygonscan.com"
   },
@@ -581,7 +595,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Polygon-zkEVM-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Polygon-zkEVM-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://testnet-zkevm.polygonscan.com"
   },
@@ -600,7 +614,7 @@
     },
     "nativeToken": "RBTC",
     "blockTime": 30,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/RSK_icon.webp",
+    "logoPath": "https://market.api3.org/images/chains/RSK_icon.webp",
     "testnet": false,
     "explorerUrl": "https://explorer.rsk.co"
   },
@@ -619,7 +633,7 @@
     },
     "nativeToken": "TRBTC",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/RSK-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/RSK-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.rsk.co"
   },
@@ -635,7 +649,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/Scroll-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/Scroll-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://blockscout.scroll.io"
   },
@@ -651,7 +665,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/zksync.webp",
+    "logoPath": "https://market.api3.org/images/chains/zksync.webp",
     "testnet": false,
     "explorerUrl": "https://explorer.zksync.io"
   },
@@ -667,7 +681,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://main.api3-market.pages.dev/images/chains/zkSync-Testnet.webp",
+    "logoPath": "https://market.api3.org/images/chains/zkSync-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://zksync2-testnet.zkscan.io"
   }

@@ -4,3 +4,22 @@
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
+a {
+  text-decoration: none !important;
+}
+
+:root {
+  --vp-home-hero-name-color: rgb(66, 184, 131);
+
+  --vp-code-color: #36454f;
+
+  --vp-c-brand-1: var(--vp-c-green-1);
+  --vp-c-brand-2: var(--vp-c-green-2);
+  --vp-c-brand-3: var(--vp-c-green-3);
+  --vp-c-brand-soft: var(--vp-c-green-soft);
+}
+
+:root.dark {
+  --vp-code-color: whitesmoke;
+  --vp-code-bg: #36454f;
+}
