@@ -107,9 +107,6 @@ Below are examples of how to use the authorizers.
             "requesterEndpointAuthorizers": ["0xCE5e...1abc"],
             "chainType": "evm",
             "chainId": "1",
-            "contracts": {
-              "AirnodeRrp": "0xa0AD...a1Bd"
-            },
             "chainProvider": {
               "url": "https://mainnet.infura.io/..."
             }
@@ -146,9 +143,6 @@ Below are examples of how to use the authorizers.
             "erc721s": ["0x3FbDB2315678afecb367f032d93F642f64180aa6"],
             "chainType": "evm",
             "chainId": "1",
-            "contracts": {
-              "RequesterAuthorizerWithErc721": "0x6bbbb2315678afecb367f032d93F642f64180aa4"
-            },
             "chainProvider": {
               "url": "http://127.0.0.2"
             }

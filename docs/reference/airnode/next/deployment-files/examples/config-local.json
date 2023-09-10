@@ -10,9 +10,6 @@
       "authorizations": {
         "requesterEndpointAuthorizations": {}
       },
-      "contracts": {
-        "AirnodeRrp": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
-      },
       "id": "31337",
       "providers": {
         "local": {
@@ -22,7 +19,6 @@
       "type": "evm",
       "options": {},
       "maxConcurrency": 100,
-      "fulfillmentGasLimit": 500000,
       "gasPriceOracle": [
         {
           "gasPriceStrategy": "providerRecommendedGasPrice",
