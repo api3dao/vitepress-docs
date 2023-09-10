@@ -71,7 +71,7 @@ export default {
       this.api3_navbarReferenceBtn.style.color = '';
 
       if (relativePath.indexOf('reference/') === 0) {
-        this.api3_navbarReferenceBtn.style.color = '#42b883';
+        this.api3_navbarReferenceBtn.style.color = 'var(--vp-c-green-1)'; // #42b883 pre-Vitepress release candidate
       }
     },
     showVersions(path) {

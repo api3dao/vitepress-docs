@@ -18,7 +18,7 @@
 
     <div v-if="showVersions">
       <div v-for="(v, index) in versions" :key="index">
-        <a :href="v.path" target="_oldDocs">{{ v.version }}</a>
+        <a :href="v.path">{{ v.version }}</a>
       </div>
       <i>Legacy Documentation</i><ExternalLinkImage />
       <div
@@ -26,7 +26,7 @@
         :key="index"
         style="margin-left: 10px"
       >
-        <a :href="v.path">{{ v.version }}</a>
+        <a :href="v.path" target="_oldDocs">{{ v.version }}</a>
       </div>
     </div>
   </span>
