@@ -17,10 +17,24 @@ tags:
 
 # {{$frontmatter.title}}
 
-This project is a simple and quick introduction to
-[API3's QRNG](/reference/qrng/) service. Simply follow the steps to see how a
-smart contract can access an on-chain quantum random number. You will use the
-browser-based [Remix IDE<ExternalLinkImage/>](https://remix.ethereum.org) and
+> <Video src="https://www.youtube.com/embed/pV976MvviIA?si=1ykWLg0wFZVGEEi-"/>
+
+## Introduction
+
+QRNG (Quantum Random Number Generator) is a free to use public utility by the
+API3 DAO that provides quantum randomness on-chain. It is powered by Airnode,
+the first-party oracle that is directly operated by the QRNG API providers. This
+way, Quantum RNG can be provided on-chain in a trustless manner without the need
+for a third-party oracle. The QRNG service is currently available on all major
+EVM compatible chains.
+
+[Click here to read more about what QRNG is how it works.](http://localhost:5173/explore/qrng/)
+
+This guide will walk you through coding and deploying a smart contract that
+requests a quantum random number on-chain using API3's QRNG Service.
+
+You will use the browser-based
+[Remix IDE<ExternalLinkImage/>](https://remix.ethereum.org) and
 [MetaMask<ExternalLinkImage/>](https://metamask.io/). Some basic knowledge of
 these two tools is assumed.
 
@@ -29,7 +43,7 @@ which provide quantum random numbers. This guide will use the
 [Nodary provider<ExternalLinkImage/>](https://nodary.io/), available only on
 testnets, which returns a pseudorandom number.
 
-To begin, you need to deploy and sponsor the
+<!-- To begin, you need to deploy and sponsor the
 [`RemixQrngExample`](/reference/qrng/qrng-example.md) with a matching
 [sponsor wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
 The `RemixQrngExample` will be the primary contract that retrieves the random
@@ -41,21 +55,144 @@ the random number off-chain, and sends it back to `AirnodeRrpV0`. Once received,
 it performs a callback to the requester with the random number.
 
 You can read more about how API3 QRNG Airnode uses the
-[Request-Response Protocol here](/reference/airnode/latest/concepts/).
+[Request-Response Protocol here](/reference/airnode/latest/concepts/). -->
 
-## 1. Coding the `RemixQrngExample`
+## 1. Coding the Contract
+
+::: warning Check your Network!
+
+Make sure you're on a Testnet before trying to deploy the contracts on-chain!
+
+:::
+
+Given below is an example of a basic contract that makes a request to the QRNG
+Airnode. To follow along, you can open the following contract in Remix and try
+deploying it yourself. This contract will be requesting the random number
+directly from the QRNG Provider.
 
 Head on to
-[Remix online IDE<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
-using a browser that you have added Metamask support to. Not all browsers
-support [MetaMask<ExternalLinkImage/>](https://metamask.io/download/). It should
-load up the `RemixQrngExample` contract.
+[Remix online IDE<ExternalLinkImage/>.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
+It should load up the `RemixQrngExample` contract.
 
 [Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
 
-> ![Add Contract](/guides/qrng/qrng-remix/src/qrng-add-contract.png)
+```solidity
+//SPDX-License-Identifier: MIT
+pragma solidity 0.8.9;
+import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
 
-The `RemixQrngExample` will have seven main functions: `setRequestParameters()`,
+/// @title Example contract that uses Airnode RRP to access QRNG services
+contract QrngExample is RrpRequesterV0 {
+    event RequestedUint256(bytes32 indexed requestId);
+    event ReceivedUint256(bytes32 indexed requestId, uint256 response);
+    event RequestedUint256Array(bytes32 indexed requestId, uint256 size);
+    event ReceivedUint256Array(bytes32 indexed requestId, uint256[] response);
+
+    address public airnode;                 // The address of the QRNG Airnode
+    bytes32 public endpointIdUint256;       // The endpoint ID for requesting a single random number
+    bytes32 public endpointIdUint256Array;  // The endpoint ID for requesting an array of random numbers
+    address public sponsorWallet;           // The wallet that will cover the gas costs of the request
+    uint256 public _qrngUint256;            // The random number returned by the QRNG Airnode
+    uint256[] public _qrngUint256Array;     // The array of random numbers returned by the QRNG Airnode
+
+    mapping(bytes32 => bool) public expectingRequestWithIdToBeFulfilled;
+
+    constructor(address _airnodeRrp) RrpRequesterV0(_airnodeRrp) {}
+
+    /// @notice Sets the parameters for making requests
+    function setRequestParameters(
+        address _airnode,
+        bytes32 _endpointIdUint256,
+        bytes32 _endpointIdUint256Array,
+        address _sponsorWallet
+    ) external {
+        airnode = _airnode;
+        endpointIdUint256 = _endpointIdUint256;
+        endpointIdUint256Array = _endpointIdUint256Array;
+        sponsorWallet = _sponsorWallet;
+    }
+
+    /// @notice Requests a `uint256`
+    /// @dev This request will be fulfilled by the contract's sponsor wallet,
+    /// which means spamming it may drain the sponsor wallet.
+    function makeRequestUint256() external {
+        bytes32 requestId = airnodeRrp.makeFullRequest(
+            airnode,
+            endpointIdUint256,
+            address(this),
+            sponsorWallet,
+            address(this),
+            this.fulfillUint256.selector,
+            ""
+        );
+        expectingRequestWithIdToBeFulfilled[requestId] = true;
+        emit RequestedUint256(requestId);
+    }
+
+    /// @notice Called by the Airnode through the AirnodeRrp contract to
+    /// fulfill the request
+    function fulfillUint256(bytes32 requestId, bytes calldata data)
+        external
+        onlyAirnodeRrp
+    {
+        require(
+            expectingRequestWithIdToBeFulfilled[requestId],
+            "Request ID not known"
+        );
+        expectingRequestWithIdToBeFulfilled[requestId] = false;
+        uint256 qrngUint256 = abi.decode(data, (uint256));
+        _qrngUint256 = qrngUint256;
+        // Do what you want with `qrngUint256` here...
+        emit ReceivedUint256(requestId, qrngUint256);
+    }
+
+    /// @notice Requests a `uint256[]`
+    /// @param size Size of the requested array
+    function makeRequestUint256Array(uint256 size) external {
+        bytes32 requestId = airnodeRrp.makeFullRequest(
+            airnode,
+            endpointIdUint256Array,
+            address(this),
+            sponsorWallet,
+            address(this),
+            this.fulfillUint256Array.selector,
+            // Using Airnode ABI to encode the parameters
+            abi.encode(bytes32("1u"), bytes32("size"), size)
+        );
+        expectingRequestWithIdToBeFulfilled[requestId] = true;
+        emit RequestedUint256Array(requestId, size);
+    }
+
+    /// @notice Called by the Airnode through the AirnodeRrp contract to
+    /// fulfill the request
+    function fulfillUint256Array(bytes32 requestId, bytes calldata data)
+        external
+        onlyAirnodeRrp
+    {
+        require(
+            expectingRequestWithIdToBeFulfilled[requestId],
+            "Request ID not known"
+        );
+        expectingRequestWithIdToBeFulfilled[requestId] = false;
+        uint256[] memory qrngUint256Array = abi.decode(data, (uint256[]));
+        // Do what you want with `qrngUint256Array` here...
+        _qrngUint256Array = qrngUint256Array;
+        emit ReceivedUint256Array(requestId, qrngUint256Array);
+    }
+
+    /// @notice Getter functions to check the returned value.
+    function getRandomNumber() public view returns (uint256) {
+        return _qrngUint256;
+    }
+
+    function getRandomNumberArray() public view returns(uint256[] memory) {
+        return _qrngUint256Array;
+    }
+
+}
+```
+
+The contract will have seven main functions: `setRequestParameters()`,
 `makeRequestUint256()`, `fulfillUint256()`, `makeRequestUint256Array()`
 `fulfillUint256Array()`, `getRandomNumber()` and `getRandomNumberArray()`.
 
@@ -171,19 +308,20 @@ function getRandomNumberArray() public view returns (uint256[] memory) {
 
 ## 2. Compiling the Contract
 
-Be sure the `RemixQrngExample.sol` contract is selected in the **FILE EXPLORER**
-tab. Switch to the **SOLIDITY COMPILER** tab. Select the `0.8.9` version of
-Solidity from the **COMPILER** pick list. Select the **Compile
-RemixQrngExample.sol** button to compile the `RemixQrngExample.sol` contract.
+We now need to compile and deploy the contract. Be sure the
+`RemixQrngExample.sol` contract is selected in the **FILE EXPLORER** tab. Switch
+to the **SOLIDITY COMPILER** tab. Select the `0.8.9` version of Solidity from
+the **COMPILER** pick list. Select the **Compile RemixQrngExample.sol** button
+to compile the contract.
 
 > <img src="./src/qrng-compile.png" width="350"/>
 
 ## 3. Deploying the Contract
 
-::: danger Deploy to a testnet only.
+::: warning Set up your Testnet Metamask Account!
 
-Do not deploy the `RemixQrngExample.sol` contract to a production network. It
-lacks adequate security features!
+Make sure you've already configured your Metamask wallet and funded it with some
+testnet ETH before moving forward. You can request some from here➚
 
 :::
 
@@ -199,7 +337,7 @@ usage as the production quantum random number generator
   the testnet and account you selected in MetaMask are displayed in Remix as
   shown below.
 
-- Be sure `QrngReqester - contracts/QrngReqester.sol` is selected in the
+- Be sure `QrngRequester - contracts/QrngRequester.sol` is selected in the
   **CONTRACT** pick list.
 
 - Add the Airnode `_airnodeRrp` address parameter value for the constructor into
@@ -216,31 +354,32 @@ Before making a request, parameters must be set. They determine which Airnode
 endpoint will be called and define the wallet used to pay the gas costs for the
 response.
 
-Under **Deployed Contracts** expand and expose the functions and variables of
+Under **Deployed Contracts**, expand and expose the functions and variables of
 the contract. Note the address of the contract that is displayed with its name.
-This is the requester's contract address which will be needed later. Next,
-expand the **`setRequestParameters`** function. Add the following to the
-corresponding fields for the function.
+This is the requester's contract address which will be needed later.
+
+Next, select and expand the **`setRequestParameters`** function to see all the
+parameters that are needed.
 
 - `_airnode`: The airnode address of the desired QRNG service provider. Use
-  **nodary**
+  **Nodary**
   (`0x6238772544f029ecaBfDED4300f13A3c4FE84E1D`→<CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/>).
 
-- `_endpointIdUint256`: The **nodary** Airnode endpoint ID
+- `_endpointIdUint256`: The **Nodary** Airnode endpoint ID
   (`0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78`→<CopyIcon text="0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78"/>)
   which will return a single random number.
 
-- `_endpointIdUint256Array`: The **nodary** Airnode endpoint ID
+- `_endpointIdUint256Array`: The **Nodary** Airnode endpoint ID
   (`0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3`→<CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>)
   which will return an array of random numbers.
 
 - `_sponsorWallet`: A wallet derived from the Airnode address and the Airnode
-  xpub used by **nodary**, and the smart contract address for
+  xpub used by **Nodary**, and the smart contract address for
   `RemixQrngExample.sol`. The wallet is used to pay gas costs to acquire a
   random number. A sponsor wallet must be derived using the command
   [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
   from the Admin CLI. Use the value of the _sponsor wallet address_ that the
-  command outputs.
+  command outputs. **This wallet needs to be funded.**
 
   ```sh
   npx @api3/airnode-admin derive-sponsor-wallet-address \
