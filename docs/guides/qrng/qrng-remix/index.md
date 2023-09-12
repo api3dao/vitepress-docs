@@ -21,12 +21,14 @@ tags:
 
 ## Introduction
 
-QRNG (Quantum Random Number Generator) is a free to use public utility by the
-API3 DAO that provides quantum randomness on-chain. It is powered by Airnode,
-the first-party oracle that is directly operated by the QRNG API providers. This
+QRNG (Quantum Random Number Generator) is a free to use public utility provided
+by the API3 DAO that provides quantum randomness on-chain. It is powered by
+[Airnode](http://localhost:5173/explore/airnode/what-is-airnode.html), the
+first-party oracle that is directly operated by the QRNG API providers. This
 way, Quantum RNG can be provided on-chain in a trustless manner without the need
 for a third-party oracle. The QRNG service is currently available on all major
-EVM compatible chains.
+EVM compatible chains. Check the list of supported chains
+[here](/reference/qrng/chains).
 
 [Click here to read more about what QRNG is how it works.](http://localhost:5173/explore/qrng/)
 
@@ -71,22 +73,24 @@ deploying it yourself. This contract will be requesting the random number
 directly from the QRNG Provider.
 
 Head on to
-[Remix online IDE<ExternalLinkImage/>.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
+[Remix online IDE<ExternalLinkImage/>.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
 It should load up the `RemixQrngExample` contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/vanshwassan/RemixContracts/master/contracts/QrngRequesterUpdated.sol)
+[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
 
 ```solidity
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @title Example contract that uses Airnode RRP to access QRNG services
-contract QrngExample is RrpRequesterV0 {
+contract QrngExample is RrpRequesterV0, Ownable {
     event RequestedUint256(bytes32 indexed requestId);
     event ReceivedUint256(bytes32 indexed requestId, uint256 response);
     event RequestedUint256Array(bytes32 indexed requestId, uint256 size);
     event ReceivedUint256Array(bytes32 indexed requestId, uint256[] response);
+    event WithdrawalRequested(address indexed airnode, address indexed sponsorWallet);
 
     address public airnode;                 // The address of the QRNG Airnode
     bytes32 public endpointIdUint256;       // The endpoint ID for requesting a single random number
@@ -110,6 +114,12 @@ contract QrngExample is RrpRequesterV0 {
         endpointIdUint256 = _endpointIdUint256;
         endpointIdUint256Array = _endpointIdUint256Array;
         sponsorWallet = _sponsorWallet;
+    }
+
+    /// @notice To receive funds from the sponsor wallet and send them to the owner.
+    receive() external payable {
+        payable(owner()).transfer(address(this).balance);
+        emit WithdrawalRequested(airnode, sponsorWallet);
     }
 
     /// @notice Requests a `uint256`
@@ -189,12 +199,17 @@ contract QrngExample is RrpRequesterV0 {
         return _qrngUint256Array;
     }
 
+    /// @notice To withdraw funds from the sponsor wallet to the contract.
+    function withdraw() external onlyOwner {
+        airnodeRrp.requestWithdrawal(
+        airnode,
+        sponsorWallet
+        );
+    }
 }
 ```
 
-The contract will have seven main functions: `setRequestParameters()`,
-`makeRequestUint256()`, `fulfillUint256()`, `makeRequestUint256Array()`
-`fulfillUint256Array()`, `getRandomNumber()` and `getRandomNumberArray()`.
+The contract will have eight main functions:
 
 - The `setRequestParameters()` takes in `airnode`, `endpointIdUint256`,
   `_endpointIdUint256Array`, `sponsorWallet` and sets these parameters on-chain.
@@ -253,8 +268,8 @@ The contract will have seven main functions: `setRequestParameters()`,
     }
 ```
 
-Similarly, `makeRequestUint256Array()` takes in `_endpointIdUint256Array` and
-can be used to request an array of random numbers.
+- Similarly, `makeRequestUint256Array()` takes in `_endpointIdUint256Array` and
+  can be used to request an array of random numbers.
 
 ```solidity
     function makeRequestUint256Array(uint256 size) external {
@@ -273,8 +288,8 @@ can be used to request an array of random numbers.
     }
 ```
 
-The `fulfillUint256Array()` will be the callback if an array of random numbers
-is requested.
+- The `fulfillUint256Array()` will be the callback if an array of random numbers
+  is requested.
 
 ```solidity
     function fulfillUint256Array(bytes32 requestId, bytes calldata data)
@@ -293,8 +308,8 @@ is requested.
     }
 ```
 
-`getRandomNumber()` and and `getRandomNumberArray()` are getter functions that
-returns the random number and random number array respectively.
+- `getRandomNumber()` and and `getRandomNumberArray()` are getter functions that
+  returns the random number and random number array respectively.
 
 ```solidity
     function getRandomNumber() public view returns (uint256) {
@@ -303,6 +318,24 @@ returns the random number and random number array respectively.
 
 function getRandomNumberArray() public view returns (uint256[] memory) {
         return _qrngUint256Array;
+    }
+```
+
+- `withdraw()` is used to request a withdrawal from the QRNG Airnode. The
+  Airnode picks up the request, and sends the funds from the `sponsorWallet` to
+  the contract using `receive()` that inturn sends the funds back to the owner.
+
+```solidity
+  receive() external payable {
+        payable(owner()).transfer(address(this).balance);
+        emit WithdrawalRequested(airnode, sponsorWallet);
+    }
+
+  function withdraw() external onlyOwner {
+        airnodeRrp.requestWithdrawal(
+          airnode,
+          sponsorWallet
+        );
     }
 ```
 
@@ -349,6 +382,16 @@ usage as the production quantum random number generator
 > <img src="./src/qrng-deploy-contract-airnode-address.png" width="400"/>
 
 ## 4. Setting the Parameters
+
+::: info Nodary Provider
+
+This guide uses Nodary as the QRNG Airnode provider. Nodary emulates QRNG on
+testnets. If you wish to use QRNG in production, you can use the mainnet
+[QRNG providers](/reference/qrng/providers.md) instead. Also make sure to check
+if your particular chain is supported by the QRNG providers. Check which chains
+are supported [here](/reference/qrng/chains.md).
+
+:::
 
 Before making a request, parameters must be set. They determine which Airnode
 endpoint will be called and define the wallet used to pay the gas costs for the
