@@ -523,8 +523,8 @@ transactions. Here, you can see the latest `Fulfill` transaction.
 
 The request is gathered by the off-chain Airnode which in turn calls the API
 provider. Once the API provider returns data, Airnode will callback to the
-`RemixQrngExample.sol` contract function
-`fulfillUint256(bytes32 requestId, bytes calldata data)`.
+`RemixQrngExample.sol` contract function `fulfillUint256`/`fulfillUint256Array`
+with the random number/array of random numbers.
 
 select the **getRandomNumber/getRandomNumberArray** button in Remix again. If
 the callback has been successfully completed the randomNumber will be present.
