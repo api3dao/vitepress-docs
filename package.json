@@ -23,6 +23,7 @@
     "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
     "flex:test": "node libs/flexTestSearch.js;",
     "axios:build": "node libs/axiosBuildScripts.js; yarn format;",
+    "zip:create": "node libs/createZipFiles.js;",
     "zip:config-check": "node libs/checkZipConfigs.js;"
   },
   "devDependencies": {
