@@ -324,6 +324,7 @@ function getRandomNumberArray() public view returns (uint256[] memory) {
 - `withdraw()` is used to request a withdrawal from the QRNG Airnode. The
   Airnode picks up the request, and sends the funds from the `sponsorWallet` to
   the contract using `receive()` that inturn sends the funds back to the owner.
+  It calls the `requestWithdrawal` function of the `airnodeRrp` contract.
 
 ```solidity
   receive() external payable {
@@ -531,5 +532,37 @@ the callback has been successfully completed the randomNumber will be present.
 The value of **expectingRequestWithIdToBeFulfilled** will be _false_.
 
 > <img src="./src/qrng-response-complete.png" width="400"/>
+
+## 7. Withdrawing Funds from the `sponsorWallet` (optional)
+
+You can withdraw funds from the sponsor wallet to address of the owner by
+calling the `withdraw()` function.
+
+The QRNG Airnode listens for withdrawal requests and fulfills them
+automatically. Therefore, the Requester contract makes a request for withdrawal
+to the Airnode. The Airnode then fulfills the request, calls the `receive()`
+function in the Requester contract, that sends the funds back to the owner.
+
+```solidity
+    receive() external payable {
+        payable(owner()).transfer(address(this).balance);
+    }
+```
+
+The `sponsorWallet` does not get deleted, and can be used in the future simply
+by funding it again.
+
+Simply click on the **withdraw** button in Remix and approve the transaction.
+
+> <img src="./src/qrng-withdraw.png" width="400"/>
+
+_[Click here to read more about how sponsors, requesters and withdrawals work](/reference/airnode/latest/concepts/sponsor.md)_
+
+Now wait for the QRNG Airnode to fulfill the withdrawal request. You can check
+the sponsor wallet for any new transactions.
+
+> <img src="./src/qrng-withdraw-2.png" width="400"/>
+
+The funds from the `sponsorWallet` have been transferred to the owner.
 
 <FlexEndTag/>
