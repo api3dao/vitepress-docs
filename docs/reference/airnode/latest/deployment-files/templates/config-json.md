@@ -62,9 +62,6 @@ as a reference while building a config.json file.
           "<FILL_ENDPOINT_ID_1>" : ["<FILL_*>"]
         }
       },
-      "contracts": {
-        "AirnodeRrp": "<FILL_*>"
-      },
       "id": "<FILL_*>",
       "providers": {
         "<FILL_PROVIDER_NAME_1>": {
@@ -73,7 +70,6 @@ as a reference while building a config.json file.
       },
       "type": "<FILL_*>",
       "options": {
-        "fulfillmentGasLimit": <FILL_NUMBER>,
         "gasPriceOracle": [
           {
             "gasPriceStrategy": "latestBlockPercentileGasPrice",

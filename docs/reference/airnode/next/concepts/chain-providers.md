@@ -52,9 +52,6 @@ which is interpolated from `secrets.env`.
     "authorizations": {
         "requesterEndpointAuthorizations": {}
       },
-    "contracts": {
-      "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-    },
     "id": "11155111",
     "providers": {
       "infuraSepolia": {
@@ -63,7 +60,6 @@ which is interpolated from `secrets.env`.
     },
     "type": "evm",
     "options": {
-      "fulfillmentGasLimit": 500000,
       "gasPriceOracle": [
         {
           "gasPriceStrategy": "latestBlockPercentileGasPrice",
@@ -117,9 +113,6 @@ Simply add another uniquely named object to `providers` as shown below.
     "authorizations": {
         "requesterEndpointAuthorizations": {}
       },
-    "contracts": {
-      "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-    },
     "id": "11155111",
     "providers": {
       "infuraSepolia": {
@@ -131,7 +124,6 @@ Simply add another uniquely named object to `providers` as shown below.
     },
     "type": "evm",
     "options": {
-      "fulfillmentGasLimit": 500000,
       "gasPriceOracle": [
         {
           "gasPriceStrategy": "latestBlockPercentileGasPrice",

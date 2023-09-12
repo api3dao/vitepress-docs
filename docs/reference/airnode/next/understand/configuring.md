@@ -82,9 +82,6 @@ Below is a simple chain array with a single chain provider.
     "authorizations": {
         "requesterEndpointAuthorizations": {}
       },
-    "contracts": {
-      "AirnodeRrp": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-    },
     "id": "11155111",
     "providers": {
       "infuraSepolia": {
@@ -93,7 +90,6 @@ Below is a simple chain array with a single chain provider.
     },
     "type": "evm",
     "options": {
-      "fulfillmentGasLimit": 500000,
       "gasPriceOracle": [
         {
           "gasPriceStrategy": "latestBlockPercentileGasPrice",
@@ -190,12 +186,10 @@ The links below offer additional details for each field from the Deployment
 Files section:
 
 - [authorizers](/reference/airnode/next/deployment-files/config-json.md#authorizers)
-- [contracts](/reference/airnode/next/deployment-files/config-json.md#contracts)
 - [id](/reference/airnode/next/deployment-files/config-json.md#id)
 - [providers](/reference/airnode/next/deployment-files/config-json.md#providers)
 - [type](/reference/airnode/next/deployment-files/config-json.md#type)
 - [options](/reference/airnode/next/deployment-files/config-json.md#options)
-  - [options.fulfillmentGasLimit](/reference/airnode/next/deployment-files/config-json.md#options-fulfillmentgaslimit)
   - [options.gasPriceOracle](/reference/airnode/next/deployment-files/config-json.md#options-gaspriceoracle-n)
   - [options.withdrawalRemainder](/reference/airnode/next/deployment-files/config-json.md#options-withdrawalremainder)
 - [maxConcurrency](/reference/airnode/next/deployment-files/config-json.md#maxconcurrency)
