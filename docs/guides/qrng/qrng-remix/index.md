@@ -117,7 +117,7 @@ contract QrngExample is RrpRequesterV0, Ownable {
 
     /// @notice To receive funds from the sponsor wallet and send them to the owner.
     receive() external payable {
-        payable(owner()).transfer(address(this).balance);
+        payable(owner()).transfer(msg.value);
         emit WithdrawalRequested(airnode, sponsorWallet);
     }
 
@@ -327,7 +327,7 @@ function getRandomNumberArray() public view returns (uint256[] memory) {
 
 ```solidity
   receive() external payable {
-        payable(owner()).transfer(address(this).balance);
+        payable(owner()).transfer(msg.value);
         emit WithdrawalRequested(airnode, sponsorWallet);
     }
 
@@ -544,7 +544,7 @@ function in the Requester contract, that sends the funds back to the owner.
 
 ```solidity
     receive() external payable {
-        payable(owner()).transfer(address(this).balance);
+        payable(owner()).transfer(msg.value);
     }
 ```
 
