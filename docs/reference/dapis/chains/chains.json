@@ -13,7 +13,7 @@
     },
     "nativeToken": "ETH",
     "blockTime": null,
-    "logoPath": "https://market.api3.org/images/chains/Arbitrum.webp",
+    "logoPath": "https://market.api3.org/images/chains/Arbitrum-Goerli-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://goerli.arbiscan.io"
   },
@@ -88,6 +88,23 @@
     "logoPath": "https://market.api3.org/images/chains/Avalanche-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://testnet.snowtrace.io"
+  },
+  "base": {
+    "name": "base",
+    "fullName": "Base",
+    "id": "8453",
+    "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OrderPayable": "0x045808285C69014Beb9f70447155A4c55376fc06",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://market.api3.org/images/chains/Base.webp",
+    "testnet": false,
+    "explorerUrl": "https://basescan.org"
   },
   "base-goerli-testnet": {
     "name": "base-goerli-testnet",
@@ -295,9 +312,26 @@
     "testnet": true,
     "explorerUrl": "https://blockscout.com/gnosis/chiado"
   },
+  "kava": {
+    "name": "kava",
+    "fullName": "Kava",
+    "id": "2222",
+    "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OrderPayable": "0x045808285C69014Beb9f70447155A4c55376fc06",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+    },
+    "nativeToken": "KAVA",
+    "blockTime": null,
+    "logoPath": "https://market.api3.org/images/chains/Kava.webp",
+    "testnet": false,
+    "explorerUrl": "https://kavascan.com/"
+  },
   "kava-testnet": {
     "name": "kava-testnet",
-    "fullName": "KAVA Testnet",
+    "fullName": "Kava Testnet",
     "id": "2221",
     "contracts": {
       "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
@@ -310,6 +344,23 @@
     "logoPath": "https://market.api3.org/images/chains/Kava-Testnet.webp",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.kava.io"
+  },
+  "linea": {
+    "name": "linea",
+    "fullName": "Linea",
+    "id": "59144",
+    "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OrderPayable": "0x045808285C69014Beb9f70447155A4c55376fc06",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+    },
+    "nativeToken": "ETH",
+    "blockTime": null,
+    "logoPath": "https://market.api3.org/images/chains/Linea.webp",
+    "testnet": false,
+    "explorerUrl": "https://lineascan.build/"
   },
   "linea-goerli-testnet": {
     "name": "linea-goerli-testnet",
@@ -332,7 +383,10 @@
     "fullName": "Mantle",
     "id": "5000",
     "contracts": {
+      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
+      "OrderPayable": "0x045808285C69014Beb9f70447155A4c55376fc06",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
     },
     "nativeToken": "MNT",
@@ -601,26 +655,27 @@
   },
   "rsk": {
     "name": "rsk",
-    "fullName": "RSK",
+    "fullName": "Rootstock",
     "id": "30",
     "contracts": {
       "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
       "AirnodeRrpV0": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
       "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
       "DapiServer": "0xCC5005Bd08b8882c9A132C0067E7D3f79796C251",
+      "OrderPayable": "0x045808285C69014Beb9f70447155A4c55376fc06",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD",
       "RequesterAuthorizerWithAirnode": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
     },
     "nativeToken": "RBTC",
     "blockTime": 30,
-    "logoPath": "https://market.api3.org/images/chains/RSK_icon.webp",
+    "logoPath": "https://market.api3.org/images/chains/RSK.webp",
     "testnet": false,
     "explorerUrl": "https://explorer.rsk.co"
   },
   "rsk-testnet": {
     "name": "rsk-testnet",
-    "fullName": "RSK Testnet",
+    "fullName": "Rootstock Testnet",
     "id": "31",
     "contracts": {
       "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
