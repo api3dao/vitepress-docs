@@ -23,6 +23,7 @@ module.exports = [
       { text: 'Google Analytics 4', link: '/dev/ga4' },
       { text: 'VitePress Containers', link: '/dev/containers' },
       { text: 'SSR on CloudFlare', link: '/dev/ssr' },
+      { text: 'Zip File Handling', link: '/dev/zip-handling' },
     ],
   },
 ];

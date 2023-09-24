@@ -22,12 +22,16 @@
     "prepare": "husky install",
     "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
     "flex:test": "node libs/flexTestSearch.js;",
-    "axios:build": "node libs/axiosBuildScripts.js; yarn format;"
+    "axios:build": "node libs/axiosBuildScripts.js; yarn format;",
+    "zip:create": "node libs/createZipFiles.js;",
+    "zip:config-check": "node libs/checkZipConfigs.js;"
   },
   "devDependencies": {
-    "@api3/chains": "^3.4.2",
+    "@api3/chains": "3.5.0",
+    "adm-zip": "^0.5.10",
     "axios": "^1.2.1",
     "colors": "^1.4.0",
+    "diff": "^5.1.0",
     "ethers": "^6.5.1",
     "file": "^0.2.2",
     "flexsearch": "^0.7.31",

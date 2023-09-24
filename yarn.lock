@@ -138,12 +138,12 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@api3/chains@^3.4.2":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-3.4.2.tgz#08c115b05d49ab4fc9d9173d5c4a2af913fd839c"
-  integrity sha512-SS15moQHV4ZjMENDe1dJSj3SPYkWMhxNm5CLzvOsQyXnig9ZFmxZ/Ta9csUeoHdJqm/Du3jvFPuJtqX0B3UM9g==
+"@api3/chains@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-3.5.0.tgz#63aba21b619361e36c1657628bba983409077768"
+  integrity sha512-OzdCBaMQMQ6gPRBqa+8MTY83d6FquuA03IzU+5Zp0zk+pIRLlUd52dZmhycYv9ZOnJf/fd+pHtlKYSNGUhfuDQ==
   dependencies:
-    zod "^3.21.4"
+    zod "^3.22.2"
 
 "@babel/parser@^7.20.15", "@babel/parser@^7.21.3":
   version "7.21.9"
@@ -439,6 +439,11 @@
   dependencies:
     vue-demi ">=0.14.5"
 
+adm-zip@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.5.10.tgz#4a51d5ab544b1f5ce51e1b9043139b639afff45b"
+  integrity sha512-x0HvcHqVJNTPk/Bw8JbLWlWoo6Wwnsug0fnYYro1HBrjxZ3G7/AZk7Ahv8JwDe1uIcz8eBqvu86FuF1POiG7vQ==
+
 aes-js@4.0.0-beta.5:
   version "4.0.0-beta.5"
   resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-4.0.0-beta.5.tgz#8d2452c52adedebc3a3e28465d858c11ca315873"
@@ -580,6 +585,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+
+diff@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-5.1.0.tgz#bc52d298c5ea8df9194800224445ed43ffc87e40"
+  integrity sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==
 
 dom-serializer@^2.0.0:
   version "2.0.0"
@@ -1075,7 +1085,7 @@ ws@8.5.0:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.5.0.tgz#bfb4be96600757fe5382de12c670dab984a1ed4f"
   integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
 
-zod@^3.21.4:
-  version "3.21.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.21.4.tgz#10882231d992519f0a10b5dd58a38c9dabbb64db"
-  integrity sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==
+zod@^3.22.2:
+  version "3.22.2"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.2.tgz#3add8c682b7077c05ac6f979fea6998b573e157b"
+  integrity sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==

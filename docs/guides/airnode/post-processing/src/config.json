@@ -10,9 +10,6 @@
       "authorizations": {
         "requesterEndpointAuthorizations": {}
       },
-      "contracts": {
-        "AirnodeRrp": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"
-      },
       "id": "11155111",
       "providers": {
         "myChainProvider": {
@@ -21,7 +18,6 @@
       },
       "type": "evm",
       "options": {
-        "fulfillmentGasLimit": 500000,
         "gasPriceOracle": [
           {
             "gasPriceStrategy": "latestBlockPercentileGasPrice",
