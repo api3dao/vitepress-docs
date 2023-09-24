@@ -27,7 +27,7 @@
     "zip:config-check": "node libs/checkZipConfigs.js;"
   },
   "devDependencies": {
-    "@api3/chains": "^3.4.2",
+    "@api3/chains": "3.5.0",
     "adm-zip": "^0.5.10",
     "axios": "^1.2.1",
     "colors": "^1.4.0",
