@@ -248,9 +248,10 @@ any change you'll make to your proposal will change its hash.
 
 <img src="../assets/images/ipfs-proposals.png" width="550"/>
 
-There are hosting services for IPFS such as [Pinata<ExternalLinkImage/>]() and
-[Fleek<ExternalLinkImage/>]() to name a few. To host a proposal description on
-Pinata's IPFS site:
+There are hosting services for IPFS such as
+[Pinata<ExternalLinkImage/>](https://www.pinata.cloud) and
+[Fleek<ExternalLinkImage/>](https://fleek.co) to name a few. To host a proposal
+description on Pinata's IPFS site:
 
 1. Create a PDF version of the proposal.
 1. Upload the PDF to Pinata or your preferred IPFS hosting provider. To do so
