@@ -69,7 +69,9 @@
     "stakers",
     "collateralization",
     "decentrally",
-    "upgradability"
+    "upgradability",
+    "IPFS",
+    "Fleek"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

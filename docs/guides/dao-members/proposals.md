@@ -198,27 +198,6 @@ address, the USDC is asked to be supplied from the Agent's balance.
 
 ## Proposal Execution
 
-<!-- The following is the older version of execution rules. This was not
-very accurate, see PR: AN384 proposals #516.
-
-A proposal is ready for execution if:
-
-1. The proposal hasn't already been executed, and
-2. greater than 50% of all voting power has voted "yes" on the proposal,
-
-OR
-
-1. The proposal hasn't already been executed, and
-2. the proposal's voting period has ended, and
-3. the total "yes" vote exceeds the "no" vote, and
-4. at least 50% (for Primary voting app proposals) or 15% (for Secondary voting
-   app proposals) of all voting power has voted "yes" on the proposal.
-
-Once a proposal has satisfied either set of criteria, anyone can send a
-transaction executing it using the Execute button that appears on its details
-page, as shown below:
--->
-
 A proposal is ready for execution if:
 
 1. The proposal hasn't already been executed, and
@@ -269,18 +248,20 @@ any change you'll make to your proposal will change its hash.
 
 <img src="../assets/images/ipfs-proposals.png" width="550"/>
 
-To host a proposal description on IPFS:
+There are hosting services for IPFS such as
+[Pinata<ExternalLinkImage/>](https://www.pinata.cloud) and
+[Fleek<ExternalLinkImage/>](https://fleek.co) to name a few. To host a proposal
+description on Pinata's IPFS site:
 
 1. Create a PDF version of the proposal.
-2. Upload the PDF to [Fleek<ExternalLinkImage/>](https://fleek.co) or your
-   preferred IPFS hosting provider. To do so using Fleek, create a free Basic
-   account and use the Upload tool on the Storage page. Fleek will provide an
-   IPFS hash of the PDF, for example:
-   <code style="overflow-wrap: break-word;">bafybeifl4prxv75fgumtjh4ovklfkp7zzt7dwkl4xmndv37gtcalwpam2u</code>.
-3. If using Fleek, append the hash to `https://ipfs.fleek.co/ipfs/`. The URL for
-   the above hash would then be:
-   > `https://ipfs.fleek.co/ipfs/bafybeifl4prxv75fgumtjh4ovklfkp7zzt7dwkl4xmndv37gtcalwpam2u`
-4. Add the URL to your forum posting and later to the description field of your
+1. Upload the PDF to Pinata or your preferred IPFS hosting provider. To do so
+   using Pinata, select the **Files** menu from the sidebar on your personal
+   Pinata dashboard, then select the **Add Files** button. Drag the desired file
+   into the upload dialog.
+1. After the file is uploaded, Pinata will create a URL with the IPFS hash for
+   the PDF. Simply click on the file's link to display the PDF and copy its URL
+   from the browser URL bar.
+1. Add the URL to your forum posting and later to the description field of your
    DAO dashboard proposal.
 
 Remember that the URL the voter sees in the DAO dashboard proposal description
