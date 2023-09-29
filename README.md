@@ -33,7 +33,8 @@ available in the PR's comments.
 
 ## Making a Contribution
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to make a contribution.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to make a
+contribution.
 
 ## Legacy documentation
 
