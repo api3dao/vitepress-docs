@@ -50,11 +50,12 @@ numbers on testnets chains.
 
 The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
 project demonstrates how to build a smart contract (known as a requester) using
-the Airnode [Request–Response Protocol (RRP)]() to access QRNG services. It is
-recommended to run the example project to learn how it uses the QRNG service on
-a testnet, and read the associated `README` file. It also contains example code
-that will be useful when creating a requester (smart contract) that requests a
-quantum random number.
+the Airnode
+[Request–Response Protocol (RRP)](/reference/airnode/latest/concepts/) to access
+QRNG services. It is recommended to run the example project to learn how it uses
+the QRNG service on a testnet, and read the associated `README` file. It also
+contains example code that will be useful when creating a requester (smart
+contract) that requests a quantum random number.
 
 - [qrng-example/contracts/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/contracts)
   - `QrngExamples.sol`: A sample requester used to call the QRNG service.
@@ -141,8 +142,8 @@ You can read more about `sponsorWallet`
 
 To request a single random number, use the `endpointIdUint256` of the QRNG
 provider while making the request. You can find all the parameters of the QRNG
-providers [here](). To see how to code a basic QRNG Requester contract and make
-a request for a single random number,
+providers [here](/reference/qrng/providers.html). To see how to code a basic
+QRNG Requester contract and make a request for a single random number,
 [click here](/guides/qrng/qrng-remix/#to-request-a-single-random-number).
 
 ## How to request multiple random numbers?
