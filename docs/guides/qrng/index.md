@@ -159,11 +159,14 @@ numbers,
 
 To have a random number within a specific range while making a request to the
 QRNG Airnode, you can use the `endpointIdUint256` to return a single random
-number and have it modulo x and. The range will be [y, x-1].
+number and have it modulo the range difference and add the minimum number of the
+range. Refer to the code snippet below to see how to convert the random number
+and have it within the range `[x, y]`.
 
 ```solidity
-uint256 randomNumber = (qrngUint256 % x) + y;
-// x is the max number for the range, the range will be [y, x-1].
+uint256 randomNumber = (qrngUint256 % (y - x + 1)) + x;
+// y is the max number for the range, x is min number for the range.
+// the randomNumber will be in range [x, y].
 ```
 
 <FlexEndTag/>
