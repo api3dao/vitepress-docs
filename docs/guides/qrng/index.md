@@ -6,6 +6,7 @@ pageHeader: Guides → QRNG
 path: /guides/qrng/index.html
 outline: deep
 tags:
+  - qrng, getting started
 ---
 
 <PageHeader/>
@@ -16,32 +17,63 @@ tags:
 
 # {{$frontmatter.title}}
 
+This is the getting started section for QRNG along with some frequently asked
+questions. If you have a question that is not answered here, you can head over
+to our [Discord server](https://discord.com/invite/qnRrcfnm5W).
+
+## What is the QRNG?
+
+QRNG stands for Quantum Random Number Generator. It is a free to use service
+that provides quantum randomness on-chain. It is powered by
+[Airnode](/reference/airnode/latest/understand/), the
+[first-party](/explore/airnode/why-first-party-oracles/) oracle that is directly
+operated by the QRNG API providers. You can read more about QRNG
+[here](/reference/qrng/).
+
+## How many providers are there for QRNG?
+
+Currently, there are 3 providers for QRNG:
+
+- [Australian National University<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/)
+- [Quintessence Labs<ExternalLinkImage/>](https://www.quintessencelabs.com/)
+- [Nodary (Testnet)<ExternalLinkImage/>](https://nodary.io/)
+
+[Click here to view the list of providers](/reference/qrng/providers/).
+
+Both ANU and Quintessence Labs are running Airnodes in production serving 20+
+chains. Nodary is a testnet provider. It emulates QRNG using pseudorandom
+numbers on testnets chains.
+
+[Click here to view the list of chains where QRNG is available](/reference/qrng/chains/).
+
+## How can you access QRNG?
+
 The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
-project (GitHub repo) demonstrates how to build a smart contract (known as a
-requester) using the Airnode request–response protocol to receive QRNG services.
-It is recommended to run the example project to learn how it uses the QRNG
-service on a testnet, and read the associated README file. It also contains
-example code that will be useful when creating a requester (smart contract) that
-requests a quantum random number.
+project demonstrates how to build a smart contract (known as a requester) using
+the Airnode [Request–Response Protocol (RRP)]() to access QRNG services. It is
+recommended to run the example project to learn how it uses the QRNG service on
+a testnet, and read the associated `README` file. It also contains example code
+that will be useful when creating a requester (smart contract) that requests a
+quantum random number.
 
 - [qrng-example/contracts/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/contracts)
   - `QrngExamples.sol`: A sample requester used to call the QRNG service.
 - [qrng-example/deploy/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/deploy)
   - `deploy.js`: Script that deploys a requester to a chain.
   - `setup.js`: Script that sets the parameters on the requester contract. These
-    parameters are used when calling the QRNG service.
-  - `fund.js`: Script that funds the wallet the requester uses to pay the gas
-    costs.
+    parameters are used when calling the QRNG Airnode.
+  - `fund.js`: Script that funds the `sponsorWallet` the requester uses to pay
+    the gas costs.
 
 ::: info Gas Costs
 
 Using the QRNG service is free, meaning there is no subscription fee to pay.
-There is a gas cost incurred on-chain when Airnode places the random number
+There is a gas cost incurred on-chain when Airnode submits the random number
 on-chain in response to a request, which the requester needs to pay for.
 
 :::
 
-## Sponsor Wallet
+### Sponsor Wallet
 
 The QRNG example project
 [sets the sponsor wallet<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/deploy/2_setup.js#L11-L28)
@@ -52,7 +84,7 @@ the [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md) guide.
 
 <SponsorWalletWarning/>
 
-## Withdrawals
+### Withdrawals
 
 In the QRNG example project, the requester contract was written with the scope
 of demonstrating on-chain requests for random numbers.
@@ -65,16 +97,73 @@ additional functionality.
 :::
 
 For those inclined, withdrawal functionality can be added to the requester
-contract. First, funds must be transferred from `sponsorWallet` to `sponsor`.
-Since the requester contract is
-[set as the sponsor<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/46c93797902f25a46b73e40f8fa52c745b64ebb2/contracts/QrngExample.sol#L66),
-the requester contract needs to make the withdrawal request by calling
-`requestWithdrawal` from the
-[WithdrawalUtilsV0<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/4f3454cf40e1b0a1373e954df96ac22e1ce2e43f/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol#L27)
-contract. The `AirnodeRrpV0` contract inherits this contract and therefore the
-[published addresses](/reference/airnode/latest/) can be used. Second, a
-withdrawal function must be added to the requester contract such that the owner
-of the requester contract can transfer the requester contract balance to their
-address.
+contract. Check out the Requester contract in
+[Using QRNG - Remix Example](/guides/qrng/qrng-remix/#_7-withdrawing-funds-from-the-sponsorwallet-optional)
+guide for an example on adding a withdrawal function to the requester contract
+and requesting a withdrawal from the Airnode.
+
+## How much does it cost to use QRNG?
+
+QRNG is free to use. You can use it as much as you want without paying anything.
+However, you will have to fund the `sponsorWallet` that incurs the gas fees for
+the transaction for the fulfillment of the request. A `sponsorWallet` address is
+derived from the requester contract address, the QRNG Airnode address and its
+extended public key (xpub). A sponsor wallet must be derived using the command
+[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address)
+from the Admin CLI for your specific requester contract.
+
+You can refer to the funding table below to get an idea of how much you will
+have to fund the `sponsorWallet` for a request on a specific chain.
+
+::: details Funding table reference
+
+| Testnet                   | Amount | Unit  | Chain Id |
+| ------------------------- | ------ | ----- | -------- |
+| Ethereum-Goerli           | 0.1    | ETH   | 5        |
+| Ethereum-Sepolia          | 0.05   | SEP   | 11155111 |
+| RSK testnet               | 0.001  | tRBTC | 31       |
+| POA Network Sokol testnet | 0.05   | POA   | 77       |
+| BNB Chain testnet         | 0.005  | tBNB  | 97       |
+| Optimism testnet          | 0.05   | ETH   | 420      |
+| Moonbase Alpha testnet    | 0.1    | DEV   | 1287     |
+| Fantom testnet            | 0.5    | FTM   | 4002     |
+| Avalanche Fuji testnet    | 0.3    | AVAX  | 43113    |
+| Polygon Mumbai testnet    | 0.05   | MATIC | 80001    |
+| Milkomeda C1 testnet      | 0.5    | mTAda | 200101   |
+| Arbitrum testnet          | 0.01   | AGOR  | 421613   |
+
+:::
+
+You can read more about `sponsorWallet`
+[here](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet).
+
+## How to request a single random number?
+
+To request a single random number, use the `endpointIdUint256` of the QRNG
+provider while making the request. You can find all the parameters of the QRNG
+providers [here](). To see how to code a basic QRNG Requester contract and make
+a request for a single random number,
+[click here](/guides/qrng/qrng-remix/#to-request-a-single-random-number).
+
+## How to request multiple random numbers?
+
+Similar to requesting a single random number, you can request multiple random
+numbers by using the `endpointIdUint256Array` of the QRNG provider while making
+the request. It returns an array of random numbers. You will also have to
+mention the size of the array and encode it within the parameters. To see how to
+code a basic QRNG Requester contract and make a request for an array of random
+numbers,
+[click here](/guides/qrng/qrng-remix/#to-request-an-array-of-random-numbers).
+
+## How to request a random number within a range?
+
+To have a random number within a specific range while making a request to the
+QRNG Airnode, you can use the `endpointIdUint256` to return a single random
+number and have it modulo x and. The range will be [y, x-1].
+
+```solidity
+uint256 randomNumber = (qrngUint256 % x) + y;
+// x is the max number for the range, the range will be [y, x-1].
+```
 
 <FlexEndTag/>
