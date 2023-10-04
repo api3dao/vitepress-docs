@@ -25,10 +25,10 @@ to our [Discord server](https://discord.com/invite/qnRrcfnm5W).
 
 QRNG stands for Quantum Random Number Generator. It is a free to use service
 that provides quantum randomness on-chain. It is powered by
-[Airnode](/reference/airnode/latest/understand/), the
-[first-party](/explore/airnode/why-first-party-oracles/) oracle that is directly
-operated by the QRNG API providers. You can read more about QRNG
-[here](/reference/qrng/).
+[Airnode](/reference/airnode/latest/understand/index.md/), the
+[first-party](/explore/airnode/why-first-party-oracles.md) oracle that is
+directly operated by the QRNG API providers. You can read more about QRNG
+[here](/reference/qrng/index.md/).
 
 ## How many providers are there for QRNG?
 
@@ -38,24 +38,24 @@ Currently, there are 3 providers for QRNG:
 - [Quintessence Labs<ExternalLinkImage/>](https://www.quintessencelabs.com/)
 - [Nodary (Testnet)<ExternalLinkImage/>](https://nodary.io/)
 
-[Click here to view the list of providers](/reference/qrng/providers/).
+[Click here to view the list of providers](/reference/qrng/providers.md).
 
 Both ANU and Quintessence Labs are running Airnodes in production serving 20+
 chains. Nodary is a testnet provider. It emulates QRNG using pseudorandom
 numbers on testnets chains.
 
-[Click here to view the list of chains where QRNG is available](/reference/qrng/chains/).
+[Click here to view the list of chains where QRNG is available](/reference/qrng/chains.md).
 
 ## How can you access QRNG?
 
-The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
+The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/)
 project demonstrates how to build a smart contract (known as a requester) using
 the Airnode
-[Request–Response Protocol (RRP)](/reference/airnode/latest/concepts/) to access
-QRNG services. It is recommended to run the example project to learn how it uses
-the QRNG service on a testnet, and read the associated `README` file. It also
-contains example code that will be useful when creating a requester (smart
-contract) that requests a quantum random number.
+[Request–Response Protocol (RRP)](/reference/airnode/latest/concepts/index.md)
+to access QRNG services. It is recommended to run the example project to learn
+how it uses the QRNG service on a testnet, and read the associated `README`
+file. It also contains example code that will be useful when creating a
+requester (smart contract) that requests a quantum random number.
 
 - [qrng-example/contracts/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/contracts)
   - `QrngExamples.sol`: A sample requester used to call the QRNG service.
@@ -81,7 +81,7 @@ The QRNG example project
 using the requester address. The wallet is then used to pay gas costs when the
 Airnode responds to a request. An alternate method is to use the
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) as is the case with
-the [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md) guide.
+the [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md/) guide.
 
 <SponsorWalletWarning/>
 
@@ -99,7 +99,7 @@ additional functionality.
 
 For those inclined, withdrawal functionality can be added to the requester
 contract. Check out the Requester contract in
-[Using QRNG - Remix Example](/guides/qrng/qrng-remix/#_7-withdrawing-funds-from-the-sponsorwallet-optional)
+[Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md#_7-withdrawing-funds-from-the-sponsorwallet-optional)
 guide for an example on adding a withdrawal function to the requester contract
 and requesting a withdrawal from the Airnode.
 
@@ -110,7 +110,7 @@ However, you will have to fund the `sponsorWallet` that incurs the gas fees for
 the transaction for the fulfillment of the request. A `sponsorWallet` address is
 derived from the requester contract address, the QRNG Airnode address and its
 extended public key (xpub). A sponsor wallet must be derived using the command
-[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.html#derive-sponsor-wallet-address)
+[derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
 from the Admin CLI for your specific requester contract.
 
 You can refer to the funding table below to get an idea of how much you will
@@ -136,15 +136,15 @@ have to fund the `sponsorWallet` for a request on a specific chain.
 :::
 
 You can read more about `sponsorWallet`
-[here](/reference/airnode/latest/concepts/sponsor.html#sponsorwallet).
+[here](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet).
 
 ## How to request a single random number?
 
 To request a single random number, use the `endpointIdUint256` of the QRNG
 provider while making the request. You can find all the parameters of the QRNG
-providers [here](/reference/qrng/providers.html). To see how to code a basic
-QRNG Requester contract and make a request for a single random number,
-[click here](/guides/qrng/qrng-remix/#to-request-a-single-random-number).
+providers [here](/reference/qrng/providers.md). To see how to code a basic QRNG
+Requester contract and make a request for a single random number,
+[click here](/guides/qrng/qrng-remix/index.md#to-request-a-single-random-number).
 
 ## How to request multiple random numbers?
 
@@ -154,7 +154,7 @@ the request. It returns an array of random numbers. You will also have to
 mention the size of the array and encode it within the parameters. To see how to
 code a basic QRNG Requester contract and make a request for an array of random
 numbers,
-[click here](/guides/qrng/qrng-remix/#to-request-an-array-of-random-numbers).
+[click here](/guides/qrng/qrng-remix/index.md#to-request-an-array-of-random-numbers).
 
 ## How to request a random number within a range?
 

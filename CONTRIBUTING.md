@@ -6,7 +6,10 @@ started with contributing to the API3 documentation.
 ## How to get started
 
 The API3 Docs uses [VitePress](https://vitepress.dev/), a Vue-powered static
-site generator. Follow the steps below to get started:
+site generator. Follow the steps below to get started.
+
+Make sure to check out https://docs.api3.org/dev/ for more details and
+information about getting started and making a contribution to the API3 Docs.
 
 ### Pre-requisites
 
@@ -16,7 +19,7 @@ site generator. Follow the steps below to get started:
 ### Installation
 
 ```bash
-$ yarn install
+yarn install
 ```
 
 ### Running the local development server
@@ -24,12 +27,8 @@ $ yarn install
 Run the following command to start the local development server on port `5173`:
 
 ```bash
-$ yarn docs:dev
+yarn docs:dev
 ```
-
-### Making changes
-
-You can make changes to the markdown files under the `docs` directory.
 
 ### Structure
 
@@ -46,10 +45,13 @@ for that section.
 
 `/_components`: Contains the custom vue components used in the API3 Docs.
 
+[Check this out](https://docs.api3.org/dev/docsets.html) for more info about the
+structure of the docs.
+
 ### Building the static site
 
 ```bash
-$ yarn docs:build
+yarn docs:build
 ```
 
 ### Prettier Formatting
@@ -58,14 +60,27 @@ Make sure to run the following command before submitting a PR to format the
 markdown. The Github action will check for prettier formatting:
 
 ```bash
-$ yarn format
+yarn format
 ```
+
+### Formatting and Styling
+
+You can use markdown to format the content. Check out the
+[docs development section](https://docs.api3.org/dev/) for more info. Some
+useful links:
+
+- [Page styling](https://docs.api3.org/dev/page-styling.html)
+- [Formatting guides](https://docs.api3.org/dev/guides-format.html)
+- [VitePress Containers](https://docs.api3.org/dev/containers.html)
 
 ### Git Workflow:
 
-- `live-site` branch: for the current live site for
+- `live-site` branch: for the current live site
   [docs.api3.org](https://docs.api3.org)
 - `main` branch: for the staging site.
+
+[Check this out](https://docs.api3.org/dev/firebase.html#repo-branches) for more
+info about the branches.
 
 ### Submitting an Issue
 
@@ -85,9 +100,10 @@ After making all the changes, submit a PR against the `main` branch. The PR will
 be reviewed by the team and merged into the `main` branch. Make sure to link the
 issue in the PR description.
 
-You would be able to see the changes with a Firebase preview link. Each PR has
-its own Firebase preview site. The URL will be available in the PR's comments.
+You will then be able to see the changes with a Firebase preview link. Each PR
+has its own Firebase preview site. The URL will be available in the PR's
+comments.
 
 The changes will be deployed to the staging site. Once the changes are reviewed
-and approved, the changes will be merged into the `live-site` branch and
-deployed to the live site.
+and approved, the changes will be merged from `main` into the `live-site` branch
+and deployed to the live site.
