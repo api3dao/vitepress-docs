@@ -409,11 +409,11 @@ parameters that are needed.
   (`0x6238772544f029ecaBfDED4300f13A3c4FE84E1D`→<CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/>).
 
 - `_endpointIdUint256`: The **Nodary** Airnode endpoint ID
-  (`0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78`→<CopyIcon text="0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78"/>)
+  (`0x94555f83f1addda23fdaa7c74f27ce2b764ed5cc430c66f5ff1bcf39d583da36`→<CopyIcon text="0x94555f83f1addda23fdaa7c74f27ce2b764ed5cc430c66f5ff1bcf39d583da36"/>)
   which will return a single random number.
 
 - `_endpointIdUint256Array`: The **Nodary** Airnode endpoint ID
-  (`0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3`→<CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>)
+  (`0x9877ec98695c139310480b4323b9d474d48ec4595560348a2341218670f7fbc2`→<CopyIcon text="0x9877ec98695c139310480b4323b9d474d48ec4595560348a2341218670f7fbc2"/>)
   which will return an array of random numbers.
 
 - `_sponsorWallet`: A wallet derived from the Airnode address and the Airnode
