@@ -522,8 +522,9 @@ following elements:
 
 #### 5.5.1. `operationParameter`
 
-(Required) An object that refers to a parameter of an API operation, has the
-following elements:
+(Optional) An object that refers to a parameter of an API operation and has the
+below elements. Note that if omitted, the `parameter` will not be included as
+part of the request to the API endpoint.
 
 - `name`
 - `in`
