@@ -25,10 +25,10 @@ to our [Discord server](https://discord.com/invite/qnRrcfnm5W).
 
 QRNG stands for Quantum Random Number Generator. It is a free to use service
 that provides quantum randomness on-chain. It is powered by
-[Airnode](/reference/airnode/latest/understand/index.md/), the
+[Airnode](/reference/airnode/latest/understand/index.md), the
 [first-party](/explore/airnode/why-first-party-oracles.md) oracle that is
 directly operated by the QRNG API providers. You can read more about QRNG
-[here](/reference/qrng/index.md/).
+[here](/reference/qrng/index.md).
 
 ## How many providers are there for QRNG?
 
@@ -81,7 +81,7 @@ The QRNG example project
 using the requester address. The wallet is then used to pay gas costs when the
 Airnode responds to a request. An alternate method is to use the
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) as is the case with
-the [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md/) guide.
+the [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md) guide.
 
 <SponsorWalletWarning/>
 
