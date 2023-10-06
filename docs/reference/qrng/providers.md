@@ -85,7 +85,7 @@ Testnet Random Numbers emulates QRNG using
 on testnets to get familiar with QRNG.
 
 | Testnet                   | Chain Id |
-| --------------------------|----------|
+| ------------------------- | -------- |
 | Goerli                    | 5        |
 | Sepolia                   | 11155111 |
 | RSK testnet               | 31       |
