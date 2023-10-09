@@ -25,8 +25,8 @@ these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
-[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers), available only on
-testnets, which returns a pseudorandom number.
+[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers),
+available only on testnets, which returns a pseudorandom number.
 
 Anyone can choose a number 1–10,000 and buy a ticket to enter into a weekly
 lottery. The ticket revenue is collected into a pot in the contract. After 7

@@ -69,9 +69,9 @@ The
 [@api3/airnode-protocol<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
-[**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers) imitates QRNG using pseudorandom
-numbers and is best used during development. Use
-[ANU](/reference/qrng/chains.md#anu) or
+[**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers)
+imitates QRNG using pseudorandom numbers and is best used during development.
+Use [ANU](/reference/qrng/chains.md#anu) or
 [Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
 quantum random numbers.
 
@@ -114,8 +114,8 @@ ANU is only available on mainnets.
 
 ## Testnet Random Numbers
 
-**Testnet Random Numbers** is best used for development and is only available on several
-testnets.
+**Testnet Random Numbers** is best used for development and is only available on
+several testnets.
 
 ### Testnets
 

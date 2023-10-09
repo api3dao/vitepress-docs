@@ -41,8 +41,8 @@ these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
-[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers), available only on
-testnets, which returns a pseudorandom number.
+[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers),
+available only on testnets, which returns a pseudorandom number.
 
 <!-- To begin, you need to deploy and sponsor the
 [`RemixQrngExample`](/reference/qrng/qrng-example.md) with a matching
@@ -359,8 +359,8 @@ testnet ETH before moving forward. You can request some from here➚
 :::
 
 This guide will use the
-[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers) which has the same
-usage as the production quantum random number generator
+[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers) which
+has the same usage as the production quantum random number generator
 [providers](/reference/qrng/providers.md) but returns a pseudorandom number.
 
 - Switch to the **DEPLOY & RUN TRANSACTIONS** tab. Use MetaMask and switch to
@@ -385,11 +385,11 @@ usage as the production quantum random number generator
 
 ::: info Testnet Random Numbers Provider
 
-This guide uses Testnet Random Numbers as the QRNG Airnode provider. Testnet Random Numbers emulates QRNG on
-testnets. If you wish to use QRNG in production, you can use the mainnet
-[QRNG providers](/reference/qrng/providers.md) instead. Also make sure to check
-if your particular chain is supported by the QRNG providers. Check which chains
-are supported [here](/reference/qrng/chains.md).
+This guide uses Testnet Random Numbers as the QRNG Airnode provider. Testnet
+Random Numbers emulates QRNG on testnets. If you wish to use QRNG in production,
+you can use the mainnet [QRNG providers](/reference/qrng/providers.md) instead.
+Also make sure to check if your particular chain is supported by the QRNG
+providers. Check which chains are supported [here](/reference/qrng/chains.md).
 
 :::
 
