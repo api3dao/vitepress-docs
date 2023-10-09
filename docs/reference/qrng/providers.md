@@ -84,21 +84,6 @@ Testnet Random Numbers emulates QRNG using
 [pseudorandom numbers<ExternalLinkImage/>](https://www.mathworks.com/help/stats/generating-random-data.html)
 on testnets to get familiar with QRNG.
 
-| Testnet                   | Chain Id |
-| ------------------------- | -------- |
-| Goerli                    | 5        |
-| Sepolia                   | 11155111 |
-| RSK testnet               | 31       |
-| POA Network Sokol testnet | 77       |
-| BNB Chain testnet         | 97       |
-| Optimism testnet          | 420      |
-| Moonbase Alpha testnet    | 1287     |
-| Fantom testnet            | 4002     |
-| Avalanche Fuji testnet    | 43113    |
-| Polygon Mumbai testnet    | 80001    |
-| Milkomeda C1 testnet      | 200101   |
-| Arbitrum testnet          | 421613   |
-
 ### `airnode`
 
 <div style="word-wrap:break-word;margin-top:25px;">
