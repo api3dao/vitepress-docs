@@ -788,11 +788,11 @@ outputs while making the request.
 
 **This wallet needs to be funded.**
 
-::: details Nodary QRNG Airnode Details
+::: details Testnet Random Numbers QRNG Airnode Details
 
 ```
-nodary QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
-nodary QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
+Testnet Random Numbers QRNG Airnode Address = 0x6238772544f029ecaBfDED4300f13A3c4FE84E1D
+Testnet Random Numbers QRNG Airnode XPUB = xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo
 ```
 
 :::
