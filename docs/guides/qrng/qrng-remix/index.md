@@ -447,20 +447,19 @@ parameters that are needed.
 
   ::: details Funding table reference
 
-  | Testnet                   | Amount | Unit  | Chain Id |
-  | ------------------------- | ------ | ----- | -------- |
-  | Ethereum-Goerli           | 0.1    | ETH   | 5        |
-  | Ethereum-Sepolia          | 0.05   | SEP   | 11155111 |
-  | RSK testnet               | 0.001  | tRBTC | 31       |
-  | POA Network Sokol testnet | 0.05   | POA   | 77       |
-  | BNB Chain testnet         | 0.005  | tBNB  | 97       |
-  | Optimism testnet          | 0.05   | ETH   | 420      |
-  | Moonbase Alpha testnet    | 0.1    | DEV   | 1287     |
-  | Fantom testnet            | 0.5    | FTM   | 4002     |
-  | Avalanche Fuji testnet    | 0.3    | AVAX  | 43113    |
-  | Polygon Mumbai testnet    | 0.05   | MATIC | 80001    |
-  | Milkomeda C1 testnet      | 0.5    | mTAda | 200101   |
-  | Arbitrum testnet          | 0.01   | AGOR  | 421613   |
+  | Testnet                | Amount | Unit  | Chain Id |
+  | ---------------------- | ------ | ----- | -------- |
+  | Ethereum-Goerli        | 0.1    | ETH   | 5        |
+  | Ethereum-Sepolia       | 0.05   | SEP   | 11155111 |
+  | RSK testnet            | 0.001  | tRBTC | 31       |
+  | BNB Chain testnet      | 0.005  | tBNB  | 97       |
+  | Optimism testnet       | 0.05   | ETH   | 420      |
+  | Moonbase Alpha testnet | 0.1    | DEV   | 1287     |
+  | Fantom testnet         | 0.5    | FTM   | 4002     |
+  | Avalanche Fuji testnet | 0.3    | AVAX  | 43113    |
+  | Polygon Mumbai testnet | 0.05   | MATIC | 80001    |
+  | Milkomeda C1 testnet   | 0.5    | mTAda | 200101   |
+  | Arbitrum testnet       | 0.01   | AGOR  | 421613   |
 
   :::
 
