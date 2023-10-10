@@ -69,9 +69,9 @@ The
 [@api3/airnode-protocol<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
-[**Nodary**](/reference/qrng/chains.md#nodary) imitates QRNG using pseudorandom
-numbers and is best used during development. Use
-[ANU](/reference/qrng/chains.md#anu) or
+[**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers)
+imitates QRNG using pseudorandom numbers and is best used during development.
+Use [ANU](/reference/qrng/chains.md#anu) or
 [Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
 quantum random numbers.
 
@@ -112,16 +112,16 @@ ANU is only available on mainnets.
 
 </div>
 
-## Nodary
+## Testnet Random Numbers
 
-**Nodary** is best used for development and is only available on several
-testnets.
+**Testnet Random Numbers** is best used for development and is only available on
+several testnets.
 
 ### Testnets
 
 <div class="testnets">
 
-<div style="position:absolute;right:0px;margin-top:-30px;">Nodary</div>
+<div style="position:absolute;right:0px;margin-top:-30px;">Testnet Random Numbers</div>
 
 | Network                                                                               | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | ------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |

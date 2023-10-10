@@ -42,7 +42,7 @@ Australia. Visit their website at
 
 ANU Quantum Random Numbers are only available on
 [mainnets](/reference/qrng/chains.md#anu). For testnets use
-[Nodary](/reference/qrng/providers.md#nodary-pseudorandom-numbers).
+[Testnet Random Numbers](/reference/qrng/providers.md#testnet-random-numbers).
 [Quintessence](/reference/qrng/providers.md#quintessence-quantum-random-numbers)
 is available on mainnets and a few testnets.
 
@@ -78,13 +78,11 @@ is available on mainnets and a few testnets.
     <CopyIcon text="0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3"/>
 </div>
 
-## Nodary Pseudorandom Numbers
+## Testnet Random Numbers
 
-[**Nodary**<ExternalLinkImage/>](https://nodary.io/) is an independent group
-within the API3 ecosystem that builds high-impact oracle services. **Nodary**
-emulates QRNG using
+Testnet Random Numbers emulates QRNG using
 [pseudorandom numbers<ExternalLinkImage/>](https://www.mathworks.com/help/stats/generating-random-data.html)
-on [testnets](/reference/qrng/chains.md#nodary).
+on testnets to get familiar with QRNG.
 
 ### `airnode`
 
