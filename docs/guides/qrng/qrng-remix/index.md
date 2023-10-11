@@ -41,8 +41,8 @@ these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
-[Nodary provider<ExternalLinkImage/>](https://nodary.io/), available only on
-testnets, which returns a pseudorandom number.
+[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers),
+available only on testnets, which returns a pseudorandom number.
 
 <!-- To begin, you need to deploy and sponsor the
 [`RemixQrngExample`](/reference/qrng/qrng-example.md) with a matching
@@ -359,8 +359,8 @@ testnet ETH before moving forward. You can request some from here➚
 :::
 
 This guide will use the
-[Nodary provider<ExternalLinkImage/>](https://nodary.io/) which has the same
-usage as the production quantum random number generator
+[Testnet Random Numbers](/reference/qrng/providers#testnet-random-numbers) which
+has the same usage as the production quantum random number generator
 [providers](/reference/qrng/providers.md) but returns a pseudorandom number.
 
 - Switch to the **DEPLOY & RUN TRANSACTIONS** tab. Use MetaMask and switch to
@@ -383,13 +383,13 @@ usage as the production quantum random number generator
 
 ## 4. Setting the Parameters
 
-::: info Nodary Provider
+::: info Testnet Random Numbers Provider
 
-This guide uses Nodary as the QRNG Airnode provider. Nodary emulates QRNG on
-testnets. If you wish to use QRNG in production, you can use the mainnet
-[QRNG providers](/reference/qrng/providers.md) instead. Also make sure to check
-if your particular chain is supported by the QRNG providers. Check which chains
-are supported [here](/reference/qrng/chains.md).
+This guide uses Testnet Random Numbers as the QRNG Airnode provider. Testnet
+Random Numbers emulates QRNG on testnets. If you wish to use QRNG in production,
+you can use the mainnet [QRNG providers](/reference/qrng/providers.md) instead.
+Also make sure to check if your particular chain is supported by the QRNG
+providers. Check which chains are supported [here](/reference/qrng/chains.md).
 
 :::
 
@@ -405,19 +405,19 @@ Next, select and expand the **`setRequestParameters`** function to see all the
 parameters that are needed.
 
 - `_airnode`: The airnode address of the desired QRNG service provider. Use
-  **Nodary**
+  **Testnet Random Numbers**
   (`0x6238772544f029ecaBfDED4300f13A3c4FE84E1D`→<CopyIcon text="0x6238772544f029ecaBfDED4300f13A3c4FE84E1D"/>).
 
-- `_endpointIdUint256`: The **Nodary** Airnode endpoint ID
+- `_endpointIdUint256`: The **Testnet Random Numbers** Airnode endpoint ID
   (`0x94555f83f1addda23fdaa7c74f27ce2b764ed5cc430c66f5ff1bcf39d583da36`→<CopyIcon text="0x94555f83f1addda23fdaa7c74f27ce2b764ed5cc430c66f5ff1bcf39d583da36"/>)
   which will return a single random number.
 
-- `_endpointIdUint256Array`: The **Nodary** Airnode endpoint ID
+- `_endpointIdUint256Array`: The **Testnet Random Numbers** Airnode endpoint ID
   (`0x9877ec98695c139310480b4323b9d474d48ec4595560348a2341218670f7fbc2`→<CopyIcon text="0x9877ec98695c139310480b4323b9d474d48ec4595560348a2341218670f7fbc2"/>)
   which will return an array of random numbers.
 
 - `_sponsorWallet`: A wallet derived from the Airnode address and the Airnode
-  xpub used by **Nodary**, and the smart contract address for
+  xpub used by **Testnet Random Numbers**, and the smart contract address for
   `RemixQrngExample.sol`. The wallet is used to pay gas costs to acquire a
   random number. A sponsor wallet must be derived using the command
   [derive-sponsor-wallet-address](/reference/airnode/latest/packages/admin-cli.md#derive-sponsor-wallet-address)
@@ -430,8 +430,8 @@ parameters that are needed.
     --airnode-xpub xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo \
     --sponsor-address <use-the-address-of: RemixQrngExample.sol>
 
-    # --airnode-address: Airnode address (nodary provider)
-    # --airnode-xpub:    Airnode xpub (nodary provider)
+    # --airnode-address: Airnode address (Testnet Random Numbers provider)
+    # --airnode-xpub:    Airnode xpub (Testnet Random Numbers provider)
     # --sponsor-address: Use the smart contract address for
     #                    RemixQrngExample.sol as displayed in the Remix IDE.
 
@@ -447,20 +447,19 @@ parameters that are needed.
 
   ::: details Funding table reference
 
-  | Testnet                   | Amount | Unit  | Chain Id |
-  | ------------------------- | ------ | ----- | -------- |
-  | Ethereum-Goerli           | 0.1    | ETH   | 5        |
-  | Ethereum-Sepolia          | 0.05   | SEP   | 11155111 |
-  | RSK testnet               | 0.001  | tRBTC | 31       |
-  | POA Network Sokol testnet | 0.05   | POA   | 77       |
-  | BNB Chain testnet         | 0.005  | tBNB  | 97       |
-  | Optimism testnet          | 0.05   | ETH   | 420      |
-  | Moonbase Alpha testnet    | 0.1    | DEV   | 1287     |
-  | Fantom testnet            | 0.5    | FTM   | 4002     |
-  | Avalanche Fuji testnet    | 0.3    | AVAX  | 43113    |
-  | Polygon Mumbai testnet    | 0.05   | MATIC | 80001    |
-  | Milkomeda C1 testnet      | 0.5    | mTAda | 200101   |
-  | Arbitrum testnet          | 0.01   | AGOR  | 421613   |
+  | Testnet                | Amount | Unit  | Chain Id |
+  | ---------------------- | ------ | ----- | -------- |
+  | Ethereum-Goerli        | 0.1    | ETH   | 5        |
+  | Ethereum-Sepolia       | 0.05   | SEP   | 11155111 |
+  | RSK testnet            | 0.001  | tRBTC | 31       |
+  | BNB Chain testnet      | 0.005  | tBNB  | 97       |
+  | Optimism testnet       | 0.05   | ETH   | 420      |
+  | Moonbase Alpha testnet | 0.1    | DEV   | 1287     |
+  | Fantom testnet         | 0.5    | FTM   | 4002     |
+  | Avalanche Fuji testnet | 0.3    | AVAX  | 43113    |
+  | Polygon Mumbai testnet | 0.05   | MATIC | 80001    |
+  | Milkomeda C1 testnet   | 0.5    | mTAda | 200101   |
+  | Arbitrum testnet       | 0.01   | AGOR  | 421613   |
 
   :::
 

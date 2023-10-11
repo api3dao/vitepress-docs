@@ -31,6 +31,11 @@ Firebase is used to host the `vitepress-docs` technical documentation.
 Additionally each PR has its own Firebase preview site. The URL will be
 available in the PR's comments.
 
+## Making a Contribution
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to make a
+contribution.
+
 ## Legacy documentation
 
 The original documentation for the repo `api3-docs` is now accessible via

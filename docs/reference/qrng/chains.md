@@ -69,9 +69,9 @@ The
 [@api3/airnode-protocol<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
-[**Nodary**](/reference/qrng/chains.md#nodary) imitates QRNG using pseudorandom
-numbers and is best used during development. Use
-[ANU](/reference/qrng/chains.md#anu) or
+[**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers)
+imitates QRNG using pseudorandom numbers and is best used during development.
+Use [ANU](/reference/qrng/chains.md#anu) or
 [Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
 quantum random numbers.
 
@@ -112,23 +112,22 @@ ANU is only available on mainnets.
 
 </div>
 
-## Nodary
+## Testnet Random Numbers
 
-**Nodary** is best used for development and is only available on several
-testnets.
+**Testnet Random Numbers** is best used for development and is only available on
+several testnets.
 
 ### Testnets
 
 <div class="testnets">
 
-<div style="position:absolute;right:0px;margin-top:-30px;">Nodary</div>
+<div style="position:absolute;right:0px;margin-top:-30px;">Testnet Random Numbers</div>
 
 | Network                                                                               | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | ------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [{{getChainNameById(5)}}](https://goerli.etherscan.io)                                | 5        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io)                        | 11155111 | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
 | [{{getChainNameById(31)}}](https://explorer.testnet.rsk.co)                           | 31       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(77)}}](https://blockscout.com/poa/sokol)                          | 77       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(97)}}](https://testnet.bscscan.com)                               | 97       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(420)}}](https://goerli-optimism.etherscan.io)                     | 420      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(1287)}}](https://moonbase.moonscan.io)                            | 1287     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
