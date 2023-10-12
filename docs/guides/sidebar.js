@@ -24,6 +24,10 @@ module.exports = [
         text: 'Automate funding of multiple dAPIs with Gelato',
         link: '/guides/dapis/funding-multiple-dapis-gelato/',
       },
+      {
+        text: 'Making a stablecoin using dAPIs',
+        link: '/guides/dapis/stablecoin-using-dapis/',
+      },
     ],
   },
   {
