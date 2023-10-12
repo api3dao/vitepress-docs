@@ -6,7 +6,8 @@ pageHeader: Guides → QRNG
 path: /guides/qrng/index.html
 outline: deep
 tags:
-  - qrng, getting started
+  - qrng
+  - getting started
 ---
 
 <PageHeader/>

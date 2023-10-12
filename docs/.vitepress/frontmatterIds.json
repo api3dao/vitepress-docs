@@ -419,7 +419,7 @@
     "pageHeader": "Guides → QRNG",
     "path": "/guides/qrng/index.html",
     "outline": "deep",
-    "tags": null
+    "tags": ["qrng", "getting started"]
   },
   "48": {
     "title": "Building a Lottery with QRNG",

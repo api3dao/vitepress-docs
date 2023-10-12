@@ -96,6 +96,20 @@ yarn flex:build
 // "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
 ```
 
+Note the output from the command `yarn flex:build` which displays file sizes.
+Check the size of the three `map.json` files which should be in the range of
+25-31 MB. If not refer to the
+[Long strings warning](/dev/flexsearch.html#long-strings-warning) section below.
+
+```sh
+----- Building FlexSearch Indexes -----
+...
+ > docs/public/indexes/all-dev/map.json 29.714834213256836 MB
+ > docs/public/indexes/all/map.json 28.49449634552002 MB
+ > docs/public/indexes/latest/map.json 26.81308937072754 MB
+...
+```
+
 ### 4. Script `flexTestSearch.js`
 
 Test the index files.
