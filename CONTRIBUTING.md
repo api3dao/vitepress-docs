@@ -75,9 +75,8 @@ useful links:
 
 ### Git Workflow:
 
-- `live-site` branch: for the current live site
+- `main` branch: for the current live site
   [docs.api3.org](https://docs.api3.org)
-- `main` branch: for the staging site.
 
 [Check this out](https://docs.api3.org/dev/firebase.html#repo-branches) for more
 info about the branches.
@@ -96,14 +95,9 @@ You can:
 
 ### Making a PR
 
-After making all the changes, submit a PR against the `main` branch. The PR will
-be reviewed by the team and merged into the `main` branch. Make sure to link the
-issue in the PR description.
-
-You will then be able to see the changes with a Firebase preview link. Each PR
-has its own Firebase preview site. The URL will be available in the PR's
-comments.
-
-The changes will be deployed to the staging site. Once the changes are reviewed
-and approved, the changes will be merged from `main` into the `live-site` branch
-and deployed to the live site.
+After making changes in a feature branch, submit a PR against the `main` branch.
+Make sure to link the corresponding GitHub Issue in the PR description e.g.
+`Closes #1`. You will be able to see the changes within a Firebase preview
+deployment that is unique to the PR. The PR will be reviewed by the team and
+merged into the `main` branch, which will result in the changes going live into
+production.
