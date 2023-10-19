@@ -22,10 +22,6 @@ Firebase is used to host the `vitepress-docs` technical documentation.
 - DNS: https://docs.api3.org
 - Hosted with Firebase: https://vitepress-docs.web.app
 
-### Stage
-
-- Hosted with Firebase: https://vitepress-docs--stage-1sggkn03.web.app/
-
 ### Previews
 
 Additionally each PR has its own Firebase preview site. The URL will be
