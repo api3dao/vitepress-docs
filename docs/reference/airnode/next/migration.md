@@ -45,3 +45,15 @@ Updated to "0.13.0"
 ```
 
 ## New features and updates
+
+- The
+  [HTTP Gateway](/reference/airnode/next/understand/http-gateways.md#http-gateway)
+  response has been harmonized so that the API call response, after undergoing
+  any post-processing, will be present in the `rawValue` field independent of
+  encoding success or failure.
+- Airnode protocol contracts were deployed on the following chains: `linea`,
+  `linea-goerli-testnet`, `mantle`, `mantle-goerli-testnet`, `base`,
+  `base-goerli-testnet`, `polygon-zkevm`, and `polygon-zkevm-testnet`.
+- In conjunction with the
+  [OIS bump to v2.2](https://github.com/api3dao/ois/releases), endpoint
+  parameters now do not have to be mapped to operation parameters.
