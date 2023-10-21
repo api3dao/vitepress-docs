@@ -47,7 +47,8 @@ requests or requests to the HTTP signed data gateway:
    other types of requests for which only an error would be returned. The API
    call response, after undergoing any
    [post-processing](/reference/ois/latest/processing.md), will be present in
-   the `rawValue` field:
+   the response body if encoding fails, and in the `rawValue` field if the
+   encoding is successful:
 
    ```json
    {
