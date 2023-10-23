@@ -38,21 +38,21 @@ The regular HTTP gateway is strictly for testing purposes. Using a simple tool
 like CURL you can test that endpoints in the Airnode configuration are working
 properly without accessing the blockchain.
 
-In order to facilitate testing, HTTP gateway requests have the following
-differences in handling when compared to blockchain requests or requests to the
-HTTP signed data gateway:
+In order to facilitate configuration and testing of parameters, HTTP gateway
+requests have the following differences in handling when compared to blockchain
+requests or requests to the HTTP signed data gateway:
 
-1. Data from a request that yields a successful API call but fails response
-   processing are returned in the response. This is in contrast to the other
-   types of requests for which only an error would be returned. The intention is
-   to facilitate configuration of reserved parameters that dictate how API call
-   responses are processed. Under this scenario, the response will include:
+1. When a request's API call is successful but then that response fails
+   extraction and encoding, data are still returned. This is in contrast to the
+   other types of requests for which only an error would be returned. The API
+   call response, after undergoing any
+   [post-processing](/reference/ois/latest/processing.md), will be present in
+   the response body if encoding fails, and in the `rawValue` field if the
+   encoding is successful:
 
    ```json
    {
-     "success": true,
-     "errorMessage": "string",
-     "data": data
+     "rawValue": {...}
    }
    ```
 
