@@ -49,6 +49,7 @@ export default {
     ],
   ],
   themeConfig: {
+    externalLinkIcon: true,
     logo: {
       light: '/img/API3-Active.png',
       dark: '/img/api3-inactive.png',
