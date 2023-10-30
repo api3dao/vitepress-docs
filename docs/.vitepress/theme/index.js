@@ -8,7 +8,6 @@ import WarningSimultaneousDeployments from '../../_components/guides/WarningSimu
 import DeployerPermissionsWarning from '../../_components/guides/DeployerPermissionsWarning.vue';
 import VersionWarning from '../../_components/VersionWarning.vue';
 import PageHeader from '../../_components/PageHeader.vue';
-import ExternalLinkImage from '../../_components/ExternalLinkImage.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
 import DockerHubImages from '../../_components/reference/airnode/DockerHubImages.vue';
@@ -37,7 +36,6 @@ export default {
     app.component('DeployerPermissionsWarning', DeployerPermissionsWarning);
     app.component('VersionWarning', VersionWarning);
     app.component('PageHeader', PageHeader);
-    app.component('ExternalLinkImage', ExternalLinkImage);
     app.component('CopyIcon', CopyIcon);
     app.component('SponsorWalletWarning', SponsorWalletWarning);
     app.component('DockerHubImages', DockerHubImages);
