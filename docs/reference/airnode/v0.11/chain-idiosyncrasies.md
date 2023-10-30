@@ -46,8 +46,7 @@ Execution costs on Arbitrum are calculated slightly differently than Ethereum,
 which impacts the gas required to fulfill requests. To account for this, it is
 recommended to use a minimum value of `5000000` for `fulfillmentGasLimit` when
 using both Arbitrum mainnet and testnet. Read more about
-[ArbGas<ExternalLinkImage/>](https://developer.offchainlabs.com/docs/arbgas) gas
-and fees.
+[ArbGas](https://developer.offchainlabs.com/docs/arbgas) gas and fees.
 
 ### Metis
 

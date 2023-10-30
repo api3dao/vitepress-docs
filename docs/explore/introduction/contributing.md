@@ -22,9 +22,8 @@ being a programmatically driven protocol.
 
 To support DAO governance and inform voters, all teams publish a public proposal
 at regular intervals, meaning strategy & operations are accessible on the
-[API3 Governance Forum<ExternalLinkImage/>](https://forum.api3.org/) for all to
-understand. Additionally, teams generally update the community with ongoing
-reports.
+[API3 Governance Forum](https://forum.api3.org/) for all to understand.
+Additionally, teams generally update the community with ongoing reports.
 
 ## Types of contributors
 
@@ -88,29 +87,28 @@ To begin with, this contribution may look like:
 
 We recommend spending some time learning about API3 DAO's oracle technology
 before looking to contribute from an engineer perspective. We welcome you to ask
-any questions on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W).
+any questions on [Discord](https://discord.gg/qnRrcfnm5W).
 
 - Read the entirety of these docs. Take notes and cross-reference, but do not
   expect to understand everything. Feel free to ask questions.
-- Visit the [API3 GitHub<externalLinkImage/>](https://github.com/api3dao) page
-  to explore the many repositories of API3's oracle stack and gain in-depth
-  knowledge.
+- Visit the [API3 GitHub](https://github.com/api3dao) page to explore the many
+  repositories of API3's oracle stack and gain in-depth knowledge.
 - Head to the
-  [API3 Community Hub<ExternalLinkImage/>](https://github.com/api3-ecosystem/doc-hub.git)
-  with get started tutorials & demo projects.
+  [API3 Community Hub](https://github.com/api3-ecosystem/doc-hub.git) with get
+  started tutorials & demo projects.
 - Go through the issues, PRs, etc. and understand the current focus of the
   development team by viewing the development board.
 
 ### If you are learning about blockchain & oracles
 
-- Read the [getting started<ExternalLinkImage/>](/explore/introduction/index.md)
-  section in the API3 Docs
+- Read the [getting started](/explore/introduction/index.md) section in the API3
+  Docs
 - (For the curious) Explore the API3 codebase on
-  [GitHub<ExternalLinkImage/>](https://github.com/api3dao)
+  [GitHub](https://github.com/api3dao)
 - If you do not have any blockchain development experience, read
-  [Mastering Ethereum<ExternalLinkImage/>](https://github.com/ethereumbook/ethereumbook)
-  cover to cover. It is a light read that touches on all subjects that you will
-  need to know about superficially.
+  [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) cover to
+  cover. It is a light read that touches on all subjects that you will need to
+  know about superficially.
 
 ### Non-technical contributors
 
@@ -145,10 +143,10 @@ been created to make rewarding contribution frictionless and simple.
 
 ### Submit a proposal to the DAO
 
-- Join the API3 [community<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
-  and submit within the ecosystem contributor request channel.
+- Join the API3 [community](https://discord.gg/qnRrcfnm5W) and submit within the
+  ecosystem contributor request channel.
 - Submit an overview and sentiment check onto the
-  [API3 forums<ExternalLinkImage/>](https://forum.api3.org/).
+  [API3 forums](https://forum.api3.org/).
 - Follow the
   [proposal guidelines](/guides/dao-members/proposals.md#proposal-creation)
   provided by API3 DAO.
@@ -159,9 +157,9 @@ external contributors and diversity in thought is a strength.
 
 ### We invite all curious contributors to engage API3
 
-- [API3 Forum<ExternalLinkImage/>](https://forum.api3.org/)
-- Community Chat on [Telegram<ExternalLinkImage/>](https://t.me/API3DAO)
-- Developer Chat on [Discord<ExternalLinkImage/>](https://discord.gg/qnRrcfnm5W)
-- [YouTube Channel<ExternalLinkImage/>](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
+- [API3 Forum](https://forum.api3.org/)
+- Community Chat on [Telegram](https://t.me/API3DAO)
+- Developer Chat on [Discord](https://discord.gg/qnRrcfnm5W)
+- [YouTube Channel](https://www.youtube.com/channel/UCCpUthOhahxjdeX9T7t7nJQ)
 
 <FlexEndTag/>

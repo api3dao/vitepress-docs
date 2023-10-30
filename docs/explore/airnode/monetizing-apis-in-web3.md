@@ -99,7 +99,7 @@ article)["/explore/airnode/why-first-party-oracles.md"]
 API3 embraces the ideology of a decentralized web and the power of open source.
 
 Furthermore it believes that the
-[oracle problem is ill-posed](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)<ExternalLinkImage/>
+[oracle problem is ill-posed](https://medium.com/api3/the-api-connectivity-problem-bd7fa0420636)
 and instead, the problem to be solved is how to connect APIs to the blockchain.
 Airnode is a first-party oracle solution that addresses this problem. Like all
 design decisions, however, the advantages presented below have tradeoffs that
@@ -126,11 +126,11 @@ should be understood.
   making the requests) specify a sponsor (account that sponsors the transaction)
   to pay for the response transaction.-->
 - Airnode and other API3 projects are **open source** and developed on
-  [GitHub<ExternalLinkImage/>](https://github.com/api3dao).
+  [GitHub](https://github.com/api3dao).
 - Due to its stateless nature Airnode is inherently more **secure** than other
   solutions. Nonetheless, API3 remains highly focused on security and has a
   track record of favorable
-  [external security audits<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/tree/main/reports).
+  [external security audits](https://github.com/api3dao/api3-dao/tree/main/reports).
 - API3 does **not charge** for deploying and using Airnode. Under the AWS lambda
   free tier, operating an Airnode can even be free.
 

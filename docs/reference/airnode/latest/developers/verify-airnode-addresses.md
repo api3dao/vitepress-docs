@@ -30,7 +30,7 @@ address is the same for all chains.
 The key for the `TXT` record is `chainapi-verification-keys` and is an array of
 Airnode addresses owned by the API provider. Below is an example of the Airnode
 for
-[dxFeed<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=dxfeed.com#TXT-Records).
+[dxFeed](https://www.digitalocean.com/community/tools/dns?domain=dxfeed.com#TXT-Records).
 
 ![dxfeed-txt-record](../assets/images/txt-record-dxfeed.png)
 
@@ -50,14 +50,14 @@ for
 
 The following list of links go to the DNS lookup at DigitalOcean.
 
-- [Coinpaprika<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=coinpaprika.com#TXT-Records)
-- [dxFeed<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=dxfeed.com#TXT-Records)
-- [Finage<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=finage.co.uk#TXT-Records)
-- [Finnhub<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=finnhub.io#TXT-Records)
-- [Kaiko<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=kaiko.io#TXT-Records)
-- [NewChangeFX<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=newchangefx.com#TXT-Records)
-- [Nodary<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=nodary.io#TXT-Records)
-- [TraderMade<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=tradermade.com#TXT-Records)
-- [twelvedata<ExternalLinkImage/>](https://www.digitalocean.com/community/tools/dns?domain=twelvedata.com#TXT-Records)
+- [Coinpaprika](https://www.digitalocean.com/community/tools/dns?domain=coinpaprika.com#TXT-Records)
+- [dxFeed](https://www.digitalocean.com/community/tools/dns?domain=dxfeed.com#TXT-Records)
+- [Finage](https://www.digitalocean.com/community/tools/dns?domain=finage.co.uk#TXT-Records)
+- [Finnhub](https://www.digitalocean.com/community/tools/dns?domain=finnhub.io#TXT-Records)
+- [Kaiko](https://www.digitalocean.com/community/tools/dns?domain=kaiko.io#TXT-Records)
+- [NewChangeFX](https://www.digitalocean.com/community/tools/dns?domain=newchangefx.com#TXT-Records)
+- [Nodary](https://www.digitalocean.com/community/tools/dns?domain=nodary.io#TXT-Records)
+- [TraderMade](https://www.digitalocean.com/community/tools/dns?domain=tradermade.com#TXT-Records)
+- [twelvedata](https://www.digitalocean.com/community/tools/dns?domain=twelvedata.com#TXT-Records)
 
 <FlexEndTag/>

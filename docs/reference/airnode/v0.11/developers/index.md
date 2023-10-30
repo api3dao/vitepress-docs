@@ -24,10 +24,10 @@ contract. While dApp developers will find [dAPIs](/reference/dapis/understand/)
 popular and the most useful aspect of an Airnode's capabilities, there is the
 option for developers to access Airnode data using its request-response protocol
 (RRP). The
-[AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/master/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract facilitates RRP and is designed to be flexible and is meant to
 serve a variety of use cases. See the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
+[requester examples](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
 for potential design patterns.
 
 ## It starts with a requester

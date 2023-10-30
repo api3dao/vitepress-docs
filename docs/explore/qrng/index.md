@@ -38,7 +38,7 @@ numbers will be truly random because the outcome of a quantum event is
 theoretically uncertain with well-defined characteristics. Therefore, QRNG is
 the gold standard for random number generation. Read more about QRNG and
 randomness in the
-[Web3 Quantum Random Numbers<ExternalLinkImage/>](https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc)
+[Web3 Quantum Random Numbers](https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc)
 medium post.
 
 # First-party QRNG
@@ -47,13 +47,12 @@ Decentralized PRNG (e.g., RANDAO, VRF) has been the popular way of building RNG
 oracle services. However, this configuration suffers from the same issues as any
 third-party oracle network, in that setting up an oracle node that can provide
 PRNG is trivial, which exposes the solution to
-[Sybil attacks<ExternalLinkImage/>](https://en.wikipedia.org/wiki/Sybil_attack).
-Then, one needs to trust the governing entity to select the network
-participants, which means decentralized PRNG is only as secure and decentralized
-as the governing entity.
+[Sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack). Then, one needs to
+trust the governing entity to select the network participants, which means
+decentralized PRNG is only as secure and decentralized as the governing entity.
 
 The
-[API3 whitepaper<ExternalLinkImage/>](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
+[API3 whitepaper](https://github.com/api3dao/api3-whitepaper/blob/master/api3-whitepaper.pdf)
 proposes first-party oracles, which are oracles that own the data they serve, as
 the solution that optimally counters the Sybil attack risk. However, RNG is an
 awkward case where it is not possible to talk of an ownership of the data. Here,
@@ -85,10 +84,9 @@ first-party service. It is free of charge (apart from the gas costs),
 [easy to use](/guides/qrng/index.md), and will be made available on as many
 [chains](/reference/qrng/chains.md) as possible.
 
-[Australian National University<ExternalLinkImage/>](https://www.anu.edu.au/) is
-one of the leading research universities in Australia, and also the provider of
-the well-known and widely used
-[Quantum Random Numbers API<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/),
+[Australian National University](https://www.anu.edu.au/) is one of the leading
+research universities in Australia, and also the provider of the well-known and
+widely used [Quantum Random Numbers API](https://quantumnumbers.anu.edu.au/),
 which is powered by novel research done by the ANU quantum optics group as
 described below:
 
@@ -103,15 +101,15 @@ described below:
 > By carefully measuring these fluctuations, we are able to generate ultra-high
 > bandwidth random numbers. <br/><br/> The technical details on how the random
 > numbers are generated can be found in
-> [Appl. Phys. Lett. 98, 231103 (2011)<ExternalLinkImage/>](https://dx.doi.org/10.1063/1.3597793)
+> [Appl. Phys. Lett. 98, 231103 (2011)](https://dx.doi.org/10.1063/1.3597793)
 > and
-> [Phys. Rev. Applied 3, 054004 (2015)<ExternalLinkImage/>](https://dx.doi.org/10.1103/PhysRevApplied.3.054004).
+> [Phys. Rev. Applied 3, 054004 (2015)](https://dx.doi.org/10.1103/PhysRevApplied.3.054004).
 
 ::: info Contribute
 
 Please consider providing feedback and contributing to the open source
 components of this public utility at the
-[Discord api3-dev channel](https://discord.com/channels/758003776174030948/765618225144266793)<ExternalLinkImage/>.
+[Discord api3-dev channel](https://discord.com/channels/758003776174030948/765618225144266793).
 
 :::
 
@@ -127,6 +125,6 @@ See these guides and learn how to use QRNG:
 
 - [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md)
 - [Building a Lottery with QRNG](/guides/qrng/lottery-guide/index.md)
-- [QRNG Example (repo based)<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
+- [QRNG Example (repo based)](https://github.com/api3dao/qrng-example)
 
 <FlexEndTag/>

@@ -535,7 +535,7 @@ the GCP project ID to build the Airnode.
 ### Creating a GCP project
 
 First
-[create a GCP project<ExternalLinkImage/>](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+[create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 under which will the Airnode be deployed. Once the project is created, insert
 its
 [projectId](/reference/airnode/v0.11/deployment-files/config-json.md#cloudprovider)

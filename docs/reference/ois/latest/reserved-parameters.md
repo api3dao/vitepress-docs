@@ -46,7 +46,7 @@ Signifies what Solidity type the API response will be encoded to before
 fulfillment.
 
 Support is provided for most common
-[Solidity types<ExternalLinkImage/>](https://docs.soliditylang.org/en/latest/abi-spec.html#types),
+[Solidity types](https://docs.soliditylang.org/en/latest/abi-spec.html#types),
 but the following are not supported.
 
 - Custom bits integer types - e.g. `uint32` or `uint8`
@@ -74,7 +74,7 @@ the
 [adapter package docs](/reference/airnode/latest/packages/adapter.md#conversion).
 
 The converted value is then encoded internally by
-[ethers ABI Coder<ExternalLinkImage/>](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
+[ethers ABI Coder](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
 using the following
 
 ```js
@@ -134,7 +134,7 @@ For example
   `bytes32[]` on chain
 - `string[2][][3]` - 3 dimensional string array, where first dimension contains
   3 elements, second unboundedly many and last dimension only 2. Note that this
-  [definition is read backwards<ExternalLinkImage/>](https://ethereum.stackexchange.com/questions/64331/why-is-multidimensional-array-declaration-order-reversed)
+  [definition is read backwards](https://ethereum.stackexchange.com/questions/64331/why-is-multidimensional-array-declaration-order-reversed)
   compared to C-style languages
 
 ## `_path`

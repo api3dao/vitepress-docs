@@ -38,7 +38,7 @@ of manually funding each dAPI at regular intervals, you can use Gelato to
 automate the process.
 
 The following contract will be used in this guide. Open it in
-[Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://gist.githubusercontent.com/Ashar2shahid/a63d5b04ff9640c2f860f54dffa78995/raw/ce0a9461b817f59774deb1aaaa368438e4e3328b/Automation.sol).
+[Remix](https://remix.ethereum.org/#url=https://gist.githubusercontent.com/Ashar2shahid/a63d5b04ff9640c2f860f54dffa78995/raw/ce0a9461b817f59774deb1aaaa368438e4e3328b/Automation.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -157,9 +157,8 @@ following parameters:
 ## 3. Creating the task
 
 Once the contract is deployed and initialized, you need to create a task on
-Gelato. Head over to the
-[App Platform<ExternalLinkImage/>](https://app.gelato.network/) and connect your
-wallet.
+Gelato. Head over to the [App Platform](https://app.gelato.network/) and connect
+your wallet.
 
 ### 3.a Prerequisites
 
@@ -174,9 +173,8 @@ Make sure that:
 ### 3.b Specifying the contract address and conditions
 
 Once you have connected your wallet, click on the
-[Create Task<ExternalLinkImage/>](https://app.gelato.network/new-task) button.
-You will be redirected to the task creation page. Follow the steps below to
-create the task:
+[Create Task](https://app.gelato.network/new-task) button. You will be
+redirected to the task creation page. Follow the steps below to create the task:
 
 - Enter the address of the deployed `Automation.sol` in the `Contract Address`
   field.

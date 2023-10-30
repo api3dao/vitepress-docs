@@ -19,17 +19,17 @@ tags:
 
 # {{$frontmatter.title}}
 
-[Contract application binary interface (ABI)<ExternalLinkImage />](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html)
+[Contract application binary interface (ABI)](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html)
 is used to encode different types of data while interacting with Ethereum
 contracts. As a result, both Solidity and modules such as
-[web3.js<ExternalLinkImage />](https://web3js.readthedocs.io/) and
-[ethers.js<ExternalLinkImage />](https://docs.ethers.io/) treat ABI
-encoding–decoding functionality as a first-class citizen. This makes using
-contract ABI for encoding API call parameters a very attractive option.
+[web3.js](https://web3js.readthedocs.io/) and
+[ethers.js](https://docs.ethers.io/) treat ABI encoding–decoding functionality
+as a first-class citizen. This makes using contract ABI for encoding API call
+parameters a very attractive option.
 
 Although encoding API call parameters using contract ABI has many advantages, it
 cannot be used for this purpose directly. Quoting from the
-[Solidity docs<ExternalLinkImage />](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html):
+[Solidity docs](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html):
 
 > The encoding is not self describing and thus requires a schema in order to
 > decode.
@@ -72,16 +72,16 @@ Note that dynamically-sized types are represented with uppercase letters and
 statically-sized types are represented with lowercase letters. Another thing to
 notice is that `s` represents `string32`, but this is an artificial type and it
 is not part of
-[solidity types<ExternalLinkImage />](https://docs.soliditylang.org/en/latest/types.html).
-This type is instead represented on chain as `bytes32`. The reasons for this are
-explained in depth in
+[solidity types](https://docs.soliditylang.org/en/latest/types.html). This type
+is instead represented on chain as `bytes32`. The reasons for this are explained
+in depth in
 [string32 details](/reference/airnode/v0.11/specifications/airnode-abi.md#string32)
 section.
 
 ## Encoding format
 
 Airnode ABI specifications has the following encoding format (which is somewhat
-similar to [SDS<ExternalLinkImage />](https://github.com/antirez/sds)):
+similar to [SDS](https://github.com/antirez/sds)):
 
 ```
 [------------------------][-----------------------------------------]
@@ -228,7 +228,7 @@ thus is tolerated to avoid a more complex solution.
 
 ### Padding
 
-[Strict encoding mode<ExternalLinkImage />](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html#strict-encoding-mode)
+[Strict encoding mode](https://docs.soliditylang.org/en/v0.6.12/abi-spec.html#strict-encoding-mode)
 is used so that you can decode the values later on. This means that each
 parameter will be padded with zeros to complete them to 32 bytes. Although this
 padding increases gas costs, ABI encoding/decoding functions being cheap
@@ -262,9 +262,9 @@ See the package doc
 [airnode-abi](/reference/airnode/v0.11/packages/airnode-abi.md) for more
 information on how to encode and decode with Airnode ABI off-chain. Also see
 code samples in the
-[examples<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples)
+[examples](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples)
 package. Lastly see the file
-[request-utils.ts<ExternalLinkImage />](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-examples/integrations/coingecko/request-utils.ts#L9)
+[request-utils.ts](https://github.com/api3dao/airnode/blob/v0.11/packages/airnode-examples/integrations/coingecko/request-utils.ts#L9)
 for example syntax on encoding parameters.
 
 <FlexEndTag/>

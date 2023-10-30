@@ -19,16 +19,16 @@ tags:
 This guide demonstrates the deployment of an Airnode followed by an off-chain
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) request.
 Configuration files are provided with only minor changes to be made. The
-[latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags)
-of the Airnode
-[deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
-used to deploy the off-chain component of Airnode (a.k.a., the node) to AWS.
+[latest release](https://hub.docker.com/r/api3/airnode-deployer/tags) of the
+Airnode [deployer image](/reference/airnode/latest/docker/deployer-image.md)
+will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
+AWS.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
-which returns the current value of a coin. This guide does not detail the
-overall configuration of an Airnode, it is just a quick start guide then lends
-itself to understanding an Airnode deployment.
+[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+current value of a coin. This guide does not detail the overall configuration of
+an Airnode, it is just a quick start guide then lends itself to understanding an
+Airnode deployment.
 
 Please note that this tutorial does not involve the blockchain nor an RRP
 (request-response protocol) call from a smart contract. If you wish to make an
@@ -50,9 +50,7 @@ credentials, a chain provider url, and a mnemonic.
 
 ## 1. Install Prerequisites
 
-Install the
-[Docker Desktop<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and
-launch it.
+Install the [Docker Desktop](https://docs.docker.com/get-docker/) and launch it.
 
 ## 2. Project Folder
 
@@ -135,9 +133,8 @@ for each of these fields.
 Add the access credentials from your AWS account. The deployer image will use
 these to install the Airnode functions to Lambda under your account's control.
 If you do not have an account watch this
-[video<ExternalLinkImage/>](https://www.youtube.com/watch?v=KngM5bfpttA) to
-create one. Unlike `secrets.env`, you cannot surround values with double quotes
-(").
+[video](https://www.youtube.com/watch?v=KngM5bfpttA) to create one. Unlike
+`secrets.env`, you cannot surround values with double quotes (").
 
 - `AWS_ACCESS_KEY_ID`: Is ACCESS_KEY_ID in IAM.
 - `AWS_SECRET_ACCESS_KEY`: Is SECRET_ACCESS_KEY in IAM.
@@ -157,11 +154,11 @@ the deployer image `deploy` command is run by the user root. This may cause
 permission issues when the `receipt.json` file is generated. Optionally you can
 specify the
 <a href="https://en.wikipedia.org/wiki/User_identifier" target="_blank">UID
-(user identifier)<externalLinkImage/></a> and <a
+(user identifier)</a> and <a
 href="https://en.wikipedia.org/wiki/Group_identifier" target="\_blank"> GID
-(group identifier)<externalLinkImage/></a> that the deployer image should use.
-Do so by setting the environment variables USER_ID and GROUP_ID, otherwise omit
-the line containing these variables.
+(group identifier)</a> that the deployer image should use. Do so by setting the
+environment variables USER_ID and GROUP_ID, otherwise omit the line containing
+these variables.
 
 ::: code-group
 
@@ -244,11 +241,10 @@ endpoints added to the `http` array can be tested using the HTTP gateway.
 Use CURL to execute a HTTP gateway request for the CoinGecko endpoint
 `/simple/price`.
 
-As an alternative to CURL, an app such as
-[Insomnia<externalLinkImage/>](https://insomnia.rest/) or
-[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/) can
-be used. Windows users can also use
-[Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
+As an alternative to CURL, an app such as [Insomnia](https://insomnia.rest/) or
+[Postman](https://www.postman.com/product/rest-client/) can be used. Windows
+users can also use
+[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
 (WSL2) to run CURL on Linux.
 
 In order to test an endpoint, make a HTTP POST request with the `Content-Type`

@@ -46,39 +46,39 @@ https://renatello.com/dynamic-drop-down-list-in-vue-js/
     <p>Click the following links and delete all elements for each feature.</p>
     <!-- prettier-ignore -->
     <ul>
-      <li><a :href="'https://' +region + '.console.aws.amazon.com/events/home?region=' + region + '#rules'" target="_aws-console">EventBridge<ExternalLinkImage/></a>
+      <li><a :href="'https://' +region + '.console.aws.amazon.com/events/home?region=' + region + '#rules'" target="_aws-console">EventBridge</a>
         :  Delete the rules.
       </li>
       
-      <li><a :href="'https://' +region + '.console.aws.amazon.com/cloudwatch/home?region=' + region + '#logsV2:log-groups'" target="_aws-console">CloudWatch<ExternalLinkImage/></a>
+      <li><a :href="'https://' +region + '.console.aws.amazon.com/cloudwatch/home?region=' + region + '#logsV2:log-groups'" target="_aws-console">CloudWatch</a>
         : Delete the log groups.
       </li>
       
-      <li><a :href="'https://' +region + '.console.aws.amazon.com/lambda/home?region=' + region + '#/functions'" target="_aws-console">Lambda<ExternalLinkImage/></a>
+      <li><a :href="'https://' +region + '.console.aws.amazon.com/lambda/home?region=' + region + '#/functions'" target="_aws-console">Lambda</a>
         : Delete the functions.
       </li>
 
-      <li v-show="dynamoDB==='show'"><a :href="'https://' +region + '.console.aws.amazon.com/dynamodbv2/home?region=' + region + '#/tables'" target="_aws-console">DynamoDB<ExternalLinkImage/></a>
+      <li v-show="dynamoDB==='show'"><a :href="'https://' +region + '.console.aws.amazon.com/dynamodbv2/home?region=' + region + '#/tables'" target="_aws-console">DynamoDB</a>
         : There is one table to delete.
       </li>
 
-      <li><a :href="'https://console.aws.amazon.com/iamv2/home?#/roles'" target="_aws-console">IAM<ExternalLinkImage/></a>
+      <li><a :href="'https://console.aws.amazon.com/iamv2/home?#/roles'" target="_aws-console">IAM</a>
         : Delete the IAM roles.
       </li>
 
-      <li><a :href="'https://' +region + '.console.aws.amazon.com/apigateway/main/apis?region=' + region" target="_aws-console">API Gateways<ExternalLinkImage/></a>:  Delete the API Gateways.
+      <li><a :href="'https://' +region + '.console.aws.amazon.com/apigateway/main/apis?region=' + region" target="_aws-console">API Gateways</a>:  Delete the API Gateways.
           <ol>
             <li>Click on the desired API Gateway.</li>
             <li>Next click on API Keys in the left hand sidebar.</li>
             <li>Then click on the Airnode specific API Key.</li>
             <li>Select the <i>Delete API Key</i> button to remove the key.</li>
-            <li>Click <a :href="'https://' +region + '.console.aws.amazon.com/apigateway/main/apis?region=' + region" target="_aws-console">here<ExternalLinkImage/></a> to return to the API Gateway.</li>
+            <li>Click <a :href="'https://' +region + '.console.aws.amazon.com/apigateway/main/apis?region=' + region" target="_aws-console">here</a> to return to the API Gateway.</li>
             <li>Delete the API Gateway.</li>
             <li>Repeat for other Airnode gateways if present.</li>
           </ol>
       </li>
 
-      <li><a :href="'https://s3.console.aws.amazon.com/s3/home?region=' + region" target="_aws-console">S3<ExternalLinkImage/></a>
+      <li><a :href="'https://s3.console.aws.amazon.com/s3/home?region=' + region" target="_aws-console">S3</a>
         : Delete the Airnode's S3 bucket directory, not the S3 bucket. Drill down to the directory  
         identified by the <i>stage</i> name of the Airnode which can be found in the config.json and 
         the receipt.json files.

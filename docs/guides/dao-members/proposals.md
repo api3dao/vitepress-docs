@@ -32,13 +32,12 @@ the DAO as described in
 [Dashboard Attributes](/reference/dao-members/dashboard-attributes.md) upon
 acceptance using a proposal. To view the percentage of staked tokens in the pool
 for an address, visit the
-[DAO Tracker wallets page<ExternalLinkImage/>](https://tracker.api3.org/wallets).
+[DAO Tracker wallets page](https://tracker.api3.org/wallets).
 
 You can vote on all proposals regardless of the percentage of staked tokens in
 the pool you own. See [How to Vote](/guides/dao-members/voting.md) for
 instructions. Alternatively, you can delegate your voting power to someone else.
-See the
-[delegation pitch section<ExternalLinkImage/>](https://forum.api3.org/c/delegation-pitch/7)
+See the [delegation pitch section](https://forum.api3.org/c/delegation-pitch/7)
 of the API3 forum for posts by community members offering to act as delegates or
 to post your own delegate pitch.
 
@@ -88,13 +87,13 @@ Creating a proposal is a process and is highly recommended, and to some extent
 expected, for your proposal to succeed.
 
 1. Promote your idea and gather feedback on the API3 forum using a
-   [sentiment check post<ExternalLinkImage/>](https://forum.api3.org/t/sentiment-check-template/56).
+   [sentiment check post](https://forum.api3.org/t/sentiment-check-template/56).
    Generally, ideas receiving community engagement on the forum are more likely
    to pass once crafted as official proposals.
 2. Create an
-   [official proposal<ExternalLinkImage/>](https://forum.api3.org/t/api3-dao-example-proposal-template/52)
+   [official proposal](https://forum.api3.org/t/api3-dao-example-proposal-template/52)
    post on the API3 forum. This should contain a link to the
-   [proposal description on IPFS<ExternalLinkImage/>](/guides/dao-members/proposals.md#using-ipfs-for-proposals).
+   [proposal description on IPFS](/guides/dao-members/proposals.md#using-ipfs-for-proposals).
 3. After receiving feedback from the above steps, create a formal proposal using
    the DAO dashboard as described below.
 
@@ -135,7 +134,7 @@ To create a new proposal using the DAO dashboard:
    > voting settings, and have different permissions to change contract
    > settings. For a technical breakdown of the different permissions granted to
    > the DAO's proposal types (and corresponding Agents) see this
-   > [README<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/blob/develop/packages/dao/README.md#permissions).
+   > [README](https://github.com/api3dao/api3-dao/blob/develop/packages/dao/README.md#permissions).
 
 3. Enter a descriptive **Title**.
 
@@ -191,8 +190,7 @@ address, the USDC is asked to be supplied from the Agent's balance.
 
    > The proposal is then added to the proposal list and can be voted on.
 
-10. Return to the
-    [API3 forum<ExternalLinkImage/>](https://forum.api3.org/c/official-proposals/5)
+10. Return to the [API3 forum](https://forum.api3.org/c/official-proposals/5)
     and add a comment to your post with a link to your newly created proposal.
     This will help and encourage community members to vote.
 
@@ -214,44 +212,41 @@ the proposal. Both primary and secondary type proposals execute immediately once
 
 ## Using ENS Names
 
-You are encouraged to use the
-[ENS app<ExternalLinkImage/>](https://app.ens.domains/) to register a name and
-associate it with an Ethereum account. Then, while entering your proposal
-parameters, you can use this ENS name instead of the account address. Before
-making the transaction that will create the proposal, the DAO dashboard will
-look up the address that the ENS name is pointing to and use the raw address in
-the proposal. Therefore, changing the address that the ENS name is pointing to
-after this look up operation **WILL NOT** have an effect on the proposal.
+You are encouraged to use the [ENS app](https://app.ens.domains/) to register a
+name and associate it with an Ethereum account. Then, while entering your
+proposal parameters, you can use this ENS name instead of the account address.
+Before making the transaction that will create the proposal, the DAO dashboard
+will look up the address that the ENS name is pointing to and use the raw
+address in the proposal. Therefore, changing the address that the ENS name is
+pointing to after this look up operation **WILL NOT** have an effect on the
+proposal.
 
 For voters to see your ENS name instead of the raw address on the proposal
-details page, you will have to use the
-[ENS app<ExternalLinkImage/>](https://app.ens.domains/) to set a reverse record
-pointing to your ENS name (i.e., you need to have your raw address point to the
-ENS name). If your proposal will make a `transfer(address,uint256)` call to an
-ERC20 token contract where `address` is the address of a _multisig_ wallet, you
-can
-[set a reverse record with the multisig<ExternalLinkImage/>](https://medium.com/the-ethereum-name-service/you-can-now-manage-ens-names-with-gnosis-safe-9ddcb7e6c4ac)
+details page, you will have to use the [ENS app](https://app.ens.domains/) to
+set a reverse record pointing to your ENS name (i.e., you need to have your raw
+address point to the ENS name). If your proposal will make a
+`transfer(address,uint256)` call to an ERC20 token contract where `address` is
+the address of a _multisig_ wallet, you can
+[set a reverse record with the multisig](https://medium.com/the-ethereum-name-service/you-can-now-manage-ens-names-with-gnosis-safe-9ddcb7e6c4ac)
 to your ENS name. See Parameters in
-[this proposal<ExternalLinkImage/>](https://api3.eth/#/history/secondary-31) for
-an example.
+[this proposal](https://api3.eth/#/history/secondary-31) for an example.
 
 ## Using IPFS for Proposals
 
-Consider this use case: You posted on the
-[API3 forum<ExternalLinkImage/>](https://forum.api3.org/) about a potential
-proposal. You received positive feedback and decide to formally create a
-proposal using the DAO dashboard. In the proposal's description field you
-provide a link back to the forum so people can again see the proposal details.
-How does the voter know that it's the exact same proposal they had read earlier
-in the forum? IPFS addressing content by its hash is convenient here, because
-any change you'll make to your proposal will change its hash.
+Consider this use case: You posted on the [API3 forum](https://forum.api3.org/)
+about a potential proposal. You received positive feedback and decide to
+formally create a proposal using the DAO dashboard. In the proposal's
+description field you provide a link back to the forum so people can again see
+the proposal details. How does the voter know that it's the exact same proposal
+they had read earlier in the forum? IPFS addressing content by its hash is
+convenient here, because any change you'll make to your proposal will change its
+hash.
 
 <img src="../assets/images/ipfs-proposals.png" width="550"/>
 
-There are hosting services for IPFS such as
-[Pinata<ExternalLinkImage/>](https://www.pinata.cloud) and
-[Fleek<ExternalLinkImage/>](https://fleek.co) to name a few. To host a proposal
-description on Pinata's IPFS site:
+There are hosting services for IPFS such as [Pinata](https://www.pinata.cloud)
+and [Fleek](https://fleek.co) to name a few. To host a proposal description on
+Pinata's IPFS site:
 
 1. Create a PDF version of the proposal.
 1. Upload the PDF to Pinata or your preferred IPFS hosting provider. To do so

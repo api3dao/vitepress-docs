@@ -112,9 +112,8 @@ more than one OIS object and uses the title as the OIS identifier.
 ### version
 
 This is the version of the OIS which allows for version-control of the OIS
-integration. It is recommended to use
-[semver<ExternalLinkImage/>](https://semver.org/) versioning. The initial
-version could be `0.1.0`.
+integration. It is recommended to use [semver](https://semver.org/) versioning.
+The initial version could be `0.1.0`.
 
 <!--------------- STEP 2 ---------------->
 
@@ -200,7 +199,7 @@ _What is an API operation?_
 #### Operations
 
 In the examples below, `GET` refers to an
-[HTTP request method<ExternalLinkImage/>](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
+[HTTP request method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 This implies that you could have another API operation that can be specified
 using a different method but the same path.
 

@@ -20,7 +20,7 @@
       <div v-for="(v, index) in versions" :key="index">
         <a :href="v.path">{{ v.version }}</a>
       </div>
-      <i>Legacy Documentation</i><ExternalLinkImage />
+      <i>Legacy Documentation</i>
       <div
         v-for="(v, index) in versionsLegacy"
         :key="index"

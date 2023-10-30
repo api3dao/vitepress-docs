@@ -44,7 +44,7 @@ Given below is an example of a basic
 data from any Airnode. To follow along, you can open the following contract in
 Remix and try deploying your own Requester Contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
+[Open in Remix](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -200,7 +200,7 @@ It calls the `requestWithdrawal` function of the `airnodeRrp` contract.
 
 Make sure you've already configured your Metamask wallet and funded it with some
 testnet ETH before moving forward. You can request some from
-[here<ExternalLinkImage/>](https://faucet.paradigm.xyz/)
+[here](https://faucet.paradigm.xyz/)
 
 :::
 
@@ -209,7 +209,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 
 ### Compile and Deploy the Requester Contract on Goerli Testnet
 
-- [Click here<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
+- [Click here](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
   to open the Requester Contract in Remix.
 
 > ![Opening the Requester Contract in Remix](src/s1.png)
@@ -314,9 +314,8 @@ click on Transact.
 
 > ![Making the Request](src/s5.png)
 
-Head over to
-[Goerli Testnet Explorer<ExternalLinkImage/>](https://goerli.etherscan.io/) and
-check your `sponsorWallet` for any new transactions.
+Head over to [Goerli Testnet Explorer](https://goerli.etherscan.io/) and check
+your `sponsorWallet` for any new transactions.
 
 > ![Making the Request](src/s6.png)
 

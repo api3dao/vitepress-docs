@@ -93,7 +93,7 @@ dAPIs possess a range of distinct attributes:
 ::: info Read more
 
 Dive into the design decisions about dAPIs by reading
-[<span style="color:rgb(16, 185, 129);">dAPIs: APIs for dApps<ExternalLinkImage/></span>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
+[<span style="color:rgb(16, 185, 129);">dAPIs: APIs for dApps</span>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
 
 :::
 
@@ -147,9 +147,9 @@ dAPI name and the beacon(s) it uses for the dAPI. dApps use an API3 Market proxy
 contract to read any dAPI from `API3ServerV1.sol`.
 
 dApp owners use a proxy contract, available on the
-[API3 Market<ExternalLinkImage/>](https://market.api3.org), to access a dAPI.
-Proxy contracts use the
-[API3Server.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
+[API3 Market](https://market.api3.org), to access a dAPI. Proxy contracts use
+the
+[API3Server.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract to access dAPIs. Developers can easily set the proxy contract address
 in a dApp contract to start reading from the dAPIs.
 
@@ -186,9 +186,9 @@ the future can be found in
 <!--## Medium Articles
 
 For more information, please refer to
-[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)<externalLinkImage/>,
-[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)<externalLinkImage/>
+[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493),
+[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)
 and
-[Monetizing Data Feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd)<externalLinkImage/>.-->
+[Monetizing Data Feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd).-->
 
 <FlexEndTag/>

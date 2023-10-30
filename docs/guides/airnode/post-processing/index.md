@@ -241,7 +241,7 @@ summary values using post processing. For more examples on how to use
 `preProcessingSpecifications` and `postProcessingSpecifications` see the
 following monorepo examples.
 
-- [coingecko-pre-processing<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-pre-processing)
-- [coingecko-post-processing<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-post-processing)
+- [coingecko-pre-processing](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-pre-processing)
+- [coingecko-post-processing](https://github.com/api3dao/airnode/tree/master/packages/airnode-examples/integrations/coingecko-post-processing)
 
 <FlexEndTag />

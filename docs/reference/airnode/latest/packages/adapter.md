@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-adapter<ExternalLinkImage />](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-adapter)
+[airnode-adapter](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-adapter)
 package has multiple responsibilities. It is used for building requests from an
 [Oracle Integration Specification (OIS)](/reference/ois/latest/), executing
 them, parsing the responses, but also converting and encoding them for on chain
@@ -173,7 +173,7 @@ There is no conversion for `address` - the value is expected to be a string
 representing a valid address. Valid examples are:
 
 - <code style="overflow-wrap: break-word;">0x0765baA22F6D4A53847D63B056DC79400b9A592a</code> -
-  [EIP-55 mixed case checksum<ExternalLinkImage />](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
+  [EIP-55 mixed case checksum](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md)
   of an address.
 - <code style="overflow-wrap: break-word;">0x0765baa22f6d4a53847d63b056dc79400b9a592a</code> -
   all lowercase address.
@@ -190,9 +190,8 @@ For example, let's say the API wants to encode the following string
 `this is an example string that is a bit longer`. Its encoding is
 <code style="overflow-wrap: break-word;">0x7468697320697320616e206578616d706c6520737472696e672074686174206973206120626974206c6f6e676572</code>.
 This is the value that should be sent as a response to Airnode request, together
-with the `0x` prefix. Use
-[ethers<ExternalLinkImage />](https://docs.ethers.io/v5/) to encode these on the
-API side.
+with the `0x` prefix. Use [ethers](https://docs.ethers.io/v5/) to encode these
+on the API side.
 
 ```js
 const value = 'this is an example string that is a bit longer';
@@ -236,8 +235,8 @@ For example, if the API response is the following string
 first trimmed to 31 characters, string `this is an example string that ` and
 afterwards converted to
 <code style="overflow-wrap: break-word;">0x7468697320697320616e206578616d706c6520737472696e6720746861742000</code>.
-Use [ethers<ExternalLinkImage />](https://docs.ethers.io/v5/) to decode the
-values off chain using the following snippet
+Use [ethers](https://docs.ethers.io/v5/) to decode the values off chain using
+the following snippet
 
 ```js
 const encoded =

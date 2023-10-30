@@ -48,8 +48,7 @@ recommended to use a minimum value of `5000000` for `fulfillmentGasLimit` when
 using both Arbitrum mainnet and testnet. Note that `fulfillmentGasLimit` is
 optional, so if it is not specified, Airnode will attempt to estimate the
 appropriate gas limit automatically. Read more about
-[ArbGas<ExternalLinkImage/>](https://developer.offchainlabs.com/docs/arbgas) gas
-and fees.
+[ArbGas](https://developer.offchainlabs.com/docs/arbgas) gas and fees.
 
 ### Metis
 

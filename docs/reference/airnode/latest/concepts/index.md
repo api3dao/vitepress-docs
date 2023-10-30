@@ -40,7 +40,7 @@ of the protocol.
 ### AirnodeRrpV0.sol
 
 The
-[AirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 contract sits between a
 [requester](/reference/airnode/latest/concepts/requester.md) and the Airnode. It
 inherits from four additional contracts as illustrated in the diagram above:
@@ -69,27 +69,27 @@ administrative actions.
 ### IAirnodeRrpV0.sol
 
 The
-[IAirnodeRrpV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/IAirnodeRrpV0.sol)
+[IAirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/IAirnodeRrpV0.sol)
 interface describes all functions and events of the `AirnodeRrpV0.sol` contract
 which implements this interface.
 
 This interface inherits:
 
-- [IAuthorizationUtilsV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/IAuthorizationUtilsV0.sol)
-- [IWithdrawalUtilsV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol)
-- [ITemplateUtilsV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol)
+- [IAuthorizationUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/IAuthorizationUtilsV0.sol)
+- [IWithdrawalUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol)
+- [ITemplateUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol)
 
 ### AuthorizationUtilsV0.sol
 
 The
-[AuthorizationUtilsV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol)
+[AuthorizationUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol)
 contract implements Airnode
 [Authorizer](/reference/airnode/latest/concepts/authorizers.md) checks.
 
 ### WithdrawalUtilsV0.sol
 
 The
-[WithdrawalUtilsV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol)
+[WithdrawalUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol)
 contract allows the [sponsor](/reference/airnode/latest/concepts/sponsor.md) to
 trigger a withdrawal request which is later fulfilled by Airnode and all sponsor
 wallet funds are sent back to the sponsor.
@@ -97,7 +97,7 @@ wallet funds are sent back to the sponsor.
 ### TemplateUtilsV0.sol
 
 The
-[TemplateUtilsV0.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol)
+[TemplateUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol)
 contract is used to create and store Airnode
 [templates](/reference/airnode/latest/concepts/template.md) used to create a
 [template request](/reference/airnode/latest/concepts/request.md#template-request).

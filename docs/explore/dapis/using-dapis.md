@@ -32,7 +32,7 @@ are two types of dAPIs:
 Self-funded dAPIs currently rely on a single first-party oracle. They offer dApp
 owners the opportunity to make use of data feeds with minimal up-front
 commitment and are accessible
-[permissionlessly<ExternalLinkImage/>](https://www.gemini.com/en-US/cryptopedia/what-is-permissionless-crypto-permissionlessness-blockchain)
+[permissionlessly](https://www.gemini.com/en-US/cryptopedia/what-is-permissionless-crypto-permissionlessness-blockchain)
 for developers.
 
 ### Using Self-funded dAPIs
@@ -61,9 +61,9 @@ Read more in our
 
 ### Accessing a self-funded dAPI
 
-The [API3 Market<ExternalLinkImage/>](https://market.api3.org) features a
-user-friendly UI that enables easy activation and management of self-funded
-dAPIs. To use a self-funded data feed you:
+The [API3 Market](https://market.api3.org) features a user-friendly UI that
+enables easy activation and management of self-funded dAPIs. To use a
+self-funded data feed you:
 
 - Select a data feed within the API3 Market
 - [Fund a sponsor wallet](/guides/dapis/subscribing-self-funded-dapis/) (if not
@@ -91,8 +91,7 @@ a self-funded dAPI.
 A self-funded data feed provides advantages for dApp owners:
 
 - Developers can utilize dAPIs in a permissionless fashion using the self-serve
-  tooling within the
-  [API3 Market<ExternalLinkImage/>](https://market.api3.org/dapis)
+  tooling within the [API3 Market](https://market.api3.org/dapis)
 - Developers have the ability to use a first-party oracle within early stages of
   the development life cycle without an ongoing commitment
 - dApps that may only require data feeds for a short period of time can activate
@@ -133,8 +132,7 @@ represents a hub that allows developers to:
 - Pay for the upgrade to a managed version
 - Request new data types
 
-You can head to the
-[API3 Market<ExternalLinkImage/>](https://market.api3.org/dapis) now and use
+You can head to the [API3 Market](https://market.api3.org/dapis) now and use
 self-funded dAPIs.
 
 <FlexEndTag/>

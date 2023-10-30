@@ -38,7 +38,7 @@ desired dAPI and acquire the address to its proxy contract.
 ::: info Best practice
 
 Consider using dAPIs with
-[API3 Market<ExternalLinkImage/>](https:///market.api3.org) proxy contracts. The
+[API3 Market](https:///market.api3.org) proxy contracts. The
 API3 Market UI provides a simple experience to set up proxy contract allowing
 fast access to any dAPI on many networks.
 

@@ -55,7 +55,7 @@ Problem.
 Read about Airnode in the API3 Whitepaper:
 <a href="/api3-whitepaper-v1.0.3.pdf#page=14" target="_blank">
 <span style="color:rgb(16, 185, 129);">A Node Designed for First-Party
-Oracles<ExternalLinkImage/></span></a>.
+Oracles</span></a>.
 
 :::
 
@@ -100,7 +100,7 @@ ecosystem.
 ::: info Learn more
 
 A high-level overview of Airnode can be found in the
-[<span style="color:rgb(16, 185, 129);">dedicated Medium article<ExternalLinkImage/></span>](https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840)
+[<span style="color:rgb(16, 185, 129);">dedicated Medium article</span>](https://medium.com/api3/airnode-the-api-gateway-for-blockchains-8b07ff136840)
 published by API3.
 
 :::
@@ -150,7 +150,7 @@ Airnode in an even more scalable way. To this end proprietary integration tools
 will be open sourced for Airnode.
 
 Borrowing from the
-[OpenAPI Specification format<ExternalLinkImage/>](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md),
+[OpenAPI Specification format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md),
 Oracle Integration Specifications (OIS) defines the operations of an API, the
 endpoints of an oracle, and a way of mapping them to each other. Airnode users
 will be able to serve an API over their oracle simply by providing its OIS to

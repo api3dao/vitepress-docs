@@ -19,9 +19,8 @@ tags:
 This is a simple tutorial that will walk you through building and deploying a
 decentralized lottery smart contract in Solidity using Remix to demonstrate the
 use of [API3's QRNG](/reference/qrng/) service. You will use the browser-based
-[Remix IDE](https://remix.ethereum.org) and
-[MetaMask<ExternalLinkImage/>](https://metamask.io/). Some basic knowledge of
-these two tools is assumed.
+[Remix IDE](https://remix.ethereum.org) and [MetaMask](https://metamask.io/).
+Some basic knowledge of these two tools is assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
@@ -47,15 +46,15 @@ Make sure you're on a Testnet before trying to deploy the contracts on-chain!
 :::
 
 > The complete contract code can be found
-> [here<ExternalLinkImage/>](https://github.com/camronh/Lottery-Tutorial/blob/main/contracts/Lottery.sol)
+> [here](https://github.com/camronh/Lottery-Tutorial/blob/main/contracts/Lottery.sol)
 
 Head on to [Remix online IDE](https://remix.ethereum.org) using a browser that
 you have added Metamask support to. Not all browsers support
-[MetaMask<ExternalLinkImage/>](https://metamask.io/download/).
+[MetaMask](https://metamask.io/download/).
 
 It should load up the `Lottery` contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
 
 ![Add Contract](/guides/qrng/lottery-guide/src/lottery1.png)
 
@@ -206,7 +205,7 @@ function getEntriesForNumber(uint256 _number, uint256 _week) public view returns
 ```
 
 The
-[`receive()`<ExternalLinkImage/>](https://docs.soliditylang.org/en/v0.8.14/contracts.html#receive-ether-function)
+[`receive()`](https://docs.soliditylang.org/en/v0.8.14/contracts.html#receive-ether-function)
 function will be called if funds are sent to the contract. In this case, we need
 to add these funds to the pot.
 
@@ -222,7 +221,7 @@ receive() external payable {
 
 Make sure you've already configured your Metamask wallet and funded it with some
 testnet ETH before moving forward. You can request some from
-[here<ExternalLinkImage/>](https://faucet.paradigm.xyz/)
+[here](https://faucet.paradigm.xyz/)
 
 :::
 
@@ -231,7 +230,7 @@ Airnode to request a random number.
 
 ### Compile and Deploy the Lottery Contract on Goerli Testnet
 
-- [Click here<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
+- [Click here](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
   to open the Lottery Contract in Remix.
 
   ![Opening the Requester Contract in Remix](src/s1.png)
@@ -333,9 +332,8 @@ Enter the amount to fund the sponsor wallet (0.01 ETH) and call
 
 ![getWinningBet#2](src/s9.png)
 
-Head over to
-[Goerli Testnet Explorer<ExternalLinkImage/>](https://goerli.etherscan.io/) and
-check your `sponsorWallet` for any new transactions.
+Head over to [Goerli Testnet Explorer](https://goerli.etherscan.io/) and check
+your `sponsorWallet` for any new transactions.
 
 <img src="./src/s11.png" style="border:1px solid lightgrey">
 
@@ -359,6 +357,6 @@ check which number won that week.
 This is how you can use Quantum Randomness in your smart contracts. To learn
 more, go to the [QRNG reference](/reference/qrng/) section. If you have any
 doubts/questions, visit the API3
-[Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
+[Discord](https://discord.com/channels/758003776174030948/765618225144266793).
 
 <FlexEndTag/>

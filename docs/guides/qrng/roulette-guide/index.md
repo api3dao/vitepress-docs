@@ -21,9 +21,9 @@ tags:
 This example project demonstrates how to code a Solidity roulette game that uses
 API3's QRNG for true randomness. You will use Remix IDE to code and deploy the
 contract.
-[Click here to check out the project's Github repo with a proper working frontend<ExternalLinkImage/>](https://github.com/Ashar2shahid/qrng-roulette).
+[Click here to check out the project's Github repo with a proper working frontend](https://github.com/Ashar2shahid/qrng-roulette).
 
-[Click here to try out the Roulette<ExternalLinkImage/>](https://qrng-roulette.netlify.app/)
+[Click here to try out the Roulette](https://qrng-roulette.netlify.app/)
 
 Before starting, make sure you have a proper understanding of
 [Airnode](/explore/airnode/what-is-airnode.md) and
@@ -66,15 +66,15 @@ Make sure you're on a Testnet before trying to deploy the contracts on-chain!
 :::
 
 > The complete contract code can be found
-> [here<ExternalLinkImage/>](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol).
+> [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol).
 
-Head on to [Remix online IDE<ExternalLinkImage/>](https://remix.ethereum.org)
-using a browser that you have added Metamask support to. Not all browsers
-support [MetaMask<ExternalLinkImage/>](https://metamask.io/).
+Head on to [Remix online IDE](https://remix.ethereum.org) using a browser that
+you have added Metamask support to. Not all browsers support
+[MetaMask](https://metamask.io/).
 
 It should load up the Roulette contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+[Open in Remix](https://remix.ethereum.org/#url=https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 > ![Remix 1](/guides/qrng/roulette-guide/src/SS1.png)
 
@@ -736,7 +736,7 @@ black, or if it is a red number and the user bet on red, then the user wins and
 will receive double their bet amount.
 
 > The complete contract code can be found
-> [here<ExternalLinkImage/>](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol).
+> [here](https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol).
 
 ## Deploying the `Roulette` Contract
 
@@ -891,6 +891,6 @@ check the `Fulfill` transaction, you can see:
 This is how you can use QRNG to build an on-chain Roulette. To learn more, go to
 the [QRNG reference section](/reference/qrng/). If you have any
 doubts/questions, visit the
-[API3 Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
+[API3 Discord](https://discord.com/channels/758003776174030948/765618225144266793).
 
 <FlexEndTag/>

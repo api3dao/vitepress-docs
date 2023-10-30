@@ -29,7 +29,7 @@ stable coins, derivatives, NFTs, and more.
 
 API providers, owners of first-party Airnodes, store data feed values on-chain
 as individual beacons that in are turn sourced by the
-[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
+[Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract as dAPIs.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
@@ -90,7 +90,7 @@ Currently dAPIs are under an expansive development cycle and as of August of
 Development and expansion of dAPIs beyond self-funded and managed dAPIs will
 include OEV and service coverage. More details on these concepts will be
 forthcoming. Please feel-free to ask questions about the evolution of dAPIs on
-[Discord<ExternalLinkImage/>](https://discord.com/channels/758003776174030948/765618225144266793).
+[Discord](https://discord.com/channels/758003776174030948/765618225144266793).
 
 ## Self funded dAPIs
 

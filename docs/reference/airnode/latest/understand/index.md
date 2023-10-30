@@ -120,7 +120,7 @@ this type of deployment.
 Try the guide AWS
 [Deploying Airnode via AWS](/guides/airnode/deploy-airnode/deploy-aws/index.md)
 as a quick introduction to an Airnode deployment. Also be sure to visit
-[ChainAPI<ExternalLinkImage/>](https://chainapi.com) and try its user-friendly
-UI that deploys an Airnode.
+[ChainAPI](https://chainapi.com) and try its user-friendly UI that deploys an
+Airnode.
 
 <FlexEndTag/>

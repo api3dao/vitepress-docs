@@ -42,8 +42,8 @@ You will need the contract address that was created when the contract was first
 deployed. Hopefully you added it to the `addresses.txt` file found in the **FILE
 EXPLORER** pane. If not use MetaMask to get the transaction ID from the
 contract's deployment. Use the ID on the appropriate blockchain explorer (such
-as [Polygon Mumbai<ExternalLinkImage/>](https://mumbai.polygonscan.com/)) to get
-the contract's address.
+as [Polygon Mumbai](https://mumbai.polygonscan.com/)) to get the contract's
+address.
 
 Enter the contract address to the right of the **At Address** button then select
 the button. The contract should now appear below under **Deployed Contracts**.

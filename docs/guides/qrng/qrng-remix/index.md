@@ -34,10 +34,9 @@ chains. Check the list of supported chains [here](/reference/qrng/chains).
 This guide will walk you through coding and deploying a smart contract that
 requests a quantum random number on-chain using API3's QRNG Service.
 
-You will use the browser-based
-[Remix IDE<ExternalLinkImage/>](https://remix.ethereum.org) and
-[MetaMask<ExternalLinkImage/>](https://metamask.io/). Some basic knowledge of
-these two tools is assumed.
+You will use the browser-based [Remix IDE](https://remix.ethereum.org) and
+[MetaMask](https://metamask.io/). Some basic knowledge of these two tools is
+assumed.
 
 Currently, QRNG has three [providers](/reference/qrng/providers.md), two of
 which provide quantum random numbers. This guide will use the
@@ -72,10 +71,10 @@ deploying it yourself. This contract will be requesting the random number
 directly from the QRNG Provider.
 
 Head on to
-[Remix online IDE<ExternalLinkImage/>.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
+[Remix online IDE.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
 It should load up the `RemixQrngExample` contract.
 
-[Open in Remix<ExternalLinkImage/>](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
 
 ```solidity
 //SPDX-License-Identifier: MIT

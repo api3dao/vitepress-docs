@@ -38,9 +38,9 @@ will be available to your users at all times.
 
 ## API3 Market
 
-The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
-tooling to seamlessly access dAPI services. For managed dAPIs, this end-to-end
-process consists of:
+The [API3 Market](https://market.api3.org) provides all the tooling to
+seamlessly access dAPI services. For managed dAPIs, this end-to-end process
+consists of:
 
 - [Exploring, selecting and configuring your dAPI](/guides/dapis/subscribing-managed-dapis/#exploring-selecting-and-configuring-your-dapi)
   <br/>
@@ -51,12 +51,12 @@ process consists of:
 
 ## Exploring, selecting and configuring your dAPI
 
-The [API3 Market<ExternalLinkImage/>](https://market.api3.org/) provides a list
-of all the dAPIs available across multiple chains including testnets. You can
-filter the list by chains and data providers. You can also search for a specific
-dAPI by name. Once selected, you will land on the details page
-[(eg ETH/USD on polygon)<ExternalLinkImage/>](https://market.api3.org/dapis/polygon/ETH-USD)
-where you can find more information about the dAPI.
+The [API3 Market](https://market.api3.org/) provides a list of all the dAPIs
+available across multiple chains including testnets. You can filter the list by
+chains and data providers. You can also search for a specific dAPI by name. Once
+selected, you will land on the details page
+[(eg ETH/USD on polygon)](https://market.api3.org/dapis/polygon/ETH-USD) where
+you can find more information about the dAPI.
 
 Once you have selected your dAPI, you will then be presented with an option to
 choose from either **Managed** or **Self-funded**. Select Managed dAPIs.
@@ -107,8 +107,7 @@ fine, select **Connect Wallet**, and confirm the transaction on MetaMask.
 
 Once the transaction is confirmed, you will be presented with a confirmation
 page. You can also view the order details and status on the
-[Orders page<ExternalLinkImage/>](https://market.api3.org/orders) on the API3
-Market.
+[Orders page](https://market.api3.org/orders) on the API3 Market.
 
 ## Waiting for the dAPI to get updated
 

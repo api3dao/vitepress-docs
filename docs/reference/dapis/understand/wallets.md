@@ -22,8 +22,8 @@ only relevant when using self-funded dAPIs.
 
 Self-funded dAPI sponsor wallets are important in that the community (dApp
 owners) must fund the sponsor wallets of the dAPIs they wish to use. This is
-done by using the [API3 Market<ExternalLinkImage/>](https://market.api3.org) UI
-which allows you to find a dAPI, fund its sponsor wallet, and obtain its
+done by using the [API3 Market](https://market.api3.org) UI which allows you to
+find a dAPI, fund its sponsor wallet, and obtain its
 [proxy contract](/reference/dapis/understand/proxy-contracts.md) address.
 
 <img src="../assets/images/wallets.png" style="width:80%">

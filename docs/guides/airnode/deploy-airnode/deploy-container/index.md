@@ -19,16 +19,16 @@ tags:
 This guide demonstrates local deployment of an Airnode followed by an off-chain
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) request.
 Configuration files are provided with only minor changes to be made. The
-[latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-client/tags)
-of the Airnode [client image](/reference/airnode/latest/docker/client-image.md)
-will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
-a Docker container, in this case a locally run Docker container.
+[latest release](https://hub.docker.com/r/api3/airnode-client/tags) of the
+Airnode [client image](/reference/airnode/latest/docker/client-image.md) will be
+used to deploy the off-chain component of Airnode (a.k.a., the node) to a Docker
+container, in this case a locally run Docker container.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
-which returns the current value of a coin. This guide does not detail the
-overall configuration of an Airnode, it is just a quick start guide then lends
-itself to understanding an Airnode deployment.
+[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+current value of a coin. This guide does not detail the overall configuration of
+an Airnode, it is just a quick start guide then lends itself to understanding an
+Airnode deployment.
 
 Please note that this tutorial does not involve the blockchain nor an RRP
 (request-response protocol) call from a smart contract. If you wish to make an
@@ -97,8 +97,8 @@ There are two values `config.json` interpolates from `secrets.env`. Add values
 for each of these fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
-  provider such as [Infura<ExternalLinkImage/>](https://www.infura.io/). Use a
-  url for the Sepolia test network. If you need help creating one see the guide
+  provider such as [Infura](https://www.infura.io/). Use a url for the Sepolia
+  test network. If you need help creating one see the guide
   [Create an Infura key](/guides/misc/infura-key/).
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
@@ -219,11 +219,10 @@ endpoints added to the `http` array can be tested using the HTTP gateway.
 Use CURL to execute a HTTP gateway request for the CoinGecko endpoint
 `/simple/price`.
 
-As an alternative to CURL, an app such as
-[Insomnia<externalLinkImage/>](https://insomnia.rest/) or
-[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/) can
-be used. Windows users can also use
-[Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
+As an alternative to CURL, an app such as [Insomnia](https://insomnia.rest/) or
+[Postman](https://www.postman.com/product/rest-client/) can be used. Windows
+users can also use
+[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
 (WSL2) to run CURL on Linux.
 
 In order to test an endpoint, make a HTTP POST request with the `Content-Type`
