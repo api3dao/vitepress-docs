@@ -37,7 +37,7 @@ tutorial if you wish to become familiar with the deployer image first. There are
 also tutorials for [GCP](/guides/airnode/deploy-airnode/deploy-gcp/) and a
 [client Docker container](/guides/airnode/deploy-airnode/deploy-container/) as
 well as several repo based examples in the
-[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.12.0/packages/airnode-examples)
+[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.13.0/packages/airnode-examples)
 package.
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,
@@ -100,14 +100,14 @@ should the need arise.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.12.0 deploy
+  api3/airnode-deployer:0.13.0 deploy
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.12.0 deploy
+  api3/airnode-deployer:0.13.0 deploy
 ```
 
 :::
@@ -133,7 +133,7 @@ deployment was successful or not.
       "disableConcurrencyReservations": false
     },
     "stage": "dev",
-    "nodeVersion": "0.12.0",
+    "nodeVersion": "0.13.0",
     "timestamp": "2022-03-26T02:37:55.506Z"
   },
   "success": true
