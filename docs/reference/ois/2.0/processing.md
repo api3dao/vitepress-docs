@@ -3,7 +3,7 @@ title: Pre/Post Processing
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → 2.0
-path: /reference/ois/v2.0/processing.html
+path: /reference/ois/2.0/processing.html
 version: v2.0
 outline: deep
 tags:
@@ -34,9 +34,9 @@ work flow Airnode uses:
 4. Airnode encodes the response values defined by reservedParameters
 
 The processing schema is the same for both
-[`preProcessingSpecifications`](/reference/ois/v2.0/specification.md#_5-9-preprocessingspecifications)
+[`preProcessingSpecifications`](/reference/ois/2.0/specification.md#_5-9-preprocessingspecifications)
 and
-[`postProcessingSpecifications`](/reference/ois/v2.0/specification.md#_5-10-postprocessingspecifications).
+[`postProcessingSpecifications`](/reference/ois/2.0/specification.md#_5-10-postprocessingspecifications).
 Snippets for both specifications follow this schema:
 
 - `environment` - Currently one of `Node` or `Node async`. Both options
@@ -125,14 +125,14 @@ specification. Example #1 below implements this use case.
 
 This example creates an Airnode endpoint named `generateRandomNumber` with no
 parameters. Because there isn't an
-[operation field](/reference/ois/v2.0/specification.md#_5-2-operation) defined
+[operation field](/reference/ois/2.0/specification.md#_5-2-operation) defined
 for this Airnode endpoint, a call to an API will not be made. The Airnode will
 instead execute a single specification defined in the
-[preProcessingSpecifications](/reference/ois/v2.0/specification.md#_5-9-preprocessingspecifications)
+[preProcessingSpecifications](/reference/ois/2.0/specification.md#_5-9-preprocessingspecifications)
 array.
 
 To implement the use case mentioned above, the
-[operation field](/reference/ois/v2.0/specification.md#_5-2-operation) will be
+[operation field](/reference/ois/2.0/specification.md#_5-2-operation) will be
 undefined, `fixedOperationParameters` will be an empty array, and
 `preProcessingSpecifications` will be defined with a single specification.
 
@@ -176,13 +176,13 @@ endpoints: [
 ### Example #2
 
 The code below is unrelated to the
-[use case](/reference/ois/v2.0/processing.md#use-case-random-number) mentioned
+[use case](/reference/ois/2.0/processing.md#use-case-random-number) mentioned
 earlier. This example creates an Airnode endpoint named
 `endpointThatSumsWith1000` with a parameter named `numberToSum`. Because there
-isn't an [operation field](/reference/ois/v2.0/specification.md#_5-2-operation)
+isn't an [operation field](/reference/ois/2.0/specification.md#_5-2-operation)
 defined for this Airnode endpoint, a call to an API will not be made. The
 Airnode will instead execute a single specification defined in the
-[preProcessingSpecifications](/reference/ois/v2.0/specification.md#_5-9-preprocessingspecifications)
+[preProcessingSpecifications](/reference/ois/2.0/specification.md#_5-9-preprocessingspecifications)
 array.
 
 - A requester passes the number `5` in the parameter named `numberToSum`.

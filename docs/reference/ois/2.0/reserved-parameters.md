@@ -3,7 +3,7 @@ title: Reserved Parameters
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.0
-path: /reference/ois/v2.0/reserved-parameters.html
+path: /reference/ois/2.0/reserved-parameters.html
 version: v2.0
 outline: deep
 tags:
@@ -32,9 +32,9 @@ either case, these parameters are encoded using the
 [AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi.md).
 There are two types of parameters which are part of the OIS object:
 
-1. [Endpoint parameters](/reference/ois/v2.0/specification.md#_5-5-parameters) -
+1. [Endpoint parameters](/reference/ois/2.0/specification.md#_5-5-parameters) -
    Airnode endpoint parameters are mapped to API operation parameters.
-2. [Reserved parameters](/reference/ois/v2.0/specification.md#_5-4-reservedparameters) -
+2. [Reserved parameters](/reference/ois/2.0/specification.md#_5-4-reservedparameters) -
    Reserved parameters perform a specific operation related to the request or on
    the response before fulfilling the request. Reserved parameter names start
    with `_`. Depending on the configuration, they may be overridden by a
@@ -58,12 +58,12 @@ On top of supported solidity types, there is support for a few "artificial"
 types created for special purposes that would otherwise be hard or impossible to
 represent.
 
-- [`string32`](/reference/ois/v2.0/reserved-parameters.md#string32-encoded-to-bytes32-on-chain)
-- [`timestamp`](/reference/ois/v2.0/reserved-parameters.md#timestamp-encoded-to-uint256-on-chain)
+- [`string32`](/reference/ois/2.0/reserved-parameters.md#string32-encoded-to-bytes32-on-chain)
+- [`timestamp`](/reference/ois/2.0/reserved-parameters.md#timestamp-encoded-to-uint256-on-chain)
 
 You can also encode multiple values for one single API call - but this impacts
 all of the reserved parameters and is explained in the
-[Encoding Multiple Values](/reference/ois/v2.0/reserved-parameters.md#encoding-multiple-values)
+[Encoding Multiple Values](/reference/ois/2.0/reserved-parameters.md#encoding-multiple-values)
 section below.
 
 ### Conversion and encoding behavior
@@ -161,7 +161,7 @@ and `_path` is `field1.fieldA.1`, the response will be `valueA2`.
 
 If the response is a literal value (i.e., not a JSON object) and `_path` is not
 provided or is an empty string (needed for
-[encoding multiple values](/reference/ois/v2.0/reserved-parameters.md#encoding-multiple-values)),
+[encoding multiple values](/reference/ois/2.0/reserved-parameters.md#encoding-multiple-values)),
 Airnode will use the API response itself to fulfill the request.
 
 ::: warning Beware the separator
@@ -176,7 +176,7 @@ it will be incorrectly considered as a separator.
 ```
 
 A `_path` defined as `"strange.key"` will not work. As workaround you can
-[<span style="color:rgb(16, 185, 129);">escape the separator</span>](/reference/ois/v2.0/reserved-parameters.md#escaping-separators).
+[<span style="color:rgb(16, 185, 129);">escape the separator</span>](/reference/ois/2.0/reserved-parameters.md#escaping-separators).
 
 :::
 
@@ -226,7 +226,7 @@ Make sure to pass the `_times` parameter as string. Airnode will convert this
 string to number internally. You can also pass and empty string `""` to `_times`
 parameter - this has the same effect as if the `_times` parameter was not
 provided. However, this is important when
-[encoding multiple values](/reference/ois/v2.0/reserved-parameters.md#encoding-multiple-values).
+[encoding multiple values](/reference/ois/2.0/reserved-parameters.md#encoding-multiple-values).
 
 The `_times` parameter also works in conjunction with arrays and
 multidimensional arrays. All elements of the API response array will be

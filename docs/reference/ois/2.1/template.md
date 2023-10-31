@@ -3,7 +3,7 @@ title: OIS Template
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.1
-path: /reference/ois/latest/template.html
+path: /reference/ois/2.1/template.html
 version: v2.1
 outline: deep
 tags:

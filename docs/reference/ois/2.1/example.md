@@ -3,7 +3,7 @@ title: Example OIS Object
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.1
-path: /reference/ois/latest/example.html
+path: /reference/ois/2.1/example.html
 version: v2.1
 outline: deep
 tags:
@@ -19,6 +19,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-<<< @/reference/ois/latest/example.json
+<<< @/reference/ois/2.1/example.json
 
 <FlexEndTag/>

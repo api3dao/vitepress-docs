@@ -3,7 +3,7 @@ title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.0
-path: /reference/ois/v2.0/index.html
+path: /reference/ois/2.0/index.html
 version: v2.0
 outline: deep
 tags:
@@ -49,7 +49,7 @@ endpoint that maps to the same API operation.
 
 The following are three possible Airnode to API operation mapping examples.
 Mapping details are better documented in the next doc
-[Specification](/reference/ois/v2.0/specification.md).
+[Specification](/reference/ois/2.0/specification.md).
 
 ### Simple Airnode Endpoint
 
