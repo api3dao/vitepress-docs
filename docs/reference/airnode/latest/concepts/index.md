@@ -3,7 +3,7 @@ title: Request-Response Protocol
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
-path: /reference/airnode/next/concepts/index.html
+path: /reference/airnode/latest/concepts/index.html
 version: v0.13
 outline: deep
 tags:
@@ -42,13 +42,13 @@ of the protocol.
 The
 [AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 contract sits between a
-[requester](/reference/airnode/next/concepts/requester.md) and the Airnode. It
+[requester](/reference/airnode/latest/concepts/requester.md) and the Airnode. It
 inherits from four additional contracts as illustrated in the diagram above:
 
-- [IAirnodeRrpV0.sol](/reference/airnode/next/concepts/index.md#iairnoderrpv0-sol)
-- [AuthorizationUtilsV0.sol](/reference/airnode/next/concepts/index.md#authorizationutilsv0-sol)
-- [WithdrawalUtilsV0.sol](/reference/airnode/next/concepts/index.md#withdrawalutilsv0-sol)
-- [TemplateUtilsV0.sol](/reference/airnode/next/concepts/index.md#templateutilsv0-sol)
+- [IAirnodeRrpV0.sol](/reference/airnode/latest/concepts/index.md#iairnoderrpv0-sol)
+- [AuthorizationUtilsV0.sol](/reference/airnode/latest/concepts/index.md#authorizationutilsv0-sol)
+- [WithdrawalUtilsV0.sol](/reference/airnode/latest/concepts/index.md#withdrawalutilsv0-sol)
+- [TemplateUtilsV0.sol](/reference/airnode/latest/concepts/index.md#templateutilsv0-sol)
 
 This contract has two key responsibilities:
 
@@ -59,10 +59,10 @@ However, this contract is shared for all requesters and Airnodes on a particular
 chain. This means that neither Airnode operators nor requesters need to deploy
 this contract themselves. Instead, API3 will deploy this contract once per chain
 and you simply connect your Airnode or requester contract to that deployed
-contract. See the [Airnode Contract Addresses](/reference/airnode/next/) for
+contract. See the [Airnode Contract Addresses](/reference/airnode/latest/) for
 reference.
 
-The [`@api3/airnode-admin`](/reference/airnode/next/packages/admin-cli.md)
+The [`@api3/airnode-admin`](/reference/airnode/latest/packages/admin-cli.md)
 package is a CLI tool used to interact with `AirnodeRrpV0.sol` and perform
 administrative actions.
 
@@ -84,13 +84,13 @@ This interface inherits:
 The
 [AuthorizationUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol)
 contract implements Airnode
-[Authorizer](/reference/airnode/next/concepts/authorizers.md) checks.
+[Authorizer](/reference/airnode/latest/concepts/authorizers.md) checks.
 
 ### WithdrawalUtilsV0.sol
 
 The
 [WithdrawalUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol)
-contract allows the [sponsor](/reference/airnode/next/concepts/sponsor.md) to
+contract allows the [sponsor](/reference/airnode/latest/concepts/sponsor.md) to
 trigger a withdrawal request which is later fulfilled by Airnode and all sponsor
 wallet funds are sent back to the sponsor.
 
@@ -99,7 +99,7 @@ wallet funds are sent back to the sponsor.
 The
 [TemplateUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol)
 contract is used to create and store Airnode
-[templates](/reference/airnode/next/concepts/template.md) used to create a
-[template request](/reference/airnode/next/concepts/request.md#template-request).
+[templates](/reference/airnode/latest/concepts/template.md) used to create a
+[template request](/reference/airnode/latest/concepts/request.md#template-request).
 
 <FlexEndTag/>

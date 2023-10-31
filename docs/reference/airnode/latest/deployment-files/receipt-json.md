@@ -3,7 +3,7 @@ title: receipt.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Deployment Files
-path: /reference/airnode/next/deployment-files/receipt-json.html
+path: /reference/airnode/latest/deployment-files/receipt-json.html
 version: v0.13
 outline: deep
 tags:
@@ -22,7 +22,7 @@ tags:
 A `receipt.json` file is outputted after each deployment and contains
 non-sensitive information about the deployment. The main use of a receipt file
 is to remove an Airnode deployment when no longer needed. See the
-[Airnode Removal documentation](/reference/airnode/next/packages/deployer.md)
+[Airnode Removal documentation](/reference/airnode/latest/packages/deployer.md)
 for usage and commands.
 
 It also provides the Airnode xpub for the hardened derivation path

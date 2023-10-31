@@ -3,7 +3,7 @@ title: Heartbeat (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
-path: /reference/airnode/next/understand/heartbeat.html
+path: /reference/airnode/latest/understand/heartbeat.html
 version: v0.13
 outline: deep
 tags:

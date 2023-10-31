@@ -3,7 +3,7 @@ title: Cloud Resources
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13
-path: /reference/airnode/next/cloud-resources.html
+path: /reference/airnode/latest/cloud-resources.html
 version: v0.13
 outline: deep
 tags:
@@ -28,25 +28,25 @@ Airnode uses the following AWS or GCP resources.
 
 ### AWS
 
-| Resource    | Description                                                                                                                  |
-| :---------- | :--------------------------------------------------------------------------------------------------------------------------- |
-| EventBridge | Timer starting the Airnode service.                                                                                          |
-| CloudWatch  | Log groups for deployed resources. For more details see [Monitoring Airnode](/reference/airnode/next/understand/monitor.md). |
-| Lambda      | The heart of the Airnode. Serverless functions providing the Airnode service.                                                |
-| IAM         | Roles & policies to allow communication among other resources.                                                               |
-| API Gateway | Endpoints for the Airnode gateways.                                                                                          |
-| S3          | File describing the state of the deployed infrastructure.                                                                    |
+| Resource    | Description                                                                                                                    |
+| :---------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| EventBridge | Timer starting the Airnode service.                                                                                            |
+| CloudWatch  | Log groups for deployed resources. For more details see [Monitoring Airnode](/reference/airnode/latest/understand/monitor.md). |
+| Lambda      | The heart of the Airnode. Serverless functions providing the Airnode service.                                                  |
+| IAM         | Roles & policies to allow communication among other resources.                                                                 |
+| API Gateway | Endpoints for the Airnode gateways.                                                                                            |
+| S3          | File describing the state of the deployed infrastructure.                                                                      |
 
 ### GCP
 
-| Resource        | Description                                                                                                                  |
-| :-------------- | :--------------------------------------------------------------------------------------------------------------------------- |
-| Cloud Scheduler | Timer starting the Airnode service.                                                                                          |
-| Logs Explorer   | Log groups for deployed resources. For more details see [Monitoring Airnode](/reference/airnode/next/understand/monitor.md). |
-| Cloud Functions | The heart of the Airnode. Serverless functions providing the Airnode service.                                                |
-| API Gateway     | Endpoints for the Airnode gateways.                                                                                          |
-| Cloud Storage   | File describing the state of the deployed infrastructure & source code for cloud functions.                                  |
-| IAM             | Service accounts & roles to allow communication among other resources.                                                       |
+| Resource        | Description                                                                                                                    |
+| :-------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| Cloud Scheduler | Timer starting the Airnode service.                                                                                            |
+| Logs Explorer   | Log groups for deployed resources. For more details see [Monitoring Airnode](/reference/airnode/latest/understand/monitor.md). |
+| Cloud Functions | The heart of the Airnode. Serverless functions providing the Airnode service.                                                  |
+| API Gateway     | Endpoints for the Airnode gateways.                                                                                            |
+| Cloud Storage   | File describing the state of the deployed infrastructure & source code for cloud functions.                                    |
+| IAM             | Service accounts & roles to allow communication among other resources.                                                         |
 
 ## Supported Regions
 

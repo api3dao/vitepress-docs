@@ -3,7 +3,7 @@ title: Using Authorizers (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
-path: /reference/airnode/next/understand/apply-auth.html
+path: /reference/airnode/latest/understand/apply-auth.html
 version: v0.13
 outline: deep
 tags:
@@ -20,13 +20,13 @@ tags:
 # {{$frontmatter.title}}
 
 An Airnode can authorize smart contracts (know as requesters) access to its
-endpoints using [Authorizers](/reference/airnode/next/concepts/authorizers.md).
-This method is on-chain and requires some blockchain knowledge by an API
-provider.
+endpoints using
+[Authorizers](/reference/airnode/latest/concepts/authorizers.md). This method is
+on-chain and requires some blockchain knowledge by an API provider.
 
 ## What is an authorizer?
 
-An [Authorizer](/reference/airnode/next/concepts/authorizers.md) is a contract
+An [Authorizer](/reference/airnode/latest/concepts/authorizers.md) is a contract
 which typically checks for a single condition ("has the requester made their
 monthly payment", "is this `requesterAddress` whitelisted", etc.). Authorizers
 can be combined to enforce more complex policies. If any of the authorizers in
@@ -36,7 +36,7 @@ logical standpoint, the authorization outcomes get *OR*ed.
 ::: info Alternative: Relayed Meta Data
 
 As an alternative to authorizers and authorizations, an API provider can use
-[<span style="color: rgb(16, 185, 129)">Relayed Meta Data</span>](/reference/airnode/next/understand/api-security.md#relayed-meta-data-security-schemes)
+[<span style="color: rgb(16, 185, 129)">Relayed Meta Data</span>](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)
 to authenticate a request. This approach is off-chain and requires no blockchain
 knowledge by the API provider. Note that it is possible to use authorizers,
 authorizations, and relayed meta data together.
@@ -51,7 +51,7 @@ Airnode's `airnodeAddress`. Sponsors (via their sponsored requesters) use
 endpoints. However, rather than serve them publicly, you may want to:
 
 - Only serve your own
-  [requester contracts](/reference/airnode/next/developers/requesters-sponsors.md).
+  [requester contracts](/reference/airnode/latest/developers/requesters-sponsors.md).
 - Only serve sponsors who have made a subscription payment.
 - Only serve sponsors who have gone through KYC.
 
@@ -63,7 +63,7 @@ authorizers include `requesterEndpointAuthorizers`,
 
 Note that when all `chains[n].authorizers` values are empty arrays, all requests
 are authorized, but still can be filtered by using
-[Relayed Meta Data Security Schemes](/reference/airnode/next/understand/api-security.md#relayed-meta-data-security-schemes).
+[Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes).
 
 Below are examples of how to use the authorizers.
 
@@ -157,7 +157,7 @@ Below are examples of how to use the authorizers.
 ## Using `RequesterAuthorizerWithAirnode`
 
 A common use case for an authorizer is the
-[RequesterAuthorizerWithAirnode](/reference/airnode/next/concepts/authorizers.md#requesterauthorizerwithairnode)
+[RequesterAuthorizerWithAirnode](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithairnode)
 authorizer contract developed for Airnode operators to use right out-of-the-box.
 It allows the whitelisting of requester contracts (with or without expiration
 timestamps) on a per endpoint basis. Endpoints are declared in the
@@ -165,10 +165,10 @@ timestamps) on a per endpoint basis. Endpoints are declared in the
 case and can be implemented with the following steps:
 
 1. Add the RequesterAuthorizerWithAirnode
-   [authorizer contract address](/reference/airnode/next/#requesterauthorizerwithairnode)
+   [authorizer contract address](/reference/airnode/latest/#requesterauthorizerwithairnode)
    to the array `chains[n].authorizers.requesterEndpointAuthorizers`.
 2. After your Airnode is deployed, call the Admin CLI command
-   [set-whitelist-expiration](/reference/airnode/next/packages/admin-cli.md#set-whitelist-expiration)
+   [set-whitelist-expiration](/reference/airnode/latest/packages/admin-cli.md#set-whitelist-expiration)
    to add the desired requester contract addresses to the whitelist maintained
    by RequesterAuthorizerWithAirnode.
 

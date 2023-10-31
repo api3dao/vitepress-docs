@@ -3,7 +3,7 @@ title: Authorizers
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
-path: /reference/airnode/next/concepts/authorizers.html
+path: /reference/airnode/latest/concepts/authorizers.html
 version: v0.13
 outline: deep
 tags:
@@ -21,7 +21,7 @@ tags:
 
 An Airnode can authorize requester contract access to its underlying API using
 authorizers. As an alternative, an API provider could also use
-[Relayed Meta Data Authentication](/reference/airnode/next/concepts/relay-meta-auth.md)
+[Relayed Meta Data Authentication](/reference/airnode/latest/concepts/relay-meta-auth.md)
 to authenticate requests. Authorizers require blockchain knowledge by the API
 provider, relayed meta data does not.
 
@@ -38,7 +38,7 @@ wide variety of policies. Below are some examples:
   owner's backend (for example, based on PayPal payments).
 
 A common use case for an authorizer is the
-[RequesterAuthorizerWithAirnode](/reference/airnode/next/concepts/authorizers.md#requesterauthorizerwithairnode)
+[RequesterAuthorizerWithAirnode](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithairnode)
 authorizer contract developed for Airnode operators to use right out-of-the-box.
 It allows the whitelisting of requester contracts (with or without expiration
 timestamps) on a per endpoint basis. This is the most common use case and may in
@@ -60,15 +60,15 @@ Airnode provides two authorizer contracts, one of which
 (`RequesterAuthorizerWithManager`) is meant to be used by the API3 DAO. They are
 detailed within this doc in sections below.
 
-- [RequesterAuthorizerWithAirnode](/reference/airnode/next/concepts/authorizers.md#requesterauthorizerwithairnode)
-- [RequesterAuthorizerWithManager](/reference/airnode/next/concepts/authorizers.md#requesterauthorizerwithmanager)
+- [RequesterAuthorizerWithAirnode](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithairnode)
+- [RequesterAuthorizerWithManager](/reference/airnode/latest/concepts/authorizers.md#requesterauthorizerwithmanager)
 
 Both these authorizer contracts inherit and extend the `RequesterAuthorizer`
 abstract contract which also extends the `Whitelist` contract. This means that
 both authorizer contracts will need to whitelist requester contracts prior to
 make them available to an Airnode. For `RequesterAuthorizerWithAirnode` this can
 be done using the
-[admin-cli](/reference/airnode/next/packages/admin-cli.md#requesterauthorizerwithairnode).
+[admin-cli](/reference/airnode/latest/packages/admin-cli.md#requesterauthorizerwithairnode).
 
 The main difference between them is that `RequesterAuthorizerWithAirnode` allows
 the Airnode address to grant whitelisting roles for that specific Airnode. On
@@ -93,7 +93,7 @@ effectively implementing an on-chain call quota.
 ### Authorizer List
 
 Airnode authorizers are listed in the config.json file at
-[chains[n].authorizers](/reference/airnode/next/understand/configuring.md#chains).
+[chains[n].authorizers](/reference/airnode/latest/understand/configuring.md#chains).
 An authorizer typically checks for a single condition (has the requester made
 their monthly payment, is the `requester` whitelisted, etc.). Authorizers can be
 combined to enforce more complex policies. If any of the authorizers in
@@ -169,8 +169,8 @@ achieve wide-spread adoption.
 ### Are authorizers required?
 
 Authorizers are not required. An Airnode operator could use
-[Authorizations](/reference/airnode/next/concepts/authorizations.md) or
-[Relayed Meta Data Security Schemes](/reference/airnode/next/concepts/relay-meta-auth.md).
+[Authorizations](/reference/airnode/latest/concepts/authorizations.md) or
+[Relayed Meta Data Security Schemes](/reference/airnode/latest/concepts/relay-meta-auth.md).
 It is possible to use both authorizers, authorizations, and relay security
 schemes together.
 
@@ -259,11 +259,11 @@ of each object resemble other `config.json` objects:
 `requesterEndpointAuthorizers` specifies an array of contract address that
 authorize requests and both `chainType` and `contracts` are configured
 equivalently to their like named parent `chains[n]` objects described in the
-[config.json reference](/reference/airnode/next/deployment-files/config-json.md#chains).
+[config.json reference](/reference/airnode/latest/deployment-files/config-json.md#chains).
 Note that the `contracts` object may be omitted if there is an existing API3
 `AirnodeRrpV0` deployment for the given chain, in which case Airnode will
 default to this address. A full listing of deployments can be found
-[here](/reference/airnode/next/). Lastly, `chainId` specifies the cross-chain
+[here](/reference/airnode/latest/). Lastly, `chainId` specifies the cross-chain
 (network) id and `chainProvider` is an object containing the chain provider url
 for the _chain specified by `chainId`_.
 
@@ -312,7 +312,7 @@ address of the `RequesterAuthorizerWithErc721` contract. This latter field can
 be omitted if there is an existing API3 `RequesterAuthorizerWithErc721`
 deployment for the given chain, in which case Airnode will default to this
 address. A full listing of deployments can be found
-[here](/reference/airnode/next/). In the example below, a request would be
+[here](/reference/airnode/latest/). In the example below, a request would be
 authorized on chain _2_ if the requester has deposited a token with the contract
 address `0x00bDB2315678afecb367f032d93F642f64180a00` to the
 `RequesterAuthorizerWithErc721` contract at address
@@ -320,7 +320,7 @@ address `0x00bDB2315678afecb367f032d93F642f64180a00` to the
 specified, the requester will be authorized if a token corresponding to _any_ of
 the specified ERC721 contracts has been deposited. For deployed
 `RequesterAuthorizerWithErc721` contract addresses, see the
-[Airnode Contract Addresses](/reference/airnode/next/index.md#requesterauthorizerwitherc721)
+[Airnode Contract Addresses](/reference/airnode/latest/index.md#requesterauthorizerwitherc721)
 page.
 
 ```json
@@ -351,7 +351,7 @@ cross-chain request authorization. Like `crossChainRequesterAuthorizers`, some
 of the fields within each object resemble other `config.json` objects:
 `chainType` is configured equivalently to its like-named parent `chains[n]`
 object described in the
-[config.json reference](/reference/airnode/next/deployment-files/config-json.md#chains),
+[config.json reference](/reference/airnode/latest/deployment-files/config-json.md#chains),
 `chainId` specifies the cross-chain (network) id, and `chainProvider` is an
 object containing the chain provider url for the _chain specified by `chainId`_.
 The `erc721s` field value is an array of ERC721 contract addresses and within
@@ -361,11 +361,11 @@ chain specified by `chainId`_ (the cross-chain). The `contracts` object may be
 omitted if there is an existing API3 deployment for the
 `RequesterAuthorizerWithErc721` contract on the cross-chain, in which case
 Airnode will default to this address. A full listing of deployments can be found
-[here](/reference/airnode/next/). If multiple ERC721 contracts are specified in
-`erc721s`, the requester will be authorized if a token corresponding to _any_ of
-the specified ERC721 contracts has been deposited. For deployed
+[here](/reference/airnode/latest/). If multiple ERC721 contracts are specified
+in `erc721s`, the requester will be authorized if a token corresponding to _any_
+of the specified ERC721 contracts has been deposited. For deployed
 `RequesterAuthorizerWithErc721` contract addresses, see the
-[Airnode Contract Addresses](/reference/airnode/next/index.md#requesterauthorizerwitherc721)
+[Airnode Contract Addresses](/reference/airnode/latest/index.md#requesterauthorizerwitherc721)
 page.
 
 In the below example, the request on chain _2_ will be authorized if the the

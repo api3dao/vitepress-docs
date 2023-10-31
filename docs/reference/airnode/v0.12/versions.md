@@ -27,7 +27,7 @@ documentation website.
 |                                                 |
 | ----------------------------------------------- |
 | v0.12.x                                         |
-| [v0.11.x](/reference/airnode/v0.12/versions.md) |
+| [v0.11.x](/reference/airnode/v0.11/versions.md) |
 
 ## Other Versions
 

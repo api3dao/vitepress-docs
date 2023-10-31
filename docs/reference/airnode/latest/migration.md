@@ -3,7 +3,7 @@ title: Migration Guide
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13
-path: /reference/airnode/next/migration.html
+path: /reference/airnode/latest/migration.html
 version: v0.13
 outline: deep
 tags:
@@ -47,7 +47,7 @@ Updated to "0.13.0"
 ## New features and updates
 
 - The
-  [HTTP Gateway](/reference/airnode/next/understand/http-gateways.md#http-gateway)
+  [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
   response has been harmonized so that the API call response, after undergoing
   any post-processing, will be present in the `rawValue` field independent of
   encoding success or failure.

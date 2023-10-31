@@ -3,7 +3,7 @@ title: AWS/GCP Deployer Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Docker Images
-path: /reference/airnode/next/docker/deployer-image.html
+path: /reference/airnode/latest/docker/deployer-image.html
 version: v0.13
 outline: deep
 tags:
@@ -53,9 +53,9 @@ my-airnode
 In order to deploy Airnode to a serverless cloud provider, you need to provide
 cloud provider credentials to the Airnode deployer image. The deployer image
 currently supports deploying to AWS and GCP. For AWS deployment, see the
-[AWS Setup](/reference/airnode/next/understand/configuring.md#aws-setup-aws-deployment-only)
+[AWS Setup](/reference/airnode/latest/understand/configuring.md#aws-setup-aws-deployment-only)
 and for GCP deployment, see the
-[GCP Setup](/reference/airnode/next/understand/configuring.md#gcp-setup-gcp-deployment-only).
+[GCP Setup](/reference/airnode/latest/understand/configuring.md#gcp-setup-gcp-deployment-only).
 
 ## Deployer Logs
 
@@ -77,7 +77,7 @@ noted where they exist.
 
 ### `deploy`
 
-The [deploy](/reference/airnode/next/packages/deployer.md#deploy) command will
+The [deploy](/reference/airnode/latest/packages/deployer.md#deploy) command will
 create the Airnode with a cloud provider or update it if it already exists.
 Three files are needed to run the deploy command.
 
@@ -87,7 +87,7 @@ Three files are needed to run the deploy command.
 - gcp.json (GCP only)
 
 See
-[Deploying an Airnode](/reference/airnode/next/understand/deploying.md#deploy-with-docker)
+[Deploying an Airnode](/reference/airnode/latest/understand/deploying.md#deploy-with-docker)
 for deployment commands specific to various operating systems and cloud
 providers.
 
@@ -96,7 +96,7 @@ some deployment information and is used to remove the Airnode.
 
 <!-- Use of .html below is intended. -->
 
-<WarningSimultaneousDeployments removeLink="/reference/airnode/next/docker/deployer-image.html#manual-removal"/>
+<WarningSimultaneousDeployments removeLink="/reference/airnode/latest/docker/deployer-image.html#manual-removal"/>
 
 <p><DeployerPermissionsWarning/></p>
 
@@ -121,13 +121,13 @@ docker run -it --rm ^
 #### Re-deployments
 
 A unique deployment is defined by the value of
-[nodeSetting.stage](/reference/airnode/next/deployment-files/config-json.md#stage).
+[nodeSetting.stage](/reference/airnode/latest/deployment-files/config-json.md#stage).
 If you deploy again, using the same `nodeSetting.stage` value, then you are
 re-deploying or updating the previous deployment.
 
 By default the deployer will attempt to remove the Airnode should either a
 deployment or re-deployment fail. But if either fails (and
-[--auto-remove](/reference/airnode/next/packages/deployer.md#deploy) is false)
+[--auto-remove](/reference/airnode/latest/packages/deployer.md#deploy) is false)
 then the Airnode will not be removed, however it could be left in an unstable
 state. You can alter the `deploy` command to change this behavior using the
 following.
@@ -151,9 +151,9 @@ api3/airnode-deployer:0.12.0 deploy --auto-remove false
 ### `list`
 
 Once one or more Airnodes were deployed using the
-[deploy](/reference/airnode/next/docker/deployer-image.md#deploy) command above,
-the [list](/reference/airnode/next/packages/deployer.md#list) command can be
-used to list currently deployed Airnodes. Files for cloud provider
+[deploy](/reference/airnode/latest/docker/deployer-image.md#deploy) command
+above, the [list](/reference/airnode/latest/packages/deployer.md#list) command
+can be used to list currently deployed Airnodes. Files for cloud provider
 authentication are needed for the command to run correctly: `aws.env` (for AWS)
 and/or `gcp.json` (for GCP).
 
@@ -198,9 +198,9 @@ docker run -it --rm ^
 ### `info`
 
 Retrieve more information about a deployment with the
-[info](/reference/airnode/next/packages/deployer.md#info) command. Use the
+[info](/reference/airnode/latest/packages/deployer.md#info) command. Use the
 deployment ID from the
-[list](/reference/airnode/next/docker/deployer-image.md#list) command above to
+[list](/reference/airnode/latest/docker/deployer-image.md#list) command above to
 request information about a specific deployment. The retrieved information
 include deployment's Airnode address, stage, Airnode version and the update
 history. Files for cloud provider authentication are needed for the command to
@@ -226,16 +226,16 @@ docker run -it --rm ^
 ### `rollback`
 
 To revert to a previous version of a deployment, use the
-[rollback](/reference/airnode/next/packages/deployer.md#rollback) command.
+[rollback](/reference/airnode/latest/packages/deployer.md#rollback) command.
 Provide the deployment ID from the
-[list](/reference/airnode/next/docker/deployer-image.md#list) command above to
+[list](/reference/airnode/latest/docker/deployer-image.md#list) command above to
 specify which deployment will be changed. Also provide the desired version ID
-from the [info](/reference/airnode/next/docker/deployer-image.md#info) command
+from the [info](/reference/airnode/latest/docker/deployer-image.md#info) command
 above to revert to. The
-[rollback](/reference/airnode/next/packages/deployer.md#rollback) command will
+[rollback](/reference/airnode/latest/packages/deployer.md#rollback) command will
 then fetch the configuration files of the specified version and deploy the
 version using its configuration. Check this with the
-[info](/reference/airnode/next/docker/deployer-image.md#info) command above.
+[info](/reference/airnode/latest/docker/deployer-image.md#info) command above.
 
 ::: code-group
 
@@ -258,13 +258,13 @@ docker run -it --rm ^
 
 During the Airnode deployment, your `config.json` and `secrets.env` are uploaded
 to the cloud provider of your choosing. You can use the
-[fetch-files](/reference/airnode/next/packages/deployer.md#fetch-files) command
-to retrieve them. You need to provide the deployment ID from the
-[list](/reference/airnode/next/docker/deployer-image.md#list) command above to
+[fetch-files](/reference/airnode/latest/packages/deployer.md#fetch-files)
+command to retrieve them. You need to provide the deployment ID from the
+[list](/reference/airnode/latest/docker/deployer-image.md#list) command above to
 specify the desired deployment. By default, the files from the latest version of
 this deployment are fetched. Alternatively, you can additionally provide a
 deployment version ID from the
-[info](/reference/airnode/next/docker/deployer-image.md#info) command above to
+[info](/reference/airnode/latest/docker/deployer-image.md#info) command above to
 specify the desired deployment version. By default, the archive with the files
 is stored in the `config` directory **within the Docker container** that is, in
 the example below, mapped to your current working directory. You can change the
@@ -294,11 +294,11 @@ docker run -it --rm ^
 ### `remove`
 
 A deployed Airnode can be removed via the
-[remove](/reference/airnode/next/packages/deployer.md#remove) command. To remove
-Airnode, use the deployment ID from the
-[list](/reference/airnode/next/docker/deployer-image.md#list) command above.
+[remove](/reference/airnode/latest/packages/deployer.md#remove) command. To
+remove Airnode, use the deployment ID from the
+[list](/reference/airnode/latest/docker/deployer-image.md#list) command above.
 Airnode's update history, that can be seen by the
-[info](/reference/airnode/next/docker/deployer-image.md#info) command, will be
+[info](/reference/airnode/latest/docker/deployer-image.md#info) command, will be
 removed as well. Files for cloud provider authentication are needed for the
 command to run correctly: `aws.env` (for AWS) or `gcp.json` (for GCP). This is
 the recommended way to remove a deployment, but an alternative is the
@@ -325,7 +325,7 @@ docker run -it --rm ^
 
 When an Airnode was deployed using the `deploy` command, a `receipt.json` file
 was created. This file is used to remove the Airnode. The
-[remove-with-receipt](/reference/airnode/next/packages/deployer.md#remove-with-receipt)
+[remove-with-receipt](/reference/airnode/latest/packages/deployer.md#remove-with-receipt)
 command is identical for AWS and GCP. Files for cloud provider authentication
 are needed for the command to run correctly: `aws.env` (for AWS) or `gcp.json`
 (for GCP).
@@ -354,7 +354,7 @@ that you do so using the deployer image's `remove-with-receipt` or `remove`
 commands. When removing manually, you will need the Airnode's deployment ID,
 `deploymentId` (e.g., `awsef86dfad`) and the Airnode stage name (e.g.,
 `production`). They can be found in the
-[receipt.json](/reference/airnode/next/deployment-files/receipt-json.md) file
+[receipt.json](/reference/airnode/latest/deployment-files/receipt-json.md) file
 generated when deploying the Airnode. These are included in the element name of
 AWS and GCP deployed features. Airnode has a presence in several areas of both
 AWS and GCP as listed below.
@@ -377,6 +377,6 @@ deploymentId and `production` is the stage name.
 <DeleteAirnodeGcp />
 
 Learn more about AWS or GCP resources that Airnode uses in the
-[Cloud Resources](/reference/airnode/next/cloud-resources.md) doc.
+[Cloud Resources](/reference/airnode/latest/cloud-resources.md) doc.
 
 <FlexEndTag/>
