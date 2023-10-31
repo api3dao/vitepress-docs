@@ -42,7 +42,7 @@ The tough question that comes into play, who owns and operates the oracle?
 connectivity problem.-->
 
 When considering if an
-[oracle is first or third party<ExternalLinkImage/>](https://hackernoon.com/the-difference-between-first-party-and-third-party-oracles),
+[oracle is first or third party](https://hackernoon.com/the-difference-between-first-party-and-third-party-oracles),
 there is an important point to consider: Who will host the oracle node?
 
 1. If an API provider hosts the oracle node, the oracle is called a first-party
@@ -82,7 +82,7 @@ first-party oracle must provide an optimal architecture.
 
 <!--Third-party oracles are both insecure and expensive (see the
 <a href="/api3-whitepaper-v1.0.3.pdf#page=10" target="_blank">API3
-Whitepaper</a><externalLinkImage/> _Issues with Third-Party Oracles as Middlemen_ for a detailed explanation). In contrast, first-party oracles are both secure and cost-efficient due to not having a middleman on the interface path. -->
+Whitepaper</a> _Issues with Third-Party Oracles as Middlemen_ for a detailed explanation). In contrast, first-party oracles are both secure and cost-efficient due to not having a middleman on the interface path. -->
 
 <!-- Legacy oracle governance
 
@@ -135,7 +135,7 @@ A decentralized API is a product which contains:
 By taking advantage of the advantages offered by decentralization, developers
 can build applications with elevated security and trustworthiness. See the
 medium article,
-[Why API3 DAO?<externalLinkImage/>](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
+[Why API3 DAO?](https://medium.com/api3/why-api3-dao-not-api3-corp-2dde51c537c1)
 on DAOs and decentralized governance.
 
 <!--
@@ -149,7 +149,7 @@ same solution can be reached through a more useful lens-->
 
 <!--Decentralized applications cannot access Web APIs, and oracle solutions aim to build decentralized interfaces to facilitate this. However, this approach results in an inferior solution and ecosystem (see the
 <a href="/api3-whitepaper-v1.0.3.pdf" target="_api3-whitepaper">API3
-Whitepaper</a><externalLinkImage/> for a detailed explanation).-->
+Whitepaper</a> for a detailed explanation).-->
 
 <!--Instead, API3 builds complete products called decentralized APIs (dAPIs for
 short), which are blockchain-native, decentralized API services. From the user's

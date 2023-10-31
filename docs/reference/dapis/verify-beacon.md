@@ -18,7 +18,7 @@ tags:
 
 [Datafeed values are stored on-chain](/reference/dapis/understand/#data-feeds-values-stored-on-chain)
 within the
-[`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
+[`Api3ServerV1.sol`](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
 contract and are updated on the basis of `beaconIds`.
 
 A `beaconId` for each dAPI is derived from the hash of the provider's Airnode
@@ -38,9 +38,9 @@ section.
 
 ## Verifying beaconId
 
-From the [API3 Market<externalLinkImage/>](https://market.api3.org/dapis),
-navigate to the parameters page of a dAPI. As an example for
-[ETH/USD on Gnosis chain<externalLinkImage/>](https://market.api3.org/dapis/gnosis/ETH-USD/parameters)
+From the [API3 Market](https://market.api3.org/dapis), navigate to the
+parameters page of a dAPI. As an example for
+[ETH/USD on Gnosis chain](https://market.api3.org/dapis/gnosis/ETH-USD/parameters)
 the parameters are as follows:
 
 <img src="./assets/images/dapi-parameters.png"/>

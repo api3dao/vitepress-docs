@@ -38,18 +38,17 @@ or request types and the logs they contain are as follows:
 ### AWS
 
 Airnode logs are available in
-[CloudWatch<ExternalLinkImage/>](https://console.aws.amazon.com/cloudwatch)
-under Logs > Log groups. Note that for the HTTP gateways, AWS generates a unique
-`requestId` for each request. These should not be confused with the `requestId`
-of a request originating from a blockchain.
+[CloudWatch](https://console.aws.amazon.com/cloudwatch) under Logs > Log groups.
+Note that for the HTTP gateways, AWS generates a unique `requestId` for each
+request. These should not be confused with the `requestId` of a request
+originating from a blockchain.
 
 ### GCP
 
 Airnode logs are available in the
-[Logs Explorer<ExternalLinkImage/>](https://console.cloud.google.com/logs/). It
-can be convenient to query or stream logs by the "Cloud Function" Resource Type
-and then by "Function Name" in order to view a specific request type or Airnode
-cycle stage.
+[Logs Explorer](https://console.cloud.google.com/logs/). It can be convenient to
+query or stream logs by the "Cloud Function" Resource Type and then by "Function
+Name" in order to view a specific request type or Airnode cycle stage.
 
 ## Local Airnode Client
 

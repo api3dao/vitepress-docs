@@ -38,8 +38,8 @@ use QRNG.
 
 See the guide [Using QRNG - Remix Example](/guides/qrng/qrng-remix/index.md) for
 an in-depth tutorial on how use QRNG. Also see the
-[QRNG Example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example)
-repo, an example project that demonstrates the usage of the Airnode
-request–response protocol to receive API3 QRNG services.
+[QRNG Example](https://github.com/api3dao/qrng-example) repo, an example project
+that demonstrates the usage of the Airnode request–response protocol to receive
+API3 QRNG services.
 
 <FlexEndTag/>

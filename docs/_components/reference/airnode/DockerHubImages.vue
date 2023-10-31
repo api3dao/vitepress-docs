@@ -16,7 +16,7 @@ inside the Airnode doc set.
         <a
           :href="'https://hub.docker.com/r/api3/airnode-deployer/tags'"
           target="_docker-hub"
-          >AWS/GCP Deployer Images<ExternalLinkImage />
+          >AWS/GCP Deployer Images
         </a>
       </li>
 
@@ -24,7 +24,7 @@ inside the Airnode doc set.
         <a
           :href="'https://hub.docker.com/r/api3/airnode-client/tags'"
           target="_docker-hub"
-          >Client Images<ExternalLinkImage />
+          >Client Images
         </a>
       </li>
 
@@ -32,7 +32,7 @@ inside the Airnode doc set.
         <a
           :href="'https://hub.docker.com/r/api3/airnode-admin/tags'"
           target="_docker-hub"
-          >Admin CLI Images<ExternalLinkImage />
+          >Admin CLI Images
         </a>
       </li>
     </ul>

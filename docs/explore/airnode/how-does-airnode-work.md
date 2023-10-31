@@ -42,11 +42,11 @@ can be utilized within the product development cycle as data requirements arise.
 <!---::: info Read more
 
 For a technical overview of Airnode see
-[getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e)<ExternalLinkImage/>.
+[getting to know Airnode](https://medium.com/api3/getting-to-know-airnode-162e50ea243e).
 :::
 -->
 
-## Technical Characterists of Airnode
+## Technical Characteristics of Airnode
 
 ### Statelessness
 
@@ -87,13 +87,12 @@ with extreme concurrent usage, Airnode uses it for different reasons:
 
 3. Serverless functions are priced on-demand: Airnode does not require major
    concurrent usage, resulting in cost-efficiency and even let the user stay
-   within free tier [AWS<ExternalLinkImage/>](https://aws.amazon.com/free),
-   [GCP<ExternalLinkImage/>](https://cloud.google.com/free) limits.
+   within free tier [AWS](https://aws.amazon.com/free),
+   [GCP](https://cloud.google.com/free) limits.
 
 Additionally, bare serverless functions are easy to port across cloud providers
-(e.g., using
-[Terraform Framework<ExternalLinkImage/>](https://www.terraform.io/)),
-especially when their cloud provider-specific dependencies are limited.
+(e.g., using [Terraform Framework](https://www.terraform.io/)), especially when
+their cloud provider-specific dependencies are limited.
 
 ::: info Note
 
@@ -232,10 +231,10 @@ achieve the highest possible availability.
 
 An Airnode that receives no requests consumes fewer than 3,000 calls per day
 which is included within the free plans of RPC providers such as
-[<span style="color:rgb(16, 185, 129);">Alchemy<ExternalLinkImage/></span>](https://www.alchemy.com/overviews/rpc-node),
-[<span style="color:rgb(16, 185, 129);">Infura<ExternalLinkImage/></span>](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods),
+[<span style="color:rgb(16, 185, 129);">Alchemy</span>](https://www.alchemy.com/overviews/rpc-node),
+[<span style="color:rgb(16, 185, 129);">Infura</span>](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods),
 or
-[<span style="color:rgb(16, 185, 129);">Pokt<ExternalLinkImage/></span>](https://docs.pokt.network/use/public-rpc/).
+[<span style="color:rgb(16, 185, 129);">Pokt</span>](https://docs.pokt.network/use/public-rpc/).
 
 :::
 

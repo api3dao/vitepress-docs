@@ -12,9 +12,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-[FlexSearch<ExternalLinkImage/>](https://www.npmjs.com/package/flexsearch) is
-used to support searching in the docs. The script
-[/libs/flexBuildIndexes.js<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/blob/main/libs/flexBuildIndexes.js)
+[FlexSearch](https://www.npmjs.com/package/flexsearch) is used to support
+searching in the docs. The script
+[/libs/flexBuildIndexes.js](https://github.com/api3dao/vitepress-docs/blob/main/libs/flexBuildIndexes.js)
 will index all HTML files in the `/dist` folder for the following directories:
 
 - `/dist/explore/`

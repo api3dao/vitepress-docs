@@ -35,9 +35,9 @@ directly operated by the QRNG API providers. You can read more about QRNG
 
 Currently, there are 3 providers for QRNG:
 
-- [Australian National University<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/)
-- [Quintessence Labs<ExternalLinkImage/>](https://www.quintessencelabs.com/)
-- [Nodary (Testnet)<ExternalLinkImage/>](https://nodary.io/)
+- [Australian National University](https://quantumnumbers.anu.edu.au/)
+- [Quintessence Labs](https://www.quintessencelabs.com/)
+- [Nodary (Testnet)](https://nodary.io/)
 
 [Click here to view the list of providers](/reference/qrng/providers.md).
 
@@ -49,18 +49,18 @@ numbers on testnets chains.
 
 ## How can you access QRNG?
 
-The [qrng-example<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/)
-project demonstrates how to build a smart contract (known as a requester) using
-the Airnode
+The [qrng-example](https://github.com/api3dao/qrng-example/) project
+demonstrates how to build a smart contract (known as a requester) using the
+Airnode
 [Request–Response Protocol (RRP)](/reference/airnode/latest/concepts/index.md)
 to access QRNG services. It is recommended to run the example project to learn
 how it uses the QRNG service on a testnet, and read the associated `README`
 file. It also contains example code that will be useful when creating a
 requester (smart contract) that requests a quantum random number.
 
-- [qrng-example/contracts/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/contracts)
+- [qrng-example/contracts/](https://github.com/api3dao/qrng-example/tree/main/contracts)
   - `QrngExamples.sol`: A sample requester used to call the QRNG service.
-- [qrng-example/deploy/<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/tree/main/deploy)
+- [qrng-example/deploy/](https://github.com/api3dao/qrng-example/tree/main/deploy)
   - `deploy.js`: Script that deploys a requester to a chain.
   - `setup.js`: Script that sets the parameters on the requester contract. These
     parameters are used when calling the QRNG Airnode.
@@ -78,7 +78,7 @@ on-chain in response to a request, which the requester needs to pay for.
 ### Sponsor Wallet
 
 The QRNG example project
-[sets the sponsor wallet<ExternalLinkImage/>](https://github.com/api3dao/qrng-example/blob/main/deploy/2_setup.js#L11-L28)
+[sets the sponsor wallet](https://github.com/api3dao/qrng-example/blob/main/deploy/2_setup.js#L11-L28)
 using the requester address. The wallet is then used to pay gas costs when the
 Airnode responds to a request. An alternate method is to use the
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) as is the case with

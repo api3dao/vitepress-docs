@@ -25,7 +25,7 @@ using your CLI with Rosetta deactivated.
 
 It is best to use nodejs `v18` which gives the best performance and is the
 engine described in the
-[package.json<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+[package.json](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
 file.
 
 :::

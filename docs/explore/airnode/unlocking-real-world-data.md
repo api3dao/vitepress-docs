@@ -181,7 +181,7 @@ consume first-party data<!--price?--> feed services in smart contracts.
 ## Requirements
 
 If you want to know what prevents first-party oracles from widespread use, read
-[this API3 blog post.](https://medium.com/api3/where-are-the-first-party-oracles-5078cebaf17)<ExternalLinkImage/>
+[this API3 blog post.](https://medium.com/api3/where-are-the-first-party-oracles-5078cebaf17)
 
 Airnode is designed to run as a first-party oracle by the API providers
 themselves. As a result, this imposes fairly restrictive requirements:

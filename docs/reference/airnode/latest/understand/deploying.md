@@ -54,8 +54,7 @@ The [deployer image](/reference/airnode/latest/docker/deployer-image.md) is
 containerized as a Docker image. This will deploy the Airnode to the cloud
 provider without the worry of installing dependencies and is the recommended way
 to do a deployment. If you do not already have docker installed go to the
-[Docker website<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and
-install it.
+[Docker website](https://docs.docker.com/get-docker/) and install it.
 
 ## Deployment
 

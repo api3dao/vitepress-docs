@@ -20,9 +20,9 @@ tags:
 # {{$frontmatter.title}}
 
 The Oracle Integration Specification (OIS) is based on
-[Open API specification (OAS)<ExternalLinkImage/>](https://swagger.io/specification/),
-but there are some differences, be sure to focus on the following documentation
-when working on an OIS file.
+[Open API specification (OAS)](https://swagger.io/specification/), but there are
+some differences, be sure to focus on the following documentation when working
+on an OIS file.
 
 ::: warning OAS
 
@@ -36,7 +36,7 @@ For an overview that explains how Airnode maps its endpoints to API provider
 operations, see
 [API integration](/reference/airnode/next/understand/api-integration.md). Also
 see the medium article
-[Setting Oracle Integration Standards<ExternalLinkImage/>](https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e)
+[Setting Oracle Integration Standards](https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e)
 for an overview of OIS.
 
 - Fields denoted by (\*) are for documentation purposes and not used by an
@@ -45,7 +45,7 @@ for an overview of OIS.
   reference to assist in the populating of OIS fields.--> The OIS fields should be
   reviewed and customized by the integrating party.
 - All URLs are absolute (i.e.,
-  [relative URLs<ExternalLinkImage/>](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#relative-references-in-urls)
+  [relative URLs](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md#relative-references-in-urls)
   are not supported).
 
 ## OIS Object Summary
@@ -224,7 +224,7 @@ Allowed values: `query`, `header`, `cookie`
 
 (Only if `type` is http) The name of the HTTP Authorization scheme to be used in
 the
-[Authorization header as defined in RFC7235<ExternalLinkImage/>](https://tools.ietf.org/html/rfc7235#section-5.1).
+[Authorization header as defined in RFC7235](https://tools.ietf.org/html/rfc7235#section-5.1).
 
 Allowed values: (`basic` and `bearer`).
 

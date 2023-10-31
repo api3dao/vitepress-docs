@@ -23,10 +23,9 @@ tags:
 > <Video src="https://www.youtube.com/embed/1ASnpYO66mw"/>
 
 This guide requires a proxy contract address for a particular dAPI you are
-interested in. You can find them in the
-[API3 Market<ExternalLinkImage/>](https://market.api3.org) website. If a proxy
-contract has not been created for a particular dAPI use the API3 Market UI to do
-so, see the guide
+interested in. You can find them in the [API3 Market](https://market.api3.org)
+website. If a proxy contract has not been created for a particular dAPI use the
+API3 Market UI to do so, see the guide
 [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
 or [Subscribing to a Managed dAPI](/guides/dapis/subscribing-managed-dapis/).
 
@@ -34,9 +33,8 @@ or [Subscribing to a Managed dAPI](/guides/dapis/subscribing-managed-dapis/).
 
 dAPI proxies allows dAPIs to be used like libraries. Your smart contract needs
 to import the `IProxy` interface to call a dAPI's proxy contract. You can add
-the
-[@api3/contracts<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/contracts)
-package to your project and get access to the IProxy interface contract.
+the [@api3/contracts](https://www.npmjs.com/package/@api3/contracts) package to
+your project and get access to the IProxy interface contract.
 
 ```
 npm i @api3/contracts
@@ -112,7 +110,7 @@ purposes without proper security audits and testing.
 ## Summary
 
 For additional information on how to read from a dAPI proxy, please refer to the
-[datafeed-reader-example<ExternalLinkImage/>](https://github.com/api3dao/data-feed-reader-example)
+[datafeed-reader-example](https://github.com/api3dao/data-feed-reader-example)
 repository which contains a hardhat project with a sample smart contract that
 reads from a dAPI proxy.
 

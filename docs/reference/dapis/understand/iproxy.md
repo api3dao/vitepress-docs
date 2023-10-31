@@ -22,7 +22,7 @@ is a single publicly available proxy contract that reads the dAPI's data
 (`value` int224, `timestamp` uint256). You do not access the proxy contract
 directly but rather use the `IProxy` interface. The `IProxy` interface is part
 of the npm package
-[@api3/contracts<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/contracts).
+[@api3/contracts](https://www.npmjs.com/package/@api3/contracts).
 
 ## IProxy interface contracts
 
@@ -40,14 +40,14 @@ import "@api3/contracts/v0.8/interfaces/IProxy.sol";
 
 You can also see the available Solidity specific IProxy contracts in the API3
 repo
-[api3dao/contracts<ExternalLinkImage/>](https://github.com/api3dao/contracts/tree/main/contracts).
+[api3dao/contracts](https://github.com/api3dao/contracts/tree/main/contracts).
 
 ## Usage
 
 Use the address of a proxy contract to read dAPIs with `IProxy`. See the guide
 [Reading a self-funded dAPI proxy ](/guides/dapis/read-a-dapi/) for a complete
 working example. Proxy contract addresses are available on the
-[API3 Market<ExternalLinkImage/>](https://market.api3.org).
+[API3 Market](https://market.api3.org).
 
 ```
 import "@api3/contracts/v0.8/interfaces/IProxy.sol";

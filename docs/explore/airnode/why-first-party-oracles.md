@@ -94,7 +94,7 @@ resulting in a strong mutual bond between the two.
 ::: info Learn more
 
 Understand more by reading
-[<span style="color:rgb(16, 185, 129);">first-party vs third-party oracles<ExternalLinkImage/></span>](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
+[<span style="color:rgb(16, 185, 129);">first-party vs third-party oracles</span>](https://medium.com/api3/first-party-vs-third-party-oracles-13b4b9b4db8e).
 
 :::
 

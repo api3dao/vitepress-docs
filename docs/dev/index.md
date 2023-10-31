@@ -20,7 +20,7 @@ Mac users (Apple silicon) should see the page
 
 It is best to use nodejs `v18` which gives the best performance and is the
 engine described in the
-[<span style="color:rgb(16, 185, 129);">package.json<ExternalLinkImage/></span>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+[<span style="color:rgb(16, 185, 129);">package.json</span>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
 file.
 
 :::

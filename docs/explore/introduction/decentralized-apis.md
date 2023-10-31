@@ -42,7 +42,7 @@ attributes:
   oracles.
 
 See the medium article about design decisions and dAPIs by reading
-[dAPIs: APIs for dApps<ExternalLinkImage/>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
+[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
 
 ## dAPI roadmap
 
@@ -81,11 +81,10 @@ API3 suggests using a managed dAPI when the single source value of a self-funded
 dAPI does not provide enough reliability, or the costs associated with topping
 off the dAPI's associated sponsor wallet is too prohibitive.
 
-Access a self-funded dAPI via the
-[API3 Market<ExternalLinkImage/>](https://market.api3.org/dapis) is easy and
-requires only a few simple steps. Utilizing the tools available within the API3
-Market, dApp owners can swiftly gain access to a dAPI with minimal effort.
-Follow the guide
+Access a self-funded dAPI via the [API3 Market](https://market.api3.org/dapis)
+is easy and requires only a few simple steps. Utilizing the tools available
+within the API3 Market, dApp owners can swiftly gain access to a dAPI with
+minimal effort. Follow the guide
 [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
 to get started. Then see the guide
 [Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and understand

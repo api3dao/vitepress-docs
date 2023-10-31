@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-validator<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-validator)
+[airnode-validator](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-validator)
 is used internally by the [Docker Images](/reference/airnode/latest/docker/) to
 validate the
 [configuration files](/reference/airnode/latest/understand/configuring.md) you
@@ -36,7 +36,7 @@ for advanced use cases you can use the
 ## CLI Usage
 
 The simplest way to run the CLI is using
-[npx<ExternalLinkImage/>](https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx).
+[npx](https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx).
 Alternatively, you can install the validator package as a dependency in your
 project.
 
@@ -149,6 +149,6 @@ if (parseResult.success) {
 ## Build Manually
 
 See the build instructions for the validator in the
-[airnode package repository<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-validator).
+[airnode package repository](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-validator).
 
 <FlexEndTag/>

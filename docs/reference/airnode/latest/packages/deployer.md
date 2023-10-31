@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-deployer<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer)
+[airnode-deployer](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer)
 package is used primarily by the
 [Docker Images](/reference/airnode/latest/docker/). This CLI tool provides the
 underlying commands used by the Docker images when deploying an Airnode. API
@@ -31,14 +31,14 @@ not the deployer CLI commands.
 ## Usage
 
 The deployer's commands can be run using
-[npx<ExternalLinkImage/>](https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx),
+[npx](https://www.codingninjas.com/codestudio/library/difference-between-npm-and-npx),
 installing a global npm package or by manually building the airnode-deployer
 package. Using npx is the simplest method to interact with the deployer manually
 if you do not wish to use the Docker images.
 
 - [Using npx](/reference/airnode/latest/packages/deployer.md#using-npx)
 - [Global Package](/reference/airnode/latest/packages/deployer.md#global-package)
-- [Build Manually<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer)
+- [Build Manually](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer)
 
 ### Using npx
 
@@ -133,9 +133,9 @@ For AWS, there are two options:
    (and `AWS_SESSION_TOKEN` as well, if using temporary credentials) to their
    appropriate values.
 2. Populate the AWS `credentials` file. See the AWS documentation for the
-   [expected file format<ExternalLinkImage/>](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html#file-format-creds)
+   [expected file format](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html#file-format-creds)
    as well as its
-   [default location<ExternalLinkImage/>](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html).
+   [default location](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html).
 
 ### GCP Credentials
 
@@ -155,9 +155,9 @@ the `gcp.json` credentials file.
 
 When creating or updating an Airnode the `config.json` and `secrets.env` files
 are needed. You can use the provided example
-[config.json<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/config.example.json)
+[config.json](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/config.example.json)
 and
-[secrets.env<ExternalLinkImage/>](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/secrets.example.env)
+[secrets.env](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/secrets.example.env)
 templates to get started quickly, but you will need to edit these with your own
 API details and secrets.
 

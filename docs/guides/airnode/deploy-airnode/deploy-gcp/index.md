@@ -19,16 +19,16 @@ tags:
 This guide demonstrates the deployment of an Airnode followed by an off-chain
 [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md) request.
 Configuration files are provided with only minor changes to be made. The
-[latest release<ExternalLinkImage/>](https://hub.docker.com/r/api3/airnode-deployer/tags)
-of the Airnode
-[deployer image](/reference/airnode/latest/docker/deployer-image.md) will be
-used to deploy the off-chain component of Airnode (a.k.a., the node) to GCP.
+[latest release](https://hub.docker.com/r/api3/airnode-deployer/tags) of the
+Airnode [deployer image](/reference/airnode/latest/docker/deployer-image.md)
+will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
+GCP.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko<ExternalLinkImage/>](https://www.coingecko.com/en/api/documentation)
-which returns the current value of a coin. This guide does not detail the
-overall configuration of an Airnode, it is just a quick start guide then lends
-itself to understanding an Airnode deployment.
+[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+current value of a coin. This guide does not detail the overall configuration of
+an Airnode, it is just a quick start guide then lends itself to understanding an
+Airnode deployment.
 
 Please note that this tutorial does not involve the blockchain nor an RRP
 (request-response protocol) call from a smart contract. If you wish to make an
@@ -50,9 +50,7 @@ url, and a mnemonic.
 
 ## 1. Install Prerequisites
 
-Install the
-[Docker Desktop<ExternalLinkImage/>](https://docs.docker.com/get-docker/) and
-launch it.
+Install the [Docker Desktop](https://docs.docker.com/get-docker/) and launch it.
 
 ## 2. Project Folder
 
@@ -68,7 +66,7 @@ quick-start-gcp
 ## 3. GCP Project Setup & Credentials
 
 - First
-  [create a GCP project<ExternalLinkImage/>](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+  [create a GCP project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
   (or use an existing GCP project) where the Airnode will be deployed. Once the
   project is created, add the project ID to the
   [secrets.env](/guides/airnode/deploy-airnode/deploy-gcp/#secrets-env) file.
@@ -78,12 +76,12 @@ quick-start-gcp
   since the resource usage fits well within the free tier limit.
 
 - In order for Airnode to deploy successfully, you need to enable the
-  [App Engine Admin API<ExternalLinkImage/>](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
+  [App Engine Admin API](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
   specifically for the project. After enabling it, wait a few minutes before
   deploying the Airnode for this change to take effect.
 
 - Create a new service account from the
-  [IAM and admin > Service accounts<ExternalLinkImage/>](https://console.cloud.google.com/iam-admin/serviceaccounts)
+  [IAM and admin > Service accounts](https://console.cloud.google.com/iam-admin/serviceaccounts)
   menu. Grant this account access to the project by adding the role `Owner`
   during creation.
 
@@ -127,8 +125,8 @@ There are three values `config.json` interpolates from `secrets.env`. Add values
 for each of these fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
-  provider such as [Infura<ExternalLinkImage/>](https://www.infura.io/). Use a
-  url for the Sepolia test network. If you need help creating one see the guide
+  provider such as [Infura](https://www.infura.io/). Use a url for the Sepolia
+  test network. If you need help creating one see the guide
   [Create an Infura key](/guides/misc/infura-key/).
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
@@ -166,11 +164,11 @@ the deployer image `deploy` command is run by the user root. This may cause
 permission issues when the `receipt.json` file is generated. Optionally you can
 specify the
 <a href="https://en.wikipedia.org/wiki/User_identifier" target="_blank">UID
-(user identifier)<externalLinkImage/></a> and <a
+(user identifier)</a> and <a
 href="https://en.wikipedia.org/wiki/Group_identifier" target="\_blank"> GID
-(group identifier)<externalLinkImage/></a> that the deployer image should use.
-Do so by setting the environment variables USER_ID and GROUP_ID, otherwise omit
-the line containing these variables.
+(group identifier)</a> that the deployer image should use. Do so by setting the
+environment variables USER_ID and GROUP_ID, otherwise omit the line containing
+these variables.
 
 ::: code-group
 
@@ -253,11 +251,10 @@ endpoints added to the `http` array can be tested using the HTTP gateway.
 Use CURL to execute a HTTP gateway request for the CoinGecko endpoint
 `/simple/price`.
 
-As an alternative to CURL, an app such as
-[Insomnia<externalLinkImage/>](https://insomnia.rest/) or
-[Postman<externalLinkImage/>](https://www.postman.com/product/rest-client/) can
-be used. Windows users can also use
-[Windows Subsystem for Linux<externalLinkImage/>](https://docs.microsoft.com/en-us/windows/wsl/install)
+As an alternative to CURL, an app such as [Insomnia](https://insomnia.rest/) or
+[Postman](https://www.postman.com/product/rest-client/) can be used. Windows
+users can also use
+[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
 (WSL2) to run CURL on Linux.
 
 In order to test an endpoint, make a HTTP POST request with the `Content-Type`

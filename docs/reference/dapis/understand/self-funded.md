@@ -33,7 +33,7 @@ are managed by the users themselves. As long as the sponsor wallet of the dAPI
 has enough gas, it will be updated.
 
 Datafeed values for Self-funded dAPIs are also stored on-chain within the same
-[`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
+[`Api3ServerV1.sol`](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
 contract and are updated on the basis of `beaconIds`. The provider who is
 running an Airnode is also running an Airseeker that is responsible for updating
 the values of each `beaconId` for each dAPI.
@@ -51,11 +51,9 @@ mnemonic.
 
 ## Airseeker
 
-Like Airnode,
-[Airseeker<ExternalLinkImage/>](https://github.com/api3dao/airseeker/) is a
-serverless lambda function that is responsible for updating the values of each
-`beaconId` for each dAPI. It is used to update the beacons with signed responses
-from
+Like Airnode, [Airseeker](https://github.com/api3dao/airseeker/) is a serverless
+lambda function that is responsible for updating the values of each `beaconId`
+for each dAPI. It is used to update the beacons with signed responses from
 [Airnode's HTTP-Gateway](/reference/airnode/latest/understand/http-gateways.md).
 
 Airseeker uses Airnode's built-in HTTP-Gateway to receive signed data and push
@@ -63,7 +61,7 @@ it on-chain in a tamper proof way.
 
 Similar to Airnode's OIS, Airseeker also requires a configuration file that is
 used to configure the Airseeker.
-[Click here to see an example of an Airseeker configuration file.<ExternalLinkImage/>](https://github.com/api3dao/airseeker/blob/main/config/airseeker.example.json).
+[Click here to see an example of an Airseeker configuration file.](https://github.com/api3dao/airseeker/blob/main/config/airseeker.example.json).
 The configuration file is used to configure the
 [deviation thresholds](/reference/dapis/understand/deviations.md) and
 [heartbeat](/reference/dapis/understand/deviations.md#heartbeat) for each
@@ -79,12 +77,11 @@ to fund a self-funded dAPI will be funding the the data provider's underlying
 
 ## Provider for Self-funded dAPIs
 
-Currently, for self-funded dAPIs,
-[Nodary<ExternalLinkImage/>](https://nodary.io/) is the data provider. Nodary is
-an independent group within the API3 Ecosystem that are building high-impact
-oracle services. They currently operate 139 crypto, forex, stock and commodity
-asset price data feeds each on 24 chains, adding up to a total 3336 unique data
-feeds.
+Currently, for self-funded dAPIs, [Nodary](https://nodary.io/) is the data
+provider. Nodary is an independent group within the API3 Ecosystem that are
+building high-impact oracle services. They currently operate 139 crypto, forex,
+stock and commodity asset price data feeds each on 24 chains, adding up to a
+total 3336 unique data feeds.
 
 See the guide
 [Subscribing to Self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)

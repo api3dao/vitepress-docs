@@ -17,10 +17,10 @@ tags:
 # {{$frontmatter.title}}
 
 Proxy contracts are generated and deployed by the
-[API3 Market<ExternalLinkImage/>](https://market.api3.org) and allow for simple
-access to dAPIs by any dApp. Access the API3 Market UI to easily obtain the
-address of a proxy contract and use it to read the value of its dAPI. Each proxy
-contract is linked to a single dAPI on a particular network.
+[API3 Market](https://market.api3.org) and allow for simple access to dAPIs by
+any dApp. Access the API3 Market UI to easily obtain the address of a proxy
+contract and use it to read the value of its dAPI. Each proxy contract is linked
+to a single dAPI on a particular network.
 
 dApp owners use the address of a proxy contract to read dAPIs with the
 [IProxy interface](/reference/dapis/understand/iproxy.md). See the guide
@@ -45,10 +45,10 @@ can be sourced from multiple beacons.
 All dAPIs have one publicly available
 [proxy contract](/reference/dapis/understand/proxy-contracts.md). For example,
 the proxy contract for the self-funded dAPI
-[ZIL/USD<ExternalLinkImage/>](https://market.api3.org/dapis/polygon-testnet/ZIL-USD)
-on the Mumbai testnet has an address of
-`0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2`. Therefore, any dApp can call the
-ZIL/USD dAPI to get its value and timestamp using its proxy contract address.
+[ZIL/USD](https://market.api3.org/dapis/polygon-testnet/ZIL-USD) on the Mumbai
+testnet has an address of `0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2`.
+Therefore, any dApp can call the ZIL/USD dAPI to get its value and timestamp
+using its proxy contract address.
 
 ```solidity
 (value, timestamp) = IProxy(0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2).read();

@@ -33,7 +33,7 @@ beacons are the underlying data source for data feeds known as dAPIs.
 
 API providers, owners of first-party Airnodes, store data feed values on-chain
 as individual beacons that in are turn sourced by the
-[Api3ServerV1.sol<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
+[Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract as [dAPIs](/reference/dapis/understand/). Airnode has an internal
 mechanism that looks for a deviation in the value of API provider's API
 operations. This mechanism updates beacons on-chain as needed.
@@ -48,7 +48,7 @@ protocol is designed to be flexible and is meant to serve a variety of use
 cases. See the the
 [Calling Airnode (RRP)](/reference/airnode/v0.11/developers/index.md) for more
 details on how an RRP request is made. Also see the Airnode
-[requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
+[requester examples](https://github.com/api3dao/airnode/tree/v0.11/packages/airnode-examples/contracts)
 for potential design patterns.
 
 <!--Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")

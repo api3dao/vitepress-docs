@@ -26,7 +26,7 @@ managed by the dAPI team within [API3 DAO](/explore/dao-members/).
 
 [Datafeed values are stored on-chain](/reference/dapis/understand/#data-feeds-values-stored-on-chain)
 within the
-[`Api3ServerV1.sol`<ExternalLinkImage/>](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
+[`Api3ServerV1.sol`](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
 contract and are updated on the basis of `beaconIds`. To provide aggregated
 data, beacon sets are used which are a collection of multiple `beaconIds` that
 are then used to calculate the aggregated value on-chain using a median
@@ -56,11 +56,9 @@ higher deviation threshold/heartbeat.
 
 ## Airseeker
 
-Like Airnode,
-[Airseeker<ExternalLinkImage/>](https://github.com/api3dao/airseeker/) is a
-serverless lambda function that is responsible for updating the values of each
-`beaconId` for each dAPI. It is used to update the beacons with signed responses
-from
+Like Airnode, [Airseeker](https://github.com/api3dao/airseeker/) is a serverless
+lambda function that is responsible for updating the values of each `beaconId`
+for each dAPI. It is used to update the beacons with signed responses from
 [Airnode's HTTP-Signed-Gateway](/reference/airnode/latest/understand/http-gateways.md).
 
 Airseeker uses Airnode's built-in HTTP-Gateway to receive signed data and push
@@ -68,16 +66,16 @@ it on-chain in a tamper proof way.
 
 Similar to Airnode's OIS, Airseeker also requires a configuration file that is
 used to configure the Airseeker.
-[Click here to see an example of an Airseeker configuration file.<ExternalLinkImage/>](https://github.com/api3dao/airseeker/blob/main/config/airseeker.example.json).
+[Click here to see an example of an Airseeker configuration file.](https://github.com/api3dao/airseeker/blob/main/config/airseeker.example.json).
 The configuration file is used to configure the deviation thresholds and
 heartbeat for each `beaconId` or `beaconSetId`.
 
 ## Providers for Managed dAPIs
 
-Currently, the [API3 Market<ExternalLinkImage/>](https://market.api3.org/) has 4
-different asset classes that are listed below. For each type, there are multiple
-providers that are running an Airnode and are providing data for the dAPIs. The
-providers are listed below:
+Currently, the [API3 Market](https://market.api3.org/) has 4 different asset
+classes that are listed below. For each type, there are multiple providers that
+are running an Airnode and are providing data for the dAPIs. The providers are
+listed below:
 
 | Asset Type     | Data Provider                                                           |
 | -------------- | ----------------------------------------------------------------------- |

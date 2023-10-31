@@ -38,7 +38,7 @@ available. Each provider has an Airnode address with an extended public key
 
 Australian National University is one of the leading research universities in
 Australia. Visit their website at
-[https://quantumnumbers.anu.edu.au<ExternalLinkImage/>](https://quantumnumbers.anu.edu.au/).
+[https://quantumnumbers.anu.edu.au](https://quantumnumbers.anu.edu.au/).
 
 ANU Quantum Random Numbers are only available on
 [mainnets](/reference/qrng/chains.md#anu). For testnets use
@@ -81,7 +81,7 @@ is available on mainnets and a few testnets.
 ## Testnet Random Numbers
 
 Testnet Random Numbers emulates QRNG using
-[pseudorandom numbers<ExternalLinkImage/>](https://www.mathworks.com/help/stats/generating-random-data.html)
+[pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
 on testnets to get familiar with QRNG.
 
 ### `airnode`
@@ -118,12 +118,11 @@ on testnets to get familiar with QRNG.
 
 ## Quintessence Quantum Random Numbers
 
-Australian-based
-[Quintessence Labs<ExternalLinkImage/>](https://www.quintessencelabs.com/) is a
+Australian-based [Quintessence Labs](https://www.quintessencelabs.com/) is a
 global leader in quantum cybersecurity, recognized for its advanced
 quantum-resilient data protection capabilities. Its trademarked
-[qStream<ExternalLinkImage/>](https://www.quintessencelabs.com/products#qrng)
-generator creates perfectly unpredictable true random numbers.
+[qStream](https://www.quintessencelabs.com/products#qrng) generator creates
+perfectly unpredictable true random numbers.
 
 <!-- Need css for mobile -->
 

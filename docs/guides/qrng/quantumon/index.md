@@ -17,26 +17,25 @@ tags:
 
 # {{$frontmatter.title}}
 
-[Quantumon<ExternalLinkImage/>](https://quantumon.xyz/) - Quantum Monsters are a
-collection of AI generated monsters that are minted to users with the help of
-[API3's QRNG](/reference/qrng/) and
-[DALL-E AI<ExternalLinkImage/>](https://openai.com/dall-e-2/). It utilities the
-power of QRNG to generate unique random NFTs.
+[Quantumon](https://quantumon.xyz/) - Quantum Monsters are a collection of AI
+generated monsters that are minted to users with the help of
+[API3's QRNG](/reference/qrng/) and [DALL-E AI](https://openai.com/dall-e-2/).
+It utilities the power of QRNG to generate unique random NFTs.
 
 One of the most important aspects of NFTs is their perceived rarity making it
 very important for the attributes that affect rarity to be randomly generated.
 If a bad actor exploits the minting contract, they can keep the rare items for
 themselves making it unfair for everyone else. With QRNG, you can do fair
 distribution of NFTs using
-[“out of order”<ExternalLinkImage/>](https://www.justinsilver.com/technology/cryptocurrency/nft-mint-random-token-id/)
+[“out of order”](https://www.justinsilver.com/technology/cryptocurrency/nft-mint-random-token-id/)
 minting.
 
 ## 1. Defining the Imports
 
 To see how Quantumon works, you can visit the
-[Quantumon<ExternalLinkImage/>](https://quantumon.xyz/) website. It uses an
-ERC-721 standard contract and QRNG to mint random NFTs and distribute them.
-[Check out the code here<ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
+[Quantumon](https://quantumon.xyz/) website. It uses an ERC-721 standard
+contract and QRNG to mint random NFTs and distribute them.
+[Check out the code here](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
 
 Start by specifying the license, solidity version, importing the necessary
 contracts and then creating the actual contract itself.
@@ -53,14 +52,14 @@ contract Quantumon is ERC721, RrpRequesterV0, Ownable {
 ```
 
 - **Ownable** : This is
-  [Openzeppelin implementation of an ownership<ExternalLinkImage/>](https://docs.openzeppelin.com/contracts/2.x/access-control)
+  [Openzeppelin implementation of an ownership](https://docs.openzeppelin.com/contracts/2.x/access-control)
   contract. Contracts that inherit the Ownable contract have access to modifiers
   that make it possible for certain function to only be invoked by the owner.
   The owner of the contract is the contract deployer. However the ownership can
   be transferred by the owner.
 
 - **ERC721** : This is
-  [Openzeppelin implementation of a Non Fungible Token(NFT)<ExternalLinkImage/>](https://docs.openzeppelin.com/contracts/3.x/erc721)
+  [Openzeppelin implementation of a Non Fungible Token(NFT)](https://docs.openzeppelin.com/contracts/3.x/erc721)
   standard. This is the contract we inherit to have the contract be able to mint
   and transfer NFTs.
 
@@ -436,6 +435,6 @@ Monsters. You also learned how to request data from a QRNG Airnode and how to
 use the data to mint an NFT.
 
 See the source code for the
-[Quantumon contract <ExternalLinkImage/>](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
+[Quantumon contract ](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
 
 <FlexEndTag/>

@@ -28,9 +28,9 @@ out of the DAO pool. This functionality has not been implemented to-date.
 :::
 
 See the list of
-[pool contracts<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/tree/main/packages/pool/contracts)
+[pool contracts](https://github.com/api3dao/api3-dao/tree/main/packages/pool/contracts)
 and specifically the
-[API3Pool.sol<ExternalLinkImage/>](https://github.com/api3dao/api3-dao/blob/main/packages/pool/contracts/Api3Pool.sol)
+[API3Pool.sol](https://github.com/api3dao/api3-dao/blob/main/packages/pool/contracts/Api3Pool.sol)
 contract for an understanding of the contract inheritance structure:
 
 - TimelockUtils.sol

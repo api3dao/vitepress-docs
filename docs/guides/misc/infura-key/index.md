@@ -22,9 +22,8 @@ page. Infura provides access to Sepolia with its free plan.
 
 ## 1. Access your account
 
-To get started go to [Infura<ExternalLinkImage/>](https://www.infura.io/) and
-create an account if you do not have one. If you do login. Infura will present
-your dashboard.
+To get started go to [Infura](https://www.infura.io/) and create an account if
+you do not have one. If you do login. Infura will present your dashboard.
 
 ## 2. Create a key
 

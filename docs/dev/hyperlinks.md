@@ -41,7 +41,7 @@ behavior for such links, use absolute links.
 
 Even the description for the breaking change is poorly written. The commit can
 be seen
-[here<ExternalLinkImage/>](https://github.com/vuejs/vitepress/commit/dcf29419f24bfb0fe99e424771be931bf77b9961).
+[here](https://github.com/vuejs/vitepress/commit/dcf29419f24bfb0fe99e424771be931bf77b9961).
 
 The safest solution is to use the full path from the root of `/docs` or in the
 case of the examples above,

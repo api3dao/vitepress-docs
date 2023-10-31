@@ -34,6 +34,6 @@ may specify the request such that the request is fulfilled by the Airnode
 calling back another contract.
 
 See the
-[Airnode requester examples<ExternalLinkImage/>](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples/contracts).
+[Airnode requester examples](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples/contracts).
 
 <FlexEndTag/>

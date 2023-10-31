@@ -57,16 +57,15 @@ tags:
 # {{$frontmatter.title}}
 
 Requests will be responded to after `minConfirmations` blocks (see
-[On Slow and Fast Block Times<ExternalLinkImage/>](https://blog.ethereum.org/2015/09/14/on-slow-and-fast-block-times/)
+[On Slow and Fast Block Times](https://blog.ethereum.org/2015/09/14/on-slow-and-fast-block-times/)
 to learn more). Expect this to correspond to 1–3 minutes based on chain
 conditions such as congestion and block times. These numbers are subject to
 change.
 
 You can import `AirnodeRrpV0` addresses from the `@api3/airnode-protocol`
 package, see the
-[QRNG example project<ExternalLinkImage/>](https://github.com/api3dao/qrng-example).
-The
-[@api3/airnode-protocol<ExternalLinkImage/>](https://www.npmjs.com/package/@api3/airnode-protocol)
+[QRNG example project](https://github.com/api3dao/qrng-example). The
+[@api3/airnode-protocol](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
 [**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers)

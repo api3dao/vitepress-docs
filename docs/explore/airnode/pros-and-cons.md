@@ -43,11 +43,11 @@ understood.
   making the requests) specify a sponsor (account that sponsors the transaction)
   to pay for the response transaction.
 - Open source - Airnode and other API3 projects are developed on
-  [GitHub](https://github.com/api3dao)<ExternalLinkImage/>.
+  [GitHub](https://github.com/api3dao).
 - Secure - Airnode is inherently more secure than other solutions due to its
   stateless nature. Nonetheless, API3 remains highly focused on security and has
   a track record of favorable
-  [external security audits](https://github.com/api3dao/api3-dao/tree/main/reports)<ExternalLinkImage/>.
+  [external security audits](https://github.com/api3dao/api3-dao/tree/main/reports).
 - Free - API3 does not charge for deploying and using Airnode. Under the AWS
   lambda free tier, operating an Airnode can even be free.
 

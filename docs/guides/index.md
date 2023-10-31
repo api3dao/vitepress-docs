@@ -23,8 +23,7 @@ consumers) or API providers (Airnode owners).
 
 Each guide is a complete standalone step-by-step introduction to key services
 and concepts at API3. If you have an idea for a guide that you wish was here,
-please create a
-[GitHub issue<ExternalLinkImage/>](https://github.com/api3dao/vitepress-docs).
-This will help us create a full and comprehensive list.
+please create a [GitHub issue](https://github.com/api3dao/vitepress-docs). This
+will help us create a full and comprehensive list.
 
 <FlexEndTag/>

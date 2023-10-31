@@ -40,9 +40,9 @@ will be available to your users at all times.
 
 ## API3 Market
 
-The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides all the
-tooling to seamlessly access dAPI services. For self-funded data feeds this
-end-to-end process consists of:
+The [API3 Market](https://market.api3.org) provides all the tooling to
+seamlessly access dAPI services. For self-funded data feeds this end-to-end
+process consists of:
 
 - [Exploring and selecting your data feed](/guides/dapis/subscribing-self-funded-dapis/#_1-exploring-and-selecting-your-data-feed)
   <br/>
@@ -57,17 +57,17 @@ end-to-end process consists of:
 
 ## 1. Exploring and selecting your data feed
 
-The [API3 Market<ExternalLinkImage/>](https://market.api3.org) provides a list
-of all the dAPIs available across multiple chains including testnets. You can
-filter the list by chains and data providers. You can also search for a specific
-dAPI by name. Once selected you will land on the details page where you can find
-more information about the dAPI.
+The [API3 Market](https://market.api3.org) provides a list of all the dAPIs
+available across multiple chains including testnets. You can filter the list by
+chains and data providers. You can also search for a specific dAPI by name. Once
+selected you will land on the details page where you can find more information
+about the dAPI.
 
 ::: info Request a feed
 
 In case you cannot find the desired dAPI on the API3 Market, you can request a
 new feed using
-[<span style="color:rgb(16, 185, 129);">this form<ExternalLinkImage/></span>](https://api3dao.typeform.com/to/yT2Gt2fd)
+[<span style="color:rgb(16, 185, 129);">this form</span>](https://api3dao.typeform.com/to/yT2Gt2fd)
 which is also available on the API3 Market website.
 
 :::
