@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-adapter](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-adapter)
+[airnode-adapter](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-adapter)
 package has multiple responsibilities. It is used for building requests from an
 [Oracle Integration Specification (OIS)](/reference/ois/latest/), executing
 them, parsing the responses, but also converting and encoding them for on chain

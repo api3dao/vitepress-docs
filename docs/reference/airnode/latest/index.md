@@ -26,9 +26,9 @@ are deployed, but feel free to
 new deployment.
 
 The contract addresses listed below are sourced from the Airnode monorepo
-[airnode-protocol](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-protocol)
+[airnode-protocol](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-protocol)
 and can be found in its
-[deployments](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-protocol/deployments)
+[deployments](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-protocol/deployments)
 directory.
 
 ## AirnodeRrpV0

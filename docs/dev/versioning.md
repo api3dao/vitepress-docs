@@ -59,6 +59,9 @@ In order to advance the versioning the following actions occur:
 Update links and other version specific content. For `vx.xx`, `/latest`, and
 `/next` review the following and make the following changes where needed.
 
+> Be careful with Airnode `migration.md` pages. Older version are mentioned as
+> needed within.
+
 1. Update `themeConfig.sidebar` in `/.vitepress/config.js`
 1. Update `/.vitepress/versions.json` to reflect the latest and next versions.
 1. Update internal hyperlinks in the content. In latest use `/latest`, next use

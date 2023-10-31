@@ -262,9 +262,9 @@ See the package doc
 [airnode-abi](/reference/airnode/latest/packages/airnode-abi.md) for more
 information on how to encode and decode with Airnode ABI off-chain. Also see
 code samples in the
-[examples](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples)
+[examples](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-examples)
 package. Lastly see the file
-[request-utils.ts](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-examples/integrations/coingecko/request-utils.ts#L9)
+[request-utils.ts](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-examples/integrations/coingecko/request-utils.ts#L9)
 for example syntax on encoding parameters.
 
 <FlexEndTag/>

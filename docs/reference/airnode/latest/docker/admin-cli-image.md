@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 <!-- TODO: link [docker hub](https://hub.docker.com/r/api3/airnode-admin) once image is published -->
-<!-- TODO: link [Airnode repository](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-admin/docker) once image is published -->
+<!-- TODO: link [Airnode repository](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-admin/docker) once image is published -->
 
 Use the admin CLI image as an alternative method to execute
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) using npx. Either
@@ -29,7 +29,7 @@ CLI package each time a command is executed using npx.
 
 If you want to build the admin CLI image from the source yourself, you can find
 the
-[image built instructions](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-admin/docker)
+[image built instructions](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-admin/docker)
 in the Airnode repository.
 
 Additional information about the
