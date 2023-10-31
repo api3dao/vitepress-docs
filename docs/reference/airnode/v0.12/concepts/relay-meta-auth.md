@@ -3,7 +3,7 @@ title: Relayed Meta Data Authentication
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/relay-meta-auth.html
+path: /reference/airnode/v0.12/concepts/relay-meta-auth.html
 version: v0.12
 outline: deep
 tags:
@@ -23,7 +23,7 @@ Using the relayed meta data security schemes does not require
 blockchain-specific knowledge or blockchain interaction by an API provider and
 there are no blockchain transaction (gas) fees. Just apply the desired security
 scheme fields in the Airnode `config.json` file during deployment of an Airnode,
-see [Building an Airno/reference/airnode/latest/understand/). Then have your API
+see [Building an Airno/reference/airnode/v0.12/understand/). Then have your API
 operations check for any security scheme values you configured (typically the
 `sponsorAddress`) against your customer database.
 
@@ -66,23 +66,23 @@ requester.
 ## Security Schemes
 
 Including the `sponsorAddress` used in the
-[Simple Example](/reference/airnode/latest/concepts/relay-meta-auth.md#simple-example)
+[Simple Example](/reference/airnode/v0.12/concepts/relay-meta-auth.md#simple-example)
 above, there are five _relayed meta data security schemes_ that can be
 incorporated into any Airnode.
 
-- [relayChainId](/reference/airnode/latest/understand/api-security.md#relaychainid) -
+- [relayChainId](/reference/airnode/v0.12/understand/api-security.md#relaychainid) -
   The chain ID the request came from.
-- [relayChainType](/reference/airnode/latest/understand/api-security.md#relaychaintype) -
+- [relayChainType](/reference/airnode/v0.12/understand/api-security.md#relaychaintype) -
   The chain type the request came from.
-- [relaySponsorAddress](/reference/airnode/latest/understand/api-security.md#relaysponsoraddress) -
+- [relaySponsorAddress](/reference/airnode/v0.12/understand/api-security.md#relaysponsoraddress) -
   The sponsor's wallet address. The sponsor owns and operates one or more
   requesters.
-- [relaySponsorWalletAddress](/reference/airnode/latest/understand/api-security.md#relaysponsorwalletaddress) -
+- [relaySponsorWalletAddress](/reference/airnode/v0.12/understand/api-security.md#relaysponsorwalletaddress) -
   Other wallet addresses associated with each requester. These are owned and
   funded by a sponsor to pay on-chain gas costs.
-- [relayRequesterAddress](/reference/airnode/latest/understand/api-security.md#relayrequesteraddress) -
+- [relayRequesterAddress](/reference/airnode/v0.12/understand/api-security.md#relayrequesteraddress) -
   The on-chain address of the requester (smart contract).
-- [relayRequestId](/reference/airnode/latest/understand/api-security.md#relayrequestid) -
+- [relayRequestId](/reference/airnode/v0.12/understand/api-security.md#relayrequestid) -
   The id of the request.
 
 <FlexEndTag/>

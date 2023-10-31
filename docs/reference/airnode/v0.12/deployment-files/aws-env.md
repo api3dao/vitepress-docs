@@ -3,7 +3,7 @@ title: aws.env
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Deployment Files
-path: /reference/airnode/latest/deployment-files/aws-env.html
+path: /reference/airnode/v0.12/deployment-files/aws-env.html
 version: v0.12
 outline: deep
 tags:
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 When it is time to deploy the Airnode to AWS, the Docker
-[deployer image](/reference/airnode/latest/docker/deployer-image.md) will need
+[deployer image](/reference/airnode/v0.12/docker/deployer-image.md) will need
 the AWS credentials to build the node. Variable names cannot contain dashes (-)
 or start with a number.
 

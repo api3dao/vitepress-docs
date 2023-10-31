@@ -3,7 +3,7 @@ title: HTTP Gateways (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
-path: /reference/airnode/latest/understand/http-gateways.html
+path: /reference/airnode/v0.12/understand/http-gateways.html
 version: v0.12
 outline: deep
 tags:
@@ -146,7 +146,7 @@ endpoints are not openly accessible. Therefore, the gateway URLs should be kept
 secret.
 
 The gateway URLs are also available as part of the payload sent from Airnode's
-[heartbeat](/reference/airnode/latest/understand/heartbeat.md) to a specified
+[heartbeat](/reference/airnode/v0.12/understand/heartbeat.md) to a specified
 heartbeat URL.
 
 ### When deployed on a cloud provider
@@ -154,7 +154,7 @@ heartbeat URL.
 A gateway URL is generated for each gateway (when enabled) when Airnode is
 deployed. The URL including, the secret `UUID` path parameter, is displayed on
 the terminal at the end of an Airnode deployment using the
-[Docker image](/reference/airnode/latest/docker/deployer-image.md).
+[Docker image](/reference/airnode/v0.12/docker/deployer-image.md).
 
 ### When using Airnode client
 
@@ -163,7 +163,7 @@ is a common web server for both gateways, which is exposed on the host machine.
 Doing so will make the gateways API accessible like a regular web server running
 on the machine. Each gateway has a separate endpoint as shown below. Note the
 `PORT` which is exposed as part of the Airnode client container. See the
-[Airnode client usage](/reference/airnode/latest/docker/client-image.md#usage)
+[Airnode client usage](/reference/airnode/v0.12/docker/client-image.md#usage)
 for more details.
 
 - `http://localhost:<PORT>/http-data/01234567-abcd-abcd-abcd-012345678abc/<endpointId>` -
@@ -195,13 +195,13 @@ required as part of the CURL call.
 
 \* Parameters for the gateways are named differently. The HTTP signed data
 gateway requires that the `encodedParameters` be encoded using
-[Airnode ABI](/reference/airnode/latest/specifications/airnode-abi.md).
+[Airnode ABI](/reference/airnode/v0.12/specifications/airnode-abi.md).
 
 ### Request
 
 Replace `<gatewayUrl>` in the examples below with the URL displayed in the
 terminal at the end of an Airnode deployment using a
-[Docker image](/reference/airnode/latest/docker/).
+[Docker image](/reference/airnode/v0.12/docker/).
 
 ::: code-group
 
@@ -236,7 +236,7 @@ curl \
 
 rawValue: the API response
 encodedValue: the encoded bytes value that is sent as payload in the response transaction on chain
-values: an array of values after they are [extracted and converted](/reference/airnode/latest/packages/adapter.md#conversion) to the target type
+values: an array of values after they are [extracted and converted](/reference/airnode/v0.12/packages/adapter.md#conversion) to the target type
 
 ```
 

@@ -3,7 +3,7 @@ title: Requester
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/requester.html
+path: /reference/airnode/v0.12/concepts/requester.html
 version: v0.12
 outline: deep
 tags:
@@ -21,12 +21,12 @@ tags:
 
 A requester is a contract that makes Airnode requests. While making a request,
 the requester refers to a
-[sponsor](/reference/airnode/latest/concepts/sponsor.md) by its
-[sponsorAddress](/reference/airnode/latest/concepts/sponsor.md#sponsoraddress),
+[sponsor](/reference/airnode/v0.12/concepts/sponsor.md) by its
+[sponsorAddress](/reference/airnode/v0.12/concepts/sponsor.md#sponsoraddress),
 which means "fulfill my request with the
-[sponsor wallet](/reference/airnode/latest/concepts/sponsor.md#sponsorwallet) of
+[sponsor wallet](/reference/airnode/v0.12/concepts/sponsor.md#sponsorwallet) of
 the sponsor identified by `sponsorAddress`. Doing so requires the requester to
-be [sponsored](/reference/airnode/latest/concepts/sponsor.md) by the said
+be [sponsored](/reference/airnode/v0.12/concepts/sponsor.md) by the said
 sponsor.
 
 Note that the requester is the contract that makes the request. The requester

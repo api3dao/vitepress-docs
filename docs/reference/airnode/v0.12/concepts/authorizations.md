@@ -3,7 +3,7 @@ title: Authorizations
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/authorizations.html
+path: /reference/airnode/v0.12/concepts/authorizations.html
 version: v0.12
 outline: deep
 tags:
@@ -25,7 +25,7 @@ Airnode, its `config.json` file. These values are endpointId/address pairs that
 Airnode uses to allow access to its endpoints by requesters (smart contracts).
 Blockchain experience is not needed to use authorizations as Airnode performs
 these validations internally (off-chain). Nothing in
-[Authorizers](/reference/airnode/latest/concepts/authorizers.md) can supersede
+[Authorizers](/reference/airnode/v0.12/concepts/authorizers.md) can supersede
 permissions granted by _authorizations_ as the latter takes precedence.
 
 The diagram below illustrates how Airnode utilizes authorizations.
@@ -38,9 +38,9 @@ The diagram below illustrates how Airnode utilizes authorizations.
 ## Are authorizations required?
 
 Authorizations are not required. An Airnode operator could use
-[Authorizers](/reference/airnode/latest/concepts/authorizers.md) or
-[Relayed Meta Data](/reference/airnode/latest/concepts/relay-meta-auth.md). It
-is possible to use both authorizers and relay security schemes together.
+[Authorizers](/reference/airnode/v0.12/concepts/authorizers.md) or
+[Relayed Meta Data](/reference/airnode/v0.12/concepts/relay-meta-auth.md). It is
+possible to use both authorizers and relay security schemes together.
 
 ## Why is an authorizations scheme needed?
 
@@ -59,7 +59,7 @@ functionality cannot be considered as permissionless, and will not be able to
 achieve wide-spread adoption.
 
 Currently there is only one authorization scheme type, see
-[requesterEndpointAuthorizations](https://github.com/api3dao/airnode/blob/master/packages/airnode-validator/src/config/config.ts#L162).
+[requesterEndpointAuthorizations](https://github.com/api3dao/airnode/blob/v0.13.0/packages/airnode-validator/src/config/config.ts#L162).
 The authorizations scheme type is set in
 `chains[n].authorizations.{<authorizationsSchemeType>}` of `config.json`.
 
@@ -99,10 +99,10 @@ requester addresses that can access them.
 Other docs related to authorizations and relayed meta data:
 
 - Reference ➙ Deployment Files ➙
-  [config.json](/reference/airnode/latest/deployment-files/config-json.md)
+  [config.json](/reference/airnode/v0.12/deployment-files/config-json.md)
 - API Providers ➙ Build an Airnode ➙
-  [Using Authorizations](/reference/airnode/latest/understand/using-authorizations.md)
+  [Using Authorizations](/reference/airnode/v0.12/understand/using-authorizations.md)
 - API Providers ➙ Build an Airnode ➙ API Security ➙
-  [Relayed Meta Data Security Schemes](/reference/airnode/latest/understand/api-security.md#relayed-meta-data-security-schemes)
+  [Relayed Meta Data Security Schemes](/reference/airnode/v0.12/understand/api-security.md#relayed-meta-data-security-schemes)
 
 <FlexEndTag/>

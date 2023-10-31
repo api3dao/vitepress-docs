@@ -3,7 +3,7 @@ title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12
-path: /reference/airnode/latest/versions.html
+path: /reference/airnode/v0.12/versions.html
 version: v0.12
 outline: deep
 tags:
@@ -24,10 +24,10 @@ The latest version of Airnode is `v0.12.x`. See
 all Airnode versions. Below is a list of Airnode versions included in this
 documentation website.
 
-|                                                  |
-| ------------------------------------------------ |
-| v0.12.x                                          |
-| [v0.11.x](/reference/airnode/latest/versions.md) |
+|                                                 |
+| ----------------------------------------------- |
+| v0.12.x                                         |
+| [v0.11.x](/reference/airnode/v0.12/versions.md) |
 
 ## Other Versions
 

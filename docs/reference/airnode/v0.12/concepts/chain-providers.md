@@ -3,7 +3,7 @@ title: Chain Providers
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/chain-providers.html
+path: /reference/airnode/v0.12/concepts/chain-providers.html
 version: v0.12
 outline: deep
 tags:

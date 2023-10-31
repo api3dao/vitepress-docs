@@ -3,7 +3,7 @@ title: Admin CLI Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Docker Images
-path: /reference/airnode/latest/docker/admin-cli-image.html
+path: /reference/airnode/v0.12/docker/admin-cli-image.html
 version: v0.12
 outline: deep
 tags:
@@ -23,7 +23,7 @@ tags:
 <!-- TODO: link [Airnode repository](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-admin/docker) once image is published -->
 
 Use the admin CLI image as an alternative method to execute
-[Admin CLI](/reference/airnode/latest/packages/admin-cli.md) using npx. Either
+[Admin CLI](/reference/airnode/v0.12/packages/admin-cli.md) using npx. Either
 method will achieve the same results. The image forgoes downloading the admin
 CLI package each time a command is executed using npx.
 
@@ -33,7 +33,7 @@ the
 in the Airnode repository.
 
 Additional information about the
-[admin CLI image](/reference/airnode/latest/packages/admin-cli.md#using-docker)
+[admin CLI image](/reference/airnode/v0.12/packages/admin-cli.md#using-docker)
 is available in the admin CLI commands doc.
 
 ## Usage

@@ -5,47 +5,47 @@ module.exports = [
     items: [
       {
         text: 'Overview',
-        link: '/reference/airnode/latest/understand/',
+        link: '/reference/airnode/v0.12/understand/',
       },
       {
         text: 'Configuring Airnode',
-        link: '/reference/airnode/latest/understand/configuring',
+        link: '/reference/airnode/v0.12/understand/configuring',
       },
       {
         text: 'API Integration',
-        link: '/reference/airnode/latest/understand/api-integration',
+        link: '/reference/airnode/v0.12/understand/api-integration',
       },
       {
         text: 'API Security',
-        link: '/reference/airnode/latest/understand/api-security',
+        link: '/reference/airnode/v0.12/understand/api-security',
       },
       {
         text: 'Using Authorizers',
-        link: '/reference/airnode/latest/understand/apply-auth',
+        link: '/reference/airnode/v0.12/understand/apply-auth',
       },
       {
         text: 'Using Authorizations',
-        link: '/reference/airnode/latest/understand/using-authorizations',
+        link: '/reference/airnode/v0.12/understand/using-authorizations',
       },
       {
         text: 'Heartbeat',
-        link: '/reference/airnode/latest/understand/heartbeat',
+        link: '/reference/airnode/v0.12/understand/heartbeat',
       },
       {
         text: 'HTTP Gateways',
-        link: '/reference/airnode/latest/understand/http-gateways',
+        link: '/reference/airnode/v0.12/understand/http-gateways',
       },
       {
         text: 'OEV Gateway',
-        link: '/reference/airnode/latest/understand/oev-gateway',
+        link: '/reference/airnode/v0.12/understand/oev-gateway',
       },
       {
         text: 'Deploying Airnode',
-        link: '/reference/airnode/latest/understand/deploying',
+        link: '/reference/airnode/v0.12/understand/deploying',
       },
       {
         text: 'Monitoring Airnode',
-        link: '/reference/airnode/latest/understand/monitor',
+        link: '/reference/airnode/v0.12/understand/monitor',
       },
     ],
   },
@@ -53,19 +53,19 @@ module.exports = [
     text: 'Airnode for dApp Developers',
     collapsed: false,
     items: [
-      { text: 'Airnode RRP', link: '/reference/airnode/latest/developers/' },
+      { text: 'Airnode RRP', link: '/reference/airnode/v0.12/developers/' },
       {
         text: 'Requesters and Sponsors',
-        link: '/reference/airnode/latest/developers/requesters-sponsors',
+        link: '/reference/airnode/v0.12/developers/requesters-sponsors',
       },
       {
         text: 'Using Templates (RRP)',
-        link: '/reference/airnode/latest/developers/using-templates',
+        link: '/reference/airnode/v0.12/developers/using-templates',
       },
-      { text: 'Fees', link: '/reference/airnode/latest/developers/fees' },
+      { text: 'Fees', link: '/reference/airnode/v0.12/developers/fees' },
       {
         text: 'Verify Airnode Addresses',
-        link: '/reference/airnode/latest/developers/verify-airnode-addresses',
+        link: '/reference/airnode/v0.12/developers/verify-airnode-addresses',
       },
     ],
   },
@@ -75,20 +75,20 @@ module.exports = [
     items: [
       {
         text: 'Contract Addresses',
-        link: '/reference/airnode/latest/',
+        link: '/reference/airnode/v0.12/',
       },
-      { text: 'Versions', link: '/reference/airnode/latest/versions' },
+      { text: 'Versions', link: '/reference/airnode/v0.12/versions' },
       {
         text: 'Cloud Resources',
-        link: '/reference/airnode/latest/cloud-resources',
+        link: '/reference/airnode/v0.12/cloud-resources',
       },
       {
         text: 'Chain Idiosyncrasies',
-        link: '/reference/airnode/latest/chain-idiosyncrasies',
+        link: '/reference/airnode/v0.12/chain-idiosyncrasies',
       },
       {
         text: 'Migration Guide',
-        link: '/reference/airnode/latest/migration',
+        link: '/reference/airnode/v0.12/migration',
       },
     ],
   },
@@ -98,56 +98,56 @@ module.exports = [
     items: [
       {
         text: 'Request-Response Protocol',
-        link: '/reference/airnode/latest/concepts/',
+        link: '/reference/airnode/v0.12/concepts/',
       },
       {
         text: 'Airnode',
-        link: '/reference/airnode/latest/concepts/airnode',
+        link: '/reference/airnode/v0.12/concepts/airnode',
       },
       {
         text: 'Endpoint',
-        link: '/reference/airnode/latest/concepts/endpoint',
+        link: '/reference/airnode/v0.12/concepts/endpoint',
       },
       {
         text: 'Authorizers',
-        link: '/reference/airnode/latest/concepts/authorizers',
+        link: '/reference/airnode/v0.12/concepts/authorizers',
       },
       {
         text: 'Authorizations',
-        link: '/reference/airnode/latest/concepts/authorizations',
+        link: '/reference/airnode/v0.12/concepts/authorizations',
       },
       {
         text: 'Airnode Authentication',
-        link: '/reference/airnode/latest/concepts/airnode-auth',
+        link: '/reference/airnode/v0.12/concepts/airnode-auth',
       },
       {
         text: 'Relayed Meta Data Authentication',
-        link: '/reference/airnode/latest/concepts/relay-meta-auth',
+        link: '/reference/airnode/v0.12/concepts/relay-meta-auth',
       },
       {
         text: 'Requester',
-        link: '/reference/airnode/latest/concepts/requester',
+        link: '/reference/airnode/v0.12/concepts/requester',
       },
       {
         text: 'Sponsor',
-        link: '/reference/airnode/latest/concepts/sponsor',
+        link: '/reference/airnode/v0.12/concepts/sponsor',
       },
 
       {
         text: 'Template',
-        link: '/reference/airnode/latest/concepts/template',
+        link: '/reference/airnode/v0.12/concepts/template',
       },
       {
         text: 'Request',
-        link: '/reference/airnode/latest/concepts/request',
+        link: '/reference/airnode/v0.12/concepts/request',
       },
       {
         text: 'Chain Providers',
-        link: '/reference/airnode/latest/concepts/chain-providers',
+        link: '/reference/airnode/v0.12/concepts/chain-providers',
       },
       {
         text: 'Gas Price Strategies',
-        link: '/reference/airnode/latest/concepts/gas-prices',
+        link: '/reference/airnode/v0.12/concepts/gas-prices',
       },
     ],
   },
@@ -157,19 +157,19 @@ module.exports = [
     items: [
       {
         text: 'Overview',
-        link: '/reference/airnode/latest/docker/',
+        link: '/reference/airnode/v0.12/docker/',
       },
       {
         text: 'AWS/GCP Deployer Image',
-        link: '/reference/airnode/latest/docker/deployer-image',
+        link: '/reference/airnode/v0.12/docker/deployer-image',
       },
       {
         text: 'Client Image',
-        link: '/reference/airnode/latest/docker/client-image',
+        link: '/reference/airnode/v0.12/docker/client-image',
       },
       {
         text: 'Admin CLI Image',
-        link: '/reference/airnode/latest/docker/admin-cli-image',
+        link: '/reference/airnode/v0.12/docker/admin-cli-image',
       },
     ],
   },
@@ -177,38 +177,38 @@ module.exports = [
     text: 'Deployment Files',
     collapsed: false,
     items: [
-      { text: 'Overview', link: '/reference/airnode/latest/deployment-files/' },
+      { text: 'Overview', link: '/reference/airnode/v0.12/deployment-files/' },
 
       {
         text: 'config.json',
-        link: '/reference/airnode/latest/deployment-files/config-json',
+        link: '/reference/airnode/v0.12/deployment-files/config-json',
       },
       {
         text: 'secrets.env',
-        link: '/reference/airnode/latest/deployment-files/secrets-env',
+        link: '/reference/airnode/v0.12/deployment-files/secrets-env',
       },
       {
         text: 'aws.env',
-        link: '/reference/airnode/latest/deployment-files/aws-env',
+        link: '/reference/airnode/v0.12/deployment-files/aws-env',
       },
       {
         text: 'receipt.json',
-        link: '/reference/airnode/latest/deployment-files/receipt-json',
+        link: '/reference/airnode/v0.12/deployment-files/receipt-json',
       },
       {
         text: 'Examples',
         items: [
           {
             text: 'config.json',
-            link: '/reference/airnode/latest/deployment-files/examples/config-json',
+            link: '/reference/airnode/v0.12/deployment-files/examples/config-json',
           },
           {
             text: 'secrets.env',
-            link: '/reference/airnode/latest/deployment-files/examples/secrets-env',
+            link: '/reference/airnode/v0.12/deployment-files/examples/secrets-env',
           },
           {
             text: 'aws.env',
-            link: '/reference/airnode/latest/deployment-files/examples/aws-env',
+            link: '/reference/airnode/v0.12/deployment-files/examples/aws-env',
           },
         ],
       },
@@ -217,19 +217,19 @@ module.exports = [
         items: [
           {
             text: 'OIS Object',
-            link: '/reference/airnode/latest/deployment-files/templates/ois-json',
+            link: '/reference/airnode/v0.12/deployment-files/templates/ois-json',
           },
           {
             text: 'config.json',
-            link: '/reference/airnode/latest/deployment-files/templates/config-json',
+            link: '/reference/airnode/v0.12/deployment-files/templates/config-json',
           },
           {
             text: 'secrets.env',
-            link: '/reference/airnode/latest/deployment-files/templates/secrets-env',
+            link: '/reference/airnode/v0.12/deployment-files/templates/secrets-env',
           },
           {
             text: 'aws.env',
-            link: '/reference/airnode/latest/deployment-files/templates/aws-env',
+            link: '/reference/airnode/v0.12/deployment-files/templates/aws-env',
           },
         ],
       },
@@ -241,15 +241,15 @@ module.exports = [
     items: [
       {
         text: 'Oracle Integration (OIS)',
-        link: '/reference/airnode/latest/specifications/ois',
+        link: '/reference/airnode/v0.12/specifications/ois',
       },
       {
         text: 'Airnode ABI',
-        link: '/reference/airnode/latest/specifications/airnode-abi',
+        link: '/reference/airnode/v0.12/specifications/airnode-abi',
       },
       {
         text: 'Reserved Parameters',
-        link: '/reference/airnode/latest/specifications/reserved-parameters',
+        link: '/reference/airnode/v0.12/specifications/reserved-parameters',
       },
     ],
   },
@@ -257,20 +257,20 @@ module.exports = [
     text: 'Packages',
     collapsed: true,
     items: [
-      { text: 'Overview', link: '/reference/airnode/latest/packages/' },
-      { text: 'Adapter', link: '/reference/airnode/latest/packages/adapter' },
+      { text: 'Overview', link: '/reference/airnode/v0.12/packages/' },
+      { text: 'Adapter', link: '/reference/airnode/v0.12/packages/adapter' },
       {
         text: 'Airnode ABI',
-        link: '/reference/airnode/latest/packages/airnode-abi',
+        link: '/reference/airnode/v0.12/packages/airnode-abi',
       },
       {
         text: 'Admin CLI',
-        link: '/reference/airnode/latest/packages/admin-cli',
+        link: '/reference/airnode/v0.12/packages/admin-cli',
       },
-      { text: 'Deployer', link: '/reference/airnode/latest/packages/deployer' },
+      { text: 'Deployer', link: '/reference/airnode/v0.12/packages/deployer' },
       {
         text: 'Validator',
-        link: '/reference/airnode/latest/packages/validator',
+        link: '/reference/airnode/v0.12/packages/validator',
       },
     ],
   },

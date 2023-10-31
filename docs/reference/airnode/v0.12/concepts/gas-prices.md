@@ -3,7 +3,7 @@ title: Gas Price Strategies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/gas-prices.html
+path: /reference/airnode/v0.12/concepts/gas-prices.html
 version: v0.12
 outline: deep
 tags:
@@ -25,11 +25,11 @@ the `chains.options.gasPriceOracle` field.
 
 The supported strategies include:
 
-- [latestBlockPercentileGasPrice](/reference/airnode/latest/concepts/gas-prices.md#latestblockpercentilegasprice)
-- [providerRecommendedGasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedgasprice)
-- [sanitizedProviderRecommendedGasPrice](/reference/airnode/latest/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
-- [providerRecommendedEip1559GasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
-- [constantGasPrice](/reference/airnode/latest/concepts/gas-prices.md#constantgasprice)
+- [latestBlockPercentileGasPrice](/reference/airnode/v0.12/concepts/gas-prices.md#latestblockpercentilegasprice)
+- [providerRecommendedGasPrice](/reference/airnode/v0.12/concepts/gas-prices.md#providerrecommendedgasprice)
+- [sanitizedProviderRecommendedGasPrice](/reference/airnode/v0.12/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
+- [providerRecommendedEip1559GasPrice](/reference/airnode/v0.12/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
+- [constantGasPrice](/reference/airnode/v0.12/concepts/gas-prices.md#constantgasprice)
 
 Below are examples of each strategy.
 

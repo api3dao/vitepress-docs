@@ -3,7 +3,7 @@ title: Migration Guide
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12
-path: /reference/airnode/latest/migration.html
+path: /reference/airnode/v0.12/migration.html
 version: v0.12
 outline: deep
 tags:
@@ -66,7 +66,7 @@ Updated to "0.12.0"
 
 - Data from the HTTP Gateway is returned from successful API calls that fail
   response processing in order to assist with debugging. For an example, see the
-  [HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
+  [HTTP Gateways](/reference/airnode/v0.12/understand/http-gateways.md#http-gateway)
   page.
 
 - In all pre-processing and post-processing steps, parameters are now immutably
@@ -95,18 +95,18 @@ Updated to "0.12.0"
 
 - A new gas strategy, `sanitizedProviderRecommendedGasPrice`, has been added.
   See the
-  [gas price documentation](/reference/airnode/latest/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
+  [gas price documentation](/reference/airnode/v0.12/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
   for more details.
 
 - Gas can now be automatically estimated for RRP fulfillments on supported
   chains by excluding `chains[n].options.fulfillmentGasLimit` from
   `config.json`. For more details see the
-  [corresponding documentation](/reference/airnode/latest/deployment-files/config-json.md#options-fulfillmentgaslimit).
+  [corresponding documentation](/reference/airnode/v0.12/deployment-files/config-json.md#options-fulfillmentgaslimit).
 
 - `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract addresses are now
   optional if there is an API3 deployment for that contract on the specified
   chain. A table of such deployments can be found on the
-  [Contract Addresses](/reference/airnode/latest/index.md) page. The following
+  [Contract Addresses](/reference/airnode/v0.12/index.md) page. The following
   illustrates how the addresses can be omitted. First, within the `chains[n]`
   object:
 

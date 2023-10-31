@@ -3,7 +3,7 @@ title: Monitor Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
-path: /reference/airnode/latest/understand/monitor.html
+path: /reference/airnode/v0.12/understand/monitor.html
 version: v0.12
 outline: deep
 tags:
@@ -29,11 +29,11 @@ or request types and the logs they contain are as follows:
   fetching
 - `run`: Logs of API calls and withdrawals originating from blockchain requests
 - `httpReq`: Logs for
-  [HTTP gateway requests](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
+  [HTTP gateway requests](/reference/airnode/v0.12/understand/http-gateways.md#http-gateway)
 - `httpSignedReq`: Logs for
-  [HTTP signed data gateway requests](/reference/airnode/latest/understand/http-gateways.md)
+  [HTTP signed data gateway requests](/reference/airnode/v0.12/understand/http-gateways.md)
 - `signOevReq`: Logs for
-  [OEV gateway requests](/reference/airnode/latest/understand/oev-gateway.md)
+  [OEV gateway requests](/reference/airnode/v0.12/understand/oev-gateway.md)
 
 ### AWS
 
@@ -55,7 +55,7 @@ Name" in order to view a specific request type or Airnode cycle stage.
 Running the `airnode-client` Docker image will output container logs to the
 command line. These logs are also available through the Docker interface e.g.
 under Containers within Docker Desktop. See the Docker
-[client image](/reference/airnode/latest/docker/client-image.md) for more
+[client image](/reference/airnode/v0.12/docker/client-image.md) for more
 information.
 
 <FlexEndTag/>

@@ -3,7 +3,7 @@ title: Contract Addresses
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.12
-path: /reference/airnode/latest/index.html
+path: /reference/airnode/v0.12/index.html
 version: v0.12
 outline: deep
 tags:
