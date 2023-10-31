@@ -69,7 +69,7 @@ export default {
     sidebar: {
       '/explore/': require('../explore/sidebar.js'),
       '/guides/': require('../guides/sidebar.js'),
-      //'/reference/airnode/next/': require('../reference/airnode/next/sidebar.js'),
+      '/reference/airnode/next/': require('../reference/airnode/next/sidebar.js'),
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/airnode/v0.12/': require('../reference/airnode/v0.12/sidebar.js'),
       '/reference/airnode/v0.11/': require('../reference/airnode/v0.11/sidebar.js'),
