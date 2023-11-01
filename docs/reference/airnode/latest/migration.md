@@ -2,7 +2,7 @@
 title: Migration Guide
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13
+pageHeader: Reference → Airnode → v0.13 → Deployment References
 path: /reference/airnode/latest/migration.html
 version: v0.13
 outline: deep

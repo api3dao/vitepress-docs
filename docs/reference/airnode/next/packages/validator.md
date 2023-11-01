@@ -2,9 +2,9 @@
 title: Validator
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Packages
-path: /reference/airnode/latest/packages/validator.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Packages
+path: /reference/airnode/next/packages/validator.html
+version: v0.14
 outline: deep
 tags:
 ---

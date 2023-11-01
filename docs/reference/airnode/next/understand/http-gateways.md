@@ -2,9 +2,9 @@
 title: HTTP Gateways (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
-path: /reference/airnode/latest/understand/http-gateways.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Understanding Airnode
+path: /reference/airnode/next/understand/http-gateways.html
+version: v0.14
 outline: deep
 tags:
 ---

@@ -2,9 +2,9 @@
 title: Admin CLI Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Docker Images
-path: /reference/airnode/latest/docker/admin-cli-image.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Docker Images
+path: /reference/airnode/next/docker/admin-cli-image.html
+version: v0.14
 outline: deep
 tags:
 ---

@@ -2,9 +2,9 @@
 title: Deployer
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Packages
-path: /reference/airnode/latest/packages/deployer.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Packages
+path: /reference/airnode/next/packages/deployer.html
+version: v0.14
 outline: deep
 tags:
 ---

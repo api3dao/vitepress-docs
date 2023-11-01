@@ -2,9 +2,9 @@
 title: Gas Price Strategies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/gas-prices.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Concepts and Definitions
+path: /reference/airnode/next/concepts/gas-prices.html
+version: v0.14
 outline: deep
 tags:
 ---

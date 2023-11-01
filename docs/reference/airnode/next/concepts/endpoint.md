@@ -2,9 +2,9 @@
 title: Endpoint
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
-path: /reference/airnode/latest/concepts/endpoint.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Concepts and Definitions
+path: /reference/airnode/next/concepts/endpoint.html
+version: v0.14
 outline: deep
 tags:
 ---

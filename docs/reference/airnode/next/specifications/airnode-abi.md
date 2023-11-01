@@ -2,9 +2,9 @@
 title: Airnode ABI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Specifications
-path: /reference/airnode/latest/specifications/airnode-abi.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Specifications
+path: /reference/airnode/next/specifications/airnode-abi.html
+version: v0.14
 outline: deep
 tags:
 ---

@@ -2,9 +2,9 @@
 title: Using Templates (RRP)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Airnode for dApp Developers
-path: /reference/airnode/latest/developers/using-templates.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Airnode for dApp Developers
+path: /reference/airnode/next/developers/using-templates.html
+version: v0.14
 outline: deep
 tags:
 ---

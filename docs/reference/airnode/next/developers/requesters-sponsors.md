@@ -2,9 +2,9 @@
 title: Requesters and Sponsors
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Airnode for dApp Developers
-path: /reference/airnode/latest/developers/requesters-sponsors.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Airnode for dApp Developers
+path: /reference/airnode/next/developers/requesters-sponsors.html
+version: v0.14
 outline: deep
 tags:
 ---

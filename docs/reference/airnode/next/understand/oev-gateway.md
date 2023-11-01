@@ -2,9 +2,9 @@
 title: OEV Gateway (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
-path: /reference/airnode/latest/understand/oev-gateway.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Understanding Airnode
+path: /reference/airnode/next/understand/oev-gateway.html
+version: v0.14
 outline: deep
 tags:
 ---

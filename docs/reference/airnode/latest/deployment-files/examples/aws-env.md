@@ -3,7 +3,7 @@ title: aws.env
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
 pageHeader: Reference → Airnode → v0.13 → Deployment Files → Examples
-basepath: /reference/airnode/latest/deployment-files/examples/
+path: /reference/airnode/latest/deployment-files/examples/
 outline: deep
 tags:
 ---

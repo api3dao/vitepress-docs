@@ -2,9 +2,9 @@
 title: Chain Idiosyncrasies
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13
-path: /reference/airnode/latest/chain-idiosyncrasies.html
-version: v0.13
+pageHeader: Reference → Airnode → v0.14 → Deployment References
+path: /reference/airnode/next/chain-idiosyncrasies.html
+version: v0.14
 outline: deep
 tags:
 ---
