@@ -3,24 +3,24 @@ module.exports = [
     text: '',
     collapsable: false,
     items: [
-      { text: 'Understanding OIS', link: '/reference/ois/latest/' },
-      { text: 'Versions', link: '/reference/ois/latest/versions' },
-      { text: 'Specification', link: '/reference/ois/latest/specification' },
+      { text: 'Understanding OIS', link: '/reference/ois/next/' },
+      { text: 'Versions', link: '/reference/ois/next/versions' },
+      { text: 'Specification', link: '/reference/ois/next/specification' },
       {
         text: 'Reserved Parameter',
-        link: '/reference/ois/latest/reserved-parameters',
+        link: '/reference/ois/next/reserved-parameters',
       },
       {
         text: 'Pre/Post Processing',
-        link: '/reference/ois/latest/processing',
+        link: '/reference/ois/next/processing',
       },
       {
         text: 'Example OIS Object',
-        link: '/reference/ois/latest/example',
+        link: '/reference/ois/next/example',
       },
       {
         text: 'OIS Template',
-        link: '/reference/ois/latest/template',
+        link: '/reference/ois/next/template',
       },
     ],
   },

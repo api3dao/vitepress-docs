@@ -79,6 +79,6 @@ The `airnode-ois` monorepo package was removed from the Airnode repo and is now
 in its own repo (`ois`) starting with Airnode `v0.8`.
 
 - [ois:](https://github.com/api3dao/ois/tree/v2.0.0) Types for
-  [Oracle Integration Specification (OIS)](/reference/ois/latest/specification.md).
+  [Oracle Integration Specification (OIS)](/reference/ois/next/specification.md).
 
 <FlexEndTag/>
