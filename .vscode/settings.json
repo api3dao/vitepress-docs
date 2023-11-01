@@ -71,7 +71,7 @@
     "decentrally",
     "upgradability",
     "IPFS",
-    "Fleek"
+    "Fleek","whitespaces"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
