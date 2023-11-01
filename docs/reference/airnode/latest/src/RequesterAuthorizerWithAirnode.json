@@ -112,6 +112,13 @@
     "contractAddress": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
   },
   {
+    "id": "1101",
+    "fullname": "Polygon zkEVM",
+    "alias": "polygon-zkevm",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
     "id": "1284",
     "fullname": "Moonbeam",
     "alias": "moonbeam",
@@ -133,6 +140,13 @@
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
   {
+    "id": "1442",
+    "fullname": "Polygon zkEVM testnet",
+    "alias": "polygon-zkevm-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
@@ -143,6 +157,27 @@
     "id": "4002",
     "fullname": "Fantom testnet",
     "alias": "fantom-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "5000",
+    "fullname": "Mantle",
+    "alias": "mantle",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "5001",
+    "fullname": "Mantle Goerli testnet",
+    "alias": "mantle-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
+  },
+  {
+    "id": "8453",
+    "fullname": "Base",
+    "alias": "base",
     "contractName": "RequesterAuthorizerWithAirnode",
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
@@ -196,6 +231,20 @@
     "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
   },
   {
+    "id": "59140",
+    "fullname": "Linea Goerli testnet",
+    "alias": "linea-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "59144",
+    "fullname": "Linea",
+    "alias": "linea",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
     "id": "71401",
     "fullname": "Godwoken testnet",
     "alias": "godwoken-testnet",
@@ -213,6 +262,13 @@
     "id": "80001",
     "fullname": "Polygon testnet",
     "alias": "polygon-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "84531",
+    "fullname": "Base Goerli testnet",
+    "alias": "base-goerli-testnet",
     "contractName": "RequesterAuthorizerWithAirnode",
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
