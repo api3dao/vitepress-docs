@@ -3,6 +3,11 @@
   "airnodeLatest": "v0.13",
   "versionsAirnode": [
     {
+      "version": "v0.14",
+      "alias": "next",
+      "path": "/reference/airnode/next/"
+    },
+    {
       "version": "v0.13",
       "alias": "latest",
       "path": "/reference/airnode/latest/"
@@ -21,6 +26,11 @@
   "oisNext": "v2.3",
   "oisLatest": "v2.2",
   "versionsOIS": [
+    {
+      "version": "v2.3",
+      "alias": "next",
+      "path": "/reference/ois/next/"
+    },
     {
       "version": "v2.2",
       "alias": "latest",
