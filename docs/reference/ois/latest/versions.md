@@ -3,7 +3,7 @@ title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.2
-path: /reference/ois/next/versions.html
+path: /reference/ois/latest/versions.html
 version: v2.2
 outline: deep
 tags:

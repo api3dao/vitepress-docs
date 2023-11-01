@@ -3,7 +3,7 @@ title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.2
-path: /reference/ois/next/specification.html
+path: /reference/ois/latest/specification.html
 version: v2.2
 outline: deep
 tags:
@@ -34,7 +34,7 @@ object is in these docs.
 
 For an overview that explains how Airnode maps its endpoints to API provider
 operations, see
-[API integration](/reference/airnode/next/understand/api-integration.md). Also
+[API integration](/reference/airnode/latest/understand/api-integration.md). Also
 see the medium article
 [Setting Oracle Integration Standards](https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e)
 for an overview of OIS.
@@ -52,11 +52,11 @@ for an overview of OIS.
 
 An OIS has five root fields (keys).
 
-1. [oisFormat](/reference/ois/next/specification.md#_1-oisformat)
-1. [title](/reference/ois/next/specification.md#_2-title)
-1. [version](/reference/ois/next/specification.md#_3-version)
-1. [apiSpecifications](/reference/ois/next/specification.md#_4-apispecifications)
-1. [endpoints](/reference/ois/next/specification.md#_5-endpoints)
+1. [oisFormat](/reference/ois/latest/specification.md#_1-oisformat)
+1. [title](/reference/ois/latest/specification.md#_2-title)
+1. [version](/reference/ois/latest/specification.md#_3-version)
+1. [apiSpecifications](/reference/ois/latest/specification.md#_4-apispecifications)
+1. [endpoints](/reference/ois/latest/specification.md#_5-endpoints)
 
 `apiSpecifications` describe the API's operations which are mapped to the
 `endpoints` that Airnode exposes on-chain.
@@ -78,8 +78,8 @@ An OIS has five root fields (keys).
 ## 1. `oisFormat`
 
 (Required) The OIS format version followed while generating the specifications.
-See [Versions](/reference/ois/next/versions) for a list of OIS versions used by
-each Airnode version.
+See [Versions](/reference/ois/latest/versions) for a list of OIS versions used
+by each Airnode version.
 
 ## 2. `title`
 
@@ -97,10 +97,10 @@ the `oisFormat` version which defines an OIS formatting version.
 
 (Required) An object specifying the API with the following root level fields:
 
-- 4.1. [servers](/reference/ois/next/specification.md#_4-1-servers)
-- 4.2. [paths](/reference/ois/next/specification.md#_4-2-paths)
-- 4.3. [components](/reference/ois/next/specification.md#_4-3-components)
-- 4.4. [security](/reference/ois/next/specification.md#_4-4-security)
+- 4.1. [servers](/reference/ois/latest/specification.md#_4-1-servers)
+- 4.2. [paths](/reference/ois/latest/specification.md#_4-2-paths)
+- 4.3. [components](/reference/ois/latest/specification.md#_4-3-components)
+- 4.4. [security](/reference/ois/latest/specification.md#_4-4-security)
 
 ```json
 // apiSpecifications
@@ -178,7 +178,7 @@ the non-nested application/json content-type is supported.</p>
 ### 4.3. `components`
 
 (Required) An object where
-[security schemes](/reference/airnode/next/understand/api-security.md) can be
+[security schemes](/reference/airnode/latest/understand/api-security.md) can be
 found under `securitySchemes.{securitySchemeName}` with the following elements:
 
 - `type`
@@ -245,9 +245,9 @@ Allowed values: (`basic` and `bearer`).
 Applies to all operations. A security scheme can contain information required by
 the API to authenticate Airnode as well as information about the requester
 (relay information) the API may also require. Read more about security schemes
-in the [API Security](/reference/airnode/next/understand/api-security.md)
+in the [API Security](/reference/airnode/latest/understand/api-security.md)
 section of the _Build an Airnode_ guide and the
-[Airnode Authentication](/reference/airnode/next/concepts/airnode-auth.md)
+[Airnode Authentication](/reference/airnode/latest/concepts/airnode-auth.md)
 section of _Concepts and Definitions_.
 
 The `security` object maintains the names of all the security schemes used. Each
@@ -313,20 +313,21 @@ node.
 
 :::
 
-- 5.1. [name](/reference/ois/next/specification.md#_5-1-name)
-- 5.2. [operation](/reference/ois/next/specification.md#_5-2-operation)
+- 5.1. [name](/reference/ois/latest/specification.md#_5-1-name)
+- 5.2. [operation](/reference/ois/latest/specification.md#_5-2-operation)
 - 5.3.
-  [fixedOperationParameters](/reference/ois/next/specification.md#_5-3-fixedoperationparameters)
+  [fixedOperationParameters](/reference/ois/latest/specification.md#_5-3-fixedoperationparameters)
 - 5.4.
-  [reservedParameters](/reference/ois/next/specification.md#_5-4-reservedparameters)
-- 5.5. [parameters](/reference/ois/next/specification.md#_5-5-parameters)
-- 5.6. [summary \*](/reference/ois/next/specification.md#_5-6-summary)
-- 5.7. [description \*](/reference/ois/next/specification.md#_5-7-description)
-- 5.8. [externalDocs \*](/reference/ois/next/specification.md#_5-8-externaldocs)
+  [reservedParameters](/reference/ois/latest/specification.md#_5-4-reservedparameters)
+- 5.5. [parameters](/reference/ois/latest/specification.md#_5-5-parameters)
+- 5.6. [summary \*](/reference/ois/latest/specification.md#_5-6-summary)
+- 5.7. [description \*](/reference/ois/latest/specification.md#_5-7-description)
+- 5.8.
+  [externalDocs \*](/reference/ois/latest/specification.md#_5-8-externaldocs)
 - 5.9.
-  [preProcessingSpecifications](/reference/ois/next/specification.md#_5-9-preprocessingspecifications)
+  [preProcessingSpecifications](/reference/ois/latest/specification.md#_5-9-preprocessingspecifications)
 - 5.10.
-  [postProcessingSpecifications](/reference/ois/next/specification.md#_5-10-postprocessingspecifications)
+  [postProcessingSpecifications](/reference/ois/latest/specification.md#_5-10-postprocessingspecifications)
 
 ```json
 // endpoints
@@ -415,9 +416,9 @@ defined in `apiSpecifications.paths`. The following elements must be defined:
 
 The `operation` field must be omitted if the intent is _not_ to call an API but
 rather return a value from the
-[Pre/Post Processing](/reference/ois/next/processing.md) capabilities of
+[Pre/Post Processing](/reference/ois/latest/processing.md) capabilities of
 Airnode. See
-[Skip the API provider call](/reference/ois/next/processing.md#skip-the-api-call)
+[Skip the API provider call](/reference/ois/latest/processing.md#skip-the-api-call)
 for more information.
 
 #### 5.2.1. `path`
@@ -440,7 +441,7 @@ respective API operation.-->
 
 (Required) A list of objects specifying the fixed parameters for an API
 operation. While required, the
-[fixedOperationParameters](/reference/airnode/next/understand/api-integration.md#fixedoperationparameters)
+[fixedOperationParameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)
 array can be left empty. Each object has the following elements:
 
 - `operationParameter`
@@ -474,9 +475,9 @@ multiple primitives: `["finalized", false]`.
 A list of objects that specify reserved Airnode endpoint parameters that do not
 map to any API operation parameters, but are used for special purposes by the
 Airnode. See the
-[Reserved Parameters](/reference/ois/next/reserved-parameters.md) doc for an
+[Reserved Parameters](/reference/ois/latest/reserved-parameters.md) doc for an
 in-depth explanation and
-[reservedParameters](/reference/airnode/next/understand/api-integration.md#reservedparameters).
+[reservedParameters](/reference/airnode/latest/understand/api-integration.md#reservedparameters).
 Each object has the following elements:
 
 - `name`
@@ -486,7 +487,7 @@ Each object has the following elements:
 Note that if a reserved parameter object does not include a `fixed` value, a
 requester can, or may be expected to, supply this value as a parameter. A value
 supplied by a requester overrides a `default`. See the
-[\_gasPrice](/reference/ois/next/reserved-parameters.md#gasprice) reserved
+[\_gasPrice](/reference/ois/latest/reserved-parameters.md#gasprice) reserved
 parameter description for an example.
 
 #### 5.4.1. `name`
@@ -509,7 +510,7 @@ provided by a requester. Cannot be used together with `fixed`.
 ### 5.5. `parameters`
 
 (Optional) A list of objects that specify Airnode endpoint
-[parameters](/reference/airnode/next/understand/api-integration.md#parameters)
+[parameters](/reference/airnode/latest/understand/api-integration.md#parameters)
 that map to an particular API operation's parameters. Each object has the
 following elements:
 
@@ -597,7 +598,7 @@ corresponding operation parameter.-->
 (Optional) Defines the preprocessing code that can be used to modify the
 endpoint parameter before making the API request defined by an Airnode endpoint.
 
-See the [Pre/Post Processing](/reference/ois/next/processing.md) doc for
+See the [Pre/Post Processing](/reference/ois/latest/processing.md) doc for
 additional details.
 
 #### Example
@@ -628,7 +629,7 @@ additional details.
 (Optional) Defines the post-processing code that can be used to modify the API
 response from the request defined by an Airnode endpoint.
 
-See the [Pre/Post Processing](/reference/ois/next/processing.md) doc for
+See the [Pre/Post Processing](/reference/ois/latest/processing.md) doc for
 additional details.
 
 #### Example

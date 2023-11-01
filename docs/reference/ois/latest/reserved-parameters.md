@@ -3,7 +3,7 @@ title: Reserved Parameters
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.2
-path: /reference/ois/next/reserved-parameters.html
+path: /reference/ois/latest/reserved-parameters.html
 version: v2.2
 outline: deep
 tags:
@@ -25,16 +25,16 @@ Airnode's defined endpoints in an OIS object but do not map to operation
 parameters (API parameters). They are used by Airnode for special purposes.
 
 A requester can pass request parameters either by referencing a
-[template](/reference/airnode/next/concepts/template.md) that contains them, or
-as an argument of the request-making methods of
-[AirnodeRrpV0.sol](/reference/airnode/next/concepts/#airnoderrpv0-sol). In
+[template](/reference/airnode/latest/concepts/template.md) that contains them,
+or as an argument of the request-making methods of
+[AirnodeRrpV0.sol](/reference/airnode/latest/concepts/#airnoderrpv0-sol). In
 either case, these parameters are encoded using the
-[AirnodeRrpV0 ABI](/reference/airnode/next/specifications/airnode-abi.md). There
-are two types of parameters which are part of the OIS object:
+[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi.md).
+There are two types of parameters which are part of the OIS object:
 
-1. [Endpoint parameters](/reference/ois/next/specification.md#_5-5-parameters) -
+1. [Endpoint parameters](/reference/ois/latest/specification.md#_5-5-parameters) -
    Airnode endpoint parameters are mapped to API operation parameters.
-2. [Reserved parameters](/reference/ois/next/specification.md#_5-4-reservedparameters) -
+2. [Reserved parameters](/reference/ois/latest/specification.md#_5-4-reservedparameters) -
    Reserved parameters perform a specific operation related to the request or on
    the response before fulfilling the request. Reserved parameter names start
    with `_`. Depending on the configuration, they may be overridden by a
@@ -58,12 +58,12 @@ On top of supported solidity types, there is support for a few "artificial"
 types created for special purposes that would otherwise be hard or impossible to
 represent.
 
-- [`string32`](/reference/ois/next/reserved-parameters.md#string32-encoded-to-bytes32-on-chain)
-- [`timestamp`](/reference/ois/next/reserved-parameters.md#timestamp-encoded-to-uint256-on-chain)
+- [`string32`](/reference/ois/latest/reserved-parameters.md#string32-encoded-to-bytes32-on-chain)
+- [`timestamp`](/reference/ois/latest/reserved-parameters.md#timestamp-encoded-to-uint256-on-chain)
 
 You can also encode multiple values for one single API call - but this impacts
 all of the reserved parameters and is explained in the
-[Encoding Multiple Values](/reference/ois/next/reserved-parameters.md#encoding-multiple-values)
+[Encoding Multiple Values](/reference/ois/latest/reserved-parameters.md#encoding-multiple-values)
 section below.
 
 ### Conversion and encoding behavior
@@ -71,7 +71,7 @@ section below.
 Before the API response value is encoded for on chain use, it is parsed and
 converted. The conversion behaviors for any given type is explained in depth in
 the
-[adapter package docs](/reference/airnode/next/packages/adapter.md#conversion).
+[adapter package docs](/reference/airnode/latest/packages/adapter.md#conversion).
 
 The converted value is then encoded internally by
 [ethers ABI Coder](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
@@ -161,7 +161,7 @@ and `_path` is `field1.fieldA.1`, the response will be `valueA2`.
 
 If the response is a literal value (i.e., not a JSON object) and `_path` is not
 provided or is an empty string (needed for
-[encoding multiple values](/reference/ois/next/reserved-parameters.md#encoding-multiple-values)),
+[encoding multiple values](/reference/ois/latest/reserved-parameters.md#encoding-multiple-values)),
 Airnode will use the API response itself to fulfill the request.
 
 ::: warning Beware the separator
@@ -176,7 +176,7 @@ it will be incorrectly considered as a separator.
 ```
 
 A `_path` defined as `"strange.key"` will not work. As workaround you can
-[<span style="color:rgb(16, 185, 129);">escape the separator</span>](/reference/ois/next/reserved-parameters.md#escaping-separators).
+[<span style="color:rgb(16, 185, 129);">escape the separator</span>](/reference/ois/latest/reserved-parameters.md#escaping-separators).
 
 :::
 
@@ -219,14 +219,14 @@ _times: "100"
 
 the request will be fulfilled with the value `123`. Note that the number gets
 multiplied by `100`, and then gets floored. This is because the result of the
-multiplication is [cast](/reference/airnode/next/packages/adapter.md) to
+multiplication is [cast](/reference/airnode/latest/packages/adapter.md) to
 `int256` afterwards.
 
 Make sure to pass the `_times` parameter as string. Airnode will convert this
 string to number internally. You can also pass and empty string `""` to `_times`
 parameter - this has the same effect as if the `_times` parameter was not
 provided. However, this is important when
-[encoding multiple values](/reference/ois/next/reserved-parameters.md#encoding-multiple-values).
+[encoding multiple values](/reference/ois/latest/reserved-parameters.md#encoding-multiple-values).
 
 The `_times` parameter also works in conjunction with arrays and
 multidimensional arrays. All elements of the API response array will be
@@ -235,11 +235,11 @@ multiplied before they are encoded.
 ## `_gasPrice`
 
 The `_gasPrice` reserved parameter enables a requester to override
-[Airnode gas price strategies](/reference/airnode/next/concepts/gas-prices.md)
+[Airnode gas price strategies](/reference/airnode/latest/concepts/gas-prices.md)
 with a specified gas price when Airnode
-[fulfills](/reference/airnode/next/concepts/request.md#fulfill) the request. The
-recommended implementation is to have the `_gasPrice` reserved parameter without
-a `default` or `fixed` value as shown in the abbreviated snippet below:
+[fulfills](/reference/airnode/latest/concepts/request.md#fulfill) the request.
+The recommended implementation is to have the `_gasPrice` reserved parameter
+without a `default` or `fixed` value as shown in the abbreviated snippet below:
 
 ```json
 {
@@ -253,7 +253,7 @@ a `default` or `fixed` value as shown in the abbreviated snippet below:
 
 This allows requesters to specify the gas price via a parameter in their
 request. The value, in `wei`, should be
-[encoded](/reference/airnode/next/packages/airnode-abi.md#encode) as a
+[encoded](/reference/airnode/latest/packages/airnode-abi.md#encode) as a
 `string32` type by the requester, for example:
 
 ```ts
@@ -277,7 +277,7 @@ the requester's gas price will be ignored.
 The `_minConfirmations` reserved parameter enables a requester to override the
 default minimum number of block confirmations set by the Airnode for that chain
 in
-[config.json](/reference/airnode/next/deployment-files/config-json.md#minconfirmations).
+[config.json](/reference/airnode/latest/deployment-files/config-json.md#minconfirmations).
 The recommended implementation is to have the `_minConfirmations` reserved
 parameter without a `default` or `fixed` value as shown in the abbreviated
 snippet below:
@@ -294,7 +294,7 @@ snippet below:
 
 This allows requesters to specify the minimum number of block confirmations via
 a parameter in their request. The value should be
-[encoded](/reference/airnode/next/packages/airnode-abi.md#encode) as a
+[encoded](/reference/airnode/latest/packages/airnode-abi.md#encode) as a
 `string32` type by the requester, for example:
 
 ```ts
@@ -366,7 +366,7 @@ Airnode will extract and convert each of the "split values" separately
 
 All of these values are then together encoded to single bytes value that can be
 sent on chain. You can use
-[testing gateway](/reference/airnode/next/understand/deploying.md#testing-with-http-gateway)
+[testing gateway](/reference/airnode/latest/understand/deploying.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.
 
 ::: info Multiple Reserved Parameters Tutorial

@@ -3,7 +3,7 @@ title: Understanding OIS
 sidebarHeader: Reference
 sidebarSubHeader: OIS
 pageHeader: Reference → OIS → v2.2
-path: /reference/ois/next/index.html
+path: /reference/ois/latest/index.html
 version: v2.2
 outline: deep
 tags:
@@ -31,7 +31,7 @@ defines an Airnode.
 - apiCredentials
 
 For more information about the config.json file see the
-[Deployment Files](/reference/airnode/next/deployment-files/config-json.md)
+[Deployment Files](/reference/airnode/latest/deployment-files/config-json.md)
 section in the Airnode document set.
 
 In the diagram below, an Airnode exposes its endpoints to the on-chain
@@ -49,7 +49,7 @@ endpoint that maps to the same API operation.
 
 The following are three possible Airnode to API operation mapping examples.
 Mapping details are better documented in the next doc
-[Specification](/reference/ois/next/specification.md).
+[Specification](/reference/ois/latest/specification.md).
 
 ### Simple Airnode Endpoint
 
