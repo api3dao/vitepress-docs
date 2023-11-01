@@ -34,8 +34,8 @@ object is in these docs.
 
 For an overview that explains how Airnode maps its endpoints to API provider
 operations, see
-[API integration](/reference/airnode/latest/understand/api-integration.md). Also
-see the medium article
+[API integration](/reference/ois/next/understand/api-integration.md). Also see
+the medium article
 [Setting Oracle Integration Standards](https://medium.com/api3/setting-oracle-integration-standards-ac9104c38f9e)
 for an overview of OIS.
 
@@ -178,8 +178,8 @@ the non-nested application/json content-type is supported.</p>
 ### 4.3. `components`
 
 (Required) An object where
-[security schemes](/reference/airnode/latest/understand/api-security.md) can be
-found under `securitySchemes.{securitySchemeName}` with the following elements:
+[security schemes](/reference/ois/next/understand/api-security.md) can be found
+under `securitySchemes.{securitySchemeName}` with the following elements:
 
 - `type`
 - `name`
@@ -245,10 +245,10 @@ Allowed values: (`basic` and `bearer`).
 Applies to all operations. A security scheme can contain information required by
 the API to authenticate Airnode as well as information about the requester
 (relay information) the API may also require. Read more about security schemes
-in the [API Security](/reference/airnode/latest/understand/api-security.md)
-section of the _Build an Airnode_ guide and the
-[Airnode Authentication](/reference/airnode/latest/concepts/airnode-auth.md)
-section of _Concepts and Definitions_.
+in the [API Security](/reference/ois/next/understand/api-security.md) section of
+the _Build an Airnode_ guide and the
+[Airnode Authentication](/reference/ois/next/concepts/airnode-auth.md) section
+of _Concepts and Definitions_.
 
 The `security` object maintains the names of all the security schemes used. Each
 security scheme in `security` maps to an empty list. The empty list will be used
@@ -440,7 +440,7 @@ respective API operation.-->
 
 (Required) A list of objects specifying the fixed parameters for an API
 operation. While required, the
-[fixedOperationParameters](/reference/airnode/latest/understand/api-integration.md#fixedoperationparameters)
+[fixedOperationParameters](/reference/ois/next/understand/api-integration.md#fixedoperationparameters)
 array can be left empty. Each object has the following elements:
 
 - `operationParameter`
@@ -476,7 +476,7 @@ map to any API operation parameters, but are used for special purposes by the
 Airnode. See the
 [Reserved Parameters](/reference/ois/next/reserved-parameters.md) doc for an
 in-depth explanation and
-[reservedParameters](/reference/airnode/latest/understand/api-integration.md#reservedparameters).
+[reservedParameters](/reference/ois/next/understand/api-integration.md#reservedparameters).
 Each object has the following elements:
 
 - `name`
@@ -509,9 +509,9 @@ provided by a requester. Cannot be used together with `fixed`.
 ### 5.5. `parameters`
 
 (Optional) A list of objects that specify Airnode endpoint
-[parameters](/reference/airnode/latest/understand/api-integration.md#parameters)
-that map to an particular API operation's parameters. Each object has the
-following elements:
+[parameters](/reference/ois/next/understand/api-integration.md#parameters) that
+map to an particular API operation's parameters. Each object has the following
+elements:
 
 - `operationParameter`
 - `name`

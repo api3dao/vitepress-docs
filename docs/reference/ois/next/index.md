@@ -31,8 +31,8 @@ defines an Airnode.
 - apiCredentials
 
 For more information about the config.json file see the
-[Deployment Files](/reference/airnode/latest/deployment-files/config-json.md)
-section in the Airnode document set.
+[Deployment Files](/reference/ois/next/deployment-files/config-json.md) section
+in the Airnode document set.
 
 In the diagram below, an Airnode exposes its endpoints to the on-chain
 AirnodeRrpV0.sol contract. Airnode uses the OIS object to map its endpoints to
