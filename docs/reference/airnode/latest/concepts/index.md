@@ -82,7 +82,7 @@ This interface inherits:
 ### AuthorizationUtilsV0.sol
 
 The
-[AuthorizationUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.133/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol)
+[AuthorizationUtilsV0.sol](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol)
 contract implements Airnode
 [Authorizer](/reference/airnode/latest/concepts/authorizers.md) checks.
 
