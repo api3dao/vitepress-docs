@@ -3,7 +3,7 @@ title: Hyperlinks
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/hyperlinks.html
+path: /dev/hyperlinks.html
 outline: deep
 tags:
 ---

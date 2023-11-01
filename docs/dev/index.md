@@ -3,7 +3,7 @@ title: Getting Started
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/index.html
+path: /dev/index.html
 outline: deep
 tags:
 ---

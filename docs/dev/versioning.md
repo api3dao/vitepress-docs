@@ -3,7 +3,7 @@ title: Airnode/OIS Versioning
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/versioning.html
+path: /dev/versioning.html
 outline: deep
 tags:
 ---

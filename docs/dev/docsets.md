@@ -3,7 +3,7 @@ title: DocSets
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/docsets.html
+path: /dev/docsets.html
 outline: deep
 tags:
 ---

@@ -3,7 +3,7 @@ title: Link Validation
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/link-validation.html
+path: /dev/link-validation.html
 outline: deep
 tags:
 ---
