@@ -25,12 +25,12 @@ Airnode's defined endpoints in an OIS object but do not map to operation
 parameters (API parameters). They are used by Airnode for special purposes.
 
 A requester can pass request parameters either by referencing a
-[template](/reference/ois/next/concepts/template.md) that contains them, or as
-an argument of the request-making methods of
-[AirnodeRrpV0.sol](/reference/ois/next/concepts/#airnoderrpv0-sol). In either
-case, these parameters are encoded using the
-[AirnodeRrpV0 ABI](/reference/ois/next/specifications/airnode-abi.md). There are
-two types of parameters which are part of the OIS object:
+[template](/reference/airnode/next/concepts/template.md) that contains them, or
+as an argument of the request-making methods of
+[AirnodeRrpV0.sol](/reference/airnode/next/concepts/#airnoderrpv0-sol). In
+either case, these parameters are encoded using the
+[AirnodeRrpV0 ABI](/reference/airnode/next/specifications/airnode-abi.md). There
+are two types of parameters which are part of the OIS object:
 
 1. [Endpoint parameters](/reference/ois/next/specification.md#_5-5-parameters) -
    Airnode endpoint parameters are mapped to API operation parameters.
@@ -70,7 +70,8 @@ section below.
 
 Before the API response value is encoded for on chain use, it is parsed and
 converted. The conversion behaviors for any given type is explained in depth in
-the [adapter package docs](/reference/ois/next/packages/adapter.md#conversion).
+the
+[adapter package docs](/reference/airnode/next/packages/adapter.md#conversion).
 
 The converted value is then encoded internally by
 [ethers ABI Coder](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
@@ -234,9 +235,9 @@ multiplied before they are encoded.
 ## `_gasPrice`
 
 The `_gasPrice` reserved parameter enables a requester to override
-[Airnode gas price strategies](/reference/ois/next/concepts/gas-prices.md) with
-a specified gas price when Airnode
-[fulfills](/reference/ois/next/concepts/request.md#fulfill) the request. The
+[Airnode gas price strategies](/reference/airnode/next/concepts/gas-prices.md)
+with a specified gas price when Airnode
+[fulfills](/reference/airnode/next/concepts/request.md#fulfill) the request. The
 recommended implementation is to have the `_gasPrice` reserved parameter without
 a `default` or `fixed` value as shown in the abbreviated snippet below:
 
@@ -252,8 +253,8 @@ a `default` or `fixed` value as shown in the abbreviated snippet below:
 
 This allows requesters to specify the gas price via a parameter in their
 request. The value, in `wei`, should be
-[encoded](/reference/ois/next/packages/airnode-abi.md#encode) as a `string32`
-type by the requester, for example:
+[encoded](/reference/airnode/next/packages/airnode-abi.md#encode) as a
+`string32` type by the requester, for example:
 
 ```ts
 import { encode } from '@api3/airnode-abi';
@@ -276,7 +277,7 @@ the requester's gas price will be ignored.
 The `_minConfirmations` reserved parameter enables a requester to override the
 default minimum number of block confirmations set by the Airnode for that chain
 in
-[config.json](/reference/ois/next/deployment-files/config-json.md#minconfirmations).
+[config.json](/reference/airnode/next/deployment-files/config-json.md#minconfirmations).
 The recommended implementation is to have the `_minConfirmations` reserved
 parameter without a `default` or `fixed` value as shown in the abbreviated
 snippet below:
@@ -293,8 +294,8 @@ snippet below:
 
 This allows requesters to specify the minimum number of block confirmations via
 a parameter in their request. The value should be
-[encoded](/reference/ois/next/packages/airnode-abi.md#encode) as a `string32`
-type by the requester, for example:
+[encoded](/reference/airnode/next/packages/airnode-abi.md#encode) as a
+`string32` type by the requester, for example:
 
 ```ts
 import { encode } from '@api3/airnode-abi';
@@ -365,7 +366,7 @@ Airnode will extract and convert each of the "split values" separately
 
 All of these values are then together encoded to single bytes value that can be
 sent on chain. You can use
-[testing gateway](/reference/ois/next/understand/deploying.md#testing-with-http-gateway)
+[testing gateway](/reference/airnode/next/understand/deploying.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.
 
 ::: info Multiple Reserved Parameters Tutorial
