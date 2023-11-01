@@ -21,22 +21,22 @@ tags:
 
 Airnode is deployed with the following files:
 
-- [config.json](/reference/airnode/latest/deployment-files/config-json.md):
+- [config.json](/reference/airnode/next/deployment-files/config-json.md):
   specifies the API–Airnode integrations and various node and deployment
   parameters.
 
-- [secrets.env](/reference/airnode/latest/deployment-files/secrets-env.md):
-  holds secrets used by Airnode such as the Airnode mnemonic, API keys,
-  blockchain provider URLs, and more.
+- [secrets.env](/reference/airnode/next/deployment-files/secrets-env.md): holds
+  secrets used by Airnode such as the Airnode mnemonic, API keys, blockchain
+  provider URLs, and more.
 
-- [aws.env](/reference/airnode/latest/deployment-files/aws-env.md): (AWS
+- [aws.env](/reference/airnode/next/deployment-files/aws-env.md): (AWS
   deployments only) holds AWS credentials and is required by the Docker
-  [deployer image](/reference/airnode/latest/docker/deployer-image.md).
+  [deployer image](/reference/airnode/next/docker/deployer-image.md).
 
 - gcp.json: (GCP deployments only) holds GCP project information and is required
   by the Docker
-  [deployer image](/reference/airnode/latest/docker/deployer-image.md). This
-  file is downloaded from a GCP project. See the guide
+  [deployer image](/reference/airnode/next/docker/deployer-image.md). This file
+  is downloaded from a GCP project. See the guide
   [Deploying an Airnode on GCP](/guides/airnode/deploy-airnode/deploy-gcp/#_3-gcp-project-setup-credentials)
   for more information.
 
@@ -50,7 +50,7 @@ The `config.json` file does NOT reference values in `aws.env` as `aws.env` is
 read directly by the deployer image.
 
 The deployer image outputs a
-[receipt.json](/reference/airnode/latest/deployment-files/receipt-json.md) file
+[receipt.json](/reference/airnode/next/deployment-files/receipt-json.md) file
 after deployment, which contains information about the deployment that can be
 referred to later on for interaction or removal.
 

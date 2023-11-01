@@ -47,7 +47,7 @@ Updated to "0.13.0"
 ## New features and updates
 
 - The
-  [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
+  [HTTP Gateway](/reference/airnode/next/understand/http-gateways.md#http-gateway)
   response has been harmonized so that the API call response, after undergoing
   any post-processing, will be present in the `rawValue` field independent of
   encoding success or failure.

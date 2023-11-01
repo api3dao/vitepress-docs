@@ -21,7 +21,7 @@ tags:
 
 An Airnode is owned and operated by an API provider. Every Airnode has a unique
 on-chain
-[`airnodeAddress`](/reference/airnode/latest/concepts/airnode.md#airnodeaddress)
+[`airnodeAddress`](/reference/airnode/next/concepts/airnode.md#airnodeaddress)
 created and known by its API provider. API providers normally announce their
 Airnode addresses in the form of a DNS `TXT` record within their DNS
 registration, which also serves to prove ownership. An API provider's Airnode

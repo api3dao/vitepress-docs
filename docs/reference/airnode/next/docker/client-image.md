@@ -20,9 +20,9 @@ tags:
 # {{$frontmatter.title}}
 
 Usually the Airnode is deployed on a serverless platform using the
-[deployer](/reference/airnode/latest/docker/deployer-image.md). However, there
-is another option which is to run the Airnode in a docker container on your
-machine locally, on premise or cloud hosted.
+[deployer](/reference/airnode/next/docker/deployer-image.md). However, there is
+another option which is to run the Airnode in a docker container on your machine
+locally, on premise or cloud hosted.
 
 A docker client image has been published on
 [Docker Hub](https://hub.docker.com/r/api3/airnode-client). If you want to build

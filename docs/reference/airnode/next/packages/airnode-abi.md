@@ -32,7 +32,7 @@ blockchains, this means that parameters can be encoded as well as decoded in
 Solidity (or Vyper), without any additional requirements.
 
 You can find additional documentation in
-[Airnode ABI Specifications](/reference/airnode/latest/specifications/airnode-abi.md)
+[Airnode ABI Specifications](/reference/airnode/next/specifications/airnode-abi.md)
 doc.
 
 ## Installation
@@ -58,7 +58,7 @@ yarn add @api3/airnode-abi
 Accepts an array of objects with the following required keys:
 
 1. `type` - The full list of accepted types can be found in the
-   [Airnode ABI](/reference/airnode/latest/specifications/airnode-abi.md#type-encodings)
+   [Airnode ABI](/reference/airnode/next/specifications/airnode-abi.md#type-encodings)
    specifications doc.
 
 2. `name`

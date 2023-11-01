@@ -26,7 +26,7 @@ which represent individual functionalities that an API offers. OIS maps each API
 operation to an [endpoint](/reference/ois/latest/specification.md#_5-endpoints),
 which can be thought of as an Airnode operation. The endpoints that an Airnode
 will serve over the request–response protocol are listed under triggers of
-[config.json](/reference/airnode/latest/deployment-files/config-json.md#triggers).
+[config.json](/reference/airnode/next/deployment-files/config-json.md#triggers).
 
 ## `endpointId`
 
@@ -43,7 +43,7 @@ ethers.utils.keccak256(
 ```
 
 An alternative method to create an `endpointId` is to use the
-[Admin CLI](/reference/airnode/latest/packages/admin-cli.md) to derive the
+[Admin CLI](/reference/airnode/next/packages/admin-cli.md) to derive the
 endpoint ID.
 
 Note that this means that an `endpointId` is not unique, and two Airnodes can
@@ -54,7 +54,7 @@ outcome). This is not an issue, as requests are made with a `airnode` (Airnode's
 ## Authorizers
 
 Airnodes can assign a list of authorizers for each chain it responds to. See
-[Authorizers](/reference/airnode/latest/concepts/authorizers.md) for more
+[Authorizers](/reference/airnode/next/concepts/authorizers.md) for more
 information.
 
 <FlexEndTag/>

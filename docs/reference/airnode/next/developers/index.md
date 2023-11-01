@@ -35,7 +35,7 @@ for potential design patterns.
 A requester is a smart contract that can trigger an Airnode RRP request. To do
 so, the requester needs to be sponsored and make the request using a matching
 sponsor wallet. See
-[Requesters and Sponsors](/reference/airnode/latest/developers/requesters-sponsors.md)
+[Requesters and Sponsors](/reference/airnode/next/developers/requesters-sponsors.md)
 on how to sponsor a requester and derive the sponsor wallet.
 
 ## A simplified understanding
@@ -50,7 +50,7 @@ In summary, the requester will do two things.
 
 - Call `makeFullRequest()` or `makeTemplateRequest()` on the AirnodeRrpV0.sol
   contract, which returns a
-  [`requestId`](/reference/airnode/latest/concepts/request.md#requestid).
+  [`requestId`](/reference/airnode/next/concepts/request.md#requestid).
 - Add a `myFulfill()` function (call it what you like) to your requester where
   the off-chain Airnode can send the requested data when ready. The data
   includes the same `requestId` as the one returned at the time of making the
@@ -74,7 +74,7 @@ how to make a RRP request of an Airnode.
 ## A deeper dive
 
 This section, through its detailed illustration, builds on the previous section
-([A simplified understanding](/reference/airnode/latest/developers/index.md#a-simplified-understanding))
+([A simplified understanding](/reference/airnode/next/developers/index.md#a-simplified-understanding))
 in an attempt to further illustrate and explain the mechanics of how an Airnode
 response to a request made by a requester.
 

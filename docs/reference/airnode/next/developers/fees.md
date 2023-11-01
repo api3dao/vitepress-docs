@@ -29,13 +29,13 @@ transactions.
 Fees are encountered when a sponsor engages in setup activity such as sponsoring
 a requester. These are per call transaction gas costs and are relatively small.
 The funds come from the wallet mnemonic that the sponsor supplies when calling
-certain [admin commands](/reference/airnode/latest/packages/admin-cli.md) as
-shown below.
+certain [admin commands](/reference/airnode/next/packages/admin-cli.md) as shown
+below.
 
-- [sponsor-requester](/reference/airnode/latest/packages/admin-cli.md#sponsor-requester)
-- [unsponsor-requester](/reference/airnode/latest/packages/admin-cli.md#unsponsor-requester)
-- [create-template](/reference/airnode/latest/packages/admin-cli.md#create-template)
-- [request-withdrawal](/reference/airnode/latest/packages/admin-cli.md#request-withdrawal)
+- [sponsor-requester](/reference/airnode/next/packages/admin-cli.md#sponsor-requester)
+- [unsponsor-requester](/reference/airnode/next/packages/admin-cli.md#unsponsor-requester)
+- [create-template](/reference/airnode/next/packages/admin-cli.md#create-template)
+- [request-withdrawal](/reference/airnode/next/packages/admin-cli.md#request-withdrawal)
 
 ## Airnodes
 
@@ -47,15 +47,14 @@ response to a request.
   funded manually by a sponsor using their preferred wallet management tool such
   as MetaMask.
 
-- [Calling](/reference/airnode/latest/developers/index.md) an Airnode:
-  Transaction gas fees are withdrawn from the sponsor wallet related to the
-  Airnode being called by a sponsored requester.
+- [Calling](/reference/airnode/next/developers/index.md) an Airnode: Transaction
+  gas fees are withdrawn from the sponsor wallet related to the Airnode being
+  called by a sponsored requester.
 
 <SponsorWalletWarning/>
 
-Learn more about
-[sponsor wallets](/reference/airnode/latest/concepts/sponsor.md) in the
-reference section.
+Learn more about [sponsor wallets](/reference/airnode/next/concepts/sponsor.md)
+in the reference section.
 
 ## API Provider Fees
 
@@ -65,7 +64,7 @@ provider's website and then subscribe to a level of service offered. These types
 of services are usually billed monthly and can be based on an annual rate to
 save costs. The subscription (even if free) will most likely involve the use of
 a security scheme such as an API key that must be used to access the data. See
-[Calling an Airnode](/reference/airnode/latest/developers/index.md) to learn
-more on how to pass the security credentials to an Airnode.
+[Calling an Airnode](/reference/airnode/next/developers/index.md) to learn more
+on how to pass the security credentials to an Airnode.
 
 <FlexEndTag/>

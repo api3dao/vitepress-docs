@@ -25,11 +25,11 @@ the `chains.options.gasPriceOracle` field.
 
 The supported strategies include:
 
-- [latestBlockPercentileGasPrice](/reference/airnode/latest/concepts/gas-prices.md#latestblockpercentilegasprice)
-- [providerRecommendedGasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedgasprice)
-- [sanitizedProviderRecommendedGasPrice](/reference/airnode/latest/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
-- [providerRecommendedEip1559GasPrice](/reference/airnode/latest/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
-- [constantGasPrice](/reference/airnode/latest/concepts/gas-prices.md#constantgasprice)
+- [latestBlockPercentileGasPrice](/reference/airnode/next/concepts/gas-prices.md#latestblockpercentilegasprice)
+- [providerRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedgasprice)
+- [sanitizedProviderRecommendedGasPrice](/reference/airnode/next/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
+- [providerRecommendedEip1559GasPrice](/reference/airnode/next/concepts/gas-prices.md#providerrecommendedeip1559gasprice)
+- [constantGasPrice](/reference/airnode/next/concepts/gas-prices.md#constantgasprice)
 
 Below are examples of each strategy.
 
