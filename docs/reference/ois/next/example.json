@@ -1,0 +1,136 @@
+[
+  {
+    "oisFormat": "2.2.0",
+    "title": "CoinGecko basic request",
+    "version": "1.2.3",
+    "apiSpecifications": {
+      "servers": [
+        {
+          "url": "https://api.coingecko.com/api/v3"
+        }
+      ],
+      "paths": {
+        "/coins/{id}": {
+          "get": {
+            "parameters": [
+              {
+                "in": "path",
+                "name": "id"
+              },
+              {
+                "in": "query",
+                "name": "localization"
+              },
+              {
+                "in": "query",
+                "name": "tickers"
+              },
+              {
+                "in": "query",
+                "name": "market_data"
+              },
+              {
+                "in": "query",
+                "name": "community_data"
+              },
+              {
+                "in": "query",
+                "name": "developer_data"
+              },
+              {
+                "in": "query",
+                "name": "sparkline"
+              }
+            ]
+          }
+        }
+      },
+      "components": {
+        "securitySchemes": {}
+      },
+      "security": {}
+    },
+    "endpoints": [
+      {
+        "name": "coinMarketData",
+        "operation": {
+          "method": "get",
+          "path": "/coins/{id}"
+        },
+        "fixedOperationParameters": [
+          {
+            "operationParameter": {
+              "in": "query",
+              "name": "localization"
+            },
+            "value": "false"
+          },
+          {
+            "operationParameter": {
+              "in": "query",
+              "name": "tickers"
+            },
+            "value": "false"
+          },
+          {
+            "operationParameter": {
+              "in": "query",
+              "name": "market_data"
+            },
+            "value": "true"
+          },
+          {
+            "operationParameter": {
+              "in": "query",
+              "name": "community_data"
+            },
+            "value": "false"
+          },
+          {
+            "operationParameter": {
+              "in": "query",
+              "name": "developer_data"
+            },
+            "value": "false"
+          },
+          {
+            "operationParameter": {
+              "in": "query",
+              "name": "sparkline"
+            },
+            "value": "false"
+          }
+        ],
+        "reservedParameters": [
+          {
+            "name": "_type",
+            "fixed": "int256"
+          },
+          {
+            "name": "_path",
+            "fixed": "market_data.current_price.usd"
+          },
+          {
+            "name": "_times",
+            "fixed": "1000000"
+          },
+          {
+            "name": "_gasPrice"
+          },
+          {
+            "name": "_minConfirmations"
+          }
+        ],
+        "parameters": [
+          {
+            "name": "coinId",
+            "operationParameter": {
+              "in": "path",
+              "name": "id"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
