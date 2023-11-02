@@ -151,9 +151,9 @@ api3/airnode-deployer:0.13.0 deploy --auto-remove false
 ### `list`
 
 Once one or more Airnodes were deployed using the
-[deploy](/reference/airnode/next/docker/deployer-image.md#deploy) command
-above, the [list](/reference/airnode/next/packages/deployer.md#list) command
-can be used to list currently deployed Airnodes. Files for cloud provider
+[deploy](/reference/airnode/next/docker/deployer-image.md#deploy) command above,
+the [list](/reference/airnode/next/packages/deployer.md#list) command can be
+used to list currently deployed Airnodes. Files for cloud provider
 authentication are needed for the command to run correctly: `aws.env` (for AWS)
 and/or `gcp.json` (for GCP).
 
@@ -258,8 +258,8 @@ docker run -it --rm ^
 
 During the Airnode deployment, your `config.json` and `secrets.env` are uploaded
 to the cloud provider of your choosing. You can use the
-[fetch-files](/reference/airnode/next/packages/deployer.md#fetch-files)
-command to retrieve them. You need to provide the deployment ID from the
+[fetch-files](/reference/airnode/next/packages/deployer.md#fetch-files) command
+to retrieve them. You need to provide the deployment ID from the
 [list](/reference/airnode/next/docker/deployer-image.md#list) command above to
 specify the desired deployment. By default, the files from the latest version of
 this deployment are fetched. Alternatively, you can additionally provide a
@@ -294,8 +294,8 @@ docker run -it --rm ^
 ### `remove`
 
 A deployed Airnode can be removed via the
-[remove](/reference/airnode/next/packages/deployer.md#remove) command. To
-remove Airnode, use the deployment ID from the
+[remove](/reference/airnode/next/packages/deployer.md#remove) command. To remove
+Airnode, use the deployment ID from the
 [list](/reference/airnode/next/docker/deployer-image.md#list) command above.
 Airnode's update history, that can be seen by the
 [info](/reference/airnode/next/docker/deployer-image.md#info) command, will be
