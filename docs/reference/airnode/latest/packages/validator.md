@@ -2,9 +2,9 @@
 title: Validator
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Packages
+pageHeader: Reference → Airnode → v0.13 → Packages
 path: /reference/airnode/latest/packages/validator.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-validator](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-validator)
+[airnode-validator](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-validator)
 is used internally by the [Docker Images](/reference/airnode/latest/docker/) to
 validate the
 [configuration files](/reference/airnode/latest/understand/configuring.md) you
@@ -149,6 +149,6 @@ if (parseResult.success) {
 ## Build Manually
 
 See the build instructions for the validator in the
-[airnode package repository](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-validator).
+[airnode package repository](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-validator).
 
 <FlexEndTag/>

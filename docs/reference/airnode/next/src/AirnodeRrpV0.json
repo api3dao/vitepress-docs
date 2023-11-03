@@ -112,6 +112,13 @@
     "contractAddress": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E"
   },
   {
+    "id": "1101",
+    "fullname": "Polygon zkEVM",
+    "alias": "polygon-zkevm",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
     "id": "1284",
     "fullname": "Moonbeam",
     "alias": "moonbeam",
@@ -133,6 +140,13 @@
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
+    "id": "1442",
+    "fullname": "Polygon zkEVM testnet",
+    "alias": "polygon-zkevm-goerli-testnet",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
@@ -143,6 +157,27 @@
     "id": "4002",
     "fullname": "Fantom testnet",
     "alias": "fantom-testnet",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
+    "id": "5000",
+    "fullname": "Mantle",
+    "alias": "mantle",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
+    "id": "5001",
+    "fullname": "Mantle Goerli testnet",
+    "alias": "mantle-goerli-testnet",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778"
+  },
+  {
+    "id": "8453",
+    "fullname": "Base",
+    "alias": "base",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
@@ -196,6 +231,20 @@
     "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778"
   },
   {
+    "id": "59140",
+    "fullname": "Linea Goerli testnet",
+    "alias": "linea-goerli-testnet",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
+    "id": "59144",
+    "fullname": "Linea",
+    "alias": "linea",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
     "id": "71401",
     "fullname": "Godwoken testnet",
     "alias": "godwoken-testnet",
@@ -213,6 +262,13 @@
     "id": "80001",
     "fullname": "Polygon testnet",
     "alias": "polygon-testnet",
+    "contractName": "AirnodeRrpV0",
+    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
+  },
+  {
+    "id": "84531",
+    "fullname": "Base Goerli testnet",
+    "alias": "base-goerli-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },

@@ -2,9 +2,9 @@
 title: API Integration
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.14 → Understanding Airnode
 path: /reference/airnode/next/understand/api-integration.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -21,8 +21,8 @@ tags:
 
 A successful integration of an API with an Airnode requires the mapping of each
 other's interface. This is accomplished using an OIS
-([Oracle Integration Specifications](/reference/ois/latest/specification.md))
-json object, found in the config.json file, designed to with three basic steps.
+([Oracle Integration Specifications](/reference/ois/next/specification.md)) json
+object, found in the config.json file, designed to with three basic steps.
 
 1. API operations are specified
 1. Airnode endpoints are specified
@@ -55,7 +55,7 @@ OIS object is in these docs.
 
 **Tips while reading ths page.**
 
-- Open the [OIS template](/reference/ois/latest/template.md) in another browser
+- Open the [OIS template](/reference/ois/next/template.md) in another browser
   window to follow along.
 - View an example of an Airnode
   [config.json](/reference/airnode/next/deployment-files/examples/config-json.md)
@@ -66,7 +66,7 @@ OIS object is in these docs.
 OIS is a json object that is added to an Airnode's
 [config.json](/reference/airnode/next/deployment-files/templates/config-json.md)
 file as the (`ois`) _key_, sometimes called a _field_. Try using the
-[OIS template](/reference/ois/latest/template.md) to construct an OIS and add it
+[OIS template](/reference/ois/next/template.md) to construct an OIS and add it
 to the Airnode's config.json file later.
 
 In the OIS template, there are some fields that contain `{FILL_*}`. This means
@@ -101,8 +101,8 @@ json object.
 ### oisFormat
 
 A specific version of the
-[OIS Specification](/reference/ois/latest/specification.md#_1-oisformat) to be
-used. For Airnode `v0.12`, the proper OIS version is `2.1.0`.
+[OIS Specification](/reference/ois/next/specification.md#_1-oisformat) to be
+used. For Airnode `v0.14`, the proper OIS version is `2.3.0`.
 
 ### title
 
@@ -216,10 +216,10 @@ also provide a method. If a new path is needed then it must be a new object in
 paths with its own methods. Currently only the GET and POST methods are
 supported by Airnode.
 
-With regards to the [OIS template](/reference/ois/latest/template.md), the name
-of the element (denoted as `{FILL_PATH}`) should be replaced with the path
-(e.g., `/data`). Similarly, `{FILL_METHOD}` should be replaced with the method
-of the operation to integrate (e.g., `get`). The method must be lowercase.
+With regards to the [OIS template](/reference/ois/next/template.md), the name of
+the element (denoted as `{FILL_PATH}`) should be replaced with the path (e.g.,
+`/data`). Similarly, `{FILL_METHOD}` should be replaced with the method of the
+operation to integrate (e.g., `get`). The method must be lowercase.
 
 The following example illustrates three operations, `GET /data`, `POST /data`,
 `GET /tokens`.
@@ -409,19 +409,19 @@ and `endpoints[n].parameters`.
 The requester can provide some parameters that are not mapped to API operation
 parameters. These parameters are called "reserved parameters", and their names
 start with an underscore. See the
-[related OIS docs](/reference/ois/latest/specification.md#_5-4-reservedparameters)
+[related OIS docs](/reference/ois/next/specification.md#_5-4-reservedparameters)
 for more information.
 
 The current list of reserved parameters are `_type`, `_path`, `_times`,
 `_gasPrice`, and `_minConfirmations`. See
-[Reserved Parameters](/reference/ois/latest/reserved-parameters.md) in the OIS
+[Reserved Parameters](/reference/ois/next/reserved-parameters.md) in the OIS
 document set to understand what each of these parameters are for.
 
 #### parameters
 
 Airnode endpoint
-[parameters](/reference/ois/latest/specification.md#_5-5-parameters) map to API
-operation [parameters](/reference/ois/latest/specification.md#_4-2-1-parameters)
+[parameters](/reference/ois/next/specification.md#_5-5-parameters) map to API
+operation [parameters](/reference/ois/next/specification.md#_4-2-1-parameters)
 that the requester is allowed to provide values for. It refers to an API
 operation through its field `operationParameter`. You can also provide `default`
 values for endpoint parameters, though this is not recommended in most cases.

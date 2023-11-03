@@ -112,6 +112,13 @@
     "contractAddress": "0xeefA1A591052DB4208C6BcD1E716B136E07cb692"
   },
   {
+    "id": "1101",
+    "fullname": "Polygon zkEVM",
+    "alias": "polygon-zkevm",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
     "id": "1284",
     "fullname": "Moonbeam",
     "alias": "moonbeam",
@@ -133,6 +140,13 @@
     "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
   },
   {
+    "id": "1442",
+    "fullname": "Polygon zkEVM testnet",
+    "alias": "polygon-zkevm-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
@@ -143,6 +157,27 @@
     "id": "4002",
     "fullname": "Fantom testnet",
     "alias": "fantom-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "5000",
+    "fullname": "Mantle",
+    "alias": "mantle",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "5001",
+    "fullname": "Mantle Goerli testnet",
+    "alias": "mantle-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x3e10e6eF3c602885a9Cafd9785BD2143c52fbFF1"
+  },
+  {
+    "id": "8453",
+    "fullname": "Base",
+    "alias": "base",
     "contractName": "AirnodeRrpV0DryRun",
     "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
   },
@@ -196,6 +231,20 @@
     "contractAddress": "0xdCED7ECFf6941613e739A30AeADa0F4FB85e5724"
   },
   {
+    "id": "59140",
+    "fullname": "Linea Goerli testnet",
+    "alias": "linea-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "59144",
+    "fullname": "Linea",
+    "alias": "linea",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
     "id": "71401",
     "fullname": "Godwoken testnet",
     "alias": "godwoken-testnet",
@@ -213,6 +262,13 @@
     "id": "80001",
     "fullname": "Polygon testnet",
     "alias": "polygon-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "84531",
+    "fullname": "Base Goerli testnet",
+    "alias": "base-goerli-testnet",
     "contractName": "AirnodeRrpV0DryRun",
     "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
   },

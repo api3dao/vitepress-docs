@@ -2,9 +2,9 @@
 title: Migration Guide
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12
+pageHeader: Reference → Airnode → v0.13 → Deployment References
 path: /reference/airnode/latest/migration.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -19,145 +19,41 @@ tags:
 
 # {{$frontmatter.title}}
 
-The following guide assumes a valid v0.11.2 `config.json` file. All changes
-listed below will need to be implemented in order to migrate to Airnode v0.12.0.
-This document is written in a way that will preserve existing behavior with
-earlier Airnode versions.
+The following guide assumes a valid v0.12 `config.json` file. All changes listed
+below will need to be implemented in order to migrate to Airnode v0.13.0. This
+document is written in a way that will preserve existing behavior with earlier
+Airnode versions.
 
 The document also mentions changes to user facing services related to Airnode,
 such as airnode-deployer, airnode-admin, etc., and new features.
 
 ## Summary
 
-1. `ois[n].oisFormat` updated to "2.1.0". This has not changed since v0.11.2,
-   but has changed since v0.11.0 and v0.11.1 for which it was "2.0.0".
-
-2. `nodeSettings.nodeVersion` updated to "0.12.0".
+1. `nodeSettings.nodeVersion` updated to "0.13.0".
 
 ## Details
 
-1. `ois[n].oisFormat`
+1. `nodeSettings.nodeVersion`
 
-Updated to "2.1.0". This has not changed since v0.11.2, but has changed since
-v0.11.0 and v0.11.1 for which it was "2.0.0".
-
-```diff
-{
-- "oisFormat": "2.0.0"
-+ "oisFormat": "2.1.0"
-}
-```
-
-2. `nodeSettings.nodeVersion`
-
-Updated to "0.12.0"
+Updated to "0.13.0"
 
 ```diff
 {
-- "nodeVersion": "0.11.2"
-+ "nodeVersion": "0.12.0"
+- "nodeVersion": "0.12.0"
++ "nodeVersion": "0.13.0"
 }
 ```
 
 ## New features and updates
 
-- There is no longer a hardcoded limit to the maximum number of sponsor wallet
-  requests processed each cycle.
-
-- Data from the HTTP Gateway is returned from successful API calls that fail
-  response processing in order to assist with debugging. For an example, see the
-  [HTTP Gateways](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
-  page.
-
-- In all pre-processing and post-processing steps, parameters are now immutably
-  exposed via an `endpointParameters` object and reserved parameters are no
-  longer accessible.
-
-- The `value` for a `fixedOperationParameters` object is now allowed to be any
-  type, including an object; for example, the following specifies an array
-  containing multiple primitives. This has not changed since v0.11.2, but has
-  changed since v0.11.0 and v0.11.1 for which it was only allowed to be a
-  string.
-
-  ```json
-  {
-    "fixedOperationParameters": [
-      {
-        "operationParameter": {
-          "in": "query",
-          "name": "params"
-        },
-        "value": ["finalized", false]
-      }
-    ]
-  }
-  ```
-
-- A new gas strategy, `sanitizedProviderRecommendedGasPrice`, has been added.
-  See the
-  [gas price documentation](/reference/airnode/latest/concepts/gas-prices.md#sanitizedproviderrecommendedgasprice)
-  for more details.
-
-- Gas can now be automatically estimated for RRP fulfillments on supported
-  chains by excluding `chains[n].options.fulfillmentGasLimit` from
-  `config.json`. For more details see the
-  [corresponding documentation](/reference/airnode/latest/deployment-files/config-json.md#options-fulfillmentgaslimit).
-
-- `AirnodeRrpV0` and `RequesterAuthorizerWithErc721` contract addresses are now
-  optional if there is an API3 deployment for that contract on the specified
-  chain. A table of such deployments can be found on the
-  [Contract Addresses](/reference/airnode/latest/index.md) page. The following
-  illustrates how the addresses can be omitted. First, within the `chains[n]`
-  object:
-
-  ```diff
-  {
-  - "contracts": {
-  -   "AirnodeRrp": "0x..."
-  - },
-  }
-  ```
-
-  And second, within the `chains[n].authorizers` object:
-
-  ```diff
-  {
-    "authorizers": {
-      "requesterEndpointAuthorizers": [],
-      "crossChainRequesterAuthorizers": [
-        {
-          "requesterEndpointAuthorizers": ["0x..."],
-          "chainType": "evm",
-          "chainId": "5",
-  -       "contracts": {
-  -         "AirnodeRrp": "0x..."
-  -       },
-          "chainProvider": {
-            "url": "http://127.0.0.2"
-          }
-        }
-      ],
-      "requesterAuthorizersWithErc721": [
-        {
-  -       "RequesterAuthorizerWithErc721": "0x...",
-          "erc721s": ["0x..."]
-        }
-      ],
-      "crossChainRequesterAuthorizersWithErc721": [
-        {
-          "erc721s": ["0x..."],
-          "chainType": "evm",
-          "chainId": "5",
-  -       "contracts": {
-  -         "RequesterAuthorizerWithErc721": "0x..."
-  -       },
-          "chainProvider": {
-            "url": "http://127.0.0.2"
-          }
-        }
-      ]
-    }
-  }
-  ```
-
-<FlexEndTag/>
+- The
+  [HTTP Gateway](/reference/airnode/latest/understand/http-gateways.md#http-gateway)
+  response has been harmonized so that the API call response, after undergoing
+  any post-processing, will be present in the `rawValue` field independent of
+  encoding success or failure.
+- Airnode protocol contracts were deployed on the following chains: `linea`,
+  `linea-goerli-testnet`, `mantle`, `mantle-goerli-testnet`, `base`,
+  `base-goerli-testnet`, `polygon-zkevm`, and `polygon-zkevm-testnet`.
+- In conjunction with the
+  [OIS bump to v2.2](https://github.com/api3dao/ois/releases), endpoint
+  parameters now do not have to be mapped to operation parameters.

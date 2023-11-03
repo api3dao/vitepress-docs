@@ -2,9 +2,9 @@
 title: Adapter
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Packages
+pageHeader: Reference → Airnode → v0.14 → Packages
 path: /reference/airnode/next/packages/adapter.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -20,11 +20,10 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-adapter](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-adapter)
+[airnode-adapter](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-adapter)
 package has multiple responsibilities. It is used for building requests from an
-[Oracle Integration Specification (OIS)](/reference/ois/latest/), executing
-them, parsing the responses, but also converting and encoding them for on chain
-use.
+[Oracle Integration Specification (OIS)](/reference/ois/next/), executing them,
+parsing the responses, but also converting and encoding them for on chain use.
 
 It is an internal dependency of Airnode, but can also be used standalone as an
 API.
@@ -55,12 +54,12 @@ Altogether, the response cycle consists of multiple steps
 
 1. A successful API call is made and Airnode receives a response value.
 2. The value to be converted is extracted from the response using the
-   [\_path](/reference/ois/latest/reserved-parameters.md#path) from the OIS
+   [\_path](/reference/ois/next/reserved-parameters.md#path) from the OIS
    object.
 3. This extracted value is converted to the target type. Conversions are
    performed internally by the `castValue(value, type)` function.
 4. The converted value is encoded to the native solidity type based on the
-   [\_type](/reference/ois/latest/reserved-parameters.md#type) from the OIS
+   [\_type](/reference/ois/next/reserved-parameters.md#type) from the OIS
    object. Encoding is performed internally by the `encodeValue(value, type)`
    function.
 
@@ -103,7 +102,7 @@ console.log(values);
 Number strings and numbers will attempt to be converted to
 [BigNumbers](https://mikemcl.github.io/bignumber.js/). The value will also be
 multiplied by the value of the
-[\_times](/reference/ois/latest/reserved-parameters.md#times) parameter if it is
+[\_times](/reference/ois/next/reserved-parameters.md#times) parameter if it is
 present.
 
 ```ts
@@ -122,7 +121,7 @@ be converted to `uint256`. However, an error will be thrown while encoding.
 Beware that any floating point number will be **floored**. This is necessary,
 because floating point numbers are not valid in solidity. To mitigate precision
 loss, you can use the
-[`_times`](/reference/ois/latest/reserved-parameters.md#times) parameter that is
+[`_times`](/reference/ois/next/reserved-parameters.md#times) parameter that is
 sufficiently large. For example, if the API response is a USD currency, you
 might want to use `_times: "100"` to convert the value to cents.
 

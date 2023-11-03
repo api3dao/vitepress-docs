@@ -2,9 +2,9 @@
 title: Relayed Meta Data Authentication
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/relay-meta-auth.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---

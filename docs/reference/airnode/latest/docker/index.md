@@ -2,9 +2,9 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Docker Images
+pageHeader: Reference → Airnode → v0.13 → Docker Images
 path: /reference/airnode/latest/docker/index.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---

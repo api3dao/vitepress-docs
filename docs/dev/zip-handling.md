@@ -3,7 +3,7 @@ title: Zip File Handling
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/zip-handling.html
+path: /dev/zip-handling.html
 outline: deep
 tags:
 ---

@@ -2,9 +2,9 @@
 title: Request
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.14 → Concepts and Definitions
 path: /reference/airnode/next/concepts/request.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -86,7 +86,7 @@ request.
   be called to fulfill the request
 
 - `parameters` specify the API and
-  [reserved](/reference/ois/latest/specification.md#_5-4-reservedparameters)
+  [reserved](/reference/ois/next/specification.md#_5-4-reservedparameters)
   parameters (see
   [Airnode ABI specifications](/reference/airnode/next/specifications/airnode-abi.md)
   for how these are encoded)

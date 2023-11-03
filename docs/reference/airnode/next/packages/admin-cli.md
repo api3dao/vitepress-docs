@@ -2,9 +2,9 @@
 title: Admin CLI
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Packages
+pageHeader: Reference → Airnode → v0.14 → Packages
 path: /reference/airnode/next/packages/admin-cli.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 Use the
-[airnode-admin](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-admin)
+[airnode-admin](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-admin)
 Admin CLI tool to interact with Airnode across blockchains. There are commands
 for both developers (dApp) and API providers. Developers can sponsor
 [requester](/reference/airnode/next/concepts/requester.md) contracts and derive
@@ -47,9 +47,9 @@ more information.
 - `https://sepolia.infura.io/v3/<KEY>`
 
 The CLI connects to the
-[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 or the
-[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
+[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
 contract, which addresses are derived from the current chain. You can optionally
 specify the contract addresses yourself by providing optional
 `airnode-rrp-address` or `requester-authorizer-with-airnode` command argument
@@ -104,13 +104,13 @@ npx @api3/airnode-admin $COMMAND --help
 Use the Admin CLI docker image as an alternative to `npx`:
 
 ```sh
-docker run api3/airnode-admin:0.12.0 --help
+docker run api3/airnode-admin:0.13.0 --help
 ```
 
 View the parameters of a command:
 
 ```sh
-docker run api3/airnode-admin:0.12.0 $COMMAND --help
+docker run api3/airnode-admin:0.13.0 $COMMAND --help
 ```
 
 ## SDK
@@ -194,7 +194,7 @@ relationships between
 [sponsorWallets](/reference/airnode/next/concepts/sponsor.md#sponsorwallet) as
 well as [templates](/reference/airnode/next/concepts/template.md) used by a
 sponsor's requesters. Some of these commands connect to the
-[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
+[AirnodeRrpV0.sol](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol)
 protocol contract where the signer is sponsor account.
 
 - [sponsor-requester](/reference/airnode/next/packages/admin-cli.md#sponsor-requester)
@@ -725,7 +725,7 @@ This authorizer contract can whitelist
 is administered by themselves.
 
 These commands connect to the
-[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
+[RequesterAuthorizerWithAirnode.sol](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-protocol/contracts/authorizers/RequesterAuthorizerWithAirnode.sol)
 contract.
 
 - [set-whitelist-expiration](/reference/airnode/next/packages/admin-cli.md#set-whitelist-expiration)
@@ -968,7 +968,7 @@ npx @api3/airnode-admin is-requester-whitelisted ^
 ## More Examples
 
 You can find more examples in the
-[test directory](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-admin/test)
+[test directory](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-admin/test)
 of the `@api3-dao/airnode/package/admin` repo.
 
 <FlexEndTag/>

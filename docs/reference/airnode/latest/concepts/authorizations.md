@@ -2,9 +2,9 @@
 title: Authorizations
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.13 → Concepts and Definitions
 path: /reference/airnode/latest/concepts/authorizations.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -59,7 +59,7 @@ functionality cannot be considered as permissionless, and will not be able to
 achieve wide-spread adoption.
 
 Currently there is only one authorization scheme type, see
-[requesterEndpointAuthorizations](https://github.com/api3dao/airnode/blob/master/packages/airnode-validator/src/config/config.ts#L162).
+[requesterEndpointAuthorizations](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-validator/src/config/config.ts#L162).
 The authorizations scheme type is set in
 `chains[n].authorizations.{<authorizationsSchemeType>}` of `config.json`.
 

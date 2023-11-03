@@ -2,9 +2,9 @@
 title: Configuring Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
 path: /reference/airnode/latest/understand/configuring.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -226,7 +226,7 @@ The `nodeSettings` field holds node-specific (Airnode) configuration parameters.
     },
     "logFormat": "plain",
     "logLevel": "INFO",
-    "nodeVersion": "0.12.0",
+    "nodeVersion": "0.13.0",
     "stage": "dev"
   },
 ```

@@ -2,9 +2,9 @@
 title: Deployer
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Packages
+pageHeader: Reference → Airnode → v0.14 → Packages
 path: /reference/airnode/next/packages/deployer.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 The
-[airnode-deployer](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer)
+[airnode-deployer](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-deployer)
 package is used primarily by the
 [Docker Images](/reference/airnode/next/docker/). This CLI tool provides the
 underlying commands used by the Docker images when deploying an Airnode. API
@@ -38,7 +38,7 @@ if you do not wish to use the Docker images.
 
 - [Using npx](/reference/airnode/next/packages/deployer.md#using-npx)
 - [Global Package](/reference/airnode/next/packages/deployer.md#global-package)
-- [Build Manually](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer)
+- [Build Manually](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-deployer)
 
 ### Using npx
 
@@ -102,9 +102,9 @@ yarn build
 
 - Make sure `config.json` and `secrets.env` are available in the `config`
   directory. You can use the provided example
-  [config.json](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/config.example.json)
+  [config.json](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-deployer/config/config.example.json)
   and
-  [secrets.env](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/secrets.example.env)
+  [secrets.env](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-deployer/config/secrets.example.env)
   templates to get started quickly, but you will need to edit these with your
   own API details and secrets.
 
@@ -155,9 +155,9 @@ the `gcp.json` credentials file.
 
 When creating or updating an Airnode the `config.json` and `secrets.env` files
 are needed. You can use the provided example
-[config.json](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/config.example.json)
+[config.json](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-deployer/config/config.example.json)
 and
-[secrets.env](https://github.com/api3dao/airnode/blob/v0.12/packages/airnode-deployer/config/secrets.example.env)
+[secrets.env](https://github.com/api3dao/airnode/blob/v0.13/packages/airnode-deployer/config/secrets.example.env)
 templates to get started quickly, but you will need to edit these with your own
 API details and secrets.
 

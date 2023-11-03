@@ -2,9 +2,9 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Deployment Files
+pageHeader: Reference → Airnode → v0.14 → Deployment Files
 path: /reference/airnode/next/deployment-files/config-json.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -45,7 +45,7 @@ database of an Airnode deployment. It contains five fields as show below.
 - [templates](/reference/airnode/next/deployment-files/config-json.md#templates):
 - [ois](/reference/airnode/next/deployment-files/config-json.md#ois): API
   specifications and the corresponding on-chain endpoints, kept as
-  [OIS](/reference/ois/latest/specification.md) objects.
+  [OIS](/reference/ois/next/specification.md) objects.
 - [apiCredentials](/reference/airnode/next/deployment-files/config-json.md#apicredentials):
   Which API credentials will be usable by which OIS and security scheme.
 
@@ -347,7 +347,7 @@ An object containing general deployment parameters of an Airnode.
 ```json
 // nodeSettings
 {
-  "nodeVersion": "0.12.0",
+  "nodeVersion": "0.13.0",
   "cloudProvider": {
     "type": "gcp",
     "region": "us-east1",
@@ -729,7 +729,7 @@ A list of OIS objects. Since each OIS specifies the integration of an API to an
 oracle, a single Airnode deployment can serve multiple APIs. To avoid
 duplication of content, see the
 [API Integration](/reference/airnode/next/understand/api-integration.md) guide
-and the [Oracle Integration Specifications (OIS)](/reference/ois/latest/)
+and the [Oracle Integration Specifications (OIS)](/reference/ois/next/)
 documentation.
 
 ## apiCredentials
