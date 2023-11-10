@@ -9,13 +9,23 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Subscribing to Managed dAPIs ',
-        link: '/guides/dapis/subscribing-managed-dapis/',
+        text: 'Getting Started with dAPIs',
+        link: '/guides/dapis/',
       },
       {
-        text: 'Subscribing to Self-Funded dAPIs ',
-        link: '/guides/dapis/subscribing-self-funded-dapis/',
-      },
+        text: 'Subscribing to dAPIs',
+        collapsed: false,
+        items: [
+          {
+            text: '• Subscribing to Managed dAPIs ',
+            link: '/guides/dapis/subscribing-managed-dapis/',
+          },
+          {
+            text: '• Subscribing to Self-Funded dAPIs ',
+            link: '/guides/dapis/subscribing-self-funded-dapis/',
+          },
+    ],
+  },
       {
         text: 'Reading a dAPI Proxy',
         link: '/guides/dapis/read-a-dapi/',
