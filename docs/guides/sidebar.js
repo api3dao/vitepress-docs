@@ -24,8 +24,8 @@ module.exports = [
             text: '• Subscribing to Self-Funded dAPIs ',
             link: '/guides/dapis/subscribing-self-funded-dapis/',
           },
-    ],
-  },
+        ],
+      },
       {
         text: 'Reading a dAPI Proxy',
         link: '/guides/dapis/read-a-dapi/',
