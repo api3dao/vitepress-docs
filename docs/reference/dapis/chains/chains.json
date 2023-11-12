@@ -1,6 +1,6 @@
 {
-  "arbitrum-testnet": {
-    "name": "arbitrum-testnet",
+  "arbitrum-goerli-testnet": {
+    "name": "arbitrum-goerli-testnet",
     "fullName": "Arbitrum Goerli Testnet",
     "id": "421613",
     "contracts": {
@@ -446,8 +446,8 @@
     "testnet": true,
     "explorerUrl": "https://andromeda-explorer.metis.io"
   },
-  "milkomeda": {
-    "name": "milkomeda",
+  "milkomeda-c1": {
+    "name": "milkomeda-c1",
     "fullName": "Milkomeda C1",
     "id": "2001",
     "contracts": {
@@ -465,8 +465,8 @@
     "testnet": false,
     "explorerUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com"
   },
-  "milkomeda-testnet": {
-    "name": "milkomeda-testnet",
+  "milkomeda-c1-testnet": {
+    "name": "milkomeda-c1-testnet",
     "fullName": "Milkomeda C1 Testnet",
     "id": "200101",
     "contracts": {
@@ -563,8 +563,8 @@
     "testnet": false,
     "explorerUrl": "https://optimistic.etherscan.io"
   },
-  "optimism-testnet": {
-    "name": "optimism-testnet",
+  "optimism-goerli-testnet": {
+    "name": "optimism-goerli-testnet",
     "fullName": "Optimism Goerli Testnet",
     "id": "420",
     "contracts": {

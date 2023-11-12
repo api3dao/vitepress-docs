@@ -3,7 +3,7 @@ title: Firebase
 sidebarHeader: Docs Development
 sidebarSubHeader:
 pageHeader: Docs Development
-basePath: /dev/firebase.html
+path: /dev/firebase.html
 outline: deep
 tags:
 ---

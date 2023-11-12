@@ -2,9 +2,9 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Deployment Files
+pageHeader: Reference → Airnode → v0.13 → Deployment Files
 path: /reference/airnode/latest/deployment-files/config-json.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -347,7 +347,7 @@ An object containing general deployment parameters of an Airnode.
 ```json
 // nodeSettings
 {
-  "nodeVersion": "0.12.0",
+  "nodeVersion": "0.13.0",
   "cloudProvider": {
     "type": "gcp",
     "region": "us-east1",

@@ -2,9 +2,9 @@
 title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.2
+pageHeader: Reference → OIS → v2.3
 path: /reference/ois/next/specification.html
-version: v2.2
+version: v2.3
 outline: deep
 tags:
 ---
@@ -78,8 +78,8 @@ An OIS has five root fields (keys).
 ## 1. `oisFormat`
 
 (Required) The OIS format version followed while generating the specifications.
-See [Versions](/reference/ois/next/versions) for a list of OIS versions used by
-each Airnode version.
+See [Versions](/reference/ois/next/versions.md) for a list of OIS versions used
+by each Airnode version.
 
 ## 2. `title`
 

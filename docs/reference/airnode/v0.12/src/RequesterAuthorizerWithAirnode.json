@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "fullname": "Ethereum",
+    "alias": "ethereum",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "5",
+    "fullname": "Ethereum Goerli testnet",
+    "alias": "ethereum-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "10",
+    "fullname": "Optimism",
+    "alias": "optimism",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "30",
+    "fullname": "RSK",
+    "alias": "rsk",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "31",
+    "fullname": "RSK testnet",
+    "alias": "rsk-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "56",
+    "fullname": "BSC",
+    "alias": "bsc",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "97",
+    "fullname": "BSC testnet",
+    "alias": "bsc-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "100",
+    "fullname": "Gnosis Chain",
+    "alias": "gnosis",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "137",
+    "fullname": "Polygon",
+    "alias": "polygon",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "250",
+    "fullname": "Fantom",
+    "alias": "fantom",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "288",
+    "fullname": "Boba/Ethereum",
+    "alias": "boba-ethereum",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
+  },
+  {
+    "id": "416",
+    "fullname": "SX Network",
+    "alias": "sx",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38"
+  },
+  {
+    "id": "420",
+    "fullname": "Optimism testnet",
+    "alias": "optimism-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "599",
+    "fullname": "Metis testnet",
+    "alias": "metis-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xe40f1a1A546B70003D9ddF66B89C261cA46A0CF0"
+  },
+  {
+    "id": "647",
+    "fullname": "SX Network testnet",
+    "alias": "sx-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
+  },
+  {
+    "id": "1088",
+    "fullname": "Metis",
+    "alias": "metis",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
+  },
+  {
+    "id": "1284",
+    "fullname": "Moonbeam",
+    "alias": "moonbeam",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "1285",
+    "fullname": "Moonriver",
+    "alias": "moonriver",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "1287",
+    "fullname": "Moonbeam testnet",
+    "alias": "moonbeam-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "2001",
+    "fullname": "Milkomeda C1",
+    "alias": "milkomeda-c1",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "4002",
+    "fullname": "Fantom testnet",
+    "alias": "fantom-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "10200",
+    "fullname": "Gnosis Chain testnet",
+    "alias": "gnosis-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "42161",
+    "fullname": "Arbitrum",
+    "alias": "arbitrum",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x944609FF0729435F87Ef429EC155d7539A83B9C8"
+  },
+  {
+    "id": "42170",
+    "fullname": "Arbitrum Nova",
+    "alias": "arbitrum-nova",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "43113",
+    "fullname": "Avalanche testnet",
+    "alias": "avalanche-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4923968942E8aae4656ae4913874EB7312e0F7c7"
+  },
+  {
+    "id": "43114",
+    "fullname": "Avalanche",
+    "alias": "avalanche",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
+  },
+  {
+    "id": "43288",
+    "fullname": "Boba/Avalanche",
+    "alias": "boba-avalanche",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "56288",
+    "fullname": "Boba/BNB",
+    "alias": "boba-bnb",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
+  },
+  {
+    "id": "71401",
+    "fullname": "Godwoken testnet",
+    "alias": "godwoken-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "71402",
+    "fullname": "Godwoken",
+    "alias": "godwoken",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x7D15b4676c7FFfdcb69E838518B2182223aE46d3"
+  },
+  {
+    "id": "80001",
+    "fullname": "Polygon testnet",
+    "alias": "polygon-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "200101",
+    "fullname": "Milkomeda C1 testnet",
+    "alias": "milkomeda-c1-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "421613",
+    "fullname": "Arbitrum testnet",
+    "alias": "arbitrum-goerli-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  },
+  {
+    "id": "11155111",
+    "fullname": "Ethereum Sepolia testnet",
+    "alias": "ethereum-sepolia-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x55D72F0eb10e85D390B20DA57aa3122312647c0d"
+  },
+  {
+    "id": "1313161554",
+    "fullname": "Aurora",
+    "alias": "aurora",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38"
+  },
+  {
+    "id": "1313161555",
+    "fullname": "Aurora testnet",
+    "alias": "aurora-testnet",
+    "contractName": "RequesterAuthorizerWithAirnode",
+    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
+  }
+]

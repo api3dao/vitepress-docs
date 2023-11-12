@@ -2,9 +2,9 @@
 title: HTTP Gateways (optional)
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.12 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
 path: /reference/airnode/latest/understand/http-gateways.html
-version: v0.12
+version: v0.13
 outline: deep
 tags:
 ---
@@ -47,8 +47,7 @@ requests or requests to the HTTP signed data gateway:
    other types of requests for which only an error would be returned. The API
    call response, after undergoing any
    [post-processing](/reference/ois/latest/processing.md), will be present in
-   the response body if encoding fails, and in the `rawValue` field if the
-   encoding is successful:
+   the `rawValue` field independent of encoding success or failure:
 
    ```json
    {

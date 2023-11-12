@@ -2,9 +2,9 @@
 title: Specification
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.1
+pageHeader: Reference → OIS → v2.2
 path: /reference/ois/latest/specification.html
-version: v2.1
+version: v2.2
 outline: deep
 tags:
 ---
@@ -63,7 +63,7 @@ An OIS has five root fields (keys).
 
 ```json
 {
-  "oisFormat": "2.1.0",
+  "oisFormat": "2.2.0",
   "title": "myOisTitle",
   "version": "1.2.3",
   "apiSpecifications": {
@@ -523,8 +523,9 @@ following elements:
 
 #### 5.5.1. `operationParameter`
 
-(Required) An object that refers to a parameter of an API operation, has the
-following elements:
+(Optional) An object that refers to a parameter of an API operation and has the
+below elements. Note that if omitted, the `parameter` will not be included as
+part of the request to the API endpoint.
 
 - `name`
 - `in`

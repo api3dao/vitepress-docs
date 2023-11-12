@@ -2,9 +2,9 @@
 title: Deploying Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.14 → Understanding Airnode
 path: /reference/airnode/next/understand/deploying.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -30,14 +30,14 @@ next step is to deploy the Airnode.
 The recommended way to deploy Airnode is by using the Docker
 [deployer image](/reference/airnode/next/docker/deployer-image.md). This image
 is simply a wrapper around the
-[deployer CLI](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-deployer).
+[deployer CLI](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-deployer).
 Try the
 [Deploying an Airnode on AWS](/guides/airnode/deploy-airnode/deploy-aws/)
 tutorial if you wish to become familiar with the deployer image first. There are
 also tutorials for [GCP](/guides/airnode/deploy-airnode/deploy-gcp/) and a
 [client Docker container](/guides/airnode/deploy-airnode/deploy-container/) as
 well as several repo based examples in the
-[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.12.0/packages/airnode-examples)
+[Airnode monorepo example](https://github.com/api3dao/airnode/tree/v0.13.0/packages/airnode-examples)
 package.
 
 The deployer interacts with a cloud provider to deploy Airnode programmatically,
@@ -100,14 +100,14 @@ need arise.
 docker run -it --rm \
   -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) \
   -v "$(pwd):/app/config" \
-  api3/airnode-deployer:0.12.0 deploy
+  api3/airnode-deployer:0.13.0 deploy
 ```
 
 ```batch [Windows]
 # For Windows, use CMD (not PowerShell).
 docker run -it --rm ^
   -v "%cd%:/app/config" ^
-  api3/airnode-deployer:0.12.0 deploy
+  api3/airnode-deployer:0.13.0 deploy
 ```
 
 :::
@@ -133,7 +133,7 @@ deployment was successful or not.
       "disableConcurrencyReservations": false
     },
     "stage": "dev",
-    "nodeVersion": "0.12.0",
+    "nodeVersion": "0.13.0",
     "timestamp": "2022-03-26T02:37:55.506Z"
   },
   "success": true
