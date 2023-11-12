@@ -22,7 +22,7 @@ This is the getting started section for dAPIs along with some frequently asked
 questions. If you have a question that is not answered here, you can head over
 to our [Discord server](https://discord.com/invite/qnRrcfnm5W).
 
-## What is the dAPIs?
+## What are dAPIs?
 
 dAPIs are on-chain decentralized data feeds sourced directly from
 [first-party oracles](/explore/airnode/why-first-party-oracles.md) owned and
@@ -39,12 +39,50 @@ To read more about dAPIs, [click here](/reference/dapis/understand/).
 
 ## What is the API3 Market?
 
-[API3 Market](https://market.api3.org/) is a marketplace for all the available
-dAPIs. It is a collection of all the dAPIs that are currently live across all
-the supported chains.
+[API3 Market](https://market.api3.org/) enables users to browse, activate and
+manage dAPIs. Within the Market you can see all live dAPIs on the supported
+chains. You can also see the details of each dAPI, such as the provider, the
+asset type, the deviation threshold, the heartbeat, and the last on-chain
+updated price.
 
 Check out the API3 Market [here](https://market.api3.org/). You can browse
 through the available dAPIs and check out their details.
+
+## What are Managed dAPIs?
+
+[Managed dAPIs](/reference/dapis/understand/managed.html) are sourced directly
+from **multiple** [first-party](/explore/airnode/why-first-party-oracles.md)
+data providers running an Airnode and aggregated using their
+[Airnode's signed data](/reference/airnode/latest/understand/http-gateways.html).
+Unlike self-funded dAPIs, API3 manages the gas costs and the availability of the
+Managed dAPIs.
+
+With Managed dAPIs, users get the option to configure the
+[deviation threshold](/reference/dapis/understand/deviations.html) and
+[heartbeat](/reference/dapis/understand/deviations.html#heartbeat) for each
+dAPI. The deviation threshold is the percentage deviation from the current value
+of the dAPI that triggers an update. If a dAPI is not updated within a known
+amount of time (called the heartbeat), the dAPI update is triggered.
+
+[Click here](/guides/dapis/subscribing-managed-dapis/) to read more about how to
+get started with Managed dAPIs.
+
+## What are Self-funded dAPIs?
+
+[Self-funded dAPIs](/reference/dapis/understand/self-funded.html) are sourced
+directly from a **single**
+[first-party](/explore/airnode/why-first-party-oracles.md) data provider running
+an Airnode. The amount of gas you supply will determine how long your dAPI will
+be available for use. If you run out of gas, you can fund the dAPI again to keep
+it available for use. Unlike managed dAPIs, API3 does not manage the gas costs
+and the availability of the Self-funded dAPIs.
+
+Self-funded dAPIs are only available at 1% deviation threshold and 24 hour
+heartbeat by default. You can update the deviation threshold and heartbeat by
+placing an order for a Managed dAPI.
+
+[Click here](/guides/dapis/subscribing-self-funded-dapis/) to read more about
+how to get started with Self-funded dAPIs.
 
 ## How to use dAPIs in a smart contract?
 
@@ -83,47 +121,11 @@ contract DataFeedReaderExample is Ownable {
 ```
 
 You'll have to set the `proxyAddress` using the `setProxyAddress()` function.
-You can get the `proxyAddress` for available dAPIs from the
-[API3 Market](https://market.api3.org/).
+You can get the `proxyAddress` for activated dAPIs from within the data feed
+dashboard through the [API3 Market](https://market.api3.org/).
 
-To read more about Reading a dAPI value,
+To read more about reading a dAPI value,
 [click here](/guides/dapis/read-a-dapi/).
-
-## What are Managed dAPIs?
-
-[Managed dAPIs](/reference/dapis/understand/managed.html) are sourced directly
-from **multiple** [first-party](/explore/airnode/why-first-party-oracles.md)
-data providers running an Airnode and aggregated using their
-[Airnode's signed data](/reference/airnode/latest/understand/http-gateways.html).
-Unlike self-funded dAPIs, API3 manages the gas costs and the availability of the
-managed dAPIs.
-
-With Managed dAPIs, users get the option to configure the
-[deviation threshold](/reference/dapis/understand/deviations.html) and
-[heartbeat](/reference/dapis/understand/deviations.html#heartbeat) for each
-dAPI. The deviation threshold is the percentage deviation from the current value
-of the dAPI that triggers an update. If a dAPI is not updated within a known
-amount of time (called the heartbeat), the dAPI update is triggered.
-
-[Click here](/guides/dapis/subscribing-managed-dapis/) to read more about how to
-get started with Managed dAPIs.
-
-## What are Self-funded dAPIs?
-
-[Self-funded dAPIs](/reference/dapis/understand/self-funded.html) are sourced
-directly from a **single**
-[first-party](/explore/airnode/why-first-party-oracles.md) data provider running
-an Airnode. The amount of gas you supply will determine how long your dAPI will
-be available for use. If you run out of gas, you can fund the dAPI again to keep
-it available for use. Unlike managed dAPIs, API3 does not manage the gas costs
-and the availability of the Self-funded dAPIs.
-
-Self-funded dAPIs are only available at 1% deviation threshold and 24 hour
-heartbeat by default. You can update the deviation threshold and heartbeat by
-placing an order for a Managed dAPI.
-
-[Click here](/guides/dapis/subscribing-self-funded-dapis/) to read more about
-how to get started with Self-funded dAPIs.
 
 ## How many providers are there for dAPIs?
 
@@ -134,7 +136,7 @@ Currently, there are 7 providers for Managed dAPIs:
 | Cryptocurrency | Nodary, Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
 | Forex          | Nodary, Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
 | Commodities    | Nodary, Finage, Twelvedata, dxFeed, Tradermade                          |
-| Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxfeed                   |
+| Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxFeed                   |
 
 As Self-funded dAPIs are single sourced, only [Nodary](https://nodary.io/) is
 the provider for Self-funded dAPIs.
