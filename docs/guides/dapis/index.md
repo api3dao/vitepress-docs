@@ -29,7 +29,7 @@ dAPIs are on-chain decentralized data feeds sourced directly from
 operated by API providers themselves (using
 [Airnode](/reference/airnode/latest/understand/)) and are continuously updated
 using [signed data](/reference/airnode/latest/understand/http-gateways.md). dApp
-owners can read the on-chain value of any dAPI in realtime.
+owners can read the on-chain value of any dAPI in real-time.
 
 dAPIs serves a variety of data feeds, such as latest cryptocurrency, stock, and
 commodity prices. They can power various decentralized applications such as DeFi
@@ -51,8 +51,8 @@ through the available dAPIs and check out their details.
 ## What are Managed dAPIs?
 
 [Managed dAPIs](/reference/dapis/understand/managed.html) are sourced directly
-from **multiple** [first-party](/explore/airnode/why-first-party-oracles.md)
-data providers running an Airnode and aggregated using their
+from multiple [first-party](/explore/airnode/why-first-party-oracles.md) data
+providers running an Airnode and aggregated using their
 [Airnode's signed data](/reference/airnode/latest/understand/http-gateways.html).
 Unlike self-funded dAPIs, API3 manages the gas costs and the availability of the
 Managed dAPIs.
@@ -70,14 +70,14 @@ get started with Managed dAPIs.
 ## What are Self-funded dAPIs?
 
 [Self-funded dAPIs](/reference/dapis/understand/self-funded.html) are sourced
-directly from a **single**
+directly from a single
 [first-party](/explore/airnode/why-first-party-oracles.md) data provider running
 an Airnode. The amount of gas you supply will determine how long your dAPI will
 be available for use. If you run out of gas, you can fund the dAPI again to keep
 it available for use. Unlike managed dAPIs, API3 does not manage the gas costs
 and the availability of the Self-funded dAPIs.
 
-Self-funded dAPIs are only available at 1% deviation threshold and 24 hour
+Self-funded dAPIs are only available at 1% deviation threshold and 24-hour
 heartbeat by default. You can update the deviation threshold and heartbeat by
 placing an order for a Managed dAPI.
 
@@ -138,7 +138,7 @@ Currently, there are 7 providers for Managed dAPIs:
 | Commodities    | Nodary, Finage, Twelvedata, dxFeed, Tradermade                          |
 | Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxFeed                   |
 
-As Self-funded dAPIs are single sourced, only [Nodary](https://nodary.io/) is
+As Self-funded dAPIs are single-sourced, only [Nodary](https://nodary.io/) is
 the provider for Self-funded dAPIs.
 
 ## What are dAPI Proxy Contracts?
