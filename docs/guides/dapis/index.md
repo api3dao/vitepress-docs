@@ -31,7 +31,7 @@ operated by API providers themselves (using
 using [signed data](/reference/airnode/latest/understand/http-gateways.md). dApp
 owners can read the on-chain value of any dAPI in real-time.
 
-dAPIs serves a variety of data feeds, such as latest cryptocurrency, stock, and
+dAPIs serve a variety of data feeds, such as latest cryptocurrency, stock, and
 commodity prices. They can power various decentralized applications such as DeFi
 lending, synthetic assets, stable coins, derivatives, NFTs, and more.
 
