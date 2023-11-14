@@ -53,3 +53,5 @@ using its proxy contract address.
 ```solidity
 (value, timestamp) = IProxy(0x4a40Ed2Dbd51e655eD64371737C81883B0524eB2).read();
 ```
+
+<FlexEndTag/>
