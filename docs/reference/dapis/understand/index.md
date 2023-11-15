@@ -28,8 +28,8 @@ stable coins, derivatives, NFTs, and more.
 ## Values stored on-chain
 
 API providers, owners of first-party Airnodes, provide the signed data used to
-store individual beacon values on-chain. A dAPI's value is derived as an
-aggregated set of beacon values. dAPI values are held in the
+store individual beacon values on-chain. A dAPI's value is in turn an aggregate
+of beacon values. dAPI values are held in the
 [Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract.
 
@@ -54,18 +54,19 @@ Airnode is a flexible off-chain module that can support multiple protocols. Most
 noticeably is its implementation of the request-response protocol (RRP) and data
 feeds.
 
-An Airnode is owned by an API provider and integrates itself along side their
-API operations. Airnode interfaces with these operations and gathers its signed
-data at the request of Airseeker. Airseeker uses the signed data to determine if
-the deviation of a dAPI value (e.g., plus or minus 0.25%, 0.5%, 1%) warrants an
-on-chain update of its beacon(s).
+An Airnode is owned by an API provider and is used to call API provider
+endpoints to fetch and sign data. An Airnode is owned by an API provider and
+integrates itself along side their API operations. Airnode interfaces with these
+operations and gathers its signed data at the request of Airseeker. Airseeker
+uses the signed data to determine if the deviation of a dAPI value (e.g., plus
+or minus 0.25%, 0.5%, 1%) warrants an on-chain update of its beacon(s).
 
 <img src="../assets/images/beacons-airnode.png">
 
-In the diagram above, companies ABC and XYZ both have an API operation (A and B)
-that is used to determine the value of the dAPI ZIL/USD . Airseeker regularly
-checks the deviation of ZIL/USD (as well as other dAPIs) using the sign data
-from Airnode. Airseeker will update the corresponding beacons behind ZIL/USD
+In the diagram above, companies XYZ and ABC both provide ZIL/USD values, A and
+B, respectively, that are aggregated to determine the dAPI ZIL/USD value.
+Airseeker regularly checks the deviation of ZIL/USD using the sign data from
+these Airnodes. Airseeker will update the corresponding beacons behind ZIL/USD
 when deviation is detected.
 
 When a dApp requests the value of ZIL/USD, it will get the aggregated value of
@@ -114,7 +115,6 @@ Both **Self-funded dAPIs** and **Managed dAPIs** are available on the
 
 | Self-funded dAPIs                                                               | Managed dAPIs                                         |
 | ------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| March 2023                                                                      | Fall 2023                                             |
 | Single public [proxy contract](/reference/dapis/understand/proxy-contracts.md)  | Single public proxy contract                          |
 | 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%)             |
 | 60 second [interval](/reference/dapis/understand/deviations.md#update-interval) | 30-60 second interval                                 |
