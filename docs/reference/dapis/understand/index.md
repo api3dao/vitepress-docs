@@ -61,7 +61,7 @@ data at the request of AirSeeker. AirSeeker uses the signed data to determine if
 the deviation of a dAPI value (e.g., plus or minus 0.25%, 0.5%, 1%) warrants an
 on-chain update of its beacon(s).
 
-<img src="../assets/images/beacons-airnode.png" style="width:80%;">
+<img src="../assets/images/beacons-airnode.png">
 
 In the diagram above, companies ABC and XYZ both have an API operation (A and B)
 that is used to determine the value of the dAPI ZIL/USD . AirSeeker regularly
