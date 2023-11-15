@@ -28,9 +28,8 @@ stable coins, derivatives, NFTs, and more.
 ## Values stored on-chain
 
 API providers, owners of first-party Airnodes, provide the signed data used to
-store beacon values (via AirSeeker) on-chain as individual beacons. A dAPI's
-value is derived as an aggregated set of beacon values. dAPI values are held in
-the
+store individual beacon values on-chain. A dAPI's value is derived as an
+aggregated set of beacon values. dAPI values are held in the
 [Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
 contract.
 
@@ -57,16 +56,16 @@ feeds.
 
 An Airnode is owned by an API provider and integrates itself along side their
 API operations. Airnode interfaces with these operations and gathers its signed
-data at the request of AirSeeker. AirSeeker uses the signed data to determine if
+data at the request of Airseeker. Airseeker uses the signed data to determine if
 the deviation of a dAPI value (e.g., plus or minus 0.25%, 0.5%, 1%) warrants an
 on-chain update of its beacon(s).
 
 <img src="../assets/images/beacons-airnode.png">
 
 In the diagram above, companies ABC and XYZ both have an API operation (A and B)
-that is used to determine the value of the dAPI ZIL/USD . AirSeeker regularly
+that is used to determine the value of the dAPI ZIL/USD . Airseeker regularly
 checks the deviation of ZIL/USD (as well as other dAPIs) using the sign data
-from Airnode. AirSeeker will update the corresponding beacons behind ZIL/USD
+from Airnode. Airseeker will update the corresponding beacons behind ZIL/USD
 when deviation is detected.
 
 When a dApp requests the value of ZIL/USD, it will get the aggregated value of
