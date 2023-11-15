@@ -25,12 +25,13 @@ such as the latest cryptocurrency, stock, and commodity prices. They can power
 various decentralized applications such as DeFi lending, synthetic assets,
 stable coins, derivatives, NFTs, and more.
 
-## Data feeds values stored on-chain
+## Values stored on-chain
 
-API providers, owners of first-party Airnodes, store data feed values on-chain
-as individual beacons that in are turn sourced by the
+API providers, owners of first-party Airnodes, provide the signed data used to
+store individual beacon values on-chain. A dAPI's value is in turn an aggregate
+of beacon values. dAPI values are held in the
 [Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
-contract as dAPIs.
+contract.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
 
@@ -50,47 +51,26 @@ to get the value of a dAPI.
 ## The role of Airnode
 
 Airnode is a flexible off-chain module that can support multiple protocols. Most
-noticeably are its implementation of the request-response protocol (RRP) and
-data feeds.
+noticeably is its implementation of the request-response protocol (RRP) and data
+feeds.
 
-An Airnode is owned by an API provider and integrates itself along side their
-API operations. Functionality within Airnode monitors one or more API operations
-hosted by an API provider and looks for a preset deviation of a data feed value
-(e.g., plus or minus 1%). When the deviation threshold is reached, Airnode
-pushes the new value on-chain into the beacon store. Each beacon represents a
-value from a single API operation.
+An Airnode is owned by an API provider and is used to call API provider
+endpoints to fetch and sign data. An Airnode is owned by an API provider and
+integrates itself along side their API operations. Airnode interfaces with these
+operations and gathers its signed data at the request of Airseeker. Airseeker
+uses the signed data to determine if the deviation of a dAPI value (e.g., plus
+or minus 0.25%, 0.5%, 1%) warrants an on-chain update of its beacon(s).
 
-<img src="../assets/images/beacons-airnode.png" style="width:80%;">
+<img src="../assets/images/beacons-airnode.png">
 
-In the diagram above, company ABC has two API operations (B and C) and a single
-Airnode that monitors the API operations. When the deviation threshold is
-reached for either operation it will update the corresponding beacons, in this
-case `1FeexV6A` and `1AC4fMwg`.
+In the diagram above, companies XYZ and ABC both provide ZIL/USD values, A and
+B, respectively, that are aggregated to determine the dAPI ZIL/USD value.
+Airseeker regularly checks the deviation of ZIL/USD using the sign data from
+these Airnodes. Airseeker will update the corresponding beacons behind ZIL/USD
+when deviation is detected.
 
-Note that company XYZ has an operations (A) that provides the value of ZIL/USD
-just like operation (B) from company ABC. A dAPI can now aggregate the value of
-operations (A) and (B) since they are the same data feed but from different
-companies.
-
-## dAPI roadmap
-
-Currently dAPIs are under an expansive development cycle and as of August of
-2023 both **Self-funded dAPIs** and **Managed dAPIs** are available.
-
-| Self-funded dAPIs                                                               | Managed dAPIs                                         |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| March 2023                                                                      | \* Summer 2023                                        |
-| Single public [proxy contract](/reference/dapis/understand/proxy-contracts.md)  | Single public proxy contract                          |
-| 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%)             |
-| 60 second [interval](/reference/dapis/understand/deviations.md#update-interval) | 30-60 second interval                                 |
-| 24 hour [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)        | 2 minute or 24 hour heartbeat                         |
-| Sourced from a single<br/>data feed (beacon)                                    | Sourced from multiple<br/>data feeds (beacons)        |
-| Gas costs are community funded                                                  | Gas costs are managed <br/>by API3 using upgrade fees |
-
-Development and expansion of dAPIs beyond self-funded and managed dAPIs will
-include OEV and service coverage. More details on these concepts will be
-forthcoming. Please feel-free to ask questions about the evolution of dAPIs on
-[Discord](https://discord.com/channels/758003776174030948/765618225144266793).
+When a dApp requests the value of ZIL/USD, it will get the aggregated value of
+the beacons behind the dAPI ZIL/USD.
 
 ## Self funded dAPIs
 
@@ -128,6 +108,23 @@ This is advantages as the dApp owner does not need to worry about the community
 based funding model that might cause the dAPI to shut down due to lack of
 funding.
 
-<FlexEndTag/>
+## Availability
+
+Both **Self-funded dAPIs** and **Managed dAPIs** are available on the
+[Market](https://market.api3.org/dapis).
+
+| Self-funded dAPIs                                                               | Managed dAPIs                                         |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Single public [proxy contract](/reference/dapis/understand/proxy-contracts.md)  | Single public proxy contract                          |
+| 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%)             |
+| 60 second [interval](/reference/dapis/understand/deviations.md#update-interval) | 30-60 second interval                                 |
+| 24 hour [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)        | 2 minute or 24 hour heartbeat                         |
+| Sourced from a single<br/>data feed (beacon)                                    | Sourced from multiple<br/>data feeds (beacons)        |
+| Gas costs are community funded                                                  | Gas costs are managed <br/>by API3 using upgrade fees |
+
+Development and expansion of dAPIs beyond self-funded and managed dAPIs will
+include OEV share. More details for OEV share will be forthcoming. Please
+feel-free to ask questions about the evolution of dAPIs on
+[Discord](https://discord.com/channels/758003776174030948/765618225144266793).
 
 <FlexEndTag/>
