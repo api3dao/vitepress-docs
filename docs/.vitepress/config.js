@@ -23,7 +23,7 @@ export default {
       'link',
       {
         rel: 'apple-touch-icon',
-        sizes: '180x180', 
+        sizes: '180x180',
         href: '/img/small-logo.png',
       },
     ],
