@@ -55,15 +55,14 @@ noticeably is its implementation of the request-response protocol (RRP) and data
 feeds.
 
 An Airnode is owned by an API provider and is used to call API provider
-endpoints to fetch and sign data. Airnode interfaces with these operations and
-gathers its signed data at the request of Airseeker. Airseeker uses the signed
-data to determine if the deviation of a dAPI value (e.g., plus or minus 0.25%,
-0.5%, 1%) warrants an on-chain update of its beacon(s).
+endpoints to fetch and sign data at the request of Airseeker. Airseeker uses the
+signed data to determine if the deviation of a beacon value warrants an on-chain
+update of the beacon.
 
 <img src="../assets/images/beacons-airnode.png">
 
-In the diagram above, companies XYZ and ABC both provide ZIL/USD values, A and
-B, respectively, that are aggregated to determine the dAPI ZIL/USD value.
+In the diagram above, companies XYZ and ABC both provide ZIL/USD beacon values,
+A and B, respectively, that are aggregated to determine the dAPI ZIL/USD value.
 Airseeker regularly checks the deviation of ZIL/USD using the sign data from
 these Airnodes. Airseeker will update the corresponding beacons behind ZIL/USD
 when deviation is detected.
