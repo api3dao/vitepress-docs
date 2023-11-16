@@ -55,11 +55,10 @@ noticeably is its implementation of the request-response protocol (RRP) and data
 feeds.
 
 An Airnode is owned by an API provider and is used to call API provider
-endpoints to fetch and sign data. An Airnode is owned by an API provider and
-integrates itself along side their API operations. Airnode interfaces with these
-operations and gathers its signed data at the request of Airseeker. Airseeker
-uses the signed data to determine if the deviation of a dAPI value (e.g., plus
-or minus 0.25%, 0.5%, 1%) warrants an on-chain update of its beacon(s).
+endpoints to fetch and sign data. Airnode interfaces with these operations and
+gathers its signed data at the request of Airseeker. Airseeker uses the signed
+data to determine if the deviation of a dAPI value (e.g., plus or minus 0.25%,
+0.5%, 1%) warrants an on-chain update of its beacon(s).
 
 <img src="../assets/images/beacons-airnode.png">
 
