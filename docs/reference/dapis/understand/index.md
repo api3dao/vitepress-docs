@@ -57,7 +57,7 @@ feeds.
 An Airnode is owned by an API provider and is used to call API provider
 endpoints to fetch and sign data at the request of Airseeker. Airseeker uses the
 signed data to determine if the deviation of a beacon value warrants an on-chain
-update of the beacon.
+update.
 
 <img src="../assets/images/beacons-airnode.png">
 
