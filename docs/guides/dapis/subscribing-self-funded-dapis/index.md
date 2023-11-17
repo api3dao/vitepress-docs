@@ -2,7 +2,7 @@
 title: Subscribing to Self-Funded dAPIs
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → dAPIs
+pageHeader: Guides → dAPIs → Subscribing to dAPIs
 path: /guides/dapis/subscribing-self-funded-dapis/index.html
 outline: deep
 tags:

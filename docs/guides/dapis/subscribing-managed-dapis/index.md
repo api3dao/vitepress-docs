@@ -2,7 +2,7 @@
 title: Subscribing to Managed dAPIs
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → dAPIs
+pageHeader: Guides → dAPIs → Subscribing to dAPIs
 path: /guides/dapis/subscribing-managed-dapis/index.html
 outline: deep
 tags:
