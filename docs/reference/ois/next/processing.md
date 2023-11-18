@@ -333,4 +333,24 @@ endpoints: [
 ]
 ```
 
+## Example #3
+
+One of the possible use cases for post-processing would be to use override the
+timestamp used by [signed data
+gateway](https://docs.api3.org/reference/airnode/latest/understand/http-gateways.html#http-signed-data-gateway).
+By default the signed data gateway uses the timestamp of the request processing.
+However, sometimes the API itself returns the timestamp. Modifying timestamp is
+only supported with the v2 of the processing.
+
+```json
+{
+  "postProcessingSpecificationV2": {
+    "environment": "Node",
+    // Reuses the timestamp from the API call response.
+    "value": "async ({ apiCallResponse }) => { return { apiCallResponse, timestamp: apiCallResponse.timestamp }; }",
+    "timeoutMs": 5000,
+  }
+}
+```
+
 <FlexEndTag/>
