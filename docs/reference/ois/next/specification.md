@@ -327,6 +327,10 @@ node.
   [preProcessingSpecifications](/reference/ois/next/specification.md#_5-9-preprocessingspecifications)
 - 5.10.
   [postProcessingSpecifications](/reference/ois/next/specification.md#_5-10-postprocessingspecifications)
+- 5.11.
+  [preProcessingSpecificationV2](/reference/ois/next/specification.md#_5-11-preprocessingspecificationv2)
+- 5.12.
+  [postProcessingSpecificationV2](/reference/ois/next/specification.md#_5-12-postprocessingspecificationv2)
 
 ```json
 // endpoints
@@ -375,25 +379,16 @@ node.
         }
       }
     ],
-    "preProcessingSpecifications": [
-      {
-        "environment": "Node",
-        "value": "const output = {...input, from: \"eth\"};",
-        "timeoutMs": "5000"
-      },
-      {
-        "environment": "Node",
-        "value": "const output = {...input, from: input.from.toUpperCase()};",
-        "timeoutMs": "5000"
-      }
-    ],
-    "postProcessingSpecifications": [
-      {
-        "environment": "Node",
-        "value": "const output = Math.round(input.price * 1000);",
-        "timeoutMs": "5000"
-      }
-    ]
+    "preProcessingSpecificationV2": {
+      "environment": "Node",
+      "value": "({ apiCallParameters }) => { return { apiCallParameters: {...apiCallParameters, from: 'ETH'} }; }",
+      "timeoutMs": 5000
+    },
+    "postProcessingSpecificationV2": {
+      "environment": "Node",
+      "value": "({ apiCallResponse }) => { return { apiCallResponse: parseInt(apiCallResponse.price) * 1000 }; }",
+      "timeoutMs": 5000
+    }
   }
 ]
 ```
@@ -594,8 +589,16 @@ corresponding operation parameter.-->
 
 ### 5.9. `preProcessingSpecifications` \*
 
-(Optional) Defines the preprocessing code that can be used to modify the
-endpoint parameter before making the API request defined by an Airnode endpoint.
+::: deprecation warning
+
+The `preProcessingSpecifications` field is deprecated. Use
+`preProcessingSpecificationV2` instead.
+
+:::
+
+(Optional) Defines the pre-processing code that can be used to modify the
+endpoint parameters before making the API request defined by an Airnode
+endpoint.
 
 See the [Pre/Post Processing](/reference/ois/next/processing.md) doc for
 additional details.
@@ -610,7 +613,7 @@ additional details.
     // Define a new "from" parameter with value "eth"
     "value": "const output = {...input, from: \"eth\"};",
     // Run for 5 seconds maximum
-    "timeoutMs": "5000"
+    "timeoutMs": 5000
   },
   {
     // Execute synchronously in Node.js
@@ -618,12 +621,19 @@ additional details.
     // Uppercase the "from" parameter defined by the previous snippet
     "value": "const output = {...input, from: input.from.toUpperCase()};",
     // Run for 5 seconds maximum
-    "timeoutMs": "5000"
+    "timeoutMs": 5000
   }
 ]
 ```
 
 ### 5.10. `postProcessingSpecifications` \*
+
+::: deprecation warning
+
+The `postProcessingSpecifications` field is deprecated. Use
+`postProcessingSpecificationV2` instead.
+
+:::
 
 (Optional) Defines the post-processing code that can be used to modify the API
 response from the request defined by an Airnode endpoint.
@@ -641,7 +651,52 @@ additional details.
     // Multiply the API return value by 1000 and round it to an integer
     "value": "const output = Math.round(input.price * 1000);",
     // Run for 5 seconds maximum
-    "timeoutMs": "5000"
+    "timeoutMs": 5000
+  }
+]
+```
+
+### 5.11. `preProcessingSpecificationV2` \*
+
+(Optional) Defines the pre-processing code that can be used to modify the
+endpoint parameters before making the API request defined by an Airnode
+endpoint.
+
+See the [Pre/Post Processing](/reference/ois/next/processing.md) doc for
+additional details.
+
+#### Example
+
+```json
+"preProcessingSpecificationV2": {
+  // Execute in Node.js. The v2 specification supports both synchronous and asynchronous code
+  "environment": "Node",
+  // Define a new "from" parameter with value "ETH"
+  "value": "({ apiCallParameters }) => { return { apiCallParameters: {...apiCallParameters, from: 'ETH'} }; }",
+  // Run for 5 seconds maximum
+  "timeoutMs": 5000
+}
+```
+
+### 5.12. `postProcessingSpecificationV2` \*
+
+(Optional) Defines the post-processing code that can be used to modify the API
+response from the request defined by an Airnode endpoint.
+
+See the [Pre/Post Processing](/reference/ois/next/processing.md) doc for
+additional details.
+
+#### Example
+
+```json
+"postProcessingSpecificationV2": [
+  {
+    // Execute in Node.js. The v2 specification supports both synchronous and asynchronous code
+    "environment": "Node",
+    // Multiply the API return value by 1000 and round it to an integer
+    "value": "({ apiCallResponse }) => { return { apiCallResponse: parseInt(apiCallResponse.price * 1000) }; }",
+    // Run for 5 seconds maximum
+    "timeoutMs": 5000
   }
 ]
 ```

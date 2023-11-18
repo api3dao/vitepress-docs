@@ -19,6 +19,22 @@ tags:
 
 # {{$frontmatter.title}}
 
+Processing allows Airnode operators to define custom logic that executes before
+or after an API call. This feature is useful for multiple use cases, including:
+
+- Authentication
+- Data transformation
+- Data aggregation
+- Data validation
+
+## Processing versions
+
+OIS specification has two versions of pre/post processing. Both versions serve
+the same use cases, but the second version is more flexible and convenient.
+Users are encouraged to use the second version.
+
+### v1
+
 The processing schema accepts an array of processing snippets (user defined
 code) which are chained. The first snippet receives parameters submitted as part
 of a template or on-chain request. The output of this snippet is passed to the
@@ -51,7 +67,7 @@ Snippets for both specifications follow this schema:
 Try the [Post processing](/guides/airnode/post-processing/) guide to further
 understand pre/post processing.
 
-## Input and Output
+#### Input and Output
 
 The processing snippet receives an `input` value which is either the initial
 value or the output value from the previous processing snippet. The snippet must
@@ -61,7 +77,7 @@ source code of Airnode to understand how processing works and what modules are
 made available to the snippet code. Modules cannot be imported directly in cloud
 environments.
 
-## Accessing endpoint parameters
+#### Accessing endpoint parameters
 
 Endpoint parameters, with the exception of reserved parameters, are accessible
 within pre-processing and post-processing via the immutable `endpointParameters`
@@ -77,6 +93,61 @@ post-processing.
 
 :::
 
+### v2
+
+The processing snippet receives parameters submitted as part of a template or
+on-chain request.
+
+Airnode executes snippets for `preProcessingSpecificationV2` and
+`postProcessingSpecificationV2` during its run cycle. The following describes
+the work flow Airnode uses:
+
+1. Run `preProcessingSpecificationV2`
+2. Airnode calls requested OIS endpoint
+3. Run `postProcessingSpecificationV2`
+4. Airnode encodes the response values defined by reservedParameters
+
+The processing schema is the same for both
+[`preProcessingSpecificationV2`](/reference/ois/next/specification.md#_5-11-preprocessingspecificationv2)
+and
+[`postProcessingSpecificationV2`](/reference/ois/next/specification.md#_5-12-postprocessingspecificationv2).
+Snippets for both specifications follow this schema:
+
+- `environment` - Currently only possible value is `Node`. This options
+  interprets the code as JavaScript and execute in Node.js. The function can be
+  also asynchronous (async/await is supported as well). The processing
+  implementation will wait for the function to resolve.
+- `value` - The processing code written as a string.
+- `timeoutMs` - The maximum timeout that this snippet can run. In case the
+  timeout is exceeded an error is thrown.
+
+Try the [Post processing](/guides/airnode/post-processing/) guide to further
+understand pre/post processing.
+
+#### Input and Output
+
+The processing snippet is a function which receives payload as an argument. The
+return value of the function is treated as a processing result. Apart from the
+payload argument, you can use most Node.js built-in modules.
+
+The payload argument for pre-processing is an object with the following
+properties:
+
+- `apiCallParameters` - The API call parameters with the exception of reserved
+  parameters. For example, if there was a parameter named `myParameter` defined
+  in the `endpoints[n].parameters` array, its value could be accessed using
+  `endpointParameters.myParameter` within pre-processing snippet.
+
+
+The payload argument for post-processing is an object with the following
+properties:
+
+- `apiCallResponse` - The API call response.
+- `endpointParameters` - The API call parameters with the exception of reserved
+  parameters. For example, if there was a parameter named `myParameter` defined
+  in the `endpoints[n].parameters` array, its value could be accessed using
+  `endpointParameters.myParameter` within pre-processing snippet.
+
 ## Interpolation
 
 Note, that config.json supports interpolation of secrets via the JavaScript
@@ -84,7 +155,8 @@ string interpolation pattern (e.g `${SECRET_NAME}`). This syntax conflicts with
 the string interpolation inside the processing snippets. In order to use the
 interpolation in snippets, you need to escape the interpolation.
 
-For example, the following code:
+For example, the following code (using the v1 processing snippet, but the
+concept is the same for v2):
 
 ```js
 console.log(`Received input ${input}`);
@@ -125,8 +197,10 @@ Airnode to place on-chain.
 Instead of calling an API, Airnode uses the output of
 `preProcessingSpecifications`, `postProcessingSpecifications`, or both. The
 field `operation` must be undefined, `fixedOperationParameters` must be an empty
-array and one of `preProcessingSpecifications` or `postProcessingSpecifications`
-must be defined and not be an empty array.
+array and some processing specification needs to be defined. This means that one
+of `preProcessingSpecifications` or `postProcessingSpecifications` must be
+defined and not be an empty array or `preProcessingSpecificationV2` or
+`postProcessingSpecificationV2` must be defined.
 
 ### Use case: random number
 
