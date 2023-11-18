@@ -138,6 +138,10 @@ properties:
   in the `endpoints[n].parameters` array, its value could be accessed using
   `endpointParameters.myParameter` within pre-processing snippet.
 
+The output of the pre-processing snippet is an object with the following fields:
+
+- `apiCallParameters` - The pre-processed API call parameters. These are used to
+  make the API call.
 
 The payload argument for post-processing is an object with the following
 properties:
@@ -147,6 +151,16 @@ properties:
   parameters. For example, if there was a parameter named `myParameter` defined
   in the `endpoints[n].parameters` array, its value could be accessed using
   `endpointParameters.myParameter` within pre-processing snippet.
+
+The output of the post-processing snippet is an object with the following
+fields:
+
+- `apiCallResponse` - The post-processed API call response. This is used to
+  encode the response values defined by reservedParameters.
+- `timestamp` - (Optional) The timestamp of the API call response. Use this if
+  you want Airnode to use a specific timestamp (instead of a current time at
+  request processing) when using the [signed data
+  gateway](https://docs.api3.org/reference/airnode/latest/understand/http-gateways.html#http-signed-data-gateway).
 
 ## Interpolation
 
