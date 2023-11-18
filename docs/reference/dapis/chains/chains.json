@@ -44,7 +44,7 @@
   "rsk": {
     "id": "30",
     "alias": "rsk",
-    "name": "RSK",
+    "name": "Rootstock",
     "nativeToken": "RBTC",
     "testnet": false,
     "explorerUrl": "https://explorer.rsk.co/",
@@ -58,7 +58,7 @@
   "rsk-testnet": {
     "id": "31",
     "alias": "rsk-testnet",
-    "name": "RSK testnet",
+    "name": "Rootstock testnet",
     "nativeToken": "testRBTC",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.rsk.co/",
@@ -72,7 +72,7 @@
   "bsc": {
     "id": "56",
     "alias": "bsc",
-    "name": "BSC",
+    "name": "BNB Smart Chain",
     "nativeToken": "BNB",
     "testnet": false,
     "explorerUrl": "https://bscscan.com/",
@@ -86,7 +86,7 @@
   "bsc-testnet": {
     "id": "97",
     "alias": "bsc-testnet",
-    "name": "BSC testnet",
+    "name": "BNB Smart Chain testnet",
     "nativeToken": "testBNB",
     "testnet": true,
     "explorerUrl": "https://testnet.bscscan.com/",
@@ -367,7 +367,7 @@
     "id": "5001",
     "alias": "mantle-goerli-testnet",
     "name": "Mantle Goerli testnet",
-    "nativeToken": "MNT",
+    "nativeToken": "testMNT",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.mantle.xyz/",
     "contracts": {
@@ -408,7 +408,7 @@
   "arbitrum": {
     "id": "42161",
     "alias": "arbitrum",
-    "name": "Arbitrum",
+    "name": "Arbitrum One",
     "nativeToken": "ETH",
     "testnet": false,
     "explorerUrl": "https://arbiscan.io/",
