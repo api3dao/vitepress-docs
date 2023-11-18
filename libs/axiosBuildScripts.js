@@ -37,19 +37,16 @@ async function dapiChains() {
     };
 
     // From @api3/chains
-    const name = CHAINS.find((x) => x.id === id).name;
-    const nativeToken = CHAINS.find((x) => x.id === id).symbol;
-    const testnet = CHAINS.find((x) => x.id === id).testnet;
-    const explorerUrl = CHAINS.find((x) => x.id === id).explorer.browserUrl;
+    const chain = CHAINS.find((x) => x.id === id);
 
     // Create the obj
     list[alias] = {
       id: id,
       alias: alias,
-      name: name,
-      nativeToken: nativeToken,
-      testnet: testnet,
-      explorerUrl: explorerUrl,
+      name: chain.name,
+      nativeToken: chain.symbol,
+      testnet: chain.testnet,
+      explorerUrl: chain.explorerUrl,
       contracts: contractList,
     };
   });
