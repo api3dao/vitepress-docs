@@ -22,28 +22,28 @@
   },
   {
     "id": "30",
-    "fullname": "RSK",
+    "fullname": "Rootstock",
     "alias": "rsk",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "31",
-    "fullname": "RSK testnet",
+    "fullname": "Rootstock testnet",
     "alias": "rsk-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "56",
-    "fullname": "BSC",
+    "fullname": "BNB Smart Chain",
     "alias": "bsc",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
     "id": "97",
-    "fullname": "BSC testnet",
+    "fullname": "BNB Smart Chain testnet",
     "alias": "bsc-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
@@ -155,7 +155,7 @@
   },
   {
     "id": "42161",
-    "fullname": "Arbitrum",
+    "fullname": "Arbitrum One",
     "alias": "arbitrum",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
