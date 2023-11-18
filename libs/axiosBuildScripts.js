@@ -46,7 +46,7 @@ async function dapiChains() {
       name: chain.name,
       nativeToken: chain.symbol,
       testnet: chain.testnet,
-      explorerUrl: chain.explorerUrl,
+      explorerUrl: chain.explorer.browserUrl,
       contracts: contractList,
     };
   });
