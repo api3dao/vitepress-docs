@@ -1,6 +1,6 @@
 /**
  * USAGE: see the usage instructions at
- * https://docs.api3.org/dev/link-validator.html
+ * https://docs.api3.org/dev/link-validation.html
  */
 
 const { readFileSync } = require('fs');

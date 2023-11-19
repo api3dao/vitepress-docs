@@ -768,9 +768,10 @@ Head to **Deploy and run Transactions** and select **Injected Provider —
 MetaMask** option under Environment. Connect your MetaMask. Make sure you’re on
 the Polygon Mumbai testnet.
 
-The `_airnodeRrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have
-already been deployed on-chain. You can check for your specific chain [here]().
-Fill it in and click on **transact** to deploy the contract.
+The `_airnodeRrpAddress` is the main `airnodeRrpAddress`. The RRP contracts have
+already been deployed on-chain. You can check for your specific chain
+[here](/reference/airnode/latest/index.md#airnoderrpv0). Fill it in and click on
+**transact** to deploy the contract.
 
 ![](/guides/qrng/roulette-guide/src/SS4.png)
 

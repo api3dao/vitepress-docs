@@ -234,7 +234,7 @@ which is included within the free plans of RPC providers such as
 [<span style="color:rgb(16, 185, 129);">Alchemy</span>](https://www.alchemy.com/overviews/rpc-node),
 [<span style="color:rgb(16, 185, 129);">Infura</span>](https://docs.infura.io/infura/networks/ethereum/json-rpc-methods),
 or
-[<span style="color:rgb(16, 185, 129);">Pokt</span>](https://docs.pokt.network/use/public-rpc/).
+[<span style="color:rgb(16, 185, 129);">Pokt</span>](https://docs.pokt.network/get-rpcs/public-endpoints).
 
 :::
 
