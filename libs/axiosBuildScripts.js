@@ -11,14 +11,49 @@ const versionsRef = require('../docs/.vitepress/versions.json');
  * Builds the list of chains for the dAPIs docset
  */
 async function dapiChains() {
-  const response = await axios.get(
-    'https://db-api-prod.api3.org/api/docs-chains-reference'
+  /*
+    DEPRECATED
+    const response = await axios.get(
+      'https://db-api-prod.api3.org/api/docs-chains-reference'
+    );
+    const chains = response.data;
+  */
+
+  const repo = await axios.get(
+    'https://raw.githubusercontent.com/api3dao/airnode-protocol-v1/main/deployments/references.json'
   );
-  const chains = response.data;
+  const repoData = repo.data;
+
+  let list = {};
+  Object.entries(repoData.chainNames).forEach((element) => {
+    // From the repo
+    const alias = element[1];
+    const id = element[0];
+    const contractList = {
+      Api3ServerV1: repoData.Api3ServerV1[id],
+      AccessControlRegistry: repoData.AccessControlRegistry[id],
+      OwnableCallForwarder: repoData.OwnableCallForwarder[id],
+      ProxyFactory: repoData.ProxyFactory[id],
+    };
+
+    // From @api3/chains
+    const chain = CHAINS.find((x) => x.id === id);
+
+    // Create the obj
+    list[alias] = {
+      id: id,
+      alias: alias,
+      name: chain.name,
+      nativeToken: chain.symbol,
+      testnet: chain.testnet,
+      explorerUrl: chain.explorer.browserUrl,
+      contracts: contractList,
+    };
+  });
 
   fs.writeFileSync(
     'docs/reference/dapis/chains/chains.json',
-    JSON.stringify(chains)
+    JSON.stringify(list)
   );
 }
 
@@ -94,6 +129,7 @@ function getChainInfo(id) {
 /**
  * Script runs from here
  */
+
 console.log('\n----- Building Axios based script files -----');
 
 console.log('> Building chains.json in docs/reference/dapis/chains/');

@@ -10,25 +10,25 @@ DO NOT place line breaks between HTML element like <div>.
 They will not render as HTML but rather text or you get an error. No idea why!
 -->
 <div class="api3-bc-chains-box" v-for="(chain, index) in chains">
-    <div class="api3-bc-chains-name" :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']"
-      >{{ chain.fullName }} 
-    </div>
     <div class="api3-bc-chain-token">
       {{ chain.nativeToken }}
     </div>
     <div class="api3-bc-chains-id">
       Chain Id: <b>{{ chain.id }}</b>
     </div>
+    <div class="api3-bc-chains-name" :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']"
+      >{{ chain.name }} 
+    </div>
     <div class="api3-bc-chains-contract-address">
       <div class="api3-bc-chains-contract-address" v-if="chain.contracts['Api3ServerV1']">
         Api3ServerV1.sol:
-        <a :href="chain.explorerUrl+'/address/'+chain.contracts['Api3ServerV1']" target="_chainExplore">
+        <a :href="chain.explorerUrl+'address/'+chain.contracts['Api3ServerV1']" target="_chainExplore">
           <span>{{ chain.contracts['Api3ServerV1'] }}</span>
         </a><CopyIcon :text="chain.contracts['Api3ServerV1']"/>
       </div>
       <div class="api3-bc-chains-contract-address" v-if="chain.contracts['ProxyFactory']">
         ProxyFactory.sol:
-        <a :href="chain.explorerUrl+'/address/'+chain.contracts['ProxyFactory']" target="_chainExplore">
+        <a :href="chain.explorerUrl+'address/'+chain.contracts['ProxyFactory']" target="_chainExplore">
           <span>{{ chain.contracts['ProxyFactory'] }}</span>
         </a><CopyIcon :text="chain.contracts['ProxyFactory']"/>
       </div>
@@ -48,8 +48,8 @@ They will not render as HTML but rather text or you get an error. No idea why!
 }
 .api3-bc-chain-token {
   float: right;
-  margin-top: -34px;
-  font-size: small;
+  font-size: x-small !important;
+  padding:5px;
   color: gray;
 }
 
@@ -60,7 +60,6 @@ They will not render as HTML but rather text or you get an error. No idea why!
 .api3-bc-chains-contract-address {
   font-family: courier;
   font-size: small;
-  margin-top: 3px;
   color: gray;
 }
 .api3-bc-chains-box {
