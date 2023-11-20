@@ -50,26 +50,26 @@ through the available dAPIs and check out their details.
 
 ## What are Managed dAPIs?
 
-[Managed dAPIs](/reference/dapis/understand/managed.html) are sourced directly
+[Managed dAPIs](/reference/dapis/understand/managed.md) are sourced directly
 from multiple [first-party](/explore/airnode/why-first-party-oracles.md) data
 providers running an Airnode and aggregated using their
-[Airnode's signed data](/reference/airnode/latest/understand/http-gateways.html).
+[Airnode's signed data](/reference/airnode/latest/understand/http-gateways.md).
 Unlike self-funded dAPIs, API3 manages the gas costs and the availability of the
 Managed dAPIs.
 
 With Managed dAPIs, users get the option to configure the
-[deviation threshold](/reference/dapis/understand/deviations.html) and
-[heartbeat](/reference/dapis/understand/deviations.html#heartbeat) for each
-dAPI. The deviation threshold is the percentage deviation from the current value
-of the dAPI that triggers an update. If a dAPI is not updated within a known
-amount of time (called the heartbeat), the dAPI update is triggered.
+[deviation threshold](/reference/dapis/understand/deviations.md) and
+[heartbeat](/reference/dapis/understand/deviations.md#heartbeat) for each dAPI.
+The deviation threshold is the percentage deviation from the current value of
+the dAPI that triggers an update. If a dAPI is not updated within a known amount
+of time (called the heartbeat), the dAPI update is triggered.
 
 [Click here](/guides/dapis/subscribing-managed-dapis/) to read more about how to
 get started with Managed dAPIs.
 
 ## What are Self-funded dAPIs?
 
-[Self-funded dAPIs](/reference/dapis/understand/self-funded.html) are sourced
+[Self-funded dAPIs](/reference/dapis/understand/self-funded.md) are sourced
 directly from a single
 [first-party](/explore/airnode/why-first-party-oracles.md) data provider running
 an Airnode. The amount of gas you supply will determine how long your dAPI will
@@ -127,19 +127,31 @@ dashboard through the [API3 Market](https://market.api3.org/).
 To read more about reading a dAPI value,
 [click here](/guides/dapis/read-a-dapi/).
 
-## How many providers are there for dAPIs?
+## Data providers for managed dAPIs
 
-Currently, there are 7 providers for Managed dAPIs:
+There are nine providers used by managed dAPIs as a data source.
 
-| Asset Type     | Data Provider                                                           |
-| -------------- | ----------------------------------------------------------------------- |
-| Cryptocurrency | Nodary, Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
-| Forex          | Nodary, Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
-| Commodities    | Nodary, Finage, Twelvedata, dxFeed, Tradermade                          |
-| Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxFeed                   |
+- Coinpaprika
+- dxFeed
+- Finage
+- Finnhub
+- IEXCloud
+- Kaiko
+- NCFX
+- Tradermade
+- Twelvedata
 
-As Self-funded dAPIs are single-sourced, only [Nodary](https://nodary.io/) is
-the provider for Self-funded dAPIs.
+| Asset Type     | Data Providers                                                  |
+| -------------- | --------------------------------------------------------------- |
+| Cryptocurrency | Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
+| Forex          | Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
+| Commodities    | Finage, Twelvedata, dxFeed, Tradermade                          |
+| Equities       | Finage, Twelvedata, IEXCloud, Finnhub, dxFeed                   |
+
+### Self-funded dAPIs
+
+Self-funded dAPIs are single-sourced using [Nodary](https://nodary.io/) as their
+data provider.
 
 ## What are dAPI Proxy Contracts?
 
@@ -151,7 +163,7 @@ set
 using
 [Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.md).
 
-[Click here](/reference/dapis/understand/proxy-contracts.html) to read more
-about Proxy Contracts
+Read more about
+[Proxy Contracts](/reference/dapis/understand/proxy-contracts.md).
 
 <FlexEndTag/>
