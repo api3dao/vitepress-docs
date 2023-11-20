@@ -31,15 +31,14 @@ in realtime.
 <!--They can power various decentralized applications such as DeFi
 lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
 
-dAPIs are composed of a
-[beacon](/reference/dapis/understand/index.md#data-feeds-values-stored-on-chain)
-or a set of beacons and are sometimes referred to as first-party data feeds
-because they are sourced from first-party oracles. Therefore a beacon is
-directly powered and maintained on-chain by the owner of the data, the API
-provider, which effectively removes third-party middlemen that other oracle
-solutions rely on. This approach creates source transparency in addition to
-higher security, cost-efficiency, and scalability through less parties being
-involved in the oracle service operation.
+dAPIs are composed of a [beacon](/reference/dapis/understand/index.md) or a set
+of beacons and are sometimes referred to as first-party data feeds because they
+are sourced from first-party oracles. Therefore a beacon is directly powered and
+maintained on-chain by the owner of the data, the API provider, which
+effectively removes third-party middlemen that other oracle solutions rely on.
+This approach creates source transparency in addition to higher security,
+cost-efficiency, and scalability through less parties being involved in the
+oracle service operation.
 
 ## dAPIs connect smart contracts to first-party data feeds
 
