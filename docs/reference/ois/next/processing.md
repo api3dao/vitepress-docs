@@ -131,14 +131,15 @@ return value of the function is treated as a processing result. Apart from the
 payload argument, you can use most Node.js built-in modules.
 
 The payload argument for pre-processing is an object with the following
-properties:
+property:
 
 - `endpointParameters` - The endpoint parameters with the exception of reserved
   parameters. For example, if there was a parameter named `myParameter` defined
   in the `endpoints[n].parameters` array, its value could be accessed using
   `endpointParameters.myParameter` within pre-processing snippet.
 
-The output of the pre-processing snippet is an object with the following fields:
+The output of the pre-processing snippet is an object with the following
+property:
 
 - `endpointParameters` - The pre-processed endpoint parameters parameters. These
   are used to make the API call.
@@ -153,7 +154,7 @@ properties:
   `endpointParameters.myParameter` within pre-processing snippet.
 
 The output of the post-processing snippet is an object with the following
-fields:
+properties:
 
 - `apiCallResponse` - The post-processed API call response. This is used to
   encode the response values defined by reserved parameters.

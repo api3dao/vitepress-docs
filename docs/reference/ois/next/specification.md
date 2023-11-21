@@ -589,7 +589,7 @@ corresponding operation parameter.-->
 
 ### 5.9. `preProcessingSpecifications` \*
 
-::: deprecation warning
+::: warning Deprecation
 
 The `preProcessingSpecifications` field is deprecated. Use
 `preProcessingSpecificationV2` instead.
@@ -628,7 +628,7 @@ additional details.
 
 ### 5.10. `postProcessingSpecifications` \*
 
-::: deprecation warning
+::: warning Deprecation
 
 The `postProcessingSpecifications` field is deprecated. Use
 `postProcessingSpecificationV2` instead.
