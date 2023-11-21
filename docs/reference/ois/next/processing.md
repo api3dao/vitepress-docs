@@ -133,21 +133,21 @@ payload argument, you can use most Node.js built-in modules.
 The payload argument for pre-processing is an object with the following
 properties:
 
-- `apiCallParameters` - The API call parameters with the exception of reserved
+- `endpointParameters` - The endpoint parameters with the exception of reserved
   parameters. For example, if there was a parameter named `myParameter` defined
   in the `endpoints[n].parameters` array, its value could be accessed using
   `endpointParameters.myParameter` within pre-processing snippet.
 
 The output of the pre-processing snippet is an object with the following fields:
 
-- `apiCallParameters` - The pre-processed API call parameters. These are used to
-  make the API call.
+- `endpointParameters` - The pre-processed endpoint parameters parameters. These
+  are used to make the API call.
 
 The payload argument for post-processing is an object with the following
 properties:
 
-- `apiCallResponse` - The API call response.
-- `endpointParameters` - The API call parameters with the exception of reserved
+- `apiCallResponse` - The response of the underlying data provider API call.
+- `endpointParameters` - The endpoint parameters with the exception of reserved
   parameters. For example, if there was a parameter named `myParameter` defined
   in the `endpoints[n].parameters` array, its value could be accessed using
   `endpointParameters.myParameter` within pre-processing snippet.
@@ -156,7 +156,7 @@ The output of the post-processing snippet is an object with the following
 fields:
 
 - `apiCallResponse` - The post-processed API call response. This is used to
-  encode the response values defined by reservedParameters.
+  encode the response values defined by reserved parameters.
 - `timestamp` - (Optional) The timestamp of the API call response. Use this if
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the [signed data
