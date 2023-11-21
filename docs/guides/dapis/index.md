@@ -129,7 +129,8 @@ To read more about reading a dAPI value,
 
 ## Data providers for managed dAPIs
 
-There are nine providers used by managed dAPIs as a data source.
+There are nine providers used by managed dAPIs as a data source. These providers
+can be grouped by asset type(s) of supplied data:
 
 - Coinpaprika
 - dxFeed
