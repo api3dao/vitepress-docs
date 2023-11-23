@@ -147,17 +147,21 @@ property:
 The payload argument for post-processing is an object with the following
 properties:
 
-- `apiCallResponse` - The response of the underlying data provider API call.
-- `endpointParameters` - The endpoint parameters with the exception of reserved
-  parameters. For example, if there was a parameter named `myParameter` defined
-  in the `endpoints[n].parameters` array, its value could be accessed using
-  `endpointParameters.myParameter` within pre-processing snippet.
+- `response` - The response of the underlying data provider API call. In case of
+  Airnode skipping API call, the `response` contains the output of
+  pre-processing snippet.
+- `endpointParameters` - The raw (not pre-processed) endpoint parameters with
+  the exception of reserved parameters. For example, if there was a parameter
+  named `myParameter` defined in the `endpoints[n].parameters` array, its value
+  could be accessed using `endpointParameters.myParameter` within pre-processing
+  snippet.
 
 The output of the post-processing snippet is an object with the following
 properties:
 
-- `apiCallResponse` - The post-processed API call response. This is used to
-  encode the response values defined by reserved parameters.
+- `response` - The post-processed API call response (or post-processed result of
+  pre-processing in case of skipping an API call). This is used to encode the
+  response values defined by reserved parameters.
 - `timestamp` - (Optional) The timestamp of the API call response. Use this if
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the [signed data
@@ -348,7 +352,7 @@ only supported with the v2 of the processing.
   "postProcessingSpecificationV2": {
     "environment": "Node",
     // Reuses the timestamp from the API call response.
-    "value": "async ({ apiCallResponse }) => { return { apiCallResponse, timestamp: apiCallResponse.timestamp }; }",
+    "value": "async ({ response }) => { return { response, timestamp: response.timestamp }; }",
     "timeoutMs": 5000,
   }
 }

@@ -381,12 +381,12 @@ node.
     ],
     "preProcessingSpecificationV2": {
       "environment": "Node",
-      "value": "({ apiCallParameters }) => { return { apiCallParameters: {...apiCallParameters, from: 'ETH'} }; }",
+      "value": "({ endpointParameters }) => { return { endpointParameters: {...endpointParameters, from: 'ETH'} }; }",
       "timeoutMs": 5000
     },
     "postProcessingSpecificationV2": {
       "environment": "Node",
-      "value": "({ apiCallResponse }) => { return { apiCallResponse: parseInt(apiCallResponse.price) * 1000 }; }",
+      "value": "({ response }) => { return { response: parseInt(response.price) * 1000 }; }",
       "timeoutMs": 5000
     }
   }
@@ -672,7 +672,7 @@ additional details.
   // Execute in Node.js. The v2 specification supports both synchronous and asynchronous code
   "environment": "Node",
   // Define a new "from" parameter with value "ETH"
-  "value": "({ apiCallParameters }) => { return { apiCallParameters: {...apiCallParameters, from: 'ETH'} }; }",
+  "value": "({ endpointParameters }) => { return { endpointParameters: {...endpointParameters, from: 'ETH'} }; }",
   // Run for 5 seconds maximum
   "timeoutMs": 5000
 }
@@ -694,7 +694,7 @@ additional details.
     // Execute in Node.js. The v2 specification supports both synchronous and asynchronous code
     "environment": "Node",
     // Multiply the API return value by 1000 and round it to an integer
-    "value": "({ apiCallResponse }) => { return { apiCallResponse: parseInt(apiCallResponse.price * 1000) }; }",
+    "value": "({ response }) => { return { response: parseInt(response.price * 1000) }; }",
     // Run for 5 seconds maximum
     "timeoutMs": 5000
   }
