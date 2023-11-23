@@ -26,6 +26,7 @@ or after an API call. This feature is useful for multiple use cases, including:
 - Data transformation
 - Data aggregation
 - Data validation
+- Skipping an API call
 
 ## Processing versions
 
@@ -45,9 +46,9 @@ Airnode executes snippets for `preProcessingSpecifications` and
 work flow Airnode uses:
 
 1. Run `preProcessingSpecifications`
-2. Airnode calls requested OIS endpoint
+2. Airnode calls requested OIS endpoint (unless the API call is skipped)
 3. Run `postProcessingSpecifications`
-4. Airnode encodes the response values defined by reservedParameters
+4. Airnode encodes the response values defined by `reservedParameters`
 
 The processing schema is the same for both
 [`preProcessingSpecifications`](/reference/ois/next/specification.md#_5-9-preprocessingspecifications)
@@ -103,9 +104,9 @@ Airnode executes snippets for `preProcessingSpecificationV2` and
 the work flow Airnode uses:
 
 1. Run `preProcessingSpecificationV2`
-2. Airnode calls requested OIS endpoint
+2. Airnode calls requested OIS endpoint (unless the API call is skipped)
 3. Run `postProcessingSpecificationV2`
-4. Airnode encodes the response values defined by reservedParameters
+4. Airnode encodes the response values defined by `reservedParameters`
 
 The processing schema is the same for both
 [`preProcessingSpecificationV2`](/reference/ois/next/specification.md#_5-11-preprocessingspecificationv2)
@@ -114,8 +115,8 @@ and
 Snippets for both specifications follow this schema:
 
 - `environment` - Currently only possible value is `Node`. This options
-  interprets the code as JavaScript and execute in Node.js. The function can be
-  also asynchronous (async/await is supported as well). The processing
+  interprets the code as JavaScript and executes it in Node.js. The function can
+  be also asynchronous (async/await is supported as well). The processing
   implementation will wait for the function to resolve.
 - `value` - The processing code written as a string.
 - `timeoutMs` - The maximum timeout that this snippet can run. In case the
@@ -148,7 +149,7 @@ The payload argument for post-processing is an object with the following
 properties:
 
 - `response` - The response of the underlying data provider API call. In case of
-  Airnode skipping API call, the `response` contains the output of
+  Airnode skipping the API call, the `response` contains the output of
   pre-processing snippet.
 - `endpointParameters` - The raw (not pre-processed) endpoint parameters with
   the exception of reserved parameters. For example, if there was a parameter
@@ -160,8 +161,8 @@ The output of the post-processing snippet is an object with the following
 properties:
 
 - `response` - The post-processed API call response (or post-processed result of
-  pre-processing in case of skipping an API call). This is used to encode the
-  response values defined by reserved parameters.
+  pre-processing snippet in case of skipping an API call). This is used to
+  encode the response values defined by reserved parameters.
 - `timestamp` - (Optional) The timestamp of the API call response. Use this if
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the [signed data
