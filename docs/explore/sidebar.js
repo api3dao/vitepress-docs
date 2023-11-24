@@ -39,6 +39,10 @@ module.exports = [
         text: 'API3 Docs Feedback',
         link: '/explore/introduction/documentation-feedback',
       },
+      {
+        text: 'API3 Referral Program',
+        link: '/explore/introduction/referral',
+      },
     ],
   },
   {
