@@ -62,7 +62,7 @@ Snippets for both specifications follow this schema:
   with the output value as an argument. Airnode will use the resolved value as
   the input to subsequent snippets (if defined).
 - `value` - The processing code written as a string.
-- `timeoutMs` - The maximum timeout that this snippet can run. In case the
+- `timeoutMs` - The maximum duration that this snippet can run. In case the
   timeout is exceeded an error is thrown.
 
 Try the [Post processing](/guides/airnode/post-processing/) guide to further
@@ -119,7 +119,7 @@ Snippets for both specifications follow this schema:
   be also asynchronous (async/await is supported as well). The processing
   implementation will wait for the function to resolve.
 - `value` - The processing code written as a string.
-- `timeoutMs` - The maximum timeout that this snippet can run. In case the
+- `timeoutMs` - The maximum duration that this snippet can run. In case the
   timeout is exceeded an error is thrown.
 
 Try the [Post processing](/guides/airnode/post-processing/) guide to further
@@ -127,9 +127,9 @@ understand pre/post processing.
 
 #### Input and Output
 
-The processing snippet is a function which receives payload as an argument. The
-return value of the function is treated as a processing result. Apart from the
-payload argument, you can use most Node.js built-in modules.
+The processing snippet is a function which receives a payload as an argument.
+The return value of the function is treated as a processing result. Apart from
+the payload argument, you can use most Node.js built-in modules.
 
 The payload argument for pre-processing is an object with the following
 property:
@@ -166,7 +166,7 @@ properties:
 - `timestamp` - (Optional) The timestamp of the API call response. Use this if
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the [signed data
-  gateway](https://docs.api3.org/reference/airnode/latest/understand/http-gateways.html#http-signed-data-gateway).
+  gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
 
 ## Interpolation
 
@@ -343,7 +343,7 @@ endpoints: [
 
 One of the possible use cases for post-processing would be to use override the
 timestamp used by [signed data
-gateway](https://docs.api3.org/reference/airnode/latest/understand/http-gateways.html#http-signed-data-gateway).
+gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
 By default the signed data gateway uses the timestamp of the request processing.
 However, sometimes the API itself returns the timestamp. Modifying timestamp is
 only supported with the v2 of the processing.

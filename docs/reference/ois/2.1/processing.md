@@ -45,7 +45,7 @@ Snippets for both specifications follow this schema:
   with the output value as an argument. Airnode will use the resolved value as
   the input to subsequent snippets (if defined).
 - `value` - The processing code written as a string.
-- `timeoutMs` - The maximum timeout that this snippet can run. In case the
+- `timeoutMs` - The maximum duration that this snippet can run. In case the
   timeout is exceeded an error is thrown.
 
 Try the [Post processing](/guides/airnode/post-processing/) guide to further
