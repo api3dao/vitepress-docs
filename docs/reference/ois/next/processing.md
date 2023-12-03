@@ -165,8 +165,8 @@ properties:
   encode the response values defined by reserved parameters.
 - `timestamp` - (Optional) The timestamp of the API call response. Use this if
   you want Airnode to use a specific timestamp (instead of a current time at
-  request processing) when using the [signed data
-  gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
+  request processing) when using the
+  [signed data gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
 
 ## Interpolation
 
@@ -342,8 +342,8 @@ endpoints: [
 ## Example #3
 
 One of the possible use cases for post-processing would be to use override the
-timestamp used by [signed data
-gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
+timestamp used by
+[signed data gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
 By default the signed data gateway uses the timestamp of the request processing.
 However, sometimes the API itself returns the timestamp. Modifying timestamp is
 only supported with the v2 of the processing.
@@ -354,7 +354,7 @@ only supported with the v2 of the processing.
     "environment": "Node",
     // Reuses the timestamp from the API call response.
     "value": "async ({ response }) => { return { response, timestamp: response.timestamp }; }",
-    "timeoutMs": 5000,
+    "timeoutMs": 5000
   }
 }
 ```

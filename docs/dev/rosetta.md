@@ -21,9 +21,9 @@ wrong [esbuild](https://esbuild.github.io/getting-started/) package. It is best
 to use a version of Nodejs and NPM installed with its installer or install it
 using your CLI with Rosetta deactivated.
 
-::: info Nodejs `v18`
+::: info Nodejs `v20`
 
-It is best to use nodejs `v18` which gives the best performance and is the
+It is best to use nodejs `v20` which gives the best performance and is the
 engine described in the
 [package.json](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
 file.

@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
 import { useWindowScroll } from '@vueuse/core';
+import { ref, watchPostEffect } from 'vue';
+import { useData } from '../composables/data';
 import { useSidebar } from '../composables/sidebar';
-import VPNavBarTitle from './VPNavBarTitle.vue';
-import VPNavBarSearch from './VPNavBarSearch.vue';
-import VPNavBarMenu from './VPNavBarMenu.vue';
-import VPNavBarTranslations from './VPNavBarTranslations.vue';
 import VPNavBarAppearance from './VPNavBarAppearance.vue';
-import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue';
 import VPNavBarExtra from './VPNavBarExtra.vue';
 import VPNavBarHamburger from './VPNavBarHamburger.vue';
+import VPNavBarMenu from './VPNavBarMenu.vue';
+import VPNavBarSearch from './VPNavBarSearch.vue';
+import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue';
+import VPNavBarTitle from './VPNavBarTitle.vue';
+import VPNavBarTranslations from './VPNavBarTranslations.vue';
 
 defineProps<{
   isScreenOpen: boolean;
@@ -21,11 +22,16 @@ defineEmits<{
 
 const { y } = useWindowScroll();
 const { hasSidebar } = useSidebar();
+const { frontmatter } = useData();
 
-const classes = computed(() => ({
-  'has-sidebar': hasSidebar.value,
-  fill: y.value > 0,
-}));
+const classes = ref<Record<string, boolean>>({});
+
+watchPostEffect(() => {
+  classes.value = {
+    'has-sidebar': hasSidebar.value,
+    top: frontmatter.value.layout === 'home' && y.value === 0,
+  };
+});
 </script>
 
 <template>

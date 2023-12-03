@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "engines": {
-    "node": "18"
+    "node": "20"
   },
   "resolutions": {
     "watchpack": "2.4.0"
@@ -43,7 +43,7 @@
     "oust": "^2.0.0",
     "prettier": "^2.8.1",
     "tiny-emitter": "^2.1.0",
-    "vitepress": "^1.0.0-rc.24",
+    "vitepress": "^1.0.0-rc.31",
     "walk-sync": "^3.0.0"
   }
 }
