@@ -23,18 +23,23 @@
       "path": "/reference/airnode/v0.11/"
     }
   ],
-  "oisNext": "v2.3",
-  "oisLatest": "v2.2",
+  "oisNext": "v2.4",
+  "oisLatest": "v2.3",
   "versionsOIS": [
     {
-      "version": "v2.3",
+      "version": "v2.4",
       "alias": "next",
       "path": "/reference/ois/next/"
     },
     {
-      "version": "v2.2",
+      "version": "v2.3",
       "alias": "latest",
       "path": "/reference/ois/latest/"
+    },
+    {
+      "version": "v2.2",
+      "alias": "v2.2",
+      "path": "/reference/ois/2.2/"
     },
     {
       "version": "v2.1",

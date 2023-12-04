@@ -2,9 +2,9 @@
 title: Pre/Post Processing
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.3
+pageHeader: Reference → OIS → v2.4
 path: /reference/ois/next/processing.html
-version: v2.3
+version: v2.4
 outline: deep
 tags:
 ---
@@ -166,7 +166,7 @@ properties:
 - `timestamp` - (Optional) The timestamp of the API call response. Use this if
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the
-  [signed data gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
+  [signed data gateway](/reference/airnode/next/understand/http-gateways.md#http-signed-data-gateway).
 
 ## Interpolation
 
@@ -343,7 +343,7 @@ endpoints: [
 
 One of the possible use cases for post-processing would be to use override the
 timestamp used by
-[signed data gateway](/reference/airnode/latest/understand/http-gateways.md#http-signed-data-gateway).
+[signed data gateway](/reference/airnode/next/understand/http-gateways.md#http-signed-data-gateway).
 By default the signed data gateway uses the timestamp of the request processing.
 However, sometimes the API itself returns the timestamp. Modifying timestamp is
 only supported with the v2 of the processing.

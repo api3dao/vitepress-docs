@@ -2,9 +2,9 @@
 title: OIS Template
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.4
-path: /reference/ois/next/template.html
-version: v2.4
+pageHeader: Reference → OIS → v2.2
+path: /reference/ois/2.2/template.html
+version: v2.2
 outline: deep
 tags:
 ---
@@ -35,7 +35,7 @@ examples in the
 
 ```json
 {
-  "oisFormat": "2.4.0",
+  "oisFormat": "2.2.0",
   "title": "<FILL_*>",
   "version": "<FILL_*>",
   "apiSpecifications": {
