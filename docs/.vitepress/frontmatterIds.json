@@ -3152,7 +3152,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/example.html",
+    "path": "/reference/ois/2.2/example.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3162,7 +3162,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/index.html",
+    "path": "/reference/ois/2.2/index.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3172,7 +3172,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/processing.html",
+    "path": "/reference/ois/2.2/processing.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3182,7 +3182,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/reserved-parameters.html",
+    "path": "/reference/ois/2.2/reserved-parameters.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3192,7 +3192,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/specification.html",
+    "path": "/reference/ois/2.2/specification.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3202,7 +3202,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/template.html",
+    "path": "/reference/ois/2.2/template.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3212,7 +3212,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.2",
-    "path": "/reference/ois/latest/versions.html",
+    "path": "/reference/ois/2.2/versions.html",
     "version": "v2.2",
     "outline": "deep",
     "tags": null
@@ -3222,7 +3222,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/example.html",
+    "path": "/reference/ois/latest/example.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
@@ -3232,7 +3232,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/index.html",
+    "path": "/reference/ois/latest/index.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
@@ -3242,7 +3242,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/processing.html",
+    "path": "/reference/ois/latest/processing.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
@@ -3252,7 +3252,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/reserved-parameters.html",
+    "path": "/reference/ois/latest/reserved-parameters.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
@@ -3262,7 +3262,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/specification.html",
+    "path": "/reference/ois/latest/specification.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
@@ -3272,7 +3272,7 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/template.html",
+    "path": "/reference/ois/latest/template.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
@@ -3282,12 +3282,82 @@
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
     "pageHeader": "Reference → OIS → v2.3",
-    "path": "/reference/ois/next/versions.html",
+    "path": "/reference/ois/latest/versions.html",
     "version": "v2.3",
     "outline": "deep",
     "tags": null
   },
   "336": {
+    "title": "Example OIS Object",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/example.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "337": {
+    "title": "Understanding OIS",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/index.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "338": {
+    "title": "Pre/Post Processing",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/processing.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "339": {
+    "title": "Reserved Parameters",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/reserved-parameters.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "340": {
+    "title": "Specification",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/specification.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "341": {
+    "title": "OIS Template",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/template.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "342": {
+    "title": "Versions",
+    "sidebarHeader": "Reference",
+    "sidebarSubHeader": "OIS",
+    "pageHeader": "Reference → OIS → v2.4",
+    "path": "/reference/ois/next/versions.html",
+    "version": "v2.4",
+    "outline": "deep",
+    "tags": null
+  },
+  "343": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3296,7 +3366,7 @@
     "outline": "deep",
     "tags": null
   },
-  "337": {
+  "344": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3305,7 +3375,7 @@
     "outline": "deep",
     "tags": null
   },
-  "338": {
+  "345": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3314,7 +3384,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "339": {
+  "346": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3323,7 +3393,7 @@
     "outline": "deep",
     "tags": null
   },
-  "340": {
+  "347": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3332,7 +3402,7 @@
     "outline": "deep",
     "tags": null
   },
-  "341": {
+  "348": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,

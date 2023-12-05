@@ -46,8 +46,8 @@ requests or requests to the HTTP signed data gateway:
    extraction and encoding, data are still returned. This is in contrast to the
    other types of requests for which only an error would be returned. The API
    call response, after undergoing any
-   [post-processing](/reference/ois/latest/processing.md), will be present in
-   the `rawValue` field independent of encoding success or failure:
+   [post-processing](/reference/ois/2.2/processing.md), will be present in the
+   `rawValue` field independent of encoding success or failure:
 
    ```json
    {

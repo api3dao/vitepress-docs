@@ -66,7 +66,7 @@ Update links and other version specific content. For `vx.xx`, `/latest`, and
 1. Update `/.vitepress/versions.json` to reflect the latest and next versions.
 1. Update internal hyperlinks in the content. In latest use `/latest`, next use
    `/next`. For folders of a specific version use the correct version number.
-1. Be sure the above step also changed the `basePath` in frontmatter.
+1. Be sure the above step also changed the `path` in frontmatter.
 1. Change frontmatter `version:` to the proper version.
 1. For `/latest` look for and change external links to API3 repos that may use
    older repo tags, `/master`, or `/main`. Some repos may not use tags and

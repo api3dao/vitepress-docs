@@ -2,9 +2,9 @@
 title: OIS Template
 sidebarHeader: Reference
 sidebarSubHeader: OIS
-pageHeader: Reference → OIS → v2.3
+pageHeader: Reference → OIS → v2.4
 path: /reference/ois/next/template.html
-version: v2.3
+version: v2.4
 outline: deep
 tags:
 ---
@@ -31,11 +31,11 @@ because they are referencing each other.
 The file below is a basic template for OIS. Note, that it might look differently
 for your particular use case. You can also check out the OISes created for the
 examples in the
-[Airnode repository](https://github.com/api3dao/airnode/tree/v0.12/packages/airnode-examples/integrations).
+[Airnode repository](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-examples/integrations).
 
 ```json
 {
-  "oisFormat": "2.2.0",
+  "oisFormat": "2.4.0",
   "title": "<FILL_*>",
   "version": "<FILL_*>",
   "apiSpecifications": {
