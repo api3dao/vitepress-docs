@@ -24,7 +24,7 @@ deploying.
 
 | Airnode version     | Latest compatible OIS version                |
 | ------------------- | -------------------------------------------- |
-| to be released      | 2.3.1                                        |
+| Pending             | 2.3.1                                        |
 | 0.13.0              | 2.2.1                                        |
 | 0.12.0              | 2.1.0                                        |
 | 0.11.2              | 2.1.0                                        |
