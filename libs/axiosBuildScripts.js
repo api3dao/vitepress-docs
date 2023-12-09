@@ -162,14 +162,5 @@ versionsRef.versionsAirnode.forEach((el) => {
   if (vrs !== 'v0.11') {
     airnodeContractAddresses('AirnodeRrpV0DryRun', url, path);
   }
-
-  /**
-   * There is a need to add the RequesterAuthorizerWithErc721 contract addresses
-   * from the airnode-protocol-v1 repo. The repo is supposed to be migrated in the
-   * monorepo. Will pull the contract from main only.
-   */
-  url =
-    'https://raw.githubusercontent.com/api3dao/airnode-protocol-v1/main/deployments/references.json';
-  airnodeContractAddresses('RequesterAuthorizerWithErc721', url, path);
 });
 console.log('------------------');
