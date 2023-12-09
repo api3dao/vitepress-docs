@@ -70,26 +70,12 @@ directory.
 </tr>
 </table>
 
-## RequesterAuthorizerWithErc721
-
-<table>
-<th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
-<tr v-for="(chain, index) in RequesterAuthorizerWithErc721">
-    <td style="max-width:150px;">{{chain.fullname}}</td>
-    <td>{{chain.id}}</td>
-    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
-</tr>
-</table>
-
 <FlexEndTag/>
 
 <script setup lang="ts">
     import AirnodeRrpV0 from './src/AirnodeRrpV0.json';
     import AccessControlRegistry from './src/AccessControlRegistry.json';
     import RequesterAuthorizerWithAirnode from './src/RequesterAuthorizerWithAirnode.json';
-    import RequesterAuthorizerWithErc721 from './src/RequesterAuthorizerWithErc721.json';
 </script>
 
 <style scoped>

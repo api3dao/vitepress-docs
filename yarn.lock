@@ -143,12 +143,12 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@api3/chains@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.1.0.tgz#f971f4084891c17602dd46a708be28adb03df526"
-  integrity sha512-n4e+wHgjVbYsDvHe+cuD+wfa83x5SRyCLaEa/y1s1KEh7Wn+iz1Kj6uTmkndZpPneqxbLA/AY+7bJ4bkPzd48Q==
+"@api3/chains@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.1.1.tgz#07b57a79813f9f6dbd4c79d8f1ffd1d718927aa7"
+  integrity sha512-+XyFaWAQNXNJjMKXNFgkYu335icMIk7i3MEjlw925oazQ0n7mnP6LVbsPIdYxdgIa0WwJTCmlbS+r9YcM7hpmQ==
   dependencies:
-    viem "^1.18.2"
+    viem "^1.19.11"
     zod "^3.22.4"
 
 "@babel/parser@^7.23.3":
@@ -1430,10 +1430,10 @@ vfile@^6.0.0:
     unist-util-stringify-position "^4.0.0"
     vfile-message "^4.0.0"
 
-viem@^1.18.2:
-  version "1.19.3"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-1.19.3.tgz#896443d4f68005d68b9a1b5b61370ceb7bdf913b"
-  integrity sha512-SymIbCO0nIq2ucna8R3XV4f/lEshKGLuhYU2f6O+OAbmE2ugBxBKx2axMKQrQML87nE0jb2qqqtRJka5SO/7MA==
+viem@^1.19.11:
+  version "1.19.11"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-1.19.11.tgz#de4ee7537ee036894bd818aa316a8faecaf017e9"
+  integrity sha512-dbsXEWDBZkByuzJXAs/e01j7dpUJ5ICF5WcyntFwf8Y97n5vnC/91lAleSa6DA5V4WJvYZbhDpYeTctsMAQnhA==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
