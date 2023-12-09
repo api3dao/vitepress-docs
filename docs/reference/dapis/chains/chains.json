@@ -7,10 +7,10 @@
     "testnet": false,
     "explorerUrl": "https://etherscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "ethereum-goerli-testnet": {
@@ -21,10 +21,10 @@
     "testnet": true,
     "explorerUrl": "https://goerli.etherscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "optimism": {
@@ -35,10 +35,10 @@
     "testnet": false,
     "explorerUrl": "https://optimistic.etherscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "rsk": {
@@ -49,10 +49,10 @@
     "testnet": false,
     "explorerUrl": "https://explorer.rsk.co/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "rsk-testnet": {
@@ -63,10 +63,10 @@
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.rsk.co/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "bsc": {
@@ -77,10 +77,10 @@
     "testnet": false,
     "explorerUrl": "https://bscscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "bsc-testnet": {
@@ -91,10 +91,10 @@
     "testnet": true,
     "explorerUrl": "https://testnet.bscscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "gnosis": {
@@ -105,10 +105,10 @@
     "testnet": false,
     "explorerUrl": "https://gnosisscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "polygon": {
@@ -119,10 +119,10 @@
     "testnet": false,
     "explorerUrl": "https://polygonscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "fantom": {
@@ -133,38 +133,10 @@
     "testnet": false,
     "explorerUrl": "https://ftmscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
-    }
-  },
-  "zksync-goerli-testnet": {
-    "id": "280",
-    "alias": "zksync-goerli-testnet",
-    "name": "zkSync testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://goerli.explorer.zksync.io/",
-    "contracts": {
-      "Api3ServerV1": "0x9104356BB320Ab72FffbDCfe979577fc78377821",
-      "AccessControlRegistry": "0xFAF0129B9C1fA35C8a9B1e664Dd6247aE624C002",
-      "OwnableCallForwarder": "0xD6A26d7612c2781b380e13Cf542d846F9A360BD7",
-      "ProxyFactory": "0xb9ed9a0Ecfcc544D8eB82BeeBE79B03e13012d7c"
-    }
-  },
-  "zksync": {
-    "id": "324",
-    "alias": "zksync",
-    "name": "zkSync",
-    "nativeToken": "ETH",
-    "testnet": false,
-    "explorerUrl": "https://explorer.zksync.io/",
-    "contracts": {
-      "Api3ServerV1": "0xAC26e0F627569c04DAe1B1E039B62bb5d6760Fe8",
-      "AccessControlRegistry": "0x0c150b404A639E603639b575B101B38B64e12D0b",
-      "OwnableCallForwarder": "0x1e0cd5CDB3a7bc2Db750aBc12FeeD05CA94e90ab",
-      "ProxyFactory": "0xFAF0129B9C1fA35C8a9B1e664Dd6247aE624C002"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "cronos-testnet": {
@@ -175,10 +147,10 @@
     "testnet": true,
     "explorerUrl": "https://cronos.org/explorer/testnet3/",
     "contracts": {
-      "Api3ServerV1": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
-      "AccessControlRegistry": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
+      "Api3ServerV1": "0x33E6C2f5Fa6aA18254927F55b0C5b5B975Ec1358",
+      "AccessControlRegistry": "0x8984152339F9D35742BB878D0eaD9EF9fd6469d3",
       "OwnableCallForwarder": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
-      "ProxyFactory": "0x5aB00E30453EEAd35025A761ED65d51d74574C24"
+      "ProxyFactory": "0xC3E76D8829259f2A34541746de2F8A0509Dc1987"
     }
   },
   "optimism-goerli-testnet": {
@@ -189,38 +161,10 @@
     "testnet": true,
     "explorerUrl": "https://goerli-optimism.etherscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
-    }
-  },
-  "metis-goerli-testnet": {
-    "id": "599",
-    "alias": "metis-goerli-testnet",
-    "name": "Metis testnet",
-    "nativeToken": "testMETIS",
-    "testnet": true,
-    "explorerUrl": "https://goerli.explorer.metisdevops.link/",
-    "contracts": {
-      "Api3ServerV1": "0xDDe9CE3736939d59A70c446c8A4AB6714CB4a41a",
-      "AccessControlRegistry": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d",
-      "OwnableCallForwarder": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
-      "ProxyFactory": "0x3d0Ca9e5490E36627beA9a8cb3cefa12D7cDc0af"
-    }
-  },
-  "metis": {
-    "id": "1088",
-    "alias": "metis",
-    "name": "Metis",
-    "nativeToken": "METIS",
-    "testnet": false,
-    "explorerUrl": "https://andromeda-explorer.metis.io/",
-    "contracts": {
-      "Api3ServerV1": "0x784b1ce3fa1e60Bc1cf924711f0D5AA484C9b37e",
-      "AccessControlRegistry": "0x824cb5cE2894cBA4eDdd005c5029eD17F5FEcf99",
-      "OwnableCallForwarder": "0x2D6D050Fc44d4db1c8577f4cF87905811fA126b2",
-      "ProxyFactory": "0xd9b82260eaaa2CDe8150474C94C130ca681bB127"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "polygon-zkevm": {
@@ -231,10 +175,10 @@
     "testnet": false,
     "explorerUrl": "https://zkevm.polygonscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "moonbeam": {
@@ -245,10 +189,10 @@
     "testnet": false,
     "explorerUrl": "https://moonscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "moonriver": {
@@ -259,10 +203,10 @@
     "testnet": false,
     "explorerUrl": "https://moonriver.moonscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "moonbeam-testnet": {
@@ -273,10 +217,10 @@
     "testnet": true,
     "explorerUrl": "https://moonbase.moonscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "polygon-zkevm-goerli-testnet": {
@@ -287,24 +231,10 @@
     "testnet": true,
     "explorerUrl": "https://testnet-zkevm.polygonscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
-    }
-  },
-  "milkomeda-c1": {
-    "id": "2001",
-    "alias": "milkomeda-c1",
-    "name": "Milkomeda C1",
-    "nativeToken": "milkADA",
-    "testnet": false,
-    "explorerUrl": "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/",
-    "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "kava-testnet": {
@@ -315,10 +245,10 @@
     "testnet": true,
     "explorerUrl": "https://testnet.kavascan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "kava": {
@@ -329,10 +259,10 @@
     "testnet": false,
     "explorerUrl": "https://kavascan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "fantom-testnet": {
@@ -343,10 +273,10 @@
     "testnet": true,
     "explorerUrl": "https://testnet.ftmscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "mantle": {
@@ -357,10 +287,10 @@
     "testnet": false,
     "explorerUrl": "https://explorer.mantle.xyz/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "mantle-goerli-testnet": {
@@ -371,10 +301,10 @@
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.mantle.xyz/",
     "contracts": {
-      "Api3ServerV1": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
-      "AccessControlRegistry": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
-      "OwnableCallForwarder": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
-      "ProxyFactory": "0x5aB00E30453EEAd35025A761ED65d51d74574C24"
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "base": {
@@ -385,10 +315,10 @@
     "testnet": false,
     "explorerUrl": "https://basescan.org/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "gnosis-testnet": {
@@ -399,10 +329,10 @@
     "testnet": true,
     "explorerUrl": "https://gnosis-chiado.blockscout.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "arbitrum": {
@@ -413,10 +343,10 @@
     "testnet": false,
     "explorerUrl": "https://arbiscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "avalanche-testnet": {
@@ -427,10 +357,10 @@
     "testnet": true,
     "explorerUrl": "https://testnet.snowtrace.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "avalanche": {
@@ -441,10 +371,10 @@
     "testnet": false,
     "explorerUrl": "https://snowtrace.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "linea-goerli-testnet": {
@@ -455,10 +385,10 @@
     "testnet": true,
     "explorerUrl": "https://goerli.lineascan.build/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "linea": {
@@ -469,10 +399,10 @@
     "testnet": false,
     "explorerUrl": "https://lineascan.build/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "polygon-testnet": {
@@ -483,10 +413,10 @@
     "testnet": true,
     "explorerUrl": "https://mumbai.polygonscan.com/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "base-goerli-testnet": {
@@ -497,24 +427,10 @@
     "testnet": true,
     "explorerUrl": "https://goerli.basescan.org/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
-    }
-  },
-  "milkomeda-c1-testnet": {
-    "id": "200101",
-    "alias": "milkomeda-c1-testnet",
-    "name": "Milkomeda C1 testnet",
-    "nativeToken": "testmilkADA",
-    "testnet": true,
-    "explorerUrl": "https://explorer-devnet-cardano-evm.c1.milkomeda.com/",
-    "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "arbitrum-goerli-testnet": {
@@ -525,10 +441,10 @@
     "testnet": true,
     "explorerUrl": "https://testnet.arbiscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "scroll-goerli-testnet": {
@@ -539,10 +455,10 @@
     "testnet": true,
     "explorerUrl": "https://blockscout.scroll.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
   "ethereum-sepolia-testnet": {
@@ -553,10 +469,10 @@
     "testnet": true,
     "explorerUrl": "https://sepolia.etherscan.io/",
     "contracts": {
-      "Api3ServerV1": "0x3dEC619dc529363767dEe9E71d8dD1A5bc270D76",
-      "AccessControlRegistry": "0x12D82f38a038A71b0843BD3256CD1E0A1De74834",
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0xd9cB76bcAE7219Fb3cB1936401804D7c9F921bCD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   }
 }
