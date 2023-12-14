@@ -30,7 +30,7 @@ file.
 
 :::
 
-```js
+```sh
 failed to load config from /Users/warren/DEV/vitepress-docs/docs/.vitepress/config.js
 build error:
  Error:
@@ -63,12 +63,12 @@ is not running under Rosetta, it will install for the proper platform.
 `esbuild` will not appear in `packages.json` under `devDependencies`, but it
 does update.
 
-```js
+```sh
 yarn install --dev esbuild
 ```
 
 Next run a VitePress build.
 
-```js
+```sh
 yarn docs:build
 ```

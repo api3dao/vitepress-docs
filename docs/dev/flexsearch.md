@@ -71,8 +71,8 @@ indexes.
 
 Build the local data files via the Axios script.
 
-```js
-yarn axios:build;
+```sh
+yarn axios:build
 ```
 
 ### 2. Build the `/dist` folder
@@ -81,7 +81,7 @@ Build the `/dist` folder with the latest HTML files. All markdown files in
 `/docs` are converted to HTML files and are added to `/dist`. All files must
 contain the extraction markers `<Flex...Tag/>`.
 
-```js
+```sh
 yarn docs:build
 ```
 
@@ -89,11 +89,8 @@ yarn docs:build
 
 Builds the index files.
 
-```js
+```sh
 yarn flex:build
-
-// Runs the following from package.json
-// "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
 ```
 
 Note the output from the command `yarn flex:build` which displays file sizes.
@@ -114,11 +111,8 @@ Check the size of the three `map.json` files which should be in the range of
 
 Test the index files.
 
-```js
+```sh
 yarn flex:test
-
-// Runs the following from package.json
-// "flex:test": "node libs/flexTestSearch.js;"
 ```
 
 ## Long strings warning
