@@ -115,41 +115,7 @@ Below are examples of how to use the authorizers.
         "requesterAuthorizersWithErc721": [],
         "crossChainRequesterAuthorizersWithErc721": []
       }
-    },
-    {
-      "id": "4",
-      ...
-      "authorizers": {
-        "requesterEndpointAuthorizers": [],
-        "crossChainRequesterAuthorizers": [],
-        "requesterAuthorizersWithErc721": [
-          {  // Requests are authorized by an NFT deposit on the same chain as the request
-            "erc721s": ["0x00bDB2315678afecb367f032d93F642f64180a00"],
-            "RequesterAuthorizerWithErc721": "0x999DB2315678afecb367f032d93F642f64180aa9"
-          }
-        ],
-        "crossChainRequesterAuthorizersWithErc721": []
-      }
-    },
-    {
-      "id": "5",
-      ...
-      "authorizers": {
-        "requesterEndpointAuthorizers": [],
-        "crossChainRequesterAuthorizers": [],
-        "requesterAuthorizersWithErc721": [],
-        "crossChainRequesterAuthorizersWithErc721": [
-          {  // Requests are authorized by an NFT deposit on Ethereum mainnet
-            "erc721s": ["0x3FbDB2315678afecb367f032d93F642f64180aa6"],
-            "chainType": "evm",
-            "chainId": "1",
-            "chainProvider": {
-              "url": "http://127.0.0.2"
-            }
-          }
-        ]
-      }
-    },
+    }
    ]
 }
 ```
