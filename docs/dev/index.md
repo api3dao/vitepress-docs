@@ -38,7 +38,6 @@ yarn install
 Create a working branch.
 
 ```sh
-// Create a working branch, with git or the VS Code UI
 git checkout -b <branch-name>
 ```
 
@@ -55,8 +54,11 @@ builds.
 
 ```sh
 yarn docs:build
+```
 
-// Output shown below
+The output should look like this:
+
+```sh
   vitepress v1.0.0-alpha.61
 
 ✓ building client + server bundles...
@@ -71,12 +73,11 @@ needed.
 ## Memory
 
 It maybe necessary to increase the memory for Nodejs to run `yarn docs:dev` or
-`yarn docs:build`. Make corrections as needed. For Apple silicon this may be a
-sign of a [Rosetta issue](/dev/rosetta.md) which should be addressed before
-committing to additional memory for Nodejs.
+`yarn docs:build`. This can be done with the command below, with a higher value
+potentially necessary. For Apple silicon this may be a sign of a
+[Rosetta issue](/dev/rosetta.md) which should be addressed before committing to
+additional memory for Nodejs.
 
 ```sh
-// If you get a memory error, change the memory space for Nodejs
-// usually 1024 or 2048 will work
 export NODE_OPTIONS=--max_old_space_size=1024
 ```

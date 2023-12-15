@@ -40,8 +40,6 @@ The script must be run locally and will not work as a GitHub action.
 Build the docs as usual using the standard build command provided by VitePress.
 
 ```sh
-// From the vitepress-docs project root
-// Build the docs website
 yarn docs:build
 ```
 
@@ -54,13 +52,7 @@ VitePress has a built-in http server that publishes the files from the `/dist`
 folder.
 
 ```sh
-// Run from the root of vitepress-docs
 yarn docs:serve
-
-// Outputs
-  vitepress v1.0.0-x
-
-Built site served at http://localhost:8082/
 ```
 
 ### 3. Run the script
@@ -75,8 +67,5 @@ validation to a particular folder (docset) can hasten the validation process. Be
 sure to use the correct port displayed by VitePress server.
 
 ```sh
-# Open a new terminal window.
-# Run from the vitepress-docs project root.
-# Start the nodejs script.
 node ./libs/link-validator.js  http://localhost:8082  ./docs/.vitepress/dist/
 ```
