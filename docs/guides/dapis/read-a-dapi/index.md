@@ -104,8 +104,8 @@ purposes without proper security audits and testing.
 
 * The `readDataFeed()` function is a public function that reads from a dAPI
   through the IProxy interface. The function returns two values representing the
-  latest `value` (type int224) and `timestamp` (type uint256) of the dAPI that
-  the proxy is reading from.
+  latest `value` with 18 decimals (type int224) and `timestamp` (type uint256)
+  of the dAPI that the proxy is reading from.
 
 ## Summary
 
