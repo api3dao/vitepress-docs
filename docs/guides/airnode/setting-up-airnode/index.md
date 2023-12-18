@@ -21,9 +21,10 @@ tags:
 
 ## Introduction
 
-[Airnode]() is a [first-party]() oracle node deployed and operated by the API
-provider to provide any data from their REST API on-chain. It is a lightweight,
-serverless, and cost-efficient oracle node that can be deployed in minutes.
+[Airnode](/reference/airnode/latest/concepts/airnode.md) is a first-party oracle
+node deployed and operated by the API provider to provide any data from their
+REST API on-chain. It is a lightweight, serverless, and cost-efficient oracle
+node that can be deployed in minutes.
 
 This guide will walk you through the steps to set up an Airnode with your own
 REST API.
@@ -40,7 +41,7 @@ them to provide their API data to multiple chains.
 
 ChainAPI can connect almost any API, whether open or authenticated, to Airnode.
 Airnode then queries your API operations to be consumed by EVM on-chain dApps,
-by using the [Request-Response Protocol]().
+by using the [Request-Response Protocol](/reference/airnode/latest/concepts/).
 
 To get started, go to [ChainAPI](https://chainapi.com/) and login using
 [MetaMask](https://metamask.io/).
