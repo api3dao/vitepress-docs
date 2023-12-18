@@ -1,5 +1,5 @@
 ---
-title: Using QRNG - Remix Example
+title: Getting started with QRNG
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -114,12 +114,6 @@ contract QrngExample is RrpRequesterV0, Ownable {
         sponsorWallet = _sponsorWallet;
     }
 
-    /// @notice To receive funds from the sponsor wallet and send them to the owner.
-    receive() external payable {
-        payable(owner()).transfer(msg.value);
-        emit WithdrawalRequested(airnode, sponsorWallet);
-    }
-
     /// @notice Requests a `uint256`
     /// @dev This request will be fulfilled by the contract's sponsor wallet,
     /// which means spamming it may drain the sponsor wallet.
@@ -195,6 +189,12 @@ contract QrngExample is RrpRequesterV0, Ownable {
 
     function getRandomNumberArray() public view returns(uint256[] memory) {
         return _qrngUint256Array;
+    }
+
+    /// @notice To receive funds from the sponsor wallet and send them to the owner.
+    receive() external payable {
+        payable(owner()).transfer(msg.value);
+        emit WithdrawalRequested(airnode, sponsorWallet);
     }
 
     /// @notice To withdraw funds from the sponsor wallet to the contract.

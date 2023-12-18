@@ -1,5 +1,5 @@
 ---
-title: Calling an Airnode
+title: Calling an Airnode via a Smart Contract
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Calling an Airnode

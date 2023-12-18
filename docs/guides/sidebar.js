@@ -41,7 +41,11 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Deploying an Airnode',
+        text: 'Setting up an Airnode with your API',
+        link: '/guides/airnode/setting-up-airnode/',
+      },
+      {
+        text: 'Deploying the Airnode on a Cloud Provider',
         collapsed: false,
         items: [
           {
@@ -56,30 +60,28 @@ module.exports = [
             text: '• Deploying Airnode locally using Docker',
             link: '/guides/airnode/deploy-airnode/deploy-container/',
           },
+        ],
+      },
+      {
+        text: 'Calling the Airnode via a Smart Contract',
+        link: '/guides/airnode/calling-an-airnode/',
+      },
+      {
+        text: 'Advanced Features',
+        collapsed: false,
+        items: [
           {
-            text: '• Generating Airnode Config using ChainAPI',
-            link: '/guides/airnode/deploy-airnode/generate-config-chainapi/',
+            text: '• Making RRP Template Requests',
+            link: '/guides/airnode/using-rrp-templates',
+          },
+          {
+            text: '• Post processing',
+            link: '/guides/airnode/post-processing/',
           },
         ],
       },
       {
-        text: 'Post processing',
-        link: '/guides/airnode/post-processing/',
-      },
-      {
-        text: 'Calling an Airnode',
-        link: '/guides/airnode/calling-an-airnode/',
-      },
-      {
-        text: 'Making an RRP Request',
-        link: '/guides/airnode/rrp-request',
-      },
-      {
-        text: 'Making RRP Template Requests',
-        link: '/guides/airnode/using-rrp-templates',
-      },
-      {
-        text: 'Monorepo Examples',
+        text: 'Airnode Examples',
         link: '/guides/airnode/monorepo-examples',
       },
       //{
@@ -94,27 +96,33 @@ module.exports = [
     items: [
       {
         text: 'Getting Started with QRNG',
-        link: '/guides/qrng/',
-      },
-      {
-        text: 'Using QRNG - Remix Example',
         link: '/guides/qrng/qrng-remix/',
       },
       {
-        text: 'Building a Lottery with QRNG',
-        link: '/guides/qrng/lottery-guide/',
+        text: 'Demo Projects',
+        collapsed: false,
+        items: [
+          {
+            text: '• Building a Lottery with QRNG',
+            link: '/guides/qrng/lottery-guide/',
+          },
+          {
+            text: '• Minting Dynamic NFTs with QRNG',
+            link: '/guides/qrng/quantumon/',
+          },
+          {
+            text: `• Building a Roulette with QRNG`,
+            link: '/guides/qrng/roulette-guide/',
+          },
+          {
+            text: '• QRNG YouTube Tutorials',
+            link: '/guides/qrng/youtube-demos/',
+          },
+        ],
       },
       {
-        text: 'Minting Dynamic NFTs with QRNG',
-        link: '/guides/qrng/quantumon/',
-      },
-      {
-        text: `Building a Roulette with QRNG`,
-        link: '/guides/qrng/roulette-guide/',
-      },
-      {
-        text: 'QRNG YouTube Tutorials',
-        link: '/guides/qrng/youtube-demos/',
+        text: 'QRNG FAQs',
+        link: '/guides/qrng/',
       },
     ],
   },

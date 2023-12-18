@@ -1,5 +1,5 @@
 ---
-title: Getting Started with QRNG
+title: QRNG FAQ
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → QRNG
@@ -7,7 +7,7 @@ path: /guides/qrng/index.html
 outline: deep
 tags:
   - qrng
-  - getting started
+  - faq
 ---
 
 <PageHeader/>
@@ -18,9 +18,9 @@ tags:
 
 # {{$frontmatter.title}}
 
-This is the getting started section for QRNG along with some frequently asked
-questions. If you have a question that is not answered here, you can head over
-to our [Discord server](https://discord.com/invite/qnRrcfnm5W).
+These are some frequently asked questions about the QRNG service. If you have a
+question that is not answered here, you can head over to our
+[Discord server](https://discord.com/invite/qnRrcfnm5W).
 
 ## What is the QRNG?
 
