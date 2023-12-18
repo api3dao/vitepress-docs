@@ -13,13 +13,13 @@ hero:
     alt: API3
   actions:
     - theme: brand
-      text: Getting stated with dAPIs
+      text: Getting started with dAPIs
       link: /guides/dapis/
     - theme: brand
-      text: Getting stated with QRNG
+      text: Getting started with QRNG
       link: /guides/qrng/
     - theme: brand
-      text: Getting stated with Airnode
+      text: Getting started with Airnode
       link: /guides/airnode/setting-up-airnode/
 ---
 
