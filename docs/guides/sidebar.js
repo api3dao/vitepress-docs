@@ -96,7 +96,7 @@ module.exports = [
     items: [
       {
         text: 'Getting Started with QRNG',
-        link: '/guides/qrng/qrng-remix/',
+        link: '/guides/qrng/',
       },
       {
         text: 'Demo Projects',
@@ -122,7 +122,7 @@ module.exports = [
       },
       {
         text: 'QRNG FAQs',
-        link: '/guides/qrng/',
+        link: '/guides/qrng/qrng-faq',
       },
     ],
   },

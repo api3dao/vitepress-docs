@@ -20,7 +20,7 @@ hero:
       link: /guides/qrng/
     - theme: brand
       text: Getting stated with Airnode
-      link: /guides/airnode/
+      link: /guides/airnode/setting-up-airnode/
 ---
 
 <style>
