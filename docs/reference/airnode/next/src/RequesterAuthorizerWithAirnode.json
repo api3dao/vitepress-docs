@@ -217,13 +217,6 @@
     "contractAddress": "0x8262a9DAB3f8a0b1E6317551E214CeA89Bc3f56d"
   },
   {
-    "id": "43288",
-    "fullname": "Boba/Avalanche",
-    "alias": "boba-avalanche",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "56288",
     "fullname": "Boba/BNB",
     "alias": "boba-bnb",

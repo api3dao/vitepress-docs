@@ -143,10 +143,10 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@api3/chains@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.1.1.tgz#07b57a79813f9f6dbd4c79d8f1ffd1d718927aa7"
-  integrity sha512-+XyFaWAQNXNJjMKXNFgkYu335icMIk7i3MEjlw925oazQ0n7mnP6LVbsPIdYxdgIa0WwJTCmlbS+r9YcM7hpmQ==
+"@api3/chains@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.2.0.tgz#7f869794c8d29507bb83188cacddb91cd132996c"
+  integrity sha512-Jw+U0JwrjAG+4h2u9jBdikYre/ip6S2ENvuQup2dUtnkiVS6f+CEMlT89QwD0KfcD1EwD6Li+hF7xVOYdHNo0g==
   dependencies:
     viem "^1.19.11"
     zod "^3.22.4"
