@@ -91,7 +91,7 @@ ANU is only available on mainnets.
 
 <div class="mainnets">
 
-<div style="position:absolute;right:0px;margin-top:18px;">ANU</div>
+<div style="position:absolute;right:0px;margin-top:-30px;">ANU</div>
 
 | Network                                                                             | ID    | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | ----------------------------------------------------------------------------------- | ----- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
