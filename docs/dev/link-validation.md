@@ -17,8 +17,6 @@ attached anchors. The link validator is a manual process that should be
 performed as often as possible.
 
 The script is part of a three step process to keep the links in the docs clean.
-Tools like lychee do not check anchors which is important in the docs as there
-are many and they change a lot.
 
 The three steps:
 
