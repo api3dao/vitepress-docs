@@ -158,4 +158,51 @@ perfectly unpredictable true random numbers.
     <CopyIcon text="0x4554e958a68d68de6a4f6365ff868836780e84ac3cba75ce3f4c78a85faa8047"/>
 </div>
 
+## Quantum Blockchains Random Numbers
+
+[Quantum Blockchains](https://www.quantumblockchains.io/) is driven by two
+primary objectives: enhancing blockchain security and fostering the broader
+adoption of quantum cryptography.
+
+Given this backdrop, blockchains emerge as the premier platform for the
+development and implementation of formidable quantum-resistant cryptographic
+strategies. Quantum Blockchains dedication to fortifying blockchain security not
+only advances this specific realm but also positions us at the forefront of
+broader cryptographic challenges, underscoring the imperative of
+quantum-resistant cryptography advancements.
+
+<!-- Need css for mobile -->
+
+### `airnode`
+
+<div style="word-wrap:break-word;margin-top:25px;">
+<div style="margin-top:15px;margin-left:15px">
+    <span style="font-family:courier">0x07D7F4EcaC8aDf3f0412ab058a051fD8b8507348</span>
+    <CopyIcon text="0x07D7F4EcaC8aDf3f0412ab058a051fD8b8507348"/>
+</div>
+</div>
+
+### `xpub`
+
+<div style="word-wrap:break-word;margin-top:25px;">
+<div style="margin-top:15px;margin-left:15px">
+    <span style="font-family:courier">xpub6C7WhXL7KNoa9GnCwEfLCWzf326hXhqD3nUyKg4ZxzXvjcmFeVQ9GZENgKtHxLfo3uPa13GBHCAb1nRgdUnP5YGJFX97KqpeFvHQzpjhmoi</span>
+    <CopyIcon text="xpub6C7WhXL7KNoa9GnCwEfLCWzf326hXhqD3nUyKg4ZxzXvjcmFeVQ9GZENgKtHxLfo3uPa13GBHCAb1nRgdUnP5YGJFX97KqpeFvHQzpjhmoi"/>
+</div>
+</div>
+
+### `endpointIdUint256`
+
+<div style="word-wrap:break-word;margin-top:15px;margin-left:15px">
+    <span style="font-family:courier">0x8cf0e7205eff59b8695db96b34ffe7a5a125a3ed263afa3353aef6c3d82debf9</span>
+    <CopyIcon text="0x8cf0e7205eff59b8695db96b34ffe7a5a125a3ed263afa3353aef6c3d82debf9"/>
+</div>
+
+### `endpointIdUint256Array`
+
+<div style="word-wrap:break-word;margin-top:15px;margin-left:15px;">
+    <span style="font-family:courier">0x09fd3663fdc0ab359a5ebcba098571122ddb2a80b00a503960b32e67491f52d7</span>
+    <CopyIcon text="0x09fd3663fdc0ab359a5ebcba098571122ddb2a80b00a503960b32e67491f52d7"/>
+</div>
+
 <FlexEndTag/>
