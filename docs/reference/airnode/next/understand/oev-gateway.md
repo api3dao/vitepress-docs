@@ -102,7 +102,7 @@ properly constructed HTTP request:
 ```json
 {
   "chainId": <CHAIN_ID>,
-  "dapiServerAddress": <DAPI_SERVER_ADDRESS>,
+  "api3ServerV1": <API3_SERVER_ADDRESS>,
   "oevProxyAddress": <OEV_PROXY_ADDRESS>,
   "updateId": <UPDATE_ID>,
   "bidderAddress": <BIDDER_ADDRESS>,
@@ -110,8 +110,7 @@ properly constructed HTTP request:
   "beacons": [
     {
       "airnodeAddress": <AIRNODE_ADDRESS>,
-      "endpointId": <EDNPOINT_ID>,
-      "encodedParameters": <ENCODED_PARAMETERS>,
+      "templateId": <TEMPLATE_ID>,
       "signedData": {
         "timestamp": <TIMESTAMP>,
         "encodedValue": <ENCODED_VALUE>,
@@ -120,8 +119,7 @@ properly constructed HTTP request:
     },
     {
       "airnodeAddress": <AIRNODE_ADDRESS>,
-      "endpointId": <EDNPOINT_ID>,
-      "encodedParameters": <ENCODED_PARAMETERS>
+      "templateId": <TEMPLATE_ID>,
     },
     ...
   ]
@@ -131,7 +129,7 @@ properly constructed HTTP request:
 where:
 
 - `chainId` - ID of the blockchain where the auction was held.
-- `dapiServerAddress` - Blockchain address of the dAPI server contract.
+- `api3ServerV1` - Blockchain address of the API3 server contract.
 - `oevProxyAddress` - Blockchain address of the proxy data feed contract.
 - `updateId` - Auction update ID.
 - `bidderAddress` - Blockchain address of the winning searcher.
@@ -139,8 +137,7 @@ where:
 - `beacons` - A list of beacon data to be signed. It can contain two types: full
   beacon data, only beacon metadata
   - `airnodeAddress` - Airnode address identifying a beacon
-  - `endpointId` - Endpoint ID identifying a beacon
-  - `encodedParameters` - Parameters in their encoded form identifying a beacon
+  - `templateId` - Template ID identifying a beacon
   - `signedData` - The signed beacon data received from signed data gateway.
     - `timestamp` - UNIX timestamp of the beacon data
     - `encodedValue` - Beacon value in its encoded form
@@ -155,13 +152,12 @@ curl --location '<gatewayUrl>' \
     "chainId": 6999,
     "bidAmount": "50000000000000000",
     "bidderAddress": "0xf20e5d27690078c102FDbDe117a990a337820A51",
-    "dapiServerAddress": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+    "api3ServerV1": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
     "oevProxyAddress": "0x29fbec16e63F1881a50423030e540037cecBd5A6",
     "beacons": [
          {
             "airnodeAddress": "0xaD1b4e9F83bA33d9B0A92b0085f8606bFe4a41d0",
-            "endpointId": "0xc8e28c6013672bd9ef31bd065dab8843acdba163ec69c27478cb989f4a9c038f",
-            "encodedParameters": "0x",
+            "templateId": "0xe7a871afe2dbe549219b60de080086ea1132f05f4557a21d95ef0a01d7511587",
             "signedData": {
                 "encodedValue": "0x000000000000000000000000000000000000000000000000000000006d16277b",
                 "timestamp": "1679589673",
