@@ -19,41 +19,54 @@ tags:
 
 # {{$frontmatter.title}}
 
-The following guide assumes a valid v0.12 `config.json` file. All changes listed
-below will need to be implemented in order to migrate to Airnode v0.13.0. This
-document is written in a way that will preserve existing behavior with earlier
-Airnode versions.
+This document describes changes to `config.json` as well as to user facing
+services related to Airnode, such as airnode-deployer, airnode-admin, etc.
 
-The document also mentions changes to user facing services related to Airnode,
-such as airnode-deployer, airnode-admin, etc., and new features.
+## Changes to `config.json`
 
-## Summary
-
-1. `nodeSettings.nodeVersion` updated to "0.13.0".
-
-## Details
+The following assumes a valid v0.13 `config.json` file. All changes listed below
+must be implemented in order to migrate to Airnode v0.14.0.
 
 1. `nodeSettings.nodeVersion`
 
-Updated to "0.13.0"
+Updated to "0.14.0"
 
 ```diff
 {
-- "nodeVersion": "0.12.0"
-+ "nodeVersion": "0.13.0"
+- "nodeVersion": "0.13.0"
++ "nodeVersion": "0.14.0"
 }
 ```
 
-## New features and updates
+2. `ois[n].oisFormat`
 
-- The
-  [HTTP Gateway](/reference/airnode/next/understand/http-gateways.md#http-gateway)
-  response has been harmonized so that the API call response, after undergoing
-  any post-processing, will be present in the `rawValue` field independent of
-  encoding success or failure.
-- Airnode protocol contracts were deployed on the following chains: `linea`,
-  `linea-goerli-testnet`, `mantle`, `mantle-goerli-testnet`, `base`,
-  `base-goerli-testnet`, `polygon-zkevm`, and `polygon-zkevm-testnet`.
-- In conjunction with the
-  [OIS bump to v2.2](https://github.com/api3dao/ois/releases), endpoint
-  parameters now do not have to be mapped to operation parameters.
+Updated to "2.3.1".
+
+```diff
+{
+- "oisFormat": "2.2.1"
++ "oisFormat": "2.3.1"
+}
+```
+
+## Breaking changes outside of `config.json`
+
+The following are not expected to have an impact on users, but are listed here
+for completeness.
+
+- The OEV interface has changed in the following ways:
+  - `api3ServerV1` has replaced `dapiServerAddress`
+  - `templateId` has replaced `endpointId` and `encodedParameters`
+- `chainNames` and `networks` are no longer exported from `references.json` of
+  `airnode-protocol`.
+- Support for `boba-avalanche` has been removed as the chain has shut down.
+
+## New features and fixes
+
+- In conjunction with OIS v2.3.1, there is now a version 2 of pre-processing and
+  post-processing. More details can be found in the
+  [OIS reference](/reference/ois/latest/processing.md#v2).
+- OEV gateway AWS lambda memory has been increased from 256 MB to 2048 MB
+- Airnode protocol contracts have been deployed on LightLink and LightLink
+  Goerli Testnet chains. You can find the addresses on the
+  [Contracts page](/reference/airnode/next/index.md).
