@@ -122,20 +122,21 @@ several testnets.
 
 <div style="position:absolute;right:0px;margin-top:-30px;">Testnet Random Numbers</div>
 
-| Network                                                                               | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
-| ------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [{{getChainNameById(5)}}](https://goerli.etherscan.io)                                | 5        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io)                        | 11155111 | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
-| [{{getChainNameById(31)}}](https://explorer.testnet.rsk.co)                           | 31       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(97)}}](https://testnet.bscscan.com)                               | 97       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(420)}}](https://goerli-optimism.etherscan.io)                     | 420      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(1287)}}](https://moonbase.moonscan.io)                            | 1287     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(1891)}}](https://pegasus.lightlink.io/)                           | 1891     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
-| [{{getChainNameById(4002)}}](https://testnet.ftmscan.com)                             | 4002     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(43113)}}](https://testnet.snowtrace.io)                           | 43113    | <code>0x7f5AF7a37a33898544717AAa6c35c111dCe95b28</code><CopyIcon text="0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"/> | 1                |
-| [{{getChainNameById(80001)}}](https://mumbai.polygonscan.com)                         | 80001    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(200101)}}](https://explorer-devnet-cardano-evm.c1.milkomeda.com/) | 200101   | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(421613)}}](https://goerli.arbiscan.io/)                           | 421613   | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| Network                                                                               | ID        | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
+| ------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| [{{getChainNameById(5)}}](https://goerli.etherscan.io)                                | 5         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io)                        | 11155111  | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
+| [{{getChainNameById(31)}}](https://explorer.testnet.rsk.co)                           | 31        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(97)}}](https://testnet.bscscan.com)                               | 97        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(420)}}](https://goerli-optimism.etherscan.io)                     | 420       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(1287)}}](https://moonbase.moonscan.io)                            | 1287      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(1891)}}](https://pegasus.lightlink.io/)                           | 1891      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+| [{{getChainNameById(4002)}}](https://testnet.ftmscan.com)                             | 4002      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(43113)}}](https://testnet.snowtrace.io)                           | 43113     | <code>0x7f5AF7a37a33898544717AAa6c35c111dCe95b28</code><CopyIcon text="0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"/> | 1                |
+| [{{getChainNameById(80001)}}](https://mumbai.polygonscan.com)                         | 80001     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(200101)}}](https://explorer-devnet-cardano-evm.c1.milkomeda.com/) | 200101    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(421613)}}](https://goerli.arbiscan.io/)                           | 421613    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(168587773)}}](https://testnet.blastscan.io)                       | 168587773 | <code>0xD223DfDCb888CA1539bb3459a83c543A1608F038</code><CopyIcon text="0xD223DfDCb888CA1539bb3459a83c543A1608F038"/> | 1                |
 
 </div>
 
@@ -173,6 +174,7 @@ Quintessence is available on selected mainnets and testnets.
 | [{{getChainNameById(8453)}}](https://basescan.org/)                                 | 8453       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 | [{{getChainNameById(1101)}}](https://zkevm.polygonscan.com/)                        | 1101       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 | [{{getChainNameById(59144)}}](https://lineascan.build/)                             | 59144      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+| [{{getChainNameById(1890)}}](https://phoenix.lightlink.io/)                         | 1890       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 
 </div>
 
