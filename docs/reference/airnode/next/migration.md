@@ -67,6 +67,6 @@ for completeness.
   post-processing. More details can be found in the
   [OIS reference](/reference/ois/latest/processing.md#v2).
 - OEV gateway AWS lambda memory has been increased from 256 MB to 2048 MB
-- Airnode protocol contracts have been deployed on LightLink and LightLink
-  Goerli Testnet chains. You can find the addresses on the
+- Airnode protocol contracts have been deployed on LightLink, LightLink Goerli
+  Testnet, and Blast Sepolia Testnet chains. You can find the addresses on the
   [Contracts page](/reference/airnode/next/index.md).
