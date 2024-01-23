@@ -60,7 +60,7 @@ Using `type 0` transaction types is recommended over `type 2` so the use of
 
 As a L2 scaling solution, Optimism has an L1 data fee and an L2 execution fee,
 which are
-[accounted for separately](https://community.optimism.io/docs/developers/build/transaction-fees/#displaying-fees-to-users).
+[accounted for separately](https://help.optimism.io/hc/en-us/articles/4411895794715-Transaction-fees).
 To cover the L1 data fee when a sponsor requests a
 [withdrawal](/reference/airnode/v0.11/concepts/sponsor.md#withdrawals), an
 amount has to be subtracted from the funds returned to the sponsor. The
