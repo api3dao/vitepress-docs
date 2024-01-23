@@ -2,9 +2,9 @@
 title: Versions
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Deployment References
+pageHeader: Reference → Airnode → v0.15 → Deployment References
 path: /reference/airnode/next/versions.html
-version: v0.14
+version: v0.15
 outline: deep
 tags:
 ---
@@ -19,7 +19,7 @@ tags:
 
 # {{$frontmatter.title}}
 
-The latest version of Airnode is `v0.14.x`. See
+The latest version of Airnode is `v0.15.x`. See
 [releases](https://github.com/api3dao/airnode/releases) in the Airnode repo for
 all Airnode versions. Below is a list of Airnode versions included in this
 documentation website. Each can be accessed via the Airnode selector at the top
@@ -27,6 +27,7 @@ of the left sidebar under Reference.
 
 |         |
 | ------- |
+| v0.15.x |
 | v0.14.x |
 | v0.13.x |
 | v0.12.x |

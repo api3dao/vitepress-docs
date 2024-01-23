@@ -2,9 +2,9 @@
 title: Fees
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Airnode for dApp Developers
+pageHeader: Reference → Airnode → v0.15 → Airnode for dApp Developers
 path: /reference/airnode/next/developers/fees.html
-version: v0.14
+version: v0.15
 outline: deep
 tags:
 ---

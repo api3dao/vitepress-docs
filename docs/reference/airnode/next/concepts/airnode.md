@@ -2,9 +2,9 @@
 title: Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.15 → Concepts and Definitions
 path: /reference/airnode/next/concepts/airnode.html
-version: v0.14
+version: v0.15
 outline: deep
 tags:
 ---
@@ -48,7 +48,7 @@ protocol is designed to be flexible and is meant to serve a variety of use
 cases. See the the
 [Calling Airnode (RRP)](/reference/airnode/next/developers/index.md) for more
 details on how an RRP request is made. Also see the Airnode
-[requester examples](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-examples/contracts)
+[requester examples](https://github.com/api3dao/airnode/tree/v0.14/packages/airnode-examples/contracts)
 for potential design patterns.
 
 <!--Airnode consists of two parts: the off-chain **Airnode** (a.k.a. "the node")

@@ -2,9 +2,9 @@
 title: Monitor Airnode
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Understanding Airnode
+pageHeader: Reference → Airnode → v0.14 → Understanding Airnode
 path: /reference/airnode/latest/understand/monitor.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---

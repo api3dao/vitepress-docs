@@ -2,9 +2,9 @@
 title: Admin CLI Image
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Docker Images
+pageHeader: Reference → Airnode → v0.14 → Docker Images
 path: /reference/airnode/latest/docker/admin-cli-image.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 # {{$frontmatter.title}}
 
 <!-- TODO: link [docker hub](https://hub.docker.com/r/api3/airnode-admin) once image is published -->
-<!-- TODO: link [Airnode repository](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-admin/docker) once image is published -->
+<!-- TODO: link [Airnode repository](https://github.com/api3dao/airnode/blob/v0.14/packages/airnode-admin/docker) once image is published -->
 
 Use the admin CLI image as an alternative method to execute
 [Admin CLI](/reference/airnode/latest/packages/admin-cli.md) using npx. Either
@@ -29,7 +29,7 @@ CLI package each time a command is executed using npx.
 
 If you want to build the admin CLI image from the source yourself, you can find
 the
-[image built instructions](https://github.com/api3dao/airnode/tree/v0.13/packages/airnode-admin/docker)
+[image built instructions](https://github.com/api3dao/airnode/blob/v0.14/packages/airnode-admin/docker)
 in the Airnode repository.
 
 Additional information about the
@@ -49,7 +49,7 @@ npx @api3/airnode-admin get-sponsor-status \
   --requester-address 0x2c2e12...
 
 # Docker
-docker run api3/airnode-admin:0.13.0 get-sponsor-status \
+docker run api3/airnode-admin:0.14.0 get-sponsor-status \
   --provider-url https://eth-goerli.gateway.pokt.network/v1/lb/<APP_ID> \
   --sponsor-address 0x9Ec6C4... \
   --requester-address 0x2c2e12...

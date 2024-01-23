@@ -25,11 +25,11 @@ Airnode's defined endpoints in an OIS object but do not map to operation
 parameters (API parameters). They are used by Airnode for special purposes.
 
 A requester can pass request parameters either by referencing a
-[template](/reference/airnode/latest/concepts/template.md) that contains them,
-or as an argument of the request-making methods of
-[AirnodeRrpV0.sol](/reference/airnode/latest/concepts/#airnoderrpv0-sol). In
+[template](/reference/airnode/v0.13/concepts/template.md) that contains them, or
+as an argument of the request-making methods of
+[AirnodeRrpV0.sol](/reference/airnode/v0.13/concepts/#airnoderrpv0-sol). In
 either case, these parameters are encoded using the
-[AirnodeRrpV0 ABI](/reference/airnode/latest/specifications/airnode-abi.md).
+[AirnodeRrpV0 ABI](/reference/airnode/v0.13/specifications/airnode-abi.md).
 There are two types of parameters which are part of the OIS object:
 
 1. [Endpoint parameters](/reference/ois/2.2/specification.md#_5-5-parameters) -
@@ -71,7 +71,7 @@ section below.
 Before the API response value is encoded for on chain use, it is parsed and
 converted. The conversion behaviors for any given type is explained in depth in
 the
-[adapter package docs](/reference/airnode/latest/packages/adapter.md#conversion).
+[adapter package docs](/reference/airnode/v0.13/packages/adapter.md#conversion).
 
 The converted value is then encoded internally by
 [ethers ABI Coder](https://docs.ethers.io/v5/api/utils/abi/coder/#AbiCoder)
@@ -219,7 +219,7 @@ _times: "100"
 
 the request will be fulfilled with the value `123`. Note that the number gets
 multiplied by `100`, and then gets floored. This is because the result of the
-multiplication is [cast](/reference/airnode/latest/packages/adapter.md) to
+multiplication is [cast](/reference/airnode/v0.13/packages/adapter.md) to
 `int256` afterwards.
 
 Make sure to pass the `_times` parameter as string. Airnode will convert this
@@ -235,9 +235,9 @@ multiplied before they are encoded.
 ## `_gasPrice`
 
 The `_gasPrice` reserved parameter enables a requester to override
-[Airnode gas price strategies](/reference/airnode/latest/concepts/gas-prices.md)
+[Airnode gas price strategies](/reference/airnode/v0.13/concepts/gas-prices.md)
 with a specified gas price when Airnode
-[fulfills](/reference/airnode/latest/concepts/request.md#fulfill) the request.
+[fulfills](/reference/airnode/v0.13/concepts/request.md#fulfill) the request.
 The recommended implementation is to have the `_gasPrice` reserved parameter
 without a `default` or `fixed` value as shown in the abbreviated snippet below:
 
@@ -253,7 +253,7 @@ without a `default` or `fixed` value as shown in the abbreviated snippet below:
 
 This allows requesters to specify the gas price via a parameter in their
 request. The value, in `wei`, should be
-[encoded](/reference/airnode/latest/packages/airnode-abi.md#encode) as a
+[encoded](/reference/airnode/v0.13/packages/airnode-abi.md#encode) as a
 `string32` type by the requester, for example:
 
 ```ts
@@ -277,7 +277,7 @@ the requester's gas price will be ignored.
 The `_minConfirmations` reserved parameter enables a requester to override the
 default minimum number of block confirmations set by the Airnode for that chain
 in
-[config.json](/reference/airnode/latest/deployment-files/config-json.md#minconfirmations).
+[config.json](/reference/airnode/v0.13/deployment-files/config-json.md#minconfirmations).
 The recommended implementation is to have the `_minConfirmations` reserved
 parameter without a `default` or `fixed` value as shown in the abbreviated
 snippet below:
@@ -294,7 +294,7 @@ snippet below:
 
 This allows requesters to specify the minimum number of block confirmations via
 a parameter in their request. The value should be
-[encoded](/reference/airnode/latest/packages/airnode-abi.md#encode) as a
+[encoded](/reference/airnode/v0.13/packages/airnode-abi.md#encode) as a
 `string32` type by the requester, for example:
 
 ```ts
@@ -366,7 +366,7 @@ Airnode will extract and convert each of the "split values" separately
 
 All of these values are then together encoded to single bytes value that can be
 sent on chain. You can use
-[testing gateway](/reference/airnode/latest/understand/deploying.md#testing-with-http-gateway)
+[testing gateway](/reference/airnode/v0.13/understand/deploying.md#testing-with-http-gateway)
 to inspect the raw API response, casting results and the final encoded value.
 
 ::: info Multiple Reserved Parameters Tutorial
