@@ -1,5 +1,5 @@
 ---
-title: Monorepo Examples
+title: Airnode Monorepo Examples
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides → Airnode

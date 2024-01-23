@@ -13,26 +13,14 @@ hero:
     alt: API3
   actions:
     - theme: brand
-      text: Explore
-      link: /explore/introduction/
+      text: Getting started with dAPIs
+      link: /guides/dapis/
     - theme: brand
-      text: Guides
-      link: /guides/
+      text: Getting started with QRNG
+      link: /guides/qrng/
     - theme: brand
-      text: DAO Members
-      link: /explore/dao-members/
-    - theme: alt
-      text: Airnode Reference
-      link: /reference/airnode/latest/understand/
-    - theme: alt
-      text: dAPIs Reference
-      link: /reference/dapis/understand/
-    - theme: alt
-      text: OIS Reference
-      link: /reference/ois/latest/
-    - theme: alt
-      text: QRNG Reference
-      link: /reference/qrng/
+      text: Getting started with Airnode
+      link: /guides/airnode/setting-up-airnode/
 ---
 
 <style>
