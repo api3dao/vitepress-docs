@@ -44,14 +44,14 @@ Given below is an example of a basic
 data from any Airnode. To follow along, you can open the following contract in
 Remix and try deploying your own Requester Contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://github.com/vanshwassan/RemixContracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
+[Open in Remix](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
 import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts@4.9.5/access/Ownable.sol";
 
 // A Requester that will return the requested data by calling the specified Airnode.
 contract Requester is RrpRequesterV0, Ownable {

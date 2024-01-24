@@ -70,17 +70,19 @@ Airnode. To follow along, you can open the following contract in Remix and try
 deploying it yourself. This contract will be requesting the random number
 directly from the QRNG Provider.
 
+Head over to Remix IDE
+
 Head on to
-[Remix online IDE.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
+[Remix online IDE.](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 It should load up the `RemixQrngExample` contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 ```solidity
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts@4.9.5/access/Ownable.sol";
 
 /// @title Example contract that uses Airnode RRP to access QRNG services
 contract QrngExample is RrpRequesterV0, Ownable {
