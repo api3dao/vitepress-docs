@@ -54,7 +54,7 @@ you have added Metamask support to. Not all browsers support
 
 It should load up the `Lottery` contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Lottery.sol)
 
 ![Add Contract](/guides/qrng/lottery-guide/src/lottery1.png)
 

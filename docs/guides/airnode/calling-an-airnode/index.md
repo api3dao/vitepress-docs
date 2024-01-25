@@ -44,7 +44,7 @@ Given below is an example of a basic
 data from any Airnode. To follow along, you can open the following contract in
 Remix and try deploying your own Requester Contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/RequesterWithWithdrawal.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
+[Open in Remix](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/RequesterWithWithdrawal.sol)
 
 ```solidity
 // SPDX-License-Identifier: MIT

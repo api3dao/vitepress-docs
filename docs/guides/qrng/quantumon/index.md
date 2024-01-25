@@ -35,7 +35,8 @@ minting.
 To see how Quantumon works, you can visit the
 [Quantumon](https://quantumon.xyz/) website. It uses an ERC-721 standard
 contract and QRNG to mint random NFTs and distribute them.
-[Check out the code here](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
+
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Quantumon.sol).
 
 Start by specifying the license, solidity version, importing the necessary
 contracts and then creating the actual contract itself.
@@ -44,8 +45,8 @@ contracts and then creating the actual contract itself.
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.14;
 import "@api3/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol";
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts@4.9.5/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts@4.9.5/access/Ownable.sol";
 contract Quantumon is ERC721, RrpRequesterV0, Ownable {
 
 }
@@ -435,6 +436,6 @@ Monsters. You also learned how to request data from a QRNG Airnode and how to
 use the data to mint an NFT.
 
 See the source code for the
-[Quantumon contract ](https://gist.github.com/Ashar2shahid/e7b70712f23dd33b556aa66a6d8788b4).
+[Quantumon contract ](https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/Quantumon.sol).
 
 <FlexEndTag/>
