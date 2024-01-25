@@ -20,7 +20,7 @@ represents Airnode:
 | ------------------------- | ------- |
 | /reference/airnode/next   | v0.15   |
 | /reference/airnode/latest | v0.14   |
-| /reference/airnode/v0.11  | v0.13   |
+| /reference/airnode/v0.13  | v0.13   |
 
 Also consider the directory structure of the project:
 
@@ -42,7 +42,8 @@ reference
 
 In order to advance the versioning the following actions occur:
 
-1. Rename the `/latest` folder to `v0.14`, now an older version.
+1. Rename (`git mv`) the `/latest` folder to the version that is being
+   superseded vX.YZ.
 2. Make a copy of `/next` as `/latest`.
 
 Update links and other version specific content. For `vx.xx`, `/latest`, and
