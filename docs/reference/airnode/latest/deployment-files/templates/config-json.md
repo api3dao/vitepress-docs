@@ -2,9 +2,9 @@
 title: config.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.13 → Deployment Files → Templates
+pageHeader: Reference → Airnode → v0.14 → Deployment Files → Templates
 path: /reference/airnode/latest/deployment-files/templates/config-json.html
-version: v0.13
+version: v0.14
 outline: deep
 tags:
 ---
@@ -134,7 +134,7 @@ as a reference while building a config.json file.
      },
     "logFormat": "json",
     "logLevel": "INFO",
-    "nodeVersion": "0.13.0",
+    "nodeVersion": "0.14.0",
     "stage": "<FILL_*>"
   },
   "triggers": {

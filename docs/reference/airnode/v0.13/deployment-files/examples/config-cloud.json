@@ -1,0 +1,249 @@
+{
+  "chains": [
+    {
+      "authorizers": {
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": []
+      },
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "id": "11155111",
+      "providers": {
+        "infuraSepolia": {
+          "url": "${CLOUD_PROVIDER_URL}"
+        }
+      },
+      "type": "evm",
+      "options": {
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPriceStrategy": "constantGasPrice",
+            "gasPrice": {
+              "value": 10,
+              "unit": "gwei"
+            }
+          }
+        ]
+      },
+      "maxConcurrency": 100,
+      "blockHistoryLimit": 300,
+      "minConfirmations": 0
+    }
+  ],
+  "nodeSettings": {
+    "airnodeWalletMnemonic": "${AIRNODE_WALLET_MNEMONIC}",
+    "cloudProvider": {
+      "type": "aws",
+      "region": "us-east-1",
+      "disableConcurrencyReservations": false, // Use for (type = gcp | aws) only
+      "projectId": "${GCP_PROJECT_ID}" // Use for (type = gcp) only
+    },
+    "heartbeat": {
+      "enabled": true,
+      "apiKey": "${HEARTBEAT_API_KEY}",
+      "url": "${HEARTBEAT_URL}"
+    },
+    "httpGateway": {
+      "enabled": true,
+      "maxConcurrency": 20,
+      "corsOrigins": []
+    },
+    "httpSignedDataGateway": {
+      "enabled": true,
+      "maxConcurrency": 20,
+      "corsOrigins": []
+    },
+    "oevGateway": {
+      "enabled": true,
+      "maxConcurrency": 20,
+      "corsOrigins": []
+    },
+    "logFormat": "plain",
+    "logLevel": "INFO",
+    "nodeVersion": "0.13.0",
+    "stage": "dev"
+  },
+  "triggers": {
+    "rrp": [
+      {
+        "endpointId": "0xf10f067e716dd8b9c91b818e3a933b880ecb3929c04a6cd234c171aa27c6eefe",
+        "oisTitle": "CoinGecko Requests",
+        "endpointName": "coinMarketData",
+        "cacheResponses": false
+      }
+    ],
+    "http": [
+      {
+        "endpointId": "0xf10f067e716dd8b9c91b818e3a933b880ecb3929c04a6cd234c171aa27c6eefe",
+        "oisTitle": "CoinGecko Requests",
+        "endpointName": "coinMarketData"
+      }
+    ],
+    "httpSignedData": [
+      {
+        "endpointId": "0xd4b0718c9a3316dbd831e6d01058202e5dde20a116304419f0d79e07a82b46bf",
+        "oisTitle": "CoinGecko Requests",
+        "endpointName": "coinGeckoMarketData"
+      }
+    ]
+  },
+  "templates": [],
+  "ois": [
+    {
+      "oisFormat": "2.0.0",
+      "title": "CoinGecko Requests",
+      "version": "1.0.0",
+      "apiSpecifications": {
+        "servers": [
+          {
+            "url": "https://api.coingecko.com/api/v3"
+          }
+        ],
+        "paths": {
+          "/coins/{id}": {
+            "get": {
+              "parameters": [
+                {
+                  "in": "path",
+                  "name": "id"
+                },
+                {
+                  "in": "query",
+                  "name": "localization"
+                },
+                {
+                  "in": "query",
+                  "name": "tickers"
+                },
+                {
+                  "in": "query",
+                  "name": "market_data"
+                },
+                {
+                  "in": "query",
+                  "name": "community_data"
+                },
+                {
+                  "in": "query",
+                  "name": "developer_data"
+                },
+                {
+                  "in": "query",
+                  "name": "sparkline"
+                }
+              ]
+            }
+          }
+        },
+        "components": {
+          "securitySchemes": {
+            "CoinGecko Requests Security Scheme": {
+              "in": "query",
+              "type": "apiKey",
+              "name": "access_key"
+            }
+          }
+        },
+        "security": {
+          "CoinGecko Requests Security Scheme": []
+        }
+      },
+      "endpoints": [
+        {
+          "name": "coinMarketData",
+          "operation": {
+            "method": "get",
+            "path": "/coins/{id}"
+          },
+          "fixedOperationParameters": [
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "localization"
+              },
+              "value": "false"
+            },
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "tickers"
+              },
+              "value": "false"
+            },
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "market_data"
+              },
+              "value": "true"
+            },
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "community_data"
+              },
+              "value": "false"
+            },
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "developer_data"
+              },
+              "value": "false"
+            },
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "sparkline"
+              },
+              "value": "false"
+            }
+          ],
+          "reservedParameters": [
+            {
+              "name": "_type",
+              "fixed": "int256"
+            },
+            {
+              "name": "_path",
+              "fixed": "market_data.current_price.usd"
+            },
+            {
+              "name": "_times",
+              "fixed": "1000000"
+            },
+            {
+              "name": "_gasPrice"
+            },
+            {
+              "name": "_minConfirmations"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "coinId",
+              "operationParameter": {
+                "in": "path",
+                "name": "id"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "apiCredentials": [
+    {
+      "oisTitle": "CoinGecko Requests",
+      "securitySchemeName": "CoinGecko Requests Security Scheme",
+      "securitySchemeValue": "${SS_COINGECKO_REQUESTS_API_KEY}"
+    }
+  ]
+}

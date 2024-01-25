@@ -2,9 +2,9 @@
 title: Template
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Concepts and Definitions
+pageHeader: Reference → Airnode → v0.15 → Concepts and Definitions
 path: /reference/airnode/next/concepts/template.html
-version: v0.14
+version: v0.15
 outline: deep
 tags:
 ---

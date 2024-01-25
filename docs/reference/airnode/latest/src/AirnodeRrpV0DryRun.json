@@ -147,6 +147,20 @@
     "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
   },
   {
+    "id": "1890",
+    "fullname": "LightLink",
+    "alias": "lightlink",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
+    "id": "1891",
+    "fullname": "LightLink Goerli Testnet",
+    "alias": "lightlink-goerli-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
+  },
+  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
@@ -285,6 +299,13 @@
     "alias": "ethereum-sepolia-testnet",
     "contractName": "AirnodeRrpV0DryRun",
     "contractAddress": "0xFb10b1b0f68b3EaAcA1eCD12a47Cf7F55BeabB98"
+  },
+  {
+    "id": "168587773",
+    "fullname": "Blast Sepolia Testnet",
+    "alias": "blast-sepolia-testnet",
+    "contractName": "AirnodeRrpV0DryRun",
+    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
   },
   {
     "id": "1313161554",

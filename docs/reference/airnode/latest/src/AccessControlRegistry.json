@@ -147,6 +147,20 @@
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
+    "id": "1890",
+    "fullname": "LightLink",
+    "alias": "lightlink",
+    "contractName": "AccessControlRegistry",
+    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
+  },
+  {
+    "id": "1891",
+    "fullname": "LightLink Goerli Testnet",
+    "alias": "lightlink-goerli-testnet",
+    "contractName": "AccessControlRegistry",
+    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
+  },
+  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
@@ -285,6 +299,13 @@
     "alias": "ethereum-sepolia-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xF6d2675468989387e96127546e0CBC9A384fa418"
+  },
+  {
+    "id": "168587773",
+    "fullname": "Blast Sepolia Testnet",
+    "alias": "blast-sepolia-testnet",
+    "contractName": "AccessControlRegistry",
+    "contractAddress": "0xE338f63170c42bA0d2a888f18F6185369779009c"
   },
   {
     "id": "1313161554",

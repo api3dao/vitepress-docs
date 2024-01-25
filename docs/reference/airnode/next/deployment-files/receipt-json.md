@@ -2,9 +2,9 @@
 title: receipt.json
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Deployment Files
+pageHeader: Reference → Airnode → v0.15 → Deployment Files
 path: /reference/airnode/next/deployment-files/receipt-json.html
-version: v0.14
+version: v0.15
 outline: deep
 tags:
 ---
@@ -53,7 +53,7 @@ not generated for client deployments (deploying to a Docker container).
       "disableConcurrencyReservations": false
     },
     "stage": "starter-example",
-    "nodeVersion": "0.13.0",
+    "nodeVersion": "0.15.0",
     "timestamp": "2022-03-26T02:37:55.506Z"
   },
   "success": true
@@ -75,7 +75,7 @@ not generated for client deployments (deploying to a Docker container).
       "projectId": "api3-753118"
     },
     "stage": "dev",
-    "nodeVersion": "0.13.0",
+    "nodeVersion": "0.15.0",
     "timestamp": "2022-03-26T02:37:55.506Z"
   },
   "success": true

@@ -2,9 +2,9 @@
 title: Cloud Resources
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Deployment References
+pageHeader: Reference → Airnode → v0.15 → Deployment References
 path: /reference/airnode/next/cloud-resources.html
-version: v0.14
+version: v0.15
 outline: deep
 tags:
 ---
