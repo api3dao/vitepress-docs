@@ -70,7 +70,7 @@ Airnode. To follow along, you can open the following contract in Remix and try
 deploying it yourself. This contract will be requesting the random number
 directly from the QRNG Provider.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/QrngRequesterUpdated.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 ```solidity
 //SPDX-License-Identifier: MIT

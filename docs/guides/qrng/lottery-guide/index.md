@@ -54,7 +54,7 @@ you have added Metamask support to. Not all browsers support
 
 It should load up the `Lottery` contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Lottery.sol)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Lottery.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.22+commit.4fc1097e.js)
 
 ![Add Contract](/guides/qrng/lottery-guide/src/lottery1.png)
 
@@ -230,7 +230,7 @@ Airnode to request a random number.
 
 ### Compile and Deploy the Lottery Contract on Goerli Testnet
 
-- [Click here](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/camronh/Lottery-Tutorial/main/contracts/Lottery.sol)
+- [Click here](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Lottery.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.22+commit.4fc1097e.js)
   to open the Lottery Contract in Remix.
 
   ![Opening the Requester Contract in Remix](src/s1.png)

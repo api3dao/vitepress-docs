@@ -36,7 +36,7 @@ To see how Quantumon works, you can visit the
 [Quantumon](https://quantumon.xyz/) website. It uses an ERC-721 standard
 contract and QRNG to mint random NFTs and distribute them.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Quantumon.sol).
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Quantumon.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.14+commit.80d49f37.js).
 
 Start by specifying the license, solidity version, importing the necessary
 contracts and then creating the actual contract itself.

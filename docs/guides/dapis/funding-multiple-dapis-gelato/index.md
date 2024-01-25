@@ -38,7 +38,7 @@ of manually funding each dAPI at regular intervals, you can use Gelato to
 automate the process.
 
 The following contract will be used in this guide. Open it in
-[Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Automation.sol).
+[Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Automation.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.22+commit.4fc1097e.js).
 
 ```solidity
 // SPDX-License-Identifier: MIT
