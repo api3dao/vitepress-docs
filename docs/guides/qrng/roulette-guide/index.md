@@ -74,7 +74,7 @@ you have added Metamask support to. Not all browsers support
 
 It should load up the Roulette contract.
 
-[Open in Remix](https://remix.ethereum.org/#url=https://github.com/Ashar2shahid/qrng-roulette/blob/main/contracts/contracts/Roulette.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+[Open in Remix](https://remix.ethereum.org/#url=https://raw.githubusercontent.com/api3-ecosystem/remix-contracts/master/contracts/Roulette.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.22+commit.4fc1097e.js)
 
 > ![Remix 1](/guides/qrng/roulette-guide/src/SS1.png)
 
