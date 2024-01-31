@@ -39,7 +39,7 @@ directory.
     <template v-if="chain.id == 1 || chain.id == 11155111">
         <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
         <td class="mainnet-and-sepolia">{{chain.id}}</td>
-        <td class="mainnet-and-sepolia" NOWRAP>{{chain.contractAddress}}
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
             <CopyIcon :text="chain.contractAddress" />
         </td>
     </template>
@@ -63,7 +63,7 @@ directory.
     <template v-if="chain.id == 1 || chain.id == 11155111">
         <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
         <td class="mainnet-and-sepolia">{{chain.id}}</td>
-        <td class="mainnet-and-sepolia" NOWRAP>{{chain.contractAddress}}
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
             <CopyIcon :text="chain.contractAddress" />
         </td>
     </template>
@@ -87,7 +87,7 @@ directory.
     <template v-if="chain.id == 1 || chain.id == 11155111">
         <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
         <td class="mainnet-and-sepolia">{{chain.id}}</td>
-        <td class="mainnet-and-sepolia" NOWRAP>{{chain.contractAddress}}
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
             <CopyIcon :text="chain.contractAddress" />
         </td>
     </template>
@@ -111,7 +111,7 @@ directory.
     <template v-if="chain.id == 1 || chain.id == 11155111">
         <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
         <td class="mainnet-and-sepolia">{{chain.id}}</td>
-        <td class="mainnet-and-sepolia" NOWRAP>{{chain.contractAddress}}
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
             <CopyIcon :text="chain.contractAddress" />
         </td>
     </template>
