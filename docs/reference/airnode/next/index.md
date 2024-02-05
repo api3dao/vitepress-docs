@@ -36,11 +36,22 @@ directory.
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
 <tr v-for="(chain, index) in AirnodeRrpV0">
-    <td style="max-width:150px;">{{chain.fullname}}</td>
-    <td>{{chain.id}}</td>
-    <td  class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
+    <template v-if="chain.id == 1 || chain.id == 11155111">
+        <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
+        <td class="mainnet-and-sepolia">{{chain.id}}</td>
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
+</tr>
+<tr v-for="(chain, index) in AirnodeRrpV0.sort((a, b) => a.fullname.localeCompare(b.fullname))">
+    <template v-if="chain.id != 1 && chain.id != 11155111">
+        <td style="max-width:150px;">{{chain.fullname}}</td>
+        <td>{{chain.id}}</td>
+        <td  class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
 </tr>
 </table>
 
@@ -49,11 +60,22 @@ directory.
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
 <tr v-for="(chain, index) in RequesterAuthorizerWithAirnode">
-    <td style="max-width:150px;">{{chain.fullname}}</td>
-    <td>{{chain.id}}</td>
-    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
+    <template v-if="chain.id == 1 || chain.id == 11155111">
+        <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
+        <td class="mainnet-and-sepolia">{{chain.id}}</td>
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
+</tr>
+<tr v-for="(chain, index) in RequesterAuthorizerWithAirnode.sort((a, b) => a.fullname.localeCompare(b.fullname))">
+    <template v-if="chain.id != 1 && chain.id != 11155111">
+        <td style="max-width:150px;">{{chain.fullname}}</td>
+        <td>{{chain.id}}</td>
+        <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
 </tr>
 </table>
 
@@ -62,11 +84,22 @@ directory.
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
 <tr v-for="(chain, index) in AccessControlRegistry">
-    <td style="max-width:150px;">{{chain.fullname}}</td>
-    <td>{{chain.id}}</td>
-    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
+    <template v-if="chain.id == 1 || chain.id == 11155111">
+        <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
+        <td class="mainnet-and-sepolia">{{chain.id}}</td>
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
+</tr>
+<tr v-for="(chain, index) in AccessControlRegistry.sort((a, b) => a.fullname.localeCompare(b.fullname))">
+    <template v-if="chain.id != 1 && chain.id != 11155111">
+        <td style="max-width:150px;">{{chain.fullname}}</td>
+        <td>{{chain.id}}</td>
+        <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
 </tr>
 </table>
 
@@ -75,11 +108,22 @@ directory.
 <table>
 <th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
 <tr v-for="(chain, index) in AirnodeRrpV0DryRun">
-    <td style="max-width:150px;">{{chain.fullname}}</td>
-    <td>{{chain.id}}</td>
-    <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
-        <CopyIcon :text="chain.contractAddress" />
-    </td>
+    <template v-if="chain.id == 1 || chain.id == 11155111">
+        <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>
+        <td class="mainnet-and-sepolia">{{chain.id}}</td>
+        <td class="mainnet-and-sepolia contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
+</tr>
+<tr v-for="(chain, index) in AirnodeRrpV0DryRun.sort((a, b) => a.fullname.localeCompare(b.fullname))">
+    <template v-if="chain.id != 1 && chain.id != 11155111">
+        <td style="max-width:150px;">{{chain.fullname}}</td>
+        <td>{{chain.id}}</td>
+        <td class="contract-addresses-address" NOWRAP>{{chain.contractAddress}}
+            <CopyIcon :text="chain.contractAddress" />
+        </td>
+    </template>
 </tr>
 </table>
 
@@ -98,6 +142,11 @@ directory.
   font-size: small;
 }
 .contract-addresses-heading {
+  text-align: left;
+}
+.mainnet-and-sepolia { 
+  color:black;
+  background: #e5ecf9;
   text-align: left;
 }
 .contract-addresses-copy-icon {
