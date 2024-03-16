@@ -171,4 +171,10 @@ uint256 randomNumber = (qrngUint256 % (y - x + 1)) + x;
 // the randomNumber will be in range [x, y].
 ```
 
+## Can additional chains be supported?
+
+At the moment, we've paused new QRNG chain integrations. If additional chains
+were to be supported in the future, support would be more likely on chains with
+active dAPIs.
+
 <FlexEndTag/>
