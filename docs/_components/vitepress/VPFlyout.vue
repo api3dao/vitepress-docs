@@ -137,6 +137,9 @@ function onBlur() {
   right: 0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
+  transition:
+    opacity 0.25s,
+    visibility 0.25s,
+    transform 0.25s;
 }
 </style>

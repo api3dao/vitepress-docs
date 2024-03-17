@@ -56,6 +56,22 @@ tags:
 
 # {{$frontmatter.title}}
 
+QRNG is accessible on mainnet from three highly reputable providers: 
+
+- ANU Quantum Optics Division
+- Quintessence 
+- Quantum Blockchains 
+
+Below you can see the addresses to request from each QRNG source.
+
+[**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers)
+imitates QRNG using pseudorandom numbers and is best used during development.
+Use [ANU](/reference/qrng/chains.md#anu) or
+[Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
+quantum random numbers.
+
+## Developer Considerations 
+
 Requests will be responded to after `minConfirmations` blocks (see
 [On Slow and Fast Block Times](https://blog.ethereum.org/2015/09/14/on-slow-and-fast-block-times/)
 to learn more). Expect this to correspond to 1–3 minutes based on chain
@@ -68,12 +84,6 @@ package, see the
 [@api3/airnode-protocol](https://www.npmjs.com/package/@api3/airnode-protocol)
 package is distributed via npm.
 
-[**Testnet Random Numbers**](/reference/qrng/chains.md#testnet-random-numbers)
-imitates QRNG using pseudorandom numbers and is best used during development.
-Use [ANU](/reference/qrng/chains.md#anu) or
-[Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
-quantum random numbers.
-
 <!--
 Do not use tabs to display the two tables below. Tabs does not support nested Vue components
 beyond one level deep inside and element (i.e. <div>). See /dev/tabs.md
@@ -83,11 +93,7 @@ beyond one level deep inside and element (i.e. <div>). See /dev/tabs.md
 to not break as well.
 -->
 
-## ANU
-
-ANU is only available on mainnets.
-
-### Mainnets
+## ANU Mainnet
 
 <div class="mainnets">
 
@@ -111,40 +117,7 @@ ANU is only available on mainnets.
 
 </div>
 
-## Testnet Random Numbers
-
-**Testnet Random Numbers** is best used for development and is only available on
-several testnets.
-
-### Testnets
-
-<div class="testnets">
-
-<div style="position:absolute;right:0px;margin-top:-30px;">Testnet Random Numbers</div>
-
-| Network                                                                               | ID        | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
-| ------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [{{getChainNameById(5)}}](https://goerli.etherscan.io)                                | 5         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io)                        | 11155111  | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
-| [{{getChainNameById(421613)}}](https://goerli.arbiscan.io/)                           | 421613    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(43113)}}](https://testnet.snowtrace.io)                           | 43113     | <code>0x7f5AF7a37a33898544717AAa6c35c111dCe95b28</code><CopyIcon text="0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"/> | 1                |
-| [{{getChainNameById(168587773)}}](https://testnet.blastscan.io)                       | 168587773 | <code>0xD223DfDCb888CA1539bb3459a83c543A1608F038</code><CopyIcon text="0xD223DfDCb888CA1539bb3459a83c543A1608F038"/> | 1                |
-| [{{getChainNameById(97)}}](https://testnet.bscscan.com)                               | 97        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(4002)}}](https://testnet.ftmscan.com)                             | 4002      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(1891)}}](https://pegasus.lightlink.io/)                           | 1891      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(200101)}}](https://explorer-devnet-cardano-evm.c1.milkomeda.com/) | 200101    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(1287)}}](https://moonbase.moonscan.io)                            | 1287      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(420)}}](https://goerli-optimism.etherscan.io)                     | 420       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(80001)}}](https://mumbai.polygonscan.com)                         | 80001     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(31)}}](https://explorer.testnet.rsk.co)                           | 31        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-
-</div>
-
-## Quintessence
-
-Quintessence is available on selected mainnets and testnets.
-
-### Mainnets
+## Quintessence Mainnet
 
 <div class="mainnets">
 
@@ -178,7 +151,7 @@ Quintessence is available on selected mainnets and testnets.
 
 </div>
 
-### Testnets
+<!--### Testnets
 
 <div class="testnets">
 
@@ -189,13 +162,9 @@ Quintessence is available on selected mainnets and testnets.
 | [{{getChainNameById(5)}}](https://goerli.etherscan.io)         | 5        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io) | 11155111 | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
 
-</div>
+</div>-->
 
-## Quantum Blockchains
-
-Quantum Blockchains is available on selected mainnets.
-
-### Mainnets
+## Quantum Blockchains Mainnet
 
 <div class="mainnets">
 
@@ -230,3 +199,32 @@ Quantum Blockchains is available on selected mainnets.
 </div>
 
 <FlexEndTag/>
+
+## Testnet Random Number Generator
+
+**Testnet Random Numbers** is best used within development and is only available on
+several testnets.
+
+### Testnets
+
+<div class="testnets">
+
+<div style="position:absolute;right:0px;margin-top:-30px;">Testnet Random Numbers</div>
+
+| Network                                                                               | ID        | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
+| ------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| [{{getChainNameById(5)}}](https://goerli.etherscan.io)                                | 5         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io)                        | 11155111  | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
+| [{{getChainNameById(421613)}}](https://goerli.arbiscan.io/)                           | 421613    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(43113)}}](https://testnet.snowtrace.io)                           | 43113     | <code>0x7f5AF7a37a33898544717AAa6c35c111dCe95b28</code><CopyIcon text="0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"/> | 1                |
+| [{{getChainNameById(168587773)}}](https://testnet.blastscan.io)                       | 168587773 | <code>0xD223DfDCb888CA1539bb3459a83c543A1608F038</code><CopyIcon text="0xD223DfDCb888CA1539bb3459a83c543A1608F038"/> | 1                |
+| [{{getChainNameById(97)}}](https://testnet.bscscan.com)                               | 97        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(4002)}}](https://testnet.ftmscan.com)                             | 4002      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(1891)}}](https://pegasus.lightlink.io/)                           | 1891      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(200101)}}](https://explorer-devnet-cardano-evm.c1.milkomeda.com/) | 200101    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(1287)}}](https://moonbase.moonscan.io)                            | 1287      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(420)}}](https://goerli-optimism.etherscan.io)                     | 420       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(80001)}}](https://mumbai.polygonscan.com)                         | 80001     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+| [{{getChainNameById(31)}}](https://explorer.testnet.rsk.co)                           | 31        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
+
+</div>
