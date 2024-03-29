@@ -19,7 +19,7 @@ module.exports = [
             link: '/explore/introduction/first-party',
           },
           {
-            text: '• Decentralized APIs (dAPIs)',
+            text: '• dAPI Price Feeds',
             link: '/explore/introduction/decentralized-apis',
           },
           {
