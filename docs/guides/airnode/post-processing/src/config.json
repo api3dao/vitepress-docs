@@ -71,7 +71,7 @@
     },
     "logFormat": "plain",
     "logLevel": "DEBUG",
-    "nodeVersion": "0.11.2",
+    "nodeVersion": "0.14.1",
     "stage": "quick-container"
   },
   "triggers": {
@@ -95,7 +95,7 @@
   "templates": [],
   "ois": [
     {
-      "oisFormat": "2.1.0",
+      "oisFormat": "2.3.2",
       "title": "API3 coin data",
       "version": "1.0.0",
       "apiSpecifications": {

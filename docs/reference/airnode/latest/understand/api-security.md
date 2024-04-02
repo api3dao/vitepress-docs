@@ -86,7 +86,7 @@ fields:
 ```json
 "ois": [
   {
-    "oisFormat": "2.0.0",
+    "oisFormat": "2.3.2",
     "title": "Ois Title",
     "version": "1.0.0",
     "apiSpecifications": {
@@ -288,7 +288,7 @@ unlike the Airnode authentication security scheme, no values are stored in
 ```json
 "ois": [
   {
-    "oisFormat": "2.0.0",
+    "oisFormat": "2.3.2",
     "title": "Ois Title",
     "version": "1.0.0",
     "apiSpecifications": {
