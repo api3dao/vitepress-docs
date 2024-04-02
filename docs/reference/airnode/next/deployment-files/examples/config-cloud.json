@@ -97,7 +97,7 @@
   "templates": [],
   "ois": [
     {
-      "oisFormat": "2.0.0",
+      "oisFormat": "2.3.2",
       "title": "CoinGecko Requests",
       "version": "1.0.0",
       "apiSpecifications": {

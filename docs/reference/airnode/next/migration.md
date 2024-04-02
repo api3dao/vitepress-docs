@@ -25,27 +25,27 @@ services related to Airnode, such as airnode-deployer, airnode-admin, etc.
 ## Changes to `config.json`
 
 The following assumes a valid v0.13 `config.json` file. All changes listed below
-must be implemented in order to migrate to Airnode v0.14.0.
+must be implemented in order to migrate to Airnode v0.14.1.
 
 1. `nodeSettings.nodeVersion`
 
-Updated to "0.14.0"
+Updated to "0.14.1"
 
 ```diff
 {
 - "nodeVersion": "0.13.0"
-+ "nodeVersion": "0.14.0"
++ "nodeVersion": "0.14.1"
 }
 ```
 
 2. `ois[n].oisFormat`
 
-Updated to "2.3.1".
+Updated to "2.3.2".
 
 ```diff
 {
 - "oisFormat": "2.2.1"
-+ "oisFormat": "2.3.1"
++ "oisFormat": "2.3.2"
 }
 ```
 
@@ -63,7 +63,7 @@ for completeness.
 
 ## New features and fixes
 
-- In conjunction with OIS v2.3.1, there is now a version 2 of pre-processing and
+- In conjunction with OIS v2.3.2, there is now a version 2 of pre-processing and
   post-processing. More details can be found in the
   [OIS reference](/reference/ois/latest/processing.md#v2).
 - OEV gateway AWS lambda memory has been increased from 256 MB to 2048 MB

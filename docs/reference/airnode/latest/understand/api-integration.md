@@ -91,7 +91,7 @@ json object.
 
 ```json
 {
-  "oisFormat": "2.3.1",
+  "oisFormat": "2.3.2",
   "title": "myOisTitle",
   "version": "0.1.0",
   ...
@@ -122,7 +122,7 @@ The initial version could be `0.1.0`.
 The `apiSpecifications` field is used to describe the API and its operations.
 
 ```json
-"oisFormat": "2.3.1",
+"oisFormat": "2.3.2",
 "title": "myOisTitle",
 "version": "0.1.0",
 "apiSpecifications": {
