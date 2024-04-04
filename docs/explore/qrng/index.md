@@ -36,7 +36,7 @@ randomness in the
 [Web3 Quantum Random Numbers](https://medium.com/api3/api3-qrng-web3-quantum-random-numbers-4ca7517fc5bc)
 medium post.
 
-# A permissionless public good: API3 QRNG 
+## A permissionless public good
 
 With the courtesy of our data partners Airnode was hosted
 by various highly reputable providers to serve Quantum RNG. This means that it is a
