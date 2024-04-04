@@ -80,9 +80,7 @@ watchPostEffect(() => {
   border-bottom: 1px solid transparent;
   padding: 0 8px 0 24px;
   height: var(--vp-nav-height);
-  transition:
-    border-color 0.5s,
-    background-color 0.5s;
+  transition: border-color 0.5s, background-color 0.5s;
   pointer-events: none;
   white-space: nowrap;
 }

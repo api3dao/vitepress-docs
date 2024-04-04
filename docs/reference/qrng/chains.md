@@ -56,11 +56,11 @@ tags:
 
 # {{$frontmatter.title}}
 
-QRNG is accessible on mainnet from three highly reputable providers: 
+QRNG is accessible on mainnet from three highly reputable providers:
 
 - ANU Quantum Optics Division
-- Quintessence 
-- Quantum Blockchains 
+- Quintessence
+- Quantum Blockchains
 
 Below you can see the addresses to request from each QRNG source.
 
@@ -70,7 +70,7 @@ Use [ANU](/reference/qrng/chains.md#anu) or
 [Quintessence](/reference/qrng/chains.md#quintessence) in production to acquire
 quantum random numbers.
 
-## Developer Considerations 
+## Developer Considerations
 
 Requests will be responded to after `minConfirmations` blocks (see
 [On Slow and Fast Block Times](https://blog.ethereum.org/2015/09/14/on-slow-and-fast-block-times/)
@@ -202,8 +202,8 @@ to not break as well.
 
 ## Testnet Random Number Generator
 
-**Testnet Random Numbers** is best used within development and is only available on
-several testnets.
+**Testnet Random Numbers** is best used within development and is only available
+on several testnets.
 
 ### Testnets
 

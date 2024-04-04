@@ -24,8 +24,9 @@ Smart contract platforms typically emulate a deterministic virtual machine,
 which cannot generate random numbers. In such cases, random number generation
 (RNG) needs to be provided as an oracle service.
 
-There are are currently limited options to access entropy on-chain. API3 Quantum Random Number Generator is a method of random number generation
-based on quantum phenomena.
+There are are currently limited options to access entropy on-chain. API3 Quantum
+Random Number Generator is a method of random number generation based on quantum
+phenomena.
 
 <img src="../assets/images/RNG_types.png" style="width:800px">
 
@@ -38,13 +39,15 @@ medium post.
 
 ## A permissionless public good
 
-With the courtesy of our data partners Airnode was hosted
-by various highly reputable providers to serve Quantum RNG. This means that it is a
-first-party service. 
+With the courtesy of our data partners Airnode was hosted by various highly
+reputable providers to serve Quantum RNG. This means that it is a first-party
+service.
 
-Besides gas QRNG is free of charge,
-[easy to use](/guides/qrng/index.md), and will be made available on as many
-[chains](/reference/qrng/chains.md) as possible. To utilize QRNG dApps need to set up a sponsor wallet to fund gas transactions from the off-chain QRNG oracle, which can be done independently, making it a permissionless oracle. 
+Besides gas QRNG is free of charge, [easy to use](/guides/qrng/index.md), and
+will be made available on as many [chains](/reference/qrng/chains.md) as
+possible. To utilize QRNG dApps need to set up a sponsor wallet to fund gas
+transactions from the off-chain QRNG oracle, which can be done independently,
+making it a permissionless oracle.
 
 <!--Decentralized PRNG (e.g., RANDAO, VRF) has been the popular way of building RNG
 oracle services. However, this configuration suffers from the same issues as any
