@@ -17,21 +17,22 @@
         }
       },
       "type": "evm",
-      "options": {},
       "maxConcurrency": 100,
-      "gasPriceOracle": [
-        {
-          "gasPriceStrategy": "providerRecommendedGasPrice",
-          "recommendedGasPriceMultiplier": 1.2
-        },
-        {
-          "gasPriceStrategy": "constantGasPrice",
-          "gasPrice": {
-            "value": 10,
-            "unit": "gwei"
+      "options": {
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPriceStrategy": "constantGasPrice",
+            "gasPrice": {
+              "value": 10,
+              "unit": "gwei"
+            }
           }
-        }
-      ],
+        ]
+      },
       "blockHistoryLimit": 300,
       "minConfirmations": 0
     }
@@ -66,7 +67,9 @@
         "endpointName": "convertToUSD",
         "cacheResponses": false
       }
-    ]
+    ],
+    "http": [],
+    "httpSignedData": []
   },
   "templates": [],
   "ois": [
@@ -95,10 +98,6 @@
                 {
                   "in": "query",
                   "name": "amount"
-                },
-                {
-                  "in": "query",
-                  "name": "date"
                 }
               ]
             }
