@@ -42,8 +42,7 @@
     "cloudProvider": {
       "type": "aws",
       "region": "us-east-1",
-      "disableConcurrencyReservations": false, // Use for (type = gcp | aws) only
-      "projectId": "${GCP_PROJECT_ID}" // Use for (type = gcp) only
+      "disableConcurrencyReservations": false
     },
     "heartbeat": {
       "enabled": true,
@@ -88,9 +87,9 @@
     ],
     "httpSignedData": [
       {
-        "endpointId": "0xd4b0718c9a3316dbd831e6d01058202e5dde20a116304419f0d79e07a82b46bf",
+        "endpointId": "0xf10f067e716dd8b9c91b818e3a933b880ecb3929c04a6cd234c171aa27c6eefe",
         "oisTitle": "CoinGecko Requests",
-        "endpointName": "coinGeckoMarketData"
+        "endpointName": "coinMarketData"
       }
     ]
   },
