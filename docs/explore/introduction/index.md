@@ -23,11 +23,11 @@ DAO.
 
 <img src="../assets/images/06-a-API3_DAO-Op1.png" style="width:400px">
 
-
 API3 believes DeFi & Web3 can change the financial landscape with the right
-infrastructure and access to meaningful real world data. The goal of API3 is to provide developers with an easy way to access off-chain
-resources from within their smart contracts, without having to worry about the
-security and trust implications of doing so.
+infrastructure and access to meaningful real world data. The goal of API3 is to
+provide developers with an easy way to access off-chain resources from within
+their smart contracts, without having to worry about the security and trust
+implications of doing so.
 
 ### Within this introduction of API3 we will explore;
 
@@ -80,13 +80,13 @@ Problem.
 ## Airnode
 
 API3’s Airnode has been designed so API providers can easily run their own
-oracle nodes. Once an API has had an Airnode deployed,
-API data can be pushed on-chain.
+oracle nodes. Once an API has had an Airnode deployed, API data can be pushed
+on-chain.
 
-It is an open source tool that allows them to provide their data
-on-chain, without an intermediary, to any decentralized app (dApp) interested in
-their services. Through simplifying how an API provider can monetize their data within Web3,
-hundreds of Airnodes have been deployed. 
+It is an open source tool that allows them to provide their data on-chain,
+without an intermediary, to any decentralized app (dApp) interested in their
+services. Through simplifying how an API provider can monetize their data within
+Web3, hundreds of Airnodes have been deployed.
 
 <img src="../assets/images/04-Airnode_Design_Philosophy.png" style="width:400px">
 
@@ -103,6 +103,8 @@ own [first-party oracle](/explore/introduction/first-party.md) nodes. Doing so
 means that it is the API provider's Airnode that places its signed API data
 on-chain.
 
-When data served from Airnode is served directly from the source to the chain with cryptographic signatures. When used in DeFi this enhances the security of the price feed due to the optimized transparency. 
+When data served from Airnode is served directly from the source to the chain
+with cryptographic signatures. When used in DeFi this enhances the security of
+the price feed due to the optimized transparency.
 
 <FlexEndTag/>
