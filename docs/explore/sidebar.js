@@ -92,7 +92,15 @@ module.exports = [
     items: [
       {
         text: 'What is QRNG?',
-        link: '/explore/qrng/',
+        link: '/explore/qrng/index',
+      },
+      {
+        text: 'QRNG Providers',
+        link: '/explore/qrng/QRNG-providers',
+      },
+      {
+        text: 'Use Cases',
+        link: '/explore/qrng/Use-cases',
       },
     ],
   },
