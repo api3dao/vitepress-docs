@@ -143,12 +143,12 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@api3/chains@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.4.0.tgz#aaf04e792719b2af33f397498d46fcee5b31f7b9"
-  integrity sha512-fIRwjZHcNZar/LQ3MID4LcSr0J6ODC5Z8twaXfl/YTs+W/br12OJMNHp8O0WOQmUddVrjsg/SoAcbsLL4CW8aw==
+"@api3/chains@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.17.0.tgz#e990112dd33938dc36911638509dce5a405c3647"
+  integrity sha512-3o2f6DUwaKnjHJ3pZruWFpe2j9UvKtJsYDIhOYAGe02P0voWyDh+xVbCKPjPr1q75EGbftyK4OezK6vYx8LNTQ==
   dependencies:
-    viem "^2.0.6"
+    viem "^2.9.6"
     zod "^3.22.4"
 
 "@babel/parser@^7.23.3":
@@ -611,10 +611,10 @@
   dependencies:
     vue-demi ">=0.14.6"
 
-abitype@0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/abitype/-/abitype-0.10.0.tgz#d3504747cc81df2acaa6c460250ef7bc9219a77c"
-  integrity sha512-QvMHEUzgI9nPj9TWtUGnS2scas80/qaL5PBxGdwWhhvzqXfOph+IEiiiWrzuisu3U3JgDQVruW9oLbJoQ3oZ3A==
+abitype@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/abitype/-/abitype-1.0.0.tgz#237176dace81d90d018bebf3a45cb42f2a2d9e97"
+  integrity sha512-NMeMah//6bJ56H5XRj8QCV4AwuW6hB6zqz2LnhhLdcWVQOsXki6/Pn3APeqxCma62nXIcmZWdu1DlHWS74umVQ==
 
 adm-zip@^0.5.10:
   version "0.5.10"
@@ -1480,17 +1480,17 @@ vfile@^6.0.0:
     unist-util-stringify-position "^4.0.0"
     vfile-message "^4.0.0"
 
-viem@^2.0.6:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.0.10.tgz#a3671e8a70d9f665259b7b0f1575d76db6b054e2"
-  integrity sha512-ncdvXJ0v8Qc83qQaPzPG7pTr7gbg9hRUCNL7n/1b5ZFE17YIeQVtGTx6zqg4zdjTXlTKPrecKvqeKUUjKrmnYg==
+viem@^2.9.6:
+  version "2.9.16"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.16.tgz#2127871db1908a70798eddb820024b5f0ddc9152"
+  integrity sha512-FQRfN4G7uKEUs5DYvVrH/kZmTkwcSDpTBxnadpwG1EEP8nHm57WDpSaGN7PwSPVgJ6rMo5MENT5hgnqaNTlb2w==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
     "@noble/hashes" "1.3.2"
     "@scure/bip32" "1.3.2"
     "@scure/bip39" "1.2.1"
-    abitype "0.10.0"
+    abitype "1.0.0"
     isows "1.0.3"
     ws "8.13.0"
 
