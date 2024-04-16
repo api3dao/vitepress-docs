@@ -22,16 +22,16 @@ percentage) from the off-chain value, the on-chain value is updated.
 
 ## Update Interval
 
-Functionality within Airnode is responsible to check for any deviation between
-the on-chain value of a dAPI's beacon or beacon set verses the off-chain signed
-data provided by related API providers. The deviation threshold check runs
-continuously based on a configuration value set in `updateInterval`. Most
-configurations are set using 30 to 60 seconds with the later being the more
-popular.
+Functionality within [Airnode](/reference/airnode/latest/understand/) is
+responsible to check for any deviation between the on-chain value of a dAPI's
+beacon or beacon set verses the off-chain signed data provided by related API
+providers. The deviation threshold check runs continuously based on a
+configuration value set in `updateInterval`. Most configurations are set using
+30 to 60 seconds with the later being the more popular.
 
 ## Heartbeat
 
-If a dAPi's value has not been updated for a certain amount of time (known as
+If a dAPI's value has not been updated for a certain amount of time (known as
 the heartbeat) the dAPI value is forcibly updated. For example:
 
 - A dAPI's value was last updated at noon on Tuesday to <u>23.01</u>.
@@ -45,25 +45,24 @@ the heartbeat) the dAPI value is forcibly updated. For example:
   the heartbeat is set to 24 hours, a forced on-chain update of <u>23.02</u> is
   made as an update had not been triggered since noon on Tuesday.
 
-## Self-funded dAPIs
+## Testnet dAPIs
 
-Self-funded dAPIs are only available on the API3 Market with a deviation
-threshold of 1% and a
-[heartbeat](/reference/dapis/understand/deviations.md#heartbeat) of 24 hours.
+Testnet dAPIs are only available on the API3 Market with a deviation threshold
+of 1% and a [heartbeat](/reference/dapis/understand/deviations.md#heartbeat) of
+24 hours.
 
 | Deviation | Heartbeat |
 | --------- | --------- |
 | 1%        | 24 hours  |
 
-## Managed dAPIs
+## Mainnet dAPIs
 
-Managed dAPIs will be available on the API3 Market with multiple deviation
+Mainnet dAPIs will be available on the API3 Market with multiple deviation
 thresholds and [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 settings.
 
 | Deviation | Heartbeat |
 | --------- | --------- |
-| 0.25%     | 2 minutes |
 | 0.25%     | 24 hours  |
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |

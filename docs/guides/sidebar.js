@@ -14,25 +14,11 @@ module.exports = [
       },
       {
         text: 'Subscribing to dAPIs',
-        collapsed: false,
-        items: [
-          {
-            text: '• Subscribing to Managed dAPIs ',
-            link: '/guides/dapis/subscribing-managed-dapis/',
-          },
-          {
-            text: '• Subscribing to Self-Funded dAPIs ',
-            link: '/guides/dapis/subscribing-self-funded-dapis/',
-          },
-        ],
+        link: '/guides/dapis/subscribing-to-dapis/',
       },
       {
         text: 'Reading a dAPI Proxy',
         link: '/guides/dapis/read-a-dapi/',
-      },
-      {
-        text: 'Automate funding of multiple dAPIs with Gelato',
-        link: '/guides/dapis/funding-multiple-dapis-gelato/',
       },
     ],
   },

@@ -29,10 +29,8 @@ data (`value` int224, `timestamp` uint256).
 
 ## Using a proxy contract address and IProxy
 
-Currently each self-funded dAPI has an on-chain proxy contract with an address
-that is publicly available to any dApp. For example, the proxy contract address
-of the dAPI [AAVE/USD](https://market.api3.org/dapis/polygon-testnet/AAVE-USD)
-on the Mumbai network is `0xa8785d83A31B21065F27b640F50694b39B1bda9a`. This
+Currently each dAPI has a unique on-chain proxy contract with an address that is
+linked to the OEV beneficiary address that was set while deploying it. This
 address is used to read (via [IProxy](/reference/dapis/understand/iproxy.md))
 the dAPI's data (`value` int224, `timestamp` uint256).
 
@@ -40,7 +38,7 @@ the dAPI's data (`value` int224, `timestamp` uint256).
 (value, timestamp) = IProxy(0xa8785d83A31B21065F27b640F50694b39B1bda9a).read();
 ```
 
-See the guide [Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and
-learn more on how to use a proxy contract address.
+See the guide [Reading a dAPI proxy](/guides/dapis/read-a-dapi/) and learn more
+on how to use a proxy contract address.
 
 <FlexEndTag/>

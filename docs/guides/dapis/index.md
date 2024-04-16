@@ -35,6 +35,9 @@ dAPIs serve a variety of data feeds, such as latest cryptocurrency, stock, and
 commodity prices. They can power various decentralized applications such as DeFi
 lending, synthetic assets, stable coins, derivatives, NFTs, and more.
 
+dAPIs also allow dApps to earn revenue by auctioning off the right to update the
+data feeds to searchers using the OEV Network.
+
 To read more about dAPIs, [click here](/reference/dapis/understand/).
 
 ## What is the API3 Market?
@@ -48,41 +51,27 @@ updated price.
 Check out the API3 Market [here](https://market.api3.org/). You can browse
 through the available dAPIs and check out their details.
 
-## What are Managed dAPIs?
+## How do dAPIs and OEV work?
 
-[Managed dAPIs](/reference/dapis/understand/managed.md) are sourced directly
-from multiple [first-party](/explore/airnode/why-first-party-oracles.md) data
+[dAPIs](/reference/dapis/understand/managed.md) are sourced directly from
+multiple [first-party](/explore/airnode/why-first-party-oracles.md) data
 providers running an Airnode and aggregated using their
 [Airnode's signed data](/reference/airnode/latest/understand/http-gateways.md).
-Unlike self-funded dAPIs, API3 manages the gas costs and the availability of the
-Managed dAPIs.
 
-With Managed dAPIs, users get the option to configure the
+Users also get the option to configure the
 [deviation threshold](/reference/dapis/understand/deviations.md) and
 [heartbeat](/reference/dapis/understand/deviations.md#heartbeat) for each dAPI.
 The deviation threshold is the percentage deviation from the current value of
 the dAPI that triggers an update. If a dAPI is not updated within a known amount
 of time (called the heartbeat), the dAPI update is triggered.
 
-[Click here](/guides/dapis/subscribing-managed-dapis/) to read more about how to
-get started with Managed dAPIs.
+Apart from triggering a dAPI update solely based on the deviation threshold and
+heartbeat, dApps can set up OEV to auction off the right to update the data
+feeds to searchers. Searchers can bid for price updates through the OEV Network
+to update the data feeds. All the OEV proceeds goes back to the dApp.
 
-## What are Self-funded dAPIs?
-
-[Self-funded dAPIs](/reference/dapis/understand/self-funded.md) are sourced
-directly from a single
-[first-party](/explore/airnode/why-first-party-oracles.md) data provider running
-an Airnode. The amount of gas you supply will determine how long your dAPI will
-be available for use. If you run out of gas, you can fund the dAPI again to keep
-it available for use. Unlike managed dAPIs, API3 does not manage the gas costs
-and the availability of the Self-funded dAPIs.
-
-Self-funded dAPIs are only available at 1% deviation threshold and 24-hour
-heartbeat by default. You can update the deviation threshold and heartbeat by
-placing an order for a Managed dAPI.
-
-[Click here](/guides/dapis/subscribing-self-funded-dapis/) to read more about
-how to get started with Self-funded dAPIs.
+[Click here](/guides/dapis/subscribing-to-dapis/) to read more about how to get
+started with dAPIs.
 
 ## How to use dAPIs in a smart contract?
 
@@ -127,10 +116,10 @@ dashboard through the [API3 Market](https://market.api3.org/).
 To read more about reading a dAPI value,
 [click here](/guides/dapis/read-a-dapi/).
 
-## Data providers for managed dAPIs
+## Data providers for dAPIs
 
-There are nine providers used by managed dAPIs as a data source. These providers
-can be grouped by asset type(s) of supplied data:
+There are nine providers used by dAPIs as a data source. These providers can be
+grouped by asset type(s) of supplied data:
 
 - Coinpaprika
 - dxFeed
@@ -149,17 +138,12 @@ can be grouped by asset type(s) of supplied data:
 | Commodities    | Finage, Twelvedata, dxFeed, Tradermade                          |
 | Equities       | Finage, Twelvedata, IEXCloud, Finnhub, dxFeed                   |
 
-### Self-funded dAPIs
+## What are dAPI proxy contracts?
 
-Self-funded dAPIs are single-sourced using [Nodary](https://nodary.io/) as their
-data provider.
-
-## What are dAPI Proxy Contracts?
-
-Each dAPI has a proxy contract that is used to read the value of the dAPI. The
-proxy contract is linked to a mapping that maps to a `beaconId` or
-`beaconSetId`. The `beaconId` for each dAPI gets updated when the price hits the
-set
+Each dAPI has a [proxy contract](/reference/dapis/understand/proxy-contracts)
+that is used to read the value of the dAPI. The proxy contract is linked to a
+mapping that maps to a `beaconId` or `beaconSetId` and an OEV beneficiary
+address. The `beaconId` for each dAPI gets updated when the price hits the set
 [deviation threshold](/reference/dapis/understand/deviations.md)/[heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 using
 [Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.md).

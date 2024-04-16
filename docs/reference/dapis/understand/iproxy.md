@@ -16,12 +16,10 @@ tags:
 
 # {{$frontmatter.title}}
 
-For every
-[self-funded dAPI](/reference/dapis/understand/index.md#self-funded-dapis) there
-is a single publicly available proxy contract that reads the dAPI's data
-(`value` int224, `timestamp` uint256). You do not access the proxy contract
-directly but rather use the `IProxy` interface. The `IProxy` interface is part
-of the npm package
+For every [dAPI](/reference/dapis/understand/index.md) there is a single
+publicly available proxy contract that reads the dAPI's data (`value` int224,
+`timestamp` uint256). You do not access the proxy contract directly but rather
+use the `IProxy` interface. The `IProxy` interface is part of the npm package
 [@api3/contracts](https://www.npmjs.com/package/@api3/contracts).
 
 ## IProxy interface contracts
@@ -45,8 +43,8 @@ repo
 ## Usage
 
 Use the address of a proxy contract to read dAPIs with `IProxy`. See the guide
-[Reading a self-funded dAPI proxy ](/guides/dapis/read-a-dapi/) for a complete
-working example. Proxy contract addresses are available on the
+[Reading a dAPI proxy](/guides/dapis/read-a-dapi/) for a complete working
+example. Proxy contract addresses are available on the
 [API3 Market](https://market.api3.org).
 
 ```
