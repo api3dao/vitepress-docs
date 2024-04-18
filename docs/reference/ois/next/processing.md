@@ -223,7 +223,7 @@ of `preProcessingSpecifications` or `postProcessingSpecifications` must be
 defined and not be an empty array or `preProcessingSpecificationV2` or
 `postProcessingSpecificationV2` must be defined.
 
-### Use case: random number
+### Random number example
 
 An Airnode endpoint that places a random number on-chain. Rather than calling an
 API, the Airnode will derive a random number during its execution of a
@@ -231,8 +231,6 @@ pre-process specification. A requester would make a request of this Airnode
 endpoint without parameters. The Airnode endpoint simply sets the random number
 on-chain in response to the request using a `preProcessingSpecifications`
 specification. Example #1 below implements this use case.
-
-### Example #1
 
 This example creates an Airnode endpoint named `generateRandomNumber` with no
 parameters. Because there isn't an
@@ -284,7 +282,7 @@ endpoints: [
 ]
 ```
 
-### Example #2
+### Parameter modification example
 
 The code below is unrelated to the
 [use case](/reference/ois/next/processing.md#use-case-random-number) mentioned
