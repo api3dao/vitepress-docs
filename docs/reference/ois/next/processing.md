@@ -127,12 +127,12 @@ understand pre/post processing.
 
 #### Input and Output
 
-The processing snippet is a function which receives a payload as an argument.
-The return value of the function is treated as a processing result. Apart from
-the payload argument, you can use most Node.js built-in modules.
+The processing snippet expects a function that takes an object as an argument,
+the properties of which are different for pre-processing and post-processing.
+The return value of the function is treated as a processing result. Within the
+snippet, you can use most Node.js built-in modules.
 
-The payload argument for pre-processing is an object with the following
-property:
+The pre-processing argument object contains the following property:
 
 - `endpointParameters` - The endpoint parameters with the exception of reserved
   parameters. For example, if there was a parameter named `myParameter` defined
@@ -145,8 +145,7 @@ property:
 - `endpointParameters` - The pre-processed endpoint parameters parameters. These
   are used to make the API call.
 
-The payload argument for post-processing is an object with the following
-properties:
+The post-processing argument object contains the following properties:
 
 - `response` - The response of the underlying data provider API call. In case of
   Airnode skipping the API call, the `response` contains the output of
@@ -167,6 +166,8 @@ properties:
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the
   [signed data gateway](/reference/airnode/next/understand/http-gateways.md#http-signed-data-gateway).
+  See the [example below](#post-processing-v2-timestamp-example) for more
+  details.
 
 ## Interpolation
 
@@ -339,7 +340,7 @@ endpoints: [
 ]
 ```
 
-## Example #3
+## Post-processing v2 timestamp example
 
 One of the possible use cases for post-processing would be to use override the
 timestamp used by
