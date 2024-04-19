@@ -127,12 +127,12 @@ understand pre/post processing.
 
 #### Input and Output
 
-The processing snippet is a function which receives a payload as an argument.
-The return value of the function is treated as a processing result. Apart from
-the payload argument, you can use most Node.js built-in modules.
+The processing snippet expects a function that takes an object as an argument,
+the properties of which are different for pre-processing and post-processing.
+The return value of the function is treated as a processing result. Within the
+snippet, you can use most Node.js built-in modules.
 
-The payload argument for pre-processing is an object with the following
-property:
+The pre-processing argument object contains the following property:
 
 - `endpointParameters` - The endpoint parameters with the exception of reserved
   parameters. For example, if there was a parameter named `myParameter` defined
@@ -145,8 +145,7 @@ property:
 - `endpointParameters` - The pre-processed endpoint parameters parameters. These
   are used to make the API call.
 
-The payload argument for post-processing is an object with the following
-properties:
+The post-processing argument object contains the following properties:
 
 - `response` - The response of the underlying data provider API call. In case of
   Airnode skipping the API call, the `response` contains the output of
@@ -167,6 +166,27 @@ properties:
   you want Airnode to use a specific timestamp (instead of a current time at
   request processing) when using the
   [signed data gateway](/reference/airnode/next/understand/http-gateways.md#http-signed-data-gateway).
+  See the example below for more details.
+
+#### Timestamp example
+
+One of the possible use cases for post-processing v2 would be to use override
+the timestamp used by
+[signed data gateway](/reference/airnode/next/understand/http-gateways.md#http-signed-data-gateway).
+By default the signed data gateway uses the timestamp of the request processing.
+However, sometimes the API itself returns the timestamp. Modifying timestamp is
+only supported with the v2 of the processing.
+
+```json
+{
+  "postProcessingSpecificationV2": {
+    "environment": "Node",
+    // Reuses the timestamp from the API call response.
+    "value": "async ({ response }) => { return { response, timestamp: response.timestamp }; }",
+    "timeoutMs": 5000
+  }
+}
+```
 
 ## Interpolation
 
@@ -222,16 +242,14 @@ of `preProcessingSpecifications` or `postProcessingSpecifications` must be
 defined and not be an empty array or `preProcessingSpecificationV2` or
 `postProcessingSpecificationV2` must be defined.
 
-### Use case: random number
+### Random number example
 
 An Airnode endpoint that places a random number on-chain. Rather than calling an
 API, the Airnode will derive a random number during its execution of a
-pre-process specification. A requester would make a request of this Airnode
-endpoint without parameters. The Airnode endpoint simply sets the random number
-on-chain in response to the request using a `preProcessingSpecifications`
+pre-processing v1 specification. A requester would make a request of this
+Airnode endpoint without parameters. The Airnode endpoint simply sets the random
+number on-chain in response to the request using a `preProcessingSpecifications`
 specification. Example #1 below implements this use case.
-
-### Example #1
 
 This example creates an Airnode endpoint named `generateRandomNumber` with no
 parameters. Because there isn't an
@@ -283,15 +301,14 @@ endpoints: [
 ]
 ```
 
-### Example #2
+### Parameter processing example
 
-The code below is unrelated to the
-[use case](/reference/ois/next/processing.md#use-case-random-number) mentioned
-earlier. This example creates an Airnode endpoint named
-`endpointThatSumsWith1000` with a parameter named `numberToSum`. Because there
-isn't an [operation field](/reference/ois/next/specification.md#_5-2-operation)
-defined for this Airnode endpoint, a call to an API will not be made. The
-Airnode will instead execute a single specification defined in the
+The code below is unrelated to the above example. Instead, this example creates
+an Airnode endpoint named `endpointThatSumsWith1000` with a parameter named
+`numberToSum`. Because there isn't an
+[operation field](/reference/ois/next/specification.md#_5-2-operation) defined
+for this Airnode endpoint, a call to an API will not be made. The Airnode will
+instead execute a single specification defined in the
 [preProcessingSpecifications](/reference/ois/next/specification.md#_5-9-preprocessingspecifications)
 array.
 
@@ -337,26 +354,6 @@ endpoints: [
     ]
   }
 ]
-```
-
-## Example #3
-
-One of the possible use cases for post-processing would be to use override the
-timestamp used by
-[signed data gateway](/reference/airnode/next/understand/http-gateways.md#http-signed-data-gateway).
-By default the signed data gateway uses the timestamp of the request processing.
-However, sometimes the API itself returns the timestamp. Modifying timestamp is
-only supported with the v2 of the processing.
-
-```json
-{
-  "postProcessingSpecificationV2": {
-    "environment": "Node",
-    // Reuses the timestamp from the API call response.
-    "value": "async ({ response }) => { return { response, timestamp: response.timestamp }; }",
-    "timeoutMs": 5000
-  }
-}
 ```
 
 <FlexEndTag/>
