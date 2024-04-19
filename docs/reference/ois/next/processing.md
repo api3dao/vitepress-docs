@@ -284,13 +284,12 @@ endpoints: [
 
 ### Parameter modification example
 
-The code below is unrelated to the
-[use case](/reference/ois/next/processing.md#use-case-random-number) mentioned
-earlier. This example creates an Airnode endpoint named
-`endpointThatSumsWith1000` with a parameter named `numberToSum`. Because there
-isn't an [operation field](/reference/ois/next/specification.md#_5-2-operation)
-defined for this Airnode endpoint, a call to an API will not be made. The
-Airnode will instead execute a single specification defined in the
+The code below is unrelated to the above example. Instead, this example creates
+an Airnode endpoint named `endpointThatSumsWith1000` with a parameter named
+`numberToSum`. Because there isn't an
+[operation field](/reference/ois/next/specification.md#_5-2-operation) defined
+for this Airnode endpoint, a call to an API will not be made. The Airnode will
+instead execute a single specification defined in the
 [preProcessingSpecifications](/reference/ois/next/specification.md#_5-9-preprocessingspecifications)
 array.
 
