@@ -166,6 +166,7 @@ based on the chain and dAPI:
 | 0.25%     | 24 hours  |
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
+| 5%        | 24 hours  |
 
 See the guide [Subscribing to dAPIs](/guides/dapis/subscribing-to-dapis/) and
 learn more on how to access dAPIs.
