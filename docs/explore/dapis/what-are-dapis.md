@@ -31,28 +31,32 @@ of any dAPI in realtime.
 lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
 
 Thanks to first-party oracles source transparency is realized, enabling the
-independent verification of whether an oracle is decentralized. By removing the
-third-party node layer that other oracle solutions rely on, dAPIs provide a
-solution with improved security, cost-efficiency, and scalability.
+independent verification of whether an oracle uses multiple data sources and is
+thus decentralized. By removing the third-party node layer that other oracle
+solutions rely on, dAPIs provide a solution with improved transparency,
+scalability and security.
 
 ## dAPI composition
 
 At the core, a **dAPI** is a mapping that points towards a **beacon** or a
-**beacon set**, similarly to how an ENS name is mapped to a wallet address.
+**beacon set**.
 
 dAPIs are directly powered and maintained on-chain by multiple off-chain oracle
 nodes operated by the owner of data (API Provider) served directly to a network.
 API3 refers to these as a beacon. Each of these off-chain sources serve
 cryptographically signed data by a data provider before being aggregated
-on-chain, something API3 refers to as a beacon set.
+on-chain, API3 refers to as a beacon set.
 
 <img src="../assets/images/dAPI_q2.png" style="width:500px">
 
-The natively aggregated value is read through a proxy address as part of the
-dAPI requester. It is simple for developers to integrate into their contracts
-and once imported a dAPI can be re-directed to read any price feed without any
-further technical implementation. For a further technical understanding of dAPIs
-head to the [developer reference section.](/docs/reference/dapis/).
+The aggregated value is read through a proxy address as part of the dAPI
+requester. If the dAPI is active the proxy address will be displayed on the UI
+of the API3 Market.
+
+It is simple for developers to integrate into their contracts and once imported
+a dAPI can be re-directed to read any price feed without any further technical
+implementation. For a further technical understanding of dAPIs head to the
+[developer reference section.](/docs/reference/dapis/).
 
 ::: info Read more
 

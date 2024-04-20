@@ -24,7 +24,7 @@ module.exports = [
           },
           {
             text: '• API3 Market',
-            link: '/explore/introduction/market',
+            link: '/explore/introduction/oracle-extractable-value',
           },
         ],
       },
@@ -47,8 +47,12 @@ module.exports = [
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
       {
-        text: 'Using dAPIs in a dApp',
+        text: 'Using dAPIs in DeFi',
         link: '/explore/dapis/using-dapis',
+      },
+      {
+        text: 'How are dAPIs maintained on-chain',
+        link: '/explore/dapis/how-are-dAPIs-maintained',
       },
       {
         text: 'Security considerations',
@@ -57,6 +61,16 @@ module.exports = [
       {
         text: 'OEV capture with dAPIs',
         link: '/explore/dapis/OEV',
+      },
+    ],
+  },
+  {
+    text: 'QRNG',
+    collapsed: false,
+    items: [
+      {
+        text: 'What is QRNG?',
+        link: '/explore/qrng/',
       },
     ],
   },
@@ -83,16 +97,6 @@ module.exports = [
       {
         text: 'Accessing first-party data feeds',
         link: '/explore/airnode/unlocking-real-world-data',
-      },
-    ],
-  },
-  {
-    text: 'QRNG',
-    collapsed: false,
-    items: [
-      {
-        text: 'What is QRNG?',
-        link: '/explore/qrng/',
       },
     ],
   },

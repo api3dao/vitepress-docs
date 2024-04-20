@@ -37,16 +37,6 @@ ability drastically once dAPI operations have matured, by capping the amount of
 changes that are allowed to be made in addition to giving the API3 DAO the
 ability to revoke dAPI name setting rights through a governance vote.
 
-## Self-funded dAPIs
-
-Compared to managed dAPIs, self-funded dAPIs are sourced from a single datafeed
-(beacon) and are hence susceptible to more risk. Downtime with the associated
-Airnode or the sourced API operation will consequently lead to a stale data
-point. For this reason, self-funded dAPIs are treated as an introduction to
-dAPIs as well as a testing ground for data feeds. It is recommended that use
-cases with higher security requirements make use of managed dAPIs when
-available.
-
 ### Sponsor Wallets
 
 Self-funded dAPIs will only update if the respective sponsor wallet has
@@ -70,7 +60,6 @@ a beacon set via Airnode's HTTP-Gateway and updating the beacon values on-chain.
 
 It is important that no central authority has the opportunity to impact the
 delivery of a dAPI's value. API3 is committed to keep the beacon sets behind a
-managed dAPI updated in a completely decentralized fashion. Therefore
-decentralization will be a key feature when managed dAPIs are made available.
+dAPI updated in a completely decentralized fashion.
 
 <FlexEndTag/>
