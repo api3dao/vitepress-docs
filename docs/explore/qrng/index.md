@@ -24,7 +24,7 @@ Smart contract platforms typically emulate a deterministic virtual machine,
 which cannot generate random numbers. In such cases, random number generation
 (RNG) needs to be provided as an oracle service.
 
-There are are currently limited options to access entropy on-chain. API3 Quantum
+There are currently limited options to access entropy on-chain. API3 Quantum
 Random Number Generator is a method of random number generation based on quantum
 phenomena.
 
