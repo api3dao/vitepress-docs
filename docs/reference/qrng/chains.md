@@ -93,7 +93,7 @@ beyond one level deep inside and element (i.e. <div>). See /dev/tabs.md
 to not break as well.
 -->
 
-## ANU Mainnet
+## ANU Mainnets Chain ID
 
 <div class="mainnets">
 
@@ -117,7 +117,7 @@ to not break as well.
 
 </div>
 
-## Quintessence Mainnet
+## Quintessence Mainnets Chain ID
 
 <div class="mainnets">
 
@@ -164,7 +164,7 @@ to not break as well.
 
 </div>-->
 
-## Quantum Blockchains Mainnet
+## Quantum Blockchains Mainnets ChainID
 
 <div class="mainnets">
 

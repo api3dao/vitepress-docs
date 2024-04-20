@@ -67,11 +67,6 @@ awkward case where it is not possible to talk of an ownership of the data. Here,
 requiring QRNG creates a very significant barrier to entry to providing on-chain
 RNG services, and practically eliminates the Sybil attack risk.
 
-<!--In this regard,
-QRNG is the closest thing to a first-party RNG service.-->
-
-<!-- review -->
-
 ::: info Contribute
 
 Please consider providing feedback and contributing to the open source
@@ -87,5 +82,10 @@ will also be available for API3 QRNG. Most importantly, this includes faster,
 cheaper, and more customizable request fulfillments. In addition, integrations
 to more chains and QRNG providers will be made available over time, and
 higher-level QRNG services will be built leveraging these.
+
+# Get Started with QRNG
+
+Follow [this guide](https://docs.api3.org/guides/qrng/) to get started with QRNG
+as a developer.
 
 <FlexEndTag/>
