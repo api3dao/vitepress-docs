@@ -48,8 +48,7 @@ chains. You can also see the details of each dAPI, such as the provider, the
 asset type, the deviation threshold, the heartbeat, and the last on-chain
 updated price.
 
-Check out the API3 Market [here](https://market.api3.org/). You can browse
-through the available dAPIs and check out their details.
+Check out the API3 Market [here](https://market.api3.org/).
 
 ## How do dAPIs and OEV work?
 
@@ -70,8 +69,7 @@ heartbeat, dApps can set up OEV to auction off the right to update the data
 feeds to searchers. Searchers can bid for price updates through the OEV Network
 to update the data feeds. All the OEV proceeds goes back to the dApp.
 
-[Click here](/guides/dapis/subscribing-to-dapis/) to read more about how to get
-started with dAPIs.
+[Click here](/guides/dapis/subscribing-to-dapis/) to get started with dAPIs.
 
 ## How to use dAPIs in a smart contract?
 
@@ -83,7 +81,7 @@ call the `read()` function. Here's an example:
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts@4.9.5/access/Ownable.sol";
-import "@api3/contracts/v0.8/interfaces/IProxy.sol";
+import "@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol";
 
 contract DataFeedReaderExample is Ownable {
     // The proxy contract address obtained from the API3 Market UI.
