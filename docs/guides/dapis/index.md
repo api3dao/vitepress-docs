@@ -143,8 +143,7 @@ that is used to read the value of the dAPI. The proxy contract is linked to a
 mapping that maps to a `beaconId` or `beaconSetId` and an OEV beneficiary
 address. The `beaconId` for each dAPI gets updated when the price hits the set
 [deviation threshold](/reference/dapis/understand/deviations.md)/[heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
-using
-[Airnode's Signed Data](/reference/airnode/latest/understand/http-gateways.md).
+.
 
 Read more about
 [Proxy Contracts](/reference/dapis/understand/proxy-contracts.md).
