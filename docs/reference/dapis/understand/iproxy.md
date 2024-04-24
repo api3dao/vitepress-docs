@@ -24,10 +24,9 @@ interface is part of the npm package
 
 ## IProxy interface contracts
 
-The `IProxy` interface is available for∂ Solidity versions 8x and greater but
-can be easily adapted for earlier versions. The interface is available in the
-npm package [@api3/contracts](https://www.npmjs.com/package/@api3/contracts)
-under
+The `IProxy` interface is available for Solidity versions 8x and greater but can
+be easily adapted for earlier versions. The interface is available in the npm
+package [@api3/contracts](https://www.npmjs.com/package/@api3/contracts) under
 
 `/@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol`.
 

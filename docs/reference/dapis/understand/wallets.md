@@ -29,8 +29,7 @@ read the value of the dAPI.
 
 > **dApp access:**
 >
-> A dApp uses a proxy contract address to
-> [read()](/reference/dapis/understand/read-dapis.md) the value of the dAPI. The
+> A dApp uses a proxy contract address to `read()` the value of the dAPI. The
 > dAPI is defined, and its value retrieved, by the `Api3ServerV1.sol` contract.
 >
 > **Data feed updates:**

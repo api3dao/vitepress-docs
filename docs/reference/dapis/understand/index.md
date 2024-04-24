@@ -27,8 +27,7 @@ stable coins, derivatives, NFTs, and more.
 
 ## Values stored on-chain
 
-[Datafeed values are stored on-chain](/reference/dapis/understand/#values-stored-on-chain)
-within the
+Datafeed values are stored on-chain within the
 [`Api3ServerV1.sol`](https://github.com/api3dao/airnode-protocol-v1/tree/79b509f0e88a96fa4ea3cd576685051d37c9a504/contracts/api3-server-v1)
 contract and are updated on the basis of `beaconIds`. To provide aggregated
 data, collection of multiple `beaconIds` are aggregated using a median function
@@ -44,9 +43,8 @@ The `beaconId` for each dAPI gets updated when the price hits the set
 [deviation threshold](/reference/dapis/understand/deviations.md)/[heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 using
 [Signed-APIs](https://github.com/api3dao/signed-api/tree/main/packages/signed-api).
-[Airseeker](/reference/dapis/understand/dapis.md#airseeker) and other entities
-who have access to signed data are responsible for updating each individual
-`beaconId` for each dAPI.
+[Airseeker](#airseeker) and other entities who have access to signed data are
+responsible for updating each individual `beaconId` for each dAPI.
 
 A `beaconId` for each dAPI is derived from the hash of the provider's Airnode's
 address and its Template ID(a hash of one of the Airnode's `endpointId` and

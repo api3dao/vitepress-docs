@@ -48,15 +48,6 @@ where you can find more information about the dAPI.
 
 <img src="../../assets/images/dapi-3.png" style="width:100%"/>
 
-If a dAPI is already activated, it will provide information like the current
-aggregated on-chain value, funding address, current configuration, and the
-expiration date.
-
-Once you have selected your dAPI, you will then be presented with an option to
-purchase and activate it.
-
-<img src="../../assets/images/dapi-2.png" style="width:60%"/>
-
 The API3 Market gives you an option to configure the dAPI's
 [deviation threshold](/reference/dapis/understand/deviations) and
 [heartbeat](/reference/dapis/understand/deviations.md#heartbeat). You will have
@@ -93,9 +84,9 @@ Once you've selected the dAPI and the configuration, you will be presented with
 an option to purchase the dAPI and activate it. Make sure to check the time and
 amount of the subscription. If everything looks good, click on **Purchase**.
 
-You can then connect your wallet and confirm the transaction.
+<img src="../../assets/images/dapi-2.png" style="width:60%"/>
 
-<img src="../../assets/images/dapi-4.png" style="width:60%"/>
+You can then connect your wallet and confirm the transaction.
 
 Once the transaction is confirmed, you will be presented with a confirmation
 page for the order. You can now go back and check the updated configuration for
