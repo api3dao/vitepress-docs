@@ -16,29 +16,25 @@ tags:
 
 # {{$frontmatter.title}}
 
-For every [dAPI](/reference/dapis/understand/index.md) there is a single
-publicly available proxy contract that reads the dAPI's data (`value` int224,
-`timestamp` uint256). You do not access the proxy contract directly but rather
-use the `IProxy` interface. The `IProxy` interface is part of the npm package
-[@api3/contracts](https://www.npmjs.com/package/@api3/contracts).
+For every [dAPI](/reference/dapis/understand/index.md) a proxy contract needs to
+be deployed that reads the dAPI's data (`value` int224, `timestamp` uint256).
+You use the `IProxy` interface to read via the proxy contract. The `IProxy`
+interface is part of the npm package
+[@api3/contracts](https://www.npmjs.com/package/@api3/contracts).∂
 
 ## IProxy interface contracts
 
-For each version of Solidity supported there is an associated `IProxy` contract.
-This ensures that the interface can handle any necessary differences in the
-Solidity releases. You simply import the required `IProxy` interface contract
-accordingly.
+The `IProxy` interface is available for∂ Solidity versions 8x and greater but
+can be easily adapted for earlier versions. The interface is available in the
+npm package [@api3/contracts](https://www.npmjs.com/package/@api3/contracts)
+under
+
+`/@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol`.
 
 ```solidity
-// imports for Solidity versions 6x, 7x, and 8x
-import "@api3/contracts/v0.6/interfaces/IProxy.sol";
-import "@api3/contracts/v0.7/interfaces/IProxy.sol";
-import "@api3/contracts/v0.8/interfaces/IProxy.sol";
+// imports for Solidity versions 8x and greater
+import "@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol";
 ```
-
-You can also see the available Solidity specific IProxy contracts in the API3
-repo
-[api3dao/contracts](https://github.com/api3dao/contracts/tree/main/contracts).
 
 ## Usage
 
@@ -47,8 +43,8 @@ Use the address of a proxy contract to read dAPIs with `IProxy`. See the guide
 example. Proxy contract addresses are available on the
 [API3 Market](https://market.api3.org).
 
-```
-import "@api3/contracts/v0.8/interfaces/IProxy.sol";
+```solidity
+import "@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol";
 ...
 (value, timestamp) = IProxy(proxyAddress).read();
 

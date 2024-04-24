@@ -22,12 +22,12 @@ percentage) from the off-chain value, the on-chain value is updated.
 
 ## Update Interval
 
-Functionality within [Airnode](/reference/airnode/latest/understand/) is
-responsible to check for any deviation between the on-chain value of a dAPI's
+[Airnode-Feed](https://github.com/api3dao/signed-api/tree/main/packages/airnode-feed)
+periodically checks for any deviation between the on-chain value of a dAPI's
 beacon or beacon set verses the off-chain signed data provided by related API
 providers. The deviation threshold check runs continuously based on a
 configuration value set in `updateInterval`. Most configurations are set using
-30 to 60 seconds with the later being the more popular.
+30 to 60 seconds.
 
 ## Heartbeat
 
@@ -66,5 +66,6 @@ settings.
 | 0.25%     | 24 hours  |
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
+| 5%        | 24 hours  |
 
 <FlexEndTag/>

@@ -21,10 +21,9 @@ tags:
 [dAPIs](/explore/dapis/using-dapis.md#managed-dapis) are datafeeds that are
 sourced directly from multiple
 [first-party oracles](/explore/airnode/why-first-party-oracles) and aggregated
-using [Airnode's](/explore/airnode/what-is-airnode.md) signed data. It utilizes
-first-party oracles, enabling data to be served directly from reputable API
-providers via the Airnode. This guide will walk you through the process of
-subscribing to a dAPI.
+using Signed data. It utilizes first-party oracles, enabling data to be served
+directly from reputable API providers. This guide will walk you through the
+process of subscribing to a dAPI.
 
 ## API3 Market
 
@@ -68,6 +67,7 @@ the following options to choose from:
 | 0.25%     | 24 hours  |
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
+| 5%        | 24 hours  |
 
 ::: info Note
 
