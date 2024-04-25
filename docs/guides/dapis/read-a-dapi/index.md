@@ -91,10 +91,10 @@ purposes without proper security audits and testing.
   used to restrict certain actions to the owner of the contract.
 
 - The contract imports the `IProxy` interface from the
-  `@api3/contracts/v0.8/interfaces` library, which defines a function called
-  `read()` that reads data from a dAPI data feed. Be sure to use the proper
-  IProxy interface version for the version of Solidity you are using, see
-  [IProxy Interface](/reference/dapis/understand/iproxy.md).
+  `@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol` library, which
+  defines a function called `read()` that reads data from a dAPI data feed. Be
+  sure to use the proper IProxy interface version for the version of Solidity
+  you are using, see [IProxy Interface](/reference/dapis/understand/iproxy.md).
 
 - The contract has a public variable called `proxyAddress` which is the address
   of the proxy contract that will be used to access the desired dAPI via its
