@@ -18,17 +18,10 @@ tags:
 
 > <Video src="https://www.youtube.com/embed/wLZ4pyqAFuE"/>
 
-<!--A dAPI is a standardized interface that smart contracts can use to access data
-feed services, that are continuously updated. These can range from the latest
-cryptocurrency, forex, stock or commodity prices.-->
-
 dAPIs are on-chain data feeds sourced from off-chain first-party oracles owned
 and operated by API providers themselves. Data feeds are continuously updated by
 first-party oracles using signed data. dApp owners can read the on-chain value
 of any dAPI in realtime.
-
-<!--They can power various decentralized applications such as DeFi
-lending, synthetic assets, stable coins, derivatives, NFTs and more.-->
 
 Thanks to first-party oracles source transparency is realized, enabling the
 independent verification of whether an oracle uses multiple data sources and is
@@ -56,7 +49,7 @@ of the API3 Market.
 It is simple for developers to integrate a dAPI request into their contracts and
 once imported a dAPI can be re-directed to read any price feed without any
 further technical implementation. For a further technical understanding of dAPIs
-head to the [developer reference section.](/docs/reference/dapis/).
+head to the [developer reference section](/reference/dapis/understand/.md).
 
 ::: info Read more
 
@@ -64,23 +57,6 @@ Dive into the design decisions about dAPIs by reading
 [<span style="color:rgb(16, 185, 129);">dAPIs: APIs for dApps</span>](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493).
 
 :::
-
-<!--### What is a Beacon or a Beacon Set?
-
-A beacon is a point of data that is kept alive on-chain by a respective
-first-party oracle. It corresponds to an ID which is derived from the hash of
-the Airnode address that is deployed by an API Provider, in combination with the
-request parameters. This resulting ID will always represent a specific provider
-with specific request parameters and cannot be changed.
-
-Following the same principle, a beacon set is addressed by an ID, which is
-derived from the hash of multiple beacons. This allows for the creation of
-aggregations between multiple beacons. The resulting ID of a beacon set always
-represents the specific beacons that make it up and cannot be changed.
-
-Values for beacons or beacon sets are kept up to date on-chain by many Airnodes
-which are owned by API providers, where they can be read using an API3 Market
-[proxy contract](/reference/dapis/understand/proxy-contracts.md).-->
 
 ### A simple way to access next-generation push oracles
 
@@ -113,77 +89,7 @@ happens through the API3 Market.
 Refer to these guides and learn how to activate and read the dAPI using a proxy
 contract:
 
-- [Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/index.md)
-- [Reading a Self-Funded dAPI Proxy](/guides/dapis/read-a-dapi/)
-
-<!--## dAPI: A standardized interface
-
-dAPIs possess a range of distinct attributes:
-
-- dAPIs have a standardized, user-friendly interface that intends to abstract
-  away the technical implementation.
-- A dApp uses the dAPI interface to access data feed services. These services
-  exist in a fully permissionless or authorized format.
-- dAPIs exist entirely on-chain managed by a central contract that manages a
-  beacon store that is in turn updated by Airnodes.
-- Through a dAPI smart contract, developers can access additional services such
-  as Service Coverage or Oracle Extractable Value. -->
-
-<!--## Why use dAPIs?
-
-Due to being composed out of first-party data feeds, dAPIs offer security,
-transparency, cost-efficiency and scalability in a turn-key package.
-
-_Security_
-
-Data used to update a first-party data feed is cryptographically signed by the
-owner of the data. This means that the data that will update a feed cannot be
-tampered with once it leaves the source. Furthermore, the API providers host a
-first-party oracle node, Airnode, to push the data to the chain themselves. This
-renders denial of service attacks by third parties ineffective.
-
-_Transparency_
-
-The cryptographic signatures prove that the data that updates a feed comes
-directly from a specific API provider. Furthermore, Beacons that underpin dAPIs
-allow the user to inspect what exact API endpoints are being called, and with
-which parameters. This provides complete transparency to the dApp developer,
-which is a big step from depending on a pseudonymous selection of third parties
-that intentionally obscure their data sources.
-
-_Cost-efficiency_
-
-dAPIs are cost efficient compared to third-party data feeds, as the user does
-not need to pay middlemen node operators for their services. Furthermore,
-first-party data feeds do not require redundancy against middlemen layer
-attacks. This makes single-Beacon dAPIs feasible, and allows API3 to provide a
-wide variety of data feeds in a cost-efficient way.
-
-_Scalability_
-
-An inherently secure and cost-efficient data feed design allows API3 to build a
-large number of dAPIs on many chains. This is supplemented by purpose-designed
-Airnode protocols and relayer schemes to improve efficiency while not degrading
-the security guarantees of a first-party data feed. The improved scalability of
-dAPIs also factors into building aggregated data feeds. Since first-party data
-feeds do not require redundancy at the middlemen layer, the aggregation costs
-less gas and source-level decentralization becomes more affordable.-->
-
-<!--Additionally it is going to play a crucial role in setting up required
-contracts for OEV (LINK) and Service Coverage (LINK). // add this when OEV & Service Coverage pages are added-->
-
-<!--## dAPI Maintenance
-
-The exact process that is being followed currently and what is envisioned for
-the future can be found in
-[how are dAPIs maintained](/explore/dapis/how-are-dapis-maintained.md).-->
-
-<!--## Medium Articles
-
-For more information, please refer to
-[dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493),
-[Beacons](https://medium.com/api3/beacons-building-blocks-for-web3-data-connectivity-df6ad3eb5763)
-and
-[Monetizing Data Feeds](https://medium.com/@ugurmersin/monetizing-data-feeds-951cd5c912bd).-->
+- [Activate a dAPI]<!--this needs to link to a market guide imo-->
+- [Read a dAPI Proxy](/guides/dapis/read-a-dapi/)
 
 <FlexEndTag/>

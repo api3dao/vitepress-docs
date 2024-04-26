@@ -23,7 +23,7 @@ module.exports = [
             link: '/explore/introduction/decentralized-apis',
           },
           {
-            text: '• API3 Market',
+            text: '• Oracle Extractable Value',
             link: '/explore/introduction/oracle-extractable-value',
           },
         ],

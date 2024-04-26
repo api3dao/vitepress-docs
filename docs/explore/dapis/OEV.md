@@ -21,8 +21,7 @@ capture value that would otherwise have gone to third parties.
 
 ### What is OEV?
 
-Oracle Extractable Value (OEV) is a subset of MEV related to the way oracles are
-currently designed. Any update to data feeds, or a lack thereof, can create
+Any update to data feeds, or a lack thereof, can create
 opportunities for OEV such as arbitrage and liquidations. During each of these
 interactions value is leaking from the dApp users to both searchers and
 blockchain validators. Learn more about OEV in a summary of the
@@ -33,7 +32,7 @@ blockchain validators. Learn more about OEV in a summary of the
 Integrating OEV-enabled data feeds can turn this fee previously being imposed on
 your users into a powerful economic incentive for your protocol. With the OEV
 Network, fees typically extracted through liquidation bots will be recaptured
-and be able ot be used for more productive means. API3 has delivered a
+and be able to be used for more productive means. API3 has delivered a
 specialized Order Flow Auction (OFA) that maximizes the value returned to your
 dApp from OEV through a sealed bid auction process similar to the one you might
 be familiar with from Flashbots and MEV-Boost.
