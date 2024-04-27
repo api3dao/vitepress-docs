@@ -49,7 +49,7 @@ of the API3 Market.
 It is simple for developers to integrate a dAPI request into their contracts and
 once imported a dAPI can be re-directed to read any price feed without any
 further technical implementation. For a further technical understanding of dAPIs
-head to the [developer reference section](/reference/dapis/understand/.md).
+head to the [developer reference section](/reference/dapis/understand/).
 
 ::: info Read more
 
@@ -86,10 +86,10 @@ happens through the API3 Market.
 
 ### Get started
 
-Refer to these guides and learn how to activate and read the dAPI using a proxy
-contract:
+Refer to these guides and learn how to subscribe, activate and read the dAPI
+using a proxy contract:
 
-- [Activate a dAPI]<!--this needs to link to a market guide imo-->
+- [Subscribe and activate a dAPI](/guides/dapis/subscribing-to-dapis/)
 - [Read a dAPI Proxy](/guides/dapis/read-a-dapi/)
 
 <FlexEndTag/>

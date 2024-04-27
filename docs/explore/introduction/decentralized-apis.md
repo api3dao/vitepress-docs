@@ -36,52 +36,6 @@ See the medium article about design decisions and dAPIs by reading
 
 :::
 
-<!--## dAPI roadmap
-
-dAPIs have been designed to serve dApps with data feeds that are appropriate
-across the full application development cycle. As such, dAPIs provide products
-based on multiple use cases. These consist of:
-
-1. Self-funded data feeds (single-source)
-2. Managed data feeds (multi-source)
-3. Service Coverage (under design and development)
-4. Oracle Extractable Value (under design and development)-->
-
-<!--### Self-funded dAPIs
-
-[Self-funded dAPIs](/reference/dapis/understand/index.md#self-funded-dapis)
-provide developers with the tools to use single-source data feed with no upfront
-commitment. They are served in a fully permissionless fashion through the API3
-Market. Once gas funds have been provided in a sponsor wallet, the dAPI will
-automatically begin posting data on-chain when price deviation thresholds are
-met.
-
-Self-funded data feeds are provided as an output of a single first-party oracle
-that triggers price updates on-chain to a 1% deviation threshold. As such these
-dAPIs are appropriate for early-stage of dApp development.
-
-#### Activating a self-funded dAPI
-
-To activate an self-funded dAPI, dApp owners must deposit chain-native
-collateral to a designated dAPI sponsor wallet. This collateral will cover the
-costs of gas when the dAPI's associated first-party oracle updates the dAPI
-on-chain.
-
- <img src="../assets/images/Sponsoring_a_feed_overview.png" style="width:500px">
-
-API3 suggests using a managed dAPI when the single source value of a self-funded
-dAPI does not provide enough reliability, or the costs associated with topping
-off the dAPI's associated sponsor wallet is too prohibitive.
-
-Access a self-funded dAPI via the [API3 Market](https://market.api3.org/dapis)
-is easy and requires only a few simple steps. Utilizing the tools available
-within the API3 Market, dApp owners can swiftly gain access to a dAPI with
-minimal effort. Follow the guide
-[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
-to get started. Then see the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and understand
-how to read a dAPI.-->
-
 ### What can I do with a dAPI?
 
 Through a dAPI DeFi lenders, synthetic assets, algorithmic stablecoins or
@@ -102,17 +56,13 @@ heartbeat.
 
 ### A next-generation push oracle
 
-[Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis) provide
-aggregated high-quality price reference data served on-chain by first-party
-oracles. They have pre-configured oracle specifications that are decentralized
-through being served by multiple sources.
+[dAPIs](/reference/dapis/understand/index.md) provide aggregated high-quality
+price reference data served on-chain by first-party oracles. They have
+pre-configured oracle specifications that are decentralized through being served
+by multiple sources.
 
-To activate a dAPIs users to go to the
-[API3 Market](https://market.api3.org/dapis) to activate a feed. API3 will
-manage the gas fees (using access fees charged) as part of a portfolio of
-managed dAPIs.
-
- <img src="../assets/images/Managed_dAPI_visual.png" style="width:500px">
+To activate a dAPIs users can go to the
+[API3 Market](https://market.api3.org/dapis) to activate a feed.
 
 ### Verify the decentralization of your oracle
 

@@ -20,7 +20,7 @@ There are various moving parts in the operation of dAPIs which bring with it a
 variety of security considerations. When using dAPIs integrating parties should
 be aware of and understand these processes.
 
-## Multi-sig dependency
+### Multi-sig dependency
 
 As previously mentioned, a dAPI is a mapping towards a specific beacon or beacon
 Set ID, which can be changed. Currently the ability to do so rests with
@@ -39,22 +39,12 @@ ability to revoke dAPI name setting rights through a governance vote.
 
 ### Sponsor Wallets
 
-Self-funded dAPIs will only update if the respective sponsor wallet has
-sufficient funds available to create the on-chain transaction. Consequently, it
-is imperative that the status of a respective sponsor wallet is monitored if it
-is used in any capacity because there will be no updates without funds. Keeping
-the sponsor wallet at a desired level can be automated with services offered by
-projects like Gelato. Please note, that funds send to a sponsor wallet are not
-recoverable, which means that sending small amounts to keep it operational
-repeatedly is recommended over sending large amounts.
-
-## Managed dAPIs
-
-With managed dAPIs, API3 takes over the gas management overhead that is
-associated with running dAPIs. The underlying
-[beacon sets](/reference/dapis/understand/index.md) of a managed dAPI are kept
-up to date by collecting signed data from the respective underlying Airnodes of
-a beacon set via Airnode's HTTP-Gateway and updating the beacon values on-chain.
+dAPIs will only update if the respective sponsor wallet has sufficient funds
+available to create the on-chain transaction. When a user activates a dAPI and
+purchases a configuration for it, the sponsor wallet gets funded with the
+required gas to keep the dAPI updated. If the sponsor wallet runs out of funds,
+the dAPI will not update until the sponsor wallet is re-funded/ or a new
+configuration is purchased.
 
 ### Working towards absolute decentralization
 

@@ -32,18 +32,18 @@ simple to integrate, manage and change.
 
 ### Accessing dAPIs
 
-dAPI are accessible through the API3 Market. The market enables developers to
-permissionlessly access price feeds and manage them once integrated. Once gas
-overheads required to activate a feed are provided, within minutes price
-reference data will be readable on-chain.
+dAPI are accessible through the [API3 Market](https://market.api3.org/dapis).
+The market enables developers to permissionlessly access price feeds and manage
+them once integrated. Once gas overheads required to activate a feed are
+provided, within minutes price reference data will be readable on-chain.
 
- <img src="../assets/images/Managed_dAPI_visual.png" style="width:500px">
+ <!-- <img src="../assets/images/Managed_dAPI_visual.png" style="width:500px"> -->
 
 It is worth noting that API3 operates all infrastructure required for data feed
 updates, there is no additional infrastructure to set up, operate and maintain
 by a dApp looking to utilize a dAPI.
 
-# API3 Market
+## API3 Market
 
 The API3 Market lists all available dAPIs. It represents a hub that allows
 developers to:

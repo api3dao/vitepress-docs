@@ -31,7 +31,7 @@ accurate data feeds alongside an opportunity to recapture MEV currently leaked
 around liquidation processes.
 
 For an in-depth understanding of Oracle Extractable Value we suggest to read the
-[OEV Litepaper]().
+[OEV Litepaper](https://raw.githubusercontent.com/api3dao/oev-litepaper/main/oev-litepaper.pdf).
 
 ## The OEV Network
 
