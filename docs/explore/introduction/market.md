@@ -16,16 +16,17 @@ tags:
 
 # {{$frontmatter.title}}
 
-API3 has developed an oracle solution that enables smart contracts to access and
-utilize valuable real-world data with ease. As such it is essential to make sure
-the process of accessing this data is as user-friendly and efficient as
-possible.
+API3 has developed an oracle solution that simplifies how smart contracts can
+interact with real-world data. As such we believe it is equally as important the
+process of accessing a data feed is as user-friendly, efficient and
+permissionless.
 
 ### What is the API3 Market?
 
-The API3 Market provides tooling for dApp owners to access dAPIs. Use the
-[API3 Market](https://market.api3.org) to search for dAPIs, obtain dAPI proxy
-contract addresses, and monitor dAPIs..
+The API3 Market provides tooling for dApp owners to access decentralized price
+feeds, known as dAPIs. Use the [API3 Market](https://market.api3.org) to search
+for dAPIs, activate feeds, obtain dAPI proxy contract addresses, and monitor
+dAPIs.
 
 <img src="../assets/images/API3_market_march2023_v1.png" style="width:1200px">
 
@@ -33,7 +34,25 @@ From the API3 Market developers will manage all data feed subscriptions. Once
 the dAPI interface has been imported to a dApps contract, upgrading a data feed
 happens through the API3 Market.
 
-### Get started with self-funded dAPIs
+### Activating a dAPI Price Feed
+
+The API3 Market is optimized to simplify how developers active price oracles.
+You follow these simple steps:
+
+1- Head to the required chain 2- Within the chain section, search for your
+required data feed 3- Select your oracle specification 4- Add to order and pay
+for gas
+
+These steps are expanded on within the dAPI getting started materials.
+
+::: info API3 Market provides a permissionless price oracle
+
+Users of dAPIs can independently activate and read an decentralized price oracle
+through the API3 Market.
+
+:::
+
+<!--### Get started with self-funded dAPIs
 
 Currently, self-funded dAPIs can be accessed through a quick and simple process:
 
@@ -49,6 +68,6 @@ coming months.
 
 While the API3 Market UI is intuitive, follow this
 [simple guide](/guides/dapis/subscribing-self-funded-dapis/) to sponsor,
-activate and read a self-funded dAPI.
+activate and read a self-funded dAPI.-->
 
 <FlexEndTag/>
