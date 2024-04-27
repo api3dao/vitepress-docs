@@ -61,8 +61,8 @@ Dive into the design decisions about dAPIs by reading
 ### A simple way to access next-generation push oracles
 
 dAPIs operate in a familiar push-model, meaning price is updated on-chain
-according to pre-determined oracle specifications. These are 0.25%, 0.5% and 1%
-update thresholds that can be selected through the
+according to pre-determined oracle specifications. These are 0.25%, 0.5%, 1% and
+5% update thresholds that can be selected through the
 [API3 Market](https://market.api3.org/dapis). All oracles have a 24hr heartbeat.
 
 dAPIs are simple and permissionless to access. Through the use of the proxy

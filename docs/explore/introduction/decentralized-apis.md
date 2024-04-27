@@ -51,7 +51,7 @@ reference data across:
 
 dAPIs operate with a familiar push-oracle mechanism. Each dAPI has
 pre-determined oracle specifications with deviation thresholds that sees the
-price updated on 0.25%, 0.5% or 1% movements in the market with a 24hr
+price updated on 0.25%, 0.5%, 1% or 5% movements in the market with a 24hr
 heartbeat.
 
 ### A next-generation push oracle
