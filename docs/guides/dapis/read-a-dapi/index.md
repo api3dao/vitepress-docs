@@ -20,14 +20,11 @@ tags:
 
 # {{$frontmatter.title}}
 
-> <Video src="https://www.youtube.com/embed/1ASnpYO66mw"/>
-
 This guide requires a proxy contract address for a particular dAPI you are
 interested in. You can find them in the [API3 Market](https://market.api3.org)
 website. If a proxy contract has not been created for a particular dAPI use the
 API3 Market UI to do so, see the guide
-[Subscribing to Self-Funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
-or [Subscribing to a Managed dAPI](/guides/dapis/subscribing-managed-dapis/).
+[Subscribing to dAPIs](/guides/dapis/subscribing-to-dapis/).
 
 ## 1. Add npm package
 
@@ -57,7 +54,7 @@ you.
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts@4.9.5/access/Ownable.sol";
-import "@api3/contracts/v0.8/interfaces/IProxy.sol";
+import "@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol";
 
 contract DataFeedReaderExample is Ownable {
     // The proxy contract address obtained from the API3 Market UI.
@@ -92,10 +89,11 @@ purposes without proper security audits and testing.
   used to restrict certain actions to the owner of the contract.
 
 - The contract imports the `IProxy` interface from the
-  `@api3/contracts/v0.8/interfaces` library, which defines a function called
-  `read()` that reads data from a dAPI data feed. Be sure to use the proper
-  IProxy interface version for the version of Solidity you are using, see
-  [IProxy Interface](/reference/dapis/understand/iproxy.md).
+  `@api3/contracts/api3-server-v1/proxies/interfaces/IProxy.sol` library, which
+  defines a function called `read()` that reads data from a dAPI data feed. Be
+  sure to use the proper IProxy interface version for the version of Solidity
+  you are using, see
+  [IProxy Interface](/reference/dapis/understand/proxy-contracts.md#iproxy-interface-contracts).
 
 - The contract has a public variable called `proxyAddress` which is the address
   of the proxy contract that will be used to access the desired dAPI via its

@@ -1,5 +1,5 @@
 ---
-title: dAPIs are data feeds
+title: dAPIs
 sidebarHeader: Reference
 sidebarSubHeader: dAPIs
 pageHeader: Reference → dAPIs → Understanding dAPIs
@@ -27,102 +27,127 @@ stable coins, derivatives, NFTs, and more.
 
 ## Values stored on-chain
 
-API providers, owners of first-party Airnodes, provide the signed data used to
-store individual beacon values on-chain. A dAPI's value is in turn an aggregate
-of beacon values. dAPI values are held in the
-[Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
-contract.
+Datafeed values are stored on-chain within the
+[`Api3ServerV1.sol`](https://github.com/api3dao/contracts/tree/main/contracts/api3-server-v1)
+contract and are updated on the basis of `beaconIds`. To provide aggregated
+data, collection of multiple `beaconIds` are aggregated using a median function
+on-chain and used to update the `beaconSetId` which is a `keccak256()` hash
+representation of all the underlying `beaconIds`. Beacon sets get updated by
+updating each underlying beacon using `updateBeaconWithSignedData` and then
+calling the function `updateBeaconSetWithBeacons` to update the beacon set.
 
 <img src="../assets/images/beacons.png" style="width:80%;">
 
-`Api3ServerV1.sol` manages the definitions for hundreds of dAPIs, each of which
-is an aggregated value of multiple beacons or the value of a single beacon.
+dAPIs are human-readable mappings that maps to a `beaconId` or `beaconSetId`.
+The `beaconId` for each dAPI gets updated when the price hits the set
+[deviation threshold](/reference/dapis/understand/deviations.md)/[heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
+using
+[Signed-APIs](https://github.com/api3dao/signed-api/tree/main/packages/signed-api).
+[Airseeker](#airseeker) and other entities who have access to signed data are
+responsible for updating each individual `beaconId` for each dAPI.
 
-- [Self-funded dAPIs](/reference/dapis/understand/index.md#self-funded-dapis):
-  sourced from a single data feed (beacon)
-- [Managed dAPIs](/reference/dapis/understand/index.md#managed-dapis): sourced
-  from multiple data feeds (beacons)
+A `beaconId` for each dAPI is derived from the hash of the provider's Airnode's
+address and its Template ID(a hash of one of the Airnode's `endpointId` and
+encoded parameters).
 
-Functions in `Api3ServerV1.sol` expose dAPIs values to API3 Market
-[proxy contracts](/reference/dapis/understand/proxy-contracts.md). dApps do not
-call the `Api3ServerV1.sol` contract directly but use intuitive proxy contracts
-to get the value of a dAPI.
+API3 is running Airseekers which are primarily responsible for updating the
+`beaconId` based on the specification of the dAPI. Data Providers also update
+the `beaconId` at a higher deviation threshold/heartbeat as a fallback. There
+are also other entities that serve as additional fallback which operate at an
+even higher deviation threshold/heartbeat.
 
-## The role of Airnode
+Apart from relying on just the Airseeker to look for price deviations, searchers
+can bid for price updates through the OEV Network to update the data feeds.
 
-Airnode is a flexible off-chain module that can support multiple protocols. Most
-noticeably is its implementation of the request-response protocol (RRP) and data
-feeds.
-
-An Airnode is owned by an API provider and is used to call API provider
-endpoints to fetch and sign data at the request of Airseeker. Airseeker uses the
-signed data to determine if the deviation of a beacon value warrants an on-chain
-update.
+<!-- [Click here to read more about OEV](). -->
 
 <img src="../assets/images/beacons-airnode.png">
 
-In the diagram above, companies XYZ and ABC both provide ZIL/USD beacon values,
-A and B, respectively, that are aggregated to determine the dAPI ZIL/USD value.
-Airseeker regularly checks the deviation of ZIL/USD using the sign data from
-these Airnodes. Airseeker will update the corresponding beacons behind ZIL/USD
-when deviation is detected.
+## Airseeker
 
-When a dApp requests the value of ZIL/USD, it will get the aggregated value of
-the beacons behind the dAPI ZIL/USD.
+[Airseeker](https://github.com/api3dao/airseeker-v2) is a serverless lambda
+function that is responsible for updating the values of each `beaconId` for each
+dAPI. It is used to update the beacons with signed responses from
+[Signed-API](https://github.com/api3dao/signed-api/tree/main/packages/signed-api).
+Signed-API receives signed data from the data providers via
+[Airnode-Feed](https://github.com/api3dao/signed-api/tree/main/packages/airnode-feed).
 
-## Self funded dAPIs
+Similar to Airnode's OIS, Airseeker also requires a configuration file that is
+used to configure the Airseeker.
+[Click here to see an example of an Airseeker configuration file](https://github.com/api3dao/airseeker-v2/blob/main/config/airseeker.example.json).
+The configuration file is used to configure the deviation thresholds and
+heartbeat for each `beaconId` or `beaconSetId`.
 
-Self-funded dAPIs were made available in March 2023. These are community funded
-and community manage dAPIs that are only sourced from a single data feed
-(beacon). The funding is used to pay gas costs incurred by an Airnode as it
-places the dAPI's value on-chain when a deviation threshold is reached.
+## Providers for dAPIs
 
-Any dApp owner can fund a dAPI and any dApp owner can use the dAPI. Meaning that
-if three dApp owners are using the dAPI and only one provides funding, the other
-two would benefit. However this is not best practice for the two that do not
-provide funding as their dApp could fail if the original dApp decides to
-discontinue further funding. So the community benefits from a community funding
-approach.
+Currently, the [API3 Market](https://market.api3.org/) has 4 different asset
+classes that are listed below. For each type, there are multiple providers that
+are running an Airnode and are providing data for the dAPIs. The providers are
+listed below:
 
-### Single source data feed
+| Asset Type     | Data Provider                                                           |
+| -------------- | ----------------------------------------------------------------------- |
+| Cryptocurrency | Nodary, Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
+| Forex          | Nodary, Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
+| Commodities    | Nodary, Finage, Twelvedata, dxFeed, Tradermade                          |
+| Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxfeed                   |
 
-Unlike [managed dAPIs](/reference/dapis/understand/index.md#managed-dapis),
-self-funded dAPIs are sourced from one data feed (beacon). This may not make
-them ideal to use on a production chain.
+All the data providers listed here are selected and properly tested by the dAPI
+team to ensure the highest quality data availability for the listed dAPIs.
 
-See the guide
-[Subscribing to self-funded dAPIs](/guides/dapis/subscribing-self-funded-dapis/)
-and learn more on how to fund a dAPI. Also see the guide
-[Reading a self-funded dAPI proxy](/guides/dapis/read-a-dapi/) and learn how to
-use a proxy contract address to read a dAPI.
+## Chains
 
-## Managed dAPIs
+dAPIs are available on both major EVM-compatible testnets and mainnets. The
+chains that are currently supported are listed below:
 
-A managed dAPI is actually the process of upgrading a self-funded dAPI to become
-a managed dAPI. Here the dApp that does the upgrade pays a small fee which is
-used to pay gas costs incurred by the Airnode to place the dAPI value on-chain.
-Unlike self-funded dAPIs, API3 will manage the gas cost with the fees collected.
-This is advantages as the dApp owner does not need to worry about the community
-based funding model that might cause the dAPI to shut down due to lack of
-funding.
+| Mainnet         | Testnet                       |
+| --------------- | ----------------------------- |
+| Arbitrum One    | Arbitrum Sepolia Testnet      |
+| Avalanche       | Avalanche Testnet             |
+| Base            | Base Sepolia Testnet          |
+| Blast           | Blast Sepolia Testnet         |
+| BNB Smart Chain | BNB Smart Chain Testnet       |
+| Ethereum        | Ethereum Sepolia Testnet      |
+| Fantom          | Fantom Testnet                |
+| Gnosis Chain    | Gnosis Chain Testnet          |
+| Kava            | Kava Testnet                  |
+| Linea           | Linea Sepolia Testnet         |
+| Mantle          |                               |
+| Moonbeam        | Moonbeam Testnet              |
+| Moonriver       |                               |
+| Optimism        | Optimism Sepolia Testnet      |
+| Polygon zkEVM   | Polygon zkEVM Sepolia Testnet |
+| Polygon         |                               |
 
-## Availability
+Head over to the [API3 Market](https://market.api3.org/) to see the list of all
+available dAPIs and their chains.
 
-Both **Self-funded dAPIs** and **Managed dAPIs** are available on the
-[Market](https://market.api3.org/dapis).
+## Update Process
 
-| Self-funded dAPIs                                                               | Managed dAPIs                                         |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Single public [proxy contract](/reference/dapis/understand/proxy-contracts.md)  | Single public proxy contract                          |
-| 1% deviation                                                                    | Multiple deviations<br/>(0.25%, 0.5%, 1%)             |
-| 60 second [interval](/reference/dapis/understand/deviations.md#update-interval) | 30-60 second interval                                 |
-| 24 hour [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)        | 2 minute or 24 hour heartbeat                         |
-| Sourced from a single<br/>data feed (beacon)                                    | Sourced from multiple<br/>data feeds (beacons)        |
-| Gas costs are community funded                                                  | Gas costs are managed <br/>by API3 using upgrade fees |
+When a user places an order for a dAPI, the order will be created on-chain and
+the mapping for the dAPI will be updated to point to the particular
+`beaconSetId` with the requested deviation threshold and heartbeat.
 
-Development and expansion of dAPIs beyond self-funded and managed dAPIs will
-include OEV share. More details for OEV share will be forthcoming. Please
-feel-free to ask questions about the evolution of dAPIs on
-[Discord](https://discord.com/channels/758003776174030948/765618225144266793).
+::: info Note
+
+If you have already deployed your proxy contract to read from the dAPI, it will
+remain the same. Purchasing a better configuration will not change your proxy
+contract address for the dAPI.
+
+:::
+
+With dAPIs, dApps can have an option to configure the deviation threshold and
+heartbeat. For mainnet feeds, dApps have the following options to choose from
+based on the chain and dAPI:
+
+| Deviation | Heartbeat |
+| --------- | --------- |
+| 0.25%     | 24 hours  |
+| 0.5%      | 24 hours  |
+| 1%        | 24 hours  |
+| 5%        | 24 hours  |
+
+See the guide [Subscribing to dAPIs](/guides/dapis/subscribing-to-dapis/) and
+learn more on how to access dAPIs.
 
 <FlexEndTag/>

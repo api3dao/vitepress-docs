@@ -4,28 +4,12 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'dAPIs are data feeds',
+        text: 'dAPIs',
         link: '/reference/dapis/understand/',
-      },
-      {
-        text: 'Managed dAPIs',
-        link: '/reference/dapis/understand/managed',
-      },
-      {
-        text: 'Self-funded dAPIs',
-        link: '/reference/dapis/understand/self-funded',
-      },
-      {
-        text: 'Reading dAPIs',
-        link: '/reference/dapis/understand/read-dapis',
       },
       {
         text: 'Proxy contracts',
         link: '/reference/dapis/understand/proxy-contracts',
-      },
-      {
-        text: 'IProxy interface',
-        link: '/reference/dapis/understand/iproxy',
       },
       {
         text: 'Deviation thresholds',

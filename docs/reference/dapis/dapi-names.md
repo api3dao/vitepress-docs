@@ -27,7 +27,8 @@ favorable, e.g., in the context of an asset price data feed.
 When using a API3 Market proxy contract, a dApp smart contract does not use a
 `dapiName`. The `dapiName` is integrated into the proxy contract when it is
 deployed by the API3 Market UI. Access to the dAPI is done using the
-[IProxy](/reference/dapis/understand/iproxy.md) interface and the address of the
+[IProxy](/reference/dapis/understand/proxy-contracts.md#iproxy-interface-contracts)
+interface and the address of the
 [proxy contract](/reference/dapis/understand/proxy-contracts.md). There are
 hundreds of dAPIs available across many chains. Use the API3 Market to find a
 desired dAPI and acquire the address to its proxy contract.

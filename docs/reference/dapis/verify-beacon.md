@@ -38,13 +38,6 @@ section.
 
 ## Verifying beaconId
 
-From the [API3 Market](https://market.api3.org/dapis), navigate to the
-parameters page of a dAPI. As an example for
-[ETH/USD on Gnosis chain](https://market.api3.org/dapis/gnosis/ETH-USD/parameters)
-the parameters are as follows:
-
-<img src="./assets/images/dapi-parameters.png"/>
-
 The `templateId` is calculated by taking the hash of the `encodedParameters` and
 `endpointId`.
 
@@ -83,11 +76,11 @@ Following is an ethers.js v5 script to derive the `beaconSetId`.
 ```javascript
 import { ethers } from 'ethers';
 
+const beacons = [beaconId1, beaconId2, beaconId3];
+const sortedBeacons = beacons.sort();
+
 const beaconSetId = ethers.utils.keccak256(
-  ethers.utils.defaultAbiCoder.encode(
-    ['bytes32[]'],
-    [[beaconId1, beaconId2, beaconId3]]
-  )
+  ethers.utils.defaultAbiCoder.encode(['bytes32[]'], [sortedBeacons])
 );
 ```
 

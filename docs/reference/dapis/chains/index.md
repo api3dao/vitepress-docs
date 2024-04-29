@@ -18,9 +18,9 @@ tags:
 
 dAPIs can be read on the following chains using
 [proxy contracts](/reference/dapis/understand/proxy-contracts.md) via the
-[IProxy](/reference/dapis/understand/iproxy.md) interface. Use the
-[API3 Market](https://market.api3.org/) website to acquire proxy contract
-addresses.
+[IProxy](/reference/dapis/understand/proxy-contracts.md#iproxy-interface-contracts)
+interface. Use the [API3 Market](https://market.api3.org/) website to acquire
+proxy contract addresses.
 
 <!--@include: ./chains-list.md-->
 
