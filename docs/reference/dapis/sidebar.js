@@ -12,10 +12,6 @@ module.exports = [
         link: '/reference/dapis/understand/proxy-contracts',
       },
       {
-        text: 'IProxy interface',
-        link: '/reference/dapis/understand/iproxy',
-      },
-      {
         text: 'Deviation thresholds',
         link: '/reference/dapis/understand/deviations',
       },
