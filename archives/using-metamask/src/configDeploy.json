@@ -1,8 +1,0 @@
-{
-  "header": "Deploy HelloWorld.sol",
-  "description": "This step deploys the HelloWorld.sol contract onto the Goerli network.",
-  "action": "deploy",
-  "button": "Deploy",
-  "path": "/dev/using-metamask/HelloWorld.sol",
-  "localStorageRootKey": "hello_world_sol"
-}
