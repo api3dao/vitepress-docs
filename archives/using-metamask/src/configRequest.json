@@ -1,7 +1,0 @@
-{
-  "header": "Retrieve Greet Variable",
-  "description": "This step calls the HelloWorld.sol contract to retrieve the value of the greet variable.",
-  "action": "request",
-  "button": "Submit",
-  "localStorageRootKey": "hello_world_sol"
-}
