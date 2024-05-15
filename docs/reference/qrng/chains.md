@@ -124,9 +124,7 @@ several testnets.
 
 | Network                                                                               | ID        | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | ------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [{{getChainNameById(5)}}](https://goerli.etherscan.io)                                | 5         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io)                        | 11155111  | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
-| [{{getChainNameById(421613)}}](https://goerli.arbiscan.io/)                           | 421613    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(43113)}}](https://testnet.snowtrace.io)                           | 43113     | <code>0x7f5AF7a37a33898544717AAa6c35c111dCe95b28</code><CopyIcon text="0x7f5AF7a37a33898544717AAa6c35c111dCe95b28"/> | 1                |
 | [{{getChainNameById(84532)}}](https://sepolia-explorer.base.org)                      | 84532     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(168587773)}}](https://testnet.blastscan.io)                       | 168587773 | <code>0xD223DfDCb888CA1539bb3459a83c543A1608F038</code><CopyIcon text="0xD223DfDCb888CA1539bb3459a83c543A1608F038"/> | 1                |
@@ -135,8 +133,6 @@ several testnets.
 | [{{getChainNameById(1891)}}](https://pegasus.lightlink.io/)                           | 1891      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(200101)}}](https://explorer-devnet-cardano-evm.c1.milkomeda.com/) | 200101    | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(1287)}}](https://moonbase.moonscan.io)                            | 1287      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(420)}}](https://goerli-optimism.etherscan.io)                     | 420       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
-| [{{getChainNameById(80001)}}](https://mumbai.polygonscan.com)                         | 80001     | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(31)}}](https://explorer.testnet.rsk.co)                           | 31        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 
 </div>
@@ -187,7 +183,6 @@ Quintessence is available on selected mainnets and testnets.
 
 | Network                                                        | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
 | -------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [{{getChainNameById(5)}}](https://goerli.etherscan.io)         | 5        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 1                |
 | [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io) | 11155111 | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
 
 </div>
