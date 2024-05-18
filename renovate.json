@@ -1,6 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ]
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "schedule": ["before 4am on Monday"],
+      "groupName": "non-major-dev-dependencies"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "schedule": ["before 4am on Monday"],
+      "groupName": "non-major-dependencies"
+    }
+  ],
+  "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "reviewers": ["dcroote", "wkande"],
+  "dependencyDashboard": false
 }
