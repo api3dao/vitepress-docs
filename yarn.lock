@@ -143,13 +143,13 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@api3/chains@^4.17.0":
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.17.0.tgz#e990112dd33938dc36911638509dce5a405c3647"
-  integrity sha512-3o2f6DUwaKnjHJ3pZruWFpe2j9UvKtJsYDIhOYAGe02P0voWyDh+xVbCKPjPr1q75EGbftyK4OezK6vYx8LNTQ==
+"@api3/chains@^6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-6.3.0.tgz#90e5458dec2d8bfb2914659d6a84202a2c608d21"
+  integrity sha512-ZBurUD69aoA4oCuLOOJ/91+9VXYJaXnMz3HkWg+yuiwCK9DaIgpS2Pl6kagga3UDOT80unRXcCwUpTQF5fkYIw==
   dependencies:
-    viem "^2.9.6"
-    zod "^3.22.4"
+    viem "^2.9.29"
+    zod "^3.23.5"
 
 "@babel/parser@^7.23.3":
   version "7.23.5"
@@ -1096,10 +1096,10 @@ is-extendable@^0.1.0:
   resolved "https://registry.yarnpkg.com/is-extendable/-/is-extendable-0.1.1.tgz#62b110e289a471418e3ec36a617d472e301dfc89"
   integrity sha512-5BMULNob1vgFX6EjQw5izWDxrecWK9AM72rugNr0TFldMOi0fj6Jk+zeKIt0xGj4cEfQIJth4w3OKWOJ4f+AFw==
 
-isows@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/isows/-/isows-1.0.3.tgz#93c1cf0575daf56e7120bab5c8c448b0809d0d74"
-  integrity sha512-2cKei4vlmg2cxEjm3wVSqn8pcoRF/LX/wpifuuNquFO4SQmPwarClT+SUCA2lt+l581tTeZIPIZuIDo2jWN1fg==
+isows@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/isows/-/isows-1.0.4.tgz#810cd0d90cc4995c26395d2aa4cfa4037ebdf061"
+  integrity sha512-hEzjY+x9u9hPmBom9IIAqdJCwNLax+xrPb51vEPpERoFlIxgmZcHzsT5jKG06nvInKOBGvReAVz80Umed5CczQ==
 
 js-yaml@^3.13.1:
   version "3.14.1"
@@ -1480,10 +1480,10 @@ vfile@^6.0.0:
     unist-util-stringify-position "^4.0.0"
     vfile-message "^4.0.0"
 
-viem@^2.9.6:
-  version "2.9.16"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.16.tgz#2127871db1908a70798eddb820024b5f0ddc9152"
-  integrity sha512-FQRfN4G7uKEUs5DYvVrH/kZmTkwcSDpTBxnadpwG1EEP8nHm57WDpSaGN7PwSPVgJ6rMo5MENT5hgnqaNTlb2w==
+viem@^2.9.29:
+  version "2.10.9"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.10.9.tgz#2ccd69cb073b547507ea86c42c122daa3128af55"
+  integrity sha512-XsbEXhOcmQOkI80zDLW0EdksimNuYTS61HZ03vQYpHoug7gwVHDQ83nY+nuyT7punuFx0fmRG6+HZg3yVQhptQ==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
@@ -1491,7 +1491,7 @@ viem@^2.9.6:
     "@scure/bip32" "1.3.2"
     "@scure/bip39" "1.2.1"
     abitype "1.0.0"
-    isows "1.0.3"
+    isows "1.0.4"
     ws "8.13.0"
 
 vite@^5.0.2:
@@ -1575,10 +1575,10 @@ ws@8.5.0:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.5.0.tgz#bfb4be96600757fe5382de12c670dab984a1ed4f"
   integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
 
-zod@^3.22.4:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
-  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
+zod@^3.23.5:
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
 
 zwitch@^2.0.0, zwitch@^2.0.4:
   version "2.0.4"
