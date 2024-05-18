@@ -7,7 +7,7 @@
     "node": "20"
   },
   "resolutions": {
-    "watchpack": "2.4.0"
+    "watchpack": "2.4.1"
   },
   "scripts": {
     "sync:NotFound": "cp docs/_components/vitepress/NotFound.vue  node_modules/vitepress/dist/client/theme-default/NotFound.vue",
