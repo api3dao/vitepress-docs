@@ -80,7 +80,7 @@
     "NCFX",
     "Finnhub",
     "Kaiko",
-    "Tradermade",
+    "Tradermade","Vite"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
