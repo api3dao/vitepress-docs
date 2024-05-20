@@ -7,13 +7,6 @@
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
-    "id": "5",
-    "fullname": "Ethereum Goerli testnet",
-    "alias": "ethereum-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
     "id": "10",
     "fullname": "Optimism",
     "alias": "optimism",
@@ -84,20 +77,6 @@
     "contractAddress": "0xE338f63170c42bA0d2a888f18F6185369779009c"
   },
   {
-    "id": "420",
-    "fullname": "Optimism testnet",
-    "alias": "optimism-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
-    "id": "599",
-    "fullname": "Metis testnet",
-    "alias": "metis-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x5997C09be60196b7De9dE73C88dd7776f2875401"
-  },
-  {
     "id": "647",
     "fullname": "SX Network testnet",
     "alias": "sx-testnet",
@@ -140,13 +119,6 @@
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
   {
-    "id": "1442",
-    "fullname": "Polygon zkEVM testnet",
-    "alias": "polygon-zkevm-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
     "id": "1890",
     "fullname": "LightLink",
     "alias": "lightlink",
@@ -155,8 +127,8 @@
   },
   {
     "id": "1891",
-    "fullname": "LightLink Goerli Testnet",
-    "alias": "lightlink-goerli-testnet",
+    "fullname": "LightLink Sepolia testnet",
+    "alias": "lightlink-sepolia-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },
@@ -180,13 +152,6 @@
     "alias": "mantle",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
-    "id": "5001",
-    "fullname": "Mantle Goerli testnet",
-    "alias": "mantle-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778"
   },
   {
     "id": "8453",
@@ -238,13 +203,6 @@
     "contractAddress": "0x20C9e9610d4e719a39F82893b3f42e2730F42778"
   },
   {
-    "id": "59140",
-    "fullname": "Linea Goerli testnet",
-    "alias": "linea-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
     "id": "59144",
     "fullname": "Linea",
     "alias": "linea",
@@ -266,30 +224,9 @@
     "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
   },
   {
-    "id": "80001",
-    "fullname": "Polygon testnet",
-    "alias": "polygon-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
-    "id": "84531",
-    "fullname": "Base Goerli testnet",
-    "alias": "base-goerli-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
     "alias": "milkomeda-c1-testnet",
-    "contractName": "AirnodeRrpV0",
-    "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
-  },
-  {
-    "id": "421613",
-    "fullname": "Arbitrum testnet",
-    "alias": "arbitrum-goerli-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
   },

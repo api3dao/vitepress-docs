@@ -7,13 +7,6 @@
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
   {
-    "id": "5",
-    "fullname": "Ethereum Goerli testnet",
-    "alias": "ethereum-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "10",
     "fullname": "Optimism",
     "alias": "optimism",
@@ -82,20 +75,6 @@
     "alias": "sx",
     "contractName": "RequesterAuthorizerWithAirnode",
     "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38"
-  },
-  {
-    "id": "420",
-    "fullname": "Optimism testnet",
-    "alias": "optimism-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
-    "id": "599",
-    "fullname": "Metis testnet",
-    "alias": "metis-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xe40f1a1A546B70003D9ddF66B89C261cA46A0CF0"
   },
   {
     "id": "647",
@@ -203,23 +182,9 @@
     "contractAddress": "0x7D15b4676c7FFfdcb69E838518B2182223aE46d3"
   },
   {
-    "id": "80001",
-    "fullname": "Polygon testnet",
-    "alias": "polygon-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
     "alias": "milkomeda-c1-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
-    "id": "421613",
-    "fullname": "Arbitrum testnet",
-    "alias": "arbitrum-goerli-testnet",
     "contractName": "RequesterAuthorizerWithAirnode",
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },

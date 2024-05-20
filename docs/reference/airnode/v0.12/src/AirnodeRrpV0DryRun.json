@@ -7,13 +7,6 @@
     "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
   },
   {
-    "id": "5",
-    "fullname": "Ethereum Goerli testnet",
-    "alias": "ethereum-goerli-testnet",
-    "contractName": "AirnodeRrpV0DryRun",
-    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
-  },
-  {
     "id": "10",
     "fullname": "Optimism",
     "alias": "optimism",
@@ -82,20 +75,6 @@
     "alias": "sx",
     "contractName": "AirnodeRrpV0DryRun",
     "contractAddress": "0xEb9Ef2411608b9E6A14625110CD9349154b5e3ba"
-  },
-  {
-    "id": "420",
-    "fullname": "Optimism testnet",
-    "alias": "optimism-goerli-testnet",
-    "contractName": "AirnodeRrpV0DryRun",
-    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
-  },
-  {
-    "id": "599",
-    "fullname": "Metis testnet",
-    "alias": "metis-goerli-testnet",
-    "contractName": "AirnodeRrpV0DryRun",
-    "contractAddress": "0x4923968942E8aae4656ae4913874EB7312e0F7c7"
   },
   {
     "id": "647",
@@ -203,23 +182,9 @@
     "contractAddress": "0xbe28bd4921345dC632B3a55114091Be37b2DB739"
   },
   {
-    "id": "80001",
-    "fullname": "Polygon testnet",
-    "alias": "polygon-testnet",
-    "contractName": "AirnodeRrpV0DryRun",
-    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
-  },
-  {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
     "alias": "milkomeda-c1-testnet",
-    "contractName": "AirnodeRrpV0DryRun",
-    "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
-  },
-  {
-    "id": "421613",
-    "fullname": "Arbitrum testnet",
-    "alias": "arbitrum-goerli-testnet",
     "contractName": "AirnodeRrpV0DryRun",
     "contractAddress": "0x2e768206bf5112e7D7efAf1d9df614C26475193f"
   },
