@@ -17,7 +17,7 @@
     "docs:dev": "yarn sync:NotFound; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress dev docs",
     "docs:build": "yarn sync:NotFound; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress build docs;",
     "docs:serve": "vitepress serve docs --port 8082",
-    "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
+    "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --log-level silent",
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky",
     "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
