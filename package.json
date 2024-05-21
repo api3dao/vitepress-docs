@@ -24,7 +24,8 @@
     "flex:test": "node libs/flexTestSearch.js;",
     "axios:build": "node libs/axiosBuildScripts.js; yarn format;",
     "zip:create": "node libs/createZipFiles.js;",
-    "zip:config-check": "node libs/checkZipConfigs.js;"
+    "zip:config-check": "node libs/checkZipConfigs.js;",
+    "firebase:emulator": "yarn docs:build; yarn flex:build; yarn flex:test; firebase emulators:start"
   },
   "devDependencies": {
     "@api3/chains": "^6.3.0",
