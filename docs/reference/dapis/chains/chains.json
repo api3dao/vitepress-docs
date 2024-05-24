@@ -1,18 +1,4 @@
 {
-  "arbitrum-goerli-testnet": {
-    "id": "421613",
-    "alias": "arbitrum-goerli-testnet",
-    "name": "Arbitrum testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://testnet.arbiscan.io/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
   "arbitrum": {
     "id": "42161",
     "alias": "arbitrum",
@@ -31,7 +17,7 @@
     "id": "43113",
     "alias": "avalanche-testnet",
     "name": "Avalanche testnet",
-    "nativeToken": "testAVAX",
+    "nativeToken": "AVAX",
     "testnet": true,
     "explorerUrl": "https://testnet.snowtrace.io/",
     "contracts": {
@@ -55,20 +41,6 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
-  "base-goerli-testnet": {
-    "id": "84531",
-    "alias": "base-goerli-testnet",
-    "name": "Base Goerli testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://goerli.basescan.org/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
   "base": {
     "id": "8453",
     "alias": "base",
@@ -83,11 +55,39 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "blast-sepolia-testnet": {
+    "id": "168587773",
+    "alias": "blast-sepolia-testnet",
+    "name": "Blast Sepolia Testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.blastscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "blast": {
+    "id": "81457",
+    "alias": "blast",
+    "name": "Blast",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://blastscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "bsc-testnet": {
     "id": "97",
     "alias": "bsc-testnet",
     "name": "BNB Smart Chain testnet",
-    "nativeToken": "testBNB",
+    "nativeToken": "BNB",
     "testnet": true,
     "explorerUrl": "https://testnet.bscscan.com/",
     "contracts": {
@@ -111,39 +111,11 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
-  "cronos-testnet": {
-    "id": "338",
-    "alias": "cronos-testnet",
-    "name": "Cronos testnet",
-    "nativeToken": "testCRO",
-    "testnet": true,
-    "explorerUrl": "https://cronos.org/explorer/testnet3/",
-    "contracts": {
-      "Api3ServerV1": "0x33E6C2f5Fa6aA18254927F55b0C5b5B975Ec1358",
-      "AccessControlRegistry": "0x8984152339F9D35742BB878D0eaD9EF9fd6469d3",
-      "OwnableCallForwarder": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
-      "ProxyFactory": "0xC3E76D8829259f2A34541746de2F8A0509Dc1987"
-    }
-  },
-  "ethereum-goerli-testnet": {
-    "id": "5",
-    "alias": "ethereum-goerli-testnet",
-    "name": "Ethereum Goerli testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://goerli.etherscan.io/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
   "ethereum-sepolia-testnet": {
     "id": "11155111",
     "alias": "ethereum-sepolia-testnet",
     "name": "Ethereum Sepolia testnet",
-    "nativeToken": "testETH",
+    "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.etherscan.io/",
     "contracts": {
@@ -171,7 +143,7 @@
     "id": "4002",
     "alias": "fantom-testnet",
     "name": "Fantom testnet",
-    "nativeToken": "testFTM",
+    "nativeToken": "FTM",
     "testnet": true,
     "explorerUrl": "https://testnet.ftmscan.com/",
     "contracts": {
@@ -199,7 +171,7 @@
     "id": "10200",
     "alias": "gnosis-testnet",
     "name": "Gnosis Chain testnet",
-    "nativeToken": "testxDAI",
+    "nativeToken": "xDAI",
     "testnet": true,
     "explorerUrl": "https://gnosis-chiado.blockscout.com/",
     "contracts": {
@@ -227,7 +199,7 @@
     "id": "2221",
     "alias": "kava-testnet",
     "name": "Kava testnet",
-    "nativeToken": "testKAVA",
+    "nativeToken": "KAVA",
     "testnet": true,
     "explorerUrl": "https://testnet.kavascan.com/",
     "contracts": {
@@ -251,20 +223,6 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
-  "linea-goerli-testnet": {
-    "id": "59140",
-    "alias": "linea-goerli-testnet",
-    "name": "Linea Goerli testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://goerli.lineascan.build/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
   "linea": {
     "id": "59144",
     "alias": "linea",
@@ -272,20 +230,6 @@
     "nativeToken": "ETH",
     "testnet": false,
     "explorerUrl": "https://lineascan.build/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "mantle-goerli-testnet": {
-    "id": "5001",
-    "alias": "mantle-goerli-testnet",
-    "name": "Mantle Goerli testnet",
-    "nativeToken": "testMNT",
-    "testnet": true,
-    "explorerUrl": "https://explorer.testnet.mantle.xyz/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -311,7 +255,7 @@
     "id": "1287",
     "alias": "moonbeam-testnet",
     "name": "Moonbeam testnet",
-    "nativeToken": "testGLMR",
+    "nativeToken": "GLMR",
     "testnet": true,
     "explorerUrl": "https://moonbase.moonscan.io/",
     "contracts": {
@@ -349,20 +293,6 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
-  "optimism-goerli-testnet": {
-    "id": "420",
-    "alias": "optimism-goerli-testnet",
-    "name": "Optimism testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://goerli-optimism.etherscan.io/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
   "optimism": {
     "id": "10",
     "alias": "optimism",
@@ -370,34 +300,6 @@
     "nativeToken": "ETH",
     "testnet": false,
     "explorerUrl": "https://optimistic.etherscan.io/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "polygon-testnet": {
-    "id": "80001",
-    "alias": "polygon-testnet",
-    "name": "Polygon testnet",
-    "nativeToken": "testMATIC",
-    "testnet": true,
-    "explorerUrl": "https://mumbai.polygonscan.com/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "polygon-zkevm-goerli-testnet": {
-    "id": "1442",
-    "alias": "polygon-zkevm-goerli-testnet",
-    "name": "Polygon zkEVM testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://testnet-zkevm.polygonscan.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -433,20 +335,6 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
-  "rsk-testnet": {
-    "id": "31",
-    "alias": "rsk-testnet",
-    "name": "Rootstock testnet",
-    "nativeToken": "testRBTC",
-    "testnet": true,
-    "explorerUrl": "https://explorer.testnet.rsk.co/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
   "rsk": {
     "id": "30",
     "alias": "rsk",
@@ -454,20 +342,6 @@
     "nativeToken": "RBTC",
     "testnet": false,
     "explorerUrl": "https://explorer.rsk.co/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "scroll-goerli-testnet": {
-    "id": "534353",
-    "alias": "scroll-goerli-testnet",
-    "name": "Scroll Goerli testnet",
-    "nativeToken": "testETH",
-    "testnet": true,
-    "explorerUrl": "https://blockscout.scroll.io/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",

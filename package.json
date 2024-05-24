@@ -17,24 +17,25 @@
     "docs:dev": "yarn sync:NotFound; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress dev docs",
     "docs:build": "yarn sync:NotFound; yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress build docs;",
     "docs:serve": "vitepress serve docs --port 8082",
-    "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
+    "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --log-level silent",
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky",
     "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
     "flex:test": "node libs/flexTestSearch.js;",
     "axios:build": "node libs/axiosBuildScripts.js; yarn format;",
     "zip:create": "node libs/createZipFiles.js;",
-    "zip:config-check": "node libs/checkZipConfigs.js;"
+    "zip:config-check": "node libs/checkZipConfigs.js;",
+    "firebase:emulator": "yarn docs:build; yarn flex:build; yarn flex:test; firebase emulators:start"
   },
   "devDependencies": {
-    "@api3/chains": "^6.2.0",
+    "@api3/chains": "^6.3.0",
     "adm-zip": "^0.5.12",
-    "axios": "^1.6.8",
+    "axios": "^1.7.1",
     "colors": "^1.4.0",
     "diff": "^5.2.0",
-    "ethers": "^6.5.1",
+    "ethers": "^6.12.1",
     "file": "^0.2.2",
-    "flexsearch": "^0.7.31",
+    "flexsearch": "^0.7.43",
     "fs-extra": "^11.2.0",
     "gray-matter": "^4.0.3",
     "html-dom-parser": "^3.1.7",
@@ -43,7 +44,7 @@
     "oust": "^2.0.4",
     "prettier": "^3.2.5",
     "tiny-emitter": "^2.1.0",
-    "vitepress": "^1.0.0-rc.31",
+    "vitepress": "^1.2.0",
     "walk-sync": "^3.0.0"
   }
 }

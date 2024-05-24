@@ -207,6 +207,15 @@
     "tags": null
   },
   "24": {
+    "title": "Oracle Extractable Value (OEV)",
+    "sidebarHeader": "Explore",
+    "sidebarSubHeader": null,
+    "pageHeader": "Explore → About our journey!",
+    "path": "/explore/introduction/OEV.html",
+    "outline": "deep",
+    "tags": null
+  },
+  "25": {
     "title": "What is QRNG?",
     "sidebarHeader": "Explore",
     "sidebarSubHeader": null,
@@ -215,7 +224,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu", "random"]
   },
-  "25": {
+  "26": {
     "title": "Getting Started",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -224,7 +233,7 @@
     "outline": "deep",
     "tags": null
   },
-  "26": {
+  "27": {
     "title": "Monorepo Examples",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -233,7 +242,7 @@
     "outline": "deep",
     "tags": null
   },
-  "27": {
+  "28": {
     "title": "Making an RRP Request",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -242,7 +251,7 @@
     "outline": "deep",
     "tags": null
   },
-  "28": {
+  "29": {
     "title": "Making RRP Template Requests",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -250,7 +259,7 @@
     "path": "/guides/airnode/using-rrp-templates.html",
     "outline": "deep"
   },
-  "29": {
+  "30": {
     "title": "Calling an Airnode",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -259,7 +268,7 @@
     "outline": "deep",
     "tags": ["airnode", "calling an airnode"]
   },
-  "30": {
+  "31": {
     "title": "Deploying an Airnode on AWS",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -268,7 +277,7 @@
     "outline": "deep",
     "tags": null
   },
-  "31": {
+  "32": {
     "title": "Deploying an Airnode locally using Docker",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -277,7 +286,7 @@
     "outline": "deep",
     "tags": null
   },
-  "32": {
+  "33": {
     "title": "Deploying an Airnode on Google Cloud",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -286,7 +295,7 @@
     "outline": "deep",
     "tags": null
   },
-  "33": {
+  "34": {
     "title": "Generating the Airnode Config using ChainAPI",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -295,7 +304,7 @@
     "outline": "deep",
     "tags": ["airnode", "deploy airnode", "chainapi"]
   },
-  "34": {
+  "35": {
     "title": "Post processing",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -304,7 +313,7 @@
     "outline": "deep",
     "tags": null
   },
-  "35": {
+  "36": {
     "title": "DAO Dashboard",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -313,7 +322,7 @@
     "outline": "deep",
     "tags": ["dao", "guides"]
   },
-  "36": {
+  "37": {
     "title": "Working with Proposals",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -322,7 +331,7 @@
     "outline": "deep",
     "tags": ["dao", "proposals", "history", "ens", "ipfs", "guides"]
   },
-  "37": {
+  "38": {
     "title": "Staking Tokens",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -331,7 +340,7 @@
     "outline": "deep",
     "tags": ["dao", "staking", "deposit", "withdraw", "unstake", "guides"]
   },
-  "38": {
+  "39": {
     "title": "Videos",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -340,7 +349,7 @@
     "outline": "deep",
     "tags": ["dao", "members", "dao members", "guides", "videos"]
   },
-  "39": {
+  "40": {
     "title": "How to Vote",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -349,7 +358,7 @@
     "outline": "deep",
     "tags": ["dao", "voting", "guides"]
   },
-  "40": {
+  "41": {
     "title": "Getting Started with dAPIs",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -357,15 +366,6 @@
     "path": "/guides/dapis/index.html",
     "outline": "deep",
     "tags": ["dapis", "getting started"]
-  },
-  "41": {
-    "title": "Automate funding of multiple Self-Funded dAPIs with Gelato",
-    "sidebarHeader": "Guides",
-    "sidebarSubHeader": null,
-    "pageHeader": "Guides → dAPIs",
-    "path": "/guides/dapis/funding-multiple-dapis-gelato/index.html",
-    "outline": "deep",
-    "tags": null
   },
   "42": {
     "title": "Reading a dAPI proxy",
@@ -377,24 +377,15 @@
     "tags": null
   },
   "43": {
-    "title": "Subscribing to Managed dAPIs",
+    "title": "Subscribing to dAPIs",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
-    "pageHeader": "Guides → dAPIs → Subscribing to dAPIs",
-    "path": "/guides/dapis/subscribing-managed-dapis/index.html",
+    "pageHeader": "Guides → dAPIs",
+    "path": "/guides/dapis/subscribing-to-dapis/index.html",
     "outline": "deep",
     "tags": null
   },
   "44": {
-    "title": "Subscribing to Self-Funded dAPIs",
-    "sidebarHeader": "Guides",
-    "sidebarSubHeader": null,
-    "pageHeader": "Guides → dAPIs → Subscribing to dAPIs",
-    "path": "/guides/dapis/subscribing-self-funded-dapis/index.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "45": {
     "title": "Create an Infura key",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -403,7 +394,7 @@
     "outline": "deep",
     "tags": null
   },
-  "46": {
+  "45": {
     "title": "Remix Reload Contract",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -412,7 +403,7 @@
     "outline": "deep",
     "tags": null
   },
-  "47": {
+  "46": {
     "title": "Add testnets to MetaMask",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -421,7 +412,7 @@
     "outline": "deep",
     "tags": null
   },
-  "48": {
+  "47": {
     "title": "Getting Started with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -430,7 +421,7 @@
     "outline": "deep",
     "tags": ["qrng", "getting started"]
   },
-  "49": {
+  "48": {
     "title": "Building a Lottery with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -439,7 +430,7 @@
     "outline": "deep",
     "tags": null
   },
-  "50": {
+  "49": {
     "title": "Using QRNG - Remix Example",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -448,7 +439,7 @@
     "outline": "deep",
     "tags": ["qrng"]
   },
-  "51": {
+  "50": {
     "title": "Minting Dynamic NFTs with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -457,7 +448,7 @@
     "outline": "deep",
     "tags": ["qrng"]
   },
-  "52": {
+  "51": {
     "title": "Building an on-chain Roulette with QRNG",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -466,7 +457,7 @@
     "outline": "deep",
     "tags": null
   },
-  "53": {
+  "52": {
     "title": "QRNG YouTube Demos",
     "sidebarHeader": "Guides",
     "sidebarSubHeader": null,
@@ -475,7 +466,7 @@
     "outline": "deep",
     "tags": null
   },
-  "54": {
+  "53": {
     "title": "Chain Idiosyncrasies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -485,7 +476,7 @@
     "outline": "deep",
     "tags": null
   },
-  "55": {
+  "54": {
     "title": "Cloud Resources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -495,7 +486,7 @@
     "outline": "deep",
     "tags": null
   },
-  "56": {
+  "55": {
     "title": "Contract Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -505,7 +496,7 @@
     "outline": "deep",
     "tags": null
   },
-  "57": {
+  "56": {
     "title": "Migration Guide",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -515,7 +506,7 @@
     "outline": "deep",
     "tags": null
   },
-  "58": {
+  "57": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -525,7 +516,7 @@
     "outline": "deep",
     "tags": null
   },
-  "59": {
+  "58": {
     "title": "Airnode Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -535,7 +526,7 @@
     "outline": "deep",
     "tags": null
   },
-  "60": {
+  "59": {
     "title": "Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -545,7 +536,7 @@
     "outline": "deep",
     "tags": null
   },
-  "61": {
+  "60": {
     "title": "Authorizations",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -555,7 +546,7 @@
     "outline": "deep",
     "tags": null
   },
-  "62": {
+  "61": {
     "title": "Authorizers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -565,7 +556,7 @@
     "outline": "deep",
     "tags": null
   },
-  "63": {
+  "62": {
     "title": "Chain Providers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -575,7 +566,7 @@
     "outline": "deep",
     "tags": null
   },
-  "64": {
+  "63": {
     "title": "Endpoint",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -585,7 +576,7 @@
     "outline": "deep",
     "tags": null
   },
-  "65": {
+  "64": {
     "title": "Gas Price Strategies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -595,7 +586,7 @@
     "outline": "deep",
     "tags": null
   },
-  "66": {
+  "65": {
     "title": "Request-Response Protocol",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -605,7 +596,7 @@
     "outline": "deep",
     "tags": null
   },
-  "67": {
+  "66": {
     "title": "Relayed Meta Data Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -615,7 +606,7 @@
     "outline": "deep",
     "tags": null
   },
-  "68": {
+  "67": {
     "title": "Request",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -625,7 +616,7 @@
     "outline": "deep",
     "tags": null
   },
-  "69": {
+  "68": {
     "title": "Requester",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -635,7 +626,7 @@
     "outline": "deep",
     "tags": null
   },
-  "70": {
+  "69": {
     "title": "Sponsor",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -645,7 +636,7 @@
     "outline": "deep",
     "tags": null
   },
-  "71": {
+  "70": {
     "title": "Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -655,7 +646,7 @@
     "outline": "deep",
     "tags": null
   },
-  "72": {
+  "71": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -665,7 +656,7 @@
     "outline": "deep",
     "tags": null
   },
-  "73": {
+  "72": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -675,7 +666,7 @@
     "outline": "deep",
     "tags": null
   },
-  "74": {
+  "73": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -685,7 +676,7 @@
     "outline": "deep",
     "tags": null
   },
-  "75": {
+  "74": {
     "title": "receipt.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -695,7 +686,7 @@
     "outline": "deep",
     "tags": null
   },
-  "76": {
+  "75": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -705,7 +696,7 @@
     "outline": "deep",
     "tags": null
   },
-  "77": {
+  "76": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -714,7 +705,7 @@
     "outline": "deep",
     "tags": null
   },
-  "78": {
+  "77": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -724,7 +715,7 @@
     "outline": "deep",
     "tags": null
   },
-  "79": {
+  "78": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -734,7 +725,7 @@
     "outline": "deep",
     "tags": null
   },
-  "80": {
+  "79": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -744,7 +735,7 @@
     "outline": "deep",
     "tags": null
   },
-  "81": {
+  "80": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -754,7 +745,7 @@
     "outline": "deep",
     "tags": null
   },
-  "82": {
+  "81": {
     "title": "OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -764,7 +755,7 @@
     "outline": "deep",
     "tags": null
   },
-  "83": {
+  "82": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -774,7 +765,7 @@
     "outline": "deep",
     "tags": null
   },
-  "84": {
+  "83": {
     "title": "Fees",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -784,7 +775,7 @@
     "outline": "deep",
     "tags": null
   },
-  "85": {
+  "84": {
     "title": "Airnode RRP",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -794,7 +785,7 @@
     "outline": "deep",
     "tags": null
   },
-  "86": {
+  "85": {
     "title": "Requesters and Sponsors",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -804,7 +795,7 @@
     "outline": "deep",
     "tags": null
   },
-  "87": {
+  "86": {
     "title": "Using Templates (RRP)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -814,7 +805,7 @@
     "outline": "deep",
     "tags": null
   },
-  "88": {
+  "87": {
     "title": "Verify Airnode Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -824,7 +815,7 @@
     "outline": "deep",
     "tags": null
   },
-  "89": {
+  "88": {
     "title": "Admin CLI Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -834,7 +825,7 @@
     "outline": "deep",
     "tags": null
   },
-  "90": {
+  "89": {
     "title": "Client Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -844,7 +835,7 @@
     "outline": "deep",
     "tags": null
   },
-  "91": {
+  "90": {
     "title": "AWS/GCP Deployer Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -854,7 +845,7 @@
     "outline": "deep",
     "tags": null
   },
-  "92": {
+  "91": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -864,7 +855,7 @@
     "outline": "deep",
     "tags": null
   },
-  "93": {
+  "92": {
     "title": "Adapter",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -874,7 +865,7 @@
     "outline": "deep",
     "tags": null
   },
-  "94": {
+  "93": {
     "title": "Admin CLI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -884,7 +875,7 @@
     "outline": "deep",
     "tags": null
   },
-  "95": {
+  "94": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -894,7 +885,7 @@
     "outline": "deep",
     "tags": null
   },
-  "96": {
+  "95": {
     "title": "Deployer",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -904,7 +895,7 @@
     "outline": "deep",
     "tags": null
   },
-  "97": {
+  "96": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -914,7 +905,7 @@
     "outline": "deep",
     "tags": null
   },
-  "98": {
+  "97": {
     "title": "Validator",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -924,7 +915,7 @@
     "outline": "deep",
     "tags": null
   },
-  "99": {
+  "98": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -934,7 +925,7 @@
     "outline": "deep",
     "tags": null
   },
-  "100": {
+  "99": {
     "title": "Oracle Integration Specifications (OIS)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -944,7 +935,7 @@
     "outline": "deep",
     "tags": null
   },
-  "101": {
+  "100": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -954,7 +945,7 @@
     "outline": "deep",
     "tags": null
   },
-  "102": {
+  "101": {
     "title": "API Integration",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -964,7 +955,7 @@
     "outline": "deep",
     "tags": null
   },
-  "103": {
+  "102": {
     "title": "API Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -974,7 +965,7 @@
     "outline": "deep",
     "tags": null
   },
-  "104": {
+  "103": {
     "title": "Using Authorizers (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -984,7 +975,7 @@
     "outline": "deep",
     "tags": null
   },
-  "105": {
+  "104": {
     "title": "Configuring Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -994,7 +985,7 @@
     "outline": "deep",
     "tags": null
   },
-  "106": {
+  "105": {
     "title": "Deploying Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1004,7 +995,7 @@
     "outline": "deep",
     "tags": null
   },
-  "107": {
+  "106": {
     "title": "Heartbeat (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1014,7 +1005,7 @@
     "outline": "deep",
     "tags": null
   },
-  "108": {
+  "107": {
     "title": "HTTP Gateways (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1024,7 +1015,7 @@
     "outline": "deep",
     "tags": null
   },
-  "109": {
+  "108": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1034,7 +1025,7 @@
     "outline": "deep",
     "tags": null
   },
-  "110": {
+  "109": {
     "title": "Monitor Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1044,7 +1035,7 @@
     "outline": "deep",
     "tags": null
   },
-  "111": {
+  "110": {
     "title": "OEV Gateway (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1054,7 +1045,7 @@
     "outline": "deep",
     "tags": null
   },
-  "112": {
+  "111": {
     "title": "Using Authorizations (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1064,7 +1055,7 @@
     "outline": "deep",
     "tags": null
   },
-  "113": {
+  "112": {
     "title": "Chain Idiosyncrasies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1074,7 +1065,7 @@
     "outline": "deep",
     "tags": null
   },
-  "114": {
+  "113": {
     "title": "Cloud Resources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1084,7 +1075,7 @@
     "outline": "deep",
     "tags": null
   },
-  "115": {
+  "114": {
     "title": "Contract Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1094,7 +1085,7 @@
     "outline": "deep",
     "tags": null
   },
-  "116": {
+  "115": {
     "title": "Migration Guide",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1104,7 +1095,7 @@
     "outline": "deep",
     "tags": null
   },
-  "117": {
+  "116": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1114,7 +1105,7 @@
     "outline": "deep",
     "tags": null
   },
-  "118": {
+  "117": {
     "title": "Airnode Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1124,7 +1115,7 @@
     "outline": "deep",
     "tags": null
   },
-  "119": {
+  "118": {
     "title": "Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1134,7 +1125,7 @@
     "outline": "deep",
     "tags": null
   },
-  "120": {
+  "119": {
     "title": "Authorizations",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1144,7 +1135,7 @@
     "outline": "deep",
     "tags": null
   },
-  "121": {
+  "120": {
     "title": "Authorizers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1154,7 +1145,7 @@
     "outline": "deep",
     "tags": null
   },
-  "122": {
+  "121": {
     "title": "Chain Providers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1164,7 +1155,7 @@
     "outline": "deep",
     "tags": null
   },
-  "123": {
+  "122": {
     "title": "Endpoint",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1174,7 +1165,7 @@
     "outline": "deep",
     "tags": null
   },
-  "124": {
+  "123": {
     "title": "Gas Price Strategies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1184,7 +1175,7 @@
     "outline": "deep",
     "tags": null
   },
-  "125": {
+  "124": {
     "title": "Request-Response Protocol",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1194,7 +1185,7 @@
     "outline": "deep",
     "tags": null
   },
-  "126": {
+  "125": {
     "title": "Relayed Meta Data Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1204,7 +1195,7 @@
     "outline": "deep",
     "tags": null
   },
-  "127": {
+  "126": {
     "title": "Request",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1214,7 +1205,7 @@
     "outline": "deep",
     "tags": null
   },
-  "128": {
+  "127": {
     "title": "Requester",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1224,7 +1215,7 @@
     "outline": "deep",
     "tags": null
   },
-  "129": {
+  "128": {
     "title": "Sponsor",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1234,7 +1225,7 @@
     "outline": "deep",
     "tags": null
   },
-  "130": {
+  "129": {
     "title": "Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1244,7 +1235,7 @@
     "outline": "deep",
     "tags": null
   },
-  "131": {
+  "130": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1254,7 +1245,7 @@
     "outline": "deep",
     "tags": null
   },
-  "132": {
+  "131": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1264,7 +1255,7 @@
     "outline": "deep",
     "tags": null
   },
-  "133": {
+  "132": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1274,7 +1265,7 @@
     "outline": "deep",
     "tags": null
   },
-  "134": {
+  "133": {
     "title": "receipt.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1284,7 +1275,7 @@
     "outline": "deep",
     "tags": null
   },
-  "135": {
+  "134": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1294,7 +1285,7 @@
     "outline": "deep",
     "tags": null
   },
-  "136": {
+  "135": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1303,7 +1294,7 @@
     "outline": "deep",
     "tags": null
   },
-  "137": {
+  "136": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1313,7 +1304,7 @@
     "outline": "deep",
     "tags": null
   },
-  "138": {
+  "137": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1323,7 +1314,7 @@
     "outline": "deep",
     "tags": null
   },
-  "139": {
+  "138": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1333,7 +1324,7 @@
     "outline": "deep",
     "tags": null
   },
-  "140": {
+  "139": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1343,7 +1334,7 @@
     "outline": "deep",
     "tags": null
   },
-  "141": {
+  "140": {
     "title": "OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1353,7 +1344,7 @@
     "outline": "deep",
     "tags": null
   },
-  "142": {
+  "141": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1363,7 +1354,7 @@
     "outline": "deep",
     "tags": null
   },
-  "143": {
+  "142": {
     "title": "Fees",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1373,7 +1364,7 @@
     "outline": "deep",
     "tags": null
   },
-  "144": {
+  "143": {
     "title": "Airnode RRP",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1383,7 +1374,7 @@
     "outline": "deep",
     "tags": null
   },
-  "145": {
+  "144": {
     "title": "Requesters and Sponsors",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1393,7 +1384,7 @@
     "outline": "deep",
     "tags": null
   },
-  "146": {
+  "145": {
     "title": "Using Templates (RRP)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1403,7 +1394,7 @@
     "outline": "deep",
     "tags": null
   },
-  "147": {
+  "146": {
     "title": "Verify Airnode Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1413,7 +1404,7 @@
     "outline": "deep",
     "tags": null
   },
-  "148": {
+  "147": {
     "title": "Admin CLI Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1423,7 +1414,7 @@
     "outline": "deep",
     "tags": null
   },
-  "149": {
+  "148": {
     "title": "Client Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1433,7 +1424,7 @@
     "outline": "deep",
     "tags": null
   },
-  "150": {
+  "149": {
     "title": "AWS/GCP Deployer Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1443,7 +1434,7 @@
     "outline": "deep",
     "tags": null
   },
-  "151": {
+  "150": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1453,7 +1444,7 @@
     "outline": "deep",
     "tags": null
   },
-  "152": {
+  "151": {
     "title": "Adapter",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1463,7 +1454,7 @@
     "outline": "deep",
     "tags": null
   },
-  "153": {
+  "152": {
     "title": "Admin CLI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1473,7 +1464,7 @@
     "outline": "deep",
     "tags": null
   },
-  "154": {
+  "153": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1483,7 +1474,7 @@
     "outline": "deep",
     "tags": null
   },
-  "155": {
+  "154": {
     "title": "Deployer",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1493,7 +1484,7 @@
     "outline": "deep",
     "tags": null
   },
-  "156": {
+  "155": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1503,7 +1494,7 @@
     "outline": "deep",
     "tags": null
   },
-  "157": {
+  "156": {
     "title": "Validator",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1513,7 +1504,7 @@
     "outline": "deep",
     "tags": null
   },
-  "158": {
+  "157": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1523,7 +1514,7 @@
     "outline": "deep",
     "tags": null
   },
-  "159": {
+  "158": {
     "title": "Oracle Integration Specifications (OIS)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1533,7 +1524,7 @@
     "outline": "deep",
     "tags": null
   },
-  "160": {
+  "159": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1543,7 +1534,7 @@
     "outline": "deep",
     "tags": null
   },
-  "161": {
+  "160": {
     "title": "API Integration",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1553,7 +1544,7 @@
     "outline": "deep",
     "tags": null
   },
-  "162": {
+  "161": {
     "title": "API Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1563,7 +1554,7 @@
     "outline": "deep",
     "tags": null
   },
-  "163": {
+  "162": {
     "title": "Using Authorizers (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1573,7 +1564,7 @@
     "outline": "deep",
     "tags": null
   },
-  "164": {
+  "163": {
     "title": "Configuring Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1583,7 +1574,7 @@
     "outline": "deep",
     "tags": null
   },
-  "165": {
+  "164": {
     "title": "Deploying Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1593,7 +1584,7 @@
     "outline": "deep",
     "tags": null
   },
-  "166": {
+  "165": {
     "title": "Heartbeat (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1603,7 +1594,7 @@
     "outline": "deep",
     "tags": null
   },
-  "167": {
+  "166": {
     "title": "HTTP Gateways (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1613,7 +1604,7 @@
     "outline": "deep",
     "tags": null
   },
-  "168": {
+  "167": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1623,7 +1614,7 @@
     "outline": "deep",
     "tags": null
   },
-  "169": {
+  "168": {
     "title": "Monitor Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1633,7 +1624,7 @@
     "outline": "deep",
     "tags": null
   },
-  "170": {
+  "169": {
     "title": "OEV Gateway (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1643,7 +1634,7 @@
     "outline": "deep",
     "tags": null
   },
-  "171": {
+  "170": {
     "title": "Using Authorizations (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1653,7 +1644,7 @@
     "outline": "deep",
     "tags": null
   },
-  "172": {
+  "171": {
     "title": "Chain Idiosyncrasies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1663,7 +1654,7 @@
     "outline": "deep",
     "tags": null
   },
-  "173": {
+  "172": {
     "title": "Cloud Resources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1673,7 +1664,7 @@
     "outline": "deep",
     "tags": null
   },
-  "174": {
+  "173": {
     "title": "Contract Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1683,7 +1674,7 @@
     "outline": "deep",
     "tags": null
   },
-  "175": {
+  "174": {
     "title": "Migration Guide",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1693,7 +1684,7 @@
     "outline": "deep",
     "tags": null
   },
-  "176": {
+  "175": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1703,7 +1694,7 @@
     "outline": "deep",
     "tags": null
   },
-  "177": {
+  "176": {
     "title": "Airnode Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1713,7 +1704,7 @@
     "outline": "deep",
     "tags": null
   },
-  "178": {
+  "177": {
     "title": "Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1723,7 +1714,7 @@
     "outline": "deep",
     "tags": null
   },
-  "179": {
+  "178": {
     "title": "Authorizations",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1733,7 +1724,7 @@
     "outline": "deep",
     "tags": null
   },
-  "180": {
+  "179": {
     "title": "Authorizers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1743,7 +1734,7 @@
     "outline": "deep",
     "tags": null
   },
-  "181": {
+  "180": {
     "title": "Chain Providers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1753,7 +1744,7 @@
     "outline": "deep",
     "tags": null
   },
-  "182": {
+  "181": {
     "title": "Endpoint",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1763,7 +1754,7 @@
     "outline": "deep",
     "tags": null
   },
-  "183": {
+  "182": {
     "title": "Gas Price Strategies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1773,7 +1764,7 @@
     "outline": "deep",
     "tags": null
   },
-  "184": {
+  "183": {
     "title": "Request-Response Protocol",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1783,7 +1774,7 @@
     "outline": "deep",
     "tags": null
   },
-  "185": {
+  "184": {
     "title": "Relayed Meta Data Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1793,7 +1784,7 @@
     "outline": "deep",
     "tags": null
   },
-  "186": {
+  "185": {
     "title": "Request",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1803,7 +1794,7 @@
     "outline": "deep",
     "tags": null
   },
-  "187": {
+  "186": {
     "title": "Requester",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1813,7 +1804,7 @@
     "outline": "deep",
     "tags": null
   },
-  "188": {
+  "187": {
     "title": "Sponsor",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1823,7 +1814,7 @@
     "outline": "deep",
     "tags": null
   },
-  "189": {
+  "188": {
     "title": "Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1833,7 +1824,7 @@
     "outline": "deep",
     "tags": null
   },
-  "190": {
+  "189": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1843,7 +1834,7 @@
     "outline": "deep",
     "tags": null
   },
-  "191": {
+  "190": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1853,7 +1844,7 @@
     "outline": "deep",
     "tags": null
   },
-  "192": {
+  "191": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1863,7 +1854,7 @@
     "outline": "deep",
     "tags": null
   },
-  "193": {
+  "192": {
     "title": "receipt.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1873,7 +1864,7 @@
     "outline": "deep",
     "tags": null
   },
-  "194": {
+  "193": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1883,7 +1874,7 @@
     "outline": "deep",
     "tags": null
   },
-  "195": {
+  "194": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1892,7 +1883,7 @@
     "outline": "deep",
     "tags": null
   },
-  "196": {
+  "195": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1902,7 +1893,7 @@
     "outline": "deep",
     "tags": null
   },
-  "197": {
+  "196": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1912,7 +1903,7 @@
     "outline": "deep",
     "tags": null
   },
-  "198": {
+  "197": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1922,7 +1913,7 @@
     "outline": "deep",
     "tags": null
   },
-  "199": {
+  "198": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1932,7 +1923,7 @@
     "outline": "deep",
     "tags": null
   },
-  "200": {
+  "199": {
     "title": "OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1942,7 +1933,7 @@
     "outline": "deep",
     "tags": null
   },
-  "201": {
+  "200": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1952,7 +1943,7 @@
     "outline": "deep",
     "tags": null
   },
-  "202": {
+  "201": {
     "title": "Fees",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1962,7 +1953,7 @@
     "outline": "deep",
     "tags": null
   },
-  "203": {
+  "202": {
     "title": "Airnode RRP",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1972,7 +1963,7 @@
     "outline": "deep",
     "tags": null
   },
-  "204": {
+  "203": {
     "title": "Requesters and Sponsors",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1982,7 +1973,7 @@
     "outline": "deep",
     "tags": null
   },
-  "205": {
+  "204": {
     "title": "Using Templates (RRP)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -1992,7 +1983,7 @@
     "outline": "deep",
     "tags": null
   },
-  "206": {
+  "205": {
     "title": "Verify Airnode Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2002,7 +1993,7 @@
     "outline": "deep",
     "tags": null
   },
-  "207": {
+  "206": {
     "title": "Admin CLI Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2012,7 +2003,7 @@
     "outline": "deep",
     "tags": null
   },
-  "208": {
+  "207": {
     "title": "Client Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2022,7 +2013,7 @@
     "outline": "deep",
     "tags": null
   },
-  "209": {
+  "208": {
     "title": "AWS/GCP Deployer Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2032,7 +2023,7 @@
     "outline": "deep",
     "tags": null
   },
-  "210": {
+  "209": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2042,7 +2033,7 @@
     "outline": "deep",
     "tags": null
   },
-  "211": {
+  "210": {
     "title": "Adapter",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2052,7 +2043,7 @@
     "outline": "deep",
     "tags": null
   },
-  "212": {
+  "211": {
     "title": "Admin CLI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2062,7 +2053,7 @@
     "outline": "deep",
     "tags": null
   },
-  "213": {
+  "212": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2072,7 +2063,7 @@
     "outline": "deep",
     "tags": null
   },
-  "214": {
+  "213": {
     "title": "Deployer",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2082,7 +2073,7 @@
     "outline": "deep",
     "tags": null
   },
-  "215": {
+  "214": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2092,7 +2083,7 @@
     "outline": "deep",
     "tags": null
   },
-  "216": {
+  "215": {
     "title": "Validator",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2102,7 +2093,7 @@
     "outline": "deep",
     "tags": null
   },
-  "217": {
+  "216": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2112,7 +2103,7 @@
     "outline": "deep",
     "tags": null
   },
-  "218": {
+  "217": {
     "title": "Oracle Integration Specifications (OIS)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2122,7 +2113,7 @@
     "outline": "deep",
     "tags": null
   },
-  "219": {
+  "218": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2132,7 +2123,7 @@
     "outline": "deep",
     "tags": null
   },
-  "220": {
+  "219": {
     "title": "API Integration",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2142,7 +2133,7 @@
     "outline": "deep",
     "tags": null
   },
-  "221": {
+  "220": {
     "title": "API Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2152,7 +2143,7 @@
     "outline": "deep",
     "tags": null
   },
-  "222": {
+  "221": {
     "title": "Using Authorizers (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2162,7 +2153,7 @@
     "outline": "deep",
     "tags": null
   },
-  "223": {
+  "222": {
     "title": "Configuring Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2172,7 +2163,7 @@
     "outline": "deep",
     "tags": null
   },
-  "224": {
+  "223": {
     "title": "Deploying Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2182,7 +2173,7 @@
     "outline": "deep",
     "tags": null
   },
-  "225": {
+  "224": {
     "title": "Heartbeat (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2192,7 +2183,7 @@
     "outline": "deep",
     "tags": null
   },
-  "226": {
+  "225": {
     "title": "HTTP Gateways (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2202,7 +2193,7 @@
     "outline": "deep",
     "tags": null
   },
-  "227": {
+  "226": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2212,7 +2203,7 @@
     "outline": "deep",
     "tags": null
   },
-  "228": {
+  "227": {
     "title": "Monitor Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2222,7 +2213,7 @@
     "outline": "deep",
     "tags": null
   },
-  "229": {
+  "228": {
     "title": "OEV Gateway (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2232,7 +2223,7 @@
     "outline": "deep",
     "tags": null
   },
-  "230": {
+  "229": {
     "title": "Using Authorizations (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2242,7 +2233,7 @@
     "outline": "deep",
     "tags": null
   },
-  "231": {
+  "230": {
     "title": "Chain Idiosyncrasies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2252,7 +2243,7 @@
     "outline": "deep",
     "tags": null
   },
-  "232": {
+  "231": {
     "title": "Cloud Resources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2262,7 +2253,7 @@
     "outline": "deep",
     "tags": null
   },
-  "233": {
+  "232": {
     "title": "Contract Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2272,7 +2263,7 @@
     "outline": "deep",
     "tags": null
   },
-  "234": {
+  "233": {
     "title": "Migration Guide",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2282,7 +2273,7 @@
     "outline": "deep",
     "tags": null
   },
-  "235": {
+  "234": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2292,7 +2283,7 @@
     "outline": "deep",
     "tags": null
   },
-  "236": {
+  "235": {
     "title": "Airnode Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2302,7 +2293,7 @@
     "outline": "deep",
     "tags": null
   },
-  "237": {
+  "236": {
     "title": "Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2312,7 +2303,7 @@
     "outline": "deep",
     "tags": null
   },
-  "238": {
+  "237": {
     "title": "Authorizations",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2322,7 +2313,7 @@
     "outline": "deep",
     "tags": null
   },
-  "239": {
+  "238": {
     "title": "Authorizers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2332,7 +2323,7 @@
     "outline": "deep",
     "tags": null
   },
-  "240": {
+  "239": {
     "title": "Chain Providers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2342,7 +2333,7 @@
     "outline": "deep",
     "tags": null
   },
-  "241": {
+  "240": {
     "title": "Endpoint",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2352,7 +2343,7 @@
     "outline": "deep",
     "tags": null
   },
-  "242": {
+  "241": {
     "title": "Gas Price Strategies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2362,7 +2353,7 @@
     "outline": "deep",
     "tags": null
   },
-  "243": {
+  "242": {
     "title": "Request-Response Protocol",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2372,7 +2363,7 @@
     "outline": "deep",
     "tags": null
   },
-  "244": {
+  "243": {
     "title": "Relayed Meta Data Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2382,7 +2373,7 @@
     "outline": "deep",
     "tags": null
   },
-  "245": {
+  "244": {
     "title": "Request",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2392,7 +2383,7 @@
     "outline": "deep",
     "tags": null
   },
-  "246": {
+  "245": {
     "title": "Requester",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2402,7 +2393,7 @@
     "outline": "deep",
     "tags": null
   },
-  "247": {
+  "246": {
     "title": "Sponsor",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2412,7 +2403,7 @@
     "outline": "deep",
     "tags": null
   },
-  "248": {
+  "247": {
     "title": "Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2422,7 +2413,7 @@
     "outline": "deep",
     "tags": null
   },
-  "249": {
+  "248": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2432,7 +2423,7 @@
     "outline": "deep",
     "tags": null
   },
-  "250": {
+  "249": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2442,7 +2433,7 @@
     "outline": "deep",
     "tags": null
   },
-  "251": {
+  "250": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2452,7 +2443,7 @@
     "outline": "deep",
     "tags": null
   },
-  "252": {
+  "251": {
     "title": "receipt.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2462,7 +2453,7 @@
     "outline": "deep",
     "tags": null
   },
-  "253": {
+  "252": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2472,7 +2463,7 @@
     "outline": "deep",
     "tags": null
   },
-  "254": {
+  "253": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2481,7 +2472,7 @@
     "outline": "deep",
     "tags": null
   },
-  "255": {
+  "254": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2491,7 +2482,7 @@
     "outline": "deep",
     "tags": null
   },
-  "256": {
+  "255": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2501,7 +2492,7 @@
     "outline": "deep",
     "tags": null
   },
-  "257": {
+  "256": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2511,7 +2502,7 @@
     "outline": "deep",
     "tags": null
   },
-  "258": {
+  "257": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2521,7 +2512,7 @@
     "outline": "deep",
     "tags": null
   },
-  "259": {
+  "258": {
     "title": "OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2531,7 +2522,7 @@
     "outline": "deep",
     "tags": null
   },
-  "260": {
+  "259": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2541,7 +2532,7 @@
     "outline": "deep",
     "tags": null
   },
-  "261": {
+  "260": {
     "title": "Fees",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2551,7 +2542,7 @@
     "outline": "deep",
     "tags": null
   },
-  "262": {
+  "261": {
     "title": "Airnode RRP",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2561,7 +2552,7 @@
     "outline": "deep",
     "tags": null
   },
-  "263": {
+  "262": {
     "title": "Requesters and Sponsors",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2571,7 +2562,7 @@
     "outline": "deep",
     "tags": null
   },
-  "264": {
+  "263": {
     "title": "Using Templates (RRP)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2581,7 +2572,7 @@
     "outline": "deep",
     "tags": null
   },
-  "265": {
+  "264": {
     "title": "Verify Airnode Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2591,7 +2582,7 @@
     "outline": "deep",
     "tags": null
   },
-  "266": {
+  "265": {
     "title": "Admin CLI Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2601,7 +2592,7 @@
     "outline": "deep",
     "tags": null
   },
-  "267": {
+  "266": {
     "title": "Client Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2611,7 +2602,7 @@
     "outline": "deep",
     "tags": null
   },
-  "268": {
+  "267": {
     "title": "AWS/GCP Deployer Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2621,7 +2612,7 @@
     "outline": "deep",
     "tags": null
   },
-  "269": {
+  "268": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2631,7 +2622,7 @@
     "outline": "deep",
     "tags": null
   },
-  "270": {
+  "269": {
     "title": "Adapter",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2641,7 +2632,7 @@
     "outline": "deep",
     "tags": null
   },
-  "271": {
+  "270": {
     "title": "Admin CLI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2651,7 +2642,7 @@
     "outline": "deep",
     "tags": null
   },
-  "272": {
+  "271": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2661,7 +2652,7 @@
     "outline": "deep",
     "tags": null
   },
-  "273": {
+  "272": {
     "title": "Deployer",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2671,7 +2662,7 @@
     "outline": "deep",
     "tags": null
   },
-  "274": {
+  "273": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2681,7 +2672,7 @@
     "outline": "deep",
     "tags": null
   },
-  "275": {
+  "274": {
     "title": "Validator",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2691,7 +2682,7 @@
     "outline": "deep",
     "tags": null
   },
-  "276": {
+  "275": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2701,7 +2692,7 @@
     "outline": "deep",
     "tags": null
   },
-  "277": {
+  "276": {
     "title": "Oracle Integration Specifications (OIS)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2711,7 +2702,7 @@
     "outline": "deep",
     "tags": null
   },
-  "278": {
+  "277": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2721,7 +2712,7 @@
     "outline": "deep",
     "tags": null
   },
-  "279": {
+  "278": {
     "title": "API Integration",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2731,7 +2722,7 @@
     "outline": "deep",
     "tags": null
   },
-  "280": {
+  "279": {
     "title": "API Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2741,7 +2732,7 @@
     "outline": "deep",
     "tags": null
   },
-  "281": {
+  "280": {
     "title": "Using Authorizers (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2751,7 +2742,7 @@
     "outline": "deep",
     "tags": null
   },
-  "282": {
+  "281": {
     "title": "Configuring Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2761,7 +2752,7 @@
     "outline": "deep",
     "tags": null
   },
-  "283": {
+  "282": {
     "title": "Deploying Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2771,7 +2762,7 @@
     "outline": "deep",
     "tags": null
   },
-  "284": {
+  "283": {
     "title": "Heartbeat (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2781,7 +2772,7 @@
     "outline": "deep",
     "tags": null
   },
-  "285": {
+  "284": {
     "title": "HTTP Gateways (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2791,7 +2782,7 @@
     "outline": "deep",
     "tags": null
   },
-  "286": {
+  "285": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2801,7 +2792,7 @@
     "outline": "deep",
     "tags": null
   },
-  "287": {
+  "286": {
     "title": "Monitor Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2811,7 +2802,7 @@
     "outline": "deep",
     "tags": null
   },
-  "288": {
+  "287": {
     "title": "OEV Gateway (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2821,7 +2812,7 @@
     "outline": "deep",
     "tags": null
   },
-  "289": {
+  "288": {
     "title": "Using Authorizations (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2831,7 +2822,7 @@
     "outline": "deep",
     "tags": null
   },
-  "290": {
+  "289": {
     "title": "Chain Idiosyncrasies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2841,7 +2832,7 @@
     "outline": "deep",
     "tags": null
   },
-  "291": {
+  "290": {
     "title": "Cloud Resources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2851,7 +2842,7 @@
     "outline": "deep",
     "tags": null
   },
-  "292": {
+  "291": {
     "title": "Contract Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2861,7 +2852,7 @@
     "outline": "deep",
     "tags": null
   },
-  "293": {
+  "292": {
     "title": "Migration Guide",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2871,7 +2862,7 @@
     "outline": "deep",
     "tags": null
   },
-  "294": {
+  "293": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2881,7 +2872,7 @@
     "outline": "deep",
     "tags": null
   },
-  "295": {
+  "294": {
     "title": "Airnode Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2891,7 +2882,7 @@
     "outline": "deep",
     "tags": null
   },
-  "296": {
+  "295": {
     "title": "Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2901,7 +2892,7 @@
     "outline": "deep",
     "tags": null
   },
-  "297": {
+  "296": {
     "title": "Authorizations",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2911,7 +2902,7 @@
     "outline": "deep",
     "tags": null
   },
-  "298": {
+  "297": {
     "title": "Authorizers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2921,7 +2912,7 @@
     "outline": "deep",
     "tags": null
   },
-  "299": {
+  "298": {
     "title": "Chain Providers",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2931,7 +2922,7 @@
     "outline": "deep",
     "tags": null
   },
-  "300": {
+  "299": {
     "title": "Endpoint",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2941,7 +2932,7 @@
     "outline": "deep",
     "tags": null
   },
-  "301": {
+  "300": {
     "title": "Gas Price Strategies",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2951,7 +2942,7 @@
     "outline": "deep",
     "tags": null
   },
-  "302": {
+  "301": {
     "title": "Request-Response Protocol",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2961,7 +2952,7 @@
     "outline": "deep",
     "tags": null
   },
-  "303": {
+  "302": {
     "title": "Relayed Meta Data Authentication",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2971,7 +2962,7 @@
     "outline": "deep",
     "tags": null
   },
-  "304": {
+  "303": {
     "title": "Request",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2981,7 +2972,7 @@
     "outline": "deep",
     "tags": null
   },
-  "305": {
+  "304": {
     "title": "Requester",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -2991,7 +2982,7 @@
     "outline": "deep",
     "tags": null
   },
-  "306": {
+  "305": {
     "title": "Sponsor",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3001,7 +2992,7 @@
     "outline": "deep",
     "tags": null
   },
-  "307": {
+  "306": {
     "title": "Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3011,7 +3002,7 @@
     "outline": "deep",
     "tags": null
   },
-  "308": {
+  "307": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3021,7 +3012,7 @@
     "outline": "deep",
     "tags": null
   },
-  "309": {
+  "308": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3031,7 +3022,7 @@
     "outline": "deep",
     "tags": null
   },
-  "310": {
+  "309": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3041,7 +3032,7 @@
     "outline": "deep",
     "tags": null
   },
-  "311": {
+  "310": {
     "title": "receipt.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3051,7 +3042,7 @@
     "outline": "deep",
     "tags": null
   },
-  "312": {
+  "311": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3061,7 +3052,7 @@
     "outline": "deep",
     "tags": null
   },
-  "313": {
+  "312": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3070,7 +3061,7 @@
     "outline": "deep",
     "tags": null
   },
-  "314": {
+  "313": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3080,7 +3071,7 @@
     "outline": "deep",
     "tags": null
   },
-  "315": {
+  "314": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3090,7 +3081,7 @@
     "outline": "deep",
     "tags": null
   },
-  "316": {
+  "315": {
     "title": "aws.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3100,7 +3091,7 @@
     "outline": "deep",
     "tags": null
   },
-  "317": {
+  "316": {
     "title": "config.json",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3110,7 +3101,7 @@
     "outline": "deep",
     "tags": null
   },
-  "318": {
+  "317": {
     "title": "OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3120,7 +3111,7 @@
     "outline": "deep",
     "tags": null
   },
-  "319": {
+  "318": {
     "title": "secrets.env",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3130,7 +3121,7 @@
     "outline": "deep",
     "tags": null
   },
-  "320": {
+  "319": {
     "title": "Fees",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3140,7 +3131,7 @@
     "outline": "deep",
     "tags": null
   },
-  "321": {
+  "320": {
     "title": "Airnode RRP",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3150,7 +3141,7 @@
     "outline": "deep",
     "tags": null
   },
-  "322": {
+  "321": {
     "title": "Requesters and Sponsors",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3160,7 +3151,7 @@
     "outline": "deep",
     "tags": null
   },
-  "323": {
+  "322": {
     "title": "Using Templates (RRP)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3170,7 +3161,7 @@
     "outline": "deep",
     "tags": null
   },
-  "324": {
+  "323": {
     "title": "Verify Airnode Addresses",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3180,7 +3171,7 @@
     "outline": "deep",
     "tags": null
   },
-  "325": {
+  "324": {
     "title": "Admin CLI Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3190,7 +3181,7 @@
     "outline": "deep",
     "tags": null
   },
-  "326": {
+  "325": {
     "title": "Client Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3200,7 +3191,7 @@
     "outline": "deep",
     "tags": null
   },
-  "327": {
+  "326": {
     "title": "AWS/GCP Deployer Image",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3210,7 +3201,7 @@
     "outline": "deep",
     "tags": null
   },
-  "328": {
+  "327": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3220,7 +3211,7 @@
     "outline": "deep",
     "tags": null
   },
-  "329": {
+  "328": {
     "title": "Adapter",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3230,7 +3221,7 @@
     "outline": "deep",
     "tags": null
   },
-  "330": {
+  "329": {
     "title": "Admin CLI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3240,7 +3231,7 @@
     "outline": "deep",
     "tags": null
   },
-  "331": {
+  "330": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3250,7 +3241,7 @@
     "outline": "deep",
     "tags": null
   },
-  "332": {
+  "331": {
     "title": "Deployer",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3260,7 +3251,7 @@
     "outline": "deep",
     "tags": null
   },
-  "333": {
+  "332": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3270,7 +3261,7 @@
     "outline": "deep",
     "tags": null
   },
-  "334": {
+  "333": {
     "title": "Validator",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3280,7 +3271,7 @@
     "outline": "deep",
     "tags": null
   },
-  "335": {
+  "334": {
     "title": "Airnode ABI",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3290,7 +3281,7 @@
     "outline": "deep",
     "tags": null
   },
-  "336": {
+  "335": {
     "title": "Oracle Integration Specifications (OIS)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3300,7 +3291,7 @@
     "outline": "deep",
     "tags": null
   },
-  "337": {
+  "336": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3310,7 +3301,7 @@
     "outline": "deep",
     "tags": null
   },
-  "338": {
+  "337": {
     "title": "API Integration",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3320,7 +3311,7 @@
     "outline": "deep",
     "tags": null
   },
-  "339": {
+  "338": {
     "title": "API Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3330,7 +3321,7 @@
     "outline": "deep",
     "tags": null
   },
-  "340": {
+  "339": {
     "title": "Using Authorizers (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3340,7 +3331,7 @@
     "outline": "deep",
     "tags": null
   },
-  "341": {
+  "340": {
     "title": "Configuring Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3350,7 +3341,7 @@
     "outline": "deep",
     "tags": null
   },
-  "342": {
+  "341": {
     "title": "Deploying Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3360,7 +3351,7 @@
     "outline": "deep",
     "tags": null
   },
-  "343": {
+  "342": {
     "title": "Heartbeat (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3370,7 +3361,7 @@
     "outline": "deep",
     "tags": null
   },
-  "344": {
+  "343": {
     "title": "HTTP Gateways (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3380,7 +3371,7 @@
     "outline": "deep",
     "tags": null
   },
-  "345": {
+  "344": {
     "title": "Overview",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3390,7 +3381,7 @@
     "outline": "deep",
     "tags": null
   },
-  "346": {
+  "345": {
     "title": "Monitor Airnode",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3400,7 +3391,7 @@
     "outline": "deep",
     "tags": null
   },
-  "347": {
+  "346": {
     "title": "OEV Gateway (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3410,7 +3401,7 @@
     "outline": "deep",
     "tags": null
   },
-  "348": {
+  "347": {
     "title": "Using Authorizations (optional)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "Airnode",
@@ -3420,7 +3411,7 @@
     "outline": "deep",
     "tags": null
   },
-  "349": {
+  "348": {
     "title": "DAO (Api3Template.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -3435,7 +3426,7 @@
       "BaseTemplate"
     ]
   },
-  "350": {
+  "349": {
     "title": "Dashboard Attributes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -3444,7 +3435,7 @@
     "outline": "deep",
     "tags": null
   },
-  "351": {
+  "350": {
     "title": "Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -3453,7 +3444,7 @@
     "outline": "deep",
     "tags": null
   },
-  "352": {
+  "351": {
     "title": "Pool (Api3Pool.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -3462,7 +3453,7 @@
     "outline": "deep",
     "tags": null
   },
-  "353": {
+  "352": {
     "title": "Voting (Api3Voting.sol)",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "DAO Members",
@@ -3479,7 +3470,7 @@
       "BaseTemplate"
     ]
   },
-  "354": {
+  "353": {
     "title": "dAPI Names",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3488,7 +3479,7 @@
     "outline": "deep",
     "tags": null
   },
-  "355": {
+  "354": {
     "title": "ID and Name Schemes",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3497,7 +3488,7 @@
     "outline": "deep",
     "tags": null
   },
-  "356": {
+  "355": {
     "title": "Verify dAPI sources",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3506,7 +3497,7 @@
     "outline": "deep",
     "tags": null
   },
-  "357": {
+  "356": {
     "title": "Chains and Contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3515,7 +3506,7 @@
     "outline": "deep",
     "tags": null
   },
-  "358": {
+  "357": {
     "title": "Deviation thresholds",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3524,8 +3515,8 @@
     "outline": "deep",
     "tags": null
   },
-  "359": {
-    "title": "dAPIs are data feeds",
+  "358": {
+    "title": "dAPIs",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
     "pageHeader": "Reference → dAPIs → Understanding dAPIs",
@@ -3533,25 +3524,7 @@
     "outline": "deep",
     "tags": null
   },
-  "360": {
-    "title": "IProxy interface",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
-    "path": "/reference/dapis/understand/iproxy.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "361": {
-    "title": "Managed dAPIs",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
-    "path": "/reference/dapis/understand/managed.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "362": {
+  "359": {
     "title": "Proxy contracts",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3560,16 +3533,7 @@
     "outline": "deep",
     "tags": null
   },
-  "363": {
-    "title": "Reading dAPIs",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
-    "path": "/reference/dapis/understand/read-dapis.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "364": {
+  "360": {
     "title": "Security",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3578,16 +3542,7 @@
     "outline": "deep",
     "tags": null
   },
-  "365": {
-    "title": "Self-funded dAPIs",
-    "sidebarHeader": "Reference",
-    "sidebarSubHeader": "dAPIs",
-    "pageHeader": "Reference → dAPIs → Understanding dAPIs",
-    "path": "/reference/dapis/understand/self-funded.html",
-    "outline": "deep",
-    "tags": null
-  },
-  "366": {
+  "361": {
     "title": "Sponsor wallets",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "dAPIs",
@@ -3596,7 +3551,7 @@
     "outline": "deep",
     "tags": null
   },
-  "367": {
+  "362": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3606,7 +3561,7 @@
     "outline": "deep",
     "tags": null
   },
-  "368": {
+  "363": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3616,7 +3571,7 @@
     "outline": "deep",
     "tags": null
   },
-  "369": {
+  "364": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3626,7 +3581,7 @@
     "outline": "deep",
     "tags": null
   },
-  "370": {
+  "365": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3636,7 +3591,7 @@
     "outline": "deep",
     "tags": null
   },
-  "371": {
+  "366": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3646,7 +3601,7 @@
     "outline": "deep",
     "tags": null
   },
-  "372": {
+  "367": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3656,7 +3611,7 @@
     "outline": "deep",
     "tags": null
   },
-  "373": {
+  "368": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3666,7 +3621,7 @@
     "outline": "deep",
     "tags": null
   },
-  "374": {
+  "369": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3676,7 +3631,7 @@
     "outline": "deep",
     "tags": null
   },
-  "375": {
+  "370": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3686,7 +3641,7 @@
     "outline": "deep",
     "tags": null
   },
-  "376": {
+  "371": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3696,7 +3651,7 @@
     "outline": "deep",
     "tags": null
   },
-  "377": {
+  "372": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3706,7 +3661,7 @@
     "outline": "deep",
     "tags": null
   },
-  "378": {
+  "373": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3716,7 +3671,7 @@
     "outline": "deep",
     "tags": null
   },
-  "379": {
+  "374": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3726,7 +3681,7 @@
     "outline": "deep",
     "tags": null
   },
-  "380": {
+  "375": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3736,7 +3691,7 @@
     "outline": "deep",
     "tags": null
   },
-  "381": {
+  "376": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3746,7 +3701,7 @@
     "outline": "deep",
     "tags": null
   },
-  "382": {
+  "377": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3756,7 +3711,7 @@
     "outline": "deep",
     "tags": null
   },
-  "383": {
+  "378": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3766,7 +3721,7 @@
     "outline": "deep",
     "tags": null
   },
-  "384": {
+  "379": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3776,7 +3731,7 @@
     "outline": "deep",
     "tags": null
   },
-  "385": {
+  "380": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3786,7 +3741,7 @@
     "outline": "deep",
     "tags": null
   },
-  "386": {
+  "381": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3796,7 +3751,7 @@
     "outline": "deep",
     "tags": null
   },
-  "387": {
+  "382": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3806,7 +3761,7 @@
     "outline": "deep",
     "tags": null
   },
-  "388": {
+  "383": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3816,7 +3771,7 @@
     "outline": "deep",
     "tags": null
   },
-  "389": {
+  "384": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3826,7 +3781,7 @@
     "outline": "deep",
     "tags": null
   },
-  "390": {
+  "385": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3836,7 +3791,7 @@
     "outline": "deep",
     "tags": null
   },
-  "391": {
+  "386": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3846,7 +3801,7 @@
     "outline": "deep",
     "tags": null
   },
-  "392": {
+  "387": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3856,7 +3811,7 @@
     "outline": "deep",
     "tags": null
   },
-  "393": {
+  "388": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3866,7 +3821,7 @@
     "outline": "deep",
     "tags": null
   },
-  "394": {
+  "389": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3876,7 +3831,7 @@
     "outline": "deep",
     "tags": null
   },
-  "395": {
+  "390": {
     "title": "Example OIS Object",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3886,7 +3841,7 @@
     "outline": "deep",
     "tags": null
   },
-  "396": {
+  "391": {
     "title": "Understanding OIS",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3896,7 +3851,7 @@
     "outline": "deep",
     "tags": null
   },
-  "397": {
+  "392": {
     "title": "Pre/Post Processing",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3906,7 +3861,7 @@
     "outline": "deep",
     "tags": null
   },
-  "398": {
+  "393": {
     "title": "Reserved Parameters",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3916,7 +3871,7 @@
     "outline": "deep",
     "tags": null
   },
-  "399": {
+  "394": {
     "title": "Specification",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3926,7 +3881,7 @@
     "outline": "deep",
     "tags": null
   },
-  "400": {
+  "395": {
     "title": "OIS Template",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3936,7 +3891,7 @@
     "outline": "deep",
     "tags": null
   },
-  "401": {
+  "396": {
     "title": "Versions",
     "sidebarHeader": "Reference",
     "sidebarSubHeader": "OIS",
@@ -3946,7 +3901,7 @@
     "outline": "deep",
     "tags": null
   },
-  "402": {
+  "397": {
     "title": "AirnodeRrpV0.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3955,7 +3910,7 @@
     "outline": "deep",
     "tags": null
   },
-  "403": {
+  "398": {
     "title": "Chains",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3964,7 +3919,7 @@
     "outline": "deep",
     "tags": null
   },
-  "404": {
+  "399": {
     "title": "Understanding QRNG",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3973,7 +3928,7 @@
     "outline": "deep",
     "tags": ["qrng", "anu"]
   },
-  "405": {
+  "400": {
     "title": "Providers",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3982,7 +3937,7 @@
     "outline": "deep",
     "tags": null
   },
-  "406": {
+  "401": {
     "title": "QrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,
@@ -3991,7 +3946,7 @@
     "outline": "deep",
     "tags": null
   },
-  "407": {
+  "402": {
     "title": "RemixQrngExample.sol",
     "sidebarHeader": "QRNG",
     "sidebarSubHeader": null,

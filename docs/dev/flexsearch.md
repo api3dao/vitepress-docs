@@ -115,6 +115,11 @@ Test the index files.
 yarn flex:test
 ```
 
+### 5. Firebase emulator (optional step)
+
+Using the [firebase emulator](/dev/firebase.md#firebase-emulator) run the docs
+project locally and verify newly added functionality.
+
 ## Long strings warning
 
 When flex builds its indexes and encounters a long string such as those in an

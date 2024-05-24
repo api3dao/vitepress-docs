@@ -81,11 +81,10 @@
     "Finnhub",
     "Kaiko",
     "Tradermade",
+    "Vite"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "search.useIgnoreFiles": false,
-  "editor.rulers": [
-    80
-  ]
+  "editor.rulers": [80]
 }

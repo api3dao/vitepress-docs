@@ -11,6 +11,7 @@ docs/.vitepress/.temp
 
 yarn-error.log
 package-lock.json
+firebase-debug.log
 libs/myGitHubToken.json
 
 

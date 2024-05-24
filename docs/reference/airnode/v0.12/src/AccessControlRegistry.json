@@ -7,13 +7,6 @@
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },
   {
-    "id": "5",
-    "fullname": "Ethereum Goerli testnet",
-    "alias": "ethereum-goerli-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
     "id": "10",
     "fullname": "Optimism",
     "alias": "optimism",
@@ -82,20 +75,6 @@
     "alias": "sx",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0xb3070A0F2f84765Ee19EfADf91dfE50690a9eEa1"
-  },
-  {
-    "id": "420",
-    "fullname": "Optimism testnet",
-    "alias": "optimism-goerli-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
-    "id": "599",
-    "fullname": "Metis testnet",
-    "alias": "metis-goerli-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x81A850254769a6C87d4F11B9F80bCc5bE1CcF50E"
   },
   {
     "id": "647",
@@ -203,23 +182,9 @@
     "contractAddress": "0x8E7D155C6E124a5C2c8DE2AFFCd8702e3660E482"
   },
   {
-    "id": "80001",
-    "fullname": "Polygon testnet",
-    "alias": "polygon-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
     "alias": "milkomeda-c1-testnet",
-    "contractName": "AccessControlRegistry",
-    "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
-  },
-  {
-    "id": "421613",
-    "fullname": "Arbitrum testnet",
-    "alias": "arbitrum-goerli-testnet",
     "contractName": "AccessControlRegistry",
     "contractAddress": "0x92E5125adF385d86beDb950793526106143b6Df1"
   },

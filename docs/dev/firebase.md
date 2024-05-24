@@ -23,3 +23,25 @@ stored in the `vitepress-docs` repo.
 
 When a PR is merged into the default branch, `main`, a Firebase deployment of
 the docs production website is triggered.
+
+## Firebase emulator
+
+You can run the docs using the firebase emulator after updating the flex indexes
+and prior to pushing changes to the repo. Run the following commands from the
+root of the project after ensuring that the firebase CLI is installed.
+
+```sh
+firebase:emulator
+```
+
+OR
+
+```sh
+yarn docs:build
+
+yarn flex:build
+
+yarn flex:test
+
+firebase emulators:start
+```

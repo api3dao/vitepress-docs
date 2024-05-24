@@ -65,7 +65,7 @@
   3. Use event bus to notify SearchHighlight.vue
   https://dev.to/sanchithasr/how-to-communicate-between-components-in-vue-js-kjc
 */
-import Index from 'flexsearch';
+import FlexSearch from 'flexsearch';
 /**
  * Directly importing the local files for the indexes will break the VitePress build.
  * It seems that it has issue importing large files like map.json.
@@ -169,7 +169,16 @@ export default {
      * @param {*} name
      */
     async buildIndex(name) {
-      this.index = new Index({
+      /* Important to note that we used to use:
+          this.index = Index({
+            tokenize: 'full',
+          });
+        but with the move to production Vitepress (away from beta)
+        this cause an error about a bad constructor.
+        Using the below to crete the index works even though it
+        does the same thing in hte end.
+      */
+      this.index = new FlexSearch.Index({
         tokenize: 'full',
       });
       let cfg,

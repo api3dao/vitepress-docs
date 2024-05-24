@@ -7,13 +7,6 @@
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
   {
-    "id": "5",
-    "fullname": "Ethereum Goerli testnet",
-    "alias": "ethereum-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "10",
     "fullname": "Optimism",
     "alias": "optimism",
@@ -84,20 +77,6 @@
     "contractAddress": "0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38"
   },
   {
-    "id": "420",
-    "fullname": "Optimism testnet",
-    "alias": "optimism-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
-    "id": "599",
-    "fullname": "Metis testnet",
-    "alias": "metis-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xe40f1a1A546B70003D9ddF66B89C261cA46A0CF0"
-  },
-  {
     "id": "647",
     "fullname": "SX Network testnet",
     "alias": "sx-testnet",
@@ -140,13 +119,6 @@
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
   {
-    "id": "1442",
-    "fullname": "Polygon zkEVM testnet",
-    "alias": "polygon-zkevm-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "2001",
     "fullname": "Milkomeda C1",
     "alias": "milkomeda-c1",
@@ -166,13 +138,6 @@
     "alias": "mantle",
     "contractName": "RequesterAuthorizerWithAirnode",
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
-    "id": "5001",
-    "fullname": "Mantle Goerli testnet",
-    "alias": "mantle-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
   },
   {
     "id": "8453",
@@ -224,13 +189,6 @@
     "contractAddress": "0x4A0b644219d07fEa25B701AAf89b963576b468dC"
   },
   {
-    "id": "59140",
-    "fullname": "Linea Goerli testnet",
-    "alias": "linea-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "59144",
     "fullname": "Linea",
     "alias": "linea",
@@ -252,30 +210,9 @@
     "contractAddress": "0x7D15b4676c7FFfdcb69E838518B2182223aE46d3"
   },
   {
-    "id": "80001",
-    "fullname": "Polygon testnet",
-    "alias": "polygon-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
-    "id": "84531",
-    "fullname": "Base Goerli testnet",
-    "alias": "base-goerli-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
     "id": "200101",
     "fullname": "Milkomeda C1 testnet",
     "alias": "milkomeda-c1-testnet",
-    "contractName": "RequesterAuthorizerWithAirnode",
-    "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
-  },
-  {
-    "id": "421613",
-    "fullname": "Arbitrum testnet",
-    "alias": "arbitrum-goerli-testnet",
     "contractName": "RequesterAuthorizerWithAirnode",
     "contractAddress": "0xf18c105D0375E80980e4EED829a4A68A539E6178"
   },
