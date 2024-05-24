@@ -26,9 +26,9 @@ the docs production website is triggered.
 
 ## Firebase emulator
 
-You can and should run the docs using the firebase emulator after updating the
-flex indexes and prior to pushing changes to the repo. Run the following
-commands from the root of the project.
+You can run the docs using the firebase emulator after updating the flex indexes
+and prior to pushing changes to the repo. Run the following commands from the
+root of the project after ensuring that the firebase CLI is installed.
 
 ```sh
 firebase:emulator
