@@ -1,4 +1,32 @@
 {
+  "apechain-arbitrum-sepolia-testnet": {
+    "id": "1798",
+    "alias": "apechain-arbitrum-sepolia-testnet",
+    "name": "ApeChain Arbitrum Sepolia testnet",
+    "nativeToken": "APE",
+    "testnet": true,
+    "explorerUrl": "https://jenkins.explorer.caldera.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "arbitrum-sepolia-testnet": {
+    "id": "421614",
+    "alias": "arbitrum-sepolia-testnet",
+    "name": "Arbitrum Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.arbiscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "arbitrum": {
     "id": "42161",
     "alias": "arbitrum",
@@ -6,6 +34,34 @@
     "nativeToken": "ETH",
     "testnet": false,
     "explorerUrl": "https://arbiscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "astar-sepolia-testnet": {
+    "id": "6038361",
+    "alias": "astar-sepolia-testnet",
+    "name": "Astar zkEVM Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://zkyoto.explorer.startale.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "astar": {
+    "id": "3776",
+    "alias": "astar",
+    "name": "Astar zkEVM",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://astar-zkevm.explorer.startale.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -41,6 +97,20 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "base-sepolia-testnet": {
+    "id": "84532",
+    "alias": "base-sepolia-testnet",
+    "name": "Base Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.basescan.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "base": {
     "id": "8453",
     "alias": "base",
@@ -48,6 +118,20 @@
     "nativeToken": "ETH",
     "testnet": false,
     "explorerUrl": "https://basescan.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "berachain-testnet": {
+    "id": "80085",
+    "alias": "berachain-testnet",
+    "name": "Berachain testnet",
+    "nativeToken": "BERA",
+    "testnet": true,
+    "explorerUrl": "https://artio.beratrail.io/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -83,6 +167,34 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "bob-sepolia-testnet": {
+    "id": "111",
+    "alias": "bob-sepolia-testnet",
+    "name": "BOB Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://testnet-explorer.gobob.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "bob": {
+    "id": "60808",
+    "alias": "bob",
+    "name": "BOB",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://explorer.gobob.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "bsc-testnet": {
     "id": "97",
     "alias": "bsc-testnet",
@@ -104,6 +216,76 @@
     "nativeToken": "BNB",
     "testnet": false,
     "explorerUrl": "https://bscscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "bsquared-testnet": {
+    "id": "1123",
+    "alias": "bsquared-testnet",
+    "name": "BSquared Network testnet",
+    "nativeToken": "BTC",
+    "testnet": true,
+    "explorerUrl": "https://bsquared-testnet.l2scan.co/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "bsquared": {
+    "id": "223",
+    "alias": "bsquared",
+    "name": "BSquared Network",
+    "nativeToken": "BTC",
+    "testnet": false,
+    "explorerUrl": "https://bsquared.l2scan.co/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "core-testnet": {
+    "id": "1115",
+    "alias": "core-testnet",
+    "name": "Core testnet",
+    "nativeToken": "CORE",
+    "testnet": true,
+    "explorerUrl": "https://scan.test.btcs.network/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "core": {
+    "id": "1116",
+    "alias": "core",
+    "name": "Core",
+    "nativeToken": "CORE",
+    "testnet": false,
+    "explorerUrl": "https://scan.coredao.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "ethereum-holesky-testnet": {
+    "id": "17000",
+    "alias": "ethereum-holesky-testnet",
+    "name": "Ethereum Holesky testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://holesky.etherscan.io/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -167,6 +349,34 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "fraxtal-holesky-testnet": {
+    "id": "2522",
+    "alias": "fraxtal-holesky-testnet",
+    "name": "Fraxtal Holesky testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://holesky.fraxscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
+      "AccessControlRegistry": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
+      "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
+      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE"
+    }
+  },
+  "fraxtal": {
+    "id": "252",
+    "alias": "fraxtal",
+    "name": "Fraxtal",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://fraxscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "gnosis-testnet": {
     "id": "10200",
     "alias": "gnosis-testnet",
@@ -188,6 +398,48 @@
     "nativeToken": "xDAI",
     "testnet": false,
     "explorerUrl": "https://gnosisscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "immutable-sepolia-testnet": {
+    "id": "13473",
+    "alias": "immutable-sepolia-testnet",
+    "name": "Immutable zkEVM Sepolia testnet",
+    "nativeToken": "IMX",
+    "testnet": true,
+    "explorerUrl": "https://explorer.testnet.immutable.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "inevm-testnet": {
+    "id": "2424",
+    "alias": "inevm-testnet",
+    "name": "inEVM testnet",
+    "nativeToken": "INJ",
+    "testnet": true,
+    "explorerUrl": "https://testnet.explorer.inevm.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "inevm": {
+    "id": "2525",
+    "alias": "inevm",
+    "name": "inEVM",
+    "nativeToken": "INJ",
+    "testnet": false,
+    "explorerUrl": "https://explorer.inevm.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -223,6 +475,76 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "kroma-sepolia-testnet": {
+    "id": "2358",
+    "alias": "kroma-sepolia-testnet",
+    "name": "Kroma Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.kromascan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "kroma": {
+    "id": "255",
+    "alias": "kroma",
+    "name": "Kroma",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://kromascan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "lightlink-sepolia-testnet": {
+    "id": "1891",
+    "alias": "lightlink-sepolia-testnet",
+    "name": "LightLink Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://pegasus.lightlink.io/",
+    "contracts": {
+      "Api3ServerV1": "0x3d0Ca9e5490E36627beA9a8cb3cefa12D7cDc0af",
+      "AccessControlRegistry": "0xDDe9CE3736939d59A70c446c8A4AB6714CB4a41a",
+      "OwnableCallForwarder": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
+      "ProxyFactory": "0x81A850254769a6C87d4F11B9F80bCc5bE1CcF50E"
+    }
+  },
+  "lightlink": {
+    "id": "1890",
+    "alias": "lightlink",
+    "name": "LightLink",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://phoenix.lightlink.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "linea-sepolia-testnet": {
+    "id": "59141",
+    "alias": "linea-sepolia-testnet",
+    "name": "Linea Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.lineascan.build/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "linea": {
     "id": "59144",
     "alias": "linea",
@@ -237,6 +559,48 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "lukso-testnet": {
+    "id": "4201",
+    "alias": "lukso-testnet",
+    "name": "Lukso testnet",
+    "nativeToken": "LYXt",
+    "testnet": true,
+    "explorerUrl": "https://explorer.execution.testnet.lukso.network/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "lukso": {
+    "id": "42",
+    "alias": "lukso",
+    "name": "Lukso",
+    "nativeToken": "LYX",
+    "testnet": false,
+    "explorerUrl": "https://explorer.execution.mainnet.lukso.network/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "mantle-sepolia-testnet": {
+    "id": "5003",
+    "alias": "mantle-sepolia-testnet",
+    "name": "Mantle Sepolia testnet",
+    "nativeToken": "MNT",
+    "testnet": true,
+    "explorerUrl": "https://explorer.sepolia.mantle.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x5aB00E30453EEAd35025A761ED65d51d74574C24",
+      "AccessControlRegistry": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
+      "OwnableCallForwarder": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
+      "ProxyFactory": "0x944609FF0729435F87Ef429EC155d7539A83B9C8"
+    }
+  },
   "mantle": {
     "id": "5000",
     "alias": "mantle",
@@ -244,6 +608,90 @@
     "nativeToken": "MNT",
     "testnet": false,
     "explorerUrl": "https://explorer.mantle.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "merlin-testnet": {
+    "id": "686868",
+    "alias": "merlin-testnet",
+    "name": "Merlin testnet",
+    "nativeToken": "BTC",
+    "testnet": true,
+    "explorerUrl": "https://testnet-scan.merlinchain.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "merlin": {
+    "id": "4200",
+    "alias": "merlin",
+    "name": "Merlin",
+    "nativeToken": "BTC",
+    "testnet": false,
+    "explorerUrl": "https://scan.merlinchain.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "metis-sepolia-testnet": {
+    "id": "59902",
+    "alias": "metis-sepolia-testnet",
+    "name": "Metis Sepolia testnet",
+    "nativeToken": "METIS",
+    "testnet": true,
+    "explorerUrl": "https://sepolia-explorer.metisdevops.link/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "metis": {
+    "id": "1088",
+    "alias": "metis",
+    "name": "Metis",
+    "nativeToken": "METIS",
+    "testnet": false,
+    "explorerUrl": "https://andromeda-explorer.metis.io/",
+    "contracts": {
+      "Api3ServerV1": "0x0ADa28a62F6F304aEF27e73E4a65cBD34C6026c3",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x2D6D050Fc44d4db1c8577f4cF87905811fA126b2",
+      "ProxyFactory": "0x55a07E3066e893A2303B95BfD6637b1543647002"
+    }
+  },
+  "mode-sepolia-testnet": {
+    "id": "919",
+    "alias": "mode-sepolia-testnet",
+    "name": "Mode Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.explorer.mode.network/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "mode": {
+    "id": "34443",
+    "alias": "mode",
+    "name": "Mode",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://explorer.mode.network/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -293,6 +741,90 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "neon-evm-testnet": {
+    "id": "245022926",
+    "alias": "neon-evm-testnet",
+    "name": "Neon EVM testnet",
+    "nativeToken": "NEON",
+    "testnet": true,
+    "explorerUrl": "https://devnet.neonscan.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "neon-evm": {
+    "id": "245022934",
+    "alias": "neon-evm",
+    "name": "Neon EVM",
+    "nativeToken": "NEON",
+    "testnet": false,
+    "explorerUrl": "https://neonscan.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "oev-network": {
+    "id": "4913",
+    "alias": "oev-network",
+    "name": "OEV Network",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://oev-network.calderaexplorer.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "opbnb-testnet": {
+    "id": "5611",
+    "alias": "opbnb-testnet",
+    "name": "opBNB testnet",
+    "nativeToken": "BNB",
+    "testnet": true,
+    "explorerUrl": "https://opbnb-testnet.bscscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "opbnb": {
+    "id": "204",
+    "alias": "opbnb",
+    "name": "opBNB",
+    "nativeToken": "BNB",
+    "testnet": false,
+    "explorerUrl": "https://opbnb.bscscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "optimism-sepolia-testnet": {
+    "id": "11155420",
+    "alias": "optimism-sepolia-testnet",
+    "name": "Optimism Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia-optimism.etherscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "optimism": {
     "id": "10",
     "alias": "optimism",
@@ -300,6 +832,34 @@
     "nativeToken": "ETH",
     "testnet": false,
     "explorerUrl": "https://optimistic.etherscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "polygon-sepolia-testnet": {
+    "id": "80002",
+    "alias": "polygon-sepolia-testnet",
+    "name": "Polygon Sepolia testnet",
+    "nativeToken": "MATIC",
+    "testnet": true,
+    "explorerUrl": "https://amoy.polygonscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "polygon-zkevm-sepolia-testnet": {
+    "id": "2442",
+    "alias": "polygon-zkevm-sepolia-testnet",
+    "name": "Polygon zkEVM Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://cardona-zkevm.polygonscan.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -335,6 +895,34 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "rari-arbitrum-sepolia-testnet": {
+    "id": "1918988905",
+    "alias": "rari-arbitrum-sepolia-testnet",
+    "name": "RARI Arbitrum Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://testnet.explorer.rarichain.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "rari": {
+    "id": "1380012617",
+    "alias": "rari",
+    "name": "RARI Chain",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://mainnet.explorer.rarichain.org/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "rsk": {
     "id": "30",
     "alias": "rsk",
@@ -347,6 +935,76 @@
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "sei-testnet": {
+    "id": "713715",
+    "alias": "sei-testnet",
+    "name": "Sei testnet",
+    "nativeToken": "SEI",
+    "testnet": true,
+    "explorerUrl": "https://seitrace.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "taiko-holesky-testnet": {
+    "id": "167009",
+    "alias": "taiko-holesky-testnet",
+    "name": "Taiko Holesky testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://blockscoutapi.hekla.taiko.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "x-layer-sepolia-testnet": {
+    "id": "195",
+    "alias": "x-layer-sepolia-testnet",
+    "name": "X Layer Sepolia testnet",
+    "nativeToken": "OKB",
+    "testnet": true,
+    "explorerUrl": "https://www.okx.com/explorer/xlayer-test/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "x-layer": {
+    "id": "196",
+    "alias": "x-layer",
+    "name": "X Layer",
+    "nativeToken": "OKB",
+    "testnet": false,
+    "explorerUrl": "https://www.okx.com/explorer/xlayer/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "zircuit-sepolia-testnet": {
+    "id": "48899",
+    "alias": "zircuit-sepolia-testnet",
+    "name": "Zircuit Sepolia testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://explorer.zircuit.com/",
+    "contracts": {
+      "Api3ServerV1": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
+      "AccessControlRegistry": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
+      "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
+      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE"
     }
   }
 }
