@@ -12,7 +12,7 @@ const versionsRef = require('../docs/.vitepress/versions.json');
  */
 async function dapiChains() {
   const repo = await axios.get(
-    'https://raw.githubusercontent.com/api3dao/airnode-protocol-v1/main/deployments/references.json'
+    'https://raw.githubusercontent.com/api3dao/contracts/main/deployments/addresses.json'
   );
   const repoData = repo.data;
 
