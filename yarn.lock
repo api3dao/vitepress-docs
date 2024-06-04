@@ -143,10 +143,10 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@api3/chains@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.0.0.tgz#e46c20e626920126133078124b4f348b8caac931"
-  integrity sha512-rSpsIqblh/CGhoSa2fufUYCSkQ52LG40jKmsv8Icu8uYBeBA4dSmRZ6uKjsJ3Ix5HB9j2EZFk4b0ZvLa+wixkw==
+"@api3/chains@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.1.0.tgz#402a60809167f30315dc7373a88afd7876c13fbb"
+  integrity sha512-+WAvRMvtbAdXeB86jsQ2f+1WXb1SYvNOMI76jNiyTUozSAExZlRNCD8n95ZWm5NUi6gAK7sbv3ss2rJ0VMv9TA==
   dependencies:
     viem "^2.9.29"
     zod "^3.23.5"
@@ -650,7 +650,7 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
-axios@^1.7.1:
+axios@^1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.2.tgz#b625db8a7051fbea61c35a3cbb3a1daa7b9c7621"
   integrity sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==
