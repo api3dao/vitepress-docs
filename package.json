@@ -44,7 +44,7 @@
     "oust": "^2.0.4",
     "prettier": "^3.2.5",
     "tiny-emitter": "^2.1.0",
-    "vitepress": "^1.2.2",
+    "vitepress": "^1.2.0",
     "walk-sync": "^3.0.0"
   }
 }
