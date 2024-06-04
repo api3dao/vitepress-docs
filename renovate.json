@@ -7,6 +7,10 @@
       "enabled": false
     },
     {
+      "matchPackageNames": ["vitepress"],
+      "groupName": "vitepress"
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 4am on Monday"],
@@ -24,5 +28,6 @@
     "enabled": false
   },
   "reviewers": ["dcroote", "wkande"],
+  "minimumReleaseAge": "5 days",
   "dependencyDashboard": false
 }
