@@ -1,0 +1,44 @@
+name: Update chains and flex index files
+on:
+  schedule:
+    # Run every day at 12:00
+    - cron: '0 12 * * *'
+
+jobs:
+  conditional_PR_generation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - run: yarn install
+
+      - name: Refresh chains and flex index files
+        # If changes are present after build, set env variable
+        run: |
+          yarn axios:build
+          yarn docs:build
+          yarn flex:build
+          yarn flex:test
+          git diff --quiet --exit-code || echo "CHANGES_FOUND=true" >> $GITHUB_ENV
+
+      - name: Create PR if files have changed
+        if: env.CHANGES_FOUND == 'true'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git checkout -b ${{ env.BRANCH_NAME }}
+          git add .
+          git commit -m "Update chains and flex index files"
+          gh pr create -B main -H ${{ env.BRANCH_NAME }} --title 'Update chains and flex index files' --body 'Created by GitHub Actions Cron Job' --reviewer wkande,dcroote
+        env:
+          BRANCH_NAME: "actions-chains-index-update"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
