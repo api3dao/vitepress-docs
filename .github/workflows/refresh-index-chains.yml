@@ -36,8 +36,8 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
           git checkout -b ${{ env.BRANCH_NAME }}
-          git add .
-          git commit -m "Update chains and flex index files"
+          git commit -am "Update chains and flex index files"
+          git push origin ${{ env.BRANCH_NAME }}
           gh pr create -B main -H ${{ env.BRANCH_NAME }} --title 'Update chains and flex index files' --body 'Created by GitHub Actions Cron Job' --reviewer wkande,dcroote
         env:
           BRANCH_NAME: "actions-chains-index-update"
