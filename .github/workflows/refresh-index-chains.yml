@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Run every day at 12:00
+    - cron: '0 12 * * *'
 
 jobs:
   conditional_PR_generation:
