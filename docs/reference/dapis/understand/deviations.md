@@ -47,17 +47,20 @@ the heartbeat) the dAPI value is forcibly updated. For example:
 
 ## Testnet dAPIs
 
-Testnet dAPIs are only available on the API3 Market with a deviation threshold
-of 1% and a [heartbeat](/reference/dapis/understand/deviations.md#heartbeat) of
-24 hours.
+Testnet dAPIs are available on the API3 Market with multiple deviation
+thresholds and [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
+settings.
 
 | Deviation | Heartbeat |
 | --------- | --------- |
+| 0.25%     | 24 hours  |
+| 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
+| 5%        | 24 hours  |
 
 ## Mainnet dAPIs
 
-Mainnet dAPIs will be available on the API3 Market with multiple deviation
+Mainnet dAPIs are available on the API3 Market with multiple deviation
 thresholds and [heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 settings.
 

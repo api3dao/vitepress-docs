@@ -33,17 +33,19 @@ directly operated by the QRNG API providers. You can read more about QRNG
 
 ## How many providers are there for QRNG?
 
-Currently, there are 3 providers for QRNG:
+Currently, there are 4 providers for QRNG:
 
 - [Australian National University](https://quantumnumbers.anu.edu.au/)
 - [Quintessence Labs](https://www.quintessencelabs.com/)
-- [Nodary (Testnet)](https://nodary.io/)
+- [Quantum Blockchains Random Numbers](https://www.quantumblockchains.io)
+- [Testnet Random Numbers](/reference/qrng/providers.html#testnet-random-numbers)
 
 [Click here to view the list of providers](/reference/qrng/providers.md).
 
-Both ANU and Quintessence Labs are running Airnodes in production serving 20+
-chains. Nodary is a testnet provider. It emulates QRNG using pseudorandom
-numbers on testnets chains.
+ANU, Quintessence Labs and Quantum Blockchains are running Airnodes in
+production serving 20+ chains. Testnet Random Numbers emulates QRNG using
+[pseudorandom numbers](https://www.mathworks.com/help/stats/generating-random-data.html)
+on testnets.
 
 [Click here to view the list of chains where QRNG is available](/reference/qrng/chains.md).
 

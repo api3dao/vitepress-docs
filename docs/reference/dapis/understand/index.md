@@ -100,24 +100,41 @@ team to ensure the highest quality data availability for the listed dAPIs.
 dAPIs are available on both major EVM-compatible testnets and mainnets. The
 chains that are currently supported are listed below:
 
-| Mainnet         | Testnet                       |
-| --------------- | ----------------------------- |
-| Arbitrum One    | Arbitrum Sepolia Testnet      |
-| Avalanche       | Avalanche Testnet             |
-| Base            | Base Sepolia Testnet          |
-| Blast           | Blast Sepolia Testnet         |
-| BNB Smart Chain | BNB Smart Chain Testnet       |
-| Ethereum        | Ethereum Sepolia Testnet      |
-| Fantom          | Fantom Testnet                |
-| Gnosis Chain    | Gnosis Chain Testnet          |
-| Kava            | Kava Testnet                  |
-| Linea           | Linea Sepolia Testnet         |
-| Mantle          |                               |
-| Moonbeam        | Moonbeam Testnet              |
-| Moonriver       |                               |
-| Optimism        | Optimism Sepolia Testnet      |
-| Polygon zkEVM   | Polygon zkEVM Sepolia Testnet |
-| Polygon         |                               |
+| Mainnet          | Testnet                       |
+| ---------------- | ----------------------------- |
+| Arbitrum One     | Arbitrum Sepolia Testnet      |
+| Astar zkEVM      | Astar zkEVM Sepolia Testnet   |
+| Avalanche        | Avalanche Testnet             |
+| Base             | Base Sepolia Testnet          |
+| Blast            | Blast Sepolia Testnet         |
+| Bob              | Bob Sepolia Testnet           |
+| BNB Smart Chain  | BNB Smart Chain Testnet       |
+| BSquared Network | BSquared Network Testnet      |
+| Core             | Core Testnet                  |
+| Ethereum         | Ethereum Sepolia Testnet      |
+| Fantom           | Fantom Testnet                |
+| Fraxtal          | Fraxtal Holesky Testnet       |
+| Gnosis Chain     | Gnosis Chain Testnet          |
+| inEVM            | inEVM Testnet                 |
+| Kava             | Kava Testnet                  |
+| Kroma            | Kroma Sepolia Testnet         |
+| LightLink        | LightLink Sepolia Testnet     |
+| Linea            | Linea Sepolia Testnet         |
+| Lukso            | Lukso Testnet                 |
+| Mantle           |                               |
+| Merlin           | Merlin Testnet                |
+| Metis            | Metis Sepolia Testnet         |
+| Mode             | Mode Sepolia Testnet          |
+| Moonbeam         | Moonbeam Testnet              |
+| Moonriver        |                               |
+| opBNB            | opBNB Testnet                 |
+| Optimism         | Optimism Sepolia Testnet      |
+| Polygon zkEVM    | Polygon zkEVM Sepolia Testnet |
+| Polygon          |                               |
+| RARI Chain       |                               |
+| Sei              | Sei Testnet                   |
+| Taiko            | Taiko Holesky Testnet         |
+| X Layer          | X Layer Sepolia Testnet       |
 
 Head over to the [API3 Market](https://market.api3.org/) to see the list of all
 available dAPIs and their chains.
@@ -130,15 +147,14 @@ the mapping for the dAPI will be updated to point to the particular
 
 ::: info Note
 
-If you have already deployed your proxy contract to read from the dAPI, it will
-remain the same. Purchasing a better configuration will not change your proxy
-contract address for the dAPI.
+Purchasing a better configuration will not change the proxy contract address for
+the dAPI.
 
 :::
 
 With dAPIs, dApps can have an option to configure the deviation threshold and
-heartbeat. For mainnet feeds, dApps have the following options to choose from
-based on the chain and dAPI:
+heartbeat. For both mainnet and testnet feeds, dApps have the following options
+to choose from based on the chain and dAPI:
 
 | Deviation | Heartbeat |
 | --------- | --------- |

@@ -32,8 +32,10 @@ seamlessly access dAPI services. This end-to-end process consists of:
   <br/>
 - [Activating your dAPI](/guides/dapis/subscribing-to-dapis/#activating-your-dapi)
   <br/>
-- [Setting up OEV and getting the proxy address](/guides/dapis/subscribing-to-dapis/#setting-up-oev-and-getting-the-proxy-address)
+- [Getting the proxy address](/guides/dapis/subscribing-to-dapis/#getting-the-proxy-address)
   <br/>
+
+<img src="../../assets/images/dapi-1.png" style="width:100%"/>
 
 ## Exploring, selecting and configuring your dAPI
 
@@ -74,7 +76,7 @@ more if you are unsure what suits your dApp_
 
 If a dAPI is already activated, make sure to check the expiration date and
 update parameters. You can update the parameters and extend the subscription by
-purchasing a new configuration.
+purchasing a new configuration or read the dAPI directly by using the proxy.
 
 :::
 
@@ -90,43 +92,22 @@ Once the transaction is confirmed, you will be presented with a confirmation
 page for the order. You can now go back and check the updated configuration for
 the dAPI.
 
-## Setting up OEV and getting the proxy address
+<img src="../../assets/images/dapi-8.png" style="width:60%"/>
+
+## Getting the Proxy Address
 
 Once you are done configuring and activating the dAPI, you can now integrate it.
 To do so, click on the **Integrate** button on the dAPI details page.
 
+<img src="../../assets/images/dapi-9.png" style="width:100%"/>
+
+To read from the dAPI, you will need the
+[proxy contract](/reference/dapis/understand/proxy-contracts) address. Copy the
+displayed proxy address.
+
 <img src="../../assets/images/dapi-5.png" style="width:100%"/>
 
-To read from the dAPI, you will need the proxy contract address. Select **Get
-Proxy Address** to get the proxy contract address.
-
-<img src="../../assets/images/dapi-6.png" style="width:100%"/>
-
-Before you can start reading from the dAPI, you will need to set your **OEV
-beneficiary address**. This is the address that will receive the OEV proceeds
-through the OEV Network.
-
-::: info Note
-
-The OEV beneficiary address must be an EOA or a smart contract address that can
-call the `Api3ServerV1` contract to withdraw funds to itself.
-
-<!-- Click here to read more about the [OEV beneficiary](). -->
-
-:::
-
-Once you have entered a valid address, click on **Deploy Proxy**. Confirm the
-transaction in your wallet.
-
-<img src="../../assets/images/dapi-7.png" style="width:100%"/>
-
-You can now see the deployed proxy contract address. You can now use this to
-read from the configured dAPI.
-
-In order for OEV Searchers to be able to find your dApp and participate in the
-OEV auctions, you must register your dApp and all the proxies with
-[API3 Ecosystem](https://ecosystem.api3.org/). To do this, click on **Register
-Proxy** and fill out all the details about your dApp.
+You can now use this to read from the configured dAPI.
 
 To get started with using dAPIs, you can follow the
 [Reading a dAPI Proxy guide](/guides/dapis/read-a-dapi/).
