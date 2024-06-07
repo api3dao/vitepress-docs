@@ -643,6 +643,20 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "metal": {
+    "id": "1750",
+    "alias": "metal",
+    "name": "Metal L2",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://explorer.metall2.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "metis-sepolia-testnet": {
     "id": "59902",
     "alias": "metis-sepolia-testnet",
@@ -943,6 +957,20 @@
     "name": "Sei testnet",
     "nativeToken": "SEI",
     "testnet": true,
+    "explorerUrl": "https://devnet.seistream.app/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "sei": {
+    "id": "1329",
+    "alias": "sei",
+    "name": "Sei",
+    "nativeToken": "SEI",
+    "testnet": false,
     "explorerUrl": "https://seitrace.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
@@ -963,6 +991,20 @@
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "taiko": {
+    "id": "167000",
+    "alias": "taiko",
+    "name": "Taiko",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://taikoscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
+      "AccessControlRegistry": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
+      "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
+      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE"
     }
   },
   "x-layer-sepolia-testnet": {
