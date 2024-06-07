@@ -35,7 +35,8 @@ requests data from an Airnode, via the
 
 ::: warning Check your Network!
 
-Make sure you're on a Testnet before trying to deploy the contracts on-chain!
+Make sure you're on a Ethereum Sepolia testnet before trying to deploy the
+contracts on-chain!
 
 :::
 
@@ -43,6 +44,9 @@ Given below is an example of a basic
 [Requester Contract](/reference/airnode/latest/concepts/requester.md) to request
 data from any Airnode. To follow along, you can open the following contract in
 Remix and try deploying your own Requester Contract.
+
+In this example, you will be calling the Coingecko Airnode to request the latest
+price of an asset on Ethereum Sepolia.
 
 [Open in Remix](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/RequesterWithWithdrawal.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
@@ -199,15 +203,16 @@ It calls the `requestWithdrawal` function of the `airnodeRrp` contract.
 :::warning Set up your Testnet Metamask Account!
 
 Make sure you've already configured your Metamask wallet and funded it with some
-testnet ETH before moving forward. You can request some from
-[here](https://faucet.paradigm.xyz/)
+testnet Sepolia ETH before moving forward. You can request some from
+[here](https://www.alchemy.com/faucets/ethereum-sepolia)
 
 :::
 
 You now need to deploy the Requester Contract and call it through Remix. It will
-be calling the Coingecko Airnode to request the latest price of Ethereum.
+be calling the Coingecko Airnode to request the latest price of Bitcoin on
+Ethereum Sepolia testnet.
 
-### Compile and Deploy the Requester Contract on Goerli Testnet
+### Compile and Deploy the Requester Contract on Sepolia Testnet
 
 - [Click here](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/RequesterWithWithdrawal.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
   to open the Requester Contract in Remix.
@@ -221,7 +226,7 @@ be calling the Coingecko Airnode to request the latest price of Ethereum.
 
 - Head to Deploy and run Transactions and select Injected Provider — MetaMask
   option under Environment. Connect your MetaMask. Make sure you’re on the
-  Goerli Testnet.
+  Sepolia Testnet.
 
 - The `_rrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have
   already been deployed on-chain. You can check for your specific chain
@@ -237,23 +242,24 @@ needs to be derived from the requester's contract address, the Airnode address,
 and the Airnode xpub. The wallet is used to pay gas costs of the transactions.
 The sponsor wallet must be derived using the command
 [derive-sponsor-wallet-address](/reference/airnode/latest/developers/requesters-sponsors.md#how-to-derive-a-sponsor-wallet)
-from the Admin CLI. Use the value of the sponsor wallet address that the command
-outputs while making the request. **This wallet needs to be funded.**
+from the [Admin CLI](/reference/airnode/latest/packages/admin-cli). Use the
+value of the sponsor wallet address that the command outputs while making the
+request. **This wallet needs to be funded.**
 
-::: details Coingecko's Airnode Details
+::: details Coingecko's Airnode Details on Sepolia Testnet
 
 ```
-Coingecko's Airnode Address = 0x478f9e54E5B2ee1D0A05cae1FaA3591CAA1b7091
-Coingecko's Airnode XPUB = xpub6CnJr6BxgEpTBs9Aso71S5EkcRsR4MHzzKGTRA8aoyYhyvqgcacZFnx6a6quX47Vo97oACohk2isNAz68jnmDqrxQ9C1dKWMZtDN6tyVHaG
-Coingecko's Endpoint ID (`/simple/price`) = 0xfb87102cdabadf905321521ba0b3cbf74ad09c5d400ac2eccdbef8d6143e78c4
+Coingecko's Airnode Address = 0x5231b5b98A43F2E25806193dE21e200a1468093f
+Coingecko's Airnode XPUB = xpub6Ce9SBpTarEP5BZV5qH8ZfQjLmwfJT2SZQMKAtkV2F3cj1zXB8pUzpDa3RpDuT2xHAwQ2v7vtkPeMargby67NVNCtEBzRNvdAi4Z5yaHhUC
+Coingecko's Endpoint ID (`/simple/price`) = 0x5dbf4e8c53ad4ffdec277ec4df847e6272597fd851f147c93208e0cff99df72d
 ```
 
 :::
 
 ```sh
 npx @api3/airnode-admin derive-sponsor-wallet-address \
-  --airnode-xpub xpub6CnJr6BxgEpTBs9Aso71S5EkcRsR4MHzzKGTRA8aoyYhyvqgcacZFnx6a6quX47Vo97oACohk2isNAz68jnmDqrxQ9C1dKWMZtDN6tyVHaG \
-  --airnode-address 0x478f9e54E5B2ee1D0A05cae1FaA3591CAA1b7091 \
+  --airnode-xpub xpub6Ce9SBpTarEP5BZV5qH8ZfQjLmwfJT2SZQMKAtkV2F3cj1zXB8pUzpDa3RpDuT2xHAwQ2v7vtkPeMargby67NVNCtEBzRNvdAi4Z5yaHhUC \
+  --airnode-address 0x5231b5b98A43F2E25806193dE21e200a1468093f \
   --sponsor-address <Use the address of your Deployed Requester>
 
   Sponsor wallet address: 0x6394...5906757
@@ -314,7 +320,7 @@ click on Transact.
 
 > ![Making the Request](src/s5.png)
 
-Head over to [Goerli Testnet Explorer](https://goerli.etherscan.io/) and check
+Head over to [Sepolia Testnet Explorer](https://sepolia.etherscan.io/) and check
 your `sponsorWallet` for any new transactions.
 
 > ![Making the Request](src/s6.png)

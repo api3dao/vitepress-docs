@@ -140,8 +140,8 @@ grouped by asset type(s) of supplied data:
 
 Each dAPI has a [proxy contract](/reference/dapis/understand/proxy-contracts)
 that is used to read the value of the dAPI. The proxy contract is linked to a
-mapping that maps to a `beaconId` or `beaconSetId` and an OEV beneficiary
-address. The `beaconId` for each dAPI gets updated when the price hits the set
+mapping that maps to a `beaconId` or `beaconSetId`. The `beaconId` for each dAPI
+gets updated when the price hits the set
 [deviation threshold](/reference/dapis/understand/deviations.md)/[heartbeat](/reference/dapis/understand/deviations.md#heartbeat)
 .
 
