@@ -12,12 +12,14 @@
     },
     {
       "matchDepTypes": ["devDependencies"],
+      "excludePackageNames": ["vitepress"],
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 4am on Monday"],
       "groupName": "non-major-dev-dependencies"
     },
     {
       "matchDepTypes": ["dependencies"],
+      "excludePackageNames": ["vitepress"],
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 4am on Monday"],
       "groupName": "non-major-dependencies"
