@@ -18,10 +18,10 @@ tags:
 
 Preferring the better-specified API connectivity problem over the oracle
 problem, API3 believes that an oracle node should be designed to interface APIs
-with smart contract platforms very well<!-- rather than as a sandbox that can
-purportedly be used for any imaginable purpose-->. The API3 solution to the API connectivity
-problem requires an expansive ecosystem of first-party oracles. Within this API3
-sees thousands of API Providers participating in the Web3 API Economy.
+with smart contract platforms very well. The API3 solution to the API
+connectivity problem requires an expansive ecosystem of first-party oracles.
+Within this API3 sees thousands of API Providers participating in the Web3 API
+Economy.
 
 That said Airnode and first-party oracles will also be a fundamental development
 tool for smart contract developers.
