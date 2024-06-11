@@ -7,7 +7,7 @@ const fs = require('fs');
 var file = require('file');
 const fse = require('fs-extra');
 const { Index } = require('flexsearch');
-const parse = require('html-dom-parser');
+const parse = require('html-dom-parser').default;
 
 let directoriesArr = [];
 let id = 1; // Used as the id for each page added to the index
