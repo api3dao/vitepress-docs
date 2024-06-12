@@ -35,6 +35,18 @@ hero:
       link: /reference/qrng/
 ---
 
+<script>
+export default {
+    mounted() {
+      // Since this page does not have the sidebar we need to make sure the reference menu is not highlighted
+      const api3_navbarReferenceBtn = document.getElementById(
+          'api3_Reference_Menu'
+      );
+      api3_navbarReferenceBtn.style.color = '';
+    }
+  }
+</script>
+
 <style>
 .api3-land-title{
   font-size:xx-large;
