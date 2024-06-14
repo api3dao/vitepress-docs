@@ -34,7 +34,6 @@ export default {
     isDark: undefined,
   }),
   mounted() {
-    console.log(Date.now(), window.navigator.userAgent);
     const { page } = useData();
     const { path } = useRoute();
     this.showVersions(path);

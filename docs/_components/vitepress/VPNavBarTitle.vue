@@ -1,24 +1,50 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { useData } from '../composables/data';
-import { useSidebar } from '../composables/sidebar';
 import { useLangs } from '../composables/langs';
+import { useSidebar } from '../composables/sidebar';
 import { normalizeLink } from '../support/utils';
 import VPImage from './VPImage.vue';
 
 const { site, theme } = useData();
 const { hasSidebar } = useSidebar();
 const { currentLang } = useLangs();
+
+const link = computed(() =>
+  typeof theme.value.logoLink === 'string'
+    ? theme.value.logoLink
+    : theme.value.logoLink?.link
+);
+
+const rel = computed(() =>
+  typeof theme.value.logoLink === 'string'
+    ? undefined
+    : theme.value.logoLink?.rel
+);
+
+const target = computed(() =>
+  typeof theme.value.logoLink === 'string'
+    ? undefined
+    : theme.value.logoLink?.target
+);
 </script>
 
 <template>
   <div class="VPNavBarTitle" :class="{ 'has-sidebar': hasSidebar }">
-    <a class="title" :href="normalizeLink(currentLang.link)">
+    <a
+      class="title"
+      :href="link ?? normalizeLink(currentLang.link)"
+      :rel="rel"
+      :target="target"
+    >
       <slot name="nav-bar-title-before" />
       <VPImage v-if="theme.logo" class="logo" :image="theme.logo" />
-      <template v-if="theme.siteTitle">{{ theme.siteTitle }}</template>
-      <template v-else-if="theme.siteTitle === undefined">{{
-        site.title
-      }}</template>
+      <template v-if="theme.siteTitle"
+        ><span>{{ theme.siteTitle }}</span></template
+      >
+      <template v-else-if="theme.siteTitle === undefined"
+        ><span>{{ site.title }}</span></template
+      >
       <slot name="nav-bar-title-after" />
     </a>
   </div>
@@ -38,10 +64,6 @@ const { currentLang } = useLangs();
   transition: opacity 0.25s;
 }
 
-.title:hover {
-  opacity: 0.6;
-}
-
 @media (min-width: 960px) {
   .title {
     flex-shrink: 0;
@@ -54,7 +76,7 @@ const { currentLang } = useLangs();
 
 :deep(.logo) {
   margin-right: 8px;
-  /* wkande: Sept 2022: Changed the height, was 24px  */
+  /* wkande: Sept 2022: Changed the height, was    var(--vp-nav-logo-height)     */
   height: 35px;
   /* wkande: Sept 2022: Added margin-left */
   margin-left: -22px;
