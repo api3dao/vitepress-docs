@@ -27,7 +27,7 @@
     "firebase:emulator": "yarn docs:build; yarn flex:build; yarn flex:test; firebase emulators:start"
   },
   "devDependencies": {
-    "@api3/chains": "^7.1.0",
+    "@api3/chains": "^7.2.1",
     "adm-zip": "^0.5.14",
     "axios": "^1.7.2",
     "colors": "^1.4.0",
@@ -41,7 +41,7 @@
     "husky": "^9.0.11",
     "js-yaml": "^4.1.0",
     "oust": "^2.0.4",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "tiny-emitter": "^2.1.0",
     "vitepress": "1.2.3",
     "walk-sync": "^3.0.0"
