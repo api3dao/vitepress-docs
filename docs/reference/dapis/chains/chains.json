@@ -2,7 +2,7 @@
   "apechain-arbitrum-sepolia-testnet": {
     "id": "1798",
     "alias": "apechain-arbitrum-sepolia-testnet",
-    "name": "ApeChain Arbitrum Sepolia testnet",
+    "name": "ApeChain testnet",
     "nativeToken": "APE",
     "testnet": true,
     "explorerUrl": "https://jenkins.explorer.caldera.xyz/",
@@ -16,7 +16,7 @@
   "arbitrum-sepolia-testnet": {
     "id": "421614",
     "alias": "arbitrum-sepolia-testnet",
-    "name": "Arbitrum Sepolia testnet",
+    "name": "Arbitrum testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.arbiscan.io/",
@@ -44,7 +44,7 @@
   "astar-sepolia-testnet": {
     "id": "6038361",
     "alias": "astar-sepolia-testnet",
-    "name": "Astar zkEVM Sepolia testnet",
+    "name": "Astar zkEVM testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://zkyoto.explorer.startale.com/",
@@ -100,7 +100,7 @@
   "base-sepolia-testnet": {
     "id": "84532",
     "alias": "base-sepolia-testnet",
-    "name": "Base Sepolia testnet",
+    "name": "Base testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.basescan.org/",
@@ -139,10 +139,38 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "bitlayer-testnet": {
+    "id": "200810",
+    "alias": "bitlayer-testnet",
+    "name": "Bitlayer testnet",
+    "nativeToken": "BTC",
+    "testnet": true,
+    "explorerUrl": "https://testnet.btrscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "bitlayer": {
+    "id": "200901",
+    "alias": "bitlayer",
+    "name": "Bitlayer",
+    "nativeToken": "BTC",
+    "testnet": false,
+    "explorerUrl": "https://www.btrscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "blast-sepolia-testnet": {
     "id": "168587773",
     "alias": "blast-sepolia-testnet",
-    "name": "Blast Sepolia Testnet",
+    "name": "Blast testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.blastscan.io/",
@@ -170,7 +198,7 @@
   "bob-sepolia-testnet": {
     "id": "111",
     "alias": "bob-sepolia-testnet",
-    "name": "BOB Sepolia testnet",
+    "name": "BOB testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://testnet-explorer.gobob.xyz/",
@@ -352,7 +380,7 @@
   "fraxtal-holesky-testnet": {
     "id": "2522",
     "alias": "fraxtal-holesky-testnet",
-    "name": "Fraxtal Holesky testnet",
+    "name": "Fraxtal testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://holesky.fraxscan.com/",
@@ -408,7 +436,7 @@
   "immutable-sepolia-testnet": {
     "id": "13473",
     "alias": "immutable-sepolia-testnet",
-    "name": "Immutable zkEVM Sepolia testnet",
+    "name": "Immutable zkEVM testnet",
     "nativeToken": "IMX",
     "testnet": true,
     "explorerUrl": "https://explorer.testnet.immutable.com/",
@@ -478,7 +506,7 @@
   "kroma-sepolia-testnet": {
     "id": "2358",
     "alias": "kroma-sepolia-testnet",
-    "name": "Kroma Sepolia testnet",
+    "name": "Kroma testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.kromascan.com/",
@@ -506,7 +534,7 @@
   "lightlink-sepolia-testnet": {
     "id": "1891",
     "alias": "lightlink-sepolia-testnet",
-    "name": "LightLink Sepolia testnet",
+    "name": "LightLink testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://pegasus.lightlink.io/",
@@ -534,7 +562,7 @@
   "linea-sepolia-testnet": {
     "id": "59141",
     "alias": "linea-sepolia-testnet",
-    "name": "Linea Sepolia testnet",
+    "name": "Linea testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.lineascan.build/",
@@ -563,7 +591,7 @@
     "id": "4201",
     "alias": "lukso-testnet",
     "name": "Lukso testnet",
-    "nativeToken": "LYXt",
+    "nativeToken": "LYX",
     "testnet": true,
     "explorerUrl": "https://explorer.execution.testnet.lukso.network/",
     "contracts": {
@@ -590,7 +618,7 @@
   "mantle-sepolia-testnet": {
     "id": "5003",
     "alias": "mantle-sepolia-testnet",
-    "name": "Mantle Sepolia testnet",
+    "name": "Mantle testnet",
     "nativeToken": "MNT",
     "testnet": true,
     "explorerUrl": "https://explorer.sepolia.mantle.xyz/",
@@ -660,7 +688,7 @@
   "metis-sepolia-testnet": {
     "id": "59902",
     "alias": "metis-sepolia-testnet",
-    "name": "Metis Sepolia testnet",
+    "name": "Metis testnet",
     "nativeToken": "METIS",
     "testnet": true,
     "explorerUrl": "https://sepolia-explorer.metisdevops.link/",
@@ -688,7 +716,7 @@
   "mode-sepolia-testnet": {
     "id": "919",
     "alias": "mode-sepolia-testnet",
-    "name": "Mode Sepolia testnet",
+    "name": "Mode testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia.explorer.mode.network/",
@@ -828,7 +856,7 @@
   "optimism-sepolia-testnet": {
     "id": "11155420",
     "alias": "optimism-sepolia-testnet",
-    "name": "Optimism Sepolia testnet",
+    "name": "Optimism testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://sepolia-optimism.etherscan.io/",
@@ -856,7 +884,7 @@
   "polygon-sepolia-testnet": {
     "id": "80002",
     "alias": "polygon-sepolia-testnet",
-    "name": "Polygon Sepolia testnet",
+    "name": "Polygon testnet",
     "nativeToken": "MATIC",
     "testnet": true,
     "explorerUrl": "https://amoy.polygonscan.com/",
@@ -870,7 +898,7 @@
   "polygon-zkevm-sepolia-testnet": {
     "id": "2442",
     "alias": "polygon-zkevm-sepolia-testnet",
-    "name": "Polygon zkEVM Sepolia testnet",
+    "name": "Polygon zkEVM testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://cardona-zkevm.polygonscan.com/",
@@ -912,7 +940,7 @@
   "rari-arbitrum-sepolia-testnet": {
     "id": "1918988905",
     "alias": "rari-arbitrum-sepolia-testnet",
-    "name": "RARI Arbitrum Sepolia testnet",
+    "name": "RARI Chain testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://testnet.explorer.rarichain.org/",
@@ -951,6 +979,34 @@
       "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
     }
   },
+  "scroll-sepolia-testnet": {
+    "id": "534351",
+    "alias": "scroll-sepolia-testnet",
+    "name": "Scroll testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.scrollscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
+  "scroll": {
+    "id": "534352",
+    "alias": "scroll",
+    "name": "Scroll",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://scrollscan.com/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+    }
+  },
   "sei-testnet": {
     "id": "713715",
     "alias": "sei-testnet",
@@ -982,7 +1038,7 @@
   "taiko-holesky-testnet": {
     "id": "167009",
     "alias": "taiko-holesky-testnet",
-    "name": "Taiko Holesky testnet",
+    "name": "Taiko testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://blockscoutapi.hekla.taiko.xyz/",
@@ -1010,7 +1066,7 @@
   "x-layer-sepolia-testnet": {
     "id": "195",
     "alias": "x-layer-sepolia-testnet",
-    "name": "X Layer Sepolia testnet",
+    "name": "X Layer testnet",
     "nativeToken": "OKB",
     "testnet": true,
     "explorerUrl": "https://www.okx.com/explorer/xlayer-test/",
@@ -1038,7 +1094,7 @@
   "zircuit-sepolia-testnet": {
     "id": "48899",
     "alias": "zircuit-sepolia-testnet",
-    "name": "Zircuit Sepolia testnet",
+    "name": "Zircuit testnet",
     "nativeToken": "ETH",
     "testnet": true,
     "explorerUrl": "https://explorer.zircuit.com/",
