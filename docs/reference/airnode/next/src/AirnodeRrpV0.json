@@ -127,7 +127,7 @@
   },
   {
     "id": "1891",
-    "fullname": "LightLink Sepolia testnet",
+    "fullname": "LightLink testnet",
     "alias": "lightlink-sepolia-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"
@@ -239,7 +239,7 @@
   },
   {
     "id": "168587773",
-    "fullname": "Blast Sepolia Testnet",
+    "fullname": "Blast testnet",
     "alias": "blast-sepolia-testnet",
     "contractName": "AirnodeRrpV0",
     "contractAddress": "0xD223DfDCb888CA1539bb3459a83c543A1608F038"
