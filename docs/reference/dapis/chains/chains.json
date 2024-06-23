@@ -10,7 +10,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "arbitrum-sepolia-testnet": {
@@ -24,7 +25,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "arbitrum": {
@@ -38,7 +40,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "astar-sepolia-testnet": {
@@ -52,7 +55,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "astar": {
@@ -66,7 +70,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "avalanche-testnet": {
@@ -80,7 +85,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "avalanche": {
@@ -94,7 +100,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "base-sepolia-testnet": {
@@ -108,7 +115,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "base": {
@@ -122,21 +130,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "berachain-testnet": {
-    "id": "80085",
-    "alias": "berachain-testnet",
-    "name": "Berachain testnet",
-    "nativeToken": "BERA",
-    "testnet": true,
-    "explorerUrl": "https://artio.beratrail.io/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bitlayer-testnet": {
@@ -150,7 +145,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bitlayer": {
@@ -164,7 +160,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "blast-sepolia-testnet": {
@@ -178,7 +175,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "blast": {
@@ -192,7 +190,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bob-sepolia-testnet": {
@@ -206,7 +205,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bob": {
@@ -220,7 +220,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bsc-testnet": {
@@ -234,7 +235,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bsc": {
@@ -248,7 +250,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bsquared-testnet": {
@@ -262,7 +265,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "bsquared": {
@@ -276,7 +280,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "core-testnet": {
@@ -290,7 +295,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "core": {
@@ -304,7 +310,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "ethereum-holesky-testnet": {
@@ -318,7 +325,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "ethereum-sepolia-testnet": {
@@ -332,7 +340,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "ethereum": {
@@ -346,7 +355,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "fantom-testnet": {
@@ -360,7 +370,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "fantom": {
@@ -374,7 +385,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "fraxtal-holesky-testnet": {
@@ -388,7 +400,8 @@
       "Api3ServerV1": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
       "AccessControlRegistry": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
       "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
-      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE"
+      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
+      "Api3Market": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
     }
   },
   "fraxtal": {
@@ -402,7 +415,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "gnosis-testnet": {
@@ -416,7 +430,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "gnosis": {
@@ -430,7 +445,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "immutable-sepolia-testnet": {
@@ -444,7 +460,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "inevm-testnet": {
@@ -458,7 +475,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "inevm": {
@@ -472,7 +490,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "kava-testnet": {
@@ -486,7 +505,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "kava": {
@@ -500,7 +520,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "kroma-sepolia-testnet": {
@@ -514,7 +535,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "kroma": {
@@ -528,7 +550,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "lightlink-sepolia-testnet": {
@@ -542,7 +565,8 @@
       "Api3ServerV1": "0x3d0Ca9e5490E36627beA9a8cb3cefa12D7cDc0af",
       "AccessControlRegistry": "0xDDe9CE3736939d59A70c446c8A4AB6714CB4a41a",
       "OwnableCallForwarder": "0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E",
-      "ProxyFactory": "0x81A850254769a6C87d4F11B9F80bCc5bE1CcF50E"
+      "ProxyFactory": "0x81A850254769a6C87d4F11B9F80bCc5bE1CcF50E",
+      "Api3Market": "0x55423F77EFa81cB33bdd47D04068571383e27241"
     }
   },
   "lightlink": {
@@ -556,7 +580,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "linea-sepolia-testnet": {
@@ -570,7 +595,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "linea": {
@@ -584,7 +610,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "lukso-testnet": {
@@ -598,7 +625,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "lukso": {
@@ -612,21 +640,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "mantle-sepolia-testnet": {
-    "id": "5003",
-    "alias": "mantle-sepolia-testnet",
-    "name": "Mantle testnet",
-    "nativeToken": "MNT",
-    "testnet": true,
-    "explorerUrl": "https://explorer.sepolia.mantle.xyz/",
-    "contracts": {
-      "Api3ServerV1": "0x5aB00E30453EEAd35025A761ED65d51d74574C24",
-      "AccessControlRegistry": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
-      "OwnableCallForwarder": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
-      "ProxyFactory": "0x944609FF0729435F87Ef429EC155d7539A83B9C8"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "mantle": {
@@ -640,7 +655,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "merlin-testnet": {
@@ -654,7 +670,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "merlin": {
@@ -668,7 +685,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "metal": {
@@ -682,7 +700,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "metis-sepolia-testnet": {
@@ -696,7 +715,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "metis": {
@@ -710,7 +730,8 @@
       "Api3ServerV1": "0x0ADa28a62F6F304aEF27e73E4a65cBD34C6026c3",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x2D6D050Fc44d4db1c8577f4cF87905811fA126b2",
-      "ProxyFactory": "0x55a07E3066e893A2303B95BfD6637b1543647002"
+      "ProxyFactory": "0x55a07E3066e893A2303B95BfD6637b1543647002",
+      "Api3Market": "0xFfD653c4a90E2e133566c1136A6f75731d01D8E7"
     }
   },
   "mode-sepolia-testnet": {
@@ -724,7 +745,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "mode": {
@@ -738,7 +760,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "moonbeam-testnet": {
@@ -752,7 +775,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "moonbeam": {
@@ -766,7 +790,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "moonriver": {
@@ -780,7 +805,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "neon-evm-testnet": {
@@ -794,7 +820,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x25B208acd27F062344b2844ec245d52f9cb200ef"
     }
   },
   "neon-evm": {
@@ -808,7 +835,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x1B127098D19A3D6A0417560fD7df2b927FafD933"
     }
   },
   "oev-network": {
@@ -822,7 +850,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "opbnb-testnet": {
@@ -836,7 +865,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "opbnb": {
@@ -850,7 +880,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "optimism-sepolia-testnet": {
@@ -864,7 +895,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "optimism": {
@@ -878,7 +910,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "polygon-sepolia-testnet": {
@@ -892,7 +925,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "polygon-zkevm-sepolia-testnet": {
@@ -906,7 +940,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "polygon-zkevm": {
@@ -920,7 +955,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "polygon": {
@@ -934,7 +970,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "rari-arbitrum-sepolia-testnet": {
@@ -948,7 +985,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "rari": {
@@ -962,21 +1000,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
-    }
-  },
-  "rsk": {
-    "id": "30",
-    "alias": "rsk",
-    "name": "Rootstock",
-    "nativeToken": "RBTC",
-    "testnet": false,
-    "explorerUrl": "https://explorer.rsk.co/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "scroll-sepolia-testnet": {
@@ -990,7 +1015,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "scroll": {
@@ -1004,7 +1030,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "sei-testnet": {
@@ -1018,7 +1045,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "sei": {
@@ -1032,7 +1060,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "taiko-holesky-testnet": {
@@ -1046,7 +1075,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "taiko": {
@@ -1060,7 +1090,8 @@
       "Api3ServerV1": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
       "AccessControlRegistry": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
       "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
-      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE"
+      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
+      "Api3Market": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
     }
   },
   "x-layer-sepolia-testnet": {
@@ -1074,7 +1105,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "x-layer": {
@@ -1088,7 +1120,8 @@
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
       "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD"
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "zircuit-sepolia-testnet": {
@@ -1102,7 +1135,8 @@
       "Api3ServerV1": "0x55Cf1079a115029a879ec3A11Ba5D453272eb61D",
       "AccessControlRegistry": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d",
       "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
-      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE"
+      "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
+      "Api3Market": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
     }
   }
 }

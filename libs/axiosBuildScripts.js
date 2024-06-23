@@ -26,10 +26,10 @@ async function dapiChains() {
       AccessControlRegistry: repoData.AccessControlRegistry[id],
       OwnableCallForwarder: repoData.OwnableCallForwarder[id],
       ProxyFactory: repoData.ProxyFactory[id],
+      Api3Market: repoData.Api3Market[id],
     };
 
-    // Use the obj only if the contract for api3serverV1 is present
-    if (contractList.Api3ServerV1) {
+    if (contractList.Api3Market) {
       list[chain.alias] = {
         id: id,
         alias: chain.alias,
