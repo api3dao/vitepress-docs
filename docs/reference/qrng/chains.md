@@ -155,6 +155,7 @@ Quintessence is available on selected mainnets and testnets.
 | [{{getChainNameById(1313161554)}}](https://explorer.mainnet.aurora.dev)             | 1313161554 | <code>0xE338f63170c42bA0d2a888f18F6185369779009c</code><CopyIcon text="0xE338f63170c42bA0d2a888f18F6185369779009c"/> | 25               |
 | [{{getChainNameById(43114)}}](https://snowtrace.io/)                                | 43114      | <code>0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E</code><CopyIcon text="0xC02Ea0f403d5f3D45a4F1d0d817e7A2601346c9E"/> | 25               |
 | [{{getChainNameById(8453)}}](https://basescan.org/)                                 | 8453       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
+| [{{getChainNameById(81457)}}](https://blastscan.io)                                 | 81457      | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 | [{{getChainNameById(56)}}](https://bscscan.com)                                     | 56         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 25               |
 | [{{getChainNameById(56288)}}](https://blockexplorer.bnb.boba.network)               | 56288      | <code>0x20C9e9610d4e719a39F82893b3f42e2730F42778</code><CopyIcon text="0x20C9e9610d4e719a39F82893b3f42e2730F42778"/> | 25               |
 | [{{getChainNameById(288)}}](https://bobascan.com)                                   | 288        | <code>0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38</code><CopyIcon text="0x1d4F592E0723e03bed2Ff6d78F3CEe6750f08B38"/> | 10               |
@@ -172,6 +173,7 @@ Quintessence is available on selected mainnets and testnets.
 | [{{getChainNameById(1101)}}](https://zkevm.polygonscan.com/)                        | 1101       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 | [{{getChainNameById(30)}}](https://explorer.rsk.co)                                 | 30         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 3                |
 | [{{getChainNameById(416)}}](https://explorer.sx.technology)                         | 416        | <code>0xE338f63170c42bA0d2a888f18F6185369779009c</code><CopyIcon text="0xE338f63170c42bA0d2a888f18F6185369779009c"/> | 20               |
+| [{{getChainNameById(196)}}](https://www.okx.com/web3/explorer/xlayer)               | 30         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 
 </div>
 
