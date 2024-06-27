@@ -378,3 +378,47 @@ sponsor wallet for any new transactions.
 The funds from the `sponsorWallet` have been transferred to the owner.
 
 <FlexEndTag/>
+
+## 5. Using HTTP Gateways (optional)
+
+You can use
+[HTTP Gateways](/reference/airnode/latest/understand/http-gateways.html) to make
+requests to the Airnode off-chain. HTTP Gateways are usually used to test and
+ensure if the Airnode is configured properly and working as expected without
+having the need to make a request on-chain.
+
+[Read more about HTTP Gateways here.](/reference/airnode/latest/understand/http-gateways.html)
+
+Once you deploy an Airnode, the HTTP Gateway and the HTTP Signed data Gateway
+URLs are displayed on the terminal at the end of the deployment process. You can
+use these URLs to make HTTP requests to the Airnode.
+
+For this example, we are going to use the Coingecko's Airnode HTTP Gateway URL
+to to make a request to the Airnode. You can use a tool like
+[Postman](https://www.postman.com/) or CURL to make a POST request.
+
+To make a request for the HTTP Gateway, you need to make a POST request to the
+HTTP Gateway URL followed by the endpoint ID along with the following parameters
+defined in the request body.
+
+```bash
+curl \
+-X POST \
+-H 'Content-Type: application/json' \
+-d '{"parameters": {"vs_currencies": "usd", "ids": "bitcoin"}}' \
+'https://v5smo0rs75.execute-api.us-east-1.amazonaws.com/v1/d8c1ffa0-6e08-a88c-c999-a31f2acc2c22/0x5dbf4e8c53ad4ffdec277ec4df847e6272597fd851f147c93208e0cff99df72d'
+```
+
+Similarly, for a HTTP Signed data Gateway request, you need to pass in the
+encoded parameters defined as `encodedParameters` in the request body. You can
+use the `@api3/airnode-abi` library to encode the parameters like previously
+shown.
+
+```bash
+curl \
+-X POST \
+-H 'Content-Type: application/json' \
+-d '{"encodedParameters": "0x315353535300000000000000000000000000000000000000000000000000000076735f63757272656e63696573000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120696473000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001605f7061746800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001a05f7479706500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000000375736400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007626974636f696e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b626974636f696e2e7573640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006696e743235360000000000000000000000000000000000000000000000000000"}' \
+'https://p9a26cqzo9.execute-api.us-east-1.amazonaws.com/v1/1f5dddde-02c6-2712-b941-2ec24f0113dc/0x5dbf4e8c53ad4ffdec277ec4df847e6272597fd851f147c93208e0cff99df72d'
+
+```

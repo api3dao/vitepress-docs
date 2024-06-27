@@ -27,7 +27,11 @@ module.exports = [
     collapsed: false,
     items: [
       {
-        text: 'Deploying an Airnode',
+        text: 'Setting up an Airnode with your API',
+        link: '/guides/airnode/setting-up-airnode/',
+      },
+      {
+        text: 'Deploying an Airnode on a Cloud Provider',
         collapsed: false,
         items: [
           {
@@ -49,12 +53,12 @@ module.exports = [
         ],
       },
       {
-        text: 'Post processing',
-        link: '/guides/airnode/post-processing/',
-      },
-      {
         text: 'Calling an Airnode',
         link: '/guides/airnode/calling-an-airnode/',
+      },
+      {
+        text: 'Post processing',
+        link: '/guides/airnode/post-processing/',
       },
       {
         text: 'Making an RRP Request',
@@ -85,18 +89,6 @@ module.exports = [
       {
         text: 'Using QRNG - Remix Example',
         link: '/guides/qrng/qrng-remix/',
-      },
-      {
-        text: 'Building a Lottery with QRNG',
-        link: '/guides/qrng/lottery-guide/',
-      },
-      {
-        text: 'Minting Dynamic NFTs with QRNG',
-        link: '/guides/qrng/quantumon/',
-      },
-      {
-        text: `Building a Roulette with QRNG`,
-        link: '/guides/qrng/roulette-guide/',
       },
       {
         text: 'QRNG YouTube Tutorials',
