@@ -644,6 +644,21 @@
       "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
+  "mantle-sepolia-testnet": {
+    "id": "5003",
+    "alias": "mantle-sepolia-testnet",
+    "name": "Mantle testnet",
+    "nativeToken": "MNT",
+    "testnet": true,
+    "explorerUrl": "https://explorer.sepolia.mantle.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x5aB00E30453EEAd35025A761ED65d51d74574C24",
+      "AccessControlRegistry": "0x2b4401E59780e44d3b1Fd2D41FCb3047c830F286",
+      "OwnableCallForwarder": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
+      "ProxyFactory": "0x944609FF0729435F87Ef429EC155d7539A83B9C8",
+      "Api3Market": "0x8Fa428C366a1922C0cD15561740f22aed5D26635"
+    }
+  },
   "mantle": {
     "id": "5000",
     "alias": "mantle",
