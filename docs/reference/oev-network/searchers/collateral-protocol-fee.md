@@ -60,9 +60,8 @@ const { JsonRpcProvider } = require('ethers');
 const api3Contracts = require('@api3/contracts');
 
 const oevNetworkProvider = new JsonRpcProvider(OEV_NETWORK_RPC_URL);
-const OevAuctionHouseArtifact = await hre.artifacts.readArtifact(
-  'OevAuctionHouse'
-);
+const OevAuctionHouseArtifact =
+  await hre.artifacts.readArtifact('OevAuctionHouse');
 const OevAuctionHouse = new Contract(
   api3Contracts.deploymentAddresses.OevAuctionHouse['4913'],
   OevAuctionHouseArtifact.abi,
