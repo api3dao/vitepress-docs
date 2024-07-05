@@ -30,7 +30,7 @@ awarded bid and then finally submit fulfillment of the oracle update.
 - Bridge ETH to the
   [OEV Network](/reference/oev-network/overview/bridge-oev-network.html)
 
-- clone the repository and install the dependencies
+- Clone the repository and install the dependencies
 
 ```bash
 git clone https://github.com/api3dao/oev-searcher-starter
@@ -43,7 +43,7 @@ yarn
 
 ```bash
 MNEMONIC="your mnemonic"
-OEV_NETWORK_RPC_URL="https://oev-network.calderachain.xyz/http"
+OEV_NETWORK_RPC_URL="https://oev.rpc.api3.org/http"
 TARGET_NETWORK_RPC_URL="https://rpc.mantle.xyz"
 ```
 
@@ -85,9 +85,8 @@ const depositCollateral = async () => {
   const oevNetworkWallet = Wallet.fromPhrase(process.env.MNEMONIC).connect(
     oevNetworkProvider
   );
-  const OevAuctionHouseArtifact = await hre.artifacts.readArtifact(
-    'OevAuctionHouse'
-  );
+  const OevAuctionHouseArtifact =
+    await hre.artifacts.readArtifact('OevAuctionHouse');
   const OevAuctionHouse = new Contract(
     api3Contracts.deploymentAddresses.OevAuctionHouse['4913'],
     OevAuctionHouseArtifact.abi,
@@ -199,9 +198,8 @@ const placeBid = async () => {
   const oevNetworkWallet = Wallet.fromPhrase(process.env.MNEMONIC).connect(
     oevNetworkProvider
   );
-  const OevAuctionHouseArtifact = await hre.artifacts.readArtifact(
-    'OevAuctionHouse'
-  );
+  const OevAuctionHouseArtifact =
+    await hre.artifacts.readArtifact('OevAuctionHouse');
   const OevAuctionHouse = new Contract(
     api3Contracts.deploymentAddresses.OevAuctionHouse['4913'],
     OevAuctionHouseArtifact.abi,
@@ -276,7 +274,7 @@ as an argument to the `placeBid` function.
 
 ## Checking Bid Status and Listening for Awarded Bids
 
-Searchers can check the status of their bids by quering the bidId.
+Searchers can check the status of their bids by quering the bid ID.
 
 ```javascript
 const awardedTransaction = await new Promise(async (resolve, reject) => {
@@ -313,7 +311,7 @@ const awardedTransaction = await new Promise(async (resolve, reject) => {
 ## Performing the oracle update using the awarded bid
 
 Once the bid is awarded, the searcher can perform the oracle update by using the
-encoded awardTransaction on the `updateOevProxyDataFeedWithSignedData` function
+encoded award transaction on the `updateOevProxyDataFeedWithSignedData` function
 of [Api3ServerV1 contract](https://docs.api3.org/reference/dapis/chains/) via
 the deployed OevSearcherMulticallV1 contract.
 
@@ -369,9 +367,8 @@ const reportFulfillment = async (updateTx, bidTopic, bidDetails, bidId) => {
   const oevNetworkWallet = Wallet.fromPhrase(process.env.MNEMONIC).connect(
     oevNetworkProvider
   );
-  const OevAuctionHouseArtifact = await hre.artifacts.readArtifact(
-    'OevAuctionHouse'
-  );
+  const OevAuctionHouseArtifact =
+    await hre.artifacts.readArtifact('OevAuctionHouse');
   const OevAuctionHouse = new Contract(
     api3Contracts.deploymentAddresses.OevAuctionHouse['4913'],
     OevAuctionHouseArtifact.abi,

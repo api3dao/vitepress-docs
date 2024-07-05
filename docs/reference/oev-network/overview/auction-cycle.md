@@ -53,13 +53,11 @@ for example a liquidation event if the price of ETH falls below 2000.
 4. <b>Submitting a bid</b>
 
 The searcher would then submit a bid to the OevAuctionHouse contract with the
-specified conditions to receive the price update i.e price of ETH <= 2000. In
+specified conditions to receive the price update, i.e. price of ETH <= 2000. In
 order to submit a bid, the searcher doesn't need to have collateral deposited in
 the OevAuctionHouse contract. However for a bid to be eligible to win an
-auction, the searcher needs to have the required collateral deposited in the
-OevAuctionHouse contract.
-
-Note: The collateral doesn't get locked until the bid is awarded.
+auction, a collateral deposit in the OevAuctionHouse contract is required. The
+collateral doesn't get locked until the bid is awarded.
 
 5. <b>Start of a new Auction Round</b>
 
@@ -88,13 +86,13 @@ Airnodes (eg: ETH/USD = 2000) or new blocks are produced on the OEV Network.
 6. <b>Check for bid conditions </b>
 
 The auctioneer checks the current dAPI value against bids received from the
-OevAuctionHouse contract to determine if any of the bids conditions have been
+OevAuctionHouse contract to determine if any of the bid's conditions have been
 met.
 
 7. <b>Finding the winning bid</b>
 
 If there are multiple bids that are satisfied, the auctioneer finds the winning
-bid by selecting the bid with the highest bid amount. More details on how the
+bid by selecting the one with the highest bid amount. More details on how the
 auctioneer selects the winning bid can be found in the
 [Understanding Auctioneer](/reference/oev-network/searchers/understanding-auctioneer.html#parallel-auctions)
 page.
@@ -106,27 +104,29 @@ searcher to update the dAPI value for the given proxy. These signatures are then
 processed by Auctioneer to prepare the update transaction calldata for
 searchers' convenience.
 
-9. <b> Fetch the encoded transaction from the airnodes</b>
+9. <b> Fetch the signatures for the awarded bid from the airnodes</b>
 
-The auctioneer fetches the encoded transaction and signatures from the airnodes.
+The auctioneer fetches airnode signatures for the data feed update. These
+signatures are verified on-chain by the Api3ServerV1 contract to ensure that the
+update is valid and is triggered by the searcher who won the auction.
 
 10. <b> Award the winning bid</b>
 
-The auctioneer publishes the winning bid along with the encoded transaction and
-signatures to the OevAuctionHouse contract. The collateral of the winning bid is
-locked in the OevAuctionHouse contract in the same transaction that the winning
-bid is awarded.
+The auctioneer publishes the winning bid along with the encoded calldata
+together with signatures to the OevAuctionHouse contract. The collateral of the
+winning bid is locked in the OevAuctionHouse contract in the same transaction
+that the winning bid is awarded.
 
 11. <b> Fetch the awarded bid transaction</b>
 
 The searcher fetches the awarded bid transaction from the OEV Network. This
-transaction contains the encoded transaction. The searcher has 60 second window
-of exclusivity to trigger the oracle update.
+transaction contains the encoded calldata. The searcher has 60 second window of
+exclusivity period to trigger the oracle update.
 
 12. <b>Triggering the oracle update</b>
 
-The searcher can then use the encoded transaction to trigger the oracle update
-on the dAPI proxy and trigger the liquidation event atomically in a multicall
+The searcher can then use the encoded calldata to trigger the oracle update on
+the dAPI proxy and trigger the liquidation event atomically in a multicall
 transaction. The searcher can only do the price update if they transfer the bid
 amount to the beneficiary of the dAPI proxy.
 

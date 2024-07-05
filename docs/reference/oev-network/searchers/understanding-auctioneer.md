@@ -18,8 +18,8 @@ tags:
 
 ## Auctioneer State
 
-Both Searchers and Auctioneers use the OEV Network as the state of truth and the
-use of blockchain events is crucial to both in the operation of the auction
+Both Searchers and Auctioneers use the OEV Network as the source of truth and
+the use of blockchain events is crucial to both in the operation of the auction
 cycle.
 
 The process of computing the state is done as follows:
@@ -66,7 +66,8 @@ For each proxy the following checks are done by auctioneer during an auction
 round to filter out non-qualifying bids:
 
 - If there is no transaction count in the state, drop all the bids.
-- Drop all inactive bids. These are bids that have already been awarded.
+- Drop all inactive bids. These are bids that have already been awarded or lost
+  to another bid in a different auction.
 - Drop all bids that do not satisfy the condition based on the current off-chain
   data point of the dAPI.
 - Drop all bids that have expired or will expire soon. Bids that expire in 15s
@@ -90,22 +91,23 @@ selects the winning bids based on the following criteria:
   the Auctioneer does not specify which bid will be considered first.
 
 The first bid that satisfies all of the above criteria for an auction round is
-awarded the bid. The bidder's collateral balance is deducted and the bid is
-marked as "awarded" for that auction round.
+awarded. The bidder's collateral balance is deducted and the bid is marked as
+"awarded" for that auction round.
 
 The auctioneer then prepares the encoded OEV update transaction for each awarded
 bid by having the airnodes of the dAPIs sign the winning bid and returning the
 signature. Auctioneer verifies the signatures and ensures that there is strict
-majority of beacon responses. It then creates the encoded function data for the
+majority of beacon responses, something which is mandated by the contract. It
+then creates the encoded function data for the
 `updateOevProxyDataFeedWithSignedData` contract call in `Api3ServerV1` for
 searchers to use.
 
 Auctioneer awards all of the winning bids using a single transaction using the
-persisted transaction count (a single `awardbid` call if only a single bid is
-awarded and multicall otherwise). The auctioneer also sets the award expiration
-for all the awarded bids, currently set to 60 seconds.
+persisted transaction count. The auctioneer also sets the award expiration for
+all the awarded bids, currently set to 60 seconds.
 
-::: tip  
+::: tip
+
 While awarding the bid, Auctioneer enforces an upper bound on the number of
 awarded bids in a single run. Currently, the limit is set to 30, which should be
 enough for practical purposes.
@@ -119,11 +121,11 @@ after the required delay has passed.
 
 ## Fulfillment and Contradiction of Bids
 
-Upon winning an auction, the searcher receives an encoded transaction in
-`AwardedBid` event. Using this encoded transaction, the searcher can trigger the
-oracle update on the dAPI proxy. To release the collateral after the oracle
-update is fulfilled, the searcher must call the `reportFulfillment` function on
-the OevAuctionHouse contract with the transaction hash of the oracle update
+Upon winning an auction, the searcher receives encoded calldata in `AwardedBid`
+event. Using this encoded calldata, the searcher can trigger the oracle update
+on the dAPI proxy. To release the collateral after the oracle update is
+fulfilled, the searcher must call the `reportFulfillment` function on the
+OevAuctionHouse contract with the transaction hash of the oracle update
 transaction.
 
 On the auctioneer's side, it will be continuously iterating through all the
@@ -150,6 +152,6 @@ is charged.
 | Parameter                     | Value | Description                                                                                                |
 | ----------------------------- | ----- | ---------------------------------------------------------------------------------------------------------- |
 | REFRESH_LOGS_LOOP_INTERVAL_MS | 1000  | How frequently the auctioneer fetches logs from the OEV Network                                            |
-| exclusiveAuctionSeconds       | 60    | Time period during which no other auctions can take place for a proxy                                      |
+| EXCLUSIVE_AUCTION_SECONDS     | 60    | Time period during which no other auctions can take place for a proxy                                      |
 | COLLATERAL_REQUIREMENT_BUFFER | 5%    | Extra collateral percentage that searchers need to have in order for the Auctioneer to award a bid to them |
 | FETCH_SIGNED_DATA_INTERVAL_MS | 2000  | Defines the frequency of the signed data fetching and auctions loop.                                       |

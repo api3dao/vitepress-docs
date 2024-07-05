@@ -16,15 +16,15 @@ tags:
 
 # {{$frontmatter.title}}
 
-![OEV Network](/reference/oev-network/overview/assets/oev-network.png)
+![Auction Cycle](/reference/oev-network/overview/assets/oev-network.png)
 
 The OEV Network is an open marketplace designed to facilitate the distribution
 of oracle updates. Operating on an optimistic-rollup, the system ensures
 transparency and verification of transactions. In this marketplace, OEV
-searchers place bids for the first opportunity to update a specific dAPI within
-a short window of time. This timing allows them to extract value, especially if
-the dAPI’s data indicates a price that could lead to a profitable action before
-the next scheduled update.
+searchers place bids for the exclusive opportunity to update a specific dAPI
+within a short window of time. This timing allows them to extract value,
+especially if the dAPI’s data indicates a price that could lead to a profitable
+action before the next scheduled update.
 
 The auctions conducted on the OEV Network aim to ensure that the value extracted
 by searchers is shared with the dApps responsible for creating these

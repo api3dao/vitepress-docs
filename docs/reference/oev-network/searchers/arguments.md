@@ -38,14 +38,14 @@ The `bidTopic` is a constant value used by auctioneer to filter bids that
 pertain to a specific auctioneer instance. That is to say, different versions of
 the auctioneer will have different bid topics.
 
-The current bid topic is
+Currently, there is only a single auctioneer instance with bid topic
 `0x76302d70726f642d61756374696f6e6565720000000000000000000000000000`
 
 ### bidDetails - Bytes
 
 The `bidDetails` are the encoded parameters for the bid. The parameters are
 [proxy address](#proxy-address), [condition](#condition-and-condition-value),
-[condition value](#condition-and-condition-value) and updater address.
+[condition value](#condition-and-condition-value), updater address and a nonce.
 
 ```javascript
 const { AbiCoder, hexlify } = require('ethers');
@@ -65,8 +65,8 @@ const bidDetails = abiCoder.encode(
     proxyAddress,
     condition.onchainIndex,
     conditionValue,
-    updaterAddress,
-    hexlify(randomBytes(32)),
+    updaterAddress, // The address of the wallet that will update the data feed
+    hexlify(randomBytes(32)), // Random nonce to differentiate bids
   ]
 );
 ```

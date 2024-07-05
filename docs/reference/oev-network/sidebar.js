@@ -8,6 +8,10 @@ module.exports = [
         link: '/reference/oev-network/',
       },
       {
+        text: 'OEV Playground',
+        link: '/reference/oev-network/overview/oev-playground',
+      },
+      {
         text: 'Auction Cycle',
         link: '/reference/oev-network/overview/auction-cycle',
       },
@@ -37,6 +41,10 @@ module.exports = [
       {
         text: 'Understanding Auctioneer',
         link: '/reference/oev-network/searchers/understanding-auctioneer',
+      },
+      {
+        text: 'Example Searcher Bot',
+        link: '/reference/oev-network/searchers/example-searcher-bot',
       },
     ],
   },
