@@ -28,17 +28,17 @@ In the event that the oracle update is fulfilled, the searcher is refunded the
 collateral and is charged a protocol fee. The protocol fee is also a percentage
 of the bid amount.
 
-If the oracle update is not fulfilled, the collateral is slashed
+The collateral and protocol fee rates are configurable parameters within the
+OevAuctionHouse contract and are configured by the API3 DAO.
 
 | Parameter                | Value |
 | ------------------------ | ----- |
 | collateralInBasisPoints  | 1000  |
 | protocolFeeInBasisPoints | 0000  |
 
-::: tip
+::: warning
 
-The collateral and protocol fee rates are configurable parameters within the
-OevAuctionHouse contract and are configured by the API3 DAO.
+If the oracle update is not fulfilled, the collateral is slashed
 
 :::
 

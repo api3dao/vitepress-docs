@@ -32,7 +32,7 @@ computed. This is because the validity of a bid is at most
 meaning that the state of the auctioneer can be computed using the logs from the
 last 48 hours (accounting for fulfillment reporting window).
 
-All relevant OevAuctionHouse logs are fetched ordered chronologically and
+All relevant OevAuctionHouse logs are fetched, ordered chronologically, and
 processed in sequence. For each PlacedBid event, the bid details are decoded and
 stored. If the bid is for an unknown chain/proxy combination it is ignored.
 Similarly, the bid is ignored if the bid details cannot be decoded.
