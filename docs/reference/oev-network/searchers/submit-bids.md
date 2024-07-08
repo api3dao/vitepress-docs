@@ -27,8 +27,8 @@ awarded bid and then finally submit fulfillment of the oracle update.
 
 ## Prerequisites
 
-- Bridge ETH to the
-  [OEV Network](/reference/oev-network/overview/bridge-oev-network.html)
+- [Bridge ETH](/reference/oev-network/overview/bridge-oev-network.html) to the
+  OEV Network
 
 - Clone the repository and install the dependencies
 
