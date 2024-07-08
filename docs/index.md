@@ -7,32 +7,25 @@ hero:
   tagline:
     API3 builds solutions that bridge the gap between off-chain data and
     on-chain applications with maximum security and minimal latency.
-
   image:
     src: /img/beacons.svg
     alt: API3
   actions:
     - theme: brand
-      text: Explore
-      link: /explore/introduction/
+      text: dAPI
+      link: /guides/dapis/
     - theme: brand
-      text: Guides
-      link: /guides/
+      text: OEV Network
+      link: /reference/oev-network/
+    - theme: brand
+      text: QRNG
+      link: /reference/qrng/
+    - theme: brand
+      text: Airnode
+      link: /reference/airnode/latest/understand/
     - theme: brand
       text: DAO Members
-      link: /explore/dao-members/
-    - theme: alt
-      text: Airnode Reference
-      link: /reference/airnode/latest/understand/
-    - theme: alt
-      text: dAPIs Reference
-      link: /reference/dapis/understand/
-    - theme: alt
-      text: OIS Reference
-      link: /reference/ois/latest/
-    - theme: alt
-      text: QRNG Reference
-      link: /reference/qrng/
+      link: /reference/dao-members/
 ---
 
 <script>

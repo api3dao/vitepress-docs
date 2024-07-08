@@ -1,4 +1,7 @@
 import DefaultTheme from 'vitepress/theme';
+import { onMounted, watch, nextTick } from 'vue';
+import { useRoute } from 'vitepress';
+import mediumZoom from 'medium-zoom';
 import Api3Layout from './Api3Layout.vue';
 import VersionPicklist from '../../_components/reference/VersionPicklist.vue';
 import SearchBtn from '../../_components/search/SearchBtn.vue';
@@ -19,8 +22,23 @@ import FlexStartTag from '../../_components/FlexStartTag.vue';
 import FlexEndTag from '../../_components/FlexEndTag.vue';
 import EthersAbiCoder from '../../_components/EthersAbiCoder.vue';
 
+import './zoom.css';
+
 export default {
   ...DefaultTheme,
+  setup() {
+    const route = useRoute();
+    const initZoom = () => {
+      mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
+    };
+    onMounted(() => {
+      initZoom();
+    });
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    );
+  },
   // override the Layout with a wrapper component that
   // injects the slots
   Layout: Api3Layout,

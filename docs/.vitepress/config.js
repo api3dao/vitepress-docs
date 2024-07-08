@@ -73,6 +73,7 @@ export default {
       '/reference/ois/2.1/': require('../reference/ois/2.1/sidebar.js'),
       '/reference/ois/2.0/': require('../reference/ois/2.0/sidebar.js'),
       '/reference/dapis/': require('../reference/dapis/sidebar.js'),
+      '/reference/oev-network/': require('../reference/oev-network/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
       '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
@@ -94,6 +95,7 @@ function nav() {
       text: 'Reference',
       items: [
         { text: 'dAPIs', link: '/reference/dapis/understand/' },
+        { text: 'OEV Network', link: '/reference/oev-network/' },
         {
           text: 'Airnode',
           link: '/reference/airnode/latest/understand/',
