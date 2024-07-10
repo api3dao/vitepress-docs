@@ -37,8 +37,7 @@ market.
 </div>
 
 Searchers use signed data from Airnodes to update the proxy contract with the
-latest data point. However, if
-[`Api3ServerV1`](https://docs.api3.org/reference/dapis/understand/read-dapis.htmls)
+latest data point. However, if [`Api3ServerV1`](/reference/dapis/understand/)
 has a more recent timestamp than the last searcher update, the data point from
 `Api3ServerV1` will be displayed.
 
@@ -46,7 +45,7 @@ has a more recent timestamp than the last searcher update, the data point from
 
 Please refer to the following guide on how to read from a proxy contract:
 
-- [Reading a dAPI Proxy](https://docs.api3.org/guides/dapis/read-a-dapi/)
+- [Reading a dAPI Proxy](/guides/dapis/read-a-dapi/)
 
 :::
 
