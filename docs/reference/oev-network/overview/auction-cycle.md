@@ -94,7 +94,7 @@ met.
 If there are multiple bids that are satisfied, the auctioneer finds the winning
 bid by selecting the one with the highest bid amount. More details on how the
 auctioneer selects the winning bid can be found in the
-[Understanding Auctioneer](/reference/oev-network/searchers/understanding-auctioneer.html#parallel-auctions)
+[Understanding Auctioneer](/reference/oev-network/searchers/understanding-auctioneer.md#parallel-auctions)
 page.
 
 8. <b> Sign the winning bid</b>

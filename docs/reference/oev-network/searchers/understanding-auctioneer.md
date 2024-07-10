@@ -59,8 +59,8 @@ on the [API3 Market](https://market.api3.org/).
 
 For each proxy there is a separate auction round that takes place. The auction
 round is documented in the
-[Auction Cycle](/reference/oev-network/overview/auction-cycle.html) page but
-there are some nuances in the auctioneer state that are noted here.
+[Auction Cycle](/reference/oev-network/overview/auction-cycle.md) page but there
+are some nuances in the auctioneer state that are noted here.
 
 For each proxy the following checks are done by auctioneer during an auction
 round to filter out non-qualifying bids:

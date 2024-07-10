@@ -27,8 +27,8 @@ awarded bid and then finally submit fulfillment of the oracle update.
 
 ## Prerequisites
 
-- [Bridge ETH](/reference/oev-network/overview/bridge-oev-network.html) to the
-  OEV Network
+- [Bridge ETH](/reference/oev-network/overview/bridge-oev-network.md) to the OEV
+  Network
 
 - Clone the repository and install the dependencies
 
@@ -312,8 +312,8 @@ const awardedTransaction = await new Promise(async (resolve, reject) => {
 
 Once the bid is awarded, the searcher can perform the oracle update by using the
 encoded award transaction on the `updateOevProxyDataFeedWithSignedData` function
-of [Api3ServerV1 contract](https://docs.api3.org/reference/dapis/chains/) via
-the deployed OevSearcherMulticallV1 contract.
+of [Api3ServerV1 contract](/reference/dapis/chains/) via the deployed
+OevSearcherMulticallV1 contract.
 
 ```javascript
 const performOevUpdate = async (awardedTransaction) => {
