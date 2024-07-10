@@ -8,25 +8,22 @@ hero:
     API3 builds solutions that bridge the gap between off-chain data and
     on-chain applications with maximum security and minimal latency.
   image:
-    src: https://res.cloudinary.com/practicaldev/image/fetch/s--Ij0eKVIW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/77oanfb0c05w88jlmc8s.jpg
+    src: /img/beacons.svg
     alt: API3
   actions:
     - theme: brand
-      text: dAPI
+      text: Data Feeds
       link: /guides/dapis/
     - theme: brand
       text: OEV Network
       link: /reference/oev-network/
-    - theme: brand
-      text: QRNG
-      link: /reference/qrng/
-    - theme: brand
-      text: Airnode
-      link: /reference/airnode/latest/understand/
-    - theme: brand
-      text: DAO Members
-      link: /reference/dao-members/
 ---
+
+![Auction Cycle](https://res.cloudinary.com/practicaldev/image/fetch/s--Ij0eKVIW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/77oanfb0c05w88jlmc8s.jpg){data-zoomable}
+
+<!--div>
+    <img data-zoomable src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ij0eKVIW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/77oanfb0c05w88jlmc8s.jpg"/>
+    </div-->
 
 <script>
 export default {
@@ -38,6 +35,7 @@ export default {
       api3_navbarReferenceBtn.style.color = '';
     }
   }
+
 </script>
 
 <style>
@@ -82,14 +80,14 @@ export default {
 </style>
 
 <!-- DESCRIPTION and CODE IMAGE-->
-<div style="margin-top:50px;"/>
+<!--div style="margin-top:50px;"/>
 
 <div class="api3-land-box">
-  <div style="flex: 0 500px;margin-right:30px;"> 
+  <div style="flex: 0 500px;margin-right:30px;">
     <h1>API3 Docs</h1><br/>
     <div class="api3-land-desc" ><b>API3</b> builds solutions that
           bridge the gap between off-chain data and on-chain applications with maximum
-          security and minimal latency. 
+          security and minimal latency.
     </div>
     <div style="display: flex;padding-bottom:30px !important">
     <a style="color:white;text-decoration: none;" href="/reference/dapis/understand/">
@@ -109,4 +107,4 @@ export default {
     <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ij0eKVIW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/77oanfb0c05w88jlmc8s.jpg"/>
     </div>
   </div>
-</div>
+</div-->
