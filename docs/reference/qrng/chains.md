@@ -173,19 +173,7 @@ Quintessence is available on selected mainnets and testnets.
 | [{{getChainNameById(1101)}}](https://zkevm.polygonscan.com/)                        | 1101       | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 | [{{getChainNameById(30)}}](https://explorer.rsk.co)                                 | 30         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 3                |
 | [{{getChainNameById(416)}}](https://explorer.sx.technology)                         | 416        | <code>0xE338f63170c42bA0d2a888f18F6185369779009c</code><CopyIcon text="0xE338f63170c42bA0d2a888f18F6185369779009c"/> | 20               |
-| [{{getChainNameById(196)}}](https://www.okx.com/web3/explorer/xlayer)               | 30         | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
-
-</div>
-
-### Testnets
-
-<div class="testnets">
-
-<div style="position:absolute;right:0px;margin-top:-30px;">Quintessence</div>
-
-| Network                                                        | ID       | AirnodeRrpV0 Address                                                                                                 | minConfirmations |
-| -------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [{{getChainNameById(11155111)}}](https://sepolia.etherscan.io) | 11155111 | <code>0x2ab9f26E18B64848cd349582ca3B55c2d06f507d</code><CopyIcon text="0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"/> | 1                |
+| [{{getChainNameById(196)}}](https://www.okx.com/web3/explorer/xlayer)               | 196        | <code>0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd</code><CopyIcon text="0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd"/> | 10               |
 
 </div>
 
