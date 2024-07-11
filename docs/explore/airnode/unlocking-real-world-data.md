@@ -114,7 +114,7 @@ smart contract that calls an Airnode.
 <!--<img src="../assets/images/03-solving_the_API_connectivity_problem_Airnode.png" style="width:350px">-->
 
 As an example see the `myContract.sol` contract in the diagram within the
-[dAPP Developers Overview](/reference/airnode/latest/developers/) doc, it is a
+[dApp Developers Overview](/reference/airnode/latest/developers/) doc, it is a
 requester.
 
 ### What is a Sponsor?
