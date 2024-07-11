@@ -28,7 +28,7 @@ Using ChainAPI, API providers can configure and deploy an Airnode which links
 their API data to several blockchains.
 
 ChainAPI can connect almost any API, whether open or authenticated, to Airnode.
-Airnode then queries your API operations to be consumed by EVM on-chain dAPPs,
+Airnode then queries your API operations to be consumed by EVM on-chain dApps,
 by using the request/response protocol.
 
 To get started, go to [ChainAPI](https://chainapi.com/) and login using

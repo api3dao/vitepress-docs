@@ -18,7 +18,7 @@ tags:
 
 ### Proxy Address
 
-dAPPs use a proxy address to read the latest data point from a dAPI. The
+dApps use a proxy address to read the latest data point from a dAPI. The
 [API3 Market](https://market.api3.org) lists the proxy addresses for dAPIs
 across all chains.
 

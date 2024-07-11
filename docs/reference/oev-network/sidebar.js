@@ -49,7 +49,7 @@ module.exports = [
     ],
   },
   {
-    text: 'dAPPs',
+    text: 'dApps',
     collapsed: false,
     items: [
       {

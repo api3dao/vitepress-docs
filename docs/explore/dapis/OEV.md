@@ -40,7 +40,7 @@ be familiar with from Flashbots and MEV-Boost.
 Instead of overpaying for liquidations with a fixed incentive, that during large
 liquidation opportunities can be much much higher than it needs to be, a sealed
 bid auction hosted at the oracle can minimize the value being paid out and
-return most of it back to the dapp. The liquidations will also be able to occur
+return most of it back to the dApp. The liquidations will also be able to occur
 in a more timely manner because you do not have to wait for a deviation
 threshold to trigger oracle updates, creating a lower latency and more robust
 liquidation process.
@@ -55,7 +55,7 @@ the arbitrage opportunities and returning the corresponding value to dApps. More
 accurate data and value capture from the auction can be used to increase
 profitability and sustainability of liquidity provision, allowing for a more
 optimal market making protocol for apps that use oracles. Better market making
-from a dapps LPs creates a flywheel effect of drawing more liquidity to the
+from a dApps LPs creates a flywheel effect of drawing more liquidity to the
 application while being able to lower fees and list more assets, which then
 attracts more users and volume.
 
