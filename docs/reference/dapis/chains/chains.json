@@ -1175,7 +1175,7 @@
     "name": "Zircuit",
     "nativeToken": "ETH",
     "testnet": false,
-    "explorerUrl": "https://explorer.zircuit.com/",
+    "explorerUrl": "https://explorermainnet.zircuit.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
