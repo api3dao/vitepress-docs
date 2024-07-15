@@ -27,7 +27,7 @@
     "firebase:emulator": "yarn docs:build; yarn flex:build; yarn flex:test; firebase emulators:start"
   },
   "devDependencies": {
-    "@api3/chains": "^8.0.0",
+    "@api3/chains": "^8.1.0",
     "adm-zip": "^0.5.14",
     "axios": "^1.7.2",
     "colors": "^1.4.0",
