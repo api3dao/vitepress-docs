@@ -44,10 +44,10 @@ export default {
   themeConfig: {
     externalLinkIcon: true,
     logo: {
-      light: '/img/API3-Active.png',
-      dark: '/img/api3-inactive.png',
+      light: '/img/API3-Logo-Light.svg',
+      dark: '/img/API3-Logo.svg',
     },
-    siteTitle: 'Documentation',
+    siteTitle: '',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/api3dao/vitepress-docs' },
       {
