@@ -13,7 +13,7 @@ import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue';
 import VPNavBarTitle from './VPNavBarTitle.vue';
 import VPNavBarTranslations from './VPNavBarTranslations.vue';
 
-defineProps<{
+const props = defineProps<{
   isScreenOpen: boolean;
 }>();
 
@@ -32,6 +32,7 @@ watchPostEffect(() => {
     'has-sidebar': hasSidebar.value,
     home: frontmatter.value.layout === 'home',
     top: y.value === 0,
+    'screen-open': props.isScreenOpen,
   };
 });
 </script>
@@ -88,6 +89,12 @@ watchPostEffect(() => {
   pointer-events: none;
   white-space: nowrap;
   transition: background-color 0.5s;
+}
+
+.VPNavBar.screen-open {
+  transition: none;
+  background-color: var(--vp-nav-bg-color);
+  border-bottom: 1px solid var(--vp-c-divider);
 }
 
 .VPNavBar:not(.home) {
