@@ -3,7 +3,7 @@ title: OEV Network
 sidebarHeader: Reference
 sidebarSubHeader: OEV Network
 pageHeader: Reference → OEV Network
-path: /reference/oev-network/oev-network.html
+path: /reference/oev-network/index.html
 outline: deep
 tags:
 ---
