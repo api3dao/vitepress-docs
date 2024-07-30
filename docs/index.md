@@ -3,23 +3,21 @@ layout: home
 ---
 
 <script setup>
+
 	import { onMounted, computed } from 'vue';
 
+	const isMobile = () => {
+		return window.innerWidth < 768;
+	};
 
+	const isTablet = () => {
+		return window.innerWidth < 1024 && window.innerWidth >= 768;
+	};
 
+	const isDesktop = () => {
+		return window.innerWidth >= 1024;
+	};
 
-
-	const isMobile = computed(() => {
-		return window.innerWidth < 768
-	})
-
-	const isTablet = computed(() => {
-		return window.innerWidth < 1024 && window.innerWidth >= 768
-	})
-
-	const isDesktop = computed(() => {
-		return window.innerWidth >= 1024
-	})
 
 	
 
