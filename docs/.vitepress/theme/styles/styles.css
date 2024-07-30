@@ -103,6 +103,13 @@ body {
   }
 }
 
+@media (min-width: 960px) {
+  .VPNavBar:not(.home.top) .content-body {
+    padding: 1rem;
+    border-radius: var(--border-radius-m);
+  }
+}
+
 #VPSidebarNav {
   margin-top: 3rem;
 }
