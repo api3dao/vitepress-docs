@@ -73,7 +73,7 @@ h1 span {
 /* 
  */
 
-body {
+body:not(:has(.has-sidebar)) {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.2) 0%,
@@ -116,6 +116,9 @@ body {
 
 header {
   padding: 1rem;
+  @media (min-width: 960px) {
+    padding-top: 0;
+  }
 }
 
 div.vp-doc.container {
