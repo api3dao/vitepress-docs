@@ -28,6 +28,7 @@ let latestDocsets = [
   '/dist/reference/qrng',
   '/dist/reference/dapis/',
   '/dist/reference/dao-members/',
+  '/dist/reference/oev-network/',
   '/dist/reference/ois/latest/',
   '/dist/reference/airnode/latest/',
 ];

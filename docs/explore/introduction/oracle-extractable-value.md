@@ -3,7 +3,7 @@ title: Oracle Extractable Value (OEV)
 sidebarHeader: Explore
 sidebarSubHeader:
 pageHeader: Explore → About our journey!
-path: /explore/introduction/OEV.html
+path: /explore/introduction/oracle-extractable-value.html
 outline: deep
 tags:
 ---
