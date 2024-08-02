@@ -80,64 +80,25 @@ heartbeat for each `beaconId` or `beaconSetId`.
 
 ## Providers for dAPIs
 
-Currently, the [API3 Market](https://market.api3.org/) has 4 different asset
-classes that are listed below. For each type, there are multiple providers that
-are running an Airnode and are providing data for the dAPIs. The providers are
-listed below:
+Currently there are eight API providers each running an Airnode.
 
-| Asset Type     | Data Provider                                                           |
-| -------------- | ----------------------------------------------------------------------- |
-| Cryptocurrency | Nodary, Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
-| Forex          | Nodary, Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
-| Commodities    | Nodary, Finage, Twelvedata, dxFeed, Tradermade                          |
-| Equities       | Nodary, Finage, Twelvedata, IEXCloud, Finnhub, dxfeed                   |
+- Coingecko
+- Coinpaprika
+- dxFeed
+- Finage
+- Kaiko
+- NCFX
+- Nodary
+- Twelvedata
 
 All the data providers listed here are selected and properly tested by the dAPI
 team to ensure the highest quality data availability for the listed dAPIs.
 
 ## Chains
 
-dAPIs are available on both major EVM-compatible testnets and mainnets. The
-chains that are currently supported are listed below:
-
-| Mainnet          | Testnet                       |
-| ---------------- | ----------------------------- |
-| Arbitrum One     | Arbitrum Sepolia Testnet      |
-| Astar zkEVM      | Astar zkEVM Sepolia Testnet   |
-| Avalanche        | Avalanche Testnet             |
-| Base             | Base Sepolia Testnet          |
-| Blast            | Blast Sepolia Testnet         |
-| Bob              | Bob Sepolia Testnet           |
-| BNB Smart Chain  | BNB Smart Chain Testnet       |
-| BSquared Network | BSquared Network Testnet      |
-| Core             | Core Testnet                  |
-| Ethereum         | Ethereum Sepolia Testnet      |
-| Fantom           | Fantom Testnet                |
-| Fraxtal          | Fraxtal Holesky Testnet       |
-| Gnosis Chain     | Gnosis Chain Testnet          |
-| inEVM            | inEVM Testnet                 |
-| Kava             | Kava Testnet                  |
-| Kroma            | Kroma Sepolia Testnet         |
-| LightLink        | LightLink Sepolia Testnet     |
-| Linea            | Linea Sepolia Testnet         |
-| Lukso            | Lukso Testnet                 |
-| Mantle           |                               |
-| Merlin           | Merlin Testnet                |
-| Metis            | Metis Sepolia Testnet         |
-| Mode             | Mode Sepolia Testnet          |
-| Moonbeam         | Moonbeam Testnet              |
-| Moonriver        |                               |
-| opBNB            | opBNB Testnet                 |
-| Optimism         | Optimism Sepolia Testnet      |
-| Polygon zkEVM    | Polygon zkEVM Sepolia Testnet |
-| Polygon          |                               |
-| RARI Chain       |                               |
-| Sei              | Sei Testnet                   |
-| Taiko            | Taiko Holesky Testnet         |
-| X Layer          | X Layer Sepolia Testnet       |
-
-Head over to the [API3 Market](https://market.api3.org/) to see the list of all
-available dAPIs and their chains.
+dAPIs are available on both major EVM-compatible testnets and mainnets. Head
+over to the [API3 Market](https://market.api3.org/) to see lists of all chains
+and the dAPIs on each.
 
 ## Update Process
 

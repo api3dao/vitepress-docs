@@ -116,25 +116,16 @@ To read more about reading a dAPI value,
 
 ## Data providers for dAPIs
 
-There are nine providers used by dAPIs as a data source. These providers can be
-grouped by asset type(s) of supplied data:
+There are eight providers used by dAPIs as a data source.
 
+- Coingecko
 - Coinpaprika
 - dxFeed
 - Finage
-- Finnhub
-- IEXCloud
 - Kaiko
 - NCFX
-- Tradermade
+- Nodary
 - Twelvedata
-
-| Asset Type     | Data Providers                                                  |
-| -------------- | --------------------------------------------------------------- |
-| Cryptocurrency | Coinpaprika, Finage, Twelvedata, NCFX, Kaiko, dxFeed            |
-| Forex          | Finage, Twelvedata, NCFX, IEXCloud, Finnhub, dxFeed, Tradermade |
-| Commodities    | Finage, Twelvedata, dxFeed, Tradermade                          |
-| Equities       | Finage, Twelvedata, IEXCloud, Finnhub, dxFeed                   |
 
 ## What are dAPI proxy contracts?
 
