@@ -12,20 +12,11 @@ hero:
     alt: API3
   actions:
     - theme: brand
-      text: dAPI
+      text: Data Feeds
       link: /guides/dapis/
     - theme: brand
       text: OEV Network
       link: /reference/oev-network/
-    - theme: brand
-      text: QRNG
-      link: /reference/qrng/
-    - theme: brand
-      text: Airnode
-      link: /reference/airnode/latest/understand/
-    - theme: brand
-      text: DAO Members
-      link: /reference/dao-members/
 ---
 
 <script>
@@ -38,16 +29,7 @@ export default {
       api3_navbarReferenceBtn.style.color = '';
     }
   }
+
 </script>
 
-<style>
-.api3-land-title{
-  font-size:xx-large;
-}
-.api3-land-title-desc{
-  margin-top:15px;
-  margin-bottom:10px;
-  font-size:x-large;
-  color:gray
-}
-</style>
+![Auction Cycle](https://res.cloudinary.com/practicaldev/image/fetch/s--Ij0eKVIW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/77oanfb0c05w88jlmc8s.jpg){data-zoomable}

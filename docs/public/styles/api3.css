@@ -13,3 +13,14 @@
   --vp-code-color: whitesmoke;
   --vp-code-bg: #36454f;
 }
+
+.VPButton {
+  margin-top: 30px !important;
+  margin-right: 20px !important;
+  font-size: large !important;
+  border-radius: 4px !important;
+  width: 200px !important;
+  border: #4169e1 solid 1px !important;
+  padding: 7px !important;
+  background-color: #4169e1 !important;
+}
