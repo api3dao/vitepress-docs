@@ -1,11 +1,11 @@
 {
   "apechain-arbitrum-sepolia-testnet": {
-    "id": "1798",
+    "id": "33111",
     "alias": "apechain-arbitrum-sepolia-testnet",
     "name": "ApeChain testnet",
     "nativeToken": "APE",
     "testnet": true,
-    "explorerUrl": "https://jenkins.explorer.caldera.xyz/",
+    "explorerUrl": "https://curtis.explorer.caldera.xyz/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -291,6 +291,21 @@
     "nativeToken": "BTC",
     "testnet": false,
     "explorerUrl": "https://bsquared.l2scan.co/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
+    }
+  },
+  "camp-sepolia-testnet": {
+    "id": "325000",
+    "alias": "camp-sepolia-testnet",
+    "name": "Camp Network testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://camp-network-testnet.blockscout.com/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
@@ -1065,12 +1080,12 @@
     }
   },
   "sei-testnet": {
-    "id": "713715",
+    "id": "1328",
     "alias": "sei-testnet",
     "name": "Sei testnet",
     "nativeToken": "SEI",
     "testnet": true,
-    "explorerUrl": "https://devnet.seistream.app/",
+    "explorerUrl": "https://testnet.seistream.app/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
