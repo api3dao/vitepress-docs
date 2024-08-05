@@ -253,6 +253,6 @@ export default {
 .api3-search-btn {
   font-size: 17pt;
   margin-top: 6px;
-  margin-right: 15px;
+  margin-right: -4px;
 }
 </style>

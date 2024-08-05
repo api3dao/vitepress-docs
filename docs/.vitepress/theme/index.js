@@ -23,6 +23,7 @@ import FlexEndTag from '../../_components/FlexEndTag.vue';
 import EthersAbiCoder from '../../_components/EthersAbiCoder.vue';
 
 import './zoom.css';
+import './styles/styles.css';
 
 export default {
   ...DefaultTheme,
