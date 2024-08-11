@@ -35,8 +35,6 @@ in your project.
 
 ```sh
 npm install --save @api3/airnode-adapter
-# or by
-yarn add @api3/airnode-adapter
 ```
 
 You shouldn't need to use the adapter package directly. However, you might want

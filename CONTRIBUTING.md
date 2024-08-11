@@ -19,7 +19,7 @@ information about getting started and making a contribution to the API3 Docs.
 ### Installation
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ### Running the local development server
@@ -27,7 +27,7 @@ yarn install
 Run the following command to start the local development server on port `5173`:
 
 ```bash
-yarn docs:dev
+pnpm docs:dev
 ```
 
 ### Structure
@@ -51,7 +51,7 @@ structure of the docs.
 ### Building the static site
 
 ```bash
-yarn docs:build
+pnpm docs:build
 ```
 
 ### Prettier Formatting
@@ -60,7 +60,7 @@ Make sure to run the following command before submitting a PR to format the
 markdown. The Github action will check for prettier formatting:
 
 ```bash
-yarn format
+pnpm format
 ```
 
 ### Formatting and Styling

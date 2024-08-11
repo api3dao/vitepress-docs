@@ -20,7 +20,7 @@ The script is part of a three step process to keep the links in the docs clean.
 
 The three steps:
 
-1. `yarn dev:build`: When doing a local build VitePress will valid markdown
+1. `pnpm dev:build`: When doing a local build VitePress will valid markdown
    links and does so very well. Fix them before proceeding. This step will also
    catch bad `src` paths for images. It does not validate anchors.
 2. Search the code base for `](#`. This will show markdown links that link
@@ -38,7 +38,7 @@ The script must be run locally and will not work as a GitHub action.
 Build the docs as usual using the standard build command provided by VitePress.
 
 ```sh
-yarn docs:build
+pnpm docs:build
 ```
 
 Note that the build script may in fact catch bad links in of itself. Any
@@ -50,7 +50,7 @@ VitePress has a built-in http server that publishes the files from the `/dist`
 folder.
 
 ```sh
-yarn docs:serve
+pnpm docs:serve
 ```
 
 ### 3. Run the script

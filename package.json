@@ -13,18 +13,18 @@
     "sync:VPFlyout": "cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue",
     "sync:VPNavBarTitle": "cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue",
     "sync:VPNavBar": "cp docs/_components/vitepress/VPNavBar.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBar.vue",
-    "docs:dev": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress dev docs",
-    "docs:build": "yarn sync:VPFlyout; yarn sync:VPNavBarTitle; yarn sync:VPNavBar; vitepress build docs;",
+    "docs:dev": "pnpm sync:VPFlyout; pnpm sync:VPNavBarTitle; pnpm sync:VPNavBar; vitepress dev docs",
+    "docs:build": "pnpm sync:VPFlyout; pnpm sync:VPNavBarTitle; pnpm sync:VPNavBar; vitepress build docs;",
     "docs:serve": "vitepress serve docs --port 8082",
     "format": "prettier --write --cache \"./**/*.{js,vue,md,json,yaml}\" --log-level silent",
     "format:check": "prettier --check --cache \"./**/*.{js,vue,md,json,yaml}\"",
     "prepare": "husky",
-    "flex:build": "node libs/flexBuildIndexes.js; yarn format;",
+    "flex:build": "node libs/flexBuildIndexes.js; pnpm format;",
     "flex:test": "node libs/flexTestSearch.js;",
-    "axios:build": "node libs/axiosBuildScripts.js; yarn format;",
+    "axios:build": "node libs/axiosBuildScripts.js; pnpm format;",
     "zip:create": "node libs/createZipFiles.js;",
     "zip:config-check": "node libs/checkZipConfigs.js;",
-    "firebase:emulator": "yarn docs:build; yarn flex:build; yarn flex:test; firebase emulators:start"
+    "firebase:emulator": "pnpm docs:build; pnpm flex:build; pnpm flex:test; firebase emulators:start"
   },
   "devDependencies": {
     "@api3/chains": "^9.0.0",
