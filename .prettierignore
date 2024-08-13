@@ -3,6 +3,7 @@
 /.vscode
 /node_modules
 /archives
+pnpm-lock.yaml
 
 # .vitepress
 /docs/.vitepress/cache
