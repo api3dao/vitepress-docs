@@ -314,6 +314,36 @@
       "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
+  "conflux-testnet": {
+    "id": "71",
+    "alias": "conflux-testnet",
+    "name": "Conflux eSpace testnet",
+    "nativeToken": "CFX",
+    "testnet": true,
+    "explorerUrl": "https://evmtestnet.confluxscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
+    }
+  },
+  "conflux": {
+    "id": "1030",
+    "alias": "conflux",
+    "name": "Conflux eSpace",
+    "nativeToken": "CFX",
+    "testnet": false,
+    "explorerUrl": "https://evm.confluxscan.io/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
+    }
+  },
   "core-testnet": {
     "id": "1115",
     "alias": "core-testnet",
@@ -666,6 +696,36 @@
     "nativeToken": "LYX",
     "testnet": false,
     "explorerUrl": "https://explorer.execution.mainnet.lukso.network/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
+    }
+  },
+  "manta-sepolia-testnet": {
+    "id": "3441006",
+    "alias": "manta-sepolia-testnet",
+    "name": "Manta testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://pacific-explorer.sepolia-testnet.manta.network/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
+    }
+  },
+  "manta": {
+    "id": "169",
+    "alias": "manta",
+    "name": "Manta",
+    "nativeToken": "ETH",
+    "testnet": false,
+    "explorerUrl": "https://pacific-explorer.manta.network/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
