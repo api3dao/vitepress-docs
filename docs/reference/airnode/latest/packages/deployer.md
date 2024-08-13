@@ -56,12 +56,9 @@ npx @api3/airnode-deployer deploy \
 
 ### Global Package
 
-The airnode-deployer package can be installed globally with yarn or npm. If
-installed using yarn make sure yarn bin is added to `PATH`.
+The airnode-deployer package can be installed globally with npm.
 
 ```sh
-yarn global add @api3/airnode-deployer
-# OR
 npm install @api3/airnode-deployer -g
 
 # Executing the deployer.

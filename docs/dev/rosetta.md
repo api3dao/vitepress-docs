@@ -48,27 +48,27 @@ If you are installing with npm, you can try ensuring that both npm and node are
 not running under Rosetta 2 and then reinstalling esbuild. This likely involves
 changing how you installed npm and/or node. For example, installing node with
 the universal installer here should work: https://nodejs.org/en/download/. Or
-you could consider using yarn instead of npm which has built-in support for
+you could consider using pnpm instead of npm which has built-in support for
 installing a package on multiple platforms simultaneously.
 ...
 ```
 
 ## How to correct
 
-If you run `yarn docs:build` and get the above error you may have an `esbuild`
+If you run `pnpm docs:build` and get the above error you may have an `esbuild`
 package for use with the non-native platform for Apple silicon probably install
-using NPM. Run the following (only using yarn) to update `esbuild`. If your CLI
+using NPM. Run the following (only using pnpm) to update `esbuild`. If your CLI
 is not running under Rosetta, it will install for the proper platform.
 
 `esbuild` will not appear in `packages.json` under `devDependencies`, but it
 does update.
 
 ```sh
-yarn install --dev esbuild
+pnpm install --dev esbuild
 ```
 
 Next run a VitePress build.
 
 ```sh
-yarn docs:build
+pnpm docs:build
 ```

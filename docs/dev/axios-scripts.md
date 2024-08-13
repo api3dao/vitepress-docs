@@ -32,5 +32,5 @@ The local data files can be refreshed by running the
 `/libs/axiosBuildScripts.js` script as follows:
 
 ```sh
-yarn axios:build
+pnpm axios:build
 ```

@@ -22,7 +22,7 @@ will index all HTML files in the `/dist` folder for the following directories:
 - `/dist/reference/`
 
 Any files that are not part of the docs but are desired to be retained should go
-into the `/archive` folder before running `yarn docs:build` which will create
+into the `/archive` folder before running `pnpm docs:build` which will create
 the `/dist` folder. This prevents such files from being indexed.
 
 ## `<FlexStartTag/>` and `<FlexEndTag/>`
@@ -72,7 +72,7 @@ indexes.
 Build the local data files via the Axios script.
 
 ```sh
-yarn axios:build
+pnpm axios:build
 ```
 
 ### 2. Build the `/dist` folder
@@ -82,7 +82,7 @@ Build the `/dist` folder with the latest HTML files. All markdown files in
 contain the extraction markers `<Flex...Tag/>`.
 
 ```sh
-yarn docs:build
+pnpm docs:build
 ```
 
 ### 3. Script `flexBuildIndexes.js`
@@ -90,10 +90,10 @@ yarn docs:build
 Builds the index files.
 
 ```sh
-yarn flex:build
+pnpm flex:build
 ```
 
-Note the output from the command `yarn flex:build` which displays file sizes.
+Note the output from the command `pnpm flex:build` which displays file sizes.
 Check the size of the three `map.json` files which should be in the range of
 25-31 MB. If not refer to the
 [Long strings warning](/dev/flexsearch.html#long-strings-warning) section below.
@@ -112,7 +112,7 @@ Check the size of the three `map.json` files which should be in the range of
 Test the index files.
 
 ```sh
-yarn flex:test
+pnpm flex:test
 ```
 
 ### 5. Firebase emulator (optional step)

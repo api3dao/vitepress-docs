@@ -49,8 +49,6 @@ alternatively
 ```sh
 # First install the package
 npm install @api3/airnode-validator
-# Or
-yarn add @api3/airnode-validator
 
 # Run the validator CLI
 npx airnode-validator --config "config.json" --secrets "secrets.env"

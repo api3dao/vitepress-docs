@@ -39,16 +39,12 @@ doc.
 
 You can install
 [@api3/airnode-abi](https://www.npmjs.com/package/@api3/airnode-abi?activeTab=dependencies)
-with either
+with
 [npm](https://docs.npmjs.com/getting-started/installing-node#install-npm--manage-npm-versions)
-or [Yarn](https://yarnpkg.com/en/docs/install)
 
 ```sh
 # npm
 npm install --save @api3/airnode-abi
-
-# Yarn
-yarn add @api3/airnode-abi
 ```
 
 ## Usage

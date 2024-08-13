@@ -32,7 +32,7 @@ Clone the remote repo and install it packages.
 ```sh
 git clone git@github.com:api3dao/vitepress-docs.git
 cd vitepress-docs
-yarn install
+pnpm install
 ```
 
 Create a working branch.
@@ -44,7 +44,7 @@ git checkout -b <branch-name>
 Run the development server.
 
 ```sh
-yarn docs:dev
+pnpm docs:dev
 ```
 
 ## Push the working branch
@@ -53,7 +53,7 @@ Before pushing your working branch to the remote repo, be sure that the branch
 builds.
 
 ```sh
-yarn docs:build
+pnpm docs:build
 ```
 
 The output should look like this:
@@ -72,8 +72,8 @@ needed.
 
 ## Memory
 
-It maybe necessary to increase the memory for Nodejs to run `yarn docs:dev` or
-`yarn docs:build`. This can be done with the command below, with a higher value
+It maybe necessary to increase the memory for Nodejs to run `pnpm docs:dev` or
+`pnpm docs:build`. This can be done with the command below, with a higher value
 potentially necessary. For Apple silicon this may be a sign of a
 [Rosetta issue](/dev/rosetta.md) which should be addressed before committing to
 additional memory for Nodejs.

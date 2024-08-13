@@ -37,11 +37,11 @@ firebase:emulator
 OR
 
 ```sh
-yarn docs:build
+pnpm docs:build
 
-yarn flex:build
+pnpm flex:build
 
-yarn flex:test
+pnpm flex:test
 
 firebase emulators:start
 ```
