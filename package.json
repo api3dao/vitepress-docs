@@ -27,9 +27,9 @@
     "firebase:emulator": "pnpm docs:build; pnpm flex:build; pnpm flex:test; firebase emulators:start"
   },
   "devDependencies": {
-    "@api3/chains": "^9.0.0",
-    "adm-zip": "^0.5.14",
-    "axios": "^1.7.2",
+    "@api3/chains": "^9.1.0",
+    "adm-zip": "^0.5.15",
+    "axios": "^1.7.3",
     "colors": "^1.4.0",
     "diff": "^5.2.0",
     "ethers": "^6.13.2",
