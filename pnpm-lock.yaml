@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  watchpack: 2.4.1
+  watchpack: 2.4.2
 
 importers:
 
