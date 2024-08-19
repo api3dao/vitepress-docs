@@ -12,14 +12,14 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^9.1.0
-        version: 9.2.0
+        specifier: ^9.2.1
+        version: 9.2.1
       adm-zip:
         specifier: ^0.5.15
         version: 0.5.15
       axios:
-        specifier: ^1.7.3
-        version: 1.7.3
+        specifier: ^1.7.4
+        version: 1.7.4
       colors:
         specifier: ^1.4.0
         version: 1.4.0
@@ -64,7 +64,7 @@ importers:
         version: 2.1.0
       vitepress:
         specifier: 1.3.1
-        version: 1.3.1(@algolia/client-search@4.24.0)(@types/node@18.15.13)(axios@1.7.3)(postcss@8.4.41)(search-insights@2.16.2)
+        version: 1.3.1(@algolia/client-search@4.24.0)(@types/node@18.15.13)(axios@1.7.4)(postcss@8.4.41)(search-insights@2.16.2)
       walk-sync:
         specifier: ^3.0.0
         version: 3.0.0
@@ -142,8 +142,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@api3/chains@9.2.0':
-    resolution: {integrity: sha512-lWgnR6pZ9aRrCfAT6I62adtIHfuQPgpUEwfqEE6W2xvPDUQB9w6XNoFd/ppE1BQHBfwBKFMvY/bD+1IAHIidZA==}
+  '@api3/chains@9.2.1':
+    resolution: {integrity: sha512-6PO1Cr7IWq/qRoZkIZ4rmsIgZKkQMKXGePlK+km3Z28LSTpo7WnYlpDD/vl21t1epEXL8z3u5fbtVKbjYZ9BVg==}
 
   '@babel/helper-string-parser@7.24.8':
     resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
@@ -587,8 +587,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.7.3:
-    resolution: {integrity: sha512-Ar7ND9pU99eJ9GpoGQKhKf58GpUOgnzuaB7ueNQ5BMi0p+LZ5oaEnfF999fAArcTIBwXTCHAmGcHOZJaWPq9Nw==}
+  axios@1.7.4:
+    resolution: {integrity: sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1121,7 +1121,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@api3/chains@9.2.0':
+  '@api3/chains@9.2.1':
     dependencies:
       viem: 2.19.3(zod@3.23.8)
       zod: 3.23.8
@@ -1430,13 +1430,13 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/integrations@10.11.1(axios@1.7.3)(focus-trap@7.5.4)(vue@3.4.37)':
+  '@vueuse/integrations@10.11.1(axios@1.7.4)(focus-trap@7.5.4)(vue@3.4.37)':
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.4.37)
       '@vueuse/shared': 10.11.1(vue@3.4.37)
       vue-demi: 0.14.10(vue@3.4.37)
     optionalDependencies:
-      axios: 1.7.3
+      axios: 1.7.4
       focus-trap: 7.5.4
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -1485,7 +1485,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.7.3:
+  axios@1.7.4:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -1866,7 +1866,7 @@ snapshots:
       '@types/node': 18.15.13
       fsevents: 2.3.3
 
-  vitepress@1.3.1(@algolia/client-search@4.24.0)(@types/node@18.15.13)(axios@1.7.3)(postcss@8.4.41)(search-insights@2.16.2):
+  vitepress@1.3.1(@algolia/client-search@4.24.0)(@types/node@18.15.13)(axios@1.7.4)(postcss@8.4.41)(search-insights@2.16.2):
     dependencies:
       '@docsearch/css': 3.6.1
       '@docsearch/js': 3.6.1(@algolia/client-search@4.24.0)(search-insights@2.16.2)
@@ -1877,7 +1877,7 @@ snapshots:
       '@vue/devtools-api': 7.3.7
       '@vue/shared': 3.4.37
       '@vueuse/core': 10.11.1(vue@3.4.37)
-      '@vueuse/integrations': 10.11.1(axios@1.7.3)(focus-trap@7.5.4)(vue@3.4.37)
+      '@vueuse/integrations': 10.11.1(axios@1.7.4)(focus-trap@7.5.4)(vue@3.4.37)
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 7.1.0
