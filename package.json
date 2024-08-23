@@ -6,6 +6,7 @@
   "engines": {
     "node": "20"
   },
+  "packageManager": "pnpm@9.8.0",
   "resolutions": {
     "watchpack": "2.4.1"
   },
