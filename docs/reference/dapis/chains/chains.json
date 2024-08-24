@@ -209,21 +209,6 @@
       "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
-  "bob-sepolia-testnet": {
-    "id": "111",
-    "alias": "bob-sepolia-testnet",
-    "name": "BOB testnet",
-    "nativeToken": "ETH",
-    "testnet": true,
-    "explorerUrl": "https://testnet-explorer.gobob.xyz/",
-    "contracts": {
-      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
-      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
-      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
-      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
-      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
-    }
-  },
   "bob": {
     "id": "60808",
     "alias": "bob",
