@@ -78,7 +78,7 @@ feeds, known as dAPIs. Use the [API3 Market](https://market.api3.org) to search
 for dAPIs, activate feeds, obtain dAPI proxy contract addresses, and monitor
 dAPIs.
 
-<img src="../assets/images/API3_market_march2023_v1.png" style="width:1200px">
+<img src="../assets/images/API3_market_september2024.png" style="width:1200px">
 
 From the API3 Market developers will manage all data feed subscriptions. Once
 the dAPI interface has been imported to a dApps contract, upgrading a data feed
