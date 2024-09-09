@@ -28,9 +28,9 @@
     "firebase:emulator": "pnpm docs:build; pnpm flex:build; pnpm flex:test; firebase emulators:start"
   },
   "devDependencies": {
-    "@api3/chains": "^10.0.0",
-    "adm-zip": "^0.5.15",
-    "axios": "^1.7.5",
+    "@api3/chains": "^10.1.0",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.7.7",
     "colors": "^1.4.0",
     "diff": "^6.0.0",
     "ethers": "^6.13.2",
@@ -38,7 +38,7 @@
     "flexsearch": "^0.7.43",
     "fs-extra": "^11.2.0",
     "gray-matter": "^4.0.3",
-    "html-dom-parser": "^5.0.9",
+    "html-dom-parser": "^5.0.10",
     "husky": "^9.1.5",
     "js-yaml": "^4.1.0",
     "medium-zoom": "^1.1.0",
