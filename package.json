@@ -7,9 +7,6 @@
     "node": "20"
   },
   "packageManager": "pnpm@9.9.0",
-  "resolutions": {
-    "watchpack": "2.4.2"
-  },
   "scripts": {
     "sync:VPFlyout": "cp docs/_components/vitepress/VPFlyout.vue  node_modules/vitepress/dist/client/theme-default/components/VPFlyout.vue",
     "sync:VPNavBarTitle": "cp docs/_components/vitepress/VPNavBarTitle.vue  node_modules/vitepress/dist/client/theme-default/components/VPNavBarTitle.vue",
