@@ -21,8 +21,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       diff:
-        specifier: ^6.0.0
-        version: 6.0.0
+        specifier: ^7.0.0
+        version: 7.0.0
       ethers:
         specifier: ^6.13.2
         version: 6.13.2
@@ -642,8 +642,8 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
 
-  diff@6.0.0:
-    resolution: {integrity: sha512-NbGtgPSw7il+jeajji1H6iKjCk3r/ANQKw3FFUhGV50+MH5MKIMeUmi53piTr7jlkWcq9eS858qbkRzkehwe+w==}
+  diff@7.0.0:
+    resolution: {integrity: sha512-PJWHUb1RFevKCwaFA9RlG5tCd+FO5iRh9A8HEtkmBH2Li03iJriB6m6JIN4rGz3K3JLawI7/veA1xzRKP6ISBw==}
     engines: {node: '>=0.3.1'}
 
   dom-serializer@2.0.0:
@@ -1561,7 +1561,7 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
-  diff@6.0.0: {}
+  diff@7.0.0: {}
 
   dom-serializer@2.0.0:
     dependencies:
