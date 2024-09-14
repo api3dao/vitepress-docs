@@ -50,6 +50,8 @@ tags:
 
 <PageHeader/>
 
+<QrngRemoval/>
+
 <SearchHighlight/>
 
 <FlexStartTag/>

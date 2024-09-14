@@ -28,6 +28,8 @@ hero:
       link: /reference/dao-members/
 ---
 
+<QrngRemoval/>
+
 <script>
 export default {
     mounted() {
