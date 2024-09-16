@@ -19,8 +19,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-<QrngRemoval/>
-
 > <Video src="https://www.youtube.com/embed/pV976MvviIA?si=1ykWLg0wFZVGEEi-"/>
 
 ## Introduction
