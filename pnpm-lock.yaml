@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^10.1.0
-        version: 10.1.1
+        specifier: ^10.2.0
+        version: 10.2.1
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
@@ -42,8 +42,8 @@ importers:
         specifier: ^5.0.10
         version: 5.0.10
       husky:
-        specifier: ^9.1.5
-        version: 9.1.5
+        specifier: ^9.1.6
+        version: 9.1.6
       js-yaml:
         specifier: ^4.1.0
         version: 4.1.0
@@ -139,8 +139,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@api3/chains@10.1.1':
-    resolution: {integrity: sha512-E7gmFeRzfAnQQupR22auTXpA/8l8NhqixK7kqT3z1+jQmRhLbp0LUI9raD2ev6pNvTdfnp/J0d4q2zISp2vUyg==}
+  '@api3/chains@10.2.1':
+    resolution: {integrity: sha512-KN0lCj/l7OakpS+ZyB3jJm6lrPaT8GPwnjF0CfDl/OLmSx+frgfgfsCwYZ8YKtowO6OrzLE2oTxU48YwXToMeQ==}
 
   '@babel/helper-string-parser@7.24.8':
     resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
@@ -420,9 +420,6 @@ packages:
     resolution: {integrity: sha512-aJ1EJSuTdGnM6qbVC4B5DSmozPTqIag9fSzXRNNo+humQLG89XpPgdt16Ia56ORD7s+H8Pmyx44uczDQ0yDzpg==}
     cpu: [x64]
     os: [win32]
-
-  '@scure/base@1.1.7':
-    resolution: {integrity: sha512-PPNYBslrLNNUQ/Yad37MHYsNQtK67EhWb6WtSvNLLPo7SdVZgkUjD6Dg+5On7zNwmskf8OX7I7Nx5oN+MIWE0g==}
 
   '@scure/base@1.1.8':
     resolution: {integrity: sha512-6CyAclxj3Nb0XT7GHK6K4zK6k2xJm6E4Ft0Ohjt4WgegiFUHEtFb2CGzmPmGBwoIhrLsqNLYfLr04Y1GePrzZg==}
@@ -741,8 +738,8 @@ packages:
   htmlparser2@9.1.0:
     resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
 
-  husky@9.1.5:
-    resolution: {integrity: sha512-rowAVRUBfI0b4+niA4SJMhfQwc107VLkBUgEYYAOQAbqDCnra1nYh83hF/MDmhYs9t9n1E3DuKOrs2LYNC+0Ag==}
+  husky@9.1.6:
+    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1125,7 +1122,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@api3/chains@10.1.1':
+  '@api3/chains@10.2.1':
     dependencies:
       viem: 2.21.3(zod@3.23.8)
       zod: 3.23.8
@@ -1305,15 +1302,13 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.20.0':
     optional: true
 
-  '@scure/base@1.1.7': {}
-
   '@scure/base@1.1.8': {}
 
   '@scure/bip32@1.4.0':
     dependencies:
       '@noble/curves': 1.4.0
       '@noble/hashes': 1.4.0
-      '@scure/base': 1.1.7
+      '@scure/base': 1.1.8
 
   '@scure/bip39@1.4.0':
     dependencies:
@@ -1687,7 +1682,7 @@ snapshots:
       domutils: 3.1.0
       entities: 4.5.0
 
-  husky@9.1.5: {}
+  husky@9.1.6: {}
 
   iconv-lite@0.6.3:
     dependencies:
@@ -1944,7 +1939,7 @@ snapshots:
   webauthn-p256@0.0.5:
     dependencies:
       '@noble/curves': 1.4.0
-      '@noble/hashes': 1.4.0
+      '@noble/hashes': 1.5.0
 
   whatwg-encoding@3.1.1:
     dependencies:
