@@ -2,7 +2,7 @@
   <div class="qrng-flex-container">
     <img
       src="/public/img/infoCircle-24px.png"
-      style="width: 50px; height: 50px"
+      style="width: 20px; height: 20px; margin-top: 2px"
     />
 
     <span style="margin-left: 10px">
