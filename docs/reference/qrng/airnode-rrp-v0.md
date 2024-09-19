@@ -9,6 +9,7 @@ tags:
 ---
 
 <PageHeader/>
+<QrngRemoval/>
 
 <SearchHighlight/>
 
