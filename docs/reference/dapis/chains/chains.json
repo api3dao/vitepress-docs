@@ -1038,7 +1038,7 @@
     "id": "80002",
     "alias": "polygon-sepolia-testnet",
     "name": "Polygon testnet",
-    "nativeToken": "MATIC",
+    "nativeToken": "POL",
     "testnet": true,
     "explorerUrl": "https://amoy.polygonscan.com/",
     "contracts": {
@@ -1083,7 +1083,7 @@
     "id": "137",
     "alias": "polygon",
     "name": "Polygon",
-    "nativeToken": "MATIC",
+    "nativeToken": "POL",
     "testnet": false,
     "explorerUrl": "https://polygonscan.com/",
     "contracts": {
