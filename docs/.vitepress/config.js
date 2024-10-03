@@ -85,25 +85,6 @@ export default {
 function nav() {
   return [
     { text: 'Home', link: '/' },
-    {
-      text: 'Explore',
-      link: '/explore/introduction/',
-      activeMatch: '/explore/.*',
-    },
-    { text: 'Guides', link: '/guides/', activeMatch: '/guides/.*' },
-    {
-      text: 'Reference',
-      items: [
-        { text: 'dAPIs', link: '/reference/dapis/understand/' },
-        { text: 'OEV Network', link: '/reference/oev-network/' },
-        {
-          text: 'Airnode',
-          link: '/reference/airnode/latest/understand/',
-        },
-        { text: 'OIS', link: '/reference/ois/latest/' },
-        { text: 'QRNG', link: '/reference/qrng/' },
-        { text: 'DAO Members', link: '/reference/dao-members/' },
-      ],
-    },
+    { text: 'dAPIs', link: '/reference/dapis/understand/' },
   ];
 }
