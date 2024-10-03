@@ -3,30 +3,30 @@ module.exports = [
     text: 'Overview',
     collapsed: false,
     items: [
-      { text: 'What are dAPIs?', link: '/dapis/' },
+      { text: 'What are dAPIs?', link: '/reference/dapis/' },
       {
         text: 'Getting started with API3',
-        link: '/dapis/introduction/',
+        link: '/reference/dapis/introduction/',
       },
       {
         text: 'What are first-party oracles?',
-        link: '/dapis/introduction/first-party',
+        link: '/reference/dapis/introduction/first-party',
       },
       {
         text: 'dAPI Price Feeds',
-        link: '/dapis/introduction/decentralized-apis',
+        link: '/reference/dapis/introduction/decentralized-apis',
       },
       {
         text: 'Using dAPIs in DeFi',
-        link: '/dapis/introduction/using-dapis',
+        link: '/reference/dapis/introduction/using-dapis',
       },
       {
         text: 'How are dAPIs maintained on-chain',
-        link: '/dapis/introduction/how-are-dAPIs-maintained',
+        link: '/reference/dapis/introduction/how-are-dAPIs-maintained',
       },
       {
         text: 'Security considerations',
-        link: '/dapis/introduction/security-considerations',
+        link: '/reference/dapis/introduction/security-considerations',
       },
     ],
   },
@@ -36,15 +36,15 @@ module.exports = [
     items: [
       {
         text: 'Getting Started with dAPIs',
-        link: '/dapis/guides/',
+        link: '/reference/dapis/guides/',
       },
       {
         text: 'Subscribing to dAPIs',
-        link: '/dapis/guides/subscribing-to-dapis/',
+        link: '/reference/dapis/guides/subscribing-to-dapis/',
       },
       {
         text: 'Reading a dAPI Proxy',
-        link: '/dapis/guides/read-a-dapi/',
+        link: '/reference/dapis/guides/read-a-dapi/',
       },
     ],
   },
@@ -54,40 +54,40 @@ module.exports = [
     items: [
       {
         text: 'dAPIs',
-        link: '/dapis/reference/understand/',
+        link: '/reference/dapis/reference/understand/',
       },
       {
         text: 'Proxy contracts',
-        link: '/dapis/reference/understand/proxy-contracts',
+        link: '/reference/dapis/reference/understand/proxy-contracts',
       },
       {
         text: 'Deviation thresholds',
-        link: '/dapis/reference/understand/deviations',
+        link: '/reference/dapis/reference/understand/deviations',
       },
       {
         text: 'Sponsor wallets',
-        link: '/dapis/reference/understand/wallets',
+        link: '/reference/dapis/reference/understand/wallets',
       },
       {
         text: 'Security',
-        link: '/dapis/reference/understand/security',
+        link: '/reference/dapis/reference/understand/security',
       },
       {
         text: 'dAPI Names',
-        link: '/dapis/reference/dapi-names',
+        link: '/reference/dapis/reference/dapi-names',
       },
 
       {
         text: 'ID and Name Schemes',
-        link: '/dapis/reference/schemes',
+        link: '/reference/dapis/reference/schemes',
       },
       {
         text: 'Verify dAPI sources',
-        link: '/dapis/reference/verify-beacon',
+        link: '/reference/dapis/reference/verify-beacon',
       },
       {
         text: 'Chains and Contracts',
-        link: '/dapis/reference/chains/',
+        link: '/reference/dapis/reference/chains/',
       },
     ],
   },
@@ -97,12 +97,15 @@ module.exports = [
     items: [
       {
         text: 'Add testnets to MetaMask',
-        link: '/dapis/misc/testnets-metamask/',
+        link: '/reference/dapis/misc/testnets-metamask/',
       },
-      { text: 'Create an Infura key', link: '/dapis/misc/infura-key/' },
+      {
+        text: 'Create an Infura key',
+        link: '/reference/dapis/misc/infura-key/',
+      },
       {
         text: 'Remix Reload Contract',
-        link: '/dapis/misc/remix-reload-contract/',
+        link: '/reference/dapis/misc/remix-reload-contract/',
       },
     ],
   },
