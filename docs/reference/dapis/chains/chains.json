@@ -965,7 +965,7 @@
     "name": "OEV Network",
     "nativeToken": "ETH",
     "testnet": false,
-    "explorerUrl": "https://oev-network.calderaexplorer.xyz/",
+    "explorerUrl": "https://oev.explorer.api3.org/",
     "contracts": {
       "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
       "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
