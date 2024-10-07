@@ -25,12 +25,12 @@
     "firebase:emulator": "pnpm docs:build; pnpm flex:build; pnpm flex:test; firebase emulators:start"
   },
   "devDependencies": {
-    "@api3/chains": "^10.2.2",
+    "@api3/chains": "^10.2.3",
     "adm-zip": "^0.5.16",
     "axios": "^1.7.7",
     "colors": "^1.4.0",
     "diff": "^7.0.0",
-    "ethers": "^6.13.2",
+    "ethers": "^6.13.3",
     "file": "^0.2.2",
     "flexsearch": "^0.7.43",
     "fs-extra": "^11.2.0",
