@@ -1,7 +1,11 @@
 ---
-title: Decentralized APIs (dAPIs)
-pageHeader: dAPIs → Introduction
+title: Signed APIs
+sidebarHeader: Reference
+sidebarSubHeader: dAPIs
+pageHeader: Reference → dAPIs → Signed APIs
+path: /reference/dapis/understand/signed-apis.html
 outline: deep
+tags: signed-apis
 ---
 
 <PageHeader/>
