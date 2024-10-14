@@ -16,6 +16,10 @@ module.exports = [
         link: '/reference/dapis/understand/deviations',
       },
       {
+        text: 'Signed APIs',
+        link: '/reference/dapis/understand/signed-apis',
+      },
+      {
         text: 'Sponsor wallets',
         link: '/reference/dapis/understand/wallets',
       },

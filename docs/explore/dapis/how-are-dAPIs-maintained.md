@@ -56,4 +56,15 @@ proxy address when calling the `read()` function on the proxy contract. If the
 dAPI interface has previously been imported, it abstracts away the technical
 implementation of accessing new data feeds.
 
+## Signed APIs
+
+The heart of dAPIs are the first-party data feeds, powered by the owners of the
+data themselves. These data source owners operate an Airnode - a small
+abstraction that takes their data and cryptographically signs it. The signer
+wallet never leaves the owner's control, and anyone can verify that a particular
+signed data was signed by the respective data source. Airnodes periodically push
+the signed data to Signed APIs.
+
+Read more about [Signed APIs](/reference/dapis/understand/signed-apis.md).
+
 <FlexEndTag/>

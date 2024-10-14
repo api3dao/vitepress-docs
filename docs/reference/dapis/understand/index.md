@@ -80,9 +80,19 @@ heartbeat for each `beaconId` or `beaconSetId`.
 
 ## Providers for dAPIs
 
-Currently there are eight API providers each running an Airnode.
+Providers for blockchain data such as Liquid Staking Derivatives (LSDs) and
+Liquid Staking Tokens (LSTs):
+
+- Ankr
+- BlastAPI
+- Blocksize
+- drpc
+- Nodary
+
+Providers for cryptocurrency prices:
 
 - Coingecko
+- Coinmetrics
 - Coinpaprika
 - dxFeed
 - Finage

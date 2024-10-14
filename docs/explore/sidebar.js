@@ -47,10 +47,6 @@ module.exports = [
     items: [
       { text: 'What are dAPIs?', link: '/explore/dapis/what-are-dapis' },
       {
-        text: 'Using dAPIs in DeFi',
-        link: '/explore/dapis/using-dapis',
-      },
-      {
         text: 'How are dAPIs maintained on-chain',
         link: '/explore/dapis/how-are-dAPIs-maintained',
       },

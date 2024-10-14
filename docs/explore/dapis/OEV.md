@@ -24,8 +24,7 @@ capture value that would otherwise have gone to third parties.
 Any update to data feeds, or a lack thereof, can create opportunities for OEV
 such as arbitrage and liquidations. During each of these interactions value is
 leaking from the dApp users to both searchers and blockchain validators. Learn
-more about OEV in a summary of the
-[OEV Litepaper](https://medium.com/api3/oracle-extractable-value-oev-13c1b6d53c5b).
+more about OEV [here](/reference/oev-network).
 
 ### Leveraging OEV alongside dAPIs
 

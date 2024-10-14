@@ -71,7 +71,7 @@ code.
 
 <!--<img src="../assets/images/02-b-First_vs_Third_party_oracles-Descentralized_API_(dAPI).png" width="400"/-->
 
-### Activate and Manage dAPIs
+## API3 Market
 
 The API3 Market provides tooling for dApp owners to access decentralized price
 feeds, known as dAPIs. Use the [API3 Market](https://market.api3.org) to search
