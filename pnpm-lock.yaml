@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^10.2.3
+        specifier: ^10.2.4
         version: 10.2.4
       adm-zip:
         specifier: ^0.5.16
