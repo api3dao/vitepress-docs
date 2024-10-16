@@ -13,7 +13,7 @@ tags: signed-apis
 # Signed APIs
 
 Signed APIs store the data pushed by Airnodes and expose them to the public via
-an API. This allows for various use cases, including powering API3 push oracle.
+an API. This allows for various use cases, including powering API3 push oracles.
 
 Both the [Airnode](https://github.com/api3dao/airnode) and
 [Signed API](https://github.com/api3dao/signed-api) implementations are open
