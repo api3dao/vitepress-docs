@@ -25,7 +25,7 @@ Signed APIs are also open sourced for anyone to use. This is yet another step
 towards more decentralization, because even if API3 oracle service is down,
 anyone can use these existing Signed APIs to do the updates instead. This also
 allows MEV searchers to utilize the data to perform updates outside of the
-deviation parameters to further increase real-timeness of the data feeds.
+deviation parameters to further increase data feed currentness.
 
 API3 runs Signed APIs deployed on AWS, ensuring maximum uptime and reliability.
 The endpoint path of a Signed API has the following shape:
