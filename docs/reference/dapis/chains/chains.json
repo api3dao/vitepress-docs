@@ -959,6 +959,21 @@
       "Api3Market": "0x1B127098D19A3D6A0417560fD7df2b927FafD933"
     }
   },
+  "odyssey-sepolia-testnet": {
+    "id": "911867",
+    "alias": "odyssey-sepolia-testnet",
+    "name": "Odyssey testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://odyssey-explorer.ithaca.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
+    }
+  },
   "oev-network": {
     "id": "4913",
     "alias": "oev-network",
@@ -1242,6 +1257,21 @@
       "OwnableCallForwarder": "0xF6d2675468989387e96127546e0CBC9A384fa418",
       "ProxyFactory": "0x1DCE40DC2AfA7131C4838c8BFf635ae9d198d1cE",
       "Api3Market": "0xb015ACeEdD478fc497A798Ab45fcED8BdEd08924"
+    }
+  },
+  "unichain-sepolia-testnet": {
+    "id": "1301",
+    "alias": "unichain-sepolia-testnet",
+    "name": "Unichain testnet",
+    "nativeToken": "ETH",
+    "testnet": true,
+    "explorerUrl": "https://sepolia.uniscan.xyz/",
+    "contracts": {
+      "Api3ServerV1": "0x709944a48cAf83535e43471680fDA4905FB3920a",
+      "AccessControlRegistry": "0xcD7Df573B0F0bb4F2f8dFFF6650cDe8C77431730",
+      "OwnableCallForwarder": "0x81bc85f329cDB28936FbB239f734AE495121F9A6",
+      "ProxyFactory": "0x9EB9798Dc1b602067DFe5A57c3bfc914B965acFD",
+      "Api3Market": "0x9F5223d4a93a771D178992078DB1AbE421Dd4218"
     }
   },
   "x-layer-sepolia-testnet": {
