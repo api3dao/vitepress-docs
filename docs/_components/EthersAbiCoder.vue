@@ -17,7 +17,7 @@
         />
         <br />
         <div v-if="result">
-          <code style="text-align: left:">{{ result }}</code>
+          <code style="text-align: left">{{ result }}</code>
         </div>
       </form>
     </div>
