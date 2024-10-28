@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^10.4.0
-        version: 10.4.1
+        specifier: ^10.5.0
+        version: 10.6.0
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
@@ -139,8 +139,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@api3/chains@10.4.1':
-    resolution: {integrity: sha512-2uuGzj1SfVDzyineNDCXIPjAGSa+Z6SJZuioHjHx1PTCL88LSveM1+OPcox7GR1ZLvK3RiL9LOJMIJOD5bwjXw==}
+  '@api3/chains@10.6.0':
+    resolution: {integrity: sha512-WRdoXesr0wH11MX1d9pDybdJ2G0Eif6QfFoASZ7buzFa6/1pksBkR5DdNlvH28XKTpXoPjuPqDCAMBh4d8+CWw==}
 
   '@babel/helper-string-parser@7.24.8':
     resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
@@ -1134,7 +1134,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@api3/chains@10.4.1':
+  '@api3/chains@10.6.0':
     dependencies:
       viem: 2.21.31(zod@3.23.8)
       zod: 3.23.8
