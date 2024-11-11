@@ -1,0 +1,202 @@
+{
+  "chains": [
+    {
+      "authorizers": {
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": []
+      },
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "id": "11155111",
+      "providers": {
+        "myChainProvider": {
+          "url": "${CHAIN_PROVIDER_URL}"
+        }
+      },
+      "type": "evm",
+      "options": {
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "latestBlockPercentileGasPrice",
+            "percentile": 60,
+            "minTransactionCount": 20,
+            "pastToCompareInBlocks": 20,
+            "maxDeviationMultiplier": 2
+          },
+          {
+            "gasPriceStrategy": "providerRecommendedGasPrice",
+            "recommendedGasPriceMultiplier": 1.2
+          },
+          {
+            "gasPriceStrategy": "providerRecommendedEip1559GasPrice",
+            "baseFeeMultiplier": 2,
+            "priorityFee": {
+              "value": 3.12,
+              "unit": "gwei"
+            }
+          },
+          {
+            "gasPriceStrategy": "constantGasPrice",
+            "gasPrice": {
+              "value": 10,
+              "unit": "gwei"
+            }
+          }
+        ]
+      },
+      "maxConcurrency": 100
+    }
+  ],
+  "nodeSettings": {
+    "cloudProvider": {
+      "type": "local"
+    },
+    "airnodeWalletMnemonic": "${AIRNODE_WALLET_MNEMONIC}",
+    "heartbeat": {
+      "enabled": false
+    },
+    "httpGateway": {
+      "enabled": true,
+      "maxConcurrency": 20,
+      "corsOrigins": []
+    },
+    "httpSignedDataGateway": {
+      "enabled": false
+    },
+    "oevGateway": {
+      "enabled": false
+    },
+    "logFormat": "plain",
+    "logLevel": "DEBUG",
+    "nodeVersion": "0.14.1",
+    "stage": "quick-container"
+  },
+  "triggers": {
+    "rrp": [
+      {
+        "endpointId": "0x2de6e288ed16965b68a62d4b2a747b094b3c857941285e625bed3a7be31445e4",
+        "oisTitle": "API3 coin data",
+        "endpointName": "api3CoinMarketData",
+        "cacheResponses": false
+      }
+    ],
+    "http": [
+      {
+        "endpointId": "0x2de6e288ed16965b68a62d4b2a747b094b3c857941285e625bed3a7be31445e4",
+        "oisTitle": "API3 coin data",
+        "endpointName": "api3CoinMarketData"
+      }
+    ],
+    "httpSignedData": []
+  },
+  "templates": [],
+  "ois": [
+    {
+      "oisFormat": "2.3.2",
+      "title": "API3 coin data",
+      "version": "1.0.0",
+      "apiSpecifications": {
+        "servers": [
+          {
+            "url": "https://api.coingecko.com/api/v3"
+          }
+        ],
+        "paths": {
+          "/coins/{coin}/market_chart": {
+            "get": {
+              "parameters": [
+                {
+                  "in": "path",
+                  "name": "coin"
+                },
+                {
+                  "in": "query",
+                  "name": "vs_currency"
+                },
+                {
+                  "in": "query",
+                  "name": "days"
+                },
+                {
+                  "in": "query",
+                  "name": "interval"
+                }
+              ]
+            }
+          }
+        },
+        "components": {
+          "securitySchemes": {}
+        },
+        "security": {}
+      },
+      "endpoints": [
+        {
+          "name": "api3CoinMarketData",
+          "operation": {
+            "method": "get",
+            "path": "/coins/{coin}/market_chart"
+          },
+          "fixedOperationParameters": [
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "days"
+              },
+              "value": "6"
+            },
+            {
+              "operationParameter": {
+                "in": "query",
+                "name": "interval"
+              },
+              "value": "daily"
+            }
+          ],
+          "reservedParameters": [
+            {
+              "name": "_type",
+              "fixed": "int256,int256"
+            },
+            {
+              "name": "_path",
+              "fixed": "avg_price,avg_market_cap"
+            },
+            {
+              "name": "_times",
+              "fixed": "1000000,"
+            }
+          ],
+          "parameters": [
+            {
+              "name": "air_coin",
+              "operationParameter": {
+                "in": "path",
+                "name": "coin"
+              }
+            },
+            {
+              "name": "air_vs_currency",
+              "operationParameter": {
+                "in": "query",
+                "name": "vs_currency"
+              }
+            }
+          ],
+          "preProcessingSpecifications": [],
+          "postProcessingSpecifications": [
+            {
+              "environment": "Node",
+              "timeoutMs": 5000,
+              "value": "   let avg_price = 0;   let avg_market_cap = 0;   input.prices.forEach(el => { avg_price = avg_price + el[1]; });   input.avg_price = (avg_price / 7).toString();   input.market_caps.forEach(el => { avg_market_cap = avg_market_cap + el[1]; });   input.avg_market_cap = (avg_market_cap / 7).toString();   output = input;   "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "apiCredentials": []
+}
