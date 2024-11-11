@@ -1,5 +1,4 @@
 <template>
-  {{ subText }}
   <div style="font-weight: 400; font-size: large">
     <div style="font-size: small" v-show="subText">
       {{ subText }} <VersionPicklist v-show="showVersionPickList" />
