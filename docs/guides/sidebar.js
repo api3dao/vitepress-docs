@@ -2,7 +2,7 @@ module.exports = [
   {
     text: '',
     collapsed: false,
-    items: [{ text: 'Getting Started', link: '/guides/' }],
+    items: [{ text: 'About guides', link: '/guides/' }],
   },
   {
     text: 'Airnode',
