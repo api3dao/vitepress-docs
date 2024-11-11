@@ -2,7 +2,7 @@
 title: Overview
 sidebarHeader: Reference
 sidebarSubHeader: Airnode
-pageHeader: Reference → Airnode → v0.14 → Understanding Airnode
+pageHeader: Airnode → v0.14 → Understanding Airnode
 path: /reference/airnode/latest/understand/index.html
 version: v0.14
 outline: deep

@@ -1,5 +1,5 @@
 export default {
-  title: 'Documentation',
+  title: 'Airnode Docs',
   description: 'API3 technical documentation',
   markdown: {
     lineNumbers: true,
@@ -60,8 +60,6 @@ export default {
       copyright: 'Copyright © 2019-present API3',
     },
     sidebar: {
-      '/explore/': require('../explore/sidebar.js'),
-      '/guides/': require('../guides/sidebar.js'),
       '/reference/airnode/next/': require('../reference/airnode/next/sidebar.js'),
       '/reference/airnode/latest/': require('../reference/airnode/latest/sidebar.js'),
       '/reference/airnode/v0.13/': require('../reference/airnode/v0.13/sidebar.js'),
@@ -72,10 +70,9 @@ export default {
       '/reference/ois/2.2/': require('../reference/ois/2.2/sidebar.js'),
       '/reference/ois/2.1/': require('../reference/ois/2.1/sidebar.js'),
       '/reference/ois/2.0/': require('../reference/ois/2.0/sidebar.js'),
-      '/reference/dapis/': require('../reference/dapis/sidebar.js'),
-      '/reference/oev-network/': require('../reference/oev-network/sidebar.js'),
       '/reference/qrng/': require('../reference/qrng/sidebar.js'),
-      '/reference/dao-members/': require('../reference/dao-members/sidebar.js'),
+      '/reference/qrng/': require('../reference/qrng/sidebar.js'),
+      '/guides/': require('../guides/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
     },
     nav: nav(),
@@ -86,24 +83,15 @@ function nav() {
   return [
     { text: 'Home', link: '/' },
     {
-      text: 'Explore',
-      link: '/explore/introduction/',
-      activeMatch: '/explore/.*',
+      text: 'Airnode',
+      link: '/reference/airnode/latest/understand/',
     },
-    { text: 'Guides', link: '/guides/', activeMatch: '/guides/.*' },
+    { text: 'OIS', link: '/reference/ois/latest/' },
+    { text: 'QRNG', link: '/reference/qrng/' },
     {
-      text: 'Reference',
-      items: [
-        { text: 'dAPIs', link: '/reference/dapis/understand/' },
-        { text: 'OEV Network', link: '/reference/oev-network/' },
-        {
-          text: 'Airnode',
-          link: '/reference/airnode/latest/understand/',
-        },
-        { text: 'OIS', link: '/reference/ois/latest/' },
-        { text: 'QRNG', link: '/reference/qrng/' },
-        { text: 'DAO Members', link: '/reference/dao-members/' },
-      ],
+      text: 'Guides',
+      link: '/guides/',
+      activeMatch: '/guides/.*',
     },
   ];
 }
