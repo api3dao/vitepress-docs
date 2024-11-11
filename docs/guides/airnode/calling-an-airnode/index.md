@@ -2,7 +2,7 @@
 title: Calling an Airnode
 sidebarHeader: Guides
 sidebarSubHeader:
-pageHeader: Guides → Calling an Airnode
+pageHeader: Guides → Airnode
 path: /guides/airnode/calling-an-airnode/
 outline: deep
 tags:
