@@ -11,7 +11,7 @@ const { Layout } = DefaultTheme;
 <template>
   <Layout>
     <template #sidebar-nav-before>
-      <SidebarHeader style="margin-top: 5px" />
+      <SidebarHeader />
     </template>
     <template #aside-outline-after> <Market /> <LegacyDocs /> </template>
   </Layout>
