@@ -21,10 +21,9 @@ tags:
 
 Airnode is a first-party oracle that pushes off-chain API data on-chain via data
 feeds (dAPIs) or using its request-response protocol (RRP). Airnode runs
-off-chain as a background component of the API3 ecosystem. Learn more about what
-an [Airnode](/explore/airnode/what-is-airnode.md) is. **Understanding Airnode**
-is a progression of pages that provides a detailed understanding of the
-capabilities and functionality of Airnode.
+off-chain as a background component of the API3 ecosystem. **Understanding
+Airnode** is a progression of pages that provides a detailed understanding of
+the capabilities and functionality of Airnode.
 
 ## Project Folder
 

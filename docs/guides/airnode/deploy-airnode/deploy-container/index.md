@@ -99,7 +99,7 @@ for each of these fields.
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
   provider such as [Infura](https://www.infura.io/). Use a url for the Sepolia
   test network. If you need help creating one see the guide
-  [Create an Infura key](/guides/misc/infura-key/).
+  [Create an Infura key](/guides/airnode/infura-key/).
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
   wallet. The wallet does not need to be funded. Use the Admin CLI command

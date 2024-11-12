@@ -28,7 +28,7 @@
       },
       {
         "source": "/dapis",
-        "destination": "/reference/dapis/understand/",
+        "destination": "https://docs.api3.org/oev-searchers/in-depth/dapis/",
         "type": 301
       },
       {

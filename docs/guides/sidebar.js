@@ -54,6 +54,10 @@ module.exports = [
         text: 'Monorepo Examples',
         link: '/guides/airnode/monorepo-examples',
       },
+      {
+        text: 'Create an Infura key',
+        link: '/guides/airnode/infura-key/',
+      },
     ],
   },
   {

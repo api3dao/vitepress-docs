@@ -20,10 +20,10 @@ tags:
 # {{$frontmatter.title}}
 
 Airnode is a serverless oracle node implemented with a "set and forget"
-[philosophy](/explore/airnode/unlocking-real-world-data.md). Airnode is flexible
-in that it can move API provider data on-chain for multiple purposes. The most
-important of which are data feeds ([dAPIs](/reference/dapis/understand/)) and
-also in response to dApp direct requests for API provider data
+philosophy. Airnode is flexible in that it can move API provider data on-chain
+for multiple purposes. The most important of which are data feeds
+([dAPIs](https://docs.api3.org/oev-searchers/in-depth/dapis/)) and also in
+response to dApp direct requests for API provider data
 ([RRP](/reference/airnode/next/developers/)).
 
 ## Airnode sources data to dAPIs
@@ -34,9 +34,9 @@ beacons are the underlying data source for data feeds known as dAPIs.
 API providers, owners of first-party Airnodes, store data feed values on-chain
 as individual beacons that in are turn sourced by the
 [Api3ServerV1.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/Api3ServerV1.sol)
-contract as [dAPIs](/reference/dapis/understand/). Airnode has an internal
-mechanism that looks for a deviation in the value of API provider's API
-operations. This mechanism updates beacons on-chain as needed.
+contract as [dAPIs](https://docs.api3.org/oev-searchers/in-depth/dapis/).
+Airnode has an internal mechanism that looks for a deviation in the value of API
+provider's API operations. This mechanism updates beacons on-chain as needed.
 
 ## Airnode processes RRP requests
 
