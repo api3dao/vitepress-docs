@@ -10,7 +10,7 @@ const versionsRef = require('../docs/.vitepress/versions.json');
 /**
  * Builds the list of chains for /reference/dapis
  */
-async function dapiChains() {
+/*async function dapiChains() {
   const repo = await axios.get(
     'https://raw.githubusercontent.com/api3dao/contracts/main/deployments/addresses.json'
   );
@@ -20,16 +20,16 @@ async function dapiChains() {
   Object.entries(CHAINS).forEach((element) => {
     const id = element[1].id;
     const chain = CHAINS.find((x) => x.id === id);
-
+    console.log(chain.name, chain.id);
     const contractList = {
       Api3ServerV1: repoData.Api3ServerV1[id],
       AccessControlRegistry: repoData.AccessControlRegistry[id],
       OwnableCallForwarder: repoData.OwnableCallForwarder[id],
-      ProxyFactory: repoData.ProxyFactory[id],
-      Api3Market: repoData.Api3Market[id],
+      Api3ReaderProxyV1Factory: repoData.Api3ReaderProxyV1Factory[id],
+      Api3MarketV2: repoData.Api3MarketV2[id],
     };
 
-    if (contractList.Api3Market) {
+    if (contractList.Api3MarketV2) {
       list[chain.alias] = {
         id: id,
         alias: chain.alias,
@@ -46,7 +46,6 @@ async function dapiChains() {
     'docs/reference/dapis/chains/chains.json',
     JSON.stringify(list)
   );
-}
 
 /**
  * Build the list of contract addresses for multiple
@@ -94,8 +93,8 @@ async function airnodeContractAddresses(contractName, url, path) {
 /* Start the script here */
 console.log('\n----- Building Axios based script files -----');
 
-console.log('> Building chains.json in docs/reference/dapis/chains/');
-dapiChains();
+//console.log('> Building chains.json in docs/reference/dapis/chains/');
+//dapiChains();
 
 console.log('> Building Airnode version specific contract address files');
 versionsRef.versionsAirnode.forEach((el) => {
@@ -116,6 +115,8 @@ versionsRef.versionsAirnode.forEach((el) => {
     'https://raw.githubusercontent.com/api3dao/airnode/' +
     vrs +
     '/packages/airnode-protocol/deployments/references.json';
+  console.log('     ', vrs, path);
+  console.log('     ', url);
   airnodeContractAddresses('AirnodeRrpV0', url, path);
   airnodeContractAddresses('RequesterAuthorizerWithAirnode', url, path);
   airnodeContractAddresses('AccessControlRegistry', url, path);
