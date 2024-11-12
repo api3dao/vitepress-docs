@@ -25,7 +25,7 @@ will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
 AWS.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+[CoinGecko](https://docs.coingecko.com/reference/introduction) which returns the
 current value of a coin. This guide does not detail the overall configuration of
 an Airnode, it is just a quick start guide then lends itself to understanding an
 Airnode deployment.
