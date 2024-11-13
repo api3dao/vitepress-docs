@@ -4,7 +4,7 @@ Writes out the $frontmatter.pageHeader above the $frontmatter.title
 
 <template>
   <div id="api3-pageHeader-path">
-    <img
+    <!--img
       src="/img/Folder-Dark.png"
       v-if="isDark"
       style="width: 3%; float: left; margin-top: 1px"
@@ -13,7 +13,7 @@ Writes out the $frontmatter.pageHeader above the $frontmatter.title
       src="/img/Folder-Light.png"
       v-if="!isDark"
       style="width: 3%; float: left; margin-top: 1px"
-    />
+    /-->
     <span style="margin-left: 5px">{{ frontmatter.pageHeader }}</span>
   </div>
 </template>

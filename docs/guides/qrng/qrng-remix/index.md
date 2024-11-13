@@ -25,13 +25,11 @@ tags:
 
 QRNG (Quantum Random Number Generator) is a free to use public utility provided
 by the API3 DAO that provides quantum randomness on-chain. It is powered by
-[Airnode](/explore/airnode/what-is-airnode), the first-party oracle that is
-directly operated by the QRNG API providers. This way, Quantum RNG can be
-provided on-chain in a trustless manner without the need for a third-party
-oracle. The QRNG service is currently available on all major EVM compatible
-chains. Check the list of supported chains [here](/reference/qrng/chains).
-
-[Click here to read more about what QRNG is how it works.](/explore/qrng/)
+Airnode a first-party oracle that is directly operated by the QRNG API
+providers. This way, Quantum RNG can be provided on-chain in a trustless manner
+without the need for a third-party oracle. The QRNG service is currently
+available on all major EVM compatible chains. Check the list of supported chains
+[here](/reference/qrng/chains).
 
 This guide will walk you through coding and deploying a smart contract that
 requests a quantum random number on-chain using API3's QRNG Service.

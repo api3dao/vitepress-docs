@@ -1,7 +1,7 @@
 <template>
   <div class="qrng-flex-container">
     <img
-      src="/public/img/infoCircle-24px.png"
+      src="/img/infoCircle-24px.png"
       style="width: 29px; height: 29px; margin-top: -2px"
     />
 

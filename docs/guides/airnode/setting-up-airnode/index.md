@@ -50,7 +50,7 @@ To get started, go to [ChainAPI](https://chainapi.com/) and login using
 
 Sign in with your MetaMask account. If you don't have a MetaMask account, you
 can create one by following the instructions
-[here](https://metamask.io/download.html).
+[here](https://metamask.io/download/).
 
 After registering, you will be redirected to the ChainAPI dashboard.
 

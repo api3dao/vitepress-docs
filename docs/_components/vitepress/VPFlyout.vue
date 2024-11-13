@@ -37,13 +37,7 @@ function onBlur() {
     >
       <span v-if="button || icon" class="text">
         <span v-if="icon" :class="[icon, 'option-icon']" />
-        <!-- wkande: Jun 2024: button below replace with one further down   :id="'api3_'...   -->
-        <!-- span v-if="button" v-html="button"></span-->
-        <!-- wkande: Sept 2022: Added <span> (next line)
-          This ID used to to set the bnt text color to green 
-          when active by SidebarHeader.vue 
-        -->
-        <span :id="'api3_' + button + '_Menu'">{{ button }}</span>
+        <span v-if="button" v-html="button"></span>
         <span class="vpi-chevron-down text-icon" />
       </span>
 

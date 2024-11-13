@@ -25,7 +25,7 @@ used to deploy the off-chain component of Airnode (a.k.a., the node) to a Docker
 container, in this case a locally run Docker container.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+[CoinGecko](https://docs.coingecko.com/reference/introduction) which returns the
 current value of a coin. This guide does not detail the overall configuration of
 an Airnode, it is just a quick start guide then lends itself to understanding an
 Airnode deployment.
@@ -98,8 +98,7 @@ for each of these fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url (including its API key) from a
   provider such as [Infura](https://www.infura.io/). Use a url for the Sepolia
-  test network. If you need help creating one see the guide
-  [Create an Infura key](/guides/misc/infura-key/).
+  test network.
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
   wallet. The wallet does not need to be funded. Use the Admin CLI command

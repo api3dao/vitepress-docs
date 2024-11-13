@@ -25,7 +25,7 @@ will be used to deploy the off-chain component of Airnode (a.k.a., the node) to
 AWS.
 
 This Airnode contains a single API operation (`GET /simple/price`) from
-[CoinGecko](https://www.coingecko.com/en/api/documentation) which returns the
+[CoinGecko](https://docs.coingecko.com/reference/introduction) which returns the
 current value of a coin. This guide does not detail the overall configuration of
 an Airnode, it is just a quick start guide then lends itself to understanding an
 Airnode deployment.
@@ -108,8 +108,7 @@ There are two values `config.json` interpolates from `secrets.env`. Add values
 for each of these fields.
 
 - `CHAIN_PROVIDER_URL`: A blockchain provider url from a provider such as
-  [Infura](https://www.infura.io/). Use a url for the Sepolia test network. If
-  you need one see the page [Create an Infura key](/guides/misc/infura-key/).
+  [Infura](https://www.infura.io/). Use a url for the Sepolia test network.
 
 - `AIRNODE_WALLET_MNEMONIC`: Provide the seed phrase (mnemonic) to a new digital
   wallet. The wallet does not need to be funded. Use the Admin CLI command

@@ -28,10 +28,9 @@ to our [Discord server](https://discord.com/invite/qnRrcfnm5W).
 
 QRNG stands for Quantum Random Number Generator. It is a free to use service
 that provides quantum randomness on-chain. It is powered by
-[Airnode](/reference/airnode/latest/understand/index.md), the
-[first-party](/explore/airnode/why-first-party-oracles.md) oracle that is
-directly operated by the QRNG API providers. You can read more about QRNG
-[here](/reference/qrng/index.md).
+[Airnode](/reference/airnode/latest/understand/index.md), a first-party oracle
+that is directly operated by the QRNG API providers. You can read more about
+QRNG [here](/reference/qrng/index.md).
 
 ## How many providers are there for QRNG?
 

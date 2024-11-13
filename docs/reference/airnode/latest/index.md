@@ -34,7 +34,7 @@ directory.
 ## AirnodeRrpV0
 
 <table>
-<th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th>
+<tr><th class="contract-addresses-heading">Chain</th><th class="contract-addresses-heading">ID</th><th class="contract-addresses-heading">Contract Address</th></tr>
 <tr v-for="(chain, index) in AirnodeRrpV0">
     <template v-if="chain.id == 1 || chain.id == 11155111">
         <td class="mainnet-and-sepolia" style="max-width:150px;">{{chain.fullname}}</td>

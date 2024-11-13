@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: About guides
 sidebarHeader: Guides
 sidebarSubHeader:
 pageHeader: Guides
@@ -16,14 +16,10 @@ tags:
 
 # {{$frontmatter.title}}
 
-Guides for the API3 ecosystem have been placed here to help eliminate the hunt
-for help. Please go through those that peak your interest with regards to API3
-products and services. Most guides are focused on dApp developers (dAPI
-consumers) or API providers (Airnode owners).
-
-Each guide is a complete standalone step-by-step introduction to key services
-and concepts at API3. If you have an idea for a guide that you wish was here,
-please create a [GitHub issue](https://github.com/api3dao/vitepress-docs). This
-will help us create a full and comprehensive list.
+Each guide is a complete standalone step-by-step introduction to Airnode or
+QRNG. For Airnode the guides work with the latest version of Airnode. If you
+have an idea for a guide that you wish was here, please create a
+[GitHub issue](https://github.com/api3dao/vitepress-docs). This will help us
+create a full and comprehensive list.
 
 <FlexEndTag/>
