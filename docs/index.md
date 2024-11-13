@@ -20,4 +20,7 @@ hero:
     - theme: brand
       text: QRNG
       link: /reference/qrng/
+    - theme: brand
+      text: Guides
+      link: /guides/
 ---
