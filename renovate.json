@@ -7,6 +7,11 @@
       "enabled": false
     },
     {
+      "matchDepTypes": ["packageManager"],
+      "matchPackageNames": ["pnpm"],
+      "extends": ["schedule:quarterly"]
+    },
+    {
       "matchPackageNames": ["vitepress"],
       "groupName": "vitepress"
     },
