@@ -177,8 +177,8 @@ watchPostEffect(() => {
       calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)
     );
     width: calc(
-      (100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) -
-        32px
+      (100% - (var(--vp-layout-max-width) - 64px)) / 2 +
+        var(--vp-sidebar-width) - 32px
     );
   }
 }
