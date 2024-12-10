@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^10.8.1
-        version: 10.8.1
+        specifier: ^11.0.0
+        version: 11.0.0
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
@@ -146,8 +146,8 @@ packages:
     resolution: {integrity: sha512-JY5xhEYMgki53Wm+A6R2jUpOUdD0zZnBq+PC5R1TGMNOYL1s6JjDrJeMsvaI2YWxYMUSoCnRoltN/yf9RI8n3A==}
     engines: {node: '>= 14.0.0'}
 
-  '@api3/chains@10.8.1':
-    resolution: {integrity: sha512-pWwp0C9ymDdXzqktexBaeeakaOKDErsRigLBuzYSM5DMWhdl/8UzkEWBh6eNXGLLc+fhAhPM+j98Z5LWnKMR8g==}
+  '@api3/chains@11.0.0':
+    resolution: {integrity: sha512-LE1OfoyKr6HYacAh1Z4VHCKRcSuLq/fl3CHdCNKig2F/4ZrGQgI/PBv03O8FVjdqsQqvW1RV6y6A8onpdGMSpg==}
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -1262,7 +1262,7 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.13.0
 
-  '@api3/chains@10.8.1':
+  '@api3/chains@11.0.0':
     dependencies:
       viem: 2.21.44(zod@3.23.8)
       zod: 3.23.8
