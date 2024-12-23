@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^11.1.1
-        version: 11.2.1
+        specifier: ^11.2.2
+        version: 11.4.0
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
@@ -39,8 +39,8 @@ importers:
         specifier: ^4.0.3
         version: 4.0.3
       html-dom-parser:
-        specifier: ^5.0.11
-        version: 5.0.11
+        specifier: ^5.0.12
+        version: 5.0.12
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -146,8 +146,8 @@ packages:
     resolution: {integrity: sha512-JY5xhEYMgki53Wm+A6R2jUpOUdD0zZnBq+PC5R1TGMNOYL1s6JjDrJeMsvaI2YWxYMUSoCnRoltN/yf9RI8n3A==}
     engines: {node: '>= 14.0.0'}
 
-  '@api3/chains@11.2.1':
-    resolution: {integrity: sha512-9Oalcs+kXH0yHLY2X3LYW08AzXiAh+qK6FB138gZPPn+XnFM90PdFnfh23SmjRwVrkqo1RZi9HzVZeRGP897mg==}
+  '@api3/chains@11.4.0':
+    resolution: {integrity: sha512-J4qnCn8RrWIVyEZDPwU9jm5c2SiMvw7eXcSqZcMVv6EbJa1moIQepJWfA+t7+jwLoAOReKDKrTCNMiBAXlihBQ==}
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -789,8 +789,8 @@ packages:
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
 
-  html-dom-parser@5.0.11:
-    resolution: {integrity: sha512-iORudm2K0c0DYeEj4AbrG9PFzgp1dpFGkJUAiBlVTkeyaNf2YYIs1b0dF7rQUPnDZimkLx+Jls+CvRIKO/++Tg==}
+  html-dom-parser@5.0.12:
+    resolution: {integrity: sha512-LP2BI8aCnv6HCnO1kyQMaycqL7RCTUODGFWdKwrlc6ROG5rtbVEtE4mkBn1tokBMflUN7wyNKL4AXq7EMmga6Q==}
 
   html-void-elements@3.0.0:
     resolution: {integrity: sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==}
@@ -1262,7 +1262,7 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.13.0
 
-  '@api3/chains@11.2.1':
+  '@api3/chains@11.4.0':
     dependencies:
       viem: 2.21.44(zod@3.23.8)
       zod: 3.23.8
@@ -1874,7 +1874,7 @@ snapshots:
 
   hookable@5.5.3: {}
 
-  html-dom-parser@5.0.11:
+  html-dom-parser@5.0.12:
     dependencies:
       domhandler: 5.0.3
       htmlparser2: 9.1.0
