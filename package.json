@@ -35,7 +35,7 @@
     "flexsearch": "^0.7.43",
     "fs-extra": "^11.2.0",
     "gray-matter": "^4.0.3",
-    "html-dom-parser": "^5.0.12",
+    "html-dom-parser": "^5.0.13",
     "husky": "^9.1.7",
     "js-yaml": "^4.1.0",
     "medium-zoom": "^1.1.0",
