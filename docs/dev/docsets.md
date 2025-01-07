@@ -26,7 +26,6 @@ The current docsets are as follows:
     - `/reference/ois/next/`
     - `/reference/ois/latest/`
     - `/reference/ois/v2.0/`
-  - QRNG: `/reference/qrng/`
   - dAPIs: `/reference/dapis/`
   - DAO Members `/reference/dao-members/`
 - Docs Development `/dev/`

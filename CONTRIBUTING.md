@@ -35,10 +35,8 @@ pnpm docs:dev
 The API3 Docs repository is structured as follows:
 
 - `/docs/explore`: Explore section within the API3 Docs.
-- `/docs/guides`: All the guides that demonstrate the use of Airnode, QRNG and
-  dAPIs.
-- `/docs/reference`: Contains the core documentation for Airnode, QRNG and
-  dAPIs.
+- `/docs/guides`: All the guides that demonstrate the use of Airnode.
+- `/docs/reference`: Contains the core documentation for Airnode.
 
 Each section will have a `sidebar.js` file that contains the sidebar structure
 for that section.

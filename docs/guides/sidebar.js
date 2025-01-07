@@ -56,22 +56,4 @@ module.exports = [
       },
     ],
   },
-  {
-    text: 'QRNG',
-    collapsed: false,
-    items: [
-      {
-        text: 'Getting Started with QRNG',
-        link: '/guides/qrng/',
-      },
-      {
-        text: 'Using QRNG - Remix Example',
-        link: '/guides/qrng/qrng-remix/',
-      },
-      {
-        text: 'QRNG YouTube Tutorials',
-        link: '/guides/qrng/youtube-demos/',
-      },
-    ],
-  },
 ];

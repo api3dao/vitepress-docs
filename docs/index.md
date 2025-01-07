@@ -18,9 +18,6 @@ hero:
       text: OIS
       link: /reference/ois/latest/
     - theme: brand
-      text: QRNG
-      link: /reference/qrng/
-    - theme: brand
       text: Guides
       link: /guides/
 ---

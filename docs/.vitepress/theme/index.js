@@ -12,7 +12,6 @@ import DeployerPermissionsWarning from '../../_components/guides/DeployerPermiss
 import VersionWarning from '../../_components/VersionWarning.vue';
 import PageHeader from '../../_components/PageHeader.vue';
 import CopyIcon from '../../_components/CopyIcon.vue';
-import QrngRemoval from '../../_components/QrngRemoval.vue';
 import SponsorWalletWarning from '../../_components/reference/airnode/SponsorWalletWarning.vue';
 import DockerHubImages from '../../_components/reference/airnode/DockerHubImages.vue';
 import DeleteAirnodeAws from '../../_components/reference/airnode/DeleteAirnodeAws.vue';
@@ -56,7 +55,6 @@ export default {
     app.component('VersionWarning', VersionWarning);
     app.component('PageHeader', PageHeader);
     app.component('CopyIcon', CopyIcon);
-    app.component('QrngRemoval', QrngRemoval);
     app.component('SponsorWalletWarning', SponsorWalletWarning);
     app.component('DockerHubImages', DockerHubImages);
     app.component('DeleteAirnodeAws', DeleteAirnodeAws);

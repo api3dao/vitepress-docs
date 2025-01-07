@@ -32,11 +32,6 @@
         "type": 301
       },
       {
-        "source": "/qrng",
-        "destination": "/reference/qrng/",
-        "type": 301
-      },
-      {
         "source": "/dao-members",
         "destination": "/reference/dao-members/",
         "type": 301
