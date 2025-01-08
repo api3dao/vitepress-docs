@@ -70,7 +70,6 @@ export default {
       '/reference/ois/2.2/': require('../reference/ois/2.2/sidebar.js'),
       '/reference/ois/2.1/': require('../reference/ois/2.1/sidebar.js'),
       '/reference/ois/2.0/': require('../reference/ois/2.0/sidebar.js'),
-      '/reference/qrng/': require('../reference/qrng/sidebar.js'),
       '/guides/': require('../guides/sidebar.js'),
       '/dev/': require('../dev/sidebar.js'),
     },
@@ -86,7 +85,6 @@ function nav() {
       link: '/reference/airnode/latest/understand/',
     },
     { text: 'OIS', link: '/reference/ois/latest/' },
-    { text: 'QRNG', link: '/reference/qrng/' },
     {
       text: 'Guides',
       link: '/guides/',

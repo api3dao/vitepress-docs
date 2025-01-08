@@ -16,7 +16,7 @@ pnpm-lock.yaml
 /docs/dev/using-metamask/src/HelloWorld.sol
 
 # The flexsearch files can be huge, skip them. 
-# These are auto genereated anyway.
+# These are auto generated anyway.
 /indexes
 /docs/public/indexes
 /docs/public/img
@@ -29,6 +29,5 @@ pnpm-lock.yaml
 /docs/reference/dao-members/assets
 /docs/reference/dapis/assets
 /docs/reference/chainapi/assets
-/docs/reference/qrng/assets
 /docs/guides/assets
 /docs/explore/assets
