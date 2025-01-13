@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^11.4.0
-        version: 11.4.0
+        specifier: ^11.4.2
+        version: 11.4.2
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
@@ -24,8 +24,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       ethers:
-        specifier: ^6.13.4
-        version: 6.13.4
+        specifier: ^6.13.5
+        version: 6.13.5
       file:
         specifier: ^0.2.2
         version: 0.2.2
@@ -146,8 +146,8 @@ packages:
     resolution: {integrity: sha512-JY5xhEYMgki53Wm+A6R2jUpOUdD0zZnBq+PC5R1TGMNOYL1s6JjDrJeMsvaI2YWxYMUSoCnRoltN/yf9RI8n3A==}
     engines: {node: '>= 14.0.0'}
 
-  '@api3/chains@11.4.0':
-    resolution: {integrity: sha512-J4qnCn8RrWIVyEZDPwU9jm5c2SiMvw7eXcSqZcMVv6EbJa1moIQepJWfA+t7+jwLoAOReKDKrTCNMiBAXlihBQ==}
+  '@api3/chains@11.4.2':
+    resolution: {integrity: sha512-piOPfRSs0iQMCLb6ZEqEuj7cd9L2IEtEUiAnRNRyh170YrEhuMfQ7q3xFgOu70zTjgQjyDxRI8VpGAiVLIgpeg==}
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -738,8 +738,8 @@ packages:
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
-  ethers@6.13.4:
-    resolution: {integrity: sha512-21YtnZVg4/zKkCQPjrDj38B1r4nQvTZLopUGMLQ1ePU2zV/joCfDC3t3iKQjWRzjjjbzR+mdAIoikeBRNkdllA==}
+  ethers@6.13.5:
+    resolution: {integrity: sha512-+knKNieu5EKRThQJWwqaJ10a6HE9sSehGeqWN65//wE7j47ZpFhKAnHB/JJFibwwg61I/koxaPsXbXpD/skNOQ==}
     engines: {node: '>=14.0.0'}
 
   eventemitter3@5.0.1:
@@ -1272,7 +1272,7 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.13.0
 
-  '@api3/chains@11.4.0':
+  '@api3/chains@11.4.2':
     dependencies:
       viem: 2.21.44(zod@3.23.8)
       zod: 3.23.8
@@ -1819,7 +1819,7 @@ snapshots:
 
   estree-walker@2.0.2: {}
 
-  ethers@6.13.4:
+  ethers@6.13.5:
     dependencies:
       '@adraffy/ens-normalize': 1.10.1
       '@noble/curves': 1.2.0
