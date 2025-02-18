@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@api3/chains':
-        specifier: ^11.5.0
-        version: 11.5.0
+        specifier: ^11.8.0
+        version: 11.8.0
       adm-zip:
         specifier: ^0.5.16
         version: 0.5.16
@@ -54,8 +54,8 @@ importers:
         specifier: ^2.0.4
         version: 2.0.4
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.5.1
+        version: 3.5.1
       tiny-emitter:
         specifier: ^2.1.0
         version: 2.1.0
@@ -146,8 +146,8 @@ packages:
     resolution: {integrity: sha512-JY5xhEYMgki53Wm+A6R2jUpOUdD0zZnBq+PC5R1TGMNOYL1s6JjDrJeMsvaI2YWxYMUSoCnRoltN/yf9RI8n3A==}
     engines: {node: '>= 14.0.0'}
 
-  '@api3/chains@11.5.0':
-    resolution: {integrity: sha512-Qc8EICOkwxj4BDBOtbRGnj7huAg9Td/EmqXr1/crPOUI9e/als8LKGFpVS3YPZzOePfXWsp7SVazc1J4ZBxFlg==}
+  '@api3/chains@11.8.0':
+    resolution: {integrity: sha512-XgOjGl+PLRP/45SblKihYzzAj6zxLFGAHzKd2SDl6jre5EmjO7VO9Mx54qDkh00JIB72rwPLcyWO88qzjpcHPw==}
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -942,8 +942,8 @@ packages:
   preact@10.24.3:
     resolution: {integrity: sha512-Z2dPnBnMUfyQfSQ+GBdsGa16hz35YmLmtTLhM169uW944hYL6xzTYkJjC07j+Wosz733pMWx0fgON3JNw1jJQA==}
 
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  prettier@3.5.1:
+    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1272,7 +1272,7 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.13.0
 
-  '@api3/chains@11.5.0':
+  '@api3/chains@11.8.0':
     dependencies:
       viem: 2.21.44(zod@3.23.8)
       zod: 3.23.8
@@ -2054,7 +2054,7 @@ snapshots:
 
   preact@10.24.3: {}
 
-  prettier@3.4.2: {}
+  prettier@3.5.1: {}
 
   property-information@6.5.0: {}
 
