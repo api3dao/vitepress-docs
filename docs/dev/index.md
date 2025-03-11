@@ -20,7 +20,7 @@ Mac users (Apple silicon) should see the page
 
 It is best to use nodejs `v20` which gives the best performance and is the
 engine described in the
-[<span style="color:rgb(16, 185, 129);">package.json</span>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+[<span style="color:rgb(16, 185, 129);">package.json</span>](https://github.com/api3dao/airnode-docs/blob/main/package.json)
 file.
 
 :::
@@ -30,8 +30,8 @@ file.
 Clone the remote repo and install it packages.
 
 ```sh
-git clone git@github.com:api3dao/vitepress-docs.git
-cd vitepress-docs
+git clone git@github.com:api3dao/airnode-docs.git
+cd airnode-docs
 pnpm install
 ```
 

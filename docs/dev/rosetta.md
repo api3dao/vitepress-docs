@@ -25,13 +25,13 @@ using your CLI with Rosetta deactivated.
 
 It is best to use nodejs `v20` which gives the best performance and is the
 engine described in the
-[package.json](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
+[package.json](https://github.com/api3dao/airnode-docs/blob/main/package.json)
 file.
 
 :::
 
 ```sh
-failed to load config from /Users/warren/DEV/vitepress-docs/docs/.vitepress/config.js
+failed to load config from /Users/warren/DEV/airnode-docs/docs/.vitepress/config.js
 build error:
  Error:
 You installed esbuild for another platform than the one you're currently using.

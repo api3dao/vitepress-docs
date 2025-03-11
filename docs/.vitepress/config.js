@@ -49,7 +49,7 @@ export default {
     },
     siteTitle: 'Documentation',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/api3dao/vitepress-docs' },
+      { icon: 'github', link: 'https://github.com/api3dao/airnode-docs' },
       {
         icon: 'discord',
         link: 'https://discord.com/channels/758003776174030948/765618225144266793',
