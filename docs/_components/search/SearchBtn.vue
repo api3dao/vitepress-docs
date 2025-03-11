@@ -193,16 +193,16 @@ export default {
         reg = await axios.get(`/indexes/${name}/reg.json`);
       } else {
         cfg = await axios.get(
-          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/cfg.json`
+          `https://raw.githubusercontent.com/api3dao/airnode-docs/main/docs/public/indexes/${name}/cfg.json`
         );
         ctx = await axios.get(
-          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/ctx.json`
+          `https://raw.githubusercontent.com/api3dao/airnode-docs/main/docs/public/indexes/${name}/ctx.json`
         );
         map = await axios.get(
-          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/map.json`
+          `https://raw.githubusercontent.com/api3dao/airnode-docs/main/docs/public/indexes/${name}/map.json`
         );
         reg = await axios.get(
-          `https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/public/indexes/${name}/reg.json`
+          `https://raw.githubusercontent.com/api3dao/airnode-docs/main/docs/public/indexes/${name}/reg.json`
         );
       }
 

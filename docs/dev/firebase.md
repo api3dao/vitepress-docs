@@ -14,10 +14,10 @@ tags:
 
 All production and PR preview deployments are published on Firebase hosting and
 are built automatically using GitHub
-[workflows](https://github.com/api3dao/vitepress-docs/tree/main/.github/workflows)
-stored in the `vitepress-docs` repo.
+[workflows](https://github.com/api3dao/airnode-docs/tree/main/.github/workflows)
+stored in the `airnode-docs` repo.
 
-- Production: https://vitepress-docs.web.app (and https://docs.api3.org)
+- Production: https://vitepress-docs.web.app (and https://airnode-docs.api3.org)
 
 ## Repo Branches
 

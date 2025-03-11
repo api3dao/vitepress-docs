@@ -1,8 +1,9 @@
-# API3 Technical Documentation
+# API3 Airnode Technical Documentation
 
-The technical documentation is maintained by the core technical team. Please
-feel free to create [issues](https://github.com/api3dao/vitepress-docs/issues)
-for discussions, proposals, additions, and changes in the repo `vitepress-docs`.
+The Airnode technical documentation is maintained by the core technical team.
+Please feel free to create
+[issues](https://github.com/api3dao/airnode-docs/issues) for discussions,
+proposals, additions, and changes in the repo `airnode-docs`.
 
 ## VitePress
 
@@ -10,16 +11,16 @@ The technical documentation has moved from
 [VuePress](https://vuepress.vuejs.org) to
 [VitePress](https://vitepress.vuejs.org).
 
-- `vitepress-docs`: uses VitePress
-- `api3-docs`: uses VuePress
+- `airnode-docs`: uses VitePress
+- `old-api3-docs`: uses VuePress
 
 ## Firebase
 
-Firebase is used to host the `vitepress-docs` technical documentation.
+Firebase is used to host the `airnode-docs` technical documentation.
 
 ### Production
 
-- DNS: https://docs.api3.org
+- DNS: https://airnode-docs.api3.org
 - Hosted with Firebase: https://vitepress-docs.web.app
 
 ### Previews
@@ -42,6 +43,6 @@ https://old-docs.api3.org and is still hosted using `gh-pages`.
 
 ## /dev/ docset
 
-Use https://docs.api3.org/dev/ to learn more about how the `vitepress-docs`
+Use https://docs.api3.org/dev/ to learn more about how the `airnode-docs`
 documentation is managed. For the legacy documentation use
 https://old-docs.api3.org/dev/.

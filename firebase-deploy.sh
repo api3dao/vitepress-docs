@@ -20,7 +20,7 @@ cd docs/.vitepress/dist
 # echo 'www.example.com' > CNAME
 
 # Use this section if you want to push to a depoyment branch.
-# api3dao/vitepress-docs uses the main branch as default.
+# api3dao/airnode-docs uses the main branch as default.
 # git init must start with a main branch so firebase-pages will
 # "hang" off of it.
 # git init --initial-branch=main
@@ -32,7 +32,7 @@ cd docs/.vitepress/dist
 
 # If you are deploying to https://<USERNAME>.github.io/<REPO>
 # NEVER push to main, use main:firebase-pages.
-# git push -f git@github.com:wkande/vitepress-docs.git main:firebase-pages
+# git push -f git@github.com:wkande/airnode-docs.git main:firebase-pages
 
 cd -
 
