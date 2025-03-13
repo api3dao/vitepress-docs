@@ -13,7 +13,7 @@ information about getting started and making a contribution to the API3 Docs.
 
 ### Pre-requisites
 
-- [Node.js](https://nodejs.org/en/) (version 20 or higher).
+- [Node.js](https://nodejs.org/en/) (version 22 or higher).
 - Unix/macOS/WSL for the scripts to work properly.
 
 ### Installation
