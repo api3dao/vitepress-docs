@@ -21,14 +21,9 @@ wrong [esbuild](https://esbuild.github.io/getting-started/) package. It is best
 to use a version of Nodejs and NPM installed with its installer or install it
 using your CLI with Rosetta deactivated.
 
-::: info Nodejs `v20`
+::: info Nodejs `v22`
 
-It is best to use nodejs `v20` which gives the best performance and is the
-engine described in the
-[package.json](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
-file.
-
-:::
+It is best to use nodejs `v22` as this is what is used in GitHub Actions :::
 
 ```sh
 failed to load config from /Users/warren/DEV/vitepress-docs/docs/.vitepress/config.js

@@ -12,18 +12,13 @@ tags:
 
 # {{$frontmatter.title}}
 
-Use newer versions of Nodejs. Currently the builds on GitHub are using `v20`.
+Use newer versions of Nodejs. Currently the builds on GitHub are using `v22`.
 Mac users (Apple silicon) should see the page
 [Rosetta, Nodejs, esbuild](/dev/rosetta.md) if you get an error.
 
-::: info Nodejs `v20`
+::: info Nodejs `v22`
 
-It is best to use nodejs `v20` which gives the best performance and is the
-engine described in the
-[<span style="color:rgb(16, 185, 129);">package.json</span>](https://github.com/api3dao/vitepress-docs/blob/main/package.json)
-file.
-
-:::
+It is best to use nodejs `v22` as this is what is used in GitHub Actions :::
 
 ## Clone the remote repo
 
