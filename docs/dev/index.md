@@ -18,15 +18,17 @@ Mac users (Apple silicon) should see the page
 
 ::: info Nodejs `v22`
 
-It is best to use nodejs `v22` as this is what is used in GitHub Actions :::
+It is best to use nodejs `v22` as this is what is used in GitHub Actions
+
+:::
 
 ## Clone the remote repo
 
 Clone the remote repo and install it packages.
 
 ```sh
-git clone git@github.com:api3dao/vitepress-docs.git
-cd vitepress-docs
+git clone git@github.com:api3dao/airnode-docs.git
+cd airnode-docs
 pnpm install
 ```
 

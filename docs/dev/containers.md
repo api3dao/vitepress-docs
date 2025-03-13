@@ -13,7 +13,7 @@ tags:
 # {{$frontmatter.title}}
 
 VitePress provides several containers. The following examples explain how they
-should be used in `vitepress-docs`.
+should be used in `airnode-docs`.
 
 ::: info
 

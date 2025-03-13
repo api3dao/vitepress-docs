@@ -23,10 +23,12 @@ using your CLI with Rosetta deactivated.
 
 ::: info Nodejs `v22`
 
-It is best to use nodejs `v22` as this is what is used in GitHub Actions :::
+It is best to use nodejs `v22` as this is what is used in GitHub Actions
+
+:::
 
 ```sh
-failed to load config from /Users/warren/DEV/vitepress-docs/docs/.vitepress/config.js
+failed to load config from /Users/warren/DEV/airnode-docs/docs/.vitepress/config.js
 build error:
  Error:
 You installed esbuild for another platform than the one you're currently using.

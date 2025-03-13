@@ -14,7 +14,7 @@ tags:
 
 [FlexSearch](https://www.npmjs.com/package/flexsearch) is used to support
 searching in the docs. The script
-[/libs/flexBuildIndexes.js](https://github.com/api3dao/vitepress-docs/blob/main/libs/flexBuildIndexes.js)
+[/libs/flexBuildIndexes.js](https://github.com/api3dao/airnode-docs/blob/main/libs/flexBuildIndexes.js)
 will index all HTML files in the `/dist` folder for the following directories:
 
 - `/dist/explore/`
@@ -56,11 +56,11 @@ their content is generated at runtime in the browser. For example: a component
 uses Axios to pull data from an API operation.
 
 To overcome this short fall, the script
-[/axiosBuildScripts.js](https://github.com/api3dao/vitepress-docs/blob/main/libs/axiosBuildScripts.js)
+[/axiosBuildScripts.js](https://github.com/api3dao/airnode-docs/blob/main/libs/axiosBuildScripts.js)
 gathers on-line data into local data files for markdown pages to use. This
 allows for proper rendering of HTML at build time. A example of a markdown file
 that uses a locally generated data file is
-[chains-list.md](https://raw.githubusercontent.com/api3dao/vitepress-docs/main/docs/reference/dapis/chains/chains-list.md).
+[chains-list.md](https://raw.githubusercontent.com/api3dao/airnode-docs/main/docs/reference/dapis/chains/chains-list.md).
 
 ## Creating/updating the index files
 
