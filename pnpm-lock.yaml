@@ -15,7 +15,7 @@ importers:
         specifier: ^0.5.16
         version: 0.5.16
       axios:
-        specifier: ^1.8.1
+        specifier: ^1.8.2
         version: 1.8.2
       colors:
         specifier: ^1.4.0
